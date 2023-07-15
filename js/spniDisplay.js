@@ -1737,6 +1737,8 @@ OpponentDetailsDisplay = function () {
     this.sourceLabel = $("#individual-select-screen .opponent-source");
     this.writerLabel = $("#individual-select-screen .opponent-writer");
     this.artistLabel = $("#individual-select-screen .opponent-artist");
+    this.birthdayLabelField = $("#individual-select-screen .opponent-birthday-field");
+    this.birthdayLabel = $("#individual-select-screen .opponent-birthday");
     this.descriptionLabel = $("#individual-select-screen .opponent-details-description");
     this.linecountLabel = $("#individual-select-screen .opponent-linecount");
     this.posecountLabel = $("#individual-select-screen .opponent-posecount");
@@ -1860,6 +1862,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.sourceLabel.empty();
     this.writerLabel.empty();
     this.artistLabel.empty();
+    this.birthdayLabel.empty();
     this.descriptionLabel.empty();
     this.lastUpdateLabel.empty();
     this.addedLabel.empty();
@@ -1869,6 +1872,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.epiloguesField.removeClass('has-epilogues');
     this.collectiblesField.removeClass('has-collectibles');
     this.addedLabelField.removeClass('has-added-date');
+    this.birthdayLabelField.removeClass('has-birthday');
     this.costumeSelector.hide();
 
     
@@ -2271,6 +2275,13 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
                                   + " (" + fuzzyTimeAgo(opponent.lastUpdated) + ")");
     } else {
         this.lastUpdateLabel.text('Unknown');
+    }
+    if (this.opponent.birthday) {
+        this.birthdayLabelField.addClass('has-birthday');
+        this.birthdayLabel.text(new Intl.DateTimeFormat([], { month: 'long', day: 'numeric' })
+                                .format(new Date(2000, opponent.birthday.month - 1, opponent.birthday.day)));
+    } else {
+        this.birthdayLabelField.removeClass('has-birthday');
     }
 
     if (this.opponent.addedDate) {
