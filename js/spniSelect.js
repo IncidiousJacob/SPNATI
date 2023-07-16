@@ -146,7 +146,7 @@ var sortingOptionsMap = {
     target: sortOpponentsByMostTargeted(50, Infinity),
     oldest: sortOpponentsByMultipleFields(["release", "-listingIndex"]),
     newest: sortOpponentsByMultipleFields(["-release", "listingIndex"]),
-    featured: sortOpponentsByMultipleFields(["-hasBirthdayToday", "-effectiveScore"]),
+    featured: sortOpponentsByMultipleFields(["-effectiveScore"]),
 };
 var groupCreditsShown = false;
 
@@ -1339,7 +1339,7 @@ function loadDefaultFillSuggestions () {
             return false;
         }
 
-        return opp.force_prefill && !isCharacterUsed(opp) && !opp.shortGameOptOut();
+        return (opp.force_prefill || opp.hasBirthdayToday && Math.random() < 0.5) && !isCharacterUsed(opp) && !opp.shortGameOptOut();
     });
 
     if (forcedPrefills.length > 0) {
