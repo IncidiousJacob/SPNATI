@@ -1626,12 +1626,29 @@ function backFromGroupSelect () {
     screenTransition($groupSelectScreen, $selectScreen);
 }
 
+SHORT_GAME_MODE = false;
+function advanceShortGame () {
+    console.log("Short game mode...");
+    advanceSelectScreen("short");
+}
+
 /************************************************************
  * The player clicked on the start game button on the main
  * select screen.
  ************************************************************/
-function advanceSelectScreen () {
-    console.log("Starting game...");
+function advanceSelectScreen (mode) {
+    if (mode == "short") {
+        console.log("Starting short game...");
+        SHORT_GAME_MODE = true;
+        players.forEach(function(player) {
+            if (player.id !== 'human') {
+                player.markers['short_game_mode'] = 1;
+            }
+        });
+    } else { 
+        console.log("Starting game...");
+        SHORT_GAME_MODE = false;
+    }
 
     gameID = generateRandomID();
     recordStartGameEvent();
@@ -1694,12 +1711,16 @@ function altCostumeSelected(slot) {
  ************************************************************/
 function updateSelectionVisuals () {
     /* Check to see if all opponents are loaded. */
+    let short_game_mode_opt_in = 0;
     var filled = 0, loaded = 0;
     players.forEach(function(p, idx) {
         if (idx > 0) {
             filled++;
             if (p.isLoaded()) {
                 loaded++;
+                if (p.markers['short_game_mode_opt_in']) {
+                    short_game_mode_opt_in++;
+                }
             }
         }
     });
@@ -1786,6 +1807,9 @@ function updateSelectionVisuals () {
 
     /* if enough opponents are selected, and all those are loaded, then enable progression */
     $selectMainButton.attr('disabled', filled < 2 || loaded < filled);
+
+    /* if enough opponents are selected, all those are loaded and none opt out, then enable the short game mode */
+    $("#start-short-game-button").attr('disabled', filled < 2 || loaded < filled || short_game_mode_opt_in < filled)
 
     /* if all slots are taken, disable fill buttons */
     $selectRandomButtons.attr('disabled', filled >= 4 || loadedOpponents.length == 0);

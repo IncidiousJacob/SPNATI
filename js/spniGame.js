@@ -302,7 +302,7 @@ function advanceTurn () {
     }
 
     if (players[currentTurn]) {
-        /* highlight the player who's turn it is */
+        /* highlight the player whose turn it is */
         for (var i = 0; i < players.length; i++) {
             if (currentTurn == i) {
                 $gameLabels[i].addClass("current");
@@ -629,11 +629,16 @@ function completeMasturbatePhase () {
 function endRound () {
     /* check to see how many players are still in the game */
     var inGame = 0;
+    var notInGame = 0;
     var lastPlayer = 0;
+    var outPlayer = 0;
     for (var i = 0; i < players.length; i++) {
         if (players[i]) {
             players[i].timeInStage++;
-            if (!players[i].out) {
+            if (players[i].out) {
+                notInGame++;
+                outPlayer = i;
+            } else {
                 inGame++;
                 lastPlayer = i;
             }
@@ -665,6 +670,44 @@ function endRound () {
         }
         endWaitDisplay = -1;
         handleGameOver();
+    } else if (SHORT_GAME_MODE && notInGame > 0) {
+        let mostLayersLeft = 0, winner = 0, winners = "";
+        for (var i = 0; i < players.length; i++) {
+            if (players[i] && players[i].countLayers() > mostLayersLeft) {
+                mostLayersLeft = players[i].countLayers();
+                winner = i;
+            }
+            if (players[i] && !players[i].out) {
+                if (winners) {
+                    winners += " and ";
+                }
+                winners += players[i].label.escapeHTML();
+            }
+        }
+        recordEndGameEvent(players[winner].id);
+
+        console.log("The game has ended!");
+
+        saveTranscriptMessage('<b>' + winners + "</b> won Strip Poker Night at the Inventory!");
+        gameOver = true;
+
+        Sentry.addBreadcrumb({
+            category: 'game',
+            message: 'Game ended with '+players[winner].id+' winning.',
+            level: 'info'
+        });
+
+        for (var i = 0; i < players.length; i++) {
+            if (HUMAN_PLAYER == i) {
+                $gamePlayerCardArea.hide();
+                $gamePlayerClothingArea.hide();
+            }
+            else {
+                $gameOpponentAreas[i-1].hide();
+            }
+        }
+        endWaitDisplay = -1;
+        handleGameOver();
     } else {
         updateBiggestLead();
         allowProgression(eGamePhase.DEAL);
@@ -677,15 +720,23 @@ function endRound () {
  * players to finish their forfeits.
  ************************************************************/
 function handleGameOver() {
-    var winner;
+    var winner, alsoRan;
 
     /* determine true end and identify winner (even though endRound() did that too) */
-    if (!players.some(function(p, i) {
-        if (!p.out) winner = p;
+    if (!players.some(function(p) {
+        if (!p.out && !SHORT_GAME_MODE) {
+            winner = p;
+        } else if (p.out && SHORT_GAME_MODE) {
+            alsoRan = p;
+        }
         return p.out && !p.finished;
     })) {
         /* true end */
-        updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
+        if (SHORT_GAME_MODE) {
+            updateAllBehaviours(alsoRan.slot, GAME_OVER_DEFEAT, GAME_OVER_VICTORY);
+        } else {
+            updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
+        }
 
         allowProgression(eGamePhase.GAME_OVER);
         //window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
