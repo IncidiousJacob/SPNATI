@@ -606,7 +606,7 @@ function restartGame () {
     }
 
     clearTimeout(timeoutID); // No error if undefined or no longer valid
-    timeoutID = autoForfeitTimeoutID = undefined;
+    timeoutID = undefined;
     stopCardAnimations();
     $('link[href^="opponents/"]').remove();
     resetPlayers();
@@ -623,6 +623,8 @@ function restartGame () {
 
     inGame = false;
     autoAdvancePaused = false;
+    autoAdvanceProgress = 0;
+    $('#auto-advance-progress-bar').stop();
 
     Sentry.setTag("in_game", false);
 
