@@ -989,8 +989,8 @@ namespace KisekaeImporter
 								KisekaeBelt belt = (KisekaeBelt)clothing.GetSubCode("s", j);
 								if (belt != null)
 								{
-									belt.Rotation *= 10;
 									belt.Scale *= 10;
+									belt.Rotation *= 10;
 									belt.ScaleY *= 10;
 								}
 							}

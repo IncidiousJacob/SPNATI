@@ -2184,8 +2184,13 @@ namespace SPNATI_Character_Editor.Activities
 			}
 			else if (MessageBox.Show("Are you sure that you want to convert the selected KKL code(s)? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
 			{
+				bool onlyWardrobe = false;
 				if (grid.SelectedRows.Count > 0)
 				{
+					if (MessageBox.Show("Convert only the wardrobe code(s)?", "KKL Code Conversion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+					{
+						onlyWardrobe = true;
+					}
 					foreach (DataGridViewRow row in grid.SelectedRows)
 					{
 						PoseStage stage = (PoseStage)row.Tag;
@@ -2215,31 +2220,34 @@ namespace SPNATI_Character_Editor.Activities
 					}
 				}
 
-				foreach (DataGridViewCell cell in grid.SelectedCells)
+				if (!onlyWardrobe)
 				{
-					PoseEntry entry = (PoseEntry)cell.Tag;
-					if (entry == null || entry.Code == null)
+					foreach (DataGridViewCell cell in grid.SelectedCells)
 					{
-						continue;
-					}
-					KisekaeCode code = new KisekaeCode(entry.Code, true);
-					if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
-					{
-						unsupportedVersion = true;
-					}
-					else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
-					{
-						code.UpdateCode(major, minor, alpha);
-						entry.Code = code.ToString();
-					}
-					else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
-					{
-						if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+						PoseEntry entry = (PoseEntry)cell.Tag;
+						if (entry == null || entry.Code == null)
 						{
-							futureVersion = true;
+							continue;
 						}
-						code.DowndateCode(major, minor, alpha);
-						entry.Code = code.ToString();
+						KisekaeCode code = new KisekaeCode(entry.Code, true);
+						if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
+						{
+							unsupportedVersion = true;
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
+						{
+							code.UpdateCode(major, minor, alpha);
+							entry.Code = code.ToString();
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
+						{
+							if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+							{
+								futureVersion = true;
+							}
+							code.DowndateCode(major, minor, alpha);
+							entry.Code = code.ToString();
+						}
 					}
 				}
 			}
