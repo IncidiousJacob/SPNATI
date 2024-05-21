@@ -11,7 +11,7 @@
 			Y = belt.Y;
 			Length = belt.Length;
 			Crop = belt.Crop;
-			RotationZ = belt.RotationZ;
+			ScaleB = belt.ScaleB;
 		}
 
 		public void Pose(IPoseable pose)
@@ -26,73 +26,67 @@
 
 		public int Reversal2
 		{
-			get { return GetInt(3); }
-			set { Set(3, value.ToString()); }
-		}
-
-		public int Scale
-		{
 			get { return GetInt(4); }
 			set { Set(4, value.ToString()); }
 		}
 
-		public int Rotation
+		public int Scale
 		{
 			get { return GetInt(5); }
 			set { Set(5, value.ToString()); }
 		}
 
-		public int X
+		public int Rotation
 		{
 			get { return GetInt(6); }
 			set { Set(6, value.ToString()); }
 		}
 
-		public int Y
+		public int X
 		{
 			get { return GetInt(7); }
 			set { Set(7, value.ToString()); }
 		}
 
-		public int Depth
+		public int Y
 		{
 			get { return GetInt(8); }
 			set { Set(8, value.ToString()); }
 		}
 
-		public int Length
+		public int Depth
 		{
 			get { return GetInt(9); }
 			set { Set(9, value.ToString()); }
 		}
 
-		public int Crop
+		public int Length
 		{
 			get { return GetInt(10); }
 			set { Set(10, value.ToString()); }
 		}
 
-		public int ScaleY
+		public int Crop
 		{
 			get { return GetInt(11); }
 			set { Set(11, value.ToString()); }
 		}
 
-		public int Outline
+		public int ScaleY
 		{
 			get { return GetInt(12); }
 			set { Set(12, value.ToString()); }
 		}
 
-		public KisekaeColor OutlineColor
+		public int Outline
 		{
-			get { return new KisekaeColor(GetString(13)); }
+			get { return GetInt(13); }
 			set { Set(13, value.ToString()); }
 		}
 
-		public int RotationZ
+		public KisekaeColor OutlineColor
 		{
-			get { return GetInt(14); }
+			get { return new KisekaeColor(GetString(14)); }
 			set { Set(14, value.ToString()); }
 		}
 

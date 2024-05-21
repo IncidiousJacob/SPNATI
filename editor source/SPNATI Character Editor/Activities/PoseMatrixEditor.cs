@@ -2189,6 +2189,10 @@ namespace SPNATI_Character_Editor.Activities
 					foreach (DataGridViewRow row in grid.SelectedRows)
 					{
 						PoseStage stage = (PoseStage)row.Tag;
+						if (stage == null || stage.Code == null)
+						{
+							continue;
+						}
 						KisekaeCode code = new KisekaeCode(stage.Code, true);
 						if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
 						{
@@ -2214,6 +2218,10 @@ namespace SPNATI_Character_Editor.Activities
 				foreach (DataGridViewCell cell in grid.SelectedCells)
 				{
 					PoseEntry entry = (PoseEntry)cell.Tag;
+					if (entry == null || entry.Code == null)
+					{
+						continue;
+					}
 					KisekaeCode code = new KisekaeCode(entry.Code, true);
 					if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
 					{
