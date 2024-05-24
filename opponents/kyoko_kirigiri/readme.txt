@@ -8,6 +8,7 @@ December 11, 2023 - The 1-year anniversary of Kyoko’s inclusion on the Testing
 February 29, 2024 - Following a discussion between Kyoko’s writer and one of her sponsors, Kyoko’s largest sponsorship is rewritten and effectively waived.
 March 10, 2024 - Kyoko receives a sixth sponsorship.
 May 8, 2024 - Kyoko Kirigiri reaches 2,000 lines.
+May 23, 2024 - At 2,154 lines, Kyoko Kirigiri’s last update before Mod QA is submitted.
 
 SPECIAL THANKS
 PurpleKuroi, for being a phenomenal artist, an absolute joy to work with, and honestly for making this whole project remotely possible
