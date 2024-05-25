@@ -4444,7 +4444,7 @@
                 <state img="custom:#-think" marker="promptParentGrandparents=~parent.id~">Do you think children get along better with their grandparents, ~parent~?</state>
             </case>
             <case stage="0-8 10" id="2689" oneShotId="1442" priority="0">
-                <condition filterAdv="seductive&amp;!gay&amp;!reverse_bi-curious" role="opp" var="male" />
+                <condition filterAdv="seductive&amp;!gay&amp;!reverse_bi-curious" gender="male" role="opp" var="male" />
                 <state img="custom:#-think" marker="cassanovaTrickery">&lt;i&gt;(From the looks of things, ~male~ is popular with women. It probably won’t be hard to get him to let his guard down, then…)&lt;/i&gt;</state>
             </case>
             <case stage="0-4" id="578" priority="-1">
