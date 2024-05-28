@@ -2901,6 +2901,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2787" label="Toshinou Uniform 6-2B" color="14" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="7" />
         <label id="2788" label="Situation Callout" color="5" folder="Technical&gt;Duplicate dialogue" sort="18" />
         <label id="2789" label="Situation Callout" color="5" folder="Technical&gt;Duplicate dialogue" sort="44" />
+        <label id="2790" label="Famished flirt" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="12" />
+        <label id="2791" label="Maxwell" folder="Targeted&gt;Trio+" sort="16" />
     </labels>
     <prefixes>
         <prefix>#-aside</prefix>
@@ -2931,8 +2933,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
     <posePreviewMarkers>
         <posePreviewMarker>hair==1</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>2789</nextId>
+    <nextId>2791</nextId>
     <markers>
+        <marker scope="Public" name="." />
+        <marker scope="Public" name="+careerMention" />
+        <marker scope="Public" name="+quips" />
         <marker scope="Public" name="1v1" />
         <marker scope="Public" name="ae86_strip" />
         <marker scope="Public" name="ae86_strip01" />
@@ -3021,6 +3026,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="bobobo_HEY_PAUL">I know that it's crazy, I know that it's nowhere.</marker>
         <marker scope="Public" name="bobobo_layerLimit">Eight right? Yeah, eight.</marker>
         <marker scope="Public" name="bobobo_leto" />
+        <marker scope="Public" name="bobobo_maxwell" />
         <marker scope="Public" name="bobobo_octuplets" />
         <marker scope="Public" name="boboboOctuplets" />
         <marker scope="Public" name="bodyNvm" />
@@ -3953,6 +3959,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_theOtherBoobs" />
         <marker scope="Public" name="toshinou_tomatoUndies" />
         <marker scope="Public" name="toshinou_uniformFakeout" />
+        <marker scope="Public" name="toshinou_zp_hungy" />
         <marker scope="Public" name="toshinouBoobies">Response to Kyouko Toshinou simply asking, "Boobies?" =2 when fully responded, =1 when preparing to respond next case.</marker>
         <marker scope="Public" name="traditionalSwimsuit" />
         <marker scope="Public" name="travelPerk" />
