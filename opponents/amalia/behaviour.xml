@@ -3128,6 +3128,106 @@
             </case>
         </trigger>
 
+        <trigger id="futanari_crotch_will_be_visible">
+            <case stage="0-3">
+                <state img="#-cower.png">Ah!  Already?</state>
+                <state img="#-cower.png">Ooh!</state>
+            </case>
+            <case stage="4">
+                <state img="#-smug.png">Tout le plaisir est pour moi!</state>
+            </case>
+            <case stage="5">
+                <state img="#-smug.png">Bet you wish you had thought to bring brambles like mine, now?</state>
+            </case>
+            <case stage="6">
+                <state img="#-cower.png">O-o-oh!</state>
+            </case>
+            <case stage="7">
+                <state img="#-embarrassed.png">Is that a shushu in your pants, or are you just happy to see me?</state>
+            </case>
+            <case stage="8">
+                <state img="#-riding.png">Here comes the good part.</state>
+            </case>
+            <case stage="9">
+                <state img="#-annoyed.png">Well, hurry it up!</state>
+                <state img="#-embarrassed.png">Something tells me ~name~ is going to lose their ~clothing~ this time.  Heh.</state>
+                <state img="#-embarrassed.png">Right, the ~clothing~!</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_small_crotch_is_visible">
+            <case stage="0-3 7">
+                <state img="#-srsly.png">Rats.</state>
+                <state img="#-srsly.png">Well that was an anticlimax.</state>
+            </case>
+            <case stage="4">
+                <state img="#-srsly.png">Tant pis...</state>
+            </case>
+            <case stage="5">
+                <state img="#-smug.png">Heh.</state>
+            </case>
+            <case stage="6">
+                <state img="#-srsly.png">Aw.</state>
+            </case>
+            <case stage="8">
+                <state img="#-dildo.png">Envious?</state>
+            </case>
+            <case stage="9">
+                <state img="#-embarrassed.png">Moskito!</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_medium_crotch_is_visible">
+            <case stage="0-3">
+                <state img="#-haughty.png">Of course I'm not staring!</state>
+                <state img="#-haughty.png">A &lt;i&gt;princess&lt;/i&gt; doesn't stare!</state>
+            </case>
+            <case stage="4">
+                <state img="#-embarrassed.png">Oh!  What?  Guess it's not my turn yet.</state>
+            </case>
+            <case stage="5">
+                <state img="#-embarrassed.png">Not bad.  What?  I wasn't looking.  I was &lt;i&gt;speculating&lt;/i&gt;.</state>
+            </case>
+            <case stage="6">
+                <state img="#-embarrassed.png">Ah - Good!  Moving on!</state>
+            </case>
+            <case stage="7">
+                <state img="#-shocked.png">O-o-oh.  I mean, um, not looking!</state>
+            </case>
+            <case stage="8">
+                <state img="#-dildo.png">Can't match &lt;i&gt;this!&lt;/i&gt;</state>
+            </case>
+            <case stage="9">
+                <state img="#-hmmf.png">I expected better!</state>
+                <state img="#-hmmf.png">Mediocre!</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_large_crotch_is_visible">
+            <case stage="0-3">
+                <state img="#-shocked.png">...!</state>
+                <state img="#-shocked.png">&lt;i&gt;What.&lt;/i&gt;</state>
+            </case>
+            <case stage="4">
+                <state img="#-blam.png">Voulez-vous coucher avec moi?  Ce soir?</state>
+            </case>
+            <case stage="5">
+                <state img="#-cower.png">Maybe losing wouldn't be so bad...</state>
+            </case>
+            <case stage="6">
+                <state img="#-cower.png">...</state>
+            </case>
+            <case stage="7">
+                <state img="#-success.png">Winning right here!</state>
+            </case>
+            <case stage="8">
+                <state img="#-leglock.png">mmmmmm...</state>
+            </case>
+            <case stage="9">
+                <state img="#-embarrassed.png">Treechnid!</state>
+            </case>
+        </trigger>
+
         <trigger id="male_must_masturbate">
             <case stage="0-3">
                 <state img="#-smug.png">Fais de beaux rêves!</state>
@@ -3673,6 +3773,128 @@
             </case>
             <case stage="9">
                 <state img="#-embarrassed.png">Oui!</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_must_masturbate">
+            <case stage="0-3">
+                <state img="#-smug.png">Fais de beaux rêves!</state>
+                <state img="#-blam.png">Time for some &lt;i&gt;wild&lt;/i&gt; growth.</state>
+            </case>
+            <case stage="4">
+                <state img="#-loss.png">Looks like you lose!</state>
+                <state img="#-loss.png">Looks like it's the compost heap for your chances!</state>
+            </case>
+            <case stage="5">
+                <state img="#-smug.png">Oops!  You lost!</state>
+            </case>
+            <case stage="6">
+                <state img="#-cheerful.png">Go on, then, ~name~.</state>
+            </case>
+            <case stage="7">
+                <state img="#-embarrassed.png">Well, that was close.  ~Name~ almost beat me.</state>
+            </case>
+            <case stage="8">
+                <state img="#-riding.png">Glad you could join me, ~name~.</state>
+            </case>
+            <case stage="9">
+                <state img="#-hmmf.png">You lose!</state>
+                <state img="#-hmmf.png">~Name~ loses!  No surprise, really.</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_start_masturbating">
+            <case stage="0-3">
+                <state img="#-tongue.png">Get started. Remember you lost!</state>
+                <state img="#-smug.png">Your loss was inevitable, against me.</state>
+                <state img="#-tongue.png">Ha haaa!</state>
+                <state img="#-tongue.png">... and remember who beat you!</state>
+            </case>
+            <case stage="4">
+                <state img="#-tongue.png">Hahaaaa!</state>
+                <state img="#-tongue.png">N'yahaaa!</state>
+            </case>
+            <case stage="5">
+                <state img="#-tongue.png">Hahaa!</state>
+            </case>
+            <case stage="6">
+                <state img="#-tongue.png">And don't forget you lost!</state>
+            </case>
+            <case stage="7">
+                <state img="#-tongue.png">BUT YOU FAILED.</state>
+            </case>
+            <case stage="8">
+                <state img="#-leglock.png">Tu veux un coup de main?</state>
+            </case>
+            <case stage="9">
+                <state img="#-hmmf.png">Make a good show of it!</state>
+                <state img="#-hmmf.png">Now don't mess up my pile over there.</state>
+                <state img="#-hmmf.png">And you deserve it.</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_masturbating">
+            <case stage="7">
+                <condition role="self" timeInStage="0-0" notSaidMarker="grow3" />
+                <state img="#-flustered.png">(~Name~ won't look away...)</state>
+                <state img="#-flustered.png">...</state>
+            </case>
+            <case stage="0-3">
+                <state img="#-embarrassed.png">Not watching!  Nope!</state>
+                <state img="#-embarrassed.png">Well that's a ... thing.</state>
+                <state img="#-embarrassed.png">Of course I'm not watching.</state>
+                <state img="#-embarrassed.png">&lt;i&gt;Eh-heh&lt;/i&gt;</state>
+            </case>
+            <case stage="4">
+                <state img="#-haughty.png">How embarrassing!  For ~name~, of course.</state>
+                <state img="#-cheerful.png">Too bad you lost, ~name~!</state>
+                <state img="#-cheerful.png">Heh heh!</state>
+                <state img="#-embarrassed.png">Well, that is certainly some public indecency.</state>
+            </case>
+            <case stage="4-7 9">
+                <state img="#-cheerful.png">
+                    <alt-img stage="5-7 9">#-embarrassed.png</alt-img>
+                    <text>...</text>
+                </state>
+            </case>
+            <case stage="5">
+                <state img="#-intense.png">Mmm-hmm.</state>
+            </case>
+            <case stage="5-7 9">
+                <state img="#-intense.png">*nods*</state>
+                <state img="#-embarrassed.png">Eep!</state>
+            </case>
+            <case stage="6">
+                <state img="#-intense.png">Mmmm.</state>
+            </case>
+            <case stage="8">
+                <state img="#-bound.png">Punish me... more...</state>
+                <state img="#-pounded.png">Let's... create... some Wakfu!</state>
+                <state img="#-spank.png">How &lt;i&gt;nnf&lt;/i&gt; undignified!</state>
+            </case>
+        </trigger>
+
+        <trigger id="futanari_finished_masturbating">
+            <case stage="0-3">
+                <state img="#-haughty.png">I used a potion to become a man once. Growing a penis as a girl would be interesting...</state>
+            </case>
+            <case stage="4">
+                <state img="#-intense.png">Bet you'd be good at ... watering flowers.</state>
+            </case>
+            <case stage="5">
+                <state img="#-haughty.png">That's quite the display.  THAT I DID NOT WATCH.</state>
+            </case>
+            <case stage="6">
+                <state img="#-blam.png">Bloop!</state>
+            </case>
+            <case stage="7">
+                <state img="#-shocked.png">!</state>
+            </case>
+            <case stage="8-9">
+                <state img="#-dildo.png">
+                    <alt-img stage="9">#-embarrassed.png</alt-img>
+                    <text>The kama shot!</text>
+                </state>
             </case>
         </trigger>
 
