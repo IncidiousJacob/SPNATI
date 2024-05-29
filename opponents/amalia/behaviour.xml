@@ -641,12 +641,6 @@
                 <state img="#-tongue.png" marker="neener">Did you expect me to lose that easily, Iop-brain?</state>
                 <state img="#-tongue.png" marker="neener">Cheating?  Yeah, you gobbal-sniffers can kiss my butt!</state>
             </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="400">
                 <condition role="self" notSaidMarker="zonetan1" />
                 <condition role="other" character="zone-tan" />
@@ -885,16 +879,6 @@
                 <condition role="self" timeInStage="0-0" saidMarker="grow2" notSaidMarker="neener" />
                 <state img="#-tongue.png" marker="neener">What do you mean cheating?  Iop-brain!</state>
                 <state img="#-tongue.png" marker="neener">Cheating?  Yeah, you gobbal-sniffers can kiss my butt!</state>
-            </case>
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
             </case>
             <case stage="0-7" priority="700">
                 <condition role="target" character="aimee" stage="0" />
@@ -1402,16 +1386,6 @@
         </trigger>
 
         <trigger id="male_removing_accessory">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="899">
                 <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
                 <condition role="other" character="zone-tan" />
@@ -1473,16 +1447,6 @@
         </trigger>
 
         <trigger id="male_removed_accessory">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="900">
                 <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
                 <condition role="other" character="zone-tan" />
@@ -1552,16 +1516,6 @@
         </trigger>
 
         <trigger id="female_removing_accessory">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
@@ -1764,16 +1718,6 @@
         </trigger>
 
         <trigger id="female_removed_accessory">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
@@ -1978,16 +1922,6 @@
         </trigger>
 
         <trigger id="male_removing_minor">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="900">
                 <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
                 <condition role="other" character="zone-tan" />
@@ -2036,16 +1970,6 @@
         </trigger>
 
         <trigger id="male_removed_minor">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="900">
                 <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
                 <condition role="other" character="zone-tan" />
@@ -2101,16 +2025,6 @@
         </trigger>
 
         <trigger id="female_removing_minor">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
@@ -2197,16 +2111,6 @@
         </trigger>
 
         <trigger id="female_removed_minor">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
@@ -2317,16 +2221,6 @@
         </trigger>
 
         <trigger id="male_removing_major">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="900">
                 <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
                 <condition role="other" character="zone-tan" />
@@ -2379,16 +2273,6 @@
         </trigger>
 
         <trigger id="male_removed_major">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="900">
                 <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
                 <condition role="other" character="zone-tan" />
@@ -2458,16 +2342,6 @@
         </trigger>
 
         <trigger id="female_removing_major">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan1" notSaidMarker="zonetan2" />
@@ -2578,16 +2452,6 @@
         </trigger>
 
         <trigger id="female_removed_major">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <alternative priority="900">
                     <condition role="self" saidMarker="zonetan2" notSaidMarker="zonetan3" />
@@ -2716,16 +2580,6 @@
         </trigger>
 
         <trigger id="male_chest_will_be_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <state img="#-embarrassed.png">Is it time for this already?</state>
                 <state img="#-embarrassed.png">Oh, you're already losing this badly?  Pfft.</state>
@@ -2755,16 +2609,6 @@
         </trigger>
 
         <trigger id="male_chest_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7 9">
                 <condition role="target" character="9s" />
                 <state img="#-intense.png">I think your Xelor skipped on parts.</state>
@@ -2798,16 +2642,6 @@
         </trigger>
 
         <trigger id="male_crotch_will_be_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <state img="#-cower.png">Ah!  Already?</state>
                 <state img="#-cower.png">Ooh!</state>
@@ -2835,16 +2669,6 @@
         </trigger>
 
         <trigger id="male_small_crotch_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3 7">
                 <state img="#-srsly.png">Rats.</state>
                 <state img="#-srsly.png">Well that was an anticlimax.</state>
@@ -2867,16 +2691,6 @@
         </trigger>
 
         <trigger id="male_medium_crotch_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <state img="#-haughty.png">Of course I'm not staring!</state>
                 <state img="#-haughty.png">A &lt;i&gt;princess&lt;/i&gt; doesn't stare!</state>
@@ -2903,16 +2717,6 @@
         </trigger>
 
         <trigger id="male_large_crotch_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <state img="#-shocked.png">...!</state>
                 <state img="#-shocked.png">&lt;i&gt;What.&lt;/i&gt;</state>
@@ -2938,16 +2742,6 @@
         </trigger>
 
         <trigger id="female_chest_will_be_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <condition role="target" character="beatrix" stage="1" />
                 <state img="#-cheerful.png">So Beatrix, I once knew this guy who also had a giant science-gadget he'd built himself for an arm... he, er, well, he tried to blow up the world.</state>
@@ -3025,16 +2819,6 @@
         </trigger>
 
         <trigger id="female_small_chest_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <condition role="target" character="beatrix" />
                 <state img="#-srsly.png">So, um, just out of curiosity, you wouldn't be obsessed with collecting egg-shaped power sources, would you?</state>
@@ -3073,16 +2857,6 @@
         </trigger>
 
         <trigger id="female_medium_chest_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7 9">
                 <condition role="target" character="joey" stage="5" />
                 <state img="#-embarrassed.png">Oops?</state>
@@ -3118,16 +2892,6 @@
         </trigger>
 
         <trigger id="female_large_chest_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <condition role="target" character="rainbow_mika" stage="2" />
                 <state img="#-embarrassed.png">...  Nice derrière.</state>
@@ -3170,16 +2934,6 @@
         </trigger>
 
         <trigger id="female_crotch_will_be_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <condition role="target" character="raven" stage="3" />
                 <state img="#-smug.png">Raven's in trouble now!</state>
@@ -3271,16 +3025,6 @@
         </trigger>
 
         <trigger id="female_crotch_is_visible">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-4">
                 <condition role="target" character="raven" stage="4" />
                 <state img="#-embarrassed.png">Well, that makes my victory even easier.</state>
@@ -3385,16 +3129,6 @@
         </trigger>
 
         <trigger id="male_must_masturbate">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-3">
                 <state img="#-smug.png">Fais de beaux rêves!</state>
                 <state img="#-blam.png">Time for some &lt;i&gt;wild&lt;/i&gt; growth.</state>
@@ -3422,16 +3156,6 @@
         </trigger>
 
         <trigger id="male_start_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7 9">
                 <condition role="target" character="kira" />
                 <state img="#-cower.png">Wait, what?  A pink ghost?  What sort of shushu magic is &lt;i&gt;this,&lt;/i&gt; now?!</state>
@@ -3466,16 +3190,6 @@
         </trigger>
 
         <trigger id="male_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7">
                 <condition role="target" character="kira" />
                 <state img="#-smug.png">Some pink ghost isn't going to save you from this embarrassment, villain.</state>
@@ -3531,16 +3245,6 @@
         </trigger>
 
         <trigger id="male_finished_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7 9">
                 <condition role="target" character="jin" />
                 <state img="#-cower.png">It glows!</state>
@@ -3579,16 +3283,6 @@
         </trigger>
 
         <trigger id="female_must_masturbate">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-7" priority="305">
                 <condition role="target" character="nayru" saidMarker="v_forfeit" notSaidMarker="null_possess" />
                 <state img="#-smug.png">So much for that demonic advantage.</state>
@@ -3653,16 +3347,6 @@
         </trigger>
 
         <trigger id="female_start_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="9" priority="305">
                 <condition role="target" character="nayru" saidMarker="v_forfeit" notSaidMarker="null_possess" />
                 <state img="#-hmmf.png">Saw that coming!  Demons never win.</state>
@@ -3770,10 +3454,6 @@
         </trigger>
 
         <trigger id="female_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
             <case stage="4">
                 <condition role="target" character="nayru" saidMarker="v_forfeit" notSaidMarker="null_possess" />
                 <state img="#-embarrassed.png">...</state>
@@ -3912,16 +3592,6 @@
         </trigger>
 
         <trigger id="female_finished_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="0-9">
                 <condition role="target" character="nagisa" saidMarker="nagisa_play" />
                 <state img="#-embarrassed.png">
@@ -4075,16 +3745,6 @@
         </trigger>
 
         <trigger id="after_masturbating">
-            <case stage="9" priority="989">
-                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
-                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
-            </case>
-            <case stage="9" priority="988">
-                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
-                <condition role="other" character="mahiru" />
-                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
-                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
-            </case>
             <case stage="9">
                 <condition role="self" timeInStage="10" />
                 <state img="#-facepalm.png" oneShotId="41">Wrap it up already!</state>
@@ -4121,6 +3781,19 @@
                 <state img="#-annoyed.png">Harrumph!  Harrumph, I say.</state>
                 <state img="#-embarrassed.png">Good job, ~name~.  But I'll win next time for sure!</state>
                 <state img="#-annoyed.png">&lt;i&gt;unintelligible grumbling&lt;/i&gt;</state>
+            </case>
+        </trigger>
+
+        <trigger id="global">
+            <case stage="9" priority="989">
+                <condition role="self" saidMarker="stunned" notSaidMarker="freak" />
+                <state img="#-cower.png" marker="freak">So... Wh-what happens in the Inventory, stays in the Inventory, right guys?</state>
+            </case>
+            <case stage="9" priority="988">
+                <condition role="self" saidMarker="freak" notSaidMarker="mahiru_finish_pic" />
+                <condition role="other" character="mahiru" />
+                <state img="#-angry.png" marker="mahiru_finish_pic">-- YOU WERE TAKING PICTURES?</state>
+                <state img="#-angry.png" marker="mahiru_finish_pic">Mahiru!  Hey -- what were you doing with that camera?</state>
             </case>
         </trigger>
 
