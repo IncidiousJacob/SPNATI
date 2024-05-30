@@ -388,7 +388,7 @@
                 <condition role="opp" character="nonon" />
                 <condition role="opp" character="natsuki" />
                 <condition role="opp" character="nadeshiko" />
-                <condition filterOut="pink_hair" gender="male" role="opp" character="human" />
+                <condition filter="pink_hair" gender="male" role="opp" character="human" />
                 <test expr="~nonon.slot~" value="1" />
                 <test expr="~natsuki.slot~" value="3" />
                 <test expr="~nadeshiko.slot~" value="4" />
