@@ -18,9 +18,6 @@
         <case name="Arm Origins 3" id="23" priority="FYI" min="2" max="2">
             <description>If I explained the story behind my arms, in the next game I'm in, I may point out that I already explained it to the player, or give a completely different story.</description>
         </case>
-        <case name="Un-Evil" id="24" priority="Noteworthy" min="7" max="7">
-            <description>When I lose, I suddenly and inexplicably becomes un-evil, effectively becoming just a normal girl. Don't ask me how or why.</description>
-        </case>
         <case name="Cheater" id="36" priority="Noteworthy" min="5" max="5">
             <description>When I have to reveal my chest, I may also reveal that I've been cheating the whole time, and won't stop cheating either.</description>
         </case>
@@ -86,6 +83,8 @@
         <response id="175" opponent="nagisa" opponentId="54" />
         <response id="177" opponent="nagisa" opponentId="72" />
         <response id="178" opponent="nagisa" opponentId="164" />
+        <response id="192" opponent="rose" opponentId="366" />
+        <response id="193" opponent="rose" opponentId="26" />
     </responses>
     <notes>
         <note id="61">Is it too mean to change "Mommy/Daddy" to "Loser?" Perhaps. Is it in character? Definitely.</note>
@@ -105,7 +104,7 @@
         <label id="10" label="Intro" folder="Noteworthy Things" sort="2" />
         <label id="11" label="No Non-Con" folder="Noteworthy Things" sort="2" />
         <label id="12" label="" folder="Noteworthy Things" sort="3" />
-        <label id="13" label="" folder="Noteworthy Things" sort="7" />
+        <label id="13" label="Misc. Things" color="4" folder="Noteworthy Things" sort="7" />
         <label id="14" label="Don't You Hate Conformity?" folder="Prompts" sort="2" />
         <label id="15" label="Multilingual" folder="Noteworthy Things" sort="9" />
         <label id="16" label="Arms" folder="Noteworthy Things" sort="8" />
@@ -230,8 +229,19 @@
         <label id="177" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="63" />
         <label id="178" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="64" />
         <label id="179" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="65" />
+        <label id="180" label="" folder="Duplicate Cases" sort="0" />
+        <label id="181" label="" folder="Duplicate Cases" sort="0" />
+        <label id="182" label="" folder="Duplicate Cases" sort="0" />
+        <label id="183" label="" folder="Duplicate Cases" sort="0" />
+        <label id="185" label="" folder="Duplicate Cases" sort="0" />
+        <label id="186" label="" folder="Duplicate Cases" sort="0" />
+        <label id="189" label="" color="1" folder="" sort="0" />
+        <label id="190" label="" color="1" folder="" sort="0" />
+        <label id="35" label="" color="1" folder="" sort="0" />
+        <label id="38" label="" color="1" folder="" sort="0" />
+        <label id="196" label="No Non-Con" folder="Noteworthy Things" sort="0" />
     </labels>
-    <nextId>179</nextId>
+    <nextId>196</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="Adrien_Costume1" />
@@ -295,6 +305,7 @@
         <marker scope="Public" name="FourPeopleOverpowering" />
         <marker scope="Public" name="FriskForCards" />
         <marker scope="Public" name="GameStart" />
+        <marker scope="Public" name="GonnaUngrilYourCheese" />
         <marker scope="Public" name="GoodInvalidation" />
         <marker scope="Public" name="GrapplingIsThePinnacle" />
         <marker scope="Public" name="GrizLegs" />
@@ -355,6 +366,7 @@
         <marker scope="Public" name="MoreArms" />
         <marker scope="Public" name="MorningCoffee" />
         <marker scope="Public" name="Multilingual" />
+        <marker scope="Public" name="MustMasturbate_First" />
         <marker scope="Public" name="Nadeshiko_Inventory1" />
         <marker scope="Public" name="Nadeshiko_Locations1" />
         <marker scope="Public" name="Nadeshiko_Partner1" />
@@ -388,6 +400,9 @@
         <marker scope="Public" name="PastBully" />
         <marker scope="Public" name="PityMode" />
         <marker scope="Public" name="PityModeEnd" />
+        <marker scope="Public" name="Player_EmptyHead" />
+        <marker scope="Public" name="Player_HopingToGain" />
+        <marker scope="Public" name="Player_Laws" />
         <marker scope="Public" name="PlayerNoPityWin" />
         <marker scope="Public" name="PlayTheClassics" />
         <marker scope="Public" name="Prompt_ArmStory" />
@@ -408,6 +423,9 @@
         <marker scope="Public" name="Revy_Smoking1" />
         <marker scope="Public" name="Revy_Threat1" />
         <marker scope="Public" name="RootOfAllEvil" />
+        <marker scope="Public" name="Rose_Anima1" />
+        <marker scope="Public" name="Rose_Arms1" />
+        <marker scope="Public" name="Rose_Upcycler1" />
         <marker scope="Public" name="Rouge_Hobbies1" />
         <marker scope="Public" name="Rouge_Invitation1" />
         <marker scope="Public" name="Rouge_Jewels1" />
