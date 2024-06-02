@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!--This file was machine generated using the Character Editor v6.9.1.1 at 12:20:30 AM on June 02, 2024, but the writer of this character is an XML-editing quasit and not to be trusted.-->
+<!--This file was machine generated using the Character Editor v6.9.1.1 at 3:01:00 PM on June 02, 2024. Edit this file directly for fun, laughs, and runtime errors!-->
 <opponent>
     <version>v6.9.1.1</version>
     <first>Kyoko</first>
@@ -1784,10 +1784,10 @@
             </case>
             <case stage="0" id="1961" hidden="1">
                 <alternative>
-                    <test expr="~human.wearing(bra)~" cmp="!=" />
+                    <test expr="~human.wearing(bra)~" cmp="!=" value="~blank~" />
                 </alternative>
                 <alternative>
-                    <test expr="~human.wearing(Bra)~" cmp="!=" />
+                    <test expr="~human.wearing(Bra)~" cmp="!=" value="~blank~" />
                 </alternative>
                 <state marker="humanBra">Check whether female player is wearing bra or not, and say marker humanBra if wearing bra </state>
             </case>
@@ -4227,7 +4227,7 @@
                 <state img="custom:#-think" marker="embarrassedYanks" weight="5">I spent a lot of time in America, but I still don’t understand how you came to be so uncomfortable with your bodies…</state>
             </case>
             <case stage="0-5" id="902" oneShotId="1147" totalRounds="2-" priority="0">
-                <condition count="2-" filter="bunnysuit" role="opp" />
+                <condition count="2-5" filter="bunnysuit" role="opp" />
                 <condition filter="easter_skin" role="opp" />
                 <condition role="self" saidMarker="costume!=hatter" />
                 <alternative>
@@ -9227,7 +9227,7 @@
             </case>
             <case stage="0-8" id="2593" priority="0">
                 <test expr="~clothing.position~" value="upper" />
-                <test expr="~revealed~" cmp="!=" />
+                <test expr="~revealed~" cmp="!=" value="~blank~" />
                 <state img="custom:smug">So, you’re making me work for your ~marker.V_revealed~? That’s not a problem. I can beat you again.</state>
             </case>
             <case stage="0-8 10" id="1904" oneShotId="135" priority="0">
@@ -13745,6 +13745,10 @@
                 </alternative>
                 <state img="custom:#-think" weight="5">Oh, really? I almost thought you’d save ~clothing.ifPlural(those|that)~ for last.</state>
             </case>
+            <case stage="10" id="2820">
+                <state img="custom:#-shy2">To think I’ve already lost, and you still had ~clothing.ifPlural(those|that)~‪…</state>
+                <state img="custom:#-shy2">‪…I suppose I can only blame myself that you still had ~clothing.ifPlural(those|that)~.</state>
+            </case>
             <case stage="0-10" id="1990" hidden="1">
                 <condition role="self" saidMarker="kyuSchoolPrompt&lt;0" />
                 <state marker="kyuSchoolPrompt=0">(Set kyuSchoolPrompt to 0)</state>
@@ -16647,10 +16651,6 @@
                     </markers>
                 </state>
             </case>
-            <case stage="0-10" id="1429">
-                <condition role="target" character="bobobo" stage="5" />
-                <state img="custom:#-shy2" marker="bobobo_layerLimit">If you pass the layer limit, I’m going to be upset.&lt;br&gt;It’s eight, by the way.</state>
-            </case>
             <case stage="0-10" id="1848" priority="380">
                 <condition role="target" character="magical_sempai" stage="1" />
                 <test expr="~magical_sempai.costume~" value="default" />
@@ -17275,21 +17275,6 @@
                     </markers>
                 </state>
             </case>
-            <case stage="0-8 10" id="112" oneShotId="149">
-                <test expr="~clothing.type~" value="extra" />
-                <state img="custom:calm" weight="4">Be careful where you put ~clothing.ifPlural(those|that)~. You wouldn’t want to be without your ~marker.V_clothing~ after the game.</state>
-                <state img="custom:calm" weight="5">Careful where you leave ~clothing.ifPlural(those|that)~. I doubt you’ll want to be without ~clothing.ifPlural(them|it)~ after the game.</state>
-            </case>
-            <case stage="9" id="145">
-                <test expr="~clothing.type~" value="extra" />
-                <state img="custom:#-shy2">&lt;i&gt;(It wasn’t even close…)&lt;/i&gt;</state>
-                <state img="custom:#-shy2">&lt;i&gt;(I really lost by that much…)&lt;/i&gt;</state>
-            </case>
-            <case stage="10" id="147">
-                <test expr="~clothing.type~" value="extra" />
-                <state img="custom:calm">It wasn’t even close, was it?</state>
-                <state img="custom:#-shy2">~Name~ really beat me by that much…</state>
-            </case>
             <case stage="0-4" id="422" oneShotId="282" priority="50">
                 <test expr="~clothing.generic~" value="pants" />
                 <test expr="~clothing.type~" value="major" />
@@ -17339,6 +17324,21 @@
                 </alternative>
                 <state img="custom:aside">Let’s move along, shall we? I doubt everyone here has all ~background.time~.</state>
             </case>
+            <case stage="0-8 10" id="112" oneShotId="149" priority="0">
+                <test expr="~clothing.type~" value="extra" />
+                <state img="custom:calm" weight="4">Be careful where you put ~clothing.ifPlural(those|that)~. You wouldn’t want to be without your ~marker.V_clothing~ after the game.</state>
+                <state img="custom:calm" weight="5">Careful where you leave ~clothing.ifPlural(those|that)~. I doubt you’ll want to be without ~clothing.ifPlural(them|it)~ after the game.</state>
+            </case>
+            <case stage="9" id="145" priority="0">
+                <test expr="~clothing.type~" value="extra" />
+                <state img="custom:#-shy2">&lt;i&gt;(It wasn’t even close…)&lt;/i&gt;</state>
+                <state img="custom:#-shy2">&lt;i&gt;(I really lost by that much…)&lt;/i&gt;</state>
+            </case>
+            <case stage="10" id="147" priority="0">
+                <test expr="~clothing.type~" value="extra" />
+                <state img="custom:calm">It wasn’t even close, was it?</state>
+                <state img="custom:#-shy2">~Name~ really beat me by that much…</state>
+            </case>
             <case stage="0-8" id="2594" priority="0">
                 <test expr="~clothing.type~" value="minor" />
                 <state img="custom:calm" marker="+quips">The sight of ~clothing.ifPlural(them|it)~ on the ~background.surface~ is a good visual indication of your performance…</state>
@@ -17355,14 +17355,14 @@
             </case>
             <case stage="0-8" id="2596" priority="0">
                 <test expr="~clothing.type~" value="minor" />
-                <test expr="~revealed~" cmp="!=" />
+                <test expr="~revealed~" cmp="!=" value="~blank~" />
                 <state img="custom:#-calmer2">Hope you’re okay with the idea of losing your ~marker.V_revealed~, ~name~. Otherwise, I’d start playing better.</state>
                 <state img="custom:#-think" oneShotId="1668">~Clothing.ifPlural(they’re not a|it’s not a)~ bad ~marker.V_revealed~.</state>
             </case>
             <case stage="0-8" id="2597" priority="0">
                 <test expr="~clothing.type~" value="minor" />
                 <test expr="~clothing.position~" value="lower" />
-                <test expr="~revealed~" cmp="!=" />
+                <test expr="~revealed~" cmp="!=" value="~blank~" />
                 <state img="custom:#-think">Thought there might’ve been something like ~revealed.ifPlural(those|that)~ under your ~marker.V_clothing~.</state>
             </case>
             <case stage="0-8" id="2598" priority="0">
@@ -17503,6 +17503,17 @@
                 <test expr="~clothing.type~" cmp="!=" value="major" />
                 <test expr="~clothing.type~" cmp="!=" value="important" />
                 <state img="custom:aside" weight="3">Some would consider it poor form to just take off your ~marker.V_clothing~ in front of a woman with her breasts out. But what do I know? </state>
+            </case>
+            <case stage="10" id="2818" priority="0">
+                <test expr="~clothing.type~" value="minor" />
+                <state img="custom:aside">Whenever you’re ready to start the next round.</state>
+                <state img="custom:aside">…</state>
+            </case>
+            <case stage="10" id="2819" oneShotId="1457" priority="0">
+                <test expr="~clothing.type~" value="minor" />
+                <test expr="~self.costume~" cmp="!=" value="kyoko_kirigiri_distrust" />
+                <test expr="~self.costume~" cmp="!=" value="kyoko_kirigiri_pjs" />
+                <state img="custom:aside">However long it takes you to finish this game. I’ve got time to stand here naked.</state>
             </case>
             <case stage="0-10" id="2293" hidden="1" priority="120">
                 <condition role="target" character="human" />
