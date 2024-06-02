@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!--This file was machine generated using the Character Editor v6.9.1.1 at 1:11:30 PM on May 30, 2024. The writer behind this character edits XML files directly and is not to be trusted.-->
+<!--This file was machine generated using the Character Editor v6.9.1.1 at 12:20:30 AM on June 02, 2024, but the writer of this character is an XML-editing quasit and not to be trusted.-->
 <opponent>
     <version>v6.9.1.1</version>
     <first>Kyoko</first>
@@ -2496,6 +2496,10 @@
                     </operations>
                 </state>
             </case>
+            <case stage="0" id="2815" hidden="1">
+                <condition role="opp" character="kokichi" sayingMarker="t_kyoko1" />
+                <state marker="detectiveReveal">Kokichi outs Kyoko's profession</state>
+            </case>
         </trigger>
 
         <trigger id="swap_cards">
@@ -3513,6 +3517,12 @@
                 <test expr="~natasha.position~" value="left" />
                 <state img="custom:aside" marker="natasha_sandwich">You’re only saying that because you want a reaction.</state>
             </case>
+            <case stage="8" id="2810" priority="151">
+                <condition role="opp" character="aoi_asahina" sayingMarker="T_KyokoSuggesting" />
+                <condition role="self" timeInStage="0" saidMarker="hina_r73==c" />
+                <test expr="~aoi_asahina.position~" value="left" />
+                <state img="custom:hair" marker="hina_r74">…Might both lose?</state>
+            </case>
             <case stage="0-8 10" id="897" priority="150">
                 <condition role="opp" character="scm" sayingMarker="scm_kyokokirigiri" />
                 <condition role="self" notSaidMarker="scm_deduction" />
@@ -4241,7 +4251,7 @@
                 <condition status="alive" role="opp" character="mikan" />
                 <condition count="2" status="alive" />
                 <test expr="~self.marker.timeline~" cmp="!=" value="school" />
-                <state img="custom:#-think" marker="mikan_overflow" weight="0.7">By the way, ~mikan~… During your time in the Program, your body ended up going so far into space your position overflowed and you ended up clipping into some surfaces underground. We didn’t expect we’d actually need to make Earth a sphere…</state>
+                <state img="custom:#-think" marker="mikan_overflow" font-size="smaller" weight="0.7">By the way, ~mikan~… During your time in the Program, your body ended up going so far into space your position overflowed and you ended up clipping into some surfaces underground. We didn’t expect we’d actually need to make Earth a sphere…</state>
             </case>
             <case stage="0-10" id="1555" oneShotId="1313" priority="0">
                 <condition filterOut="gay" gender="male" status="not_naked" role="opp" var="male" hasHand="High Card" />
@@ -4949,7 +4959,7 @@
                 <state img="custom:calm" marker="toshinou_r61L">I’m quite certain I made myself clear already.</state>
             </case>
             <case stage="3" id="2796" priority="152">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" saying="you could order an extra coffee" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" saying="you could order an extra coffee" />
                 <test expr="~meia.position~" value="left" />
                 <state img="custom:calm" marker="meia_r31c=b">That’s not a problem. How do you take it?</state>
             </case>
@@ -5194,7 +5204,7 @@
                 </state>
             </case>
             <case stage="3" id="2795">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="left" />
                 <state img="custom:calm" marker="meia_r31c=a">Correct… If you’re asking me to buy you one, that’s not a problem. How do you like yours?</state>
             </case>
@@ -5951,12 +5961,12 @@
                 <state marker="meia_r31a">Say meia_r31a so she responds</state>
             </case>
             <case stage="3" id="2803" hidden="1" priority="0">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="right" />
                 <state marker="meia_r31c=a">Say meia_r31c=a, prep for variant CA</state>
             </case>
             <case stage="3" id="2804" hidden="1" priority="-1">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" saying="you could order an extra coffee" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" saying="you could order an extra coffee" />
                 <test expr="~meia.position~" value="right" />
                 <state marker="meia_r31c=b">Say meia_r31c=b, prep for variant CB</state>
             </case>
@@ -6546,7 +6556,7 @@
                 <state img="custom:#-strip_c" marker="toshinou_r72L">Certainly. Your conclusion is correct… Allow me to show you to the evidence.</state>
             </case>
             <case stage="3" id="2809" priority="152">
-                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3alt" />
                 <condition role="self" saidMarker="meia_r31c==b" />
                 <test expr="~meia.position~" value="right" />
                 <state img="custom:#-strip_c">That’s not a problem. How do you take it?</state>
@@ -6860,7 +6870,7 @@
                 <state img="custom:#-strip_c" marker="detectiveReveal">Maybe… Flying a space fighter would hardly be the strangest talent someone at Hope’s Peak might be recognized for.</state>
             </case>
             <case stage="3" id="2808">
-                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="right" />
                 <state img="custom:#-strip_c" marker="meia_r31c=a">Correct… If you’re asking me to buy you one, that’s not a problem. How do you like yours?</state>
             </case>
@@ -8313,7 +8323,7 @@
             </case>
             <case stage="8" id="2467" priority="151">
                 <condition role="opp" character="aoi_asahina" stage="7" sayingMarker="TO_Kyoko_7-3Naked" />
-                <condition count="3-" status="alive" />
+                <condition count="3-5" status="alive" />
                 <test expr="~aoi_asahina.position~" value="left" />
                 <state img="custom:#-stripped_a" marker="hina_r73=c" weight="2">We’re about to be partners in something else if we’re not careful…</state>
             </case>
@@ -9200,7 +9210,7 @@
             <case stage="0-8 10" id="814" priority="502">
                 <condition role="self" saidMarker="humanWearingCaseBriefs" />
                 <condition role="target" character="human" />
-                <test expr="~clothing.position~" value="lower" />
+                <test expr="~revealed.id~" value="kirigiri_underwear" />
                 <state img="custom:awe" marker="maleCaseBriefSurprise" weight="2">…I was expecting a few things. This was none of them.</state>
             </case>
             <case stage="0-8 10" id="1891">
@@ -9313,7 +9323,7 @@
             <case stage="8 10" id="807">
                 <condition filter="trimmed" role="self" saidMarker="humanWearingCaseBriefs" notSaidMarker="caseBriefsTrimComment" />
                 <condition filter="hairy" role="target" character="human" />
-                <test expr="~clothing.position~" value="lower" />
+                <test expr="~revealed.id~" value="kirigiri_underwear" />
                 <state img="custom:calm" marker="caseBriefsTrimComment" weight="3">
                     <alt-img stage="5-7 10">custom:smug</alt-img>
                     <text>…You understand why I trim now, right, ~player~?</text>
@@ -16650,7 +16660,7 @@
             </case>
             <case stage="9" id="2464" oneShotId="1397">
                 <condition role="target" character="aoi_asahina" stage="5-7" />
-                <state img="custom:#-shy" marker="hina_malePopularity">I’m really starting to see why you’re so popular with guys, Hina…</state>
+                <state img="custom:#-shy" marker="hina_malePopularity=1">I’m really starting to see why you’re so popular with guys, Hina…</state>
             </case>
             <case stage="0-10" id="2473">
                 <condition role="target" character="tae" stage="3" />
@@ -23286,6 +23296,15 @@
                     </operations>
                 </state>
             </case>
+            <case stage="9" id="2812" oneShotId="1455">
+                <condition role="self" saidMarker="hina_malePopularity==1" />
+                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_XPopular" />
+                <state img="custom:calmer" marker="hina_malePopularity=2">Don’t get me wrong, Hina, you’re liked for your personality too, did you really never notice? It’s fine to be attractive…</state>
+            </case>
+            <case stage="9" id="2816" oneShotId="1456">
+                <condition status="masturbating" role="opp" character="aoi_asahina" saidMarker="T_KyokoCoMast5" />
+                <state img="custom:#-mast_f" marker="hina_coMast5b">Hina, I’ve always had a clitoris. You’re welcome to take a closer look if you doubt me.</state>
+            </case>
             <case stage="9" id="599" oneShotId="371">
                 <condition role="opp" character="jim" pose="Butt" />
                 <state img="custom:smug" marker="raynor_buttForfeit">Not my usual type… But still a marvelous sight.</state>
@@ -23528,6 +23547,11 @@
                     <test expr="~self.timer~" cmp="&lt;=" value="12" />
                 </alternative>
                 <state marker="forfeitAct=3">Puts Kyoko in Act 3 of her forfeit</state>
+            </case>
+            <case stage="9" id="2813" hidden="1" priority="-1">
+                <condition role="self" saidMarker="hina_malePopularity==1" />
+                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_XPopular" />
+                <state marker="hina_malePopularity=b1">Gag this marker to stop the interaction if it doesn't play consecutively</state>
             </case>
         </trigger>
 
@@ -24196,6 +24220,11 @@
             <case stage="10" id="2458">
                 <condition status="finished" role="opp" character="chihiro" />
                 <state img="custom:#-calmer2" marker="chihiro_defeat">I’m glad you were able to enjoy yourself, ~chihiro~. I’m not telling anybody, but perhaps you’d like to spend more time together?</state>
+            </case>
+            <case stage="10" id="2814">
+                <condition status="finished" role="opp" character="aoi_asahina" />
+                <state img="custom:#-think" marker="hina_lossWhatDo">Hmm… So, should we just tell our friends we watched each other masturbate, or do we act like it just didn’t happen?</state>
+                <state img="custom:#-shier" marker="hina_lossDate">…I wouldn’t mind seeing you like this again, Hina. Would you like to set a time and place…?</state>
             </case>
             <case stage="10" id="2078">
                 <test expr="~background.water~" value="true" />
