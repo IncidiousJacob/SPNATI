@@ -9,11 +9,13 @@ February 29, 2024 - Following a discussion between Kyoko’s writer and one of h
 March 10, 2024 - Kyoko receives a sixth sponsorship.
 May 8, 2024 - Kyoko Kirigiri reaches 2,000 lines.
 May 23, 2024 - At 2,154 lines, Kyoko Kirigiri’s last update before Mod QA is submitted.
+June 6, 2024 - At 2,172 lines, Kyoko Kirigiri completes Mod QA with minimal changes needed and kyoko_kirigiri is added to the Main Roster as the 303rd release, 282 releases later than the original version of Kyoko.
 
 SPECIAL THANKS
 PurpleKuroi, for being a phenomenal artist, an absolute joy to work with, and honestly for making this whole project remotely possible
 MyMainAccIsANord and FarawayVision, for helping me as I fumbled my way around the character editor
 MyMainAccIsANord again, for helping me through the home stretch of writing before Testing Roster submission when I had way too many lines written and way too few generic cases covered
+All of the development moderators, for keeping this game running and saving me from my own mad conditions and spelling reorrs
 RubberCorgi, coolcat001100, and the rest of the SPNaTI Community Discord Server moderation team, for keeping my mischief in check
 Onboro, for fostering my mischief
 lil David, for labouring alongside me writing the complete OPPOSITE Kyouko
