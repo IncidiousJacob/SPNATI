@@ -340,6 +340,10 @@ var CANDY_LIST = [
     "moskii/0-excited.png",
     "moskii/3-hellomoskii.png",
     "moskii/3-smug.png",
+    "kyoko_kirigiri/0-rear2.png",               // Has Recent Updates
+    "kyoko_kirigiri/1-point.png",
+    "kyoko_kirigiri/2-stripped_a.png",
+    "kyoko_kirigiri/4-think.png",	
 ];
 
 /* Storage for old candy images in case the characters qualify again */
