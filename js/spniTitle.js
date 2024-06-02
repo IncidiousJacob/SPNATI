@@ -116,6 +116,18 @@ var CANDY_LIST = [
     "nagisa/1-calm.png",
     "nagisa/2-z_stripping.png",
     "nagisa/3-embarrassed.png",
+    "toph/0-mischievous.png",              // High Roster Position
+    "toph/3-aa-stripped+1.png",
+    "toph/3-smug.png",
+    "toph/4-stretch.png",
+    "moskii/0-selected.png",               // Highlighted New Character
+    "moskii/0-excited.png",
+    "moskii/3-hellomoskii.png",
+    "moskii/3-smug.png",
+    "kyoko_kirigiri/0-rear2.png",          // Highlighted New Character
+    "kyoko_kirigiri/1-point.png",
+    "kyoko_kirigiri/2-stripped_a.png",
+    "kyoko_kirigiri/4-think.png",
     "reimu/0-select.png",                  // Has Recent Updates
     "reimu/0-smug.png",
     "reimu/0-bluffing.png",
@@ -172,10 +184,6 @@ var CANDY_LIST = [
     "arueshalae/0-laughing.png",
     "arueshalae/4-singing happy.png",
     "arueshalae/4-horny.png",
-    "dust/0-calm.png",                     // Has Recent Updates
-    "dust/0-victory.png",
-    "dust/1-pensive.png",
-    "dust/2-laugh.png",
     "bobobo/0-pumped.png",                 // Has Recent Updates
     "bobobo/0-aside.png",
     "bobobo/0-boredphone.png",
@@ -192,14 +200,6 @@ var CANDY_LIST = [
     "mitama/1-writing.png",
     "mitama/2-mischievous.png",
     "mitama/4-shrug.png",
-    "tea_gardner/0-angry.png",             // Has Recent Updates
-    "tea_gardner/1-brave.png",
-    "tea_gardner/2-exhale.png",
-    "tea_gardner/3-happy.png",
-    "neptune/0-victory.png",               // Has Recent Updates
-    "neptune/0-excited.png",
-    "neptune/2-happy.png",
-    "neptune/2-smug.png",
     "critical_darling/0-portrait.png",     // Has Recent Updates
     "critical_darling/0-ice.png",
     "critical_darling/3-sing.png",
@@ -320,10 +320,6 @@ var CANDY_LIST = [
     "eichi/0-flirt_altc.png",
     "eichi/2-flirt.png",
     "eichi/3-tease.png",
-    "pyrrha/0-calm.png",                   // Has Recent Updates
-    "pyrrha/0-awkward.png",
-    "pyrrha/1-horny.png",
-    "pyrrha/2-encourage.png",
     "dark_magician_girl/0-calm.png",       // Has Recent Updates
     "dark_magician_girl/0-flirty.png",
     "dark_magician_girl/0-happy.png",
@@ -336,14 +332,10 @@ var CANDY_LIST = [
     "orendi/3-point.png",
     "orendi/4-cross.png",
     "orendi/4-happy.png",
-    "moskii/0-selected.png",               // Has Recent Updates
-    "moskii/0-excited.png",
-    "moskii/3-hellomoskii.png",
-    "moskii/3-smug.png",
-    "kyoko_kirigiri/0-rear2.png",               // Has Recent Updates
-    "kyoko_kirigiri/1-point.png",
-    "kyoko_kirigiri/2-stripped_a.png",
-    "kyoko_kirigiri/4-think.png",	
+    "wikipe-tan/0-donations.png",          // Has Recent Updates
+    "wikipe-tan/0-casual.png",
+    "wikipe-tan/2-flirt.png",
+    "wikipe-tan/3-hornyfact.png",
 ];
 
 /* Storage for old candy images in case the characters qualify again */
@@ -532,10 +524,6 @@ var CANDY_LIST = [
     "supernova/0-imagine.png",
     "supernova/4-giggle.png",
     "supernova/4-horny.png",
-    "wikipe-tan/0-donations.png",
-    "wikipe-tan/0-casual.png",
-    "wikipe-tan/2-flirt.png",
-    "wikipe-tan/3-hornyfact.png",
     "takatoshi/0-Select.png",
     "takatoshi/0-Yakisoba.png",
     "takatoshi/3-Embarrassed.png",
@@ -592,6 +580,22 @@ var CANDY_LIST = [
     "samus_aran/1-introspective.png",
     "samus_aran/1-curious.png",
     "samus_aran/1-relaxed.png",
+    "tea_gardner/0-angry.png",
+    "tea_gardner/1-brave.png",
+    "tea_gardner/2-exhale.png",
+    "tea_gardner/3-happy.png",
+    "neptune/0-victory.png",
+    "neptune/0-excited.png",
+    "neptune/2-happy.png",
+    "neptune/2-smug.png",
+    "pyrrha/0-calm.png",
+    "pyrrha/0-awkward.png",
+    "pyrrha/1-horny.png",
+    "pyrrha/2-encourage.png",
+    "dust/0-calm.png",
+    "dust/0-victory.png",
+    "dust/1-pensive.png",
+    "dust/2-laugh.png",
 */
 
 /* maybe move this data to an external file if the hardcoded stuff changes often enough */
