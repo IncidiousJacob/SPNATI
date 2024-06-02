@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!--This file was machine generated using the Character Editor v6.9.1.1 at 9:01:10 PM on June 01, 2024, but the writer of this character is an XML-editing quasit and not to be trusted.-->
+<!--This file was machine generated using the Character Editor v6.9.1.1 at 12:20:30 AM on June 02, 2024, but the writer of this character is an XML-editing quasit and not to be trusted.-->
 <opponent>
     <version>v6.9.1.1</version>
     <first>Kyoko</first>
@@ -4959,7 +4959,7 @@
                 <state img="custom:calm" marker="toshinou_r61L">I’m quite certain I made myself clear already.</state>
             </case>
             <case stage="3" id="2796" priority="152">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" saying="you could order an extra coffee" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" saying="you could order an extra coffee" />
                 <test expr="~meia.position~" value="left" />
                 <state img="custom:calm" marker="meia_r31c=b">That’s not a problem. How do you take it?</state>
             </case>
@@ -5204,7 +5204,7 @@
                 </state>
             </case>
             <case stage="3" id="2795">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="left" />
                 <state img="custom:calm" marker="meia_r31c=a">Correct… If you’re asking me to buy you one, that’s not a problem. How do you like yours?</state>
             </case>
@@ -5961,12 +5961,12 @@
                 <state marker="meia_r31a">Say meia_r31a so she responds</state>
             </case>
             <case stage="3" id="2803" hidden="1" priority="0">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="right" />
                 <state marker="meia_r31c=a">Say meia_r31c=a, prep for variant CA</state>
             </case>
             <case stage="3" id="2804" hidden="1" priority="-1">
-                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3" saying="you could order an extra coffee" />
+                <condition role="opp" character="meia" sayingMarker="kyoko_kirigiri3alt" saying="you could order an extra coffee" />
                 <test expr="~meia.position~" value="right" />
                 <state marker="meia_r31c=b">Say meia_r31c=b, prep for variant CB</state>
             </case>
@@ -6556,7 +6556,7 @@
                 <state img="custom:#-strip_c" marker="toshinou_r72L">Certainly. Your conclusion is correct… Allow me to show you to the evidence.</state>
             </case>
             <case stage="3" id="2809" priority="152">
-                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3alt" />
                 <condition role="self" saidMarker="meia_r31c==b" />
                 <test expr="~meia.position~" value="right" />
                 <state img="custom:#-strip_c">That’s not a problem. How do you take it?</state>
@@ -6870,7 +6870,7 @@
                 <state img="custom:#-strip_c" marker="detectiveReveal">Maybe… Flying a space fighter would hardly be the strangest talent someone at Hope’s Peak might be recognized for.</state>
             </case>
             <case stage="3" id="2808">
-                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3" />
+                <condition role="opp" character="meia" saidMarker="kyoko_kirigiri3alt" />
                 <test expr="~meia.position~" value="right" />
                 <state img="custom:#-strip_c" marker="meia_r31c=a">Correct… If you’re asking me to buy you one, that’s not a problem. How do you like yours?</state>
             </case>
@@ -9210,7 +9210,7 @@
             <case stage="0-8 10" id="814" priority="502">
                 <condition role="self" saidMarker="humanWearingCaseBriefs" />
                 <condition role="target" character="human" />
-                <test expr="~clothing.position~" value="lower" />
+                <test expr="~revealed.id~" value="kirigiri_underwear" />
                 <state img="custom:awe" marker="maleCaseBriefSurprise" weight="2">…I was expecting a few things. This was none of them.</state>
             </case>
             <case stage="0-8 10" id="1891">
@@ -9323,7 +9323,7 @@
             <case stage="8 10" id="807">
                 <condition filter="trimmed" role="self" saidMarker="humanWearingCaseBriefs" notSaidMarker="caseBriefsTrimComment" />
                 <condition filter="hairy" role="target" character="human" />
-                <test expr="~clothing.position~" value="lower" />
+                <test expr="~revealed.id~" value="kirigiri_underwear" />
                 <state img="custom:calm" marker="caseBriefsTrimComment" weight="3">
                     <alt-img stage="5-7 10">custom:smug</alt-img>
                     <text>…You understand why I trim now, right, ~player~?</text>
