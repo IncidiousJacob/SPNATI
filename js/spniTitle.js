@@ -336,6 +336,10 @@ var CANDY_LIST = [
     "wikipe-tan/0-casual.png",
     "wikipe-tan/2-flirt.png",
     "wikipe-tan/3-hornyfact.png",
+    "saki/0-calm.png",                     // Has Recent Updates
+    "saki/0-determined.png",
+    "saki/0-happy.png",
+    "saki/3-strip.png",
 ];
 
 /* Storage for old candy images in case the characters qualify again */
