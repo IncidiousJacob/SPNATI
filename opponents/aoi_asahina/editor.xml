@@ -215,10 +215,10 @@
         <label id="200" label="" color="4" folder="Target: Kyoko" sort="0" />
         <label id="201" label="" folder="Target: Kyoko" sort="0" />
         <label id="202" label="" folder="Target: Kyoko" sort="0" />
-        <label id="204" label="CoMast1" folder="" sort="0" />
-        <label id="205" label="CoMast3" folder="" sort="0" />
-        <label id="206" label="CoMast2" folder="" sort="0" />
-        <label id="207" label="CoMast4" folder="" sort="0" />
+        <label id="204" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 1" sort="0" />
+        <label id="205" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 3" sort="0" />
+        <label id="206" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 2" sort="0" />
+        <label id="207" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 4" sort="0" />
         <label id="208" label="Beach" folder="Backgrounds" sort="0" />
         <label id="210" label="" folder="Situations" sort="0" />
         <label id="212" label="" folder="Situations" sort="0" />
@@ -236,8 +236,8 @@
         <label id="223" label="" folder="Early Tags" sort="0" />
         <label id="224" label="" folder="Early Tags" sort="0" />
         <label id="226" label="" folder="Early Tags" sort="0" />
-        <label id="230" label="CoMast5" folder="" sort="0" />
-        <label id="231" label="CoMast6" folder="" sort="0" />
+        <label id="230" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 5" sort="0" />
+        <label id="231" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 6" sort="0" />
         <label id="234" label="Tank Top Ringo" folder="Target: Ringo" sort="0" />
         <label id="235" label="" color="4" folder="" sort="0" />
         <label id="236" label="Friend Penis 1" folder="Sequences" sort="0" />
@@ -294,10 +294,12 @@
         <label id="293" label="Swim Link End WFT" color="15" folder="" sort="0" />
         <label id="294" label="Swim Link End Miki" color="15" folder="" sort="0" />
         <label id="295" label="Tank Top Ringo" folder="" sort="0" />
+        <label id="296" label="Dialogue B" folder="Target: Kyoko&gt;Dialogue 5" sort="0" />
+        <label id="297" label="Date" folder="Target: Kyoko" sort="0" />
+        <label id="298" label="WhatDo" folder="Target: Kyoko" sort="0" />
     </labels>
-    <nextId>295</nextId>
+    <nextId>298</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background related markers.</marker>
         <marker scope="Public" name="B_BeachTan" />
         <marker scope="Public" name="B_DRClassroom" />
@@ -378,7 +380,7 @@
         <marker scope="Public" name="S_WhatILove" />
         <marker scope="Private" name="T_">Lines that target other characters.</marker>
         <marker scope="Public" name="T_AquaRecord" />
-        <marker scope="Public" name="T_Chihiro_EndingW" />
+        <marker scope="Public" name="T_Chihiro_EndingW">Hina wins. Chihiro lost.</marker>
         <marker scope="Public" name="T_ChihiroAlterEgo" />
         <marker scope="Public" name="T_ChihiroEnd" />
         <marker scope="Public" name="T_ChihiroSecret" />
@@ -394,6 +396,7 @@
         <marker scope="Public" name="T_Kyoko_Junko" />
         <marker scope="Public" name="T_Kyoko_Lost0Trio" />
         <marker scope="Public" name="T_KyokoAlley" />
+        <marker scope="Public" name="T_KyokoBet" />
         <marker scope="Public" name="T_KyokoBoobEntice" />
         <marker scope="Public" name="T_KyokoChihiro" />
         <marker scope="Public" name="T_KyokoCoMast1" />
@@ -403,9 +406,13 @@
         <marker scope="Public" name="T_KyokoCoMast3" />
         <marker scope="Public" name="T_KyokoCoMast4" />
         <marker scope="Public" name="T_KyokoCoMast5" />
+        <marker scope="Public" name="T_KyokoCoMast5a" />
+        <marker scope="Public" name="T_KyokoCoMast5b" />
         <marker scope="Public" name="T_KyokoCoMast6" />
+        <marker scope="Public" name="T_KyokoCoMastA" />
         <marker scope="Public" name="T_KyokoKeepUp" />
         <marker scope="Public" name="T_KyokoMakotoPenis" />
+        <marker scope="Public" name="T_KyokoMalePopular" />
         <marker scope="Public" name="T_KyokoSmallPenis" />
         <marker scope="Public" name="T_KyokoStart" />
         <marker scope="Public" name="T_KyokoSuggesting" />
@@ -444,17 +451,16 @@
         <marker scope="Public" name="TI_Kyoko_0Trio" />
         <marker scope="Public" name="TI_Kyoko_43Memory" />
         <marker scope="Public" name="TI_Kyoko_43Touch" />
+        <marker scope="Public" name="TI_Kyoko_4-3Touch" />
         <marker scope="Public" name="TI_Kyoko_51Proposal" />
         <marker scope="Public" name="TI_Kyoko_62" />
         <marker scope="Public" name="TI_Kyoko_63Shaved" />
         <marker scope="Public" name="TI_Kyoko_71" />
+        <marker scope="Public" name="TI_Kyoko_71BothLose" />
         <marker scope="Public" name="TI_Kyoko_71KeepDown" />
         <marker scope="Public" name="TI_Kyoko_71Mast" />
         <marker scope="Public" name="TI_Kyoko_71Secret" />
         <marker scope="Public" name="TI_Kyoko_72" />
-        <marker scope="Public" name="TI_Kyoko_Proposal" />
-        <marker scope="Public" name="TI_Kyoko_XPopular" />
-        <marker scope="Public" name="TI_Kyoko_XProposal" />
         <marker scope="Public" name="TI_KyokoButtPose" />
         <marker scope="Public" name="TI_Levi_01" />
         <marker scope="Public" name="TI_Levi_01Sports" />
@@ -496,8 +502,10 @@
         <marker scope="Public" name="TO_Kyoko_62">Kyoko Stripping Stage 6</marker>
         <marker scope="Public" name="TO_Kyoko_73">Kyoko Stripped Stage 7</marker>
         <marker scope="Public" name="TO_Kyoko_73Naked" />
+        <marker scope="Public" name="TO_Kyoko_7-3Naked" />
         <marker scope="Public" name="TO_Kyoko_82">Kyoko Start Masturbate</marker>
         <marker scope="Public" name="TO_Kyoko_82Confess" />
+        <marker scope="Public" name="TO_Kyoko_XProposal" />
         <marker scope="Public" name="TO_Kyouko_01" />
         <marker scope="Public" name="TO_Levi_01" />
         <marker scope="Public" name="TO_Levi_02Name" />
