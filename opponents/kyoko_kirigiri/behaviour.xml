@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
-<!--This file was machine generated using the Character Editor v6.9.1.1 at 3:01:00 PM on June 02, 2024. Edit this file directly for fun, laughs, and runtime errors!-->
+<!--This file was machine generated using the Character Editor v6.9.1.1 at 7:33:59 PM on June 03, 2024. Edit this file directly only if you dare alert the gnomes!-->
 <opponent>
     <version>v6.9.1.1</version>
     <first>Kyoko</first>
@@ -2311,6 +2311,7 @@
                 <condition count="0" character="chihiro" />
                 <condition count="0" filter="dr1" character="mukuro" />
                 <condition count="0" filter="dr1" character="mukuro_ikusaba" />
+                <condition count="0" character="chiaki" />
                 <state marker="timeline=thh">Set timeline=thh. I can reference Danganronpa: Trigger Happy Havoc without calling into question how some of my opponents are alive right now.</state>
             </case>
             <case stage="0" id="625" hidden="1" priority="73">
@@ -2354,6 +2355,9 @@
                 </alternative>
                 <alternative>
                     <condition character="chihiro" />
+                </alternative>
+                <alternative>
+                    <condition character="chiaki" />
                 </alternative>
                 <state marker="timeline=school">Set timeline=school. I will act as a version of myself that went through School Mode in Danganronpa: Trigger Happy Havoc and not reference the Killing School Life because someone who dies in the main story is here.</state>
             </case>
@@ -23309,7 +23313,7 @@
             </case>
             <case stage="9" id="2812" oneShotId="1455">
                 <condition role="self" saidMarker="hina_malePopularity==1" />
-                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_XPopular" />
+                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_43Popular" />
                 <state img="custom:calmer" marker="hina_malePopularity=2">Don’t get me wrong, Hina, you’re liked for your personality too, did you really never notice? It’s fine to be attractive…</state>
             </case>
             <case stage="9" id="2816" oneShotId="1456">
@@ -23561,7 +23565,7 @@
             </case>
             <case stage="9" id="2813" hidden="1" priority="-1">
                 <condition role="self" saidMarker="hina_malePopularity==1" />
-                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_XPopular" />
+                <condition role="opp" character="aoi_asahina" timeInStage="0" saidMarker="TI_Kyoko_43Popular" />
                 <state marker="hina_malePopularity=b1">Gag this marker to stop the interaction if it doesn't play consecutively</state>
             </case>
         </trigger>
