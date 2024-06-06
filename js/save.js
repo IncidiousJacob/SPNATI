@@ -312,11 +312,14 @@ Save.prototype.loadOptions = function(){
     if ('uiFontWidth' in options && typeof options.uiFontWidth == 'number') UI_FONT_WIDTH = options.uiFontWidth;
     if ('uiTheme' in options && typeof options.uiTheme == 'string') UI_THEME = options.uiTheme;
     if ('playerFinishingEffect' in options && typeof options.playerFinishingEffect == 'boolean') PLAYER_FINISHING_EFFECT = options.playerFinishingEffect;
+    if ('stamina' in options
+        && (typeof options.stamina == 'number' || options.stamina === null))
+        STAMINA = options.stamina;
 
     setUIFontSettings(UI_FONT_WEIGHT, UI_FONT_WIDTH);
     setUITheme(UI_THEME);
 
-    if ('stamina' in options) humanPlayer.stamina = options.stamina;
+    if (STAMINA) humanPlayer.stamina = STAMINA
 
     /* Load extra characters settings - if spnati.net or rehost, all are disabled by default;
      * if personal offline, offline and incomplete are enabled but event, duplicate, and broken aren't
