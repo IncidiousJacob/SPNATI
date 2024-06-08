@@ -119,6 +119,17 @@ var GAME_OVER_DEFEAT = "game_over_defeat";
 
 var GLOBAL_CASE = "global";
 
+/* List of case types that are played only at game start, during a character's starting stage.
+ * Stage conditions attached to these cases are ignored in order to accomodate characters with initial skip layers.
+ */
+var STARTING_STAGE_CASES = [
+    SELECTED,
+    OPPONENT_SELECTED,
+    OPPONENT_DESELECTED,
+    SETTINGS_CHANGED,
+    GAME_START
+];
+
 /* Lists of case types eligible to be autoconverted if a target condition is present. */
 var CONVERT_STRIP_CASES = [
     MALE_REMOVING_ACCESSORY,
@@ -2335,7 +2346,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     }
 
     // stage
-    if (this.stage !== undefined) {
+    if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(self.trigger) < 0) {
         if (!checkStage(self.stage, this.stage)) {
             return false; // failed "stage" requirement
         }
@@ -2503,7 +2514,6 @@ function addTriggers(triggers, newTriggers) {
 
 Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
     /* get the AI stage */
-    var stageNum = this.stage;
     var bestMatchPriority = -10000;
     if (volatileOnly && this.chosenState && this.chosenState.parentCase) {
         bestMatchPriority = this.chosenState.parentCase.priority + 1;
@@ -2511,7 +2521,12 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
 
     var cases = [];
     triggers.forEach(function (trigger) {
+        /* Cases with types in STARTING_STAGE_CASES ignore stage conditions during processing.
+         * For lookup, however, they're treated as being in stage 0.
+         */
+        var stageNum = (STARTING_STAGE_CASES.indexOf(trigger) >= 0) ? 0 : this.stage;
         var relCases = this.cases.get(trigger+':'+stageNum) || [];
+
         relCases.forEach(function (c) {
             if (!c.hidden && (cases.indexOf(c) < 0)) cases.push(c);
         });
@@ -2522,7 +2537,7 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
 
     /* quick check to see if the trigger exists */
     if (cases.length <= 0) {
-        console.log("Warning: couldn't find " + triggers + " dialogue for player " + this.slot + " at stage " + stageNum);
+        console.log("Warning: couldn't find " + triggers + " dialogue for player " + this.slot + " at stage " + this.stage);
         return false;
     }
 
@@ -2584,7 +2599,10 @@ Opponent.prototype.evaluateHiddenCases = function (triggers, opp, postDialogue) 
     var cases = [];
 
     triggers.forEach(function (trigger) {
-        var relCases = this.cases.get(trigger+':'+this.stage) || [];
+        /* See comment above in findBehaviour re: STARTING_STAGE_CASES and the cases lookup map. */
+        var stageNum = (STARTING_STAGE_CASES.indexOf(trigger) >= 0) ? 0 : this.stage;
+        var relCases = this.cases.get(trigger+':'+stageNum) || [];
+
         relCases.forEach(function (c) {
             if (
                 c.hidden &&
