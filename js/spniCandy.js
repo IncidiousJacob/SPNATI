@@ -22,41 +22,57 @@ function selectTitleCandy () {
 }
 
 /**
+ * Loads a list of candy elements from a jQuery XML element.
+ * @param {jQuery} $xml 
+ * @returns {Array<Object>}
+ */
+function parseCandyCatalog($xml) {
+    return $xml.find("candy").map((i, item) => {
+        let $item = $(item);
+        let candy = {
+            uid: $item.attr("uid"),
+            uids: $item.attr("uids")?.split(","),
+            base: $item.attr("base"),
+            src: $item.attr("src"),
+            scale: parseFloat($item.attr("scale")),
+            weight: parseFloat($item.attr("weight")),
+            slot: parseInt($item.attr("slot")),
+        };
+
+        candy.weight = candy.weight ? candy.weight : 1.0;
+
+        if (candy.slot) {
+            // double the weight of any candy that has a slot restriction
+            // otherwise it would be half as likely than normal to appear 
+            candy.weight *= 2;
+        }
+
+        if (candy.uid && candy.uids && !candy.uids.includes(candy.uid)) {
+            candy.uids.push(candy.uid);
+        } else if (candy.uid && !candy.uids) {
+            candy.uids = [candy.uid];
+        }
+
+        return candy;
+    }).get();
+}
+
+/**
+ * Sets the active candy catalog.
+ * @param {Array<Object>} catalog 
+ */
+function setCandyCatalog(catalog) {
+    candyCatalog = catalog;
+    candyTotalWeight = catalog.reduce((acc, candy) => acc + candy.weight, 0.0);
+}
+
+/**
  * Loads the candy image catalog from XML.
  * @returns {Promise<jQuery>}
  */
 function loadCandyXML () {
     return fetchXML("opponents/candy.xml").then($xml => {
-        candyCatalog = [];
-        candyTotalWeight = 0;
-
-        $xml.find("candy").each((i, item) => {
-            let $item = $(item);
-            let candy = {
-                uid: $item.attr("uid"),
-                uids: $item.attr("uids")?.split(","),
-                base: $item.attr("base"),
-                src: $item.attr("src"),
-                scale: parseFloat($item.attr("scale")),
-                weight: parseFloat($item.attr("weight")),
-                slot: parseInt($item.attr("slot")),
-            };
-
-            if (candy.slot) {
-                // double the weight of any candy that has a slot restriction
-                // otherwise it would be half as likely than normal to appear 
-                candy.weight = candy.weight ? candy.weight * 2 : 2.0;
-            }
-
-            if (candy.uid && candy.uids && !candy.uids.includes(candy.uid)) {
-                candy.uids.push(candy.uid);
-            } else if (candy.uid && !candy.uids) {
-                candy.uids = [candy.uid];
-            }
-
-            candyTotalWeight += candy.weight ? candy.weight : 1.0;
-            candyCatalog.push(candy);
-        });
+        setCandyCatalog(parseCandyCatalog($xml));
     });
 }
 
@@ -98,12 +114,7 @@ function randomizeTitleCandy () {
         // if more candy is to be selected, filter the catalog to avoid duplicates
         if (i < candySpaces - 1) {
             currentCatalog = currentCatalog.filter((candy) => {
-                if (choice.uids.some((uid) => candy.uids.includes(uid))) {
-                    return false;
-                } else if (choice.legacy && choice.base === candy.base) {
-                    return false;
-                }
-                return true;
+                return !choice.uids.some((uid) => candy.uids.includes(uid));
             });
         }
     }
@@ -116,70 +127,9 @@ function randomizeTitleCandy () {
  * @returns {void}
  */
 function placeTitleCandy (index, candy) {
-    // resolve scaling for legacy event candies
-    if (candy.legacy && !candy.scale) {
-        let characterID = getCharacterForCostume(candy.path);
-        candy.scale = (loadedOpponents.find(c => c.id == characterID).scale / 100) || 1;
-    }
-
-    // place the selected candy
     let scale = candy.scale ? candy.scale : 1.0;
     let base = "opponents/" + (candy.base ? candy.base : candy.uid) + "/";
 
     $titleCandy[index].attr("src", base + candy.src);
     $titleCandy[index].css("transform", "scale(" + scale + ") " + candyTransform[index]);
-}
-
-/**
- * Overrides the candy catalog with legacy event candy paths.
- * @param {Set} eventSet A set of legacy image paths from an event.
- * @returns {void}
- */
-function useEventTitleCandy (eventSet) {
-    let newCatalog = [];
-    let newTotalWeight = 0;
-
-    eventSet.forEach((item) => {
-        let last = item.lastIndexOf("/");
-        let base = item.slice(0, last);
-        let src = item.slice(last + 1);
-
-        let candy = {
-            base,
-            src,
-            path: item,
-            legacy: true,
-        };
-
-        newTotalWeight += 1.0;
-        newCatalog.push(candy);
-    });
-
-    if (newCatalog.length > 0) {
-        candyTotalWeight = newTotalWeight;
-        candyCatalog = newCatalog;
-    }
-}
-
-/**
- * Resolves a costume path to a character ID. Currently only used to support 
- * legacy event candy paths.
- * @param {string} costumePath The costume path to resolve to a character.
- * @returns {string} The resolved character ID, if found.
- */
-function getCharacterForCostume(costumePath) {
-    const match = costumePath.split("/");
-    
-    if (match[0] != "reskins") {
-        return match[0];
-    }
-    const opponent = loadedOpponents.find(opp => {
-        // opponent has a costume that fits
-        return opp.alternate_costumes.findIndex(costume => costume.folder.endsWith(match[1]+ "/")) != -1;
-    });
-    if (opponent == undefined) {
-        console.log(`Couldn't find opponent for costume "${costumePath}". The costume may be offline.`);
-        return "";
-    }
-    return opponent.id;
 }
