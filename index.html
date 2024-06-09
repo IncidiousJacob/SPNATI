@@ -1464,9 +1464,8 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination">
-                                                        <li id="options-table-style-1" class="active"><a
-                                                                href="#">Standard</a></li>
+                                                    <ul class="pagination" data-option="table-style">
+                                                        <li class="active"><a href="#" data-value="standard">Standard</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1479,7 +1478,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-fade">
+                                                    <ul class="pagination" data-option="auto-fade">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1494,7 +1493,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-card-suggest">
+                                                    <ul class="pagination" data-option="card-suggest">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1509,7 +1508,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-explain-hands">
+                                                    <ul class="pagination" data-option="explain-hands">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1524,7 +1523,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-ai-turn-time">
+                                                    <ul class="pagination" data-option="ai-turn-time">
                                                         <li><a href="#" data-value="0">Very Fast</a></li>
                                                         <li><a href="#" data-value="400">Fast</a></li>
                                                         <li><a href="#" data-value="800">Normal</a></li>
@@ -1542,7 +1541,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-deal-speed">
+                                                    <ul class="pagination" data-option="deal-speed">
                                                         <li><a href="#" data-value="0">Disabled</a></li>
                                                         <li><a href="#" data-value="200">Fast</a></li>
                                                         <li><a href="#" data-value="500">Normal</a></li>
@@ -1559,7 +1558,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-forfeit">
+                                                    <ul class="pagination" data-option="auto-forfeit">
                                                         <li><a href="#" data-value="4000">Fast</a></li>
                                                         <li><a href="#" data-value="7500">Normal</a></li>
                                                         <li><a href="#" data-value="10000">Slow</a></li>
@@ -1574,7 +1573,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-ending">
+                                                    <ul class="pagination" data-option="auto-ending">
                                                         <li><a href="#" data-value="4000">Fast</a></li>
                                                         <li><a href="#" data-value="7500">Normal</a></li>
                                                         <li><a href="#" data-value="10000">Slow</a></li>
@@ -1589,7 +1588,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-minimal-ui">
+                                                    <ul class="pagination" data-option="minimal-ui">
                                                         <li class="active"><a href="#" data-value="false">Disabled</a>
                                                         </li>
                                                         <li><a href="#" data-value="true">Enabled</a></li>
@@ -1604,8 +1603,8 @@
                                             </td>
                                             <td class="text-option-container">
                                                 <span class="text-option-sample">Example Text</span>
-                                                <span class="text-option-label" id="text-weight-label">500</span>
-                                                <input type="range" class="ui-text-option" id="options-ui-font-weight" min="300" max="500" step="5">
+                                                <span class="text-option-label" class="text-weight-label">500</span>
+                                                <input type="range" class="ui-text-option" data-option="ui-font-weight" min="300" max="500" step="5">
                                             </td>
                                         </tr>
 
@@ -1614,18 +1613,18 @@
                                                 <h4 class="modal-title modal-left">UI Text Width</h4>
                                             </td>
                                             <td class="text-option-container">
-                                                <span class="text-option-label" id="text-width-label">100</span>
-                                                <input type="range" class="ui-text-option" id="options-ui-font-width" min="90" max="100" step="0.5">
+                                                <span class="text-option-label" class="text-width-label">100</span>
+                                                <input type="range" class="ui-text-option" data-option="ui-font-width" min="90" max="100" step="0.5">
                                             </td>
                                         </tr>
 
-                                        <tr id="ui-theme-select-container" style="display: none;">
+                                        <tr class="ui-theme-select-container" style="display: none;">
                                             <td>
                                                 <h4 class="modal-title modal-left">UI Theme</h4>
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-ui-theme">
+                                                    <ul class="pagination" data-option="ui-theme">
                                                         <li><a href="#" data-value="default">Light Mode</a></li>
                                                         <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
                                                     </ul>
@@ -1634,13 +1633,13 @@
                                         </tr>
 
 
-                                        <tr id="player-finishing-effect-control">
+                                        <tr>
                                             <td>
                                                 <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-player-finishing-effect">
+                                                    <ul class="pagination" data-option="player-finishing-effect">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1654,11 +1653,11 @@
                                             </td>
                                             <td>
                                                 <input type="number" min="1"
-                                                    id="player-masturbation-timer-box">&nbsp;Phases
+                                                    data-option="player-masturbation-timer">&nbsp;Phases
                                             </td>
                                         </tr>
 
-                                        <tr id='masturbation-warning-label'>
+                                        <tr class='masturbation-warning-label'>
                                             <td>
                                                 <!-- blank table entry -->
                                             </td>
@@ -2899,8 +2898,8 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination">
-                                                            <li id="options-table-style-1" class="active"><a href="#">Standard</a></li>
+                                                        <ul class="pagination" data-option="table-style">
+                                                            <li class="active"><a href="#" data-value="standard">Standard</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -2913,7 +2912,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-auto-fade">
+                                                        <ul class="pagination" data-option="auto-fade">
                                                             <li class="active"><a href="#" data-value="true">Enabled</a></li>
                                                             <li><a href="#" data-value="false">Disabled</a></li>
                                                         </ul>
@@ -2928,7 +2927,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-card-suggest">
+                                                        <ul class="pagination" data-option="card-suggest">
                                                             <li><a href="#" data-value="true">Enabled</a></li>
                                                             <li class="active"><a href="#" data-value="false">Disabled</a></li>
                                                         </ul>
@@ -2943,7 +2942,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-explain-hands">
+                                                        <ul class="pagination" data-option="explain-hands">
                                                             <li class="active"><a href="#" data-value="true">Enabled</a></li>
                                                             <li><a href="#" data-value="false">Disabled</a></li>
                                                         </ul>
@@ -2958,7 +2957,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-ai-turn-time">
+                                                        <ul class="pagination" data-option="ai-turn-time">
                                                             <li><a href="#" data-value="0">Very Fast</a></li>
                                                             <li><a href="#" data-value="400">Fast</a></li>
                                                             <li class="active"><a href="#" data-value="800">Normal</a></li>
@@ -2976,7 +2975,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-deal-speed">
+                                                        <ul class="pagination" data-option="deal-speed">
                                                             <li><a href="#" data-value="0">Disabled</a></li>
                                                             <li class="active"><a href="#" data-value="200">Fast</a></li>
                                                             <li><a href="#" data-value="500">Normal</a></li>
@@ -2993,7 +2992,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-auto-forfeit">
+                                                        <ul class="pagination" data-option="auto-forfeit">
                                                             <li><a href="#" data-value="4000">Fast</a></li>
                                                             <li><a href="#" data-value="7500">Normal</a></li>
                                                             <li><a href="#" data-value="10000">Slow</a></li>
@@ -3008,7 +3007,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-auto-ending">
+                                                        <ul class="pagination" data-option="auto-ending">
                                                             <li><a href="#" data-value="4000">Fast</a></li>
                                                             <li><a href="#" data-value="7500">Normal</a></li>
                                                             <li><a href="#" data-value="10000">Slow</a></li>
@@ -3023,7 +3022,7 @@
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-minimal-ui">
+                                                        <ul class="pagination" data-option="minimal-ui">
                                                             <li class=""><a href="#" data-value="false">Disabled</a>
                                                             </li>
                                                             <li class="active"><a href="#" data-value="true">Enabled</a></li>
@@ -3038,8 +3037,8 @@
                                                 </td>
                                                 <td class="text-option-container">
                                                     <span class="text-option-sample">Example Text</span>
-                                                    <span class="text-option-label" id="text-weight-label">500</span>
-                                                    <input type="range" class="ui-text-option" id="options-ui-font-weight" min="300" max="500" step="5">
+                                                    <span class="text-option-label text-weight-label">500</span>
+                                                    <input type="range" class="ui-text-option" data-option="ui-font-weight" min="300" max="500" step="5">
                                                 </td>
                                             </tr>
 
@@ -3048,18 +3047,18 @@
                                                     <h4 class="modal-title modal-left">UI Text Width</h4>
                                                 </td>
                                                 <td class="text-option-container">
-                                                    <span class="text-option-label" id="text-width-label">100</span>
-                                                    <input type="range" class="ui-text-option" id="options-ui-font-width" min="90" max="100" step="0.5">
+                                                    <span class="text-option-label text-width-label">100</span>
+                                                    <input type="range" class="ui-text-option" data-option="ui-font-width" min="90" max="100" step="0.5">
                                                 </td>
                                             </tr>
 
-                                            <tr id="ui-theme-select-container">
+                                            <tr class="ui-theme-select-container">
                                                 <td>
                                                     <h4 class="modal-title modal-left">UI Theme</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-ui-theme">
+                                                        <ul class="pagination" data-option="ui-theme">
                                                             <li class="active"><a href="#" data-value="default">Light Mode</a></li>
                                                             <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
                                                         </ul>
@@ -3068,13 +3067,13 @@
                                             </tr>
 
 
-                                            <tr id="player-finishing-effect-control">
+                                            <tr>
                                                 <td>
                                                     <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
-                                                        <ul class="pagination" id="options-player-finishing-effect">
+                                                        <ul class="pagination" data-option="player-finishing-effect">
                                                             <li class="active"><a href="#" data-value="true">Enabled</a></li>
                                                             <li><a href="#" data-value="false">Disabled</a></li>
                                                         </ul>
@@ -3087,11 +3086,11 @@
                                                     <h4 class="modal-title modal-left">How long do you... last?</h4>
                                                 </td>
                                                 <td>
-                                                    <input type="number" min="1" id="player-masturbation-timer-box">&nbsp;Phases
+                                                    <input type="number" min="1" data-option="player-masturbation-timer">&nbsp;Phases
                                                 </td>
                                             </tr>
 
-                                            <tr id="masturbation-warning-label" style="display: none;">
+                                            <tr class="masturbation-warning-label" style="display: none;">
                                                 <td>
                                                     <!-- blank table entry -->
                                                 </td>

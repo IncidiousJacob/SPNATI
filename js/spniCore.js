@@ -1055,28 +1055,7 @@ function showImportModal() {
 }
 
 function showExtrasModal() {
-    setActiveOption('options-auto-fade', AUTO_FADE);
-    setActiveOption('options-card-suggest', CARD_SUGGEST);
-    setActiveOption('options-explain-hands', EXPLAIN_ALL_HANDS);
-    setActiveOption('options-ai-turn-time', GAME_DELAY);
-    setActiveOption('options-deal-speed', ANIM_TIME);
-    setActiveOption('options-auto-forfeit', FORFEIT_DELAY);
-    setActiveOption('options-auto-ending', ENDING_DELAY);
-    setActiveOption('options-minimal-ui', MINIMAL_UI);
-    setActiveOption('options-player-finishing-effect', PLAYER_FINISHING_EFFECT);
-    $("#options-ui-font-weight").val(UI_FONT_WEIGHT);
-    $("#options-ui-font-width").val(UI_FONT_WIDTH);
-    setActiveOption('options-ui-theme', UI_THEME);
-    setActiveOption('options-stamina', STAMINA);
-
-    /* Don't display UI theme selector on spnati.net yet
-     * TODO: remove this once transition period is over
-     */
-    if (isMainSite) {
-        $("#ui-theme-select-container").hide();
-    } else {
-        $("#ui-theme-select-container").show();
-    }
+    loadOptions();
 
     $(".extra-characters-options").prop("hidden", false);
     $('ul.character-status-toggle').each(function() {
