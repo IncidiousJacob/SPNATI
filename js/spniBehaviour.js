@@ -1525,9 +1525,9 @@ function expandCustomDeckVariable(split_fn, tolerance, args) {
     if (!ranks.length)
         ranks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-    decks = suits.flatMap(suit => ranks.map(rank => suit + rank))
-        .map((card) => ACTIVE_CARD_IMAGES.frontImageMap[card])
-        .filter(image => !!image);
+    decks = ACTIVE_CARD_IMAGES.cardFronts.flatMap(
+        card => (suits.indexOf(card.suit) !== -1 && ranks.indexOf(card.rank) !== -1) ? [card.sourceId] : []
+    );
 
     if (searchDeck) {
         return (decks.indexOf(searchDeck) !== -1).toString();
