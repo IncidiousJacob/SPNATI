@@ -1195,7 +1195,10 @@ function findVariablePlayer(variable, self, target, bindings) {
     })) {
         return player;
     }
-    return null;
+
+    return loadedOpponents.find(function (opp) {
+        return opp.id === variable;
+    }) || null;
 }
 
 /************************************************************
