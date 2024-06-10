@@ -1815,6 +1815,158 @@
             <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
             <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
         </pose>
+        <pose id="5-stripped+">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="5-stripped+coy">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="3-stripped">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="3-stripped+">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="3-stripped+coy">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped+">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped+coy">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
     </poses>
 
 </costume>
