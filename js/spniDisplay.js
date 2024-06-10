@@ -994,13 +994,24 @@ OpponentDisplay.prototype.updateText = function (player) {
     }
 
     /* Show repeat count if debug mode is on. */
-    if (showDebug && player.getRepeatCount() > 1) {
-        displayElems.push(document.createElement("br"));
+    if (showDebug) {
+        if (player.getRepeatCount() > 1 || player.fixedDanglingLine) {
+            displayElems.push(document.createElement("br"));
+        }
 
-        var repeatElem = document.createElement("span");
-        repeatElem.innerHTML = "(" + player.getRepeatCount() + ")";
-        repeatElem.className = "repeat-count";
-        displayElems.push(repeatElem);
+        if (player.getRepeatCount() > 1) {    
+            let repeatElem = document.createElement("span");
+            repeatElem.innerHTML = "(" + player.getRepeatCount() + ")";
+            repeatElem.className = "repeat-count";
+            displayElems.push(repeatElem);
+        }
+
+        if (player.fixedDanglingLine) {
+            let dangleIndicator = document.createElement("span");
+            dangleIndicator.innerHTML = "(skipped dangling line)";
+            dangleIndicator.className = "dangle-indicator";
+            displayElems.push(dangleIndicator);
+        }
     }
     
     this.dialogue.empty().append(displayElems);

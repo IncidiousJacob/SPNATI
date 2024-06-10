@@ -128,6 +128,7 @@ Player.prototype.resetState = function () {
         this.currentTarget = null;
         this.currentTriggers = [];
         this.stateCommitted = false;
+        this.fixedDanglingLine = false;
 
         this.oneShotCases = {};
         this.oneShotStates = {};
@@ -820,7 +821,7 @@ Opponent.prototype.onSelected = function(individual) {
 
     this.preloadStageImages(-1);
     if (individual) {
-        updateAllBehaviours(this.slot, SELECTED, [[OPPONENT_SELECTED]]);
+        updateAllBehaviours(this.slot, SELECTED, [[OPPONENT_SELECTED]], false);
     } else {
         this.singleBehaviourUpdate(SELECTED, null);
     }
@@ -1374,7 +1375,7 @@ Opponent.prototype.unloadOpponent = function () {
     });
 
     this.unloadStylesheet();
-    updateAllBehaviours(this.slot, null, [[OPPONENT_DESELECTED]]);
+    updateAllBehaviours(this.slot, null, [[OPPONENT_DESELECTED]], false);
 
     this.slot = undefined;
     this.selectInfo = null;

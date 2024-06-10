@@ -126,7 +126,8 @@ function startMasturbation (player) {
     updateAllBehaviours(
         player, 
         PLAYER_START_MASTURBATING,
-        [[players[player].getForfeitTrigger("start_masturbating"), OPPONENT_START_MASTURBATING]]
+        [[players[player].getForfeitTrigger("start_masturbating"), OPPONENT_START_MASTURBATING]],
+        true
     );
 
     players[player].stage += 1;
@@ -294,7 +295,8 @@ function finishMasturbation (player) {
     updateAllBehaviours(
         player, 
         PLAYER_FINISHED_MASTURBATING,
-        [[players[player].getForfeitTrigger("finished_masturbating"), OPPONENT_FINISHED_MASTURBATING]]
+        [[players[player].getForfeitTrigger("finished_masturbating"), OPPONENT_FINISHED_MASTURBATING]],
+        true
     );
     players[player].ticksInStage = 0;
     players[player].timeInStage = 0;

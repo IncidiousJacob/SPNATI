@@ -188,6 +188,9 @@ var TAG_IMPLICATIONS = {
     'trimmed': ['pubic_hair'],
 };
 
+/* Modes for updateBehaviour and friends. */
+const VOLATILE_UPDATE = 1;
+const DANGLING_UPDATE = 2;
 
 function fixupTagFormatting(tag) {
     return tag.replace(/\s/g, '').toLowerCase();
@@ -2155,6 +2158,7 @@ function Case($xml, trigger) {
     this.addTags =                  $xml.attr("addCharacterTags");
     this.removeTags =               $xml.attr("removeCharacterTags");
     this.oneShotId =                $xml.attr("oneShotId");
+    this.dangleCheck =              $xml.attr("dangling"); /* null/undefined, "allowed", or "required" */
     
     if (this.addTags) {
         this.addTags = this.addTags.split(',').map(canonicalizeTag);
@@ -2192,8 +2196,8 @@ function Case($xml, trigger) {
         return (ctr.role == "target") && (isNaN(ctr.count.max) || (ctr.count.max === null) || (ctr.count.max > 0)) && ctr.id;
     });
 
-    var targetID = targetCondition ? targetCondition.id : this.target;
-    var hasTargetStage = !!this.targetStage || this.counters.some(function (ctr) {
+    var targetID = targetCondition ? targetCondition.id : null;
+    var hasTargetStage = this.counters.some(function (ctr) {
         return (ctr.role == "target") && (isNaN(ctr.count.max) || (ctr.count.max === null) || (ctr.count.max > 0)) && ctr.stage;
     });
 
@@ -2318,7 +2322,27 @@ Case.prototype.toJSON = function () {
     return ser;
 }
 
-Case.prototype.checkConditions = function (self, opp, postDialogue) {
+Case.prototype.isOutboundTargetTo = function (opp) {
+    if (!opp) return false;
+
+    return this.counters.some(
+        (ctr) => ctr.role === "target"
+                && ctr.id === opp.id
+                && (isNaN(ctr.count.max) || (ctr.count.max === null) || (ctr.count.max > 0))
+    );
+}
+
+Case.prototype.isOtherTargetTo = function (id) {
+    if (!id) return false;
+
+    return this.counters.some(
+        (ctr) => ctr.role !== "target"
+                && ctr.id === id
+                && (isNaN(ctr.count.max) || (ctr.count.max === null) || (ctr.count.max > 0))
+    );
+}
+
+Case.prototype.checkConditions = function (self, opp, postDialogue, searchMode) {
     var volatileDependencies = new Set();
     
     // one-time use
@@ -2347,6 +2371,26 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
             return false; // failed "totalRounds" requirement
         }
     }
+
+    if (searchMode === DANGLING_UPDATE) {
+        /* For dangling line updates, avoid cases that are positively targeted towards the current situation focus,
+         * whether via an ID condition or by a tag filter. Volatile targets are allowed, though.
+         */
+        
+        let willDangle = this.counters.some((ctr) => {
+            return ctr.role == "target"
+                    && ctr.count.max !== 0
+                    && ctr.sayingMarker === undefined
+                    && ctr.saying === undefined
+                    && ctr.pose === undefined
+                    && (ctr.id === opp.id || ctr.tag);
+        });
+        
+        if ((willDangle && !this.dangleCheck) || (!willDangle && this.dangleCheck === "required")) {
+            return false; // dangling requirement failed
+        }
+    }
+
 
     var counterMatches = {};
     var unwantedSayings = [], unwantedMarkers = [], unwantedPoses = [];
@@ -2501,11 +2545,23 @@ function addTriggers(triggers, newTriggers) {
  *****                 Behaviour Parsing Functions                *****
  **********************************************************************/
 
-Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
+/**
+ * 
+ * @param {Array<string>} triggers 
+ * @param {Player} opp 
+ * @param {number?} searchMode The search mode to use when finding cases and lines to play.
+ * This can be one of either null, `VOLATILE_UPDATE`, or `DANGLING_UPDATE`.
+ */
+Opponent.prototype.findBehaviour = function(triggers, opp, searchMode) {
+    /* Regarding the different search modes:
+     * - Volatile updates only look at volatile cases.
+     * - Dangling line updates only look at cases that are either volatile, or are *not* targeted towards `opp`.
+     */
+
     /* get the AI stage */
     var stageNum = this.stage;
     var bestMatchPriority = -10000;
-    if (volatileOnly && this.chosenState && this.chosenState.parentCase) {
+    if (searchMode === VOLATILE_UPDATE && this.chosenState && this.chosenState.parentCase) {
         bestMatchPriority = this.chosenState.parentCase.priority + 1;
     }
 
@@ -2517,8 +2573,8 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
         });
     }, this);
 
-    /* Evaluate pre-dialogue hidden cases if we're not doing a reaction pass. */
-    if (!volatileOnly) this.evaluateHiddenCases(triggers, opp, false);
+    /* Evaluate pre-dialogue hidden cases if we're specifically doing a regular update. */
+    if (!searchMode) this.evaluateHiddenCases(triggers, opp, false);
 
     /* quick check to see if the trigger exists */
     if (cases.length <= 0) {
@@ -2533,8 +2589,9 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
         var curCase = cases[i];
 
         if ((curCase.priority >= bestMatchPriority) &&
-            (!volatileOnly || curCase.isVolatile) &&
-            curCase.checkConditions(this, opp, false))
+            (searchMode !== VOLATILE_UPDATE || curCase.isVolatile) &&
+            (searchMode !== DANGLING_UPDATE || !curCase.isOutboundTargetTo(opp)) &&
+            curCase.checkConditions(this, opp, false, searchMode))
         {
             if (curCase.priority > bestMatchPriority) {
                 /* Cleanup all mutable state on previous best-match cases. */
@@ -2660,7 +2717,7 @@ Opponent.prototype.clearChosenState = function () {
  * Updates the behaviour of the given player based on the 
  * provided triggers.
  ************************************************************/
-Opponent.prototype.updateBehaviour = function(triggers, opp) {
+Opponent.prototype.updateBehaviour = function(triggers, opp, searchMode) {
     /* determine if the AI is dialogue locked */
     if (this.out && this.forfeit[1] == CANNOT_SPEAK && triggers !== DEALING_CARDS && triggers !== OPPONENT_FINISHING_MASTURBATING) {
         /* their is restricted to this only */
@@ -2670,7 +2727,7 @@ Opponent.prototype.updateBehaviour = function(triggers, opp) {
     if (Array.isArray(triggers) && Array.isArray(triggers[0])) {
         /* Return which trigger set actually matched within the passed-in array. */
         for (let i=0; i < triggers.length; i++) {
-            let ret = this.updateBehaviour(triggers[i], opp);
+            let ret = this.updateBehaviour(triggers[i], opp, searchMode);
             if (ret !== null) return ret;
         }
         return null;
@@ -2687,7 +2744,7 @@ Opponent.prototype.updateBehaviour = function(triggers, opp) {
     this.currentTarget = opp;
     this.currentTriggers = triggers;
 
-    var state = this.findBehaviour(triggers, opp, false);
+    var state = this.findBehaviour(triggers, opp, searchMode);
 
     if (state) {
         this.updateChosenState(state);
@@ -2707,6 +2764,8 @@ Opponent.prototype.updateBehaviour = function(triggers, opp) {
  * @param {Player} opp 
  */
 Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
+    this.fixedDanglingLine = false;
+
     /* Note the trigger set that actually matched in updateBehaviour,
      * so that we can later evaluate post-dialogue hidden cases using those triggers.
      */
@@ -2719,6 +2778,27 @@ Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
     }
 }
 
+/** 
+ * Get all characters whose volatile lines depend on this character's current state.
+ * @returns {Array<Opponent>}
+ */
+Opponent.prototype.getVolatileDependents = function() {
+    return players.opponents.filter((p) => {
+        if (p !== this && !p.updatePending && p.chosenState && p.chosenState.parentCase) {
+            let dependencies = p.chosenState.parentCase.volatileDependencies;
+            return dependencies && dependencies.has(this);
+        } else return false;
+    });
+}
+
+/**
+ * Determine whether any other characters' volatile lines depend on this character's current state.
+ * @returns {boolean}
+ */
+Opponent.prototype.isVolatileLocked = function() {
+    return this.getVolatileDependents().length > 0;
+}
+
 /************************************************************
  * Attempt to find a higher-priority volatile match case if
  * one exists.
@@ -2726,13 +2806,7 @@ Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
  * dependencies will be locked, unlocking prior volatile state locks if necessary.
  ************************************************************/
 Opponent.prototype.updateVolatileBehaviour = function () {
-    if (players.some(function(p) {
-        if (p !== players[HUMAN_PLAYER]
-            && !p.updatePending && p.chosenState && p.chosenState.parentCase) {
-            var dependencies = p.chosenState.parentCase.volatileDependencies;
-            return dependencies && dependencies.has(this);
-        } else return false;
-    }, this)) {
+    if (this.isVolatileLocked()) {
         console.log("Player "+this.slot+" state is locked.");
         return;
     }
@@ -2741,7 +2815,7 @@ Opponent.prototype.updateVolatileBehaviour = function () {
         console.log("Player "+this.slot+": Current priority "+this.chosenState.parentCase.priority);
     }
     
-    var newState = this.findBehaviour(this.currentTriggers, this.currentTarget, true);
+    var newState = this.findBehaviour(this.currentTriggers, this.currentTarget, VOLATILE_UPDATE);
 
     if (newState) {
         /* Assign new best-match case and state. */
@@ -2825,12 +2899,13 @@ Opponent.prototype.applyHiddenStates = function (chosenCase, opp) {
  * Updates the behaviour of all players except the given player
  * based on the provided tag.
  ************************************************************/
-function updateAllBehaviours (target, target_tags, other_tags) {
+function updateAllBehaviours (target, target_tags, other_tags, performDangleCheck) {
     for (var i = 2; i < players.length; i++) {
         if (!players[i]) continue;
         /* Indicate that current state will be overwritten and can't
          * be used with *SayingMarker and *Saying checks. */
         players[i].updatePending = true;
+        players[i].fixedDanglingLine = false;
     }
 
     /* We need to keep track of which triggers (if any) actually matched for each player,
@@ -2848,6 +2923,7 @@ function updateAllBehaviours (target, target_tags, other_tags) {
     }
     
     updateAllVolatileBehaviours();
+    if (performDangleCheck) fixDanglingBehaviours(players[target], other_tags);
     commitAllBehaviourUpdates(target_tags !== null ? players[target] : null);
 
     for (var i = 1; i < players.length; i++) {
@@ -2867,19 +2943,88 @@ function updateAllBehaviours (target, target_tags, other_tags) {
 function updateAllVolatileBehaviours () {
     for (var pass = 0; pass < 3; pass++) {
         console.log("Reaction pass "+(pass+1));
-        var anyUpdated = false;
+        let anyUpdated = false;
         
-        players.forEach(function (p) {
-            if (p !== humanPlayer && p.isLoaded()) {
+        players.opponents
+            .filter((p) => p.isLoaded())
+            .forEach(function (p) {
                 anyUpdated = p.updateVolatileBehaviour() || anyUpdated;
-            }
-        });
+            });
         
         console.log("-------------------------------------");
         
         // If nothing's changed, assume we've reached a stable state.
         if (!anyUpdated) break;
     }
+}
+
+/************************************************************
+ * Handles dangling cases after the main and volatile dialogue search steps.
+ * Attempts to fix characters that are playing outbound lines towards a focus character that is talking to someone else.
+ * This is intended to be a conservative, best-effort analysis as opposed to anything comprehensive.
+ ************************************************************/
+function fixDanglingBehaviours (focusOpp, other_tags) {
+    if (!focusOpp || !focusOpp.chosenState || !focusOpp.chosenState.parentCase) {
+        return;
+    }
+
+    console.log("Starting dangle check...");
+
+    /* First, identify the characters that are immediately relevant to whatever dialogue the focus character is saying right now.
+     * This includes any characters positively targeted by case conditions, as well as any other characters that are responding to
+     * this character using volatile conditions.
+     */
+    var curFocusCase = focusOpp.chosenState.parentCase;
+    var focusRespondsTo = curFocusCase.counters.flatMap((ctr) => {
+        if (
+            !!ctr.id
+            && (ctr.id !== "human")
+            && (isNaN(ctr.count.max) || (ctr.count.max === null) || (ctr.count.max > 0))
+        ) {
+            return [ctr.id];
+        } else {
+            return [];
+        }
+    });
+
+    Array.prototype.push.apply(focusRespondsTo, focusOpp.getVolatileDependents().map((p) => p.id));
+
+    /* As a special case, if the focus isn't talking to *anyone*, we just let dangling lines play normally.
+     */
+    if (focusRespondsTo.length === 0) {
+        return;
+    }
+
+    console.log(
+        "Dangle check: slot " + focusOpp.slot + " (" + focusOpp.id + ") is talking to " + focusRespondsTo.join(", ")
+    )
+
+    /* Now check everyone the situation focus isn't talking to for lines that are:
+     * - non-volatile,
+     * - specifically targeted towards the current focus character, and
+     * - are not dependent on the presence of someone the focus character is directly talking to.
+     * 
+     * These are most likely dangling lines.
+     */
+    players.opponents.forEach(function (p) {
+        if (!p.chosenState || !p.chosenState.parentCase) return;
+
+        var curCase = p.chosenState.parentCase;
+
+        if (
+            p !== focusOpp
+            && !p.isVolatileLocked()
+            && focusRespondsTo.indexOf(p.id) < 0
+            && !curCase.isVolatile
+            && !curCase.dangleCheck
+            && curCase.isOutboundTargetTo(focusOpp)
+            && !focusRespondsTo.some((other_id) => curCase.isOtherTargetTo(other_id))
+        ) {
+            console.log("Changing dangling line played by slot " + p.slot + " (" + p.id + ")");
+            p.updateBehaviour(other_tags, focusOpp, DANGLING_UPDATE);
+            p.fixedDanglingLine = true;
+        }
+    });
 }
 
 /************************************************************
