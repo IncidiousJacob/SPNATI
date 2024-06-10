@@ -6,11 +6,12 @@
         <tag>alternative_skin</tag>
         <tag remove="true">blade</tag>
         <tag remove="true">choker</tag>
+        <tag from="0" to="4">covered_erect_nipples</tag>
         <tag from="4" to="8">green_eyes</tag>
         <tag remove="true">hair_covering_breasts</tag>
         <tag remove="true">no_bra</tag>
         <tag>summer_skin</tag>
-        <tag from="0" to="4">sunglasses</tag>
+        <tag from="0" to="3">sunglasses</tag>
         <tag from="0" to="4">swimwear</tag>
         <tag remove="true">thong</tag>
         <tag remove="true">weapon</tag>
@@ -1199,6 +1200,38 @@
         <pose id="5-strippedcamera">
             <sprite id="stripped" src="reskins/jura_white-hot/6-stripped.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="6-stripped">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="5-stripped">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="5-stripped_alt">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped_alt.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="278" y="0" rotation="0" />
+        </pose>
+        <pose id="6-stripped_alt">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped_alt.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="278" y="0" rotation="0" />
+        </pose>
+        <pose id="5-stripped_alt-">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped_alt-.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="278" y="0" rotation="0" />
+        </pose>
+        <pose id="6-stripped_alt-">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped_alt-.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera.png" x="278" y="0" rotation="0" />
+        </pose>
+        <pose id="6-strippedb+">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera+.png" x="278" y="0" rotation="5" />
+        </pose>
+        <pose id="5-strippedb+">
+            <sprite id="stripped" src="reskins/jura_white-hot/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_white-hot/bcamera+.png" x="278" y="0" rotation="5" />
         </pose>
     </poses>
 
