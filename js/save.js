@@ -316,7 +316,7 @@ Save.prototype.loadOptions = function(){
     setUIFontSettings(UI_FONT_WEIGHT, UI_FONT_WIDTH);
     setUITheme(UI_THEME);
 
-    if ('stamina' in options) humanPlayer.stamina = options.stamina
+    if ('stamina' in options) humanPlayer.stamina = options.stamina;
 
     /* Load extra characters settings - if spnati.net or rehost, all are disabled by default;
      * if personal offline, offline and incomplete are enabled but event, duplicate, and broken aren't

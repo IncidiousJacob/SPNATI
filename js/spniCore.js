@@ -1091,7 +1091,7 @@ function gotoSettingsPage (toPage) {
 
 $('.settings-page-select').click(function (ev) {
     gotoSettingsPage($(ev.target).attr('data-select-page'));
-})
+});
 
 function updateTrackingToggles() {
     let trackingOpts = save.getUsageTrackingInfo();
