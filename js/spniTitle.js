@@ -127,7 +127,11 @@ var CANDY_LIST = [
     "kyoko_kirigiri/0-rear2.png",          // Highlighted New Character
     "kyoko_kirigiri/1-point.png",
     "kyoko_kirigiri/2-stripped_a.png",
-    "kyoko_kirigiri/4-think.png",
+    "kyouko_toshinou/4-think.png",
+    "kyouko_toshinou/0-hello-w.png",          // Highlighted New Character
+    "kyouko_toshinou/3-derp.png",
+    "reskins/kyouko_toshinou_sweater/1-casual.png",
+    "reskins/kyouko_toshinou_sweater/2-stripped-a.png",	
     "reimu/0-select.png",                  // Has Recent Updates
     "reimu/0-smug.png",
     "reimu/0-bluffing.png",
