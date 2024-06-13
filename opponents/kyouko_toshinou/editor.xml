@@ -1046,6 +1046,13 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1022" label="Bikini top" folder="Costume&gt;Watercolor Dapples" sort="15" />
         <label id="1023" label="Bikini top" folder="Costume&gt;Watercolor Dapples" sort="16" />
         <label id="1024" label="" folder="Targets&gt;Yumeko" sort="59" />
+        <label id="1025" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
+        <label id="1026" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
+        <label id="1027" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
+        <label id="1028" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
+        <label id="1029" label="Still unpunished" folder="" sort="0" />
+        <label id="1030" label="Punished" folder="" sort="0" />
+        <label id="1031" label="(hand Royal Flush or better)" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1054,7 +1061,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1024</nextId>
+    <nextId>1031</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
@@ -1104,6 +1111,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_PlayerToplessFollow" />
         <marker scope="Public" name="D_PostgameBoobs">...Boobs.</marker>
         <marker scope="Public" name="D_PostgameHelp">Her "help" might be junk poker advice. Or something else.</marker>
+        <marker scope="Public" name="D_Punished" />
         <marker scope="Public" name="D_RemovingRibbon">Someone else is removing their hair ribbon.</marker>
         <marker scope="Public" name="D_RibbonTrade">Someone else is removing their hair ribbon after Kyouko has taken hers off.</marker>
         <marker scope="Public" name="D_SexyPose">Her idea of "sexy" is weird.</marker>
@@ -1540,6 +1548,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="Z_JustDidSexyPose" />
         <marker scope="Private" name="Z_LastGameDate" />
         <marker scope="Private" name="Z_LastGameWinner" />
+        <marker scope="Public" name="Z_NeverPunished" />
         <marker scope="Public" name="Z_PlayerHasSeenRibbonTrick">Kyouko has taken her ribbon off in her default outfit at some point.</marker>
         <marker scope="Public" name="Z_PlayerWearingRibbon">The player wore the Kyouko's Ribbon collectible to the game</marker>
         <marker scope="Private" name="Z_PlayerWornRibbon">The player has worn the Kyouko's Ribbon collectible in the past.</marker>
@@ -1551,6 +1560,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Private" name="Z_SeenNotBadHand">Kyouko has only gotten bad hands until this is set.</marker>
         <marker scope="Private" name="Z_SmallStripLastHand">People keep taking off small stuff, meanwhile Kyouko's the only one who's down to her underwear.</marker>
         <marker scope="Private" name="Z_UnderwearCount">Count how many pairs of underwear someone's wearing.</marker>
+        <marker scope="Public" name="Z_Unpunished" />
         <marker scope="Public" name="Z_WinterUniform">If set, Kyouko is wearing her long-sleeved uniform. There's a reason I didn't make a situation for this.</marker>
     </markers>
     <recipes>
