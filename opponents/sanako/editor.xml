@@ -319,6 +319,9 @@
         <response id="809" opponent="meia" opponentId="1904" />
         <response id="810" opponent="meia" opponentId="1952" />
         <response id="817" opponent="jura" opponentId="1701" />
+        <response id="823" opponent="nayru" opponentId="1" />
+        <response id="831" opponent="mari" opponentId="790" />
+        <response id="832" opponent="mari" opponentId="791" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -331,6 +334,7 @@
         <note id="450">This covers both Adrien and Marinette being the one to finish. The marker is shared, but the actual target is fliexble.</note>
         <note id="451">This covers both Adrien and Marinette being the one to finish. The marker is shared, but the actual target is fliexble.</note>
         <note id="630">Saying Text "athetic" to try to capture "Pathetic" regardless of capitalization.</note>
+        <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
     </notes>
     <labels>
         <label id="2" label="sandals" folder="" sort="0" />
@@ -1142,12 +1146,28 @@
         <label id="815" label="" folder="Jura to right" sort="0" />
         <label id="816" label="" folder="Jura to right" sort="0" />
         <label id="817" label="" folder="Jura to left / Nagisa to left or right" sort="0" />
+        <label id="818" label="" folder="Jura to right" sort="0" />
+        <label id="819" label="" folder="Jura to right" sort="0" />
+        <label id="820" label="" folder="Jura to right" sort="0" />
+        <label id="821" label="" folder="Jura to right" sort="0" />
+        <label id="822" label="Nagisa caution" folder="" sort="0" />
+        <label id="824" label="" folder="Nayru to left or right" sort="0" />
+        <label id="823" label="" folder="Nayru to left or right" sort="0" />
+        <label id="825" label="" folder="Nayru to left or right" sort="0" />
+        <label id="826" label="" folder="Nayru to left or right" sort="0" />
+        <label id="827" label="" folder="Remilia to left" sort="0" />
+        <label id="828" label="" folder="Remilia to left" sort="0" />
+        <label id="829" label="" folder="Remilia to right" sort="0" />
+        <label id="830" label="" folder="Remilia to left or right" sort="0" />
+        <label id="831" label="" folder="Mari Omori to left" sort="0" />
+        <label id="832" label="" folder="Mari Omori to left" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
+        <prefix>caution</prefix>
     </prefixes>
-    <nextId>817</nextId>
+    <nextId>832</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
@@ -1308,15 +1328,19 @@
         <marker scope="Public" name="sanako_jura_s1" />
         <marker scope="Public" name="sanako_jura_s2" />
         <marker scope="Public" name="sanako_jura_s3" />
+        <marker scope="Public" name="sanako_jura_s4" />
         <marker scope="Public" name="sanako_jura_s7" />
+        <marker scope="Public" name="sanako_jura_s8" />
         <marker scope="Public" name="sanako_jura_sj_j1" />
         <marker scope="Public" name="sanako_jura_sj_j1_santa" />
         <marker scope="Public" name="sanako_jura_sj_j1_swimsuit" />
         <marker scope="Public" name="sanako_jura_sj_j2" />
         <marker scope="Public" name="sanako_jura_sj_j2_santa" />
+        <marker scope="Public" name="sanako_jura_sj_j2_swimsuit" />
         <marker scope="Public" name="sanako_jura_sj_j3" />
         <marker scope="Public" name="sanako_jura_sj_j3_santa" />
         <marker scope="Public" name="sanako_jura_sj_j4" />
+        <marker scope="Public" name="sanako_jura_sj_j5" />
         <marker scope="Public" name="sanako_kali_daughter_1" />
         <marker scope="Public" name="sanako_kali_daughter_2" />
         <marker scope="Public" name="sanako_kali_daughter_3" />
@@ -1384,6 +1408,8 @@
         <marker scope="Public" name="sanako_marceline_ask_music" />
         <marker scope="Public" name="sanako_marceline_ask_pets" />
         <marker scope="Public" name="sanako_marceline_ask_sports" />
+        <marker scope="Public" name="sanako_mari_exposition_herointro" />
+        <marker scope="Public" name="sanako_mari_exposition_relationshipintro" />
         <marker scope="Public" name="sanako_maria_maneating1" />
         <marker scope="Public" name="sanako_maria_maneating2" />
         <marker scope="Public" name="sanako_maria_maneating3" />
@@ -1546,6 +1572,7 @@
         <marker scope="Public" name="sanako_nagatoro_small_penis" />
         <marker scope="Public" name="sanako_nagatoro_sn_n1" />
         <marker scope="Public" name="sanako_nagatoro_sn_s1" />
+        <marker scope="Public" name="sanako_nagisa_already_here" />
         <marker scope="Public" name="sanako_nagisa_christmas_date" />
         <marker scope="Public" name="sanako_nagisa_deslected" />
         <marker scope="Public" name="sanako_nagisa_deslected_2" />
@@ -1705,6 +1732,10 @@
         <marker scope="Public" name="sanako_natsuki_nagisa_tsg_t6" />
         <marker scope="Public" name="sanako_navi_orb_of_light">Sanako calls Navi an orb of light and suggests that she can grant wishes.</marker>
         <marker scope="Public" name="sanako_nayru_ns_n6" />
+        <marker scope="Public" name="sanako_nayru_possessed" />
+        <marker scope="Public" name="sanako_nayru_possessed_2" />
+        <marker scope="Public" name="sanako_nayru_possessed_3" />
+        <marker scope="Public" name="sanako_nayru_possessed_4" />
         <marker scope="Public" name="sanako_nayru_so_graceful" />
         <marker scope="Public" name="sanako_neptune_shower_bath" />
         <marker scope="Public" name="sanako_nikaidou_back_together" />
@@ -1783,6 +1814,9 @@
         <marker scope="Public" name="sanako_relationship_s10" />
         <marker scope="Public" name="sanako_relationship_s11" />
         <marker scope="Public" name="sanako_relationship_s12" />
+        <marker scope="Public" name="sanako_remilia_r17" />
+        <marker scope="Public" name="sanako_remilia_tstopmeido" />
+        <marker scope="Public" name="sanako_remilia_tstopmeido2" />
         <marker scope="Public" name="sanako_remilia_wings">Sanako mistakes Remilia's wings as being part of a costume.</marker>
         <marker scope="Public" name="sanako_revy_meia_fight" />
         <marker scope="Public" name="sanako_revy_meia_fight_2" />
