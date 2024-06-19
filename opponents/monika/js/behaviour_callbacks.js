@@ -16,7 +16,11 @@
 
     monika.registerBehaviourCallback('delete_blazer', function () {
         var slot = monika.utils.monika_slot();
-        var effect = new monika.effects.GlitchPoseChange(slot, '2-removed-blazer.png', 250, 400, 776 - 400);
+        var effect = new monika.effects.GlitchPoseChange(slot, '2-removed-blazer.png', 250, 50, 776 - 400);
+		
+		if (monika.alt_costume && monika.alt_costume.id === 'monika_stirring_mermaid') {
+                effect = new monika.effects.GlitchPoseChange(slot, '2-removed-blazer.png', 250, 400, 776 - 200);
+        }
 
         setTimeout(function () {
             effect.execute();

@@ -1080,6 +1080,10 @@
         if (monika_pl.alt_costume && monika_pl.alt_costume.id === 'monika_love_bug') {
             folderPath = 'opponents/reskins/monika_love_bug/';
         }
+		
+		if (monika_pl.alt_costume && monika_pl.alt_costume.id === 'monika_stirring_mermaid') {
+            folderPath = 'opponents/reskins/monika_stirring_mermaid/';
+        }
 
         for (var i = 1; i <= 9; i++) {
             if (this.heavy) {
