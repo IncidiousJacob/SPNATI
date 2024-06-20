@@ -1321,6 +1321,13 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
                     });
                 }
                 return false;
+            } else if (split_fn[2] && split_fn[2] === 'visible') {
+                if (targetCollectible && targetCollectible.clothing) {
+                    return humanPlayer.findClothing().some(function (clothing) {
+                        return clothing.id === targetCollectible.clothing.id;
+                    });
+                }
+                return false;
             } else {
                 if (targetCollectible) return targetCollectible.isUnlocked();
                 return false;
@@ -1625,6 +1632,14 @@ function expandDialogue (dialogue, self, target, bindings) {
                     } else if (fn_parts[1] && fn_parts[1] === 'wearing') {
                         if (targetCollectible && targetCollectible.clothing) {
                             substitution = humanPlayer.getClothing().some(function (clothing) {
+                                return clothing.id === targetCollectible.clothing.id;
+                            });
+                        } else {
+                            substitution = false;
+                        }
+                    } else if (fn_parts[1] && fn_parts[1] === 'visible') {
+                        if (targetCollectible && targetCollectible.clothing) {
+                            substitution = humanPlayer.findClothing().some(function (clothing) {
                                 return clothing.id === targetCollectible.clothing.id;
                             });
                         } else {

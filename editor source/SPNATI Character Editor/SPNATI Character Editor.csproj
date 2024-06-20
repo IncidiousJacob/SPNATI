@@ -269,6 +269,12 @@
     <Compile Include="Charts\SkinnedChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.Designer.cs">
+      <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PoseSetControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1583,6 +1589,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Activities\WritingAid.resx">
       <DependentUpon>WritingAid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
+      <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BulkReplaceTool.resx">
       <DependentUpon>BulkReplaceTool.cs</DependentUpon>
