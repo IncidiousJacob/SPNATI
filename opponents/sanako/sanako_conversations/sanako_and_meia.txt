@@ -60,19 +60,35 @@ Meia [sanako34left]: ...Did you feel like---this would give it away?
 
 SANAKO STRIPPED BRA:
 Sanako [sanako_meia_sm_s12]: To tell you the truth, I'm not as confident in my body as I used to be. What do you think? Does it still hold up?
+Meia [sanako4s_left]: ...You should put on some muscle.
+  OR [sanako4s_left]: Just fine...but you're no fighter.
+
+
+SANAKO MUST STRIP PANTIES AND NO SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s13]: Time is never on my side, it seems. I have to take life as it comes, even if that means it's curtains for my last fabric, ehehe...
+Meia [sanako4left]: ...You have to be grateful for what you have, or maybe what's come in its place.
+  OR [sanako4left]: ...Even if it seems like you've lost everything, that leaves room for something new.
+
+SANAKO STRIPPING PANTIES AND NO SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s14]*: ??
+Meia []*: ??
+
+SANAKO STRIPPED PANTIES AND NO SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s15]*: ??
 Meia []*: ??
 
 
-SANAKO MUST STRIP PANTIES:
-Sanako []*: ??
+SANAKO MUST STRIP PANTIES AND AT LEAST ONE SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s13_with_shaved]: My turn? I know the new fad is to go hairless, but just to set expectations, I'm a little more traditional down here.
+Meia [sanako4leftalt]: You've seemed more <i>traditional</i> all game.
+  OR [sanako4leftalt]: <i>Traditional's</i> what we've come to expect from you.
+
+SANAKO STRIPPING PANTIES AND AT LEAST ONE SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s14_with_shaved]*: ??
 Meia []*: ??
 
-SANAKO STRIPPING PANTIES:
-Sanako []*: ??
-Meia []*: ??
-
-SANAKO STRIPPED PANTIES:
-Sanako []*: ??
+SANAKO STRIPPED PANTIES AND AT LEAST ONE SHAVED CHARACTER EXPOSED:
+Sanako [sanako_meia_sm_s15_with_shaved]*: ??
 Meia []*: ??
 
 ---
@@ -140,20 +156,27 @@ Meia [sanako_resp34]: ...Either way, I've hardly ever had a "lover" in the first
 MEIA STRIPPED BRA:
 Sanako [sanako_meia_sm_m12]: Oh dear, Meia. I'm afraid there's no remedy to a cold bed than to be as open with your heart as you are with your body.
 Meia []: My mother said that, too---let someone touch my heart.<br>...Is there really that much in the way?
-  OR []: Isn't this close enough?<br>...Either way, that was my mother's advice: "Sharing your heart with someone is a wonderful thing."
+  OR []: That was my mother's advice: "Sharing your heart with someone is a wonderful thing."<br>...Isn't this close enough?
 
 
 MEIA MUST STRIP SHORTS:
 Sanako [sanako_meia_sm_m13]: It won't be long now until Meia is as free as the day she was born.
-Meia []*: ??
+Meia [sanako_resp4]: I've been trying to think more about the <i>future</i> lately, Sanako.
+  OR [sanako_resp4]: I know you mean well, Sanako, but I've spent enough time stuck in the past.
 
 MEIA STRIPPING SHORTS:
-Sanako [sanako_meia_sm_m14]*: ??
-Meia []*: ??
+Sanako [sanako_meia_sm_m14]: I hope having a baby of your own is in your future. It's such a rewarding experience... or so I've heard.
+Meia [sanako_resp45]: ...I've heard that, too.  Passing on the best parts of yourself...
+  OR [sanako_resp45]: ...I <i>have</i> always wanted a legacy.
 
 MEIA STRIPPED SHORTS:
 Sanako [sanako_meia_sm_m15]*: ??
 Meia []*: ??
+
+HAND AFTER MEIA STRIPPED SHORTS:
+Meia []*: ??
+  OR []*: ??
+Sanako []*: ??
 
 ---
 DUE TO POSITION DETECTION, CONVERSATIONS ABOVE AND BELOW THIS LINE WON'T PLAY IN THE SAME GAME.
@@ -290,6 +313,22 @@ Meia [sanako_resp2s_right]: ...You could say the same thing about this place.
 Sanako [sanako_meia_ms_m6]: With that out of the way, I'm sure you'll be able to focus so much better.
 
 
+MEIA MUST STRIP TOWEL (SOAKING WET):
+Meia [sanako_resp1right_sw]: Exercise really clears my head.  I don't even feel like drying off...
+  OR [sanako_resp1right_sw]: I think I'll just drop the towel.  After getting some training done, being wet isn't even a bother.
+Sanako []: ??
+
+MEIA STRIPPING WEL (SOAKING WET):
+Meia [sanako_resp12right_sw]*: ??
+  OR [sanako_resp12right_sw]*: ??
+Sanako []: ??
+
+MEIA STRIPPED WEL (SOAKING WET):
+Meia [sanako_resp2s_right_sw]*: ??
+  OR [sanako_resp2s_right_sw]*: ??
+Sanako []: ??
+
+
 MEIA MUST STRIP BODYSUIT:
 Meia [sanako_resp2right]: ...Pyoro, have you finished your scan of the background radiation?<hr>{pyoro}This place really is what it seems.<br>...Do you wanna scan the other players?
   OR [sanako_resp2right]: {pyoro}I'm back, Meia!  Half-life analysis confirms this Earth is the predicted age.<br>...I could try it on your tablemates, too.{!reset}<hr>What do you mean?
@@ -342,4 +381,4 @@ HAND AFTER MEIA STRIPPED SHORTS:
 Meia [sanako_resp5s_hand]: ...It's not because I'm young, Sanako.
   OR [sanako_resp5s_hand]: Can't an <i>older</i> woman be confident?<br>...<i>Sanako.</i>
   OR [sanako_resp5s_hand]: There's no reason to wait around to look good, Sanako.<br>...And there's no reason to give up.
-Sanako [sanako_meia_ms_m15_hand]*: ??
+Sanako [sanako_meia_ms_m15_hand]: I'm sure that given the choice between mine and yours, there's not a ~player.ifMale(man|person)~ alive who wouldn't choose yours, Meia. Rather, I hope just one would choose mine...
