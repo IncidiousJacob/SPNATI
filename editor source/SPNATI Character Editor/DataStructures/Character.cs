@@ -485,7 +485,7 @@ namespace SPNATI_Character_Editor
 					if (layer < count)
 					{
 						Clothing clothes = list.GetClothing(Layers - 1 - layer);
-						if (clothes.ToString() != "SKIP") 
+						if (clothes.Type != "skip") 
 						{ 
 							label = "Losing " + clothes.ToString();
 						}
@@ -498,15 +498,17 @@ namespace SPNATI_Character_Editor
 				else
 				{
 					if (layer == 0)
-						label = "Fully Clothed";
+					{
+						label = list.GetClothing(Layers - 1).Type == "skip"? "EMPTY STAGE" : "Fully Clothed";
+					}
 					else if (layer < count)
 					{
 						int index = layer - 1;
 						Clothing lastClothes = list.GetClothing(Layers - 1 - index);
 						Clothing clothes = list.GetClothing(Layers - 1 - layer);
-						if (lastClothes.ToString() != "SKIP")
+						if (lastClothes.Type != "skip")
 						{
-							if (clothes.ToString() != "SKIP")
+							if (clothes.Type != "skip")
 							{
 								label = "Lost " + lastClothes.ToString();
 							}
@@ -517,7 +519,11 @@ namespace SPNATI_Character_Editor
 						}
 						else
 						{
-							if (clothes.ToString() == "SKIP") 
+							if (layer == 1)
+							{
+								label = clothes.Type == "skip" ? "EMPTY STAGE" : "Fully Clothed";
+							}
+							else if (clothes.Type == "skip") 
 							{ 
 								label = "EMPTY STAGE";
 							}
@@ -527,8 +533,8 @@ namespace SPNATI_Character_Editor
 								{
 									index--;
 									clothes = list.GetClothing(Layers - 1 - index);
-								} while (clothes.ToString() == "SKIP");
-								label = "Lost " + clothes.ToString();
+								} while (clothes.Type == "skip" && index > 0);
+								label = clothes.Type == "skip" ? "Fully Clothed" : "Lost " + clothes.ToString();
 							}
 						}
 					}

@@ -74,7 +74,7 @@ namespace SPNATI_Character_Editor
 			return list;
 		}
 
-		public List<PoseMapping> GetPortraitPoses()
+		public List<PoseMapping> GetPortraitPoses(int stage)
 		{
 			List<PoseMapping> list = new List<PoseMapping>();
 			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character);
@@ -83,7 +83,7 @@ namespace SPNATI_Character_Editor
 			{
 				foreach (PoseMapping pose in Poses)
 				{
-					if (!FilterPortrait(pose, editorData) && pose.ContainsStage(0))
+					if (!FilterPortrait(pose, editorData) && pose.ContainsStage(stage))
 					{
 						list.Add(pose);
 					}
@@ -93,7 +93,7 @@ namespace SPNATI_Character_Editor
 			{
 				foreach (PoseMapping pose in Poses)
 				{
-					if (pose.ContainsStage(0))
+					if (pose.ContainsStage(stage))
 					{
 						list.Add(pose);
 					}

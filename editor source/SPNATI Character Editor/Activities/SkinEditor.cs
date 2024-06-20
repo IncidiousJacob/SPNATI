@@ -14,6 +14,7 @@ namespace SPNATI_Character_Editor.Activities
 		private Costume _costume;
 		private bool _populatingImages;
 		private bool _exportOnQuit;
+		private int _fullyClothedStage;
 
 		public SkinEditor()
 		{
@@ -60,6 +61,12 @@ namespace SPNATI_Character_Editor.Activities
 			valLayers.Value = Math.Max(valLayers.Minimum, Math.Min(layers, valLayers.Maximum));
 			_costume.LayersNonSkip = layers;
 			_costume.Link.LayersNonSkip = (int)valLayers.Value == _costume.Layers ? 0 : (int)valLayers.Value;
+			int stage = 0;
+			while (_costume.Character.LayerToStageName(stage, _costume).ToString() != "Fully Clothed")
+			{
+				stage++;
+			}
+			_fullyClothedStage = stage;
 		}
 
 		private void LinkCharacter()
@@ -88,6 +95,13 @@ namespace SPNATI_Character_Editor.Activities
 				cboGender.SelectedItem = gender;
 				valLayers.Value = link.LayersNonSkip != 0 ? Math.Max(valLayers.Minimum, Math.Min(link.LayersNonSkip, valLayers.Maximum)) : Math.Max(valLayers.Minimum, Math.Min(_costume.Character.Metadata.Layers, valLayers.Maximum));
 			}
+
+			int stage = 0;
+			while(_costume.Character.LayerToStageName(stage, _costume).ToString() != "Fully Clothed")
+			{
+				stage++;
+			}
+			_fullyClothedStage = stage;
 
 			cboBaseStage.Items.Add("- None -");
 			for (int i = 0; i < _costume.Layers + Clothing.ExtraStages; i++)
@@ -124,7 +138,7 @@ namespace SPNATI_Character_Editor.Activities
 		private void PopulatePortraitDropdown()
 		{
 			_populatingImages = true;
-			List<PoseMapping> poses = _costume.Character.PoseLibrary.GetPortraitPoses();
+			List<PoseMapping> poses = _costume.Character.PoseLibrary.GetPortraitPoses(_fullyClothedStage);
 			cboDefaultPic.DisplayMember = "DisplayName";
 			cboDefaultPic.DataSource = poses;
 			_populatingImages = false;
@@ -226,7 +240,7 @@ namespace SPNATI_Character_Editor.Activities
 			}
 		}
 
-		private void cboDefaultPic_SelectedIndexChanged(object sender, System.EventArgs e)
+		private void cboDefaultPic_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			if (_populatingImages)
 				return;
@@ -234,13 +248,13 @@ namespace SPNATI_Character_Editor.Activities
 			PoseMapping image = cboDefaultPic.SelectedItem as PoseMapping;
 			if (image == null)
 				return;
-			string newKey = image.Key.Replace("#-", "0-");
+			string newKey = image.Key.Replace("#-", _fullyClothedStage + "-");
 			if (_costume.Link.PreviewImage != newKey)
 			{
 				_costume.Link.PreviewImage = newKey;
 				_costume.Link.IsDirty = true;
 			}
-			Workspace.SendMessage(WorkspaceMessages.UpdatePreviewImage, new UpdateImageArgs(_costume, image, 0));
+			Workspace.SendMessage(WorkspaceMessages.UpdatePreviewImage, new UpdateImageArgs(_costume, image, _fullyClothedStage));
 		}
 
 		private void cmdExpandPortrait_Click(object sender, EventArgs e)
