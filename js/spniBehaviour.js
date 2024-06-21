@@ -2349,7 +2349,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     }
 
     // stage
-    if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(self.trigger) < 0) {
+    if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(this.trigger) < 0) {
         if (!checkStage(self.stage, this.stage)) {
             return false; // failed "stage" requirement
         }
