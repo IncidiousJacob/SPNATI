@@ -5,6 +5,17 @@
     <age>19</age>
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Philosophy" id="1" priority="Prompt" min="1" max="3">
+            <description>Velvet asks the players one of a number of deep questions. Respond how you think your character would in this scenario, whether seriously or humorously.</description>
+        </case>
+        <case name="Velvet_mate" id="44" priority="Noteworthy" min="3" max="7">
+            <description>Velvet announces she's looking for a mate. Respond if your character is curious.</description>
+        </case>
+        <case name="Kinks" id="2" priority="Prompt" min="4" max="5">
+            <description>Velvet asks about a variety of kinks the players at the table have. </description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="39" opponent="zeke_pandoria" opponentId="760" />
         <response id="40" opponent="zeke_pandoria" opponentId="761" />
@@ -45,7 +56,7 @@
         <label id="42" label="" folder="Zeke and Pand" sort="0" />
         <label id="43" label="" folder="Zeke and Pand" sort="0" />
     </labels>
-    <nextId>43</nextId>
+    <nextId>44</nextId>
     <markers>
         <marker scope="Public" name="Arue0" />
         <marker scope="Public" name="Bobobo0" />
