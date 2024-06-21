@@ -75,6 +75,8 @@ namespace SPNATI_Character_Editor.Activities
 			sepSkin.Visible = _skin is Costume;
 			tsPoseList.Visible = Config.ShowLegacyPoseTabs;
 			tsAddRow.Visible = tsRemoveRow.Visible = toolStripSeparator4.Visible = false;
+
+			cboToKKLVersion.Items.AddRange(new string[] { "", "v107a4", "v107a7", "v108" });
 		}
 
 		protected override void OnFirstActivate()
@@ -2121,6 +2123,140 @@ namespace SPNATI_Character_Editor.Activities
 						_sheet.Name = form.SheetName;
 				}
 			}
+		}
+
+		private void cmdConvert_Click(object sender, EventArgs e)
+		{
+			const int oldMajor = 105, oldMinor = 0, oldAlpha = 0;
+			const int newestMajor = 108, newestMinor = 0, newestAlpha = 0;
+			const string oldKKLVersion = "v105";
+			const string newestKKLVersion = "v108";
+
+			int major, minor, alpha;
+			if (cboToKKLVersion.SelectedItem?.ToString() == "v107a4")
+			{
+				major = 107;
+				minor = 0;
+				alpha = 4;
+			}
+			else if (cboToKKLVersion.SelectedItem?.ToString() == "v107a7")
+			{
+				major = 107;
+				minor = 0;
+				alpha = 7;
+			}
+			else if (cboToKKLVersion.SelectedItem?.ToString() == "v108")
+			{
+				major = 108;
+				minor = 0;
+				alpha = 0;
+			}
+			else return;
+
+			bool unsupportedVersion = false;
+			bool futureVersion = false;
+
+			if (grid.SelectedCells.Count == 0)
+			{
+				if (_sheet != null)
+				if (MessageBox.Show("Are you sure that you want to convert the sheet's base KKL code? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
+				{
+					KisekaeCode code = new KisekaeCode(_sheet.BaseCode, true);
+					if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
+					{
+						unsupportedVersion = true;
+					}
+					else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
+					{
+						code.UpdateCode(major, minor, alpha);
+						_sheet.BaseCode = code.ToString();
+					}
+					else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
+					{
+						if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+						{
+							futureVersion = true;
+						}
+						code.DowndateCode(major, minor, alpha);
+						_sheet.BaseCode = code.ToString();
+					}
+				}
+			}
+			else if (MessageBox.Show("Are you sure that you want to convert the selected KKL code(s)? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
+			{
+				bool onlyWardrobe = false;
+				if (grid.SelectedRows.Count > 0)
+				{
+					if (MessageBox.Show("Convert only the wardrobe code(s)?", "KKL Code Conversion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+					{
+						onlyWardrobe = true;
+					}
+					foreach (DataGridViewRow row in grid.SelectedRows)
+					{
+						PoseStage stage = (PoseStage)row.Tag;
+						if (stage == null || stage.Code == null)
+						{
+							continue;
+						}
+						KisekaeCode code = new KisekaeCode(stage.Code, true);
+						if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
+						{
+							unsupportedVersion = true;
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
+						{
+							code.UpdateCode(major, minor, alpha);
+							stage.Code = code.ToString();
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
+						{
+							if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+							{
+								futureVersion = true;
+							}
+							code.DowndateCode(major, minor, alpha);
+							stage.Code = code.ToString();
+						}
+					}
+				}
+
+				if (!onlyWardrobe)
+				{
+					foreach (DataGridViewCell cell in grid.SelectedCells)
+					{
+						PoseEntry entry = (PoseEntry)cell.Tag;
+						if (entry == null || entry.Code == null)
+						{
+							continue;
+						}
+						KisekaeCode code = new KisekaeCode(entry.Code, true);
+						if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
+						{
+							unsupportedVersion = true;
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
+						{
+							code.UpdateCode(major, minor, alpha);
+							entry.Code = code.ToString();
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
+						{
+							if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+							{
+								futureVersion = true;
+							}
+							code.DowndateCode(major, minor, alpha);
+							entry.Code = code.ToString();
+						}
+					}
+				}
+			}
+
+			if (unsupportedVersion)
+				MessageBox.Show("At least one of the codes was too old (older than " + oldKKLVersion +") or an entry was not a correct Kisekae code.", "KKL Code Conversion", MessageBoxButtons.OK);
+
+			if (futureVersion)
+				MessageBox.Show("At least one of the codes was newer than the latest supported version (" + newestKKLVersion + "). Restore poses.xml from backup if import to KKL fails.", "KKL Code Conversion", MessageBoxButtons.OK);
 		}
 	}
 

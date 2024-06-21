@@ -338,7 +338,7 @@ namespace SPNATI_Character_Editor.Activities
 					markers.AddRange(_selectedCase.GetMarkers());
 				}
 				Workspace.SendMessage(WorkspaceMessages.UpdateMarkers, markers);
-				if (_selectedCase.Tag == "stripped" && stage < _character.Layers)
+				if (stage < _character.Layers)
 				{
 					if (_character.CurrentSkin != null)
 					{

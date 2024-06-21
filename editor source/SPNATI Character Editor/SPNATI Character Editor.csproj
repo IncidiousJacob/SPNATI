@@ -269,6 +269,12 @@
     <Compile Include="Charts\SkinnedChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.Designer.cs">
+      <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PoseSetControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1440,7 +1446,6 @@
     <Compile Include="Providers\StyleControlProvider.cs" />
     <Compile Include="Providers\TagProvider.cs" />
     <Compile Include="Providers\TargetProvider.cs" />
-    <Compile Include="Serialization\ImportEdit.cs" />
     <Compile Include="Services\SpellCheckerService.cs" />
     <Compile Include="Services\TinifyCompressor.cs" />
     <Compile Include="TestRequirements.cs" />
@@ -1584,6 +1589,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Activities\WritingAid.resx">
       <DependentUpon>WritingAid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
+      <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BulkReplaceTool.resx">
       <DependentUpon>BulkReplaceTool.cs</DependentUpon>
@@ -2172,6 +2180,9 @@
     <None Include="Hunspellx86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="VersionHistory\v6.9.2.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="VersionHistory\v6.9.1.1.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -1,3 +1,4 @@
+using SPNATI_Character_Editor.DataStructures;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -74,7 +75,7 @@ namespace SPNATI_Character_Editor
 			return list;
 		}
 
-		public List<PoseMapping> GetPortraitPoses()
+		public List<PoseMapping> GetPortraitPoses(int stage)
 		{
 			List<PoseMapping> list = new List<PoseMapping>();
 			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character);
@@ -83,7 +84,7 @@ namespace SPNATI_Character_Editor
 			{
 				foreach (PoseMapping pose in Poses)
 				{
-					if (!FilterPortrait(pose, editorData) && pose.ContainsStage(0))
+					if (!FilterPortrait(pose, editorData) && pose.ContainsStage(stage))
 					{
 						list.Add(pose);
 					}
@@ -93,7 +94,7 @@ namespace SPNATI_Character_Editor
 			{
 				foreach (PoseMapping pose in Poses)
 				{
-					if (pose.ContainsStage(0))
+					if (pose.ContainsStage(stage))
 					{
 						list.Add(pose);
 					}
@@ -129,7 +130,7 @@ namespace SPNATI_Character_Editor
 			if (key.StartsWith("custom:") || key.StartsWith("set:"))
 			{
 				return true;
-			}			
+			}
 			foreach (string p in editorData.IgnoredPrefixes)
 			{
 				if (key.StartsWith(p))
@@ -262,11 +263,29 @@ namespace SPNATI_Character_Editor
 					break;
 				}
 			}
+
 			if (!string.IsNullOrEmpty(key))
 			{
-				_poseMap.Remove(key);
-				_poses.Remove(mapping);
+				List<int> stages = new List<int>(mapping.Stages);
+				int? stage = mapping.StageOf(pose);
+				mapping.RemovePose(pose);
+
+				string poseSetId = key.Substring("custom:".Length).Replace("#", stage.ToString());
+				Pose replacement = _character.CustomPoses.Find((p) => p.Id == poseSetId);
+				if (replacement != null)
+					Add(replacement);
+
+				foreach (int s in stages)
+				{
+					if (!mapping.ContainsStage(s))
+					{
+						_poseMap.Remove(key);
+						_poses.Remove(mapping);
+						break;
+					}
+				}
 			}
+
 			Add(pose);
 		}
 
@@ -283,11 +302,29 @@ namespace SPNATI_Character_Editor
 					break;
 				}
 			}
+
 			if (!string.IsNullOrEmpty(key))
 			{
-				_poseMap.Remove(key);
-				_poses.Remove(mapping);
+				List<int> stages = new List<int>(mapping.Stages);
+				int? stage = mapping.StageOf(poseSet);
+				mapping.RemovePose(poseSet);
+
+				string poseId = key.Substring("custom:".Length).Replace("#", stage.ToString());
+				Pose replacement = _character.CustomPoses.Find((p) => p.Id == poseId);
+				if (replacement != null)
+					Add(replacement);
+
+				foreach (int s in stages)
+				{
+					if (!mapping.ContainsStage(s))
+					{
+						_poseMap.Remove(key);
+						_poses.Remove(mapping);
+						break;
+					}
+				}
 			}
+
 			Add(poseSet);
 		}
 
@@ -298,10 +335,25 @@ namespace SPNATI_Character_Editor
 			ParseImage(pose.Id, out stage, out id);
 			string key = GetPoseKey(stage, id, "");
 			PoseMapping mapping = _poseMap.Get(key);
-			if (mapping != null)
+
+			if (!string.IsNullOrEmpty(key))
 			{
-				_poseMap.Remove(key);
-				_poses.Remove(mapping);
+				List<int> stages = new List<int>(mapping.Stages);
+				mapping.RemovePose(pose);
+
+				Pose replacement = _character.CustomPoses.Find((p) => p.Id == pose.Id);
+				if (replacement != null)
+					Add(replacement);
+
+				foreach (int s in stages)
+				{
+					if (!mapping.ContainsStage(s))
+					{
+						_poseMap.Remove(key);
+						_poses.Remove(mapping);
+						break;
+					}
+				}
 			}
 		}
 
@@ -309,10 +361,25 @@ namespace SPNATI_Character_Editor
 		{
 			string key = "set:" + poseSet.Id;
 			PoseMapping mapping = _poseMap.Get(key);
-			if (mapping != null)
+
+			if (!string.IsNullOrEmpty(key))
 			{
-				_poseMap.Remove(key);
-				_poses.Remove(mapping);
+				List<int> stages = new List<int>(mapping.Stages);
+				mapping.RemovePose(poseSet);
+
+				PoseSet replacement = _character.PoseSets.Find((p) => p.Id == poseSet.Id);
+				if (replacement != null)
+					Add(replacement);
+
+				foreach (int s in stages)
+				{
+					if (!mapping.ContainsStage(s))
+					{
+						_poseMap.Remove(key);
+						_poses.Remove(mapping);
+						break;
+					}
+				}
 			}
 		}
 
@@ -409,6 +476,8 @@ namespace SPNATI_Character_Editor
 		/// User-friendly display name
 		/// </summary>
 		public string DisplayName { get; set; }
+
+		public Dictionary<int, PoseReference>.KeyCollection Stages { get { return _stages.Keys; } }
 
 		public string GetFlatFormat()
 		{
@@ -507,28 +576,70 @@ namespace SPNATI_Character_Editor
 			return key.Replace("#-", stage.ToString() + "-");
 		}
 
-		public bool ContainsPose(PoseSet poseSet)
+		// Since -1 is a valid stage (meaning cross-stage), this can't return -1 as a sentinel.
+		// Returning any other number would violate the usual expectation for a method like this,
+		// and it would be better to avoid using an out parameter.
+		//
+		// We could replace all uses of -1 as a stage with a named constant, but I would rather
+		// not do that.
+		public int? StageOf(PoseSet poseSet)
 		{
-			foreach (PoseReference def in _stages.Values)
+			foreach (KeyValuePair<int, PoseReference> kvp in _stages)
 			{
-				if (def.PoseSet == poseSet)
+				if (kvp.Value.PoseSet != null && kvp.Value.PoseSet.CompareTo(poseSet) == 0)
 				{
-					return true;
+					return kvp.Key;
 				}
 			}
-			return false;
+			return null;
+		}
+
+		public int? StageOf(Pose pose)
+		{
+			foreach (KeyValuePair<int, PoseReference> kvp in _stages)
+			{
+				if (kvp.Value.Pose != null && kvp.Value.Pose.CompareTo(pose) == 0)
+				{
+					return kvp.Key;
+				}
+			}
+			return null;
+		}
+
+		public bool ContainsPose(PoseSet poseSet)
+		{
+			return StageOf(poseSet) != null;
 		}
 
 		public bool ContainsPose(Pose pose)
 		{
-			foreach (PoseReference def in _stages.Values)
+			return StageOf(pose) != null;
+		}
+
+		public bool RemovePose(PoseSet poseSet)
+		{
+			if (poseSet == null)
+				return false;
+
+			List<int> stages = new List<int>(_stages.Keys).FindAll(stage => poseSet.Id.Equals(_stages[stage].PoseSet.Id));
+			foreach (int stage in stages)
 			{
-				if (def.Pose == pose)
-				{
-					return true;
-				}
+				_stages.Remove(stage);
 			}
-			return false;
+			return stages.Count > 0;
+		}
+
+		public bool RemovePose(Pose pose)
+		{
+			if (pose == null)
+				return false;
+
+			List<int> stages = new List<int>(_stages.Keys).FindAll(stage => pose.Id.Equals(_stages[stage].Pose.Id));
+			foreach (int stage in stages)
+			{
+				_stages.Remove(stage);
+			}
+			return stages.Count > 0;
 		}
 
 		public int CompareTo(PoseMapping other)
