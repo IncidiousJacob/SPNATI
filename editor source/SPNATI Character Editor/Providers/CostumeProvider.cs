@@ -80,8 +80,6 @@ namespace SPNATI_Character_Editor.Providers
 			//Link up basic information with the source character
 			skin.LinkCharacter(owner);
 
-			skin.Labels.Add(new StageSpecificValue(0, owner.Label));
-
 			//Duplicate the wardrobe
 			foreach (Clothing item in owner.Wardrobe)
 			{
