@@ -432,14 +432,6 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				return record.Key == "extra" || record.Key == "minor" || record.Key == "major" || record.Key == "important";
 			}
-			if (gridWardrobe.SelectedCells.Count > 0)
-			{
-				int rowIndex = gridWardrobe.SelectedCells[0].RowIndex;
-				if (rowIndex == 0)
-				{
-					return record.Key == "extra" || record.Key == "minor" || record.Key == "major" || record.Key == "important";
-				}
-			}
 			return true;
 		}
 	}

@@ -880,11 +880,6 @@ namespace SPNATI_Character_Editor
 
 				if (c.Type == "skip")
 				{
-					if (i == skin.Layers - 1)
-					{
-						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"Alternate costume \"{skin.Name}\" has a layer of type skip as its first layer, which is not allowed because it would cause problems in Stage-0 cases such as Selected. Make the first layer a non-skipped clothing item."));
-					}
-
 					if (!string.IsNullOrEmpty(c.Name))
 					{
 						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"Alternate costume \"{skin.Name}\" has a layer of type skip with a non-empty name, which may interfere with functions determining character status. Remove names from layers of type skip."));
@@ -900,7 +895,7 @@ namespace SPNATI_Character_Editor
 						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"Alternate costume \"{skin.Name}\" has a layer of type skip with a non-empty generic name field, which may interfere with functions determining character status. Remove all metadata from layers of type skip."));
 					}
 
-						if (c.Plural)
+					if (c.Plural)
 					{
 						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"Alternate costume \"{skin.Name}\" has a layer of type skip with the name set to plural. Uncheck the box Plural."));
 					}
