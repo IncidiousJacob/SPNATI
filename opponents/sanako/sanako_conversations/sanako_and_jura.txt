@@ -1,41 +1,45 @@
 If Sanako to left and Jura to right:
 
 SANAKO MUST STRIP SHOES AND SOCKS:
-Sanako []*: ??
-Jura []*: ??
+Sanako [sanako_jura_s1]: There are some especially beautiful people here to~background.time~, aren't there? I should count myself lucky, but I didn't expect to have so much competition!
+Jura [sanako0left]: Why not?  It's only natural that a place like this would <i>attract the attractive.</i>
+  OR [sanako0left]: Who'd you <i>think</i> was going to come here?  You can't be shy, and you can hardly be plain.
 
 SANAKO STRIPPING SHOES AND SOCKS:
-Sanako []*: ??
-Jura []*: ??
+Sanako [sanako_jura_s2]: A friend of mine told once me about her visit to a nude beach, so I thought it safer to keep my expectations to a minimum, ehehe...
+Jura [sanako01left]: Well, I don't know what happened to <i>her,</i> but <i>you</i> have crossed paths with the Mejare---that is, the descendants of Earth's most mesmerizing women.
+  OR [sanako01left]: ...It didn't go well, I'm guessing?  Well, now you're in the esteemed company of the Mejare---girls from the <i>planet</i> of female elegance.
 
 SANAKO STRIPPED SHOES AND SOCKS:
-Sanako []*: ??
-Jura []*: ??
+Sanako [sanako_jura_s3]: How lovely. I should know that my days of being the prettiest ~background.if.indoors(in the room|at the party)~ are behind me, but I'd still appreciate a kind word when I'm getting serious later.
+Jura []: ...You said it, not me.  And you shouldn't say it!  Jura is meant to <i>illuminate</i> the scene, not cast others in shadow!
+  OR []: <i>Hey,</i> there's no reason to be <i>down</i> on yourself.  Do <i>not</i> use Jura's beauty to wallow in doubt!
 
 
 SANAKO MUST STRIP SHIRT:
-Sanako []*: ??
+Sanako [sanako_jura_s4]: Me again? Well, If there's one thing I'm good at, it's adding some spice. You should see my spice rack.
 Jura []*: ??
 
 SANAKO STRIPPING SHIRT:
-Sanako []*: ??
+Sanako [sanako_jura_s5]*: ??
 Jura []*: ??
 
 SANAKO STRIPPED SHIRT:
-Sanako []*: ??
+Sanako [sanako_jura_s6]*: ??
 Jura []*: ??
 
 
 SANAKO MUST STRIP SKIRT:
-Sanako []*: ??
-Jura []*: ??
+Sanako [sanako_jura_s7]: I've been waiting so long for this. To be seen as who I am underneath, not as how I'm expected to act.
+Jura [sanako2left]: ...Girls back home act all <i>sorts</i> of ways.  What's with all the "expectations" on this planet?
+  OR [sanako2left]: ...You know, I've been <i>hearing</i> Earth girls say that kind of thing.  <i>Cutting loose, being yourself...</i>as opposed to what?
 
 SANAKO STRIPPING SKIRT:
-Sanako []*: ??
+Sanako [sanako_jura_s8]: Society comes with all kinds of expectations, especially in adulthood. It's important to live in harmony with everyone else, even if that doesn't give many opportunities for self expression...
 Jura []*: ??
 
 SANAKO STRIPPED SKIRT:
-Sanako []*: ??
+Sanako [sanako_jura_s9]*: ??
 Jura []*: ??
 
 
@@ -66,29 +70,65 @@ Jura []*: ??
 
 ---
 
-JURA MUST STRIP SWORD:
-Sanako []*: ??
+JURA MUST STRIP SWORD (DEFAULT/CHIEF OUTFIT):
+Sanako [sanako_jura_sj_j1]: Jura, you arrived looking ravishing to~background.time~! Where did you get that gorgeous dress?
+Jura [sanako_resp0]: <i>Thank you, Sanako!</i>  This dress is just wonderful---a one-of-a-kind item suited for both elegance and combat!<br>...That's how I got my hands on it.
+  OR [sanako_resp0]: <i>Haaahn,</i> Sanako, this is only the <i>best,</i> prettiest piece of clothing I ever picked up on a raid.  I'm glad you agree it's as stylish as a combat dress can get...
+
+JURA STRIPPING SWORD (DEFAULT/CHIEF OUTFIT):
+Sanako [sanako_jura_sj_j2]: Ahaha, I... see. Well, I'm sure its previous owner couldn't have fit into it as perfectly you as you do.
+Jura [sanako_resp01]: I've certainly gotten more use out of it than some officer stuck in her uniform.  Probably a <i>lady of a certain age.</i>
+  OR [sanako_resp01]: She <i>might</i> have.<br>...But I bet she was a little <i>older.</i>
+
+JURA STRIPPED SWORD (DEFAULT/CHIEF OUTFIT):
+Sanako [sanako_jura_sj_j3]: The way you say that, Jura, it's like you have something against older ladies, ehehe...
+Jura []: Only the nasty ones who try to tell Jura what to do.
+  OR []: <i>Older ladies</i> tend to have something against <i>me.</i>  Then they think they can push Jura around...
+  OR []: I respect my elders!<br>...But I don't like when they don't respect <i>me.</i>
+
+
+JURA MUST STRIP HAT (SANTA OUTFIT):
+Sanako [sanako_jura_sj_j1_santa]: I love your festive outfit, Jura! Did you come straight here from a Christmas party?
+Jura [sanako_resp0_santa]: I'll be <i>going</i> to a Christmas party later, Sanako.  The crew holds one every year.
+  OR [sanako_resp0_santa]: <i>Thank you, Sanako...</i>our annual Christmas party is actually to~background.time~'s big finale, after this game.
+
+JURA STRIPPING HAT (SANTA OUTFIT):
+Sanako [sanako_jura_sj_j2_santa]: That sounds like fun! I'm sure you'll be a big hit as Mrs. Claus.
+Jura [sanako_resp01_santa]: It's a shame she's always shown as an <i>old</i> lady, isn't it?
+  OR [sanako_resp01_santa]: <i>Hmhm!</i>  We'll say this is her at the <i>start</i> of her career.
+
+JURA STRIPPED HAT (SANTA OUTFIT):
+Sanako [sanako_jura_sj_j3_santa]: Her actual age isn't important if she still has a twinkle of youth in her eye and a spring in her step, right?
+Jura []: I don't know.  They say age catches up with everyone, and that's if you're <i>lucky...</i>well, now's not the time for that!
+  OR []: Maybe with enough <i>wonderful Christmas magic?</i>  Aging gracefully, or even aging at all...<i>ughn,</i> that's awfully dark.
+
+
+JURA MUST STRIP DRINK (WHITE-HOT):
+Sanako [sanako_jura_sj_j1_swimsuit]: Ah, Jura, it'll be difficult to get started if your hands are full. I'm sure we could find you a coaster, or perhaps your friend could hold hold your glass for you.
+Jura [sanako_resp0_wh]: "Sanako," was it?  I'm well aware.  I just wanted a refreshment before we <i>kicked things off...</i>
+  OR [sanako_resp0_wh]: I appreciate your concern---"Sanako," right?  But this is just a little pick-me-up that I've already accounted for...
+
+JURA STRIPPING DRINK (WHITE_HOT): sucking it dry
+Sanako [sanako_jura_sj_j2_swimsuit]: If you want to finish it off, I'm sure nobody would object. It looks delicious.
 Jura []*: ??
 
-JURA STRIPPING SWORD:
-Sanako []*: ??
-Jura []*: ??
-
-JURA STRIPPED SWORD:
-Sanako []*: ??
+JURA STRIPPED DRINK (WHITE-HOT): empty glass passed to Barnette
+Sanako [sanako_jura_sj_j3_swimsuit]*: ?? -- "thirsty"?
 Jura []*: ??
 
 
 JURA MUST STRIP BOOTS:
-Sanako []*: ??
-Jura []*: ??
+Sanako [sanako_jura_sj_j4]: Jura, would you telling us a little more about that nice young lady you arrived here with? "Miss Barnette", was it?
+Jura [sanako_resp1]: I see you've noticed her <i>people skills</i> already, Sanako.  Don't worry about Barnette.  We're dating.
+  OR [sanako_resp1]: I didn't arrive with a <i>nice</i> young lady, Sanako.  But we're <i>together,</i> you see.  So be nice to <i>Jura,</i> and Barnette'll---<i>tolerate</i> you.
+  OR [sanako_resp1]: Oh, Barnette's my girlfriend, Sanako.  She's not much of a <i>people person,</i> no need to dance around it...
 
 JURA STRIPPING BOOTS:
-Sanako []*: ??
+Sanako [sanako_jura_sj_j5]: She's got a determined spirit about her. I'm sure she'd warm up to us if we got to know her as well as you do.
 Jura []*: ??
 
 JURA STRIPPED BOOTS:
-Sanako []*: ??
+Sanako [sanako_jura_sj_j6]*: ??
 Jura []*: ??
 
 
@@ -122,11 +162,24 @@ JURA MUST STRIP DRESS:
 Sanako []*: ??
 Jura []*: ??
 
-JURA STRIPPING DRESS:
+JURA STRIPPING DRESS: Barnette filming
 Sanako []*: ??
 Jura []*: ??
 
 JURA STRIPPED DRESS:
+Sanako []*: ??
+Jura []*: ??
+
+
+JURA MUST STRIP THONG:
+Sanako []*: ??
+Jura []*: ??
+
+JURA STRIPPING THONG:
+Sanako []*: ??
+Jura []*: ??
+
+JURA STRIPPED THONG:
 Sanako []*: ??
 Jura []*: ??
 
@@ -212,8 +265,10 @@ Jura [sanako45]: That's just my sense of things!  And clearly I wasn't wrong.  K
 Sanako [sanako_jura_js_s14]: I'm sorry! This is about as open as I can get to~background.time~. Although, in another way, I'll open up even further in just a moment, ehehe...
 
 SANAKO STRIPPED PANTIES:
-Jura []*: ??
-Sanako [sanako_jura_js_s15]*: ??
+Jura [sanako5s]: I can't force you.<br>...Well, we <i>could.</i>  If this pirate's not feeling <i>placated,</i> maybe she'll just have to <i>plunder...</i>
+  OR [sanako5s]: If you don't give me what I want, I might just have to <i>take</i> it.  That's the <i>pirate</i> way...
+  OR [sanako5s]: You should remember who your company is!  We have <i>ways</i> of making you talk.  You wouldn't <i>want</i> that, would you?
+Sanako [sanako_jura_js_s15]: Oho, are you <i>flirting</i> with me, Jura? I'll whisper the real reason to you later. Just keep it between us, okay?
 
 ---
 
@@ -292,13 +347,15 @@ Jura [sanako_resp4right]: <i>Barneeeette...</i>it's time!  Come over here.<br>..
   OR [sanako_resp4right]: You hear that, Sanako?  Your <i>oven timer</i> just rang.  Grab some gloves, and Barnette'll get the camera---this is going to be <i>hot.</i>
 Sanako [sanako_jura_js_j13]: Oooh! Going to add a little extra sizzle to ~background.if.day(proceedings|tonight)~, are we?
 
-JURA STRIPPING DRESS:
-Jura []*: ??
-Sanako [sanako_jura_js_j14]*: ??
+JURA STRIPPING DRESS: Barnette filming
+Jura [sanako_resp45right]: You...<i>underestimate me!</i>  Prepare your palate for Jura's <i>spice...</i>an <i>entire rack!</i>
+  OR [sanako_resp45right]: Not a <i>little...</i>no, Jura will <i>dominate the flavor!  Behold---!</i>
+Sanako [sanako_jura_js_j14]: Ehehe, I think Barnette's here to steal your secret spices!
 
 JURA STRIPPED DRESS:
-Jura []*: ??
-Sanako [sanako_jura_js_j15]*: ??
+Jura [sanako_resp5s_right]: <i>Hohoho...</i>o-hohohohooo!  There's nothing <i>secret</i> about it!  The sight, the taste, the <i>texture---</i>I'll be a worldwide phenomenon...!
+  OR [sanako_resp5s_right]: You've got me all wrong <i>again...hoho.  Oh-</i>hohohooo!  This dish is for <i>all to enjoy...!</i>
+Sanako [sanako_jura_js_j15]: I'm sure everyone will want to just gobble you up! Ehehe...
 
 
 JURA MUST STRIP THONG: and Nagisa absent
@@ -314,29 +371,29 @@ Sanako [sanako_jura_js_j17]: Just be sure to enjoy this time in your life for as
 JURA STRIPPED THONG (Barnette appears with her camera): and Nagisa absent
 Jura [sanako_resp6s_right]: ...Photos won't be a problem.
   OR [sanako_resp6s_right]: ...I don't know, Barnette, will there be enough <i>photos</i> of me?
-Sanako [sanako_jura_js_j18]*: ??
+Sanako [sanako_jura_js_j18]: Point taken! Ah, but maybe hide to~background.time~'s photos away until your baby's mature enough to learn what you gave up for her...
 
 
 JURA MUST STRIP THONG: and Nagisa present
-Nagisa [nagisa_jura_sanako_njs_j16]: ??
+Nagisa [nagisa_jura_sanako_njs_j16]*: I don't know how you do it, Jura. After everything, you still seem so confident.
 Jura [sanako_resp5right_nagisa]: Even if you all live here, it's courageous to come alone.  Jura can only be so bold because...I know our crew is supporting me!
   OR [sanako_resp5right_nagisa]: ...I'm almost out.  These moments can be a little nerve-wracking...but it must be worse for all of you, without anyone you know to help!
-Nagisa [nagisa_jura_sanako_jns_j16]*: ??
-Sanako [sanako_jura_nagisa_js_j16]: I believe that, whether you know it or not, the people who love you are always there cheering you on. In spirit, if not in person.
-Nagisa [nagisa_jura_sanako__jsnj16]: ??
+Nagisa [nagisa_jura_sanako_jns_j16]*: Barnette has been cheering you along all the way. It's been nice. Maybe someday someone will support me like that too.
+Sanako [sanako_jura_nagisa_js_j16]: We might not always be aware of it, but I believe that the people who love you are always there cheering you on. In spirit, if not in person.
+Nagisa [nagisa_jura_sanako__jsnj16]: That's right! If they have you in their hearts, I'm sure they want what's best for you.
 
 JURA STRIPPING THONG: and Nagisa present
-Nagisa [nagisa_jura_sanako_njs_j17]*: ??
+Nagisa [nagisa_jura_sanako_njs_j17]*: Do you really think so?
 Jura [sanako_resp56right_nagisa]: That's a nice thought, Sanako.  It hasn't been put to the test much.  After all, we're Magno's...<i>Family.</i>
   OR [sanako_resp56right_nagisa]: ...<i>Hmmm.</i>  The thing is, Sanako, <i>Magno's Family</i> is never apart...maybe you can understand.
-Nagisa [nagisa_jura_sanako_jns_j17]*: ??
+Nagisa [nagisa_jura_sanako_jns_j17]*: I guess so... But don't tell me your family game night is usually like this!
 Sanako [sanako_jura_nagisa_js_j17]: This <i>is</i> pretty salacious for a family activity... but if your intentions are pure, I'm sure nobody would hold it against you.
-Nagisa [nagisa_jura_sanako_jsn_j17]*: ??
+Nagisa [nagisa_jura_sanako_jsn_j17]*: Just because they support you doesn't mean they have to watch everything you do. They're... they're not watching right now, are they?
 
 JURA STRIPPED THONG: and Nagisa present
-Nagisa [nagisa_jura_sanako_njs_j18]*: ??
-Jura [sanako_resp6s_right]*: ??
-  OR [sanako_resp6s_right]*: ??
-Nagisa [nagisa_jura_sanako_jns_j18]*: ??
-Sanako [sanako_jura_nagisa_js_j18]*: ??
-Nagisa [nagisa_jura_sanako_jsn_j18]*: ??
+Nagisa [nagisa_jura_sanako_njs_j18]*: I didn't intend to tell my family anything about to~background.time~. I don't think they'd approve...
+Jura [sanako_resp6s_right_nagisa]: Whatever you tell yourself, it may not be the <i>naked truth.</i>
+  OR [sanako_resp6s_right_nagisa]: You can "intend" whatever you want, but sooner or later, <i>reality</i> lies bare.
+Nagisa [nagisa_jura_sanako_jns_j18]*: I think I understand. I shouldn't keep any secrets from my mom. I'm sure she'll understand if I tell her everything about to~background.time~.
+Sanako [sanako_jura_nagisa_js_j18]: This is about as explicit as you could get, Jura. Ehehe...
+Nagisa [nagisa_jura_sanako_jsn_j18]*: If it's okay, could you blur my face out on the video tape? And, um, my other bits...

@@ -174,6 +174,14 @@ Player.prototype.resetState = function () {
 
         this.loadStylesheet();
         this.stageChangeUpdate();
+
+        /* Skip over any initial skip layers. */
+        let layer = this.clothing.length - 1;
+        while (layer >= 0 && this.clothing[layer].type === "skip") {
+            this.stage++;
+            this.stageChangeUpdate();
+            layer--;
+        }
     }
 }
 
@@ -422,7 +430,7 @@ Player.prototype.getMarker = function (baseName, target, numeric, targeted_only)
         }
     }
 
-    var cast = parseInt(val, 10);
+    var cast = Number(val);
 
     if (!isNaN(cast)) {
         return cast;
@@ -1628,8 +1636,15 @@ Opponent.prototype.loadXMLTriggers = function () {
                 let c = new Case($case, trigger);
                 this.recordTargetedCase(c);
 
-                c.getStages().forEach(function (stage) {
-                    var key = c.trigger+':'+stage;  // Case constructor may have altered the trigger
+                /* The Case constructor may have altered the trigger as part of autoconversion,
+                 * so use c.trigger instead of the local trigger variable when adding to the cases map.
+                 *
+                 * Additionally, cases in STARTING_STAGE_CASES ignore their stage conditions and are
+                 * always treated as being part of stage 0 when it comes to the cases map.
+                 */
+                let stages = (STARTING_STAGE_CASES.indexOf(c.trigger) >= 0) ? [0] : c.getStages();
+                stages.forEach(function (stage) {
+                    var key = c.trigger+':'+stage;  
                     if (!this.cases.has(key)) {
                         this.cases.set(key, []);
                     }
@@ -1690,6 +1705,7 @@ Player.prototype.getImagesForStage = function (stage) {
             caseList.forEach(processCase);
         });
     } else {
+        /* TODO: should we preload images for all triggers in STARTING_STAGE_CASES instead of just game_start? */
         if (this.cases.has(GAME_START + ':0')) {
             this.cases.get(GAME_START + ':0').forEach(processCase);
         }

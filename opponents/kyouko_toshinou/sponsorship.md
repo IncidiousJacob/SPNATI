@@ -1,10 +1,16 @@
 # Sponsorship reqs
 
 [X] Remillia
-[ ] L0kkit
-[ ] Spaceman
-[ ] Tweetsie
+[X] Lokkit
+[X] Spaceman
+[X] Tweetsie
 [X] Nicole
+
+Except for targeted lines, all lines for sponsorship can be found in the Sponsors folder, further sorted by the person
+they're for and which requirement they fill, if it's done across multiple cases. As for targeted lines, Kyouko's
+targeted line count started at 129, so Remillia's requirement alone was sufficient to cover the others. Spaceman asked
+for something more specific than just a number of targeted lines, so the relevant characters and stripping phases are
+listed there.
 
 ## Remillia
 
@@ -20,19 +26,11 @@
 - [X] Add 10 more After finished (self) lines without a filter.
 - [X] Add 5 more lines towards Human which are unrelated to her bow collectible. Any case.
 
-## L0kkit
+## Lokkit
 
 - [X] Add at least 30 targeted lines
-- [ ] Add at least 30 hand quality lines (8/30)
+- [X] Add at least 30 hand quality lines
 - (S) Show her candid side more
-
-## Ace
-
-- [ ] 10 more generic lines in interval [5, 7] (~3 each suggested)
-- [ ] 4 more unique targets, 5 lines each
-  - [ ] Sanako (2)
-- (S) Target Pokemon chars
-- (S) Bring up friends
 
 ## Spaceman
 
@@ -47,11 +45,11 @@
   - [X] Removed major (female)
   - [X] Masturbating (male)
   - [X] Masturbating (female)
-- [ ] 25 outgoing targets (19/25)
+- [X] 25 outgoing targets
   - Yumeko (6 stages)
   - Nadeshiko (8 stages)
   - Mari Setogaya (starting at 1, 5 stages)
-  - Kyoko Kirigiri (starting at 1, 1/7 stages)
+  - Kyoko Kirigiri (starting at 1, 7 stages)
 - [X] 20 filters
 - (S) Tweak face a little - try reduced head size
 - (S) Casual alt
@@ -59,13 +57,7 @@
 ## Tweetsie
 
 - [X] 25 targets to any characters
-- [ ] 25 generics exploring her sexuality more (preferably in interval [4, 7]) (15/25)
-
-## Karbol
-
-- (S) Casual outfit
-- (S) Develop sexuality more
-- (S) Filters
+- [X] 25 generics exploring her sexuality more (preferably in interval [4, 7])
 
 ## Nicole
 
@@ -81,3 +73,17 @@
   - [X] Return (5 stripping)
   - [X] Sex reveal (6 stripped)
 - (S) Fade the chadkyouko sprite
+
+## Ace
+
+- [ ] 10 more generic lines in interval [5, 7] (~3 each suggested)
+- [ ] 4 more unique targets, 5 lines each
+  - [ ] Sanako (2)
+- (S) Target Pokemon chars
+- (S) Bring up friends
+
+## Karbol
+
+- (S) Casual outfit
+- (S) Develop sexuality more
+- (S) Filters
