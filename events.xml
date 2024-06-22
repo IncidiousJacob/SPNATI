@@ -194,27 +194,16 @@
         -->
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="summer" partition="1" sort="2">nagatoro</character>
-        <character highlight="summer" partition="1" sort="2">mari_setogaya</character>
-        <character highlight="summer" partition="1" sort="2">polly</character>
-        <character highlight="summer" partition="1" sort="2">hilda</character>
-        <character highlight="summer" partition="1" sort="2">rosa</character>
-        <character highlight="summer" partition="1" sort="2">fluttershy</character>
-        <character highlight="summer" partition="1" sort="2">aqua_kh</character>
-        <character highlight="summer" partition="1" sort="2">yunyun</character>
-        <character highlight="summer" partition="1" sort="2">petra</character>
-        <character highlight="summer" partition="1" sort="2">dawn</character>
-        <character highlight="summer" partition="1" sort="2">wasp</character>
-        <character highlight="summer" partition="1" sort="2">aella</character>
-        <character highlight="summer" partition="1" sort="2">maria</character>
-        <character highlight="summer" partition="1" sort="2">roll_caskett</character>
-        <character highlight="summer" partition="1" sort="2">mitama</character>
-        <character highlight="summer" partition="1" sort="2">sweetheart</character>
-        <character highlight="summer" partition="1" sort="2">aqua_konosuba</character>
+        <character highlight="summer" partition="1" sort="2">meia</character>
+        <character highlight="summer" partition="1" sort="2">jura</character>
+        <character highlight="summer" partition="1" sort="2">kyouko_toshinou</character>
+        <character highlight="summer" partition="1" sort="2">rose</character>
+        <character highlight="summer" partition="1" sort="2">monika</character>
 
         <costumes highlight="summer" partition="1" sort="1">summer</costumes>
 
         <character highlight="summer">nami</character>
+        <character highlight="summer">nico_robin</character>
         <character highlight="summer">aqua_grunt</character>
         <character highlight="summer">misty_hgss</character>
         <character highlight="summer">shimakaze</character>
@@ -439,10 +428,11 @@
         <background>paris rooftop</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="valentines" partition="1" sort="2">mari_setogaya</character>
-        <character highlight="valentines" partition="1" sort="2">gloria</character>
-        <character highlight="valentines" partition="1" sort="2">cagliostro</character>
-        <character highlight="valentines" partition="1" sort="2">anatoly</character>
+        <character highlight="valentines" partition="1" sort="3">yuno_uno</character>
+        <character highlight="valentines" partition="1" sort="3">roll_caskett</character>
+        <character highlight="valentines" partition="1" sort="3">maria</character>
+        <character highlight="valentines" partition="1" sort="3">sheena</character>
+        <character highlight="valentines" partition="1" sort="2">meia</character>
 
         <costumes highlight="valentines" partition="1" sort="1">valentines</costumes>
 
@@ -451,14 +441,52 @@
             <candy uid="meia" base="reskins/meia_cupid" src="1-busy.png" />
             <candy uid="meia" base="reskins/meia_cupid" src="2-pleased.png" />
             <candy uid="meia" base="reskins/meia_cupid" src="2-addressing.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="0-wave.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="1-smiling.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="1-wave.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="2-stretch.png" />
+            
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="0-smug.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="0-seductive.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="1-sadistic.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="1-chuckling.png" />
+
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="0-amused.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="0-tsun.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="1-amused.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="1-horny.png" />
+            
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-aa_select.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-casual.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-embarrassed.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-happy_to_be_here.png" />
+            
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-cocky.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-ladyboner.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-neutral.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-phone_grin.png" />
+            
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-bashful.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-selection.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-shy.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-smug.png" />
+            
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-annoyed.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-cheerful.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-flustered.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-laughing.png" />
+            <!--            
             <candy uid="uravity" base="reskins/cheerleaderochako" src="0-calm.png" />
             <candy uid="uravity" base="reskins/cheerleaderochako" src="1-heroic.png" />
             <candy uid="uravity" base="reskins/cheerleaderochako" src="2-happy.png" />
             <candy uid="uravity" base="reskins/cheerleaderochako" src="3-embarrassed.png" />
+            -->
+            <!--
             <candy uid="monika" base="reskins/monika_love_bug" src="0-writing-tip.png" />
             <candy uid="monika" base="reskins/monika_love_bug" src="1-interested.png" />
             <candy uid="monika" base="reskins/monika_love_bug" src="2-happy.png" />
             <candy uid="monika" base="reskins/monika_love_bug" src="3-shy-happy.png" />
+            -->
             <candy uid="ini" base="reskins/flower_girl_ini" src="0-sleepy.png" />
             <candy uid="ini" base="reskins/flower_girl_ini" src="1-excited.png" />
             <candy uid="ini" base="reskins/flower_girl_ini" src="2-dumb.png" />
@@ -471,22 +499,28 @@
             <candy uid="lyn" base="reskins/lynbride" src="1-happy.png" />
             <candy uid="lyn" base="reskins/lynbride" src="2-interested.png" />
             <candy uid="lyn" base="reskins/lynbride" src="3-happy.png" />
+            <!--
             <candy uid="chiaki" base="reskins/chiakimaid" src="0-sleepy.png" />
             <candy uid="chiaki" base="reskins/chiakimaid" src="1-happy.png" />
             <candy uid="chiaki" base="reskins/chiakimaid" src="2-excited.png" />
             <candy uid="chiaki" base="reskins/chiakimaid" src="3-embarrassed.png" />
+            -->
+            <!--
             <candy uid="zizou" base="reskins/zizou_valentine" src="0-happy.png" />
             <candy uid="zizou" base="reskins/zizou_valentine" src="1-excited.png" />
             <candy uid="zizou" base="reskins/zizou_valentine" src="2-appreciative.png" />
             <candy uid="zizou" base="reskins/zizou_valentine" src="2-puzzled.png" />
+            -->
             <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="0-happy.png" />
             <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="1-z_stripping.png" />
             <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="2-wink.png" />
             <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="3-embarrassed_2.png" />
+            <!-- This costumeis now evergreen/non-seasonal
             <candy uid="spooky" base="reskins/spooky_nurse" src="0-innocent.png" />
             <candy uid="spooky" base="reskins/spooky_nurse" src="0-excited.png" />
             <candy uid="spooky" base="reskins/spooky_nurse" src="0-calm.png" />
             <candy uid="spooky" base="reskins/spooky_nurse" src="0-happy.png" />
+            -->
             <candy uid="emi" base="reskins/emi_lovebunny" src="0-excited.png" />
             <candy uid="emi" base="reskins/emi_lovebunny" src="1-interested.png" />
             <candy uid="emi" base="reskins/emi_lovebunny" src="2-stripping.png" />
@@ -495,6 +529,51 @@
             <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="1-Charming.png" />
             <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="2-Calm.png" />
             <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="0-Happy.png" />
+            
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-interested.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-lecture.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-strip.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-happy.png" />
+            
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-neutral.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-horny.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-z_portrait.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-flirty.png" />
+            
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-cocky.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-holdHat.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-mischievous.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-shhh.png" />
+            
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-calm.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-excited.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-impressed.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-positive.png" />
+            
+            <candy uid="mari" base="reskins/mari_nurse" src="0-tease.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-smug-3.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-coy.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-demure.png" />
+            
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-interested.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-wink.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-greeting.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-grin.png" />
+            
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-portrait.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-Happy.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-embarrassed.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-bun_touching.png" />
+            
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Confident.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Calm.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Embarrassed.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Yakisoba.png" />
+            
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-content.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-coy.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-embarrassed.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-excited.png" />
         </candy-catalog>
     </event>
     <event id="easter">
@@ -502,10 +581,6 @@
 
         <!-- The April Fool's event is the first three days of April, and we want to keep these event separate where possible because of how different they are. -->
         <dates>
-            <date>
-                <from year="2023" month="4" day="7" /> <!-- Good Friday in 2023 is April 7 -->
-                <to year="2023" month="4" day="20" />
-            </date>
             <date>
                 <from year="2024" month="3" day="17" /> <!-- Good Friday in 2024 is March 29, so these dates are mostly early. -->
                 <to year="2024" month="3" day="30" />
@@ -547,7 +622,9 @@
         <background>garden</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="easter" partition="1" sort="2">mari_setogaya</character>
+        <character highlight="easter" partition="1" sort="2">mari</character>
+        <character highlight="easter" partition="1" sort="2">senko</character>
+        <character highlight="easter" partition="1" sort="2">gloria</character>
 
         <costumes highlight="easter" partition="1" sort="1">easter</costumes>
 
@@ -560,10 +637,12 @@
             <candy uid="catria" base="reskins/bunny_catria" src="0-ironic.png" />
             <candy uid="catria" base="reskins/bunny_catria" src="0-heart.png" />
             <candy uid="catria" base="reskins/bunny_catria" src="0-behind.png" />
+            <!--         
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Cutesy.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Happy.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Horny.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Smug.png" />
+            -->           
             <candy uid="florina" base="reskins/florina_easter" src="0-interested.png" />
             <candy uid="florina" base="reskins/florina_easter" src="0-horny.png" />
             <candy uid="florina" base="reskins/florina_easter" src="0-calm.png" />
@@ -572,14 +651,29 @@
             <candy uid="kazuma" base="reskins/kazuma_spring" src="0-embarrassed.png" />
             <candy uid="kazuma" base="reskins/kazuma_spring" src="0-horrified.png" />
             <candy uid="kazuma" base="reskins/kazuma_spring" src="0-shocked.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-casual.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-wink.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-relaxed.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-demure.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-wink.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-grin.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-nice.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-strip.png" />
+          
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-cute.png" />
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-oopsy.png" />
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-ready.png" />
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-confident.png" />
+            <!--
             <candy uid="pinkie_pie" base="reskins/pink_bunny" src="0-hi.png" />
             <candy uid="pinkie_pie" base="reskins/pink_bunny" src="0-wink.png" />
             <candy uid="pinkie_pie" base="reskins/pink_bunny" src="1-happy.png" />
             <candy uid="pinkie_pie" base="reskins/pink_bunny" src="1-excited.png" />
+            -->
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-bun_touching.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-calm.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-Happy.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-portrait.png" />
             <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-calm.png" />
             <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-flustered.png" />
             <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-interested.png" />
@@ -603,7 +697,12 @@
         <background>haunted forest</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="halloween" partition="1" sort="2">critical_darling</character>
+        <character highlight="halloween" partition="1" sort="3">kumatora</character>
+        <character highlight="halloween" partition="1" sort="3">mitama</character>
+        <character highlight="halloween" partition="1" sort="3">critical_darling</character>
+        <character highlight="halloween" partition="1" sort="3">mia_golden_sun</character>
+        <character highlight="halloween" partition="1" sort="2">caitlin</character>
+        <character highlight="halloween" partition="1" sort="2">sweetheart</character>
 
         <costumes highlight="halloween" partition="1" sort="1">halloween</costumes>
 
@@ -689,13 +788,13 @@
         <background>holiday lodge</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
+        <character highlight="xmas" partition="1" sort="2">jura</character>
         <character highlight="xmas" partition="1" sort="2">mari_setogaya</character>
-        <character highlight="xmas" partition="1" sort="2">barbara</character>
-        <character highlight="xmas" partition="1" sort="2">gloria</character>
-        <character highlight="xmas" partition="1" sort="2">cagliostro</character>
-        <character highlight="xmas" partition="1" sort="2">yshtola</character>
-        <character highlight="xmas" partition="1" sort="2">critical_darling</character>
-        <character highlight="xmas" partition="1" sort="2">dwight</character>
+        <character highlight="xmas" partition="1" sort="2">aqua_konosuba</character>
+        <character highlight="xmas" partition="1" sort="2">toph</character>
+        <character highlight="xmas" partition="1" sort="2">aqua_kh</character>
+        <character highlight="xmas" partition="1" sort="2">spooky</character>
+        <character highlight="xmas" partition="1" sort="2">joey</character>
 
         <costumes highlight="xmas" partition="1" sort="1">xmas</costumes>
 
@@ -748,15 +847,34 @@
 
         <!-- Put AF costumes and AF characters into the same group, but place AF-only characters before costumes -->
         <!-- Also, put this year's new characters/costumes first -->
-        <character highlight="april_fools" partition="1" sort="4">giygas</character>
-        <character highlight="april_fools" partition="1" sort="4">kekko_kamen</character>
-        <character highlight="april_fools" partition="1" sort="4">toru_hagakure</character>
-        <character highlight="april_fools" partition="1" sort="3">bobobo</character>
-        <character highlight="april_fools" partition="1" sort="3">sannytess</character>
+        <character highlight="april_fools" partition="1" sort="4">cats</character>
+        <character highlight="april_fools" partition="1" sort="4">helper-chan</character>
+        <character highlight="april_fools" partition="1" sort="4">hot_spring_woman</character>
+        <character highlight="april_fools" partition="1" sort="4">tae</character>
+        <character highlight="april_fools" partition="1" sort="3">mari_setogaya</character>
+        <character highlight="april_fools" partition="1" sort="3">rosa</character>
         <tag highlight="april_fools" partition="1" sort="2">april_fools</tag>
         <costumes highlight="april_fools" partition="1" sort="1">april_fools</costumes>
 
         <!-- This works exactly like <include-status> in (prod-)config.xml. -->
+        <include-status>event</include-status>
+        <include-status>event-background</include-status>
+    </event>
+    <!-- Second event to handle the second half - will be eventually replaced by the event toggle feature -->
+    <event id="april_fools_2" consistent-timezone="true">
+        <name>April Fools Day</name>
+
+        <dates>
+            <date>
+                <from month="4" day="4" />
+                <to month="4" day="7" />
+            </date>
+        </dates>
+
+        <!-- NO FEATURED BACKGROUND -->
+
+        <!-- NO FEATURED INDIVIDUAL CHARACTERS OR HIGHLIGHTS  -->
+
         <include-status>event</include-status>
         <include-status>event-background</include-status>
     </event>
@@ -790,14 +908,14 @@
 
         <dates>
             <date>
-                <from year="2023" month="10" day="1" />
-                <to year="2023" month="10" day="7" />
+                <from year="2024" month="4" day="12" />
+                <to year="2024" month="4" day="21" />
             </date>
         </dates>
 
         <resort>
             <season>auto</season>
-            <poll>https://forms.gle/7ysB1YoUjGSdfn6x5</poll>
+            <poll>https://forms.gle/rTFWwPkRsLffETSk8</poll>
             <min-characters>40</min-characters>
         </resort>
     </event>
@@ -830,20 +948,20 @@
     -->
 
 
-    <event id="feedback-jul-2023" consistent-timezone="true">
-        <name>Character Feedback Poll (July 2023)</name>
+    <event id="feedback-jan-2024" consistent-timezone="true">
+        <name>General Feedback Poll (Early 2024)</name>
 
         <dates>
             <date>
-                <from year="2023" month="7" day="1" />
-                <to year="2023" month="9" day="16" />
+                <from year="2024" month="1" day="19" />
+                <to year="2024" month="3" day="30" />
             </date>
         </dates>
 
         <announcement>
-            <header>Character Feedback Poll (July 2023)</header>
+            <header>General Feedback Poll (Early 2024)</header>
             <announce-body>
-                <p>A SPNatI Character Feedback Poll is now live!</p>
+                <p>A SPNatI General Feedback Poll is now live!</p>
                 <p>
                     We know that many people play this game without interacting with us on the
                     /r/spnati subreddit or on either Discord server. So think of this as a way to
@@ -856,10 +974,10 @@
 
                 <a class="bordered smooth-button green event-announcement-link"
                     target="_blank" rel="noreferrer"
-                    href="https://www.reddit.com/r/spnati/comments/14oa167/spnati_character_feedback_poll_summer_2023/">Feedback Poll</a>
+                    href="https://www.reddit.com/r/spnati/comments/19btnq3/spnati_general_feedback_poll_early_2024/">Feedback Poll</a>
             </announce-body>
             <min-characters>40</min-characters>
         </announcement>
     </event>
-   
+
 </events>
