@@ -6,6 +6,14 @@
     color: #78d8d3;
 }
 
+.dialogue .konosuba[data-character="aqua_kh"] {
+    color: #086975;
+}
+
+.dark-mode .dialogue .konosuba[data-character="aqua_kh"] {
+    color: #78d8d3;
+}
+
 @font-face {
     font-family: 'KHBBS';
     src: url('epilogue/DFPW5_EUR.woff') format("woff");
@@ -153,4 +161,9 @@
     animation-name: aqua_kh-epilogue-sfx-left-1;
     animation-iteration-count: infinite;
     font-size: 5.5rem;
+}
+
+.dialogue .bold[data-character="aqua_kh"] {
+  /**/
+  font-weight: 800;
 }

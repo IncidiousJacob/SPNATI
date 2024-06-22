@@ -1,6 +1,7 @@
 using Desktop;
 using SPNATI_Character_Editor.Categories;
 using SPNATI_Character_Editor.DataStructures;
+using SPNATI_Character_Editor.Forms;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -14,9 +15,11 @@ namespace SPNATI_Character_Editor.Controls
 	public partial class WardrobeEditor : Activity
 	{
 		private IWardrobe _wardrobe;
+		private Character _character = null;
 		private bool _populatingWardrobe;
 		private Queue<WardrobeChange> _wardrobeChanges = new Queue<WardrobeChange>();
 		private WardrobeRestrictions _restrictions;
+		private int _nonSkip;
 
 		public WardrobeEditor()
 		{
@@ -38,6 +41,10 @@ namespace SPNATI_Character_Editor.Controls
 		protected override void OnInitialize()
 		{
 			_wardrobe = Record as IWardrobe;
+			if (Record is Character character)
+			{
+				_character = character;
+			}
 
 			_restrictions = _wardrobe.GetWardrobeRestrictions();
 			
@@ -61,11 +68,12 @@ namespace SPNATI_Character_Editor.Controls
 		{
 			_populatingWardrobe = true;
 			gridWardrobe.Rows.Clear();
+			_nonSkip = 0;
 			for (int i = _wardrobe.Layers - 1; i >= 0; i--)
 			{
 				Clothing c = _wardrobe.GetClothing(i);
 
-				if (!String.IsNullOrEmpty(c.GenericName))
+				if (!string.IsNullOrEmpty(c.GenericName))
 				{
 					bool validCategory = false;
 					c.GenericName = c.GenericName.ToLower();
@@ -85,10 +93,19 @@ namespace SPNATI_Character_Editor.Controls
 					}
 				}
 
+				if (c.Type != "skip")
+				{
+					_nonSkip++;
+				}
+
 				try
 				{
-					DataGridViewRow row = gridWardrobe.Rows[gridWardrobe.Rows.Add(c.Name, c.GenericName, c.Plural, c.Type, c.Position)];
+					DataGridViewRow row = gridWardrobe.Rows[gridWardrobe.Rows.Add(c.Name, null, c.GenericName, c.Plural, c.Type, c.Position)];
 					row.Tag = c;
+					if (c.HasAdv())
+					{
+						row.Cells["ColMore"].Tag = "1";
+					}
 					if (_restrictions.HasFlag(WardrobeRestrictions.LayerTypes))
 					{
 						row.Cells["ColType"].ReadOnly = true;
@@ -116,7 +133,7 @@ namespace SPNATI_Character_Editor.Controls
 		{
 			DataGridViewRow row = gridWardrobe.Rows[rowIndex];
 			string type = row.Cells[nameof(ColType)].Value?.ToString();
-			string lowercase = row.Cells[nameof(ColLower)].Value?.ToString();
+			string lowercase = row.Cells[nameof(ColName)].Value?.ToString();
 			if (string.IsNullOrEmpty(lowercase) && type != "skip") { return; }
 			string name = row.Cells[nameof(ColGeneric)].Value?.ToString();
 			bool plural = row.Cells[nameof(ColPlural)].Value != null ? (bool)row.Cells[nameof(ColPlural)].Value : false;
@@ -194,6 +211,19 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				int index = _wardrobe.RemoveLayer(layer);
 				_wardrobeChanges.Enqueue(new WardrobeChange(WardrobeChangeType.Remove, index));
+				if (_character != null)
+				{
+					_character.Metadata.Layers = _wardrobe.Layers;
+				}
+			}
+			for (int i = 0; i < _wardrobe.Layers; i++)
+			{
+				Clothing clothing = _wardrobe.GetClothing(i);
+				if (clothing.HasAdv())
+				{
+					MessageBox.Show("Some other clothing items have advanced properties.\nAfter removing this item, check if those properties are still correct.");
+					return;
+				}
 			}
 		}
 
@@ -206,11 +236,40 @@ namespace SPNATI_Character_Editor.Controls
 			DataGridViewRow row = gridWardrobe.Rows[index];
 			row.Tag = layer;
 			_wardrobeChanges.Enqueue(new WardrobeChange(WardrobeChangeType.Add, index));
+			if (_character != null)
+			{
+				_character.Metadata.Layers = _wardrobe.Layers;
+			}
+			for (int i = 0; i < _wardrobe.Layers; i++)
+			{
+				Clothing clothing = _wardrobe.GetClothing(i);
+				if (clothing.HasAdv())
+				{
+					MessageBox.Show("Some other clothing items have advanced properties.\nAfter adding a new item, check if those properties are still correct.");
+					return;
+				}
+			}
 		}
 
 		private void gridWardrobe_CellValidated(object sender, DataGridViewCellEventArgs e)
 		{
 			SaveLayer(e.RowIndex);
+			if (!_populatingWardrobe && e.ColumnIndex == ColType.Index && !_restrictions.HasFlag(WardrobeRestrictions.NoSkip))
+			{
+				int nonSkip = 0;
+				foreach (DataGridViewRow dataRow in gridWardrobe.Rows)
+				{
+					if (dataRow.Cells["ColType"].Value?.ToString() != "skip")
+					{
+						nonSkip++;
+					}
+				}
+				if (nonSkip != _nonSkip)
+				{
+					Workspace.SendMessage(WorkspaceMessages.SkipLayersChanged, nonSkip);
+					_nonSkip = nonSkip;
+				}
+			}
 		}
 
 		private void gridWardrobe_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
@@ -240,12 +299,17 @@ namespace SPNATI_Character_Editor.Controls
 
 		private void gridWardrobe_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			if (e.ColumnIndex != ColDelete.Index)
+			if (e.ColumnIndex != ColDelete.Index && e.ColumnIndex != ColMore.Index)
 			{
 				return;
 			}
 			DataGridViewColumn col = gridWardrobe.Columns[e.ColumnIndex];
-			if (col == ColDelete)
+			if (col == ColMore)
+			{
+				SaveLayer(e.RowIndex);
+				ShowAdvForm(e.RowIndex);
+			}
+			else if (col == ColDelete)
 			{
 				DataGridViewRow row = gridWardrobe.Rows[e.RowIndex];
 				if (row != null && !row.IsNewRow)
@@ -262,11 +326,80 @@ namespace SPNATI_Character_Editor.Controls
 			}
 		}
 
+		private void ShowAdvForm(int rowIndex)
+		{
+			DataGridViewRow row = gridWardrobe.Rows[rowIndex];
+			if (row.Tag == null)
+			{
+				return;
+			}
+			Clothing clothing = row.Tag as Clothing;
+			if (clothing.Type == "skip")
+			{
+				MessageBox.Show("Skipped layers cannot have advanced properties.");
+				return;
+			}
+			DataGridViewCell cell = row.Cells[nameof(ColMore)];
+			WardrobeAdvancedForm form = new WardrobeAdvancedForm(_wardrobe, rowIndex);
+			if (form.ShowDialog() == DialogResult.OK)
+			{
+				clothing.FromDeal = form.notFromStart && form.fromDeal && !string.IsNullOrEmpty(form.fromStage);
+				clothing.FromStage = "";
+				for (int i = 0; i < _wardrobe.Layers && form.notFromStart; i++)
+				{
+					if (_wardrobe.GetClothing(i).ToString() == form.fromStage)
+					{
+						clothing.FromStage = (_wardrobe.Layers - i).ToString();
+						break;
+					}
+				}
+				clothing.Reveal = form.revealBool && !string.IsNullOrEmpty(form.reveal) ? form.reveal : "";
+				clothing.StrippingLayer = "";
+				for (int i = 0; i < _wardrobe.Layers && form.differentItem && form.select; i++)
+				{
+					if (_wardrobe.GetClothing(i).ToString() == form.item)
+					{
+						clothing.StrippingLayer = i.ToString();
+						break;
+					}
+				}
+
+				if (!string.IsNullOrEmpty(form.layer.Name) && !string.IsNullOrEmpty(form.layer.Type) && form.differentItem && form.define)
+				{
+					clothing.Stripping = form.layer;
+					clothing.Stripping.Reveal = form.revealBool? form.reveal : "";
+					clothing.Reveal = "";
+				}
+				else
+				{
+					clothing.Stripping = null;
+					clothing.Reveal = form.revealBool? form.reveal : "";
+				}
+			}
+			cell.Tag = clothing.HasAdv() ? "1" : null;
+			row.Tag = clothing;
+			SaveLayer(rowIndex);
+		}
+
 		private void gridWardrobe_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
 		{
+			if (e.RowIndex == -1) return;
 			if (e.ColumnIndex == ColDelete.Index)
 			{
 				Image img = Properties.Resources.Delete;
+				e.Paint(e.CellBounds, DataGridViewPaintParts.All);
+				var w = img.Width;
+				var h = img.Height;
+				var x = e.CellBounds.Left + (e.CellBounds.Width - w) / 2;
+				var y = e.CellBounds.Top + (e.CellBounds.Height - h) / 2;
+
+				e.Graphics.DrawImage(img, new Rectangle(x, y, w, h));
+				e.Handled = true;
+			}
+			else if (e.ColumnIndex == ColMore.Index)
+			{
+				DataGridViewCell cell = gridWardrobe.Rows[e.RowIndex].Cells[e.ColumnIndex];
+				Image img = cell.Tag == null? Properties.Resources.Ellipsis : Properties.Resources.EllipsisFilled;
 				e.Paint(e.CellBounds, DataGridViewPaintParts.All);
 				var w = img.Width;
 				var h = img.Height;
@@ -298,14 +431,6 @@ namespace SPNATI_Character_Editor.Controls
 			if (_restrictions.HasFlag(WardrobeRestrictions.NoSkip))
 			{
 				return record.Key == "extra" || record.Key == "minor" || record.Key == "major" || record.Key == "important";
-			}
-			if (gridWardrobe.SelectedCells.Count > 0)
-			{
-				int rowIndex = gridWardrobe.SelectedCells[0].RowIndex;
-				if (rowIndex == 0)
-				{
-					return record.Key == "extra" || record.Key == "minor" || record.Key == "major" || record.Key == "important";
-				}
 			}
 			return true;
 		}

@@ -1,7 +1,5 @@
 using Desktop;
 using Desktop.CommonControls;
-using Desktop.CommonControls.PropertyControls;
-using Desktop.Reporting;
 using Newtonsoft.Json;
 using SPNATI_Character_Editor.IO;
 using System;
@@ -21,7 +19,7 @@ namespace SPNATI_Character_Editor
 	/// since storing PropertyChanged handlers starts to really add up when you have thousands of these.
 	/// </remarks>
 	[JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-	public class Case : INotifyPropertyChanged, IPropertyChangedNotifier, IComparable<Case>, ISliceable
+	public class Case : INotifyPropertyChanged, IPropertyChangedNotifier, IComparable<Case>
 	{
 		private static long s_globalId;
 
@@ -91,27 +89,6 @@ namespace SPNATI_Character_Editor
 			set { if (_oneShotId != value) { _oneShotId = value; NotifyPropertyChanged(); } }
 		}
 
-		private string _target;
-		[RecordSelect(DisplayName = "Target", GroupOrder = 0, Description = "Character performing the action", RecordType = typeof(Character), RecordFilter = "FilterTargetByCase", AllowCreate = true)]
-		[XmlOrder(20)]
-		[XmlAttribute("target")]
-		[JsonProperty("target")]
-		public string LegacyTarget
-		{
-			get { return _target; }
-			set { if (_target != value) { _target = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _filter;
-		[RecordSelect(DisplayName = "Target Tag", GroupOrder = 1, Description = "Target has a certain tag", RecordType = typeof(Tag), AllowCreate = true)]
-		[XmlOrder(30)]
-		[XmlAttribute("filter")]
-		[JsonProperty("filter")]
-		public string LegacyFilter
-		{
-			get { return _filter; }
-			set { if (_filter != value) { _filter = value; NotifyPropertyChanged(); } }
-		}
 
 		private string _hidden;
 		[XmlOrder(40)]
@@ -133,228 +110,7 @@ namespace SPNATI_Character_Editor
 			set { if (_disabled != value) { _disabled = value; NotifyPropertyChanged(); } }
 		}
 
-		private string _targetStage;
-		[StageSelect(DisplayName = "Target Stage", GroupOrder = 2, Description = "Target is currently within a range of stages", BoundProperties = new string[] { "Target" }, FilterStagesToTarget = true, SkinVariable = "~target.costume~")]
-		[XmlOrder(50)]
-		[XmlAttribute("targetStage")]
-		[JsonProperty("targetStage")]
-		public string LegacyTargetStage
-		{
-			get { return _targetStage; }
-			set { if (_targetStage != value) { _targetStage = value; NotifyPropertyChanged(); } }
-		}
 
-		private string _targetLayers;
-		[NumericRange(DisplayName = "Target Layers", GroupOrder = 9, Description = "Number of layers the target has left")]
-		[XmlOrder(60)]
-		[XmlAttribute("targetLayers")]
-		[JsonProperty("targetLayers")]
-		public string LegacyTargetLayers
-		{
-			get { return _targetLayers; }
-			set { if (_targetLayers != value) { _targetLayers = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetStartingLayers;
-		[NumericRange(DisplayName = "Target Starting Layers", GroupOrder = 10, Description = "Number of layers the target started with")]
-		[XmlOrder(70)]
-		[XmlAttribute("targetStartingLayers")]
-		[JsonProperty("targetStartingLayers")]
-		public string LegacyTargetStartingLayers
-		{
-			get { return _targetStartingLayers; }
-			set { if (_targetStartingLayers != value) { _targetStartingLayers = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetStatus;
-		[Status(DisplayName = "Target Status", GroupOrder = 8, Description = "Target's current clothing status")]
-		[XmlOrder(80)]
-		[XmlAttribute("targetStatus")]
-		[JsonProperty("targetStatus")]
-		public string LegacyTargetStatus
-		{
-			get { return _targetStatus; }
-			set { if (_targetStatus != value) { _targetStatus = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlaying;
-		[RecordSelect(DisplayName = "Also Playing", GroupOrder = 0, Description = "Character that is playing but not performing the current action", RecordType = typeof(Character), AllowCreate = true)]
-		[XmlOrder(90)]
-		[XmlAttribute("alsoPlaying")]
-		[JsonProperty("alsoPlaying")]
-		public string LegacyAlsoPlaying
-		{
-			get { return _alsoPlaying; }
-			set { if (_alsoPlaying != value) { _alsoPlaying = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingStage;
-		[StageSelect(DisplayName = "Also Playing Stage", GroupOrder = 1, Description = "Character in Also Playing is currently within a range of stages", BoundProperties = new string[] { "AlsoPlaying" }, FilterStagesToTarget = false, SkinVariable = "~_.costume~")]
-		[XmlOrder(100)]
-		[XmlAttribute("alsoPlayingStage")]
-		[JsonProperty("alsoPlayingStage")]
-		public string LegacyAlsoPlayingStage
-		{
-			get { return _alsoPlayingStage; }
-			set { if (_alsoPlayingStage != value) { _alsoPlayingStage = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingHand;
-		[ComboBox(DisplayName = "Also Playing Hand", GroupOrder = 6, Description = "Character in Also Playing has a particular poker hand",
-			Options = new string[] { "Nothing", "High Card", "One Pair", "Two Pair", "Three of a Kind", "Straight", "Flush", "Full House", "Four of a Kind", "Straight Flush", "Royal Flush" })]
-		[XmlOrder(110)]
-		[XmlAttribute("alsoPlayingHand")]
-		[JsonProperty("alsoPlayingHand")]
-		public string LegacyAlsoPlayingHand
-		{
-			get { return _alsoPlayingHand; }
-			set { if (_alsoPlayingHand != value) { _alsoPlayingHand = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetHand;
-		[ComboBox(DisplayName = "Target Hand", GroupOrder = 7, Description = "Target has a particular poker hand",
-			Options = new string[] { "Nothing", "High Card", "One Pair", "Two Pair", "Three of a Kind", "Straight", "Flush", "Full House", "Four of a Kind", "Straight Flush", "Royal Flush" })]
-		[XmlOrder(120)]
-		[XmlAttribute("oppHand")]
-		[JsonProperty("oppHand")]
-		public string LegacyTargetHand
-		{
-			get { return _targetHand; }
-			set { if (_targetHand != value) { _targetHand = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _hasHand;
-		[ComboBox(DisplayName = "Has Hand", GroupOrder = 5, Description = "Character has a particular poker hand",
-			Options = new string[] { "Nothing", "High Card", "One Pair", "Two Pair", "Three of a Kind", "Straight", "Flush", "Full House", "Four of a Kind", "Straight Flush", "Royal Flush" })]
-		[XmlOrder(130)]
-		[XmlAttribute("hasHand")]
-		[JsonProperty("hasHand")]
-		public string LegacyHasHand
-		{
-			get { return _hasHand; }
-			set { if (_hasHand != value) { _hasHand = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalMales;
-		[NumericRange(DisplayName = "Total Males", GroupOrder = 2, Description = "Number of males playing (including this character and the player)", Minimum = 0, Maximum = 5)]
-		[XmlOrder(140)]
-		[XmlAttribute("totalMales")]
-		[JsonProperty("totalMales")]
-		public string LegacyTotalMales
-		{
-			get { return _totalMales; }
-			set { if (_totalMales != value) { _totalMales = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalFemales;
-		[NumericRange(DisplayName = "Total Females", GroupOrder = 1, Description = "Number of females playing (including this character and the player)", Minimum = 0, Maximum = 5)]
-		[XmlOrder(150)]
-		[XmlAttribute("totalFemales")]
-		[JsonProperty("totalFemales")]
-		public string LegacyTotalFemales
-		{
-			get { return _totalFemales; }
-			set { if (_totalFemales != value) { _totalFemales = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetTimeInStage;
-		[NumericRange(DisplayName = "Target Time in Stage", GroupOrder = 6, Description = "Number of rounds since the last time the target lost a hand")]
-		[XmlOrder(160)]
-		[XmlAttribute("targetTimeInStage")]
-		[JsonProperty("targetTimeInStage")]
-		public string LegacyTargetTimeInStage
-		{
-			get { return _targetTimeInStage; }
-			set { if (_targetTimeInStage != value) { _targetTimeInStage = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingTimeInStage;
-		[NumericRange(DisplayName = "Also Playing Time in Stage", GroupOrder = 5, Description = "Number of rounds since the last time the Also Playing player lost a hand")]
-		[XmlOrder(170)]
-		[XmlAttribute("alsoPlayingTimeInStage")]
-		[JsonProperty("alsoPlayingTimeInStage")]
-		public string LegacyAlsoPlayingTimeInStage
-		{
-			get { return _alsoPlayingTimeInStage; }
-			set { if (_alsoPlayingTimeInStage != value) { _alsoPlayingTimeInStage = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _timeInStage;
-		[NumericRange(DisplayName = "Time in Stage", GroupOrder = 4, Description = "Number of rounds since the last time this player lost a hand")]
-		[XmlOrder(180)]
-		[XmlAttribute("timeInStage")]
-		[JsonProperty("timeInStage")]
-		public string LegacyTimeInStage
-		{
-			get { return _timeInStage; }
-			set { if (_timeInStage != value) { _timeInStage = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _consecutiveLosses;
-		[NumericRange(DisplayName = "Consecutive Losses", GroupOrder = 0, Description = "Number of hands the target player (or this player) has lost in a row")]
-		[XmlOrder(190)]
-		[XmlAttribute("consecutiveLosses")]
-		[JsonProperty("consecutiveLosses")]
-		public string LegacyConsecutiveLosses
-		{
-			get { return _consecutiveLosses; }
-			set { if (_consecutiveLosses != value) { _consecutiveLosses = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalPlaying;
-		[NumericRange(DisplayName = "# Players Still in Game", GroupOrder = 3, Description = "Number of players still in the game", Minimum = 0, Maximum = 5)]
-		[XmlOrder(200)]
-		[XmlAttribute("totalAlive")]
-		[JsonProperty("totalAlive")]
-		public string LegacyTotalPlaying
-		{
-			get { return _totalPlaying; }
-			set { if (_totalPlaying != value) { _totalPlaying = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalExposed;
-		[NumericRange(DisplayName = "# Players Exposed", GroupOrder = 4, Description = "Number of players who have exposed either their chest or crotch", Minimum = 0, Maximum = 5)]
-		[XmlOrder(210)]
-		[XmlAttribute("totalExposed")]
-		[JsonProperty("totalExposed")]
-		public string LegacyTotalExposed
-		{
-			get { return _totalExposed; }
-			set { if (_totalExposed != value) { _totalExposed = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalNaked;
-		[NumericRange(DisplayName = "# Players Naked", GroupOrder = 5, Description = "Number of players who have lost all their clothing, but might still be playing", Minimum = 0, Maximum = 5)]
-		[XmlOrder(220)]
-		[XmlAttribute("totalNaked")]
-		[JsonProperty("totalNaked")]
-		public string LegacyTotalNaked
-		{
-			get { return _totalNaked; }
-			set { if (_totalNaked != value) { _totalNaked = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalMasturbating;
-		[NumericRange(DisplayName = "# Players Masturbating", GroupOrder = 6, Description = "Number of players who are currently masturbating", Minimum = 0, Maximum = 5)]
-		[XmlOrder(230)]
-		[XmlAttribute("totalMasturbating")]
-		[JsonProperty("totalMasturbating")]
-		public string LegacyTotalMasturbating
-		{
-			get { return _totalMasturbating; }
-			set { if (_totalMasturbating != value) { _totalMasturbating = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _totalFinished;
-		[NumericRange(DisplayName = "# Players Finished", GroupOrder = 7, Description = "Number of players who finished masturbating and completely out of the game", Minimum = 0, Maximum = 5)]
-		[XmlOrder(240)]
-		[XmlAttribute("totalFinished")]
-		[JsonProperty("totalFinished")]
-		public string LegacyTotalFinished
-		{
-			get { return _totalFinished; }
-			set { if (_totalFinished != value) { _totalFinished = value; NotifyPropertyChanged(); } }
-		}
 
 		private string _totalRounds;
 		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
@@ -367,137 +123,6 @@ namespace SPNATI_Character_Editor
 			set { if (_totalRounds != value) { _totalRounds = value; NotifyPropertyChanged(); } }
 		}
 
-		private string _saidMarker;
-		[MarkerCondition(DisplayName = "Said Marker", GroupOrder = 0, Description = "Character has said a marker", ShowPrivate = true)]
-		[XmlOrder(260)]
-		[XmlAttribute("saidMarker")]
-		[JsonProperty("saidMarker")]
-		public string LegacySaidMarker
-		{
-			get { return _saidMarker; }
-			set { if (_saidMarker != value) { _saidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _notSaidMarker;
-		[Marker(DisplayName = "Not Said Marker", GroupOrder = 1, Description = "Character has not said a marker", ShowPrivate = true)]
-		[XmlOrder(270)]
-		[XmlAttribute("notSaidMarker")]
-		[JsonProperty("notSaidMarker")]
-		public string LegacyNotSaidMarker
-		{
-			get { return _notSaidMarker; }
-			set { if (_notSaidMarker != value) { _notSaidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingSaidMarker;
-		[MarkerCondition(DisplayName = "Also Playing Said Marker", GroupOrder = 2, Description = "Another player has said a marker", ShowPrivate = false, BoundProperties = new string[] { "AlsoPlaying" })]
-		[XmlOrder(280)]
-		[XmlAttribute("alsoPlayingSaidMarker")]
-		[JsonProperty("alsoPlayingSaidMarker")]
-		public string LegacyAlsoPlayingSaidMarker
-		{
-			get { return _alsoPlayingSaidMarker; }
-			set { if (_alsoPlayingSaidMarker != value) { _alsoPlayingSaidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingNotSaidMarker;
-		[Marker(DisplayName = "Also Playing Not Said Marker", GroupOrder = 3, Description = "Another player has not said a marker", ShowPrivate = false, BoundProperties = new string[] { "AlsoPlaying" })]
-		[XmlOrder(290)]
-		[XmlAttribute("alsoPlayingNotSaidMarker")]
-		[JsonProperty("alsoPlayingNotSaidMarker")]
-		public string LegacyAlsoPlayingNotSaidMarker
-		{
-			get { return _alsoPlayingNotSaidMarker; }
-			set { if (_alsoPlayingNotSaidMarker != value) { _alsoPlayingNotSaidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingSayingMarker;
-		[MarkerCondition(DisplayName = "Also Playing Saying Marker", GroupOrder = 4, Description = "Another player is saying a marker at this very moment", ShowPrivate = false, BoundProperties = new string[] { "AlsoPlaying" })]
-		[XmlOrder(300)]
-		[XmlAttribute("alsoPlayingSayingMarker")]
-		[JsonProperty("alsoPlayingSayingMarker")]
-		public string LegacyAlsoPlayingSayingMarker
-		{
-			get { return _alsoPlayingSayingMarker; }
-			set { if (_alsoPlayingSayingMarker != value) { _alsoPlayingSayingMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingSaying;
-		[Text(DisplayName = "Also Playing Saying Text", GroupOrder = 5, Description = "Another player is saying some text at this very moment")]
-		[XmlOrder(310)]
-		[XmlAttribute("alsoPlayingSaying")]
-		[JsonProperty("alsoPlayingSaying")]
-		public string LegacyAlsoPlayingSaying
-		{
-			get { return _alsoPlayingSaying; }
-			set { if (_alsoPlayingSaying != value) { _alsoPlayingSaying = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _alsoPlayingSaid;
-		[Text(DisplayName = "Also Playing Said Text", GroupOrder = 5, Description = "Another player has said some text")]
-		[XmlOrder(310)]
-		[XmlAttribute("alsoPlayingSaid")]
-		[JsonProperty("alsoPlayingSaid")]
-		public string LegacyAlsoPlayingSaid
-		{
-			get { return _alsoPlayingSaid; }
-			set { if (_alsoPlayingSaid != value) { _alsoPlayingSaid = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetSaidMarker;
-		[MarkerCondition(DisplayName = "Target Said Marker", GroupOrder = 3, Description = "Target has said a marker", ShowPrivate = false, BoundProperties = new string[] { "Target" })]
-		[XmlOrder(320)]
-		[XmlAttribute("targetSaidMarker")]
-		[JsonProperty("targetSaidMarker")]
-		public string LegacyTargetSaidMarker
-		{
-			get { return _targetSaidMarker; }
-			set { if (_targetSaidMarker != value) { _targetSaidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetNotSaidMarker;
-		[Marker(DisplayName = "Target Not Said Marker", GroupOrder = 4, Description = "Target has not said a marker", ShowPrivate = false, BoundProperties = new string[] { "Target" })]
-		[XmlOrder(330)]
-		[XmlAttribute("targetNotSaidMarker")]
-		[JsonProperty("targetNotSaidMarker")]
-		public string LegacyTargetNotSaidMarker
-		{
-			get { return _targetNotSaidMarker; }
-			set { if (_targetNotSaidMarker != value) { _targetNotSaidMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetSayingMarker;
-		[MarkerCondition(DisplayName = "Target Saying Marker", GroupOrder = 5, Description = "Target is saying a marker at this very moment", ShowPrivate = false, BoundProperties = new string[] { "Target" })]
-		[XmlOrder(340)]
-		[XmlAttribute("targetSayingMarker")]
-		[JsonProperty("targetSayingMarker")]
-		public string LegacyTargetSayingMarker
-		{
-			get { return _targetSayingMarker; }
-			set { if (_targetSayingMarker != value) { _targetSayingMarker = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetSaying;
-		[Text(DisplayName = "Target Saying Text", GroupOrder = 6, Description = "Target is saying some text at this very moment")]
-		[XmlOrder(350)]
-		[XmlAttribute("targetSaying")]
-		[JsonProperty("targetSaying")]
-		public string LegacyTargetSaying
-		{
-			get { return _targetSaying; }
-			set { if (_targetSaying != value) { _targetSaying = value; NotifyPropertyChanged(); } }
-		}
-
-		private string _targetSaid;
-		[Text(DisplayName = "Target Said Text", GroupOrder = 6, Description = "Target has said some text")]
-		[XmlOrder(350)]
-		[XmlAttribute("targetSaid")]
-		[JsonProperty("targetSaid")]
-		public string LegacyTargetSaid
-		{
-			get { return _targetSaid; }
-			set { if (_targetSaid != value) { _targetSaid = value; NotifyPropertyChanged(); } }
-		}
 
 		private string _priority;
 		[XmlOrder(360)]
@@ -618,6 +243,28 @@ namespace SPNATI_Character_Editor
 			return result;
 		}
 
+		public static string TotalRoundsToString(string range)
+		{
+			if (range == null)
+			{
+				return "";
+			}
+			string[] pieces = range.Split('-');
+			if (pieces.Length == 1 || pieces[0] == pieces[1])
+			{
+				return pieces[0];
+			}
+			if (pieces.Length == 2 && string.IsNullOrEmpty(pieces[0]))
+			{
+				return $"0-{pieces[1]}";
+			}
+			if (pieces.Length == 2 && string.IsNullOrEmpty(pieces[1]))
+			{
+				return $"{pieces[0]}+";
+			}
+			return range;
+		}
+
 		public string ToConditionsString(bool excludeTarget)
 		{
 			List<string> alternates = new List<string>();
@@ -628,7 +275,7 @@ namespace SPNATI_Character_Editor
 			List<string> result = new List<string>();
 			if (!string.IsNullOrEmpty(TotalRounds))
 			{
-				result.Add(string.Format("({0} overall rounds)", GUIHelper.RangeToString(TotalRounds)));
+				result.Add(string.Format("({0} overall rounds)", TotalRoundsToString(TotalRounds)));
 			}
 			if (Conditions.Count > 0)
 			{
@@ -1273,7 +920,6 @@ namespace SPNATI_Character_Editor
 			else if (!caseIsTargetable && responseIsTargetable && !hasTarget && hasAlsoPlaying && !alsoPlayingIsResponder)
 			{
 				CopySelfIntoTarget(response, speaker);
-				CopyAlsoPlaying(response);
 			}
 			else if ((caseIsTargetable || !responseIsTargetable) && !hasTarget && !alsoPlayingIsResponder)
 			{
@@ -1286,7 +932,6 @@ namespace SPNATI_Character_Editor
 			}
 			else if (caseIsTargetable && hasTarget && !targetingResponder && !hasAlsoPlaying)
 			{
-				CopyTarget(response);
 				CopySelfIntoAlsoPlaying(response, speaker);
 			}
 			else if (caseIsTargetable && hasTarget && !hasAlsoPlaying && targetingResponder)
@@ -1297,7 +942,6 @@ namespace SPNATI_Character_Editor
 			else if (caseIsTargetable && hasTarget && !targetingResponder && alsoPlayingIsResponder)
 			{
 				CopyAlsoPlayingIntoSelf(response, responder);
-				CopyTarget(response);
 				CopySelfIntoAlsoPlaying(response, speaker);
 			}
 			else
@@ -1412,13 +1056,26 @@ namespace SPNATI_Character_Editor
 				alternate.Tag = Tag;
 				alternate.Stages = Stages;
 				Case alternateResponse = alternate.CreateResponse(speaker, responder);
+				List<TargetCondition> conditionsToRemove = new List<TargetCondition>();
+				foreach (TargetCondition c1 in alternateResponse.Conditions)
+				{
+					foreach (TargetCondition c2 in response.Conditions)
+					{
+						c1.RemoveIntersection(c2);
+					}
+					if (c1.IsAlmostEmpty)
+					{
+						conditionsToRemove.Add(c1);
+					}
+				}
+				
+				foreach (TargetCondition c in conditionsToRemove)
+				{
+					alternateResponse.Conditions.Remove(c);
+				}
+
 				response.AlternativeConditions.Add(alternateResponse);
 			}
-
-			// This is inefficient and would be better served by fixing
-			// the helper functions (CopySelfIntoAlsoPlaying, etc)
-			// to not use oldstyle conditions - do this later
-			DataConversions.ConvertCase(response, responder);
 
 			return response;
 		}
@@ -1448,21 +1105,6 @@ namespace SPNATI_Character_Editor
 			}
 
 			return false;
-		}
-
-		/// <summary>
-		/// Copies target properties into another case's target
-		/// </summary>
-		/// <param name="other"></param>
-		private void CopyTarget(Case other)
-		{
-			foreach (TargetCondition cond in Conditions)
-			{
-				if (cond.Role == "target")
-				{
-					other.Conditions.Add(cond);
-				}
-			}
 		}
 
 		/// <summary>
@@ -1569,7 +1211,7 @@ namespace SPNATI_Character_Editor
 
 				if (hasConds)
 				{
-					Conditions.Add(selfCond);
+					other.Conditions.Add(selfCond);
 				}
 
 				if (!string.IsNullOrEmpty(Conditions[i].FilterTag))
@@ -1586,21 +1228,6 @@ namespace SPNATI_Character_Editor
 					ExpressionTest copy = test.Copy();
 					copy.ChangeTarget("self");
 					other.Expressions.Add(copy);
-				}
-			}
-		}
-
-		/// <summary>
-		/// Copies AlsoPlaying properties into another case's AlsoPlaying
-		/// </summary>
-		/// <param name="other"></param>
-		private void CopyAlsoPlaying(Case other)
-		{
-			foreach (TargetCondition cond in Conditions)
-			{
-				if (cond.Role == "other")
-				{
-					other.Conditions.Add(cond);
 				}
 			}
 		}
@@ -1641,23 +1268,23 @@ namespace SPNATI_Character_Editor
 
 			foreach (TargetCondition tCond in Conditions)
 			{
-				if (String.IsNullOrEmpty(tCond.TimeInStage))
+				if (string.IsNullOrEmpty(tCond.TimeInStage))
 				{
 					cond.TimeInStage = tCond.TimeInStage;
 				}
-				if (String.IsNullOrEmpty(tCond.ConsecutiveLosses))
+				if (string.IsNullOrEmpty(tCond.ConsecutiveLosses))
 				{
 					cond.ConsecutiveLosses = tCond.ConsecutiveLosses;
 				}
-				if (String.IsNullOrEmpty(tCond.Hand))
+				if (string.IsNullOrEmpty(tCond.Hand))
 				{
 					cond.Hand = tCond.Hand;
 				}
-				if (String.IsNullOrEmpty(tCond.NotSaidMarker))
+				if (string.IsNullOrEmpty(tCond.NotSaidMarker))
 				{
 					cond.NotSaidMarker = tCond.NotSaidMarker;
 				}
-				if (String.IsNullOrEmpty(tCond.SaidMarker))
+				if (string.IsNullOrEmpty(tCond.SaidMarker))
 				{
 					cond.SaidMarker = tCond.SaidMarker;
 				}
@@ -1786,7 +1413,7 @@ namespace SPNATI_Character_Editor
 
 				if (hasConds)
 				{
-					Conditions.Add(selfCond);
+					other.Conditions.Add(selfCond);
 				}
 			}
 		}
@@ -1838,23 +1465,23 @@ namespace SPNATI_Character_Editor
 
 			foreach (TargetCondition tCond in Conditions)
 			{
-				if(String.IsNullOrEmpty(tCond.TimeInStage))
+				if(string.IsNullOrEmpty(tCond.TimeInStage))
 				{
 					cond.TimeInStage = tCond.TimeInStage;
 				}
-				if (String.IsNullOrEmpty(tCond.ConsecutiveLosses))
+				if (string.IsNullOrEmpty(tCond.ConsecutiveLosses))
 				{
 					cond.ConsecutiveLosses = tCond.ConsecutiveLosses;
 				}
-				if (String.IsNullOrEmpty(tCond.Hand))
+				if (string.IsNullOrEmpty(tCond.Hand))
 				{
 					cond.Hand = tCond.Hand;
 				}
-				if (String.IsNullOrEmpty(tCond.NotSaidMarker))
+				if (string.IsNullOrEmpty(tCond.NotSaidMarker))
 				{
 					cond.NotSaidMarker = tCond.NotSaidMarker;
 				}
-				if (String.IsNullOrEmpty(tCond.SaidMarker))
+				if (string.IsNullOrEmpty(tCond.SaidMarker))
 				{
 					cond.SaidMarker = tCond.SaidMarker;
 				}
@@ -1915,7 +1542,7 @@ namespace SPNATI_Character_Editor
 				TargetCondition cond = Conditions[i];
 				if (cond.Role == "self")
 				{
-					bool adjustMarkers = false;
+					bool adjustMarkers;
 					if (responseHasTarget && !sourceHasTarget)
 					{
 						cond.Role = "target";
@@ -1990,40 +1617,46 @@ namespace SPNATI_Character_Editor
 
 				if (cond.Character == speaker.FolderName)
 				{
-					if (cond.NotSaidMarker != null)
+					CharacterEditorData editorData = CharacterDatabase.GetEditorData(speaker);
+					if (editorData.DisallowTargetingPrivateMarkers)
 					{
-						foreach (Marker marker in speaker.Markers.Value.Values)
+						if (cond.NotSaidMarker != null)
 						{
-							if (marker.Name == cond.NotSaidMarker)
+							foreach (Marker marker in speaker.Markers.Value.Values)
 							{
-								if (marker.Scope == MarkerScope.Private)
+								if (marker.Name == cond.NotSaidMarker)
 								{
-									cond.NotSaidMarker = null;
+									if (marker.Scope == MarkerScope.Private)
+									{
+										cond.NotSaidMarker = null;
+									}
+									break;
 								}
-								break;
 							}
 						}
-					}
 
-					if (cond.SaidMarker != null)
-					{ 
-						foreach (Marker marker in speaker.Markers.Value.Values)
+						if (cond.SaidMarker != null)
 						{
-							MarkerOperator op;
-							string value;
-							bool perTarget;
-							string name = Marker.ExtractConditionPieces(cond.SaidMarker, out op, out value, out perTarget);
-							if (marker.Name == name)
+							foreach (Marker marker in speaker.Markers.Value.Values)
 							{
-								if (marker.Scope == MarkerScope.Private)
+								MarkerOperator op;
+								string value;
+								bool perTarget;
+								string name = Marker.ExtractConditionPieces(cond.SaidMarker, out op, out value, out perTarget);
+								if (marker.Name == name)
 								{
-									cond.SaidMarker = null;
+									if (marker.Scope == MarkerScope.Private)
+									{
+										cond.SaidMarker = null;
+									}
+									break;
 								}
-								break;
 							}
 						}
 					}
 				}
+
+
 
 				if (cond.IsEmpty)
 				{
@@ -2040,97 +1673,97 @@ namespace SPNATI_Character_Editor
 					{
 						if (Conditions[j].Role == "self" || Conditions[j].Character == Conditions[i].Character)
 						{
-							if (String.IsNullOrEmpty(Conditions[j].Status) || Conditions[j].Status == Conditions[i].Status)
+							if (string.IsNullOrEmpty(Conditions[j].Status) || Conditions[j].Status == Conditions[i].Status)
 							{
 								Conditions[j].Status = Conditions[i].Status;
 								Conditions[i].Status = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Stage) || Conditions[j].Stage == Conditions[i].Stage)
+							if (string.IsNullOrEmpty(Conditions[j].Stage) || Conditions[j].Stage == Conditions[i].Stage)
 							{
 								Conditions[j].Stage = Conditions[i].Stage;
 								Conditions[i].Stage = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].TimeInStage) || Conditions[j].TimeInStage == Conditions[i].TimeInStage)
+							if (string.IsNullOrEmpty(Conditions[j].TimeInStage) || Conditions[j].TimeInStage == Conditions[i].TimeInStage)
 							{
 								Conditions[j].TimeInStage = Conditions[i].TimeInStage;
 								Conditions[i].TimeInStage = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].ConsecutiveLosses) || Conditions[j].ConsecutiveLosses == Conditions[i].ConsecutiveLosses)
+							if (string.IsNullOrEmpty(Conditions[j].ConsecutiveLosses) || Conditions[j].ConsecutiveLosses == Conditions[i].ConsecutiveLosses)
 							{
 								Conditions[j].ConsecutiveLosses = Conditions[i].ConsecutiveLosses;
 								Conditions[i].ConsecutiveLosses = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].SaidMarker) || Conditions[j].SaidMarker == Conditions[i].SaidMarker)
+							if (string.IsNullOrEmpty(Conditions[j].SaidMarker) || Conditions[j].SaidMarker == Conditions[i].SaidMarker)
 							{
 								Conditions[j].SaidMarker = Conditions[i].SaidMarker;
 								Conditions[i].SaidMarker = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].SayingMarker) || Conditions[j].SayingMarker == Conditions[i].SayingMarker)
+							if (string.IsNullOrEmpty(Conditions[j].SayingMarker) || Conditions[j].SayingMarker == Conditions[i].SayingMarker)
 							{
 								Conditions[j].SayingMarker = Conditions[i].SayingMarker;
 								Conditions[i].SayingMarker = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].NotSaidMarker) || Conditions[j].NotSaidMarker == Conditions[i].NotSaidMarker)
+							if (string.IsNullOrEmpty(Conditions[j].NotSaidMarker) || Conditions[j].NotSaidMarker == Conditions[i].NotSaidMarker)
 							{
 								Conditions[j].NotSaidMarker = Conditions[i].NotSaidMarker;
 								Conditions[i].NotSaidMarker = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Saying) || Conditions[j].Saying == Conditions[i].Saying)
+							if (string.IsNullOrEmpty(Conditions[j].Saying) || Conditions[j].Saying == Conditions[i].Saying)
 							{
 								Conditions[j].Saying = Conditions[i].Saying;
 								Conditions[i].Saying = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Hand) || Conditions[j].Hand == Conditions[i].Hand)
+							if (string.IsNullOrEmpty(Conditions[j].Hand) || Conditions[j].Hand == Conditions[i].Hand)
 							{
 								Conditions[j].Hand = Conditions[i].Hand;
 								Conditions[i].Hand = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Layers) || Conditions[j].Layers == Conditions[i].Layers)
+							if (string.IsNullOrEmpty(Conditions[j].Layers) || Conditions[j].Layers == Conditions[i].Layers)
 							{
 								Conditions[j].Layers = Conditions[i].Layers;
 								Conditions[i].Layers = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].StartingLayers) || Conditions[j].StartingLayers == Conditions[i].StartingLayers)
+							if (string.IsNullOrEmpty(Conditions[j].StartingLayers) || Conditions[j].StartingLayers == Conditions[i].StartingLayers)
 							{
 								Conditions[j].StartingLayers = Conditions[i].StartingLayers;
 								Conditions[i].StartingLayers = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Gender) || Conditions[j].Gender == Conditions[i].Gender)
+							if (string.IsNullOrEmpty(Conditions[j].Gender) || Conditions[j].Gender == Conditions[i].Gender)
 							{
 								Conditions[j].Gender = Conditions[i].Gender;
 								Conditions[i].Gender = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].FilterTag) || Conditions[j].FilterTag == Conditions[i].FilterTag)
+							if (string.IsNullOrEmpty(Conditions[j].FilterTag) || Conditions[j].FilterTag == Conditions[i].FilterTag)
 							{
 								Conditions[j].FilterTag = Conditions[i].FilterTag;
 								Conditions[i].FilterTag = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].FilterNotTag) || Conditions[j].FilterNotTag == Conditions[i].FilterNotTag)
+							if (string.IsNullOrEmpty(Conditions[j].FilterNotTag) || Conditions[j].FilterNotTag == Conditions[i].FilterNotTag)
 							{
 								Conditions[j].FilterNotTag = Conditions[i].FilterNotTag;
 								Conditions[i].FilterNotTag = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].FilterTagAdv) || Conditions[j].FilterTagAdv == Conditions[i].FilterTagAdv)
+							if (string.IsNullOrEmpty(Conditions[j].FilterTagAdv) || Conditions[j].FilterTagAdv == Conditions[i].FilterTagAdv)
 							{
 								Conditions[j].FilterTagAdv = Conditions[i].FilterTagAdv;
 								Conditions[i].FilterTagAdv = null;
 							}
 
-							if (String.IsNullOrEmpty(Conditions[j].Pose) || Conditions[j].Pose == Conditions[i].Pose)
+							if (string.IsNullOrEmpty(Conditions[j].Pose) || Conditions[j].Pose == Conditions[i].Pose)
 							{
 								Conditions[j].Pose = Conditions[i].Pose;
 								Conditions[i].Pose = null;
@@ -2181,7 +1814,7 @@ namespace SPNATI_Character_Editor
 		{
 			Clothing layer = speaker.Wardrobe[speaker.Layers - stage - 1];
 			string layerType = layer.Type;
-			if (layer.Type == "major")
+			if (layer.Type == "major" || layer.Type == "important")
 			{
 				//if this is the last major and there are no importants, treat as important
 				bool hasUpperImportant = false;
@@ -2225,17 +1858,6 @@ namespace SPNATI_Character_Editor
 			{
 				return "accessory";
 			}
-			else if (layerType == "important")
-			{
-				if (layer.Position == "lower" || layer.Position == "both")
-				{
-					return "crotch";
-				}
-				else if (layer.Position == "upper")
-				{
-					return "chest";
-				}
-			}
 			return layerType;
 		}
 
@@ -2247,7 +1869,13 @@ namespace SPNATI_Character_Editor
 		/// <returns></returns>
 		public string GetResponseTag(Character speaker, Character responder)
 		{
+			if (Tag == "settings_changed")
+			{
+				return null;
+			}
+
 			string gender = speaker.Gender;
+			bool futanari = gender == "female" && !string.IsNullOrEmpty(speaker.Penis);
 
 			//First handle tags where the speaker is actively doing something, since these are the easiest to handle
 			if (Tag == "stripping")
@@ -2267,6 +1895,10 @@ namespace SPNATI_Character_Editor
 					if (speaker.Metadata.CrossGender)
 					{
 						return $"opponent_{layer}_will_be_visible";
+					}
+					if (futanari && layer == "crotch")
+					{
+						return $"futanari_crotch_will_be_visible";
 					}
 					return $"{gender}_{layer}_will_be_visible";
 				}
@@ -2289,29 +1921,32 @@ namespace SPNATI_Character_Editor
 					{
 						return $"opponent_{layer}_is_visible";
 					}
-					else if (gender == "female" && layer == "chest" || gender == "male" && layer == "crotch")
+					if (futanari && layer == "crotch")
 					{
-						return $"{gender}_{speaker.Size}_{layer}_is_visible";
+						return $"futanari_{speaker.Penis}_crotch_is_visible";
 					}
-					else
+					if (gender == "female" && layer == "chest")
 					{
-						return $"{gender}_{layer}_is_visible";
+						string speakerSize = !string.IsNullOrEmpty(speaker.LegacySize) ? speaker.LegacySize : speaker.Breasts;
+						return $"female_{speakerSize}_chest_is_visible";
 					}
+					if (gender == "male" && layer == "crotch")
+					{
+						string speakerSize = !string.IsNullOrEmpty(speaker.LegacySize) ? speaker.LegacySize : speaker.Penis;
+						return $"male_{speakerSize}_crotch_is_visible";
+					}
+					return $"{gender}_{layer}_is_visible";
 				}
 			}
-			else if (Tag == "must_masturbate_first")
+			else if (Tag == "must_masturbate_first" || Tag == "must_masturbate")
 			{
 				if (speaker.Metadata.CrossGender)
 				{
 					return "opponent_lost";
 				}
-				return $"{gender}_must_masturbate";
-			}
-			else if (Tag == "must_masturbate")
-			{
-				if (speaker.Metadata.CrossGender)
+				if (futanari)
 				{
-					return "opponent_lost";
+					return "futanari_must_masturbate";
 				}
 				return $"{gender}_must_masturbate";
 			}
@@ -2320,6 +1955,10 @@ namespace SPNATI_Character_Editor
 				if (speaker.Metadata.CrossGender)
 				{
 					return $"opponent_{Tag}";
+				}
+				if (futanari)
+				{
+					return $"futanari_{Tag}";
 				}
 				return $"{gender}_{Tag}";
 			}
@@ -2353,7 +1992,11 @@ namespace SPNATI_Character_Editor
 			{
 				tag = tag.Substring(5);
 			}
-			else if (tag != null && tag.StartsWith("opponent_") && tag != "opponent_selected")
+			else if (tag != null && tag.StartsWith("futanari_"))
+			{
+				tag = tag.Substring(9);
+			}
+			else if (tag != null && tag.StartsWith("opponent_") && !tag.EndsWith("selected"))
 			{
 				tag = tag.Substring(9);
 			}
@@ -2407,6 +2050,15 @@ namespace SPNATI_Character_Editor
 				{
 					return "selected";
 				}
+				if (tag == "opponent_deselected")
+				{
+					return null;
+				}
+			}
+
+			if (tag == "opponent_deselected")
+			{
+				return tag;
 			}
 
 			if (tag == "good_hand" || tag == "okay_hand" || tag == "bad_hand")
@@ -2414,10 +2066,6 @@ namespace SPNATI_Character_Editor
 				return "hand";
 			}
 
-			if (tag == "opponent_deselected")
-			{
-				return null;
-			}
 			if (tag == "finishing_masturbating")
 			{
 				return null;
@@ -2554,9 +2202,22 @@ namespace SPNATI_Character_Editor
 				return true;
 			}
 
-			if (trigger.Size != null && trigger.Size != character.Size)
+			if (trigger.Size != null)
 			{
-				return false;
+				if (trigger.Tag.Contains("crotch_"))
+				{
+					if (!string.IsNullOrEmpty(character.LegacySize) && character.Gender == "male" && character.LegacySize != trigger.Size || !string.IsNullOrEmpty(character.Penis) && character.Penis != trigger.Size)
+					{
+						return false;
+					}
+				}
+				else if (trigger.Tag.Contains("chest"))
+				{
+					if (!string.IsNullOrEmpty(character.LegacySize) && character.Gender == "female" && character.LegacySize != trigger.Size || !string.IsNullOrEmpty(character.Breasts) && character.Breasts != trigger.Size)
+					{
+						return false;
+					}
+				}
 			}
 
 			if (trigger.Gender == null || trigger.Gender == character.Gender || character.Metadata.CrossGender)
@@ -2590,8 +2251,8 @@ namespace SPNATI_Character_Editor
 		{
 			if (!string.IsNullOrEmpty(Stage))
 			{
-				Tuple<int, int> interval = GUIHelper.ToInterval(Stage);
-				for (int i = interval.Item1; i <= interval.Item2; i++)
+				IntInterval interval = new IntInterval(Stage);
+				for (int i = interval.Start; i <= interval.End; i++)
 				{
 					Stages.Add(i);
 				}
@@ -2608,12 +2269,11 @@ namespace SPNATI_Character_Editor
 
 			foreach (TargetCondition cond in Conditions)
 			{
-				if (cond.Role == "self" && !string.IsNullOrEmpty(cond.SaidMarker) && (!cond.SaidMarker.Contains("!=") || cond.SaidMarker.EndsWith("!=0")) && !cond.SaidMarker.EndsWith("==0"))
+				if (cond.Role == "self" && !string.IsNullOrEmpty(cond.SaidMarker))
 				{
-					int splitIndex = cond.SaidMarker.IndexOfAny(new char[] { '=', '>', '<', '!' });
+					int splitIndex = cond.SaidMarker.IndexOfAny(new char[] { '>', '<', '!', '@' });
 					if (splitIndex > 0)
 					{
-						list.Add(cond.SaidMarker.Substring(0, splitIndex));
 					}
 					else
 					{
@@ -2766,47 +2426,6 @@ namespace SPNATI_Character_Editor
 				set.AddRange(c.GetTargets());
 			}
 			return set;
-		}
-
-		/// <summary>
-		/// Gets whether this case uses any old attribute-style conditions
-		/// </summary>
-		/// <returns></returns>
-		public bool HasLegacyConditions()
-		{
-			return !string.IsNullOrEmpty(LegacyTarget) ||
-				!string.IsNullOrEmpty(LegacyFilter) ||
-				!string.IsNullOrEmpty(LegacyTargetStage) ||
-				!string.IsNullOrEmpty(LegacyTargetHand) ||
-				!string.IsNullOrEmpty(LegacyTargetLayers) ||
-				!string.IsNullOrEmpty(LegacyTargetStatus) ||
-				!string.IsNullOrEmpty(LegacyTargetSaidMarker) ||
-				!string.IsNullOrEmpty(LegacyTargetNotSaidMarker) ||
-				!string.IsNullOrEmpty(LegacyTargetSayingMarker) ||
-				!string.IsNullOrEmpty(LegacyTargetSaying) ||
-				!string.IsNullOrEmpty(LegacyTargetStartingLayers) ||
-				!string.IsNullOrEmpty(LegacyTargetTimeInStage) ||
-				!string.IsNullOrEmpty(LegacyConsecutiveLosses) ||
-				!string.IsNullOrEmpty(LegacyHasHand) ||
-				!string.IsNullOrEmpty(LegacySaidMarker) ||
-				!string.IsNullOrEmpty(LegacyNotSaidMarker) ||
-				!string.IsNullOrEmpty(LegacyTimeInStage) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlaying) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingStage) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingHand) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingSaidMarker) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingNotSaidMarker) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingSayingMarker) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingSaying) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingSaid) ||
-				!string.IsNullOrEmpty(LegacyAlsoPlayingTimeInStage) ||
-				!string.IsNullOrEmpty(LegacyTotalMales) ||
-				!string.IsNullOrEmpty(LegacyTotalPlaying) ||
-				!string.IsNullOrEmpty(LegacyTotalFinished) ||
-				!string.IsNullOrEmpty(LegacyTotalNaked) ||
-				!string.IsNullOrEmpty(LegacyTotalMasturbating) ||
-				!string.IsNullOrEmpty(LegacyTotalExposed) ||
-				!string.IsNullOrEmpty(LegacyTotalFemales);
 		}
 
 		public string GetStageRange(Character target)

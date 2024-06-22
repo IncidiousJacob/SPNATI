@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>rose_summer</id>
+    <label>Rose</label>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="0">hat</tag>
+        <tag remove="true">no_bra</tag>
+        <tag remove="true">pubic_hair_peek</tag>
+        <tag>scantily-clad</tag>
+        <tag>scarred</tag>
+        <tag>summer_skin</tag>
+        <tag from="0" to="5">swimwear</tag>
+        <tag>tattoo</tag>
+        <tag from="0" to="5">thong</tag>
+    </tags>
+    <layers>4</layers>
+    <folder>opponents/reskins/rose_summer/</folder>
+    <folder stage="6">opponents/rose/</folder>
+    <wardrobe>
+        <clothing name="bikini" generic="underwear" position="lower" type="major" />
+        <clothing name="bikini top" generic="vest" position="upper" type="major" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="sandals" generic="shoes" position="feet" type="extra" plural="true" />
+        <clothing name="sun hat" generic="hat" position="head" type="minor" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="4-aura">
+            <sprite id="embarrassed" src="reskins/rose_summer/4-sweet.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="rose/crossposes/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="rose/crossposes/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="rose/crossposes/6-zz_aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="rose/crossposes/auracamera.png" />
+                <keyframe time="1" src="rose/../meia/auracamera.png" />
+                <keyframe time="1.38" src="rose/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="3-aura">
+            <sprite id="embarrassed" src="reskins/rose_summer/4-sweet.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="rose/crossposes/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="rose/crossposes/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="rose/crossposes/6-zz_aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="rose/crossposes/auracamera.png" />
+                <keyframe time="1" src="rose/../meia/auracamera.png" />
+                <keyframe time="1.38" src="rose/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="8-display_happy_accessories_sitdown">
+            <sprite id="display_happy" src="rose/7-display_happy.png" x="0" y="0" />
+            <sprite id="display_overlay_generic" src="rose/posemaker/display_overlay_generic.png" x="12" y="864" />
+        </pose>
+        <pose id="8-display_shocked_emptyboxExtra">
+            <sprite id="display_happy" z="1" src="rose/7-display_happy.png" x="0" y="0" />
+            <sprite id="display_shockedH" z="3" src="rose/posemaker/display_shockedH.png" x="5" y="592" />
+        </pose>
+        <pose id="blank" />
+        <pose id="display_happy_accessories">
+            <sprite id="display_happy" src="reskins/rose_summer/#-display_happy.png" x="0" y="0" />
+            <sprite id="display_overlay_generic" src="reskins/rose_summer/posemaker/display_overlay_generic.png" x="0" y="471" />
+        </pose>
+        <pose id="display_happy_april_fools">
+            <sprite id="display_happy" src="reskins/rose_summer/#-display_happy.png" x="0" y="0" />
+            <sprite id="display_overlay_generic" src="reskins/rose_summer/posemaker/display_overlay_beer.png" x="0" y="470" />
+        </pose>
+        <pose id="display_shocked_emptybox">
+            <sprite id="display_happy" z="1" src="reskins/rose_summer/#-display_happy.png" x="0" y="0" />
+            <sprite id="display_shockedH" z="3" src="reskins/rose_summer/posemaker/display_shockedH.png" x="0" y="120" />
+        </pose>
+    </poses>
+
+    <pose-sets>
+        <set id="display_happy_accessories_generic">
+            <pose stage="0-6" img="custom:display_happy_accessories" priority="1" />
+            <pose stage="7" img="custom:#-_display_happy_accessories" priority="5" />
+            <pose stage="8" img="custom:display_happy_accessories" priority="1" />
+        </set>
+        <set id="new set">
+            <pose stage="0" img="#-anima_annoyed.png" />
+        </set>
+        <set id="display_shocked_empty_box">
+            <pose stage="1-6" img="custom:display_shocked_emptybox" priority="1" />
+            <pose stage="7" img="custom:#-display_shocked_emptybox" priority="5" />
+            <pose stage="8" img="custom:display_shocked_emptybox" priority="1" />
+            <pose stage="0" img="#-display_happy.png" priority="3" />
+        </set>
+        <set id="display_happy_april_fools">
+            <pose stage="0-6" img="custom:display_happy_april_fools" priority="1" />
+            <pose stage="7" img="custom:#-_display_happy_april_fools" priority="5" />
+            <pose stage="8" img="custom:display_happy_april_fools" priority="1" />
+        </set>
+    </pose-sets>
+</costume>

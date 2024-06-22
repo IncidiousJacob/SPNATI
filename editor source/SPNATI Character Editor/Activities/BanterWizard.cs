@@ -16,6 +16,8 @@ namespace SPNATI_Character_Editor.Activities
 	public partial class BanterWizard : Activity
 	{
 		private Character _character;
+		private IWardrobe _costume;
+		private IWardrobe _targetersCostume;
 		private Case _workingResponse;
 		private Case _selectedCase;
 		private Character _selectedCharacter;
@@ -39,6 +41,7 @@ namespace SPNATI_Character_Editor.Activities
 		private bool _filterIncomplete;
 		private bool _filterEvent;
 		private bool _filterDuplicate;
+		private bool _filterBroken;
 		private bool _filterUnlisted;
 
 		private bool _filterToOne;
@@ -48,6 +51,12 @@ namespace SPNATI_Character_Editor.Activities
 		{
 			InitializeComponent();
 			recOneCharacter.RecordType = typeof(Character);
+			recReferenceCostume.RecordType = typeof(Costume);
+		}
+
+		private void SkinChanged(IWardrobe costume)
+		{
+			_targetersCostume = costume;
 		}
 
 		public override string Caption
@@ -57,17 +66,33 @@ namespace SPNATI_Character_Editor.Activities
 				return "Banter Wizard";
 			}
 		}
-
-		public override bool CanRun()
+		private bool FilterRefCostume(IRecord record)
 		{
-			return !Config.SafeMode;
+			Costume costume = record as Costume;
+			return costume.Character == _character || costume.Key == "default";
+		}
+
+		private void recReferenceCostume_RecordChanged(object sender, RecordEventArgs e)
+		{
+			Costume costume = recReferenceCostume.Record as Costume;
+			if (costume.Key == "default")
+			{
+				_costume = _character;
+			}
+			else
+			{
+				_costume = costume;
+			}
 		}
 
 		protected override void OnInitialize()
 		{
 			_character = Record as Character;
 			_character.IsDirty = true;
+			SubscribeWorkspace<IWardrobe>(WorkspaceMessages.SkinChanged, SkinChanged);
 			_path = Path.Combine(Config.GetString(Settings.GameDirectory), "opponents/" + _character.FolderName + "/banter.xml");
+			recReferenceCostume.RecordFilter = FilterRefCostume;
+			recReferenceCostume.Record = CharacterDatabase.GetSkin("default");
 			ColJump.Flat = true;
 			if(!File.Exists(_path))
 			{
@@ -112,6 +137,7 @@ namespace SPNATI_Character_Editor.Activities
 			_filterIncomplete = false;
 			_filterEvent = false;
 			_filterDuplicate = false;
+			_filterBroken = false;
 			_filterUnlisted = false;
 			chkCharacterFiltering.SetItemChecked(0, true);
 			chkCharacterFiltering.SetItemChecked(1, true);
@@ -139,9 +165,9 @@ namespace SPNATI_Character_Editor.Activities
 			if (_selectedCharacter != null && _currentInbound != null)
 			{
 				int stage;
-				if (_currentInbound.StageRange == "10")
+				if (_currentInbound.StageRange.Length > 1 && int.TryParse(_currentInbound.StageRange.Substring(0, 2), out int parsed) && parsed > 9)
 				{
-					stage = 10;
+					stage = parsed;
 				}
 				else
 				{
@@ -222,6 +248,8 @@ namespace SPNATI_Character_Editor.Activities
 				return _filterEvent;
 			if (status == OpponentStatus.Duplicate)
 				return _filterDuplicate;
+			if (status == OpponentStatus.Broken)
+				return _filterBroken;
 			if (status == OpponentStatus.Unlisted)
 				return _filterUnlisted;
 			return true;
@@ -268,7 +296,7 @@ namespace SPNATI_Character_Editor.Activities
 					row.Cells["ColText"].Value = line.Text;
 					row.Cells["ColText"].Tag = line;
 					row.Cells["ColStage"].Value = line.StageRange;
-					row.Cells["ColCase"].Value = line.CaseTag;
+					row.Cells["ColCase"].Value = TriggerDatabase.GetLabel(line.CaseTag);
 					count++;
 				}
 			}
@@ -341,7 +369,57 @@ namespace SPNATI_Character_Editor.Activities
 			return;
 		}
 
-		private void CheckForResponses(Character character, string text)
+		private void RenameCaseTagSelf(Character character, Case workingCase, DataGridViewRow row)
+		{
+			if (workingCase.Stages.Count != 1)
+				return;
+			int stage = workingCase.Stages[0];
+			if (workingCase.Tag == "must_strip" || workingCase.Tag.Contains("must_strip_"))
+			{
+				row.Cells["ColCase"].Value = Config.SafeMode ? character + " lost (" + stage + ")" : character + " must strip (" + stage + ")";
+				return;
+			}
+			bool lookForward = workingCase.Tag == "stripping";
+			IWardrobe costume = _targetersCostume ?? character;
+			row.Cells["ColCase"].Value = character + " " + character.LayerToStageName(stage, lookForward, costume) + " (" + stage + ")";
+		}
+
+		private void RenameCaseTagTarget(Case workingCase, DataGridViewRow row)
+		{
+			bool removing = workingCase.Tag.Contains("removing_");
+			bool lookForward = removing || workingCase.Tag == "opponent_stripping";
+			string stages = "";
+			int stage;
+			foreach (TargetCondition cond in workingCase.Conditions)
+			{
+				if (cond.Character == _character.FolderName && !string.IsNullOrEmpty(cond.Stage))
+				{
+					stages = cond.Stage;
+					break;
+				}
+			}
+			if (!string.IsNullOrEmpty(stages))
+			{
+				if (stages.Length > 1 && int.TryParse(stages.Substring(0,2), out int parsed) && parsed > 9)
+				{
+					stage = parsed;
+				}
+				else
+				{
+					stage = int.Parse(stages[0].ToString());
+				}
+				if (workingCase.Tag == "opponent_lost" || workingCase.Tag.Contains("_must_strip"))
+				{
+					row.Cells["ColCase"].Value = Config.SafeMode? _character + " lost (" + stage + ")" : _character + " must strip (" + stage + ")";
+				}
+				else
+				{
+					row.Cells["ColCase"].Value = _character + " " + _character.LayerToStageName(stage, lookForward, _costume) + " (" + stages + ")";
+				}
+			}
+		}
+
+		private void CheckForResponses(Character character, string text, DataGridViewRow row)
 		{
 			foreach (Case workingCase in character.Behavior.GetWorkingCases())
 			{
@@ -349,6 +427,15 @@ namespace SPNATI_Character_Editor.Activities
 				{
 					if (dialogueLine.Text == text)
 					{
+						if (workingCase.Tag == "must_strip" || workingCase.Tag == "stripping" || workingCase.Tag == "stripped" || workingCase.Tag.Contains("must_strip_"))
+						{
+							RenameCaseTagSelf(character, workingCase, row);
+						}
+						else if ((workingCase.Tag.Contains("_must_strip") || workingCase.Tag.Contains("removing") || workingCase.Tag.Contains("removed") || workingCase.Tag == "opponent_lost" || workingCase.Tag.Contains("opponent_stripp")) && Character.IsCaseTargetedAtCharacter(workingCase, _character, TargetType.DirectTarget))
+						{
+							RenameCaseTagTarget(workingCase, row);
+						}
+
 						Case sampleResponse = workingCase.CreateResponse(character, _character);
 						if (sampleResponse == null)
 						{
@@ -386,7 +473,6 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void SelectLine(int rowIndex)
 		{
-			
 			DataGridViewRow row = gridLines.Rows[rowIndex];
 			Character c = row.Tag as Character;
 			InboundLine inbound = row.Cells["ColText"].Tag as InboundLine;
@@ -396,12 +482,12 @@ namespace SPNATI_Character_Editor.Activities
 				_currentInbound = inbound;
 				SetColorButton(inbound.ColorCode);
 				grpBaseLine.Text = string.Format("{0} may be reacting to these lines from {1}:", c, _character);
-				CheckForResponses(c, inbound.Text);
+				CheckForResponses(c, inbound.Text, row);
 
 				int stage;
-				if (inbound.StageRange == "10")
+				if (inbound.StageRange.Length > 1 && int.TryParse(inbound.StageRange.Substring(0,2), out int parsed) && parsed > 9)
 				{
-					stage = 10;
+					stage = parsed;
 				}
 				else
 				{
@@ -416,7 +502,6 @@ namespace SPNATI_Character_Editor.Activities
 				DialogueLine dialogueLine = new DialogueLine();
 				dialogueLine.Text = inbound.Text;
 				Workspace.SendMessage(WorkspaceMessages.PreviewLine, dialogueLine);
-
 			}
 			else
 			{
@@ -443,7 +528,6 @@ namespace SPNATI_Character_Editor.Activities
 			{
 				Workspace.SendMessage(WorkspaceMessages.UpdatePreviewImage, new UpdateImageArgs(_character, image, _workingResponse.Stages[0]));
 			}
-
 		}
 
 		private void cmdCreateResponse_Click(object sender, EventArgs e)
@@ -963,7 +1047,6 @@ namespace SPNATI_Character_Editor.Activities
 									inbound.Newness = "";
 								}
 							}
-
 						}
 					}
 
@@ -1202,7 +1285,8 @@ namespace SPNATI_Character_Editor.Activities
 			_filterIncomplete = chkCharacterFiltering.GetItemChecked(3);
 			_filterEvent = chkCharacterFiltering.GetItemChecked(4);
 			_filterDuplicate = chkCharacterFiltering.GetItemChecked(5);
-			_filterUnlisted = chkCharacterFiltering.GetItemChecked(6);
+			_filterBroken = chkCharacterFiltering.GetItemChecked(6);
+			_filterUnlisted = chkCharacterFiltering.GetItemChecked(7);
 		}
 
 		private void recOneCharacter_RecordChanged(object sender, RecordEventArgs e)

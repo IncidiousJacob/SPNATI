@@ -8,8 +8,8 @@ namespace KisekaeImporter
 {
 	public abstract class KisekaeComponent
 	{
-		private static Dictionary<Type, Dictionary<string, string>> _map = new Dictionary<Type, Dictionary<string, string>>();
-		private static Dictionary<Type, Dictionary<string, Type>> _arrayMap = new Dictionary<Type, Dictionary<string, Type>>();
+		private static readonly Dictionary<Type, Dictionary<string, string>> _map = new Dictionary<Type, Dictionary<string, string>>();
+		private static readonly Dictionary<Type, Dictionary<string, Type>> _arrayMap = new Dictionary<Type, Dictionary<string, Type>>();
 
 		protected Dictionary<string, KisekaeSubCode> _subcodes = new Dictionary<string, KisekaeSubCode>();
 
@@ -54,13 +54,11 @@ namespace KisekaeImporter
 
 		private KisekaeSubCode GetSubCode(string id)
 		{
-			string name;
-			KisekaeSubCode value;
-			if (_subcodes.TryGetValue(id, out value))
+			if (_subcodes.TryGetValue(id, out KisekaeSubCode value))
 				return value;
 
 			//Code hasn't been added yet
-			if (_map[GetType()].TryGetValue(id, out name))
+			if (_map[GetType()].TryGetValue(id, out string name))
 			{
 				PropertyInfo property = GetType().GetProperty(name, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
 				KisekaeSubCode code = property.GetValue(this) as KisekaeSubCode;
@@ -71,9 +69,8 @@ namespace KisekaeImporter
 				//must be part of an array, or not part of the component at all
 				if (id.Length > 2 && char.IsDigit(id[2]) || id.Length > 1 && char.IsDigit(id[1]))
 				{
-					string prefix = "";
-					int index = 0;
-					Type subcodeType;
+					string prefix;
+					int index;
 
 					if (id[0] == 'x' && char.IsLetter(id[1]))
 					{
@@ -86,7 +83,7 @@ namespace KisekaeImporter
 						index = int.Parse(id.Substring(1, id.Length > 2 ? 2 : 1));
 					}
 
-					if (_arrayMap[GetType()].TryGetValue(prefix, out subcodeType))
+					if (_arrayMap[GetType()].TryGetValue(prefix, out Type subcodeType))
 					{
 						KisekaeSubCode subcode = Activator.CreateInstance(subcodeType) as KisekaeSubCode;
 						subcode.Id = prefix;
@@ -99,9 +96,9 @@ namespace KisekaeImporter
 			}
 		}
 
+		
 		public KisekaeSubCode GetSubCode(string id, int index)
 		{
-			KisekaeSubCode code;
 			string prefix = id;
 			if (index >= 99)
 			{
@@ -112,14 +109,22 @@ namespace KisekaeImporter
 				prefix = id + index.ToString("00");
 			}
 
-			_subcodes.TryGetValue(prefix, out code);
+			_subcodes.TryGetValue(prefix, out KisekaeSubCode code);
 			return code;
+		}
+
+		public T TryGetSubCode<T>(string prefix) where T : KisekaeSubCode
+		{
+			if (!_subcodes.TryGetValue(prefix, out KisekaeSubCode code))
+			{
+				return null;
+			}
+			return code as T;
 		}
 
 		protected T GetSubCode<T>(string prefix) where T : KisekaeSubCode
 		{
-			KisekaeSubCode code;
-			if (!_subcodes.TryGetValue(prefix, out code))
+			if (!_subcodes.TryGetValue(prefix, out KisekaeSubCode code))
 			{
 				code = Activator.CreateInstance<T>();
 				code.Id = prefix;
@@ -172,9 +177,9 @@ namespace KisekaeImporter
 			KisekaeSubCode existingCode = GetSubCode(prefix);
 			if (existingCode == null || !code.IsEmpty || applyEmpties)
 			{
-				if (poseOnly && existingCode is IPoseable && !existingCode.IsEmpty)
+				if (poseOnly && existingCode is IPoseable poseable && !existingCode.IsEmpty)
 				{
-					((IPoseable)existingCode).Pose(code as IPoseable);
+					poseable.Pose(code as IPoseable);
 				}
 				else
 				{
@@ -195,8 +200,7 @@ namespace KisekaeImporter
 				prefix = id + index.ToString("00");
 			}
 			
-			KisekaeSubCode subcode;
-			if (!_subcodes.TryGetValue(prefix, out subcode))
+			if (!_subcodes.TryGetValue(prefix, out KisekaeSubCode subcode))
 				return false;
 			return !subcode.IsEmpty;
 		}
@@ -218,8 +222,7 @@ namespace KisekaeImporter
 		{
 			foreach (var kvp in _subcodes)
 			{
-				T item = kvp.Value as T;
-				if (item != null)
+				if (kvp.Value is T item)
 				{
 					action(item);
 				}
@@ -232,7 +235,7 @@ namespace KisekaeImporter
 		/// <param name="offset"></param>
 		public void ShiftX(int offset)
 		{
-			foreach (IMoveable subcode in GetSubCodesOfType<IMoveable>())
+			foreach (IMoveable subcode in GetSubCodesOfType<IMoveable>().Cast<IMoveable>())
 			{
 				if ((subcode as KisekaeSubCode).IsEmpty) { continue; }
 				subcode.ShiftX(offset);

@@ -19,7 +19,7 @@
             <description>Nadeshiko asks the other characters some questions. Use the tags to repsond to them.</description>
         </case>
         <case name="Nadeshiko the Cook" id="92" priority="Noteworthy" min="0" max="8">
-            <description>Nadeshiko reveals to the other players she's a good cook. This could be a good time for characters with the chef tag to talk about their cooking experiences with Nadeshiko</description>
+            <description>Nadeshiko reveals to the other players she's a good cook. This could be a good time for characters with the chef tag to talk about their cooking experiences with Nadeshiko.</description>
         </case>
         <case name="Specials" id="126" priority="Prompt" min="0" max="5">
             <description>Nadeshiko asks the table what sort of specials are offered at the Inventory on a certain day of the week. </description>
@@ -27,11 +27,8 @@
         <case name="Need a Friend?" id="132" priority="Noteworthy" min="0" max="0">
             <description>Nadeshiko offers her friendship to a character with the "lonely" tag.</description>
         </case>
-        <case name="Journalism Tips for a friend" id="137" priority="Prompt" min="0" max="0">
-            <description>If a character with the "Journalist" tag is present, Nadeshiko will mention her friend Rin is planning to do something in the journalism fie</description>
-        </case>
         <case name="Interesting Stories" id="150" priority="Prompt" min="1" max="3">
-            <description>Description about what's interesting happening with the character (i.e. why should others target this?)</description>
+            <description>Nadeshiko asks the table about some interesting stories, as a way to get to know the table better.</description>
         </case>
         <case name="So...Where are We?" id="151" priority="FYI" min="0" max="0">
             <description>Nadeshiko asks how they're all here together, as everyone at the table came from a wide variety of places. </description>
@@ -203,102 +200,360 @@
         <response id="219" opponent="yuri" opponentId="1" />
         <response id="220" opponent="mari_setogaya" opponentId="1254" />
         <response id="221" opponent="mari_setogaya" opponentId="1256" />
+        <response id="248" opponent="sly_cooper" opponentId="2" />
+        <response id="250" opponent="sly_cooper" opponentId="1" />
+        <response id="283" opponent="caulifla" opponentId="3" />
+        <response id="286" opponent="mari_setogaya" opponentId="34" />
+        <response id="295" opponent="brock" opponentId="2" />
+        <response id="296" opponent="dust" opponentId="9" />
+        <response id="303" opponent="brock" opponentId="1" />
+        <response id="356" opponent="ignatz" opponentId="603" />
     </responses>
     <labels>
         <label id="114" label="Ramen Markers Reset" folder="" sort="0" />
         <label id="115" label="Pose Maker Markers Reset" folder="" sort="0" />
-        <label id="158" label="" color="3" folder="Skysmash Sponsorships" sort="14" />
+        <label id="158" label="" color="3" folder="Skysmash Sponsorships" sort="86" />
         <label id="159" label="" color="1" folder="BlackOSmash Sponsorship" sort="2" />
         <label id="160" label="" color="1" folder="BlackOSmash Sponsorship" sort="4" />
         <label id="161" label="" color="1" folder="BlackOSmash Sponsorship" sort="6" />
         <label id="162" label="" folder="Skysmash Sponsorships" sort="12" />
-        <label id="163" label="" color="3" folder="Skysmash Sponsorships" sort="16" />
+        <label id="163" label="" color="3" folder="Skysmash Sponsorships" sort="88" />
         <label id="164" label="" color="1" folder="BlackOSmash Sponsorship" sort="10" />
         <label id="165" label="" color="1" folder="BlackOSmash Sponsorship" sort="14" />
         <label id="166" label="" color="4" folder="" sort="0" />
-        <label id="167" label="" color="5" folder="Skysmash Sponsorships" sort="34" />
-        <label id="168" label="" folder="Skysmash Sponsorships" sort="26" />
-        <label id="169" label="" folder="Skysmash Sponsorships" sort="50" />
-        <label id="170" label="" folder="Skysmash Sponsorships" sort="52" />
-        <label id="171" label="" color="5" folder="Skysmash Sponsorships" sort="32" />
-        <label id="172" label="" color="2" folder="Skysmash Sponsorships" sort="44" />
+        <label id="167" label="" color="5" folder="Skysmash Sponsorships" sort="54" />
+        <label id="168" label="" folder="Skysmash Sponsorships" sort="98" />
+        <label id="169" label="" folder="Skysmash Sponsorships" sort="104" />
+        <label id="170" label="" folder="Skysmash Sponsorships" sort="106" />
+        <label id="171" label="" color="5" folder="Skysmash Sponsorships" sort="52" />
+        <label id="172" label="" color="2" folder="Skysmash Sponsorships" sort="100" />
         <label id="173" label="" folder="Skysmash Sponsorships" sort="6" />
-        <label id="174" label="" color="1" folder="Skysmash Sponsorships" sort="18" />
-        <label id="175" label="" color="4" folder="Skysmash Sponsorships" sort="22" />
+        <label id="174" label="" color="1" folder="Skysmash Sponsorships" sort="90" />
+        <label id="175" label="" color="4" folder="Skysmash Sponsorships" sort="96" />
         <label id="176" label="" color="1" folder="BlackOSmash Sponsorship" sort="12" />
         <label id="177" label="" color="1" folder="BlackOSmash Sponsorship" sort="8" />
         <label id="178" label="" folder="BlackOSmash Sponsorship" sort="0" />
         <label id="179" label="" folder="Skysmash Sponsorships" sort="10" />
-        <label id="180" label="" color="4" folder="Skysmash Sponsorships" sort="24" />
-        <label id="181" label="" color="5" folder="WitchHannah's Sponsorships" sort="30" />
-        <label id="182" label="" color="6" folder="WitchHannah's Sponsorships" sort="36" />
-        <label id="183" label="" color="6" folder="WitchHannah's Sponsorships" sort="34" />
-        <label id="184" label="" color="1" folder="WitchHannah's Sponsorships" sort="32" />
-        <label id="185" label="" color="5" folder="WitchHannah's Sponsorships" sort="2" />
-        <label id="186" label="" color="5" folder="WitchHannah's Sponsorships" sort="4" />
-        <label id="188" label="" color="5" folder="WitchHannah's Sponsorships" sort="24" />
+        <label id="180" label="" color="4" folder="Skysmash Sponsorships" sort="94" />
+        <label id="181" label="" color="5" folder="WitchHannah's Sponsorships" sort="42" />
+        <label id="182" label="" color="6" folder="WitchHannah's Sponsorships" sort="48" />
+        <label id="183" label="" color="6" folder="WitchHannah's Sponsorships" sort="46" />
+        <label id="184" label="" color="1" folder="WitchHannah's Sponsorships" sort="44" />
+        <label id="185" label="" color="5" folder="WitchHannah's Sponsorships" sort="8" />
+        <label id="186" label="" color="5" folder="WitchHannah's Sponsorships" sort="10" />
+        <label id="188" label="" color="5" folder="WitchHannah's Sponsorships" sort="36" />
         <label id="189" label="" folder="Skysmash Sponsorships" sort="8" />
-        <label id="190" label="" color="1" folder="Skysmash Sponsorships" sort="20" />
-        <label id="191" label="" color="6" folder="WitchHannah's Sponsorships" sort="28" />
+        <label id="190" label="" color="1" folder="Skysmash Sponsorships" sort="92" />
+        <label id="191" label="" color="6" folder="WitchHannah's Sponsorships" sort="40" />
         <label id="192" label="" folder="Skysmash Sponsorships" sort="4" />
-        <label id="193" label="" color="2" folder="Skysmash Sponsorships" sort="46" />
-        <label id="194" label="" color="1" folder="WitchHannah's Sponsorships" sort="26" />
-        <label id="195" label="" color="5" folder="Skysmash Sponsorships" sort="36" />
-        <label id="196" label="" color="6" folder="Skysmash Sponsorships" sort="48" />
-        <label id="197" label="" color="5" folder="Skysmash Sponsorships" sort="38" />
-        <label id="198" label="" color="5" folder="WitchHannah's Sponsorships" sort="18" />
-        <label id="199" label="" color="1" folder="WitchHannah's Sponsorships" sort="20" />
-        <label id="200" label="" color="6" folder="WitchHannah's Sponsorships" sort="22" />
-        <label id="201" label="" color="1" folder="Karbol Sponsorships" sort="4" />
+        <label id="193" label="" color="2" folder="Skysmash Sponsorships" sort="102" />
+        <label id="194" label="" color="1" folder="WitchHannah's Sponsorships" sort="38" />
+        <label id="195" label="" color="5" folder="Skysmash Sponsorships" sort="56" />
+        <label id="196" label="" color="6" folder="" sort="72" />
+        <label id="197" label="" color="5" folder="Skysmash Sponsorships" sort="58" />
+        <label id="198" label="" color="5" folder="WitchHannah's Sponsorships" sort="30" />
+        <label id="199" label="" color="1" folder="WitchHannah's Sponsorships" sort="32" />
+        <label id="200" label="" color="6" folder="WitchHannah's Sponsorships" sort="34" />
+        <label id="201" label="" color="1" folder="Karbol Sponsorships" sort="6" />
         <label id="202" label="" color="4" folder="Karbol Sponsorships" sort="2" />
-        <label id="203" label="" color="7" folder="Karbol Sponsorships" sort="10" />
-        <label id="204" label="" color="2" folder="Karbol Sponsorships" sort="6" />
-        <label id="205" label="" color="5" folder="WitchHannah's Sponsorships" sort="12" />
-        <label id="206" label="" color="1" folder="WitchHannah's Sponsorships" sort="14" />
-        <label id="207" label="" color="6" folder="WitchHannah's Sponsorships" sort="16" />
-        <label id="208" label="" color="5" folder="WitchHannah's Sponsorships" sort="6" />
-        <label id="209" label="" color="1" folder="WitchHannah's Sponsorships" sort="8" />
-        <label id="210" label="" color="6" folder="WitchHannah's Sponsorships" sort="10" />
-        <label id="211" label="" color="1" folder="Mymans Sponsorship" sort="2" />
-        <label id="212" label="" color="4" folder="Mymans Sponsorship" sort="10" />
-        <label id="213" label="" color="1" folder="Mymans Sponsorship" sort="4" />
-        <label id="214" label="" color="4" folder="Mymans Sponsorship" sort="8" />
-        <label id="216" label="" color="1" folder="Mymans Sponsorship" sort="6" />
+        <label id="203" label="" color="7" folder="Karbol Sponsorships" sort="24" />
+        <label id="204" label="" color="2" folder="Karbol Sponsorships" sort="8" />
+        <label id="205" label="" color="5" folder="WitchHannah's Sponsorships" sort="24" />
+        <label id="206" label="" color="1" folder="WitchHannah's Sponsorships" sort="26" />
+        <label id="207" label="" color="6" folder="WitchHannah's Sponsorships" sort="28" />
+        <label id="208" label="" color="5" folder="WitchHannah's Sponsorships" sort="18" />
+        <label id="209" label="" color="1" folder="WitchHannah's Sponsorships" sort="20" />
+        <label id="210" label="" color="6" folder="WitchHannah's Sponsorships" sort="22" />
+        <label id="211" label="" color="1" folder="Mymans Sponsorship" sort="16" />
+        <label id="212" label="" color="4" folder="Mymans Sponsorship" sort="14" />
+        <label id="213" label="" color="1" folder="Mymans Sponsorship" sort="2" />
+        <label id="214" label="" color="4" folder="Mymans Sponsorship" sort="10" />
+        <label id="216" label="" color="1" folder="Mymans Sponsorship" sort="4" />
         <label id="217" label="" color="1" folder="Mymans Sponsorship" sort="6" />
-        <label id="220" label="" color="4" folder="Mymans Sponsorship" sort="7" />
-        <label id="221" label="" color="4" folder="Mymans Sponsorship" sort="8" />
-        <label id="222" label="" color="4" folder="BlueKoin Sponsorships" sort="2" />
-        <label id="223" label="" color="6" folder="BlueKoin Sponsorships" sort="4" />
-        <label id="224" label="" color="4" folder="BlueKoin Sponsorships" sort="6" />
-        <label id="225" label="" color="4" folder="BlueKoin Sponsorships" sort="10" />
-        <label id="226" label="" color="6" folder="BlueKoin Sponsorships" sort="12" />
-        <label id="227" label="" color="4" folder="BlueKoin Sponsorships" sort="14" />
-        <label id="228" label="" color="6" folder="BlueKoin Sponsorships" sort="16" />
-        <label id="229" label="" color="5" folder="Skysmash Sponsorships" sort="40" />
+        <label id="220" label="" color="4" folder="Mymans Sponsorship" sort="8" />
+        <label id="221" label="" color="4" folder="Mymans Sponsorship" sort="12" />
+        <label id="222" label="" color="4" folder="BlueKoin Sponsorships" sort="4" />
+        <label id="223" label="" color="6" folder="BlueKoin Sponsorships" sort="10" />
+        <label id="224" label="" color="4" folder="BlueKoin Sponsorships" sort="28" />
+        <label id="225" label="" color="4" folder="BlueKoin Sponsorships" sort="34" />
+        <label id="226" label="" color="6" folder="BlueKoin Sponsorships" sort="8" />
+        <label id="227" label="" color="4" folder="BlueKoin Sponsorships" sort="2" />
+        <label id="228" label="" color="6" folder="BlueKoin Sponsorships" sort="6" />
+        <label id="229" label="" color="5" folder="Skysmash Sponsorships" sort="60" />
         <label id="230" label="" color="5" folder="Skysmash Sponsorships" sort="2" />
         <label id="235" label="" color="3" folder="MisterSolitare Sponsorships" sort="2" />
-        <label id="232" label="" color="5" folder="Skysmash Sponsorships" sort="42" />
-        <label id="233" label="" color="5" folder="Skysmash Sponsorships" sort="30" />
-        <label id="234" label="" color="5" folder="Skysmash Sponsorships" sort="28" />
+        <label id="232" label="" color="5" folder="Skysmash Sponsorships" sort="62" />
+        <label id="233" label="" color="5" folder="Skysmash Sponsorships" sort="50" />
+        <label id="234" label="" color="5" folder="Skysmash Sponsorships" sort="48" />
         <label id="236" label="" folder="MisterSolitare Sponsorships" sort="4" />
         <label id="237" label="" folder="MisterSolitare Sponsorships" sort="8" />
         <label id="238" label="" color="3" folder="MisterSolitare Sponsorships" sort="6" />
-        <label id="239" label="" color="6" folder="BlueKoin Sponsorships" sort="8" />
-        <label id="240" label="" color="3" folder="Karbol Sponsorships" sort="12" />
-        <label id="241" label="" color="5" folder="Karbol Sponsorships" sort="8" />
+        <label id="239" label="" color="6" folder="BlueKoin Sponsorships" sort="14" />
+        <label id="240" label="" color="3" folder="Karbol Sponsorships" sort="26" />
+        <label id="241" label="" color="5" folder="Karbol Sponsorships" sort="22" />
+        <label id="137" label="" color="6" folder="Karbol Sponsorships" sort="4" />
+        <label id="242" label="" folder="Karbol Sponsorships" sort="12" />
+        <label id="243" label="" color="7" folder="Karbol Sponsorships" sort="10" />
+        <label id="244" label="" color="3" folder="Karbol Sponsorships" sort="18" />
+        <label id="245" label="" color="4" folder="Karbol Sponsorships" sort="20" />
+        <label id="246" label="" color="1" folder="Karbol Sponsorships" sort="14" />
+        <label id="247" label="" color="6" folder="Karbol Sponsorships" sort="16" />
+        <label id="249" label="" folder="WitchHannah's Sponsorships" sort="2" />
+        <label id="248" label="" folder="WitchHannah's Sponsorships" sort="12" />
+        <label id="250" label="" folder="WitchHannah's Sponsorships" sort="14" />
+        <label id="251" label="" folder="WitchHannah's Sponsorships" sort="16" />
+        <label id="252" label="" folder="WitchHannah's Sponsorships" sort="4" />
+        <label id="253" label="" folder="WitchHannah's Sponsorships" sort="6" />
+        <label id="254" label="" color="7" folder="Skysmash Sponsorships" sort="84" />
+        <label id="255" label="" color="4" folder="BlueKoin Sponsorships" sort="26" />
+        <label id="256" label="" color="6" folder="BlueKoin Sponsorships" sort="18" />
+        <label id="257" label="" folder="Skysmash Sponsorships" sort="16" />
+        <label id="258" label="" folder="Skysmash Sponsorships" sort="14" />
+        <label id="259" label="" folder="BlueKoin Sponsorships" sort="16" />
+        <label id="260" label="" folder="BlueKoin Sponsorships" sort="22" />
+        <label id="261" label="" color="4" folder="BlueKoin Sponsorships" sort="0" />
+        <label id="262" label="" color="6" folder="BlueKoin Sponsorships" sort="20" />
+        <label id="263" label="" color="4" folder="BlueKoin Sponsorships" sort="36" />
+        <label id="264" label="" color="6" folder="BlueKoin Sponsorships" sort="12" />
+        <label id="265" label="" color="6" folder="BlueKoin Sponsorships" sort="24" />
+        <label id="266" label="" folder="Skysmash Sponsorships" sort="18" />
+        <label id="267" label="" folder="Skysmash Sponsorships" sort="20" />
+        <label id="268" label="" folder="Skysmash Sponsorships" sort="22" />
+        <label id="269" label="" folder="Skysmash Sponsorships" sort="24" />
+        <label id="270" label="" color="4" folder="BlueKoin Sponsorships" sort="32" />
+        <label id="271" label="" color="2" folder="Skysmash Sponsorships" sort="26" />
+        <label id="272" label="" color="2" folder="Skysmash Sponsorships" sort="32" />
+        <label id="273" label="" color="2" folder="Skysmash Sponsorships" sort="38" />
+        <label id="274" label="" color="1" folder="Skysmash Sponsorships" sort="68" />
+        <label id="275" label="" color="1" folder="Skysmash Sponsorships" sort="64" />
+        <label id="276" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="277" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="278" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="279" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="280" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="281" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="282" label="" color="6" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="284" label="" color="6" folder="Skysmash Sponsorships" sort="46" />
+        <label id="285" label="" color="6" folder="Skysmash Sponsorships" sort="44" />
+        <label id="287" label="" color="2" folder="Skysmash Sponsorships" sort="28" />
+        <label id="288" label="" color="2" folder="Skysmash Sponsorships" sort="30" />
+        <label id="289" label="" color="2" folder="Skysmash Sponsorships" sort="36" />
+        <label id="290" label="" color="2" folder="Skysmash Sponsorships" sort="34" />
+        <label id="291" label="" color="1" folder="Skysmash Sponsorships" sort="66" />
+        <label id="292" label="" color="1" folder="Skysmash Sponsorships" sort="70" />
+        <label id="293" label="" color="4" folder="Skysmash Sponsorships" sort="82" />
+        <label id="294" label="" color="4" folder="Skysmash Sponsorships" sort="80" />
+        <label id="297" label="" color="6" folder="Skysmash Sponsorships" sort="40" />
+        <label id="298" label="" color="6" folder="Skysmash Sponsorships" sort="42" />
+        <label id="299" label="" color="3" folder="Skysmash Sponsorships" sort="72" />
+        <label id="300" label="" color="3" folder="Skysmash Sponsorships" sort="74" />
+        <label id="301" label="" color="3" folder="Skysmash Sponsorships" sort="76" />
+        <label id="302" label="" color="3" folder="Skysmash Sponsorships" sort="78" />
+        <label id="304" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="305" label="" folder="Nadeshiko (Must Strip)" sort="3" />
+        <label id="306" label="" folder="Nadeshiko (Must Strip)" sort="4" />
+        <label id="307" label="" folder="Nadeshiko (Must Strip)" sort="2" />
+        <label id="308" label="" folder="Nadeshiko (Must Strip)" sort="5" />
+        <label id="309" label="" folder="Gloria (Must Strip)" sort="0" />
+        <label id="310" label="" folder="Gloria (Must Strip)" sort="2" />
+        <label id="311" label="" folder="Gloria (Must Strip)" sort="3" />
+        <label id="312" label="" folder="Gloria (Must Strip)" sort="4" />
+        <label id="313" label="" folder="Gloria (Must Strip)" sort="5" />
+        <label id="314" label="" folder="Gloria (Opponent Stripping)" sort="0" />
+        <label id="315" label="" folder="Gloria (Opponent Stripping)" sort="2" />
+        <label id="316" label="" folder="Gloria (Opponent Stripping)" sort="3" />
+        <label id="317" label="" folder="Gloria (Stripped)" sort="0" />
+        <label id="318" label="" folder="Gloria (Stripped)" sort="3" />
+        <label id="319" label="" folder="Gloria (Stripped)" sort="2" />
+        <label id="320" label="" folder="Gloria (Opponent Stripping)" sort="4" />
+        <label id="321" label="" folder="Gloria (Stripped)" sort="4" />
+        <label id="322" label="" folder="Gloria (Opponent Stripping)" sort="5" />
+        <label id="323" label="" folder="Gloria (Stripped)" sort="5" />
+        <label id="324" label="" folder="Gloria (Must Strip)" sort="6" />
+        <label id="325" label="" folder="Gloria (Opponent Stripping)" sort="6" />
+        <label id="326" label="" folder="Gloria (Stripped)" sort="6" />
+        <label id="327" label="" folder="Nadeshiko (Must Strip)" sort="6" />
+        <label id="328" label="" folder="Nadeshiko (Stripping)" sort="2" />
+        <label id="329" label="" folder="Nadeshiko (Stripping)" sort="2" />
+        <label id="330" label="" folder="Nadeshiko (Stripping)" sort="3" />
+        <label id="331" label="" folder="Nadeshiko (Stripping)" sort="4" />
+        <label id="332" label="" folder="Nadeshiko (Stripping)" sort="5" />
+        <label id="333" label="" folder="Nadeshiko (Stripping)" sort="6" />
+        <label id="334" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="335" label="" folder="Nadeshiko (Stripped)" sort="2" />
+        <label id="336" label="" folder="Nadeshiko (Stripped)" sort="3" />
+        <label id="337" label="" folder="Nadeshiko (Stripped)" sort="4" />
+        <label id="338" label="" folder="Nadeshiko (Stripped)" sort="5" />
+        <label id="339" label="" folder="Nadeshiko (Stripped)" sort="6" />
+        <label id="340" label="" folder="Nadeshiko (Masturbating)" sort="2" />
+        <label id="341" label="" folder="Nadeshiko (Masturbating)" sort="2" />
+        <label id="342" label="" folder="Nadeshiko (Masturbating)" sort="3" />
+        <label id="343" label="" folder="Nadeshiko (Masturbating)" sort="5" />
+        <label id="344" label="" folder="Nadeshiko (Masturbating)" sort="6" />
+        <label id="345" label="" folder="Gloria (Must Strip)" sort="0" />
+        <label id="346" label="" folder="Gloria (Masturbating)" sort="0" />
+        <label id="347" label="" folder="Gloria (Masturbating)" sort="2" />
+        <label id="348" label="" folder="Nadeshiko (Must Strip)" sort="7" />
+        <label id="349" label="" folder="Nadeshiko (Stripping)" sort="8" />
+        <label id="350" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="351" label="" folder="Nadeshiko (Stripped)" sort="7" />
+        <label id="352" label="" folder="Nadeshiko (Must Strip)" sort="8" />
+        <label id="353" label="" folder="Nadeshiko (Stripping)" sort="9" />
+        <label id="354" label="" folder="Nadeshiko (Stripped)" sort="8" />
+        <label id="355" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="357" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="2" />
+        <label id="358" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="4" />
+        <label id="359" label="" folder="Kyouko (Must Strip)" sort="2" />
+        <label id="360" label="" folder="Kyouko (Must Strip)" sort="4" />
+        <label id="361" label="" folder="Nadeshiko Stripping (Kyouko)" sort="6" />
+        <label id="362" label="" folder="Nadeshiko Stripping (Kyouko)" sort="2" />
+        <label id="363" label="" folder="Kyouko (Stripping)" sort="2" />
+        <label id="364" label="" folder="Kyouko (Stripping)" sort="4" />
+        <label id="365" label="" folder="Kyouko (Stripped)" sort="2" />
+        <label id="366" label="" folder="Kyouko (Stripped)" sort="4" />
+        <label id="367" label="" folder="Nadeshiko Stripping (Kyouko)" sort="4" />
+        <label id="368" label="" folder="Nadeshiko Stripped (Kyouko)" sort="4" />
+        <label id="369" label="" folder="Nadeshiko Stripped (Kyouko)" sort="2" />
+        <label id="370" label="" folder="Nadeshiko Stripped (Kyouko)" sort="6" />
+        <label id="371" label="" folder="Kyouko (Must Strip)" sort="6" />
+        <label id="372" label="" folder="Kyouko (Stripped)" sort="6" />
+        <label id="373" label="" folder="Kyouko (Stripping)" sort="6" />
+        <label id="374" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="6" />
+        <label id="375" label="" folder="Nadeshiko Stripping (Kyouko)" sort="8" />
+        <label id="376" label="" folder="Kyouko (Must Strip)" sort="8" />
+        <label id="377" label="" folder="Nadeshiko Stripped (Kyouko)" sort="8" />
+        <label id="378" label="" folder="Kyouko (Stripping)" sort="8" />
+        <label id="379" label="" folder="Kyouko (Stripped)" sort="8" />
+        <label id="380" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="8" />
+        <label id="381" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="10" />
+        <label id="382" label="" folder="Nadeshiko Stripped (Kyouko)" sort="10" />
+        <label id="383" label="" folder="Nadeshiko Stripping (Kyouko)" sort="10" />
+        <label id="384" label="" folder="Nadeshiko Stripping (Kyouko)" sort="12" />
+        <label id="385" label="" folder="Nadeshiko Stripped (Kyouko)" sort="12" />
+        <label id="386" label="" folder="Kyouko (Stripping)" sort="10" />
+        <label id="387" label="" folder="Kyouko (Must Strip)" sort="10" />
+        <label id="388" label="" folder="Kyouko (Stripped)" sort="10" />
+        <label id="389" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="12" />
+        <label id="390" label="" folder="Nadeshiko Stripping (Kyouko)" sort="14" />
+        <label id="391" label="" folder="Nadeshiko Stripped (Kyouko)" sort="14" />
+        <label id="392" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="14" />
+        <label id="393" label="" folder="Nadeshiko Stripping (Kyouko)" sort="16" />
+        <label id="394" label="" folder="Nadeshiko Stripped (Kyouko)" sort="16" />
+        <label id="395" label="" folder="Kyouko (Must Strip)" sort="12" />
+        <label id="396" label="" folder="Kyouko (Stripping)" sort="12" />
+        <label id="397" label="" folder="Kyouko (Stripped)" sort="12" />
+        <label id="398" label="" folder="Nadeshiko Must Strip (Kyouko)" sort="16" />
+        <label id="399" label="" folder="Nadeshiko Stripping (Kyouko)" sort="18" />
+        <label id="400" label="" folder="Nadeshiko Stripped (Kyouko)" sort="18" />
+        <label id="401" label="" folder="Kyouko (Must Strip)" sort="14" />
+        <label id="402" label="" folder="Kyouko (Stripping)" sort="14" />
+        <label id="54" label="" folder="Kyouko (Stripped)" sort="14" />
+        <label id="403" label="" folder="Kyouko (Stripped)" sort="0" />
+        <label id="404" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="405" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="406" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="407" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="408" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="409" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="410" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="411" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="412" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="413" label="" folder="Must Strip (Nephenee)" sort="0" />
+        <label id="414" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="415" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="416" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="417" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="418" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="419" label="" folder="Nephenee (Stripping)" sort="0" />
+        <label id="420" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="421" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="422" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="423" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="424" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="425" label="" folder="Nephenee (Stripped)" sort="0" />
+        <label id="426" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="427" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="428" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="429" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="430" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="431" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="432" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="433" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="434" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="435" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="436" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="437" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="438" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="439" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="440" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="441" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="442" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="443" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="444" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="445" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="446" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="447" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="448" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="449" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="450" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="451" label="" folder="Kyouko (Must Strip)" sort="0" />
+        <label id="452" label="" folder="Kyouko (Must Strip)" sort="0" />
+        <label id="453" label="" folder="Kyouko (Stripping)" sort="0" />
+        <label id="454" label="" folder="Kyouko (Stripping)" sort="0" />
+        <label id="455" label="" folder="Kyouko (Stripped)" sort="0" />
+        <label id="456" label="" folder="Kyouko (Stripped)" sort="0" />
+        <label id="457" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="458" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="459" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="460" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="461" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="462" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="463" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="464" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="465" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="466" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="467" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="468" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="469" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="470" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="471" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="472" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="473" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="474" label="" folder="Must Strip (Fluttershy)" sort="0" />
+        <label id="475" label="" folder="Must Strip (Sakura)" sort="0" />
+        <label id="476" label="" folder="Must Strip (Sakura)" sort="0" />
+        <label id="477" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="478" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="479" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="480" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="481" label="" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="482" label="" folder="Stripping (Sakura)" sort="0" />
+        <label id="3" label="" folder="Stripping (Sakura)" sort="0" />
+        <label id="16" label="" folder="Stripping (Sakura)" sort="0" />
+        <label id="483" label="" folder="Stripped (Sakura)" sort="0" />
+        <label id="484" label="" folder="Must Strip (Sakura)" sort="0" />
+        <label id="485" label="" folder="Stripping (Sakura)" sort="0" />
+        <label id="486" label="" folder="Stripped (Sakura)" sort="0" />
+        <label id="487" label="" folder="Stripped (Sakura)" sort="0" />
+        <label id="488" label="" folder="Must Strip (Sakura)" sort="0" />
+        <label id="489" label="" folder="Stripped (Sakura)" sort="0" />
+        <label id="490" label="" folder="Kyouko (Must Strip)" sort="0" />
     </labels>
-    <nextId>241</nextId>
+    <nextId>490</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9S_Nade_1-1" />
         <marker scope="Public" name="Accomodat" />
         <marker scope="Public" name="Accomodating_Player" />
+        <marker scope="Public" name="adeshiko_Fluttershy_5-2" />
         <marker scope="Public" name="amy_confess_sonic_prompt_alt_R" />
         <marker scope="Public" name="AnotherTie" />
         <marker scope="Public" name="Aoi_Iyanuma">Tied to any line referring to Nadeshiko's friend Aoi Iyanuma</marker>
         <marker scope="Public" name="Aoi_Iyanuma_Teacher" />
         <marker scope="Public" name="Ayano_Toki">Tied to any line referring to Nadeshiko's friend Ayano Toki</marker>
         <marker scope="Public" name="Bad_Joke" />
+        <marker scope="Public" name="Beatrix_Nade_1-1" />
+        <marker scope="Public" name="Beatrix_Nade_1-2" />
         <marker scope="Public" name="Camping_Table" />
         <marker scope="Public" name="CampingClothes" />
         <marker scope="Public" name="CampingPJs" />
@@ -329,6 +584,7 @@
         <marker scope="Public" name="Chiaki_Ogaki">Tied to any line referring to Nadeshiko's friend Chiaki Ogaki</marker>
         <marker scope="Public" name="CupORamen" />
         <marker scope="Public" name="dakku_R" />
+        <marker scope="Public" name="Ema_Mizunami" />
         <marker scope="Public" name="Ena_Saito">Tied to any line referring to Nadeshiko's friend Ena Saito</marker>
         <marker scope="Public" name="EndOfGame" />
         <marker scope="Public" name="EnjoyThis" />
@@ -374,7 +630,36 @@
         <marker scope="Public" name="Fluttershy_Nadeshiko_FlutterOutFirst" />
         <marker scope="Public" name="Fluttershy_Nadeshiko_FlutterStart" />
         <marker scope="Public" name="gen_talent_R" />
+        <marker scope="Public" name="gloria_mast_breasts" />
+        <marker scope="Public" name="gloria_mast_kissing" />
+        <marker scope="Public" name="gloria_mast_outdoornudity" />
         <marker scope="Public" name="Gloria_Nade_Pokemon" />
+        <marker scope="Public" name="gloria_nadeshiko_campingMore1R" />
+        <marker scope="Public" name="gloria_nadeshiko_campingMore2R" />
+        <marker scope="Public" name="gloria_nadeshiko_campingMore3R" />
+        <marker scope="Public" name="gloria_nadeshiko_campingMore4R" />
+        <marker scope="Public" name="gloria_nadeshiko_chestReveal1R" />
+        <marker scope="Public" name="gloria_nadeshiko_chestReveal2R" />
+        <marker scope="Public" name="gloria_nadeshiko_chestReveal3R" />
+        <marker scope="Public" name="gloria_nadeshiko_crotchReveal1R" />
+        <marker scope="Public" name="gloria_nadeshiko_crotchReveal2R" />
+        <marker scope="Public" name="gloria_nadeshiko_crotchReveal3R" />
+        <marker scope="Public" name="gloria_nadeshiko_curry1R" />
+        <marker scope="Public" name="gloria_nadeshiko_curry2R" />
+        <marker scope="Public" name="gloria_nadeshiko_curry3R" />
+        <marker scope="Public" name="gloria_nadeshiko_otherHobbies1R" />
+        <marker scope="Public" name="gloria_nadeshiko_otherHobbies2R" />
+        <marker scope="Public" name="gloria_nadeshiko_otherHobbies3R" />
+        <marker scope="Public" name="gloria_nadeshiko_pokemon1R" />
+        <marker scope="Public" name="gloria_nadeshiko_pokemon2R" />
+        <marker scope="Public" name="gloria_nadeshiko_pokemon3R" />
+        <marker scope="Public" name="gloria_nadeshiko_sweets1R" />
+        <marker scope="Public" name="gloria_nadeshiko_sweets2R" />
+        <marker scope="Public" name="gloria_nadeshiko_sweets3R" />
+        <marker scope="Public" name="gloria_nadeshiko_woods1R" />
+        <marker scope="Public" name="gloria_nadeshiko_woods2R" />
+        <marker scope="Public" name="gloria_nadeshiko_woods3R" />
+        <marker scope="Public" name="glorida_nadeshiko_pokemon2R" />
         <marker scope="Public" name="GramaShikoBadHand" />
         <marker scope="Public" name="GrammaShiko_Dealer" />
         <marker scope="Public" name="GrammaShikoHats" />
@@ -392,9 +677,21 @@
         <marker scope="Public" name="ISuckAtPoker" />
         <marker scope="Public" name="Jura_Nadeshiko_Cooking" />
         <marker scope="Public" name="JuraNadeshiko_0" />
+        <marker scope="Public" name="Kyouko_Nade_1A" />
+        <marker scope="Public" name="Kyouko_Nade_1B" />
+        <marker scope="Public" name="Kyouko_Nade_1B_Alt" />
+        <marker scope="Public" name="Kyouko_Nade_1C" />
+        <marker scope="Public" name="Kyouko_Nade_CampingPartners" />
+        <marker scope="Public" name="Kyouko_Nade_CampingPartners2" />
+        <marker scope="Public" name="Kyouko_Nade_CampingPartners3" />
+        <marker scope="Public" name="Kyouko_Nade_Coming" />
+        <marker scope="Public" name="Kyouko_Nade_Good" />
+        <marker scope="Public" name="Kyouko_Nade_Impressed" />
         <marker scope="Public" name="largeFemale">Used for any line tied to a female opponent with large breasts</marker>
         <marker scope="Public" name="largeMale">Used for any line tied to a male opponent with a large penis</marker>
         <marker scope="Public" name="Lookerstory_R" />
+        <marker scope="Public" name="Lysithea_Nade_1-1" />
+        <marker scope="Public" name="Lysithea_Nade_2-1" />
         <marker scope="Public" name="MaleFinished" />
         <marker scope="Public" name="maleMasturbation" />
         <marker scope="Public" name="maleMasturbation910" />
@@ -402,17 +699,91 @@
         <marker scope="Public" name="MamaShiko_MustStrip" />
         <marker scope="Public" name="mediumFemale">Used for any line tied to a female opponent with medium-sized breasts</marker>
         <marker scope="Public" name="mediumMale">Used for any line tied to a male opponent with a medium-sized penis</marker>
+        <marker scope="Public" name="Mei_Nakatsugawa" />
         <marker scope="Public" name="Mia_Nadeshiko_1-1" />
         <marker scope="Public" name="MikuNadeshikoA" />
         <marker scope="Public" name="MikuNadeshikoB" />
         <marker scope="Public" name="MikuNadeshikoC" />
         <marker scope="Public" name="Nad" />
         <marker scope="Public" name="Nade_adaptquestion_R" />
+        <marker scope="Public" name="Nade_Arueshalae_1-1" />
+        <marker scope="Public" name="Nade_Arueshalae_1-2" />
+        <marker scope="Public" name="Nade_Arueshalae_1-3" />
+        <marker scope="Public" name="Nade_Arueshalae_1-3 " />
+        <marker scope="Public" name="Nade_Arueshalae_2-1" />
+        <marker scope="Public" name="Nade_Arueshalae_2-2" />
+        <marker scope="Public" name="Nade_Arueshalae_2-3" />
+        <marker scope="Public" name="Nade_Arueshalae_2-3 " />
+        <marker scope="Public" name="Nade_Arueshalae_3-1" />
+        <marker scope="Public" name="Nade_Arueshalae_3-2" />
+        <marker scope="Public" name="Nade_Arueshalae_3-3" />
+        <marker scope="Public" name="Nade_Arueshalae_3-3 " />
+        <marker scope="Public" name="Nade_Arueshalae_4-1" />
+        <marker scope="Public" name="Nade_Arueshalae_4-2" />
+        <marker scope="Public" name="Nade_Arueshalae_4-3" />
+        <marker scope="Public" name="Nade_Arueshalae_4-3 " />
+        <marker scope="Public" name="Nade_Arueshalae_5-1" />
+        <marker scope="Public" name="Nade_Arueshalae_5-2" />
+        <marker scope="Public" name="Nade_Arueshalae_5-3" />
+        <marker scope="Public" name="Nade_Arueshalae_5-3 " />
+        <marker scope="Public" name="Nade_Arushalae_1-1" />
+        <marker scope="Public" name="Nade_Beatrix_1-1" />
+        <marker scope="Public" name="Nade_Beatrix_1-2" />
+        <marker scope="Public" name="Nade_CantSwim_R" />
         <marker scope="Public" name="Nade_Ferris_1-1" />
         <marker scope="Public" name="Nade_Ferris_2-1" />
         <marker scope="Public" name="Nade_Flutter_InventoryQuestion" />
         <marker scope="Public" name="Nade_Heris_Sakura-1" />
         <marker scope="Public" name="Nade_HuTao_Ghost" />
+        <marker scope="Public" name="Nade_Jenna_1-1" />
+        <marker scope="Public" name="Nade_Jenna_1-2" />
+        <marker scope="Public" name="Nade_Jenna_2-1" />
+        <marker scope="Public" name="Nade_Jenna_2-2" />
+        <marker scope="Public" name="Nade_Kyouko_AllGoodMeal" />
+        <marker scope="Public" name="Nade_Kyouko_BitetoEat" />
+        <marker scope="Public" name="Nade_Kyouko_Camping1" />
+        <marker scope="Public" name="Nade_Kyouko_Camping2" />
+        <marker scope="Public" name="Nade_Kyouko_Camping3" />
+        <marker scope="Public" name="Nade_Kyouko_Clubs1" />
+        <marker scope="Public" name="Nade_Kyouko_Clubs2" />
+        <marker scope="Public" name="Nade_Kyouko_Clubs3" />
+        <marker scope="Public" name="Nade_Kyouko_Eating" />
+        <marker scope="Public" name="Nade_Kyouko_Eating2" />
+        <marker scope="Public" name="Nade_Kyouko_Eating3" />
+        <marker scope="Public" name="Nade_Kyouko_EatingContest" />
+        <marker scope="Public" name="Nade_Kyouko_Food1" />
+        <marker scope="Public" name="Nade_Kyouko_Food2" />
+        <marker scope="Public" name="Nade_Kyouko_Food3" />
+        <marker scope="Public" name="Nade_Kyouko_Friends1" />
+        <marker scope="Public" name="Nade_Kyouko_Friends2" />
+        <marker scope="Public" name="Nade_Kyouko_Friends3" />
+        <marker scope="Public" name="Nade_Kyouko_FunintheWoods" />
+        <marker scope="Public" name="Nade_Kyouko_GoingDown" />
+        <marker scope="Public" name="Nade_Kyouko_GoodHeart" />
+        <marker scope="Public" name="Nade_Kyouko_JustTomato" />
+        <marker scope="Public" name="Nade_Kyouko_LetsGo" />
+        <marker scope="Public" name="Nade_Kyouko_Mangaka1" />
+        <marker scope="Public" name="Nade_Kyouko_Mangaka2" />
+        <marker scope="Public" name="Nade_Kyouko_Mangaka3" />
+        <marker scope="Public" name="Nade_Kyouko_MasturbateStart" />
+        <marker scope="Public" name="Nade_Kyouko_MidnightFeast" />
+        <marker scope="Public" name="Nade_Kyouko_MustMasturbate" />
+        <marker scope="Public" name="Nade_Kyouko_NextCourse" />
+        <marker scope="Public" name="Nade_Kyouko_Outdoorsy" />
+        <marker scope="Public" name="Nade_Kyouko_Saucey" />
+        <marker scope="Public" name="Nade_Kyouko_Saucey2" />
+        <marker scope="Public" name="Nade_Kyouko_Saucey3" />
+        <marker scope="Public" name="Nade_Kyouko_SexyChair" />
+        <marker scope="Public" name="Nade_Kyouko_SexyWoods" />
+        <marker scope="Public" name="Nade_Kyouko_Slow" />
+        <marker scope="Public" name="Nade_Kyouko_Soft" />
+        <marker scope="Public" name="Nade_Kyouko_Tasty" />
+        <marker scope="Public" name="Nade_Kyouko_Thrilling" />
+        <marker scope="Public" name="Nade_Kyouko_TomatoUndies" />
+        <marker scope="Public" name="Nade_Kyouko_WhyTomato" />
+        <marker scope="Public" name="Nade_Kyouko_WhyTomatoNade_Kyouko_WhyTomato" />
+        <marker scope="Public" name="Nade_Kyouko_Youreon" />
+        <marker scope="Public" name="Nade_Kyouko_Yum" />
         <marker scope="Public" name="Nade_Meia_Nature" />
         <marker scope="Public" name="Nade_Mia_Food" />
         <marker scope="Public" name="Nade_Mia_Sights" />
@@ -424,9 +795,74 @@
         <marker scope="Public" name="Nade_Nagisa_Tips3" />
         <marker scope="Public" name="Nade_Nami_1-1" />
         <marker scope="Public" name="Nade_Nami_1-2" />
+        <marker scope="Public" name="Nade_Neph_Activities1" />
+        <marker scope="Public" name="Nade_Neph_Activities2" />
+        <marker scope="Public" name="Nade_Neph_Activities3" />
+        <marker scope="Public" name="Nade_Neph_CampCookin1" />
+        <marker scope="Public" name="Nade_Neph_CampCookin2" />
+        <marker scope="Public" name="Nade_Neph_CampCookin3" />
+        <marker scope="Public" name="Nade_Neph_Cold1" />
+        <marker scope="Public" name="Nade_Neph_Cold2" />
+        <marker scope="Public" name="Nade_Neph_Cold3" />
+        <marker scope="Public" name="Nade_Neph_Country1" />
+        <marker scope="Public" name="Nade_Neph_Country2" />
+        <marker scope="Public" name="Nade_Neph_Country3" />
+        <marker scope="Public" name="Nade_Neph_CountryGrammas1" />
+        <marker scope="Public" name="Nade_Neph_CountryGrammas2" />
+        <marker scope="Public" name="Nade_Neph_CountryGrammas3" />
+        <marker scope="Public" name="Nade_Neph_Crush1" />
+        <marker scope="Public" name="Nade_Neph_Crush2" />
+        <marker scope="Public" name="Nade_Neph_Crush3" />
+        <marker scope="Public" name="Nade_Neph_Fighting1" />
+        <marker scope="Public" name="Nade_Neph_Fighting2" />
+        <marker scope="Public" name="Nade_Neph_Fighting3" />
+        <marker scope="Public" name="Nade_Neph_FinalPiece1" />
+        <marker scope="Public" name="Nade_Neph_FinalPiece2" />
+        <marker scope="Public" name="Nade_Neph_FinalPiece3" />
+        <marker scope="Public" name="Nade_Neph_Helmet1" />
+        <marker scope="Public" name="Nade_Neph_Helmet2" />
+        <marker scope="Public" name="Nade_Neph_Helmet3" />
+        <marker scope="Public" name="Nade_Neph_Losing1" />
+        <marker scope="Public" name="Nade_Neph_Losing2" />
+        <marker scope="Public" name="Nade_Neph_Losing3" />
+        <marker scope="Public" name="Nade_Neph_NadeMustMast" />
+        <marker scope="Public" name="Nade_Neph_NadeStartMast" />
+        <marker scope="Public" name="Nade_Neph_Nature1" />
+        <marker scope="Public" name="Nade_Neph_Nature2" />
+        <marker scope="Public" name="Nade_Neph_NephMustMast" />
+        <marker scope="Public" name="Nade_Neph_NephStartMast" />
+        <marker scope="Public" name="Nade_Neph_Safety1" />
+        <marker scope="Public" name="Nade_Neph_Safety2" />
+        <marker scope="Public" name="Nade_Neph_Safety3" />
+        <marker scope="Public" name="Nade_Neph_Sorry1" />
+        <marker scope="Public" name="Nade_Neph_Sorry2" />
+        <marker scope="Public" name="Nade_Neph_Sorry3" />
+        <marker scope="Public" name="Nade_Neph_Sweet1" />
+        <marker scope="Public" name="Nade_Neph_Sweet2" />
+        <marker scope="Public" name="Nade_Neph_Sweet3" />
+        <marker scope="Public" name="Nade_Neph_TakeItOff1" />
+        <marker scope="Public" name="Nade_Neph_TakeItOff2" />
+        <marker scope="Public" name="Nade_Neph_TakeItOff3" />
+        <marker scope="Public" name="Nade_NoHumans_R" />
+        <marker scope="Public" name="Nade_Nonon_1-1" />
+        <marker scope="Public" name="Nade_Nonon_2-1" />
         <marker scope="Public" name="Nade_Rainbow_EatingContest" />
         <marker scope="Public" name="Nade_Reimu_Spouse" />
+        <marker scope="Public" name="Nade_Sakura_Idol_1" />
+        <marker scope="Public" name="Nade_Sakura_Idol_2" />
+        <marker scope="Public" name="Nade_Sakura_Idol_3" />
+        <marker scope="Public" name="Nade_Sakura_ItsOkay2" />
+        <marker scope="Public" name="Nade_Sakura_Saga_1" />
+        <marker scope="Public" name="Nade_Sakura_Saga_3" />
+        <marker scope="Public" name="Nade_Sakura_ZombieReveal_1" />
+        <marker scope="Public" name="Nade_Sakura_ZombieReveal_2" />
+        <marker scope="Public" name="Nade_Sakura_ZombieReveal_3" />
+        <marker scope="Public" name="Nade_Sanako_Comfy" />
         <marker scope="Public" name="Nade_Sayaka_R" />
+        <marker scope="Public" name="Nade_Solar_1-1" />
+        <marker scope="Public" name="Nade_Solar_2-1" />
+        <marker scope="Public" name="Nade_Solar_3-1" />
+        <marker scope="Public" name="Nade_Solar_4-1" />
         <marker scope="Public" name="Nade_Wikipe_1-1" />
         <marker scope="Public" name="Nade_Wikipe_2-1" />
         <marker scope="Public" name="NadeMikuWhereBag" />
@@ -452,12 +888,39 @@
         <marker scope="Public" name="Nadeshiko_Fluttershy_3-1" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_3-2" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_3-3" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_4-1" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_4-1-NoFriends" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_4-1-NoFriendsB" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_4-2" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_4-2NoFriends" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_4-2-NoFriends" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_4-2NoFriendsB" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_4-3" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_4-3NoFriends" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_5-1" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_5-2" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_5-3" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_6-1" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_6-2" />
+        <marker scope="Public" name="Nadeshiko_Fluttershy_6-3" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_MagicalNature" />
         <marker scope="Public" name="Nadeshiko_Ghost" />
+        <marker scope="Public" name="nadeshiko_gloria_mustmasturbate" />
+        <marker scope="Public" name="nadeshiko_gloria_nudistcamping1" />
+        <marker scope="Public" name="nadeshiko_gloria_nudistcamping2" />
+        <marker scope="Public" name="nadeshiko_gloria_nudistcamping3" />
+        <marker scope="Public" name="nadeshiko_gloria_pokeTeam1" />
+        <marker scope="Public" name="nadeshiko_gloria_pokeTeam2" />
+        <marker scope="Public" name="nadeshiko_gloria_pokeTeam3" />
+        <marker scope="Public" name="nadeshiko_gloria_reganimals1" />
+        <marker scope="Public" name="nadeshiko_gloria_reganimals2" />
+        <marker scope="Public" name="nadeshiko_gloria_reganimals3" />
+        <marker scope="Public" name="nadeshiko_gloria_skinnydipping1" />
+        <marker scope="Public" name="nadeshiko_gloria_skinnydipping2" />
+        <marker scope="Public" name="nadeshiko_gloria_skinnydipping3" />
+        <marker scope="Public" name="nadeshiko_gloria_sleepingbag1" />
+        <marker scope="Public" name="nadeshiko_gloria_sleepingbag2" />
+        <marker scope="Public" name="nadeshiko_gloria_sleepingbag3" />
         <marker scope="Public" name="Nadeshiko_GreenEyes" />
         <marker scope="Public" name="Nadeshiko_Heris_Labcoat" />
         <marker scope="Public" name="Nadeshiko_HerisSurroundingsR" />
@@ -468,12 +931,19 @@
         <marker scope="Public" name="Nadeshiko_Jogging" />
         <marker scope="Public" name="Nadeshiko_Journalist" />
         <marker scope="Public" name="Nadeshiko_Lonely" />
+        <marker scope="Public" name="nadeshiko_mast_faceSit2Resp" />
+        <marker scope="Public" name="nadeshiko_mast_faceSitR" />
+        <marker scope="Public" name="nadeshiko_mast_faceSitResp" />
+        <marker scope="Public" name="nadeshiko_mast_tongueActionResp" />
+        <marker scope="Public" name="nadeshiko_mast_toys_R" />
+        <marker scope="Public" name="nadeshiko_mast_toysResp" />
         <marker scope="Public" name="Nadeshiko_Meia_Camping" />
         <marker scope="Public" name="Nadeshiko_Meia_NatureA" />
         <marker scope="Public" name="Nadeshiko_Meia_Planet" />
         <marker scope="Public" name="Nadeshiko_Nagisa_Dango" />
         <marker scope="Public" name="Nadeshiko_Nagisa_Dango-2" />
         <marker scope="Public" name="Nadeshiko_Nagisa_Dango-3" />
+        <marker scope="Public" name="Nadeshiko_NoPresentFriendsB" />
         <marker scope="Public" name="Nadeshiko_PizzaToppings" />
         <marker scope="Public" name="Nadeshiko_Player_Inventory" />
         <marker scope="Public" name="Nadeshiko_Polly_Abilities" />
@@ -490,6 +960,7 @@
         <marker scope="Public" name="Nadeshiko_Sleeping_R" />
         <marker scope="Public" name="Nadeshiko_SpicyCamps_question_R" />
         <marker scope="Public" name="Nadeshiko_SpicyCamps_question_R2" />
+        <marker scope="Public" name="nadeshiko_startFFR" />
         <marker scope="Public" name="Nadeshiko_StoryPrompt" />
         <marker scope="Public" name="Nadeshiko_Tea_1-1" />
         <marker scope="Public" name="Nadeshiko_Tea_1-2A" />
@@ -514,6 +985,8 @@
         <marker scope="Public" name="Nadeshiko-Fluttershy-2-2" />
         <marker scope="Public" name="NadeshikoFriends" />
         <marker scope="Public" name="NadeshikoGloriaCamping" />
+        <marker scope="Public" name="NadeshikoGloriaCamping2" />
+        <marker scope="Public" name="NadeshikoGloriaCamping3" />
         <marker scope="Public" name="NadeshikoGloriaExpertCamper" />
         <marker scope="Public" name="NadeshikoHeartPubes" />
         <marker scope="Public" name="Nadeshikoisterrified" />
@@ -552,9 +1025,13 @@
         <marker scope="Public" name="NadeshikoYumeko8_3" />
         <marker scope="Public" name="NadeshikoYunoCollege" />
         <marker scope="Public" name="NadeshikoYusukeGrocery" />
+        <marker scope="Public" name="Nadesiko_Fluttershy_5-1" />
         <marker scope="Public" name="nagatoro_extra_last2_R" />
         <marker scope="Public" name="nagisa_christmas_date_Tnagisa_christmas_date_R" />
         <marker scope="Public" name="nagisa_college_or_job_r" />
+        <marker scope="Public" name="Nonon_Nade_1-1" />
+        <marker scope="Public" name="Nonon_Nade_1-1A" />
+        <marker scope="Public" name="Nonon_Nade_1-1B" />
         <marker scope="Public" name="Noodles" />
         <marker scope="Public" name="PenisReveal" />
         <marker scope="Public" name="PenisReveal1" />
@@ -565,6 +1042,7 @@
         <marker scope="Public" name="Perona_Nadeshiko_Homeless" />
         <marker scope="Public" name="petquestion_R" />
         <marker scope="Public" name="pink_hair_compliment_R" />
+        <marker scope="Public" name="Queenie_Nade_1_2" />
         <marker scope="Public" name="Queenie_Nade_1-1" />
         <marker scope="Public" name="Ramen" />
         <marker scope="Public" name="Ramen_Done" />
@@ -584,6 +1062,10 @@
         <marker scope="Public" name="SkinnyDippingNoLake" />
         <marker scope="Public" name="smallFemale">Used for any line tied to a female opponent with small breasts</marker>
         <marker scope="Public" name="smallMale">Used for any line tied to a male opponent with a small penis</marker>
+        <marker scope="Public" name="Solar_Nade_1-1" />
+        <marker scope="Public" name="Solar_Nade_2-1" />
+        <marker scope="Public" name="Solar_Nadeshiko_-1" />
+        <marker scope="Public" name="Solar_Nadeshiko_1-1" />
         <marker scope="Public" name="SoundAdvice" />
         <marker scope="Public" name="Souvenirs" />
         <marker scope="Public" name="Souvenirs_2" />
@@ -607,12 +1089,16 @@
         <marker scope="Public" name="TooSoon" />
         <marker scope="Public" name="TooSoon_Good" />
         <marker scope="Public" name="Try_Something_New" />
+        <marker scope="Public" name="Vampire_Food" />
         <marker scope="Public" name="Victory" />
         <marker scope="Public" name="WeBothLost" />
         <marker scope="Public" name="WouldYou" />
         <marker scope="Public" name="WouldYouLikeACamp" />
         <marker scope="Public" name="WouldYouLikeACampMeal" />
         <marker scope="Public" name="WouldYouLikeToGoCamping" />
+        <marker scope="Public" name="zeke_nadeshiko_fancy1R" />
+        <marker scope="Public" name="zeke_nadeshiko_hermit1R" />
+        <marker scope="Public" name="zeke_nadeshiko_tantal1R" />
     </markers>
     <recipes>
         <recipe key="8338b475-6f72-461a-9cb7-4510428e1297">

@@ -29,9 +29,6 @@ namespace SPNATI_Character_Editor
 		/// </summary>
 		public string Version { get; set; }
 
-		[XmlIgnore]
-		public EditorSource Source;
-
 		private bool _dirty;
 		[XmlIgnore]
 		public bool IsDirty
@@ -128,8 +125,25 @@ namespace SPNATI_Character_Editor
 			set { Set(value); }
 		}
 
+		[DefaultValue("")]
+		[XmlElement("penis")]
+		public string Penis
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
+		[DefaultValue("")]
+		[XmlElement("breasts")]
+		public string Breasts
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
+		[DefaultValue("")]
 		[XmlElement("size")]
-		public string Size
+		public string LegacySize
 		{
 			get { return Get<string>(); }
 			set { Set(value); }
@@ -210,6 +224,11 @@ namespace SPNATI_Character_Editor
 		[XmlArray("poses")]
 		[XmlArrayItem("pose")]
 		public List<Pose> Poses { get; set; }
+		
+		[XmlNewLine]
+		[XmlArray("pose-sets")]
+		[XmlArrayItem("set")]
+		public List<PoseSet> PoseSets { get; set; }
 
 		[XmlNewLine(XmlNewLinePosition.Both)]
 		[XmlElement("behaviour")]
@@ -324,7 +343,6 @@ namespace SPNATI_Character_Editor
 			LastName = "Character";
 			Labels = new ObservableCollection<StageSpecificValue>();
 			Gender = "female";
-			Size = "medium";
 			Intelligence = new ObservableCollection<StageSpecificValue>();
 			Stamina = 15;
 			Tags = new List<CharacterTag>();
@@ -336,6 +354,7 @@ namespace SPNATI_Character_Editor
 			Nicknames = new ObservableCollection<Nickname>();
 			Behavior = new Behaviour();
 			Poses = new List<Pose>();
+			PoseSets = new List<PoseSet>();
 			Wardrobe = new List<Clothing>();
 			Collectibles = new CollectibleData();
 			PoseLibrary = new PoseMap(this);
@@ -351,7 +370,9 @@ namespace SPNATI_Character_Editor
 			LastName = "";
 			Labels.Clear();
 			Gender = "";
-			Size = "";
+			LegacySize = "";
+			Penis = "";
+			Breasts = "";
 			Behavior = new Behaviour();
 			Intelligence = new ObservableCollection<StageSpecificValue>();
 			Stamina = 15;
@@ -362,6 +383,7 @@ namespace SPNATI_Character_Editor
 			StartingLines = new List<DialogueLine>();
 			Endings = new List<Epilogue>();
 			Poses = new List<Pose>();
+			PoseSets = new List<PoseSet>();
 			Version = "";
 			Nicknames = new ObservableCollection<Nickname>();
 			Collectibles = new CollectibleData();
@@ -463,7 +485,7 @@ namespace SPNATI_Character_Editor
 					if (layer < count)
 					{
 						Clothing clothes = list.GetClothing(Layers - 1 - layer);
-						if (clothes.ToString() != "SKIP") 
+						if (clothes.Type != "skip") 
 						{ 
 							label = "Losing " + clothes.ToString();
 						}
@@ -476,15 +498,17 @@ namespace SPNATI_Character_Editor
 				else
 				{
 					if (layer == 0)
-						label = "Fully Clothed";
+					{
+						label = list.GetClothing(Layers - 1).Type == "skip"? "EMPTY STAGE" : "Fully Clothed";
+					}
 					else if (layer < count)
 					{
 						int index = layer - 1;
 						Clothing lastClothes = list.GetClothing(Layers - 1 - index);
 						Clothing clothes = list.GetClothing(Layers - 1 - layer);
-						if (lastClothes.ToString() != "SKIP")
+						if (lastClothes.Type != "skip")
 						{
-							if (clothes.ToString() != "SKIP")
+							if (clothes.Type != "skip")
 							{
 								label = "Lost " + lastClothes.ToString();
 							}
@@ -495,7 +519,11 @@ namespace SPNATI_Character_Editor
 						}
 						else
 						{
-							if (clothes.ToString() == "SKIP") 
+							if (layer == 1)
+							{
+								label = clothes.Type == "skip" ? "EMPTY STAGE" : "Fully Clothed";
+							}
+							else if (clothes.Type == "skip") 
 							{ 
 								label = "EMPTY STAGE";
 							}
@@ -505,8 +533,8 @@ namespace SPNATI_Character_Editor
 								{
 									index--;
 									clothes = list.GetClothing(Layers - 1 - index);
-								} while (clothes.ToString() == "SKIP");
-								label = "Lost " + clothes.ToString();
+								} while (clothes.Type == "skip" && index > 0);
+								label = clothes.Type == "skip" ? "Fully Clothed" : "Lost " + clothes.ToString();
 							}
 						}
 					}
@@ -522,101 +550,6 @@ namespace SPNATI_Character_Editor
 				else if (layer == count + 2)
 				{
 					label = "Finished";
-				}
-			}
-			return new StageName(layer.ToString(), label);
-		}
-
-		/// <summary>
-		/// Converts a layer to a user friendly name for the txt flat file
-		/// </summary>
-		/// <param name="layer"></param>
-		public StageName LayerToFlatFileName(int layer, bool advancingStage)
-		{
-			string label = layer.ToString();
-			if (layer < 0 || layer >= Wardrobe.Count + Clothing.ExtraStages)
-			{
-				if (layer == -3)
-				{
-					label = "naked";
-				}
-				else if (layer == -2)
-				{
-					label = "masturbating";
-				}
-				else if (layer == -1)
-				{
-					label = "finished";
-				}
-				else
-				{
-					return null;
-				}
-			}
-			else
-			{
-				if (advancingStage)
-				{
-					layer++;
-					if (layer <= Wardrobe.Count)
-					{
-						Clothing clothes = Wardrobe[Layers - layer];
-						if (clothes.ToString() != "SKIP")
-						{
-							label = "losing " + clothes.ToString();
-						}
-						else
-						{
-							label = "SKIPPED";
-						}
-					}
-					else
-					{
-						label = "lost all clothing";
-					}
-				}
-				else
-				{
-					if (layer == 0)
-						label = "Fully Clothed";
-					else if (layer < Wardrobe.Count)
-					{
-						int index = layer - 1;
-						Clothing lastClothes = Wardrobe[Layers - 1 - index];
-						Clothing clothes = Wardrobe[Layers - 1 - layer];
-						if (lastClothes.ToString() != "SKIP")
-						{
-							label = "Lost " + lastClothes.ToString();
-						}
-						else
-						{
-							if (clothes.ToString() == "SKIP")
-							{
-								label = "EMPTY STAGE";
-							}
-							else
-							{
-								do
-								{
-									index--;
-									clothes = Wardrobe[Layers - 1 - index];
-								} while (clothes.ToString() == "SKIP");
-								label = "Lost " + clothes.ToString();
-							}
-						}
-					}
-					else if (layer == Wardrobe.Count)
-					{
-						label = "Naked";
-					}
-					else if (layer == Wardrobe.Count + 1)
-					{
-						label = "Masturbating";
-					}
-					else if (layer == Wardrobe.Count + 2)
-					{
-						label = "Finished";
-					}
 				}
 			}
 			return new StageName(layer.ToString(), label);
@@ -699,12 +632,37 @@ namespace SPNATI_Character_Editor
 			return Path.Combine(root, "attachments", FolderName);
 		}
 
+		private void ConvertLegacySize()
+		{
+			if (Gender == "male")
+			{
+				Penis = Penis?? LegacySize;
+				LegacySize = "";
+			}
+			else
+			{
+				Breasts = Breasts?? LegacySize;
+				LegacySize = "";
+			}
+		}
+
 		public virtual void OnBeforeSerialize()
 		{
 			Behavior.Serializing = true;
 			Gender = Gender.ToLower();
 			Behavior.OnBeforeSerialize();
 			Metadata.PopulateFromCharacter(this);
+
+			if (Intelligence.Find(i => i.Stage == 0) == null)
+			{
+				Intelligence.Add(new StageSpecificValue(0, "average"));
+			}
+
+			if (!string.IsNullOrEmpty(LegacySize))
+			{
+				ConvertLegacySize();
+			}
+
 			Version = Config.Version;
 			Metadata.LastUpdate = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 			foreach (Epilogue ending in Endings)
@@ -910,9 +868,9 @@ namespace SPNATI_Character_Editor
 							{
 								usedStages.Add(stage);
 								string imgToAdd = img.Image.Replace("#", stage.ToString());
-								if (imgToAdd.Contains("custom:") && !imgToAdd.Contains(stage.ToString()))
+								if ((imgToAdd.Contains("custom:") || (imgToAdd.Contains("set:"))) && !imgToAdd.Contains(stage.ToString()))
 								{
-									// it's a cross-stage custom pose
+									// it's a cross-stage custom pose/pose set
 									imgToAdd += " CROSS " + stage;
 								}
 
@@ -933,7 +891,7 @@ namespace SPNATI_Character_Editor
 								}
 							}
 						}
-						else if (line.Image.Contains("custom:"))
+						else if (line.Image.Contains("custom:") || line.Image.Contains("set:"))
 						{
 							foreach (int stage in theCase.Stages)
 							{
@@ -943,7 +901,7 @@ namespace SPNATI_Character_Editor
 
 									if (!imgToAdd.Contains(stage.ToString()))
 									{
-										// it's a cross-stage custom pose
+										// it's a cross-stage custom pose/pose set
 										imgToAdd += " CROSS " + stage;
 									}
 
@@ -1023,12 +981,23 @@ namespace SPNATI_Character_Editor
 			targeted = stageCase.GetTargets().Contains(character.FolderName);
 			if (!targeted && (allowedTargetTypes & TargetType.Filter) > 0)
 			{
-				string gender = stageCase.Tag.StartsWith("male_") ? "male" : stageCase.Tag.StartsWith("female_") ? "female" : null;
+				string gender = stageCase.Tag.StartsWith("male_") ? "male" : stageCase.Tag.StartsWith("female_") ? "female" : stageCase.Tag.StartsWith("futanari_") ? "female" : null;
 				if (gender != null && gender != character.Gender)
 					return false;
 				string size = stageCase.Tag.Contains("_large_") ? "large" : stageCase.Tag.Contains("_medium_") ? "medium" : stageCase.Tag.Contains("_small_") ? "small" : null;
-				if (size != null && character.Size != size)
-					return false;
+				if (size != null)
+				{
+					if (stageCase.Tag.Contains("_crotch"))
+					{
+						if (!string.IsNullOrEmpty(character.LegacySize) && character.Gender == "male" && character.LegacySize != size || !string.IsNullOrEmpty(character.Penis) && character.Penis != size)
+							return false;
+					}
+					else
+					{
+						if (!string.IsNullOrEmpty(character.LegacySize) && character.Gender == "female" && character.LegacySize != size || !string.IsNullOrEmpty(character.Breasts) && character.Breasts != size)
+							return false;
+					}
+				}
 
 				foreach (TargetCondition cond in stageCase.Conditions)
 				{
@@ -1135,8 +1104,7 @@ namespace SPNATI_Character_Editor
 		public WardrobeRestrictions GetWardrobeRestrictions()
 		{
 			//For established characters, lock down changing the layer amount and order since it's hugely disruptive
-			string status = Listing.Instance.GetCharacterStatus(FolderName);
-			if (status != OpponentStatus.Testing && status != OpponentStatus.Unlisted && status != OpponentStatus.Incomplete)
+			if (Listing.Instance.IsCharacterReleased(FolderName))
 			{
 				return WardrobeRestrictions.LayerCount | WardrobeRestrictions.NoSkip;
 			}
@@ -1256,6 +1224,13 @@ namespace SPNATI_Character_Editor
 			get { return Poses; }
 			set { Poses = value; }
 		}
+		
+		public List<PoseSet> CustomPoseSets
+		{
+			get { return PoseSets; }
+			set { PoseSets = value; }
+		}
+
 
 		/// <summary>
 		/// Enumerates through all tags belonging to a certain group
@@ -1483,13 +1458,6 @@ namespace SPNATI_Character_Editor
 		{
 			return Tag;
 		}
-	}
-
-	public enum EditorSource
-	{
-		CharacterEditor,
-		MakeXml,
-		Other
 	}
 
 	public class DuplicateCase

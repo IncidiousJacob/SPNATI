@@ -92,10 +92,6 @@ namespace SPNATI_Character_Editor.Controls
 			}
 			_selectedStage = stage;
 			_selectedCase = workingCase;
-			if (_selectedCase != null)
-			{
-				DataConversions.ConvertCase(_selectedCase, _character);
-			}
 			TrackCase(_selectedCase);
 			if (_selectedCase != null)
 			{
@@ -227,7 +223,6 @@ namespace SPNATI_Character_Editor.Controls
 			}
 			gridDialogue.PasteLines(_lineClipboard);
 		}
-
 		private void gridDialogue_HighlightRow(object sender, int index)
 		{
 			HighlightRow?.Invoke(this, index);
@@ -261,6 +256,10 @@ namespace SPNATI_Character_Editor.Controls
 		public DialogueLine GetLine(int index)
 		{
 			return gridDialogue.GetLine(index);
+		}
+		public int GetHighlightedLineIndex()
+		{
+			return gridDialogue.GetHighlightedLineIndex();
 		}
 
 		public void ClearSelection()
@@ -388,7 +387,7 @@ namespace SPNATI_Character_Editor.Controls
 			}
 
 
-			GUIHelper.SetNumericBox(valPriority, _selectedCase.CustomPriority);
+			SetNumericBox(valPriority, _selectedCase.CustomPriority);
 			chkBackground.Checked = _selectedCase.Hidden == "1";
 			chkPlayOnce.Checked = _selectedCase.OneShotId > 0;
 
@@ -483,6 +482,7 @@ namespace SPNATI_Character_Editor.Controls
 			table.AddSpeedButton("Player", "Collectible", (data) => { return AddVariableTest("~_.collectible.*~", data); });
 			table.AddSpeedButton("Player", "Collectible (Counter)", (data) => { return AddVariableTest("~_.collectible.*.counter~", data); });
 			table.AddSpeedButton("Player", "Collectible (Wearing)", (data) => { return AddVariableTest("~_.collectible.*.wearing~", data); });
+			table.AddSpeedButton("Player", "Collectible (Visible)", (data) => { return AddVariableTest("~_.collectible.*.visible~", data); });
 			table.AddSpeedButton("Player", "Costume", (data) => { return AddVariableTest("~_.costume~", data); });
 			table.AddSpeedButton("Player", "Distance", (data) => { return AddVariableTest("~_.distance~", data); });
 			table.AddSpeedButton("Player", "Gender", (data) => { return AddVariableTest("~_.gender~", data); });
@@ -624,6 +624,30 @@ namespace SPNATI_Character_Editor.Controls
 			return true;
 		}
 
+		private void SetNumericBox(NumericUpDown box, string value)
+		{
+			if (string.IsNullOrEmpty(value))
+			{
+				box.Text = "";
+			}
+			else
+			{
+				int v;
+				if (int.TryParse(value, out v) && v >= box.Minimum && v <= box.Maximum)
+				{
+					box.Value = v;
+					box.Text = v.ToString();
+				}
+			}
+		}
+
+		private string ReadNumericBox(NumericUpDown box)
+		{
+			if (string.IsNullOrEmpty(box.Text))
+				return null;
+			return box.Value.ToString();
+		}
+
 		/// <summary>
 		/// Puts the data in the fields into the selected case object
 		/// </summary>
@@ -658,7 +682,7 @@ namespace SPNATI_Character_Editor.Controls
 
 				tableConditions.Save();
 
-				c.CustomPriority = GUIHelper.ReadNumericBox(valPriority);
+				c.CustomPriority = ReadNumericBox(valPriority);
 				c.Hidden = (chkBackground.Checked ? "1" : null);
 				if (chkPlayOnce.Checked)
 				{

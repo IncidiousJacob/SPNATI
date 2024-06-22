@@ -71,12 +71,14 @@
   <variable name="day" description="Displays the current day of the month (e.g. 31st)" global="true" example="22nd">
     <function name="number" description="Day of the month as a number (1-31)" example="22" />
   </variable>
+  <variable name="timestamp" description="Displays the current timestamp (time in seconds since Jan 1, 1970, UTC)." global="true" example="1701234567" />
   <variable name="background" description="Displays the name of the background the player is using." global="true" example="Beach">
     <function name="location" description="Displays 'indoors' or 'outdoors' depending on which background is in play." example="outdoors"/>
     <function name="time" description="Displays 'day' or 'night' depending on which background is in play." example="night"/>
     <function name="surface" description="Displays the type of floor in the current background (ex. floor vs sand)." example="floor" />
     <function name="term" description="Displays a term referring to the current background in a more general way, useful in a sentence." example="bedroom" />
     <function name="preposition" description="Displays a suitable preposition for being at the current background (on a roof, in a room, etc.)." example="in" />
+	<function name="if" description="Displays text conditionally based on whether the background has the given tag." useBackgroundTags="true" />	
   </variable>
   <variable name="target" description="Displays the target's name, same as ~name~." example="Florina">
     <function name="costume" description="Expands to the ID of the current skin the target is using, or 'default' by default." example="florina_easter" />
@@ -131,5 +133,25 @@
   <variable name="rng" description="Expands to a random number within a provided range (ex. ~rng(1-5)~" global="true">
     <param name="interval" label="Range:" description="An inclusive range for the random number (ex. 1-3)" example="2" />
   </variable>
-  <variable name="blank" description="Displays nothing. Use this to indicate an intentionally blank line." global="true" />
+  <variable name="deck" description="If most card faces are from the same custom deck, displays that deck's ID." global="true" example="pixel">
+    <function name="suits" description="If most card faces from the suits specified are from the same custom deck, displays that deck's ID">
+      <param name="suits" label="Suits:" description="List of suits to check" example="spades|hearts" />
+    </function>
+    <function name="back" description="If all cards have the same back, display its ID. The back's ID is slightly different from the rest of the deck." example="pixel.1" />
+    <function name="using" description="Expands to 'true' or 'false' depending on whether any cards are using a certain deck." example="true">
+      <param name="deck" label="Deck:" description="Deck to check for" example="pixel" />
+      <param name="cards" label="Cards:" description="Optional list of suits and ranges of ranks to check" example="spades|J-K|A" />
+    </function>
+    <function name="usingBack" description="Expands to 'true' or false' depending on whether a certain card back is being used for any cards." example="true">
+      <param name="deck" label="Deck:" description="Deck to check for" example="pixel" />
+    </function>
+  </variable>
+  <variable name="deckAbsolute" description="If all card faces are from the same custom deck, displays that deck's ID." global="true" example="pixel">
+    <function name="cards" description="If all card faces in the suits and ranks specified are from the same custom deck, displays that deck's ID">
+      <param name="parameters" label="Parameters:" description="List of suits and ranges of ranks to check" example="spades|J-K|A" />
+    </function>
+    <function name="back" description="If all cards have the same back, display its ID. The back's ID is slightly different from the rest of the deck." example="pixel.1" />
+  </variable>
+  <variable name="monikaGlitches" description="Returns True if Monika's glitches are enabled. Only valid while Monika is present in a game." global="true"/>
+  <variable name="blank" description="Displays nothing. Use this to indicate an intentionally blank line." global="true" example="true" />
 </variables>

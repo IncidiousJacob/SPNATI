@@ -116,29 +116,99 @@ namespace SPNATI_Character_Editor.DataStructures
 			set { Set(value); }
 		}
 
-		[Boolean(DisplayName = "Wearable", GroupOrder = 130, Description = "If checked, the item will be wearable by the player when unlocked")]
-		[DefaultValue(false)]
-		[XmlElement("wearable")]
-		public bool Wearable
-		{
-			get { return clothing != null; }
-			set
+        [DefaultValue("")]
+        [ComboBox(DisplayName = "Extra", Description = "Is it a simple collectible, or does it unlock a costume for the character or a wearable item for the player", GroupOrder = 129, Options = new string[] {
+            "wearable",
+            "unlocks a costume",
+        })]
+        public string Extra
+        {
+            get 
 			{
-				if (value)
+				if (Wearable) 
 				{
-					if (clothing == null)
-					{
-						clothing = new Clothing();
-					}
+					return "wearable";
+				}
+				else if (costumeUnlock)
+				{
+					return "unlocks a costume";
 				}
 				else
 				{
-					clothing = null;
+					return "";
 				}
+			}
+            set 
+			{ 
+				if (value == "wearable")
+				{
+					Wearable = true;
+                    if (clothing == null)
+                    {
+                        clothing = new Clothing();
+                    }
+					costumeUnlock = false;
+					costumeFolder = "";
+                }
+				else if (value == "unlocks a costume")
+				{
+					Wearable = false;
+                    clothing = null;
+					costumeUnlock = true;
+                }
+				else
+				{
+					Wearable = false;
+					clothing = null;
+					costumeUnlock = false;
+                    costumeFolder = "";
+                }
+
+                Set(value); }
+        }
+
+		[RecordSelect(RecordType = typeof(Costume), AllowCreate = false, DisplayName = "Costume", Description = "The costume that this collectible unlocks", GroupOrder = 150, RecordFilter = "FilterCostume")]
+		[DefaultValue("")]
+		public Costume costumeToUnlock
+		{
+			get
+			{
+				return Get<Costume>();
+			}
+			set
+			{
+				if (value != null)
+				{
+					costumeFolder = value.Folder;
+				}
+				Set(value);
 			}
 		}
 
-		[XmlElement("clothing")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        private bool FilterCostume(IRecord record)
+        {
+            if (Character == null)
+            {
+                return false;
+            }
+            Costume costume = record as Costume;
+			return costume.Character == Character;
+        }
+
+        [XmlElement("costume")]
+        [DefaultValue(false)]
+        public bool costumeUnlock;
+
+        [XmlElement("costume-folder")]
+        [DefaultValue("")]
+        public string costumeFolder;
+
+		[XmlElement("wearable")]
+		[DefaultValue(false)]
+        public bool Wearable;
+
+        [XmlElement("clothing")]
 		public Clothing clothing;
 
 		[Text(DisplayName = "ClothingName", Description = "The name of the wearable form of this item, as used in characters' dialogue", GroupOrder = 140)]
@@ -201,7 +271,7 @@ namespace SPNATI_Character_Editor.DataStructures
 			}
 		}
 
-		[RecordSelect(RecordType = typeof(ClothingTypeCategory), AllowCreate = false, DisplayName = "Type", Description = "The clothing type of the wearable form of this item", GroupOrder = 160)]
+		[RecordSelect(RecordType = typeof(ClothingTypeCategory), RecordFilter = "NoSkipFilter", AllowCreate = false, DisplayName = "Type", Description = "The clothing type of the wearable form of this item", GroupOrder = 160)]
 		[DefaultValue("")]
 		public string ClothingType
 		{
@@ -220,6 +290,13 @@ namespace SPNATI_Character_Editor.DataStructures
 				}
 			}
 		}
+
+		#pragma warning disable IDE0051
+		private bool NoSkipFilter(IRecord record)
+		{
+			return record.Key != "skip";
+		}
+		#pragma warning restore IDE0051
 
 		[Boolean(DisplayName = "Is Plural?", GroupOrder = 180, Description = "Whether the name of the wearable form of this item is plural")]
 		[DefaultValue(false)]

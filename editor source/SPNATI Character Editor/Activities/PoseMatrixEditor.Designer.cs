@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grid = new Desktop.Skinning.SkinnedDataGridView();
             this.gridMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cutCellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,10 +48,13 @@
             this.copyRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skinnedSplitContainer1 = new Desktop.Skinning.SkinnedSplitContainer();
+            this.lblTo = new Desktop.Skinning.SkinnedLabel();
+            this.iconAltDrag = new Desktop.Skinning.SkinnedIcon();
             this.cmdEditPipeline = new Desktop.Skinning.SkinnedIcon();
+            this.cmdConvert = new Desktop.Skinning.SkinnedButton();
+            this.cboToKKLVersion = new Desktop.Skinning.SkinnedComboBox();
             this.searchBar = new SPNATI_Character_Editor.Controls.CodeReplaceBar();
             this.cmdFolder = new Desktop.Skinning.SkinnedButton();
-            this.skinnedLabel1 = new Desktop.Skinning.SkinnedLabel();
             this.tsSheet = new System.Windows.Forms.ToolStrip();
             this.tsAddPose = new System.Windows.Forms.ToolStripButton();
             this.tsRemovePose = new System.Windows.Forms.ToolStripButton();
@@ -71,6 +74,10 @@
             this.tsAddRow = new System.Windows.Forms.ToolStripButton();
             this.tsRemoveRow = new System.Windows.Forms.ToolStripButton();
             this.tsCheckCell = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsRename = new System.Windows.Forms.ToolStripButton();
+            this.tsLeft = new System.Windows.Forms.ToolStripButton();
+            this.tsRight = new System.Windows.Forms.ToolStripButton();
             this.sptMode = new System.Windows.Forms.SplitContainer();
             this.panelSingle = new System.Windows.Forms.Panel();
             this.cmdImportFull = new Desktop.Skinning.SkinnedIcon();
@@ -123,26 +130,26 @@
             this.grid.BackgroundColor = System.Drawing.Color.White;
             this.grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid.ContextMenuStrip = this.gridMenu;
             this.grid.Data = null;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid.DefaultCellStyle = dataGridViewCellStyle2;
             this.grid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grid.EnableHeadersVisualStyles = false;
             this.grid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -151,14 +158,14 @@
             this.grid.Margin = new System.Windows.Forms.Padding(0);
             this.grid.Name = "grid";
             this.grid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.grid.ShowEditingIcon = false;
@@ -328,10 +335,13 @@
             // 
             // skinnedSplitContainer1.Panel1
             // 
+            this.skinnedSplitContainer1.Panel1.Controls.Add(this.lblTo);
+            this.skinnedSplitContainer1.Panel1.Controls.Add(this.iconAltDrag);
             this.skinnedSplitContainer1.Panel1.Controls.Add(this.cmdEditPipeline);
+            this.skinnedSplitContainer1.Panel1.Controls.Add(this.cmdConvert);
+            this.skinnedSplitContainer1.Panel1.Controls.Add(this.cboToKKLVersion);
             this.skinnedSplitContainer1.Panel1.Controls.Add(this.searchBar);
             this.skinnedSplitContainer1.Panel1.Controls.Add(this.cmdFolder);
-            this.skinnedSplitContainer1.Panel1.Controls.Add(this.skinnedLabel1);
             this.skinnedSplitContainer1.Panel1.Controls.Add(this.tsSheet);
             this.skinnedSplitContainer1.Panel1.Controls.Add(this.grid);
             // 
@@ -343,6 +353,34 @@
             this.skinnedSplitContainer1.SplitterDistance = 321;
             this.skinnedSplitContainer1.TabIndex = 1;
             // 
+            // lblTo
+            // 
+            this.lblTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTo.AutoSize = true;
+            this.lblTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblTo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTo.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblTo.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
+            this.lblTo.Location = new System.Drawing.Point(698, 5);
+            this.lblTo.Name = "lblTo";
+            this.lblTo.Size = new System.Drawing.Size(16, 13);
+            this.lblTo.TabIndex = 43;
+            this.lblTo.Text = "to";
+            // 
+            // iconAltDrag
+            // 
+            this.iconAltDrag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconAltDrag.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.iconAltDrag.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.iconAltDrag.Flat = false;
+            this.iconAltDrag.Image = global::SPNATI_Character_Editor.Properties.Resources.Help;
+            this.iconAltDrag.Location = new System.Drawing.Point(428, 2);
+            this.iconAltDrag.Name = "iconAltDrag";
+            this.iconAltDrag.Size = new System.Drawing.Size(21, 23);
+            this.iconAltDrag.TabIndex = 42;
+            this.toolTip1.SetToolTip(this.iconAltDrag, "Alt+drag to reorder column headers");
+            this.iconAltDrag.UseVisualStyleBackColor = true;
+            // 
             // cmdEditPipeline
             // 
             this.cmdEditPipeline.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -350,7 +388,7 @@
             this.cmdEditPipeline.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
             this.cmdEditPipeline.Flat = false;
             this.cmdEditPipeline.Image = global::SPNATI_Character_Editor.Properties.Resources.Pipeline;
-            this.cmdEditPipeline.Location = new System.Drawing.Point(466, 1);
+            this.cmdEditPipeline.Location = new System.Drawing.Point(455, 2);
             this.cmdEditPipeline.Name = "cmdEditPipeline";
             this.cmdEditPipeline.Size = new System.Drawing.Size(25, 23);
             this.cmdEditPipeline.TabIndex = 41;
@@ -358,6 +396,39 @@
             this.toolTip1.SetToolTip(this.cmdEditPipeline, "Edit a pipeline using the selected cell");
             this.cmdEditPipeline.UseVisualStyleBackColor = true;
             this.cmdEditPipeline.Click += new System.EventHandler(this.cmdEditPipeline_Click);
+            // 
+            // cmdConvert
+            // 
+            this.cmdConvert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdConvert.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.cmdConvert.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.cmdConvert.Flat = false;
+            this.cmdConvert.Location = new System.Drawing.Point(616, 0);
+            this.cmdConvert.Name = "cmdConvert";
+            this.cmdConvert.Size = new System.Drawing.Size(79, 23);
+            this.cmdConvert.TabIndex = 30;
+            this.cmdConvert.Text = "Convert";
+            this.cmdConvert.UseVisualStyleBackColor = true;
+            this.cmdConvert.Click += new System.EventHandler(this.cmdConvert_Click);
+            // 
+            // cboToKKLVersion
+            // 
+            this.cboToKKLVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboToKKLVersion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cboToKKLVersion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cboToKKLVersion.BackColor = System.Drawing.Color.White;
+            this.cboToKKLVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboToKKLVersion.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
+            this.cboToKKLVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cboToKKLVersion.KeyMember = null;
+            this.cboToKKLVersion.Location = new System.Drawing.Point(715, 1);
+            this.cboToKKLVersion.Name = "cboToKKLVersion";
+            this.cboToKKLVersion.SelectedIndex = -1;
+            this.cboToKKLVersion.SelectedItem = null;
+            this.cboToKKLVersion.Size = new System.Drawing.Size(65, 23);
+            this.cboToKKLVersion.Sorted = false;
+            this.cboToKKLVersion.TabIndex = 31;
+            this.cboToKKLVersion.Text = "KKL v";
             // 
             // searchBar
             // 
@@ -378,27 +449,13 @@
             this.cmdFolder.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
             this.cmdFolder.Flat = true;
             this.cmdFolder.ForeColor = System.Drawing.Color.Blue;
-            this.cmdFolder.Location = new System.Drawing.Point(485, 1);
+            this.cmdFolder.Location = new System.Drawing.Point(486, 0);
             this.cmdFolder.Name = "cmdFolder";
-            this.cmdFolder.Size = new System.Drawing.Size(113, 23);
+            this.cmdFolder.Size = new System.Drawing.Size(98, 23);
             this.cmdFolder.TabIndex = 38;
             this.cmdFolder.Text = "Open Folder";
             this.cmdFolder.UseVisualStyleBackColor = true;
             this.cmdFolder.Click += new System.EventHandler(this.cmdFolder_Click);
-            // 
-            // skinnedLabel1
-            // 
-            this.skinnedLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.skinnedLabel1.AutoSize = true;
-            this.skinnedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.skinnedLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.skinnedLabel1.Highlight = Desktop.Skinning.SkinnedHighlight.Label;
-            this.skinnedLabel1.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.skinnedLabel1.Location = new System.Drawing.Point(604, 6);
-            this.skinnedLabel1.Name = "skinnedLabel1";
-            this.skinnedLabel1.Size = new System.Drawing.Size(172, 13);
-            this.skinnedLabel1.TabIndex = 2;
-            this.skinnedLabel1.Text = "Alt+drag to reorder column headers";
             // 
             // tsSheet
             // 
@@ -421,7 +478,11 @@
             this.toolStripSeparator4,
             this.tsAddRow,
             this.tsRemoveRow,
-            this.tsCheckCell});
+            this.tsCheckCell,
+            this.toolStripSeparator5,
+            this.tsRename,
+            this.tsLeft,
+            this.tsRight});
             this.tsSheet.Location = new System.Drawing.Point(0, 0);
             this.tsSheet.Name = "tsSheet";
             this.tsSheet.Size = new System.Drawing.Size(783, 25);
@@ -596,6 +657,40 @@
             this.tsCheckCell.Text = "tsCheckCell";
             this.tsCheckCell.ToolTipText = "Mark selected cell(s) as checked";
             this.tsCheckCell.Click += new System.EventHandler(this.tsCheckCell_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // tsRename
+            // 
+            this.tsRename.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsRename.Image = global::SPNATI_Character_Editor.Properties.Resources.Edit;
+            this.tsRename.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsRename.Name = "tsRename";
+            this.tsRename.Size = new System.Drawing.Size(23, 22);
+            this.tsRename.ToolTipText = "Rename Pose Sheet";
+            this.tsRename.Click += new System.EventHandler(this.tsRename_Click);
+            // 
+            // tsLeft
+            // 
+            this.tsLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsLeft.Image = global::SPNATI_Character_Editor.Properties.Resources.PreviousFrame;
+            this.tsLeft.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsLeft.Name = "tsLeft";
+            this.tsLeft.Size = new System.Drawing.Size(23, 22);
+            this.tsLeft.ToolTipText = "Swap with the previous pose sheet";
+            this.tsLeft.Click += new System.EventHandler(this.tsLeft_Click);
+            // 
+            // tsRight
+            // 
+            this.tsRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsRight.Image = global::SPNATI_Character_Editor.Properties.Resources.NextFrame;
+            this.tsRight.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsRight.Name = "tsRight";
+            this.tsRight.Size = new System.Drawing.Size(23, 22);
+            this.tsRight.Click += new System.EventHandler(this.tsRight_Click);
             // 
             // sptMode
             // 
@@ -969,7 +1064,6 @@
 		private System.Windows.Forms.ToolStripButton tsSort;
 		private System.Windows.Forms.ToolStripButton tsApplyCrop;
 		private System.Windows.Forms.ToolStripButton tsApplyCode;
-		private Desktop.Skinning.SkinnedLabel skinnedLabel1;
 		private System.Windows.Forms.ContextMenuStrip gridMenu;
 		private System.Windows.Forms.ToolStripMenuItem cutCellToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem copyCellToolStripMenuItem;
@@ -1004,5 +1098,13 @@
 		private Desktop.Skinning.SkinnedIcon cmdEditPipeline;
 		private Desktop.Skinning.SkinnedIcon cmdImportFull;
         private System.Windows.Forms.ToolStripButton tsCheckCell;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton tsLeft;
+        private System.Windows.Forms.ToolStripButton tsRight;
+        private System.Windows.Forms.ToolStripButton tsRename;
+        private Desktop.Skinning.SkinnedButton cmdConvert;
+        private Desktop.Skinning.SkinnedComboBox cboToKKLVersion;
+        private Desktop.Skinning.SkinnedIcon iconAltDrag;
+        private Desktop.Skinning.SkinnedLabel lblTo;
     }
 }

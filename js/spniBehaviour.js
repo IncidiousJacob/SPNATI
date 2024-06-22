@@ -11,6 +11,7 @@
 var SELECTED = "selected";
 var OPPONENT_SELECTED = "opponent_selected";
 var OPPONENT_DESELECTED = "opponent_deselected";
+var SETTINGS_CHANGED = "settings_changed";
 var GAME_START = "game_start";
 
 var DEALING_CARDS = "dealing_cards";
@@ -101,10 +102,33 @@ var FEMALE_MASTURBATING = "female_masturbating";
 var FEMALE_HEAVY_MASTURBATING = "female_heavy_masturbating";
 var FEMALE_FINISHED_MASTURBATING = "female_finished_masturbating";
 
+var FUTA_CROTCH_WILL_BE_VISIBLE = "futanari_crotch_will_be_visible";
+var FUTA_SMALL_CROTCH_IS_VISIBLE = "futanari_small_crotch_is_visible";
+var FUTA_MEDIUM_CROTCH_IS_VISIBLE = "futanari_medium_crotch_is_visible";
+var FUTA_LARGE_CROTCH_IS_VISIBLE = "futanari_large_crotch_is_visible";
+var FUTA_CROTCH_IS_VISIBLE = "futanari_crotch_is_visible";
+
+var FUTA_MUST_MASTURBATE = "futanari_must_masturbate";
+var FUTA_START_MASTURBATING = "futanari_start_masturbating";
+var FUTA_MASTURBATING = "futanari_masturbating";
+var FUTA_HEAVY_MASTURBATING = "futanari_heavy_masturbating";
+var FUTA_FINISHED_MASTURBATING = "futanari_finished_masturbating";
+
 var GAME_OVER_VICTORY = "game_over_victory";
 var GAME_OVER_DEFEAT = "game_over_defeat";
 
 var GLOBAL_CASE = "global";
+
+/* List of case types that are played only at game start, during a character's starting stage.
+ * Stage conditions attached to these cases are ignored in order to accomodate characters with initial skip layers.
+ */
+var STARTING_STAGE_CASES = [
+    SELECTED,
+    OPPONENT_SELECTED,
+    OPPONENT_DESELECTED,
+    SETTINGS_CHANGED,
+    GAME_START
+];
 
 /* Lists of case types eligible to be autoconverted if a target condition is present. */
 var CONVERT_STRIP_CASES = [
@@ -118,6 +142,7 @@ var CONVERT_STRIP_CASES = [
     FEMALE_REMOVING_MAJOR,
     FEMALE_CHEST_WILL_BE_VISIBLE,
     FEMALE_CROTCH_WILL_BE_VISIBLE,
+    FUTA_CROTCH_WILL_BE_VISIBLE,
 ];
 
 var CONVERT_STRIPPED_CASES = [
@@ -137,6 +162,10 @@ var CONVERT_STRIPPED_CASES = [
     FEMALE_LARGE_CHEST_IS_VISIBLE,
     FEMALE_CHEST_IS_VISIBLE,
     FEMALE_CROTCH_IS_VISIBLE,
+    FUTA_SMALL_CROTCH_IS_VISIBLE,
+    FUTA_MEDIUM_CROTCH_IS_VISIBLE,
+    FUTA_LARGE_CROTCH_IS_VISIBLE,
+    FUTA_CROTCH_IS_VISIBLE,
 ];
 
 /* Tag alias list, mapping aliases to canonical tag names. */
@@ -155,7 +184,6 @@ var TAG_ALIASES = {
 /* Tag implications list, mapping tags to lists of implied tags. */
 var TAG_IMPLICATIONS = {
     // Add tag implications as follows:
-    'huge_breasts': ['large_breasts'],
     'muscular': ['athletic'],
     'very_long_hair': ['long_hair'],
     'blue_hair': ['exotic_hair'],
@@ -281,7 +309,7 @@ function MarkerOperation(base_name, op, rhs, parentCase) {
          */
         this.rhs = rhs;
     } else if (typeof(rhs) === 'string') {
-        var parsed = parseInt(rhs, 10);
+        var parsed = Number(rhs);
         if (!isNaN(parsed)) {
             this.rhs = parsed;
         } else {
@@ -394,7 +422,7 @@ MarkerOperation.prototype.evaluate = function (self, opp) {
         );
     }
 
-    var parsed = parseInt(rhs, 10);
+    var parsed = Number(rhs);
     if (!isNaN(parsed)) {
         rhs = parsed;
     }
@@ -505,11 +533,21 @@ PlayerAttributeOperation.prototype.apply = function (self, opp) {
     case "label":
         self.setLabel(value);
         break;
+    case "penis":
+        self.setPenisSize(value);
+        break;
+    case "breasts":
+        self.setBreastSize(value);
+        break;
     case "size":
-        self.size = value;
+        if (self.gender === eGender.MALE) {
+            self.setPenisSize(value);
+        } else {
+            self.setBreastSize(value);
+        }
         break;
     case "gender":
-        self.gender = value;
+        self.setGender(value);
         break;
     default:
         console.error("Unknown player attribute: ", this.attr);
@@ -525,7 +563,19 @@ PlayerAttributeOperation.prototype.apply = function (self, opp) {
  * @returns {number}
  */
 PlayerAttributeOperation.prototype.sortKey = function () {
-    return (this.attr == "label") ? 0 : 1;
+    /* Run gender-changing ops before size-changing ones
+     * so that the size metadata consistency logic for the
+     * former doesn't interfere with the latter.
+     */
+    switch (this.attr) {
+    case "label": return 0;
+    case "gender": return 1;
+    case "penis":
+    case "breasts":
+    case "size":
+    default:
+        return 2;
+    }
 }
 
 /**
@@ -694,13 +744,17 @@ ForfeitTimerOperation.prototype.sortKey = function () {
  * @param {string} target 
  * @param {string} op
  * @param {string} value 
+ * @param {string} weight
  * @param {Case} parentCase 
  */
- function NicknameOperation (target, op, value, parentCase) {
+ function NicknameOperation (target, op, value, weight, parentCase) {
     this.target = target.toLowerCase();
     this.op = op;
     this.value = value;
+    this.weight = parseInt(weight, 10);
     this.parentCase = parentCase;
+
+    if (isNaN(this.weight)) this.weight = 1;
 }
 
 /**
@@ -739,18 +793,34 @@ NicknameOperation.prototype.apply = function (self, opp) {
 
     /* NOTE: don't apply variable expansion to this.value here, since it will be expanded later
      * during nickname substitution.
+     *
+     * Weight values for `+` and `-` operations have a minimum of 1,
+     * but weight can be 0 for `:` to simply clear all instances of a nickname from the list
+     * without re-adding it.
      */
 
-    if (this.op == "clear" || (this.op == "=" && !this.value)) {
+    if (this.op == "clear" || this.op == "=") {
+        /* "clear" doesn't take a value */
         newNicknames = [];
-    } else if (this.op == "=") {
-        newNicknames = [this.value];
-    } else if (this.op == "+") {
-        if (this.value.length > 0 && newNicknames.indexOf(this.value) < 0) newNicknames.push(this.value);
-    } else if (this.op == "-") {
-        newNicknames = newNicknames.filter(function (v) { return v !== this.value; });
+        if ((this.op == "=") && this.value) newNicknames.push(this.value);
+    } else if ((this.op == ":") && this.value) {
+        newNicknames = newNicknames.filter((nickname) => nickname !== this.value);
+        for (let i = 0; i < this.weight; i++) newNicknames.push(this.value);
+    } else if ((this.op == "+") && this.value) {
+        let weight = Math.max(this.weight, 1);
+        for (let i = 0; i < weight; i++) newNicknames.push(this.value);
+    } else if ((this.op == "-") && this.value) {
+        let weight = Math.max(this.weight, 1);
+        for (let i = 0; i < weight; i++) {
+            let idx = newNicknames.indexOf(this.value);
+            if (idx >= 0) {
+                newNicknames.splice(idx, 1);
+            } else {
+                break;
+            }
+        }
     } else {
-        console.error("Unknown nickname operation: ", this.op);
+        console.error("Unknown nickname operation '", this.op, "' with value '", this.value, "'");
     }
 
     if (newNicknames.length === 0) {
@@ -768,9 +838,9 @@ NicknameOperation.prototype.apply = function (self, opp) {
  * @returns {number}
  */
 NicknameOperation.prototype.sortKey = function () {
-    /* Operations that clear the nickname list ("clear" and "=") should
-     * come before operations that add nicknames ("=" and "+"), which should
-     * themselves come before operations that remove nicknames ("-").
+    /* Operations that clear the nickname list ("clear", "=", and ">") should
+     * come before operations that add nicknames ("=", ">", and "+"), which should
+     * themselves come before operations that only remove nicknames ("-").
      * 
      * This allows the nickname list to be cleared and replaced with a new
      * set of (potentially multiple) nicknames, and it ensures that situations
@@ -780,9 +850,10 @@ NicknameOperation.prototype.sortKey = function () {
     switch (this.op) {
     case "clear": return 0;
     case "=": return 1;
-    case "+": return 2;
-    case "-": return 3;
-    default: return 4;
+    case ":": return 2;
+    case "+": return 3;
+    case "-": return 4;
+    default: return 5;
     }
 }
 
@@ -809,6 +880,7 @@ NicknameOperation.prototype.sortKey = function () {
             $elem.attr("character"),
             $elem.attr("op") || "=",
             $elem.attr("name"),
+            $elem.attr("weight"),
             parentCase
         );
     } else if (type == "player") {
@@ -1134,7 +1206,10 @@ function findVariablePlayer(variable, self, target, bindings) {
     })) {
         return player;
     }
-    return null;
+
+    return loadedOpponents.find(function (opp) {
+        return opp.id === variable;
+    }) || null;
 }
 
 /************************************************************
@@ -1255,7 +1330,14 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
                 return 0;
             } else if (split_fn[2] && split_fn[2] === 'wearing') {
                 if (targetCollectible && targetCollectible.clothing) {
-                    return humanPlayer.clothing.some(function (clothing) {
+                    return humanPlayer.getClothing().some(function (clothing) {
+                        return clothing.id === targetCollectible.clothing.id;
+                    });
+                }
+                return false;
+            } else if (split_fn[2] && split_fn[2] === 'visible') {
+                if (targetCollectible && targetCollectible.clothing) {
+                    return humanPlayer.findClothing().some(function (clothing) {
                         return clothing.id === targetCollectible.clothing.id;
                     });
                 }
@@ -1282,7 +1364,11 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         if (!player.alt_costume) return 'default';
         return player.alt_costume.id;
     case 'size':
-        return player.size;
+        return (player.gender === eGender.MALE) ? player.penis : player.breasts;
+    case "penis":
+        return player.penis;
+    case "breasts":
+        return player.breasts;
     case 'gender':
         return player.gender;
     case 'intelligence':
@@ -1291,8 +1377,10 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         var n = Math.min(Math.max((parseInt(args, 10) || 1), 1), 10);
         var name = expandNicknames(self, player);
         var ret = name;
-        for (var i = 0; i < n; i++) {
-            ret = name[0] + "-" + ret;
+        if (name[0].toLowerCase() != name[0].toUpperCase()) {
+            for (var i = 0; i < n; i++) {
+                ret = name[0] + "-" + ret;
+            }
         }
         return ret;
     case 'ifmale':
@@ -1338,6 +1426,12 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
             return player.hand.score();
         } else if (split_fn[1] == 'noart' || split_fn[1] === undefined) {
             return player.hand.describe(split_fn[1] == undefined);
+        } else if (split_fn[1] == 'deck') {
+            return player.hand.getCustomDeck(1);
+        } else if (split_fn[1] == 'deckAbsolute') {
+            return player.hand.getCustomDeck(0);
+        } else if (split_fn[1] == 'deckUsing') {
+            return player.hand.findUsedCustomDeck(args);
         }
         throw new Error('Incorrect use of .hand');
     case 'cards':
@@ -1385,6 +1479,89 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         return (player.forfeit[0] === PLAYER_HEAVY_MASTURBATING) ? "true" : "false";
     default:
         return expandNicknames(self, player);
+    }
+}
+
+function expandCustomDeckVariable(split_fn, tolerance, args) {
+    args = (args || "").split("|");
+
+    // Get the list of custom decks represented by the suit chosen
+    const fn = split_fn[0]
+    if (fn === "back") {
+        const backs = ACTIVE_CARD_IMAGES.backImages || [DEFAULT_CARD_DECK];
+        if (backs.size > 1)
+            return "";
+        return backs[0];
+    }
+
+    if (fn === "usingBack") {
+        const backs = ACTIVE_CARD_IMAGES.backImages || [DEFAULT_CARD_DECK];
+        return (backs.indexOf(args[0]) !== -1).toString();
+    }
+
+    var searchDeck;
+    if (fn === "using") {
+        searchDeck = args[0];
+        args = args.slice(1);
+    }
+
+    var suits = [];
+    var ranks = [];
+    var decks;
+    if (fn === "cards" || fn === "suits" || searchDeck) {
+        const letterToNumberMap = {
+            "a": 1,
+            "j": 11,
+            "q": 12,
+            "k": 13,
+        };
+        args.forEach((arg) => {
+            arg = arg.toLowerCase();
+            switch (arg) {
+                case "spades":
+                case "hearts":
+                case "diamonds":
+                case "clubs":
+                    suits.push(arg.substring(0, 5));
+                    break;
+                default: {
+                    var [start, stop] = arg.split("-");
+                    start = letterToNumberMap[start] || parseInt(start);
+                    stop = letterToNumberMap[stop] || parseInt(stop);
+                    if (start && !stop) {
+                        ranks.push(start);
+                    } else if (start) {
+                        for (var i = start; i <= stop; i++) {
+                            ranks.push(i);
+                        }
+                    }
+                    break;
+                }
+            }
+        });
+    }
+
+    if (!suits.length)
+        suits = ["spade", "heart", "diamo", "clubs"];
+    if (!ranks.length)
+        ranks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+    decks = suits.flatMap(suit => ranks.map(rank => suit + rank))
+        .map((card) => ACTIVE_CARD_IMAGES.frontImageMap[card])
+        .filter(image => !!image);
+
+    if (searchDeck) {
+        return (decks.indexOf(searchDeck) !== -1).toString();
+    }
+
+    var deckCounts = {};
+    decks.forEach((deck) => deckCounts[deck] = (deckCounts[deck] || 0) + 1);
+
+    // Expand to nothing if decks are mixed
+    if (decks.length - Math.max(...Object.values(deckCounts)) > tolerance) {
+        return "";
+    } else {
+        return decks[0];
     }
 }
 
@@ -1440,7 +1617,7 @@ function expandDialogue (dialogue, self, target, bindings) {
                 substitution = '';
                 if ([UPPER_ARTICLE, LOWER_ARTICLE, FULL_ARTICLE].indexOf(clothing.position) >= 0) {
                     var revealedClothing
-                        = target.findClothing(undefined,
+                        = target.findClothing(clothing.type == IMPORTANT_ARTICLE ? [IMPORTANT_ARTICLE, EXTRA_ARTICLE] : undefined,
                                               clothing.position == FULL_ARTICLE
                                               ? [UPPER_ARTICLE, LOWER_ARTICLE, FULL_ARTICLE]
                                               : [clothing.position, FULL_ARTICLE]);
@@ -1468,7 +1645,15 @@ function expandDialogue (dialogue, self, target, bindings) {
                         }
                     } else if (fn_parts[1] && fn_parts[1] === 'wearing') {
                         if (targetCollectible && targetCollectible.clothing) {
-                            substitution = humanPlayer.clothing.some(function (clothing) {
+                            substitution = humanPlayer.getClothing().some(function (clothing) {
+                                return clothing.id === targetCollectible.clothing.id;
+                            });
+                        } else {
+                            substitution = false;
+                        }
+                    } else if (fn_parts[1] && fn_parts[1] === 'visible') {
+                        if (targetCollectible && targetCollectible.clothing) {
+                            substitution = humanPlayer.findClothing().some(function (clothing) {
                                 return clothing.id === targetCollectible.clothing.id;
                             });
                         } else {
@@ -1484,6 +1669,12 @@ function expandDialogue (dialogue, self, target, bindings) {
                 } else {
                     console.error("No collectible ID specified");
                 }
+                break;
+            case 'deck':
+                substitution = expandCustomDeckVariable(fn_parts, 2, args);
+                break;
+            case 'deckabsolute':
+                substitution = expandCustomDeckVariable(fn_parts, 0, args);
                 break;
             case 'marker':
             case 'persistent':
@@ -1549,8 +1740,13 @@ function expandDialogue (dialogue, self, target, bindings) {
             case 'year':
                 substitution = new Date().getFullYear();
                 break;
+            case 'timestamp':
+                substitution = Math.round(Date.now()/1000);
+                break;
             case 'blank':
                 return '';
+            case 'monikaglitches':
+                return (typeof(monika) != 'undefined') && monika.EFFECTS_ENABLED;	
             case 'rng':
                 if (fn !== undefined) break;
                 var range = new Interval(args);
@@ -1573,6 +1769,10 @@ function expandDialogue (dialogue, self, target, bindings) {
                 if (!found_event) {
                     substitution = "false";
                 }
+                break;
+            case 'selected':
+                var variablePlayer = findVariablePlayer(fn, self, target, bindings);
+                substitution = !!variablePlayer;
                 break;
             case 'target':
             case 'self':
@@ -1806,8 +2006,8 @@ function checkMarker(predicate, self, target, currentOnly) {
             {
                 cmpVal = parseInterval(cmpVal);
             }
-            else if (!isNaN(parseInt(cmpVal, 10))) {
-                cmpVal = parseInt(cmpVal, 10);
+            else if (!isNaN(Number(cmpVal))) {
+                cmpVal = Number(cmpVal);
             }
         } else {
             op = '!!';
@@ -1979,7 +2179,6 @@ function Case($xml, trigger) {
     this.trigger =                  trigger;
     this.stage =                    $xml.attr('stage');
     this.totalRounds =              parseInterval($xml.attr("totalRounds"));
-    this.notSaidMarker =            $xml.attr("notSaidMarker");
     this.customPriority =           parseInt($xml.attr("priority"), 10);
     this.hidden =                   $xml.attr("hidden");
     this.addTags =                  $xml.attr("addCharacterTags");
@@ -2038,12 +2237,16 @@ function Case($xml, trigger) {
     }
 	
 	if (targetID && (targetID != "human")) { // Generalize crotch/chest reveal lines
-		if (this.trigger == MALE_SMALL_CROTCH_IS_VISIBLE || this.trigger == MALE_MEDIUM_CROTCH_IS_VISIBLE || this.trigger == MALE_LARGE_CROTCH_IS_VISIBLE || this.trigger == FEMALE_CROTCH_IS_VISIBLE) {
-			this.trigger = OPPONENT_CROTCH_IS_VISIBLE;
-		} else if (this.trigger == FEMALE_SMALL_CHEST_IS_VISIBLE || this.trigger == FEMALE_MEDIUM_CHEST_IS_VISIBLE || this.trigger == FEMALE_LARGE_CHEST_IS_VISIBLE || this.trigger == MALE_CHEST_IS_VISIBLE) {
-			this.trigger = OPPONENT_CHEST_IS_VISIBLE;
-		}
-	}
+		if (
+            this.trigger == MALE_SMALL_CROTCH_IS_VISIBLE || this.trigger == MALE_MEDIUM_CROTCH_IS_VISIBLE || this.trigger == MALE_LARGE_CROTCH_IS_VISIBLE
+            || this.trigger == FUTA_SMALL_CROTCH_IS_VISIBLE || this.trigger == FUTA_MEDIUM_CROTCH_IS_VISIBLE || this.trigger == FUTA_LARGE_CROTCH_IS_VISIBLE
+            || this.trigger == FEMALE_CROTCH_IS_VISIBLE
+        ) {
+            this.trigger = OPPONENT_CROTCH_IS_VISIBLE;
+        } else if (this.trigger == FEMALE_SMALL_CHEST_IS_VISIBLE || this.trigger == FEMALE_MEDIUM_CHEST_IS_VISIBLE || this.trigger == FEMALE_LARGE_CHEST_IS_VISIBLE || this.trigger == MALE_CHEST_IS_VISIBLE) {
+            this.trigger = OPPONENT_CHEST_IS_VISIBLE;
+        }
+    }
     
     // Calculate case priority ahead of time.
     if (this.hidden) {
@@ -2054,7 +2257,6 @@ function Case($xml, trigger) {
     } else {
         this.priority = 0;
         if (this.totalRounds)              this.priority += 10;
-        if (this.notSaidMarker)            this.priority += 1;
 
         this.counters.forEach(function (c) { this.priority += c.priority; }, this);
 
@@ -2162,7 +2364,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     }
 
     // stage
-    if (this.stage !== undefined) {
+    if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(this.trigger) < 0) {
         if (!checkStage(self.stage, this.stage)) {
             return false; // failed "stage" requirement
         }
@@ -2172,13 +2374,6 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     if (this.totalRounds) {
         if (!inInterval(currentRound, this.totalRounds)) {
             return false; // failed "totalRounds" requirement
-        }
-    }
-
-    // self marker checks
-    if (this.notSaidMarker) {
-        if (checkMarker(this.notSaidMarker, self, opp)) {
-            return false;
         }
     }
 
@@ -2337,7 +2532,6 @@ function addTriggers(triggers, newTriggers) {
 
 Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
     /* get the AI stage */
-    var stageNum = this.stage;
     var bestMatchPriority = -10000;
     if (volatileOnly && this.chosenState && this.chosenState.parentCase) {
         bestMatchPriority = this.chosenState.parentCase.priority + 1;
@@ -2345,7 +2539,12 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
 
     var cases = [];
     triggers.forEach(function (trigger) {
+        /* Cases with types in STARTING_STAGE_CASES ignore stage conditions during processing.
+         * For lookup, however, they're treated as being in stage 0.
+         */
+        var stageNum = (STARTING_STAGE_CASES.indexOf(trigger) >= 0) ? 0 : this.stage;
         var relCases = this.cases.get(trigger+':'+stageNum) || [];
+
         relCases.forEach(function (c) {
             if (!c.hidden && (cases.indexOf(c) < 0)) cases.push(c);
         });
@@ -2356,7 +2555,7 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
 
     /* quick check to see if the trigger exists */
     if (cases.length <= 0) {
-        console.log("Warning: couldn't find " + triggers + " dialogue for player " + this.slot + " at stage " + stageNum);
+        console.log("Warning: couldn't find " + triggers + " dialogue for player " + this.slot + " at stage " + this.stage);
         return false;
     }
 
@@ -2387,7 +2586,13 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
         return (!state.oneShotId || !this.oneShotStates[state.oneShotId])
             && state.checkUnwanteds(this, opp);
     }.bind(this));
-    
+
+    const weightedAdjustedMin = Math.min(...states.map(s => ((this.repeatLog[s.rawDialogue] || 0) + 0.5) / s.weight));
+    const statesLessPlayed = states.filter(s => (this.repeatLog[s.rawDialogue] || 0) / s.weight <= weightedAdjustedMin);
+    if (statesLessPlayed.length > 0) {
+        states = statesLessPlayed;
+    }
+
     var weightSum = states.reduce(function(sum, state) { return sum + state.weight; }, 0);
     if (weightSum > 0) {
         console.log("Current case priority for player "+this.slot+": "+bestMatchPriority);
@@ -2412,7 +2617,10 @@ Opponent.prototype.evaluateHiddenCases = function (triggers, opp, postDialogue) 
     var cases = [];
 
     triggers.forEach(function (trigger) {
-        var relCases = this.cases.get(trigger+':'+this.stage) || [];
+        /* See comment above in findBehaviour re: STARTING_STAGE_CASES and the cases lookup map. */
+        var stageNum = (STARTING_STAGE_CASES.indexOf(trigger) >= 0) ? 0 : this.stage;
+        var relCases = this.cases.get(trigger+':'+stageNum) || [];
+
         relCases.forEach(function (c) {
             if (
                 c.hidden &&
@@ -2599,7 +2807,7 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     this.applyState(this.chosenState, this.currentTarget);
     
     this.stateCommitted = true;
-    if (this.clothing.at(-1)?.type != "skip") {
+    if (this.countLayers() == 0 || this.clothing.at(-1 - this.stage).type != "skip") {
         updateGameVisual(this.slot);
     }
 }

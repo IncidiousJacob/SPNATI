@@ -4,16 +4,347 @@
     <height>5'2"</height>
     <age>36-39?</age>
     <pronunciation>Sa-na-ko</pronunciation>
-    <othernotes>Sanako Isogai (Sanae Furukawa) is Nagisa's Furukawa's mother.</othernotes>
+    <othernotes>Sanako Isogai (Sanae Furukawa) is Nagisa's Furukawa's mother&lt;br&gt;&lt;br&gt;If in a game with Nagisa, Sanae is there to watch over her daughter and make sure she is safe. The knowledge of the mother-daughter relationship will always be one way: Nagisa will never learn that her mother is playing. Because Sanako is not sexually interested in her own daughter, there is no chance of incest.&lt;br&gt;&lt;br&gt;If Nagisa is not present, Sanae is here to flirt away some of the stress of married life. But she has no intention of having intercourse. Despite probably being in her late thirties, Sanae has a youthful appearance that can easily pass for someone of Nagisa's age.</othernotes>
     <noteworthy>
         <case name="Introductions" id="1" priority="FYI" min="0" max="0">
             <description>Sanako invites everyone to introduce themselves.</description>
+        </case>
+        <case name="How you spend your time?" id="21" priority="Prompt" min="0" max="1">
+            <description>Is how you normally spend your daytime/nighttime on a Monday/Tuesday/etc?</description>
+        </case>
+        <case name="Video game suggestions" id="191" priority="Prompt" min="0" max="7">
+            <description>Could you recommend some video games for a beginner? (Plays when 2+ video game characters a present, but open to be answered by anyone.)</description>
         </case>
     </noteworthy>
     <responses>
         <response id="7" opponent="kumatora" opponentId="191" />
         <response id="8" opponent="kumatora" opponentId="208" />
+        <response id="45" opponent="nagisa" opponentId="1583" />
+        <response id="46" opponent="nagisa" opponentId="1584" />
+        <response id="47" opponent="nagisa" opponentId="1585" />
+        <response id="48" opponent="nagisa" opponentId="1586" />
+        <response id="49" opponent="nagisa" opponentId="1589" />
+        <response id="50" opponent="nagisa" opponentId="1590" />
+        <response id="51" opponent="nagisa" opponentId="1587" />
+        <response id="52" opponent="nagisa" opponentId="1588" />
+        <response id="53" opponent="nagisa" opponentId="1591" />
+        <response id="56" opponent="nagisa" opponentId="1621" />
+        <response id="57" opponent="nagisa" opponentId="1622" />
+        <response id="58" opponent="nagisa" opponentId="1623" />
+        <response id="125" opponent="nagisa" opponentId="572" />
+        <response id="127" opponent="nagisa" opponentId="1453" />
+        <response id="128" opponent="nagisa" opponentId="1483" />
+        <response id="129" opponent="nagisa" opponentId="933" />
+        <response id="133" opponent="nagisa" opponentId="1167" />
+        <response id="134" opponent="petra" opponentId="242" />
+        <response id="136" opponent="nagisa" opponentId="1683" />
+        <response id="137" opponent="nagisa" opponentId="1691" />
+        <response id="140" opponent="nagisa" opponentId="1766" />
+        <response id="141" opponent="nagisa" opponentId="1605" />
+        <response id="142" opponent="nagisa" opponentId="1777" />
+        <response id="144" opponent="nonon" opponentId="119" />
+        <response id="145" opponent="nonon" opponentId="487" />
+        <response id="150" opponent="kyouko_toshinou" opponentId="108" />
+        <response id="151" opponent="nonon" opponentId="568" />
+        <response id="152" opponent="nonon" opponentId="567" />
+        <response id="156" opponent="meia" opponentId="1553" />
+        <response id="157" opponent="nonon" opponentId="573" />
+        <response id="158" opponent="nonon" opponentId="574" />
+        <response id="159" opponent="nonon" opponentId="575" />
+        <response id="160" opponent="jura" opponentId="1425" />
+        <response id="161" opponent="jura" opponentId="1429" />
+        <response id="165" opponent="yuno_uno" opponentId="175" />
+        <response id="169" opponent="nonon" opponentId="593" />
+        <response id="171" opponent="kyouko_toshinou" opponentId="525" />
+        <response id="172" opponent="nagisa" opponentId="56" />
+        <response id="173" opponent="nagisa" opponentId="54" />
+        <response id="177" opponent="meia" opponentId="1568" />
+        <response id="178" opponent="meia" opponentId="1569" />
+        <response id="179" opponent="meia" opponentId="1570" />
+        <response id="180" opponent="meia" opponentId="1571" />
+        <response id="181" opponent="nonon" opponentId="685" />
+        <response id="182" opponent="nonon" opponentId="686" />
+        <response id="183" opponent="kyou" opponentId="61" />
+        <response id="184" opponent="jessie" opponentId="20" />
+        <response id="192" opponent="jura" opponentId="1445" />
+        <response id="193" opponent="jura" opponentId="1446" />
+        <response id="196" opponent="moskii" opponentId="1" />
+        <response id="198" opponent="may" opponentId="5" />
+        <response id="204" opponent="kyouko_toshinou" opponentId="135" />
+        <response id="212" opponent="mari_setogaya" opponentId="1256" />
+        <response id="213" opponent="senko" opponentId="168" />
+        <response id="214" opponent="senko" opponentId="15" />
+        <response id="215" opponent="senko" opponentId="194" />
+        <response id="216" opponent="senko" opponentId="137" />
+        <response id="223" opponent="jura" opponentId="1487" />
+        <response id="224" opponent="jura" opponentId="1486" />
+        <response id="225" opponent="jura" opponentId="1426" />
+        <response id="226" opponent="jura" opponentId="1447" />
+        <response id="227" opponent="mari_setogaya" opponentId="1250" />
+        <response id="229" opponent="mari_setogaya" opponentId="16" />
+        <response id="230" opponent="mari_setogaya" opponentId="1254" />
+        <response id="232" opponent="meia" opponentId="1615" />
+        <response id="233" opponent="meia" opponentId="1554" />
+        <response id="234" opponent="meia" opponentId="1617" />
+        <response id="235" opponent="meia" opponentId="1616" />
+        <response id="236" opponent="meia" opponentId="1613" />
+        <response id="237" opponent="meia" opponentId="1614" />
+        <response id="238" opponent="mari_setogaya" opponentId="408" />
+        <response id="239" opponent="mari_setogaya" opponentId="17" />
+        <response id="240" opponent="kyou" opponentId="115" />
+        <response id="241" opponent="kyou" opponentId="96" />
+        <response id="243" opponent="jessie" opponentId="21" />
+        <response id="256" opponent="kyou" opponentId="510" />
+        <response id="257" opponent="kyou" opponentId="517" />
+        <response id="258" opponent="kyou" opponentId="524" />
+        <response id="259" opponent="nagisa" opponentId="653" />
+        <response id="260" opponent="nagisa" opponentId="660" />
+        <response id="261" opponent="nagisa" opponentId="667" />
+        <response id="262" opponent="chihiro" opponentId="135" />
+        <response id="264" opponent="chihiro" opponentId="2" />
+        <response id="266" opponent="chihiro" opponentId="213" />
+        <response id="268" opponent="nonon" opponentId="752" />
+        <response id="269" opponent="nonon" opponentId="754" />
+        <response id="270" opponent="nonon" opponentId="753" />
+        <response id="271" opponent="arash" opponentId="147" />
+        <response id="272" opponent="nagisa" opponentId="149" />
+        <response id="278" opponent="yuri" opponentId="1" />
+        <response id="279" opponent="nonon" opponentId="794" />
+        <response id="284" opponent="zeke_pandoria" opponentId="482" />
+        <response id="285" opponent="kyoko_kirigiri" opponentId="1578" />
+        <response id="286" opponent="kyoko_kirigiri" opponentId="1427" />
+        <response id="287" opponent="ae86" opponentId="6" />
+        <response id="288" opponent="ae86" opponentId="5" />
+        <response id="289" opponent="ae86" opponentId="1" />
+        <response id="291" opponent="meia" opponentId="1626" />
+        <response id="292" opponent="meia" opponentId="1625" />
+        <response id="293" opponent="meia" opponentId="1619" />
+        <response id="294" opponent="meia" opponentId="1624" />
+        <response id="297" opponent="nagatoro" opponentId="2201" />
+        <response id="298" opponent="nagatoro" opponentId="223" />
+        <response id="299" opponent="nagatoro" opponentId="742" />
+        <response id="300" opponent="jessie" opponentId="15" />
+        <response id="313" opponent="chihiro" opponentId="1" />
+        <response id="315" opponent="mari_setogaya" opponentId="2975" />
+        <response id="316" opponent="mari_setogaya" opponentId="2976" />
+        <response id="317" opponent="nadeshiko" opponentId="9" />
+        <response id="318" opponent="nadeshiko" opponentId="92" />
+        <response id="319" opponent="nadeshiko" opponentId="132" />
+        <response id="320" opponent="zeke_pandoria" opponentId="502" />
+        <response id="322" opponent="rose" opponentId="143" />
+        <response id="323" opponent="rose" opponentId="142" />
+        <response id="325" opponent="jura" opponentId="1490" />
+        <response id="326" opponent="jura" opponentId="1489" />
+        <response id="327" opponent="twisted_fate" opponentId="246" />
+        <response id="328" opponent="rose" opponentId="26" />
+        <response id="329" opponent="rose" opponentId="53" />
+        <response id="330" opponent="kyoko_kirigiri" opponentId="2176" />
+        <response id="331" opponent="kyoko_kirigiri" opponentId="2173" />
+        <response id="332" opponent="kyoko_kirigiri" opponentId="2174" />
+        <response id="333" opponent="kyoko_kirigiri" opponentId="2175" />
+        <response id="334" opponent="ribbon_girl" opponentId="91" />
+        <response id="335" opponent="nadeshiko" opponentId="212" />
+        <response id="342" opponent="mari_setogaya" opponentId="2994" />
+        <response id="343" opponent="mari_setogaya" opponentId="2995" />
+        <response id="344" opponent="rouge" opponentId="5" />
+        <response id="345" opponent="rouge" opponentId="6" />
+        <response id="346" opponent="meia" opponentId="1690" />
+        <response id="347" opponent="meia" opponentId="1691" />
+        <response id="348" opponent="meia" opponentId="1694" />
+        <response id="349" opponent="meia" opponentId="1693" />
+        <response id="350" opponent="meia" opponentId="1692" />
+        <response id="351" opponent="meia" opponentId="1555" />
+        <response id="0" opponent="nadeshiko" opponentId="18" />
+        <response id="353" opponent="nadeshiko" opponentId="19" />
+        <response id="360" opponent="nagatoro" opponentId="1603" />
+        <response id="0" opponent="nagatoro" opponentId="1602" />
+        <response id="364" opponent="kyou" opponentId="211" />
+        <response id="369" opponent="nadeshiko" opponentId="150" />
+        <response id="378" opponent="nagisa" opponentId="1188" />
+        <response id="379" opponent="estelle" opponentId="735" />
+        <response id="380" opponent="neptune" opponentId="38" />
+        <response id="382" opponent="nagisa" opponentId="654" />
+        <response id="383" opponent="nagisa" opponentId="661" />
+        <response id="384" opponent="nagisa" opponentId="668" />
+        <response id="387" opponent="kyou" opponentId="511" />
+        <response id="388" opponent="kyou" opponentId="518" />
+        <response id="389" opponent="kyou" opponentId="525" />
+        <response id="390" opponent="kyoko_kirigiri" opponentId="2088" />
+        <response id="391" opponent="kyoko_kirigiri" opponentId="1874" />
+        <response id="396" opponent="reimu" opponentId="443" />
+        <response id="397" opponent="reimu" opponentId="458" />
+        <response id="398" opponent="reimu" opponentId="473" />
+        <response id="399" opponent="nagisa" opponentId="1421" />
+        <response id="400" opponent="nagisa" opponentId="1436" />
+        <response id="401" opponent="nagisa" opponentId="1450" />
+        <response id="417" opponent="nagatoro" opponentId="2096" />
+        <response id="418" opponent="nagatoro" opponentId="979" />
+        <response id="420" opponent="nagisa" opponentId="999" />
+        <response id="421" opponent="nagisa" opponentId="1000" />
+        <response id="422" opponent="nagisa" opponentId="1001" />
+        <response id="427" opponent="meia" opponentId="1718" />
+        <response id="428" opponent="meia" opponentId="1719" />
+        <response id="429" opponent="meia" opponentId="1572" />
+        <response id="432" opponent="yuno_uno" opponentId="775" />
+        <response id="433" opponent="yuno_uno" opponentId="810" />
+        <response id="436" opponent="yuno_uno" opponentId="774" />
+        <response id="437" opponent="yuno_uno" opponentId="806" />
+        <response id="440" opponent="marinette" opponentId="1363" />
+        <response id="441" opponent="marinette" opponentId="1361" />
+        <response id="446" opponent="marinette" opponentId="1359" />
+        <response id="447" opponent="marinette" opponentId="1364" />
+        <response id="450" opponent="marinette" opponentId="1365" />
+        <response id="452" opponent="moon" opponentId="186" />
+        <response id="454" opponent="jura" opponentId="1563" />
+        <response id="455" opponent="jura" opponentId="1562" />
+        <response id="456" opponent="jura" opponentId="1427" />
+        <response id="461" opponent="moon" opponentId="183" />
+        <response id="462" opponent="meia" opponentId="1762" />
+        <response id="463" opponent="meia" opponentId="1556" />
+        <response id="464" opponent="meia" opponentId="1763" />
+        <response id="467" opponent="meia" opponentId="38" />
+        <response id="472" opponent="jura" opponentId="1659" />
+        <response id="473" opponent="jura" opponentId="1660" />
+        <response id="475" opponent="jura" opponentId="1492" />
+        <response id="478" opponent="arueshalae" opponentId="1" />
+        <response id="479" opponent="arueshalae" opponentId="2" />
+        <response id="480" opponent="polly" opponentId="38" />
+        <response id="481" opponent="polly" opponentId="39" />
+        <response id="486" opponent="senko" opponentId="53" />
+        <response id="488" opponent="yshtola" opponentId="101" />
+        <response id="489" opponent="yshtola" opponentId="170" />
+        <response id="490" opponent="galatea" opponentId="51" />
+        <response id="491" opponent="galatea" opponentId="69" />
+        <response id="492" opponent="trixie" opponentId="1" />
+        <response id="498" opponent="sakura" opponentId="3" />
+        <response id="502" opponent="sakura" opponentId="2" />
+        <response id="504" opponent="sakura" opponentId="4" />
+        <response id="505" opponent="joey" opponentId="206" />
+        <response id="506" opponent="jura" opponentId="1674" />
+        <response id="507" opponent="jura" opponentId="1675" />
+        <response id="508" opponent="jura" opponentId="1564" />
+        <response id="509" opponent="saki_zls" opponentId="3" />
+        <response id="511" opponent="magical_sempai" opponentId="18" />
+        <response id="0" opponent="magical_sempai" opponentId="19" />
+        <response id="0" opponent="magical_sempai" opponentId="2" />
+        <response id="512" opponent="magical_sempai" opponentId="4" />
+        <response id="514" opponent="nagisa" opponentId="397" />
+        <response id="515" opponent="fluttershy" opponentId="213" />
+        <response id="516" opponent="rainbow_dash" opponentId="1" />
+        <response id="517" opponent="rainbow_dash" opponentId="53" />
+        <response id="518" opponent="jura" opponentId="1694" />
+        <response id="519" opponent="jura" opponentId="1491" />
+        <response id="520" opponent="jura" opponentId="1695" />
+        <response id="521" opponent="jura" opponentId="1677" />
+        <response id="523" opponent="pinkie_pie" opponentId="6" />
+        <response id="524" opponent="pinkie_pie" opponentId="124" />
+        <response id="525" opponent="pinkie_pie" opponentId="148" />
+        <response id="526" opponent="pinkie_pie" opponentId="93" />
+        <response id="527" opponent="pinkie_pie" opponentId="132" />
+        <response id="528" opponent="pinkie_pie" opponentId="156" />
+        <response id="529" opponent="pinkie_pie" opponentId="82" />
+        <response id="530" opponent="pinkie_pie" opponentId="130" />
+        <response id="531" opponent="pinkie_pie" opponentId="159" />
+        <response id="532" opponent="pinkie_pie" opponentId="536" />
+        <response id="533" opponent="pinkie_pie" opponentId="542" />
+        <response id="534" opponent="pinkie_pie" opponentId="547" />
+        <response id="544" opponent="meia" opponentId="1807" />
+        <response id="545" opponent="meia" opponentId="1808" />
+        <response id="547" opponent="meia" opponentId="1573" />
+        <response id="548" opponent="jura" opponentId="1696" />
+        <response id="549" opponent="jura" opponentId="1697" />
+        <response id="550" opponent="jura" opponentId="1448" />
+        <response id="551" opponent="jura" opponentId="1698" />
+        <response id="552" opponent="nagisa" opponentId="1684" />
+        <response id="553" opponent="nagisa" opponentId="1823" />
+        <response id="554" opponent="nagisa" opponentId="1830" />
+        <response id="555" opponent="nagisa" opponentId="1866" />
+        <response id="556" opponent="natsuki" opponentId="565" />
+        <response id="557" opponent="natsuki" opponentId="572" />
+        <response id="558" opponent="natsuki" opponentId="580" />
+        <response id="559" opponent="natsuki" opponentId="615" />
+        <response id="568" opponent="derpy_hooves" opponentId="2" />
+        <response id="569" opponent="marceline" opponentId="2" />
+        <response id="579" opponent="caulifla" opponentId="2" />
+        <response id="580" opponent="caulifla" opponentId="3" />
+        <response id="0" opponent="shimakaze" opponentId="4" />
+        <response id="0" opponent="shimakaze" opponentId="5" />
+        <response id="584" opponent="shimakaze" opponentId="2" />
+        <response id="586" opponent="shimakaze" opponentId="62" />
+        <response id="587" opponent="suzuya" opponentId="68" />
+        <response id="595" opponent="yuelia" opponentId="6" />
+        <response id="596" opponent="yuelia" opponentId="1" />
+        <response id="597" opponent="raven" opponentId="11" />
+        <response id="598" opponent="raven" opponentId="8" />
+        <response id="600" opponent="joey" opponentId="39" />
+        <response id="605" opponent="natsuki" opponentId="642" />
+        <response id="606" opponent="natsuki" opponentId="652" />
+        <response id="607" opponent="natsuki" opponentId="662" />
+        <response id="608" opponent="nagisa" opponentId="1869" />
+        <response id="609" opponent="nagisa" opponentId="1879" />
+        <response id="610" opponent="nagisa" opponentId="1890" />
+        <response id="616" opponent="sayori" opponentId="12" />
+        <response id="617" opponent="amy" opponentId="258" />
+        <response id="618" opponent="amy" opponentId="244" />
+        <response id="619" opponent="sayori" opponentId="1069" />
+        <response id="620" opponent="joey" opponentId="201" />
+        <response id="624" opponent="turandot" opponentId="4" />
+        <response id="631" opponent="maria" opponentId="35" />
+        <response id="638" opponent="yuri" opponentId="274" />
+        <response id="642" opponent="meia" opponentId="2" />
+        <response id="644" opponent="nagatoro" opponentId="993" />
+        <response id="645" opponent="nagatoro" opponentId="79" />
+        <response id="769" opponent="meia" opponentId="1851" />
+        <response id="770" opponent="meia" opponentId="1618" />
+        <response id="771" opponent="meia" opponentId="1894" />
+        <response id="772" opponent="meia" opponentId="1852" />
+        <response id="773" opponent="meia" opponentId="1895" />
+        <response id="774" opponent="meia" opponentId="1627" />
+        <response id="781" opponent="jura" opponentId="1699" />
+        <response id="782" opponent="jura" opponentId="1700" />
+        <response id="783" opponent="jura" opponentId="1754" />
+        <response id="784" opponent="jura" opponentId="1676" />
+        <response id="787" opponent="monika" opponentId="1587" />
+        <response id="0" opponent="aimee" opponentId="1" />
+        <response id="0" opponent="aimee" opponentId="8" />
+        <response id="0" opponent="aimee" opponentId="9" />
+        <response id="788" opponent="aimee" opponentId="4" />
+        <response id="789" opponent="aimee" opponentId="5" />
+        <response id="790" opponent="aimee" opponentId="2" />
+        <response id="791" opponent="aimee" opponentId="10" />
+        <response id="792" opponent="aimee" opponentId="3" />
+        <response id="793" opponent="aimee" opponentId="7" />
+        <response id="794" opponent="meia" opponentId="1905" />
+        <response id="800" opponent="syrenne" opponentId="17" />
+        <response id="809" opponent="meia" opponentId="1904" />
+        <response id="810" opponent="meia" opponentId="1952" />
+        <response id="817" opponent="jura" opponentId="1701" />
+        <response id="823" opponent="nayru" opponentId="1" />
+        <response id="831" opponent="mari" opponentId="790" />
+        <response id="832" opponent="mari" opponentId="791" />
+        <response id="833" opponent="okino" opponentId="42" />
+        <response id="834" opponent="ini" opponentId="3" />
+        <response id="836" opponent="nagisa" opponentId="106" />
+        <response id="838" opponent="nagisa" opponentId="72" />
+        <response id="839" opponent="amy" opponentId="259" />
+        <response id="840" opponent="amy" opponentId="223" />
+        <response id="842" opponent="velvet" opponentId="3" />
+        <response id="843" opponent="nagisa" opponentId="65" />
+        <response id="850" opponent="meia" opponentId="1977" />
     </responses>
+    <notes>
+        <note id="159">This is a lie.</note>
+        <note id="168">Avoiding slot 1 because that's when she does her sanako_introductions line.</note>
+        <note id="167">Sanako is not a regular student, and she has worked as a teacher before. Kyoko will be able to see through this facade.</note>
+        <note id="433">Manual priority set lower than 150 to avoid overriding Sanako's stripping interactions. Natural priority for this case would normally be 241.</note>
+        <note id="434">Variation for when Nagisa is present. Manual priority set lower than 150 to avoid overriding Sanako's stripping interactions. Natural priority for this case would normally be 341.</note>
+        <note id="435">Variation for when Nagisa is definitely not present. Manual priority set lower than 150 to avoid overriding Sanako's stripping interactions. Natural priority for this case would normally be 341.</note>
+        <note id="437">Manual priority set lower than 150 to avoid overriding Sanako's stripping interactions. Natural priority for this case would normally be 241.</note>
+        <note id="450">This covers both Adrien and Marinette being the one to finish. The marker is shared, but the actual target is fliexble.</note>
+        <note id="451">This covers both Adrien and Marinette being the one to finish. The marker is shared, but the actual target is fliexble.</note>
+        <note id="630">Saying Text "athetic" to try to capture "Pathetic" regardless of capitalization.</note>
+        <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
+    </notes>
     <labels>
         <label id="2" label="sandals" folder="" sort="0" />
         <label id="3" label="sandals" folder="" sort="0" />
@@ -21,41 +352,1722 @@
         <label id="5" label="necklace" folder="" sort="0" />
         <label id="6" label="sandals" folder="" sort="0" />
         <label id="7" label="" folder="Kumatora to left" sort="0" />
-        <label id="8" label="" folder="Kumatora to left" sort="0" />
+        <label id="8" label="" folder="Kumatora to left" sort="2" />
         <label id="9" label="shy" folder="" sort="0" />
+        <label id="10" label="bathhouse" folder="" sort="0" />
+        <label id="11" label="holiday lodge" folder="" sort="0" />
+        <label id="12" label="feet" folder="" sort="0" />
+        <label id="13" label="feet / sand" folder="" sort="0" />
+        <label id="14" label="sandals" folder="" sort="0" />
+        <label id="15" label="shoes / short" folder="" sort="0" />
+        <label id="16" label="shoes / tall" folder="" sort="0" />
+        <label id="17" label="shoes / short" folder="" sort="0" />
+        <label id="18" label="shoes / tall" folder="" sort="0" />
+        <label id="19" label="belt" folder="" sort="0" />
+        <label id="20" label="classroom" folder="" sort="0" />
+        <label id="22" label="glasses" folder="" sort="0" />
+        <label id="23" label="hat" folder="" sort="0" />
+        <label id="24" label="boots" folder="" sort="0" />
+        <label id="25" label="prompt marker" folder="" sort="0" />
+        <label id="26" label="garden" folder="" sort="0" />
+        <label id="27" label="glasses" folder="" sort="0" />
+        <label id="28" label="lost only accessories" folder="" sort="0" />
+        <label id="29" label="inventory" folder="" sort="0" />
+        <label id="30" label="" folder="Nagisa to left" sort="14" />
+        <label id="31" label="" folder="Nagisa to left" sort="16" />
+        <label id="32" label="" folder="Nagisa to left" sort="19" />
+        <label id="33" label="" folder="Nagisa to left" sort="0" />
+        <label id="34" label="" folder="Nagisa to left" sort="2" />
+        <label id="35" label="" folder="Nagisa to left" sort="5" />
+        <label id="36" label="" folder="Joey to left" sort="2" />
+        <label id="37" label="" folder="Nagisa to left" sort="9" />
+        <label id="38" label="" folder="Nagisa to right" sort="17" />
+        <label id="39" label="" folder="Nagisa to right" sort="6" />
+        <label id="40" label="" folder="Nagisa to right" sort="10" />
+        <label id="41" label="" folder="Joey to left" sort="0" />
+        <label id="42" label="prompt marker" folder="" sort="0" />
+        <label id="43" label="&quot;master&quot; and Nagisa not present" color="9" folder="" sort="0" />
+        <label id="44" label="belt" folder="" sort="0" />
+        <label id="45" label="conditional on previous case" folder="Nagisa to left" sort="13" />
+        <label id="46" label="" folder="Nagisa to left" sort="17" />
+        <label id="47" label="" folder="Nagisa to left" sort="20" />
+        <label id="48" label="" folder="Nagisa to left" sort="2" />
+        <label id="49" label="" folder="Nagisa to left" sort="6" />
+        <label id="50" label="" folder="Nagisa to left" sort="10" />
+        <label id="51" label="" folder="Nagisa to left" sort="3" />
+        <label id="52" label="" folder="Nagisa to left" sort="7" />
+        <label id="53" label="" folder="Nagisa to left" sort="11" />
+        <label id="54" label="" folder="Nagisa to right" sort="0" />
+        <label id="55" label="" folder="Nagisa to right" sort="0" />
+        <label id="56" label="" folder="Nagisa to left" sort="4" />
+        <label id="57" label="" folder="Nagisa to left" sort="8" />
+        <label id="58" label="" folder="Nagisa to left" sort="12" />
+        <label id="59" label="" folder="Nagisa to right" sort="2" />
+        <label id="60" label="" folder="Nagisa to right" sort="3" />
+        <label id="61" label="" folder="Nagisa to right" sort="7" />
+        <label id="62" label="" folder="Nagisa to right" sort="5" />
+        <label id="63" label="" folder="Nagisa to right" sort="11" />
+        <label id="64" label="" folder="Nagisa to right" sort="9" />
+        <label id="65" label="" folder="Nagisa to right" sort="4" />
+        <label id="66" label="" folder="Nagisa to right" sort="8" />
+        <label id="67" label="" folder="Nagisa to right" sort="12" />
+        <label id="68" label="" folder="Nagisa to left" sort="15" />
+        <label id="69" label="" folder="Nagisa to left" sort="18" />
+        <label id="70" label="" folder="Nagisa to left" sort="21" />
+        <label id="71" label="" folder="Nagisa to right" sort="21" />
+        <label id="72" label="" folder="Nagisa to left" sort="22" />
+        <label id="73" label="" folder="Nagisa to left" sort="23" />
+        <label id="74" label="" folder="Nagisa to left" sort="24" />
+        <label id="75" label="" folder="Nagisa to left" sort="25" />
+        <label id="76" label="" folder="Nagisa to left" sort="26" />
+        <label id="77" label="" folder="Nagisa to left" sort="30" />
+        <label id="78" label="" folder="Nagisa to left" sort="31" />
+        <label id="79" label="" folder="Nagisa to left" sort="32" />
+        <label id="80" label="" folder="Nagisa to left" sort="33" />
+        <label id="81" label="" folder="Nagisa to left" sort="41" />
+        <label id="82" label="" folder="Nagisa to left" sort="37" />
+        <label id="83" label="" folder="Nagisa to left" sort="38" />
+        <label id="84" label="" folder="Nagisa to left" sort="39" />
+        <label id="85" label="" folder="Nagisa to left" sort="40" />
+        <label id="86" label="" folder="Nagisa to left" sort="8" />
+        <label id="87" label="" folder="Nagisa to left" sort="13" />
+        <label id="88" label="" folder="Nagisa to left" sort="18" />
+        <label id="89" label="" folder="Nagisa to left" sort="43" />
+        <label id="90" label="" folder="Nagisa to left" sort="42" />
+        <label id="91" label="" folder="Nagisa to left" sort="44" />
+        <label id="92" label="" folder="Nagisa to right" sort="22" />
+        <label id="93" label="" folder="Nagisa to right" sort="23" />
+        <label id="94" label="" folder="Nagisa to right" sort="24" />
+        <label id="95" label="" folder="Nagisa to right" sort="29" />
+        <label id="96" label="" folder="Nagisa to right" sort="30" />
+        <label id="97" label="" folder="Nagisa to right" sort="31" />
+        <label id="98" label="" folder="Nagisa to right" sort="36" />
+        <label id="99" label="" folder="Nagisa to right" sort="37" />
+        <label id="100" label="" folder="Nagisa to right" sort="38" />
+        <label id="101" label="" folder="Nagisa to right" sort="39" />
+        <label id="102" label="" folder="Nagisa to right" sort="0" />
+        <label id="103" label="" folder="Nagisa to right" sort="2" />
+        <label id="104" label="" folder="Nagisa to right" sort="3" />
+        <label id="105" label="" folder="Nagisa to right" sort="4" />
+        <label id="106" label="" folder="Nagisa to right" sort="5" />
+        <label id="107" label="" folder="Nagisa to right" sort="6" />
+        <label id="108" label="" folder="Nagisa to right" sort="7" />
+        <label id="109" label="" folder="Nagisa to right" sort="8" />
+        <label id="110" label="" folder="Nagisa to right" sort="9" />
+        <label id="111" label="" folder="Nagisa to right" sort="10" />
+        <label id="112" label="" folder="Nagisa to right" sort="11" />
+        <label id="113" label="" folder="Nagisa to right" sort="12" />
+        <label id="114" label="" folder="Nagisa to right" sort="13" />
+        <label id="115" label="" folder="Nagisa to right" sort="14" />
+        <label id="116" label="" folder="Nagisa to right" sort="15" />
+        <label id="117" label="" folder="Nagisa to right" sort="41" />
+        <label id="118" label="" folder="Nagisa to right" sort="40" />
+        <label id="119" label="" folder="Nagisa to right" sort="42" />
+        <label id="120" label="" folder="Nayru to left" sort="0" />
+        <label id="121" label="" folder="Nagisa to right" sort="16" />
+        <label id="122" label="headphones" folder="" sort="0" />
+        <label id="123" label="headphones" folder="" sort="0" />
+        <label id="124" label="" folder="Shamiko to left" sort="0" />
+        <label id="125" label="" folder="Raynor to right / Nagisa to left" sort="0" />
+        <label id="126" label="" folder="Raynor and Nagisa to left" sort="0" />
+        <label id="127" label="" folder="Reimu and Nagisa to left" sort="2" />
+        <label id="128" label="" folder="Reimu and Nagisa to left" sort="0" />
+        <label id="129" label="" folder="Nagisa and Meia to left" sort="2" />
+        <label id="130" label="big butt and breasts" folder="" sort="0" />
+        <label id="131" label="big butt and breasts" folder="" sort="0" />
+        <label id="132" label="big butt and breasts" folder="" sort="0" />
+        <label id="133" label="" folder="Nagisa and Petra to left" sort="0" />
+        <label id="134" label="" folder="Nagisa to left / Petra to right" sort="0" />
+        <label id="135" label="" folder="Nagisa to left / Jura to left" sort="0" />
+        <label id="136" label="" folder="Jura to left or right / Nagisa to left" sort="2" />
+        <label id="137" label="" folder="Jura and Nagisa to left" sort="2" />
+        <label id="138" label="" folder="Nagisa and Jura to left" sort="3" />
+        <label id="139" label="" folder="Jura to right / Nagisa to left" sort="0" />
+        <label id="140" label="" folder="Jura to left or right / Nagisa to left" sort="0" />
+        <label id="141" label="" folder="Jura and Nagisa to left" sort="2" />
+        <label id="142" label="" folder="Nagisa and Jura to left" sort="0" />
+        <label id="143" label="holiday lodge" folder="" sort="0" />
+        <label id="144" label="" folder="Nonon to left" sort="7" />
+        <label id="146" label="" folder="Nonon to right" sort="2" />
+        <label id="147" label="getting up after finishing" folder="" sort="0" />
+        <label id="148" label="" folder="Kyouko Toshinou to right" sort="0" />
+        <label id="149" label="" folder="Kyouko Toshinou to right" sort="3" />
+        <label id="150" label="" folder="Kyouko Toshinou to left" sort="2" />
+        <label id="151" label="" folder="Nonon to left" sort="2" />
+        <label id="152" label="" folder="Nonon to right" sort="4" />
+        <label id="153" label="" folder="Nonon to right" sort="0" />
+        <label id="154" label="" folder="Meia to right" sort="0" />
+        <label id="155" label="" folder="Meia to right" sort="3" />
+        <label id="156" label="" folder="Meia to left" sort="2" />
+        <label id="157" label="" folder="Nonon to right" sort="6" />
+        <label id="145" label="" folder="Nonon to left" sort="0" />
+        <label id="158" label="" folder="Nonon to left" sort="4" />
+        <label id="159" label="" folder="Nonon to left" sort="6" />
+        <label id="160" label="" folder="Jura to left" sort="2" />
+        <label id="161" label="" folder="Jura to left" sort="2" />
+        <label id="162" label="" folder="Moskii to right" sort="2" />
+        <label id="163" label="" folder="Moskii to right" sort="0" />
+        <label id="164" label="" folder="Moskii to right" sort="3" />
+        <label id="166" label="" folder="Kyoko Kirigiri to right" sort="2" />
+        <label id="167" label="" folder="Kyoko Kirigiri to right" sort="0" />
+        <label id="169" label="" folder="Nonon to left" sort="3" />
+        <label id="170" label="" folder="Nonon to right" sort="3" />
+        <label id="171" label="" folder="Kyouko Toshinou to right" sort="2" />
+        <label id="172" label="" folder="Nagisa to left" sort="2" />
+        <label id="173" label="" folder="Nagisa to left" sort="3" />
+        <label id="174" label="athletic legs" folder="" sort="0" />
+        <label id="175" label="feet" folder="" sort="0" />
+        <label id="176" label="not feet" folder="" sort="0" />
+        <label id="177" label="" folder="Meia to right" sort="2" />
+        <label id="178" label="" folder="Meia to right" sort="4" />
+        <label id="179" label="" folder="Meia to left" sort="2" />
+        <label id="180" label="" folder="Meia to left" sort="3" />
+        <label id="181" label="" folder="Nonon to right" sort="5" />
+        <label id="182" label="" folder="Nonon to left" sort="5" />
+        <label id="183" label="" folder="Kyou to left" sort="2" />
+        <label id="184" label="" folder="Jessie to left" sort="4" />
+        <label id="185" label="" folder="Jessie to left" sort="2" />
+        <label id="186" label="" folder="Jessie to left" sort="3" />
+        <label id="187" label="" folder="Jessie to left" sort="4" />
+        <label id="188" label="" folder="Jessie to left" sort="5" />
+        <label id="189" label="" folder="Jessie to left" sort="6" />
+        <label id="190" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
+        <label id="191" label="" folder="CONVERSATION STATERS" sort="2" />
+        <label id="1" label="introduction" color="12" folder="CONVERSATION STATERS" sort="0" />
+        <label id="192" label="" folder="Jura to left" sort="3" />
+        <label id="193" label="" folder="Jura to left" sort="7" />
+        <label id="194" label="" folder="Mari Setogaya to right" sort="0" />
+        <label id="195" label="" folder="Mari Setogaya to right" sort="2" />
+        <label id="196" label="" folder="Moskii to left" sort="2" />
+        <label id="197" label="" folder="Kyouko Toshinou to right" sort="4" />
+        <label id="198" label="" folder="May to left" sort="0" />
+        <label id="199" label="" folder="May to left" sort="6" />
+        <label id="200" label="" folder="May to left" sort="2" />
+        <label id="201" label="" folder="May to left" sort="3" />
+        <label id="202" label="" folder="May to left" sort="4" />
+        <label id="203" label="" folder="May to left" sort="5" />
+        <label id="204" label="" folder="Kyouko Toshinou to left" sort="0" />
+        <label id="205" label="" folder="Mom to left" sort="2" />
+        <label id="206" label="" folder="Mom to left" sort="5" />
+        <label id="207" label="" folder="Mom to left" sort="7" />
+        <label id="208" label="" folder="Mom to left" sort="4" />
+        <label id="209" label="" folder="Mom to left" sort="0" />
+        <label id="210" label="" folder="Mom to left" sort="6" />
+        <label id="212" label="" folder="Mari Setogaya to left" sort="2" />
+        <label id="213" label="" folder="Senko to left" sort="2" />
+        <label id="214" label="" folder="Senko to left" sort="3" />
+        <label id="215" label="" folder="Senko to left" sort="0" />
+        <label id="216" label="" folder="Senko to left" sort="4" />
+        <label id="217" label="" folder="Senko to left" sort="5" />
+        <label id="218" label="" folder="Senko to left" sort="6" />
+        <label id="219" label="" folder="Senko to left" sort="7" />
+        <label id="220" label="saying &quot;daughter&quot; with Nagisa present" folder="Kali to left" sort="0" />
+        <label id="221" label="saying &quot;daughter&quot; with Nagisa absent" folder="Kali to left" sort="2" />
+        <label id="222" label="saying &quot;husband&quot;" folder="Kali to left" sort="3" />
+        <label id="223" label="" folder="Jura to left" sort="8" />
+        <label id="224" label="" folder="Jura to left" sort="4" />
+        <label id="225" label="" folder="Jura to left" sort="2" />
+        <label id="226" label="" folder="Jura to left" sort="6" />
+        <label id="227" label="" folder="Mari Setogaya to left" sort="3" />
+        <label id="229" label="" folder="Mari Setogaya to left" sort="4" />
+        <label id="230" label="" folder="Mari Setogaya to left" sort="5" />
+        <label id="231" label="" folder="Moskii to left" sort="0" />
+        <label id="232" label="" folder="Meia to left" sort="4" />
+        <label id="233" label="" folder="Meia to left" sort="0" />
+        <label id="234" label="" folder="Meia to left" sort="7" />
+        <label id="235" label="" folder="Meia to left" sort="5" />
+        <label id="236" label="" folder="Meia to right" sort="3" />
+        <label id="237" label="" folder="Meia to right" sort="6" />
+        <label id="238" label="" folder="Mari Setogaya to left" sort="0" />
+        <label id="239" label="" folder="Mari Setogaya to left" sort="6" />
+        <label id="240" label="" folder="Kyou to left" sort="2" />
+        <label id="241" label="" folder="Kyou to left" sort="3" />
+        <label id="242" label="" folder="Mom to left" sort="3" />
+        <label id="243" label="" folder="Jessie to left" sort="7" />
+        <label id="244" label="" folder="Jessie to left" sort="8" />
+        <label id="245" label="" folder="Jessie to left" sort="9" />
+        <label id="246" label="" folder="Jessie to left" sort="10" />
+        <label id="247" label="" folder="Jessie to left" sort="11" />
+        <label id="248" label="" folder="Jessie to left" sort="12" />
+        <label id="249" label="" folder="Jessie to left" sort="13" />
+        <label id="250" label="" folder="Jessie to left" sort="14" />
+        <label id="251" label="" folder="Jessie to left" sort="0" />
+        <label id="252" label="" folder="Jessie to left" sort="0" />
+        <label id="253" label="" folder="Jessie to left" sort="0" />
+        <label id="254" label="" folder="Jessie to left" sort="0" />
+        <label id="255" label="" folder="Jessie to left" sort="0" />
+        <label id="256" label="" folder="Nagisa and Kyou to left" sort="0" />
+        <label id="257" label="" folder="Nagisa and Kyou to left" sort="2" />
+        <label id="258" label="" folder="Nagisa and Kyou to left" sort="3" />
+        <label id="259" label="" folder="Nagisa to left / Kyou to right" sort="0" />
+        <label id="260" label="" folder="Nagisa to left / Kyou to right" sort="2" />
+        <label id="261" label="" folder="Nagisa to left / Kyou to right" sort="3" />
+        <label id="263" label="" folder="Chihiro to left or right" sort="0" />
+        <label id="262" label="" folder="Chihiro to left or right" sort="2" />
+        <label id="264" label="" folder="Chihiro to left" sort="2" />
+        <label id="265" label="" folder="Chihiro to right" sort="2" />
+        <label id="266" label="" folder="Chihiro to right" sort="3" />
+        <label id="267" label="" folder="Chihiro to left" sort="3" />
+        <label id="268" label="" folder="Nonon to left" sort="9" />
+        <label id="269" label="" folder="Nonon to left" sort="4" />
+        <label id="270" label="" folder="Nonon to right" sort="8" />
+        <label id="271" label="" folder="Arash to left" sort="0" />
+        <label id="272" label="" folder="Nagisa to left" sort="3" />
+        <label id="273" label="" folder="Yuri to right" sort="2" />
+        <label id="274" label="" folder="Yuri to right" sort="0" />
+        <label id="275" label="" folder="Mom to left" sort="4" />
+        <label id="276" label="" folder="Mom to left" sort="5" />
+        <label id="277" label="" folder="Mom to left" sort="6" />
+        <label id="278" label="" folder="Yuri to left" sort="2" />
+        <label id="279" label="" folder="Nonon to left" sort="5" />
+        <label id="280" label="" folder="Nonon to right" sort="4" />
+        <label id="281" label="" folder="Nadeshiko to right" sort="2" />
+        <label id="282" label="" folder="Nadeshiko to right" sort="0" />
+        <label id="283" label="" folder="Zeka &amp; Pandoria to right" sort="0" />
+        <label id="284" label="" folder="Zeke &amp; Pandoria to right" sort="2" />
+        <label id="285" label="" folder="Kyoko Kirigiri to left" sort="2" />
+        <label id="286" label="" folder="Kyoko Kirigiri to left" sort="2" />
+        <label id="290" label="" folder="Elizabeth to left" sort="0" />
+        <label id="291" label="" folder="Meia to left" sort="15" />
+        <label id="292" label="" folder="Meia to left" sort="12" />
+        <label id="293" label="" folder="Meia to left" sort="11" />
+        <label id="294" label="" folder="Meia to left" sort="5" />
+        <label id="295" label="" folder="Meia to right" sort="7" />
+        <label id="296" label="" folder="Meia to right" sort="2" />
+        <label id="297" label="" folder="Nagatoro to left" sort="3" />
+        <label id="298" label="" folder="Nagatoro to left" sort="2" />
+        <label id="299" label="" folder="Nagatoro to left or right" sort="0" />
+        <label id="300" label="" folder="Jessie to left" sort="15" />
+        <label id="301" label="" folder="Jessie to left" sort="16" />
+        <label id="302" label="" folder="Nagatoro to right" sort="2" />
+        <label id="303" label="" folder="Nagatoro to right" sort="0" />
+        <label id="304" label="" folder="Yuri to left" sort="3" />
+        <label id="305" label="middle slots empty" folder="" sort="0" />
+        <label id="306" label="middle slots empty" folder="" sort="0" />
+        <label id="307" label="" folder="Chihiro to right" sort="0" />
+        <label id="308" label="" folder="Chihiro to right" sort="3" />
+        <label id="309" label="" folder="Chihiro to right" sort="5" />
+        <label id="310" label="" folder="Chihiro to left" sort="0" />
+        <label id="311" label="" folder="Chihiro to left" sort="3" />
+        <label id="312" label="" folder="Chihiro to left" sort="0" />
+        <label id="313" label="" folder="Chihiro to left" sort="5" />
+        <label id="314" label="" folder="Chihiro to left or right" sort="0" />
+        <label id="315" label="" folder="Mari Setogaya to right" sort="3" />
+        <label id="316" label="" folder="Mari Setogaya to right" sort="7" />
+        <label id="317" label="" folder="Nadeshiko to left" sort="3" />
+        <label id="318" label="" folder="Nadeshiko to left" sort="4" />
+        <label id="319" label="" folder="Nadeshiko to left" sort="2" />
+        <label id="320" label="" folder="Zeke &amp; Pandoria to right" sort="4" />
+        <label id="321" label="" folder="Yuri to left" sort="0" />
+        <label id="323" label="" folder="Rose to left or right" sort="2" />
+        <label id="322" label="" folder="Rose to left or right" sort="0" />
+        <label id="324" label="hot" folder="" sort="0" />
+        <label id="325" label="" folder="Jura to left" sort="4" />
+        <label id="326" label="" folder="Jura to left" sort="9" />
+        <label id="327" label="" folder="Twisted Fate to left" sort="0" />
+        <label id="328" label="" folder="Rose to left" sort="2" />
+        <label id="329" label="" folder="Rose to left" sort="0" />
+        <label id="330" label="" folder="Kyoko Kirigiri to right" sort="4" />
+        <label id="331" label="" folder="Kyoko Kirigiri to right" sort="2" />
+        <label id="332" label="" folder="Kyoko Kirigiri to left" sort="4" />
+        <label id="333" label="" folder="Kyoko Kirigiri to left" sort="6" />
+        <label id="334" label="" folder="Ribbon Girl to left" sort="0" />
+        <label id="335" label="" folder="Nadeshiko to left" sort="0" />
+        <label id="336" label="birthday backyard" folder="" sort="0" />
+        <label id="337" label="birthday backyard" folder="" sort="0" />
+        <label id="338" label="birthday backyard" folder="" sort="0" />
+        <label id="339" label="birthday backyard" folder="" sort="0" />
+        <label id="340" label="birthday backyard: player won" folder="" sort="0" />
+        <label id="341" label="birthday backyard: player didn't win" folder="" sort="0" />
+        <label id="342" label="" folder="Mari Setogaya to right" sort="8" />
+        <label id="343" label="" folder="Mari Setogaya to right" sort="4" />
+        <label id="344" label="" folder="Rouge the Bat to left" sort="0" />
+        <label id="345" label="" folder="Rouge the Bat to left" sort="2" />
+        <label id="346" label="" folder="Meia to right" sort="4" />
+        <label id="347" label="" folder="Meia to right" sort="9" />
+        <label id="348" label="" folder="Meia to left" sort="14" />
+        <label id="349" label="" folder="Meia to left" sort="8" />
+        <label id="350" label="" folder="Meia to left" sort="7" />
+        <label id="351" label="" folder="Meia to left" sort="3" />
+        <label id="352" label="athletic legs, no companion" folder="" sort="0" />
+        <label id="353" label="chiming in on banter" folder="Nadeshiko to left" sort="6" />
+        <label id="354" label="chiming in on banter" folder="Nadeshiko to left" sort="7" />
+        <label id="355" label="chiming in on banter" folder="Nadeshiko to left" sort="8" />
+        <label id="356" label="chiming in on banter" folder="Nadeshiko to left" sort="9" />
+        <label id="357" label="feminine bedroom" folder="CONVERSATION STATERS" sort="3" />
+        <label id="358" label="" folder="Zeke &amp; Pandoria to right" sort="2" />
+        <label id="359" label="" folder="Nagatoro to left" sort="0" />
+        <label id="360" label="chiming in on banter" folder="Nagatoro to left" sort="3" />
+        <label id="361" label="chiming in on banter" folder="Nagatoro to left or right" sort="2" />
+        <label id="362" label="" folder="Kyou to left" sort="0" />
+        <label id="363" label="" folder="Kyou to left" sort="5" />
+        <label id="364" label="" folder="Kyou to left" sort="6" />
+        <label id="365" label="" folder="Kyou to left / Nagisa to left or right" sort="0" />
+        <label id="366" label="" folder="Kyou to left / Nagisa to left or right" sort="2" />
+        <label id="367" label="" folder="Mari Setogaya to right" sort="6" />
+        <label id="368" label="" folder="Mari Setogaya to right" sort="2" />
+        <label id="369" label="" folder="Nadeshiko to left" sort="5" />
+        <label id="370" label="alley" folder="" sort="0" />
+        <label id="371" label="club" folder="" sort="0" />
+        <label id="372" label="feminine bedroom" folder="" sort="0" />
+        <label id="373" label="paris rooftop" folder="" sort="0" />
+        <label id="374" label="classroom" folder="" sort="0" />
+        <label id="375" label="beach" folder="" sort="0" />
+        <label id="376" label="lake" folder="" sort="0" />
+        <label id="378" label="" folder="Nagisa to left / Estelle to right" sort="0" />
+        <label id="379" label="" folder="Nagisa and Estelle to left" sort="0" />
+        <label id="380" label="" folder="Neptune to left" sort="0" />
+        <label id="381" label="" folder="Yuri to left" sort="4" />
+        <label id="382" label="" folder="Nagisa to left / Kyou to right" sort="2" />
+        <label id="383" label="" folder="Nagisa to left / Kyou to right" sort="4" />
+        <label id="384" label="" folder="Nagisa to left / Kyou to right" sort="6" />
+        <label id="385" label="" folder="Nagisa and Kyou to right" sort="0" />
+        <label id="386" label="" folder="Nagisa and Kyou to right" sort="2" />
+        <label id="387" label="" folder="Nagisa and Kyou to left" sort="2" />
+        <label id="388" label="" folder="Nagisa and Kyou to left" sort="4" />
+        <label id="389" label="" folder="Nagisa and Kyou to left" sort="6" />
+        <label id="390" label="haunted forest" folder="Kyoko Kirigiri to left" sort="3" />
+        <label id="391" label="" folder="Kyoko Kirigiri to left" sort="0" />
+        <label id="392" label="" folder="Marinette to left or right" sort="0" />
+        <label id="393" label="" folder="Rouge the Bat to left or right" sort="0" />
+        <label id="394" label="" folder="Nagisa and Reimu to right" sort="0" />
+        <label id="395" label="" folder="Nagisa and Reimu to right" sort="2" />
+        <label id="396" label="" folder="Nagisa to right / Reimu to left" sort="0" />
+        <label id="397" label="" folder="Nagisa to right / Reimu to left" sort="2" />
+        <label id="398" label="" folder="Nagisa to right / Reimu to left" sort="3" />
+        <label id="399" label="" folder="Nagisa and Reimu to left" sort="0" />
+        <label id="400" label="" folder="Nagisa and Reimu to left" sort="2" />
+        <label id="401" label="" folder="Nagisa and Reimu to left" sort="3" />
+        <label id="402" label="" folder="Zeke &amp; Pandoria to right" sort="5" />
+        <label id="403" label="grass surface" folder="" sort="0" />
+        <label id="404" label="hairy / garden" folder="" sort="0" />
+        <label id="405" label="water" folder="" sort="0" />
+        <label id="406" label="haunted forest" folder="" sort="0" />
+        <label id="407" label="night outdoors" folder="" sort="0" />
+        <label id="408" label="bedroom" folder="" sort="0" />
+        <label id="409" label="classroom" folder="" sort="0" />
+        <label id="410" label="haunted forest" folder="" sort="0" />
+        <label id="413" label="" folder="Yuri to left" sort="3" />
+        <label id="412" label="" folder="Nagisa to left or right" sort="0" />
+        <label id="414" label="" folder="Yuri to left" sort="4" />
+        <label id="415" label="" folder="Yuri to left" sort="5" />
+        <label id="416" label="" folder="Yuri to left" sort="6" />
+        <label id="417" label="classroom" folder="Nagatoro to left" sort="0" />
+        <label id="418" label="bedroom" folder="Nagatoro to left" sort="2" />
+        <label id="419" label="" folder="Zeke &amp; Pandoria to right" sort="7" />
+        <label id="420" label="" folder="Nagisa and Miko to left" sort="0" />
+        <label id="421" label="" folder="Nagisa and Miko to left" sort="2" />
+        <label id="422" label="" folder="Nagisa and Miko to left" sort="3" />
+        <label id="423" label="" folder="Nagisa to right / Miko to left" sort="0" />
+        <label id="424" label="" folder="Nagisa to right / Miko to left" sort="2" />
+        <label id="425" label="" folder="Nagisa and Miko to right" sort="0" />
+        <label id="426" label="" folder="Nagisa and Miko to right" sort="2" />
+        <label id="427" label="" folder="Meia to left" sort="7" />
+        <label id="428" label="" folder="Meia to left" sort="23" />
+        <label id="429" label="" folder="Meia to left" sort="15" />
+        <label id="430" label="" folder="Meia to right" sort="15" />
+        <label id="431" label="" folder="Yuno and Mari Setogaya to left or right" sort="0" />
+        <label id="432" label="the_big_succ begins without Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="2" />
+        <label id="433" label="the_big_succ" folder="Yuno and Mari Setogaya to left or right" sort="5" />
+        <label id="434" label="the_big_succ with Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="0" />
+        <label id="435" label="the_big_succ without Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="0" />
+        <label id="436" label="bigsucc_finished without Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="4" />
+        <label id="437" label="bigsucc_after" folder="Yuno and Mari Setogaya to left or right" sort="6" />
+        <label id="438" label="the_big_succ begins with Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="0" />
+        <label id="439" label="bigsucc_finished with Nagisa watching" folder="Yuno and Mari Setogaya to left or right" sort="3" />
+        <label id="440" label="Must Masturbate (Adrien)" folder="Marinette and Adrien to left or right" sort="4" />
+        <label id="441" label="Must Masturbate (Marinette)" folder="Marinette and Adrien to left or right" sort="8" />
+        <label id="442" label="tandem forfeit happening" folder="" sort="0" />
+        <label id="443" label="tandom_mf forfeit (heavy) happening" folder="" sort="0" />
+        <label id="444" label="Must Masturbate (Marinette) and Nagisa watching" folder="Marinette and Adrien to left or right" sort="7" />
+        <label id="445" label="Must Masturbate (Adrien) and Nagisa watching" folder="Marinette and Adrien to left or right" sort="3" />
+        <label id="446" label="Start Masturbating (Marinette)" folder="Marinette and Adrien to left or right" sort="10" />
+        <label id="447" label="Start Masturbating (Adrien)" folder="Marinette and Adrien to left or right" sort="6" />
+        <label id="448" label="Start Masturbating (Marinette) and Nagisa watching" folder="Marinette and Adrien to left or right" sort="9" />
+        <label id="449" label="Start Masturbating (Adrien) and Nagisa watching" folder="Marinette and Adrien to left or right" sort="5" />
+        <label id="450" label="Finished (Marinette or Adrien)" folder="Marinette and Adrien to left or right" sort="2" />
+        <label id="451" label="Finished (Marinette or Adrien) and Nagisa watching" folder="Marinette and Adrien to left or right" sort="0" />
+        <label id="452" label="" folder="Moon to left" sort="0" />
+        <label id="453" label="hot spring" folder="" sort="0" />
+        <label id="454" label="" folder="Jura to left" sort="28" />
+        <label id="455" label="" folder="Jura to left" sort="13" />
+        <label id="456" label="" folder="Jura to left" sort="4" />
+        <label id="457" label="" folder="Jessie to left" sort="0" />
+        <label id="458" label="" folder="Jessie to left" sort="2" />
+        <label id="459" label="" folder="Jessie to left" sort="3" />
+        <label id="460" label="" folder="Mom to left / Moon to left or right" sort="0" />
+        <label id="461" label="" folder="Moon and Mom to left" sort="0" />
+        <label id="462" label="" folder="Meia to left" sort="11" />
+        <label id="463" label="" folder="Meia to left" sort="4" />
+        <label id="464" label="" folder="Meia to left" sort="20" />
+        <label id="465" label="" folder="Meia to right" sort="7" />
+        <label id="466" label="" folder="Meia to right" sort="10" />
+        <label id="467" label="" folder="Nagisa and Meia to left" sort="0" />
+        <label id="468" label="" folder="Hot Spring Woman to left" sort="0" />
+        <label id="469" label="" folder="Hot Spring Woman to left" sort="2" />
+        <label id="470" label="" folder="Hot Spring Woman to left" sort="3" />
+        <label id="471" label="" folder="Hot Spring Woman to left" sort="4" />
+        <label id="472" label="" folder="Jura to left" sort="9" />
+        <label id="473" label="" folder="Jura to left" sort="19" />
+        <label id="474" label="" folder="Jura to left" sort="0" />
+        <label id="475" label="" folder="Jura to left" sort="16" />
+        <label id="476" label="" folder="Mari Setogaya to right" sort="4" />
+        <label id="477" label="" folder="Mari Setogaya to right" sort="9" />
+        <label id="478" label="" folder="Arueshalae to left" sort="0" />
+        <label id="479" label="" folder="Arueshalae to left" sort="2" />
+        <label id="480" label="" folder="Polly to left or right" sort="0" />
+        <label id="481" label="" folder="Polly to left or right" sort="2" />
+        <label id="482" label="" folder="Jura to left" sort="22" />
+        <label id="483" label="" folder="Jura to left" sort="25" />
+        <label id="484" label="" folder="Jura to left" sort="14" />
+        <label id="485" label="" folder="Jura to left" sort="5" />
+        <label id="486" label="" folder="Senko to left" sort="8" />
+        <label id="487" label="" folder="Senko to left" sort="9" />
+        <label id="488" label="" folder="Y'shtola to left" sort="0" />
+        <label id="489" label="" folder="Y'shtola to left or right" sort="0" />
+        <label id="490" label="" folder="Galatea to left or right" sort="0" />
+        <label id="491" label="" folder="Galatea to left" sort="0" />
+        <label id="492" label="" folder="Trixie to left" sort="0" />
+        <label id="493" label="" folder="Trixie to left or right" sort="0" />
+        <label id="494" label="" folder="Palutena to left" sort="0" />
+        <label id="495" label="saying &quot;goddessr&quot;" folder="Palutena to left" sort="2" />
+        <label id="496" label="" folder="Aqua KonoSuba to left" sort="0" />
+        <label id="497" label="" folder="Aqua KonoSuba to left" sort="2" />
+        <label id="498" label="" folder="Sakura to left or right" sort="5" />
+        <label id="499" label="" folder="Sakura to left or right" sort="6" />
+        <label id="500" label="" folder="Sakura to left or right" sort="0" />
+        <label id="501" label="" folder="Sakura to left or right" sort="3" />
+        <label id="502" label="" folder="Sakura to left or right" sort="2" />
+        <label id="503" label="" folder="Sakura to left or right" sort="7" />
+        <label id="504" label="" folder="Sakura to left or right" sort="4" />
+        <label id="505" label="" folder="Joey to left" sort="2" />
+        <label id="506" label="" folder="Jura to left" sort="10" />
+        <label id="507" label="" folder="Jura to left" sort="29" />
+        <label id="508" label="" folder="Jura to left" sort="20" />
+        <label id="509" label="" folder="Saki Nikaidou to left or right" sort="0" />
+        <label id="510" label="" folder="Saki Nikaidou to left or right" sort="2" />
+        <label id="511" label="" folder="Magical Sempai to left or right" sort="0" />
+        <label id="512" label="" folder="Magical Sempai to left or right" sort="2" />
+        <label id="513" label="" folder="Sanny and Tess to left or right" sort="0" />
+        <label id="514" label="" folder="Nagisa to left / Fluttershy to right" sort="0" />
+        <label id="515" label="" folder="Nagisa and Fluttershy to left" sort="0" />
+        <label id="516" label="" folder="Rainbow Dash to left or right" sort="0" />
+        <label id="517" label="" folder="Rainbow Dash to left" sort="0" />
+        <label id="518" label="" folder="Jura to left" sort="15" />
+        <label id="519" label="" folder="Jura to left" sort="6" />
+        <label id="520" label="" folder="Jura to left" sort="26" />
+        <label id="521" label="" folder="Jura to left / Nagisa to left or right" sort="0" />
+        <label id="522" label="" folder="Zeke &amp; Pandoria to right" sort="3" />
+        <label id="523" label="" folder="Pinkamena to left or right" sort="3" />
+        <label id="524" label="" folder="Pinkamena to left or right" sort="4" />
+        <label id="525" label="" folder="Pinkamena to left or right" sort="7" />
+        <label id="526" label="" folder="Pinkamena to left or right" sort="0" />
+        <label id="527" label="" folder="Pinkamena to left or right" sort="5" />
+        <label id="528" label="" folder="Pinkamena to left or right" sort="8" />
+        <label id="529" label="" folder="Pinkamena to left or right" sort="2" />
+        <label id="531" label="" folder="Pinkamena to left or right" sort="9" />
+        <label id="530" label="" folder="Pinkamena to left or right" sort="6" />
+        <label id="532" label="" folder="Pinkamena to left or right" sort="10" />
+        <label id="533" label="" folder="Pinkamena to left or right" sort="11" />
+        <label id="534" label="" folder="Pinkamena to left or right" sort="12" />
+        <label id="535" label="" folder="Pinkamena to left or right" sort="13" />
+        <label id="536" label="" folder="Rarity to left" sort="0" />
+        <label id="537" label="" folder="Rarity to left" sort="2" />
+        <label id="538" label="" folder="Rarity to left" sort="3" />
+        <label id="539" label="" folder="Twilight to left or right" sort="0" />
+        <label id="540" label="" folder="Twilight to left or right" sort="0" />
+        <label id="541" label="" folder="Twilight to left or right" sort="2" />
+        <label id="542" label="" folder="Meia to right" sort="13" />
+        <label id="543" label="" folder="Meia to right" sort="3" />
+        <label id="544" label="" folder="Meia to left" sort="8" />
+        <label id="545" label="" folder="Meia to left" sort="24" />
+        <label id="546" label="" folder="Meia to left" sort="25" />
+        <label id="547" label="" folder="Meia to left" sort="16" />
+        <label id="548" label="" folder="Jura to left" sort="11" />
+        <label id="549" label="" folder="Jura to left" sort="30" />
+        <label id="550" label="" folder="Jura to left" sort="21" />
+        <label id="551" label="" folder="Jura to left / Nagisa to left or right" sort="2" />
+        <label id="552" label="" folder="Nagisa to left / Natsuki to right" sort="2" />
+        <label id="553" label="" folder="Nagisa to left / Natsuki to right" sort="2" />
+        <label id="554" label="" folder="Nagisa to left / Natsuki to right" sort="3" />
+        <label id="555" label="" folder="Nagisa to left / Natsuki to right" sort="4" />
+        <label id="556" label="" folder="Nagisa and Natsuki to left" sort="2" />
+        <label id="557" label="" folder="Nagisa and Natsuki to left" sort="2" />
+        <label id="558" label="" folder="Nagisa and Natsuki to left" sort="3" />
+        <label id="559" label="" folder="Nagisa and Natsuki to left" sort="4" />
+        <label id="560" label="" folder="Nagisa and Natsuki to right" sort="2" />
+        <label id="561" label="" folder="Nagisa and Natsuki to right" sort="2" />
+        <label id="562" label="" folder="Nagisa and Natsuki to right" sort="3" />
+        <label id="563" label="" folder="Nagisa and Natsuki to right" sort="4" />
+        <label id="564" label="" folder="Nadeshiko to right" sort="3" />
+        <label id="565" label="" folder="Muffins to left or right" sort="2" />
+        <label id="566" label="" folder="Muffins to left or right" sort="3" />
+        <label id="567" label="" folder="Muffins to left or right" sort="4" />
+        <label id="568" label="" folder="Muffins to left or right" sort="0" />
+        <label id="569" label="" folder="Marceline to left" sort="0" />
+        <label id="570" label="" folder="Marceline to left" sort="2" />
+        <label id="571" label="" folder="Marceline to left" sort="3" />
+        <label id="572" label="" folder="Marceline to left" sort="4" />
+        <label id="288" label="" folder="AE86 to left or right" sort="2" />
+        <label id="289" label="" folder="AE86 to left or right" sort="3" />
+        <label id="287" label="" folder="AE86 to left or right" sort="0" />
+        <label id="574" label="" folder="Panty to right" sort="0" />
+        <label id="575" label="" folder="Panty to right" sort="2" />
+        <label id="576" label="" folder="Panty to right" sort="3" />
+        <label id="577" label="" folder="Stocking to left" sort="0" />
+        <label id="578" label="" folder="Stocking to left" sort="2" />
+        <label id="579" label="" folder="Caulifla to left or right" sort="0" />
+        <label id="580" label="" folder="Caulifla to left or right" sort="2" />
+        <label id="581" label="" folder="Shimakaze to left or right" sort="0" />
+        <label id="582" label="" folder="Shimakaze to right" sort="0" />
+        <label id="583" label="" folder="Shimakaze to left or right" sort="2" />
+        <label id="584" label="" folder="Shimakaze to left or right" sort="3" />
+        <label id="585" label="" folder="Shimakaze to left" sort="2" />
+        <label id="586" label="" folder="Shimakaze to left" sort="0" />
+        <label id="587" label="" folder="Suzuya to left" sort="0" />
+        <label id="588" label="" folder="Suzuya to left" sort="2" />
+        <label id="589" label="" folder="Suzuya to left" sort="3" />
+        <label id="590" label="" folder="Suzuya to left" sort="4" />
+        <label id="591" label="" folder="Suzuya to left" sort="5" />
+        <label id="592" label="" folder="Suzuya to left" sort="6" />
+        <label id="593" label="" folder="Yunyun to left" sort="0" />
+        <label id="594" label="" folder="Yuelia to left or right" sort="0" />
+        <label id="595" label="" folder="Yuelia to left" sort="0" />
+        <label id="596" label="" folder="Yuelia to left or right" sort="2" />
+        <label id="597" label="" folder="Raven to left or right" sort="0" />
+        <label id="599" label="" folder="Ochako to left" sort="0" />
+        <label id="600" label="" folder="Joey to left" sort="3" />
+        <label id="601" label="" folder="Nadeshiko to right" sort="4" />
+        <label id="602" label="" folder="Nadeshiko to right" sort="5" />
+        <label id="603" label="" folder="Monika to left" sort="2" />
+        <label id="604" label="" folder="Monika to left" sort="2" />
+        <label id="605" label="" folder="Natsuki to left / Nagisa to right" sort="0" />
+        <label id="606" label="" folder="Natsuki to left / Nagisa to right" sort="2" />
+        <label id="607" label="" folder="Natsuki to left / Nagisa to right" sort="3" />
+        <label id="608" label="" folder="Natsuki and Nagisa to left" sort="0" />
+        <label id="609" label="" folder="Natsuki and Nagisa to left" sort="2" />
+        <label id="610" label="" folder="Natsuki and Nagisa to left" sort="3" />
+        <label id="611" label="" folder="Natsuki and Nagisa to right" sort="0" />
+        <label id="612" label="" folder="Natsuki and Nagisa to right" sort="2" />
+        <label id="613" label="" folder="Natsuki and Nagisa to right" sort="3" />
+        <label id="614" label="Also Playing: Yuri" folder="Yuri to left" sort="4" />
+        <label id="615" label="Also Playing: Yuri" folder="Yuri to left" sort="6" />
+        <label id="616" label="" folder="Sayori to left" sort="0" />
+        <label id="617" label="" folder="Amy to left or right" sort="0" />
+        <label id="619" label="" folder="Sayori to left" sort="2" />
+        <label id="618" label="" folder="Amy to left or right" sort="2" />
+        <label id="620" label="" folder="Joey to left" sort="4" />
+        <label id="621" label="" folder="Moon to left" sort="2" />
+        <label id="622" label="" folder="Moon to left" sort="3" />
+        <label id="623" label="" folder="Moon to left" sort="4" />
+        <label id="624" label="" folder="Turandot to left" sort="3" />
+        <label id="625" label="" folder="Aimee to left or right" sort="2" />
+        <label id="626" label="" folder="Aimee to left or right" sort="2" />
+        <label id="627" label="" folder="Turandot to left" sort="0" />
+        <label id="628" label="" folder="Turandot to left" sort="2" />
+        <label id="629" label="" folder="Binah to left" sort="0" />
+        <label id="630" label="" folder="Binah to left" sort="2" />
+        <label id="631" label="" folder="Maria to left" sort="0" />
+        <label id="632" label="" folder="Maria to left" sort="2" />
+        <label id="633" label="" folder="Maria to left" sort="3" />
+        <label id="634" label="" folder="Maria to left" sort="4" />
+        <label id="635" label="" folder="Maria to left" sort="5" />
+        <label id="636" label="" folder="Maria to left" sort="6" />
+        <label id="637" label="" folder="Yuri to right" sort="0" />
+        <label id="638" label="" folder="Yuri to left" sort="3" />
+        <label id="639" label="" folder="Yuri to right" sort="3" />
+        <label id="640" label="" folder="Mei to left or right" sort="0" />
+        <label id="641" label="" folder="Mei to left or right" sort="2" />
+        <label id="642" label="" folder="Revy and Meia to left or right" sort="2" />
+        <label id="643" label="" folder="Revy and Meia to left or right" sort="0" />
+        <label id="644" label="Also Playing: Nagatoro" folder="Nagatoro to left" sort="5" />
+        <label id="645" label="Also Playing: Nagatoro" folder="Nagatoro to left" sort="6" />
+        <label id="646" label="only woman" color="4" folder="" sort="0" />
+        <label id="647" label="introduction" color="12" folder="" sort="0" />
+        <label id="648" label="Sanako + one man" color="6" folder="" sort="0" />
+        <label id="649" label="Sanako + two or three men" color="6" folder="" sort="0" />
+        <label id="650" label="Sanako + four men" color="6" folder="" sort="0" />
+        <label id="651" label="male selected, table not full, no other women" color="6" folder="" sort="0" />
+        <label id="652" label="male selected, table full, no other women" color="6" folder="" sort="0" />
+        <label id="653" label="only woman" color="6" folder="" sort="0" />
+        <label id="654" label="only woman" color="6" folder="" sort="0" />
+        <label id="655" label="only woman" color="6" folder="" sort="0" />
+        <label id="656" label="only woman" color="6" folder="" sort="0" />
+        <label id="657" label="only woman" color="6" folder="" sort="0" />
+        <label id="658" label="only woman" color="6" folder="" sort="0" />
+        <label id="659" label="only woman" color="6" folder="" sort="0" />
+        <label id="660" label="only woman" color="6" folder="" sort="0" />
+        <label id="661" label="only woman" color="6" folder="" sort="0" />
+        <label id="662" label="only woman" color="6" folder="" sort="0" />
+        <label id="663" label="only woman" color="6" folder="" sort="0" />
+        <label id="664" label="only woman" color="6" folder="" sort="0" />
+        <label id="665" label="only woman" color="6" folder="" sort="0" />
+        <label id="666" label="only woman" color="6" folder="" sort="0" />
+        <label id="667" label="only woman" color="6" folder="" sort="0" />
+        <label id="668" label="only woman" color="6" folder="" sort="0" />
+        <label id="669" label="only woman" color="6" folder="" sort="0" />
+        <label id="670" label="only woman" color="6" folder="" sort="0" />
+        <label id="671" label="only woman" color="6" folder="" sort="0" />
+        <label id="672" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="673" label="&quot;master&quot; and Nagisa not present" color="9" folder="" sort="0" />
+        <label id="674" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="675" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="676" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="677" label="&quot;master&quot; (3 playing)" color="9" folder="" sort="0" />
+        <label id="678" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="679" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="680" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="681" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="682" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="683" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="684" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="685" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="686" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="687" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="688" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="689" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="690" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="692" label="losing streak - first to lose" color="1" folder="" sort="0" />
+        <label id="693" label="losing streak" color="1" folder="" sort="0" />
+        <label id="694" label="losing streak" color="1" folder="" sort="0" />
+        <label id="695" label="losing streak" color="1" folder="" sort="0" />
+        <label id="696" label="losing streak" color="1" folder="" sort="0" />
+        <label id="697" label="losing streak" color="1" folder="" sort="0" />
+        <label id="698" label="losing streak" color="1" folder="" sort="0" />
+        <label id="699" label="losing streak" color="1" folder="" sort="0" />
+        <label id="700" label="losing streak" color="1" folder="" sort="0" />
+        <label id="701" label="losing streak" color="1" folder="" sort="0" />
+        <label id="702" label="losing streak" color="1" folder="" sort="0" />
+        <label id="703" label="losing streak" color="1" folder="" sort="0" />
+        <label id="704" label="losing streak" color="1" folder="" sort="0" />
+        <label id="705" label="losing streak" color="1" folder="" sort="0" />
+        <label id="706" label="losing streak" color="1" folder="" sort="0" />
+        <label id="707" label="losing streak" color="1" folder="" sort="0" />
+        <label id="708" label="losing streak" color="1" folder="" sort="0" />
+        <label id="709" label="losing streak" color="1" folder="" sort="0" />
+        <label id="710" label="losing streak" color="1" folder="" sort="0" />
+        <label id="711" label="losing streak" color="1" folder="" sort="0" />
+        <label id="712" label="introduction" color="12" folder="" sort="0" />
+        <label id="713" label="introduction" color="12" folder="" sort="0" />
+        <label id="168" label="introduction" color="12" folder="" sort="0" />
+        <label id="714" label="trying to fit in" color="5" folder="" sort="0" />
+        <label id="715" label="trying to fit in" color="5" folder="" sort="0" />
+        <label id="716" label="trying to fit in" color="5" folder="" sort="0" />
+        <label id="717" label="uniform love" color="4" folder="" sort="0" />
+        <label id="718" label="uniform love" color="4" folder="" sort="0" />
+        <label id="719" label="uniform love" color="4" folder="" sort="0" />
+        <label id="720" label="youthful appearance" color="10" folder="" sort="0" />
+        <label id="721" label="youthful appearance" color="10" folder="" sort="0" />
+        <label id="722" label="youthful appearance" color="10" folder="" sort="0" />
+        <label id="723" label="experimentation" color="14" folder="" sort="0" />
+        <label id="724" label="experimentation" color="14" folder="" sort="0" />
+        <label id="725" label="experimentation" color="14" folder="" sort="0" />
+        <label id="726" label="being hip" color="2" folder="" sort="0" />
+        <label id="727" label="being hip" color="2" folder="" sort="0" />
+        <label id="728" label="being hip" color="2" folder="" sort="0" />
+        <label id="729" label="relationship" color="3" folder="" sort="0" />
+        <label id="730" label="relationship" color="3" folder="" sort="0" />
+        <label id="731" label="relationship" color="3" folder="" sort="0" />
+        <label id="732" label="baking" color="15" folder="" sort="0" />
+        <label id="733" label="baking" color="15" folder="" sort="0" />
+        <label id="734" label="baking" color="15" folder="" sort="0" />
+        <label id="735" label="shaving" color="11" folder="" sort="0" />
+        <label id="736" label="shaving" color="5" folder="" sort="0" />
+        <label id="737" label="shaving" color="5" folder="" sort="0" />
+        <label id="738" label="attention" color="7" folder="" sort="0" />
+        <label id="739" label="attention" color="7" folder="" sort="0" />
+        <label id="740" label="attention" color="7" folder="" sort="0" />
+        <label id="741" label="teasing" color="10" folder="" sort="0" />
+        <label id="742" label="teasing" color="10" folder="" sort="0" />
+        <label id="743" label="teasing" color="10" folder="" sort="0" />
+        <label id="744" label="only woman" color="6" folder="" sort="0" />
+        <label id="745" label="only woman" color="6" folder="" sort="0" />
+        <label id="746" label="only woman" color="6" folder="" sort="0" />
+        <label id="747" label="losing streak" color="1" folder="" sort="0" />
+        <label id="748" label="losing streak" color="1" folder="" sort="0" />
+        <label id="749" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="750" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="751" label="&quot;master&quot;" color="9" folder="" sort="0" />
+        <label id="752" label="only woman - full table" color="6" folder="" sort="0" />
+        <label id="753" label="only woman" color="6" folder="" sort="0" />
+        <label id="754" label="&quot;master&quot; and Nagisa not present" color="9" folder="" sort="0" />
+        <label id="755" label="&quot;master&quot; and Nagisa not present" color="9" folder="" sort="0" />
+        <label id="165" label="" folder="Yuno to left or right" sort="0" />
+        <label id="756" label="Sanako's Skirt collectible unlock" folder="" sort="0" />
+        <label id="757" label="Sanako's Panties collectible unlock" folder="" sort="0" />
+        <label id="758" label="holiday lodge" folder="" sort="0" />
+        <label id="759" label="Sanako's Glasses collectible incrementer" folder="" sort="0" />
+        <label id="760" label="outdoors" folder="" sort="0" />
+        <label id="761" label="multiple men masturbating" folder="" sort="0" />
+        <label id="762" label="incognito" folder="" sort="0" />
+        <label id="763" label="incognito" folder="" sort="0" />
+        <label id="764" label="incognito" folder="" sort="0" />
+        <label id="765" label="" folder="Meia to right" sort="16" />
+        <label id="766" label="" folder="Meia to right" sort="17" />
+        <label id="767" label="" folder="Meia to right" sort="18" />
+        <label id="768" label="" folder="Meia to right" sort="19" />
+        <label id="769" label="" folder="Meia to left" sort="26" />
+        <label id="770" label="" folder="Meia to left" sort="27" />
+        <label id="771" label="" folder="Meia to left" sort="28" />
+        <label id="772" label="" folder="Meia to left" sort="29" />
+        <label id="773" label="" folder="Meia to left" sort="30" />
+        <label id="774" label="" folder="Meia to left" sort="31" />
+        <label id="775" label="" folder="Jura to right" sort="0" />
+        <label id="776" label="" folder="Jura to right" sort="2" />
+        <label id="777" label="" folder="Jura to right" sort="9" />
+        <label id="778" label="" folder="Jura to right" sort="7" />
+        <label id="779" label="" folder="Jura to right" sort="13" />
+        <label id="780" label="" folder="Jura to right" sort="11" />
+        <label id="781" label="" folder="Jura to left" sort="16" />
+        <label id="782" label="" folder="Jura to left" sort="28" />
+        <label id="783" label="" folder="Jura to left" sort="34" />
+        <label id="784" label="" folder="Jura to left" sort="29" />
+        <label id="785" label="thoughts when Nagisa's not playing" folder="" sort="0" />
+        <label id="786" label="" folder="Nagisa to left or right" sort="2" />
+        <label id="787" label="" folder="Monika to left" sort="3" />
+        <label id="788" label="" folder="Aimee to left or right" sort="0" />
+        <label id="789" label="" folder="Aimee to left or right" sort="4" />
+        <label id="790" label="" folder="Aimee to left or right" sort="5" />
+        <label id="791" label="" folder="Aimee to left or right" sort="8" />
+        <label id="792" label="" folder="Aimee to left or right" sort="6" />
+        <label id="793" label="" folder="Aimee to left or right" sort="7" />
+        <label id="794" label="" folder="Meia to left" sort="27" />
+        <label id="795" label="" folder="Meia to right" sort="0" />
+        <label id="796" label="" folder="Meia to right" sort="23" />
+        <label id="797" label="" folder="Meia to right" sort="18" />
+        <label id="798" label="" folder="Meia to right" sort="19" />
+        <label id="799" label="" folder="Meia to right" sort="4" />
+        <label id="800" label="" folder="Syrenne to left" sort="0" />
+        <label id="801" label="" folder="Syrenne to left" sort="2" />
+        <label id="802" label="" folder="Syrenne to left" sort="3" />
+        <label id="803" label="" folder="Syrenne to left" sort="4" />
+        <label id="804" label="" folder="Syrenne to left" sort="5" />
+        <label id="805" label="" folder="Meia to right" sort="8" />
+        <label id="806" label="" folder="Meia to right" sort="12" />
+        <label id="807" label="" folder="Meia to right" sort="27" />
+        <label id="808" label="" folder="Meia to right" sort="17" />
+        <label id="809" label="" folder="Meia to left" sort="15" />
+        <label id="810" label="" folder="Meia to left" sort="34" />
+        <label id="811" label="" folder="Jura to right" sort="4" />
+        <label id="812" label="" folder="Jura to right" sort="6" />
+        <label id="813" label="" folder="Jura to right" sort="16" />
+        <label id="814" label="" folder="Jura to right" sort="15" />
+        <label id="815" label="" folder="Jura to right" sort="8" />
+        <label id="816" label="" folder="Jura to right" sort="10" />
+        <label id="817" label="" folder="Jura to left / Nagisa to left or right" sort="3" />
+        <label id="818" label="" folder="Jura to right" sort="3" />
+        <label id="819" label="" folder="Jura to right" sort="5" />
+        <label id="820" label="" folder="Jura to right" sort="12" />
+        <label id="821" label="" folder="Jura to right" sort="14" />
+        <label id="822" label="Nagisa caution" folder="" sort="0" />
+        <label id="824" label="" folder="Nayru to left or right" sort="3" />
+        <label id="823" label="" folder="Nayru to left or right" sort="2" />
+        <label id="825" label="" folder="Nayru to left or right" sort="4" />
+        <label id="826" label="" folder="Nayru to left or right" sort="0" />
+        <label id="827" label="" folder="Remilia to left" sort="0" />
+        <label id="828" label="" folder="Remilia to left" sort="2" />
+        <label id="829" label="" folder="Remilia to right" sort="0" />
+        <label id="830" label="" folder="Remilia to left or right" sort="0" />
+        <label id="831" label="" folder="Mari Omori to left" sort="0" />
+        <label id="832" label="" folder="Mari Omori to left" sort="2" />
+        <label id="833" label="" folder="Okino to left" sort="0" />
+        <label id="834" label="" folder="Ini to left or right" sort="0" />
+        <label id="835" label="" folder="Ini to left or right" sort="2" />
+        <label id="836" label="" folder="Nagisa to left" sort="46" />
+        <label id="837" label="" folder="Nagisa to left or right" sort="0" />
+        <label id="838" label="" folder="Nagisa to left" sort="0" />
+        <label id="839" label="" folder="Amy to left or right" sort="0" />
+        <label id="840" label="" folder="Amy to left or right" sort="0" />
+        <label id="841" label="" folder="Jolyne to left" sort="0" />
+        <label id="842" label="" folder="Velvet to left" sort="0" />
+        <label id="843" label="" folder="Nagisa to left" sort="0" />
+        <label id="844" label="" folder="Nagisa to left or right" sort="0" />
+        <label id="845" label="" folder="Nagisa to left or right" sort="0" />
+        <label id="846" label="" folder="Meia to right" sort="0" />
+        <label id="847" label="" folder="Meia to right" sort="0" />
+        <label id="848" label="" folder="Meia to right" sort="0" />
+        <label id="849" label="" folder="Meia to right" sort="0" />
+        <label id="850" label="" folder="Meia to left" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
+        <prefix>caution</prefix>
     </prefixes>
-    <nextId>9</nextId>
+    <nextId>850</nextId>
     <markers>
+        <marker scope="Public" name="" />
+        <marker scope="Public" name="sanako_adrien_marinette_dual" />
+        <marker scope="Public" name="sanako_adrien_marinette_dualforfeit" />
+        <marker scope="Public" name="sanako_adrien_marinette_nagisa_dual" />
+        <marker scope="Public" name="sanako_adrien_marinette_nagisa_dualforfeit" />
+        <marker scope="Public" name="sanako_ae86_selected" />
+        <marker scope="Public" name="sanako_ae86_selected_indoors" />
+        <marker scope="Public" name="sanako_ae86_selected_street" />
         <marker scope="Public" name="sanako_age_uncertainty">If Nagisa is not playing, Sanako can almost introduce herself as her real age.</marker>
+        <marker scope="Public" name="sanako_alley_selected" />
+        <marker scope="Public" name="sanako_amy_a14" />
+        <marker scope="Public" name="sanako_amy_butt" />
+        <marker scope="Public" name="sanako_amy_planar_form" />
+        <marker scope="Public" name="sanako_amy_undoing_braids" />
+        <marker scope="Public" name="sanako_aqua_goddess_accomplis" />
+        <marker scope="Public" name="sanako_aqua_goddess_accomplishments_boast_1" />
+        <marker scope="Public" name="sanako_aqua_goddess_duties_1" />
+        <marker scope="Public" name="sanako_arash_question_martha" />
+        <marker scope="Public" name="sanako_arueshalae_bad_dreams" />
+        <marker scope="Public" name="sanako_arueshalae_good_dreams" />
+        <marker scope="Public" name="sanako_attention_s13" />
+        <marker scope="Public" name="sanako_attention_s14" />
+        <marker scope="Public" name="sanako_attention_s15" />
         <marker scope="Public" name="sanako_bad_start">Sanako is off to a bad start.</marker>
         <marker scope="Public" name="sanako_baked">Sanako has some baked goodies for everyone after the game.</marker>
         <marker scope="Public" name="sanako_baked_buns">Sanako's buns are almost hot and ready.</marker>
+        <marker scope="Public" name="sanako_baking_s10" />
+        <marker scope="Public" name="sanako_baking_s11" />
+        <marker scope="Public" name="sanako_baking_s12" />
+        <marker scope="Public" name="sanako_beach_selectted" />
+        <marker scope="Public" name="sanako_being_hip_s7" />
+        <marker scope="Public" name="sanako_being_hip_s8" />
+        <marker scope="Public" name="sanako_being_hip_s9" />
+        <marker scope="Public" name="sanako_bengal_monitor" />
+        <marker scope="Public" name="sanako_binah_good_work" />
+        <marker scope="Public" name="sanako_binah_pathetic" />
+        <marker scope="Public" name="sanako_birthday_game_start" />
+        <marker scope="Public" name="sanako_birthday_human_victory" />
+        <marker scope="Public" name="sanako_birthday_opponent_selected" />
+        <marker scope="Public" name="sanako_birthday_selected" />
+        <marker scope="Public" name="sanako_birthday_self_victory" />
         <marker scope="Public" name="sanako_bootstraps">Sanako's plan involves bootstraps. But only once because it's very annoying if she says it more than once.</marker>
-        <marker scope="Private" name="sanako_drama_club_costumes">Sanako thinks a princess is just in costume.</marker>
-        <marker scope="Private" name="sanako_explains_pairs">Sanako explains basic pairs gameplay.</marker>
-        <marker scope="Private" name="sanako_hot">Sanako blames the heat for her skirt removal.</marker>
+        <marker scope="Public" name="sanako_card_peek" />
+        <marker scope="Public" name="sanako_caulifla_c5" />
+        <marker scope="Public" name="sanako_caulifla_mast_finished" />
+        <marker scope="Public" name="sanako_chihiro_acceptance" />
+        <marker scope="Public" name="sanako_chihiro_cs_c13" />
+        <marker scope="Public" name="sanako_chihiro_cs_c14" />
+        <marker scope="Public" name="sanako_chihiro_cs_c15" />
+        <marker scope="Public" name="sanako_chihiro_cs_c16" />
+        <marker scope="Public" name="sanako_chihiro_cs_c17" />
+        <marker scope="Public" name="sanako_chihiro_cs_c18" />
+        <marker scope="Public" name="sanako_chihiro_sc_c13" />
+        <marker scope="Public" name="sanako_chihiro_sc_c14" />
+        <marker scope="Public" name="sanako_chihiro_sc_c15" />
+        <marker scope="Public" name="sanako_chihiro_sc_c16" />
+        <marker scope="Public" name="sanako_chihiro_sc_c17" />
+        <marker scope="Public" name="sanako_chihiro_sc_c18" />
+        <marker scope="Public" name="sanako_classroom_selected" />
+        <marker scope="Public" name="sanako_club_selected" />
+        <marker scope="Public" name="sanako_compliments" />
+        <marker scope="Public" name="sanako_corrin_boys_name" />
+        <marker scope="Public" name="sanako_dash_finished" />
+        <marker scope="Public" name="sanako_dash_sports_question" />
+        <marker scope="Public" name="sanako_drama_club_costumes">Sanako thinks a princess is just in costume.</marker>
+        <marker scope="Public" name="sanako_dva_bodysuit" />
+        <marker scope="Public" name="sanako_elaine_dress_as_a_pirate" />
+        <marker scope="Public" name="sanako_elizabeth_nagisa_sisters" />
+        <marker scope="Public" name="sanako_everyone_is_so_cute" />
+        <marker scope="Public" name="sanako_experimentation_s7" />
+        <marker scope="Public" name="sanako_experimentation_s8" />
+        <marker scope="Public" name="sanako_experimentation_s9" />
+        <marker scope="Public" name="sanako_explains_pairs">Sanako explains basic pairs gameplay.</marker>
+        <marker scope="Public" name="sanako_feminine_bedroom_curtains" />
+        <marker scope="Public" name="sanako_feminine_bedroom_selected" />
+        <marker scope="Public" name="sanako_galatea_critics" />
+        <marker scope="Public" name="sanako_galatea_turn" />
+        <marker scope="Public" name="sanako_game_start_master" />
+        <marker scope="Public" name="sanako_grass_ticklish" />
+        <marker scope="Public" name="sanako_haunted_forest_ghostly_chill" />
+        <marker scope="Public" name="sanako_holiday_lodge_defeat" />
+        <marker scope="Public" name="sanako_hot">Sanako blames the heat for her skirt removal.</marker>
+        <marker scope="Public" name="sanako_hot_fanning" />
+        <marker scope="Public" name="sanako_hot_spring_mixed_bathing" />
+        <marker scope="Public" name="sanako_hot_spring_selected" />
+        <marker scope="Public" name="sanako_how_you_spend_your_time" />
+        <marker scope="Public" name="sanako_hsw_join_in_water" />
+        <marker scope="Public" name="sanako_hsw_join_in_water_2" />
+        <marker scope="Public" name="sanako_hsw_no_hot_springs" />
+        <marker scope="Public" name="sanako_hsw_selected_no_hot_spring" />
         <marker scope="Public" name="sanako_human_male_taking_the_lead">Sanako is happy to let the human male player "take the lead".</marker>
+        <marker scope="Public" name="sanako_incognito_s1" />
+        <marker scope="Public" name="sanako_incognito_s2" />
+        <marker scope="Public" name="sanako_incognito_s3" />
+        <marker scope="Public" name="sanako_ini_i11" />
+        <marker scope="Public" name="sanako_ini_i14" />
+        <marker scope="Public" name="sanako_ini_i15" />
         <marker scope="Public" name="sanako_introductions">Sanako invites everybody to introduce themselves.</marker>
+        <marker scope="Public" name="sanako_introductions_s1" />
+        <marker scope="Public" name="sanako_introductions_s2" />
+        <marker scope="Public" name="sanako_introductions_s3" />
+        <marker scope="Public" name="sanako_jessie_forfeit_feedback" />
+        <marker scope="Public" name="sanako_jessie_good_mommy" />
+        <marker scope="Public" name="sanako_jessie_milf_award" />
+        <marker scope="Public" name="sanako_jessie_premium_invite" />
+        <marker scope="Public" name="sanako_jessie_qa_backdoor" />
+        <marker scope="Public" name="sanako_jessie_qa_darksecrets" />
+        <marker scope="Public" name="sanako_jessie_qa_family" />
+        <marker scope="Public" name="sanako_jessie_qa_lights" />
+        <marker scope="Public" name="sanako_jessie_qa_littlelies" />
+        <marker scope="Public" name="sanako_jessie_qa_masturbate" />
+        <marker scope="Public" name="sanako_jessie_qa_million" />
+        <marker scope="Public" name="sanako_jessie_qa_open" />
+        <marker scope="Public" name="sanako_jessie_qa_porn" />
+        <marker scope="Public" name="sanako_jessie_qa_sexnumber" />
+        <marker scope="Public" name="sanako_jessie_qa_sexposition" />
+        <marker scope="Public" name="sanako_jessie_qa_sleptaround" />
+        <marker scope="Public" name="sanako_jessie_qa_smokers" />
+        <marker scope="Public" name="sanako_jessie_qa_stupidmistakes" />
         <marker scope="Public" name="sanako_joey_nice_to_meet_you">Nice to meet you, Joetta.</marker>
+        <marker scope="Public" name="sanako_joey_question_1" />
+        <marker scope="Public" name="sanako_joey_question_5" />
+        <marker scope="Public" name="sanako_joey_question_6" />
         <marker scope="Public" name="sanako_joey_shirt_removal" />
+        <marker scope="Public" name="sanako_jolyne_js_s1" />
+        <marker scope="Public" name="sanako_jura_js_j1" />
+        <marker scope="Public" name="sanako_jura_js_j10" />
+        <marker scope="Public" name="sanako_jura_js_j11" />
+        <marker scope="Public" name="sanako_jura_js_j12" />
+        <marker scope="Public" name="sanako_jura_js_j13" />
+        <marker scope="Public" name="sanako_jura_js_j14" />
+        <marker scope="Public" name="sanako_jura_js_j15" />
+        <marker scope="Public" name="sanako_jura_js_j16" />
+        <marker scope="Public" name="sanako_jura_js_j17" />
+        <marker scope="Public" name="sanako_jura_js_j18" />
+        <marker scope="Public" name="sanako_jura_js_j2" />
+        <marker scope="Public" name="sanako_jura_js_j3" />
+        <marker scope="Public" name="sanako_jura_js_j3_hand" />
+        <marker scope="Public" name="sanako_jura_js_j4" />
+        <marker scope="Public" name="sanako_jura_js_j5" />
+        <marker scope="Public" name="sanako_jura_js_j6" />
+        <marker scope="Public" name="sanako_jura_js_j7" />
+        <marker scope="Public" name="sanako_jura_js_j8" />
+        <marker scope="Public" name="sanako_jura_js_j9" />
+        <marker scope="Public" name="sanako_jura_js_s1" />
+        <marker scope="Public" name="sanako_jura_js_s10" />
+        <marker scope="Public" name="sanako_jura_js_s11" />
+        <marker scope="Public" name="sanako_jura_js_s12" />
+        <marker scope="Public" name="sanako_jura_js_s13" />
+        <marker scope="Public" name="sanako_jura_js_s14" />
+        <marker scope="Public" name="sanako_jura_js_s15" />
+        <marker scope="Public" name="sanako_jura_js_s2" />
+        <marker scope="Public" name="sanako_jura_js_s3" />
+        <marker scope="Public" name="sanako_jura_js_s4" />
+        <marker scope="Public" name="sanako_jura_js_s5" />
+        <marker scope="Public" name="sanako_jura_js_s6" />
+        <marker scope="Public" name="sanako_jura_js_s7" />
+        <marker scope="Public" name="sanako_jura_js_s8" />
+        <marker scope="Public" name="sanako_jura_js_s9" />
+        <marker scope="Public" name="sanako_jura_nagisa_js_j16" />
+        <marker scope="Public" name="sanako_jura_nagisa_js_j17" />
+        <marker scope="Public" name="sanako_jura_nagisa_js_j18" />
+        <marker scope="Public" name="sanako_jura_s1" />
+        <marker scope="Public" name="sanako_jura_s2" />
+        <marker scope="Public" name="sanako_jura_s3" />
+        <marker scope="Public" name="sanako_jura_s4" />
+        <marker scope="Public" name="sanako_jura_s7" />
+        <marker scope="Public" name="sanako_jura_s8" />
+        <marker scope="Public" name="sanako_jura_sj_j1" />
+        <marker scope="Public" name="sanako_jura_sj_j1_santa" />
+        <marker scope="Public" name="sanako_jura_sj_j1_swimsuit" />
+        <marker scope="Public" name="sanako_jura_sj_j2" />
+        <marker scope="Public" name="sanako_jura_sj_j2_santa" />
+        <marker scope="Public" name="sanako_jura_sj_j2_swimsuit" />
+        <marker scope="Public" name="sanako_jura_sj_j3" />
+        <marker scope="Public" name="sanako_jura_sj_j3_santa" />
+        <marker scope="Public" name="sanako_jura_sj_j4" />
+        <marker scope="Public" name="sanako_jura_sj_j5" />
+        <marker scope="Public" name="sanako_kali_daughter_1" />
+        <marker scope="Public" name="sanako_kali_daughter_2" />
+        <marker scope="Public" name="sanako_kali_daughter_3" />
+        <marker scope="Public" name="sanako_kali_daughter_a" />
+        <marker scope="Public" name="sanako_kali_daughter_b" />
+        <marker scope="Public" name="sanako_kali_daughter_c" />
+        <marker scope="Public" name="sanako_kali_husband_1" />
+        <marker scope="Public" name="sanako_kali_husband_2" />
+        <marker scope="Public" name="sanako_keep_my_secret" />
         <marker scope="Public" name="sanako_keeping_glasses">Sanako isn't taking off her glasses because it would break her disguise. But you can take off yours.</marker>
+        <marker scope="Public" name="sanako_kizuna_cute_bra" />
         <marker scope="Public" name="sanako_kumatora_eternal" />
         <marker scope="Public" name="sanako_kumatora_husband" />
+        <marker scope="Public" name="sanako_kyoko_december_work" />
+        <marker scope="Public" name="sanako_kyoko_haunted_voyeurs" />
+        <marker scope="Public" name="sanako_kyoko_ks_k1" />
+        <marker scope="Public" name="sanako_kyoko_ks_s1" />
+        <marker scope="Public" name="sanako_kyoko_large_breast_prompt" />
+        <marker scope="Public" name="sanako_kyoko_selected_scantily" />
+        <marker scope="Public" name="sanako_kyoko_sk_k1" />
+        <marker scope="Public" name="sanako_kyoko_sk_k2" />
+        <marker scope="Public" name="sanako_kyoko_sk_s1" />
+        <marker scope="Public" name="sanako_kyoko_sk_s2" />
+        <marker scope="Public" name="sanako_kyou_bike" />
+        <marker scope="Public" name="sanako_kyou_botan" />
+        <marker scope="Public" name="sanako_kyou_dealer_violence" />
+        <marker scope="Public" name="sanako_kyou_ks_s1" />
+        <marker scope="Public" name="sanako_kyou_nagisa_awkward" />
+        <marker scope="Public" name="sanako_kyou_nagisa_flustered" />
+        <marker scope="Public" name="sanako_kyou_nagisa_girl_over_there_1" />
+        <marker scope="Public" name="sanako_kyou_nagisa_girl_over_there_2" />
+        <marker scope="Public" name="sanako_kyou_nagisa_parents" />
+        <marker scope="Public" name="sanako_kyou_sister" />
+        <marker scope="Public" name="sanako_kyou_start" />
+        <marker scope="Public" name="sanako_kyouko_D_SexyPose" />
+        <marker scope="Public" name="sanako_kyouko_school_olduniform" />
+        <marker scope="Public" name="sanako_kyouko_sk_k1" />
+        <marker scope="Public" name="sanako_kyouko_sk_k2" />
+        <marker scope="Public" name="sanako_kyouko_sk_s1" />
+        <marker scope="Public" name="sanako_kyouko_sk_s2" />
         <marker scope="Public" name="sanako_kyu_drama_club">Sanako asks if Kyu is from the drama club.</marker>
-        <marker scope="Private" name="sanako_name_request">Sanako asks permission to refer to an opponent by her name.</marker>
+        <marker scope="Public" name="sanako_kyu_fairy_wings" />
+        <marker scope="Public" name="sanako_lake_selected" />
+        <marker scope="Public" name="sanako_losing_streak_s1" />
+        <marker scope="Public" name="sanako_losing_streak_s10" />
+        <marker scope="Public" name="sanako_losing_streak_s11" />
+        <marker scope="Public" name="sanako_losing_streak_s12" />
+        <marker scope="Public" name="sanako_losing_streak_s13" />
+        <marker scope="Public" name="sanako_losing_streak_s14" />
+        <marker scope="Public" name="sanako_losing_streak_s15" />
+        <marker scope="Public" name="sanako_losing_streak_s16" />
+        <marker scope="Public" name="sanako_losing_streak_s17" />
+        <marker scope="Public" name="sanako_losing_streak_s2" />
+        <marker scope="Public" name="sanako_losing_streak_s3" />
+        <marker scope="Public" name="sanako_losing_streak_s4" />
+        <marker scope="Public" name="sanako_losing_streak_s5" />
+        <marker scope="Public" name="sanako_losing_streak_s6" />
+        <marker scope="Public" name="sanako_losing_streak_s7" />
+        <marker scope="Public" name="sanako_losing_streak_s8" />
+        <marker scope="Public" name="sanako_losing_streak_s9" />
+        <marker scope="Public" name="sanako_male_selected_battle_of_sexes" />
+        <marker scope="Public" name="sanako_male_selected_full_table" />
+        <marker scope="Public" name="sanako_male_selected_popular_with_boys" />
+        <marker scope="Public" name="sanako_marceline_ask_explore" />
+        <marker scope="Public" name="sanako_marceline_ask_music" />
+        <marker scope="Public" name="sanako_marceline_ask_pets" />
+        <marker scope="Public" name="sanako_marceline_ask_sports" />
+        <marker scope="Public" name="sanako_mari_exposition_herointro" />
+        <marker scope="Public" name="sanako_mari_exposition_relationshipintro" />
+        <marker scope="Public" name="sanako_maria_maneating1" />
+        <marker scope="Public" name="sanako_maria_maneating2" />
+        <marker scope="Public" name="sanako_maria_maneating3" />
+        <marker scope="Public" name="sanako_maria_maneating4" />
+        <marker scope="Public" name="sanako_maria_maneating5" />
+        <marker scope="Public" name="sanako_maria_maneating6" />
+        <marker scope="Public" name="sanako_marinette_adrien_dual" />
+        <marker scope="Public" name="sanako_marinette_adrien_dualforfeit" />
+        <marker scope="Public" name="sanako_marinette_adrien_dualforfeitclose" />
+        <marker scope="Public" name="sanako_marinette_adrien_nagisa_dual" />
+        <marker scope="Public" name="sanako_marinette_adrien_nagisa_dualforfeit" />
+        <marker scope="Public" name="sanako_marinette_adrien_nagisa_dualforfeitclose" />
+        <marker scope="Public" name="sanako_marinette_change_spots" />
+        <marker scope="Public" name="sanako_marinette_ladybird_girl" />
+        <marker scope="Public" name="sanako_marinette_lucky_charms" />
+        <marker scope="Public" name="sanako_master_s1" />
+        <marker scope="Public" name="sanako_master_s10" />
+        <marker scope="Public" name="sanako_master_s11" />
+        <marker scope="Public" name="sanako_master_s12" />
+        <marker scope="Public" name="sanako_master_s13" />
+        <marker scope="Public" name="sanako_master_s14" />
+        <marker scope="Public" name="sanako_master_s15" />
+        <marker scope="Public" name="sanako_master_s16" />
+        <marker scope="Public" name="sanako_master_s16_first" />
+        <marker scope="Public" name="sanako_master_s17" />
+        <marker scope="Public" name="sanako_master_s18" />
+        <marker scope="Public" name="sanako_master_s19" />
+        <marker scope="Public" name="sanako_master_s2" />
+        <marker scope="Public" name="sanako_master_s3" />
+        <marker scope="Public" name="sanako_master_s4" />
+        <marker scope="Public" name="sanako_master_s5" />
+        <marker scope="Public" name="sanako_master_s6" />
+        <marker scope="Public" name="sanako_master_s7" />
+        <marker scope="Public" name="sanako_master_s8" />
+        <marker scope="Public" name="sanako_master_s9" />
+        <marker scope="Public" name="sanako_may_livearoundhere" />
+        <marker scope="Public" name="sanako_may_livearoundhere_classroom" />
+        <marker scope="Public" name="sanako_may_livearoundhere_haunted_forest" />
+        <marker scope="Public" name="sanako_may_livearoundhere_holiday_lodge" />
+        <marker scope="Public" name="sanako_may_livearoundhere_paris_rooftop" />
+        <marker scope="Public" name="sanako_may_livearoundhere_street" />
+        <marker scope="Public" name="sanako_mei_glasses" />
+        <marker scope="Public" name="sanako_mei_polite" />
+        <marker scope="Public" name="sanako_meia_ms_m1" />
+        <marker scope="Public" name="sanako_meia_ms_m1_cupid" />
+        <marker scope="Public" name="sanako_meia_ms_m10" />
+        <marker scope="Public" name="sanako_meia_ms_m11" />
+        <marker scope="Public" name="sanako_meia_ms_m12" />
+        <marker scope="Public" name="sanako_meia_ms_m13" />
+        <marker scope="Public" name="sanako_meia_ms_m14" />
+        <marker scope="Public" name="sanako_meia_ms_m15" />
+        <marker scope="Public" name="sanako_meia_ms_m15_hand" />
+        <marker scope="Public" name="sanako_meia_ms_m2" />
+        <marker scope="Public" name="sanako_meia_ms_m2_cupid" />
+        <marker scope="Public" name="sanako_meia_ms_m3" />
+        <marker scope="Public" name="sanako_meia_ms_m3_cupid" />
+        <marker scope="Public" name="sanako_meia_ms_m4" />
+        <marker scope="Public" name="sanako_meia_ms_m5" />
+        <marker scope="Public" name="sanako_meia_ms_m6" />
+        <marker scope="Public" name="sanako_meia_ms_m7" />
+        <marker scope="Public" name="sanako_meia_ms_m8" />
+        <marker scope="Public" name="sanako_meia_ms_m9a" />
+        <marker scope="Public" name="sanako_meia_ms_m9b" />
+        <marker scope="Public" name="sanako_meia_ms_s1" />
+        <marker scope="Public" name="sanako_meia_ms_s10" />
+        <marker scope="Public" name="sanako_meia_ms_s11" />
+        <marker scope="Public" name="sanako_meia_ms_s12" />
+        <marker scope="Public" name="sanako_meia_ms_s13" />
+        <marker scope="Public" name="sanako_meia_ms_s14" />
+        <marker scope="Public" name="sanako_meia_ms_s15" />
+        <marker scope="Public" name="sanako_meia_ms_s2" />
+        <marker scope="Public" name="sanako_meia_ms_s3" />
+        <marker scope="Public" name="sanako_meia_ms_s4" />
+        <marker scope="Public" name="sanako_meia_ms_s5" />
+        <marker scope="Public" name="sanako_meia_ms_s6" />
+        <marker scope="Public" name="sanako_meia_ms_s7" />
+        <marker scope="Public" name="sanako_meia_ms_s8" />
+        <marker scope="Public" name="sanako_meia_ms_s9" />
+        <marker scope="Public" name="sanako_meia_sm_m1" />
+        <marker scope="Public" name="sanako_meia_sm_m10" />
+        <marker scope="Public" name="sanako_meia_sm_m11" />
+        <marker scope="Public" name="sanako_meia_sm_m12" />
+        <marker scope="Public" name="sanako_meia_sm_m13" />
+        <marker scope="Public" name="sanako_meia_sm_m14" />
+        <marker scope="Public" name="sanako_meia_sm_m2" />
+        <marker scope="Public" name="sanako_meia_sm_m3" />
+        <marker scope="Public" name="sanako_meia_sm_m4" />
+        <marker scope="Public" name="sanako_meia_sm_m5" />
+        <marker scope="Public" name="sanako_meia_sm_m6" />
+        <marker scope="Public" name="sanako_meia_sm_m7" />
+        <marker scope="Public" name="sanako_meia_sm_m8" />
+        <marker scope="Public" name="sanako_meia_sm_m9" />
+        <marker scope="Public" name="sanako_meia_sm_s1" />
+        <marker scope="Public" name="sanako_meia_sm_s10" />
+        <marker scope="Public" name="sanako_meia_sm_s11" />
+        <marker scope="Public" name="sanako_meia_sm_s12" />
+        <marker scope="Public" name="sanako_meia_sm_s13" />
+        <marker scope="Public" name="sanako_meia_sm_s13_with_shaved" />
+        <marker scope="Public" name="sanako_meia_sm_s2" />
+        <marker scope="Public" name="sanako_meia_sm_s3" />
+        <marker scope="Public" name="sanako_meia_sm_s4" />
+        <marker scope="Public" name="sanako_meia_sm_s5" />
+        <marker scope="Public" name="sanako_meia_sm_s6" />
+        <marker scope="Public" name="sanako_meia_sm_s7" />
+        <marker scope="Public" name="sanako_meia_sm_s8" />
+        <marker scope="Public" name="sanako_meia_sm_s9" />
+        <marker scope="Public" name="sanako_mia_spirit_of_things" />
+        <marker scope="Public" name="sanako_mia_stern_office_ladies" />
+        <marker scope="Public" name="sanako_miko_prince" />
+        <marker scope="Public" name="sanako_mom_brunch" />
+        <marker scope="Public" name="sanako_mom_game_start" />
+        <marker scope="Public" name="sanako_mom_milkshake_boys_yard" />
+        <marker scope="Public" name="sanako_mom_moon_FirstRound_heart" />
+        <marker scope="Public" name="sanako_mom_ms_m11" />
+        <marker scope="Public" name="sanako_mom_ms_m14" />
+        <marker scope="Public" name="sanako_mom_ms_m15" />
+        <marker scope="Public" name="sanako_mom_ms_m7" />
+        <marker scope="Public" name="sanako_mom_parent_dadbod" />
+        <marker scope="Public" name="sanako_mom_question_spirit_pokemon" />
+        <marker scope="Public" name="sanako_mom_question_vacation_location" />
+        <marker scope="Public" name="sanako_monika_fix_game" />
+        <marker scope="Public" name="sanako_monika_ms_s1" />
+        <marker scope="Public" name="sanako_monika_save_game" />
+        <marker scope="Public" name="sanako_moon_mom_GameOver_heart" />
+        <marker scope="Public" name="sanako_moon_ms_m4" />
+        <marker scope="Public" name="sanako_moon_ms_m5" />
+        <marker scope="Public" name="sanako_moon_ms_m6" />
+        <marker scope="Public" name="sanako_moon_prompt_age" />
+        <marker scope="Public" name="sanako_moskii_bloodtype" />
+        <marker scope="Public" name="sanako_moskii_card_values" />
+        <marker scope="Public" name="sanako_moskii_selected" />
+        <marker scope="Public" name="sanako_moskii_sm_m1" />
+        <marker scope="Public" name="sanako_moskii_sm_m2" />
+        <marker scope="Public" name="sanako_moskii_sm_s1" />
+        <marker scope="Public" name="sanako_moskii_victory" />
+        <marker scope="Public" name="sanako_most_experience" />
+        <marker scope="Public" name="sanako_muffins_bra_fall_2" />
+        <marker scope="Public" name="sanako_muffins_m2" />
+        <marker scope="Public" name="sanako_muffins_m3" />
+        <marker scope="Public" name="sanako_muffins_m3a" />
+        <marker scope="Public" name="sanako_muffins_m3b" />
+        <marker scope="Public" name="sanako_nadeshiko_bad_joke" />
+        <marker scope="Public" name="sanako_nadeshiko_checking_in" />
+        <marker scope="Public" name="sanako_nadeshiko_city" />
+        <marker scope="Public" name="sanako_nadeshiko_cook" />
+        <marker scope="Public" name="sanako_nadeshiko_friends" />
+        <marker scope="Public" name="sanako_nadeshiko_lonely" />
+        <marker scope="Public" name="sanako_nadeshiko_partner_preference" />
+        <marker scope="Public" name="sanako_nadeshiko_sn_n1" />
+        <marker scope="Public" name="sanako_nadeshiko_sn_n16" />
+        <marker scope="Public" name="sanako_nadeshiko_sn_n2" />
+        <marker scope="Public" name="sanako_nadeshiko_sn_n4" />
+        <marker scope="Public" name="sanako_nadeshiko_sn_s1" />
+        <marker scope="Public" name="sanako_nadeshiko_story_prompt" />
+        <marker scope="Public" name="sanako_nadeshiko_world" />
+        <marker scope="Public" name="sanako_nagatoro_butt2" />
+        <marker scope="Public" name="sanako_nagatoro_classroom_rp" />
+        <marker scope="Public" name="sanako_nagatoro_epilogue_ref" />
+        <marker scope="Public" name="sanako_nagatoro_extra_last" />
+        <marker scope="Public" name="sanako_nagatoro_extra_last2" />
+        <marker scope="Public" name="sanako_nagatoro_hint" />
+        <marker scope="Public" name="sanako_nagatoro_intro" />
+        <marker scope="Public" name="sanako_nagatoro_shut_up" />
+        <marker scope="Public" name="sanako_nagatoro_small_penis" />
+        <marker scope="Public" name="sanako_nagatoro_sn_n1" />
+        <marker scope="Public" name="sanako_nagatoro_sn_s1" />
+        <marker scope="Public" name="sanako_nagisa_already_here" />
+        <marker scope="Public" name="sanako_nagisa_beach_hiding_place" />
+        <marker scope="Public" name="sanako_nagisa_bedroom_sleepover" />
+        <marker scope="Public" name="sanako_nagisa_christmas_date" />
+        <marker scope="Public" name="sanako_nagisa_classroom_hers" />
+        <marker scope="Public" name="sanako_nagisa_deslected" />
+        <marker scope="Public" name="sanako_nagisa_deslected_2" />
+        <marker scope="Public" name="sanako_nagisa_deslected_3" />
+        <marker scope="Public" name="sanako_nagisa_estelle_ne_n1" />
+        <marker scope="Public" name="sanako_nagisa_estelle_reply_1" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nfs_n5" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nsf_n5" />
+        <marker scope="Public" name="sanako_nagisa_good_husband" />
+        <marker scope="Public" name="sanako_nagisa_inventory_customers" />
+        <marker scope="Public" name="sanako_nagisa_jim_age_here" />
+        <marker scope="Public" name="sanako_nagisa_jim_agefamiliarity" />
+        <marker scope="Public" name="sanako_nagisa_jura_babies" />
+        <marker scope="Public" name="sanako_nagisa_jura_jn_j5" />
+        <marker scope="Public" name="sanako_nagisa_jura_jn_n18" />
+        <marker scope="Public" name="sanako_nagisa_jura_nj_j16" />
+        <marker scope="Public" name="sanako_nagisa_jura_nj_j8" />
+        <marker scope="Public" name="sanako_nagisa_jura_nj_j9" />
+        <marker scope="Public" name="sanako_nagisa_jura_nj_j9_right" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nks_n7" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nks_n8" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nks_n9" />
+        <marker scope="Public" name="sanako_nagisa_kyou_not_family_fun" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nsk_n7" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nsk_n8" />
+        <marker scope="Public" name="sanako_nagisa_kyou_nsk_n9" />
+        <marker scope="Public" name="sanako_nagisa_kyou_parents_playing" />
+        <marker scope="Public" name="sanako_nagisa_kyou_snk_n8" />
+        <marker scope="Public" name="sanako_nagisa_kyou_snk_n9" />
+        <marker scope="Public" name="sanako_nagisa_kyou_teased" />
+        <marker scope="Public" name="sanako_nagisa_losing_streak" />
+        <marker scope="Public" name="sanako_nagisa_meia_nms_n3" />
+        <marker scope="Public" name="sanako_nagisa_meia_telling_tomoya" />
+        <marker scope="Public" name="sanako_nagisa_miko_mns_n4" />
+        <marker scope="Public" name="sanako_nagisa_miko_mns_n5" />
+        <marker scope="Public" name="sanako_nagisa_miko_mns_n6" />
+        <marker scope="Public" name="sanako_nagisa_miko_msn_n5" />
+        <marker scope="Public" name="sanako_nagisa_miko_msn_n6" />
+        <marker scope="Public" name="sanako_nagisa_miko_smn_n5" />
+        <marker scope="Public" name="sanako_nagisa_miko_smn_n6" />
+        <marker scope="Public" name="sanako_nagisa_mysterious_scar" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gst_g7" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gst_g8" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gst_g9" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gst_g9_hand" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gts_g7" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gts_g8" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gts_g9" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_gts_g9_hand" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_sgt_g7" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_sgt_g8" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_sgt_g9" />
+        <marker scope="Public" name="sanako_nagisa_natsuki_sgt_g9_hand" />
+        <marker scope="Public" name="sanako_nagisa_ns_n1" />
+        <marker scope="Public" name="sanako_nagisa_ns_n10" />
+        <marker scope="Public" name="sanako_nagisa_ns_n11" />
+        <marker scope="Public" name="sanako_nagisa_ns_n12" />
+        <marker scope="Public" name="sanako_nagisa_ns_n13" />
+        <marker scope="Public" name="sanako_nagisa_ns_n14" />
+        <marker scope="Public" name="sanako_nagisa_ns_n15" />
+        <marker scope="Public" name="sanako_nagisa_ns_n16" />
+        <marker scope="Public" name="sanako_nagisa_ns_n17" />
+        <marker scope="Public" name="sanako_nagisa_ns_n18" />
+        <marker scope="Public" name="sanako_nagisa_ns_n19" />
+        <marker scope="Public" name="sanako_nagisa_ns_n2" />
+        <marker scope="Public" name="sanako_nagisa_ns_n20" />
+        <marker scope="Public" name="sanako_nagisa_ns_n21" />
+        <marker scope="Public" name="sanako_nagisa_ns_n22" />
+        <marker scope="Public" name="sanako_nagisa_ns_n23" />
+        <marker scope="Public" name="sanako_nagisa_ns_n3" />
+        <marker scope="Public" name="sanako_nagisa_ns_n4" />
+        <marker scope="Public" name="sanako_nagisa_ns_n5" />
+        <marker scope="Public" name="sanako_nagisa_ns_n6" />
+        <marker scope="Public" name="sanako_nagisa_ns_n7" />
+        <marker scope="Public" name="sanako_nagisa_ns_n8" />
+        <marker scope="Public" name="sanako_nagisa_ns_n9" />
+        <marker scope="Public" name="sanako_nagisa_ns_n9_doubletake" />
+        <marker scope="Public" name="sanako_nagisa_ns_s1" />
+        <marker scope="Public" name="sanako_nagisa_ns_s10" />
+        <marker scope="Public" name="sanako_nagisa_ns_s11" />
+        <marker scope="Public" name="sanako_nagisa_ns_s12" />
+        <marker scope="Public" name="sanako_nagisa_ns_s13" />
+        <marker scope="Public" name="sanako_nagisa_ns_s14" />
+        <marker scope="Public" name="sanako_nagisa_ns_s15" />
+        <marker scope="Public" name="sanako_nagisa_ns_s16" />
+        <marker scope="Public" name="sanako_nagisa_ns_s17" />
+        <marker scope="Public" name="sanako_nagisa_ns_s2" />
+        <marker scope="Public" name="sanako_nagisa_ns_s3" />
+        <marker scope="Public" name="sanako_nagisa_ns_s4" />
+        <marker scope="Public" name="sanako_nagisa_ns_s5" />
+        <marker scope="Public" name="sanako_nagisa_ns_s6" />
+        <marker scope="Public" name="sanako_nagisa_ns_s7" />
+        <marker scope="Public" name="sanako_nagisa_ns_s8" />
+        <marker scope="Public" name="sanako_nagisa_ns_s9" />
+        <marker scope="Public" name="sanako_nagisa_petra_pn_n1" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rn_n12" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rn_r8" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rns_n4" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rns_n5" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rns_n6" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rsn_n4" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rsn_n5" />
+        <marker scope="Public" name="sanako_nagisa_reimu_rsn_n6" />
+        <marker scope="Public" name="sanako_nagisa_reimu_srn_n5" />
+        <marker scope="Public" name="sanako_nagisa_reimu_srn_n6" />
+        <marker scope="Public" name="sanako_nagisa_selected" />
+        <marker scope="Public" name="sanako_nagisa_sn_n1" />
+        <marker scope="Public" name="sanako_nagisa_sn_n10" />
+        <marker scope="Public" name="sanako_nagisa_sn_n11" />
+        <marker scope="Public" name="sanako_nagisa_sn_n12" />
+        <marker scope="Public" name="sanako_nagisa_sn_n13" />
+        <marker scope="Public" name="sanako_nagisa_sn_n14" />
+        <marker scope="Public" name="sanako_nagisa_sn_n15" />
+        <marker scope="Public" name="sanako_nagisa_sn_n16" />
+        <marker scope="Public" name="sanako_nagisa_sn_n17" />
+        <marker scope="Public" name="sanako_nagisa_sn_n18" />
+        <marker scope="Public" name="sanako_nagisa_sn_n19" />
+        <marker scope="Public" name="sanako_nagisa_sn_n2" />
+        <marker scope="Public" name="sanako_nagisa_sn_n20" />
+        <marker scope="Public" name="sanako_nagisa_sn_n21" />
+        <marker scope="Public" name="sanako_nagisa_sn_n22" />
+        <marker scope="Public" name="sanako_nagisa_sn_n23" />
+        <marker scope="Public" name="sanako_nagisa_sn_n3" />
+        <marker scope="Public" name="sanako_nagisa_sn_n4" />
+        <marker scope="Public" name="sanako_nagisa_sn_n5" />
+        <marker scope="Public" name="sanako_nagisa_sn_n6" />
+        <marker scope="Public" name="sanako_nagisa_sn_n7" />
+        <marker scope="Public" name="sanako_nagisa_sn_n8" />
+        <marker scope="Public" name="sanako_nagisa_sn_n9" />
+        <marker scope="Public" name="sanako_nagisa_sn_s1" />
+        <marker scope="Public" name="sanako_nagisa_sn_s10" />
+        <marker scope="Public" name="sanako_nagisa_sn_s11" />
+        <marker scope="Public" name="sanako_nagisa_sn_s12" />
+        <marker scope="Public" name="sanako_nagisa_sn_s13" />
+        <marker scope="Public" name="sanako_nagisa_sn_s14" />
+        <marker scope="Public" name="sanako_nagisa_sn_s15" />
+        <marker scope="Public" name="sanako_nagisa_sn_s16" />
+        <marker scope="Public" name="sanako_nagisa_sn_s17" />
+        <marker scope="Public" name="sanako_nagisa_sn_s2" />
+        <marker scope="Public" name="sanako_nagisa_sn_s3" />
+        <marker scope="Public" name="sanako_nagisa_sn_s4" />
+        <marker scope="Public" name="sanako_nagisa_sn_s5" />
+        <marker scope="Public" name="sanako_nagisa_sn_s6" />
+        <marker scope="Public" name="sanako_nagisa_sn_s7" />
+        <marker scope="Public" name="sanako_nagisa_sn_s8" />
+        <marker scope="Public" name="sanako_nagisa_sn_s9" />
+        <marker scope="Public" name="sanako_name_request">Sanako asks permission to refer to an opponent by her name.</marker>
         <marker scope="Public" name="sanako_natsuki_club">Sanako reacts to Natsuki claiming to be in the same club as the player.</marker>
+        <marker scope="Public" name="sanako_natsuki_nagisa_stg_t4" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_stg_t5" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_stg_t6" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tgs_t4" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tgs_t5" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tgs_t6" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tsg_t4" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tsg_t5" />
+        <marker scope="Public" name="sanako_natsuki_nagisa_tsg_t6" />
         <marker scope="Public" name="sanako_navi_orb_of_light">Sanako calls Navi an orb of light and suggests that she can grant wishes.</marker>
+        <marker scope="Public" name="sanako_nayru_ns_n6" />
+        <marker scope="Public" name="sanako_nayru_possessed" />
+        <marker scope="Public" name="sanako_nayru_possessed_2" />
+        <marker scope="Public" name="sanako_nayru_possessed_3" />
+        <marker scope="Public" name="sanako_nayru_possessed_4" />
         <marker scope="Public" name="sanako_nayru_so_graceful" />
-        <marker scope="Private" name="sanako_press_buttons">Sanako observes that we're pressing a sarcastic girl's buttons.</marker>
+        <marker scope="Public" name="sanako_neptune_shower_bath" />
+        <marker scope="Public" name="sanako_nikaidou_back_together" />
+        <marker scope="Public" name="sanako_nonon_lady_jakuzure" />
+        <marker scope="Public" name="sanako_nonon_ns_s1" />
+        <marker scope="Public" name="sanako_nonon_ns_s2" />
+        <marker scope="Public" name="sanako_nonon_ns_s3" />
+        <marker scope="Public" name="sanako_nonon_ns_s4" />
+        <marker scope="Public" name="sanako_nonon_ns_s5" />
+        <marker scope="Public" name="sanako_nonon_ns_s6" />
+        <marker scope="Public" name="sanako_nonon_ns_s7" />
+        <marker scope="Public" name="sanako_nonon_ns_s8" />
+        <marker scope="Public" name="sanako_nonon_postcum_reply" />
+        <marker scope="Public" name="sanako_nonon_sn_n1" />
+        <marker scope="Public" name="sanako_nonon_sn_n2" />
+        <marker scope="Public" name="sanako_nonon_sn_n3" />
+        <marker scope="Public" name="sanako_nonon_sn_n4" />
+        <marker scope="Public" name="sanako_nonon_sn_n5" />
+        <marker scope="Public" name="sanako_nonon_sn_n6" />
+        <marker scope="Public" name="sanako_nonon_sn_n7" />
+        <marker scope="Public" name="sanako_nonon_sn_s1" />
+        <marker scope="Public" name="sanako_ochako_call_me" />
+        <marker scope="Public" name="sanako_ochako_how_did_i_do" />
+        <marker scope="Public" name="sanako_offlimits_thoughts" />
+        <marker scope="Public" name="sanako_okino_os_o3" />
+        <marker scope="Public" name="sanako_only_woman_s1" />
+        <marker scope="Public" name="sanako_only_woman_s10" />
+        <marker scope="Public" name="sanako_only_woman_s11" />
+        <marker scope="Public" name="sanako_only_woman_s12" />
+        <marker scope="Public" name="sanako_only_woman_s13" />
+        <marker scope="Public" name="sanako_only_woman_s14" />
+        <marker scope="Public" name="sanako_only_woman_s15" />
+        <marker scope="Public" name="sanako_only_woman_s16" />
+        <marker scope="Public" name="sanako_only_woman_s16_first" />
+        <marker scope="Public" name="sanako_only_woman_s17" />
+        <marker scope="Public" name="sanako_only_woman_s18" />
+        <marker scope="Public" name="sanako_only_woman_s19" />
+        <marker scope="Public" name="sanako_only_woman_s2" />
+        <marker scope="Public" name="sanako_only_woman_s3" />
+        <marker scope="Public" name="sanako_only_woman_s4" />
+        <marker scope="Public" name="sanako_only_woman_s5" />
+        <marker scope="Public" name="sanako_only_woman_s6" />
+        <marker scope="Public" name="sanako_only_woman_s7" />
+        <marker scope="Public" name="sanako_only_woman_s8" />
+        <marker scope="Public" name="sanako_only_woman_s9" />
+        <marker scope="Public" name="sanako_outdoors_nudist" />
+        <marker scope="Public" name="sanako_palutena_goddess" />
+        <marker scope="Public" name="sanako_palutena_selected" />
+        <marker scope="Public" name="sanako_panty_sp_p1" />
+        <marker scope="Public" name="sanako_panty_sp_p2" />
+        <marker scope="Public" name="sanako_panty_sp_p3" />
+        <marker scope="Public" name="sanako_paris_rooftop_selected" />
+        <marker scope="Public" name="sanako_petra_nagisa_strip0a" />
+        <marker scope="Public" name="sanako_pinka_finished" />
+        <marker scope="Public" name="sanako_pinka_mast_1" />
+        <marker scope="Public" name="sanako_pinka_mast_2" />
+        <marker scope="Public" name="sanako_pinka_mast_3" />
+        <marker scope="Public" name="sanako_pinka_p11" />
+        <marker scope="Public" name="sanako_pinka_p12" />
+        <marker scope="Public" name="sanako_pinka_p13" />
+        <marker scope="Public" name="sanako_pinka_p14" />
+        <marker scope="Public" name="sanako_pinka_p15" />
+        <marker scope="Public" name="sanako_pinka_p16" />
+        <marker scope="Public" name="sanako_pinka_p17" />
+        <marker scope="Public" name="sanako_pinka_p18" />
+        <marker scope="Public" name="sanako_pinka_p19" />
+        <marker scope="Public" name="sanako_pinka_p20" />
+        <marker scope="Public" name="sanako_pinka_start" />
+        <marker scope="Public" name="sanako_polly_fades_in" />
+        <marker scope="Public" name="sanako_polly_fades_out" />
+        <marker scope="Public" name="sanako_press_buttons">Sanako observes that we're pressing a sarcastic girl's buttons.</marker>
+        <marker scope="Public" name="sanako_rarity_outfit_1" />
+        <marker scope="Public" name="sanako_rarity_outfit_2" />
+        <marker scope="Public" name="sanako_rarity_outfit_3" />
+        <marker scope="Public" name="sanako_raven_r12" />
+        <marker scope="Public" name="sanako_raven_r15" />
+        <marker scope="Public" name="sanako_relationship_s10" />
+        <marker scope="Public" name="sanako_relationship_s11" />
+        <marker scope="Public" name="sanako_relationship_s12" />
+        <marker scope="Public" name="sanako_remilia_r17" />
+        <marker scope="Public" name="sanako_remilia_tstopmeido" />
+        <marker scope="Public" name="sanako_remilia_tstopmeido2" />
         <marker scope="Public" name="sanako_remilia_wings">Sanako mistakes Remilia's wings as being part of a costume.</marker>
+        <marker scope="Public" name="sanako_revy_meia_fight" />
+        <marker scope="Public" name="sanako_revy_meia_fight_2" />
+        <marker scope="Public" name="sanako_ribbon_girl_noodles" />
+        <marker scope="Public" name="sanako_rose_butt" />
+        <marker scope="Public" name="sanako_rose_flashing_1" />
+        <marker scope="Public" name="sanako_rose_flashing_2" />
+        <marker scope="Public" name="sanako_rose_long_nails" />
+        <marker scope="Public" name="sanako_rose_show_anima" />
+        <marker scope="Public" name="sanako_rouge_club_invitation" />
+        <marker scope="Public" name="sanako_rouge_favorite_jewel" />
         <marker scope="Public" name="sanako_rouge_scope" />
+        <marker scope="Public" name="sanako_saki_fell_apart" />
+        <marker scope="Public" name="sanako_sakura_bra_escape" />
+        <marker scope="Public" name="sanako_sakura_headless" />
+        <marker scope="Public" name="sanako_sakura_headless_2" />
+        <marker scope="Public" name="sanako_sakura_headless_3" />
+        <marker scope="Public" name="sanako_sakura_reveal_1" />
+        <marker scope="Public" name="sanako_sakura_reveal_2" />
+        <marker scope="Public" name="sanako_sakura_reveal_3" />
+        <marker scope="Public" name="sanako_sanny_selected" />
+        <marker scope="Public" name="sanako_sayori_defeat_rainclouds" />
+        <marker scope="Public" name="sanako_sayori_sleeping_in" />
+        <marker scope="Public" name="sanako_selected_1_man" />
+        <marker scope="Public" name="sanako_selected_1_man_a" />
+        <marker scope="Public" name="sanako_selected_1_man_b" />
+        <marker scope="Public" name="sanako_selected_2-3_men" />
+        <marker scope="Public" name="sanako_selected_4_men" />
+        <marker scope="Public" name="sanako_selected_introductions" />
+        <marker scope="Public" name="sanako_selected_master" />
+        <marker scope="Public" name="sanako_sempai_falling_cards" />
+        <marker scope="Public" name="sanako_sempai_hat_fall" />
+        <marker scope="Public" name="sanako_senko_age" />
+        <marker scope="Public" name="sanako_senko_backgrond" />
+        <marker scope="Public" name="sanako_senko_modern_amenities" />
+        <marker scope="Public" name="sanako_senko_pamper" />
+        <marker scope="Public" name="sanako_senko_pampering" />
+        <marker scope="Public" name="sanako_senko_parent_1" />
+        <marker scope="Public" name="sanako_senko_parent_2" />
+        <marker scope="Public" name="sanako_senko_punishment" />
+        <marker scope="Public" name="sanako_senko_shrines" />
+        <marker scope="Public" name="sanako_setogaya_favorite_sex_position" />
+        <marker scope="Public" name="sanako_setogaya_favoritewaytohavesex" />
+        <marker scope="Public" name="sanako_setogaya_having_fun" />
+        <marker scope="Public" name="sanako_setogaya_odd_drinks" />
+        <marker scope="Public" name="sanako_setogaya_poker_face_silly_face" />
+        <marker scope="Public" name="sanako_setogaya_sm_m1" />
+        <marker scope="Public" name="sanako_setogaya_sm_m2" />
+        <marker scope="Public" name="sanako_setogaya_sm_m3" />
+        <marker scope="Public" name="sanako_setogaya_sm_m4" />
+        <marker scope="Public" name="sanako_setogaya_sm_m5" />
+        <marker scope="Public" name="sanako_setogaya_sm_s1" />
+        <marker scope="Public" name="sanako_setogaya_sm_s2" />
+        <marker scope="Public" name="sanako_setogaya_sm_s3" />
+        <marker scope="Public" name="sanako_setogaya_sm_s4" />
+        <marker scope="Public" name="sanako_setogaya_sm_s5" />
+        <marker scope="Public" name="sanako_setogaya_studies" />
+        <marker scope="Public" name="sanako_shamiko_leftovers_recipe" />
+        <marker scope="Public" name="sanako_shantae_energetic" />
+        <marker scope="Public" name="sanako_shaving_s13" />
+        <marker scope="Public" name="sanako_shaving_s14" />
+        <marker scope="Public" name="sanako_shaving_s15" />
+        <marker scope="Public" name="sanako_shimakaze_clothes_on_fire" />
+        <marker scope="Public" name="sanako_shimakaze_clothes_on_fire_noooooo" />
         <marker scope="Public" name="sanako_shimakaze_flying_robot">Sanako notices Shimakaze's flying robot.</marker>
+        <marker scope="Public" name="sanako_shimakaze_h12" />
+        <marker scope="Public" name="sanako_shimakaze_japend" />
+        <marker scope="Public" name="sanako_shimakaze_must_mast_first" />
+        <marker scope="Public" name="sanako_stocking_blog" />
+        <marker scope="Public" name="sanako_stockng_selected_sweets" />
+        <marker scope="Public" name="sanako_suzuya_prompt_bloodtypes" />
+        <marker scope="Public" name="sanako_suzuya_prompt_datespots" />
+        <marker scope="Public" name="sanako_suzuya_prompt_horoscopes" />
+        <marker scope="Public" name="sanako_suzuya_prompt_imagechange" />
+        <marker scope="Public" name="sanako_suzuya_prompt_praise" />
+        <marker scope="Public" name="sanako_suzuya_prompt_wannabuy" />
+        <marker scope="Public" name="sanako_syrenne_prompt_dye" />
+        <marker scope="Public" name="sanako_syrenne_prompt_magic" />
+        <marker scope="Public" name="sanako_syrenne_prompt_mates" />
+        <marker scope="Public" name="sanako_syrenne_prompt_odd_jobs" />
+        <marker scope="Public" name="sanako_syrenne_prompt_rich" />
+        <marker scope="Public" name="sanako_teasing_s13" />
+        <marker scope="Public" name="sanako_teasing_s14" />
+        <marker scope="Public" name="sanako_teasing_s15" />
+        <marker scope="Public" name="sanako_trixie_dungeon" />
+        <marker scope="Public" name="sanako_trixie_selected" />
+        <marker scope="Public" name="sanako_trying_to_fit_in_s1" />
+        <marker scope="Public" name="sanako_trying_to_fit_in_s2" />
+        <marker scope="Public" name="sanako_turandot_matstrip" />
+        <marker scope="Public" name="sanako_turandot_ts_t5" />
+        <marker scope="Public" name="sanako_turandot_ts_t6" />
+        <marker scope="Public" name="sanako_tutor_offer" />
+        <marker scope="Public" name="sanako_twilight_t2" />
+        <marker scope="Public" name="sanako_twilight_t3" />
+        <marker scope="Public" name="sanako_twisted_fate_ace_sleeve" />
+        <marker scope="Public" name="sanako_uniform_cute" />
+        <marker scope="Public" name="sanako_uniform_love_s4" />
+        <marker scope="Public" name="sanako_uniform_love_s5" />
+        <marker scope="Public" name="sanako_uniform_love_s6" />
+        <marker scope="Public" name="sanako_velvet_intro" />
+        <marker scope="Public" name="sanako_victory_skirt_lift" />
+        <marker scope="Public" name="sanako_video_games" />
+        <marker scope="Public" name="sanako_water_inviting" />
         <marker scope="Public" name="sanako_womanly_ways">Sanako shows off her "womanly ways". (i.e. her breasts)</marker>
-        <marker scope="Public" name="sanako_younger_guy">If any males are playing, Sanako might remark that she sometimes enjoys going out with younger guys.</marker>
-        <marker scope="Public" name="sanako_zone-tan_strapless">Sanako mistakes Zone-tan's bare shoulders for a strapless bra.</marker>
+        <marker scope="Public" name="sanako_yang_scarf" />
+        <marker scope="Public" name="sanako_you_can_cover_up" />
+        <marker scope="Public" name="sanako_younger_guy" />
+        <marker scope="Public" name="sanako_youthful_appearance_s4" />
+        <marker scope="Public" name="sanako_youthful_appearance_s5" />
+        <marker scope="Public" name="sanako_youthful_appearance_s6" />
+        <marker scope="Public" name="sanako_yshtola_prompt_readiness" />
+        <marker scope="Public" name="sanako_yshtola_rules" />
+        <marker scope="Public" name="sanako_yuelia_game_start" />
+        <marker scope="Public" name="sanako_yuelia_selected" />
+        <marker scope="Public" name="sanako_yuelia_y2" />
+        <marker scope="Public" name="sanako_yuno_erection" />
+        <marker scope="Public" name="sanako_yuno_mari_nagisa_the_big_succ_begins" />
+        <marker scope="Public" name="sanako_yuno_setogaya_bigsucc_after" />
+        <marker scope="Public" name="sanako_yuno_setogaya_bigsucc_finished" />
+        <marker scope="Public" name="sanako_yuno_setogaya_nagisa_bigsucc_finished" />
+        <marker scope="Public" name="sanako_yuno_setogaya_nagisa_the_big_succ_begins" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_1" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_10" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_11" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_12" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_13" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_14" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_15" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_16" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_17" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_18" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_19" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_2" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_20" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_3" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_4" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_5" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_6" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_7" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_8" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_9" />
+        <marker scope="Public" name="sanako_yuno_setogaya_the_big_succ_begins" />
+        <marker scope="Public" name="sanako_yunyun_friends_1" />
+        <marker scope="Public" name="sanako_yunyun_friends_2" />
+        <marker scope="Public" name="sanako_yuri_back_pain" />
+        <marker scope="Public" name="sanako_yuri_book_recommendations" />
+        <marker scope="Public" name="sanako_yuri_boys_and_accessories" />
+        <marker scope="Public" name="sanako_yuri_fragrance" />
+        <marker scope="Public" name="sanako_yuri_literature_teacher" />
+        <marker scope="Public" name="sanako_yuri_selected" />
+        <marker scope="Public" name="sanako_yuri_sy_s1" />
+        <marker scope="Public" name="sanako_yuri_sy_s2" />
+        <marker scope="Public" name="sanako_yuri_sy_y1" />
+        <marker scope="Public" name="sanako_yuri_sy_y2" />
+        <marker scope="Public" name="sanako_yuri_victory_keep_secret" />
+        <marker scope="Public" name="sanako_yuri_womens_shoes" />
+        <marker scope="Public" name="sanako_yuri_womens_shoes_2" />
+        <marker scope="Public" name="sanako_yuri_words_of_comfort" />
+        <marker scope="Public" name="sanako_yuri_ys_s1" />
+        <marker scope="Public" name="sanako_zeke_selected" />
+        <marker scope="Public" name="sanako_zeke_sz_z1" />
+        <marker scope="Public" name="sanako_zeke_sz_z2" />
+        <marker scope="Public" name="sanako_zeke_sz_z3" />
+        <marker scope="Public" name="sanako_zeke_sz_z4" />
+        <marker scope="Public" name="sanako_zeke_sz_z5" />
+        <marker scope="Public" name="sanako_zeke_sz_z6" />
+        <marker scope="Public" name="sanako_zeke_sz_z7" />
+        <marker scope="Public" name="sanako_zizou_prince" />
+        <marker scope="Public" name="sanako_zonetan_strapless">Sanako mistakes Zone-tan's bare shoulders for a strapless bra.</marker>
     </markers>
+    <recipes>
+        <recipe key="b94a61c4-6c47-4a6a-87ce-68948f0ac1da">
+            <cases>
+                <id>15</id>
+            </cases>
+        </recipe>
+        <recipe key="2a8fbef6-1192-496e-a301-8a099764f31b">
+            <cases>
+                <id>17</id>
+            </cases>
+        </recipe>
+        <recipe key="d408a547-4643-48c6-8121-5c650855c6d3">
+            <cases>
+                <id>19</id>
+            </cases>
+        </recipe>
+        <recipe key="e047ca43-c50e-4706-bfaf-397e839c5ec6">
+            <cases>
+                <id>24</id>
+            </cases>
+        </recipe>
+        <recipe key="5ade406d-4de8-4d22-bdaa-174f188e59cc">
+            <cases>
+                <id>122</id>
+            </cases>
+        </recipe>
+        <recipe key="5ba06533-d4a2-4fa5-b906-49e0b3c6946b">
+            <cases>
+                <id>123</id>
+            </cases>
+        </recipe>
+        <recipe key="352366df-ef02-4874-a2eb-0fdc4c210fbd">
+            <cases>
+                <id>377</id>
+            </cases>
+        </recipe>
+        <recipe key="cc28d236-6b17-48ce-a010-48a75ded118c">
+            <cases>
+                <id>573</id>
+            </cases>
+        </recipe>
+    </recipes>
 </metadata>

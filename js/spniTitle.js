@@ -158,7 +158,7 @@ var DEFAULT_CLOTHING_OPTIONS = [
     new PlayerClothing('boots', 'shoes', EXTRA_ARTICLE, 'feet', "player/male/boots.png", true, "boots", "male", null),
 
     new PlayerClothing('stockings', 'socks', MINOR_ARTICLE, 'legs', "player/female/stockings.png", true, "stockings", "female", null),
-    new PlayerClothing('socks', 'socks', MINOR_ARTICLE, 'feet', "player/female/socks.png", true, "socksB", "female", null),
+    new PlayerClothing('kneesocks', 'socks', MINOR_ARTICLE, 'feet', "player/female/kneesocks.png", true, "socksB", "female", null),
     new PlayerClothing('shoes', 'shoes', EXTRA_ARTICLE, 'feet', "player/female/shoes.png", true, "shoesB", "female", null),
 ];
 
@@ -229,10 +229,6 @@ function TitleClothingSelectionIcon (clothing) {
 TitleClothingSelectionIcon.prototype.visible = function () {
     if (this.clothing.isAvailable()) {
         return true;
-    }
-
-    if (this.clothing.applicable_genders !== "all" && humanPlayer.gender !== this.clothing.applicable_genders) {
-        return false;
     }
 
     if (this.clothing.collectible) {
@@ -358,6 +354,11 @@ function updateTitleScreen () {
         selector.update();
     });
 
+    // Move opposite-gender clothing to the end of the list
+    defaultSelectors.sort(
+        (a, b) => (b.clothing.matchesPlayerGender() - a.clothing.matchesPlayerGender())
+    );
+
     $("#title-clothing-container").empty();
 
     if (availableSelectors.length > 0) {
@@ -385,7 +386,14 @@ function updateTitleScreen () {
  * screen, or this was called by an internal source.
  ************************************************************/
 function changePlayerSize (size) {
-    humanPlayer.size = size;
+    if (humanPlayer.gender === eGender.MALE) {
+        humanPlayer.penis = size;
+        humanPlayer.breasts = null;
+    } else {
+        humanPlayer.breasts = size;
+        humanPlayer.penis = null;
+    }
+
     $sizeBlocks[humanPlayer.gender].find('.title-size-button').each(function() {
         $(this).toggleClass('selected', $(this).data('size') == size);
     });
@@ -400,8 +408,10 @@ $('.title-size-block').on('click', '.title-size-button', function(ev) {
  * dialog and the size.
  **************************************************************/
 function setPlayerTags () {
-    var playerTagList = ['human', 'human_' + humanPlayer.gender,
-                         humanPlayer.size + (humanPlayer.gender == 'male' ? '_penis' : '_breasts')];
+    var playerTagList = [
+        'human',
+        'human_' + humanPlayer.gender
+    ];
 
     for (category in playerTagSelections) {
         var sel = playerTagSelections[category];
@@ -416,8 +426,8 @@ function setPlayerTags () {
             return true;
         });
     }
-    /* applies tags to the player*/
-    console.log(playerTagList);
+
+    /* applies tags to the player */
     humanPlayer.baseTags = playerTagList.map(canonicalizeTag);
     humanPlayer.updateTags();
 }
@@ -495,6 +505,7 @@ function wearClothing () {
     save.selectedClothing().sort(function (a, b) {
         return typeIdx[a.type] - typeIdx[b.type];
     }).forEach(function (clothing) {
+        clothing.removed = false;
         if (clothing.position == UPPER_ARTICLE) {
             position[0].push(clothing);
         } else if (clothing.position == LOWER_ARTICLE) {

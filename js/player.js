@@ -68,7 +68,8 @@ function Player (id) {
     this.last = '';
     this.labels = undefined;
     this.folders = undefined;
-    this.size = eSize.MEDIUM;
+    this.penis = null;
+    this.breasts = null;
     this.intelligence = eIntelligence.AVERAGE;
     this.gender = eGender.MALE;
     this.stamina = 20;
@@ -76,7 +77,6 @@ function Player (id) {
     this.tags = this.baseTags = [];
     this.xml = null;
     this.persistentMarkers = {};
-    this.exposed = { upper: false, lower: false };
 }
 
 /*******************************************************************
@@ -85,22 +85,23 @@ function Player (id) {
  *******************************************************************/
 Player.prototype.initClothingStatus = function () {
     this.startingLayers = this.countLayers();
-    this.exposed = { upper: true, lower: true };
-    for (var position in this.exposed) {
-        if (this.clothing.some(function(c) {
-            return (c.type == IMPORTANT_ARTICLE || c.type == MAJOR_ARTICLE)
-                && (c.position == position || c.position == FULL_ARTICLE);
-        })) {
-            this.exposed[position] = false;
-        };
-    }
     this.numStripped = { extra: 0, minor: 0, major: 0, important: 0 };
-    this.mostlyClothed = this.decent = !(this.exposed.upper || this.exposed.lower)
-        && this.clothing.some(function(c) {
-            return c.type == MAJOR_ARTICLE
-                && [UPPER_ARTICLE, LOWER_ARTICLE, FULL_ARTICLE].indexOf(c.position) >= 0;
-        });
+    this.mostlyClothed = this.isDecent();
 }
+
+/********************************************************************
+ * Gets the currently worn wardrobe, possible before (stageDelta ==
+ * -1) or after (stageDelta == 1) stripping removedClothing.
+ ********************************************************************/
+Player.prototype.getClothing = function(stageDelta, removedClothing) {
+    removedClothing ||= this.removedClothing;
+    return this.clothing.filter(c =>
+        c.type != 'skip'
+            && (!c.removed || (stageDelta == -1 && c == removedClothing))
+            && (stageDelta != 1 || c != removedClothing)
+            && (c.fromStage === undefined
+                || (stageDelta == 1 && c.fromStage == this.stage + 1 && !c.fromDeal)));
+};
 
 /*******************************************************************
  * (Re)Initialize the player properties that change during a game
@@ -147,7 +148,8 @@ Player.prototype.resetState = function () {
          * for the character.
          */
         this.gender = appearance.gender;
-        this.size = appearance.size;
+        this.penis = appearance.penis;
+        this.breasts = appearance.breasts;
 
         this.stamina = Number(this.xml.children('timer').text());
 
@@ -159,19 +161,12 @@ Player.prototype.resetState = function () {
         /* Find and grab the wardrobe tag */
         $wardrobe = appearance.wardrobe;
 
+        this.settings.forEach((group) => group.reset());
+
         /* find and create all of their clothing */
         var clothingArr = [];
         $wardrobe.children('clothing').each(function () {
-            var generic = $(this).attr('generic');
-            var name = $(this).attr('name') || $(this).attr('lowercase');
-            var type = $(this).attr('type');
-            var position = $(this).attr('position');
-            var plural = $(this).attr('plural');
-            plural = (plural == 'null' ? null : plural == 'true');
-
-            var newClothing = new Clothing(name, generic, type, position, plural);
-
-            clothingArr.push(newClothing);
+            clothingArr.push(new Clothing($(this)));
         });
 
         this.clothing = clothingArr;
@@ -179,6 +174,14 @@ Player.prototype.resetState = function () {
 
         this.loadStylesheet();
         this.stageChangeUpdate();
+
+        /* Skip over any initial skip layers. */
+        let layer = this.clothing.length - 1;
+        while (layer >= 0 && this.clothing[layer].type === "skip") {
+            this.stage++;
+            this.stageChangeUpdate();
+            layer--;
+        }
     }
 }
 
@@ -194,11 +197,27 @@ Player.prototype.singleBehaviourUpdate = function() { }
  * Convert a tags list to canonical form:
  * - Canonicalize each input tag
  * - Resolve tag implications
+ * - Add automatic tags for character/costume ID, genital size, and futanari status
  * This function also filters out duplicated tags.
  **********************************************************************/
 Player.prototype.expandTagsList = function(input_tags) {
     let tmp = input_tags.map(canonicalizeTag);
     let output_tags = [];
+
+    //tmp.push(this.id);
+
+    if (this.alt_costume && this.alt_costume.id) {
+        tmp.push(this.alt_costume.id);
+    }
+
+    /* Automatically add futanari tag if necessary. */
+    if (this.gender === "female" && this.penis) {
+        tmp.push("futanari");
+    }
+
+    /* Add size tags. */
+    if (this.penis) tmp.push(this.penis + "_penis");
+    if (this.breasts) tmp.push(this.breasts + "_breasts");
 
     while (tmp.length > 0) {
         let tag = tmp.shift();
@@ -219,17 +238,38 @@ Player.prototype.expandTagsList = function(input_tags) {
         output_tags.push("curvy");
     }
 
+    /* Ensure tags are consistent with size and gender metadata. */
+    // output_tags = output_tags.filter((tag) => {
+        // if (tag === "large_penis" || tag === "medium_penis" || tag === "small_penis") {
+            // return tag === (this.penis + "_penis");
+        // } else if (tag === "huge_penis") {
+            // /* huge_penis requires large_penis */
+            // return this.penis === "large";
+        // } else if (tag === "circumcised" || tag === "uncircumcised") {
+            // /* Penis appearance tags require the presence of a penis */
+            // return this.penis;
+        // } else if (tag === "large_breasts" || tag === "medium_breasts" || tag === "small_breasts") {
+            // return tag === (this.breasts + "_breasts");
+        // } else if (tag === "huge_breasts") {
+            // /* huge_breasts requires large_breasts */
+            // return this.breasts === "large";
+        // } else if (tag === "flat_chest") {
+            // /* flat_chest requires small_breasts */
+            // return this.breasts === "small";
+        // } else if (tag === "futanari" || tag === "futanari_sans_balls" || tag === "futanari_full_package" || tag === "futanari_newhalf") {
+            // return (this.gender === "female") && this.penis;
+        // } else {
+            // return true;
+        // }
+    // });
+
     return output_tags;
 }
 
 /* Compute the Player's tags list from their baseTags list. */
 Player.prototype.updateTags = function () {
-    var tags = [this.id];
+    var tags = [];
     var stage = this.stage || 0;
-
-    if (this.alt_costume && this.alt_costume.id) {
-        tags.push(this.alt_costume.id);
-    }
 
     this.baseTags.forEach(function (tag_desc) {
         if (typeof(tag_desc) === 'string') {
@@ -289,59 +329,12 @@ Player.prototype.hasTag = function(tag) {
     return tag && this.tags && this.tags.indexOf(canonicalizeTag(tag)) >= 0;
 };
 
-
 Player.prototype.hasTags = function(tagAdv) {
-    var match = tagAdv.match(/^([^\&\|]*)(\&?)([^\&\|]*)(\|?)([^\&\|]*)(\&?)([^\&\|]*)\s*/);
-
-    if (!match)
-    {
-        return false;
-    }
-
-    var firstPart;
-
-    if (match[1] && match[3])
-    {
-        firstPart = this.hasTag(match[1]) && this.hasTag(match[3]);
-    }
-    else if (match[1])
-    {
-        firstPart = this.hasTag(match[1]);
-    }
-    else if (match[3])
-    {
-        firstPart = this.hasTag(match[3]);
-    }
-    else
-    {
-        firstPart = false;
-    }
-
-    if (firstPart){
-        return true;
-    }
-
-    if (match[5] && match[7])
-    {
-        return this.hasTag(match[5]) && this.hasTag(match[7]);
-    }
-    else if (match[5])
-    {
-        return this.hasTag(match[5]);
-    }
-    else if (match[7])
-    {
-        return this.hasTag(match[7]);
-    }
-    else
-    {
-        return false;
-    }
-
+    return tagAdv.split('\|').some(subs => subs.split('&').every(expr => this.hasTag(expr)));
 }
 
 Player.prototype.countLayers = function() {
-    return this.clothing.countTrue(c => c.type != "skip");
+    return this.clothing.countTrue(c => !c.removed && c.type != "skip");
 };
 
 Player.prototype.checkStatus = function(status) {
@@ -354,19 +347,19 @@ Player.prototype.checkStatus = function(status) {
     case STATUS_MOSTLY_CLOTHED:
         return this.mostlyClothed;
     case STATUS_DECENT:
-        return this.decent;
+        return this.isDecent();
     case STATUS_EXPOSED_TOP:
-        return this.exposed.upper;
+        return !this.isCovered(UPPER_ARTICLE);
     case STATUS_EXPOSED_BOTTOM:
-        return this.exposed.lower;
+        return !this.isCovered(LOWER_ARTICLE);
     case STATUS_EXPOSED:
-        return this.exposed.upper || this.exposed.lower;
+        return !this.isCovered(UPPER_ARTICLE) || !this.isCovered(LOWER_ARTICLE);
     case STATUS_EXPOSED_TOP_ONLY:
-        return this.exposed.upper && !this.exposed.lower;
+        return !this.isCovered(UPPER_ARTICLE) && this.isCovered(LOWER_ARTICLE);
     case STATUS_EXPOSED_BOTTOM_ONLY:
-        return !this.exposed.upper && this.exposed.lower;
+        return this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
     case STATUS_NAKED:
-        return this.exposed.upper && this.exposed.lower;
+        return !this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
     case STATUS_ALIVE:
         return !this.out;
     case STATUS_LOST_ALL:
@@ -437,7 +430,7 @@ Player.prototype.getMarker = function (baseName, target, numeric, targeted_only)
         }
     }
 
-    var cast = parseInt(val, 10);
+    var cast = Number(val);
 
     if (!isNaN(cast)) {
         return cast;
@@ -567,7 +560,6 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     var picElem = $metaXml.children('pic');
 
     this.image = picElem.text();
-    this.height = $metaXml.children('height').text();
     this.source = $metaXml.children('from').text();
     this.artist = $metaXml.children('artist').text();
     this.writer = $metaXml.children('writer').text();
@@ -628,6 +620,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.labelOverridden = this.intelligenceOverridden = false;
     this.pendingCollectiblePopups = [];
     this.repeatLog = {};
+    this.settings = [];
 
     this.loaded = false;
     this.loadProgress = undefined;
@@ -652,6 +645,10 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.searchTags.forEach((tag) => {
         if (MAGNET_TAGS.indexOf(tag) >= 0) this.magnetismTag = tag;
     });
+	
+	/* Needed because Futanari as a concept is not available (outside of the tags.xml) without loading behaviour.xml */
+	this.isFuta = false;
+	this.isFuta = this.searchTags.includes('futanari');
 
     this.cases = new Map();
 
@@ -732,6 +729,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
                 'label': $(elem).attr('label') || this.selectLabel,
                 'set': set,
                 'status': status,
+                'unlocked_by': $(elem).attr('collectible') || '',
                 'layers': parseInt($(elem).attr('layers'), 10) || this.selectLayers,
             };
 
@@ -927,12 +925,8 @@ Opponent.prototype.setLabel = function(label) {
 
 Opponent.prototype.updateIntelligence = function () {
     if (!this.intelligenceOverridden) {
-        if (this.intelligences && this.intelligences.length) {
-            this.intelligence = this.getByStage(this.intelligences);
-        }
-        if (!this.intelligence) {
-            this.intelligence = eIntelligence.AVERAGE;
-        }
+        this.intelligence = this.getByStage(this.intelligences || [])
+            || eIntelligence.AVERAGE;
     }
 }
 
@@ -944,6 +938,48 @@ Opponent.prototype.setIntelligence = function (intelligence) {
         this.intelligenceOverridden = false;
         this.updateIntelligence();
     }
+}
+
+/* Just in case a character tries to do something like clear all of their size metadata...
+ * 
+ * This also ensures that legacy characters using gender-changing ops under the assumption of a single size field
+ * get the semantics they expect, by switching size values around as necessary.
+ * 
+ * Finally, this does a tag update to ensure those are consistent (e.g. in case a character becomes a futa mid-game).
+ */
+Opponent.prototype.validateSizeMetadata = function () {
+    if (this.gender === eGender.MALE && !this.penis) {
+        if (this.breasts) {
+            this.penis = this.breasts;
+            this.breasts = null;
+        } else {
+            this.penis = eSize.MEDIUM;
+        }
+    } else if (this.gender === eGender.FEMALE && !this.breasts) {
+        if (this.penis) {
+            this.breasts = this.penis;
+            this.penis = null;
+        } else {
+            this.breasts = eSize.MEDIUM;
+        }
+    }
+
+    this.updateTags();
+}
+
+Opponent.prototype.setPenisSize = function (value) {
+    this.penis = value;
+    this.validateSizeMetadata();
+} 
+
+Opponent.prototype.setBreastSize = function (value) {
+    this.breasts = value;
+    this.validateSizeMetadata();
+}
+
+Opponent.prototype.setGender = function (value) {
+    this.gender = value;
+    this.validateSizeMetadata();
 }
 
 Opponent.prototype.updateFolder = function () {
@@ -1062,6 +1098,8 @@ Opponent.prototype.loadAlternateCostume = function () {
             level: 'info'
         });
 
+        const legacySize = $xml.children('size').text();
+        const gender = $xml.children('gender').text() || this.selectGender;
         this.alt_costume = {
             id: $xml.children('id').text(),
             labels: $xml.children('label'),
@@ -1069,9 +1107,16 @@ Opponent.prototype.loadAlternateCostume = function () {
             folder: this.selected_costume,
             folders: $xml.children('folder'),
             wardrobe: $xml.children('wardrobe'),
-            gender: $xml.children('gender').text() || this.selectGender,
-            size: $xml.children('size').text() || this.default_costume.size,
+            gender: gender,
             layers: parseInt($xml.children('layers').text(), 10) || this.selectLayers,
+            /* For each of (breasts, penis), If no size is set in costume.xml, either using the new elements
+               or the legacy size, copy from the default costume, lastly falling back to the "other" size. */
+            penis: $xml.children('penis').text()
+                || (gender === eGender.MALE && (legacySize || this.default_costume.penis
+                                                || this.default_costume.breasts)) || null,
+            breasts: $xml.children('breasts').text()
+                || (gender === eGender.FEMALE && (legacySize || this.default_costume.breasts
+                                                  || this.default_costume.penis)) || null,
         };
 
         var poses = $xml.children('poses');
@@ -1163,6 +1208,23 @@ Opponent.prototype.fetchCollectibles = function () {
         console.error("Error loading collectibles for "+this.id);
         throw err;
     }.bind(this));
+}
+
+Opponent.prototype.listUnlockedCostumes = function () {
+    let unlocked_costumes = [];
+    let thisOpponent = this; 
+    this.alternate_costumes.map(function(costume) {
+        if (costume.unlocked_by == '')
+        {
+            unlocked_costumes.push(costume);
+        }
+        else if (thisOpponent.collectibles.some(
+            function (collectible) { if(collectible.id === costume.unlocked_by) {return collectible.isUnlocked();} else return false;}))
+            {
+                unlocked_costumes.push(costume);
+            }      
+    });
+    return unlocked_costumes;
 }
 
 /**
@@ -1394,14 +1456,22 @@ Opponent.prototype.loadBehaviour = function (slot, individual, selectInfo) {
             this.xml = $xml;
             this.intelligences = $xml.children('intelligence');
 
+            this.settings = $xml.find("behaviour>settings").map(function (index, elem) {
+                return CharacterSettingsGroup.parseXML(this, $(elem));
+            }.bind(this)).get();
+            
+            var legacySize = $xml.children('size').text() || eSize.MEDIUM;
+            var gender = $xml.children('gender').text();
+
             this.default_costume = {
                 id: null,
                 labels: $xml.children('label'),
                 tags: this.originalTags,
                 folders: this.folder,
                 wardrobe: $xml.children('wardrobe'),
-                gender: $xml.children('gender').text(),
-                size: $xml.children('size').text(),
+                gender: gender,
+                penis: $xml.children('penis').text() || (gender === eGender.MALE ? legacySize : null),
+                breasts: $xml.children('breasts').text() || (gender === eGender.FEMALE ? legacySize : null),
             };
 
             var poses = $xml.children('poses');
@@ -1566,8 +1636,15 @@ Opponent.prototype.loadXMLTriggers = function () {
                 let c = new Case($case, trigger);
                 this.recordTargetedCase(c);
 
-                c.getStages().forEach(function (stage) {
-                    var key = c.trigger+':'+stage;  // Case constructor may have altered the trigger
+                /* The Case constructor may have altered the trigger as part of autoconversion,
+                 * so use c.trigger instead of the local trigger variable when adding to the cases map.
+                 *
+                 * Additionally, cases in STARTING_STAGE_CASES ignore their stage conditions and are
+                 * always treated as being part of stage 0 when it comes to the cases map.
+                 */
+                let stages = (STARTING_STAGE_CASES.indexOf(c.trigger) >= 0) ? [0] : c.getStages();
+                stages.forEach(function (stage) {
+                    var key = c.trigger+':'+stage;  
                     if (!this.cases.has(key)) {
                         this.cases.set(key, []);
                     }
@@ -1628,6 +1705,7 @@ Player.prototype.getImagesForStage = function (stage) {
             caseList.forEach(processCase);
         });
     } else {
+        /* TODO: should we preload images for all triggers in STARTING_STAGE_CASES instead of just game_start? */
         if (this.cases.has(GAME_START + ':0')) {
             this.cases.get(GAME_START + ':0').forEach(processCase);
         }
@@ -1673,6 +1751,60 @@ Player.prototype.preloadStageImages = function (stage) {
         }.bind(this));
     }, this));
 };
+
+/**
+ * 
+ * @param {Player} player
+ * @param {string} marker 
+ * @param {CharacterSetting[]} settings 
+ */
+function CharacterSettingsGroup (player, marker, settings) {
+    this.marker = marker;
+    this.player = player;
+    this.settings = settings; /* preserve order for dropdown display */
+    this.defaultSetting = settings.find((value) => value.isDefault) || null;
+}
+
+CharacterSettingsGroup.parseXML = function (player, $xml) {
+    var marker = $xml.attr("marker");
+    var settings = $xml.children("setting").map(function (index, elem) {
+        return CharacterSetting.parseXML(player, $(elem));
+    }).get();
+
+    return new CharacterSettingsGroup(player, marker, settings);
+}
+
+CharacterSettingsGroup.prototype.update = function () {
+    var markerVal = this.player.getMarker(this.marker);
+    var setTo = this.settings.find((setting) => (setting.value == markerVal) && setting.isAvailable()) || this.defaultSetting;
+    this.setSelected(setTo ? setTo.value : "");
+}
+
+CharacterSettingsGroup.prototype.reset = function () {
+    if (this.player.persistentMarkers[this.marker]) {
+        this.update();
+    } else {
+        this.setSelected(this.defaultSetting ? this.defaultSetting.value : "");
+    }
+}
+
+CharacterSettingsGroup.prototype.setSelected = function (value) {
+    this.player.setMarker(this.marker, null, value || "");
+}
+
+CharacterSettingsGroup.prototype.getSelected = function () {
+    var markerVal = this.player.getMarker(this.marker);
+    var setting = this.settings.find((setting) => (setting.value == markerVal) && setting.isAvailable());
+    if (setting && !setting.isAvailable()) {
+        setting = this.defaultSetting;
+    }
+
+    return setting || this.defaultSetting || null;
+}
+
+CharacterSettingsGroup.prototype.getAvailable = function () {
+    return this.settings.filter((setting) => setting.isAvailable());
+}
 
 Player.prototype.populateDebugMarkers = function () {
     /** @type {{[baseName: string]: {[oppId: string]: string | number}}} */
@@ -1850,6 +1982,38 @@ Player.prototype.populateDebugTags = function () {
             container.slideDown();
         }
     });
+}
+
+/**
+ * 
+ * @param {Player} player
+ * @param {string} value 
+ * @param {string} name
+ * @param {boolean} isDefault
+ * @param {VariableTest[]} tests 
+ */
+function CharacterSetting (player, value, name, isDefault, tests) {
+    this.player = player;
+    this.value = value;
+    this.name = name || value;
+    this.isDefault = isDefault;
+    this.tests = tests;
+}
+
+CharacterSetting.parseXML = function (player, $xml) {
+    var tests = $xml.children("test").map(function (index, elem) {
+        return VariableTest.parseXML($(elem));
+    }).get();
+
+    var isDefault = ($xml.attr("default") || "false") == "true";
+    var value = $xml.attr("value") || "";
+    var name = $xml.children("name").text();
+
+    return new CharacterSetting(player, value, name, isDefault, tests);
+}
+
+CharacterSetting.prototype.isAvailable = function () {
+    return this.tests.every((test) => test.evaluate(this.player, null, null));
 }
 
 /**

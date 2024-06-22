@@ -82,6 +82,14 @@ namespace SPNATI_Character_Editor
 		[DefaultValue(false)]		
 		public bool HidePrefixlessImages;
 
+		[XmlElement("disallowTargetingPrivateMarkers")]
+		[DefaultValue(false)]
+		public bool DisallowTargetingPrivateMarkers;
+
+		[XmlElement("validateMarkerScope")]
+		[DefaultValue(false)]
+		public bool ValidateMarkerScope;
+
 		[XmlElement("nextId")]
 		/// <summary>
 		/// Next unique ID to assign
@@ -673,11 +681,6 @@ namespace SPNATI_Character_Editor
 				for (int i = MinStage; i <= MaxStage; i++)
 				{
 					LegacyCase.Stages.Add(i);
-				}
-
-				if (LegacyCase.LegacyAlsoPlayingStage == "")
-				{
-					LegacyCase.LegacyAlsoPlayingStage = null;
 				}
 			}
 		}

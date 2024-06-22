@@ -4,56 +4,30 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace SPNATI_Character_Editor
 {
 	public static class Config
 	{
 		/// <summary>
-		/// List of released versions since update tracking was added, used for determining which updates a user skipped and providing info about those
+		/// Current Version (defined in AssemblyInfo.cs)
 		/// </summary>
-		public static readonly string[] VersionHistory = new string[] { "v3.0", "v3.0.1", "v3.1", "v3.2", "v3.3", "v3.3.1", "v3.4", "v3.4.1", "v3.5", "v3.6",
-			"v3.7", "v3.7.1", "v3.8", "v3.8.1", "v3.8.2", "v4.0b", "v4.0.1b", "v4.0.2b", "v4.0.3b", "v4.0", "v4.1", "v4.2", "v4.2.1", "v4.3", "v4.4b", "v5.0b", "v5.0",
-			"v5.1", "v5.1.1", "v5.2", "v5.2.1", "v5.2.2", "v5.2.3", "v5.2.4", "v5.2.5", "v5.2.6", "v5.2.7", "v5.2.8", "v5.3", "v5.4", "v5.5", "v5.6", "v5.6.1", "v5.7",
-			"v5.7.1", "v5.7.2", "v5.7.3" , "v5.8", "v5.8.1", "v5.9", "v6.0b", "v6.0", "v6.0.1", "v6.0.2", "v6.1", "v6.2", "v6.2.1", "v6.3", "v6.3.1", "v6.3.2", "v6.3.3",
-			"v6.4", "v6.5", "v6.5.1", "v6.5.2", "v6.6", "v6.6.1", "v6.6.2", "v6.7", "v6.7.1", "v6.7.2", "v6.7.3", "v6.7.4", "v6.7.5", "v6.7.6", "v6.7.7", "v6.7.8", "v6.7.9",
-			"v6.7.9.1", "v6.7.9.2", "v6.8", "v6.8.1", "v6.8.2", "v6.8.3"};
 
-		/// <summary>
-		/// Current Version
-		/// </summary>
-		public static string Version { get { return VersionHistory[VersionHistory.Length - 1]; } }
+		public static readonly Version version = Assembly.GetExecutingAssembly().GetName().Version;
+
+		public static string Version { get { return "v" + RemoveTrailingZeros(version.ToString()); } }
+
+		private static string RemoveTrailingZeros (string ver)
+		{
+			while (ver.EndsWith(".0"))
+			{
+				ver = ver.Remove(ver.Length - 2);
+			}
+			return ver;
+		}
 
 		private static Dictionary<string, string> _settings = new Dictionary<string, string>();
-
-		/// <summary>
-		/// Gets whether a version predates the target version
-		/// </summary>
-		/// <param name="version"></param>
-		/// <param name="targetVersion"></param>
-		/// <returns></returns>
-		public static bool VersionPredates(string version, string targetVersion)
-		{
-			if (string.IsNullOrEmpty(version))
-			{
-				return true;
-			}
-
-			bool passedTarget = false;
-			for (int i = 0; i < VersionHistory.Length; i++)
-			{
-				string v = VersionHistory[i];
-				if (v == targetVersion)
-				{
-					passedTarget = true;
-				}
-				if (v == version)
-				{
-					return !passedTarget;
-				}
-			}
-			return true; //version that predates VersionHistory
-		}
 
 		/// <summary>
 		/// Gets whether a setting has any value
@@ -126,8 +100,6 @@ namespace SPNATI_Character_Editor
 
 		static Config()
 		{
-			//3.0 and up use config.ini. Older versions use settings.ini. Using different filenames to allow side-by-side installs since the structure was changed
-
 			string filename = Path.Combine(ExecutableDirectory, "SPNATI\\config.ini");
 			bool read = false;
 			if (File.Exists(filename))
@@ -149,16 +121,8 @@ namespace SPNATI_Character_Editor
 				}
 				else
 				{
-					filename = Path.Combine(AppDataDirectory, "settings.ini");
-					if (File.Exists(filename))
-					{
-						ReadLegacySettings(filename);
-					}
-					else
-					{
-						// default settings
-						Set("autosave", 10);
-					}
+					// default settings
+					Set("autosave", 10);
 				}
 			}
 		}
@@ -182,17 +146,6 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		private static void ReadLegacySettings(string file)
-		{
-			string[] lines = File.ReadAllLines(file);
-			try
-			{
-				Set(Settings.GameDirectory, lines[0]);
-				Set(Settings.LastCharacter, lines[1]);
-				Set(Settings.LastVersionRun, lines[5]);
-			}
-			catch { }
-		}
 
 		public static void Save(string dir = "")
 		{
@@ -588,6 +541,7 @@ namespace SPNATI_Character_Editor
 						set.Add(OpponentStatus.Incomplete);
 						set.Add(OpponentStatus.Duplicate);
 						set.Add(OpponentStatus.Event);
+						set.Add(OpponentStatus.Broken);
 						_statusFilters = set;
 						return set;
 					}
@@ -610,6 +564,9 @@ namespace SPNATI_Character_Editor
 									break;
 								case 5:
 									set.Add("event");
+									break;
+								case 6:
+									set.Add("broken");
 									break;
 							}
 						}

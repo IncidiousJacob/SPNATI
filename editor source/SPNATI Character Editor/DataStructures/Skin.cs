@@ -2,11 +2,11 @@ using Desktop;
 using SPNATI_Character_Editor.IO;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
-using System.ComponentModel;
 
 namespace SPNATI_Character_Editor
 {
@@ -80,6 +80,11 @@ namespace SPNATI_Character_Editor
 		[XmlArray("poses")]
 		[XmlArrayItem("pose")]
 		public List<Pose> Poses = new List<Pose>();
+		
+		[XmlNewLine]
+		[XmlArray("pose-sets")]
+		[XmlArrayItem("set")]
+		public List<PoseSet> PoseSets = new List<PoseSet>();
 
 		[XmlAnyElement]
 		public List<XmlElement> ExtraXml;
@@ -127,19 +132,7 @@ namespace SPNATI_Character_Editor
 			return Id;
 		}
 
-		public void OnBeforeSerialize() {
-
-			int countUnskipped = 0;
-			foreach (Clothing c in Wardrobe)
-			{
-				if (c != null && c.Type != "skip")
-				{
-					countUnskipped++;
-				}
-			}
-
-			LayersNonSkip = countUnskipped;
-		}
+		public void OnBeforeSerialize() { }
 
 		public void OnAfterDeserialize(string source)
 		{
@@ -156,7 +149,7 @@ namespace SPNATI_Character_Editor
 				}
 				if (!folder.EndsWith("/"))
 				{
-					folder = folder + "/";
+					folder += "/";
 				}
 				f.Value = folder;
 			});
@@ -312,6 +305,12 @@ namespace SPNATI_Character_Editor
 		{
 			get { return Poses; }
 			set { Poses = value; }
+		}
+		
+		public List<PoseSet> CustomPoseSets
+		{
+			get { return PoseSets; }
+			set { PoseSets = value; }
 		}
 
 		public string Gender
@@ -474,6 +473,10 @@ namespace SPNATI_Character_Editor
 		[XmlAttribute("layers")]
 		[DefaultValue(0)]
 		public int LayersNonSkip;
+
+		[XmlAttribute("collectible")]
+		[DefaultValue("")]
+		public string Collectible;
 
 		[XmlIgnore]
 		public Costume Costume { get; set; }

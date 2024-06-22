@@ -131,7 +131,7 @@ namespace SPNATI_Character_Editor
 				{
 					foreach (Keyframe keyf in d.Keyframes)
 					{
-						if (!String.IsNullOrEmpty(keyf.Src) && !keyf.Src.Contains(character.FolderName + "/"))
+						if (!string.IsNullOrEmpty(keyf.Src) && !keyf.Src.Contains(character.FolderName + "/"))
 						{
 							keyf.Src = character.FolderName + "/" + keyf.Src;
 						}
@@ -392,48 +392,6 @@ namespace SPNATI_Character_Editor
 				return null;
 			}
 
-			if (string.IsNullOrEmpty(character.Version))
-			{
-				string contents = File.ReadAllText(filename);
-				int editorIndex = contents.IndexOf("Character Editor");
-				if (editorIndex >= 0)
-				{
-					character.Source = EditorSource.CharacterEditor;
-					int atIndex = contents.IndexOf(" at ", editorIndex);
-					if (atIndex >= 0)
-					{
-						int start = editorIndex + "Character Editor ".Length;
-						int length = atIndex - start;
-						if (length < 10)
-						{
-							string version = contents.Substring(start, length);
-							character.Version = version;
-						}
-						character.Source = EditorSource.CharacterEditor;
-					}
-					else
-					{
-						character.Source = EditorSource.Other;
-					}
-				}
-				else
-				{
-					int makeIndex = contents.IndexOf("make_xml.py version ");
-					if (makeIndex >= 0)
-					{
-						character.Source = EditorSource.MakeXml;
-					}
-					else
-					{
-						character.Source = EditorSource.Other;
-					}
-				}
-			}
-			else
-			{
-				character.Source = EditorSource.CharacterEditor;
-			}
-
 			character.FolderName = Path.GetFileName(folderName);
 
 			Metadata metadata = ImportMetadata(folderName);
@@ -483,6 +441,15 @@ namespace SPNATI_Character_Editor
 
 			Banter banterData = ImportXml<Banter>(Path.Combine(folder, $"banter-{timestamp}.bak"));
 			recoveredCharacter.BanterData = banterData ?? character.BanterData;
+
+			CollectibleData collectibleData = ImportXml<CollectibleData>(Path.Combine(folder, $"collectibles-{timestamp}.bak"));
+			recoveredCharacter.Collectibles = collectibleData ?? character.Collectibles;
+
+			CharacterTagList characterTagList = ImportXml<CharacterTagList>(Path.Combine(folder, $"tags-{timestamp}.bak"));
+			if (characterTagList != null)
+			{
+				recoveredCharacter.Tags = characterTagList.Tags ?? character.Tags;
+			}
 
 			string markerFile = Path.Combine(folder, $"markers-{timestamp}.bak");
 			if (File.Exists(markerFile))

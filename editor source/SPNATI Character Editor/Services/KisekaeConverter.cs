@@ -20,7 +20,7 @@ namespace SPNATI_Character_Editor
 		public KisekaeConverter(bool allowRemoteControl)
 		{
 			AllowRemoteControl = allowRemoteControl;
-			_timer = new System.Timers.Timer(10000);
+			_timer = new System.Timers.Timer(60000);
 			_timer.Elapsed += _timer_Elapsed;
 			_timer.Start();
 		}
@@ -40,8 +40,8 @@ namespace SPNATI_Character_Editor
 			}
 			catch { }
 
-			_importer = new ImageImporter(AllowRemoteControl);
-		}
+				_importer = new ImageImporter(AllowRemoteControl);
+			}
 		
 		private void CheckKKL()
 		{

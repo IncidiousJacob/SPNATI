@@ -404,6 +404,40 @@ namespace SPNATI_Character_Editor
 				(Variable ?? "") == (other.Variable ?? "");
 		}
 
+		public string RemoveIfNullOrEqual(string c1, string c2)
+		{
+			return string.IsNullOrEmpty(c1) || string.Equals(c1, c2) ? null : c1;
+		}
+
+		public void RemoveIntersection(TargetCondition other)
+		{
+			if (other == null) { return; }
+			if (other.Character != Character || other.Role != Role || other.Stage != Stage) { return; }
+
+			FilterTag = RemoveIfNullOrEqual(FilterTag, other.FilterTag);
+			FilterNotTag = RemoveIfNullOrEqual(FilterNotTag, other.FilterNotTag);
+			FilterTagAdv = RemoveIfNullOrEqual(FilterTagAdv, other.FilterTagAdv);
+			Count = RemoveIfNullOrEqual((Count ?? ""), (other.Count ?? ""));
+			Status = RemoveIfNullOrEqual(Status, other.Status);
+			Gender = RemoveIfNullOrEqual(Gender, other.Gender);
+;			Hand = RemoveIfNullOrEqual(Hand, other.Hand);
+			Role = RemoveIfNullOrEqual(Role, other.Role);
+			// do not remove the Character field so as not to break conditions such as SaidMarker
+			//Character = RemoveIfNullOrEqual(Character, other.Character);
+			Stage = RemoveIfNullOrEqual(Stage, other.Stage);
+			TimeInStage = RemoveIfNullOrEqual(TimeInStage, other.TimeInStage);
+			Layers = RemoveIfNullOrEqual(Layers, other.Layers);
+			StartingLayers = RemoveIfNullOrEqual(StartingLayers, other.StartingLayers);
+			SaidMarker = RemoveIfNullOrEqual(SaidMarker, other.SaidMarker);
+			NotSaidMarker = RemoveIfNullOrEqual(NotSaidMarker, other.NotSaidMarker);
+			SayingMarker = RemoveIfNullOrEqual(SayingMarker, other.SayingMarker);
+			Saying = RemoveIfNullOrEqual(Saying, other.Saying);
+			Said = RemoveIfNullOrEqual(Said, other.Said);
+			ConsecutiveLosses = RemoveIfNullOrEqual(ConsecutiveLosses, other.ConsecutiveLosses);
+			Pose = RemoveIfNullOrEqual(Pose, other.Pose);
+			Variable = RemoveIfNullOrEqual((Variable ?? ""), (other.Variable ?? ""));
+		}
+
 		public override int GetHashCode()
 		{
 			int hash = (FilterTag ?? string.Empty).GetHashCode();
@@ -466,7 +500,7 @@ namespace SPNATI_Character_Editor
 			}
 			if (!string.IsNullOrEmpty(FilterNotTag))
 			{
-				parts.Add("nottag;"+ FilterNotTag);
+				parts.Add("nottag;" + FilterNotTag);
 			}
 			if (!string.IsNullOrEmpty(FilterTagAdv))
 			{
@@ -541,9 +575,32 @@ namespace SPNATI_Character_Editor
 			return ToString(false);
 		}
 
+
+		public static string CountToString(string range)
+		{
+			if (range == null)
+			{
+				return "";
+			}
+			string[] pieces = range.Split('-');
+			if (pieces.Length == 1 || pieces[0] == pieces[1])
+			{
+				return pieces[0];
+			}
+			if (pieces.Length == 2 && string.IsNullOrEmpty(pieces[0]))
+			{
+				return $"0-{pieces[1]}";
+			}
+			if (pieces.Length == 2 && string.IsNullOrEmpty(pieces[1]))
+			{
+				return $"{pieces[0]}-5";
+			}
+			return range;
+		}
+
 		public string ToString(bool excludeTarget)
 		{
-			string str = GUIHelper.RangeToString(Count);
+			string str = CountToString(Count);
 			if (!HasAdvancedConditions)
 			{
 				if (!string.IsNullOrEmpty(str))
@@ -887,6 +944,15 @@ namespace SPNATI_Character_Editor
 			get
 			{
 				return !HasAdvancedConditions && string.IsNullOrEmpty(Count) && string.IsNullOrEmpty(Character) && string.IsNullOrEmpty(Variable);
+			}
+		}
+
+		[JsonIgnore]
+		public bool IsAlmostEmpty
+		{
+			get
+			{
+				return !HasAdvancedConditions && string.IsNullOrEmpty(Count) && string.IsNullOrEmpty(Variable);
 			}
 		}
 

@@ -140,7 +140,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			}
 		}
 
-		private void lstPoses_SelectedIndexChanged(object sender, System.EventArgs e)
+		private void lstPoses_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			Pose newPose = lstPoses.SelectedItem as Pose;
 			if (newPose == _sourcePose)
@@ -259,7 +259,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			}
 		}
 
-		private void _labelData_LabelChanged(object sender, System.EventArgs e)
+		private void _labelData_LabelChanged(object sender, EventArgs e)
 		{
 			lblDataCaption.Text = _labelData.GetLabel();
 			if (_labelData == _pose)
@@ -386,13 +386,12 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			table.Enabled = enabled;
 			tsRemovePose.Enabled = enabled;
 			tsMainMenu.Enabled = enabled;
-			tsCut.Enabled = enabled;
 			tsCopy.Enabled = enabled;
 			tsPaste.Enabled = Clipboards.Has<Pose>();
 			tsDuplicate.Enabled = enabled;
 		}
 
-		private void tsAddPose_Click(object sender, System.EventArgs e)
+		private void tsAddPose_Click(object sender, EventArgs e)
 		{
 			Pose pose = new Pose();
 			pose.Id = "new_pose";
@@ -403,7 +402,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			_character.Character.PoseLibrary.Add(pose);
 		}
 
-		private void tsRemovePose_Click(object sender, System.EventArgs e)
+		private void tsRemovePose_Click(object sender, EventArgs e)
 		{
 			if (_pose == null ||
 				MessageBox.Show($"Are you sure you want to permanently delete {_pose}? This operation cannot be undone.",
@@ -424,12 +423,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 		{
 			if (e.Control)
 			{
-				if (e.KeyCode == Keys.X)
-				{
-					tsCut_Click(sender, EventArgs.Empty);
-					e.SuppressKeyPress = true;
-				}
-				else if (e.KeyCode == Keys.C)
+				if (e.KeyCode == Keys.C)
 				{
 					tsCopy_Click(sender, EventArgs.Empty);
 					e.SuppressKeyPress = true;
@@ -445,17 +439,6 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 					e.SuppressKeyPress = true;
 				}
 			}
-		}
-
-
-		private void tsCut_Click(object sender, System.EventArgs e)
-		{
-			if (_pose == null) { return; }
-			SavePose();
-
-			Clipboards.Set<Pose>(_sourcePose);
-			lstPoses.Items.Remove(_sourcePose);
-			_character.CustomPoses.Remove(_sourcePose);
 		}
 
 		private void tsCopy_Click(object sender, EventArgs e)

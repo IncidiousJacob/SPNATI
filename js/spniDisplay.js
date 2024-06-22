@@ -190,6 +190,11 @@ function PoseSprite(id, src, onload, pose, args) {
     this.scaley = args.scaley || 1;
     this.skewx = args.skewx || 0;
     this.skewy = args.skewy || 0;
+    this.clipleft = args.clipleft || 0;
+    this.clipright = args.clipright || 0;
+    this.cliptop = args.cliptop || 0;
+    this.clipbottom = args.clipbottom || 0;
+    this.clipradius = args.clipradius || 0;
     this.rotation = args.rotation || 0;
     this.alpha = args.alpha;
     this.pivotx = args.pivotx;
@@ -305,9 +310,19 @@ PoseSprite.prototype.draw = function() {
         });
     }
 
+    let clipPath = "none";
+    if (this.clipleft + this.clipright + this.cliptop + this.clipbottom + this.clipradius > 0) {
+
+        clipPath = "inset(" + this.cliptop + "px " + this.clipright + "px " + this.clipbottom + "px " + this.clipleft + "px";
+        if (this.clipradius > 0) {
+            clipPath += " round " + this.clipradius + "px";
+        }
+        clipPath += ")";
+    }
 
     $(this.pivot).css({
       "transform": "rotate(" + this.rotation + "deg) scale(" + this.scalex + ", " + this.scaley + ") skew(" + this.skewx + "deg, " + this.skewy + "deg)",
+      "clip-path": clipPath,
     });
 }
 
@@ -419,6 +434,11 @@ PoseAnimation.prototype.updateSprite = function (fromFrame, toFrame, t, idx) {
     this.interpolate("scaley", fromFrame, toFrame, t, idx);
     this.interpolate("skewx", fromFrame, toFrame, t, idx);
     this.interpolate("skewy", fromFrame, toFrame, t, idx);
+    this.interpolate("clipleft", fromFrame, toFrame, t, idx);
+    this.interpolate("clipright", fromFrame, toFrame, t, idx);
+    this.interpolate("cliptop", fromFrame, toFrame, t, idx);
+    this.interpolate("clipbottom", fromFrame, toFrame, t, idx);
+    this.interpolate("clipradius", fromFrame, toFrame, t, idx);
     this.interpolate("alpha", fromFrame, toFrame, t, idx);
     this.target.draw();
 }
@@ -579,6 +599,11 @@ function parseSpriteDefinition ($xml, player) {
     
     targetObj.skewx = parseFloat(targetObj.skewx, 10);
     targetObj.skewy = parseFloat(targetObj.skewy, 10);
+    targetObj.clipleft = parseFloat(targetObj.clipleft, 10);
+    targetObj.cliptop = parseFloat(targetObj.cliptop, 10);
+    targetObj.clipright = parseFloat(targetObj.clipright, 10);
+    targetObj.clipbottom = parseFloat(targetObj.clipbottom, 10);
+    targetObj.clipradius = parseFloat(targetObj.clipradius, 10);
     targetObj.x = parseFloat(targetObj.x, 10);
     targetObj.y = parseFloat(targetObj.y, 10);
     targetObj.delay = parseFloat(targetObj.delay) * 1000 || 0;
@@ -1055,7 +1080,7 @@ OpponentDisplay.prototype.update = function(player) {
         this.bubble.show();
         this.bubble.removeClass('arrow-down arrow-left arrow-right arrow-up');
         if (arrowDirection != 'none') this.bubble.addClass('arrow-'+arrowDirection);
-        bubbleArrowOffsetRules[this.slot-1][0].style.left = arrowLocation;
+        bubbleArrowOffsetRules[this.slot-1][0].style.left = arrowLocation  || '50%';
         bubbleArrowOffsetRules[this.slot-1][1].style.top = arrowLocation;
         /* Configure z-indices */
         this.imageArea.css('z-index', player.z_index);
@@ -1189,6 +1214,7 @@ function MainSelectScreenDisplay (slot) {
 
     this.altCostumeSelector = $("#main-costume-select-"+slot);
     this.selectButton = $("#select-slot-button-"+slot);
+    this.opponentArea = this.altCostumeSelector.parent();
 
     this.altCostumeSelector.on("change", this.altCostumeSelected.bind(this));
 }
@@ -1279,6 +1305,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
+
     this.statusIcon.hide();
 }
 
@@ -1299,7 +1326,39 @@ MainSelectScreenDisplay.prototype.onSingleSuggestionSelected = function () {
     updateSelectionVisuals();
 }
 
+/**
+ * 
+ * @param {CharacterSettingsGroup} settingsGroup 
+ */
+MainSelectScreenDisplay.prototype.createCharacterSettingsDropdown = function (settingsGroup) {
+    var selector = $("<select>", { "class": "bordered character-setting-select" });
+
+    settingsGroup.update();
+    var available = settingsGroup.getAvailable();
+    if (available.length <= 1) return null;
+
+    var selected = settingsGroup.getSelected();
+    selector.append(
+        available.map((setting) => $("<option>", {
+            val: setting.value,
+            text: expandDialogue(setting.name, settingsGroup.player, null),
+            selected: setting.value == selected.value
+        }).data("setting", setting))
+    );
+
+    selector.on("change", function () {
+        var selected = selector.children(':selected').data('setting');
+        settingsGroup.setSelected(selected ? selected.value : "");
+        settingsGroup.player.singleBehaviourUpdate(SETTINGS_CHANGED);
+        updateSelectionVisuals();
+    });
+
+    return selector;
+}
+
 MainSelectScreenDisplay.prototype.update = function (player) {
+    this.opponentArea.find(".character-setting-select").remove();
+
     if (!FILL_DISABLED) {
         if (this.prefillSuggestion && this.prefillSuggestion != player
             && players.some(function (p) { return p && p.id === this.prefillSuggestion.id; }, this)) {
@@ -1340,6 +1399,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         this.layerIcon.hide();
         this.genderIcon.hide();
         this.statusIcon.hide();
+
         return;
     }
 
@@ -1357,7 +1417,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
-    
+
     if (!player.isLoaded()) {
         this.hideBubble();
         this.clearPose();
@@ -1379,9 +1439,16 @@ MainSelectScreenDisplay.prototype.update = function (player) {
             }.bind(this));
         }
 
+        this.opponentArea.prepend(
+            player.settings
+            .map((group) => this.createCharacterSettingsDropdown(group))
+            .filter((selector) => !!selector)
+        );
+
         this.altCostumeSelector.hide();
-        if (player.alternate_costumes.length > 0) {
-            fillCostumeSelector(this.altCostumeSelector, player.default_costume_name, player.alternate_costumes, player.selected_costume)
+        let unlocked_costumes = player.listUnlockedCostumes();
+        if (unlocked_costumes.length > 0) {
+            fillCostumeSelector(this.altCostumeSelector, player.default_costume_name, unlocked_costumes, player.selected_costume)
                 .show();
         }
     }
@@ -1565,8 +1632,9 @@ OpponentSelectionCard.prototype.isVisible = function (testingView, ignoreFilter)
     var status = this.opponent.status;
 
     // Should this opponent be on the "main roster view"?
-    var onMainView = (status === undefined || includedOpponentStatuses[status]);
-    if (status === "testing") onMainView = onMainView || this.opponent.allow_testing_guest;
+    var onMainView = (status === undefined || (includedOpponentStatuses[status]));
+    if (isMainSite) onMainView = onMainView && status !== "incomplete";
+    if (status === "testing" || status === "incomplete") onMainView = onMainView || this.opponent.allow_testing_guest;
     
     if (!testingView) {
         // Regular view: include all opponents with undefined status and with
@@ -1580,8 +1648,8 @@ OpponentSelectionCard.prototype.isVisible = function (testingView, ignoreFilter)
          * Additionally, if an event is active, ignore staleness for
          * event characters on Testing (handled by isStaleOnTesting()).
          */
-        if ((status !== "testing" || isStaleOnTesting(this.opponent))
-            && this.opponent.inboundLinesFromSelected("testing") < 5)
+        if (((status !== "testing" && status !== "incomplete") || isStaleOnTesting(this.opponent))
+            && this.opponent.inboundLinesFromSelected("testing") < 3)
             return false;
     }
 
@@ -2038,8 +2106,9 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
         this.collectiblesField.removeClass('has-collectibles');
     }
 
-    if (opponent.alternate_costumes.length > 0) {
-        fillCostumeSelector(this.costumeSelector, opponent.default_costume_name, opponent.alternate_costumes, opponent.selected_costume)
+    let unlocked_costumes = opponent.listUnlockedCostumes();
+    if (unlocked_costumes.length > 0) {
+        fillCostumeSelector(this.costumeSelector, opponent.default_costume_name, unlocked_costumes, opponent.selected_costume)
             .show().prop('disabled', false);
     } else {
         this.costumeSelector.hide();

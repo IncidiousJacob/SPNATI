@@ -13,18 +13,15 @@
     <defaultImage>calm</defaultImage>
     <defaultText>This is what the character says after another character has been (individually) deselected</defaultText>
   </trigger>
-  <trigger tag="game_start" start="0" end="0" label="Game start" oncePerStage="true" description="When the game starts" group="0" order="3" color="1">
+  <trigger tag="settings_changed" optional="true" start="0" end="0" label="Settings Changed" description="When custom settings are changed" group="0" order="3" color="1">
+    <defaultImage>calm</defaultImage>
+    <defaultText>This is what the character says after their custom settings have been changed.</defaultText>
+  </trigger>
+  <trigger tag="game_start" start="0" end="0" label="Game Start" oncePerStage="true" description="When the game starts" group="0" order="4" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says when the game starts</defaultText>
   </trigger>
-  <trigger tag="stripped" start="1" end="8" label="After Stripping" oncePerStage="true" description="Immediately after removing the previous stage's clothing" group="2" order="5" previousStage="true" color="3" safeLabel="After Losing">
-    <vars>
-      <string>clothing</string>
-    </vars>
-    <defaultImage>sad</defaultImage>
-    <defaultText>What the character says just after they take their clothes off. Note that this is the start of a new stage.</defaultText>
-  </trigger>
-  <trigger tag="dealing_cards" optional="true" start="0" end="10" label="Dealing cards (not for general use)" description="When the cards are dealt for a new round (only use this in specific circumstances)" group="1" order="0" color="1">
+  <trigger tag="dealing_cards" optional="true" start="0" end="10" label="Dealing Cards (not for general use)" description="When the cards are dealt for a new round (only use this in specific circumstances)" group="1" order="0" color="1">
     <defaultImage>calm</defaultImage>
     <defaultText>This can be used in special situations, for example so that a character doesn't show up in two places after "visiting" another.</defaultText>
   </trigger>
@@ -96,71 +93,12 @@
     <defaultImage>strip</defaultImage>
     <defaultText>What the character says as they take their clothes off. The picture and text should be unique to what they're taking off.</defaultText>
   </trigger>
-  <trigger tag="must_masturbate_first" start="8" end="8" relatedGroup="2" label="Must Masturbate (Self, First)" oncePerStage="true" description="The character is the first to lose the game and must start masturbating" group="10" order="0" color="3" safeLabel="Must Forfeit (Self, First)">
-    <vars />
-    <defaultImage>loss</defaultImage>
-    <defaultText>This is the character response when they lost their last hand and have to masturbate, and they're the first character who's required to masturbate.</defaultText>
-  </trigger>
-  <trigger tag="must_masturbate" start="8" end="8" relatedGroup="2" label="Must Masturbate (Self)" oncePerStage="true" description="The character has lost the game must start masturbating" group="10" order="1" color="3" safeLabel="Must Forfeit (Self)">
-    <vars />
-    <defaultImage>loss</defaultImage>
-    <defaultText>This is the character response when they lost their last hand and have to masturbate, and they're not the first character who's required to masturbate.</defaultText>
-  </trigger>
-  <trigger tag="start_masturbating" start="8" end="8" label="Start Masturbating (Self)" oncePerStage="true" description="Used one time when the character first begins masturbating" group="10" order="2" color="3" safeLabel="Start Forfeit (Self)">
-    <vars />
-    <defaultImage>starting</defaultImage>
-    <defaultText>What the character says as they start masturbating.</defaultText>
-  </trigger>
-  <trigger tag="masturbating" start="9" end="9" relatedGroup="3" label="Masturbating (Self)" description="Used while masturbating" group="10" order="3" color="3" safeLabel="In Forfeit (Self)">
-    <vars />
-    <defaultImage>calm</defaultImage>
-    <defaultText>What the character says while they're masturbating.</defaultText>
-  </trigger>
-  <trigger tag="heavy_masturbating" start="9" end="9" relatedGroup="3" label="Heavy Masturbating (Self)" description="Used while masturbating when the character is close to finishing" group="10" order="4" color="3" safeLabel="Nearing Forfeit End (Self)">
-    <vars />
-    <defaultImage>heavy</defaultImage>
-    <defaultText>What the character says while they're masturbating, and closer to "finishing".</defaultText>
-  </trigger>
-  <trigger tag="finishing_masturbating" start="9" end="9" label="Finishing (Self)" oncePerStage="true" description="Line used once immediately upon finishing masturbation" group="10" order="5" color="3">
-    <vars />
-    <defaultImage>finishing</defaultImage>
-    <defaultText>What the masturbating character says as they "finish".</defaultText>
-  </trigger>
-  <trigger tag="finished_masturbating" start="10" end="10" label="Finished (Self)" description="Character has (just) finished masturbating" group="10" order="6" color="2">
-    <vars />
-    <defaultImage>finished</defaultImage>
-    <defaultText>What the character says after they've finished masturbating.</defaultText>
-  </trigger>
-  <trigger tag="after_masturbating" optional="true" start="10" end="10" label="After finished (Self)" description="Character is idle after masturbating" group="10" order="7" color="2">
-    <vars />
-    <defaultImage>finished</defaultImage>
-    <defaultText>What the character says after masturbating during the exchange phase.</defaultText>
-  </trigger>
-  <trigger tag="opponent_lost" optional="true" start="0" end="10" label="Opponent Lost" hasTarget="true" description="An opponent lost the round and will either have to remove something or masturbate" group="8" order="0" color="4">
+  <trigger tag="stripped" start="1" end="8" label="After Stripping" oncePerStage="true" description="Immediately after removing the previous stage's clothing" group="2" order="5" previousStage="true" color="3" safeLabel="After Losing">
     <vars>
-      <string>name</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>What they say to an opponent who has lost a round. This is considered in conjunction with the more specific (male/female) must strip/masturbate cases</defaultText>
-  </trigger>
-  <trigger tag="opponent_stripping" optional="true" start="0" end="10" label="Opponent Stripping" hasTarget="true" description="An opponent of either gender is removing something" group="8" order="1" color="4" safeLabel="Opponent Removing">
-    <vars>
-      <string>name</string>
       <string>clothing</string>
-      <string>target</string>
     </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent is stripping.</defaultText>
-  </trigger>
-  <trigger tag="opponent_stripped" optional="true" start="0" end="10" label="Opponent Stripped" hasTarget="true" description="An opponent of either gender has removed something" group="8" order="2" color="4" safeLabel="Opponent Removed">
-    <vars>
-      <string>name</string>
-      <string>clothing</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent has stripped.</defaultText>
+    <defaultImage>sad</defaultImage>
+    <defaultText>What the character says just after they take their clothes off. Note that this is the start of a new stage.</defaultText>
   </trigger>
   <trigger tag="male_human_must_strip" optional="true" start="0" end="10" label="Must Strip (Player, Male)" hasTarget="true" description="The human male player has lost a round and must remove something" group="3" order="0" color="4" safeLabel="Lost Hand (Player, Male)">
     <vars>
@@ -212,7 +150,7 @@
     <defaultText>What they say to a female character who has lost a round</defaultText>
     <generic>opponent_lost</generic>
   </trigger>
-  <trigger tag="tie" start="0" end="10" label="Absolute tie" hasTarget="false" optional="true" description="Two (or more) players are tied for the worst hand" group="3" order="4" color="4">
+  <trigger tag="tie" start="0" end="10" label="Absolute Tie" hasTarget="false" optional="true" description="Two (or more) players are tied for the worst hand" group="3" order="4" color="4">
     <defaultImage>shocked</defaultImage>
     <defaultText>A tie! That doesn't happen every day!</defaultText>
   </trigger>
@@ -372,42 +310,6 @@
     <defaultText>What the character says after the major item has been taken off.</defaultText>
     <generic>opponent_stripped</generic>
   </trigger>
-  <trigger tag="opponent_chest_will_be_visible" start="0" end="10" optional="true" label="Will Be Visible (Chest, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender will reveal their chest" group="8" order="3" color="4" safeLabel="Before Top (Opponent)">
-    <vars>
-      <string>name</string>
-      <string>clothing</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent is removing the last piece of clothing covering their chest. For NPCs, this is a clothing element on the "upper" location, with the "important" type.</defaultText>
-  </trigger>
-  <trigger tag="opponent_chest_is_visible" start="0" end="10" optional="true" label="Visible (Chest, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their chest" group="8" order="4" color="4" safeLabel="Top (Opponent)">
-    <vars>
-      <string>name</string>
-      <string>clothing</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent has removed the last piece of clothing covering their chest. For NPCs, this is a clothing element on the "upper" location, with the "important" type.</defaultText>
-  </trigger>
-  <trigger tag="opponent_crotch_will_be_visible" start="0" end="10" optional="true" label="Will Be Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender will reveal their crotch" group="8" order="5" color="4" safeLabel="Before Bottom (Opponent)">
-    <vars>
-      <string>name</string>
-      <string>clothing</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent is removing the last piece of clothing covering their crotch. For NPCs, this is a clothing element on the "lower" location, with the "important" type.</defaultText>
-  </trigger>
-  <trigger tag="opponent_crotch_is_visible" start="0" end="10" optional="true" label="Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their chest" group="8" order="6" color="4" safeLabel="Bottom (Opponent)">
-    <vars>
-      <string>name</string>
-      <string>clothing</string>
-      <string>target</string>
-    </vars>
-    <defaultImage>interested</defaultImage>
-    <defaultText>An opponent has removed the last piece of clothing covering their crotch. For NPCs, this is a clothing element on the "lower" location, with the "important" type.</defaultText>
-  </trigger>
   <trigger tag="male_chest_will_be_visible" start="0" end="10" label="Will Be Visible (Chest, Male)" relatedGroup="8" hasTarget="true" gender="male" description="A male opponent is about to reveal his chest" group="7" order="0" color="4" safeLabel="Before Top (Male)">
     <vars>
       <string>name</string>
@@ -443,6 +345,7 @@
     </vars>
     <defaultImage>calm</defaultImage>
     <defaultText>What the character says after the male character's crotch is visible, and has a size value of "small".</defaultText>
+    <generic>male_crotch_is_visible</generic>
   </trigger>
   <trigger tag="male_medium_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Male, Medium)" relatedGroup="8" hasTarget="true" gender="male" size="medium" description="A male opponent has revealed a medium penis" group="7" order="4" color="4" safeLabel="Bottom (Male, Medium)">
     <vars>
@@ -452,6 +355,7 @@
     </vars>
     <defaultImage>awkward</defaultImage>
     <defaultText>What the character says after the male character's crotch is visible, and has a size value of "medium".</defaultText>
+    <generic>male_crotch_is_visible</generic>
   </trigger>
   <trigger tag="male_large_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Male, Large)" relatedGroup="8" hasTarget="true" gender="male" size="large" description="A male has opponent revealed a large penis" group="7" order="5" color="4" safeLabel="Bottom (Male, Large)">
     <vars>
@@ -461,6 +365,7 @@
     </vars>
     <defaultImage>shocked</defaultImage>
     <defaultText>What the character says after the male character's crotch is visible, and has a size value of "large".</defaultText>
+    <generic>male_crotch_is_visible</generic>
   </trigger>
   <trigger tag="male_crotch_is_visible" optional="true" start="0" end="10" label="Visible (Crotch, Male)" relatedGroup="8" hasTarget="true" gender="male" description="A male has opponent revealed a penis of any size" group="7" order="6" color="4" safeLabel="Bottom (Male)">
     <vars>
@@ -537,6 +442,113 @@
     <defaultImage>shocked</defaultImage>
     <defaultText>What the character says after the female character's crotch has become visible.</defaultText>
   </trigger>
+  <trigger tag="futanari_crotch_will_be_visible" start="0" end="10" label="Will Be Visible (Crotch, Futanari)" relatedGroup="8" hasTarget="true" gender="female" description="A futanari opponent is about to reveal her penis" group="7" order="14" color="4" safeLabel="Before Bottom (Futanari)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>horny</defaultImage>
+    <defaultText>What the character says when a futanari character is about to remove the last piece of clothing covering their crotch. This is a clothing element on the "lower" location, with the "important" type.</defaultText>
+  </trigger>
+  <trigger tag="futanari_small_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Futanari, Small)" relatedGroup="8" hasTarget="true" gender="female" size="small" description="A futanari opponent has revealed a small penis" group="7" order="15" color="4" safeLabel="Bottom (Futanari, Small)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>calm</defaultImage>
+    <defaultText>What the character says after the futanari character's crotch is visible, and has a size value of "small".</defaultText>
+  </trigger>
+  <trigger tag="futanari_medium_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Futanari, Medium)" relatedGroup="8" hasTarget="true" gender="female" size="medium" description="A futanari opponent has revealed a medium penis" group="7" order="16" color="4" safeLabel="Bottom (Futanari, Medium)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>awkward</defaultImage>
+    <defaultText>What the character says after the futanari character's crotch is visible, and has a size value of "medium".</defaultText>
+  </trigger>
+  <trigger tag="futanari_large_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Futanari, Large)" relatedGroup="8" hasTarget="true" gender="female" size="large" description="A futanari opponent has revealed a large penis" group="7" order="17" color="4" safeLabel="Bottom (Futanari, Large)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>shocked</defaultImage>
+    <defaultText>What the character says after the futanari character's crotch is visible, and has a size value of "large".</defaultText>
+  </trigger>
+  <trigger tag="futanari_crotch_is_visible" start="0" end="10" label="Visible (Crotch, Futanari)" relatedGroup="8" hasTarget="true" gender="female" description="A futanari opponent has revealed a penis of any size" group="7" order="18" color="4" safeLabel="Bottom (Futanari)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>horny</defaultImage>
+    <defaultText>What the character says after the futanari character's crotch is visible.</defaultText>
+  </trigger>
+  <trigger tag="opponent_lost" optional="true" start="0" end="10" label="Opponent Lost" hasTarget="true" description="An opponent lost the round and will either have to remove something or masturbate" group="8" order="0" color="4">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>What they say to an opponent who has lost a round. This is considered in conjunction with the more specific (male/female) must strip/masturbate cases</defaultText>
+  </trigger>
+  <trigger tag="opponent_stripping" optional="true" start="0" end="10" label="Opponent Stripping" hasTarget="true" description="An opponent of either gender is removing something" group="8" order="1" color="4" safeLabel="Opponent Removing">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent is stripping.</defaultText>
+  </trigger>
+  <trigger tag="opponent_stripped" optional="true" start="0" end="10" label="Opponent Stripped" hasTarget="true" description="An opponent of either gender has removed something" group="8" order="2" color="4" safeLabel="Opponent Removed">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent has stripped.</defaultText>
+  </trigger>
+  <trigger tag="opponent_chest_will_be_visible" start="0" end="10" optional="true" label="Will Be Visible (Chest, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender will reveal their chest" group="8" order="3" color="4" safeLabel="Before Top (Opponent)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent is removing the last piece of clothing covering their chest. For NPCs, this is a clothing element on the "upper" location, with the "important" type.</defaultText>
+  </trigger>
+  <trigger tag="opponent_chest_is_visible" start="0" end="10" optional="true" label="Visible (Chest, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their chest" group="8" order="4" color="4" safeLabel="Top (Opponent)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent has removed the last piece of clothing covering their chest. For NPCs, this is a clothing element on the "upper" location, with the "important" type.</defaultText>
+  </trigger>
+  <trigger tag="opponent_crotch_will_be_visible" start="0" end="10" optional="true" label="Will Be Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender will reveal their crotch" group="8" order="5" color="4" safeLabel="Before Bottom (Opponent)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent is removing the last piece of clothing covering their crotch. For NPCs, this is a clothing element on the "lower" location, with the "important" type.</defaultText>
+  </trigger>
+  <trigger tag="opponent_crotch_is_visible" start="0" end="10" optional="true" label="Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their chest" group="8" order="6" color="4" safeLabel="Bottom (Opponent)">
+    <vars>
+      <string>name</string>
+      <string>clothing</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>An opponent has removed the last piece of clothing covering their crotch. For NPCs, this is a clothing element on the "lower" location, with the "important" type.</defaultText>
+  </trigger>
   <trigger tag="opponent_start_masturbating" start="0" end="10" optional="true" label="Start Masturbating (Opponent)" hasTarget="true" description="An opponent of either gender has started masturbating" group="8" order="7" color="4" safeLabel="Start Forfeit (Opponent)">
     <vars>
       <string>name</string>
@@ -553,7 +565,7 @@
     <defaultImage>horny</defaultImage>
     <defaultText>What the character says while an opponent is masturbating.</defaultText>
   </trigger>
-  <trigger tag="opponent_heavy_masturbating" start="0" end="10" optional="true" label="Masturbating (Opponent, Near Climax)" hasTarget="true" description="An opponent of either gender is near climaxing" group="8" order="9" color="4" safeLabel="In Forfeit (Opponent, Near End)">
+  <trigger tag="opponent_heavy_masturbating" start="0" end="10" optional="true" label="Masturbating (Heavy, Opponent)" hasTarget="true" description="An opponent of either gender is near climaxing" group="8" order="9" color="4" safeLabel="In Forfeit (Opponent, Near End)">
     <vars>
       <string>name</string>
       <string>target</string>
@@ -666,6 +678,91 @@
     <defaultImage>shocked</defaultImage>
     <defaultText>What the character says when a female character "finishes" masturbating.</defaultText>
     <generic>opponent_finished_masturbating</generic>
+  </trigger>
+  <trigger tag="futanari_must_masturbate" start="0" end="10" label="Must Masturbate (Futanari)" hasTarget="true" gender="female" description="A futanari opponent must start masturbating" group="9" order="10" color="4" safeLabel="Must Forfeit (Futanari)">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>interested</defaultImage>
+    <defaultText>What the character says when a futanari character has lost a hand while nude, and must masturbate.</defaultText>
+    <generic>opponent_lost</generic>
+  </trigger>
+  <trigger tag="futanari_start_masturbating" start="0" end="10" label="Start Masturbating (Futanari)" hasTarget="true" gender="female" description="A futanari opponent has started masturbating" group="9" order="11" color="4" safeLabel="Start Forfeit (Futanari)">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>horny</defaultImage>
+    <defaultText>What the character says when a futanari character has started masturbating.</defaultText>
+    <generic>opponent_start_masturbating</generic>
+  </trigger>
+  <trigger tag="futanari_masturbating" start="0" end="10" label="Masturbating (Futanari)" hasTarget="true" gender="female" description="A futanari opponent is masturbating" group="9" order="12" color="4" safeLabel="In Forfeit (Futanari)">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>horny</defaultImage>
+    <defaultText>What the character says while a futanari character is masturbating.</defaultText>
+    <generic>opponent_masturbating</generic>
+  </trigger>
+  <trigger tag="futanari_heavy_masturbating" start="0" end="10" label="Masturbating (Heavy, Futanari)" optional="true" hasTarget="true" gender="female" description="A futanari opponent is masturbating heavily" group="9" order="13" color="4" safeLabel="In Forfeit (Futanari, Near End)">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>horny</defaultImage>
+    <defaultText>What the character says while a futanari character is close to cumming.</defaultText>
+    <generic>opponent_heavy_masturbating</generic>
+  </trigger>
+  <trigger tag="futanari_finished_masturbating" start="0" end="10" label="Finished (Futanari)" hasTarget="true" gender="female" description="A futanari opponent has just finished masturbating" group="9" order="14" color="4">
+    <vars>
+      <string>name</string>
+      <string>target</string>
+    </vars>
+    <defaultImage>shocked</defaultImage>
+    <defaultText>What the character says when a futanari character "finishes" masturbating.</defaultText>
+    <generic>opponent_finished_masturbating</generic>
+  </trigger>
+  <trigger tag="must_masturbate_first" start="8" end="8" relatedGroup="2" label="Must Masturbate (Self, First)" oncePerStage="true" description="The character is the first to lose the game and must start masturbating" group="10" order="0" color="3" safeLabel="Must Forfeit (Self, First)">
+    <vars />
+    <defaultImage>loss</defaultImage>
+    <defaultText>This is the character response when they lost their last hand and have to masturbate, and they're the first character who's required to masturbate.</defaultText>
+  </trigger>
+  <trigger tag="must_masturbate" start="8" end="8" relatedGroup="2" label="Must Masturbate (Self)" oncePerStage="true" description="The character has lost the game must start masturbating" group="10" order="1" color="3" safeLabel="Must Forfeit (Self)">
+    <vars />
+    <defaultImage>loss</defaultImage>
+    <defaultText>This is the character response when they lost their last hand and have to masturbate, and they're not the first character who's required to masturbate.</defaultText>
+  </trigger>
+  <trigger tag="start_masturbating" start="8" end="8" label="Start Masturbating (Self)" oncePerStage="true" description="Used one time when the character first begins masturbating" group="10" order="2" color="3" safeLabel="Start Forfeit (Self)">
+    <vars />
+    <defaultImage>starting</defaultImage>
+    <defaultText>What the character says as they start masturbating.</defaultText>
+  </trigger>
+  <trigger tag="masturbating" start="9" end="9" relatedGroup="3" label="Masturbating (Self)" description="Used while masturbating" group="10" order="3" color="3" safeLabel="In Forfeit (Self)">
+    <vars />
+    <defaultImage>calm</defaultImage>
+    <defaultText>What the character says while they're masturbating.</defaultText>
+  </trigger>
+  <trigger tag="heavy_masturbating" start="9" end="9" relatedGroup="3" label="Heavy Masturbating (Self)" description="Used while masturbating when the character is close to finishing" group="10" order="4" color="3" safeLabel="Nearing Forfeit End (Self)">
+    <vars />
+    <defaultImage>heavy</defaultImage>
+    <defaultText>What the character says while they're masturbating, and closer to "finishing".</defaultText>
+  </trigger>
+  <trigger tag="finishing_masturbating" start="9" end="9" label="Finishing (Self)" oncePerStage="true" description="Line used once immediately upon finishing masturbation" group="10" order="5" color="3">
+    <vars />
+    <defaultImage>finishing</defaultImage>
+    <defaultText>What the masturbating character says as they "finish".</defaultText>
+  </trigger>
+  <trigger tag="finished_masturbating" start="10" end="10" label="Finished (Self)" description="Character has (just) finished masturbating" group="10" order="6" color="2">
+    <vars />
+    <defaultImage>finished</defaultImage>
+    <defaultText>What the character says after they've finished masturbating.</defaultText>
+  </trigger>
+  <trigger tag="after_masturbating" optional="true" start="10" end="10" label="After Finished (Self)" description="Character is idle after masturbating" group="10" order="7" color="2">
+    <vars />
+    <defaultImage>finished</defaultImage>
+    <defaultText>What the character says after masturbating during the exchange phase.</defaultText>
   </trigger>
   <trigger tag="game_over_victory" start="0" end="8" label="Game Over (Victory)" oncePerStage="true" description="The game is over and this character won" group="11" order="0">   <vars />
     <defaultImage>happy</defaultImage>

@@ -163,7 +163,7 @@ var statusIndicators = {
     },
     offline: {
         icon: "badge-offline.png",
-        tooltip: "This opponent has been retired from the official version of the game.",
+        tooltip: "This opponent has been retired and is considered legacy content.",
     },
     incomplete: {
         icon: "badge-incomplete.png",
@@ -176,6 +176,10 @@ var statusIndicators = {
     event: {
         icon: "badge-event.png",
         tooltip: "This opponent is only available in the official version of the game during the April Fool's Day event."
+    },
+    broken: {
+        icon: "badge-broken.png",
+        tooltip: "This opponent is incomplete and currently not in development, and uses large amounts of placeholder images or dialogue."
     }
 }
 
@@ -186,9 +190,9 @@ const MAGNET_TAGS = [
 
     "ddlc",
     "my_little_pony",
+    "genshin_impact",
 
     "danganronpa",
-    "genshin_impact",
     "konosuba",
     "persona",
     "rwby_franchise",
@@ -197,30 +201,35 @@ const MAGNET_TAGS = [
     "ace_attorney",
     "dragon_ball",
     "katawa_shoujo",
+    "little_witch_academia",
     "monster_prom",
     "one_piece",
     "touhou_project",
+    "xenoblade_chronicles",
     "yugioh",
 
     "battleborn",
     "clannad",
     "zombieland_saga",
+    "golden_sun",
     "huniepop",
     "jjba",
     "kid_icarus",
+    "kill_la_kill",
     "league_of_legends",
     "legend_of_zelda",
-    "little_witch_academia",
+    "lobotomy_corporation",
     "marvel",
     "miraculous",
     "hyperdimension_neptunia",
+    "omori",
     "panty_and_stocking",
+    "puyo_puyo",
     "sonic_franchise",
     "tales_of",
     "teen_titans_franchise",
     "va-11_hall-a",
     "vandread",
-    "xenoblade_chronicles",
 ];
 
 /**********************************************************************
@@ -345,7 +354,7 @@ function loadListingFile () {
             if (!opponentMap[id] && (oppStatus === undefined || oppStatus === 'testing' || includedOpponentStatuses[oppStatus])) {
                 available[id] = true;
             }
-            if (oppStatus === 'testing') {
+            if (oppStatus === 'testing' || oppStatus === 'incomplete') {
                 onTesting[id] = true;
             }
         });
@@ -525,7 +534,7 @@ function updateStatusIcon(elem, opp) {
 
 function updateGenderIcon(elem, opp) {
     elem.attr({
-        src: opp.selectGender === 'male' ? MALE_SYMBOL : FEMALE_SYMBOL,
+        src: opp.selectGender === 'male' ? MALE_SYMBOL : ((opp.selectGender === "female" && opp.isFuta) ? FUTANARI_SYMBOL : FEMALE_SYMBOL),
         alt: opp.selectGender.initCap(),
     }).show();
 }
@@ -543,14 +552,14 @@ function fillCostumeSelector($selector, defaultname, costumes, selected_costume)
     if (defaultname == '') {
         defaultn = '\u{1f455} Default Costume';
     }
-	
-	costumes.sort(function(c1, c2) {
-		var a = 0, b = 0;
-		
+
+    costumes.sort(function(c1, c2) {
+        var a = 0, b = 0;
+
         if (c1.status != "online") {
             a -= 100;
         }
-		
+
         if (c2.status != "online") {
             b -= 100;
         }
@@ -570,7 +579,7 @@ function fillCostumeSelector($selector, defaultname, costumes, selected_costume)
         } else if (c1.set == "sleepover") {
             a -= 7;
         }
-		
+
         if (c2.set == "valentines") {
             b--;
         } else if (c2.set == "april_fools") {
@@ -586,9 +595,9 @@ function fillCostumeSelector($selector, defaultname, costumes, selected_costume)
         } else if (c2.set == "sleepover") {
             b -= 7;
         }
-			
-		return b - a;
-	});
+
+        return b - a;
+    });
 
     $selector.empty().append($('<option>', {
         val: '',
@@ -737,8 +746,10 @@ function updateGroupSelectScreen (ignore_bg) {
             }
             */
             $groupCostumeSelectors[i].hide();
-            if (opponent.alternate_costumes.length > 0) {
-                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, opponent.alternate_costumes,
+
+            let unlocked_costumes = opponent.listUnlockedCostumes();
+            if (unlocked_costumes.length > 0) {
+                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, unlocked_costumes,
                                     opponent.selected_costume).show();
             } else {
                 $groupCostumeSelectors[i].empty();
@@ -818,7 +829,6 @@ function filterOpponent(opp, name, source, creator, tags) {
             }
         }
     }
-    
     // filter by creator
     if (creator && opp.artist.simplifyDiacritics().indexOf(creator) < 0 && opp.writer.simplifyDiacritics().indexOf(creator) < 0) {
         return false;
@@ -1224,7 +1234,8 @@ function clickedRandomGroupButton () {
         if (costume) {
             var costumeFolder = (costume.toLowerCase() == "default") ? '' : "opponents/reskins/" + costume + "/";
             
-            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, chosenGroup.opponents[i].alternate_costumes, costumeFolder);
+          let unlocked_costumes = chosenGroup.opponents[i].listUnlockedCostumes();
+            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, unlocked_costumes, costumeFolder);
         } else {
             $groupCostumeSelectors[i].empty();
         }
@@ -1297,7 +1308,7 @@ function loadDefaultFillSuggestions () {
          * but testing characters should always stay restricted to the Testing roster.
          * Likewise, force-prefilled characters with non-testing status shouldn't be shown on the Testing menu.
          */
-        if (individualSelectTesting !== (opp.status === "testing")) {
+        if (individualSelectTesting !== (opp.status === "testing" || opp.status === "incomplete")) {
             return false;
         }
 
@@ -1706,7 +1717,7 @@ function updateSelectionVisuals () {
 
     /* Update suggestions images. */
     updateDefaultFillView();
-	
+
     let displayPreviews = (loaded >= 2);
 
     if (displayPreviews && individualSelectTesting && filled < 4) {
@@ -1938,6 +1949,7 @@ function sortOpponentsByMostTargeted(indivCap, totalCap) {
 /* Returns true if the testing opponent wasn't updated recently enough to be shown. */
 function isStaleOnTesting(opp) {
     if (!isMainSite) return false;
+    if (includedOpponentStatuses["incomplete"]) return false;
     if (opp.event_character) return false;
     return (Date.now() - opp.lastUpdated > TESTING_MAX_AGE
             && opp.lastUpdated < TESTING_NTH_MOST_RECENT_UPDATE);
