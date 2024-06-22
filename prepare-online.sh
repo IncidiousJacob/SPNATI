@@ -19,6 +19,7 @@ sed "s/__BUILD_TIMESTAMP/$(date +%s%N | cut -b1-13)/g" version-info.xml > .publi
 sed "s/__CI_COMMIT_SHA/${CI_COMMIT_SHA}/g; s/__VERSION/${VERSION}/g" prod-config.xml > .public/config.xml
 cp opponents/listing.xml .public/opponents
 cp opponents/general_collectibles.xml .public/opponents
+cp opponents/candy.xml .public/opponents
 
 # Copy online background images and set initial background to display during
 # loading.
@@ -26,7 +27,7 @@ python3 deploy-scripts/copy_backgrounds.py .public/
 
 # tar may be the easiest way to copy an arbitrary
 # list of files, keeping the directory structure.
-# Include *.js and *.css to accommodate Monika.
+# Include *.js and *.css to accommodate Monika et al.
 find `python3 opponents/list_opponents.py` -regextype egrep -iregex '.*\.(png|gif|jpe?g|xml|js|css|[ot]tf|woff2?)' | tar -cT - | tar -C .public -x
 
 # Copy alternate costume files for deployment.
