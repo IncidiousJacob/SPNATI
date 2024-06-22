@@ -11,7 +11,9 @@
  * Uses a basic poker AI to exchange cards.
  * player is an object
  ************************************************************/
-var AVERAGE_KEEP_HIGH = 2;
+var SUBOPTIMAL_KEEP_HIGH = 2; // The number of cards from the top the Suboptimal strategy keeps when no pair or draw
+var SUBOPTIMAL_KEEP_3SEQ = true;  // Does the Suboptimal strategy keep sequences of three cards?
+var BEST_KEEP_HIGH_MIN = 10;    // The lowest rank the high card has to be for the Optimal strategy to keep it
 
 /************************************************************
  * An enumeration of poker strategies.
@@ -194,7 +196,7 @@ function determineAIAction (player) {
             return;
         }
 
-        if (strategy == eStrategies.SUBOPTIMAL) {
+        if (strategy == eStrategies.SUBOPTIMAL && SUBOPTIMAL_KEEP_3SEQ) {
             for (var start_rank = 2; start_rank <= 11; start_rank++) {
                 if (player.hand.ranks.slice(start_rank - 1, start_rank - 1 + 3).countTrue() == 3) {
                     player.hand.tradeIns = hand.map(function(c, idx) {
@@ -207,10 +209,10 @@ function determineAIAction (player) {
         }
         if (player.hand.strength == HIGH_CARD) {
             if (strategy == eStrategies.SUBOPTIMAL) {
-                player.hand.tradeIns = hand.map(function(c) { return player.hand.value.slice(0, AVERAGE_KEEP_HIGH).indexOf(c.rank) < 0; });
-                console.log("Hand is bad, trading in "+ (CARDS_PER_HAND - AVERAGE_KEEP_HIGH) +" cards. "+player.hand.tradeIns);
+                player.hand.tradeIns = hand.map(function(c) { return player.hand.value.slice(0, SUBOPTIMAL_KEEP_HIGH).indexOf(c.rank) < 0; });
+                console.log("Hand is bad, trading in "+ (CARDS_PER_HAND - SUBOPTIMAL_KEEP_HIGH) +" cards. "+player.hand.tradeIns);
                 return;
-            } else if (strategy != eStrategies.OPTIMAL || player.hand.value[0] >= 10) {
+            } else if (strategy != eStrategies.OPTIMAL || player.hand.value[0] >= BEST_KEEP_HIGH_MIN) {
                 player.hand.tradeIns = hand.map(function(c) { return c.rank != player.hand.value[0]; });
                 console.log("Hand is bad, trading in four cards. "+player.hand.tradeIns);
                 return;
