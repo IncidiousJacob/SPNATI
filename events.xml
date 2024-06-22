@@ -210,9 +210,9 @@
         <character highlight="summer">mom_alola</character>
 
         <!--
-            This specifies a list of candy images to use during the event.
-            Each <path> element should contain a relative path to an image from the `opponents/` folder,
-            like the candy image paths found in `spniTitle.js`.
+            This specifies a list of candy images to use during the event,
+            using the exact same format and attributes as the main candy list in opponents/candy.xml.
+            See that file for details on the options available for candy images.
 
             These images will completely replace the default candy images during the event.
             However, if no candy images are specified for an event, then the default images will be used instead.
@@ -220,158 +220,158 @@
             If multiple overlapping events are active, all of their candy images will be combined
             into a single large pool of images to randomly draw from.
         -->
-        <candy>
-            <path>reskins/barbara_summertime_sparkle/0-cheering.png</path>
-            <path>reskins/barbara_summertime_sparkle/0-surprised.png</path>
-            <path>reskins/barbara_summertime_sparkle/0-sheepish.png</path>
-            <path>reskins/barbara_summertime_sparkle/0-happy.png</path>
-            <path>reskins/chara_dreemurr_summer/0-devious.png</path>
-            <path>reskins/chara_dreemurr_summer/0-happy.png</path>
-            <path>reskins/chara_dreemurr_summer/0-rigid.png</path>
-            <path>reskins/chara_dreemurr_summer/0-thinking.png</path>
-            <path>reskins/critical_darling_beach/0-portrait.png</path>
-            <path>reskins/critical_darling_beach/0-ice.png</path>
-            <path>reskins/critical_darling_beach/0-sing.png</path>
-            <path>reskins/critical_darling_beach/0-rockin.png</path>
-            <path>reskins/dark_magician_girl_summertime_fun/0-calm.png</path>
-            <path>reskins/dark_magician_girl_summertime_fun/0-flirty.png</path>
-            <path>reskins/dark_magician_girl_summertime_fun/0-happy.png</path>
-            <path>reskins/dark_magician_girl_summertime_fun/0-interested.png</path>
-            <path>reskins/gloria_beachside/0-laugh.png</path>
-            <path>reskins/gloria_beachside/0-flirty.png</path>
-            <path>reskins/gloria_beachside/0-neutral.png</path>
-            <path>reskins/gloria_beachside/0-smug.png</path>
-            <path>reskins/ignatz_sunshiny_assassin/0-flustered.png</path>
-            <path>reskins/ignatz_sunshiny_assassin/0-friendly.png</path>
-            <path>reskins/ignatz_sunshiny_assassin/0-stripping+.png</path>
-            <path>reskins/ignatz_sunshiny_assassin/0-fearthedeer.png</path>
-            <path>reskins/juri_summer/0-calm.png</path>
-            <path>reskins/juri_summer/0-horny.png</path>
-            <path>reskins/juri_summer/1-excited.png</path>
-            <path>reskins/juri_summer/1-interested.png</path>
-            <path>reskins/laevatein_bonfires_blaze/0-sceptical.png</path>
-            <path>reskins/laevatein_bonfires_blaze/0-unsure.png</path>
-            <path>reskins/laevatein_bonfires_blaze/0-default.png</path>
-            <path>reskins/laevatein_bonfires_blaze/0-unamused.png</path>
-            <path>reskins/leonie_relentless_rays/0-stretch-alt.png</path>
-            <path>reskins/leonie_relentless_rays/1-after.png</path>
-            <path>reskins/leonie_relentless_rays/1-flustered.png</path>
-            <path>reskins/leonie_relentless_rays/1-pondering.png</path>
-            <path>reskins/mari_summer/0-tease.png</path>
-            <path>reskins/mari_summer/0-wink-2.png</path>
-            <path>reskins/mari_summer/3-relaxed.png</path>
-            <path>reskins/mari_summer/3-coy.png</path>
-            <path>reskins/may_summer/0-ready.png</path>
-            <path>reskins/may_summer/0-oopsy.png</path>
-            <path>reskins/may_summer/0-calm.png</path>
-            <path>reskins/may_summer/0-cute.png</path>
-            <path>reskins/pyrrha_summer_maiden/0-happy.png</path>
-            <path>reskins/pyrrha_summer_maiden/1-stripped.png</path>
-            <path>reskins/pyrrha_summer_maiden/3-stripping.png</path>
-            <path>reskins/pyrrha_summer_maiden/4-encourage.png</path>
-            <path>reskins/senko_beach/0-interested.png</path>
-            <path>reskins/senko_beach/0-araara.png</path>
-            <path>reskins/senko_beach/2-hug.png</path>
-            <path>reskins/senko_beach/2-pampering.png</path>
-            <path>reskins/swimsuit_sheena/0-calm.png</path>
-            <path>reskins/swimsuit_sheena/1-excited.png</path>
-            <path>reskins/swimsuit_sheena/2-interested.png</path>
-            <path>reskins/swimsuit_sheena/3-sulky.png</path>
-            <path>reskins/wiifitfemale_tropical_trainer/0-StretchBack.png</path>
-            <path>reskins/wiifitfemale_tropical_trainer/0-calm.png</path>
-            <path>reskins/wiifitfemale_tropical_trainer/0-happy.png</path>
-            <path>reskins/wiifitfemale_tropical_trainer/0-interested.png</path>
-            <path>reskins/wikipe-tan_summer/0-flirt.png</path>
-            <path>reskins/wikipe-tan_summer/1-smirk.png</path>
-            <path>reskins/wikipe-tan_summer/2-casual.png</path>
-            <path>reskins/wikipe-tan_summer/4-neutral.png</path>
-            <path>reskins/yshtola_scion_vacationer/0-coy.png</path>
-            <path>reskins/yshtola_scion_vacationer/0-delighted.png</path>
-            <path>reskins/yshtola_scion_vacationer/0-calm.png</path>
-            <path>reskins/yshtola_scion_vacationer/0-smug.png</path>
-            <path>reskins/yuno_uno_summer/0-aa_select.png</path>
-            <path>reskins/yuno_uno_summer/0-casual.png</path>
-            <path>reskins/yuno_uno_summer/0-embarrassed.png</path>
-            <path>reskins/yuno_uno_summer/0-happy_to_be_here.png</path>
-            <path>reskins/summer_larachel/0-calm.png</path>
-            <path>reskins/summer_larachel/1-confident.png</path>
-            <path>reskins/summer_larachel/2-calm.png</path>
-            <path>reskins/summer_larachel/3-confident.png</path>
-            <path>reskins/nugi-chan_bikini/0-select.png</path>
-            <path>reskins/nugi-chan_bikini/1-loss.png</path>
-            <path>reskins/nugi-chan_bikini/2-embarrassed.png</path>
-            <path>reskins/nugi-chan_bikini/3-interested.png</path>
-            <path>reskins/estelle_refreshing_dress/0-calm.png</path>
-            <path>reskins/estelle_refreshing_dress/1-strip.png</path>
-            <path>reskins/estelle_refreshing_dress/2-happy.png</path>
-            <path>reskins/estelle_refreshing_dress/2-after.png</path>
-            <path>reskins/zizou_summer/0-appreciative.png</path>
-            <path>reskins/zizou_summer/0-victory.png</path>
-            <path>reskins/zizou_summer/0-angry.png</path>
-            <path>reskins/zizou_summer/0-awkward.png</path>
-            <path>reskins/summertime_sayaka/0-happy.png</path>
-            <path>reskins/summertime_sayaka/1-calm.png</path>
-            <path>reskins/summertime_sayaka/2-bored.png</path>
-            <path>reskins/summertime_sayaka/3-awkward.png</path>
-            <path>reskins/mari_setogaya_sunny_day_vampire/0-grin.png</path>
-            <path>reskins/mari_setogaya_sunny_day_vampire/3-after.png</path>
-            <path>reskins/mari_setogaya_summer_succubus/2-after.png</path>
-            <path>reskins/mari_setogaya_summer_succubus/4-love.png</path>
-            <path>reskins/aqua_kh_summer/0-giggling.png</path>
-            <path>reskins/aqua_kh_summer/0-happy.png</path>
-            <path>reskins/aqua_kh_summer/2-keyblade_stance.png</path>
-            <path>reskins/aqua_kh_summer/2-turned_on.png</path>
-            <path>reskins/rosa_summer/0-bun_touching.png</path>
-            <path>reskins/rosa_summer/0-portrait.png</path>
-            <path>reskins/rosa_summer/2-stripped.png</path>
-            <path>reskins/rosa_summer/2-thinking.png</path>
-            <path>reskins/hilda_sundrenched_nobility/0-conversational</path>
-            <path>reskins/hilda_sundrenched_nobility/0-relaxed.png</path>
-            <path>reskins/hilda_sundrenched_nobility/2-smug.png</path>
-            <path>reskins/hilda_sundrenched_nobility/3-flirty.png</path>
-            <path>reskins/fluttershy_summer-shy/0-kind2.png</path>
-            <path>reskins/fluttershy_summer-shy/0-flirty.png</path>
-            <path>reskins/fluttershy_summer-shy/0-amused.png</path>
-            <path>reskins/fluttershy_summer-shy/0-flattered.png</path>
-            <path>reskins/wasp_summer/0-start.png</path>
-            <path>reskins/wasp_summer/0-flirt.png</path>
-            <path>reskins/wasp_summer/0-excited.png</path>
-            <path>reskins/wasp_summer/0-tease.png</path>
-            <path>reskins/yunyun_summer_of_friends/0-Happy.png</path>
-            <path>reskins/yunyun_summer_of_friends/3-Shy.png</path>
-            <path>reskins/yunyun_summer_of_friends/4-Posing2.png</path>
-            <path>reskins/yunyun_summer_of_friends/5-Facade.png</path>
-            <path>reskins/petra_summer/0-select.png</path>
-            <path>reskins/petra_summer/0-happy.png</path>
-            <path>reskins/petra_summer/2-horny.png</path>
-            <path>reskins/petra_summer/2-wink.png</path>
-            <path>reskins/nagatoro_beach_day/3-pose.png</path>
-            <path>reskins/nagatoro_beach_day/3-annoyed.png</path>
-            <path>reskins/nagatoro_beach_day/0-mean.png</path>
-            <path>reskins/nagatoro_beach_day/0-glee.png</path>
-            <path>reskins/polly_fckin_hot/0-Neutral.png</path>
-            <path>reskins/polly_fckin_hot/0-Flirty.png</path>
-            <path>reskins/polly_fckin_hot/0-Excited.png</path>
-            <path>reskins/polly_fckin_hot/0-Partying.png</path>
+        <candy-catalog>
+            <candy uid="barbara" base="reskins/barbara_summertime_sparkle" src="0-cheering.png" />
+            <candy uid="barbara" base="reskins/barbara_summertime_sparkle" src="0-surprised.png" />
+            <candy uid="barbara" base="reskins/barbara_summertime_sparkle" src="0-sheepish.png" />
+            <candy uid="barbara" base="reskins/barbara_summertime_sparkle" src="0-happy.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_summer" src="0-devious.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_summer" src="0-happy.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_summer" src="0-rigid.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_summer" src="0-thinking.png" />
+            <candy uid="critical_darling" base="reskins/critical_darling_beach" src="0-portrait.png" />
+            <candy uid="critical_darling" base="reskins/critical_darling_beach" src="0-ice.png" />
+            <candy uid="critical_darling" base="reskins/critical_darling_beach" src="0-sing.png" />
+            <candy uid="critical_darling" base="reskins/critical_darling_beach" src="0-rockin.png" />
+            <candy uid="dark_magician_girl" base="reskins/dark_magician_girl_summertime_fun" src="0-calm.png" />
+            <candy uid="dark_magician_girl" base="reskins/dark_magician_girl_summertime_fun" src="0-flirty.png" />
+            <candy uid="dark_magician_girl" base="reskins/dark_magician_girl_summertime_fun" src="0-happy.png" />
+            <candy uid="dark_magician_girl" base="reskins/dark_magician_girl_summertime_fun" src="0-interested.png" />
+            <candy uid="gloria" base="reskins/gloria_beachside" src="0-laugh.png" />
+            <candy uid="gloria" base="reskins/gloria_beachside" src="0-flirty.png" />
+            <candy uid="gloria" base="reskins/gloria_beachside" src="0-neutral.png" />
+            <candy uid="gloria" base="reskins/gloria_beachside" src="0-smug.png" />
+            <candy uid="ignatz" base="reskins/ignatz_sunshiny_assassin" src="0-flustered.png" />
+            <candy uid="ignatz" base="reskins/ignatz_sunshiny_assassin" src="0-friendly.png" />
+            <candy uid="ignatz" base="reskins/ignatz_sunshiny_assassin" src="0-stripping+.png" />
+            <candy uid="ignatz" base="reskins/ignatz_sunshiny_assassin" src="0-fearthedeer.png" />
+            <candy uid="juri" base="reskins/juri_summer" src="0-calm.png" />
+            <candy uid="juri" base="reskins/juri_summer" src="0-horny.png" />
+            <candy uid="juri" base="reskins/juri_summer" src="1-excited.png" />
+            <candy uid="juri" base="reskins/juri_summer" src="1-interested.png" />
+            <candy uid="laevatein" base="reskins/laevatein_bonfires_blaze" src="0-sceptical.png" />
+            <candy uid="laevatein" base="reskins/laevatein_bonfires_blaze" src="0-unsure.png" />
+            <candy uid="laevatein" base="reskins/laevatein_bonfires_blaze" src="0-default.png" />
+            <candy uid="laevatein" base="reskins/laevatein_bonfires_blaze" src="0-unamused.png" />
+            <candy uid="leonie" base="reskins/leonie_relentless_rays" src="0-stretch-alt.png" />
+            <candy uid="leonie" base="reskins/leonie_relentless_rays" src="1-after.png" />
+            <candy uid="leonie" base="reskins/leonie_relentless_rays" src="1-flustered.png" />
+            <candy uid="leonie" base="reskins/leonie_relentless_rays" src="1-pondering.png" />
+            <candy uid="mari" base="reskins/mari_summer" src="0-tease.png" />
+            <candy uid="mari" base="reskins/mari_summer" src="0-wink-2.png" />
+            <candy uid="mari" base="reskins/mari_summer" src="3-relaxed.png" />
+            <candy uid="mari" base="reskins/mari_summer" src="3-coy.png" />
+            <candy uid="may" base="reskins/may_summer" src="0-ready.png" />
+            <candy uid="may" base="reskins/may_summer" src="0-oopsy.png" />
+            <candy uid="may" base="reskins/may_summer" src="0-calm.png" />
+            <candy uid="may" base="reskins/may_summer" src="0-cute.png" />
+            <candy uid="pyrrha" base="reskins/pyrrha_summer_maiden" src="0-happy.png" />
+            <candy uid="pyrrha" base="reskins/pyrrha_summer_maiden" src="1-stripped.png" />
+            <candy uid="pyrrha" base="reskins/pyrrha_summer_maiden" src="3-stripping.png" />
+            <candy uid="pyrrha" base="reskins/pyrrha_summer_maiden" src="4-encourage.png" />
+            <candy uid="senko" base="reskins/senko_beach" src="0-interested.png" />
+            <candy uid="senko" base="reskins/senko_beach" src="0-araara.png" />
+            <candy uid="senko" base="reskins/senko_beach" src="2-hug.png" />
+            <candy uid="senko" base="reskins/senko_beach" src="2-pampering.png" />
+            <candy uid="sheena" base="reskins/swimsuit_sheena" src="0-calm.png" />
+            <candy uid="sheena" base="reskins/swimsuit_sheena" src="1-excited.png" />
+            <candy uid="sheena" base="reskins/swimsuit_sheena" src="2-interested.png" />
+            <candy uid="sheena" base="reskins/swimsuit_sheena" src="3-sulky.png" />
+            <candy uid="wiifitfemale" base="reskins/wiifitfemale_tropical_trainer" src="0-StretchBack.png" />
+            <candy uid="wiifitfemale" base="reskins/wiifitfemale_tropical_trainer" src="0-calm.png" />
+            <candy uid="wiifitfemale" base="reskins/wiifitfemale_tropical_trainer" src="0-happy.png" />
+            <candy uid="wiifitfemale" base="reskins/wiifitfemale_tropical_trainer" src="0-interested.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_summer" src="0-flirt.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_summer" src="1-smirk.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_summer" src="2-casual.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_summer" src="4-neutral.png" />
+            <candy uid="yshtola" base="reskins/yshtola_scion_vacationer" src="0-coy.png" />
+            <candy uid="yshtola" base="reskins/yshtola_scion_vacationer" src="0-delighted.png" />
+            <candy uid="yshtola" base="reskins/yshtola_scion_vacationer" src="0-calm.png" />
+            <candy uid="yshtola" base="reskins/yshtola_scion_vacationer" src="0-smug.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_summer" src="0-aa_select.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_summer" src="0-casual.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_summer" src="0-embarrassed.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_summer" src="0-happy_to_be_here.png" />
+            <candy uid="larachel" base="reskins/summer_larachel" src="0-calm.png" />
+            <candy uid="larachel" base="reskins/summer_larachel" src="1-confident.png" />
+            <candy uid="larachel" base="reskins/summer_larachel" src="2-calm.png" />
+            <candy uid="larachel" base="reskins/summer_larachel" src="3-confident.png" />
+            <candy uid="nugi-chan" base="reskins/nugi-chan_bikini" src="0-select.png" />
+            <candy uid="nugi-chan" base="reskins/nugi-chan_bikini" src="1-loss.png" />
+            <candy uid="nugi-chan" base="reskins/nugi-chan_bikini" src="2-embarrassed.png" />
+            <candy uid="nugi-chan" base="reskins/nugi-chan_bikini" src="3-interested.png" />
+            <candy uid="estelle" base="reskins/estelle_refreshing_dress" src="0-calm.png" />
+            <candy uid="estelle" base="reskins/estelle_refreshing_dress" src="1-strip.png" />
+            <candy uid="estelle" base="reskins/estelle_refreshing_dress" src="2-happy.png" />
+            <candy uid="estelle" base="reskins/estelle_refreshing_dress" src="2-after.png" />
+            <candy uid="zizou" base="reskins/zizou_summer" src="0-appreciative.png" />
+            <candy uid="zizou" base="reskins/zizou_summer" src="0-victory.png" />
+            <candy uid="zizou" base="reskins/zizou_summer" src="0-angry.png" />
+            <candy uid="zizou" base="reskins/zizou_summer" src="0-awkward.png" />
+            <candy uid="sayaka" base="reskins/summertime_sayaka" src="0-happy.png" />
+            <candy uid="sayaka" base="reskins/summertime_sayaka" src="1-calm.png" />
+            <candy uid="sayaka" base="reskins/summertime_sayaka" src="2-bored.png" />
+            <candy uid="sayaka" base="reskins/summertime_sayaka" src="3-awkward.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_sunny_day_vampire" src="0-grin.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_sunny_day_vampire" src="3-after.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_summer_succubus" src="2-after.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_summer_succubus" src="4-love.png" />
+            <candy uid="aqua_kh" base="reskins/aqua_kh_summer" src="0-giggling.png" />
+            <candy uid="aqua_kh" base="reskins/aqua_kh_summer" src="0-happy.png" />
+            <candy uid="aqua_kh" base="reskins/aqua_kh_summer" src="2-keyblade_stance.png" />
+            <candy uid="aqua_kh" base="reskins/aqua_kh_summer" src="2-turned_on.png" />
+            <candy uid="rosa" base="reskins/rosa_summer" src="0-bun_touching.png" />
+            <candy uid="rosa" base="reskins/rosa_summer" src="0-portrait.png" />
+            <candy uid="rosa" base="reskins/rosa_summer" src="2-stripped.png" />
+            <candy uid="rosa" base="reskins/rosa_summer" src="2-thinking.png" />			
+            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="0-conversational.png" />
+            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="0-relaxed.png" />
+            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="2-smug.png" />
+            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="3-flirty.png" />	
+            <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-kind2.png" />
+            <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-flirty.png" />
+            <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-amused.png" />
+            <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-flattered.png" />
+            <candy uid="wasp" base="reskins/wasp_summer" src="0-start.png" />
+            <candy uid="wasp" base="reskins/wasp_summer" src="0-flirt.png" />
+            <candy uid="wasp" base="reskins/wasp_summer" src="0-excited.png" />
+            <candy uid="wasp" base="reskins/wasp_summer" src="0-tease.png" />
+            <candy uid="yunyun" base="reskins/yunyun_summer_of_friends" src="0-Happy.png" />
+            <candy uid="yunyun" base="reskins/yunyun_summer_of_friends" src="3-Shy.png" />
+            <candy uid="yunyun" base="reskins/yunyun_summer_of_friends" src="4-Posing2.png" />
+            <candy uid="yunyun" base="reskins/yunyun_summer_of_friends" src="5-Facade.png" />
+            <candy uid="petra" base="reskins/petra_summer" src="0-select.png" />
+            <candy uid="petra" base="reskins/petra_summer" src="0-happy.png" />
+            <candy uid="petra" base="reskins/petra_summer" src="2-horny.png" />
+            <candy uid="petra" base="reskins/petra_summer" src="2-wink.png" />
+            <candy uid="nagatoro" base="reskins/nagatoro_beach_day" src="3-pose.png" />
+            <candy uid="nagatoro" base="reskins/nagatoro_beach_day" src="3-annoyed.png" />
+            <candy uid="nagatoro" base="reskins/nagatoro_beach_day" src="0-mean.png" />
+            <candy uid="nagatoro" base="reskins/nagatoro_beach_day" src="0-glee.png" />
+            <candy uid="polly" base="reskins/polly_fckin_hot" src="0-Neutral.png" />
+            <candy uid="polly" base="reskins/polly_fckin_hot" src="0-Flirty.png" />
+            <candy uid="polly" base="reskins/polly_fckin_hot" src="0-Excited.png" />
+            <candy uid="polly" base="reskins/polly_fckin_hot" src="0-Partying.png" />
             <!--
-            <path>reskins/monika_stirring_mermaid/0-writing-tip.png</path>
-            <path>reskins/monika_stirring_mermaid/1-interested.png</path>
-            <path>reskins/monika_stirring_mermaid/2-happy.png</path>
-            <path>reskins/monika_stirring_mermaid/3-shy-happy.png</path>
+            <candy uid="monika" base="reskins/monika_stirring_mermaid" src="0-writing-tip.png" />
+            <candy uid="monika" base="reskins/monika_stirring_mermaid" src="1-interested.png" />
+            <candy uid="monika" base="reskins/monika_stirring_mermaid" src="2-happy.png" />
+            <candy uid="monika" base="reskins/monika_stirring_mermaid" src="3-shy-happy.png" />
             -->
             <!--
-            <path>reskins/summertime_ryuji/0-cocky.png</path>
-            <path>reskins/summertime_ryuji/1-cheerful.png</path>
-            <path>reskins/summertime_ryuji/2-startled.png</path>
-            <path>reskins/summertime_ryuji/3-awkward.png</path>
+            <candy uid="ryuji" base="reskins/summertime_ryuji" src="0-cocky.png" />
+            <candy uid="ryuji" base="reskins/summertime_ryuji" src="1-cheerful.png" />
+            <candy uid="ryuji" base="reskins/summertime_ryuji" src="2-startled.png" />
+            <candy uid="ryuji" base="reskins/summertime_ryuji" src="3-awkward.png" />
             -->
             <!--
-            <path>reskins/cagliostro_alchemist_waters_edge/0-Cutesy.png</path>
-            <path>reskins/cagliostro_alchemist_waters_edge/0-Excited.png</path>
-            <path>reskins/cagliostro_alchemist_waters_edge/3-Smug.png</path>
-            <path>reskins/cagliostro_alchemist_waters_edge/3-Grin.png</path>
-            -->
-        </candy>
+            <candy uid="cagliostro" base="reskins/cagliostro_alchemist_waters_edge" src="0-Cutesy.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_alchemist_waters_edge" src="0-Excited.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_alchemist_waters_edge" src="3-Smug.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_alchemist_waters_edge" src="3-Grin.png" />
+			-->
+        </candy-catalog>
 
         <!--
             NOTE: there is one element that the Summer event does not use:
@@ -436,149 +436,145 @@
 
         <costumes highlight="valentines" partition="1" sort="1">valentines</costumes>
 
-        <candy>
-            <path>reskins/meia_cupid/0-disappointed.png</path>
-            <path>reskins/meia_cupid/1-busy.png</path>
-            <path>reskins/meia_cupid/2-pleased.png</path>
-            <path>reskins/meia_cupid/2-addressing.png</path>
+        <candy-catalog>
+            <candy uid="meia" base="reskins/meia_cupid" src="0-disappointed.png" />
+            <candy uid="meia" base="reskins/meia_cupid" src="1-busy.png" />
+            <candy uid="meia" base="reskins/meia_cupid" src="2-pleased.png" />
+            <candy uid="meia" base="reskins/meia_cupid" src="2-addressing.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="0-wave.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="1-smiling.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="1-wave.png" />
+            <candy uid="roll_caskett" base="reskins/roll_caskett_pure_white_mechanic" src="2-stretch.png" />
+            
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="0-smug.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="0-seductive.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="1-sadistic.png" />
+            <candy uid="maria" base="reskins/maria_sadistic_venus" src="1-chuckling.png" />
 
-            <path>reskins/roll_caskett_pure_white_mechanic/0-wave.png</path>
-            <path>reskins/roll_caskett_pure_white_mechanic/1-smiling.png</path>
-            <path>reskins/roll_caskett_pure_white_mechanic/1-wave.png</path>
-            <path>reskins/roll_caskett_pure_white_mechanic/2-stretch.png</path>
-
-            <path>reskins/maria_sadistic_venus/0-smug.png</path>
-            <path>reskins/maria_sadistic_venus/0-seductive.png</path>
-            <path>reskins/maria_sadistic_venus/1-sadistic.png</path>
-            <path>reskins/maria_sadistic_venus/1-chuckling.png</path>
-
-            <path>reskins/sheena_sugary_summoner/0-amused.png</path>
-            <path>reskins/sheena_sugary_summoner/0-tsun.png</path>
-            <path>reskins/sheena_sugary_summoner/1-amused.png</path>
-            <path>reskins/sheena_sugary_summoner/1-horny.png</path>
-
-            <path>reskins/yuno_uno_valentine/0-aa_select.png</path>
-            <path>reskins/yuno_uno_valentine/0-casual.png</path>
-            <path>reskins/yuno_uno_valentine/0-embarrassed.png</path>
-            <path>reskins/yuno_uno_valentine/0-happy_to_be_here.png</path>
-
-            <path>reskins/magma_grunt_casual_date/0-cocky.png</path>
-            <path>reskins/magma_grunt_casual_date/0-ladyboner.png</path>
-            <path>reskins/magma_grunt_casual_date/0-neutral.png</path>
-            <path>reskins/magma_grunt_casual_date/0-phone_grin.png</path>
-
-            <path>reskins/anatoly_box_of_chocolates/0-bashful.png</path>
-            <path>reskins/anatoly_box_of_chocolates/0-selection.png</path>
-            <path>reskins/anatoly_box_of_chocolates/0-shy.png</path>
-            <path>reskins/anatoly_box_of_chocolates/0-smug.png</path>
-
-            <path>reskins/kumatora_waitress/0-annoyed.png</path>
-            <path>reskins/kumatora_waitress/0-cheerful.png</path>
-            <path>reskins/kumatora_waitress/0-flustered.png</path>
-            <path>reskins/kumatora_waitress/0-laughing.png</path>
-            <!--
-            <path>reskins/cheerleaderochako/0-calm.png</path>
-            <path>reskins/cheerleaderochako/1-heroic.png</path>
-            <path>reskins/cheerleaderochako/2-happy.png</path>
-            <path>reskins/cheerleaderochako/3-embarrassed.png</path>
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="0-amused.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="0-tsun.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="1-amused.png" />
+            <candy uid="sheena" base="reskins/sheena_sugary_summoner" src="1-horny.png" />
+            
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-aa_select.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-casual.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-embarrassed.png" />
+            <candy uid="yuno_uno" base="reskins/yuno_uno_valentine" src="0-happy_to_be_here.png" />
+            
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-cocky.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-ladyboner.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-neutral.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_casual_date" src="0-phone_grin.png" />
+            
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-bashful.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-selection.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-shy.png" />
+            <candy uid="anatoly" base="reskins/anatoly_box_of_chocolates" src="0-smug.png" />
+            
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-annoyed.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-cheerful.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-flustered.png" />
+            <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-laughing.png" />
+            <!--            
+            <candy uid="uravity" base="reskins/cheerleaderochako" src="0-calm.png" />
+            <candy uid="uravity" base="reskins/cheerleaderochako" src="1-heroic.png" />
+            <candy uid="uravity" base="reskins/cheerleaderochako" src="2-happy.png" />
+            <candy uid="uravity" base="reskins/cheerleaderochako" src="3-embarrassed.png" />
             -->
             <!--
-            <path>reskins/monika_love_bug/0-writing-tip.png</path>
-            <path>reskins/monika_love_bug/1-interested.png</path>
-            <path>reskins/monika_love_bug/2-happy.png</path>
-            <path>reskins/monika_love_bug/3-shy-happy.png</path>
+            <candy uid="monika" base="reskins/monika_love_bug" src="0-writing-tip.png" />
+            <candy uid="monika" base="reskins/monika_love_bug" src="1-interested.png" />
+            <candy uid="monika" base="reskins/monika_love_bug" src="2-happy.png" />
+            <candy uid="monika" base="reskins/monika_love_bug" src="3-shy-happy.png" />
             -->
-            <path>reskins/flower_girl_ini/0-sleepy.png</path>
-            <path>reskins/flower_girl_ini/1-excited.png</path>
-            <path>reskins/flower_girl_ini/2-dumb.png</path>
-            <path>reskins/flower_girl_ini/3-cracker.png</path>
-
-            <path>reskins/festival_aella/0-happy.png</path>
-            <path>reskins/festival_aella/1-flustered.png</path>
-            <path>reskins/festival_aella/2-interested.png</path>
-            <path>reskins/festival_aella/2-happy.png</path>
-
-            <path>reskins/lynbride/0-calm.png</path>
-            <path>reskins/lynbride/1-happy.png</path>
-            <path>reskins/lynbride/2-interested.png</path>
-            <path>reskins/lynbride/3-happy.png</path>
+            <candy uid="ini" base="reskins/flower_girl_ini" src="0-sleepy.png" />
+            <candy uid="ini" base="reskins/flower_girl_ini" src="1-excited.png" />
+            <candy uid="ini" base="reskins/flower_girl_ini" src="2-dumb.png" />
+            <candy uid="ini" base="reskins/flower_girl_ini" src="3-cracker.png" />
+            <candy uid="aella" base="reskins/festival_aella" src="0-happy.png" />
+            <candy uid="aella" base="reskins/festival_aella" src="1-flustered.png" />
+            <candy uid="aella" base="reskins/festival_aella" src="2-interested.png" />
+            <candy uid="aella" base="reskins/festival_aella" src="2-happy.png" />
+            <candy uid="lyn" base="reskins/lynbride" src="0-calm.png" />
+            <candy uid="lyn" base="reskins/lynbride" src="1-happy.png" />
+            <candy uid="lyn" base="reskins/lynbride" src="2-interested.png" />
+            <candy uid="lyn" base="reskins/lynbride" src="3-happy.png" />
             <!--
-            <path>reskins/chiakimaid/0-sleepy.png</path>
-            <path>reskins/chiakimaid/1-happy.png</path>
-            <path>reskins/chiakimaid/2-excited.png</path>
-            <path>reskins/chiakimaid/3-embarrassed.png</path>
+            <candy uid="chiaki" base="reskins/chiakimaid" src="0-sleepy.png" />
+            <candy uid="chiaki" base="reskins/chiakimaid" src="1-happy.png" />
+            <candy uid="chiaki" base="reskins/chiakimaid" src="2-excited.png" />
+            <candy uid="chiaki" base="reskins/chiakimaid" src="3-embarrassed.png" />
             -->
             <!--
-            <path>reskins/zizou_valentine/0-happy.png</path>
-            <path>reskins/zizou_valentine/1-excited.png</path>
-            <path>reskins/zizou_valentine/2-appreciative.png</path>
-            <path>reskins/zizou_valentine/2-puzzled.png</path>
+            <candy uid="zizou" base="reskins/zizou_valentine" src="0-happy.png" />
+            <candy uid="zizou" base="reskins/zizou_valentine" src="1-excited.png" />
+            <candy uid="zizou" base="reskins/zizou_valentine" src="2-appreciative.png" />
+            <candy uid="zizou" base="reskins/zizou_valentine" src="2-puzzled.png" />
             -->
-            <path>reskins/nagisa_maid_cafe/0-happy.png</path>
-            <path>reskins/nagisa_maid_cafe/1-z_stripping.png</path>
-            <path>reskins/nagisa_maid_cafe/2-wink.png</path>
-            <path>reskins/nagisa_maid_cafe/3-embarrassed_2.png</path>
+            <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="0-happy.png" />
+            <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="1-z_stripping.png" />
+            <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="2-wink.png" />
+            <candy uid="nagisa" base="reskins/nagisa_maid_cafe" src="3-embarrassed_2.png" />
             <!-- This costumeis now evergreen/non-seasonal
-            <path>reskins/spooky_nurse/0-innocent.png</path>
-            <path>reskins/spooky_nurse/0-excited.png</path>
-            <path>reskins/spooky_nurse/0-calm.png</path>
-            <path>reskins/spooky_nurse/0-happy.png</path>
+            <candy uid="spooky" base="reskins/spooky_nurse" src="0-innocent.png" />
+            <candy uid="spooky" base="reskins/spooky_nurse" src="0-excited.png" />
+            <candy uid="spooky" base="reskins/spooky_nurse" src="0-calm.png" />
+            <candy uid="spooky" base="reskins/spooky_nurse" src="0-happy.png" />
             -->
-            <path>reskins/emi_lovebunny/0-excited.png</path>
-            <path>reskins/emi_lovebunny/1-interested.png</path>
-            <path>reskins/emi_lovebunny/2-stripping.png</path>
-            <path>reskins/emi_lovebunny/3-happy.png</path>
-
-            <path>reskins/twisted_fate_tango/0-1.png</path>
-            <path>reskins/twisted_fate_tango/1-Charming.png</path>
-            <path>reskins/twisted_fate_tango/2-Calm.png</path>
-            <path>reskins/twisted_fate_tango/0-Happy.png</path>
-
-            <path>reskins/estelle_enchanting_bell/0-interested.png</path>
-            <path>reskins/estelle_enchanting_bell/0-lecture.png</path>
-            <path>reskins/estelle_enchanting_bell/0-strip.png</path>
-            <path>reskins/estelle_enchanting_bell/0-happy.png</path>
-
-            <path>reskins/gloria_valentine/0-neutral.png</path>
-            <path>reskins/gloria_valentine/0-horny.png</path>
-            <path>reskins/gloria_valentine/0-z_portrait.png</path>
-            <path>reskins/gloria_valentine/0-flirty.png</path>
-
-            <path>reskins/hu_tao_pyretic_passion/0-cocky.png</path>
-            <path>reskins/hu_tao_pyretic_passion/0-holdHat.png</path>
-            <path>reskins/hu_tao_pyretic_passion/0-mischievous.png</path>
-            <path>reskins/hu_tao_pyretic_passion/0-shhh.png</path>
-
-            <path>reskins/kyou_magician_girl/0-calm.png</path>
-            <path>reskins/kyou_magician_girl/0-excited.png</path>
-            <path>reskins/kyou_magician_girl/0-impressed.png</path>
-            <path>reskins/kyou_magician_girl/0-positive.png</path>
-
-            <path>reskins/mari_nurse/0-tease.png</path>
-            <path>reskins/mari_nurse/0-smug-3.png</path>
-            <path>reskins/mari_nurse/0-coy.png</path>
-            <path>reskins/mari_nurse/0-demure.png</path>
-
-            <path>reskins/mari_setogaya_lovestruck_succubus/0-interested.png</path>
-            <path>reskins/mari_setogaya_lovestruck_succubus/0-wink.png</path>
-            <path>reskins/mari_setogaya_lovestruck_succubus/0-greeting.png</path>
-            <path>reskins/mari_setogaya_lovestruck_succubus/0-grin.png</path>
-
-            <path>reskins/rosa_princess/0-portrait.png</path>
-            <path>reskins/rosa_princess/0-Happy.png</path>
-            <path>reskins/rosa_princess/0-embarrassed.png</path>
-            <path>reskins/rosa_princess/0-bun_touching.png</path>
-
-            <path>reskins/takatoshi_gluttonous_groomsman/0-Confident.png</path>
-            <path>reskins/takatoshi_gluttonous_groomsman/0-Calm.png</path>
-            <path>reskins/takatoshi_gluttonous_groomsman/0-Embarrassed.png</path>
-            <path>reskins/takatoshi_gluttonous_groomsman/0-Yakisoba.png</path>
-
-            <path>reskins/yshtola_sweetheart_scion/0-content.png</path>
-            <path>reskins/yshtola_sweetheart_scion/0-coy.png</path>
-            <path>reskins/yshtola_sweetheart_scion/0-embarrassed.png</path>
-            <path>reskins/yshtola_sweetheart_scion/0-excited.png</path>
-        </candy>
+            <candy uid="emi" base="reskins/emi_lovebunny" src="0-excited.png" />
+            <candy uid="emi" base="reskins/emi_lovebunny" src="1-interested.png" />
+            <candy uid="emi" base="reskins/emi_lovebunny" src="2-stripping.png" />
+            <candy uid="emi" base="reskins/emi_lovebunny" src="3-happy.png" />
+            <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="0-1.png" />
+            <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="1-Charming.png" />
+            <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="2-Calm.png" />
+            <candy uid="twisted_fate" base="reskins/twisted_fate_tango" src="0-Happy.png" />
+            
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-interested.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-lecture.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-strip.png" />
+            <candy uid="estelle" base="reskins/estelle_enchanting_bell" src="0-happy.png" />
+            
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-neutral.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-horny.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-z_portrait.png" />
+            <candy uid="gloria" base="reskins/gloria_valentine" src="0-flirty.png" />
+            
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-cocky.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-holdHat.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-mischievous.png" />
+            <candy uid="hu_tao" base="reskins/hu_tao_pyretic_passion" src="0-shhh.png" />
+            
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-calm.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-excited.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-impressed.png" />
+            <candy uid="kyou" base="reskins/kyou_magician_girl" src="0-positive.png" />
+            
+            <candy uid="mari" base="reskins/mari_nurse" src="0-tease.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-smug-3.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-coy.png" />
+            <candy uid="mari" base="reskins/mari_nurse" src="0-demure.png" />
+            
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-interested.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-wink.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-greeting.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_lovestruck_succubus" src="0-grin.png" />
+            
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-portrait.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-Happy.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-embarrassed.png" />
+            <candy uid="rosa" base="reskins/rosa_princess" src="0-bun_touching.png" />
+            
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Confident.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Calm.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Embarrassed.png" />
+            <candy uid="takatoshi" base="reskins/takatoshi_gluttonous_groomsman" src="0-Yakisoba.png" />
+            
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-content.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-coy.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-embarrassed.png" />
+            <candy uid="yshtola" base="reskins/yshtola_sweetheart_scion" src="0-excited.png" />
+        </candy-catalog>
     </event>
     <event id="easter">
         <name>Easter</name>
@@ -632,60 +628,61 @@
 
         <costumes highlight="easter" partition="1" sort="1">easter</costumes>
 
-        <candy>
-            <path>reskins/new_year_aella/0-calm.png</path>
-            <path>reskins/new_year_aella/0-embarrassed.png</path>
-            <path>reskins/new_year_aella/0-happy.png</path>
-            <path>reskins/new_year_aella/0-interested.png</path>
-            <path>reskins/bunny_catria/0-calm.png</path>
-            <path>reskins/bunny_catria/0-ironic.png</path>
-            <path>reskins/bunny_catria/0-heart.png</path>
-            <path>reskins/bunny_catria/0-behind.png</path>
+        <candy-catalog>
+            <candy uid="aella" base="reskins/new_year_aella" src="0-calm.png" />
+            <candy uid="aella" base="reskins/new_year_aella" src="0-embarrassed.png" />
+            <candy uid="aella" base="reskins/new_year_aella" src="0-happy.png" />
+            <candy uid="aella" base="reskins/new_year_aella" src="0-interested.png" />
+            <candy uid="catria" base="reskins/bunny_catria" src="0-calm.png" />
+            <candy uid="catria" base="reskins/bunny_catria" src="0-ironic.png" />
+            <candy uid="catria" base="reskins/bunny_catria" src="0-heart.png" />
+            <candy uid="catria" base="reskins/bunny_catria" src="0-behind.png" />
+            <!--         
+            <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Cutesy.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Happy.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Horny.png" />
+            <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Smug.png" />
+            -->           
+            <candy uid="florina" base="reskins/florina_easter" src="0-interested.png" />
+            <candy uid="florina" base="reskins/florina_easter" src="0-horny.png" />
+            <candy uid="florina" base="reskins/florina_easter" src="0-calm.png" />
+            <candy uid="florina" base="reskins/florina_easter" src="1-stripped.png" />
+            <candy uid="kazuma" base="reskins/kazuma_spring" src="0-awkward.png" />
+            <candy uid="kazuma" base="reskins/kazuma_spring" src="0-embarrassed.png" />
+            <candy uid="kazuma" base="reskins/kazuma_spring" src="0-horrified.png" />
+            <candy uid="kazuma" base="reskins/kazuma_spring" src="0-shocked.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-casual.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-wink.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-relaxed.png" />
+            <candy uid="mari" base="reskins/mari_spring" src="0-demure.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-wink.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-grin.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-nice.png" />
+            <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-strip.png" />
+          
+            <candy uid="may" base="reskins/may_hopping_bunny" src="0-cute.png" />
+            <candy uid="may" base="reskins/may_hopping_bunny" src="0-oopsy.png" />
+            <candy uid="may" base="reskins/may_hopping_bunny" src="0-ready.png" />
+            <candy uid="may" base="reskins/may_hopping_bunny" src="0-confident.png" />
             <!--
-            <path>reskins/cagliostro_bunny_alchemist/0-Cutesy.png</path>
-            <path>reskins/cagliostro_bunny_alchemist/0-Happy.png</path>
-            <path>reskins/cagliostro_bunny_alchemist/0-Horny.png</path>
-            <path>reskins/cagliostro_bunny_alchemist/0-Smug.png</path>
+            <candy uid="pinkie_pie" base="reskins/pink_bunny" src="0-hi.png" />
+            <candy uid="pinkie_pie" base="reskins/pink_bunny" src="0-wink.png" />
+            <candy uid="pinkie_pie" base="reskins/pink_bunny" src="1-happy.png" />
+            <candy uid="pinkie_pie" base="reskins/pink_bunny" src="1-excited.png" />
             -->
-            <path>reskins/florina_easter/0-interested.png</path>
-            <path>reskins/florina_easter/0-horny.png</path>
-            <path>reskins/florina_easter/0-calm.png</path>
-            <path>reskins/florina_easter/1-stripped.png</path>
-            <path>reskins/kazuma_spring/0-awkward.png</path>
-            <path>reskins/kazuma_spring/0-embarrassed.png</path>
-            <path>reskins/kazuma_spring/0-horrified.png</path>
-            <path>reskins/kazuma_spring/0-shocked.png</path>
-            <path>reskins/mari_spring/0-casual.png</path>
-            <path>reskins/mari_spring/0-wink.png</path>
-            <path>reskins/mari_spring/0-relaxed.png</path>
-            <path>reskins/mari_spring/0-demure.png</path>
-            <path>reskins/mari_setogaya_succu-bunny/0-wink.png</path>
-            <path>reskins/mari_setogaya_succu-bunny/0-grin.png</path>
-            <path>reskins/mari_setogaya_succu-bunny/0-nice.png</path>
-            <path>reskins/mari_setogaya_succu-bunny/0-strip.png</path>
-            <path>reskins/may_hopping_bunny/0-cute.png</path>
-            <path>reskins/may_hopping_bunny/0-oopsy.png</path>
-            <path>reskins/may_hopping_bunny/0-ready.png</path>
-            <path>reskins/may_hopping_bunny/0-confident.png</path>
-            <!--
-            <path>reskins/pink_bunny/0-hi.png</path>
-            <path>reskins/pink_bunny/0-wink.png</path>
-            <path>reskins/pink_bunny/1-happy.png</path>
-            <path>reskins/pink_bunny/1-excited.png</path>
-            -->
-            <path>reskins/rosa_bunny_buns/0-bun_touching.png</path>
-            <path>reskins/rosa_bunny_buns/0-calm.png</path>
-            <path>reskins/rosa_bunny_buns/0-Happy.png</path>
-            <path>reskins/rosa_bunny_buns/0-portrait.png</path>
-            <path>reskins/sheena_chosen_beauty/0-calm.png</path>
-            <path>reskins/sheena_chosen_beauty/0-flustered.png</path>
-            <path>reskins/sheena_chosen_beauty/0-interested.png</path>
-            <path>reskins/sheena_chosen_beauty/0-angry.png</path>
-            <path>reskins/yshtola_leporine_scion/0-calm.png</path>
-            <path>reskins/yshtola_leporine_scion/0-coy.png</path>
-            <path>reskins/yshtola_leporine_scion/0-excited.png</path>
-            <path>reskins/yshtola_leporine_scion/0-smug.png</path>
-        </candy>
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-bun_touching.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-calm.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-Happy.png" />
+            <candy uid="rosa" base="reskins/rosa_bunny_buns" src="0-portrait.png" />
+            <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-calm.png" />
+            <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-flustered.png" />
+            <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-interested.png" />
+            <candy uid="sheena" base="reskins/sheena_chosen_beauty" src="0-angry.png" />
+            <candy uid="yshtola" base="reskins/yshtola_leporine_scion" src="0-calm.png" />
+            <candy uid="yshtola" base="reskins/yshtola_leporine_scion" src="0-coy.png" />
+            <candy uid="yshtola" base="reskins/yshtola_leporine_scion" src="0-excited.png" />
+            <candy uid="yshtola" base="reskins/yshtola_leporine_scion" src="0-smug.png" />
+        </candy-catalog>
     </event>
     <event id="halloween">
         <name>Halloween</name>
@@ -715,68 +712,68 @@
         <character highlight="halloween">marceline</character>
         <character highlight="halloween">azami</character>
 
-        <candy>
-            <path>reskins/chara_dreemurr_halloween/0-demonangry.png</path>
-            <path>reskins/chara_dreemurr_halloween/0-snark.png</path>
-            <path>reskins/chara_dreemurr_halloween/0-anger.png</path>
-            <path>reskins/chara_dreemurr_halloween/0-aroused.png</path>
-            <path>reskins/dawn_dusk_magi/0-aha!.png</path>
-            <path>reskins/dawn_dusk_magi/0-compliment.png</path>
-            <path>reskins/dawn_dusk_magi/0-happy.png</path>
-            <path>reskins/dawn_dusk_magi/0-elate.png</path>
-            <path>reskins/emi_shadow/0-annoyed.png</path>
-            <path>reskins/emi_shadow/1-shrug.png</path>
-            <path>reskins/emi_shadow/2-calm.png</path>
-            <path>reskins/emi_shadow/3-stripped.png</path>
-            <path>reskins/ignatz_drawn_brawn/0-surprised.png</path>
-            <path>reskins/ignatz_drawn_brawn/0-shocked.png</path>
-            <path>reskins/ignatz_drawn_brawn/0-uncomfortable.png</path>
-            <path>reskins/ignatz_drawn_brawn/0-nervous.png</path>
-            <path>reskins/ghost_bride_weiss_schnee/0-angry.png</path>
-            <path>reskins/ghost_bride_weiss_schnee/1-grinning.png</path>
-            <path>reskins/ghost_bride_weiss_schnee/2-happy.png</path>
-            <path>reskins/ghost_bride_weiss_schnee/3-confused.png</path>
-            <path>reskins/larachel_harvest_princess/0-calm.png</path>
-            <path>reskins/larachel_harvest_princess/1-smug.png</path>
-            <path>reskins/larachel_harvest_princess/2-dismissive.png</path>
-            <path>reskins/larachel_harvest_princess/3-confident.png</path>
-            <path>reskins/magma_grunt_shark/0-scheming.png</path>
-            <path>reskins/magma_grunt_shark/0-curious.png</path>
-            <path>reskins/magma_grunt_shark/0-genuine_fear.png</path>
-            <path>reskins/magma_grunt_shark/0-happy.png</path>
-            <path>reskins/mavis_vampirella/0-Start.png</path>
-            <path>reskins/mavis_vampirella/0-Interested.png</path>
-            <path>reskins/mavis_vampirella/0-Calm.png</path>
-            <path>reskins/mavis_vampirella/0-Scared.png</path>
-            <path>reskins/misato_catrina/0-Calm.png</path>
-            <path>reskins/misato_catrina/1-Confident.png</path>
-            <path>reskins/misato_catrina/2-Happy.png</path>
-            <path>reskins/misato_catrina/3-Drink.png</path>
-            <path>reskins/petra_halloween/0-handout.png</path>
-            <path>reskins/petra_halloween/0-horny.png</path>
-            <path>reskins/petra_halloween/0-understanding.png</path>
-            <path>reskins/petra_halloween/0-happy.png</path>
-            <path>reskins/senko_kitsune_no_oni/0-hug.png</path>
-            <path>reskins/senko_kitsune_no_oni/0-joy.png</path>
-            <path>reskins/senko_kitsune_no_oni/0-silly.png</path>
-            <path>reskins/senko_kitsune_no_oni/0-smug.png</path>
-            <path>reskins/white_raven/0-selected.png</path>
-            <path>reskins/white_raven/1-loss.png</path>
-            <path>reskins/white_raven/2-happy.png</path>
-            <path>reskins/white_raven/3-thinking.png</path>
-            <path>reskins/witchs_costume/0-calm.png</path>
-            <path>reskins/witchs_costume/1-pushing.png</path>
-            <path>reskins/witchs_costume/2-interested.png</path>
-            <path>reskins/witchs_costume/3-happy.png</path>
-            <path>reskins/wikipe-tan_majokko/0-educate.png</path>
-            <path>reskins/wikipe-tan_majokko/0-excited.png</path>
-            <path>reskins/wikipe-tan_majokko/1-aa-stripped.png</path>
-            <path>reskins/wikipe-tan_majokko/2-flirt.png</path>
-            <path>reskins/yunyun_trick_or_friends/0-Happy.png</path>
-            <path>reskins/yunyun_trick_or_friends/1-Excited.png</path>
-            <path>reskins/yunyun_trick_or_friends/2-Posing2.png</path>
-            <path>reskins/yunyun_trick_or_friends/3-Posing.png</path>
-        </candy>
+        <candy-catalog>
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_halloween" src="0-demonangry.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_halloween" src="0-snark.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_halloween" src="0-anger.png" />
+            <candy uid="chara_dreemurr" base="reskins/chara_dreemurr_halloween" src="0-aroused.png" />
+            <candy uid="dawn" base="reskins/dawn_dusk_magi" src="0-aha!.png" />
+            <candy uid="dawn" base="reskins/dawn_dusk_magi" src="0-compliment.png" />
+            <candy uid="dawn" base="reskins/dawn_dusk_magi" src="0-happy.png" />
+            <candy uid="dawn" base="reskins/dawn_dusk_magi" src="0-elate.png" />
+            <candy uid="emi" base="reskins/emi_shadow" src="0-annoyed.png" />
+            <candy uid="emi" base="reskins/emi_shadow" src="1-shrug.png" />
+            <candy uid="emi" base="reskins/emi_shadow" src="2-calm.png" />
+            <candy uid="emi" base="reskins/emi_shadow" src="3-stripped.png" />
+            <candy uid="ignatz" base="reskins/ignatz_drawn_brawn" src="0-surprised.png" />
+            <candy uid="ignatz" base="reskins/ignatz_drawn_brawn" src="0-shocked.png" />
+            <candy uid="ignatz" base="reskins/ignatz_drawn_brawn" src="0-uncomfortable.png" />
+            <candy uid="ignatz" base="reskins/ignatz_drawn_brawn" src="0-nervous.png" />
+            <candy uid="weiss_schnee" base="reskins/ghost_bride_weiss_schnee" src="0-angry.png" />
+            <candy uid="weiss_schnee" base="reskins/ghost_bride_weiss_schnee" src="1-grinning.png" />
+            <candy uid="weiss_schnee" base="reskins/ghost_bride_weiss_schnee" src="2-happy.png" />
+            <candy uid="weiss_schnee" base="reskins/ghost_bride_weiss_schnee" src="3-confused.png" />
+            <candy uid="larachel" base="reskins/larachel_harvest_princess" src="0-calm.png" />
+            <candy uid="larachel" base="reskins/larachel_harvest_princess" src="1-smug.png" />
+            <candy uid="larachel" base="reskins/larachel_harvest_princess" src="2-dismissive.png" />
+            <candy uid="larachel" base="reskins/larachel_harvest_princess" src="3-confident.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_shark" src="0-scheming.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_shark" src="0-curious.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_shark" src="0-genuine_fear.png" />
+            <candy uid="magma_grunt" base="reskins/magma_grunt_shark" src="0-happy.png" />
+            <candy uid="mavis" base="reskins/mavis_vampirella" src="0-Start.png" />
+            <candy uid="mavis" base="reskins/mavis_vampirella" src="0-Interested.png" />
+            <candy uid="mavis" base="reskins/mavis_vampirella" src="0-Calm.png" />
+            <candy uid="mavis" base="reskins/mavis_vampirella" src="0-Scared.png" />
+            <candy uid="misato" base="reskins/misato_catrina" src="0-Calm.png" />
+            <candy uid="misato" base="reskins/misato_catrina" src="1-Confident.png" />
+            <candy uid="misato" base="reskins/misato_catrina" src="2-Happy.png" />
+            <candy uid="misato" base="reskins/misato_catrina" src="3-Drink.png" />
+            <candy uid="petra" base="reskins/petra_halloween" src="0-handout.png" />
+            <candy uid="petra" base="reskins/petra_halloween" src="0-horny.png" />
+            <candy uid="petra" base="reskins/petra_halloween" src="0-understanding.png" />
+            <candy uid="petra" base="reskins/petra_halloween" src="0-happy.png" />
+            <candy uid="senko" base="reskins/senko_kitsune_no_oni" src="0-hug.png" />
+            <candy uid="senko" base="reskins/senko_kitsune_no_oni" src="0-joy.png" />
+            <candy uid="senko" base="reskins/senko_kitsune_no_oni" src="0-silly.png" />
+            <candy uid="senko" base="reskins/senko_kitsune_no_oni" src="0-smug.png" />
+            <candy uid="raven" base="reskins/white_raven" src="0-selected.png" />
+            <candy uid="raven" base="reskins/white_raven" src="1-loss.png" />
+            <candy uid="raven" base="reskins/white_raven" src="2-happy.png" />
+            <candy uid="raven" base="reskins/white_raven" src="3-thinking.png" />
+            <candy uid="estelle" base="reskins/witchs_costume" src="0-calm.png" />
+            <candy uid="estelle" base="reskins/witchs_costume" src="1-pushing.png" />
+            <candy uid="estelle" base="reskins/witchs_costume" src="2-interested.png" />
+            <candy uid="estelle" base="reskins/witchs_costume" src="3-happy.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_majokko" src="0-educate.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_majokko" src="0-excited.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_majokko" src="1-aa-stripped.png" />
+            <candy uid="wikipe-tan" base="reskins/wikipe-tan_majokko" src="2-flirt.png" />
+            <candy uid="yunyun" base="reskins/yunyun_trick_or_friends" src="0-Happy.png" />
+            <candy uid="yunyun" base="reskins/yunyun_trick_or_friends" src="1-Excited.png" />
+            <candy uid="yunyun" base="reskins/yunyun_trick_or_friends" src="2-Posing2.png" />
+            <candy uid="yunyun" base="reskins/yunyun_trick_or_friends" src="3-Posing.png" />
+        </candy-catalog>
     </event>
     <event id="xmas">
         <name>Christmas</name>
@@ -801,40 +798,40 @@
 
         <costumes highlight="xmas" partition="1" sort="1">xmas</costumes>
 
-        <candy>
-            <path>reskins/bernadetta_frosty_shut-in/0-flustered.png</path>
-            <path>reskins/bernadetta_frosty_shut-in/0-timid.png</path>
-            <path>reskins/bernadetta_frosty_shut-in/0-comfortable.png</path>
-            <path>reskins/bernadetta_frosty_shut-in/0-back.png</path>
-            <path>reskins/estelle_holy_night_delivery_girl/0-calm.png</path>
-            <path>reskins/estelle_holy_night_delivery_girl/0-happy.png</path>
-            <path>reskins/estelle_holy_night_delivery_girl/0-lecture.png</path>
-            <path>reskins/estelle_holy_night_delivery_girl/0-surprised.png</path>
-            <path>reskins/jessie_christmas_queen/0-confident.png</path>
-            <path>reskins/jessie_christmas_queen/0-excited.png</path>
-            <path>reskins/jessie_christmas_queen/0-calm.png</path>
-            <path>reskins/jessie_christmas_queen/0-stripping.png</path>
-            <path>reskins/jim_commander_christmas/0-Portrait.png</path>
-            <path>reskins/jim_commander_christmas/0-Relaxed.png</path>
-            <path>reskins/jim_commander_christmas/0-Confident.png</path>
-            <path>reskins/jim_commander_christmas/0-Miffed.png</path>
-            <path>reskins/noelle_chicken_and_madame/0-dutiful.png</path>
-            <path>reskins/noelle_chicken_and_madame/0-touched.png</path>
-            <path>reskins/noelle_chicken_and_madame/0-excited.png</path>
-            <path>reskins/noelle_chicken_and_madame/0-mustStrip.png</path>
-            <path>reskins/hatsune_miku_christmas_miku/0-Encouraging.png</path>
-            <path>reskins/hatsune_miku_christmas_miku/0-Excited.png</path>
-            <path>reskins/hatsune_miku_christmas_miku/0-Calm.png</path>
-            <path>reskins/hatsune_miku_christmas_miku/0-Casual.png</path>
-            <path>reskins/rosa_special_holiday_delivery/0-confident.png</path>
-            <path>reskins/rosa_special_holiday_delivery/0-Happy.png</path>
-            <path>reskins/rosa_special_holiday_delivery/0-horny.png</path>
-            <path>reskins/rosa_special_holiday_delivery/0-thinking.png</path>
-            <path>reskins/normal_girl_tharja/0-normal.png</path>
-            <path>reskins/normal_girl_tharja/0-excited.png</path>
-            <path>reskins/normal_girl_tharja/0-shocked.png</path>
-            <path>reskins/normal_girl_tharja/0-cocky.png</path>
-        </candy>
+        <candy-catalog>
+            <candy uid="bernadetta" base="reskins/bernadetta_frosty_shut-in" src="0-flustered.png" />
+            <candy uid="bernadetta" base="reskins/bernadetta_frosty_shut-in" src="0-timid.png" />
+            <candy uid="bernadetta" base="reskins/bernadetta_frosty_shut-in" src="0-comfortable.png" />
+            <candy uid="bernadetta" base="reskins/bernadetta_frosty_shut-in" src="0-back.png" />
+            <candy uid="estelle" base="reskins/estelle_holy_night_delivery_girl" src="0-calm.png" />
+            <candy uid="estelle" base="reskins/estelle_holy_night_delivery_girl" src="0-happy.png" />
+            <candy uid="estelle" base="reskins/estelle_holy_night_delivery_girl" src="0-lecture.png" />
+            <candy uid="estelle" base="reskins/estelle_holy_night_delivery_girl" src="0-surprised.png" />
+            <candy uid="jessie" base="reskins/jessie_christmas_queen" src="0-confident.png" />
+            <candy uid="jessie" base="reskins/jessie_christmas_queen" src="0-excited.png" />
+            <candy uid="jessie" base="reskins/jessie_christmas_queen" src="0-calm.png" />
+            <candy uid="jessie" base="reskins/jessie_christmas_queen" src="0-stripping.png" />
+            <candy uid="jim" base="reskins/jim_commander_christmas" src="0-Portrait.png" />
+            <candy uid="jim" base="reskins/jim_commander_christmas" src="0-Relaxed.png" />
+            <candy uid="jim" base="reskins/jim_commander_christmas" src="0-Confident.png" />
+            <candy uid="jim" base="reskins/jim_commander_christmas" src="0-Miffed.png" />
+            <candy uid="noelle" base="reskins/noelle_chicken_and_madame" src="0-dutiful.png" />
+            <candy uid="noelle" base="reskins/noelle_chicken_and_madame" src="0-touched.png" />
+            <candy uid="noelle" base="reskins/noelle_chicken_and_madame" src="0-excited.png" />
+            <candy uid="noelle" base="reskins/noelle_chicken_and_madame" src="0-mustStrip.png" />
+            <candy uid="hatsune_miku" base="reskins/hatsune_miku_christmas_miku" src="0-Encouraging.png" />
+            <candy uid="hatsune_miku" base="reskins/hatsune_miku_christmas_miku" src="0-Excited.png" />
+            <candy uid="hatsune_miku" base="reskins/hatsune_miku_christmas_miku" src="0-Calm.png" />
+            <candy uid="hatsune_miku" base="reskins/hatsune_miku_christmas_miku" src="0-Casual.png" />
+            <candy uid="rosa" base="reskins/rosa_special_holiday_delivery" src="0-confident.png" />
+            <candy uid="rosa" base="reskins/rosa_special_holiday_delivery" src="0-Happy.png" />
+            <candy uid="rosa" base="reskins/rosa_special_holiday_delivery" src="0-horny.png" />
+            <candy uid="rosa" base="reskins/rosa_special_holiday_delivery" src="0-thinking.png" />
+            <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-normal.png" />
+            <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-excited.png" />
+            <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-shocked.png" />
+            <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-cocky.png" />
+        </candy-catalog>
     </event>
     <event id="april_fools" consistent-timezone="true">
         <name>April Fools Day</name>

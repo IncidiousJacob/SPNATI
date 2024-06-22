@@ -456,7 +456,7 @@ ResortEventInfo.prototype.show = function () {
  * @param {DateRange} dateRanges 
  * @param {HighlightedAttributeList} costumes
  * @param {string?} background 
- * @param {Set<string>} candyImages 
+ * @param {Array<Object>} candyImages 
  * @param {HighlightedAttributeList} tags
  * @param {Set<string>} includeStatuses
  * @param {HighlightedAttributeList} characters
@@ -477,7 +477,7 @@ function GameEvent(id, name, dateRanges, costumes, background, candyImages, tags
     /** @type {string?} */
     this.background = background;
 
-    /** @type {Set<string>} */
+    /** @type {Array<Object>} */
     this.candyImages = candyImages;
 
     /** @type {Set<string>} */
@@ -609,7 +609,7 @@ function parseEventElement ($xml) {
 
     var altCostumes = HighlightedAttributeList.parse($xml, "costumes");
     var background = $xml.children("background").text() || null;
-    var candyImages = loadChildSet($xml, "candy>path");
+    var candyImages = parseCandyCatalog($xml.children("candy-catalog"));
     var fillTags = HighlightedAttributeList.parse($xml, "tag");
     var includeStatuses = loadChildSet($xml, "include-status");
     var characters = HighlightedAttributeList.parse($xml, "character");
@@ -660,16 +660,16 @@ function loadEventData () {
         });
         
         if (activeGameEvents.length > 0) {
-            var candySet = new Set();
+            var candySet = [];
             var eventBackgrounds = new Set();
             var costumeSettings = [];
             var tagSettings = [];
             var characterSettings = []
 
             activeGameEvents.forEach(function (event) {
-                event.candyImages.forEach(function (path) {
-                    candySet.add(path);
-                });
+                if (event.candyImages.length > 0) {
+                    Array.prototype.push.apply(candySet, event.candyImages);
+                }
 
                 if (event.background) {
                     console.log("[" + event.id + "]" + " Adding default background option: " + event.background + ".");
@@ -691,14 +691,8 @@ function loadEventData () {
                 }
             });
 
-            if (candySet.size > 0) {
-                CANDY_LIST = [];
-    
-                console.log("Event Candy Images:")
-                candySet.forEach(function (path) {
-                    console.log("    * " + path);
-                    CANDY_LIST.push(path);
-                });
+            if (candySet.length > 0) {
+                setCandyCatalog(candySet);
             }
 
             if (eventBackgrounds.size > 0) {
