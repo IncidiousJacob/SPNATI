@@ -128,6 +128,12 @@
         <response id="147" opponent="jura" opponentId="1672" />
         <response id="148" opponent="jura" opponentId="1686" />
         <response id="149" opponent="yae_miko" opponentId="263" />
+        <response id="150" opponent="yae_miko" opponentId="309" />
+        <response id="151" opponent="roll_caskett" opponentId="165" />
+        <response id="152" opponent="leon" opponentId="1518" />
+        <response id="155" opponent="leon" opponentId="1517" />
+        <response id="157" opponent="roll_caskett" opponentId="174" />
+        <response id="158" opponent="roll_caskett" opponentId="175" />
     </responses>
     <notes>
         <note id="129">Give an honest answer if you feel like it, but at this early stage it would still be funny if the question is clearly too much and Yae has to backpedal. Either way!</note>
@@ -146,8 +152,13 @@
     <prefixes>
         <prefix>ex</prefix>
         <prefix>op</prefix>
+        <prefix>yae</prefix>
+        <prefix>sheena</prefix>
+        <prefix>yaelegs</prefix>
+        <prefix>arms</prefix>
+        <prefix>Esheena</prefix>
     </prefixes>
-    <nextId>149</nextId>
+    <nextId>158</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AquaKS_s0_1" />
@@ -202,6 +213,18 @@
         <marker scope="Public" name="DMG_s0_2" />
         <marker scope="Public" name="DMG_s1_1" />
         <marker scope="Public" name="DMG_s1_2" />
+        <marker scope="Public" name="Duality_Sheena_End" />
+        <marker scope="Public" name="Duality_Sheena_Fin" />
+        <marker scope="Public" name="Duality_Sheena_Finished" />
+        <marker scope="Public" name="Duality_Sheena_Finishing" />
+        <marker scope="Public" name="Duality_Sheena_Hi" />
+        <marker scope="Public" name="Duality_Sheena_HiStart" />
+        <marker scope="Public" name="Duality_Sheena_Lite" />
+        <marker scope="Public" name="Duality_Sheena_Medium" />
+        <marker scope="Public" name="Duality_Sheena_SelfFinishing" />
+        <marker scope="Public" name="Duality_SheenaOverYae" />
+        <marker scope="Public" name="Duality_YaeOverSheena" />
+        <marker scope="Public" name="Duality_YaeOverSheenaStart" />
         <marker scope="Public" name="Fluttershy_s0_1" />
         <marker scope="Public" name="Fluttershy_s0_2" />
         <marker scope="Public" name="Fluttershy_s1_1" />
@@ -209,6 +232,10 @@
         <marker scope="Public" name="Fluttershy_s2_1" />
         <marker scope="Public" name="Fluttershy_s2_2" />
         <marker scope="Public" name="Ghost_sN_1" />
+        <marker scope="Public" name="hutao_resp0_1" />
+        <marker scope="Public" name="hutao_resp0_2" />
+        <marker scope="Public" name="hutao_resp1_1" />
+        <marker scope="Public" name="hutao_resp2_1" />
         <marker scope="Public" name="jura_resp0_1" />
         <marker scope="Public" name="jura_resp0_2" />
         <marker scope="Public" name="jura_resp0_3" />
@@ -303,7 +330,17 @@
         <marker scope="Public" name="leon_resp5_1" />
         <marker scope="Public" name="leon_resp5_2" />
         <marker scope="Public" name="leon_resp5_3" />
+        <marker scope="Public" name="leon_resp6_1" />
         <marker scope="Public" name="leon_resp6_2" />
+        <marker scope="Public" name="leon_resp7_1" />
+        <marker scope="Public" name="leon_roll_conclude_a" />
+        <marker scope="Public" name="leon_roll_conclude_b" />
+        <marker scope="Public" name="leon_roll_next" />
+        <marker scope="Public" name="leon_roll_next_a" />
+        <marker scope="Public" name="leon_roll_next_b" />
+        <marker scope="Public" name="leon_roll_next_c" />
+        <marker scope="Public" name="leon_roll_next_cF" />
+        <marker scope="Public" name="leon_roll_next_cM" />
         <marker scope="Public" name="Leon_s0_1" />
         <marker scope="Public" name="Leon_s0_2a" />
         <marker scope="Public" name="Leon_s0_2b" />
@@ -470,7 +507,9 @@
         <marker scope="Public" name="Senko_s1_1" />
         <marker scope="Public" name="Senko_s1_2" />
         <marker scope="Public" name="Senko_s2_1" />
+        <marker scope="Public" name="Sheena_Evening" />
         <marker scope="Public" name="Sheena_Proposition" />
+        <marker scope="Public" name="Sheena_Regular" />
         <marker scope="Public" name="sheena_resp0_1" />
         <marker scope="Public" name="sheena_resp0_1a" />
         <marker scope="Public" name="sheena_resp0_2" />
@@ -490,10 +529,15 @@
         <marker scope="Public" name="sheena_resp4_2" />
         <marker scope="Public" name="sheena_resp4_3" />
         <marker scope="Public" name="sheena_resp5_1" />
+        <marker scope="Public" name="sheena_resp5_1c" />
         <marker scope="Public" name="sheena_resp5_2a" />
         <marker scope="Public" name="sheena_resp5_2b" />
+        <marker scope="Public" name="sheena_resp5_2c" />
         <marker scope="Public" name="sheena_resp5_3a" />
         <marker scope="Public" name="sheena_resp5_3b" />
+        <marker scope="Public" name="sheena_resp5_3c" />
+        <marker scope="Public" name="sheena_resp6_1" />
+        <marker scope="Public" name="sheena_resp6_2" />
         <marker scope="Public" name="Sheena_s0_1" />
         <marker scope="Public" name="Sheena_s0_1a" />
         <marker scope="Public" name="Sheena_s0_2" />
@@ -513,9 +557,14 @@
         <marker scope="Public" name="Sheena_s4_2" />
         <marker scope="Public" name="Sheena_s4_3" />
         <marker scope="Public" name="Sheena_s5_1" />
+        <marker scope="Public" name="Sheena_s5_1c" />
         <marker scope="Public" name="Sheena_s5_2" />
+        <marker scope="Public" name="Sheena_s5_2c" />
         <marker scope="Public" name="Sheena_s5_3a" />
         <marker scope="Public" name="Sheena_s5_3b" />
+        <marker scope="Public" name="Sheena_s5_3c" />
+        <marker scope="Public" name="Sheena_s6_1" />
+        <marker scope="Public" name="Sheena_s6_2" />
         <marker scope="Public" name="sofia_resp0_1" />
         <marker scope="Public" name="sofia_resp0_2" />
         <marker scope="Public" name="sofia_resp0_3" />
@@ -575,9 +624,11 @@
         <marker scope="Public" name="yae_resp4_1" />
         <marker scope="Public" name="yae_resp4_2" />
         <marker scope="Public" name="yae_resp5_1" />
+        <marker scope="Public" name="yae_resp5_1c" />
         <marker scope="Public" name="yae_resp5_2" />
         <marker scope="Public" name="yae_resp5_2a" />
         <marker scope="Public" name="yae_resp5_2b" />
+        <marker scope="Public" name="yae_resp5_2c" />
         <marker scope="Public" name="yae_resp6_1" />
         <marker scope="Public" name="yae_resp6_2" />
         <marker scope="Public" name="yae_resp7_1" />
@@ -593,9 +644,11 @@
         <marker scope="Public" name="YaeMiko_resp0_2" />
         <marker scope="Public" name="yaemiko_resp0_3" />
         <marker scope="Public" name="YaeMiko_resp0_3" />
+        <marker scope="Public" name="yaemiko_resp1_1" />
         <marker scope="Public" name="YaeMiko_resp1_1" />
         <marker scope="Public" name="YaeMiko_s1_2" />
         <marker scope="Public" name="YaeMiko_s1_3" />
+        <marker scope="Public" name="YaeMiko_s2_1" />
         <marker scope="Public" name="yshtola_resp0_1" />
         <marker scope="Public" name="yshtola_resp0_2" />
         <marker scope="Public" name="yshtola_resp0_3" />
@@ -641,6 +694,7 @@
         <marker scope="Public" name="yumeko_resp0_1" />
         <marker scope="Public" name="yumeko_resp0_2" />
         <marker scope="Public" name="yumeko_resp0_3" />
+        <marker scope="Public" name="yumeko_resp1_1" />
         <marker scope="Public" name="yuno_resp0_1" />
         <marker scope="Public" name="Yuno_s0_1" />
         <marker scope="Public" name="zeke_resp0_1" />
