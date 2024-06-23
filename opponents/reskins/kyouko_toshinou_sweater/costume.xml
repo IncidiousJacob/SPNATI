@@ -274,16 +274,16 @@
             <sprite id="stripped-a" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" x="0" y="0" />
             <directive type="animation" id="stripped-a" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" />
-                <keyframe time="2.5" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
-                <keyframe time="3.5" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
+                <keyframe time="2.25" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
             </directive>
         </pose>
         <pose id="3-stripped-silly">
             <sprite id="stripped-a" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" x="0" y="0" />
             <directive type="animation" id="stripped-a" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" />
-                <keyframe time="2.5" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
-                <keyframe time="3.5" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
+                <keyframe time="2.25" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
             </directive>
         </pose>
         <pose id="3-stripping">
@@ -1294,9 +1294,9 @@
             <sprite id="stripped-a" src="reskins/kyouko_toshinou_sweater/3-stripped-d.png" x="0" y="0" />
             <directive type="animation" id="stripped-a" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/kyouko_toshinou_sweater/3-stripped-d.png" />
-                <keyframe time="3.25" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" />
-                <keyframe time="4.75" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
-                <keyframe time="5.5" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_sweater/3-stripped-a.png" />
+                <keyframe time="2.75" src="reskins/kyouko_toshinou_sweater/3-stripped-b.png" />
+                <keyframe time="3.5" src="reskins/kyouko_toshinou_sweater/3-stripped-c.png" />
             </directive>
         </pose>
         <pose id="8-finishing">
@@ -1317,6 +1317,7 @@
             <sprite id="drips2" parent="body" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="278" y="1223" scalex="0" scaley="0" pivotx="11%" pivoty="35%" alpha="50" rotation="68" />
             <sprite id="drips2a" parent="drips2" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="14" y="-10" scalex="0.9" scaley="1" skewy="4" pivotx="11%" pivoty="35%" alpha="100" rotation="-3" />
             <sprite id="pull" z="3" src="kyouko_toshinou/posemaker/waterline.png" x="100" y="1179" scalex="0.03" scaley="0.04" skewy="0" pivotx="13%" pivoty="85%" alpha="0" rotation="253" />
+            <sprite id="shadow" z="-10" src="kyouko_toshinou/posemaker/shadow.png" x="0" y="1233" scalex="2.23" />
             <directive type="animation" id="body" ease="smooth" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.5" y="-4" />
