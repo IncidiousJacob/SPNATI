@@ -6,8 +6,8 @@
  *****                      Options Variables                     *****
  **********************************************************************/
 
-$masturbationTimerBox = $("#player-masturbation-timer-box");
-$masturbationWarningLabel = $("#masturbation-warning-label");
+$masturbationTimerBox = $('[data-option="player-masturbation-timer"]');
+$masturbationWarningLabel = $(".masturbation-warning-label");
 
 var localDayOrNight;
 function setLocalDayOrNight () {
@@ -415,7 +415,7 @@ function loadBackgrounds() {
 
 function setActiveOption(optionGroupId, selected) {
     var lookFor = (selected == null ? undefined : selected.toString());
-    $('#'+optionGroupId).find('a').each(function() {
+    $('[data-option="'+optionGroupId+'"]').find('a').each(function() {
         if ($(this).attr('data-value') === lookFor) {
             $(this).parent().addClass('active');
         } else {
@@ -425,37 +425,41 @@ function setActiveOption(optionGroupId, selected) {
 }
 
 // Handle changing of active option in one place.
-$('#options-modal .pagination, #game-settings-modal ul.pagination, #extras-modal .extra-characters-options ul.pagination').on('click', 'a', function() {
+$('#options-modal .pagination, #game-settings-modal ul.pagination, #extras-modal ul.pagination').on('click', 'a', function() {
     $(this).parent().siblings().removeClass('active');
     $(this).parent().addClass('active');
 });
 
-/************************************************************
- * The player clicked the options button. Shows the options modal.
- ************************************************************/
-function showOptionsModal () {
+function loadOptions () {
     loadMasturbationTimer();
-    setActiveOption('options-auto-fade', AUTO_FADE);
-    setActiveOption('options-card-suggest', CARD_SUGGEST);
-    setActiveOption('options-explain-hands', EXPLAIN_ALL_HANDS);
-    setActiveOption('options-ai-turn-time', GAME_DELAY);
-    setActiveOption('options-deal-speed', ANIM_TIME);
-    setActiveOption('options-auto-forfeit', FORFEIT_DELAY);
-    setActiveOption('options-auto-ending', ENDING_DELAY);
-    setActiveOption('options-minimal-ui', MINIMAL_UI);
-    setActiveOption('options-player-finishing-effect', PLAYER_FINISHING_EFFECT);
-    $("#options-ui-font-weight").val(UI_FONT_WEIGHT);
-    $("#options-ui-font-width").val(UI_FONT_WIDTH);
-    setActiveOption('options-ui-theme', UI_THEME);
+    setActiveOption('auto-fade', AUTO_FADE);
+    setActiveOption('card-suggest', CARD_SUGGEST);
+    setActiveOption('explain-hands', EXPLAIN_ALL_HANDS);
+    setActiveOption('ai-turn-time', GAME_DELAY);
+    setActiveOption('deal-speed', ANIM_TIME);
+    setActiveOption('auto-forfeit', FORFEIT_DELAY);
+    setActiveOption('auto-ending', ENDING_DELAY);
+    setActiveOption('minimal-ui', MINIMAL_UI);
+    setActiveOption('player-finishing-effect', PLAYER_FINISHING_EFFECT);
+    $('[data-option="ui-font-weight"]').val(UI_FONT_WEIGHT);
+    $('[data-option="ui-font-width"]').val(UI_FONT_WIDTH);
+    setActiveOption('ui-theme', UI_THEME);
 
     /* Don't display UI theme selector on spnati.net yet
      * TODO: remove this once transition period is over
      */
     if (isMainSite) {
-        $("#ui-theme-select-container").hide();
+        $(".ui-theme-select-container").hide();
     } else {
-        $("#ui-theme-select-container").show();
+        $(".ui-theme-select-container").show();
     }
+}
+
+/************************************************************
+ * The player clicked the options button. Shows the options modal.
+ ************************************************************/
+function showOptionsModal () {
+    loadOptions();
 
     $("#options-modal").modal('show');
 }
@@ -498,8 +502,8 @@ function setUIFontSettings(weight, width) {
     /* Round width to 1 digit of precision */
     var roundedWidth = Math.round(width * 10) / 10;
 
-    $("#text-weight-label").text(UI_FONT_WEIGHT);
-    $("#text-width-label").text(roundedWidth);
+    $(".text-weight-label").text(UI_FONT_WEIGHT);
+    $(".text-width-label").text(roundedWidth);
 
     var targetSheet = document.getElementById("font-options-sheet");
     if (!targetSheet) {
@@ -522,52 +526,53 @@ function setUITheme (scheme) {
     }
 }
 
-$('ul#options-auto-fade').on('click', 'a', function() {
+$('ul[data-option="auto-fade"]').on('click', 'a', function() {
     AUTO_FADE = $(this).attr('data-value') == "true";
 });
 
-$('ul#options-card-suggest').on('click', 'a', function() {
+$('ul[data-option="card-suggest"]').on('click', 'a', function() {
     CARD_SUGGEST = $(this).attr('data-value') == "true";
 });
 
-$('ul#options-explain-hands').on('click', 'a', function() {
+$('ul[data-option="explain-hands"]').on('click', 'a', function() {
     EXPLAIN_ALL_HANDS = $(this).attr('data-value') == "true";
 });
 
-$('ul#options-ai-turn-time').on('click', 'a', function() {
+$('ul[data-option="ai-turn-time"]').on('click', 'a', function() {
     GAME_DELAY = Number($(this).attr('data-value'));
 });
 
-$('ul#options-deal-speed').on('click', 'a', function() {
+$('ul[data-option="deal-speed"]').on('click', 'a', function() {
     ANIM_TIME = Number($(this).attr('data-value'));
     ANIM_DELAY = 0.16 * ANIM_TIME;
 });
 
-$('ul#options-auto-forfeit').on('click', 'a', function() {
+$('ul[data-option="auto-forfeit"]').on('click', 'a', function() {
     FORFEIT_DELAY = Number($(this).attr('data-value')) || null;
 });
 
-$('ul#options-auto-ending').on('click', 'a', function() {
+$('ul[data-option="auto-ending"]').on('click', 'a', function() {
     ENDING_DELAY = Number($(this).attr('data-value')) || null;
 });
 
-$('ul#options-minimal-ui').on('click', 'a', function() {
+$('ul[data-option="minimal-ui"]').on('click', 'a', function() {
     setUIMode($(this).attr('data-value') === 'true');
 });
 
 $('.ui-text-option').on('input', function() {
+    var settingsPanel = $(this).parent().parent().parent()
     setUIFontSettings(
-        Number($('#options-ui-font-weight').val()),
-        Number($('#options-ui-font-width').val()),
+        Number(settingsPanel.find('[data-option="ui-font-weight"]').val()),
+        Number(settingsPanel.find('[data-option="ui-font-width"]').val()),
     );
 });
 
-$('ul#options-ui-theme').on('click', 'a', function() {
+$('ul[data-option="ui-theme"]').on('click', 'a', function() {
     setUITheme($(this).attr('data-value') || "default");
 });
 
 
-$('ul#options-player-finishing-effect').on('click', 'a', function() {
+$('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
     PLAYER_FINISHING_EFFECT = $(this).attr('data-value') == 'true';
 });
 

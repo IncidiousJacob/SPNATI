@@ -1464,9 +1464,8 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination">
-                                                        <li id="options-table-style-1" class="active"><a
-                                                                href="#">Standard</a></li>
+                                                    <ul class="pagination" data-option="table-style">
+                                                        <li class="active"><a href="#" data-value="standard">Standard</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1479,7 +1478,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-fade">
+                                                    <ul class="pagination" data-option="auto-fade">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1494,7 +1493,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-card-suggest">
+                                                    <ul class="pagination" data-option="card-suggest">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1509,7 +1508,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-explain-hands">
+                                                    <ul class="pagination" data-option="explain-hands">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1524,7 +1523,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-ai-turn-time">
+                                                    <ul class="pagination" data-option="ai-turn-time">
                                                         <li><a href="#" data-value="0">Very Fast</a></li>
                                                         <li><a href="#" data-value="400">Fast</a></li>
                                                         <li><a href="#" data-value="800">Normal</a></li>
@@ -1542,7 +1541,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-deal-speed">
+                                                    <ul class="pagination" data-option="deal-speed">
                                                         <li><a href="#" data-value="0">Disabled</a></li>
                                                         <li><a href="#" data-value="200">Fast</a></li>
                                                         <li><a href="#" data-value="500">Normal</a></li>
@@ -1559,7 +1558,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-forfeit">
+                                                    <ul class="pagination" data-option="auto-forfeit">
                                                         <li><a href="#" data-value="4000">Fast</a></li>
                                                         <li><a href="#" data-value="7500">Normal</a></li>
                                                         <li><a href="#" data-value="10000">Slow</a></li>
@@ -1574,7 +1573,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-auto-ending">
+                                                    <ul class="pagination" data-option="auto-ending">
                                                         <li><a href="#" data-value="4000">Fast</a></li>
                                                         <li><a href="#" data-value="7500">Normal</a></li>
                                                         <li><a href="#" data-value="10000">Slow</a></li>
@@ -1589,7 +1588,7 @@
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-minimal-ui">
+                                                    <ul class="pagination" data-option="minimal-ui">
                                                         <li class="active"><a href="#" data-value="false">Disabled</a>
                                                         </li>
                                                         <li><a href="#" data-value="true">Enabled</a></li>
@@ -1604,8 +1603,8 @@
                                             </td>
                                             <td class="text-option-container">
                                                 <span class="text-option-sample">Example Text</span>
-                                                <span class="text-option-label" id="text-weight-label">500</span>
-                                                <input type="range" class="ui-text-option" id="options-ui-font-weight" min="300" max="500" step="5">
+                                                <span class="text-option-label" class="text-weight-label">500</span>
+                                                <input type="range" class="ui-text-option" data-option="ui-font-weight" min="300" max="500" step="5">
                                             </td>
                                         </tr>
 
@@ -1614,18 +1613,18 @@
                                                 <h4 class="modal-title modal-left">UI Text Width</h4>
                                             </td>
                                             <td class="text-option-container">
-                                                <span class="text-option-label" id="text-width-label">100</span>
-                                                <input type="range" class="ui-text-option" id="options-ui-font-width" min="90" max="100" step="0.5">
+                                                <span class="text-option-label" class="text-width-label">100</span>
+                                                <input type="range" class="ui-text-option" data-option="ui-font-width" min="90" max="100" step="0.5">
                                             </td>
                                         </tr>
 
-                                        <tr id="ui-theme-select-container" style="display: none;">
+                                        <tr class="ui-theme-select-container" style="display: none;">
                                             <td>
                                                 <h4 class="modal-title modal-left">UI Theme</h4>
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-ui-theme">
+                                                    <ul class="pagination" data-option="ui-theme">
                                                         <li><a href="#" data-value="default">Light Mode</a></li>
                                                         <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
                                                     </ul>
@@ -1634,13 +1633,13 @@
                                         </tr>
 
 
-                                        <tr id="player-finishing-effect-control">
+                                        <tr>
                                             <td>
                                                 <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
                                             </td>
                                             <td>
                                                 <nav>
-                                                    <ul class="pagination" id="options-player-finishing-effect">
+                                                    <ul class="pagination" data-option="player-finishing-effect">
                                                         <li><a href="#" data-value="true">Enabled</a></li>
                                                         <li><a href="#" data-value="false">Disabled</a></li>
                                                     </ul>
@@ -1654,11 +1653,11 @@
                                             </td>
                                             <td>
                                                 <input type="number" min="1"
-                                                    id="player-masturbation-timer-box">&nbsp;Phases
+                                                    data-option="player-masturbation-timer">&nbsp;Phases
                                             </td>
                                         </tr>
 
-                                        <tr id='masturbation-warning-label'>
+                                        <tr class='masturbation-warning-label'>
                                             <td>
                                                 <!-- blank table entry -->
                                             </td>
@@ -2868,7 +2867,7 @@
     <!-- End of Import/Export Modal -->
 	
 	
-    <!-- Extra Characters + Tracking Options Modal -->
+    <!-- Settings + Extra Characters + Tracking Options Modal -->
     <div id="extras-modal" class="modal table-modal fade" role="dialog">
         <div class="modal-table-container">
             <div class="modal-cell-container">
@@ -2878,125 +2877,351 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h3 class="modal-title text-center"><b>Settings</b></h3>
+                                <nav aria-label="Page navigation" class="text-center">
+                                    <ul class="pagination">
+                                        <li class="settings-page-select active" data-page="game-settings"><a href="#" data-select-page="game-settings">Game Settings</a></li>
+                                        <li class="settings-page-select" data-page="roster-settings"><a href="#" data-select-page="roster-settings">Extra Characters</a>
+                                        </li>
+                                        <li class="settings-page-select" data-page="privacy-settings"><a href="#" data-select-page="privacy-settings">Privacy Settings</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                             <div class="modal-body">
                                 <div class="modal-body-container options-container" style="width:100%">
-                                    <h3 class="modal-title text-center extra-characters-options" hidden><b>Extra Characters</b></h3>
+                                    <div class="settings-page" data-page="game-settings">
+                                        <table style="width:100%">
+                                            <!-- Table Style -->
+                                            <tbody><tr hidden="">
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Table Style</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="table-style">
+                                                            <li class="active"><a href="#" data-value="standard">Standard</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
 
-                                    <table class="extra-settings-group extra-characters-options" hidden>
-                                        <tr class="offline-option">
-                                            <td class="setting-toggle">
-                                                <ul class="pagination character-status-toggle" id="show-offline" data-status="offline">
-                                                    <li><a href="#" data-value="true">Show</a></li>
-                                                    <li><a href="#" data-value="false">Hide</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">🕸️ Legacy Characters</h4>
-                                                <h5 class="modal-left">These characters no longer meet the standards of the main game,<br />but are still fully playable.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr class="incomplete-option">
-                                            <td class="setting-toggle">
-                                                <ul class="pagination character-status-toggle" id="show-incomplete" data-status="incomplete">
-                                                    <li><a href="#" data-value="true">Show</a></li>
-                                                    <li><a href="#" data-value="false">Hide</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">🔧 Incomplete Characters</h4>
-                                                <h5 class="modal-left">These characters never completed the process to be added<br />to the main game, so they may be of lower quality.<br />On spnati.net, these are restricted to the Testing Roster.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr class="event-option">
-                                            <td class="setting-toggle">
-                                                <ul class="pagination character-status-toggle" id="show-event" data-status="event">
-                                                    <li><a href="#" data-value="true">Show</a></li>
-                                                    <li><a href="#" data-value="false">Hide</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">🃏 April Fool's Day Characters</h4>
-                                                <h5 class="modal-left">These are joke characters only available in the main game<br />during the week of April Fool's Day.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr class="duplicate-option">
-                                            <td class="setting-toggle">
-                                                <ul class="pagination character-status-toggle" id="show-duplicate" data-status="duplicate">
-                                                    <li><a href="#" data-value="true">Show</a></li>
-                                                    <li><a href="#" data-value="false">Hide</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">👥 Duplicate Characters</h4>
-                                                <h5 class="modal-left">These are usually older versions of characters that have been replaced.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr class="broken-option">
-                                            <td class="setting-toggle">
-                                                <ul class="pagination character-status-toggle" id="show-broken" data-status="broken">
-                                                    <li><a href="#" data-value="true">Show</a></li>
-                                                    <li><a href="#" data-value="false">Hide</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">❌ Broken Characters</h4>
-                                                <h5 class="modal-left">These characters have large amounts of placeholder images or dialogue.</h5>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                            <!-- Auto Fade -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Auto Table Fade</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="auto-fade">
+                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
+                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
 
-                                    <h3 class="modal-title text-center"><b>Privacy Settings</b></h3>
+                                            <!-- Card Suggest -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Card Suggest</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="card-suggest">
+                                                            <li><a href="#" data-value="true">Enabled</a></li>
+                                                            <li class="active"><a href="#" data-value="false">Disabled</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
 
-                                    <table class="extra-settings-group">
-                                        <tr>
-                                            <td class="setting-toggle">
-                                                <ul class="pagination tracking-status-toggle" id="tracking-basic" data-tracking-option="basic">
-                                                    <li><a href="#" data-value="true">Enable</a></li>
-                                                    <li><a href="#" data-value="false">Disable</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">Basic Game Statistics</h4>
-                                                <h5 class="modal-left">Send basic information about the characters you play against, how each game ends, UI settings, and selected backgrounds.</h5>
-                                                <h5 class="modal-left">We use this information to identify popular characters and backgrounds, and to tweak character difficulty.</h5>
-                                                <h5 class="modal-left">Disabling this will disable all data collection.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr>
-                                            <td class="setting-toggle">
-                                                <ul class="pagination tracking-status-toggle" id="tracking-persistent" data-tracking-option="persistent">
-                                                    <li><a href="#" data-value="true">Enable</a></li>
-                                                    <li><a href="#" data-value="false">Disable</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">Unlocked Item Reporting</h4>
-                                                <h5 class="modal-left">Send information indicating what collectibles and epilogues you've unlocked, plus a randomly-generated ID connecting together the games you play during this session.</h5>
-                                                <h5 class="modal-left">We use this information to analyze how players approach the game and what they look for when playing.</h5>
-                                            </td>
-                                        </tr>
-										
-                                        <tr>
-                                            <td class="setting-toggle">
-                                                <ul class="pagination tracking-status-toggle" id="tracking-demographics" data-tracking-option="demographics">
-                                                    <li><a href="#" data-value="true">Enable</a></li>
-                                                    <li><a href="#" data-value="false">Disable</a></li>
-                                                </ul>
-                                            </td>
-                                            <td class="setting-description">
-                                                <h4 class="modal-title modal-left">Anonymous Demographics Reporting</h4>
-                                                <h5 class="modal-left">Send information about the player tags you apply (including selected gender and size) and the clothing you choose to wear in-game.</h5>
-                                                <h5 class="modal-left">This does <em>not</em> include any information that directly identifies you or your location.</h5>
-                                                <h5 class="modal-left">We use this information to generally analyze what audiences play this game, as well as what characters are popular with particular audiences.</h5>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                            <!-- Explain Hands -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Explain all Hands after Reveal</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="explain-hands">
+                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
+                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+                                            <!-- AI Turn Time -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">AI Turn Time</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="ai-turn-time">
+                                                            <li><a href="#" data-value="0">Very Fast</a></li>
+                                                            <li><a href="#" data-value="400">Fast</a></li>
+                                                            <li class="active"><a href="#" data-value="800">Normal</a></li>
+                                                            <li><a href="#" data-value="1200">Slow</a></li>
+                                                            <li><a href="#" data-value="1600">Very Slow</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Deal Animation -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Deal Animation</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="deal-speed">
+                                                            <li><a href="#" data-value="0">Disabled</a></li>
+                                                            <li class="active"><a href="#" data-value="200">Fast</a></li>
+                                                            <li><a href="#" data-value="500">Normal</a></li>
+                                                            <li><a href="#" data-value="1000">Slow</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Auto Advance -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Auto-Advance during Forfeit</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="auto-forfeit">
+                                                            <li><a href="#" data-value="4000">Fast</a></li>
+                                                            <li><a href="#" data-value="7500">Normal</a></li>
+                                                            <li><a href="#" data-value="10000">Slow</a></li>
+                                                            <li class="active"><a href="#">Off</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Auto-Advance at End</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="auto-ending">
+                                                            <li><a href="#" data-value="4000">Fast</a></li>
+                                                            <li><a href="#" data-value="7500">Normal</a></li>
+                                                            <li><a href="#" data-value="10000">Slow</a></li>
+                                                            <li class="active"><a href="#">Off</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Minimal UI</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="minimal-ui">
+                                                            <li class=""><a href="#" data-value="false">Disabled</a>
+                                                            </li>
+                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">UI Text Weight</h4>
+                                                </td>
+                                                <td class="text-option-container">
+                                                    <span class="text-option-sample">Example Text</span>
+                                                    <span class="text-option-label text-weight-label">500</span>
+                                                    <input type="range" class="ui-text-option" data-option="ui-font-weight" min="300" max="500" step="5">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">UI Text Width</h4>
+                                                </td>
+                                                <td class="text-option-container">
+                                                    <span class="text-option-label text-width-label">100</span>
+                                                    <input type="range" class="ui-text-option" data-option="ui-font-width" min="90" max="100" step="0.5">
+                                                </td>
+                                            </tr>
+
+                                            <tr class="ui-theme-select-container">
+                                                <td>
+                                                    <h4 class="modal-title modal-left">UI Theme</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="ui-theme">
+                                                            <li class="active"><a href="#" data-value="default">Light Mode</a></li>
+                                                            <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="player-finishing-effect">
+                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
+                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+                                            <!-- Player Masturbation Timer -->
+                                            <tr>
+                                                <td style="width:25%">
+                                                    <h4 class="modal-title modal-left">How long do you... last?</h4>
+                                                </td>
+                                                <td>
+                                                    <input type="number" min="1" data-option="player-masturbation-timer">&nbsp;Phases
+                                                </td>
+                                            </tr>
+
+                                            <tr class="masturbation-warning-label" style="display: none;">
+                                                <td>
+                                                    <!-- blank table entry -->
+                                                </td>
+                                                <td>
+                                                    <h4 class="modal-title modal-body" style="color:FireBrick;">Please enter
+                                                        a positive number.</h4>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+
+                                    <div class="settings-page container-fluid" data-page="roster-settings" style="display:none">
+                                        <h3 class="modal-title text-center extra-characters-options" hidden><b>Extra Characters</b></h3>
+
+                                        <table class="extra-settings-group extra-characters-options" hidden>
+                                            <tr class="offline-option">
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination character-status-toggle" id="show-offline" data-status="offline">
+                                                        <li><a href="#" data-value="true">Show</a></li>
+                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">🕸️ Legacy Characters</h4>
+                                                    <h5 class="modal-left">These characters no longer meet the standards of the main game,<br />but are still fully playable.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="incomplete-option">
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination character-status-toggle" id="show-incomplete" data-status="incomplete">
+                                                        <li><a href="#" data-value="true">Show</a></li>
+                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">🔧 Incomplete Characters</h4>
+                                                    <h5 class="modal-left">These characters never completed the process to be added<br />to the main game, so they may be of lower quality.<br />On spnati.net, these are restricted to the Testing Roster.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="event-option">
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination character-status-toggle" id="show-event" data-status="event">
+                                                        <li><a href="#" data-value="true">Show</a></li>
+                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">🃏 April Fool's Day Characters</h4>
+                                                    <h5 class="modal-left">These are joke characters only available in the main game<br />during the week of April Fool's Day.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="duplicate-option">
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination character-status-toggle" id="show-duplicate" data-status="duplicate">
+                                                        <li><a href="#" data-value="true">Show</a></li>
+                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">👥 Duplicate Characters</h4>
+                                                    <h5 class="modal-left">These are usually older versions of characters that have been replaced.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="broken-option">
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination character-status-toggle" id="show-broken" data-status="broken">
+                                                        <li><a href="#" data-value="true">Show</a></li>
+                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">❌ Broken Characters</h4>
+                                                    <h5 class="modal-left">These characters have large amounts of placeholder images or dialogue.</h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="settings-page container-fluid" data-page="privacy-settings" style="display:none">
+                                        <h3 class="modal-title text-center"><b>Privacy Settings</b></h3>
+
+                                        <table class="extra-settings-group">
+                                            <tr>
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination tracking-status-toggle" id="tracking-basic" data-tracking-option="basic">
+                                                        <li><a href="#" data-value="true">Enable</a></li>
+                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">Basic Game Statistics</h4>
+                                                    <h5 class="modal-left">Send basic information about the characters you play against, how each game ends, UI settings, and selected backgrounds.</h5>
+                                                    <h5 class="modal-left">We use this information to identify popular characters and backgrounds, and to tweak character difficulty.</h5>
+                                                    <h5 class="modal-left">Disabling this will disable all data collection.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination tracking-status-toggle" id="tracking-persistent" data-tracking-option="persistent">
+                                                        <li><a href="#" data-value="true">Enable</a></li>
+                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">Unlocked Item Reporting</h4>
+                                                    <h5 class="modal-left">Send information indicating what collectibles and epilogues you've unlocked, plus a randomly-generated ID connecting together the games you play during this session.</h5>
+                                                    <h5 class="modal-left">We use this information to analyze how players approach the game and what they look for when playing.</h5>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination tracking-status-toggle" id="tracking-demographics" data-tracking-option="demographics">
+                                                        <li><a href="#" data-value="true">Enable</a></li>
+                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">Anonymous Demographics Reporting</h4>
+                                                    <h5 class="modal-left">Send information about the player tags you apply (including selected gender and size) and the clothing you choose to wear in-game.</h5>
+                                                    <h5 class="modal-left">This does <em>not</em> include any information that directly identifies you or your location.</h5>
+                                                    <h5 class="modal-left">We use this information to generally analyze what audiences play this game, as well as what characters are popular with particular audiences.</h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
