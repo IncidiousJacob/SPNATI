@@ -2128,9 +2128,9 @@ namespace SPNATI_Character_Editor.Activities
 		private void cmdConvert_Click(object sender, EventArgs e)
 		{
 			const int oldMajor = 105, oldMinor = 0, oldAlpha = 0;
-			const int newestMajor = 108, newestMinor = 0, newestAlpha = 0;
+			const int newestMajor = 108, newestMinor = 1, newestAlpha = 0;
 			const string oldKKLVersion = "v105";
-			const string newestKKLVersion = "v108";
+			const string newestKKLVersion = "v108.1";
 
 			int major, minor, alpha;
 			if (cboToKKLVersion.SelectedItem?.ToString() == "v107a4")
