@@ -1833,7 +1833,7 @@ function changeSearchGender(gender) {
     updateIndividualSelectFilters(true);
 }
 
-$('ul#search-gender').on('click', 'a', function() {
+$('ul[data-option="search-gender"]').on('click', 'a', function() {
     changeSearchGender(parseInt($(this).attr('data-value'), 10));
 });
 
@@ -1863,7 +1863,7 @@ function changeGroupSearchGender(gender) {
     setActiveOption("group-search-gender", gender);
 }
 
-$('ul#group-search-gender').on('click', 'a', function() {
+$('ul[data-option="group-search-gender"]').on('click', 'a', function() {
     changeGroupSearchGender(parseInt($(this).attr('data-value'), 10));
 });
 
