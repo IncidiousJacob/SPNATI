@@ -754,9 +754,9 @@
             <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-148" />
             <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
         </pose>
-        <pose id="7-both__sex_doggystyle_13">
+        <pose id="7-both__sex_doggystyle_14">
             <sprite id="z_insertionD_1" z="1" src="reskins/zeke_pandoria_summer/insertion/6-z_insertionD_1.png" x="0" y="0" />
-            <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_3.png" x="0" y="0" />
+            <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_4.png" x="0" y="0" />
             <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-148" />
             <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
         </pose>
@@ -1529,6 +1529,47 @@
                 <keyframe time="1" rotation="0" />
             </directive>
         </pose>
+        <pose id="6-blushing_blushing_alt2">
+            <sprite id="zeke_blushing" z="4" src="reskins/zeke_pandoria_summer/6-zeke_blushing.png" x="-128" y="-15" />
+            <sprite id="zeke_blush_lookside" parent="zeke_blushing" z="3" src="zeke_pandoria/extras/zeke_blush_lookside.png" x="349" y="117" alpha="100" />
+            <sprite id="pandoria_blushing" z="2" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_blushing.png" x="137" y="-60" />
+            <sprite id="pandoria_tail_blushing" parent="pandoria_blushing" z="-1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_blushing.png" x="129" y="673" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_blushing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-43" y="-137" scalex="0.8" scaley="0.8" rotation="22" />
+            <sprite id="zeke_penis_flaccid" parent="zeke_blushing" marker="penis==s" z="3" src="reskins/zeke_pandoria_summer/extras/zeke_penis_flaccid.png" x="313" y="559" pivoty="40%" rotation="-2" />
+            <sprite id="zeke_penis_erect" parent="zeke_blushing" marker="penis==h" z="3" src="reskins/zeke_pandoria_summer/extras/zeke_penis_erect.png" x="313" y="559" pivoty="40%" rotation="-2" />
+            <sprite id="pandoria_blush_lookup" parent="pandoria_blushing" z="3" src="reskins/zeke_pandoria_summer/extras/pandoria_blush_lookup.png" x="239" y="321" />
+            <sprite id="eosj_flame" marker="EyeOfShiningJustice==1" z="11" src="reskins/zeke_pandoria_summer/extras/eosj_flame.png" x="-94" y="32" pivotx="34%" pivoty="72%" />
+        </pose>
+        <pose id="8-blushing_blushing_alt2">
+            <sprite id="zeke_blushing" z="4" src="reskins/zeke_pandoria_summer/6-zeke_blushing.png" x="-128" y="-15" />
+            <sprite id="zeke_blush_lookside" parent="zeke_blushing" z="3" src="zeke_pandoria/extras/zeke_blush_lookside.png" x="349" y="117" alpha="100" />
+            <sprite id="pandoria_blushing" z="2" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_blushing.png" x="137" y="-60" />
+            <sprite id="pandoria_tail_blushing" parent="pandoria_blushing" z="-1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_blushing.png" x="129" y="673" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_blushing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-43" y="-137" scalex="0.8" scaley="0.8" rotation="22" />
+            <sprite id="zeke_penis_flaccid" parent="zeke_blushing" z="3" src="reskins/zeke_pandoria_summer/extras/zeke_penis_flaccid.png" x="313" y="559" pivoty="40%" rotation="-2" />
+            <sprite id="pandoria_blush_lookup" parent="pandoria_blushing" z="3" src="reskins/zeke_pandoria_summer/extras/pandoria_blush_lookup.png" x="239" y="321" />
+        </pose>
+        <pose id="7-both__sex_doggystyle_5">
+            <sprite id="z_insertionD_1" z="1" src="reskins/zeke_pandoria_summer/insertion/7-z_insertionD_5.png" x="0" y="0" />
+        </pose>
+        <pose id="7-both__sex_doggystyle_13">
+            <sprite id="z_insertionD_1" z="1" src="reskins/zeke_pandoria_summer/insertion/6-z_insertionD_1.png" x="0" y="0" />
+            <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_3.png" x="0" y="0" />
+            <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-148" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
+        </pose>
+        <pose id="7-both__sex_doggystyle_24">
+            <sprite id="z_insertionD_1" z="1" src="reskins/zeke_pandoria_summer/insertion/6-z_insertionD_2.png" x="0" y="0" />
+            <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_4.png" x="-15" y="0" />
+            <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-137" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
+        </pose>
+        <pose id="7-both__sex_doggystyle_34">
+            <sprite id="z_insertionD_1" z="1" src="reskins/zeke_pandoria_summer/insertion/6-z_insertionD_3.png" x="0" y="0" />
+            <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_4.png" x="0" y="0" />
+            <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-131" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
+        </pose>
     </poses>
 
     <pose-sets>
@@ -1567,9 +1608,9 @@
         </set>
         <set id="blushing_blushing_alt2_set">
             <pose stage="0-5" img="custom:blushing_blushing_alt2" />
-            <pose stage="6" img="custom:#-blushing_blushing" />
+            <pose stage="6" img="custom:#-blushing_blushing_alt2" />
             <pose stage="7" img="custom:#-blushing_blushing_alt2" />
-            <pose stage="8" img="custom:#-blushing_blushing" />
+            <pose stage="8" img="custom:#-blushing_blushing_alt2" />
         </set>
         <set id="blushing_blushing_set">
             <pose stage="0-5" img="custom:blushing_blushing" />
