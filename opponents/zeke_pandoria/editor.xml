@@ -170,6 +170,8 @@
         <response id="780" opponent="velvet" opponentId="42" />
         <response id="781" opponent="jura" opponentId="1848" />
         <response id="782" opponent="meia" opponentId="1994" />
+        <response id="788" opponent="meia" opponentId="1991" />
+        <response id="791" opponent="jura" opponentId="1856" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -317,7 +319,7 @@
         <label id="115" label="" folder="Targets" sort="61" />
         <label id="116" label="" color="3" folder="Targets" sort="12" />
         <label id="117" label="" color="3" folder="Targets" sort="13" />
-        <label id="118" label="" folder="Targets" sort="72" />
+        <label id="118" label="" color="3" folder="Targets" sort="72" />
         <label id="119" label="" folder="Default After Strip Lines" sort="6" />
         <label id="120" label="" folder="Default After Strip Lines" sort="0" />
         <label id="3" label="" folder="Default After Strip Lines" sort="2" />
@@ -628,7 +630,7 @@
         <label id="429" label="" folder="Filtered" sort="22" />
         <label id="430" label="" folder="Targets" sort="74" />
         <label id="431" label="" folder="Targets" sort="73" />
-        <label id="432" label="" folder="Responses" sort="28" />
+        <label id="432" label="" color="3" folder="Responses" sort="28" />
         <label id="433" label="" color="3" folder="Responses" sort="34" />
         <label id="434" label="" folder="Mari S" sort="4" />
         <label id="435" label="" color="3" folder="Targets" sort="42" />
@@ -862,9 +864,9 @@
         <label id="663" label="" folder="Filtered" sort="0" />
         <label id="664" label="" folder="Filtered" sort="0" />
         <label id="665" label="" folder="Filtered" sort="0" />
-        <label id="666" label="" folder="Targets" sort="0" />
+        <label id="666" label="" color="4" folder="Targets" sort="0" />
         <label id="667" label="" color="3" folder="Responses" sort="0" />
-        <label id="668" label="" folder="Responses" sort="0" />
+        <label id="668" label="" color="3" folder="Responses" sort="0" />
         <label id="669" label="" folder="Summer&gt;After Strip Lines" sort="0" />
         <label id="670" label="" folder="Summer&gt;After Strip Lines" sort="0" />
         <label id="671" label="" folder="Summer&gt;After Strip Lines" sort="0" />
@@ -902,7 +904,7 @@
         <label id="703" label="" folder="Targets" sort="0" />
         <label id="704" label="" folder="Targets" sort="0" />
         <label id="710" label="" folder="Targets" sort="0" />
-        <label id="711" label="" color="1" folder="Responses" sort="0" />
+        <label id="711" label="" color="3" folder="Responses" sort="0" />
         <label id="712" label="" folder="Articles of Clothing" sort="0" />
         <label id="713" label="" color="13" folder="Eye of Shining Justice Mode" sort="0" />
         <label id="714" label="" color="13" folder="Eye of Shining Justice Mode" sort="0" />
@@ -976,19 +978,25 @@
         <label id="781" label="" folder="Responses" sort="0" />
         <label id="780" label="" folder="Targets&gt;Velvet" sort="0" />
         <label id="782" label="" folder="Responses" sort="0" />
-        <label id="783" label="" color="1" folder="Targets" sort="0" />
+        <label id="783" label="" color="3" folder="Targets" sort="0" />
         <label id="784" label="" folder="Summer&gt;After Strip Lines" sort="0" />
         <label id="785" label="" folder="Summer&gt;After Strip Lines" sort="0" />
         <label id="786" label="" folder="Responses&gt;Sanako&gt;Left" sort="0" />
         <label id="787" label="" folder="Hidden Logic" sort="0" />
+        <label id="788" label="" folder="Responses" sort="0" />
+        <label id="789" label="" folder="Responses" sort="0" />
+        <label id="790" label="" color="4" folder="Targets" sort="0" />
+        <label id="791" label="" color="3" folder="Responses" sort="0" />
+        <label id="792" label="Heavy (Doggy Style) Tail Pull" color="5" folder="Sex&gt;Doggy" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>787</nextId>
+    <nextId>792</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="allowsex">If set to 1, Zeke and Pandoria *can* (but are not guaranteed to) have sex for their forfeit.</marker>
         <marker scope="Public" name="allowsex_lockin" />
         <marker scope="Public" name="aqua_zp_strip3b" />
@@ -1362,12 +1370,14 @@
         <marker scope="Public" name="zekepandy_jura_self0a_SBD" />
         <marker scope="Public" name="zekepandy_jura_strip3" />
         <marker scope="Public" name="zekepandy_jura_strip3b" />
+        <marker scope="Public" name="zekepandy_jura_strip3c" />
         <marker scope="Public" name="zekepandy_meia_self1a" />
         <marker scope="Public" name="zekepandy_meia_self1b" />
         <marker scope="Public" name="zekepandy_meia_self1c" />
         <marker scope="Public" name="zekepandy_meia_self2a" />
         <marker scope="Public" name="zekepandy_meia_self2b" />
         <marker scope="Public" name="zekepandy_meia_self2c" />
+        <marker scope="Public" name="zekepandy_meia_selfMustFF" />
         <marker scope="Public" name="zekepandy_miko_selfGloves1" />
         <marker scope="Public" name="zekepandy_miko_selfGloves2" />
         <marker scope="Public" name="zekepandy_miko_selfGloves3" />
@@ -1437,6 +1447,7 @@
         <marker scope="Public" name="zp_jim_preferences1" />
         <marker scope="Public" name="zp_jura_self3a" />
         <marker scope="Public" name="zp_jura_self3b" />
+        <marker scope="Public" name="zp_jura_self3c" />
         <marker scope="Public" name="zp_kora_firstStripA" />
         <marker scope="Public" name="zp_kora_gossipA" />
         <marker scope="Public" name="zp_lyn_sword1" />
