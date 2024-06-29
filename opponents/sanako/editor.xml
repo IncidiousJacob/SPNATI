@@ -336,6 +336,19 @@
         <response id="888" opponent="jura" opponentId="1095" />
         <response id="889" opponent="nagisa" opponentId="1578" />
         <response id="890" opponent="nagisa" opponentId="1616" />
+        <response id="912" opponent="yuri" opponentId="355" />
+        <response id="915" opponent="zeke_pandoria" opponentId="731" />
+        <response id="916" opponent="zeke_pandoria" opponentId="732" />
+        <response id="917" opponent="zeke_pandoria" opponentId="733" />
+        <response id="919" opponent="meia" opponentId="1983" />
+        <response id="920" opponent="meia" opponentId="20" />
+        <response id="921" opponent="meia" opponentId="75" />
+        <response id="922" opponent="meia" opponentId="101" />
+        <response id="923" opponent="nagisa" opponentId="931" />
+        <response id="924" opponent="nagisa" opponentId="389" />
+        <response id="925" opponent="nagisa" opponentId="405" />
+        <response id="926" opponent="fluttershy" opponentId="205" />
+        <response id="927" opponent="fluttershy" opponentId="224" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -349,6 +362,7 @@
         <note id="451">This covers both Adrien and Marinette being the one to finish. The marker is shared, but the actual target is fliexble.</note>
         <note id="630">Saying Text "athetic" to try to capture "Pathetic" regardless of capitalization.</note>
         <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
+        <note id="919">Stage omitted to reduce layer skipping complexity; this line is still conditional on Meia's marker</note>
     </notes>
     <labels>
         <label id="2" label="sandals" folder="" sort="0" />
@@ -1253,13 +1267,34 @@
         <label id="908" label="" folder="male player wearing Nagisa's panties" sort="0" />
         <label id="909" label="" folder="male player wearing Nagisa's panties" sort="0" />
         <label id="910" label="" folder="male player wearing Nagisa's panties" sort="0" />
+        <label id="911" label="" folder="Yuri to right" sort="0" />
+        <label id="912" label="" folder="Yuri to left" sort="0" />
+        <label id="913" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
+        <label id="914" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
+        <label id="915" label="" folder="Zeke &amp; Pandoria to left / Nagisa to left or right" sort="0" />
+        <label id="916" label="" folder="Zeke &amp; Pandoria to left" sort="0" />
+        <label id="917" label="" folder="Zeke &amp; Pandoria to left" sort="0" />
+        <label id="918" label="" folder="Meia to right" sort="0" />
+        <label id="919" label="" folder="Meia to left" sort="0" />
+        <label id="920" label="" folder="Nagisa to right / Meia to left" sort="0" />
+        <label id="921" label="" folder="Nagisa to right / Meia to left" sort="0" />
+        <label id="922" label="" folder="Nagisa to right / Meia to left" sort="0" />
+        <label id="923" label="" folder="Nagisa and Meia to left" sort="0" />
+        <label id="924" label="" folder="Nagisa to left / Fluttershy to right" sort="0" />
+        <label id="925" label="" folder="Nagisa to left / Fluttershy to right" sort="0" />
+        <label id="926" label="" folder="Nagisa and Fluttershy to left" sort="0" />
+        <label id="927" label="" folder="Nagisa and Fluttershy to left" sort="0" />
+        <label id="928" label="" folder="Nagisa and Fluttershy to right" sort="0" />
+        <label id="929" label="" folder="Nagisa and Fluttershy to right" sort="0" />
+        <label id="930" label="" folder="Nagisa and Fluttershy to right" sort="0" />
+        <label id="931" label="" folder="Ringo to left or right" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
         <prefix>caution</prefix>
     </prefixes>
-    <nextId>910</nextId>
+    <nextId>931</nextId>
     <markers>
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
         <marker scope="Public" name="sanako_adrien_marinette_dualforfeit" />
@@ -1578,6 +1613,7 @@
         <marker scope="Public" name="sanako_meia_ms_m3" />
         <marker scope="Public" name="sanako_meia_ms_m3_cupid" />
         <marker scope="Public" name="sanako_meia_ms_m4" />
+        <marker scope="Public" name="sanako_meia_ms_m4_swimsuit" />
         <marker scope="Public" name="sanako_meia_ms_m5" />
         <marker scope="Public" name="sanako_meia_ms_m6" />
         <marker scope="Public" name="sanako_meia_ms_m7" />
@@ -1619,6 +1655,7 @@
         <marker scope="Public" name="sanako_meia_sm_s12" />
         <marker scope="Public" name="sanako_meia_sm_s13" />
         <marker scope="Public" name="sanako_meia_sm_s13_with_shaved" />
+        <marker scope="Public" name="sanako_meia_sm_s14" />
         <marker scope="Public" name="sanako_meia_sm_s2" />
         <marker scope="Public" name="sanako_meia_sm_s3" />
         <marker scope="Public" name="sanako_meia_sm_s4" />
@@ -1697,8 +1734,15 @@
         <marker scope="Public" name="sanako_nagisa_deslected_3" />
         <marker scope="Public" name="sanako_nagisa_estelle_ne_n1" />
         <marker scope="Public" name="sanako_nagisa_estelle_reply_1" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nfs_n4" />
         <marker scope="Public" name="sanako_nagisa_fluttershy_nfs_n5" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nfs_n6" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nsf_n4" />
         <marker scope="Public" name="sanako_nagisa_fluttershy_nsf_n5" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_nsf_n6" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_snf_n4" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_snf_n5" />
+        <marker scope="Public" name="sanako_nagisa_fluttershy_snf_n6" />
         <marker scope="Public" name="sanako_nagisa_good_husband" />
         <marker scope="Public" name="sanako_nagisa_inventory_customers" />
         <marker scope="Public" name="sanako_nagisa_jim_age_here" />
@@ -1717,6 +1761,11 @@
         <marker scope="Public" name="sanako_nagisa_kyou_snk_n9" />
         <marker scope="Public" name="sanako_nagisa_kyou_teased" />
         <marker scope="Public" name="sanako_nagisa_losing_streak" />
+        <marker scope="Public" name="sanako_nagisa_meia_mns_n7" />
+        <marker scope="Public" name="sanako_nagisa_meia_mns_n9" />
+        <marker scope="Public" name="sanako_nagisa_meia_msn_n7" />
+        <marker scope="Public" name="sanako_nagisa_meia_msn_n8" />
+        <marker scope="Public" name="sanako_nagisa_meia_msn_n9" />
         <marker scope="Public" name="sanako_nagisa_meia_nms_n3" />
         <marker scope="Public" name="sanako_nagisa_meia_telling_tomoya" />
         <marker scope="Public" name="sanako_nagisa_miko_mns_n4" />
@@ -1937,6 +1986,7 @@
         <marker scope="Public" name="sanako_revy_meia_fight" />
         <marker scope="Public" name="sanako_revy_meia_fight_2" />
         <marker scope="Public" name="sanako_ribbon_girl_noodles" />
+        <marker scope="Public" name="sanako_ringo_flashing" />
         <marker scope="Public" name="sanako_rose_butt" />
         <marker scope="Public" name="sanako_rose_flashing_1" />
         <marker scope="Public" name="sanako_rose_flashing_2" />
@@ -2085,12 +2135,16 @@
         <marker scope="Public" name="sanako_yuri_sy_s1" />
         <marker scope="Public" name="sanako_yuri_sy_y1" />
         <marker scope="Public" name="sanako_yuri_sy_y2" />
+        <marker scope="Public" name="sanako_yuri_sy_y3" />
         <marker scope="Public" name="sanako_yuri_victory_keep_secret" />
         <marker scope="Public" name="sanako_yuri_womens_shoes" />
         <marker scope="Public" name="sanako_yuri_womens_shoes_2" />
         <marker scope="Public" name="sanako_yuri_words_of_comfort" />
         <marker scope="Public" name="sanako_yuri_ys_s1" />
+        <marker scope="Public" name="sanako_yuri_ys_s2" />
+        <marker scope="Public" name="sanako_zeke_nagisa_zs_s1" />
         <marker scope="Public" name="sanako_zeke_selected" />
+        <marker scope="Public" name="sanako_zeke_sz_s1" />
         <marker scope="Public" name="sanako_zeke_sz_z1" />
         <marker scope="Public" name="sanako_zeke_sz_z2" />
         <marker scope="Public" name="sanako_zeke_sz_z3" />
@@ -2098,6 +2152,9 @@
         <marker scope="Public" name="sanako_zeke_sz_z5" />
         <marker scope="Public" name="sanako_zeke_sz_z6" />
         <marker scope="Public" name="sanako_zeke_sz_z7" />
+        <marker scope="Public" name="sanako_zeke_sz_z8" />
+        <marker scope="Public" name="sanako_zeke_zs_s1" />
+        <marker scope="Public" name="sanako_zeke_zs_s7" />
         <marker scope="Public" name="sanako_zizou_prince" />
         <marker scope="Public" name="sanako_zonetan_strapless">Sanako mistakes Zone-tan's bare shoulders for a strapless bra.</marker>
     </markers>

@@ -1,15 +1,15 @@
 If Sanako to left and Zeke & Pandoria to right:
 
 SANAKO MUST STRIP SHOES AND SOCKS:
-Sanako []*: ??
+Sanako [sanako_zeke_sz_s1]: I'm so excited to get started! I've heard stories about mixed-gendered parties like this, but I've never been to one myself.
 Zeke & Pandoria []*: ??
 
 SANAKO STRIPPING SHOES AND SOCKS:
-Sanako []*: ??
+Sanako [sanako_zeke_sz_s2]*: ??
 Zeke & Pandoria []*: ??
 
 SANAKO STRIPPED SHOES AND SOCKS:
-Sanako []*: ??
+Sanako [sanako_zeke_sz_s3]*: ??
 Zeke & Pandoria []*: ??
 
 
@@ -72,7 +72,7 @@ Zeke & Pandoria [zekepandy_sanako_self0a]: {pandy}Yeah, I guess you could call i
 
 ZEKE & PANDORIA STRIPPING GLOVES:
 Sanako [sanako_zeke_sz_z2]: That's so sweet. I remember when I met my someone special, we were practically joined at the hip after we went steady. ~player.ifMale(He and I|We)~ never managed to get too far from our chaperone, though.
-Zeke & Pandoria [zekepandy_sanako_self0b]: We never stray too far, either. Though part of that is because we have to fight as a team, we can't do it solo.
+Zeke [zekepandy_sanako_self0b]: We never stray too far, either. Though part of that is because we have to fight as a team, we can't do it solo.
 
 ZEKE & PANDORIA STRIPPED GLOVES:
 Sanako [sanako_zeke_sz_z3]: Being able to work together and provide for each other as a team is the secret to a strong relationship. I'm so happy for the both of you!
@@ -92,17 +92,21 @@ Sanako [sanako_zeke_sz_z6]: It's okay if you want to take it slow. When my partn
 Zeke & Pandoria [zk_sanako_self1c]: We're... a little more adventurous than you and your partner, to be sure.<hr>{pandy}I mean, we are getting naked together...
 
 
-ZEKE & PANDORIA MUST STRIP COAT & BRA:
-Sanako [sanako_zeke_sz_z7]: I can't help but notice that you have poor Pandy standing there in her underthings while you still have the big fancy coat on, Zeke. I'm sure she'd appreciate an equal opportunity gesture, if you're willing.
-Zeke & Pandoria []*: ??
+ZEKE & PANDORIA MUST STRIP COAT & BRA: *change condition to default outfit
+Sanako [sanako_zeke_sz_z7]: I can't help but notice that you have poor Pandy standing there in her underthings while you still have that big fancy coat on, Zeke. I'm sure she'd appreciate an equal opportunity gesture, if you're willing.
+Zeke & Pandoria [zp_sanako_self2a_default]: That's just how things work, though I suppose I should be a gentleman and even things out a bit.<hr>{pandy}Thanks, my prince!
+             OR [zp_sanako_self2a_default]: I suppose you're right, Sanako. I'll be a real gent and take off my coat, then.<hr>{pandy}Thanks, Zekey! And good idea, Sanako.
 
 ZEKE & PANDORIA STRIPPING COAT & BRA: breasts already visible
-Sanako [sanako_zeke_sz_z8]*: ??
+Sanako [sanako_zeke_sz_z8]: That's better already! The chiseled physique and the buxom beauty: what a beautiful pair!
 Zeke & Pandoria []*: ??
 
 ZEKE & PANDORIA STRIPPED COAT & BRA:
 Sanako [sanako_zeke_sz_z9]*: ??
 Zeke & Pandoria []*: ??
+
+
+- insert case here for swimsuit outfit, but check layer skipping first - 
 
 
 ZEKE & PANDORIA MUST STRIP BOOTS:
@@ -149,15 +153,28 @@ DUE TO POSITION DETECTION, CONVERSATIONS ABOVE AND BELOW THIS LINE WON'T PLAY IN
 
 If Zeke & Pandoria to left and Sanako to right:
 
-SANAKO MUST STRIP SHOES AND SOCKS:
-Zeke & Pandoria []*: ?? -- Your characters lead the conversation here; this is just like how you'd write a regular targeted line
-Sanako []*: ??
+SANAKO MUST STRIP SHOES AND SOCKS AND NAGISA PRESENT:
+Zeke & Pandoria [zp_sanako_0a_nagisa_present]: <i>Psst. Pandy. Doesn't it seem like she's trying to go a bit incognito?</i><hr>{pandy}<i>Hmm... Now that you mention it... We probably shouldn't make a deal of it.</i>
+Sanako [sanako_zeke_nagisa_zs_s1]: What are you two whispering about over there? Care to share it with the class?
 
-SANAKO STRIPPING SHOES AND SOCKS:
+SANAKO STRIPPING SHOES AND SOCKS AND NAGISA PRESENT:
+Zeke & Pandoria []*: ??
+Sanako [sanako_zeke_zs_s2]*: ??
+
+SANAKO STRIPPED SHOES AND SOCKS AND NAGISA PRESENT:
+Zeke & Pandoria []*: ??
+Sanako [sanako_zeke_zs_s3]*: ??
+
+
+SANAKO MUST STRIP SHOES AND SOCKS AND NAGISA NOT PRESENT:
+Zeke [zp_sanako_0a]: So. What brings a charming young lady such as yourself to this establishment, Sanako?
+Sanako [sanako_zeke_zs_s1]: Oh, you know, I was just wanting a place to unwind from the stresses of running a home... room. Running a homeroom! I’m the "class president", you see, and I have a lot of responsibility on my plate.
+
+SANAKO STRIPPING SHOES AND SOCKS AND NAGISA NOT PRESENT:
 Zeke & Pandoria []*: ??
 Sanako []*: ??
 
-SANAKO STRIPPED SHOES AND SOCKS:
+SANAKO STRIPPED SHOES AND SOCKS AND NAGISA NOT PRESENT:
 Zeke & Pandoria []*: ??
 Sanako []*: ??
 
@@ -175,17 +192,30 @@ Zeke & Pandoria []*: ??
 Sanako []*: ??
 
 
-SANAKO MUST STRIP SKIRT:
+SANAKO MUST STRIP SKIRT AND NAGISA PRESENT:
 Zeke & Pandoria []*: ??
 Sanako []*: ??
 
-SANAKO STRIPPING SKIRT:
+SANAKO STRIPPING SKIRT AND NAGISA PRESENT:
 Zeke & Pandoria []*: ??
 Sanako []*: ??
 
-SANAKO STRIPPED SKIRT:
+SANAKO STRIPPED SKIRT AND NAGISA PRESENT:
 Zeke & Pandoria []*: ??
 Sanako []*: ??
+
+
+SANAKO MUST STRIP SKIRT AND NAGISA NOT PRESENT:
+Pandoria [zp_sanako_2a]: {pandy}You really have a lot of wisdom to share, huh? Got any advice for keeping a relationship feeling fresh after... a lotta years?
+Sanako [sanako_zeke_zs_s7]: Me? There are lots of ways to stay close, and I think working together is the big secret to success. But as for keeping it fresh... well, most of what I've learned there is only relevant in the bedroom, ehehe...
+
+SANAKO STRIPPING SKIRT AND NAGISA NOT PRESENT:
+Zeke & Pandoria []*: ??
+Sanako [sanako_zeke_zs_s8]*: ??
+
+SANAKO STRIPPED SKIRT AND NAGISA NOT PRESENT:
+Zeke & Pandoria []*: ??
+Sanako [sanako_zeke_zs_s9]*: ??
 
 
 SANAKO MUST STRIP BRA:
