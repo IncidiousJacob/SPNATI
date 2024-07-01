@@ -112,6 +112,12 @@
         <response id="390" opponent="meia" opponentId="1901" />
         <response id="391" opponent="meia" opponentId="1900" />
         <response id="392" opponent="meia" opponentId="1898" />
+        <response id="433" opponent="yuri" opponentId="344" />
+        <response id="434" opponent="yae_miko" opponentId="338" />
+        <response id="439" opponent="jura" opponentId="1759" />
+        <response id="440" opponent="jura" opponentId="1760" />
+        <response id="441" opponent="jura" opponentId="1813" />
+        <response id="442" opponent="meia" opponentId="1899" />
     </responses>
     <notes>
         <note id="193">Rose has left her slot to visit Magma Grunt's slot - MG is showing her a picture of her own backside</note>
@@ -123,6 +129,7 @@
         <note id="374">Gonne = Gun. Yes this is a Discworld reference, nobody can stop me</note>
         <note id="382">'put them away' implying Rose things she is a bat +anima</note>
         <note id="398">basically asking for something like, energy bars, or even just snacks/sweets that give her energy</note>
+        <note id="434">going to just have her explain out her introductory chapter straight from the manga</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Conditional" sort="18" />
@@ -168,7 +175,7 @@
         <label id="42" label="" folder="Targets" sort="6" />
         <label id="43" label="" folder="Targets&gt;Must Target Situations" sort="10" />
         <label id="44" label="" folder="Targets" sort="2" />
-        <label id="45" label="" folder="Hidden" sort="0" />
+        <label id="45" label="" folder="Hidden" sort="2" />
         <label id="46" label="Stand back up" folder="" sort="0" />
         <label id="47" label="Stand back up" folder="" sort="0" />
         <label id="48" label="" folder="Player Attracted" sort="0" />
@@ -440,89 +447,130 @@
         <label id="319" label="" folder="Response" sort="8" />
         <label id="320" label="Stand back up (Ringo)" color="3" folder="" sort="0" />
         <label id="321" label="" folder="Targets" sort="42" />
-        <label id="322" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="323" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="324" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="325" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="326" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="327" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="328" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="329" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="330" label="" folder="Costume&gt;Summer" sort="0" />
+        <label id="322" label="" folder="Costume&gt;Summer" sort="2" />
+        <label id="323" label="" folder="Costume&gt;Summer" sort="3" />
+        <label id="324" label="" folder="Costume&gt;Summer" sort="6" />
+        <label id="325" label="" folder="Costume&gt;Summer" sort="7" />
+        <label id="326" label="" folder="Costume&gt;Summer" sort="4" />
+        <label id="327" label="" folder="Costume&gt;Summer" sort="5" />
+        <label id="328" label="" folder="Costume&gt;Summer" sort="10" />
+        <label id="329" label="" folder="Costume&gt;Summer" sort="11" />
+        <label id="330" label="" folder="Costume&gt;Summer" sort="15" />
         <label id="331" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="332" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="333" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="334" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="335" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="336" label="" folder="Costume&gt;Summer" sort="0" />
-        <label id="337" label="" folder="Response" sort="0" />
-        <label id="338" label="" folder="Response" sort="0" />
-        <label id="339" label="" folder="Response" sort="0" />
-        <label id="340" label="" folder="Response" sort="0" />
-        <label id="341" label="" folder="Targets" sort="0" />
-        <label id="342" label="" folder="Targets" sort="0" />
-        <label id="343" label="" folder="Prompt Responses" sort="0" />
-        <label id="344" label="" folder="Prompt Responses" sort="0" />
-        <label id="345" label="" folder="Prompt Responses" sort="0" />
-        <label id="346" label="" folder="Response&gt;Jura" sort="0" />
-        <label id="347" label="" folder="Response&gt;Jura" sort="0" />
-        <label id="348" label="" folder="Response&gt;Jura" sort="0" />
-        <label id="349" label="" folder="Response&gt;Jura" sort="0" />
+        <label id="332" label="" folder="Costume&gt;Summer" sort="12" />
+        <label id="333" label="" folder="Costume&gt;Summer" sort="13" />
+        <label id="334" label="" folder="Costume&gt;Summer" sort="8" />
+        <label id="335" label="" folder="Costume&gt;Summer" sort="9" />
+        <label id="336" label="" folder="Costume&gt;Summer" sort="14" />
+        <label id="337" label="" folder="Response" sort="9" />
+        <label id="338" label="" folder="Response" sort="10" />
+        <label id="339" label="" folder="Response" sort="11" />
+        <label id="340" label="" folder="Response" sort="13" />
+        <label id="341" label="" folder="Targets" sort="29" />
+        <label id="342" label="" folder="Targets" sort="30" />
+        <label id="343" label="" folder="Prompt Responses" sort="4" />
+        <label id="344" label="" folder="Prompt Responses" sort="5" />
+        <label id="345" label="" folder="Prompt Responses" sort="3" />
+        <label id="346" label="" folder="Response&gt;Jura" sort="4" />
+        <label id="347" label="" folder="Response&gt;Jura" sort="9" />
+        <label id="348" label="" folder="Response&gt;Jura" sort="10" />
+        <label id="349" label="" folder="Response&gt;Jura" sort="7" />
         <label id="350" label="" folder="Flashing" sort="0" />
         <label id="351" label="" folder="Flashing" sort="0" />
-        <label id="352" label="" folder="Targets&gt;Aqua Grunt" sort="0" />
-        <label id="353" label="" folder="Targets&gt;Aqua Grunt" sort="0" />
-        <label id="354" label="" folder="Targets&gt;Aqua Grunt" sort="0" />
-        <label id="355" label="" folder="Targets" sort="0" />
+        <label id="352" label="" folder="Targets&gt;Aqua Grunt" sort="3" />
+        <label id="353" label="" folder="Targets&gt;Aqua Grunt" sort="4" />
+        <label id="354" label="" folder="Targets&gt;Aqua Grunt" sort="2" />
+        <label id="355" label="" folder="Targets" sort="9" />
         <label id="356" label="" folder="Targets&gt;Aqua Grunt" sort="0" />
-        <label id="357" label="" folder="Conditional (+Anima)" sort="0" />
-        <label id="358" label="" folder="Clothing" sort="0" />
+        <label id="357" label="" folder="Conditional (+Anima)" sort="13" />
+        <label id="358" label="" folder="Clothing" sort="2" />
         <label id="359" label="" folder="Targets&gt;Yae Miko" sort="0" />
-        <label id="360" label="" folder="Targets&gt;Yae Miko" sort="0" />
-        <label id="361" label="" folder="Targets" sort="0" />
+        <label id="360" label="" folder="Targets&gt;Yae Miko" sort="2" />
+        <label id="361" label="" folder="Targets" sort="5" />
         <label id="362" label="" folder="Conditional&gt;Consecutive Opp Loss" sort="0" />
         <label id="363" label="" folder="Hidden" sort="0" />
         <label id="364" label="" folder="Conditional&gt;Backgrounds" sort="0" />
-        <label id="365" label="" folder="Conditional&gt;Backgrounds" sort="0" />
-        <label id="366" label="" folder="Targets" sort="0" />
-        <label id="367" label="" folder="Targets" sort="0" />
-        <label id="368" label="" color="3" folder="Targets&gt;Companions" sort="0" />
-        <label id="369" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="370" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="371" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="372" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="373" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="374" label="" folder="Targets&gt;Jura" sort="0" />
-        <label id="375" label="" folder="Targets&gt;Jura" sort="0" />
-        <label id="376" label="" folder="Response&gt;Jura" sort="0" />
-        <label id="377" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="378" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="379" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="380" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="381" label="" folder="Prompt Responses" sort="0" />
-        <label id="382" label="" folder="Targets" sort="0" />
-        <label id="383" label="" folder="Response&gt;Jura" sort="0" />
+        <label id="365" label="" folder="Conditional&gt;Backgrounds" sort="2" />
+        <label id="366" label="" folder="Targets" sort="32" />
+        <label id="367" label="" folder="Targets" sort="27" />
+        <label id="368" label="" color="3" folder="Targets&gt;Companions" sort="5" />
+        <label id="369" label="" folder="Response&gt;Meia" sort="6" />
+        <label id="370" label="" folder="Response&gt;Meia" sort="7" />
+        <label id="371" label="" folder="Response&gt;Meia" sort="8" />
+        <label id="372" label="" folder="Response&gt;Meia" sort="4" />
+        <label id="373" label="" folder="Response&gt;Meia" sort="5" />
+        <label id="374" label="" folder="Targets&gt;Jura" sort="3" />
+        <label id="375" label="" folder="Targets&gt;Jura" sort="4" />
+        <label id="376" label="" folder="Response&gt;Jura" sort="11" />
+        <label id="377" label="" folder="Targets&gt;DDLC" sort="2" />
+        <label id="378" label="" folder="Targets&gt;DDLC" sort="3" />
+        <label id="379" label="" folder="Targets&gt;DDLC" sort="4" />
+        <label id="380" label="" folder="Targets&gt;DDLC" sort="5" />
+        <label id="381" label="" folder="Prompt Responses" sort="2" />
+        <label id="382" label="" folder="Targets" sort="33" />
+        <label id="383" label="" folder="Response&gt;Jura" sort="8" />
         <label id="384" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="385" label="butt pose - summer alt" folder="Conditional" sort="0" />
-        <label id="386" label="" folder="Conditional" sort="0" />
-        <label id="387" label="" folder="Targets&gt;DDLC" sort="0" />
+        <label id="385" label="butt pose - summer alt" folder="Conditional" sort="33" />
+        <label id="386" label="" folder="Conditional" sort="34" />
+        <label id="387" label="" folder="Targets&gt;DDLC" sort="6" />
         <label id="388" label="" folder="Targets&gt;DDLC" sort="0" />
-        <label id="389" label="" folder="Targets&gt;Companions" sort="0" />
-        <label id="391" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="390" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="392" label="" folder="Response&gt;Meia" sort="0" />
-        <label id="393" label="" folder="Targets" sort="0" />
-        <label id="394" label="" folder="Response" sort="0" />
-        <label id="395" label="" folder="Targets" sort="0" />
-        <label id="396" label="" folder="Targets" sort="0" />
-        <label id="397" label="" folder="Filtered Lines" sort="0" />
-        <label id="398" label="" folder="Targets" sort="0" />
-        <label id="399" label="" folder="Targets&gt;Sanako" sort="0" />
+        <label id="389" label="" folder="Targets&gt;Companions" sort="6" />
+        <label id="391" label="" folder="Response&gt;Meia" sort="10" />
+        <label id="390" label="" folder="Response&gt;Meia" sort="9" />
+        <label id="392" label="" folder="Response&gt;Meia" sort="11" />
+        <label id="393" label="" folder="Targets" sort="50" />
+        <label id="394" label="" folder="Response" sort="12" />
+        <label id="395" label="" folder="Targets" sort="34" />
+        <label id="396" label="" folder="Targets" sort="26" />
+        <label id="397" label="" folder="Filtered Lines" sort="19" />
+        <label id="398" label="" folder="Targets" sort="35" />
+        <label id="399" label="" folder="Targets&gt;Sanako" sort="2" />
+        <label id="402" label="" folder="Costume&gt;Summer" sort="16" />
+        <label id="403" label="thong butt pose" folder="Costume&gt;Summer" sort="0" />
+        <label id="404" label="" folder="Sponsorship&gt;RemFilters" sort="3" />
+        <label id="405" label="" folder="Sponsorship&gt;RemFilters" sort="0" />
+        <label id="406" label="" folder="Sponsorship&gt;RemFilters" sort="2" />
+        <label id="407" label="" folder="Sponsorship&gt;RemFilters" sort="5" />
+        <label id="408" label="" folder="Sponsorship&gt;RemFilters" sort="6" />
+        <label id="409" label="" folder="Sponsorship&gt;RemFilters" sort="4" />
+        <label id="410" label="" folder="Sponsorship&gt;RemFilters" sort="7" />
+        <label id="411" label="" folder="Sponsorship&gt;RemFilters" sort="8" />
+        <label id="412" label="" folder="Sponsorship&gt;RemFilters" sort="9" />
+        <label id="413" label="" folder="Sponsorship&gt;RemFilters" sort="10" />
+        <label id="414" label="" folder="Sponsorship&gt;RemFilters" sort="11" />
+        <label id="415" label="" folder="Sponsorship&gt;RemFilters" sort="12" />
+        <label id="416" label="" folder="Sponsorship&gt;RemFilters" sort="13" />
+        <label id="417" label="" folder="Sponsorship&gt;RemFilters" sort="14" />
+        <label id="418" label="" folder="Sponsorship&gt;RemFilters" sort="15" />
+        <label id="419" label="" folder="Sponsorship&gt;RemFilters" sort="16" />
+        <label id="420" label="" folder="Sponsorship&gt;RemFilters" sort="17" />
+        <label id="421" label="" folder="Sponsorship&gt;RemFilters" sort="18" />
+        <label id="422" label="" folder="Sponsorship&gt;RemFilters" sort="19" />
+        <label id="423" label="" folder="Sponsorship&gt;RemFilters" sort="20" />
+        <label id="424" label="" folder="Sponsorship&gt;RemFilters" sort="21" />
+        <label id="425" label="" folder="Sponsorship&gt;RemFilters" sort="22" />
+        <label id="426" label="" folder="Sponsorship&gt;RemFilters" sort="23" />
+        <label id="427" label="About Herself/Her World" folder="" sort="0" />
+        <label id="428" label="About Herself/Her World" folder="" sort="0" />
+        <label id="429" label="Dirty Talk" folder="" sort="0" />
+        <label id="430" label="" folder="Costume&gt;Summer" sort="0" />
+        <label id="431" label="" folder="Costume&gt;Summer" sort="0" />
+        <label id="432" label="" folder="Targets&gt;DDLC" sort="0" />
+        <label id="433" label="" folder="Targets&gt;DDLC" sort="0" />
+        <label id="434" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="435" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="436" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="437" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="438" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="439" label="" folder="Response&gt;Jura" sort="0" />
+        <label id="440" label="" color="4" folder="Response&gt;Jura" sort="0" />
+        <label id="441" label="" color="4" folder="" sort="0" />
+        <label id="442" label="" folder="Response&gt;Meia" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>show_anima==1</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>401</nextId>
+    <nextId>442</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="3player" />
@@ -533,12 +581,16 @@
         <marker scope="Public" name="Aella_Flash1" />
         <marker scope="Public" name="Aella_FlashB" />
         <marker scope="Public" name="anima_accusation" />
+        <marker scope="Public" name="anima_rarity" />
+        <marker scope="Public" name="anima_trauma" />
         <marker scope="Public" name="Arueshalae_favorite_featureResp" />
         <marker scope="Public" name="arueshalae_good_dream" />
         <marker scope="Public" name="arueshalae_wings1" />
+        <marker scope="Public" name="blind_opp" />
         <marker scope="Public" name="clubRouge_invitationResp" />
         <marker scope="Public" name="e" />
         <marker scope="Public" name="everyone_out_1" />
+        <marker scope="Public" name="family_importance" />
         <marker scope="Public" name="felix_intro_1" />
         <marker scope="Public" name="finished" />
         <marker scope="Public" name="flashing_1" />
@@ -546,6 +598,7 @@
         <marker scope="Public" name="foobar" />
         <marker scope="Public" name="for_me_misspeak" />
         <marker scope="Public" name="for_me_misspeak2" />
+        <marker scope="Public" name="gayff_otherm" />
         <marker scope="Public" name="good_boy" />
         <marker scope="Public" name="hot_spring_peddling" />
         <marker scope="Public" name="jura_butt_react" />
@@ -576,6 +629,7 @@
         <marker scope="Public" name="nonon_lady_jakuzure_resp" />
         <marker scope="Public" name="nonon_postcum_threat_Resp" />
         <marker scope="Public" name="nonon_short" />
+        <marker scope="Public" name="opplost_target_aggressive" />
         <marker scope="Public" name="peddling_abouttolose_naked" />
         <marker scope="Public" name="peddling_generic" />
         <marker scope="Public" name="peddling_topless" />
@@ -620,18 +674,24 @@
         <marker scope="Public" name="rose_HSW_self0a" />
         <marker scope="Public" name="rose_jura_hairCare1" />
         <marker scope="Public" name="rose_jura_hairCare2" />
+        <marker scope="Public" name="rose_jura_hairCare3" />
         <marker scope="Public" name="rose_jura_self2a" />
         <marker scope="Public" name="rose_jura_self2b" />
         <marker scope="Public" name="rose_jura_self2c" />
         <marker scope="Public" name="rose_jura_self4a" />
         <marker scope="Public" name="rose_jura_self4b" />
+        <marker scope="Public" name="rose_jura_self4c" />
+        <marker scope="Public" name="rose_jura_selfSummer0" />
+        <marker scope="Public" name="rose_jura_selfSummer0a" />
         <marker scope="Public" name="rose_jura_strip2a" />
+        <marker scope="Public" name="rose_jura_strip2b" />
         <marker scope="Public" name="rose_jura0_early" />
         <marker scope="Public" name="rose_jura0_early2" />
         <marker scope="Public" name="rose_jura0_early3" />
         <marker scope="Public" name="rose_jura0_later" />
         <marker scope="Public" name="rose_jura0_later2" />
         <marker scope="Public" name="rose_jura0_later3" />
+        <marker scope="Public" name="rose_jura1" />
         <marker scope="Public" name="rose_kirigiri_self0a" />
         <marker scope="Public" name="rose_kirigiri_self0b" />
         <marker scope="Public" name="rose_kokichi_strip0a" />
@@ -644,6 +704,7 @@
         <marker scope="Public" name="rose_meia_self2b" />
         <marker scope="Public" name="rose_meia_self3a" />
         <marker scope="Public" name="rose_meia_self3b" />
+        <marker scope="Public" name="rose_meia_self3c" />
         <marker scope="Public" name="rose_meia_self4a" />
         <marker scope="Public" name="rose_meia_self4b" />
         <marker scope="Public" name="rose_meia_self5a" />
@@ -722,22 +783,32 @@
         <marker scope="Public" name="sanako_spend_your_time" />
         <marker scope="Public" name="sayori_funstuff1" />
         <marker scope="Public" name="scratch_on_leg" />
+        <marker scope="Public" name="senri_mention" />
         <marker scope="Public" name="show_anima">If set to 1 she will show off her +Anima traits (cat claws and sharp eyes)</marker>
         <marker scope="Public" name="showing_animaFirstTime_yuno" />
         <marker scope="Public" name="standbackup" />
+        <marker scope="Public" name="summer_sale" />
+        <marker scope="Public" name="summer_sale2" />
         <marker scope="Public" name="sweetheart_donut_girl" />
         <marker scope="Public" name="target_winged_fairy" />
         <marker scope="Public" name="target_winged_nonhuman" />
+        <marker scope="Public" name="thong" />
+        <marker scope="Public" name="tough_world" />
         <marker scope="Public" name="what_does_the_J_mean" />
         <marker scope="Public" name="yaemiko_foxy1" />
+        <marker scope="Public" name="yaemiko_foxy2" />
+        <marker scope="Public" name="yaemiko_roadStories1" />
         <marker scope="Public" name="yaemiko_seductive1" />
+        <marker scope="Public" name="yaemiko_seductive2" />
         <marker scope="Public" name="yumeko_housepet_reaction" />
         <marker scope="Public" name="yuno_erection" />
         <marker scope="Public" name="yuno_rose_degree1" />
         <marker scope="Public" name="yuno_rose_degree2" />
         <marker scope="Public" name="yunyun_is_crimson_demon" />
         <marker scope="Public" name="yunyun_not_tattoos" />
+        <marker scope="Public" name="yuri_sourceGoodsResp" />
         <marker scope="Public" name="yuri_teadrinker1" />
+        <marker scope="Public" name="yuri_teadrinker2" />
     </markers>
     <recipes>
         <recipe key="4304b9c6-cdb2-4889-9ccd-fd4ccab36490">
