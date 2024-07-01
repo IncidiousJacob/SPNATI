@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+    <owner>schezo</owner>
+    <height />
+    <age>??</age>
+    <pronunciation>SHEH-zo</pronunciation>
+    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws</othernotes>
+    <noteworthy>
+        <case name="What's in a name?" id="27" priority="Prompt" min="0" max="10">
+            <description>Schezo asks if there's any special signifigance to any character's name.</description>
+        </case>
+        <case name="Neck Scar" id="12" priority="Noteworthy" min="5" max="5">
+            <description>Schezo comments about the scar, but it sounded like he died and lived...</description>
+        </case>
+        <case name="Armed?" id="90" priority="Prompt" min="0" max="0">
+            <description>The weapons in the Armory makes Schezo wonder if anyone else wields a weapon like he does.</description>
+        </case>
+        <case name="Schezo's Birthday" id="96" priority="Noteworthy" min="0" max="0">
+            <description>March 16th is Schezo's birthday!</description>
+        </case>
+        <case name="How old is he?" id="54" priority="Noteworthy" min="0" max="10">
+            <description>Schezo doesn't know how old he really is. He's at the very least an adult.</description>
+        </case>
+        <case name="Pervert? Aww man..." id="63" priority="FYI" min="0" max="10">
+            <description>Schezo grumbles about being called a pervert/creeper...in a place that is more than welcome to have lewdness.</description>
+        </case>
+        <case name="Know the Dark Prince?" id="119" priority="Noteworthy" min="0" max="10">
+            <description>Schezo asks a demon out of the blue about the Dark Prince. Only works if exactly one demon is present.</description>
+        </case>
+        <case name="Other Mages" id="131" priority="Prompt" min="0" max="8">
+            <description>Schezo senses the power of a mage and is curious.</description>
+        </case>
+        <case name="Untrained in Swords" id="132" priority="Noteworthy" min="0" max="2">
+            <description>Despite being a swordsman, he doesn't recall having proper training in swordsmanship. He is a mage first, after all.</description>
+        </case>
+        <case name="Arle and Ringo Connection" id="193" priority="FYI" min="0" max="10">
+            <description>Schezo sasses Arle and Ringo behind their backs.</description>
+        </case>
+    </noteworthy>
+    <reviewed>true</reviewed>
+    <responses>
+        <response id="1" opponent="arle" opponentId="242" />
+        <response id="2" opponent="arle" opponentId="240" />
+        <response id="3" opponent="arle" opponentId="284" />
+        <response id="18" opponent="arle" opponentId="241" />
+        <response id="19" opponent="arle" opponentId="243" />
+        <response id="23" opponent="megumin" opponentId="221" />
+        <response id="24" opponent="yshtola" opponentId="170" />
+        <response id="25" opponent="yshtola" opponentId="169" />
+        <response id="26" opponent="megumin" opponentId="222" />
+        <response id="28" opponent="arle" opponentId="317" />
+        <response id="56" opponent="arle" opponentId="253" />
+        <response id="61" opponent="yuelia" opponentId="6" />
+        <response id="88" opponent="chihiro" opponentId="2" />
+        <response id="89" opponent="chihiro" opponentId="213" />
+        <response id="92" opponent="chihiro" opponentId="1" />
+        <response id="93" opponent="neptune" opponentId="2" />
+        <response id="97" opponent="leonie" opponentId="79" />
+        <response id="98" opponent="florina" opponentId="4" />
+        <response id="99" opponent="kazuma" opponentId="9" />
+        <response id="101" opponent="kazuma" opponentId="146" />
+        <response id="104" opponent="aqua_konosuba" opponentId="16" />
+        <response id="109" opponent="felix" opponentId="234" />
+        <response id="112" opponent="arle" opponentId="252" />
+        <response id="124" opponent="yuelia" opponentId="1" />
+        <response id="125" opponent="arle" opponentId="255" />
+        <response id="126" opponent="lucina" opponentId="669" />
+        <response id="127" opponent="ms.fortune" opponentId="24" />
+        <response id="139" opponent="cynthia" opponentId="567" />
+        <response id="140" opponent="sayaka" opponentId="28" />
+        <response id="142" opponent="sayaka" opponentId="29" />
+        <response id="143" opponent="lucina" opponentId="668" />
+        <response id="165" opponent="ms.fortune" opponentId="17" />
+        <response id="166" opponent="ms.fortune" opponentId="23" />
+        <response id="168" opponent="mari_setogaya" opponentId="35" />
+        <response id="169" opponent="mari_setogaya" opponentId="55" />
+        <response id="170" opponent="mari_setogaya" opponentId="56" />
+        <response id="171" opponent="mari_setogaya" opponentId="1" />
+        <response id="172" opponent="mari_setogaya" opponentId="2" />
+        <response id="176" opponent="mari_setogaya" opponentId="17" />
+        <response id="178" opponent="mari_setogaya" opponentId="1254" />
+        <response id="181" opponent="nayru" opponentId="1" />
+        <response id="198" opponent="twisted_fate" opponentId="254" />
+        <response id="199" opponent="twisted_fate" opponentId="569" />
+        <response id="0" opponent="fina" opponentId="107" />
+        <response id="200" opponent="emi" opponentId="2" />
+        <response id="201" opponent="sweetheart" opponentId="43" />
+        <response id="202" opponent="marinette" opponentId="1363" />
+        <response id="203" opponent="marinette" opponentId="1361" />
+        <response id="219" opponent="arle" opponentId="13" />
+        <response id="226" opponent="florina" opponentId="5" />
+        <response id="228" opponent="florina" opponentId="6" />
+        <response id="235" opponent="fluttershy" opponentId="18" />
+        <response id="236" opponent="sly_cooper" opponentId="1" />
+        <response id="237" opponent="wikipe-tan" opponentId="176" />
+        <response id="238" opponent="jessie" opponentId="22" />
+        <response id="241" opponent="brock" opponentId="1" />
+        <response id="243" opponent="brock" opponentId="2" />
+        <response id="252" opponent="mari_setogaya" opponentId="1250" />
+        <response id="264" opponent="arle" opponentId="525" />
+        <response id="275" opponent="arle" opponentId="520" />
+    </responses>
+    <labels>
+        <label id="4" label="" folder="Targets" sort="3" />
+        <label id="1" label="Labyrinth of Rana" folder="Targets" sort="2" />
+        <label id="2" label="Serilly Mention" folder="Targets" sort="3" />
+        <label id="5" label="Arle-only Cleanup" folder="Targets" sort="21" />
+        <label id="6" label="Lost to Arle, Ringo Present" folder="Multi" sort="2" />
+        <label id="3" label="" folder="Targets" sort="20" />
+        <label id="8" label="Wet Clothes 1" folder="Stories" sort="3" />
+        <label id="9" label="Wet Clothes 2" folder="Stories" sort="2" />
+        <label id="10" label="" folder="Stories" sort="0" />
+        <label id="11" label="" folder="Stories" sort="0" />
+        <label id="12" label="Scar Incident 1" folder="Stories" sort="5" />
+        <label id="13" label="" folder="Stories" sort="0" />
+        <label id="14" label="" folder="Stories" sort="0" />
+        <label id="15" label="" folder="Stories" sort="0" />
+        <label id="16" label="" folder="Stories" sort="0" />
+        <label id="17" label="" folder="Targets" sort="17" />
+        <label id="19" label="Isekai'd" folder="Targets" sort="15" />
+        <label id="18" label="Tenori Zoh" folder="Targets" sort="14" />
+        <label id="20" label="" folder="Targets" sort="0" />
+        <label id="21" label="" folder="Targets" sort="16" />
+        <label id="22" label="" folder="Targets" sort="19" />
+        <label id="23" label="Frogs" folder="Targets" sort="9" />
+        <label id="24" label="" folder="Targets" sort="5" />
+        <label id="25" label="" folder="Targets" sort="6" />
+        <label id="26" label="Talking Veggies" folder="Targets" sort="10" />
+        <label id="31" label="" folder="Targets" sort="0" />
+        <label id="32" label="" folder="Targets" sort="2" />
+        <label id="33" label="" folder="Targets" sort="0" />
+        <label id="34" label="" folder="Targets" sort="4" />
+        <label id="30" label="" folder="Filtered" sort="3" />
+        <label id="35" label="" folder="Filtered" sort="2" />
+        <label id="36" label="" folder="Filtered" sort="3" />
+        <label id="37" label="" folder="Targets" sort="8" />
+        <label id="38" label="Male Gaze" folder="Filtered" sort="5" />
+        <label id="39" label="No Puyos?" folder="Filtered" sort="4" />
+        <label id="40" label="Male Gaze but Men" folder="Filtered" sort="6" />
+        <label id="49" label="Player Showdown" folder="Targets" sort="11" />
+        <label id="53" label="DOORS" folder="Targets" sort="7" />
+        <label id="55" label="Sun" folder="BG Reaction" sort="0" />
+        <label id="57" label="Sun BG" folder="BG Reaction" sort="3" />
+        <label id="58" label="Library" folder="BG Reaction" sort="2" />
+        <label id="62" label="Instantly a Creeper" folder="" sort="0" />
+        <label id="63" label="Why me..." folder="" sort="0" />
+        <label id="50" label="Showdown" folder="" sort="0" />
+        <label id="54" label="Vague Birthday" folder="" sort="0" />
+        <label id="72" label="" folder="Targets" sort="0" />
+        <label id="73" label="" folder="Targets" sort="21" />
+        <label id="61" label="" folder="Targets" sort="6" />
+        <label id="27" label="" folder="Prompts" sort="2" />
+        <label id="74" label="Basic Puyo Lore 1" folder="Stories" sort="2" />
+        <label id="75" label="Introduction" folder="Stories" sort="0" />
+        <label id="76" label="Basic Puyo Lore 2" folder="Stories" sort="6" />
+        <label id="77" label="Basic Puyo Lore 3" folder="Stories" sort="7" />
+        <label id="78" label="Scar Incident 2" folder="Stories" sort="8" />
+        <label id="82" label="Untilt" folder="" sort="0" />
+        <label id="83" label="Tilt" folder="" sort="0" />
+        <label id="84" label="Bitter Rivalry" folder="" sort="0" />
+        <label id="85" label="Rival Defeated" folder="" sort="0" />
+        <label id="86" label="Garbage Puyo" folder="Targets" sort="23" />
+        <label id="87" label="" folder="Targets" sort="0" />
+        <label id="88" label="" folder="Targets" sort="28" />
+        <label id="91" label="Armory" folder="BG Reaction" sort="0" />
+        <label id="89" label="" folder="Targets" sort="29" />
+        <label id="94" label="" folder="Targets" sort="0" />
+        <label id="95" label="" folder="Targets" sort="0" />
+        <label id="96" label="Schezo's Birthday" folder="" sort="0" />
+        <label id="97" label="" folder="Targets" sort="8" />
+        <label id="99" label="" folder="Targets" sort="15" />
+        <label id="100" label="Ragnus Spitting Image" folder="Targets" sort="22" />
+        <label id="90" label="Armory" folder="BG Reaction" sort="3" />
+        <label id="102" label="" folder="Targets" sort="0" />
+        <label id="103" label="" folder="Targets" sort="32" />
+        <label id="105" label="" folder="Filtered" sort="2" />
+        <label id="106" label="" folder="Filtered" sort="5" />
+        <label id="107" label="" folder="Targets" sort="33" />
+        <label id="108" label="" folder="Targets" sort="34" />
+        <label id="110" label="" folder="Targets" sort="38" />
+        <label id="111" label="" folder="Targets" sort="48" />
+        <label id="112" label="" folder="Targets" sort="40" />
+        <label id="56" label="" folder="Targets" sort="39" />
+        <label id="114" label="First One Nude" folder="" sort="0" />
+        <label id="98" label="" folder="Targets" sort="42" />
+        <label id="109" label="" folder="Targets" sort="43" />
+        <label id="118" label="" folder="Filtered" sort="20" />
+        <label id="119" label="Know the Dark Prince?" folder="Filtered" sort="17" />
+        <label id="120" label="" folder="Targets" sort="0" />
+        <label id="121" label="" folder="Targets" sort="0" />
+        <label id="123" label="" folder="Targets" sort="0" />
+        <label id="122" label="" folder="Targets" sort="0" />
+        <label id="124" label="" folder="Targets" sort="45" />
+        <label id="93" label="" folder="Targets" sort="44" />
+        <label id="125" label="" folder="Targets" sort="50" />
+        <label id="101" label="" folder="Targets" sort="54" />
+        <label id="128" label="" folder="Targets" sort="14" />
+        <label id="126" label="" folder="Targets" sort="21" />
+        <label id="129" label="" folder="BG Reaction" sort="5" />
+        <label id="130" label="" folder="Targets" sort="51" />
+        <label id="131" label="" folder="Prompts" sort="0" />
+        <label id="132" label="" folder="Filtered" sort="18" />
+        <label id="133" label="" folder="Filtered" sort="0" />
+        <label id="134" label="" folder="Filtered" sort="19" />
+        <label id="135" label="" folder="Filtered" sort="21" />
+        <label id="104" label="" folder="Targets" sort="52" />
+        <label id="127" label="" folder="Targets" sort="32" />
+        <label id="92" label="" folder="Targets" sort="58" />
+        <label id="136" label="" folder="Targets" sort="59" />
+        <label id="137" label="" folder="Targets" sort="60" />
+        <label id="28" label="" folder="Targets" sort="61" />
+        <label id="138" label="Ringo-only Cleanup" folder="Targets" sort="63" />
+        <label id="139" label="" folder="Targets" sort="15" />
+        <label id="140" label="Familar Aware" folder="Targets" sort="46" />
+        <label id="141" label="Familiar Unaware" folder="Targets" sort="47" />
+        <label id="142" label="Familiar Returns" folder="Targets" sort="36" />
+        <label id="143" label="" folder="Targets" sort="22" />
+        <label id="144" label="Past Self?" folder="Stories" sort="9" />
+        <label id="145" label="" folder="Targets" sort="0" />
+        <label id="148" label="" folder="Targets" sort="0" />
+        <label id="149" label="" folder="Targets" sort="37" />
+        <label id="150" label="" folder="Multi" sort="0" />
+        <label id="151" label="" folder="Targets" sort="0" />
+        <label id="152" label="" folder="Targets" sort="0" />
+        <label id="154" label="" folder="Targets" sort="30" />
+        <label id="153" label="" folder="Filtered" sort="0" />
+        <label id="155" label="" folder="Filtered" sort="23" />
+        <label id="156" label="" folder="Filtered" sort="24" />
+        <label id="157" label="" folder="Filtered" sort="0" />
+        <label id="158" label="" folder="Filtered" sort="13" />
+        <label id="159" label="" folder="Filtered" sort="2" />
+        <label id="160" label="Succubus Harem" folder="Filtered" sort="3" />
+        <label id="161" label="" folder="Filtered" sort="4" />
+        <label id="162" label="" folder="Filtered" sort="10" />
+        <label id="163" label="" folder="Filtered" sort="11" />
+        <label id="164" label="" folder="Filtered" sort="12" />
+        <label id="165" label="" folder="Targets" sort="65" />
+        <label id="166" label="" folder="Targets" sort="66" />
+        <label id="167" label="" folder="Filtered" sort="22" />
+        <label id="173" label="" folder="Filtered" sort="0" />
+        <label id="174" label="" folder="Filtered" sort="0" />
+        <label id="175" label="" folder="Filtered" sort="0" />
+        <label id="179" label="" folder="Prompts" sort="0" />
+        <label id="180" label="" folder="Stories" sort="0" />
+        <label id="182" label="" folder="Targets" sort="0" />
+        <label id="183" label="" folder="Targets" sort="0" />
+        <label id="176" label="" folder="Targets" sort="0" />
+        <label id="178" label="" folder="Targets" sort="0" />
+        <label id="177" label="" folder="Targets" sort="0" />
+        <label id="184" label="" folder="Targets" sort="0" />
+        <label id="185" label="" folder="Targets" sort="0" />
+        <label id="186" label="" folder="Targets" sort="0" />
+        <label id="187" label="" folder="Targets" sort="0" />
+        <label id="188" label="" folder="Targets" sort="0" />
+        <label id="189" label="" folder="Targets" sort="0" />
+        <label id="190" label="" folder="Targets" sort="0" />
+        <label id="191" label="" folder="Targets" sort="0" />
+        <label id="193" label="" folder="Filtered" sort="0" />
+        <label id="194" label="" folder="Targets" sort="0" />
+        <label id="70" label="First One Out" folder="Targets" sort="0" />
+        <label id="195" label="First One Out" folder="Targets" sort="0" />
+        <label id="196" label="" folder="Targets" sort="0" />
+        <label id="197" label="" folder="Targets" sort="0" />
+        <label id="198" label="" folder="Targets" sort="0" />
+        <label id="204" label="Story Ramblings" folder="Stories" sort="0" />
+        <label id="205" label="Story Ramblings" folder="Stories" sort="0" />
+        <label id="206" label="Solo Puyo Ramblings" folder="Filtered" sort="0" />
+        <label id="199" label="" folder="Targets" sort="0" />
+        <label id="207" label="In Primp 1" folder="Stories" sort="0" />
+        <label id="208" label="In Primp 2" folder="Stories" sort="0" />
+        <label id="209" label="In Primp 3" folder="Stories" sort="0" />
+        <label id="210" label="In Primp 4" folder="Stories" sort="0" />
+        <label id="211" label="Wish's Tower 1" folder="Stories" sort="0" />
+        <label id="212" label="Wish's Tower 2" folder="Stories" sort="0" />
+        <label id="213" label="Wish's Tower 3" folder="Stories" sort="0" />
+        <label id="214" label="Wish's Tower 4" folder="Stories" sort="0" />
+        <label id="215" label="" folder="Targets" sort="0" />
+        <label id="216" label="" folder="Filtered" sort="0" />
+        <label id="217" label="Christmas" folder="BG Reaction" sort="0" />
+        <label id="218" label="Not Christmas" folder="BG Reaction" sort="0" />
+        <label id="219" label="" folder="Multi" sort="0" />
+        <label id="220" label="" folder="Targets" sort="0" />
+        <label id="221" label="" folder="Stories" sort="0" />
+        <label id="222" label="" folder="Stories" sort="0" />
+        <label id="223" label="" folder="Targets" sort="0" />
+        <label id="224" label="" folder="Targets" sort="0" />
+        <label id="225" label="Bee Saga 2" folder="Targets" sort="0" />
+        <label id="226" label="Bee Saga 1" folder="Targets" sort="0" />
+        <label id="227" label="" folder="Targets" sort="0" />
+        <label id="228" label="Bee Saga 3" folder="Targets" sort="0" />
+        <label id="169" label="" folder="Targets" sort="0" />
+        <label id="229" label="" folder="Targets" sort="0" />
+        <label id="170" label="" folder="Targets" sort="0" />
+        <label id="230" label="Bee Saga 4" folder="Targets" sort="0" />
+        <label id="171" label="" folder="Targets" sort="0" />
+        <label id="172" label="" folder="Targets" sort="0" />
+        <label id="231" label="" folder="Targets" sort="0" />
+        <label id="232" label="" folder="Targets" sort="0" />
+        <label id="233" label="" folder="Targets" sort="0" />
+        <label id="234" label="" folder="Targets" sort="0" />
+        <label id="181" label="" folder="Targets" sort="0" />
+        <label id="235" label="" folder="Targets" sort="0" />
+        <label id="238" label="" folder="Multi" sort="0" />
+        <label id="203" label="" folder="Multi" sort="0" />
+        <label id="239" label="" folder="Targets" sort="0" />
+        <label id="240" label="Awkward Male Gaze" folder="Targets" sort="0" />
+        <label id="202" label="" folder="Multi" sort="0" />
+        <label id="241" label="" folder="Targets" sort="0" />
+        <label id="242" label="" folder="Targets" sort="0" />
+        <label id="243" label="" folder="Targets" sort="0" />
+        <label id="244" label="" folder="Targets" sort="0" />
+        <label id="245" label="" folder="Targets" sort="0" />
+        <label id="246" label="Showdown Defeat" folder="" sort="0" />
+        <label id="47" label="" folder="Targets" sort="0" />
+        <label id="249" label="" folder="Targets" sort="0" />
+        <label id="250" label="Full Moon Incident" folder="Targets" sort="0" />
+        <label id="251" label="Full Moon" folder="BG Reaction" sort="0" />
+        <label id="252" label="Class Misfit" folder="Targets" sort="0" />
+        <label id="253" label="Lost Slower" folder="Targets" sort="0" />
+        <label id="254" label="Lost Slowest" folder="Multi" sort="0" />
+        <label id="248" label="Collectible Unlock" folder="Targets" sort="0" />
+        <label id="255" label="Collectible Unlock" folder="Targets" sort="0" />
+        <label id="256" label="Showdown" folder="Filtered" sort="0" />
+        <label id="257" label="Collectible Unlock" folder="Targets" sort="0" />
+        <label id="258" label="No Puyos" folder="" sort="0" />
+        <label id="261" label="Epilogue Flag" folder="" sort="0" />
+        <label id="200" label="" folder="Targets" sort="0" />
+        <label id="168" label="" folder="Targets" sort="0" />
+        <label id="201" label="" folder="Targets" sort="0" />
+        <label id="262" label="Lost Slower" folder="Targets" sort="0" />
+        <label id="263" label="Not Inside? What?" folder="Targets" sort="0" />
+        <label id="267" label="" folder="Targets" sort="0" />
+        <label id="268" label="" folder="Targets" sort="0" />
+        <label id="269" label="" folder="Targets" sort="0" />
+        <label id="270" label="" folder="Targets" sort="0" />
+        <label id="265" label="" folder="Targets" sort="0" />
+        <label id="266" label="" folder="Targets" sort="0" />
+        <label id="271" label="Post-nut Clarity" folder="" sort="0" />
+        <label id="273" label="Arle variant" folder="Stories" sort="0" />
+        <label id="274" label="" folder="Targets" sort="0" />
+        <label id="264" label="She WHAT?!" folder="Targets" sort="0" />
+        <label id="275" label="" folder="Targets" sort="0" />
+        <label id="276" label="" folder="Targets" sort="0" />
+        <label id="277" label="Post-nut Clarity" folder="" sort="0" />
+        <label id="278" label="Arle-only Cleanup" folder="Targets" sort="0" />
+        <label id="279" label="Lost Slower" folder="Targets" sort="0" />
+        <label id="280" label="Ringo-only Cleanup" folder="Targets" sort="0" />
+        <label id="281" label="Lost Slower" folder="Targets" sort="0" />
+        <label id="282" label="" folder="Stories" sort="0" />
+    </labels>
+    <nextId>282</nextId>
+    <markers>
+        <marker scope="Public" name="" />
+        <marker scope="Public" name="about_madou" />
+        <marker scope="Public" name="about_primp1" />
+        <marker scope="Public" name="about_primp2" />
+        <marker scope="Public" name="about_primp3" />
+        <marker scope="Public" name="about_primp4" />
+        <marker scope="Public" name="about_primp5" />
+        <marker scope="Public" name="about_puyo" />
+        <marker scope="Public" name="about_puyo2" />
+        <marker scope="Public" name="about_puyo3" />
+        <marker scope="Public" name="about_puyo4" />
+        <marker scope="Public" name="arle_doors">Arle Nadja, Apprentice Mage, Lover of Curry, Popper of Puyo...Yeeter of Doors.</marker>
+        <marker scope="Public" name="arle_is_here" />
+        <marker scope="Public" name="arle_madou98hot" />
+        <marker scope="Public" name="armed_question">Who else wields a weapon here?</marker>
+        <marker scope="Public" name="bee_encounter1" />
+        <marker scope="Public" name="bet_wonA">Schezo wins the bet against Kazuma. (Type A)</marker>
+        <marker scope="Public" name="bet_wonB">Schezo wins the bet against Kazuma. (Type B)</marker>
+        <marker scope="Public" name="both_ways" />
+        <marker scope="Public" name="box_incident1" />
+        <marker scope="Public" name="box_incident2" />
+        <marker scope="Public" name="box_incident3" />
+        <marker scope="Public" name="bridge_incident" />
+        <marker scope="Public" name="calledacreeper">I told you not to call him a creeper/pervert!</marker>
+        <marker scope="Public" name="dark_prince_mention">Schezo mentions the Dark Prince Satan</marker>
+        <marker scope="Public" name="deity_start" />
+        <marker scope="Public" name="dualforfeit_watch" />
+        <marker scope="Public" name="god_defiler">"The gorgeous man who defiles the gods" is what his name means in ancient tongue.</marker>
+        <marker scope="Public" name="introduction" />
+        <marker scope="Public" name="madouars_lore" />
+        <marker scope="Public" name="magic_crystal" />
+        <marker scope="Public" name="magic_snatch">Schezo's special ability to steal magic.</marker>
+        <marker scope="Public" name="moon_disaster" />
+        <marker scope="Public" name="name_origin">Schezo talks about the meaning of his name.</marker>
+        <marker scope="Public" name="nickname" />
+        <marker scope="Public" name="noarlenoringo">Schezo's "sass about the Puyo heroines" coupon.</marker>
+        <marker scope="Public" name="notacreeper">Whomever it is, it's not Schezo.</marker>
+        <marker scope="Public" name="nuisance_puyo" />
+        <marker scope="Public" name="othermages" />
+        <marker scope="Public" name="past_schezo" />
+        <marker scope="Public" name="pc98_madou2lore" />
+        <marker scope="Public" name="pc98_madou2lore2" />
+        <marker scope="Public" name="pc98_madou2lore3" />
+        <marker scope="Public" name="petty_schezo">Schezo don't like that dark prince, so he's going to spite him when he's not around.</marker>
+        <marker scope="Public" name="posses_react" />
+        <marker scope="Public" name="possess_react" />
+        <marker scope="Public" name="possession_past" />
+        <marker scope="Public" name="possession_prompt" />
+        <marker scope="Public" name="post_nut_clarity" />
+        <marker scope="Public" name="ragnus_mention" />
+        <marker scope="Public" name="ringos_magic" />
+        <marker scope="Public" name="running_away" />
+        <marker scope="Public" name="schezo_birthday">March 16th is Schezo's birthday!</marker>
+        <marker scope="Public" name="schezo_bragresponseA" />
+        <marker scope="Public" name="schezo_bragresponseB" />
+        <marker scope="Public" name="schezo_showdown" />
+        <marker scope="Public" name="schezo_sussy">Every instance of Schezo saying something sussy, unintentional or not.</marker>
+        <marker scope="Public" name="schezo_toomanyoutfits">No, really, Schezo has a LOT of outfit designs over the series' runtime.</marker>
+        <marker scope="Public" name="screamyourname" />
+        <marker scope="Public" name="seal_the_deal">Schezo takes Kazuma's bet.</marker>
+        <marker scope="Public" name="serilly_peptalk" />
+        <marker scope="Public" name="showdown_defeat" />
+        <marker scope="Public" name="succu_busted">Oh geez there's more than one succubus in the room!</marker>
+        <marker scope="Public" name="succu_guarded">He's had a less-than-stellar experience with a succubus...</marker>
+        <marker scope="Public" name="succu_harem">Schezo has a bad time with a house full of succubi.</marker>
+        <marker scope="Public" name="succu_relaxed" />
+        <marker scope="Public" name="sun_incident" />
+        <marker scope="Public" name="sun_incident2" />
+        <marker scope="Public" name="tenorizoh" />
+        <marker scope="Public" name="toospicyforschezo">So this is what it feels like hearing yourself mangle your words...</marker>
+        <marker scope="Public" name="totm_story1">Schezo talks about his adventure in Madou Monogatari: Tower of the Magician.</marker>
+        <marker scope="Public" name="totm_story2" />
+        <marker scope="Public" name="totm_story3" />
+        <marker scope="Public" name="totm_story4" />
+        <marker scope="Public" name="totm_story5" />
+        <marker scope="Public" name="vague_age">Schezo really doesn't remember how old he is. He's an adult, at the very least.</marker>
+        <marker scope="Public" name="wheres_arle" />
+    </markers>
+    <recipes>
+        <recipe key="65bff87f-6768-4cc7-8d96-bf1223df4282">
+            <cases>
+                <id>7</id>
+            </cases>
+        </recipe>
+        <recipe key="1ac2b058-5e06-4321-9ea7-d6bc3098748e">
+            <cases>
+                <id>79</id>
+            </cases>
+        </recipe>
+        <recipe key="352366df-ef02-4874-a2eb-0fdc4c210fbd">
+            <cases>
+                <id>30</id>
+            </cases>
+        </recipe>
+        <recipe key="f43ccc1b-701f-4f7e-9738-617802c9b5e0">
+            <cases>
+                <id>41</id>
+            </cases>
+        </recipe>
+        <recipe key="db2db8d0-8c32-4724-aa3c-627605e58119">
+            <cases>
+                <id>42</id>
+            </cases>
+        </recipe>
+        <recipe key="ab63638e-fcc5-44e9-b020-a677785bb36f">
+            <cases>
+                <id>45</id>
+            </cases>
+        </recipe>
+        <recipe key="95241bd5-5ee1-4979-ae3c-aad1384050d9">
+            <cases>
+                <id>46</id>
+            </cases>
+        </recipe>
+        <recipe key="43e68bf4-4dc8-4938-a5d7-8f1e17e1202e">
+            <cases>
+                <id>49</id>
+            </cases>
+        </recipe>
+        <recipe key="15f3a04f-8e03-40e0-b426-dcba8b4f5b3b">
+            <cases>
+                <id>50</id>
+            </cases>
+        </recipe>
+        <recipe key="8338b475-6f72-461a-9cb7-4510428e1297">
+            <cases>
+                <id>51</id>
+            </cases>
+        </recipe>
+        <recipe key="5eced77a-bd5e-4d35-8a1b-a979a1c73250">
+            <cases>
+                <id>59</id>
+            </cases>
+        </recipe>
+        <recipe key="670e7368-4059-4a56-8171-65d18d43ebff">
+            <cases>
+                <id>65</id>
+            </cases>
+        </recipe>
+        <recipe key="0adf072a-3183-4a01-a5d8-1068634734fb">
+            <cases>
+                <id>66</id>
+            </cases>
+        </recipe>
+        <recipe key="9181b912-d7db-4c2a-8f23-c2ddea3aa7ee">
+            <cases>
+                <id>68</id>
+            </cases>
+        </recipe>
+        <recipe key="841c009f-617e-47e1-b1dd-214ba5892e88">
+            <cases>
+                <id>70</id>
+            </cases>
+        </recipe>
+        <recipe key="dba5778a-dbed-4079-9052-d204275d6f93">
+            <cases>
+                <id>80</id>
+            </cases>
+        </recipe>
+        <recipe key="d408a547-4643-48c6-8121-5c650855c6d3">
+            <cases>
+                <id>117</id>
+            </cases>
+        </recipe>
+        <recipe key="6091088d-2c85-4d55-a5f3-05bab45351a8">
+            <cases>
+                <id>113</id>
+            </cases>
+        </recipe>
+        <recipe key="b90f559d-7557-4180-989e-63b583b9a82d">
+            <cases>
+                <id>114</id>
+            </cases>
+        </recipe>
+        <recipe key="4df79a02-26c8-4fa7-b7cd-e8377533ed58">
+            <cases>
+                <id>115</id>
+            </cases>
+        </recipe>
+        <recipe key="43b2d054-564e-4b86-bcfc-df3028e298cc">
+            <cases>
+                <id>116</id>
+            </cases>
+        </recipe>
+        <recipe key="5fee06f1-d467-44e0-a256-1d46c2d934a5">
+            <cases>
+                <id>130</id>
+            </cases>
+        </recipe>
+    </recipes>
+    <pendingLines>
+        <line>(Player named Arle) I don't believe you're Arle. Your clothes aren't blue, for one, and you don't have Carbuncle.</line>
+        <line>...I'm not buying that. For all I know, you could be a doppelganger.</line>
+        <line>That trickery isn't fooling me. Who do you take me for?</line>
+        <line>...Really? Trying to impersonate Arle when she's right there?</line>
+        <line>(xmas) Admittedly, that costume was rather cozy and warm...</line>
+        <line>(Barnaby cosplay) If you must know, these glasses aren't true glasses. They're just metal frames with false lenses.</line>
+        <line>We're in a &lt;i&gt;strip&lt;/i&gt; poker game, Arle. Just give me this one, alright?</line>
+        <line>Arle!! Of all the times you call me that, it's in the least uncalled for situation!</line>
+        <line>Ah, ahem... ~succubus~, could I ask a rather strange favor?</line>
+        <line>Do...you...have a whip? There's something I need to confirm for myself, and I need you to strike me with it.</line>
+        <line>(...Why did that feel good?! Do I actually...!?)</line>
+        <line>Possession, huh? I've had prior experience with that, too.</line>
+        <line>(to Cynthia) It's a difficult read, but I could lend you a book about Rana the Fallen Imperial Capital. Has a fascinating history that made me aspire to surpass the legends.</line>
+        <line>(Double-edged ref) Both? I can wield my sword with either hand, but wielding two swords is a different matter altogether.</line>
+        <line>Both? Can't say for certain as I don't swing the Dark Sword too often. Concerned about the durability of its crystalline blade.</line>
+        <line>Both? Truth be told, I lack formal training. My swordplay is more or less self-taught.</line>
+        <line>Not to mention a previous incident I had with a sword turned out to be a venture that vastly outweighed the boons I would have obtained.</line>
+        <line>To keep it short, the second sword managed to get in my head, and what would have been dual sword fighting, turned into sword&lt;i&gt;s&lt;/i&gt; fighting.</line>
+        <line>(on school) I was something of a class misfit. Skipped lectures, picked fights with gangs... yet in spite of it, I took my magic studies seriously, comprehending ancient grimoires with little struggle.</line>
+        <line>I'm rather surprised I managed to avoid expulsion and make it to graduation.</line>
+        <line>(to Arle) I just passed by here by mere chance. I wasn't actively looking for it.</line>
+        <line>But I don't. I have my priorities straight!</line>
+        <line>(to Ringo) HEY! I only passed here by mere circumstance!</line>
+        <line>That was a slip of the tongue. I've improved on my phrasing since then!</line>
+        <line>(+Arle) Arle can attest to that!</line>
+        <line>(relationship with Arle) I am acquainted with Arle, but I don't see her &lt;i&gt;that&lt;/i&gt; way!</line>
+        <line>What- NO! I don't like her! Well...not in &lt;i&gt;that&lt;/i&gt; way.</line>
+        <line>Yes, we do bicker constantly but... I would be lying if I said I dislike her.</line>
+        <line>It's rather complicated, but as much as Arle and I squabble...I don't hold any animosity against her.</line>
+        <line>Yes, I still do want her power, but at the same time... Her presence brings much entertainment to the recluse life I live.</line>
+        <line>I still do want her power... but I don't think I have it in me to take her life if it comes to that.</line>
+        <line>Ah, &lt;i&gt;ahem.&lt;/i&gt; Don't mind me. (Why did I say that last part? It isn't like me to be sentimental...)</line>
+        <line>(Satan on table) (Oh confound it, &lt;i&gt;he's&lt;/i&gt; here?)</line>
+        <line>(Satan on table w/ Arle) (Oh confound it, &lt;i&gt;of course&lt;/i&gt; he's here.)</line>
+        <line>(to Satan) Oh great, look who decided to show himself. And no, she's not here, obviously.</line>
+        <line>(to Satan w/ Arle) Oh great, look who decided to ruin this game.</line>
+        <line>(to not his Satan) Oh great, look who...wait, you're not him.</line>
+        <line>(Schezo's Scar A) With how we are nowadays, it's hard to believe you inflicted this mark on me.</line>
+        <line>I know, I know... Still a work-in-progress.</line>
+        <line>(Schezo's Scar B) That was a time ago, in hindsight. Yet we have this rather odd dynamic.</line>
+        <line>Fate works in strange ways. Attempt to defy fate, you get led to another.</line>
+    </pendingLines>
+</metadata>
