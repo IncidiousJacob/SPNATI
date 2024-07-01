@@ -123,6 +123,7 @@
         <note id="178">As foretold by the Prophet Vicineko (pbuh)</note>
         <note id="240">Inazuma is in a civil war when the Inazuma story arc starts.</note>
         <note id="277">[*shaved vulva] It is true, though Yae Miko's grooming is a choice of her model creator.</note>
+        <note id="339">Lines merited a special interaction, but one could not be settled on. Shelved for now.</note>
     </notes>
     <labels>
         <label id="92" label="Necklace unlock" folder="" sort="0" />
@@ -151,7 +152,6 @@
         <label id="305" label="" color="4" folder="" sort="0" />
         <label id="238" label="" color="4" folder="" sort="0" />
         <label id="311" label="" color="4" folder="" sort="0" />
-        <label id="318" label="" color="4" folder="" sort="0" />
         <label id="308" label="" color="4" folder="" sort="0" />
         <label id="277" label="Shaved talk" color="4" folder="" sort="0" />
         <label id="275" label="Paramour" folder="" sort="0" />
@@ -169,7 +169,7 @@
         <label id="290" label="" color="4" folder="" sort="0" />
         <label id="291" label="" color="4" folder="" sort="0" />
         <label id="292" label="" color="4" folder="" sort="0" />
-        <label id="317" label="" color="4" folder="" sort="0" />
+        <label id="341" label="" color="4" folder="" sort="0" />
         <label id="319" label="" color="4" folder="" sort="0" />
         <label id="296" label="" color="4" folder="" sort="0" />
         <label id="297" label="" color="4" folder="" sort="0" />
@@ -179,11 +179,25 @@
         <label id="312" label="" color="4" folder="" sort="0" />
         <label id="314" label="" color="4" folder="" sort="0" />
         <label id="315" label="" color="4" folder="" sort="0" />
+        <label id="321" label="stage 3, 3 players" folder="" sort="0" />
+        <label id="322" label="stage 3, 4-5 players" folder="" sort="0" />
+        <label id="334" label="" color="4" folder="" sort="0" />
+        <label id="335" label="" color="4" folder="" sort="0" />
+        <label id="338" label="" color="4" folder="" sort="0" />
+        <label id="340" label="" color="4" folder="" sort="0" />
+        <label id="332" label="stage 6, female human" folder="" sort="0" />
+        <label id="331" label="stage 6, male human" folder="" sort="0" />
+        <label id="344" label="No complaining" folder="" sort="0" />
+        <label id="345" label="No complaining" folder="" sort="0" />
+        <label id="346" label="No complaining" folder="" sort="0" />
+        <label id="347" label="No complaining" folder="" sort="0" />
+        <label id="348" label="No complaining" folder="" sort="0" />
+        <label id="349" label="No complaining" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
     </prefixes>
-    <nextId>320</nextId>
+    <nextId>350</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9s_manufactured" />
@@ -246,8 +260,10 @@
         <marker scope="Public" name="jura_aimForFame3" />
         <marker scope="Public" name="jura_barnetteRisk" />
         <marker scope="Public" name="jura_barnetteRisk2" />
+        <marker scope="Public" name="jura_barnetteRisk3" />
         <marker scope="Public" name="jura_piracy" />
         <marker scope="Public" name="jura_piracy2" />
+        <marker scope="Public" name="jura_piracy3" />
         <marker scope="Public" name="jura_questionsAboutMen" />
         <marker scope="Public" name="jura_questionsAboutMen2" />
         <marker scope="Public" name="jura_questionsAboutMen3" />
@@ -390,6 +406,8 @@
         <marker scope="Public" name="revy_resp_1" />
         <marker scope="Public" name="revy_violentStories" />
         <marker scope="Public" name="roll_caskett_cook" />
+        <marker scope="Public" name="rose_resp_foxy1" />
+        <marker scope="Public" name="rose_roadStories" />
         <marker scope="Public" name="sakura_smellComplexion" />
         <marker scope="Public" name="sakura_smellComplexion2" />
         <marker scope="Public" name="scm_resp" />
@@ -501,9 +519,44 @@
         <marker scope="Public" name="yumeko_startOfGamble" />
         <marker scope="Public" name="yumeko_startOfGamble2" />
         <marker scope="Public" name="yumeko_startOfGamble3" />
+        <marker scope="Public" name="yuri_3rdwheel" />
+        <marker scope="Public" name="yuri_3rdwheel2" />
+        <marker scope="Public" name="yuri_3rdwheel3" />
+        <marker scope="Public" name="yuri_attractivePlayer" />
+        <marker scope="Public" name="yuri_attractivePlayer2" />
         <marker scope="Public" name="yuri_bookPreferences" />
         <marker scope="Public" name="yuri_bookPreferences2" />
         <marker scope="Public" name="yuri_bookPreferences3" />
+        <marker scope="Public" name="yuri_desiresAndFears" />
+        <marker scope="Public" name="yuri_desiresAndFears2" />
+        <marker scope="Public" name="yuri_desiresAndFears3" />
+        <marker scope="Public" name="yuri_objection" />
+        <marker scope="Public" name="yuri_objection2" />
+        <marker scope="Public" name="yuri_objection3" />
+        <marker scope="Public" name="yuri_pickOne" />
+        <marker scope="Public" name="yuri_playerAttractive" />
+        <marker scope="Public" name="yuri_playerAttractive2" />
+        <marker scope="Public" name="yuri_playerAttractive3" />
+        <marker scope="Public" name="yuri_playerAttractive4" />
+        <marker scope="Public" name="yuri_playerLove" />
+        <marker scope="Public" name="yuri_playerLove2" />
+        <marker scope="Public" name="yuri_playerLove3" />
+        <marker scope="Public" name="yuri_playerLove4" />
+        <marker scope="Public" name="yuri_resp_newAuthorMistakes" />
+        <marker scope="Public" name="yuri_resp_newAuthorMistakes2" />
+        <marker scope="Public" name="yuri_resp_newAuthorMistakes3" />
+        <marker scope="Public" name="yuri_resp_romanticConfidence" />
+        <marker scope="Public" name="yuri_resp_romanticConfidence2" />
+        <marker scope="Public" name="yuri_resp_romanticConfidence3" />
+        <marker scope="Public" name="yuri_resp_writingAdvice" />
+        <marker scope="Public" name="yuri_resp_writingAdvice2" />
+        <marker scope="Public" name="yuri_resp_writingAdvice3" />
+        <marker scope="Public" name="yuri_romance" />
+        <marker scope="Public" name="yuri_romance2" />
+        <marker scope="Public" name="yuri_romance3" />
+        <marker scope="Public" name="yuri_writer" />
+        <marker scope="Public" name="yuri_writer2" />
+        <marker scope="Public" name="yuri_writer3" />
         <marker scope="Public" name="zeke_pandoria_favLocation" />
         <marker scope="Public" name="zeke_pandoria_jobPay" />
         <marker scope="Public" name="zeke_pandoria_jobPay2" />

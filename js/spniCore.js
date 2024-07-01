@@ -1055,6 +1055,8 @@ function showImportModal() {
 }
 
 function showExtrasModal() {
+    loadOptions();
+
     $(".extra-characters-options").prop("hidden", false);
     $('ul.character-status-toggle').each(function() {
         var show = includedOpponentStatuses[$(this).data('status')];
@@ -1073,6 +1075,23 @@ function showExtrasModal() {
 
     $extrasModal.modal('show');
 }
+
+function gotoSettingsPage (toPage) {
+    var curPage = $extrasModal.attr('data-current-page');
+    curPage = curPage || 'game-settings';
+
+    curPage = toPage;
+
+    $extrasModal.attr('data-current-page', curPage);
+    $('.settings-page').hide();
+    $('.settings-page[data-page="'+curPage+'"]').show();
+    $('.settings-page-select').removeClass('active');
+    $('.settings-page-select[data-page="'+curPage+'"]').addClass('active');
+}
+
+$('.settings-page-select').click(function (ev) {
+    gotoSettingsPage($(ev.target).attr('data-select-page'));
+});
 
 function updateTrackingToggles() {
     let trackingOpts = save.getUsageTrackingInfo();

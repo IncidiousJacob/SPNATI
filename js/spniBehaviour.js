@@ -1445,6 +1445,7 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         }
         throw new Error('Incorrect use of .cards');
     case 'wearing':
+    case 'visible':
         {
             var types = [], positions = [], names = [];
             (args ? args.split('|') : []).forEach(function(keyword) {

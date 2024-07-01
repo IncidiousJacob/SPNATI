@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>sannytess_swim</id>
+    <label>Sanny</label>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag remove="true">april_fools</tag>
+        <tag from="0" to="3">jewelry</tag>
+        <tag>summer_skin</tag>
+        <tag from="0" to="5">swimwear</tag>
+        <tag remove="true">thigh_highs</tag>
+    </tags>
+    <layers>6</layers>
+    <folder>opponents/reskins/sannytess_swim/</folder>
+    <folder stage="6">opponents/sannytess/</folder>
+    <wardrobe>
+        <clothing name="swim top" generic="bra" position="upper" type="important" />
+        <clothing name="armbands" generic="armbands" position="arms" type="extra" plural="true" />
+        <clothing name="bracelet" generic="jewelry" position="arms" type="extra" />
+        <clothing name="sarong" generic="skirt" position="lower" type="major" />
+        <clothing name="swimming socks" generic="socks" position="feet" type="minor" plural="true" />
+        <clothing name="sandals" generic="shoes" position="feet" type="minor" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-aura">
+            <sprite id="edufuta" src="reskins/sannytess_swim/#-s-edufuta.png" x="-159" y="0" alpha="100" />
+            <sprite id="edufuta(copy)1" src="reskins/sannytess_swim/#-t-educate.png" x="202" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="sannytess/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="sannytess/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="sannytess/aura.png" x="47" y="42" alpha="0" />
+            <directive type="animation" id="edufuta" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-159" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="edufuta(copy)1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="202" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="sannytess/../meia/auracamera.png" />
+                <keyframe time="1" src="sannytess/../meia/auracamera.png" />
+                <keyframe time="1.38" src="sannytess/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="47" y="42" />
+                <keyframe time="2.62" x="47" y="42" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="anger">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-anger.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-anger.png" x="158" y="0" />
+        </pose>
+        <pose id="confuzzle">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-confuzzle.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-confuzzle.png" x="202" y="0" />
+        </pose>
+        <pose id="confuzzle+edufuta">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-confuzzle.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-educate.png" x="202" y="0" />
+        </pose>
+        <pose id="confuzzle+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-confuzzle.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="177" y="0" />
+        </pose>
+        <pose id="disinterested">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-disinterested.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-disinterested.png" x="117" y="0" />
+        </pose>
+        <pose id="disinterested+excited2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-disinterested.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-excited2.png" x="157" y="0" />
+        </pose>
+        <pose id="edufuta">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-edufuta.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-educate.png" x="202" y="0" />
+        </pose>
+        <pose id="edufuta+confuzzle">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-edufuta.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-confuzzle.png" x="202" y="0" />
+        </pose>
+        <pose id="edufuta+smug">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-edufuta.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-smug.png" x="202" y="0" />
+        </pose>
+        <pose id="embarassed">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-embarassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-s-embarrassed.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassed+embarassing">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-embarassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-embarrassing.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassed+relax">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-embarassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-relax.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassing+embarassed">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-embarassing.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-s-embarrassed.png" x="173" y="0" />
+        </pose>
+        <pose id="excited">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-excited.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-excited.png" x="117" y="0" />
+        </pose>
+        <pose id="excited2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-excited2.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-excited2.png" x="157" y="0" />
+        </pose>
+        <pose id="happy">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-happy.png" x="193" y="0" />
+        </pose>
+        <pose id="horn">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-horni.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-horni.png" x="117" y="0" />
+        </pose>
+        <pose id="huh">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-huh.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-huh.png" x="117" y="0" />
+        </pose>
+        <pose id="nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-nervous.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="117" y="0" />
+        </pose>
+        <pose id="nervous+smug">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-nervous.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-smug.png" x="117" y="0" />
+        </pose>
+        <pose id="neutral">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-neutral.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-neutral.png" x="196" y="0" />
+        </pose>
+        <pose id="2strip">
+            <sprite id="strip" src="reskins/sannytess_swim/2-strip.png" x="0" y="0" />
+        </pose>
+        <pose id="relax">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-relax.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-relax.png" x="186" y="0" />
+        </pose>
+        <pose id="relax+confuzzle">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-relax.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-confuzzle.png" x="186" y="0" />
+        </pose>
+        <pose id="relax+embarrassed">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-relax.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-s-embarrassed.png" x="186" y="0" />
+        </pose>
+        <pose id="sadge">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-sadge.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-sadge.png" x="151" y="0" />
+        </pose>
+        <pose id="shocked">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-shocked.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-shocked.png" x="117" y="0" />
+        </pose>
+        <pose id="smug">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-smug.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-smug.png" x="117" y="0" />
+        </pose>
+        <pose id="smug+embarassing">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-smug.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-embarrassing.png" x="186" y="0" />
+        </pose>
+        <pose id="smug+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-smug.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="117" y="0" />
+        </pose>
+    </poses>
+
+</costume>
