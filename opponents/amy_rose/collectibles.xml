@@ -6,8 +6,8 @@
         <unlock>Win a game against Amy Rose.</unlock>
         <counter>1</counter>
     </collectible>
-    <collectible id="Speical Photo from Amy" img="opponents/amy_rose/Attachments/Amy_Butt_Collectable.png" thumbnail="opponents/amy_rose/Attachments/Amy_Butt_Collectable_Thumb.png">
-        <title>Amy's Speical Photo</title>
+    <collectible id="Special Photo from Amy" img="opponents/amy_rose/Attachments/Amy_Butt_Collectable.png" thumbnail="opponents/amy_rose/Attachments/Amy_Butt_Collectable_Thumb.png">
+        <title>Amy's Special Photo</title>
         <text>We seem to to have gotten quite close. I hope you'll accept this photo of me as a symbol of that. Just please don't show it to anyone else, it's for you only. &lt;3</text>
         <unlock>See all three of Amy's butt poses in one game.</unlock>
         <hide-details>true</hide-details>
@@ -19,7 +19,7 @@
         <text>A pair of boots that Amy wears to the Inventory. They seem to gotten into your possession somehow... but Amy doesn't mind too much.</text>
         <unlock>Hear Amy ask the table if they go shopping in a game.</unlock>
         <wearable>true</wearable>
-        <clothing name="boots" generic="shoes" position="feet" type="extra" img="opponents/amy_rose/Attachments/Amy_Boots.png" plural="true" />
+        <clothing img="opponents/amy_rose/Attachments/Amy_Boots.png" name="boots" generic="shoes" position="feet" type="extra" plural="true" />
     </collectible>
     <collectible id="sweater" status="online" img="opponents/amy_rose/Attachments/Amy_Shirt.png" thumbnail="opponents/amy_rose/Attachments/Amy_Shirt.png">
         <title>Amy's Sweater</title>
@@ -27,6 +27,6 @@
         <text>A sweater that Amy wears to the Inventory. It seems to gotten into your possession, but Amy doesn't really mind it.</text>
         <unlock>Have Amy lose. (You don't have to win, she just has to lose.)</unlock>
         <wearable>true</wearable>
-        <clothing name="sweater" generic="sweater" position="upper" type="major" img="opponents/amy_rose/Attachments/Amy_Shirt.png" />
+        <clothing img="opponents/amy_rose/Attachments/Amy_Shirt.png" name="sweater" generic="sweater" position="upper" type="major" />
     </collectible>
 </collectibles>
