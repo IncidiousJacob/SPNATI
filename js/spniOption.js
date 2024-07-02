@@ -657,7 +657,7 @@ function loadMasturbationTimer () {
  * The player changed their masturbation timer.
  ************************************************************/
 $masturbationTimerBox.on('input', function() {
-    var newTimerValue = $masturbationTimerBox.val();
+    var newTimerValue = $(this).val();
     var newTime = Number(newTimerValue);
     var isValidTimerValue = (newTime != "NaN") && (newTime > 0);
     if (isValidTimerValue){
