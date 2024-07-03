@@ -99,6 +99,12 @@
         <response id="252" opponent="mari_setogaya" opponentId="1250" />
         <response id="264" opponent="arle" opponentId="525" />
         <response id="275" opponent="arle" opponentId="520" />
+        <response id="283" opponent="velvet" opponentId="1" />
+        <response id="286" opponent="velvet" opponentId="2" />
+        <response id="304" opponent="arle" opponentId="532" />
+        <response id="305" opponent="arle" opponentId="531" />
+        <response id="307" opponent="arle" opponentId="529" />
+        <response id="313" opponent="arle" opponentId="518" />
     </responses>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -347,11 +353,43 @@
         <label id="280" label="Ringo-only Cleanup" folder="Targets" sort="0" />
         <label id="281" label="Lost Slower" folder="Targets" sort="0" />
         <label id="282" label="" folder="Stories" sort="0" />
+        <label id="285" label="Philosophical 3" folder="Targets" sort="0" />
+        <label id="284" label="Philosophical 2" folder="Targets" sort="0" />
+        <label id="283" label="Philosophical 1" folder="Targets" sort="0" />
+        <label id="286" label="About Kinks 1" folder="Targets" sort="0" />
+        <label id="287" label="About Kinks 2" folder="Targets" sort="0" />
+        <label id="288" label="Heartfelt 5A" folder="Targets" sort="0" />
+        <label id="289" label="Heartfelt 5B" folder="Targets" sort="0" />
+        <label id="290" label="Heartfelt 4" folder="Targets" sort="0" />
+        <label id="291" label="Heartfelt 3" folder="Targets" sort="0" />
+        <label id="292" label="Heartfelt 2" folder="Targets" sort="0" />
+        <label id="293" label="Heartfelt 1" folder="Targets" sort="0" />
+        <label id="294" label="" folder="Targets" sort="0" />
+        <label id="295" label="" folder="Targets" sort="0" />
+        <label id="296" label="Kinda Like Sig's Arm" folder="Targets" sort="0" />
+        <label id="297" label="Random Ramblings" folder="" sort="0" />
+        <label id="298" label="Club" folder="BG Reaction" sort="0" />
+        <label id="299" label="Dark Places" folder="BG Reaction" sort="0" />
+        <label id="300" label="Roof" folder="BG Reaction" sort="0" />
+        <label id="301" label="" folder="Targets" sort="0" />
+        <label id="302" label="" folder="Stories" sort="0" />
+        <label id="303" label="Nope No Arle" folder="Filtered" sort="0" />
+        <label id="306" label="" folder="Targets" sort="0" />
+        <label id="307" label="Teasing 1" folder="Targets" sort="0" />
+        <label id="305" label="" folder="Targets" sort="0" />
+        <label id="308" label="Teasing 2" folder="Targets" sort="0" />
+        <label id="304" label="" folder="Targets" sort="0" />
+        <label id="309" label="Teasing 3" folder="Targets" sort="0" />
+        <label id="310" label="Teasing 4" folder="Targets" sort="0" />
+        <label id="312" label="Earlygame Teasing" folder="Targets" sort="0" />
+        <label id="59" label="First Loss of the Game" folder="" sort="0" />
+        <label id="313" label="" folder="Targets" sort="0" />
+        <label id="314" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>282</nextId>
+    <nextId>314</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
+        <marker scope="Public" name="about_magicaljewels" />
         <marker scope="Public" name="about_primp1" />
         <marker scope="Public" name="about_primp2" />
         <marker scope="Public" name="about_primp3" />
@@ -362,12 +400,15 @@
         <marker scope="Public" name="about_puyo3" />
         <marker scope="Public" name="about_puyo4" />
         <marker scope="Public" name="arle_doors">Arle Nadja, Apprentice Mage, Lover of Curry, Popper of Puyo...Yeeter of Doors.</marker>
+        <marker scope="Public" name="arle_dungeon_escape" />
+        <marker scope="Public" name="arle_dungeon_guards" />
         <marker scope="Public" name="arle_is_here" />
         <marker scope="Public" name="arle_madou98hot" />
         <marker scope="Public" name="armed_question">Who else wields a weapon here?</marker>
         <marker scope="Public" name="bee_encounter1" />
         <marker scope="Public" name="bet_wonA">Schezo wins the bet against Kazuma. (Type A)</marker>
         <marker scope="Public" name="bet_wonB">Schezo wins the bet against Kazuma. (Type B)</marker>
+        <marker scope="Public" name="Birds_Response" />
         <marker scope="Public" name="both_ways" />
         <marker scope="Public" name="box_incident1" />
         <marker scope="Public" name="box_incident2" />
@@ -377,8 +418,14 @@
         <marker scope="Public" name="dark_prince_mention">Schezo mentions the Dark Prince Satan</marker>
         <marker scope="Public" name="deity_start" />
         <marker scope="Public" name="dualforfeit_watch" />
+        <marker scope="Public" name="dungeon_escape" />
+        <marker scope="Public" name="dungeon_guards" />
+        <marker scope="Public" name="dungeon_guards1" />
+        <marker scope="Public" name="Freedom_Response" />
         <marker scope="Public" name="god_defiler">"The gorgeous man who defiles the gods" is what his name means in ancient tongue.</marker>
         <marker scope="Public" name="introduction" />
+        <marker scope="Public" name="Kink_Response" />
+        <marker scope="Public" name="Kiss_Response" />
         <marker scope="Public" name="madouars_lore" />
         <marker scope="Public" name="magic_crystal" />
         <marker scope="Public" name="magic_snatch">Schezo's special ability to steal magic.</marker>
@@ -393,6 +440,7 @@
         <marker scope="Public" name="pc98_madou2lore" />
         <marker scope="Public" name="pc98_madou2lore2" />
         <marker scope="Public" name="pc98_madou2lore3" />
+        <marker scope="Public" name="Personality_Response" />
         <marker scope="Public" name="petty_schezo">Schezo don't like that dark prince, so he's going to spite him when he's not around.</marker>
         <marker scope="Public" name="posses_react" />
         <marker scope="Public" name="possess_react" />
@@ -405,9 +453,22 @@
         <marker scope="Public" name="schezo_birthday">March 16th is Schezo's birthday!</marker>
         <marker scope="Public" name="schezo_bragresponseA" />
         <marker scope="Public" name="schezo_bragresponseB" />
+        <marker scope="Public" name="schezo_kinks" />
+        <marker scope="Public" name="schezo_madou98hot" />
+        <marker scope="Public" name="Schezo_Sentimental" />
+        <marker scope="Public" name="Schezo_Sentimental2" />
+        <marker scope="Public" name="Schezo_Sentimental3" />
+        <marker scope="Public" name="Schezo_Sentimental4" />
+        <marker scope="Public" name="Schezo_Sentimental4A" />
+        <marker scope="Public" name="Schezo_Sentimental4B" />
+        <marker scope="Public" name="Schezo_Sentimental5A" />
+        <marker scope="Public" name="Schezo_Sentimental5B" />
+        <marker scope="Public" name="Schezo_SentimentalA" />
+        <marker scope="Public" name="Schezo_SentimentalB" />
         <marker scope="Public" name="schezo_showdown" />
         <marker scope="Public" name="schezo_sussy">Every instance of Schezo saying something sussy, unintentional or not.</marker>
         <marker scope="Public" name="schezo_toomanyoutfits">No, really, Schezo has a LOT of outfit designs over the series' runtime.</marker>
+        <marker scope="Public" name="schezo_velvet_arm1" />
         <marker scope="Public" name="screamyourname" />
         <marker scope="Public" name="seal_the_deal">Schezo takes Kazuma's bet.</marker>
         <marker scope="Public" name="serilly_peptalk" />
