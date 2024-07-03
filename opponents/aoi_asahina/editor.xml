@@ -46,6 +46,7 @@
         <note id="177">This line has a duplicate for if Hina is selected first.</note>
         <note id="235">In the school mode timeline, Mukuro Ikusaba still dresses up as Junko. In Summer Camp, Junko doesn't even show up if Mukuro is there.</note>
         <note id="301">Unlocks collectible to come later.</note>
+        <note id="194">New Pose: Flashing</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Player Exposed" sort="0" />
@@ -72,7 +73,7 @@
         <label id="23" label="Legband" folder="" sort="0" />
         <label id="24" label="Jacket" folder="" sort="0" />
         <label id="25" label="Tank Top (Override)" folder="Overrides" sort="0" />
-        <label id="26" label="Shorts" folder="" sort="0" />
+        <label id="26" label="" folder="Sequences" sort="0" />
         <label id="27" label="Underwear" folder="" sort="0" />
         <label id="28" label="Tank Top (Danganronpa)" folder="Sequences" sort="0" />
         <label id="29" label="" folder="Sequences" sort="0" />
@@ -92,7 +93,7 @@
         <label id="45" label="Forfeit" folder="Basics" sort="0" />
         <label id="46" label="" folder="Basics" sort="0" />
         <label id="47" label="" folder="Situations" sort="0" />
-        <label id="48" label="Shorts" folder="" sort="0" />
+        <label id="48" label="" folder="Situations" sort="0" />
         <label id="49" label="" folder="Situations" sort="0" />
         <label id="50" label="" folder="Situations" sort="0" />
         <label id="51" label="Jacket (Override)" folder="Overrides" sort="0" />
@@ -179,7 +180,7 @@
         <label id="141" label="Chubby Training" folder="Sequences" sort="0" />
         <label id="143" label="Last One Out" folder="" sort="0" />
         <label id="144" label="First Forfeit" folder="Sequences" sort="0" />
-        <label id="145" label="Socks (Override)" folder="Overrides" sort="0" />
+        <label id="145" label="Socks (Override) Beach" folder="Overrides" sort="0" />
         <label id="146" label="" folder="Situations" sort="0" />
         <label id="147" label="Unlocks Collectible" folder="Sequences" sort="0" />
         <label id="148" label="Collectible Legband" folder="" sort="0" />
@@ -299,16 +300,29 @@
         <label id="297" label="Date" folder="Target: Kyoko" sort="0" />
         <label id="298" label="WhatDo" folder="Target: Kyoko" sort="0" />
         <label id="267" label="" folder="Target: Ringo" sort="0" />
+        <label id="302" label="" folder="Target: Chiaki" sort="0" />
+        <label id="303" label="" folder="Target: Chiaki" sort="0" />
+        <label id="304" label="" folder="Target: Chiaki" sort="0" />
+        <label id="305" label="Swim Link 4 (Chiaki)" color="10" folder="Sequences" sort="0" />
+        <label id="307" label="" folder="Sequences" sort="0" />
+        <label id="308" label="" folder="Sequences" sort="0" />
+        <label id="309" label="Shorts" folder="" sort="0" />
+        <label id="310" label="Shorts" folder="" sort="0" />
+        <label id="311" label="Shorts (Override)" folder="Overrides" sort="0" />
+        <label id="312" label="Early Game" folder="" sort="0" />
+        <label id="313" label="Forfeit" folder="" sort="0" />
+        <label id="314" label="Postgame" folder="" sort="0" />
+        <label id="317" label="Aura" folder="" sort="0" />
     </labels>
-    <nextId>301</nextId>
+    <nextId>317</nextId>
     <markers>
-        <marker scope="Public" name="aoi_hairstyles" />
-        <marker scope="Public" name="aoi_names" />
+        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background related markers.</marker>
         <marker scope="Public" name="B_BeachTan" />
         <marker scope="Public" name="B_DRClassroom" />
         <marker scope="Public" name="B_HinaBirthday" />
         <marker scope="Public" name="B_HinaBirthdayChihiro" />
+        <marker scope="Public" name="B_HinaBirthdayKyoko" />
         <marker scope="Public" name="B_HinaBirthdayMahiru" />
         <marker scope="Public" name="B_KyokoClassroom" />
         <marker scope="Public" name="B_KyokoShower" />
@@ -340,6 +354,8 @@
         <marker scope="Public" name="L_FirstRound" />
         <marker scope="Public" name="L_FirstRound-" />
         <marker scope="Public" name="L_FirstRound+" />
+        <marker scope="Public" name="L_FirstRoundNegative" />
+        <marker scope="Public" name="L_FirstRoundPositive" />
         <marker scope="Public" name="L_FriendPenis" />
         <marker scope="Public" name="L_GreatHand" />
         <marker scope="Public" name="L_HeroTime" />
@@ -381,10 +397,13 @@
         <marker scope="Public" name="S_Jacket" />
         <marker scope="Public" name="S_KyokoButtPose" />
         <marker scope="Public" name="S_Legband" />
+        <marker scope="Public" name="S_Shorts" />
+        <marker scope="Public" name="S_ShortsLosing" />
         <marker scope="Public" name="S_Towel" />
         <marker scope="Public" name="S_WhatILove" />
         <marker scope="Private" name="T_">Lines that target other characters.</marker>
         <marker scope="Public" name="T_AquaRecord" />
+        <marker scope="Public" name="T_Chiaki_EndingW" />
         <marker scope="Public" name="T_Chihiro_EndingW">Hina wins. Chihiro lost.</marker>
         <marker scope="Public" name="T_ChihiroAlterEgo" />
         <marker scope="Public" name="T_ChihiroEnd" />
@@ -467,6 +486,7 @@
         <marker scope="Public" name="TI_Kyoko_71Mast" />
         <marker scope="Public" name="TI_Kyoko_71Secret" />
         <marker scope="Public" name="TI_Kyoko_72" />
+        <marker scope="Public" name="TI_Kyoko_XPopular" />
         <marker scope="Public" name="TI_KyokoButtPose" />
         <marker scope="Public" name="TI_Levi_01" />
         <marker scope="Public" name="TI_Levi_01Sports" />
@@ -495,6 +515,9 @@
         <marker scope="Private" name="TO_">Targeted lines when other characters are stripping.</marker>
         <marker scope="Public" name="TO_AquaGrunt_11" />
         <marker scope="Public" name="TO_Chiaki_01">Chiaki Must Strip Stage 0</marker>
+        <marker scope="Public" name="TO_Chiaki_02" />
+        <marker scope="Public" name="TO_Chiaki_03" />
+        <marker scope="Public" name="TO_Chiaki_11" />
         <marker scope="Public" name="TO_Chihiro_01">Chihiro Must Strip Stage 0</marker>
         <marker scope="Public" name="TO_Chihiro_01Nami" />
         <marker scope="Public" name="TO_Chihiro_42">Chihiro Stripping Stage 4</marker>
@@ -549,6 +572,8 @@
         <marker scope="Public" name="TO_Sweetheart_01">Sweetheart Must Strip Stage 0</marker>
         <marker scope="Public" name="TO_Tifa_01" />
         <marker scope="Public" name="TO_Velvet_01" />
+        <marker scope="Public" name="TO_Velvet_02" />
+        <marker scope="Public" name="TO_Velvet_02Losing" />
         <marker scope="Public" name="TO_Zeke_01" />
         <marker scope="Public" name="TO_Zeke_02HowTheyMet" />
         <marker scope="Public" name="TO_Zeke_03Look" />
