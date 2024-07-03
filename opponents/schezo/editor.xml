@@ -4,7 +4,7 @@
     <height />
     <age>??</age>
     <pronunciation>SHEH-zo</pronunciation>
-    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws</othernotes>
+    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws&lt;br&gt;&lt;br&gt;TARGETS OF INTEREST&lt;br&gt;🐘 Schezo is terrible at catching himself when it comes to his poor phrasing. There's a marker for that.&lt;br&gt;⚔️ But when he's not scuffing his vocab, he plays the straight man to everyone else's antics. That doesn't mean he's devoid of quirks, of course.&lt;br&gt;⚔️ He's one of the more anti-heroic characters from Puyo Puyo's cast. He has honor and morals, but is pretty selfish about his ambitions.&lt;br&gt;⚔️ Tries to keep his cool. Keyword being tries. Default attitude is stoic snark, but calling him a 'creeper' or 'pervert' is the easiest way to piss him off. Getting frisky with his comfort zone can make him lose nerve.&lt;br&gt;⚔️ His knowledge on sexual topics is rather shallow, making the assumption he is a pervert ironic in itself.&lt;br&gt;⚔️ And from the combination of "keep cool until he doesn't" and surface-level sexual knowledge, he can barely handle flirtation.&lt;br&gt;⚔️ Relationship to Arle is pretty complicated.&lt;br&gt;⚔️ Schezo is a dark mage. Doesn't sound like the most friendly title. Additionally, he doesn't look like a typical mage.&lt;br&gt;⚔️ Yes, his sword is translucent. That's intentional.&lt;br&gt;⚔️ Magic and other supernatural powers grabs his attention.&lt;br&gt;⚔️ He can be a bit rough around the edges when trying to show his kinder side, but he means what he says. Has a weird way of telling shy and self-deprecating people they're better than they think they are.&lt;br&gt;⚔️ Cute things! He likes cute animal creatures and will (briefly) gush about them.</othernotes>
     <noteworthy>
         <case name="What's in a name?" id="27" priority="Prompt" min="0" max="10">
             <description>Schezo asks if there's any special signifigance to any character's name.</description>
@@ -35,6 +35,9 @@
         </case>
         <case name="Arle and Ringo Connection" id="193" priority="FYI" min="0" max="10">
             <description>Schezo sasses Arle and Ringo behind their backs.</description>
+        </case>
+        <case name="The Concept of Fate" id="315" priority="Prompt" min="0" max="0">
+            <description>Schezo asks the table about their views on fate.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -385,9 +388,11 @@
         <label id="59" label="First Loss of the Game" folder="" sort="0" />
         <label id="313" label="" folder="Targets" sort="0" />
         <label id="314" label="" folder="Targets" sort="0" />
+        <label id="315" label="On Fate" folder="Prompts" sort="0" />
     </labels>
-    <nextId>314</nextId>
+    <nextId>315</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
         <marker scope="Public" name="about_magicaljewels" />
         <marker scope="Public" name="about_primp1" />
@@ -399,6 +404,8 @@
         <marker scope="Public" name="about_puyo2" />
         <marker scope="Public" name="about_puyo3" />
         <marker scope="Public" name="about_puyo4" />
+        <marker scope="Public" name="arle_blue1" />
+        <marker scope="Public" name="arle_blue2" />
         <marker scope="Public" name="arle_doors">Arle Nadja, Apprentice Mage, Lover of Curry, Popper of Puyo...Yeeter of Doors.</marker>
         <marker scope="Public" name="arle_dungeon_escape" />
         <marker scope="Public" name="arle_dungeon_guards" />
@@ -423,6 +430,7 @@
         <marker scope="Public" name="dungeon_guards1" />
         <marker scope="Public" name="Freedom_Response" />
         <marker scope="Public" name="god_defiler">"The gorgeous man who defiles the gods" is what his name means in ancient tongue.</marker>
+        <marker scope="Public" name="headband_fakeout" />
         <marker scope="Public" name="introduction" />
         <marker scope="Public" name="Kink_Response" />
         <marker scope="Public" name="Kiss_Response" />
@@ -453,6 +461,7 @@
         <marker scope="Public" name="schezo_birthday">March 16th is Schezo's birthday!</marker>
         <marker scope="Public" name="schezo_bragresponseA" />
         <marker scope="Public" name="schezo_bragresponseB" />
+        <marker scope="Public" name="schezo_fate_question" />
         <marker scope="Public" name="schezo_kinks" />
         <marker scope="Public" name="schezo_madou98hot" />
         <marker scope="Public" name="Schezo_Sentimental" />
@@ -480,6 +489,7 @@
         <marker scope="Public" name="sun_incident" />
         <marker scope="Public" name="sun_incident2" />
         <marker scope="Public" name="tenorizoh" />
+        <marker scope="Public" name="tenorizoh_mention" />
         <marker scope="Public" name="toospicyforschezo">So this is what it feels like hearing yourself mangle your words...</marker>
         <marker scope="Public" name="totm_story1">Schezo talks about his adventure in Madou Monogatari: Tower of the Magician.</marker>
         <marker scope="Public" name="totm_story2" />
