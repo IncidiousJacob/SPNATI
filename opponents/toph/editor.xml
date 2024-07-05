@@ -161,6 +161,8 @@
         <response id="956" opponent="chell_wheatley" opponentId="13" />
         <response id="957" opponent="chell_wheatley" opponentId="22" />
         <response id="958" opponent="chell_wheatley" opponentId="15" />
+        <response id="967" opponent="amalia" opponentId="1" />
+        <response id="968" opponent="amalia" opponentId="2" />
     </responses>
     <notes>
         <note id="272">For Repulsive_Trifle_551's sponsorship!</note>
@@ -1219,8 +1221,34 @@
         <label id="956" label="0-2 Robots" color="4" folder="Targets" sort="0" />
         <label id="746" label="7 Dick Joke" color="11" folder="Targets" sort="0" />
         <label id="961" label="Pants (For Christmas Alt)" folder="Clothing" sort="0" />
+        <label id="955" label="0Distraction" color="5" folder="Targets" sort="0" />
+        <label id="962" label="1 Keep Your Eyes on Sweetheart" color="5" folder="Targets" sort="0" />
+        <label id="963" label="1 Something Evil" color="5" folder="Targets" sort="0" />
+        <label id="964" label="Telekinesis" color="5" folder="Targets" sort="0" />
+        <label id="965" label="Wearing Shoes" color="5" folder="Targets" sort="0" />
+        <label id="966" label="The Blind Bandit" color="5" folder="Targets" sort="0" />
+        <label id="968" label="8 Plant Bondage" color="14" folder="Targets" sort="0" />
+        <label id="967" label="5 Growing Flowers" color="6" folder="Targets" sort="0" />
+        <label id="969" label="Running Away from Duties" color="3" folder="Targets" sort="0" />
+        <label id="970" label="" folder="Targets" sort="0" />
+        <label id="971" label="" folder="Targets" sort="0" />
+        <label id="972" label="Water" folder="Summer Outfit" sort="0" />
+        <label id="973" label="Cold" folder="Summer Outfit" sort="0" />
+        <label id="958" label="Bending Distance" folder="Targets" sort="0" />
+        <label id="974" label="" folder="Summer Outfit" sort="0" />
+        <label id="975" label="How to Play Poker While Blind" folder="" sort="0" />
+        <label id="976" label="" folder="Summer Outfit" sort="0" />
+        <label id="977" label="Butt Lines (Seasonal Costumes)" color="4" folder="" sort="0" />
+        <label id="978" label="Default Costume Only" folder="" sort="0" />
+        <label id="979" label="" folder="Christmas Outfit" sort="0" />
+        <label id="980" label="" folder="Summer Outfit" sort="0" />
+        <label id="981" label="Bending Demonstration (Fire Nation Vacation)" color="6" folder="" sort="0" />
+        <label id="982" label="" folder="Summer Outfit" sort="0" />
+        <label id="983" label="" folder="Summer Outfit" sort="0" />
+        <label id="984" label="" folder="Summer Outfit" sort="0" />
+        <label id="985" label="" folder="Summer Outfit" sort="0" />
     </labels>
-    <nextId>961</nextId>
+    <nextId>985</nextId>
     <markers>
         <marker scope="Public" name="9S_Cheat_Resp">9S Targets: 9S Stripped 0-1</marker>
         <marker scope="Public" name="9S_Material_1">9S Targets: 9S Strip 0-1</marker>
@@ -1235,6 +1263,8 @@
         <marker scope="Public" name="Adrien_Wrestler_1">Adrien Targets: Toph Strip 1-2</marker>
         <marker scope="Public" name="Aella_Adventures_Resp">Aella Targets: Any Hand</marker>
         <marker scope="Public" name="Aloy_History_Resp">Aloy Targets: Any Hand</marker>
+        <marker scope="Public" name="Amalia_Grow_Resp">Amalia Targets: Any Hand</marker>
+        <marker scope="Public" name="Amalia_Plant_Bondage_Resp">Amalia Targets: Amalia Masturbating</marker>
         <marker scope="Public" name="Anatoly_Illiterate">Anatoly Targets: Any Hand</marker>
         <marker scope="Public" name="Aoba_HajimeResp">Aoba Targets: Any Hand</marker>
         <marker scope="Public" name="Aqua_Aqua_Aqua_Grunt">Aqua Grunt, Aqua (KH), and Aqua (KonoSuba) Targets: Game Start</marker>
@@ -1652,10 +1682,12 @@
         <marker scope="Public" name="Mia_Treatment_1">Mia Targets: Mia Strip 2-3</marker>
         <marker scope="Public" name="Mia_Treatment_2">Mia Targets: Mia Stripping 2-3</marker>
         <marker scope="Public" name="Mia_Treatment_3">Mia Targets: Mia Stripped 2-3</marker>
+        <marker scope="Public" name="Mikan_Feet_1">Mikan Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="Miku_Musician_1">Hatsune Miku Targets: Miku Strip 01</marker>
         <marker scope="Public" name="Misty_SkinnyDip">Misty Targets: Game Start</marker>
         <marker scope="Public" name="Mitama_Luxury_1">Mitama Targets: Toph Strip 1-2</marker>
         <marker scope="Public" name="Mitama_Luxury_2">Mitama Targets: Toph Stripping 1-2</marker>
+        <marker scope="Public" name="Mitama_Luxury_3">Mitama Targets: Toph Stripped 1-2</marker>
         <marker scope="Public" name="Mitama_Nap_Resp">Mitama Targets: Any Hand</marker>
         <marker scope="Public" name="Mitama_Reading_1">Mitama Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="Moon_Bra_Resp">Moon Targets: Moon Stripping 0-1</marker>
@@ -1734,16 +1766,19 @@
         <marker scope="Public" name="Petra_Tattoo_Resp1">Petra Targets: Petra Stripped 3-4</marker>
         <marker scope="Public" name="Petra_Tattoo_Resp2">Petra Targets: Petra Stripped 3-4</marker>
         <marker scope="Public" name="Pit_Finish_Resp">Pit Targets: Game Finished</marker>
+        <marker scope="Public" name="PokerWhileBlind" />
         <marker scope="Public" name="Polly_Wiki_Vandalism">Polly and Wikipe-tan Targets: After Finishing, Both (Any Hand)</marker>
         <marker scope="Public" name="PunFinish" />
         <marker scope="Public" name="PunStart" />
         <marker scope="Public" name="Queenie_Dirt_1">Queen of Hatred Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="Queenie_Dirt_2">Queen of Hatred Targets: Toph Stripping 0-1</marker>
+        <marker scope="Public" name="Queenie_Dirt_3">Queen of Hatred Targets: Toph Stripped 0-1</marker>
         <marker scope="Public" name="Queenie_Forfeit_Resp">Queen of Hatred Targets: Queen of Hatred Start Masturbating</marker>
         <marker scope="Public" name="Reimu_Reason_1">Reimu Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="Revy_Blind_1">Revy Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="Revy_Fight_1">Revy and Meia Targets: Revy Stripped 4-5, Meia Nude (Any Hand)</marker>
         <marker scope="Public" name="Revy_Fight_2">Revy and Meia Targets: Revy Stripped 4-5, Meia Nude (Any Hand)</marker>
+        <marker scope="Public" name="RibbonGirl_Bandit_1">Ribbon Girl Targets: Toph Strip 0-1</marker>
         <marker scope="Public" name="RibbonGirl_Intro_Resp">Ribbon Girl Targets: Ribbon Girl Selected</marker>
         <marker scope="Public" name="Ringo_ExtraSense">Ringo Targets: Any Hand</marker>
         <marker scope="Public" name="Ringo_Lightning_1">Ringo Targets: Toph Stripping 1-2</marker>
@@ -1816,6 +1851,7 @@
         <marker scope="Public" name="Shamiko_CrisisManagement">Shamiko Targets: Shamiko Stripping 3-4</marker>
         <marker scope="Public" name="Shamiko_Demon_1">Shamiko Targets: Shamiko Strip 0-1</marker>
         <marker scope="Public" name="Shamiko_Demon_2">Shamiko Targets: Shamiko Stripping 0-1</marker>
+        <marker scope="Public" name="Shamiko_Demon_3">Shamiko Targets: Shamiko Stripped 0-1</marker>
         <marker scope="Public" name="Shamiko_Nickname_Resp">Shamiko Targets: Any Hand</marker>
         <marker scope="Public" name="Shantae_Dance_Resp">Shantae Targets: Shantae Stripping 0-1</marker>
         <marker scope="Public" name="Sly_Boner_Clothed">Sly Cooper Targets: Global Line (Sly Pops a Boner While Clothed)</marker>
@@ -1872,6 +1908,7 @@
         <marker scope="Public" name="Supernova_PortalGrab">Supernova Targets: Supernova Must Masturbated</marker>
         <marker scope="Public" name="Sweetheart_Donut_1">Sweetheart Targets: Sweetheart Strip 0-1</marker>
         <marker scope="Public" name="Sweetheart_Donut_2">Sweetheart Targets: Sweetheart Stripping 0-1</marker>
+        <marker scope="Public" name="Sweetheart_Donut_3">Sweetheart Targets: Sweetheart Stripped 0-1</marker>
         <marker scope="Public" name="Sweetheart_Moist_Resp">Sweetheart Targets: Sweetheart Stripped 6-7</marker>
         <marker scope="Public" name="Takatoshi_Boner_Line">Takatoshi Targets: Takatoshi Stripped 5-6</marker>
         <marker scope="Public" name="Taunt_BadHand">Must Strip: Generic Lines (For Storm's sponsorship)</marker>
@@ -1998,6 +2035,8 @@
         <marker scope="Public" name="Zoe_Intro">Zoe Targets: Game Start</marker>
         <marker scope="Public" name="Zoe_Question_1">Zoe Targets: Zoe Strip 0-1</marker>
         <marker scope="Public" name="Zone_Demon_Resp">Zone-tan Targets: Zone-tan Strip 2-3</marker>
+        <marker scope="Public" name="Zuko_Selected_1a">Zuko Targets: Toph Selected</marker>
+        <marker scope="Public" name="Zuko_Selected_1b">Zuko Targets: Zuko Selected</marker>
     </markers>
     <pendingLines>
         <line>Well, I like hanging with Sokka, and the rest of Team Avatar as well--Katara, Aang, Zuko, all of them! But since I stared running the Academy, I barely get any chances to spend much time with them, except when there's a battle to be fought. (Resp. to NadeshikoFriends, for the Removing Accessory case, or the Any Hand case if it's moved to it)</line>
