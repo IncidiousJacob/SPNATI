@@ -403,6 +403,7 @@ function loadBackgrounds() {
         if (defaultBackgroundID && backgrounds[defaultBackgroundID]) {
             defaultBackground = backgrounds[defaultBackgroundID];
         }
+        $('.background-select-button').show();
     }).catch(function (err) {
         console.error("Could not load backgrounds:");
         captureError(err);
