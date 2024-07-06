@@ -7,3 +7,17 @@
   /*Mari Setogaya is speaking.*/
   color: #A80000;
 }
+
+.dialogue-bubble[data-character="mari_setogaya"][data-dialogue-styles~="texting"] {
+  background: #DCF8C7;
+  clear: both;
+  line-height: 22px;
+  margin: 8px 0;
+  max-width: 85%;
+  word-wrap: break-word;
+}
+
+.dialogue-bubble[data-character="mari_setogaya"][data-dialogue-styles~="texting"]::before {
+    background: #DCF8C7;
+    opacity: 100%;
+}
