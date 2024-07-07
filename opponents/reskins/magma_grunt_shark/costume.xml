@@ -5,9 +5,9 @@
     <tags>
         <tag>alternative_skin</tag>
         <tag>halloween_skin</tag>
-        <tag>sleepwear</tag>
         <tag remove="true">sweater</tag>
     </tags>
+    <layers>8</layers>
     <folder>opponents/reskins/magma_grunt_shark/</folder>
     <folder stage="8">opponents/magma_grunt/</folder>
     <wardrobe>
@@ -15,10 +15,11 @@
         <clothing name="ditto bra" generic="bra" position="upper" type="important" />
         <clothing name="shirt" generic="shirt" position="upper" type="major" />
         <clothing name="jeans" generic="pants" position="lower" type="major" plural="true" />
-        <clothing name="shark head" position="both" type="minor" />
+        <clothing name="shark head" generic="" position="both" type="minor" />
         <clothing name="socks" generic="socks" position="feet" type="minor" plural="true" />
         <clothing name="shoes" generic="shoes" position="feet" type="extra" plural="true" />
         <clothing name="&quot;fins&quot;" generic="gloves" position="hands" type="extra" plural="true" />
     </wardrobe>
+
 
 </costume>

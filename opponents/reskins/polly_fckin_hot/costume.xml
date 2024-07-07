@@ -7,6 +7,7 @@
         <tag>scantily-clad</tag>
         <tag>summer_skin</tag>
         <tag from="2" to="4">swimwear</tag>
+        <tag remove="true">underboob</tag>
     </tags>
     <layers>5</layers>
     <folder>opponents/reskins/polly_fckin_hot/</folder>
@@ -15,7 +16,7 @@
         <clothing name="bra" generic="bra" position="upper" type="important" />
         <clothing name="shorts" generic="shorts" position="lower" type="major" plural="true" />
         <clothing name="shirt" generic="shirt" position="upper" type="major" />
-        <clothing name="accessories" position="other" type="minor" plural="true" />
+        <clothing name="accessories" generic="" position="other" type="minor" plural="true" />
     </wardrobe>
 
     <poses>
@@ -361,4 +362,5 @@
             </directive>
         </pose>
     </poses>
+
 </costume>

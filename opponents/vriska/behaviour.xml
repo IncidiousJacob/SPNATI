@@ -1415,7 +1415,7 @@
             <case stage="3" hidden="1" removeCharacterTags="hat,high_heels,maid_uniform,twintails">
                 <state img="Rolled.png">Tag removals from Outfit 2</state>
             </case>
-            <case stage="4" hidden="1" addCharacterTags="bodysuit,masked,twintails" removeCharacterTags="thigh_highs">
+            <case stage="4" hidden="1" addCharacterTags="bodysuit,masked,twintails,cameltoe" removeCharacterTags="thigh_highs">
                 <condition role="self" saidMarker="costume==0" />
                 <state img="#-ARoll.png">Tag changes for Outfit 4A</state>
             </case>
@@ -1442,7 +1442,7 @@
                 <condition role="self" saidMarker="costume==c" />
                 <state img="#-CRoll.png">Tag changes for Outfit 5C</state>
             </case>
-            <case stage="5" hidden="1" removeCharacterTags="bodysuit,hat,masked">
+            <case stage="5" hidden="1" removeCharacterTags="bodysuit,hat,masked,cameltoe">
                 <state img="Rolled.png">Tag removals from Outfit 4</state>
             </case>
             <case stage="6" hidden="1" addCharacterTags="swimwear" removeCharacterTags="high_heels,thigh_highs">
@@ -1456,7 +1456,7 @@
             <case stage="6" hidden="1" removeCharacterTags="choker,exotic_hair,fishnets,hat,jewelry,multicolored_hair,twintails">
                 <state img="Rolled.png">Tag removals from Outfit 5</state>
             </case>
-            <case stage="7" hidden="1" addCharacterTags="nipple_slip,pubic_hair_peek,swimwear">
+            <case stage="7" hidden="1" addCharacterTags="nipple_slip,pubic_hair_peek,swimwear,functionally_naked">
                 <condition role="self" saidMarker="costume==0" />
                 <state img="#-ARoll.png">Tag changes for Outfit 7A</state>
             </case>
@@ -1467,15 +1467,15 @@
             <case stage="7" hidden="1" removeCharacterTags="bunnysuit,fishnets,high_heels,thigh_highs">
                 <state img="Rolled.png">Tag removals from Outfit 6</state>
             </case>
-            <case stage="8" hidden="1" addCharacterTags="lingerie,nipples_visible_through_clothing">
+            <case stage="8" hidden="1" addCharacterTags="lingerie,nipples_visible_through_clothing,functionally_naked">
                 <condition role="self" saidMarker="costume==0" />
                 <state img="#-ARoll.png">Tag changes for Outfit 8A</state>
             </case>
-            <case stage="8" hidden="1" addCharacterTags="nipple_slip" removeCharacterTags="glasses">
+            <case stage="8" hidden="1" addCharacterTags="nipple_slip,functionally_naked" removeCharacterTags="glasses">
                 <condition role="self" saidMarker="costume==b" />
                 <state img="#-BRoll.png">Tag changes for Outfit 8B</state>
             </case>
-            <case stage="8" hidden="1" removeCharacterTags="nipple_slip,swimwear">
+            <case stage="8" hidden="1" removeCharacterTags="nipple_slip,swimwear,functionally_naked">
                 <state img="Rolled.png">Tag removals from Outfit 7</state>
             </case>
         </trigger>
