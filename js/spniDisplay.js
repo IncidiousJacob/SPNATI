@@ -1386,7 +1386,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
     if (!player) {
         this.hideBubble();
         this.clearPose();
-        this.imageArea.css('z-index', '-100');
+        this.imageArea.css('z-index', '1000');
         this.label.html("Opponent " + this.slot);
 
         /* change the button */
