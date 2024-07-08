@@ -1030,7 +1030,7 @@ Opponent.prototype.getRepeatCount = function () {
         return 0;
     }
 
-    return this.repeatLog[this.chosenState.rawDialogue] || 0;
+    return this.repeatLog[this.chosenState.hash] || 0;
 }
 
 /**
