@@ -78,6 +78,7 @@
             this.tsRename = new System.Windows.Forms.ToolStripButton();
             this.tsLeft = new System.Windows.Forms.ToolStripButton();
             this.tsRight = new System.Windows.Forms.ToolStripButton();
+            this.tsSelectSheet = new System.Windows.Forms.ToolStripButton();
             this.sptMode = new System.Windows.Forms.SplitContainer();
             this.panelSingle = new System.Windows.Forms.Panel();
             this.cmdImportFull = new Desktop.Skinning.SkinnedIcon();
@@ -482,7 +483,8 @@
             this.toolStripSeparator5,
             this.tsRename,
             this.tsLeft,
-            this.tsRight});
+            this.tsRight,
+            this.tsSelectSheet});
             this.tsSheet.Location = new System.Drawing.Point(0, 0);
             this.tsSheet.Name = "tsSheet";
             this.tsSheet.Size = new System.Drawing.Size(783, 25);
@@ -691,6 +693,16 @@
             this.tsRight.Name = "tsRight";
             this.tsRight.Size = new System.Drawing.Size(23, 22);
             this.tsRight.Click += new System.EventHandler(this.tsRight_Click);
+            // 
+            // tsSelectSheet
+            // 
+            this.tsSelectSheet.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsSelectSheet.Image = global::SPNATI_Character_Editor.Properties.Resources.PoseList;
+            this.tsSelectSheet.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsSelectSheet.Name = "tsSelectSheet";
+            this.tsSelectSheet.Size = new System.Drawing.Size(23, 22);
+            this.tsSelectSheet.ToolTipText = "Select Sheet";
+            this.tsSelectSheet.Click += new System.EventHandler(this.tsSelectSheet_Click);
             // 
             // sptMode
             // 
@@ -1106,5 +1118,6 @@
         private Desktop.Skinning.SkinnedComboBox cboToKKLVersion;
         private Desktop.Skinning.SkinnedIcon iconAltDrag;
         private Desktop.Skinning.SkinnedLabel lblTo;
+        private System.Windows.Forms.ToolStripButton tsSelectSheet;
     }
 }

@@ -351,6 +351,12 @@
     <Compile Include="Controls\Dashboards\TargetWidget.Designer.cs">
       <DependentUpon>TargetWidget.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SheetSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SheetSelect.Designer.cs">
+      <DependentUpon>SheetSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\WardrobeAdvancedForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1649,6 +1655,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Dashboards\TargetWidget.resx">
       <DependentUpon>TargetWidget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetSelect.resx">
+      <DependentUpon>SheetSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\WardrobeAdvancedForm.resx">
       <DependentUpon>WardrobeAdvancedForm.cs</DependentUpon>

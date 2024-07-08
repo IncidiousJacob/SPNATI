@@ -730,6 +730,16 @@ namespace Desktop.Skinning
 			Update();
 		}
 
+		public void ScrollToIndex(int index)
+		{
+			if (index > -1)
+			{
+				_scrollPosition = Math.Max(0, Math.Min(_maxScroll * index / _tabControl.TabPages.Count, _maxScroll));
+			}
+			Invalidate();
+			Update();
+		}
+
 		private void _scrollTimer_Tick(object sender, EventArgs e)
 		{
 			_scrollTimer.Interval = ScrollInterval;
