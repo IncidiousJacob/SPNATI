@@ -551,7 +551,7 @@ function updateStatusIcon(elem, opp) {
 
 function updateGenderIcon(elem, opp) {
     elem.attr({
-        src: opp.selectGender === 'male' ? MALE_SYMBOL : ((opp.selectGender === "female" && opp.isFuta) ? FUTANARI_SYMBOL : FEMALE_SYMBOL),
+        src: IMG + opp.selectGender + '.svg',
         alt: opp.selectGender.initCap(),
     }).show();
 }
