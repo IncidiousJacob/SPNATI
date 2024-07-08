@@ -1113,7 +1113,9 @@ Opponent.prototype.loadAlternateCostume = function () {
                or the legacy size, copy from the default costume, lastly falling back to the "other" size. */
             penis: $xml.children('penis').text()
                 || (gender === eGender.MALE && (legacySize || this.default_costume.penis
-                                                || this.default_costume.breasts)) || null,
+                                                || this.default_costume.breasts))
+                || (this.isFuta && this.default_costume.penis)
+                || null,
             breasts: $xml.children('breasts').text()
                 || (gender === eGender.FEMALE && (legacySize || this.default_costume.breasts
                                                   || this.default_costume.penis)) || null,
