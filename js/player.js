@@ -551,11 +551,16 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.first = $metaXml.children('first').text();
     this.last = $metaXml.children('last').text();
 
-    // For label and gender, track the original, default value from
-    // meta.xml, the value for the currently selected costume to be
-    // shown on the selection card, and the current in-game value.
+    /* For label, gender, and layers, track the original, default value from
+     * meta.xml (.meta*), the value for the currently selected costume to be
+     * shown on the selection card (.select*), and the current in-game value.
+     * The in-game value for the default costume and the select screen value
+     * for an alternate costume both default to the meta value, and the in-game
+     * value for an alternate costume defaults to the select screen value for
+     * the costume. */
     this.label = this.selectLabel = this.metaLabel = $metaXml.children('label').text();
     this.gender = this.selectGender = this.metaGender = $metaXml.children('gender').text();
+    this.layers = this.selectLayers = this.metaLayers = parseInt($metaXml.children('layers').text(), 10);
 
     var picElem = $metaXml.children('pic');
 
@@ -566,7 +571,6 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.description = fixupDialogue($metaXml.children('description').html());
     this.has_collectibles = $metaXml.children('has_collectibles').text() === "true";
     this.collectibles = null;
-    this.layers = this.selectLayers = this.metaLayers = parseInt($metaXml.children('layers').text(), 10);
     this.default_costume_name = $metaXml.children('default-costume-name').text();
     this.scale = Number($metaXml.children('scale').text()) || 100.0;
     this.release = releaseNumber;
@@ -725,12 +729,12 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
                 'folder': $(elem).attr('folder'),
                 'name': $(elem).text(),
                 'image': $(elem).attr('img'),
-                'gender': $(elem).attr('gender') || this.selectGender,
-                'label': $(elem).attr('label') || this.selectLabel,
+                'gender': $(elem).attr('gender') || this.metaGender,
+                'label': $(elem).attr('label') || this.metaLabel,
                 'set': set,
                 'status': status,
                 'unlocked_by': $(elem).attr('collectible') || '',
-                'layers': parseInt($(elem).attr('layers'), 10) || this.selectLayers,
+                'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
             };
 
             if (set && DEFAULT_COSTUME_SETS.has(set)) {
