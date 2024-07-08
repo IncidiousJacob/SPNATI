@@ -28,7 +28,8 @@
 
     <!-- Warning / Title Screen -->
     <div id="title-screen" class="screen-container" hidden>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden>
+        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden
+                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
 
@@ -238,7 +239,8 @@
 
     <!-- Main Select Screen -->
     <div id="main-select-screen" class="screen-container" hidden>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()">
+        <button class="bordered background-select-button" onclick="showGameSettingsModal()"
+                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
         <div class="screen">
