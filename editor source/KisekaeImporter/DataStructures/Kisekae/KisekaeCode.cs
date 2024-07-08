@@ -503,7 +503,7 @@ namespace KisekaeImporter
 				if (model != null)
 				{
 
-					if (BeforeKKLVersion(107, 0, 1) > 0 && BeforeKKLVersion(107, 0, 1, majorVersion, minorVersion, alphaVersion) <= 0)
+						if (BeforeKKLVersion(106, 0, 0) > 0 && BeforeKKLVersion(106, 0, 0, majorVersion, minorVersion, alphaVersion) <= 0)
 					{
 
 						KisekaeHair hair = model.GetComponent<KisekaeHair>();
