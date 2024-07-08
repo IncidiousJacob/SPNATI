@@ -1587,18 +1587,6 @@ Opponent.prototype.recordTargetedCase = function (caseObj) {
     var lines = new Set();
     caseObj.states.forEach(function (s) {
         lines.add(s.rawDialogue);
-
-        /* Handle the old persist-marker flag by adding all markers set with
-         * persist-marker="true" to the persistentMarkers list.
-         *
-         * TODO: Remove this once all characters using persistent markers
-         * have migrated over to the system in #74.
-         */
-        if (s.legacyPersistentFlag) {
-            s.markers.forEach(function (marker) {
-                this.persistentMarkers[marker.name] = true;
-            }.bind(this));
-        }
     }.bind(this));
 
     entities.forEach(function (ent) {
