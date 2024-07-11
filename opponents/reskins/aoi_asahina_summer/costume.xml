@@ -24,5 +24,30 @@
         <clothing name="inner tube" generic="" position="waist" type="extra" />
     </wardrobe>
 
+    <poses>
+        <pose id="0-stripping">
+            <sprite id="stripping" src="reskins/aoi_asahina_summer/0-stripping.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripping">
+            <sprite id="stripping" src="reskins/aoi_asahina_summer/1-stripping.png" x="0" y="0" />
+        </pose>
+        <pose id="2-stripping">
+            <sprite id="stripping" src="reskins/aoi_asahina_summer/2-stripping.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripping">
+            <sprite id="stripping" src="reskins/aoi_asahina_summer/4-stripping.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripping">
+            <sprite id="stripping" src="reskins/aoi_asahina_summer/6-stripping.png" x="0" y="0" />
+            <directive type="animation" id="stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="1" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/aoi_asahina_summer/6-stripping.png" />
+                <keyframe time="1" src="reskins/aoi_asahina_summer/6-stripping2.png" />
+            </directive>
+        </pose>
+    </poses>
 
 </costume>
