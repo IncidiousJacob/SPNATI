@@ -36,14 +36,6 @@
         </pose>
         <pose id="4-stripping">
             <sprite id="stripping" src="reskins/aoi_asahina_summer/4-stripping.png" x="0" y="0" />
-            <directive type="animation" id="stripping" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" />
-                <keyframe time="1" x="0" y="0" />
-            </directive>
-            <directive type="animation" id="stripping" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/aoi_asahina_summer/4-stripping.png" />
-                <keyframe time="1" src="aoi_asahina/4-stripping2.png" />
-            </directive>
         </pose>
         <pose id="6-stripping">
             <sprite id="stripping" src="reskins/aoi_asahina_summer/6-stripping.png" x="0" y="0" />
