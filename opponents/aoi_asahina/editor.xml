@@ -60,29 +60,16 @@
         <label id="10" label="Swim Link 4" color="10" folder="Sequences" sort="0" />
         <label id="11" label="Swim Link 3" color="15" folder="Sequences" sort="0" />
         <label id="12" label="Swim Link 5" color="6" folder="Sequences" sort="0" />
-        <label id="13" label="Shoes" folder="" sort="0" />
-        <label id="14" label="Tank Top" folder="" sort="0" />
-        <label id="15" label="Socks" folder="" sort="0" />
-        <label id="16" label="Legband" folder="" sort="0" />
-        <label id="17" label="Jacket" folder="" sort="0" />
-        <label id="18" label="" folder="Situations" sort="0" />
-        <label id="19" label="Underwear" folder="" sort="0" />
-        <label id="20" label="Shoes" folder="" sort="0" />
-        <label id="21" label="Socks" folder="" sort="0" />
-        <label id="22" label="Tank Top" folder="" sort="0" />
-        <label id="23" label="Legband" folder="" sort="0" />
-        <label id="24" label="Jacket" folder="" sort="0" />
         <label id="25" label="Tank Top (Override)" folder="Overrides" sort="0" />
         <label id="26" label="" folder="Sequences" sort="0" />
-        <label id="27" label="Underwear" folder="" sort="0" />
         <label id="28" label="Tank Top (Danganronpa)" folder="Sequences" sort="0" />
         <label id="29" label="" folder="Sequences" sort="0" />
-        <label id="30" label="10 Rounds" folder="Situations" sort="0" />
+        <label id="30" label="10 Rounds" folder="" sort="0" />
         <label id="31" label="Shorts" folder="" sort="0" />
         <label id="33" label="Run 2" folder="Sequences" sort="0" />
         <label id="34" label="Run 3" folder="Sequences" sort="0" />
         <label id="35" label="Run 4" folder="Sequences" sort="0" />
-        <label id="36" label="First Loss" folder="Situations" sort="0" />
+        <label id="36" label="First Loss" folder="" sort="0" />
         <label id="38" label="Player Royal Flush" folder="Situations" sort="0" />
         <label id="39" label="Swim Link End" color="15" folder="" sort="0" />
         <label id="40" label="1st Strip" folder="Situations" sort="0" />
@@ -93,9 +80,8 @@
         <label id="45" label="Forfeit" folder="Basics" sort="0" />
         <label id="46" label="" folder="Basics" sort="0" />
         <label id="47" label="" folder="Situations" sort="0" />
-        <label id="48" label="" folder="Situations" sort="0" />
         <label id="49" label="" folder="Situations" sort="0" />
-        <label id="50" label="" folder="Situations" sort="0" />
+        <label id="73" label="" folder="Sequences" sort="0" />
         <label id="51" label="Jacket (Override)" folder="Overrides" sort="0" />
         <label id="52" label="Underwear (Override)" folder="Overrides" sort="0" />
         <label id="53" label="Birthday Suit" folder="Overrides" sort="0" />
@@ -117,8 +103,6 @@
         <label id="70" label="" folder="Basics" sort="0" />
         <label id="71" label="DR Table" folder="" sort="0" />
         <label id="72" label="" folder="Sequences" sort="0" />
-        <label id="73" label="" folder="Situations" sort="0" />
-        <label id="74" label="" folder="Situations" sort="0" />
         <label id="75" label="Socks (Override)" folder="Overrides" sort="0" />
         <label id="76" label="Early Game" folder="" sort="0" />
         <label id="77" label="Decent" folder="" sort="0" />
@@ -193,7 +177,7 @@
         <label id="161" label="" folder="Target: Kyoko" sort="0" />
         <label id="163" label="Tank Top Kyoko" folder="Target: Kyoko" sort="0" />
         <label id="164" label="Underwear Kyoko" folder="Target: Kyoko" sort="0" />
-        <label id="165" label="" folder="Situations" sort="0" />
+        <label id="74" label="" folder="Sequences" sort="0" />
         <label id="166" label="Underwear Kyoko" folder="Target: Kyoko" sort="0" />
         <label id="167" label="" folder="Target: Kyoko" sort="0" />
         <label id="170" label="Early Game" folder="" sort="0" />
@@ -222,8 +206,6 @@
         <label id="206" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 2" sort="0" />
         <label id="207" label="Dialogue A" folder="Target: Kyoko&gt;Dialogue 4" sort="0" />
         <label id="208" label="Beach" folder="Backgrounds" sort="0" />
-        <label id="210" label="" folder="Situations" sort="0" />
-        <label id="212" label="" folder="Situations" sort="0" />
         <label id="213" label="" folder="Target: Kyoko" sort="0" />
         <label id="214" label="" folder="Target: Kyoko" sort="0" />
         <label id="215" label="" folder="Target: Kyoko" sort="0" />
@@ -306,8 +288,7 @@
         <label id="305" label="Swim Link 4 (Chiaki)" color="10" folder="Sequences" sort="0" />
         <label id="307" label="" folder="Sequences" sort="0" />
         <label id="308" label="" folder="Sequences" sort="0" />
-        <label id="309" label="Shorts" folder="" sort="0" />
-        <label id="310" label="Shorts" folder="" sort="0" />
+        <label id="310" label="" folder="Sequences" sort="0" />
         <label id="311" label="Shorts (Override)" folder="Overrides" sort="0" />
         <label id="312" label="Early Game" folder="" sort="0" />
         <label id="313" label="Forfeit" folder="" sort="0" />
@@ -334,9 +315,11 @@
         <label id="336" label="" color="4" folder="" sort="0" />
         <label id="338" label="" color="4" folder="" sort="0" />
         <label id="339" label="" color="4" folder="" sort="0" />
+        <label id="340" label="" folder="Sequences" sort="0" />
     </labels>
-    <nextId>339</nextId>
+    <nextId>344</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background related markers.</marker>
         <marker scope="Public" name="B_BeachTan" />
         <marker scope="Public" name="B_DRClassroom" />
@@ -421,6 +404,7 @@
         <marker scope="Public" name="S_Legband" />
         <marker scope="Public" name="S_Shorts" />
         <marker scope="Public" name="S_ShortsLosing" />
+        <marker scope="Public" name="S_ShortsWater" />
         <marker scope="Public" name="S_Towel" />
         <marker scope="Public" name="S_WhatILove" />
         <marker scope="Private" name="T_">Lines that target other characters.</marker>
