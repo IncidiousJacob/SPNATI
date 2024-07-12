@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <costume>
     <id>aoi_asahina_summer</id>
-    <label>Hina</label>
+    <label>Aoi</label>
     <tags>
         <tag>alternative_skin</tag>
         <tag from="0" to="5">hat</tag>
@@ -50,8 +50,8 @@
         </pose>
         <pose id="0-aura">
             <sprite id="embarrassed" src="reskins/aoi_asahina_summer/0-ecstatic.png" x="0" y="0" alpha="100" />
-            <sprite id="auracamera" z="1" src="reskins/aoi_asahina_summer/posemaker/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
-            <sprite id="cameraflash" delay="1.25" src="reskins/aoi_asahina_summer/posemaker/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="auracamera" z="1" src="meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
             <sprite id="aura" delay="1.38" src="aoi_asahina/aura.png" x="0" y="0" alpha="0" />
             <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" alpha="100" />
@@ -66,9 +66,9 @@
                 <keyframe time="2.5" alpha="0" />
             </directive>
             <directive type="animation" id="auracamera" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/aoi_asahina_summer/posemaker/auracamera.png" />
-                <keyframe time="1" src="aoi_asahina/../meia/auracamera.png" />
-                <keyframe time="1.38" src="aoi_asahina/../meia/auracamera.png" />
+                <keyframe time="0" src="meia/auracamera.png" />
+                <keyframe time="1" src="meia/auracamera.png" />
+                <keyframe time="1.38" src="meia/auracamera.png" />
             </directive>
             <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
                 <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
