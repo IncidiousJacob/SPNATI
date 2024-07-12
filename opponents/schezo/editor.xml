@@ -4,7 +4,7 @@
     <height />
     <age>??</age>
     <pronunciation>SHEH-zo</pronunciation>
-    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws&lt;br&gt;&lt;br&gt;TARGETS OF INTEREST&lt;br&gt;🐘 Schezo is terrible at catching himself when it comes to his poor phrasing. There's a marker for that.&lt;br&gt;⚔️ But when he's not scuffing his vocab, he plays the straight man to everyone else's antics. That doesn't mean he's devoid of quirks, of course.&lt;br&gt;⚔️ He's one of the more anti-heroic characters from Puyo Puyo's cast. He has honor and morals, but is pretty selfish about his ambitions.&lt;br&gt;⚔️ Tries to keep his cool. Keyword being tries. Default attitude is stoic snark, but calling him a 'creeper' or 'pervert' is the easiest way to piss him off. Getting frisky with his comfort zone can make him lose nerve.&lt;br&gt;⚔️ His knowledge on sexual topics is rather shallow, making the assumption he is a pervert ironic in itself.&lt;br&gt;⚔️ And from the combination of "keep cool until he doesn't" and surface-level sexual knowledge, he can barely handle flirtation.&lt;br&gt;⚔️ Relationship to Arle is pretty complicated.&lt;br&gt;⚔️ Schezo is a dark mage. Doesn't sound like the most friendly title. Additionally, he doesn't look like a typical mage.&lt;br&gt;⚔️ Yes, his sword is translucent. That's intentional.&lt;br&gt;⚔️ Magic and other supernatural powers grabs his attention.&lt;br&gt;⚔️ He can be a bit rough around the edges when trying to show his kinder side, but he means what he says. Has a weird way of telling shy and self-deprecating people they're better than they think they are.&lt;br&gt;⚔️ Cute things! He likes cute animal creatures and will (briefly) gush about them.</othernotes>
+    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws&lt;br&gt;&lt;br&gt;TARGETS OF INTEREST&lt;br&gt;🐘 Schezo is terrible at catching himself when it comes to his poor phrasing. There's a marker for that.&lt;br&gt;⚔️ But when he's not scuffing his vocab, he plays the straight man to everyone else's antics. That doesn't mean he's devoid of quirks, of course.&lt;br&gt;⚔️ He's one of the more anti-heroic characters from Puyo Puyo's cast. He has honor and morals, but is pretty selfish about his ambitions.&lt;br&gt;⚔️ Tries to keep his cool. Keyword being tries. Default attitude is stoic snark, but calling him a 'creeper' or 'pervert' is the easiest way to piss him off. Getting frisky with his comfort zone can make him lose nerve.&lt;br&gt;⚔️ His knowledge on sexual topics is rather shallow, making the assumption he is a pervert ironic in itself.&lt;br&gt;⚔️ And from the combination of "keep cool until he doesn't" and surface-level sexual knowledge, he can barely handle flirtation.&lt;br&gt;⚔️ Relationship to Arle is pretty complicated.&lt;br&gt;⚔️ Schezo is a dark mage. Doesn't sound like the most friendly title. Additionally, he doesn't look like a typical mage.&lt;br&gt;⚔️ Yes, his sword is translucent. If you ask, he might tell more...&lt;br&gt;⚔️ Magic and other supernatural powers grabs his attention.&lt;br&gt;⚔️ He can be a bit rough around the edges when trying to show his kinder side, but he means what he says. Has a weird way of telling shy and self-deprecating people they're better than they think they are.&lt;br&gt;⚔️ Cute things! He likes cute animal creatures and will (briefly) gush about them.</othernotes>
     <noteworthy>
         <case name="What's in a name?" id="27" priority="Prompt" min="0" max="10">
             <description>Schezo asks if there's any special signifigance to any character's name.</description>
@@ -163,7 +163,7 @@
         <label id="72" label="" folder="Targets" sort="0" />
         <label id="73" label="" folder="Targets" sort="21" />
         <label id="61" label="" folder="Targets" sort="6" />
-        <label id="27" label="" folder="Prompts" sort="2" />
+        <label id="27" label="On Names" folder="Prompts" sort="2" />
         <label id="74" label="Basic Puyo Lore 1" folder="Stories" sort="2" />
         <label id="75" label="Introduction" folder="Stories" sort="0" />
         <label id="76" label="Basic Puyo Lore 2" folder="Stories" sort="6" />
@@ -212,7 +212,7 @@
         <label id="126" label="" folder="Targets" sort="21" />
         <label id="129" label="" folder="BG Reaction" sort="5" />
         <label id="130" label="" folder="Targets" sort="51" />
-        <label id="131" label="" folder="Prompts" sort="0" />
+        <label id="131" label="On Other Mages" folder="Prompts" sort="0" />
         <label id="132" label="" folder="Filtered" sort="18" />
         <label id="133" label="" folder="Filtered" sort="0" />
         <label id="134" label="" folder="Filtered" sort="19" />
@@ -254,7 +254,7 @@
         <label id="173" label="" folder="Filtered" sort="0" />
         <label id="174" label="" folder="Filtered" sort="0" />
         <label id="175" label="" folder="Filtered" sort="0" />
-        <label id="179" label="" folder="Prompts" sort="0" />
+        <label id="179" label="On Possession" folder="Prompts" sort="0" />
         <label id="180" label="" folder="Stories" sort="0" />
         <label id="182" label="" folder="Targets" sort="0" />
         <label id="183" label="" folder="Targets" sort="0" />
@@ -417,8 +417,10 @@
         <label id="337" label="" folder="Targets" sort="0" />
         <label id="338" label="FTSIO" folder="Flags" sort="0" />
         <label id="339" label="" folder="Flags" sort="0" />
+        <label id="341" label="Dark Sword" folder="" sort="0" />
+        <label id="342" label="Bowling Overexplained" folder="Prompts" sort="0" />
     </labels>
-    <nextId>340</nextId>
+    <nextId>342</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
@@ -432,6 +434,8 @@
         <marker scope="Public" name="about_puyo2" />
         <marker scope="Public" name="about_puyo3" />
         <marker scope="Public" name="about_puyo4" />
+        <marker scope="Public" name="aboutdarksword1" />
+        <marker scope="Public" name="aboutdarksword1_sus" />
         <marker scope="Public" name="aoi_abouthopespeak1" />
         <marker scope="Public" name="aoi_streakresponse01" />
         <marker scope="Public" name="arle_blue1" />
@@ -475,6 +479,7 @@
         <marker scope="Public" name="madouars_lore" />
         <marker scope="Public" name="magic_crystal" />
         <marker scope="Public" name="magic_snatch">Schezo's special ability to steal magic.</marker>
+        <marker scope="Public" name="mari_s_sexpos_response" />
         <marker scope="Public" name="meia_darkmage_response" />
         <marker scope="Public" name="meia_darkmage_response1" />
         <marker scope="Public" name="meia_darkmage_response2" />
@@ -486,6 +491,7 @@
         <marker scope="Public" name="notacreeper">Whomever it is, it's not Schezo.</marker>
         <marker scope="Public" name="nuisance_puyo" />
         <marker scope="Public" name="othermages" />
+        <marker scope="Public" name="othermages_sus" />
         <marker scope="Public" name="past_schezo" />
         <marker scope="Public" name="pc98_madou2lore" />
         <marker scope="Public" name="pc98_madou2lore2" />
@@ -501,6 +507,7 @@
         <marker scope="Public" name="ragnus_mention" />
         <marker scope="Public" name="ringos_magic" />
         <marker scope="Public" name="running_away" />
+        <marker scope="Public" name="schezo" />
         <marker scope="Public" name="schezo_arle_teasing1" />
         <marker scope="Public" name="schezo_arle_teasing2" />
         <marker scope="Public" name="schezo_arlenaked1" />
@@ -512,7 +519,9 @@
         <marker scope="Public" name="schezo_darkness_icebreaker1" />
         <marker scope="Public" name="schezo_darkness_ironicname1" />
         <marker scope="Public" name="schezo_fate_question" />
+        <marker scope="Public" name="schezo_fate_question_sus" />
         <marker scope="Public" name="schezo_juras_sword" />
+        <marker scope="Public" name="schezo_juras_sword_sus" />
         <marker scope="Public" name="schezo_juras_swordA" />
         <marker scope="Public" name="schezo_juras_swordB" />
         <marker scope="Public" name="schezo_kinks" />
@@ -561,6 +570,10 @@
         <marker scope="Public" name="totm_story5" />
         <marker scope="Public" name="vague_age">Schezo really doesn't remember how old he is. He's an adult, at the very least.</marker>
         <marker scope="Public" name="wheres_arle" />
+        <marker scope="Public" name="yeshtola_readiness_response" />
+        <marker scope="Public" name="yeshtola_readiness_response_sus" />
+        <marker scope="Public" name="yshtola_readiness_response" />
+        <marker scope="Public" name="yshtola_readiness_response_sus" />
         <marker scope="Public" name="zekepandy_powers1R" />
         <marker scope="Public" name="zekepandy_powers2R" />
         <marker scope="Public" name="zekepandy_specialmoves1" />
