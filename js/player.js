@@ -1104,9 +1104,11 @@ Opponent.prototype.loadAlternateCostume = function () {
 
         const legacySize = $xml.children('size').text();
         const gender = $xml.children('gender').text() || this.selectGender;
+        let labels = $xml.children('label');
+        if (labels.length == 0) labels = this.default_costume.labels;
         this.alt_costume = {
             id: $xml.children('id').text(),
-            labels: $xml.children('label'),
+            labels: labels,
             tags: [],
             folder: this.selected_costume,
             folders: $xml.children('folder'),
