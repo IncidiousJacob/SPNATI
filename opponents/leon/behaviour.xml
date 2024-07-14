@@ -9821,7 +9821,7 @@
                 <state img="custom:nonon_dual_prepen">{nonon}&lt;i&gt;H-huh!?&lt;/i&gt; What? No foreplay? I'm n-not even the slightest bit wet yet!&lt;hr&gt;{leon}That line from your thigh to your pussy says otherwise.</state>
                 <state img="custom:nonon_dual_prepen">{nonon}W-what is this!? Are you seriously going in &lt;i&gt;d-dry&lt;/i&gt;? The least you could do is play with me a little first!&lt;hr&gt;{leon}I'm going to play with you, all right. And you wouldn't have come over here if you &lt;i&gt;were&lt;/i&gt; dry.</state>
             </case>
-            <case stage="9" id="1540" priority="555" addCharacterTags="intercourse_forfeit,tandem,tandem_giver,tandem_mf">
+            <case stage="9" id="1540" priority="555" addCharacterTags="intercourse_forfeit,tandem_giver,tandem_mf">
                 <condition role="target" character="hu_tao" saidMarker="leon_dual_leon_first" />
                 <condition role="self" saidMarker="hutao_dual_me_first" />
                 <state img="custom:tao_dual_start">{tao}&lt;i&gt;Hup!&lt;/i&gt;Ah-- Good, you caught me. Now… &lt;br&gt; {leon}I’m gonna do a lot more than &lt;i&gt;just&lt;/i&gt; catch you.</state>
@@ -13196,7 +13196,7 @@
                 <state img="custom:tao_dual_pen1" marker="hutao_dual_kiss">{tao}Hold me. I’m going to turn around and face you.&lt;br&gt; {leon}I didn’t want to assume… But I’m glad I’m not waiting. </state>
                 <state img="custom:tao_dual_pen2" marker="hutao_dual_kiss">{leon}Can I kiss you? &lt;br&gt; {tao}Mm… Only if we’re facing each other. Please, don’t keep us both waiting~ </state>
             </case>
-            <case stage="9" id="1526" priority="560" addCharacterTags="tandem,tandem_giver,tandem_mf">
+            <case stage="9" id="1526" priority="560">
                 <condition role="opp" character="hu_tao" saidMarker="leon_dual_leon_first" />
                 <condition role="self" saidMarker="hutao_dual_me_first" notSaidMarker="hutao_pen" />
                 <state img="custom:tao_dual_heavy1" marker="hutao_pen">{tao}&lt;i&gt;Ai--ya-a-a-a…!&lt;/i&gt;&lt;br&gt; {leon}Are you okay? &lt;br&gt;{tao}Ya…~? L-Let me savor this moment of life and don’t rush~</state>
