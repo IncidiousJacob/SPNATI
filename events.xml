@@ -441,6 +441,21 @@
             See the April Fools event data below for an example of how this works.
         -->
     </event>
+    <event id="summer_2" consistent-timezone="true">
+        <name>Summer Extension</name>
+
+        <dates>
+            <date>
+                <from month="7" day="15" />
+                <to month="7" day="31" />
+            </date>
+        </dates>
+
+        <!-- NO FEATURED BACKGROUND -->
+		
+        <!-- Highlight the summer costumes but don't separate them into partitions or sort them, and disable the special prefill-->
+		<costumes partition="0" sort="0" prefill="default">summer</costumes>
+    </event>	
     <event id="valentines">
         <name>Valentine's Day</name>
 
