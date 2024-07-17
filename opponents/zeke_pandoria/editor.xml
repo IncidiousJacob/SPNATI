@@ -180,6 +180,14 @@
         <response id="852" opponent="glamrock_chica" opponentId="90" />
         <response id="854" opponent="stocking" opponentId="258" />
         <response id="860" opponent="jura" opponentId="1845" />
+        <response id="867" opponent="darkness" opponentId="259" />
+        <response id="0" opponent="darkness" opponentId="348" />
+        <response id="0" opponent="darkness" opponentId="347" />
+        <response id="0" opponent="darkness" opponentId="258" />
+        <response id="0" opponent="darkness" opponentId="260" />
+        <response id="0" opponent="darkness" opponentId="257" />
+        <response id="870" opponent="moskii" opponentId="1" />
+        <response id="874" opponent="natasha" opponentId="122" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -214,6 +222,9 @@
         <note id="736">plays if pandoria has figured out sofia's trick</note>
         <note id="762">openly inviting you to talk about any berseria party members you want, or make jokes about how people build the party</note>
         <note id="787">sanako_nn = sanako no nagisa</note>
+        <note id="868">Only Zeke is speaking here. it uses a default costume condition in case darkness gets alt costumes in future which dont have armor</note>
+        <note id="869">Two different marker values in case you want to respond to zeke/pandy differently</note>
+        <note id="876">the intent with this sort of line is to get natasha to admit to something 'evil' that isnt a total mood killer, if you need further clarification just ask</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -872,7 +883,7 @@
         <label id="663" label="" folder="Filtered" sort="0" />
         <label id="664" label="" folder="Filtered" sort="0" />
         <label id="665" label="" folder="Filtered" sort="0" />
-        <label id="666" label="" color="4" folder="Targets" sort="0" />
+        <label id="666" label="" color="3" folder="Targets" sort="0" />
         <label id="667" label="" color="3" folder="Responses" sort="0" />
         <label id="668" label="" color="3" folder="Responses" sort="0" />
         <label id="669" label="" folder="Summer&gt;After Strip Lines" sort="0" />
@@ -1065,13 +1076,28 @@
         <label id="859" label="" color="4" folder="Responses" sort="0" />
         <label id="860" label="" folder="Responses" sort="0" />
         <label id="861" label="" folder="Responses" sort="0" />
+        <label id="862" label="" folder="Targets" sort="0" />
+        <label id="863" label="" folder="Targets" sort="0" />
+        <label id="864" label="" folder="Targets" sort="0" />
+        <label id="865" label="" color="4" folder="Responses" sort="0" />
+        <label id="866" label="" color="4" folder="Targets" sort="0" />
+        <label id="867" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="868" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="869" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="870" label="" folder="Targets" sort="0" />
+        <label id="871" label="" folder="Targets" sort="0" />
+        <label id="872" label="" folder="Targets" sort="0" />
+        <label id="873" label="" folder="Targets" sort="0" />
+        <label id="874" label="" folder="Responses" sort="0" />
+        <label id="875" label="" color="1" folder="Targets" sort="0" />
+        <label id="876" label="" color="1" folder="Targets" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>861</nextId>
+    <nextId>876</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="allowsex">If set to 1, Zeke and Pandoria *can* (but are not guaranteed to) have sex for their forfeit.</marker>
@@ -1092,6 +1118,7 @@
         <marker scope="Public" name="cd_butt_pose" />
         <marker scope="Public" name="chica_pizza" />
         <marker scope="Public" name="conked_out" />
+        <marker scope="Public" name="darkness_rejectedStrip" />
         <marker scope="Public" name="dontUseRegularForfeitStateOperation" />
         <marker scope="Public" name="dunban_arm_reveal" />
         <marker scope="Public" name="eichi_eattherichResp" />
@@ -1131,6 +1158,8 @@
         <marker scope="Public" name="kyouko_S_RibbonOff" />
         <marker scope="Public" name="mariS_buttReact" />
         <marker scope="Public" name="markername" />
+        <marker scope="Public" name="moskii_partygirl" />
+        <marker scope="Public" name="moskiibloodtype" />
         <marker scope="Public" name="nephenee_pussyR" />
         <marker scope="Public" name="nephenee_titsR" />
         <marker scope="Public" name="nonon_leon_startDualReact" />
@@ -1154,8 +1183,11 @@
         <marker scope="Public" name="pandy_jura_strip3" />
         <marker scope="Public" name="pandy_kora_self0a" />
         <marker scope="Public" name="pandy_kyouko_comedian1" />
+        <marker scope="Public" name="pandy_kyouko_comedian2" />
         <marker scope="Public" name="pandy_kyouko_pickupLine1" />
+        <marker scope="Public" name="pandy_kyouko_pickupLine2" />
         <marker scope="Public" name="pandy_kyouko_tomato1" />
+        <marker scope="Public" name="pandy_kyouko_tomato2" />
         <marker scope="Public" name="pandy_mariS_hatCont" />
         <marker scope="Public" name="pandy_mariS_hatEnd" />
         <marker scope="Public" name="pandy_mariS_hatResp" />
@@ -1303,6 +1335,7 @@
         <marker scope="Public" name="sweetheart_pillow" />
         <marker scope="Public" name="szp_trio_finish" />
         <marker scope="Public" name="szp_trio_finished" />
+        <marker scope="Public" name="T_ZekePandy_Comedian" />
         <marker scope="Public" name="target_beltStripped" />
         <marker scope="Public" name="tiki_bar_we_are_broke" />
         <marker scope="Public" name="toph_bracelet_pandyresp" />
@@ -1405,6 +1438,7 @@
         <marker scope="Public" name="zeke_meia_strip2b" />
         <marker scope="Public" name="zeke_meia_strip3a" />
         <marker scope="Public" name="zeke_meia_strip3b" />
+        <marker scope="Public" name="zeke_meia_strip3c" />
         <marker scope="Public" name="zeke_misaka_strip0a" />
         <marker scope="Public" name="zeke_nadeshiko_fancy1" />
         <marker scope="Public" name="zeke_nadeshiko_fancy2" />
@@ -1465,8 +1499,12 @@
         <marker scope="Public" name="zekepandy_chica_self5c" />
         <marker scope="Public" name="zekepandy_chica_strip1a" />
         <marker scope="Public" name="zekepandy_chika_intro1" />
+        <marker scope="Public" name="zekepandy_darkness_strip0a" />
+        <marker scope="Public" name="zekepandy_darkness_strip1a" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b" />
         <marker scope="Public" name="zekepandy_jura_self0a_SBD" />
         <marker scope="Public" name="zekepandy_jura_self0b_SBD" />
+        <marker scope="Public" name="zekepandy_jura_self0c_SBD" />
         <marker scope="Public" name="zekepandy_jura_selfmustFF" />
         <marker scope="Public" name="zekepandy_jura_strip3" />
         <marker scope="Public" name="zekepandy_jura_strip3b" />
@@ -1481,6 +1519,9 @@
         <marker scope="Public" name="zekepandy_miko_selfGloves1" />
         <marker scope="Public" name="zekepandy_miko_selfGloves2" />
         <marker scope="Public" name="zekepandy_miko_selfGloves3" />
+        <marker scope="Public" name="zekepandy_natasha_self0a" />
+        <marker scope="Public" name="zekepandy_natasha_strip0a" />
+        <marker scope="Public" name="zekepandy_natasha_strip1a" />
         <marker scope="Public" name="zekepandy_petra_boobgrabL" />
         <marker scope="Public" name="zekepandy_petra_self0a" />
         <marker scope="Public" name="zekepandy_petra_self0b" />
