@@ -27,6 +27,7 @@ namespace SPNATI_Character_Editor.Controls
 		public CaseControl()
 		{
 			InitializeComponent();
+			tableConditions.LabelCheckboxes("Game Modes:", "Regular", "Short");
 		}
 
 		private void UpdateAddCaption()
@@ -406,6 +407,14 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				tableConditions.Data = workingCase;
 				AddSpeedButtons(tableConditions, workingCase?.Tag);
+				if (workingCase.ModeConditions.Count > 0)
+				{
+					tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Length != "short", workingCase.ModeConditions[0].Length != "regular");
+				}
+				else
+				{
+					tableConditions.SetCheckboxes(true, true);
+				}
 			}
 		}
 
@@ -681,6 +690,16 @@ namespace SPNATI_Character_Editor.Controls
 				oldStages.AddRange(c.Stages);
 
 				tableConditions.Save();
+				if (c.ModeConditions.Count > 0)
+				{
+					c.ModeConditions[0].Length = tableConditions.GetCheckbox1()? tableConditions.GetCheckbox2()? "" : "regular" : "short";
+				}
+				else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+				{
+					ModeCondition cond = new ModeCondition();
+					cond.Length = tableConditions.GetCheckbox1() ? "regular" : "short";
+					c.ModeConditions.Add(cond);
+				}
 
 				c.CustomPriority = ReadNumericBox(valPriority);
 				c.Hidden = (chkBackground.Checked ? "1" : null);

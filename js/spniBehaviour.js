@@ -2170,6 +2170,18 @@ VariableTest.prototype.evaluate = function (self, opp, bindings) {
 
 }
 
+function ModeCondition (length) {
+    this.length = length;
+}
+
+ModeCondition.parseXML = function ($xml) {
+    return new ModeCondition($xml.attr("length"));
+}
+
+ModeCondition.prototype.evaluate = function () {
+    return !this.length || this.length == "short" == SHORT_GAME_MODE;
+}
+
 
 /**********************************************************************
  *****                  Case Object Specification                 *****
@@ -2212,6 +2224,12 @@ function Case($xml, trigger) {
         tests.push(VariableTest.parseXML($(this)));
     });
     this.tests = tests;
+
+    var modeConditions = [];
+    $xml.children("mode").each(function () {
+        modeConditions.push(ModeCondition.parseXML($(this)));
+    });
+    this.modeConditions = modeConditions;
 
     if (isNaN(this.customPriority)) {
         this.customPriority = undefined;
@@ -2350,6 +2368,11 @@ Case.prototype.toJSON = function () {
 Case.prototype.checkConditions = function (self, opp, postDialogue) {
     var volatileDependencies = new Set();
     
+    // game mode
+    if (!this.modeConditions.every((cond) => cond.evaluate())) {
+        return false;
+    }
+
     // one-time use
     if (this.oneShotId && self.oneShotCases[this.oneShotId]) {
         return false;

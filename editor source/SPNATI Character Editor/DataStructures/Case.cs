@@ -166,6 +166,11 @@ namespace SPNATI_Character_Editor
 		[JsonProperty("tests")]
 		public List<ExpressionTest> Expressions;
 
+		[XmlOrder(403)]
+		[XmlElement("mode")]
+		[JsonProperty("modeConditions")]
+		public List<ModeCondition> ModeConditions;
+
 		[XmlOrder(405)]
 		[XmlElement("alternative")]
 		public List<Case> AlternativeConditions = new List<Case>();
@@ -213,6 +218,7 @@ namespace SPNATI_Character_Editor
 			Stages = new List<int>();
 			Conditions = new List<TargetCondition>();
 			Expressions = new List<ExpressionTest>();
+			ModeConditions = new List<ModeCondition>();
 			AlternativeConditions = new List<Case>();
 		}
 
@@ -359,6 +365,12 @@ namespace SPNATI_Character_Editor
 			foreach (ExpressionTest test in Expressions)
 			{
 				copy.Expressions.Add(test.Copy());
+			}
+
+			copy.ModeConditions = new List<ModeCondition>();
+			foreach (ModeCondition cond in ModeConditions)
+			{
+				copy.ModeConditions.Add(cond.Copy());
 			}
 
 			copy.AlternativeConditions = new List<Case>();
@@ -793,26 +805,11 @@ namespace SPNATI_Character_Editor
 			{
 				hash = (hash * 397) ^ expr.GetHashCode();
 			}
+			foreach (ModeCondition cond in ModeConditions)
+			{
+				hash = (hash * 397) ^ cond.GetHashCode();
+			}
 			hash = (hash * 397) ^ GetLineCode();
-			return hash;
-		}
-
-		/// <summary>
-		/// Gets a unique hash for this combination of conditions
-		/// </summary>
-		/// <returns></returns>
-		public int GetCode()
-		{
-			int hash = Tag.GetHashCode();
-			hash = (hash * 397) ^ GetConditionHash(true);
-			foreach (var condition in Conditions)
-			{
-				hash = (hash * 397) ^ condition.GetHashCode();
-			}
-			foreach (ExpressionTest expr in Expressions)
-			{
-				hash = (hash * 397) ^ expr.GetHashCode();
-			}
 			return hash;
 		}
 

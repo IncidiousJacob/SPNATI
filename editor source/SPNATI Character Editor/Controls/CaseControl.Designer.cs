@@ -38,7 +38,7 @@
             this.tabsConditions = new Desktop.Skinning.SkinnedTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.skinnedPanel2 = new Desktop.Skinning.SkinnedPanel();
-            this.tableConditions = new Desktop.CommonControls.PropertyTable();
+            this.tableConditions = new Desktop.CommonControls.PropertyTableWithCheckboxes();
             this.valPriority = new Desktop.Skinning.SkinnedNumericUpDown();
             this.label73 = new Desktop.Skinning.SkinnedLabel();
             this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
@@ -799,7 +799,7 @@
 		private Desktop.Skinning.SkinnedGroupBox groupBox3;
 		private Desktop.Skinning.SkinnedNumericUpDown valPriority;
 		private Desktop.Skinning.SkinnedLabel label73;
-		private Desktop.CommonControls.PropertyTable tableConditions;
+		private Desktop.CommonControls.PropertyTableWithCheckboxes tableConditions;
 		private System.Windows.Forms.TabPage tabTags;
 		private RecordSelectBox lstRemoveTags;
 		private RecordSelectBox lstAddTags;

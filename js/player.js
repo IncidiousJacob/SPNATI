@@ -2020,6 +2020,7 @@ CharacterSetting.prototype.isAvailable = function () {
 function formatConditionInfo(condition) {
     let attributes = {
         id: "character",
+        mode: "mode",
         tag: "tag",
         nottag: "not tag",
         tagAdv: "tagAdv",

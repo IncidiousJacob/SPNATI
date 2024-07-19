@@ -1640,11 +1640,6 @@ function advanceSelectScreen (mode) {
     if (mode == "short") {
         console.log("Starting short game...");
         SHORT_GAME_MODE = true;
-        players.forEach(function(player) {
-            if (player.id !== 'human') {
-                player.markers['short_game_mode'] = 1;
-            }
-        });
     } else { 
         console.log("Starting game...");
         SHORT_GAME_MODE = false;
