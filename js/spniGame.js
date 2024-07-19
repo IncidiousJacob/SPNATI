@@ -720,20 +720,20 @@ function endRound () {
  * players to finish their forfeits.
  ************************************************************/
 function handleGameOver() {
-    var winner, alsoRan;
+    var winner, loser;
 
     /* determine true end and identify winner (even though endRound() did that too) */
     if (!players.some(function(p) {
         if (!p.out && !SHORT_GAME_MODE) {
             winner = p;
         } else if (p.out && SHORT_GAME_MODE) {
-            alsoRan = p;
+            loser = p;
         }
         return p.out && !p.finished;
     })) {
         /* true end */
         if (SHORT_GAME_MODE) {
-            updateAllBehaviours(alsoRan.slot, GAME_OVER_DEFEAT, GAME_OVER_VICTORY);
+            updateAllBehaviours(loser.slot, GAME_OVER_DEFEAT, GAME_OVER_VICTORY);
         } else {
             updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
         }

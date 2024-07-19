@@ -1711,16 +1711,12 @@ function altCostumeSelected(slot) {
  ************************************************************/
 function updateSelectionVisuals () {
     /* Check to see if all opponents are loaded. */
-    let short_game_mode_opt_in = 0;
     var filled = 0, loaded = 0;
     players.forEach(function(p, idx) {
         if (idx > 0) {
             filled++;
             if (p.isLoaded()) {
                 loaded++;
-                if (p.markers['short_game_mode_opt_in']) {
-                    short_game_mode_opt_in++;
-                }
             }
         }
     });
@@ -1807,9 +1803,7 @@ function updateSelectionVisuals () {
 
     /* if enough opponents are selected, and all those are loaded, then enable progression */
     $selectMainButton.attr('disabled', filled < 2 || loaded < filled);
-
-    /* if enough opponents are selected, all those are loaded and none opt out, then enable the short game mode */
-    $("#start-short-game-button").attr('disabled', filled < 2 || loaded < filled || short_game_mode_opt_in < filled)
+    $("#start-short-game-button").attr('disabled', filled < 2 || loaded < filled)
 
     /* if all slots are taken, disable fill buttons */
     $selectRandomButtons.attr('disabled', filled >= 4 || loadedOpponents.length == 0);
