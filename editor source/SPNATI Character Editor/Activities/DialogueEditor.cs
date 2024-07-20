@@ -163,6 +163,7 @@ namespace SPNATI_Character_Editor.Activities
 			SubscribeWorkspace(WorkspaceMessages.WardrobeUpdated, OnWardrobeChanged);
 			SubscribeWorkspace<IWardrobe>(WorkspaceMessages.SkinChanged, SkinChanged);			
 			SubscribeWorkspace(WorkspaceMessages.SaveCaseNotes, OnSaveCaseNotes);
+			SubscribeWorkspace<List<int>>(WorkspaceMessages.SplitCase, OnSplitCase);
 			SubscribeDesktop(DesktopMessages.SettingsUpdated, OnSettingsUpdated);
 			SubscribeDesktop(DesktopMessages.MacrosUpdated, OnMacrosUpdated);
 		}
@@ -208,6 +209,11 @@ namespace SPNATI_Character_Editor.Activities
 		private void OnSaveCaseNotes()
 		{
 			caseControl.SaveNotes();
+		}
+
+		private void OnSplitCase(List<int> indices)
+		{
+			treeDialogue.SplitCase(indices);
 		}
 
 		private void SkinChanged(IWardrobe costume)

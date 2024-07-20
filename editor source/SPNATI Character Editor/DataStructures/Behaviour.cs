@@ -703,6 +703,38 @@ namespace SPNATI_Character_Editor
 		}
 
 		/// <summary>
+		/// Splits selected lines into a new case
+		/// </summary>
+		/// <param name="original">Case to split</param>
+		/// <param name="indices">Reverse-sorted list of indices of lines to split into a new case</param>
+		public Case SplitIntoNewCase(Case original, List<int> indices)
+		{
+			int count = indices.Count;
+			Case beforeSplitCase = DuplicateCase(original, false);
+			foreach (int stage in original.Stages)
+			{
+				beforeSplitCase.AddStage(stage);
+			}
+			List<int> tmpInds = indices;
+			int j = 0;
+			for (int i = original.Lines.Count - 1; i >= 0; i--)
+			{
+				if (j < count && i == tmpInds[j])
+				{
+					original.Lines.RemoveAt(i);
+					j++;
+				}
+				else
+				{
+					beforeSplitCase.Lines.RemoveAt(i);
+				}
+			}
+			AddWorkingCase(beforeSplitCase);
+			ApplyChanges(original);
+			return beforeSplitCase;
+		}
+
+		/// <summary>
 		/// Takes a case that spans multiple stages and splits it into two, one taking all the stages except the split stage, and one taking the split stage
 		/// </summary>
 		/// <param name="original">Case to split</param>

@@ -85,6 +85,18 @@ namespace SPNATI_Character_Editor.Controls
 			SelectNode(stage, copy);
 		}
 
+		public void SplitCase(Case removedCase, List<int> indices)
+		{
+			DialogueNode selectedNode = _listView.SelectedItem as DialogueNode;
+			if (_character == null || selectedNode?.Case == null)
+				return;
+			Case selectedCase = selectedNode.Case;
+			int stage = selectedNode.Stage.Id;
+			SaveNode?.Invoke(this, EventArgs.Empty);
+			Case added = _character.Behavior.SplitIntoNewCase(selectedCase, indices);
+			SelectNode(stage, added);
+		}
+
 		/// <summary>
 		/// Removes a case from the tree
 		/// </summary>

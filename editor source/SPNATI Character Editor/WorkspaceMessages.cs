@@ -58,6 +58,11 @@ namespace SPNATI_Character_Editor
 		/// Sent when the number of skip layers of a costume has changed
 		/// </summary>
 		public const int SkipLayersChanged = 11;
+
+		/// <summary>
+		/// Sent to inform the dialoguetree to split certain lines from the selected case into a new case
+		/// </summary>
+		public const int SplitCase = 11;
 	}
 
 	public class UpdateImageArgs

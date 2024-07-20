@@ -62,12 +62,14 @@
             this.containerDialogue = new Desktop.Skinning.SkinnedPanel();
             this.tabs = new Desktop.Skinning.SkinnedTabControl();
             this.tabDialogue = new System.Windows.Forms.TabPage();
+            this.cmdSplit = new Desktop.Skinning.SkinnedButton();
+            this.cmdDelSel = new Desktop.Skinning.SkinnedButton();
             this.tsDialogue = new System.Windows.Forms.ToolStrip();
             this.tsAddVariable = new System.Windows.Forms.ToolStripButton();
             this.lblAvailableVars = new Desktop.Skinning.SkinnedLabel();
             this.cmdCopyAll = new Desktop.Skinning.SkinnedButton();
             this.cmdPasteAll = new Desktop.Skinning.SkinnedButton();
-            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGrid();
+            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGridMultiSelect();
             this.tabNotes = new System.Windows.Forms.TabPage();
             this.txtNotes = new Desktop.Skinning.SkinnedTextBox();
             this.label1 = new Desktop.Skinning.SkinnedLabel();
@@ -599,6 +601,8 @@
             // tabDialogue
             // 
             this.tabDialogue.BackColor = System.Drawing.Color.White;
+            this.tabDialogue.Controls.Add(this.cmdSplit);
+            this.tabDialogue.Controls.Add(this.cmdDelSel);
             this.tabDialogue.Controls.Add(this.tsDialogue);
             this.tabDialogue.Controls.Add(this.lblAvailableVars);
             this.tabDialogue.Controls.Add(this.cmdCopyAll);
@@ -611,6 +615,36 @@
             this.tabDialogue.Size = new System.Drawing.Size(660, 240);
             this.tabDialogue.TabIndex = 0;
             this.tabDialogue.Text = "Dialogue";
+            // 
+            // cmdSplit
+            // 
+            this.cmdSplit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdSplit.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.cmdSplit.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.cmdSplit.Flat = true;
+            this.cmdSplit.ForeColor = System.Drawing.Color.Blue;
+            this.cmdSplit.Location = new System.Drawing.Point(252, 3);
+            this.cmdSplit.Name = "cmdSplit";
+            this.cmdSplit.Size = new System.Drawing.Size(143, 23);
+            this.cmdSplit.TabIndex = 45;
+            this.cmdSplit.Text = "Split Into New Case";
+            this.cmdSplit.UseVisualStyleBackColor = true;
+            this.cmdSplit.Click += new System.EventHandler(this.cmdSplit_Click);
+            // 
+            // cmdDelSel
+            // 
+            this.cmdDelSel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdDelSel.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.cmdDelSel.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.cmdDelSel.Flat = true;
+            this.cmdDelSel.ForeColor = System.Drawing.Color.Blue;
+            this.cmdDelSel.Location = new System.Drawing.Point(401, 3);
+            this.cmdDelSel.Name = "cmdDelSel";
+            this.cmdDelSel.Size = new System.Drawing.Size(89, 23);
+            this.cmdDelSel.TabIndex = 44;
+            this.cmdDelSel.Text = "Delete Sel.";
+            this.cmdDelSel.UseVisualStyleBackColor = true;
+            this.cmdDelSel.Click += new System.EventHandler(this.cmdDelSel_Click);
             // 
             // tsDialogue
             // 
@@ -674,7 +708,7 @@
             this.cmdPasteAll.Name = "cmdPasteAll";
             this.cmdPasteAll.Size = new System.Drawing.Size(77, 23);
             this.cmdPasteAll.TabIndex = 40;
-            this.cmdPasteAll.Text = "Paste All";
+            this.cmdPasteAll.Text = "Paste";
             this.cmdPasteAll.UseVisualStyleBackColor = true;
             this.cmdPasteAll.Click += new System.EventHandler(this.cmdPasteAll_Click);
             // 
@@ -810,7 +844,7 @@
 		private Desktop.Skinning.SkinnedLabel lblAvailableVars;
 		private Desktop.Skinning.SkinnedButton cmdCopyAll;
 		private Desktop.Skinning.SkinnedButton cmdPasteAll;
-		private DialogueGrid gridDialogue;
+		private DialogueGridMultiSelect gridDialogue;
 		private System.Windows.Forms.TabPage tabNotes;
 		private Desktop.Skinning.SkinnedTextBox txtNotes;
 		private Desktop.Skinning.SkinnedLabel label1;
@@ -837,5 +871,7 @@
 		private Desktop.Skinning.SkinnedCheckBox chkPlayOnce;
 		private System.Windows.Forms.ToolStrip tsDialogue;
 		private System.Windows.Forms.ToolStripButton tsAddVariable;
-	}
+        private Desktop.Skinning.SkinnedButton cmdSplit;
+        private Desktop.Skinning.SkinnedButton cmdDelSel;
+    }
 }
