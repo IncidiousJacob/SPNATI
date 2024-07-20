@@ -6,22 +6,37 @@ namespace SPNATI_Character_Editor
 	public class ModeCondition
 	{
 		[DefaultValue("")]
-		[XmlAttribute("length")]
-		public string Length;
+		[XmlAttribute("expr")]
+		public string Expression;
+
+		[DefaultValue("")]
+		[XmlAttribute("cmp")]
+		public string Operator;
+
+		[DefaultValue("")]
+		[XmlAttribute("value")]
+		public string Value;
 
 		public ModeCondition() { }
 
+		public ModeCondition(string expr, string cmp, string value)
+		{
+			Expression = expr;
+			Operator = cmp;
+			Value = value;
+		}
+
 		public override int GetHashCode()
 		{
-			int hash = (Length ?? "").GetHashCode();
+			int hash = (Expression ?? "").GetHashCode();
+			hash *= (Operator ?? "").GetHashCode();
+			hash *= (Value ?? "").GetHashCode();
 			return hash;
 		}
 
 		public ModeCondition Copy()
 		{
-			ModeCondition copy = new ModeCondition();
-			copy.Length = Length;
-			return copy;
+			return new ModeCondition(Expression, Operator, Value);
 		}
 	}
 }

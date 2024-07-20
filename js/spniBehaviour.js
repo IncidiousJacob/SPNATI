@@ -2170,16 +2170,30 @@ VariableTest.prototype.evaluate = function (self, opp, bindings) {
 
 }
 
-function ModeCondition (length) {
-    this.length = length;
+function ModeCondition (expr, cmp, value) {
+    this.expr = expr;
+    this.cmp = cmp;
+    this.value = value || "";
 }
 
 ModeCondition.parseXML = function ($xml) {
-    return new ModeCondition($xml.attr("length"));
+    return new ModeCondition($xml.attr("expr"), $xml.attr("cmp"), $xml.attr("value"));
 }
 
 ModeCondition.prototype.evaluate = function () {
-    return !this.length || this.length == "short" == SHORT_GAME_MODE;
+    let modeVariable = (() => {switch (this.expr) {
+        case "length":
+            return this.value = SHORT_GAME_MODE;
+        default:
+            return true;
+    }})();
+
+    switch (this.cmp) {
+        case '!=':
+            return modeVariable != this.value;
+        default:
+            return modeVariable == this.value;
+    }
 }
 
 

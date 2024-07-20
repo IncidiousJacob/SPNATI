@@ -150,13 +150,13 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				cmdSplit.Visible = false;
 				cmdDelSel.Visible = true;
-				cmdCopyAll.Text = "Copy Sel.";
+				cmdCopyAll.Text = "Copy Selected";
 			}
 			else
 			{
 				cmdSplit.Visible = true;
 				cmdDelSel.Visible = true;
-				cmdCopyAll.Text = "Copy Sel.";
+				cmdCopyAll.Text = "Copy Selected";
 			}
 		}
 
@@ -465,9 +465,16 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				tableConditions.Data = workingCase;
 				AddSpeedButtons(tableConditions, workingCase?.Tag);
-				if (workingCase.ModeConditions.Count > 0)
+				if (workingCase.ModeConditions.Count > 0 && workingCase.ModeConditions[0].Expression == "short")
 				{
-					tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Length != "short", workingCase.ModeConditions[0].Length != "regular");
+					if (workingCase.ModeConditions[0].Operator == "!=")
+					{
+						tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Value != "false", workingCase.ModeConditions[0].Value != "true");
+					}
+					else
+					{
+						tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Value == "false", workingCase.ModeConditions[0].Value == "true");
+					}
 				}
 				else
 				{
@@ -750,13 +757,18 @@ namespace SPNATI_Character_Editor.Controls
 				tableConditions.Save();
 				if (c.ModeConditions.Count > 0)
 				{
-					c.ModeConditions[0].Length = tableConditions.GetCheckbox1()? tableConditions.GetCheckbox2()? "" : "regular" : "short";
+					if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+					{
+						c.ModeConditions[0] = tableConditions.GetCheckbox1() ? new ModeCondition("short", "", "false") : new ModeCondition("short", "", "true");
+					}
+					else
+					{
+						c.ModeConditions.RemoveAt(0);
+					}
 				}
 				else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
 				{
-					ModeCondition cond = new ModeCondition();
-					cond.Length = tableConditions.GetCheckbox1() ? "regular" : "short";
-					c.ModeConditions.Add(cond);
+					c.ModeConditions.Add(new ModeCondition("short", "", tableConditions.GetCheckbox1() ? "false" : "true"));
 				}
 
 				c.CustomPriority = ReadNumericBox(valPriority);
