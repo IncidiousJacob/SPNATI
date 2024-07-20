@@ -2182,10 +2182,10 @@ ModeCondition.parseXML = function ($xml) {
 
 ModeCondition.prototype.evaluate = function () {
     let modeVariable = (() => {switch (this.expr) {
-        case "length":
-            return this.value = SHORT_GAME_MODE;
+        case "short":
+            return SHORT_GAME_MODE.toString();
         default:
-            return true;
+            return "";
     }})();
 
     switch (this.cmp) {
@@ -2383,7 +2383,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     var volatileDependencies = new Set();
     
     // game mode
-    if (!this.modeConditions.every((cond) => cond.evaluate())) {
+    if (!this.modeConditions.every(cond => cond.evaluate())) {
         return false;
     }
 

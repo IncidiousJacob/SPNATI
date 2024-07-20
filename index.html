@@ -550,15 +550,9 @@
                                 onclick="clickedRandomFillButton('any')">
                             Random Fill
                         </button>
-                        <button id='start-short-game-button'
-                                class='bordered select-quadrant-button smooth-button blue'
-                                onclick="advanceShortGame()"
-                                disabled="disabled">
-                            Start Short Game
-                        </button>
                     </div>
 
-                    <button id='select-remove-all-button' class='bordered main-select-button  smooth-button red'
+                    <button id='select-remove-all-button' class='bordered main-select-button smooth-button red'
                         onclick="clickedRemoveAllButton(true)">
                         Remove All
                     </button>
@@ -2911,6 +2905,22 @@
                                                     <nav>
                                                         <ul class="pagination" data-option="table-style">
                                                             <li class="active"><a href="#" data-value="standard">Standard</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Short Game Mode -->
+                                            <tr>
+                                                <td>
+                                                    <h4 class="modal-title modal-left">Game Length</h4>
+                                                    <h5 class="modal-left">How long should the game last? Until all players but one lose or until just the first person loses?</h5>
+                                                </td>
+                                                <td>
+                                                    <nav>
+                                                        <ul class="pagination" data-option="short-game">
+                                                            <li class="active"><a href="#" data-value="false">One Winner</a></li>
+                                                            <li><a href="#" data-value="true">One Loser</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>

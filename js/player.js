@@ -2130,6 +2130,21 @@ Player.prototype.populateDebugCaseInfo = function () {
         );
     }
 
+    for (let mode of chosenCase.modeConditions) {
+        let cmp = mode.cmp || "==";
+        let value = mode.value || "";
+        
+        if (!isNaN(parseInt(value, 10))) {
+            value = parseInt(value, 10).toString();
+        } else {
+            value = '\"' + value + '\"';
+        }
+
+        listing.append(
+            createDebugSectionRow("Mode", $("<span>", {"class": "debug-case-test", "text": mode.expr + " " + cmp + " " + value}))
+        );
+    }
+
     var setsMarkers = this.chosenState.markers.map(
         (marker) => {
             let formatted = marker.name;

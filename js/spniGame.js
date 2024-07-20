@@ -93,6 +93,7 @@ var EXPLAIN_ALL_HANDS = true;
 var AUTO_FADE = true;
 var MINIMAL_UI = true;
 var DEBUG = false;
+SHORT_GAME_MODE = false;
 
 /* game state
  * 

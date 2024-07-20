@@ -1626,23 +1626,15 @@ function backFromGroupSelect () {
     screenTransition($groupSelectScreen, $selectScreen);
 }
 
-SHORT_GAME_MODE = false;
-function advanceShortGame () {
-    console.log("Short game mode...");
-    advanceSelectScreen("short");
-}
-
 /************************************************************
  * The player clicked on the start game button on the main
  * select screen.
  ************************************************************/
-function advanceSelectScreen (mode) {
-    if (mode == "short") {
+function advanceSelectScreen () {
+    if (SHORT_GAME_MODE) {
         console.log("Starting short game...");
-        SHORT_GAME_MODE = true;
     } else { 
         console.log("Starting game...");
-        SHORT_GAME_MODE = false;
     }
 
     gameID = generateRandomID();

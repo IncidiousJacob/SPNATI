@@ -436,6 +436,7 @@ $('#options-modal .pagination, #game-settings-modal ul.pagination, #extras-modal
 
 function loadOptions () {
     loadMasturbationTimer();
+    setActiveOption('short-game', SHORT_GAME_MODE)
     setActiveOption('auto-fade', AUTO_FADE);
     setActiveOption('card-suggest', CARD_SUGGEST);
     setActiveOption('explain-hands', EXPLAIN_ALL_HANDS);
@@ -529,6 +530,10 @@ function setUITheme (scheme) {
         console.error("Unknown UI theme: " + scheme);
     }
 }
+
+$('ul[data-option="short-game"]').on('click', 'a', function() {
+    SHORT_GAME_MODE = $(this).attr('data-value') == "true";
+});
 
 $('ul[data-option="auto-fade"]').on('click', 'a', function() {
     AUTO_FADE = $(this).attr('data-value') == "true";
