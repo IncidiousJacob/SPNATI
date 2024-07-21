@@ -1301,7 +1301,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
     }
     //this.prefillSuggestionBadges.costume.toggle(player.alternate_costumes.length > 0);
     this.layerIcon.attr({
-        src: "img/layers" + player.selectLayers + ".png",
+        src: "img/layers" + player.selectLayers + ".svg",
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
@@ -1413,7 +1413,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
     //this.badges.costume.toggle(player.alternate_costumes.length > 0);
     //updateStatusIcon(this.statusIcon, player);
     this.layerIcon.attr({
-        src: "img/layers" + player.selectLayers + ".png",
+        src: "img/layers" + player.selectLayers + ".svg",
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
@@ -1560,7 +1560,7 @@ OpponentSelectionCard.prototype.update = function () {
     updateStatusIcon(this.statusIcon, this.opponent);
 
     this.layerIcon.attr({
-        src: "img/layers" + this.opponent.selectLayers + ".png",
+        src: "img/layers" + this.opponent.selectLayers + ".svg",
         alt: this.opponent.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, this.opponent);
