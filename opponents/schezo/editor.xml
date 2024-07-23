@@ -4,7 +4,7 @@
     <height />
     <age>??</age>
     <pronunciation>SHEH-zo</pronunciation>
-    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws&lt;br&gt;&lt;br&gt;TARGETS OF INTEREST&lt;br&gt;🐘 Schezo is terrible at catching himself when it comes to his poor phrasing. There's a marker for that.&lt;br&gt;⚔️ But when he's not scuffing his vocab, he plays the straight man to everyone else's antics. That doesn't mean he's devoid of quirks, of course.&lt;br&gt;⚔️ He's one of the more anti-heroic characters from Puyo Puyo's cast. He has honor and morals, but is pretty selfish about his ambitions.&lt;br&gt;⚔️ Tries to keep his cool. Keyword being tries. Default attitude is stoic snark, but calling him a 'creeper' or 'pervert' is the easiest way to piss him off. Getting frisky with his comfort zone can make him lose nerve.&lt;br&gt;⚔️ His knowledge on sexual topics is rather shallow, making the assumption he is a pervert ironic in itself.&lt;br&gt;⚔️ And from the combination of "keep cool until he doesn't" and surface-level sexual knowledge, he can barely handle flirtation.&lt;br&gt;⚔️ Relationship to Arle is pretty complicated.&lt;br&gt;⚔️ Schezo is a dark mage. Doesn't sound like the most friendly title. Additionally, he doesn't look like a typical mage.&lt;br&gt;⚔️ Yes, his sword is translucent. If you ask, he might tell more...&lt;br&gt;⚔️ Magic and other supernatural powers grabs his attention.&lt;br&gt;⚔️ He can be a bit rough around the edges when trying to show his kinder side, but he means what he says. Has a weird way of telling shy and self-deprecating people they're better than they think they are.&lt;br&gt;⚔️ Cute things! He likes cute animal creatures and will (briefly) gush about them.</othernotes>
+    <othernotes>Base model by Strawberry Tale&lt;br&gt;Hair and body modifications by Horsecatdraws&lt;br&gt;&lt;br&gt;(Pink lines are placeholders for responses!)&lt;br&gt;&lt;br&gt;TARGETS OF INTEREST&lt;br&gt;🐘 Schezo is terrible at catching himself when it comes to his poor phrasing. There's a marker for that.&lt;br&gt;⚔️ But when he's not scuffing his vocab, he plays the straight man to everyone else's antics. That doesn't mean he's devoid of quirks, of course.&lt;br&gt;⚔️ He's one of the more anti-heroic characters from Puyo Puyo's cast. He has honor and morals, but is pretty selfish about his ambitions.&lt;br&gt;⚔️ Tries to keep his cool. Keyword being tries. Default attitude is stoic snark, but calling him a 'creeper' or 'pervert' is the easiest way to piss him off. Getting frisky with his comfort zone can make him lose nerve.&lt;br&gt;⚔️ His knowledge on sexual topics is rather shallow, making the assumption he is a pervert ironic in itself.&lt;br&gt;⚔️ And from the combination of "keep cool until he doesn't" and surface-level sexual knowledge, he can barely handle flirtation.&lt;br&gt;⚔️ Relationship to Arle is pretty complicated.&lt;br&gt;⚔️ Schezo is a dark mage. Doesn't sound like the most friendly title. Additionally, he doesn't look like a typical mage.&lt;br&gt;⚔️ Yes, his sword is translucent. If you ask, he might tell more...&lt;br&gt;⚔️ Magic and other supernatural powers grabs his attention.&lt;br&gt;⚔️ He can be a bit rough around the edges when trying to show his kinder side, but he means what he says. Has a weird way of telling shy and self-deprecating people they're better than they think they are.&lt;br&gt;⚔️ Cute things! He likes cute animal creatures and will (briefly) gush about them.</othernotes>
     <noteworthy>
         <case name="What's in a name?" id="27" priority="Prompt" min="0" max="10">
             <description>Schezo asks if there's any special signifigance to any character's name.</description>
@@ -123,7 +123,12 @@
         <response id="379" opponent="jura" opponentId="1900" />
         <response id="381" opponent="jura" opponentId="1901" />
         <response id="383" opponent="meia" opponentId="2041" />
+        <response id="384" opponent="arle" opponentId="548" />
+        <response id="387" opponent="aoi_asahina" opponentId="349" />
     </responses>
+    <notes>
+        <note id="389">This line is just a placeholder above his generic post-strip.</note>
+    </notes>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
         <label id="1" label="Labyrinth of Rana" folder="Targets" sort="2" />
@@ -429,8 +434,8 @@
         <label id="339" label="" folder="Flags" sort="0" />
         <label id="341" label="Dark Sword" folder="" sort="0" />
         <label id="342" label="Bowling Overexplained" folder="Prompts" sort="0" />
-        <label id="343" label="" folder="Targets" sort="66" />
-        <label id="344" label="" folder="Targets" sort="73" />
+        <label id="343" label="" folder="Targets" sort="0" />
+        <label id="344" label="" folder="Targets" sort="0" />
         <label id="345" label="" folder="Targets" sort="0" />
         <label id="347" label="More like Lagnus" folder="Targets" sort="0" />
         <label id="348" label="More like Lagnus" folder="Targets" sort="0" />
@@ -450,7 +455,7 @@
         <label id="362" label="" folder="Targets" sort="0" />
         <label id="363" label="" folder="Targets" sort="0" />
         <label id="364" label="" folder="Targets" sort="0" />
-        <label id="365" label="" folder="Targets" sort="0" />
+        <label id="365" label="" color="1" folder="Targets" sort="0" />
         <label id="366" label="" folder="Targets" sort="0" />
         <label id="367" label="" folder="Targets" sort="0" />
         <label id="368" label="" folder="Targets" sort="0" />
@@ -469,8 +474,14 @@
         <label id="381" label="" color="1" folder="Targets" sort="0" />
         <label id="382" label="" folder="Targets" sort="0" />
         <label id="383" label="" color="1" folder="Targets" sort="0" />
+        <label id="384" label="" folder="Targets" sort="0" />
+        <label id="385" label="No Kazuma" color="1" folder="Targets" sort="0" />
+        <label id="386" label="Yes There's Kazuma" color="1" folder="Targets" sort="0" />
+        <label id="388" label="" color="1" folder="Targets" sort="0" />
+        <label id="389" label="" color="6" folder="Targets" sort="0" />
+        <label id="390" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>383</nextId>
+    <nextId>390</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
@@ -488,6 +499,7 @@
         <marker scope="Public" name="aboutdarksword1_sus" />
         <marker scope="Public" name="aoi_abouthopespeak1" />
         <marker scope="Public" name="aoi_abouthopespeak2" />
+        <marker scope="Public" name="aoi_abouthopespeak3" />
         <marker scope="Public" name="aoi_streakresponse01" />
         <marker scope="Public" name="aoi_streakresponse02" />
         <marker scope="Public" name="aoi_streakresponse02_sus" />
@@ -514,6 +526,7 @@
         <marker scope="Public" name="arle_reputation_R2" />
         <marker scope="Public" name="arle_teasing_response2" />
         <marker scope="Public" name="arle_teasing_response3" />
+        <marker scope="Public" name="arle_whipdung_R" />
         <marker scope="Public" name="arle_witch_response" />
         <marker scope="Public" name="armed_question">Who else wields a weapon here?</marker>
         <marker scope="Public" name="bee_encounter1" />
@@ -578,7 +591,10 @@
         <marker scope="Public" name="ringos_magic" />
         <marker scope="Public" name="running_away" />
         <marker scope="Public" name="schezo" />
+        <marker scope="Public" name="schezo__darkness_ironicName3" />
         <marker scope="Public" name="schezo_aoi_cosplayer1" />
+        <marker scope="Public" name="schezo_aoi_cosplayer2" />
+        <marker scope="Public" name="schezo_aoi_cosplayer3" />
         <marker scope="Public" name="schezo_arle_teasing1" />
         <marker scope="Public" name="schezo_arle_teasing2" />
         <marker scope="Public" name="schezo_arlenaked1" />
@@ -595,6 +611,9 @@
         <marker scope="Public" name="schezo_darkness_icebreaker1" />
         <marker scope="Public" name="schezo_darkness_ironicname1" />
         <marker scope="Public" name="schezo_darkness_ironicname2" />
+        <marker scope="Public" name="schezo_darkness_ironicName3" />
+        <marker scope="Public" name="schezo_darkness_ironicName3A" />
+        <marker scope="Public" name="schezo_darkness_ironicName3B" />
         <marker scope="Public" name="schezo_darkness_mitsurugi01" />
         <marker scope="Public" name="schezo_darkness_mitsurugi02" />
         <marker scope="Public" name="schezo_darkness_mitsurugi03" />
@@ -620,6 +639,7 @@
         <marker scope="Public" name="schezo_meia_homeworldA" />
         <marker scope="Public" name="schezo_meia_homeworldA2" />
         <marker scope="Public" name="schezo_notsummer" />
+        <marker scope="Public" name="schezo_ringo_icebreaker" />
         <marker scope="Public" name="Schezo_Sentimental" />
         <marker scope="Public" name="Schezo_Sentimental2" />
         <marker scope="Public" name="Schezo_Sentimental3" />
