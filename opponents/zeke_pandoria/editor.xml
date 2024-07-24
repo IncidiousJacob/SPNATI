@@ -188,6 +188,11 @@
         <response id="0" opponent="darkness" opponentId="257" />
         <response id="870" opponent="moskii" opponentId="1" />
         <response id="874" opponent="natasha" opponentId="122" />
+        <response id="883" opponent="aoi_asahina" opponentId="228" />
+        <response id="888" opponent="schezo" opponentId="319" />
+        <response id="891" opponent="megumin" opponentId="221" />
+        <response id="892" opponent="megumin" opponentId="53" />
+        <response id="897" opponent="sanako" opponentId="914" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -225,6 +230,7 @@
         <note id="868">Only Zeke is speaking here. it uses a default costume condition in case darkness gets alt costumes in future which dont have armor</note>
         <note id="869">Two different marker values in case you want to respond to zeke/pandy differently</note>
         <note id="876">the intent with this sort of line is to get natasha to admit to something 'evil' that isnt a total mood killer, if you need further clarification just ask</note>
+        <note id="897">they are being playful here/deliberately pretending to misunderstand</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -944,8 +950,8 @@
         <label id="729" label="" folder="Eye of Shining Justice Mode" sort="0" />
         <label id="730" label="" folder="Responses&gt;Sanako&gt;Left" sort="0" />
         <label id="731" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
-        <label id="732" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
-        <label id="733" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
+        <label id="732" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="733" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
         <label id="734" label="" folder="Prompt Responses" sort="0" />
         <label id="701" label="" folder="Targets&gt;Sofia" sort="0" />
         <label id="735" label="" folder="Responses&gt;Sofia" sort="0" />
@@ -1091,13 +1097,33 @@
         <label id="874" label="" folder="Responses" sort="0" />
         <label id="875" label="" color="1" folder="Targets" sort="0" />
         <label id="876" label="" color="1" folder="Targets" sort="0" />
+        <label id="877" label="" folder="Responses" sort="0" />
+        <label id="878" label="1 - kink" folder="Responses" sort="0" />
+        <label id="879" label="1 - NTR" folder="Responses" sort="0" />
+        <label id="880" label="1 - exhibitionist" folder="Responses" sort="0" />
+        <label id="881" label="" color="2" folder="Targets" sort="0" />
+        <label id="882" label="" color="2" folder="Targets" sort="0" />
+        <label id="883" label="" folder="Targets" sort="0" />
+        <label id="884" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="885" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="886" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="887" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="888" label="" folder="Responses" sort="0" />
+        <label id="889" label="" folder="Responses" sort="0" />
+        <label id="890" label="" folder="Responses" sort="0" />
+        <label id="891" label="" folder="Targets" sort="0" />
+        <label id="893" label="" folder="Targets&gt;Sanako&gt;Left" sort="0" />
+        <label id="894" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
+        <label id="895" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="896" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="897" label="" folder="Responses&gt;Sanako&gt;Left" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>876</nextId>
+    <nextId>897</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="allowsex">If set to 1, Zeke and Pandoria *can* (but are not guaranteed to) have sex for their forfeit.</marker>
@@ -1118,6 +1144,7 @@
         <marker scope="Public" name="cd_butt_pose" />
         <marker scope="Public" name="chica_pizza" />
         <marker scope="Public" name="conked_out" />
+        <marker scope="Public" name="darkness_finished" />
         <marker scope="Public" name="darkness_rejectedStrip" />
         <marker scope="Public" name="dontUseRegularForfeitStateOperation" />
         <marker scope="Public" name="dunban_arm_reveal" />
@@ -1158,6 +1185,8 @@
         <marker scope="Public" name="kyouko_S_RibbonOff" />
         <marker scope="Public" name="mariS_buttReact" />
         <marker scope="Public" name="markername" />
+        <marker scope="Public" name="megumin_giantFrogs" />
+        <marker scope="Public" name="megumin_vanir" />
         <marker scope="Public" name="moskii_partygirl" />
         <marker scope="Public" name="moskiibloodtype" />
         <marker scope="Public" name="nephenee_pussyR" />
@@ -1415,6 +1444,7 @@
         <marker scope="Public" name="zeke_mariS_strip2b_alt" />
         <marker scope="Public" name="zeke_mariS_strip2c" />
         <marker scope="Public" name="zeke_mariS_strip2c_alt" />
+        <marker scope="Public" name="zeke_megumin_crimsonDemon1" />
         <marker scope="Public" name="zeke_meia_self0a" />
         <marker scope="Public" name="zeke_meia_self0b" />
         <marker scope="Public" name="zeke_meia_self0c_A" />
@@ -1491,6 +1521,8 @@
         <marker scope="Public" name="zeke_yaemiko_publishing3" />
         <marker scope="Public" name="zekepandoria_jura_self0a" />
         <marker scope="Public" name="zekepandoria_revy_strip0a" />
+        <marker scope="Public" name="zekepandy_aoi_cloudsea1" />
+        <marker scope="Public" name="zekepandy_aoi_swimmingPro1" />
         <marker scope="Public" name="zekepandy_cag_gloves1" />
         <marker scope="Public" name="zekepandy_caitlin_strip0a" />
         <marker scope="Public" name="zekepandy_caitlin_strip0b" />
@@ -1499,9 +1531,16 @@
         <marker scope="Public" name="zekepandy_chica_self5c" />
         <marker scope="Public" name="zekepandy_chica_strip1a" />
         <marker scope="Public" name="zekepandy_chika_intro1" />
+        <marker scope="Public" name="zekepandy_darkness_exhibitionist1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_kink1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_NTR1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_self0a" />
         <marker scope="Public" name="zekepandy_darkness_strip0a" />
+        <marker scope="Public" name="zekepandy_darkness_strip0b" />
         <marker scope="Public" name="zekepandy_darkness_strip1a" />
         <marker scope="Public" name="zekepandy_darkness_strip1b" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b_deimure" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b_unassuming" />
         <marker scope="Public" name="zekepandy_jura_self0a_SBD" />
         <marker scope="Public" name="zekepandy_jura_self0b_SBD" />
         <marker scope="Public" name="zekepandy_jura_self0c_SBD" />
@@ -1552,6 +1591,9 @@
         <marker scope="Public" name="zekepandy_sanako_self0a" />
         <marker scope="Public" name="zekepandy_sanako_self0b" />
         <marker scope="Public" name="zekepandy_sanako_self0c" />
+        <marker scope="Public" name="zekepandy_schezo_respA1" />
+        <marker scope="Public" name="zekepandy_schezo_respB1" />
+        <marker scope="Public" name="zekepandy_schezo_respC1" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_happening" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_must" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_start" />
@@ -1659,8 +1701,12 @@
         <marker scope="Public" name="zp_reimu_self0b" />
         <marker scope="Public" name="zp_sanako_0a" />
         <marker scope="Public" name="zp_sanako_0a_nagisa_present" />
+        <marker scope="Public" name="zp_sanako_0b" />
+        <marker scope="Public" name="zp_sanako_0b_nagisa_present" />
         <marker scope="Public" name="zp_sanako_2a" />
+        <marker scope="Public" name="zp_sanako_2b" />
         <marker scope="Public" name="zp_sanako_self2a_default" />
+        <marker scope="Public" name="zp_sanako_self2b_default" />
         <marker scope="Public" name="zp_sofia_intro1" />
         <marker scope="Public" name="zp_sofia_intro2" />
         <marker scope="Public" name="zp_sofia_intro3" />
