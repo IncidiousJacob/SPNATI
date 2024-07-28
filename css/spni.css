@@ -239,11 +239,14 @@ input[type=search]::-webkit-search-cancel-button {
 #game-hidden-area>*,
 .table-bug-report-button,
 .hide-table-button,
-.table-feedback-report-button,
+.table-hard-refresh-button,
 .collectible-button-container {
     z-index: 1000;
 }
 
+.table-feedback-report-button {
+	z-index: 1001;
+}
 /**************************************************
  * Background / foreground positioning.
  **************************************************/
@@ -443,22 +446,24 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .hide-table-button {
-    bottom: 24.6%;
+    bottom: 29.2%;
 }
 
 .table-bug-report-button {
-    bottom: 20%;
+    bottom: 24.6%;
 }
 
 .table-feedback-report-button {
-	bottom: 15.4%;
+	bottom: 20%;
 	width: 11%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
 
 .hide-table-button:hover,
-.table-bug-report-button:hover {
+.table-bug-report-button:hover,
+.table-hard-refresh-button:hover,
+.table-feedback-report-button:hover {
     background-color: rgba(155, 155, 155, 0.9);
 }
 
@@ -518,6 +523,16 @@ ul.dropdown-menu>li {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.table-hard-refresh-button{
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+
+    width: 3.5%;
+    height: 3.5%;
+	background-color: rgba(155, 155, 155, 0.5);
 }
 
 /************************************************************
