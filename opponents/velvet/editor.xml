@@ -15,6 +15,9 @@
         <case name="Kinks" id="2" priority="Prompt" min="4" max="5">
             <description>Velvet asks about a variety of kinks the players at the table have. </description>
         </case>
+        <case name="Intimidation" id="3" priority="Noteworthy" min="0" max="0">
+            <description>Velvet is attempting to intimidate the crowd by showing off her demonic arm.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="39" opponent="zeke_pandoria" opponentId="760" />
@@ -61,8 +64,9 @@
         <label id="48" label="" folder="Petra" sort="0" />
         <label id="49" label="" folder="Nadeshiko" sort="0" />
         <label id="50" label="" folder="Rose" sort="0" />
+        <label id="51" label="" folder="fischl" sort="0" />
     </labels>
-    <nextId>50</nextId>
+    <nextId>51</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="Arue0" />
@@ -142,7 +146,9 @@
         <marker scope="Public" name="Velvet_Personality" />
         <marker scope="Public" name="Velvet_Tsun" />
         <marker scope="Public" name="YaeM0" />
+        <marker scope="Public" name="Yshtola0" />
         <marker scope="Public" name="Y'shtola0" />
+        <marker scope="Public" name="Yshtola1" />
         <marker scope="Public" name="Y'shtola1" />
         <marker scope="Public" name="Yuno0" />
         <marker scope="Public" name="Zeke0" />
