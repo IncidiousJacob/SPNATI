@@ -531,7 +531,7 @@ ul.dropdown-menu>li {
     bottom: 5%;
 
     width: 3.5%;
-    height: 3.5%;
+    height: 7%;
 	background-color: rgba(155, 155, 155, 0.5);
 }
 
@@ -4055,6 +4055,14 @@ ul.dropdown-menu>li {
 .ui-minimal #player-game-card-area .large-card-image.tradein {
     filter: opacity(0.75) contrast(0.75);
     transform: translateY(-25%) translateZ(-0.5em);
+}
+
+.table-feedback-report-button, .table-hard-refresh-button {
+	display: none;
+}
+
+.ui-minimal .table-feedback-report-button, .ui-minimal .table-hard-refresh-button {
+	display: inline;
 }
 
 #player-game-clothing-area-minimal {
