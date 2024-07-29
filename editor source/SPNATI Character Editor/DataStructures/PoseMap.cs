@@ -309,7 +309,7 @@ namespace SPNATI_Character_Editor
 				int? stage = mapping.StageOf(poseSet);
 				mapping.RemovePose(poseSet);
 
-				string poseId = key.Substring("custom:".Length).Replace("#", stage.ToString());
+				string poseId = key.Substring("set:".Length).Replace("#", stage.ToString());
 				Pose replacement = _character.CustomPoses.Find((p) => p.Id == poseId);
 				if (replacement != null)
 					Add(replacement);
