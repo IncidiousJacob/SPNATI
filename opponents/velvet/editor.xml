@@ -15,6 +15,9 @@
         <case name="Kinks" id="2" priority="Prompt" min="4" max="5">
             <description>Velvet asks about a variety of kinks the players at the table have. </description>
         </case>
+        <case name="Intimidation" id="3" priority="Noteworthy" min="0" max="0">
+            <description>Velvet is attempting to intimidate the crowd by showing off her demonic arm.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="39" opponent="zeke_pandoria" opponentId="760" />
@@ -61,13 +64,16 @@
         <label id="48" label="" folder="Petra" sort="0" />
         <label id="49" label="" folder="Nadeshiko" sort="0" />
         <label id="50" label="" folder="Rose" sort="0" />
+        <label id="51" label="" folder="fischl" sort="0" />
     </labels>
-    <nextId>50</nextId>
+    <nextId>51</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="Arue0" />
         <marker scope="Public" name="Bobobo0" />
         <marker scope="Public" name="Dunban0" />
         <marker scope="Public" name="Eleanor_fantasy" />
+        <marker scope="Public" name="Fisc0" />
         <marker scope="Public" name="Heartfelt_1" />
         <marker scope="Public" name="Heartfelt_2" />
         <marker scope="Public" name="Heartfelt_3" />
@@ -78,6 +84,12 @@
         <marker scope="Public" name="Jail_hair1" />
         <marker scope="Public" name="Jail_hair2" />
         <marker scope="Public" name="Levi0" />
+        <marker scope="Public" name="Lore_drop" />
+        <marker scope="Public" name="lore1" />
+        <marker scope="Public" name="lore2" />
+        <marker scope="Public" name="lore3" />
+        <marker scope="Public" name="lore4" />
+        <marker scope="Public" name="lore5" />
         <marker scope="Public" name="male" />
         <marker scope="Public" name="male1" />
         <marker scope="Public" name="male10" />
@@ -134,7 +146,9 @@
         <marker scope="Public" name="Velvet_Personality" />
         <marker scope="Public" name="Velvet_Tsun" />
         <marker scope="Public" name="YaeM0" />
+        <marker scope="Public" name="Yshtola0" />
         <marker scope="Public" name="Y'shtola0" />
+        <marker scope="Public" name="Yshtola1" />
         <marker scope="Public" name="Y'shtola1" />
         <marker scope="Public" name="Yuno0" />
         <marker scope="Public" name="Zeke0" />
