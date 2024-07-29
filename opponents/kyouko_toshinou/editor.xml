@@ -64,6 +64,7 @@
         <response id="930" opponent="zeke_pandoria" opponentId="577" />
         <response id="1000" opponent="zeke_pandoria" opponentId="576" />
         <response id="1002" opponent="zeke_pandoria" opponentId="575" />
+        <response id="1046" opponent="zeke_pandoria" opponentId="864" />
     </responses>
     <notes>
         <note id="5">The marker is available so other characters can see which uniform she's wearing just in case they absolutely need to know for whatever reason. FYI, it's always unset when she loses the red dress.
@@ -354,7 +355,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="285" label="Good" folder="AI Level&gt;Club Uniform" sort="3" />
         <label id="286" label="Good" folder="AI Level&gt;Sexy Tomato" sort="4" />
         <label id="287" label="Bad" folder="AI Level&gt;Sexy Tomato" sort="5" />
-        <label id="288" label="Slippers" folder="Costume&gt;Sexy Tomato" sort="2" />
+        <label id="288" label="Slippers" folder="Costume&gt;Sexy Tomato" sort="0" />
         <label id="289" label="Panties" folder="Costume&gt;Sexy Tomato" sort="3" />
         <label id="290" label="Hood" folder="Costume&gt;Sexy Tomato" sort="4" />
         <label id="291" label="Hood" folder="Costume&gt;Sexy Tomato" sort="16" />
@@ -1045,26 +1046,32 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1022" label="Bikini top" folder="Costume&gt;Watercolor Dapples" sort="15" />
         <label id="1023" label="Bikini top" folder="Costume&gt;Watercolor Dapples" sort="16" />
         <label id="1024" label="" folder="Targets&gt;Yumeko" sort="59" />
-        <label id="1025" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
-        <label id="1026" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
-        <label id="1027" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
+        <label id="1025" label="" folder="Targets&gt;Rainbow Dash" sort="3" />
+        <label id="1026" label="" folder="Targets&gt;Rainbow Dash" sort="4" />
+        <label id="1027" label="" folder="Targets&gt;Rainbow Dash" sort="2" />
         <label id="1028" label="" folder="Targets&gt;Rainbow Dash" sort="0" />
         <label id="1029" label="Still unpunished" folder="" sort="0" />
         <label id="1030" label="Punished" folder="" sort="0" />
         <label id="1031" label="(hand Royal Flush or better)" folder="" sort="0" />
-        <label id="1032" label="Naked with shoes" folder="Unusual Ordering" sort="0" />
-        <label id="1033" label="" folder="Targets&gt;Gloria" sort="0" />
-        <label id="1034" label="" folder="Targets&gt;Gloria" sort="0" />
-        <label id="1035" label="" folder="Targets&gt;Gloria" sort="0" />
+        <label id="1032" label="Naked with shoes" folder="Unusual Ordering" sort="10" />
+        <label id="1033" label="" folder="Targets&gt;Gloria" sort="3" />
+        <label id="1034" label="" folder="Targets&gt;Gloria" sort="4" />
+        <label id="1035" label="" folder="Targets&gt;Gloria" sort="2" />
         <label id="1036" label="" folder="Targets&gt;Gloria" sort="0" />
-        <label id="1037" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="1038" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="1039" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="1040" label="" folder="Specific items" sort="0" />
-        <label id="1041" label="" folder="Specific items" sort="0" />
+        <label id="1037" label="" folder="Targets&gt;Nadeshiko" sort="64" />
+        <label id="1038" label="" folder="Targets&gt;Nadeshiko" sort="65" />
+        <label id="1039" label="" folder="Targets&gt;Nadeshiko" sort="66" />
+        <label id="1040" label="" folder="Specific items" sort="17" />
+        <label id="1041" label="" folder="Specific items" sort="18" />
         <label id="1042" label="" folder="Specific items" sort="0" />
         <label id="1043" label="Move hair (was topless)" folder="" sort="0" />
         <label id="1044" label="" folder="Targets&gt;Stocking" sort="0" />
+        <label id="1045" label="" folder="Targets&gt;Zeke+Pandy" sort="0" />
+        <label id="1046" label="" folder="Targets&gt;Zeke+Pandy" sort="0" />
+        <label id="1047" label="" folder="Targets&gt;Zeke+Pandy" sort="0" />
+        <label id="1048" label="" folder="Targets&gt;Zeke+Pandy" sort="0" />
+        <label id="1049" label="" folder="Costume&gt;Sexy Tomato" sort="0" />
+        <label id="1050" label="" folder="Costume&gt;Sexy Tomato" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1073,7 +1080,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1044</nextId>
+    <nextId>1050</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
@@ -1114,11 +1121,13 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_InventoryTime">On her birthday, Kyouko remembers that time just doesn't pass (like in her series; yes, that's canon)</marker>
         <marker scope="Public" name="D_Items">Throwing items into a game of poker</marker>
         <marker scope="Public" name="D_JacketLast" />
+        <marker scope="Public" name="D_LewdSketch" />
         <marker scope="Public" name="D_LightningRounds" />
         <marker scope="Public" name="D_LittleCardClub" />
         <marker scope="Public" name="D_NakedOutdoors" />
         <marker scope="Public" name="D_NonFutaReveal" />
         <marker scope="Public" name="D_NoPanDisappointment" />
+        <marker scope="Public" name="D_NudePhoto" />
         <marker scope="Public" name="D_PenisFeel" />
         <marker scope="Public" name="D_PlayerToplessFollow" />
         <marker scope="Public" name="D_PostgameBoobs">...Boobs.</marker>
@@ -1549,7 +1558,10 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_YunoUno_Strip0Planning">Self Must Strip 0</marker>
         <marker scope="Public" name="T_YunoUno_Strip1PlayingDumb">Self Must Strip 1</marker>
         <marker scope="Public" name="T_ZekePandy_Comedian" />
+        <marker scope="Public" name="T_ZekePandy_ComicFocus" />
         <marker scope="Public" name="T_ZekePandy_PickUpLine" />
+        <marker scope="Public" name="T_ZekePandy_PickupShare" />
+        <marker scope="Public" name="T_ZekePandy_TomatoCollection" />
         <marker scope="Public" name="T_ZekePandy_TomatoTheme" />
         <marker scope="Private" name="Z_">Intenal state. Vast majority of this will only be relevant to Kyouko herself.</marker>
         <marker scope="Public" name="Z_AuraPhoto" />
@@ -1562,6 +1574,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Private" name="Z_LastGameDate" />
         <marker scope="Private" name="Z_LastGameWinner" />
         <marker scope="Public" name="Z_NeverPunished" />
+        <marker scope="Public" name="Z_OpenTomato" />
         <marker scope="Public" name="Z_PlayerHasSeenRibbonTrick">Kyouko has taken her ribbon off in her default outfit at some point.</marker>
         <marker scope="Public" name="Z_PlayerWearingRibbon">The player wore the Kyouko's Ribbon collectible to the game</marker>
         <marker scope="Private" name="Z_PlayerWornRibbon">The player has worn the Kyouko's Ribbon collectible in the past.</marker>
