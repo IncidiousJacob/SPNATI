@@ -361,6 +361,7 @@
         <response id="959" opponent="zeke_pandoria" opponentId="894" />
         <response id="960" opponent="zeke_pandoria" opponentId="895" />
         <response id="961" opponent="zeke_pandoria" opponentId="896" />
+        <response id="969" opponent="natasha" opponentId="303" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -375,6 +376,8 @@
         <note id="630">Saying Text "athetic" to try to capture "Pathetic" regardless of capitalization.</note>
         <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
         <note id="919">Stage omitted to reduce layer skipping complexity; this line is still conditional on Meia's marker</note>
+        <note id="971">Missing marker check; add when Darkness has a marker on her line</note>
+        <note id="973">Sanae was once a middle school teacher.</note>
     </notes>
     <labels>
         <label id="2" label="sandals" folder="" sort="0" />
@@ -1331,13 +1334,24 @@
         <label id="960" label="" folder="Zeke &amp; Pandoria to left" sort="0" />
         <label id="961" label="" folder="Zeke &amp; Pandoria to left" sort="0" />
         <label id="962" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
+        <label id="963" label="" folder="Meia to right" sort="0" />
+        <label id="964" label="" folder="Meia to right" sort="0" />
+        <label id="965" label="" folder="Meia to right" sort="0" />
+        <label id="966" label="" folder="Meia to right" sort="0" />
+        <label id="967" label="" folder="Meia to right" sort="0" />
+        <label id="968" label="" folder="Meia to right" sort="0" />
+        <label id="969" label="" folder="Natasha to left" sort="0" />
+        <label id="970" label="" folder="Darkness to right" sort="0" />
+        <label id="971" label="" folder="Darkness to right" sort="0" />
+        <label id="972" label="" folder="Darkness to left" sort="0" />
+        <label id="973" label="" folder="Darkness to left" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
         <prefix>caution</prefix>
     </prefixes>
-    <nextId>962</nextId>
+    <nextId>973</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
@@ -1399,8 +1413,12 @@
         <marker scope="Public" name="sanako_club_selected" />
         <marker scope="Public" name="sanako_compliments" />
         <marker scope="Public" name="sanako_corrin_boys_name" />
+        <marker scope="Public" name="sanako_darkness_ds_s1" />
+        <marker scope="Public" name="sanako_darkness_ds_s4" />
         <marker scope="Public" name="sanako_darkness_sd_d1" />
+        <marker scope="Public" name="sanako_darkness_sd_d2" />
         <marker scope="Public" name="sanako_darkness_sd_s1" />
+        <marker scope="Public" name="sanako_darkness_sd_s2" />
         <marker scope="Public" name="sanako_dash_finished" />
         <marker scope="Public" name="sanako_dash_sports_question" />
         <marker scope="Public" name="sanako_drama_club_costumes">Sanako thinks a princess is just in costume.</marker>
@@ -1702,6 +1720,8 @@
         <marker scope="Public" name="sanako_meia_sm_m12" />
         <marker scope="Public" name="sanako_meia_sm_m13" />
         <marker scope="Public" name="sanako_meia_sm_m14" />
+        <marker scope="Public" name="sanako_meia_sm_m15" />
+        <marker scope="Public" name="sanako_meia_sm_m15_hand" />
         <marker scope="Public" name="sanako_meia_sm_m2" />
         <marker scope="Public" name="sanako_meia_sm_m3" />
         <marker scope="Public" name="sanako_meia_sm_m4" />
@@ -1717,6 +1737,10 @@
         <marker scope="Public" name="sanako_meia_sm_s13" />
         <marker scope="Public" name="sanako_meia_sm_s13_with_shaved" />
         <marker scope="Public" name="sanako_meia_sm_s14" />
+        <marker scope="Public" name="sanako_meia_sm_s14_with_shaved" />
+        <marker scope="Public" name="sanako_meia_sm_s15" />
+        <marker scope="Public" name="sanako_meia_sm_s15_men" />
+        <marker scope="Public" name="sanako_meia_sm_s15_with_shaved" />
         <marker scope="Public" name="sanako_meia_sm_s2" />
         <marker scope="Public" name="sanako_meia_sm_s3" />
         <marker scope="Public" name="sanako_meia_sm_s4" />
@@ -1948,6 +1972,7 @@
         <marker scope="Public" name="sanako_name_request">Sanako asks permission to refer to an opponent by her name.</marker>
         <marker scope="Public" name="sanako_natasha_hotdog_not_sandwich" />
         <marker scope="Public" name="sanako_natasha_ns_s1" />
+        <marker scope="Public" name="sanako_natasha_ns_s2" />
         <marker scope="Public" name="sanako_natsuki_club">Sanako reacts to Natsuki claiming to be in the same club as the player.</marker>
         <marker scope="Public" name="sanako_natsuki_nagisa_stg_t4" />
         <marker scope="Public" name="sanako_natsuki_nagisa_stg_t5" />
