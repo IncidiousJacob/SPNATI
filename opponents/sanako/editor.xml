@@ -362,6 +362,7 @@
         <response id="960" opponent="zeke_pandoria" opponentId="895" />
         <response id="961" opponent="zeke_pandoria" opponentId="896" />
         <response id="969" opponent="natasha" opponentId="303" />
+        <response id="977" opponent="darkness" opponentId="593" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -376,7 +377,6 @@
         <note id="630">Saying Text "athetic" to try to capture "Pathetic" regardless of capitalization.</note>
         <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
         <note id="919">Stage omitted to reduce layer skipping complexity; this line is still conditional on Meia's marker</note>
-        <note id="971">Missing marker check; add when Darkness has a marker on her line</note>
         <note id="973">Sanae was once a middle school teacher.</note>
     </notes>
     <labels>
@@ -1345,13 +1345,17 @@
         <label id="971" label="" folder="Darkness to right" sort="0" />
         <label id="972" label="" folder="Darkness to left" sort="0" />
         <label id="973" label="" folder="Darkness to left" sort="0" />
+        <label id="974" label="" folder="Darkness to right" sort="0" />
+        <label id="975" label="" folder="Darkness to left" sort="0" />
+        <label id="976" label="" folder="Darkness to right" sort="0" />
+        <label id="977" label="" folder="Darkness to left" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
         <prefix>caution</prefix>
     </prefixes>
-    <nextId>973</nextId>
+    <nextId>977</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
@@ -1414,11 +1418,15 @@
         <marker scope="Public" name="sanako_compliments" />
         <marker scope="Public" name="sanako_corrin_boys_name" />
         <marker scope="Public" name="sanako_darkness_ds_s1" />
+        <marker scope="Public" name="sanako_darkness_ds_s2" />
         <marker scope="Public" name="sanako_darkness_ds_s4" />
+        <marker scope="Public" name="sanako_darkness_ds_s5" />
         <marker scope="Public" name="sanako_darkness_sd_d1" />
         <marker scope="Public" name="sanako_darkness_sd_d2" />
+        <marker scope="Public" name="sanako_darkness_sd_d3" />
         <marker scope="Public" name="sanako_darkness_sd_s1" />
         <marker scope="Public" name="sanako_darkness_sd_s2" />
+        <marker scope="Public" name="sanako_darkness_sd_s3" />
         <marker scope="Public" name="sanako_dash_finished" />
         <marker scope="Public" name="sanako_dash_sports_question" />
         <marker scope="Public" name="sanako_drama_club_costumes">Sanako thinks a princess is just in costume.</marker>
