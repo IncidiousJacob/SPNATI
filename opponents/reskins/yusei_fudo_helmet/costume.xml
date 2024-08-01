@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>yusei_fudo_helmet</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="0">helmet</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/yusei_fudo_helmet/</folder>
+    <folder stage="1">opponents/yusei_fudo/</folder>
+    <wardrobe>
+        <clothing name="boxers" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="shirt" generic="shirt" position="upper" type="major" />
+        <clothing name="pants" generic="pants" position="lower" type="major" plural="true" />
+        <clothing name="socks" generic="socks" position="feet" type="extra" plural="true" />
+        <clothing name="jacket" generic="jacket" position="upper" type="minor" />
+        <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
+        <clothing name="gloves" generic="gloves" position="hands" type="minor" plural="true" />
+        <clothing name="helmet" generic="helmet" position="head" type="minor" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-__stripping">
+            <sprite id="0-stripping_2" src="reskins/yusei_fudo_helmet/posemaker/0-stripping_1.png" x="-9" y="1" scalex="1.05" scaley="1.05" pivoty="90%" />
+            <sprite id="stripping_3" delay="3" src="reskins/yusei_fudo_helmet/posemaker/0-stripping_3.png" x="-9" y="1" scalex="1.05" scaley="1.05" pivoty="90%" alpha="0" />
+            <directive type="animation" id="0-stripping_2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-9" y="1" scaley="1.05" />
+                <keyframe time="0.88" scaley="1.05" />
+                <keyframe time="1" scaley="1.07" />
+                <keyframe time="1.12" scaley="1.05" />
+            </directive>
+            <directive type="animation" id="0-stripping_2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/yusei_fudo_helmet/posemaker/0-stripping_1.png" />
+                <keyframe time="0.95" src="reskins/yusei_fudo_helmet/posemaker/0-stripping_2.png" />
+            </directive>
+            <directive type="animation" id="0-stripping_2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="1.05" />
+                <keyframe time="0.88" scalex="1.05" />
+                <keyframe time="1" scalex="1.05" />
+                <keyframe time="1.38" scalex="1.05" />
+                <keyframe time="3" scalex="1.05" />
+            </directive>
+            <directive type="animation" id="0-stripping_2" delay="3" ease="smooth" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripping_3" delay="3" ease="smooth" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="1" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="0-aura">
+            <sprite id="aura1" src="reskins/yusei_fudo_helmet/0-grumpy.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="2" src="yusei_fudo/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="yusei_fudo/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.25" src="yusei_fudo/posemaker/8-z_aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="aura1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/../meia/auracamera.png" />
+                <keyframe time="1" src="yusei_fudo/../meia/auracamera.png" />
+                <keyframe time="1.38" src="yusei_fudo/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.75" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.25" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.75" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="zz__dragon_arrival">
+            <sprite id="dramatic" src="reskins/yusei_fudo_helmet/#-zealous.png" x="0" y="0" scalex="1.05" scaley="1.05" pivoty="90%" />
+            <sprite id="crimson_dragon_full" delay="1.12" z="1" src="yusei_fudo/posemaker/crimson_dragon_full.png" x="0" y="348" scalex="5" scaley="5" alpha="0" />
+            <sprite id="crimson_dragon_full_2" delay="4.12" z="2" src="yusei_fudo/posemaker/crimson_dragon_full.png" x="0" y="348" scalex="1.3" scaley="1.3" alpha="0" />
+            <sprite id="crimson_dragon_full_3" delay="4.25" z="3" src="yusei_fudo/posemaker/crimson_dragon_full.png" x="0" y="348" scalex="1.3" scaley="1.3" alpha="0" />
+            <directive type="animation" id="dramatic" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scalex="1.05" scaley="1.05" />
+                <keyframe time="1" scalex="1.05" scaley="1.05" />
+            </directive>
+            <directive type="animation" id="dramatic" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/yusei_fudo_helmet/#-zealous.png" />
+                <keyframe time="1.12" src="reskins/yusei_fudo_helmet/#-dramatic.png" />
+            </directive>
+            <directive type="animation" id="dramatic" delay="1" ease="linear" interpolation="none">
+                <keyframe time="0" scalex="1.05" scaley="1.05" />
+                <keyframe time="0.12" scalex="1.02" scaley="1.02" />
+            </directive>
+            <directive type="animation" id="dramatic" delay="1.12" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1.02" scaley="1.02" />
+                <keyframe time="0.13" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full" delay="1.12" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="348" alpha="0" />
+                <keyframe time="3" x="0" y="348" alpha="80" />
+                <keyframe time="3.26" x="0" y="348" alpha="80" />
+                <keyframe time="3.63" x="0" y="348" alpha="100" />
+                <keyframe time="4" x="0" y="348" alpha="100" />
+                <keyframe time="4.5" x="0" y="348" alpha="80" />
+                <keyframe time="7.88" x="0" y="348" alpha="80" />
+                <keyframe time="12" x="0" y="348" alpha="0" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full" delay="1.12" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="3" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="3.26" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="3.63" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="4" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="4.5" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="7.88" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="12" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full" delay="1.12" ease="smooth" interpolation="linear">
+                <keyframe time="0" scalex="5" scaley="5" />
+                <keyframe time="3" scalex="1.3" scaley="1.3" />
+                <keyframe time="3.26" scalex="1.3" scaley="1.3" />
+                <keyframe time="3.63" scalex="1.3" scaley="1.3" />
+                <keyframe time="4" scalex="1.3" scaley="1.3" />
+                <keyframe time="4.5" scalex="1.3" scaley="1.3" />
+                <keyframe time="7.88" scalex="1.3" scaley="1.3" />
+                <keyframe time="12" scalex="1.3" scaley="1.3" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_2" delay="4.12" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="348" alpha="0" />
+                <keyframe time="0.5" x="0" y="348" alpha="0" />
+                <keyframe time="1" x="0" y="348" alpha="80" />
+                <keyframe time="1.88" alpha="0" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_2" delay="4.12" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="0.5" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="1" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_2" delay="4.12" ease="smooth" interpolation="linear">
+                <keyframe time="0" scalex="1.3" scaley="1.3" />
+                <keyframe time="0.5" scalex="1.3" scaley="1.3" />
+                <keyframe time="1" scalex="1.9" scaley="1.9" />
+                <keyframe time="1.88" scalex="2.2" scaley="2.2" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_3" delay="4.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="348" alpha="0" />
+                <keyframe time="0.5" x="0" y="348" alpha="0" />
+                <keyframe time="1" x="0" y="348" alpha="40" />
+                <keyframe time="1.88" alpha="0" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_3" delay="4.25" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="0.5" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+                <keyframe time="1" src="yusei_fudo/posemaker/crimson_dragon_full.png" />
+            </directive>
+            <directive type="animation" id="crimson_dragon_full_3" delay="4.25" ease="smooth" interpolation="linear">
+                <keyframe time="0" scalex="1.3" scaley="1.3" />
+                <keyframe time="0.5" scalex="1.3" scaley="1.3" />
+                <keyframe time="1" scalex="1.9" scaley="1.9" />
+                <keyframe time="1.88" scalex="2.2" scaley="2.2" />
+            </directive>
+        </pose>
+        <pose id="zz__team_5Ds">
+            <sprite id="dramatic" src="reskins/yusei_fudo_helmet/#-zz_dragon_warning.png" x="0" y="0" scalex="1" scaley="1" pivoty="90%" />
+            <directive type="animation" id="dramatic" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scalex="1" scaley="1" />
+                <keyframe time="1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="dramatic" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/yusei_fudo_helmet/#-zz_dragon_warning.png" />
+                <keyframe time="1.12" src="reskins/yusei_fudo_helmet/#-zealous.png" />
+            </directive>
+            <directive type="animation" id="dramatic" delay="1.12" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/yusei_fudo_helmet/#-zealous.png" />
+            </directive>
+            <directive type="animation" id="dramatic" delay="1" ease="linear" interpolation="none">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.12" scalex="1.07" scaley="1.07" />
+            </directive>
+            <directive type="animation" id="dramatic" delay="1.12" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1.07" scaley="1.07" />
+                <keyframe time="0.13" scalex="1.05" scaley="1.05" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>
