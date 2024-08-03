@@ -3677,6 +3677,12 @@
                                 <span class="game-menu-label">Return to Title</span>
                             </button>
                         <li>
+                        <li><button id="hard-refresh-button" class="dropdown-button-item bordered smooth-button red"
+                                onclick="updateAllGameVisuals()" tabindex="1">
+                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                                <span class="game-menu-label">Refresh Game Visuals</span>
+                            </button>
+                        <li>						
                         <li><button id="game-settings-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showOptionsModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -3695,6 +3701,13 @@
 
                 <!-- Minimal UI Player name label -->
                 <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label">Player</div>
+				
+				<!-- Refresh visuals button -->
+                <button id="table-hard-refresh-button" class="bordered table-hard-refresh-button" onclick="updateAllGameVisuals()" tabindex="5" title="Refresh Images">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+            </button>					
             </div>
 
         </div>
