@@ -986,6 +986,15 @@ function State($xml_or_state, parentCase) {
             }
         }
     }
+
+    this.hash = (function (s) {
+        let hash = 0;
+        for (var i = 0; i < s.length; i++) {
+            var code = s.charCodeAt(i);
+            hash = ((hash<<5)-hash)+code;
+            hash = hash & hash;
+        }
+        return hash;})(this.rawDialogue + this.image + this.parentCase.trigger);
 }
 
 /**
@@ -2578,8 +2587,8 @@ Opponent.prototype.findBehaviour = function(triggers, opp, volatileOnly) {
             && state.checkUnwanteds(this, opp);
     }.bind(this));
 
-    const weightedAdjustedMin = Math.min(...states.map(s => ((this.repeatLog[s.rawDialogue] || 0) + 0.5) / s.weight));
-    const statesLessPlayed = states.filter(s => (this.repeatLog[s.rawDialogue] || 0) / s.weight <= weightedAdjustedMin);
+    const weightedAdjustedMin = Math.min(...states.map(s => ((this.repeatLog[s.hash] || 0) + 0.5) / s.weight));
+    const statesLessPlayed = states.filter(s => (this.repeatLog[s.hash] || 0) / s.weight <= weightedAdjustedMin);
     if (statesLessPlayed.length > 0) {
         states = statesLessPlayed;
     }
@@ -2791,7 +2800,7 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     if (this.stateCommitted) return;
 
     /* Use rawDialogue so that variables don't affect repeat count.  */
-    this.repeatLog[this.chosenState.rawDialogue] = this.getRepeatCount() + 1;
+    this.repeatLog[this.chosenState.hash] = this.getRepeatCount() + 1;
 
     this.chosenState.expandDialogue(this, this.currentTarget);
 
