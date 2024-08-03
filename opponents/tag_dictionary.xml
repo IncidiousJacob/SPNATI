@@ -25,6 +25,7 @@
   <group label="Hair Style" multiselect="true">
     <tag display="Antenna / Ahoge" description="The character has antenna-like hair poking out">ahoge</tag>
     <tag display="Braided" description="The character has at least one braid/plait in their hair">braided_hair</tag>
+    <tag display="Bun" description="The character has their hair tied in a bun">hair_bun</tag>
     <tag display="Drills" description="Anime-style drill hair">drill_hair</tag>
     <tag display="Messy" description="Hair is notably untidy or wild">messy_hair</tag>
     <tag display="Ponytail" description="Hair is up in a ponytail">ponytail</tag>
@@ -174,6 +175,7 @@
     <tag display="Pantyhose" description="Wearing pantyhose">pantyhose</tag>
     <tag display="Pasties (Nipples)" description="Wearing pasties, stickers, or band-aids on the nipples">nipple_pasties</tag>
     <tag display="Pasty (Crotch)" description="Wearing a pasty, sticker, or band-aid on the crotch">crotch_pasty</tag>
+    <tag display="Ribbons as Clothing" description="Character is wearing ribbons tied around their body as clothing, usually as underwear.">ribbons_as_clothing</tag>
     <tag display="Santa Hat" paired="hat" description="Wearing a Santa hat">santa_hat</tag>
     <tag display="Shimapan / Striped Panties" description="Wearing horizontally-striped panties">shimapan</tag>
     <tag display="Spats" description="Wearing tight spandex/lycra bicycle shorts">spats</tag>
@@ -192,6 +194,7 @@
     <tag display="No Lower Underwear" description="Character did not wear lower underwear (e.g. panties, boxers) to the game">no_underwear</tag>
     <tag display="School Uniform" description="Wearing a school uniform of some sort. Apply for all stages.">school_uniform</tag>
     <tag display="Skimpy Clothing" description="Character started the game with revealing or minimal clothing">scantily-clad</tag>
+    <tag display="Functionally Naked" paired="scantily-clad" description="Character started the game in an outfit that leaves them functionally naked. Nipples and/or genitals may be visible, or barely-covered.">functionally_naked</tag>
     <tag display="Sleepwear" description="Wearing pyjamas, a nightdress, or a onesie">sleepwear</tag>
   </group>
   <group label="Personality" multiselect="true">
@@ -209,7 +212,8 @@
     <tag display="Embarrassed Nude (M)" gender="male" description="Male that has a particularly adverse reaction to being naked">enm</tag>
     <tag display="Exhibitionist" description="Character actively wants to be seen naked and masturbating, and wants all eyes on them">exhibitionist</tag>
     <tag display="Fancy" description="Character gives off an air of wealth and/or nobility">fancy</tag>
-    <tag display="Fashionable" description="Character is well-dress and always dresses for the occasion">fashionable</tag>
+    <tag display="Fashionable" description="Character is well-dressed, and interested in fashion.">fashionable</tag>
+    <tag display="Foul-Mouthed" description="Character uses frequent profanity in their dialogue and is generally vulgar in their speech. Apply to all stages where apparent">foul-mouthed</tag>
     <tag display="Gloomy" description="Character is generally mournful and pessimistic">gloomy</tag>
     <tag display="Greedy" description="Character is overly-preoccupied with money or other material wealth">greedy</tag>
     <tag display="Indifferent" description="Character seems relatively neutral or uncaring about the game's nudity, or it might take a lot to get a reaction out of them">indifferent</tag>
@@ -258,8 +262,11 @@
     <tag display="Magical" description="Character is capable of using magic">magic</tag>
     <tag display="Mature" description="Character is middle-aged, or approaching middle age, and can no longer be called a young adult. Appropriate age range is mid-30s to the 50s.">mature</tag>
     <tag display="Parent" description="Character is a parent, whether biological or adoptive">parent</tag>
+    <tag display="Parent (Biological)" paired="parent" description="Character is a biological parent">biological_parent</tag>
+    <tag display="Parent (Adoptive)" paired="parent" description="Character is an adoptive parent">adoptive_parent</tag>
     <tag display="Poor" description="Character is notably impoverished">poor</tag>
     <tag display="Psychic" description="Character has psychic abilities of some sort">psychic</tag>
+    <tag display="Strong Accent" description="Character has a non-generic accent prominent enough that it's apparent in their dialogue text">strong_accent</tag>
     <tag display="Virtual" description="Character is a digital avatar, hologram, or AI">virtual</tag>
     <tag display="Villain" description="Character is a villain in their source material">villain</tag>
     <tag display="Wealthy" description="Character is notably rich">wealthy</tag>
@@ -321,6 +328,7 @@
     <tag display="Mech Pilot" description="Regularly pilots a mech of some sort">mech_pilot</tag>
     <tag display="Mechanic / Engineer" description="Partakes in the invention, construction or maintenance of vehicles or machinery">mechanic</tag>
     <tag display="Medic" description="Either a doctor or a combat medic">medic</tag>
+    <tag display="Merchant" description="Character works as a merchant, trader, or shopkeeper">merchant</tag>
     <tag display="Military" description="From a military background or belongs to a military organization">military</tag>
     <tag display="Model" description="Works, or has worked, as a fashion/glamour model">model</tag>
     <tag display="Musician" description="Plays an instrument either professionally or as a hobby">musician</tag>
@@ -342,6 +350,7 @@
     <tag display="Thief" description="The character is a professional thief, of the cat burglar, petty thief or RPG thief varieties">thief</tag>
     <tag display="Witch" description="A witch">witch</tag>
     <tag display="Wizard" description="A wizard">wizard</tag>
+    <tag display="Wrestler" paired="fighter" description="A professional wrestler, or a character whose primary fighting style is wrestling.">wrestler</tag>
     <tag display="Writer" description="A professional author or hobby writer">writer</tag>
   </group>
   <group label="Stripping/Nudity Gimmicks" multiselect="true">
@@ -358,9 +367,12 @@
     <tag display="Nipples Covered by Hair" description="Character's hair is arranged in such a way that it completely or largely obscures their nipples.">hair_covering_breasts</tag>
     <tag display="Nipples Poke Through Clothes" description="Character's nipples are visible poking through tight clothing. Tag for all applicable stages.">covered_erect_nipples</tag>
     <tag display="Nipples Visible Thru Translucent Clothing" description="Character's nipples or areolae are at least partly visible through transparent or translucent clothing before the official chest reveal">nipples_visible_through_clothing</tag>
+    <tag display="Underboob" gender="female" description="Undersides of character's breasts are exposed, to a notable degree compared to other portions of the breast">underboob</tag>
     <tag display="Penis Bulge" gender="male" description="Character has a visible penis bulge while clothed. Tag for all applicable stages.">visible_bulge</tag>
     <tag display="Grower" gender="male" description="The character's penis is so much bigger when erect as to warrant a change in size tag. Apply starting in the stage where both states of the character's penis have been seen.">grower</tag>
+    <tag display="Cameltoe" gender="female" description="The shape of the character's labia is clearly visible through their clothing. Apply to all stages where apparent and visible.">cameltoe</tag>
     <tag display="No Genitals" description="The character does not possess genitalia. Should only be applicable to April Fool's characters.">no_genitals</tag>
+    <tag display="Does Not Strip" description="Character does not remove clothing or reveal nudity when they lose. Should not be applicable to non-April Fool's characters.">joke_stripping</tag>
   </group>
   <group label="Forfeit Gimmicks" multiselect="true">
     <tag display="Aided During Forfeit" description="Pleasured by another character during forfeit">tandem</tag>
@@ -368,7 +380,8 @@
     <tag display="Multi-person Forfeit (F / F)" gender="female" description="Character is female and sexually interacts with a female partner during either's forfeit">tandem_ff</tag>
     <tag display="Multi-person Forfeit (M / F)" description="Character sexually interacts with a partner of the opposite gender during either's forfeit">tandem_mf</tag>
     <tag display="Multi-person Forfeit (M / M)" gender="male" description="Character is male and sexually interacts with a male partner during either's forfeit">tandem_mm</tag>
-    <tag display="Intercourse During Forfeit" paired="tandem" description="The character has vaginal or anal intercourse with another person during their forfeit">intercourse_forfeit</tag>
+    <tag display="Intercourse During Forfeit" description="The character has vaginal or anal intercourse with another person during their forfeit">intercourse_forfeit</tag>
+    <tag display="Tribadism During Forfeit" gender="female" description="The character engages in tribadism (scissoring) with another person during their forfeit">tribadism_forfeit</tag>
     <tag display="Restrained During Forfeit" description="Character masturbates using bondage equipment">bondage_forfeit</tag>
     <tag display="Tentacle / Vine Forfeit" description="Character masturbates with tentacles or vines">tentacle_forfeit</tag>
     <tag display="Uses Toy for Forfeit" description="Character uses a sex toy to masturbate">uses_toy</tag>
@@ -395,7 +408,7 @@
     <tag display="Throws the game" description="Character intentionally loses the game">throws_game</tag>
     <tag display="Uses a Camera" description="Character has a camera that they use during the game">uses_camera</tag>
   </group>
-  <group label="Holiday Event Designation" multiselect="true">
+  <group label="Holiday Event/Alt Skin Designation" multiselect="true">
     <tag display="April Fool's Character" description="Character is exclusive to April Fool's Day events">april_fools</tag>
     <tag display="April Fool's Alt Skin" description="Alt skin is exclusive to April Fool's Day events">april_fools_skin</tag>
     <tag display="Christmas Alt Skin" description="Alt skin is exclusive to Christmas events">christmas_skin</tag>
@@ -403,8 +416,11 @@
     <tag display="Halloween Alt Skin" description="Alt skin is exclusive to Halloween events">halloween_skin</tag>
     <tag display="Summer Alt Skin" description="Alt skin is exclusive to Summer events">summer_skin</tag>
     <tag display="Valentine's Day Alt Skin" description="Alt skin is exclusive to Valentine's Day events">valentines_skin</tag>
+    <tag display="Futanari Alt Skin" description="Alt skin is a futanari version of a character that is not usually a futanari.">futanari_skin</tag>
+    <tag display="Genderswap Alt Skin" description="Alt skin is a genderswapped version of the character.">genderswap_skin</tag>
   </group>
   <group label="Source Medium" multiselect="true">
+    <tag display="Advertisement" description="Originates from an advertisement">advertisement</tag>
     <tag display="Anime" description="Originates from Japanese animation">anime</tag>
     <tag display="Book" description="Originates from western literature, not including comics or graphic novels">book</tag>
     <tag display="Cartoon" description="Originates from Western animation">cartoon</tag>
@@ -675,7 +691,8 @@
     <tag display="Studio Trigger" paired="anime" description="From an anime series by Studio Trigger">studio_trigger</tag>
     <tag display="Super Mario" paired="nintendo,video_game" description="From the Mario video game franchise">super_mario</tag>
     <tag display="Sword Art Online" paired="anime,light_novel" description="From the anime/light novel series Sword Art Online">sword_art_online</tag>
-    <tag display="Tales of Series" paired="video_game" description="From a game in the Tales series">tales_of</tag>
+    <tag display="Tales Series" paired="video_game" description="From a game in the Tales series">tales_of</tag>
+    <tag display="Tales of Berseria" paired="tales_of,video_game" description="From the game Tales of Berseria">tales_of_berseria</tag>
     <tag display="Tales of Graces" paired="tales_of,video_game" description="From the game Tales of Graces">tales_of_graces</tag>
     <tag display="Tales of Symphonia" paired="tales_of,video_game" description="From the game Tales of Symphonia">tales_of_symphonia</tag>
     <tag display="Tales of Vesperia" paired="tales_of,video_game" description="From the game Tales of Vesperia">tales_of_vesperia</tag>

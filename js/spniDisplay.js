@@ -1236,13 +1236,13 @@ MainSelectScreenDisplay.prototype.updateTargetSuggestionDisplay = function (quad
 
     img_elem.attr({
         'src': opponent.selection_image,
-        'alt': opponent.label,
+        'alt': opponent.selectLabel,
         'data-original-title': tooltip || null
     }).one('load', function() {
         img_elem.css("transform", opponent.scale != 100 || img_elem[0].naturalHeight > 1400 ?
                      "translate(-50%) scale(" + (Math.max(1.0, img_elem[0].naturalHeight / 1400) * opponent.scale) + "%)" : "");
     }).show();
-    label_elem.text(opponent.label);
+    label_elem.text(opponent.selectLabel);
 }
 
 MainSelectScreenDisplay.prototype.targetSuggestionSelected = function (quad) {
@@ -1285,7 +1285,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
     this.simpleImage.one('load', function() {
         OpponentDisplay.prototype.rescaleSimplePose.call(this, player.scale);
     }.bind(this));
-    this.label.html(player.label.initCap()).addClass('suggestion-label');
+    this.label.html(player.selectLabel.initCap()).addClass('suggestion-label');
     this.imageArea.addClass('prefill-suggestion').css('z-index', player.z_index - 100);
     this.selectButton.html("Select Other Opponent").removeClass("red").addClass("green suggestion-shown").attr('disabled', false);
     this.prefillButton.show();
@@ -1301,7 +1301,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
     }
     //this.prefillSuggestionBadges.costume.toggle(player.alternate_costumes.length > 0);
     this.layerIcon.attr({
-        src: "img/layers" + player.selectLayers + ".png",
+        src: "img/layers" + player.selectLayers + ".svg",
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
@@ -1413,7 +1413,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
     //this.badges.costume.toggle(player.alternate_costumes.length > 0);
     //updateStatusIcon(this.statusIcon, player);
     this.layerIcon.attr({
-        src: "img/layers" + player.selectLayers + ".png",
+        src: "img/layers" + player.selectLayers + ".svg",
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
@@ -1560,7 +1560,7 @@ OpponentSelectionCard.prototype.update = function () {
     updateStatusIcon(this.statusIcon, this.opponent);
 
     this.layerIcon.attr({
-        src: "img/layers" + this.opponent.selectLayers + ".png",
+        src: "img/layers" + this.opponent.selectLayers + ".svg",
         alt: this.opponent.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, this.opponent);
@@ -2145,7 +2145,7 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
     else {
         // this character's counts were previously loaded
         if (DEBUG) {
-            console.log("[LineImageCount] Loaded previous count for " + opponent.label + ": " +
+            console.log("[LineImageCount] Loaded previous count for " + opponent.selectLabel + ": " +
               opponent.uniqueLineCount + " lines, " + opponent.posesImageCount + " images)");
         }
         this.linecountLabel.text(opponent.uniqueLineCount);

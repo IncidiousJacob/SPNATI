@@ -244,11 +244,14 @@ input[type=search]::-webkit-search-cancel-button {
 #game-hidden-area>*,
 .table-bug-report-button,
 .hide-table-button,
-.table-feedback-report-button,
+.table-hard-refresh-button,
 .collectible-button-container {
     z-index: 1000;
 }
 
+.table-feedback-report-button {
+	z-index: 1001;
+}
 /**************************************************
  * Background / foreground positioning.
  **************************************************/
@@ -448,27 +451,31 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .hide-table-button {
-    bottom: 24.6%;
+    bottom: 29.2%;
 }
 
 .table-bug-report-button {
-    bottom: 20%;
+    bottom: 24.6%;
 }
 
 .table-feedback-report-button {
-	bottom: 15.4%;
+	bottom: 20%;
 	width: 11%;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
 
 .hide-table-button:hover,
-.table-bug-report-button:hover {
+.table-bug-report-button:hover,
+.table-hard-refresh-button:hover,
+.table-feedback-report-button:hover {
     background-color: rgba(155, 155, 155, 0.75);
 }
 
 .hide-table-button:active,
-.table-bug-report-button:active {
+.table-bug-report-button:active,
+.table-hard-refresh-button:active,
+.table-feedback-report-button:active {
     background-color: rgba(155, 155, 155, 0.9);
 }
 
@@ -523,6 +530,16 @@ ul.dropdown-menu>li {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.table-hard-refresh-button{
+    position: absolute;
+    left: 10%;
+    bottom: 6.5%;
+
+    width: 5.5%;
+    height: 5%;
+	background-color: rgba(155, 155, 155, 0.5);
 }
 
 /************************************************************
@@ -4057,6 +4074,14 @@ ul.dropdown-menu>li {
 .ui-minimal #player-game-card-area .large-card-image.tradein {
     filter: opacity(0.75) contrast(0.75);
     transform: translateY(-25%) translateZ(-0.5em);
+}
+
+.table-feedback-report-button, .table-hard-refresh-button {
+	display: none;
+}
+
+.ui-minimal .table-feedback-report-button, .ui-minimal .table-hard-refresh-button {
+	display: inline;
 }
 
 #player-game-clothing-area-minimal {

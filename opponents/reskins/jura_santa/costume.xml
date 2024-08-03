@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <costume>
     <id>jura_santa</id>
-    <label>Jura</label>
     <tags>
         <tag>alternative_skin</tag>
         <tag remove="true">blade</tag>
@@ -1877,6 +1876,74 @@
         <pose id="6-strippedb+">
             <sprite id="stripped" src="reskins/jura_santa/5-stripped.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_santa/bcamera+.png" x="278" y="0" rotation="5" />
+        </pose>
+        <pose id="2-bstrip-">
+            <sprite id="strip-" src="reskins/jura_santa/2-strip-.png" x="3" y="0" />
+            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="302" y="1" />
+            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="302" y="324" rotation="-7" />
+        </pose>
+        <pose id="7-bmeia">
+            <sprite id="meia" src="reskins/jura_santa/7-meiamast.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown3.png" x="-10" y="241" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_santa/bmeia.png" x="0" y="0" />
+        </pose>
+        <pose id="7-bmeia2">
+            <sprite id="meia" src="reskins/jura_santa/7-meiamast2.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown2.png" x="-12" y="239" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_santa/bmeia2.png" x="0" y="0" />
+        </pose>
+        <pose id="7-bmeia3">
+            <sprite id="meia" src="reskins/jura_santa/7-meiamast3.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown.png" x="13" y="248" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_santa/bmeia3.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="3" src="reskins/jura_santa/bmeia3hand.png" x="17" y="1098" />
+        </pose>
+        <pose id="7-bmeia4">
+            <sprite id="meia" src="reskins/jura_santa/7-meiamast.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown2.png" x="5" y="239" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_santa/bmeia4.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="3" src="reskins/jura_santa/bmeia4hand.png" x="13" y="1080" />
+        </pose>
+        <pose id="7-bmeia5">
+            <sprite id="meia" src="reskins/jura_santa/7-meiamast3.png" x="266" y="0" />
+            <sprite id="meiadoggydown" z="3" src="reskins/jura_santa/meiadoggydown2.png" x="6" y="293" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_santa/bmeia5.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="4" src="reskins/jura_santa/bmeia5hand.png" x="15" y="1140" />
+            <sprite id="droplets" z="2" src="reskins/jura_santa/droplets.png" x="7" y="1301" />
+        </pose>
+        <pose id="7-meia">
+            <sprite id="meia" z="1" src="reskins/jura_santa/7-meia.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown2.png" x="0" y="241" />
+            <sprite id="bmeiamast" src="reskins/jura_santa/bmeiamast.png" x="-330" y="0" />
+        </pose>
+        <pose id="7-meia2">
+            <sprite id="meia" z="1" src="reskins/jura_santa/7-meia2.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown3.png" x="0" y="260" />
+            <sprite id="bmeiamast" src="reskins/jura_santa/bmeiamast3.png" x="-336" y="2" />
+            <sprite id="meia2hand" z="3" src="reskins/jura_santa/7-meia2hand.png" x="2" y="1102" />
+        </pose>
+        <pose id="7-meia3">
+            <sprite id="meia" z="1" src="reskins/jura_santa/7-meia3.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown2.png" x="2" y="252" />
+            <sprite id="bmeiamast" src="reskins/jura_santa/bmeiamast2.png" x="-266" y="-2" />
+        </pose>
+        <pose id="7-meia4">
+            <sprite id="meia" z="1" src="reskins/jura_santa/7-meia4.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_santa/meiadoggydown3.png" x="-7" y="250" />
+            <sprite id="bmeiamast" src="reskins/jura_santa/bmeiamast3.png" x="-336" y="2" />
+        </pose>
+        <pose id="7-meia5">
+            <sprite id="meia" z="1" src="reskins/jura_santa/7-meia5.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="3" src="reskins/jura_santa/meiadoggydown.png" x="-9" y="301" />
+            <sprite id="bmeiamast" src="reskins/jura_santa/bmeiamast.png" x="-330" y="0" />
+            <sprite id="meia2hand" z="4" src="reskins/jura_santa/7-meia5hands.png" x="-1" y="1138" />
+            <sprite id="droplets" z="2" src="reskins/jura_santa/droplets.png" x="4" y="1313" scalex="-1" />
+        </pose>
+        <pose id="8-blank">
+            <sprite id="meiasmilemouth" src="reskins/jura_santa/meiasmilemouth.png" x="0" y="0" alpha="0" />
+        </pose>
+        <pose id="6-blank">
+            <sprite id="meiasmilemouth" src="reskins/jura_santa/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
     </poses>
 

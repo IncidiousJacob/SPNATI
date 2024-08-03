@@ -1,16 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
     <collectible id="datingsim" img="opponents/haru/swish!!.png" thumbnail="opponents/haru/swish!!.png">
-        <title>Skirt</title>
-        <subtitle>Haru's skirt</subtitle>
+        <title>Haru's Skirt</title>
         <text>The skirt Haru wore to the game. It isn't the one from her days at Shujin Academy, but it is very similiar. The question is; would you prefer it on or off when she's sitting on your face?</text>
-        <unlock>Win against Haru. Note that playing against a certain character will unlock a different collectible instead.</unlock>
+        <unlock>Win against Haru.</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing name="skirt" generic="skirt" position="lower" type="major" />
     </collectible>
     <collectible id="gun" img="opponents/haru/grenadelauncher.png" thumbnail="opponents/haru/grenadelaunchericon.png">
         <title>Grenade Launcher</title>
         <subtitle>The weapon of a fair lady.</subtitle>
         <text>The fair lady of the Phantom Thieves loved to blow up her enemies with her trusty grenade launcher! Her fondness for explosions could have her forge a bond with a certain mage.</text>
         <unlock>Win against both Haru and Megumin.</unlock>
-        <counter>2</counter>
+        <hide-details>true</hide-details>
     </collectible>
 </collectibles>

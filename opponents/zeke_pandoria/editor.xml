@@ -175,6 +175,24 @@
         <response id="796" opponent="schezo" opponentId="193" />
         <response id="824" opponent="petra" opponentId="169" />
         <response id="832" opponent="petra" opponentId="50" />
+        <response id="837" opponent="glamrock_chica" opponentId="88" />
+        <response id="838" opponent="glamrock_chica" opponentId="26" />
+        <response id="852" opponent="glamrock_chica" opponentId="90" />
+        <response id="854" opponent="stocking" opponentId="258" />
+        <response id="860" opponent="jura" opponentId="1845" />
+        <response id="867" opponent="darkness" opponentId="259" />
+        <response id="0" opponent="darkness" opponentId="348" />
+        <response id="0" opponent="darkness" opponentId="347" />
+        <response id="0" opponent="darkness" opponentId="258" />
+        <response id="0" opponent="darkness" opponentId="260" />
+        <response id="0" opponent="darkness" opponentId="257" />
+        <response id="870" opponent="moskii" opponentId="1" />
+        <response id="874" opponent="natasha" opponentId="122" />
+        <response id="883" opponent="aoi_asahina" opponentId="228" />
+        <response id="888" opponent="schezo" opponentId="319" />
+        <response id="891" opponent="megumin" opponentId="221" />
+        <response id="892" opponent="megumin" opponentId="53" />
+        <response id="897" opponent="sanako" opponentId="914" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -209,6 +227,10 @@
         <note id="736">plays if pandoria has figured out sofia's trick</note>
         <note id="762">openly inviting you to talk about any berseria party members you want, or make jokes about how people build the party</note>
         <note id="787">sanako_nn = sanako no nagisa</note>
+        <note id="868">Only Zeke is speaking here. it uses a default costume condition in case darkness gets alt costumes in future which dont have armor</note>
+        <note id="869">Two different marker values in case you want to respond to zeke/pandy differently</note>
+        <note id="876">the intent with this sort of line is to get natasha to admit to something 'evil' that isnt a total mood killer, if you need further clarification just ask</note>
+        <note id="897">they are being playful here/deliberately pretending to misunderstand</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -621,7 +643,7 @@
         <label id="417" label="" color="5" folder="Sex" sort="7" />
         <label id="418" label="Heavy (Kissing Insertion, last tick)" color="5" folder="Sex&gt;Kissing" sort="4" />
         <label id="419" label="" folder="Hidden Logic" sort="0" />
-        <label id="420" label="" folder="Hidden Logic" sort="6" />
+        <label id="420" label="allowsex" folder="Hidden Logic" sort="6" />
         <label id="421" label="Sex (Conditions)" color="5" folder="Sex" sort="2" />
         <label id="422" label="butt pose (zeke)" folder="Self Butt Poses" sort="0" />
         <label id="423" label="butt pose (pandy)" folder="Self Butt Poses" sort="2" />
@@ -867,7 +889,7 @@
         <label id="663" label="" folder="Filtered" sort="0" />
         <label id="664" label="" folder="Filtered" sort="0" />
         <label id="665" label="" folder="Filtered" sort="0" />
-        <label id="666" label="" color="4" folder="Targets" sort="0" />
+        <label id="666" label="" color="3" folder="Targets" sort="0" />
         <label id="667" label="" color="3" folder="Responses" sort="0" />
         <label id="668" label="" color="3" folder="Responses" sort="0" />
         <label id="669" label="" folder="Summer&gt;After Strip Lines" sort="0" />
@@ -928,8 +950,8 @@
         <label id="729" label="" folder="Eye of Shining Justice Mode" sort="0" />
         <label id="730" label="" folder="Responses&gt;Sanako&gt;Left" sort="0" />
         <label id="731" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
-        <label id="732" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
-        <label id="733" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
+        <label id="732" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="733" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
         <label id="734" label="" folder="Prompt Responses" sort="0" />
         <label id="701" label="" folder="Targets&gt;Sofia" sort="0" />
         <label id="735" label="" folder="Responses&gt;Sofia" sort="0" />
@@ -993,7 +1015,7 @@
         <label id="792" label="Heavy (Doggy Style) Tail Pull" color="5" folder="Sex&gt;Doggy" sort="0" />
         <label id="793" label="" folder="Hidden Logic" sort="0" />
         <label id="794" label="" folder="Hidden Logic" sort="0" />
-        <label id="795" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="795" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="796" label="" folder="Targets&gt;Schezo" sort="0" />
         <label id="797" label="" folder="Targets&gt;Petra" sort="0" />
         <label id="798" label="" folder="Targets&gt;Petra" sort="0" />
@@ -1035,13 +1057,73 @@
         <label id="834" label="" folder="Targets&gt;Petra" sort="0" />
         <label id="835" label="" folder="Targets&gt;Petra" sort="0" />
         <label id="836" label="" folder="Targets&gt;Petra" sort="0" />
+        <label id="837" label="" folder="Responses&gt;Chica" sort="0" />
+        <label id="838" label="" folder="Targets&gt;Chica" sort="0" />
+        <label id="839" label="" folder="Targets&gt;Chica" sort="0" />
+        <label id="840" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="841" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="842" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="843" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="844" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="845" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="846" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="847" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="848" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="849" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="850" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="851" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
+        <label id="852" label="" folder="Responses&gt;Chica" sort="0" />
+        <label id="853" label="" folder="Targets&gt;Chica" sort="0" />
+        <label id="854" label="" folder="Responses&gt;Stocking&gt;BeachParty" sort="0" />
+        <label id="855" label="" folder="Responses&gt;Stocking&gt;BeachParty" sort="0" />
+        <label id="856" label="" folder="Responses" sort="0" />
+        <label id="857" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="858" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="859" label="" color="4" folder="Responses" sort="0" />
+        <label id="860" label="" folder="Responses" sort="0" />
+        <label id="861" label="" folder="Responses" sort="0" />
+        <label id="862" label="" folder="Targets" sort="0" />
+        <label id="863" label="" folder="Targets" sort="0" />
+        <label id="864" label="" folder="Targets" sort="0" />
+        <label id="865" label="" color="4" folder="Responses" sort="0" />
+        <label id="866" label="" color="4" folder="Targets" sort="0" />
+        <label id="867" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="868" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="869" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="870" label="" folder="Targets" sort="0" />
+        <label id="871" label="" folder="Targets" sort="0" />
+        <label id="872" label="" folder="Targets" sort="0" />
+        <label id="873" label="" folder="Targets" sort="0" />
+        <label id="874" label="" folder="Responses" sort="0" />
+        <label id="875" label="" color="1" folder="Targets" sort="0" />
+        <label id="876" label="" color="1" folder="Targets" sort="0" />
+        <label id="877" label="" folder="Responses" sort="0" />
+        <label id="878" label="1 - kink" folder="Responses" sort="0" />
+        <label id="879" label="1 - NTR" folder="Responses" sort="0" />
+        <label id="880" label="1 - exhibitionist" folder="Responses" sort="0" />
+        <label id="881" label="" color="2" folder="Targets" sort="0" />
+        <label id="882" label="" color="2" folder="Targets" sort="0" />
+        <label id="883" label="" folder="Targets" sort="0" />
+        <label id="884" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="885" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="886" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="887" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="888" label="" folder="Responses" sort="0" />
+        <label id="889" label="" folder="Responses" sort="0" />
+        <label id="890" label="" folder="Responses" sort="0" />
+        <label id="891" label="" folder="Targets" sort="0" />
+        <label id="893" label="" folder="Targets&gt;Sanako&gt;Left" sort="0" />
+        <label id="894" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
+        <label id="895" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="896" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
+        <label id="897" label="" folder="Responses&gt;Sanako&gt;Left" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>836</nextId>
+    <nextId>897</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="allowsex">If set to 1, Zeke and Pandoria *can* (but are not guaranteed to) have sex for their forfeit.</marker>
@@ -1060,7 +1142,10 @@
         <marker scope="Public" name="caitlin_chairYEET" />
         <marker scope="Public" name="caitlin_hair" />
         <marker scope="Public" name="cd_butt_pose" />
+        <marker scope="Public" name="chica_pizza" />
         <marker scope="Public" name="conked_out" />
+        <marker scope="Public" name="darkness_finished" />
+        <marker scope="Public" name="darkness_rejectedStrip" />
         <marker scope="Public" name="dontUseRegularForfeitStateOperation" />
         <marker scope="Public" name="dunban_arm_reveal" />
         <marker scope="Public" name="eichi_eattherichResp" />
@@ -1100,6 +1185,10 @@
         <marker scope="Public" name="kyouko_S_RibbonOff" />
         <marker scope="Public" name="mariS_buttReact" />
         <marker scope="Public" name="markername" />
+        <marker scope="Public" name="megumin_giantFrogs" />
+        <marker scope="Public" name="megumin_vanir" />
+        <marker scope="Public" name="moskii_partygirl" />
+        <marker scope="Public" name="moskiibloodtype" />
         <marker scope="Public" name="nephenee_pussyR" />
         <marker scope="Public" name="nephenee_titsR" />
         <marker scope="Public" name="nonon_leon_startDualReact" />
@@ -1123,8 +1212,11 @@
         <marker scope="Public" name="pandy_jura_strip3" />
         <marker scope="Public" name="pandy_kora_self0a" />
         <marker scope="Public" name="pandy_kyouko_comedian1" />
+        <marker scope="Public" name="pandy_kyouko_comedian2" />
         <marker scope="Public" name="pandy_kyouko_pickupLine1" />
+        <marker scope="Public" name="pandy_kyouko_pickupLine2" />
         <marker scope="Public" name="pandy_kyouko_tomato1" />
+        <marker scope="Public" name="pandy_kyouko_tomato2" />
         <marker scope="Public" name="pandy_mariS_hatCont" />
         <marker scope="Public" name="pandy_mariS_hatEnd" />
         <marker scope="Public" name="pandy_mariS_hatResp" />
@@ -1183,7 +1275,9 @@
         <marker scope="Public" name="sanako_nn" />
         <marker scope="Public" name="sanako_spendTimeRespP" />
         <marker scope="Public" name="sanako_spendTimeRespZ" />
+        <marker scope="Public" name="schezo_magicPowers1" />
         <marker scope="Public" name="schezo_moveNames1" />
+        <marker scope="Public" name="schezo_moveNames2" />
         <marker scope="Public" name="schezo_noarlenoringo" />
         <marker scope="Public" name="self_cleanup" />
         <marker scope="Public" name="self_finished" />
@@ -1200,6 +1294,8 @@
         <marker scope="Public" name="spooky_strip0" />
         <marker scope="Public" name="spooky_strip0_festive" />
         <marker scope="Public" name="stage_3_core_expo" />
+        <marker scope="Public" name="stocking_WhatIfPANDORIAZEKE" />
+        <marker scope="Public" name="stocking_ZekeSeashells" />
         <marker scope="Public" name="strip_poker_joke" />
         <marker scope="Public" name="sucrose_dual_FF_T1" />
         <marker scope="Public" name="sucrose_dual_FF_T2" />
@@ -1268,6 +1364,7 @@
         <marker scope="Public" name="sweetheart_pillow" />
         <marker scope="Public" name="szp_trio_finish" />
         <marker scope="Public" name="szp_trio_finished" />
+        <marker scope="Public" name="T_ZekePandy_Comedian" />
         <marker scope="Public" name="target_beltStripped" />
         <marker scope="Public" name="tiki_bar_we_are_broke" />
         <marker scope="Public" name="toph_bracelet_pandyresp" />
@@ -1347,6 +1444,7 @@
         <marker scope="Public" name="zeke_mariS_strip2b_alt" />
         <marker scope="Public" name="zeke_mariS_strip2c" />
         <marker scope="Public" name="zeke_mariS_strip2c_alt" />
+        <marker scope="Public" name="zeke_megumin_crimsonDemon1" />
         <marker scope="Public" name="zeke_meia_self0a" />
         <marker scope="Public" name="zeke_meia_self0b" />
         <marker scope="Public" name="zeke_meia_self0c_A" />
@@ -1370,6 +1468,7 @@
         <marker scope="Public" name="zeke_meia_strip2b" />
         <marker scope="Public" name="zeke_meia_strip3a" />
         <marker scope="Public" name="zeke_meia_strip3b" />
+        <marker scope="Public" name="zeke_meia_strip3c" />
         <marker scope="Public" name="zeke_misaka_strip0a" />
         <marker scope="Public" name="zeke_nadeshiko_fancy1" />
         <marker scope="Public" name="zeke_nadeshiko_fancy2" />
@@ -1422,11 +1521,30 @@
         <marker scope="Public" name="zeke_yaemiko_publishing3" />
         <marker scope="Public" name="zekepandoria_jura_self0a" />
         <marker scope="Public" name="zekepandoria_revy_strip0a" />
+        <marker scope="Public" name="zekepandy_aoi_cloudsea1" />
+        <marker scope="Public" name="zekepandy_aoi_swimmingPro1" />
         <marker scope="Public" name="zekepandy_cag_gloves1" />
         <marker scope="Public" name="zekepandy_caitlin_strip0a" />
         <marker scope="Public" name="zekepandy_caitlin_strip0b" />
         <marker scope="Public" name="zekepandy_caitlin_strip0c" />
+        <marker scope="Public" name="zekepandy_chica_act1" />
+        <marker scope="Public" name="zekepandy_chica_self5c" />
+        <marker scope="Public" name="zekepandy_chica_strip1a" />
+        <marker scope="Public" name="zekepandy_chika_intro1" />
+        <marker scope="Public" name="zekepandy_darkness_exhibitionist1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_kink1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_NTR1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_self0a" />
+        <marker scope="Public" name="zekepandy_darkness_strip0a" />
+        <marker scope="Public" name="zekepandy_darkness_strip0b" />
+        <marker scope="Public" name="zekepandy_darkness_strip1a" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b_deimure" />
+        <marker scope="Public" name="zekepandy_darkness_strip1b_unassuming" />
         <marker scope="Public" name="zekepandy_jura_self0a_SBD" />
+        <marker scope="Public" name="zekepandy_jura_self0b_SBD" />
+        <marker scope="Public" name="zekepandy_jura_self0c_SBD" />
+        <marker scope="Public" name="zekepandy_jura_selfmustFF" />
         <marker scope="Public" name="zekepandy_jura_strip3" />
         <marker scope="Public" name="zekepandy_jura_strip3b" />
         <marker scope="Public" name="zekepandy_jura_strip3c" />
@@ -1440,6 +1558,9 @@
         <marker scope="Public" name="zekepandy_miko_selfGloves1" />
         <marker scope="Public" name="zekepandy_miko_selfGloves2" />
         <marker scope="Public" name="zekepandy_miko_selfGloves3" />
+        <marker scope="Public" name="zekepandy_natasha_self0a" />
+        <marker scope="Public" name="zekepandy_natasha_strip0a" />
+        <marker scope="Public" name="zekepandy_natasha_strip1a" />
         <marker scope="Public" name="zekepandy_petra_boobgrabL" />
         <marker scope="Public" name="zekepandy_petra_self0a" />
         <marker scope="Public" name="zekepandy_petra_self0b" />
@@ -1470,6 +1591,9 @@
         <marker scope="Public" name="zekepandy_sanako_self0a" />
         <marker scope="Public" name="zekepandy_sanako_self0b" />
         <marker scope="Public" name="zekepandy_sanako_self0c" />
+        <marker scope="Public" name="zekepandy_schezo_respA1" />
+        <marker scope="Public" name="zekepandy_schezo_respB1" />
+        <marker scope="Public" name="zekepandy_schezo_respC1" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_happening" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_must" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_start" />
@@ -1574,10 +1698,15 @@
         <marker scope="Public" name="zp_nonon_strip3b" />
         <marker scope="Public" name="zp_nonon_strip3c" />
         <marker scope="Public" name="zp_reimu_self0a" />
+        <marker scope="Public" name="zp_reimu_self0b" />
         <marker scope="Public" name="zp_sanako_0a" />
         <marker scope="Public" name="zp_sanako_0a_nagisa_present" />
+        <marker scope="Public" name="zp_sanako_0b" />
+        <marker scope="Public" name="zp_sanako_0b_nagisa_present" />
         <marker scope="Public" name="zp_sanako_2a" />
+        <marker scope="Public" name="zp_sanako_2b" />
         <marker scope="Public" name="zp_sanako_self2a_default" />
+        <marker scope="Public" name="zp_sanako_self2b_default" />
         <marker scope="Public" name="zp_sofia_intro1" />
         <marker scope="Public" name="zp_sofia_intro2" />
         <marker scope="Public" name="zp_sofia_intro3" />

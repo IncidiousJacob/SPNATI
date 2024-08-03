@@ -1,2 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="faz-wrench" img="opponents/glamrock_chica/x_faz-wrench.png" thumbnail="opponents/glamrock_chica/x_faz-wrench.png">
+        <title>Faz-Wrench</title>
+        <subtitle>Time to screw with Chica, mechanically speaking.</subtitle>
+        <text>This device allows you to input codes in the player name box to change certain elements of Chica. Looks like the manual was included, too:&lt;br&gt;&lt;br&gt;
+
+Welcome, and congratulations on acquiring your new job as a Fazbear Engineer. This handbook will tell you everything you need to know about properly maintaining the Glamrock animatronics at your establishment. Be sure to keep your Faz-Wrench handy, as it is required to access an animatronic's code panel. Please note that adjusting the animatronics in any way not outlined in this handbook is grounds for termination under subject 12 of your employee contract, "Tampering with the Animatronics."&lt;br&gt;&lt;br&gt;
+
+As the Glamrock animatronics are meant to appeal to guests of all ages, their game-playing AI may need adjusting to suit their current opponent. In such cases, you can input the code "Faz-Code:\\AI_Decrease" to make it an easier opponent, or "Faz-Code:\\AI_Increase" to make it a more difficult opponent. Raising an animatronic's difficulty level to "20" is not recommended, especially in groups, as it may lead to a frustrating and unfun experience.&lt;br&gt;&lt;br&gt;
+
+In the event that an animatronic's voice box malfunctions, it is recommended that you first disable its singing ability with the code "Faz-Code:\\Disable_Singing" before escorting the animatronic to Parts &amp; Service. Once the error with the animatronic's voice box has been remedied, you can safely re-enable the animatronic's singing ability with the code "Faz-Code:\\Enable_Singing."&lt;br&gt;&lt;br&gt;
+
+Should any issues with an animatronic's facial recognition system occur, you can input the code "Faz-Code:\\Delete_User" to remove a user profile. WARNING: Removing a user profile cannot be undone. Any users with deleted profiles will need to rebuild their profiles from scratch by manually interacting with the animatronic. Please be absolutely sure that deleting a user profile is necessary before doing so.</text>
+        <unlock>Play 3 matches with Chica (you don't have to win).</unlock>
+        <hide-details>true</hide-details>
+        <counter>3</counter>
+    </collectible>
+</collectibles>

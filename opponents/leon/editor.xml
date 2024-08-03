@@ -551,6 +551,8 @@
         <note id="1371">--There's a short joke and overlook based on size comment in here</note>
         <note id="1374">Flirtier, the one catchup line</note>
         <note id="1454">Feel free to explore the Yggdrasil transfer of mana and technology</note>
+        <note id="1599">This'll be a two stage marker, just to validate events. &lt;br&gt;1. Yae and Leon have to chat&lt;br&gt;2. Leon has to be masturbating&lt;br&gt;3. Yae has to lose her forfeit&lt;br&gt;4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan&lt;br&gt;5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
+        <note id="1600">This'll be a two stage marker, just to validate events. &lt;br&gt;1. Yae and Leon have to chat&lt;br&gt;2. Leon has to be masturbating&lt;br&gt;3. Yae has to lose her forfeit&lt;br&gt;4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan&lt;br&gt;5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
     </notes>
     <labels>
         <label id="1" label="" folder="Targets" sort="11" />
@@ -1623,8 +1625,26 @@
         <label id="1595" label="Junk 2" folder="Hu Tao Dual - Post Specifics" sort="0" />
         <label id="1596" label="Junk 3" folder="Hu Tao Dual - Post Specifics" sort="0" />
         <label id="1597" label="Tag Removal" folder="Hu Tao Dual - Hu Tao Lost First" sort="0" />
+        <label id="1598" label="Jacket Unlock" folder="" sort="0" />
+        <label id="1599" label="Setup" folder="Yae Dual Triggers" sort="0" />
+        <label id="1600" label="IOU" folder="Yae Dual Triggers" sort="0" />
+        <label id="1601" label="Quick Setup" folder="Yae Dual Triggers" sort="0" />
+        <label id="1602" label="Not just yet" folder="Yae Dual Triggers" sort="0" />
+        <label id="1603" label="Yae" folder="Dual Forfeit Markers" sort="0" />
+        <label id="1604" label="Setup - Tao+Yae" folder="Rouge Dual Forfeit" sort="0" />
+        <label id="1605" label="Setup" folder="Rouge Dual Forfeit" sort="0" />
+        <label id="1606" label="Rouge" folder="Dual Forfeit Markers" sort="0" />
+        <label id="1607" label="Tao" folder="Dual Forfeit Markers" sort="0" />
+        <label id="1608" label="Nonon" folder="Dual Forfeit Markers" sort="0" />
+        <label id="1609" label="Trigger" folder="Hu Tao Dual - Hu Tao Lost First" sort="0" />
+        <label id="1610" label="Listen Trigger, L" folder="Hu Tao Dual" sort="0" />
+        <label id="1611" label="Trigger" folder="Nonon Dual - Nonon Lost First" sort="0" />
+        <label id="1612" label="Listen Trigger" folder="Nonon Dual" sort="0" />
+        <label id="1613" label="Saw Hu Tao" folder="Yae Dual Triggers" sort="0" />
+        <label id="1614" label="Saw Nonon" folder="Yae Dual Triggers" sort="0" />
+        <label id="1615" label="Saw Rouge" folder="Yae Dual Triggers" sort="0" />
     </labels>
-    <nextId>1597</nextId>
+    <nextId>1615</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -1988,6 +2008,7 @@
         <marker scope="Public" name="hildadrien_ff" />
         <marker scope="Public" name="hildadrien_ff2" />
         <marker scope="Public" name="HiSha" />
+        <marker scope="Public" name="hutao_dual" />
         <marker scope="Public" name="hutao_dual_after" />
         <marker scope="Public" name="hutao_dual_finished" />
         <marker scope="Public" name="hutao_dual_finishing" />
@@ -2099,6 +2120,7 @@
         <marker scope="Public" name="leon_dualFFheavy" />
         <marker scope="Public" name="leon_dualFFmust" />
         <marker scope="Public" name="leon_dualFFstart" />
+        <marker scope="Public" name="leon_duals" />
         <marker scope="Public" name="leon_ff" />
         <marker scope="Public" name="leon_ff11a" />
         <marker scope="Public" name="leon_ff11b" />
@@ -2121,6 +2143,19 @@
         <marker scope="Public" name="leon_VisionA1" />
         <marker scope="Public" name="leon_VisionB1" />
         <marker scope="Public" name="leon_VisionC1" />
+        <marker scope="Public" name="leon_yae_ff1" />
+        <marker scope="Public" name="leon_yae_ff10" />
+        <marker scope="Public" name="leon_yae_ff11" />
+        <marker scope="Public" name="leon_yae_ff12" />
+        <marker scope="Public" name="leon_yae_ff13" />
+        <marker scope="Public" name="leon_yae_ff2" />
+        <marker scope="Public" name="leon_yae_ff3" />
+        <marker scope="Public" name="leon_yae_ff4" />
+        <marker scope="Public" name="leon_yae_ff5" />
+        <marker scope="Public" name="leon_yae_ff6" />
+        <marker scope="Public" name="leon_yae_ff7" />
+        <marker scope="Public" name="leon_yae_ff8" />
+        <marker scope="Public" name="leon_yae_ff9" />
         <marker scope="Public" name="leon_yolo" />
         <marker scope="Public" name="leon01" />
         <marker scope="Public" name="leon01a" />
@@ -2452,6 +2487,7 @@
         <marker scope="Public" name="nonon_after03" />
         <marker scope="Public" name="nonon_after04" />
         <marker scope="Public" name="nonon_after05" />
+        <marker scope="Public" name="nonon_dual" />
         <marker scope="Public" name="nonon_dual_after" />
         <marker scope="Public" name="nonon_dual_finished" />
         <marker scope="Public" name="nonon_dual_finishing" />
@@ -2537,6 +2573,9 @@
         <marker scope="Public" name="petra01" />
         <marker scope="Public" name="petra02" />
         <marker scope="Public" name="petra03" />
+        <marker scope="Public" name="pre_yae_ff_hutao" />
+        <marker scope="Public" name="pre_yae_ff_nonon" />
+        <marker scope="Public" name="pre_yae_ff_rouge" />
         <marker scope="Public" name="pyretic_passion_leon" />
         <marker scope="Public" name="rav51" />
         <marker scope="Public" name="ravi_ff" />
@@ -2834,6 +2873,16 @@
         <marker scope="Public" name="trixie42" />
         <marker scope="Public" name="trixie43" />
         <marker scope="Public" name="yae_14" />
+        <marker scope="Public" name="yae_dual" />
+        <marker scope="Public" name="yae_ff_req" />
+        <marker scope="Public" name="yae_ff_reqIOU" />
+        <marker scope="Public" name="yae_ff_reqYES" />
+        <marker scope="Public" name="yae_ff_start" />
+        <marker scope="Public" name="yae_ff1A" />
+        <marker scope="Public" name="yae_ff1B" />
+        <marker scope="Public" name="yae_ff1C" />
+        <marker scope="Public" name="yae_forfeit_me_first" />
+        <marker scope="Public" name="yae_forfeit_yae_first" />
         <marker scope="Public" name="yae_roll_next" />
         <marker scope="Public" name="yae_roll_next_a" />
         <marker scope="Public" name="yae_roll_next_b" />
@@ -2841,6 +2890,10 @@
         <marker scope="Public" name="yae_roll_next_d" />
         <marker scope="Public" name="yae_roll_spice" />
         <marker scope="Public" name="yae_transform" />
+        <marker scope="Public" name="yae_watched_hutao" />
+        <marker scope="Public" name="yae_watched_nonon" />
+        <marker scope="Public" name="yae_watched_rouge" />
+        <marker scope="Public" name="yae_workchat" />
         <marker scope="Public" name="yae01a" />
         <marker scope="Public" name="yae01b" />
         <marker scope="Public" name="yae02a" />

@@ -551,11 +551,16 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.first = $metaXml.children('first').text();
     this.last = $metaXml.children('last').text();
 
-    // For label and gender, track the original, default value from
-    // meta.xml, the value for the currently selected costume to be
-    // shown on the selection card, and the current in-game value.
+    /* For label, gender, and layers, track the original, default value from
+     * meta.xml (.meta*), the value for the currently selected costume to be
+     * shown on the selection card (.select*), and the current in-game value.
+     * The in-game value for the default costume and the select screen value
+     * for an alternate costume both default to the meta value, and the in-game
+     * value for an alternate costume defaults to the select screen value for
+     * the costume. */
     this.label = this.selectLabel = this.metaLabel = $metaXml.children('label').text();
     this.gender = this.selectGender = this.metaGender = $metaXml.children('gender').text();
+    this.layers = this.selectLayers = this.metaLayers = parseInt($metaXml.children('layers').text(), 10);
 
     var picElem = $metaXml.children('pic');
 
@@ -566,7 +571,6 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.description = fixupDialogue($metaXml.children('description').html());
     this.has_collectibles = $metaXml.children('has_collectibles').text() === "true";
     this.collectibles = null;
-    this.layers = this.selectLayers = this.metaLayers = parseInt($metaXml.children('layers').text(), 10);
     this.default_costume_name = $metaXml.children('default-costume-name').text();
     this.scale = Number($metaXml.children('scale').text()) || 100.0;
     this.release = releaseNumber;
@@ -725,12 +729,12 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
                 'folder': $(elem).attr('folder'),
                 'name': $(elem).text(),
                 'image': $(elem).attr('img'),
-                'gender': $(elem).attr('gender') || this.selectGender,
-                'label': $(elem).attr('label') || this.selectLabel,
+                'gender': $(elem).attr('gender') || this.metaGender,
+                'label': $(elem).attr('label') || this.metaLabel,
                 'set': set,
                 'status': status,
                 'unlocked_by': $(elem).attr('collectible') || '',
-                'layers': parseInt($(elem).attr('layers'), 10) || this.selectLayers,
+                'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
             };
 
             if (set && DEFAULT_COSTUME_SETS.has(set)) {
@@ -1030,7 +1034,7 @@ Opponent.prototype.getRepeatCount = function () {
         return 0;
     }
 
-    return this.repeatLog[this.chosenState.rawDialogue] || 0;
+    return this.repeatLog[this.chosenState.hash] || 0;
 }
 
 /**
@@ -1100,9 +1104,11 @@ Opponent.prototype.loadAlternateCostume = function () {
 
         const legacySize = $xml.children('size').text();
         const gender = $xml.children('gender').text() || this.selectGender;
+        let labels = $xml.children('label');
+        if (labels.length == 0) labels = this.default_costume.labels;
         this.alt_costume = {
             id: $xml.children('id').text(),
-            labels: $xml.children('label'),
+            labels: labels,
             tags: [],
             folder: this.selected_costume,
             folders: $xml.children('folder'),
@@ -1113,7 +1119,9 @@ Opponent.prototype.loadAlternateCostume = function () {
                or the legacy size, copy from the default costume, lastly falling back to the "other" size. */
             penis: $xml.children('penis').text()
                 || (gender === eGender.MALE && (legacySize || this.default_costume.penis
-                                                || this.default_costume.breasts)) || null,
+                                                || this.default_costume.breasts))
+                || (this.isFuta && this.default_costume.penis)
+                || null,
             breasts: $xml.children('breasts').text()
                 || (gender === eGender.FEMALE && (legacySize || this.default_costume.breasts
                                                   || this.default_costume.penis)) || null,
@@ -1581,18 +1589,6 @@ Opponent.prototype.recordTargetedCase = function (caseObj) {
     var lines = new Set();
     caseObj.states.forEach(function (s) {
         lines.add(s.rawDialogue);
-
-        /* Handle the old persist-marker flag by adding all markers set with
-         * persist-marker="true" to the persistentMarkers list.
-         *
-         * TODO: Remove this once all characters using persistent markers
-         * have migrated over to the system in #74.
-         */
-        if (s.legacyPersistentFlag) {
-            s.markers.forEach(function (marker) {
-                this.persistentMarkers[marker.name] = true;
-            }.bind(this));
-        }
     }.bind(this));
 
     entities.forEach(function (ent) {

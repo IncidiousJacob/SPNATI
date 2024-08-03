@@ -1,9 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="leon01" status="unlisted" img="opponents/leon/c-geo_vision.jpg" thumbnail="opponents/leon/c-geo_vision.jpg">
+    <collectible id="leon01" status="online" img="opponents/leon/c-geo_vision.jpg" thumbnail="opponents/leon/c-geo_vision.jpg">
         <title>A Vision of What May Be</title>
         <text>A strange elemental trinket, beckoning otherworldly allies... though perhaps ally is not the right term. </text>
         <unlock>Beat Leon in a game with Hu Tao. </unlock>
         <hide-details>true</hide-details>
+    </collectible>
+    <collectible id="leon02" status="online" img="opponents/leon/leonjacketa.png" thumbnail="opponents/leon/leonjacketa.png">
+        <title>I Jacked It, You Get Jacket</title>
+        <text>A Classic B-3 Sheepskin Leather Bomber Jacket, recovered from Europe. Very comfy and surprisingly slashing resistant. </text>
+        <unlock>Win a game against Leon. </unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing name="Bomber Jacket" generic="jacket" position="upper" type="minor" />
     </collectible>
 </collectibles>

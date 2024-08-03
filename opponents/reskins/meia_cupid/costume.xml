@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <costume>
     <id>meia_cupid</id>
-    <label>Meia</label>
     <tags>
         <tag>alternative_skin</tag>
         <tag remove="true">armor</tag>
@@ -2757,6 +2756,9 @@
         <pose id="2-buttsilent">
             <sprite id="butt" src="reskins/meia_cupid/2-butt.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_cupid/sidemouthsilentsmile.png" x="64" y="271" scaley="1" rotation="-9" />
+        </pose>
+        <pose id="5-blank">
+            <sprite id="headpieceblank" src="reskins/meia_cupid/lip.png" x="0" y="0" alpha="0" rotation="0" />
         </pose>
     </poses>
 

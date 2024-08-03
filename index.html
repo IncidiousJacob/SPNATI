@@ -1915,7 +1915,7 @@
                                             fanfiction story.</p>
                                         <p>The project died out, but it was rediscovered in August 2016 and exploded in
                                             popularity, with new characters being added and the community you see today
-                                            being formed. To date, over 200 characters (in various states of completion)
+                                            being formed. To date, over 450 characters (in various states of completion)
                                             have been made for SPNatI.</p>
                                     </div>
                                 </div>
@@ -1930,7 +1930,7 @@
                                 <div class="faq-question-container">
                                     <h4 class="faq-question">Did Joseph Kantel make all the characters?</h4>
                                     <div class="faq-answer">
-                                        <p>Not at all! SPNatI is an open-source game, and over 130 different people have
+                                        <p>Not at all! SPNatI is an open-source game, and over 200 different people have
                                             contributed to not only the creation of its many characters, but also its
                                             codebase, community, moderation, hosting, documentation, background art,
                                             etc. You can see who's credited for a character by clicking the "Credits"
@@ -3682,6 +3682,12 @@
                                 <span class="game-menu-label">Return to Title</span>
                             </button>
                         <li>
+                        <li><button id="hard-refresh-button" class="dropdown-button-item bordered smooth-button red"
+                                onclick="updateAllGameVisuals()" tabindex="1">
+                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                                <span class="game-menu-label">Refresh Game Visuals</span>
+                            </button>
+                        <li>						
                         <li><button id="game-settings-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showOptionsModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -3700,6 +3706,13 @@
 
                 <!-- Minimal UI Player name label -->
                 <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label">Player</div>
+				
+				<!-- Refresh visuals button -->
+                <button id="table-hard-refresh-button" class="bordered table-hard-refresh-button" onclick="updateAllGameVisuals()" tabindex="5" title="Refresh Images">
+                    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </button>
+            </button>					
             </div>
 
         </div>
