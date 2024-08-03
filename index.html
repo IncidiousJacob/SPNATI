@@ -28,11 +28,6 @@
 
     <!-- Warning / Title Screen -->
     <div id="title-screen" class="screen-container" hidden>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden
-                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
-            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-        </button>
-
         <div class="screen">
             <!-- Title Candy -->
             <img id="left-title-candy" class="title-candy" src="img/blank.png" alt="" hidden />
@@ -234,15 +229,16 @@
             </div>
 
         </div>
+
+        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden
+                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
+            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+        </button>
     </div>
 
 
     <!-- Main Select Screen -->
     <div id="main-select-screen" class="screen-container" hidden>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()"
-                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
-            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-        </button>
         <div class="screen">
             <div id="selection-data-collection-banner-container" hidden>
                 <div id="selection-data-collection-banner-border" class="bordered">
@@ -572,6 +568,10 @@
                 <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </button>
         </div>
+        <button class="bordered background-select-button" onclick="showGameSettingsModal()"
+                data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
+            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+        </button>
     </div>
 
     <div id="individual-select-screen" class="wide-screen-container" hidden>
