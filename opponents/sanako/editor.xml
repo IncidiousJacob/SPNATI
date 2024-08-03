@@ -363,6 +363,9 @@
         <response id="961" opponent="zeke_pandoria" opponentId="896" />
         <response id="969" opponent="natasha" opponentId="303" />
         <response id="977" opponent="darkness" opponentId="593" />
+        <response id="978" opponent="glamrock_chica" opponentId="169" />
+        <response id="979" opponent="darkness" opponentId="619" />
+        <response id="980" opponent="darkness" opponentId="622" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -378,6 +381,7 @@
         <note id="831">Exposition_HeroIntro is used on two different cases, so this reply should work for all four lines, leaving room for a Exposition_RelationshipIntro reply later.</note>
         <note id="919">Stage omitted to reduce layer skipping complexity; this line is still conditional on Meia's marker</note>
         <note id="973">Sanae was once a middle school teacher.</note>
+        <note id="978">Update marker check</note>
     </notes>
     <labels>
         <label id="2" label="sandals" folder="" sort="0" />
@@ -1349,13 +1353,18 @@
         <label id="975" label="" folder="Darkness to left" sort="0" />
         <label id="976" label="" folder="Darkness to right" sort="0" />
         <label id="977" label="" folder="Darkness to left" sort="0" />
+        <label id="978" label="" folder="Glamrock Chica to left" sort="0" />
+        <label id="979" label="" folder="Darkness to left" sort="0" />
+        <label id="980" label="" folder="Darkness to left" sort="0" />
+        <label id="981" label="" folder="Darkness to right" sort="0" />
+        <label id="982" label="" folder="Darkness to right" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
         <prefix>caution</prefix>
     </prefixes>
-    <nextId>977</nextId>
+    <nextId>982</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
@@ -1419,14 +1428,18 @@
         <marker scope="Public" name="sanako_corrin_boys_name" />
         <marker scope="Public" name="sanako_darkness_ds_s1" />
         <marker scope="Public" name="sanako_darkness_ds_s2" />
+        <marker scope="Public" name="sanako_darkness_ds_s3" />
         <marker scope="Public" name="sanako_darkness_ds_s4" />
         <marker scope="Public" name="sanako_darkness_ds_s5" />
+        <marker scope="Public" name="sanako_darkness_ds_s6" />
         <marker scope="Public" name="sanako_darkness_sd_d1" />
         <marker scope="Public" name="sanako_darkness_sd_d2" />
         <marker scope="Public" name="sanako_darkness_sd_d3" />
+        <marker scope="Public" name="sanako_darkness_sd_d4" />
         <marker scope="Public" name="sanako_darkness_sd_s1" />
         <marker scope="Public" name="sanako_darkness_sd_s2" />
         <marker scope="Public" name="sanako_darkness_sd_s3" />
+        <marker scope="Public" name="sanako_darkness_sd_s4" />
         <marker scope="Public" name="sanako_dash_finished" />
         <marker scope="Public" name="sanako_dash_sports_question" />
         <marker scope="Public" name="sanako_drama_club_costumes">Sanako thinks a princess is just in costume.</marker>
@@ -1444,6 +1457,7 @@
         <marker scope="Public" name="sanako_galatea_turn" />
         <marker scope="Public" name="sanako_game_start_master" />
         <marker scope="Public" name="sanako_glamrock_gs_s1" />
+        <marker scope="Public" name="sanako_glamrock_gs_s2" />
         <marker scope="Public" name="sanako_grass_ticklish" />
         <marker scope="Public" name="sanako_haunted_forest_ghostly_chill" />
         <marker scope="Public" name="sanako_holiday_lodge_defeat" />
