@@ -39,6 +39,7 @@ namespace SPNATI_Character_Editor.Activities
 			valLayer.Value = _character.Metadata.Z;
 			cboDialogueLayer.SelectedItem = _character.Metadata.BubblePosition;
 			cboFontSize.SelectedItem = _character.Metadata.TextSize;
+			chkShort.Checked = _character.Metadata.ShortGameTested;
 			gridNicknames.Data = _character.Nicknames;
 			LoadNicknames();
 			styleControl.SetCharacter(_character);
@@ -66,6 +67,7 @@ namespace SPNATI_Character_Editor.Activities
 			_character.Metadata.BubblePosition = (DialogueLayer)cboDialogueLayer.SelectedItem;
 			_character.Metadata.TextSize = (FontSize)cboFontSize.SelectedItem;
 			_character.Metadata.Z = (int)valLayer.Value;
+			_character.Metadata.ShortGameTested = chkShort.Checked;
 			gridLabels.Save(colLabelsStage);
 			SaveNicknames();
 			styleControl.Save();

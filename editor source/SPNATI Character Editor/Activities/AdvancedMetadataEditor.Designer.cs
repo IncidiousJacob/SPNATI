@@ -61,6 +61,7 @@
             this.skinnedGroupBox3 = new Desktop.Skinning.SkinnedGroupBox();
             this.styleControl = new SPNATI_Character_Editor.Controls.StyleControl();
             this.skinnedLabel1 = new Desktop.Skinning.SkinnedLabel();
+            this.chkShort = new Desktop.Skinning.SkinnedCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.valScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLabels)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valLayer)).BeginInit();
@@ -254,6 +255,7 @@
             // skinnedGroupBox1
             // 
             this.skinnedGroupBox1.BackColor = System.Drawing.Color.White;
+            this.skinnedGroupBox1.Controls.Add(this.chkShort);
             this.skinnedGroupBox1.Controls.Add(this.cboFontSize);
             this.skinnedGroupBox1.Controls.Add(this.skinnedLabel2);
             this.skinnedGroupBox1.Controls.Add(this.gridLabels);
@@ -270,7 +272,7 @@
             this.skinnedGroupBox1.Name = "skinnedGroupBox1";
             this.skinnedGroupBox1.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.skinnedGroupBox1.ShowIndicatorBar = false;
-            this.skinnedGroupBox1.Size = new System.Drawing.Size(420, 248);
+            this.skinnedGroupBox1.Size = new System.Drawing.Size(420, 277);
             this.skinnedGroupBox1.TabIndex = 94;
             this.skinnedGroupBox1.TabStop = false;
             this.skinnedGroupBox1.Text = "Advanced Metadata";
@@ -315,11 +317,11 @@
             this.skinnedGroupBox2.Controls.Add(this.label3);
             this.skinnedGroupBox2.Highlight = Desktop.Skinning.SkinnedHighlight.Heading;
             this.skinnedGroupBox2.Image = null;
-            this.skinnedGroupBox2.Location = new System.Drawing.Point(6, 260);
+            this.skinnedGroupBox2.Location = new System.Drawing.Point(6, 289);
             this.skinnedGroupBox2.Name = "skinnedGroupBox2";
             this.skinnedGroupBox2.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.skinnedGroupBox2.ShowIndicatorBar = false;
-            this.skinnedGroupBox2.Size = new System.Drawing.Size(420, 284);
+            this.skinnedGroupBox2.Size = new System.Drawing.Size(420, 294);
             this.skinnedGroupBox2.TabIndex = 95;
             this.skinnedGroupBox2.TabStop = false;
             this.skinnedGroupBox2.Text = "Nicknames";
@@ -372,7 +374,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridOtherNicknames.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridOtherNicknames.RowHeadersVisible = false;
-            this.gridOtherNicknames.Size = new System.Drawing.Size(165, 235);
+            this.gridOtherNicknames.Size = new System.Drawing.Size(165, 245);
             this.gridOtherNicknames.TabIndex = 3;
             // 
             // ColOtherNickname
@@ -429,7 +431,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridNicknames.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridNicknames.RowHeadersVisible = false;
-            this.gridNicknames.Size = new System.Drawing.Size(231, 235);
+            this.gridNicknames.Size = new System.Drawing.Size(231, 245);
             this.gridNicknames.TabIndex = 2;
             // 
             // ColCharacter
@@ -499,12 +501,23 @@
             this.skinnedLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.skinnedLabel1.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.skinnedLabel1.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.skinnedLabel1.Location = new System.Drawing.Point(3, 547);
+            this.skinnedLabel1.Location = new System.Drawing.Point(3, 586);
             this.skinnedLabel1.Name = "skinnedLabel1";
-            this.skinnedLabel1.Size = new System.Drawing.Size(423, 64);
+            this.skinnedLabel1.Size = new System.Drawing.Size(423, 36);
             this.skinnedLabel1.TabIndex = 97;
             this.skinnedLabel1.Text = "To assign a nickname mid-game, set a per-target marker named \"nickname\" on a case" +
     " where the desired character is the target.";
+            // 
+            // chkShort
+            // 
+            this.chkShort.AutoSize = true;
+            this.chkShort.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.chkShort.Location = new System.Drawing.Point(133, 247);
+            this.chkShort.Name = "chkShort";
+            this.chkShort.Size = new System.Drawing.Size(273, 17);
+            this.chkShort.TabIndex = 97;
+            this.chkShort.Text = "Character tested for the Short Game Mode";
+            this.chkShort.UseVisualStyleBackColor = true;
             // 
             // AdvancedMetadataEditor
             // 
@@ -556,5 +569,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colLabelsLabel;
         private Desktop.Skinning.SkinnedComboBox cboFontSize;
         private Desktop.Skinning.SkinnedLabel skinnedLabel2;
+        private Desktop.Skinning.SkinnedCheckBox chkShort;
     }
 }

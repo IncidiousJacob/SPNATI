@@ -141,6 +141,14 @@ namespace SPNATI_Character_Editor
 			set { Set(value); }
 		}
 
+		[DefaultValue(false)]
+		[XmlElement("short-game-tested")]
+		public bool ShortGameTested
+		{
+			get { return Get<bool>(); }
+			set { Set(value); }
+		}
+
 		/// <summary>
 		/// Count of unique text across all lines
 		/// </summary>
