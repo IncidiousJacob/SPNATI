@@ -25,6 +25,7 @@ namespace SPNATI_Character_Editor.Controls
 		#region Events
 		public new event EventHandler<KeyEventArgs> KeyDown;
 		public event EventHandler<int> TextUpdated;
+		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
 		#endregion
 
@@ -640,6 +641,10 @@ namespace SPNATI_Character_Editor.Controls
 			else if (e.ColumnIndex == ColText.Index)
 			{
 				TextUpdated?.Invoke(this, e.RowIndex);
+			}
+			else if (e.ColumnIndex == ColImage.Index)
+			{
+				PoseUpdated?.Invoke(this, e.RowIndex);
 			}
 		}
 

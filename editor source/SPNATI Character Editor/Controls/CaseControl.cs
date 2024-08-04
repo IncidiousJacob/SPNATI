@@ -23,6 +23,7 @@ namespace SPNATI_Character_Editor.Controls
 		private List<int> _selectedIndices = new List<int>();
 
 		public event EventHandler<DialogueLine> TextUpdated;
+		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
 		public event EventHandler<int> SelectionUpdated;
 
@@ -62,6 +63,7 @@ namespace SPNATI_Character_Editor.Controls
 			gridStages.CheckedChanged += Check_CheckedChanged;
 			gridStages.LayerSelected += GridStages_LayerSelected;
 			gridDialogue.TextUpdated += GridDialogue_TextUpdated;
+			gridDialogue.PoseUpdated += GridDialogue_PoseUpdated;
 			gridDialogue.SelectionUpdated += GridDialogue_SelectionUpdated;
 		}
 
@@ -163,6 +165,11 @@ namespace SPNATI_Character_Editor.Controls
 		private void GridDialogue_TextUpdated(object sender, int e)
 		{
 			TextUpdated?.Invoke(this, gridDialogue.GetLine(e));
+		}
+
+		private void GridDialogue_PoseUpdated(object sender, int e)
+		{
+			PoseUpdated?.Invoke(this, e);
 		}
 
 		private void GridDialogue_SelectionUpdated(object sender, int e)

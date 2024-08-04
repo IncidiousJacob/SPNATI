@@ -25,6 +25,7 @@ namespace SPNATI_Character_Editor.Controls
 		#region Events
 		public new event EventHandler<KeyEventArgs> KeyDown;
 		public event EventHandler<int> TextUpdated;
+		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
 		public event EventHandler<int> SelectionUpdated;
 		#endregion
@@ -635,18 +636,19 @@ namespace SPNATI_Character_Editor.Controls
 		private void gridDialogue_CellValueChanged(object sender, DataGridViewCellEventArgs e)
 		{
 			if (_modifyingLine) { return; }
-			if (e.ColumnIndex == 0)
-			{
-				SelectRow(e.RowIndex);
-			}
-			else if (e.ColumnIndex == ColText.Index)
-			{
-				TextUpdated?.Invoke(this, e.RowIndex);
-			}
 			if (e.ColumnIndex == ColSelect.Index)
 			{
 				SelectionUpdated?.Invoke(this, e.RowIndex);
 			}
+			else if (e.ColumnIndex == ColText.Index)
+			{
+				TextUpdated?.Invoke(this, e.RowIndex);
+			} 
+			else if (e.ColumnIndex == ColImage.Index)
+			{
+				PoseUpdated?.Invoke(this, e.RowIndex);
+			}
+
 		}
 
 		private void gridDialogue_CurrentCellDirtyStateChanged(object sender, EventArgs e)
