@@ -37,6 +37,7 @@ var SPECIAL_CASE_NAMES = {
     "yshtola": "Y'shtola",
     "yuna_ffx": "Yuna (FFX)",
     "yuno_uno": "Yuno",
+    "yusei_fudo": "Yusei",
     "zeke_pandoria": "Zeke and Pandoria",
 
     // disambiguation
