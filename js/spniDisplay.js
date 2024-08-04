@@ -1188,6 +1188,7 @@ function MainSelectScreenDisplay (slot) {
     this.layerIcon = $('#select-layer-'+slot);
     this.genderIcon = $('#select-gender-'+slot);
     this.statusIcon = $('#select-status-'+slot);
+    this.modeIcon = $('#select-mode-'+slot);
     
     this.targetSuggestionsShown = false;
     this.targetSuggestions = Array(4);
@@ -1309,6 +1310,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
     updateGenderIcon(this.genderIcon, player);
 
     this.statusIcon.hide();
+    this.modeIcon.hide();
 }
 
 MainSelectScreenDisplay.prototype.onSingleSuggestionSelected = function () {
@@ -1401,6 +1403,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         this.layerIcon.hide();
         this.genderIcon.hide();
         this.statusIcon.hide();
+        this.modeIcon.hide();
 
         return;
     }
@@ -1536,6 +1539,7 @@ function OpponentSelectionCard (opponent) {
     this.layerIcon = $(sidebarElem.appendChild(createElementWithClass('img', 'layer-icon')));
     this.genderIcon = $(sidebarElem.appendChild(createElementWithClass('img', 'gender-icon')));
     this.statusIcon = $(sidebarElem.appendChild(createElementWithClass('img', 'status-icon')));
+    this.modeIcon = $(sidebarElem.appendChild(createElementWithClass('img', 'mode-icon')));
     
     var footerElem = this.mainElem.appendChild(createElementWithClass('div', 'selection-card-footer'));
     this.label = $(footerElem.appendChild(createElementWithClass('div', 'selection-card-label selection-card-name')));
@@ -1558,8 +1562,13 @@ function OpponentSelectionCard (opponent) {
 OpponentSelectionCard.prototype = Object.create(OpponentDisplay.prototype);
 OpponentSelectionCard.prototype.constructor = OpponentSelectionCard;
 
+OpponentSelectionCard.prototype.updateModeIcon = function () {    
+    updateModeIcon(this.modeIcon, this.opponent);
+}
+
 OpponentSelectionCard.prototype.update = function () {    
     updateStatusIcon(this.statusIcon, this.opponent);
+    updateModeIcon(this.modeIcon, this.opponent);
 
     this.layerIcon.attr({
         src: "img/layers" + this.opponent.selectLayers + ".svg",

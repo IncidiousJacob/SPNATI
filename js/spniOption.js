@@ -533,6 +533,9 @@ function setUITheme (scheme) {
 
 $('ul[data-option="short-game"]').on('click', 'a', function() {
     SHORT_GAME_MODE = $(this).attr('data-value') == "true";
+    loadedOpponents.forEach((opp) => 
+        {if (opp.selectionCard) 
+            opp.selectionCard.updateModeIcon();});
 });
 
 $('ul[data-option="auto-fade"]').on('click', 'a', function() {

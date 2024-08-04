@@ -2599,7 +2599,7 @@ ul.dropdown-menu>li {
     right: 0;
     left: 75%;
     top: 0;
-    bottom: 25%;
+    bottom: 0%;
 
     padding: 2% 2.5%;
 
@@ -2625,6 +2625,11 @@ ul.dropdown-menu>li {
 }
 
 .selection-card-sidebar .status-icon {
+    opacity: 0.50;
+    margin-top: 3%;
+}
+
+.selection-card-sidebar .mode-icon {
     opacity: 0.50;
     margin-top: 3%;
 }
@@ -3503,6 +3508,19 @@ ul.dropdown-menu>li {
 }
 
 .status-icon:hover {
+    opacity: 1.0;
+}
+
+.mode-icon {
+    position: absolute;
+    opacity: 0.60;
+    width: 25%;
+    right: 0;
+    top: 26%;
+    pointer-events: auto;
+}
+
+.mode-icon:hover {
     opacity: 1.0;
 }
 

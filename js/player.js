@@ -571,6 +571,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.description = fixupDialogue($metaXml.children('description').html());
     this.has_collectibles = $metaXml.children('has_collectibles').text() === "true";
     this.collectibles = null;
+    this.shortGameTested = $metaXml.children('short-game-tested').text() === "true";
     this.default_costume_name = $metaXml.children('default-costume-name').text();
     this.scale = Number($metaXml.children('scale').text()) || 100.0;
     this.release = releaseNumber;
