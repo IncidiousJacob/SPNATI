@@ -343,7 +343,7 @@ This line is a placeholder while Schezo's line comes.</note>
         <label id="334" label="Sandals" folder="Summer Costume" sort="4" />
         <label id="335" label="Sandals" folder="Summer Costume" sort="12" />
         <label id="402" label="" color="4" folder="" sort="0" />
-        <label id="403" label="" color="12" folder="Target: Schezo" sort="0" />
+        <label id="403" label="" folder="Target: Schezo" sort="0" />
         <label id="395" label="" color="3" folder="SkySmash132 sponsorship" sort="12" />
         <label id="396" label="" color="3" folder="SkySmash132 sponsorship" sort="6" />
         <label id="340" label="" folder="Sequences" sort="8" />
@@ -398,8 +398,8 @@ This line is a placeholder while Schezo's line comes.</note>
         <label id="400" label="" color="3" folder="SkySmash132 sponsorship" sort="19" />
         <label id="401" label="" color="4" folder="" sort="0" />
         <label id="404" label="" color="12" folder="" sort="0" />
-        <label id="405" label="" color="12" folder="Target: Schezo" sort="0" />
-        <label id="406" label="" color="12" folder="Target: Schezo" sort="0" />
+        <label id="405" label="" folder="Target: Schezo" sort="0" />
+        <label id="406" label="" folder="Target: Schezo" sort="0" />
         <label id="407" label="" folder="Target: Darkness" sort="8" />
         <label id="408" label="" color="12" folder="Target: Darkness" sort="9" />
         <label id="409" label="4 - hangInThere3" color="12" folder="Target: Darkness&gt;Stage 4" sort="0" />
@@ -421,7 +421,7 @@ This line is a placeholder while Schezo's line comes.</note>
         <label id="423" label="" folder="Tweetsie12 sponsorship" sort="0" />
         <label id="424" label="" folder="Tweetsie12 sponsorship" sort="0" />
         <label id="425" label="" color="12" folder="Target: Darkness" sort="0" />
-        <label id="426" label="Yusei 1" folder="TeamTwo sponsorship" sort="0" />
+        <label id="426" label="" folder="TeamTwo sponsorship" sort="0" />
         <label id="427" label="" color="12" folder="Target: Darkness" sort="0" />
         <label id="428" label="" folder="SkySmash132 sponsorship" sort="0" />
         <label id="429" label="" folder="Basics" sort="0" />
@@ -440,8 +440,16 @@ This line is a placeholder while Schezo's line comes.</note>
         <label id="443" label="" folder="Target: Schezo" sort="0" />
         <label id="444" label="" folder="Target: Schezo" sort="0" />
         <label id="445" label="" folder="Target: Schezo" sort="0" />
+        <label id="446" label="" color="10" folder="Sequences" sort="0" />
+        <label id="447" label="" folder="Early Tags" sort="0" />
+        <label id="448" label="" folder="Target: Schezo" sort="0" />
+        <label id="449" label="" folder="Target: Schezo" sort="0" />
+        <label id="450" label="" color="12" folder="Target: Schezo" sort="0" />
+        <label id="451" label="" color="12" folder="Target: Schezo" sort="0" />
+        <label id="452" label="" color="12" folder="Target: Schezo" sort="0" />
+        <label id="453" label="" color="12" folder="Target: Schezo" sort="0" />
     </labels>
-    <nextId>445</nextId>
+    <nextId>453</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background related markers.</marker>
@@ -474,6 +482,7 @@ This line is a placeholder while Schezo's line comes.</note>
         <marker scope="Public" name="F_IdolEarly" />
         <marker scope="Public" name="F_RobotDR" />
         <marker scope="Public" name="F_RobotEarly" />
+        <marker scope="Public" name="F_ygoEarly" />
         <marker scope="Private" name="L_">Linked dialogue that form sequences.</marker>
         <marker scope="Public" name="L_BigRisk" />
         <marker scope="Public" name="L_ChestExposed" />
@@ -529,6 +538,9 @@ This line is a placeholder while Schezo's line comes.</note>
         <marker scope="Public" name="S_ShortsWater" />
         <marker scope="Public" name="S_Towel" />
         <marker scope="Public" name="S_WhatILove" />
+        <marker scope="Public" name="schezo_r02magic" />
+        <marker scope="Public" name="schezo_rFrogs" />
+        <marker scope="Public" name="schezo_rFrogsAlt" />
         <marker scope="Private" name="T_">Lines that target other characters.</marker>
         <marker scope="Public" name="T_AquaRecord" />
         <marker scope="Public" name="T_BrockStart" />
@@ -801,6 +813,7 @@ This line is a placeholder while Schezo's line comes.</note>
         <marker scope="Public" name="TO_Schezo_01a" />
         <marker scope="Public" name="TO_Schezo_01Streak" />
         <marker scope="Public" name="TO_Schezo_02" />
+        <marker scope="Public" name="TO_Schezo_02magic" />
         <marker scope="Public" name="TO_Schezo_02Ringo" />
         <marker scope="Public" name="TO_Schezo_02Streak" />
         <marker scope="Public" name="TO_Schezo_03" />
@@ -810,6 +823,8 @@ This line is a placeholder while Schezo's line comes.</note>
         <marker scope="Public" name="TO_Schezo_11a" />
         <marker scope="Public" name="TO_Schezo_12" />
         <marker scope="Public" name="TO_Schezo_12Hifumi" />
+        <marker scope="Public" name="TO_Schezo_13" />
+        <marker scope="Public" name="TO_Schezo_13Hifumi" />
         <marker scope="Public" name="TO_Sweetheart_01">Sweetheart Must Strip Stage 0</marker>
         <marker scope="Public" name="TO_Tifa_01" />
         <marker scope="Public" name="TO_Velvet_01" />
@@ -823,6 +838,7 @@ This line is a placeholder while Schezo's line comes.</note>
         <marker scope="Public" name="TO_Zeke_33" />
         <marker scope="Public" name="TO_Zeke_33a" />
         <marker scope="Public" name="TO_Zeke_33b" />
+        <marker scope="Public" name="yusei_rPostswim" />
         <marker scope="Private" name="Z_">Intenal state. Vast majority of this will only be relevant to Aoi herself.</marker>
         <marker scope="Public" name="Z_Finished" />
         <marker scope="Public" name="Z_GamesPlayed" />
