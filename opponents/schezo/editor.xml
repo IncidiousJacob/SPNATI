@@ -132,6 +132,12 @@
         <response id="426" opponent="aoi_asahina" opponentId="406" />
         <response id="427" opponent="aoi_asahina" opponentId="405" />
         <response id="429" opponent="yusei_fudo" opponentId="139" />
+        <response id="433" opponent="aoi_asahina" opponentId="318" />
+        <response id="434" opponent="yusei_fudo" opponentId="170" />
+        <response id="437" opponent="aoi_asahina" opponentId="450" />
+        <response id="438" opponent="aoi_asahina" opponentId="451" />
+        <response id="439" opponent="aoi_asahina" opponentId="452" />
+        <response id="440" opponent="aoi_asahina" opponentId="453" />
     </responses>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -462,8 +468,8 @@
         <label id="365" label="Cosplayer" folder="Targets&gt; Hina" sort="68" />
         <label id="366" label="Win Streak" folder="Targets&gt; Hina" sort="82" />
         <label id="367" label="" folder="Targets" sort="0" />
-        <label id="368" label="Win Streak" folder="Targets" sort="96" />
-        <label id="369" label="Win Streak Sus" folder="Targets" sort="97" />
+        <label id="368" label="Win Streak" folder="Targets&gt; Hina" sort="96" />
+        <label id="369" label="Win Streak Sus" folder="Targets&gt; Hina" sort="97" />
         <label id="370" label="" folder="BG Reaction" sort="12" />
         <label id="371" label="Sword A1" folder="Targets" sort="149" />
         <label id="372" label="Sword B1" folder="Targets" sort="150" />
@@ -482,7 +488,7 @@
         <label id="385" label="No Kazuma" folder="Targets" sort="154" />
         <label id="386" label="Yes There's Kazuma" folder="Targets" sort="155" />
         <label id="388" label="Cosplayer" folder="Targets&gt; Hina" sort="83" />
-        <label id="389" label="Cosplayer" folder="Targets" sort="92" />
+        <label id="389" label="Cosplayer" folder="Targets&gt; Hina" sort="92" />
         <label id="390" label="" folder="Targets" sort="123" />
         <label id="391" label="" folder="Targets" sort="0" />
         <label id="392" label="" folder="Targets" sort="130" />
@@ -508,17 +514,25 @@
         <label id="412" label="" folder="Targets&gt; Player" sort="0" />
         <label id="413" label="" folder="Targets&gt; Player" sort="3" />
         <label id="414" label="" folder="Targets&gt; Player" sort="4" />
-        <label id="421" label="Why Frog? A" color="1" folder="Targets" sort="0" />
-        <label id="422" label="Why Frog? B" color="1" folder="Targets" sort="0" />
-        <label id="425" label="About Magic" color="1" folder="Targets&gt; Hina" sort="0" />
-        <label id="426" label="What's Fanfiction?" color="1" folder="Targets&gt; Hina" sort="0" />
-        <label id="427" label="Bad Habit" color="1" folder="Targets&gt; Hina" sort="0" />
+        <label id="421" label="Why Frog? A" folder="Targets" sort="0" />
+        <label id="422" label="Why Frog? B" folder="Targets" sort="0" />
+        <label id="425" label="About Magic" folder="Targets&gt; Hina" sort="0" />
+        <label id="426" label="What's Fanfiction?" folder="Targets&gt; Hina" sort="0" />
+        <label id="427" label="Bad Habit" folder="Targets&gt; Hina" sort="0" />
         <label id="428" label="Scar Incident 2" folder="Stories" sort="0" />
         <label id="429" label="What a buzzkill" folder="Targets" sort="0" />
         <label id="431" label="What a buzzkill B" folder="Targets" sort="0" />
         <label id="432" label="" color="1" folder="Targets" sort="0" />
+        <label id="433" label="" folder="Multi" sort="0" />
+        <label id="434" label="" color="1" folder="Targets" sort="0" />
+        <label id="435" label="" color="1" folder="Targets" sort="0" />
+        <label id="437" label="About Magic" folder="Targets&gt; Hina" sort="0" />
+        <label id="438" label="Bad Habit" folder="Targets&gt; Hina" sort="0" />
+        <label id="439" label="What's Fanfiction?" folder="Targets&gt; Hina" sort="0" />
+        <label id="440" label="About Magic Sus" folder="Targets&gt; Hina" sort="0" />
+        <label id="441" label="Sus Magic Late" folder="Targets&gt; Hina" sort="0" />
     </labels>
-    <nextId>432</nextId>
+    <nextId>441</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
@@ -633,6 +647,7 @@
         <marker scope="Public" name="ragnus_mention" />
         <marker scope="Public" name="ringos_magic" />
         <marker scope="Public" name="running_away" />
+        <marker scope="Public" name="schez_sussy" />
         <marker scope="Public" name="schezo" />
         <marker scope="Public" name="schezo_" />
         <marker scope="Public" name="schezo__darkness_ironicName3" />
@@ -640,13 +655,18 @@
         <marker scope="Public" name="schezo_aoi_cosplayer1a" />
         <marker scope="Public" name="schezo_aoi_cosplayer2" />
         <marker scope="Public" name="schezo_aoi_cosplayer3" />
+        <marker scope="Public" name="schezo_aoi_darkmagic1" />
         <marker scope="Public" name="schezo_aoi_hifumi1" />
         <marker scope="Public" name="schezo_aoi_hifumi2" />
+        <marker scope="Public" name="schezo_aoi_hifumi3" />
         <marker scope="Public" name="schezo_aoi_magic1" />
         <marker scope="Public" name="schezo_aoi_magic2" />
         <marker scope="Public" name="schezo_aoi_magic2sus" />
+        <marker scope="Public" name="schezo_aoi_magic3sus" />
+        <marker scope="Public" name="schezo_aoi_magic4sus" />
         <marker scope="Public" name="schezo_aoi_vocab1" />
         <marker scope="Public" name="schezo_aoi_vocab2" />
+        <marker scope="Public" name="schezo_aoi_vocab3" />
         <marker scope="Public" name="schezo_arle_teasing1" />
         <marker scope="Public" name="schezo_arle_teasing2" />
         <marker scope="Public" name="schezo_arlenaked1" />
@@ -724,6 +744,7 @@
         <marker scope="Public" name="schezo_yusei_classyperving" />
         <marker scope="Public" name="schezo_yusei_classyperving_shy" />
         <marker scope="Public" name="schezo_yusei_summoning1" />
+        <marker scope="Public" name="schezo_yusei_summoning2" />
         <marker scope="Public" name="schezo_zekeandpandyA" />
         <marker scope="Public" name="schezo_zekeandpandyA2" />
         <marker scope="Public" name="schezo_zekeandpandyB" />
