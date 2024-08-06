@@ -540,6 +540,7 @@
         <response id="1935" opponent="chara_dreemurr" opponentId="57" />
         <response id="1936" opponent="chara_dreemurr" opponentId="453" />
         <response id="1937" opponent="chara_dreemurr" opponentId="664" />
+        <response id="1950" opponent="sanako" opponentId="191" />
     </responses>
     <notes>
         <note id="401">This is a special version of this line for Fluttershy to react to, but it uses the regular marker to allow for replied from anyone.
@@ -571,6 +572,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <note id="620">This line retains its naturally-higher priority to play over the similar line with one fewer condition.</note>
         <note id="1783">+1 priority over Hand=Any line with the same conditions</note>
         <note id="1792">Nagisa is taking a photo with Mahiru.</note>
+        <note id="551">I figure Nagisa is trying to distract herself here by going on talking. I think this is more interesting that focusing on her clothes or her embarrassment. Plus even she might be willing to display a rat skull if it meant good luck in this situation!</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Waitress" sort="30" />
@@ -2449,14 +2451,16 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="1947" label="fantasy 7" folder="" sort="0" />
         <label id="1948" label="fantasy 8" folder="" sort="0" />
         <label id="1949" label="fantasy 9" folder="" sort="0" />
+        <label id="1950" label="" folder="Sanako to left" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue</prefix>
         <prefix>collectible</prefix>
         <prefix>x-</prefix>
     </prefixes>
-    <nextId>1949</nextId>
+    <nextId>1950</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="nagisa_9s_are_you_lost" />
         <marker scope="Public" name="nagisa_9s_n9_91" />
         <marker scope="Public" name="nagisa_9s_n9_n1" />
@@ -4470,6 +4474,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_sanako_sn_s9" />
         <marker scope="Public" name="nagisa_sanako_sorry_for_winning" />
         <marker scope="Public" name="nagisa_sanako_uniform_cute" />
+        <marker scope="Public" name="nagisa_sanako_video_games" />
         <marker scope="Public" name="nagisa_sanako_weird" />
         <marker scope="Public" name="nagisa_sans_the_knockening" />
         <marker scope="Public" name="nagisa_sayla_cant_give_up" />
