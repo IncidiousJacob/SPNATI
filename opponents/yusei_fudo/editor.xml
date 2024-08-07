@@ -4,10 +4,13 @@
     <height />
     <age>20</age>
     <pronunciation>you-sei</pronunciation>
-    <othernotes>TARGETING NOTE: ALWAYS CHECK WHAT COSTUME HE IS IN&lt;br&gt;He brings his duel disk with him as stage 0 in his default 'Junk Warrior' costume&lt;br&gt;He wears his bike helmet as stage 0 in his 'Speed Warrior' costume&lt;br&gt;&lt;br&gt;The main character of 5Ds and one of the Signers, bearing a mark of an ancient being known as the Crimson Dragon (in SPNATI, he has the Dragon's Head on his arm, placing him as post Season 2. he was originally given the mark of the Tail.)&lt;br&gt;&lt;br&gt;5Ds is the third series of Yu-Gi-Oh! and is the one famous for the "card games on motorcycles" meme, which honestly does a disservice for how awesome and even crazier the series gets.&lt;br&gt;&lt;br&gt;He is calm and serious, and fiercely smart - it is said that his game plan typically involves going through flowcharts in his head for how to best use his cards for his current hand and deck. He is also incredibly kind and is the heart of his team, being the one who brings a lot of different people together.&lt;br&gt;&lt;br&gt;Starts out living in a slum named Satellite outside of Neo Domino City. Spends a brief time in jail, where he gets the criminal mark on his face. He's later released, confronts his old friend-turned-rival Jack Atlas (the current "king of games"), beats him in a card game on motorcycles to recover his Stardust Dragon card, and becomes a hero through a lot more plot. Thanks to his tie to the Crimson Dragon, Yusei, Jack, and other characters have to work together to save the world.&lt;br&gt;&lt;br&gt;He is technically and mechanically proficient, able to work on his own Duel Disk, his D-Wheel (his motorcycle), and the bikes of others when he works as a mechanic.&lt;br&gt;&lt;br&gt;Makes use of a Duel Monsters deck that revolves around Syncro Summoning, with signature cards Junk Warrior and Stardust Dragon. In-universe, his deck has been mostly salvaged from other discarded 'junk' cards, and appropriately enough he has 'scrap' themed monsters, spells and traps. However, due to his connection to the Crimson Dragon, his other signature cards are Stardust Dragon and related cards.&lt;br&gt;&lt;br&gt;To reflect his level of skill I have given him Good AI for all layers, however for the sake of game balance he will lower his own AI level for a few stages if he is winning by too much (here defined as being in the same layer for 5 and then 10 rounds).</othernotes>
+    <othernotes>TARGETING NOTE: ALWAYS CHECK WHAT COSTUME HE IS IN&lt;br&gt;He brings his duel disk with him as stage 0 in his default 'Junk Warrior' costume&lt;br&gt;He wears his bike helmet as stage 0 in his 'Speed Warrior' costume&lt;br&gt;&lt;br&gt;The main character of 5Ds and one of the Signers, bearing a mark of an ancient being known as the Crimson Dragon (in SPNATI, he has the Dragon's Head on his arm, placing him as post Season 2. he was originally given the mark of the Tail.)&lt;br&gt;&lt;br&gt;5Ds is the third series of Yu-Gi-Oh! and is the one famous for the "card games on motorcycles" meme, which honestly does a disservice for how awesome and even crazier the series gets.&lt;br&gt;&lt;br&gt;He is calm and serious, and fiercely smart - it is said that his game plan typically involves going through flowcharts in his head for how to best use his cards for his current hand and deck. He is also incredibly kind and is the heart of his team, being the one who brings a lot of different people together.&lt;br&gt;&lt;br&gt;Starts out living in a slum named Satellite outside of Neo Domino City. Spends a brief time in jail, where he gets the criminal mark on his face. He's later released, confronts his old friend-turned-rival JackAtlas (the current "king of games"), beats him in a card game on motorcycles to recover his Stardust Dragon card, and becomes a hero through a lot more plot. Thanks to his tie to the Crimson Dragon, Yusei, Jack, and other characters have to work together to save the world.&lt;br&gt;&lt;br&gt;He is technically and mechanically proficient, able to work on his own Duel Disk, his D-Wheel (his motorcycle), and the bikes of others when he works as a mechanic.&lt;br&gt;&lt;br&gt;Makes use of a Duel Monsters deck that revolves around Syncro Summoning, with signature cards Junk Warrior and Stardust Dragon. In-universe, his deck has been mostly salvaged from other discarded 'junk' cards, and appropriately enough he has 'scrap' themed monsters, spells and traps. However, due to his connection to the Crimson Dragon, his other signature cards are Stardust Dragon and related support cards.&lt;br&gt;&lt;br&gt;To reflect his level of skill I have given him Good AI for all layers, however for the sake of game balance he will lower his own AI level for a few stages if he is winning by too much (here defined as being in the same layer for 5 and then 10 rounds).</othernotes>
     <noteworthy>
         <case name="It's Time To... Duel?" id="60" priority="FYI" min="0" max="0">
             <description>If Yusei is in his default outfit and Chazz is present, he will start playing Duel Monsters (Yu-Gi-Oh!) before realizing the mistake.</description>
+        </case>
+        <case name="Yusei's Birthday 7/7" id="200" priority="FYI" min="0" max="3">
+            <description>The 7th of July is Yusei's canonical birthday!</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -35,6 +38,15 @@
         <response id="174" opponent="meia" opponentId="2084" />
         <response id="179" opponent="jura" opponentId="949" />
         <response id="181" opponent="kyoko_kirigiri" opponentId="25" />
+        <response id="192" opponent="zeke_pandoria" opponentId="907" />
+        <response id="193" opponent="zeke_pandoria" opponentId="910" />
+        <response id="194" opponent="zeke_pandoria" opponentId="913" />
+        <response id="195" opponent="zeke_pandoria" opponentId="908" />
+        <response id="196" opponent="zeke_pandoria" opponentId="911" />
+        <response id="197" opponent="zeke_pandoria" opponentId="914" />
+        <response id="199" opponent="meia" opponentId="6" />
+        <response id="202" opponent="jura" opponentId="14" />
+        <response id="203" opponent="petra" opponentId="142" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -210,21 +222,42 @@
         <label id="167" label="" color="1" folder="Targets&gt;Darkness" sort="2" />
         <label id="168" label="" color="1" folder="Targets&gt;Darkness" sort="3" />
         <label id="169" label="" folder="Targets&gt;Schezo" sort="0" />
-        <label id="170" label="" color="1" folder="Targets&gt;Schezo" sort="3" />
-        <label id="171" label="" color="1" folder="Targets&gt;Schezo" sort="4" />
+        <label id="170" label="" color="3" folder="Targets&gt;Schezo" sort="3" />
+        <label id="171" label="" color="3" folder="Targets&gt;Schezo" sort="4" />
         <label id="172" label="" folder="Responses" sort="0" />
         <label id="173" label="" folder="Targets" sort="22" />
         <label id="174" label="" color="4" folder="Responses&gt;Meia&gt;Speed Warrior" sort="0" />
         <label id="175" label="" color="4" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="0" />
         <label id="176" label="" color="4" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="0" />
-        <label id="177" label="" color="1" folder="Targets&gt;Jura" sort="2" />
-        <label id="178" label="" color="1" folder="Targets&gt;Jura&gt;Santa" sort="0" />
-        <label id="179" label="" folder="Targets&gt;Jura" sort="3" />
+        <label id="177" label="" color="4" folder="Targets&gt;Jura" sort="2" />
+        <label id="178" label="" color="4" folder="Targets&gt;Jura&gt;Santa" sort="0" />
+        <label id="179" label="" color="4" folder="Targets&gt;Jura" sort="3" />
         <label id="180" label="" folder="Filters" sort="27" />
         <label id="181" label="" folder="Responses" sort="4" />
         <label id="182" label="" folder="Responses" sort="5" />
+        <label id="183" label="" folder="Clothing" sort="0" />
+        <label id="184" label="" folder="Clothing" sort="0" />
+        <label id="185" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="186" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="187" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="188" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="189" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="0" />
+        <label id="190" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="0" />
+        <label id="191" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="0" />
+        <label id="192" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="193" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="194" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="196" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="195" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="197" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="198" label="" folder="Clothing" sort="0" />
+        <label id="199" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="200" label="it's my birthday" folder="Situations" sort="0" />
+        <label id="201" label="it's my birthday" folder="Situations" sort="0" />
+        <label id="202" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="203" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>182</nextId>
+    <nextId>203</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
@@ -240,6 +273,7 @@
         <marker scope="Public" name="finish_jack" />
         <marker scope="Public" name="gamestart_tea_gardner" />
         <marker scope="Public" name="jacket_wrgp" />
+        <marker scope="Public" name="jura_birthday" />
         <marker scope="Public" name="jura_mustMast" />
         <marker scope="Public" name="kirigiri_glovesOn" />
         <marker scope="Public" name="kirigiri_glovesOn_b" />
@@ -249,6 +283,7 @@
         <marker scope="Public" name="no_pictures" />
         <marker scope="Public" name="one_on_one" />
         <marker scope="Public" name="pc98_madou2lore3B" />
+        <marker scope="Public" name="petra_birthday" />
         <marker scope="Public" name="say_the_line1" />
         <marker scope="Public" name="say_the_line2" />
         <marker scope="Public" name="say_the_line3" />
@@ -269,11 +304,16 @@
         <marker scope="Public" name="velvet_mate" />
         <marker scope="Public" name="velvet_personality_resp" />
         <marker scope="Public" name="wrgp_explain" />
+        <marker scope="Public" name="yusei_birthday" />
+        <marker scope="Public" name="yusei_chiaki_strip0a" />
+        <marker scope="Public" name="yusei_chiaki_strip1a" />
         <marker scope="Public" name="yusei_chica_strip0a" />
         <marker scope="Public" name="yusei_darkness_firstLoss1" />
         <marker scope="Public" name="yusei_darkness_firstLossOfGame1" />
         <marker scope="Public" name="yusei_darkness_tank1" />
         <marker scope="Public" name="yusei_has_royal_flush" />
+        <marker scope="Public" name="yusei_heisenberg_strip0a" />
+        <marker scope="Public" name="yusei_jean_strip0a" />
         <marker scope="Public" name="yusei_jura_self0a" />
         <marker scope="Public" name="yusei_jura_self0a_sw" />
         <marker scope="Public" name="yusei_jura_strip0a" />
@@ -281,12 +321,21 @@
         <marker scope="Public" name="yusei_meia_self0a" />
         <marker scope="Public" name="yusei_meia_self0a_sw" />
         <marker scope="Public" name="yusei_meia_strip0a" />
+        <marker scope="Public" name="yusei_pandy_self2a" />
+        <marker scope="Public" name="yusei_pandy_self2b" />
         <marker scope="Public" name="yusei_schezo_summoning1" />
+        <marker scope="Public" name="yusei_schezo_summoning2" />
+        <marker scope="Public" name="yusei_schezo_sword1" />
         <marker scope="Public" name="yusei_tifa_milk1" />
         <marker scope="Public" name="yusei_velvet_armbandage1" />
         <marker scope="Public" name="yusei_velvet_goodTime1" />
         <marker scope="Public" name="yusei_yuno_strip0a" />
         <marker scope="Public" name="yusei_yuno_strip0b" />
+        <marker scope="Public" name="yusei_zeke_self0a" />
+        <marker scope="Public" name="yusei_zeke_self0b" />
+        <marker scope="Public" name="yusei_zeke_self0c" />
+        <marker scope="Public" name="yusei_zekepandy_self2c" />
+        <marker scope="Public" name="yusei_zekepandy_self2c_alt" />
         <marker scope="Public" name="zekepandy_strip0a" />
     </markers>
 </metadata>
