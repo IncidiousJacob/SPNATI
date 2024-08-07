@@ -365,7 +365,6 @@ namespace SPNATI_Character_Editor.Activities
 						return;
 					}
 
-					_response.SimplifyConditions();
 					_editorData.MarkResponse(_activeCharacter, _activeSituation.LinkedCase, _response);
 				}
 			}

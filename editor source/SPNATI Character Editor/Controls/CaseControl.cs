@@ -472,15 +472,15 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				tableConditions.Data = workingCase;
 				AddSpeedButtons(tableConditions, workingCase?.Tag);
-				if (workingCase.ModeConditions.Count > 0 && workingCase.ModeConditions[0].Expression == "short")
+				if (workingCase.ModeConditions.Count > 0 && (workingCase.ModeConditions[0].Expression == "short" || workingCase.ModeConditions[0].Expression == "regular"))
 				{
-					if (workingCase.ModeConditions[0].Operator == "!=")
+					if (workingCase.ModeConditions[0].Expression == "short")
 					{
-						tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Value != "false", workingCase.ModeConditions[0].Value != "true");
+						tableConditions.SetCheckboxes(false, true);
 					}
 					else
 					{
-						tableConditions.SetCheckboxes(workingCase.ModeConditions[0].Value == "false", workingCase.ModeConditions[0].Value == "true");
+						tableConditions.SetCheckboxes(true, false);
 					}
 				}
 				else
@@ -766,7 +766,7 @@ namespace SPNATI_Character_Editor.Controls
 				{
 					if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
 					{
-						c.ModeConditions[0] = tableConditions.GetCheckbox1() ? new ModeCondition("short", "", "false") : new ModeCondition("short", "", "true");
+						c.ModeConditions[0] = tableConditions.GetCheckbox1() ? new ModeCondition("regular") : new ModeCondition("short");
 					}
 					else
 					{
@@ -775,7 +775,7 @@ namespace SPNATI_Character_Editor.Controls
 				}
 				else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
 				{
-					c.ModeConditions.Add(new ModeCondition("short", "", tableConditions.GetCheckbox1() ? "false" : "true"));
+					c.ModeConditions.Add(new ModeCondition(tableConditions.GetCheckbox1() ? "regular" : "short"));
 				}
 
 				c.CustomPriority = ReadNumericBox(valPriority);

@@ -89,7 +89,6 @@ namespace SPNATI_Character_Editor
 			set { if (_oneShotId != value) { _oneShotId = value; NotifyPropertyChanged(); } }
 		}
 
-
 		private string _hidden;
 		[XmlOrder(40)]
 		[XmlAttribute("hidden")]
@@ -109,8 +108,6 @@ namespace SPNATI_Character_Editor
 			get { return _disabled; }
 			set { if (_disabled != value) { _disabled = value; NotifyPropertyChanged(); } }
 		}
-
-
 
 		private string _totalRounds;
 		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
@@ -598,6 +595,15 @@ namespace SPNATI_Character_Editor
 					return false;
 				}
 			}
+			if (other.ModeConditions.Count != ModeConditions.Count)
+				return false;
+			for (int i = 0; i < ModeConditions.Count; i++)
+			{
+				if (!ModeConditions[i].Equals(other.ModeConditions[i]))
+				{
+					return false;
+				}
+			}
 
 			return true;
 		}
@@ -891,6 +897,11 @@ namespace SPNATI_Character_Editor
 			if (response.Tag == "-") //this is deprecated anyway
 			{
 				return null;
+			}
+
+			foreach (ModeCondition cond in ModeConditions)
+			{
+				response.ModeConditions.Add(cond.Copy());
 			}
 
 			//copy conditions are always the same. If needed, they'll be altered in the method calls below
@@ -2296,11 +2307,6 @@ namespace SPNATI_Character_Editor
 			return list;
 		}
 
-		public int GetSliceCount()
-		{
-			return Lines.Count;
-		}
-
 		public void AddStage(int stage)
 		{
 			for (int i = 0; i < Stages.Count; i++)
@@ -2469,31 +2475,6 @@ namespace SPNATI_Character_Editor
 				}
 			}
 			return null;
-		}
-
-		/// <summary>
-		/// Removes extraneous conditions to leave only the bare minimum
-		/// </summary>
-		public void SimplifyConditions()
-		{
-			return; //disable for now until fixed
-
-			for (int i = Conditions.Count - 1; i>= 0; i--)
-			{
-				TargetCondition condition = Conditions[i];
-				if (string.IsNullOrEmpty(condition.SayingMarker))
-				{
-					Conditions.RemoveAt(i);
-				}
-				else
-				{
-					condition.Simplify();
-				}
-			}
-			foreach (Case alt in AlternativeConditions)
-			{
-				alt.SimplifyConditions();
-			}
 		}
 	}
 

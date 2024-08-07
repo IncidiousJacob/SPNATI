@@ -2170,29 +2170,22 @@ VariableTest.prototype.evaluate = function (self, opp, bindings) {
 
 }
 
-function ModeCondition (expr, cmp, value) {
+function ModeCondition (expr) {
     this.expr = expr;
-    this.cmp = cmp;
-    this.value = value || "";
 }
 
 ModeCondition.parseXML = function ($xml) {
-    return new ModeCondition($xml.attr("expr"), $xml.attr("cmp"), $xml.attr("value"));
+    return new ModeCondition($xml.attr("expr"));
 }
 
 ModeCondition.prototype.evaluate = function () {
-    let modeVariable = (() => {switch (this.expr) {
+    switch (this.expr) {
         case "short":
-            return SHORT_GAME_MODE.toString();
+            return SHORT_GAME_MODE;
+        case "regular":
+            return !SHORT_GAME_MODE;
         default:
-            return "";
-    }})();
-
-    switch (this.cmp) {
-        case '!=':
-            return modeVariable != this.value;
-        default:
-            return modeVariable == this.value;
+            return true;
     }
 }
 

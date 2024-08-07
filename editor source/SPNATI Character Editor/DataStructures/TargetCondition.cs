@@ -268,112 +268,6 @@ namespace SPNATI_Character_Editor
 		{
 		}
 
-		public TargetCondition(string tag, string gender, string status, string count)
-		{
-			FilterTag = tag;
-			Gender = gender;
-			Status = status;
-			Count = count;
-		}
-
-		public TargetCondition(string tag, string nottag, string tagAdv, string gender, string status, string count)
-		{
-			FilterTag = tag;
-			FilterNotTag = nottag;
-			FilterTagAdv = tagAdv;
-			Gender = gender;
-			Status = status;
-			Count = count;
-		}
-
-		public TargetCondition(string serializedData, string count)
-		{
-			Count = count;
-
-			string[] parts = serializedData.Split('&');
-			foreach (string part in parts)
-			{
-				if (part.Contains(";"))
-				{
-					string[] pieces = part.Split(new char[] { ';' }, 2);
-					if (pieces.Length == 2)
-					{
-						string key = pieces[0];
-						string value = pieces[1];
-						switch (key)
-						{
-							case "var":
-								Variable = value;
-								break;
-							case "stage":
-								Stage = value;
-								break;
-							case "character":
-								Character = value;
-								break;
-							case "role":
-								Role = value;
-								break;
-							case "saying":
-								Saying = value;
-								break;
-							case "said":
-								Said = value;
-								break;
-							case "sayingmarker":
-								SayingMarker = value;
-								break;
-							case "saidmarker":
-								SaidMarker = value;
-								break;
-							case "notsaidmarker":
-								NotSaidMarker = value;
-								break;
-							case "timeinstage":
-								TimeInStage = value;
-								break;
-							case "losses":
-								ConsecutiveLosses = value;
-								break;
-							case "layers":
-								Layers = value;
-								break;
-							case "startinglayers":
-								StartingLayers = value;
-								break;
-							case "hashand":
-								Hand = value;
-								break;
-							case "pose":
-								Pose = value;
-								break;
-							case "nottag":
-								FilterNotTag = value;
-								break;
-							case "tagAdv":
-								FilterTagAdv = value;
-								break;
-						}
-					}
-				}
-				else
-				{
-					if (part == "male" || part == "female")
-					{
-						Gender = part;
-					}
-					else if (part != "" && Array.Exists(StatusTypes, t => t.Key == part || "not_" + t.Key == part))
-					{
-						Status = part;
-					}
-					else
-					{
-						FilterTag = part;
-					}
-				}
-			}
-		}
-
 		public override bool Equals(object obj)
 		{
 			TargetCondition other = obj as TargetCondition;
@@ -483,98 +377,10 @@ namespace SPNATI_Character_Editor
 			return copy;
 		}
 
-		public string Serialize()
-		{
-			List<string> parts = new List<string>();
-			if (!string.IsNullOrEmpty(Status))
-			{
-				parts.Add(Status);
-			}
-			if (!string.IsNullOrEmpty(Gender))
-			{
-				parts.Add(Gender);
-			}
-			if (!string.IsNullOrEmpty(FilterTag))
-			{
-				parts.Add(FilterTag);
-			}
-			if (!string.IsNullOrEmpty(FilterNotTag))
-			{
-				parts.Add("nottag;" + FilterNotTag);
-			}
-			if (!string.IsNullOrEmpty(FilterTagAdv))
-			{
-				parts.Add("tagAdv;" + FilterTagAdv);
-			}
-			if (!string.IsNullOrEmpty(Role))
-			{
-				parts.Add("role;" + Role);
-			}
-			if (!string.IsNullOrEmpty(Character))
-			{
-				parts.Add("character;" + Character);
-			}
-			if (!string.IsNullOrEmpty(Stage))
-			{
-				parts.Add("stage;" + Stage);
-			}
-			if (!string.IsNullOrEmpty(Variable))
-			{
-				parts.Add("var;" + Character);
-			}
-			if (!string.IsNullOrEmpty(Layers))
-			{
-				parts.Add("layers;" + Layers);
-			}
-			if (!string.IsNullOrEmpty(StartingLayers))
-			{
-				parts.Add("startinglayers;" + StartingLayers);
-			}
-			if (!string.IsNullOrEmpty(TimeInStage))
-			{
-				parts.Add("timeinstage;" + TimeInStage);
-			}
-			if (!string.IsNullOrEmpty(ConsecutiveLosses))
-			{
-				parts.Add("losses;" + ConsecutiveLosses);
-			}
-			if (!string.IsNullOrEmpty(Hand))
-			{
-				parts.Add("hashand;" + Hand);
-			}
-			if (!string.IsNullOrEmpty(SaidMarker))
-			{
-				parts.Add("saidmarker;" + SaidMarker);
-			}
-			if (!string.IsNullOrEmpty(NotSaidMarker))
-			{
-				parts.Add("notsaidmarker;" + NotSaidMarker);
-			}
-			if (!string.IsNullOrEmpty(SayingMarker))
-			{
-				parts.Add("sayingmarker;" + SayingMarker);
-			}
-			if (!string.IsNullOrEmpty(Saying))
-			{
-				parts.Add("saying;" + Saying);
-			}
-			if (!string.IsNullOrEmpty(Said))
-			{
-				parts.Add("said;" + Said);
-			}
-			if (!string.IsNullOrEmpty(Pose))
-			{
-				parts.Add("pose;" + Pose);
-			}
-			string data = string.Format("count-{1}:{0}", Count, string.Join("&", parts));
-			return data;
-		}
-
 		public override string ToString()
 		{
 			return ToString(false);
 		}
-
 
 		public static string CountToString(string range)
 		{
@@ -979,36 +785,6 @@ namespace SPNATI_Character_Editor
 					!string.IsNullOrEmpty(FilterTagAdv) ||
 					!string.IsNullOrEmpty(Pose);
 			}
-		}
-
-		public string FormatVariable(string variable)
-		{
-			variable = variable.Replace("~", "");
-			variable = variable.Trim();
-			return variable;
-		}
-
-		public void Simplify()
-		{
-			if (string.IsNullOrEmpty(SayingMarker))
-			{
-				return;
-			}
-			Status = null;
-			TimeInStage = null;
-			Stage = null;
-			SaidMarker = null;
-			NotSaidMarker = null;
-			Saying = null;
-			Said = null;
-			Hand = null;
-			Layers = null;
-			StartingLayers = null;
-			Gender = null;
-			FilterTag = null;
-			FilterNotTag = null;
-			FilterTagAdv = null;
-			Pose = null;
 		}
 	}
 
