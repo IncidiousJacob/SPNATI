@@ -18,14 +18,11 @@
         <case name="Birthday" id="14" priority="Noteworthy" min="0" max="0">
             <description>On August 31st, Jura proudly exclaims that it's her birthday.</description>
         </case>
-        <case name="Meia Dual Masturbation" id="17" priority="Noteworthy" min="8" max="8">
-            <description>Jura takes it upon herself to help with Meia's masturbation.</description>
-        </case>
         <case name="Butt (Thong)" id="20" priority="Noteworthy" min="5" max="5">
-            <description>Jura shows off her butt, still in her thong, teasing the table about how she's gone a while without losing.</description>
+            <description>Jura shows off her butt, still in her thong.</description>
         </case>
         <case name="Butt (Nude)" id="21" priority="Noteworthy" min="6" max="6">
-            <description>Jura shows off her nude butt, teasing the table about how she's still in the game.</description>
+            <description>Jura shows off her nude butt.</description>
         </case>
         <case name="Babies" id="33" priority="Prompt" min="0" max="6">
             <description>Jura describes how she wants to have a baby soon and asks her tablemates if any of them are interested in having children of their own.</description>
@@ -48,9 +45,6 @@
         <case name="Barnette" id="947" priority="Noteworthy" min="0" max="0">
             <description>Introduces Barnette if the earlier case does not play.</description>
         </case>
-        <case name="Barnette Forfeit" id="949" priority="MustTarget" min="6" max="6">
-            <description>Jura enlists Barnette's "assistance" for her forfeit.</description>
-        </case>
         <case name="Barnette Camera" id="950" priority="Noteworthy" min="5" max="6">
             <description>Jura turns to face Barnette, who has been filming her nude reveals, thus showing her butt.</description>
         </case>
@@ -72,8 +66,14 @@
         <case name="Mahiru/Natsuki Selfie" id="1413" priority="Noteworthy" min="6" max="6">
             <description>Jura smushes Natsuki between her breasts, dragging her into a selfie with Mahiru.</description>
         </case>
-        <case name="Meia Reverse Dual Masturbation" id="1903" priority="Noteworthy" min="6" max="6">
+        <case name="Meia Reverse Dual Forfeit" id="1903" priority="Noteworthy" min="6" max="6">
             <description>Jura drags Meia over to "help" her and Barnette.</description>
+        </case>
+        <case name="Barnette Forfeit" id="1960" priority="MustTarget" min="6" max="6">
+            <description>Jura enlists Barnette's "assistance" for her forfeit.</description>
+        </case>
+        <case name="Meia Dual Forfeit" id="957" priority="MustTarget" min="8" max="8">
+            <description>Jura takes it upon herself (with Barnette) to help with Meia's masturbation.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -112,6 +112,7 @@
         <note id="1503">please replace marker</note>
         <note id="1643">I assume saying it outright will fluster her, but willing to revise</note>
         <note id="1873">in stages 7 and 8, she's giving Barnette the side-eye here</note>
+        <note id="1958">Barnette was the middle of five sisters</note>
     </notes>
     <labels>
         <label id="106" label="" color="4" folder="" sort="0" />
@@ -1038,16 +1039,35 @@
         <label id="1944" label="" color="4" folder="" sort="0" />
         <label id="1932" label="" color="9" folder="" sort="0" />
         <label id="1933" label="" color="9" folder="" sort="0" />
-        <label id="1934" label="" color="4" folder="" sort="0" />
-        <label id="1935" label="" color="4" folder="" sort="0" />
+        <label id="1934" label="" color="6" folder="" sort="0" />
+        <label id="1935" label="" color="6" folder="" sort="0" />
         <label id="1938" label="" color="4" folder="" sort="0" />
         <label id="1939" label="" color="4" folder="" sort="0" />
         <label id="1940" label="" color="4" folder="" sort="0" />
+        <label id="1948" label="" color="4" folder="" sort="0" />
+        <label id="1949" label="" color="4" folder="" sort="0" />
+        <label id="1950" label="" color="4" folder="" sort="0" />
+        <label id="1951" label="" color="4" folder="" sort="0" />
+        <label id="1952" label="" color="4" folder="" sort="0" />
+        <label id="1953" label="" color="4" folder="" sort="0" />
+        <label id="1954" label="" color="4" folder="" sort="0" />
+        <label id="1955" label="" color="4" folder="" sort="0" />
+        <label id="1956" label="" color="4" folder="" sort="0" />
+        <label id="1957" label="" color="4" folder="" sort="0" />
+        <label id="1958" label="" color="4" folder="" sort="0" />
+        <label id="1959" label="" color="4" folder="" sort="0" />
+        <label id="1961" label="" color="4" folder="" sort="0" />
+        <label id="1962" label="" color="4" folder="" sort="0" />
+        <label id="1963" label="" color="4" folder="" sort="0" />
+        <label id="1964" label="" color="4" folder="" sort="0" />
+        <label id="1965" label="" color="4" folder="" sort="0" />
+        <label id="1966" label="" color="4" folder="" sort="0" />
+        <label id="1967" label="" color="4" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>jura</prefix>
     </prefixes>
-    <nextId>1947</nextId>
+    <nextId>1967</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1v1">Jura acknowledges that the game has come down to her and one other player.</marker>
@@ -1325,6 +1345,7 @@
         <marker scope="Public" name="cheryl7s" />
         <marker scope="Public" name="cheryl8s" />
         <marker scope="Public" name="chiaki_maid0" />
+        <marker scope="Public" name="chiaki0" />
         <marker scope="Public" name="chie0" />
         <marker scope="Public" name="chihiro4" />
         <marker scope="Public" name="chihiro45" />
@@ -1680,6 +1701,7 @@
         <marker scope="Public" name="hatsune_miku1" />
         <marker scope="Public" name="height_f" />
         <marker scope="Public" name="height_m" />
+        <marker scope="Public" name="heisenberg0" />
         <marker scope="Public" name="helperchan0" />
         <marker scope="Public" name="heris_passion" />
         <marker scope="Public" name="heris0" />
@@ -1712,6 +1734,10 @@
         <marker scope="Public" name="jason0" />
         <marker scope="Public" name="jason01" />
         <marker scope="Public" name="jason1s" />
+        <marker scope="Public" name="jean_resp6" />
+        <marker scope="Public" name="jean0" />
+        <marker scope="Public" name="jean0meia" />
+        <marker scope="Public" name="jean1barbara" />
         <marker scope="Public" name="jenna_barnette" />
         <marker scope="Public" name="jenna_confidence" />
         <marker scope="Public" name="jenna_outfit" />
@@ -2840,6 +2866,7 @@
         <marker scope="Public" name="rinkah_r0" />
         <marker scope="Public" name="rita0" />
         <marker scope="Public" name="rogue0" />
+        <marker scope="Public" name="roll_caskett_cm0" />
         <marker scope="Public" name="roll_caskett_hm0" />
         <marker scope="Public" name="roll_caskett_pwm0" />
         <marker scope="Public" name="roll_caskett_sm0" />
@@ -2885,6 +2912,7 @@
         <marker scope="Public" name="rose3s" />
         <marker scope="Public" name="rose4" />
         <marker scope="Public" name="rose45" />
+        <marker scope="Public" name="rose5" />
         <marker scope="Public" name="rose5s" />
         <marker scope="Public" name="rouge_babies" />
         <marker scope="Public" name="rouge_bfb" />
@@ -3131,6 +3159,9 @@
         <marker scope="Public" name="tharjam0" />
         <marker scope="Public" name="tharjaswap">Jura angrily tries to push past the dealer and get to Tharja as everyone is given new cards.</marker>
         <marker scope="Public" name="tick0" />
+        <marker scope="Public" name="tifa_resp0" />
+        <marker scope="Public" name="tifa0" />
+        <marker scope="Public" name="tifa1meia" />
         <marker scope="Public" name="tomoko0" />
         <marker scope="Public" name="toph_fnv0" />
         <marker scope="Public" name="toph_gml0" />
@@ -3309,8 +3340,16 @@
         <marker scope="Public" name="yuri12" />
         <marker scope="Public" name="yuri1s" />
         <marker scope="Public" name="yuri4" />
+        <marker scope="Public" name="yusei_resp0a" />
+        <marker scope="Public" name="yusei_resp0b" />
+        <marker scope="Public" name="yusei_resp0c" />
+        <marker scope="Public" name="yusei_resp1santa" />
+        <marker scope="Public" name="yusei_resp6" />
         <marker scope="Public" name="yusei_sw0" />
+        <marker scope="Public" name="yusei_sw01" />
         <marker scope="Public" name="yusei0" />
+        <marker scope="Public" name="yusei01" />
+        <marker scope="Public" name="yusei2" />
         <marker scope="Public" name="yusuke_seduction" />
         <marker scope="Public" name="yusuke_shopping" />
         <marker scope="Public" name="yusuke0" />
