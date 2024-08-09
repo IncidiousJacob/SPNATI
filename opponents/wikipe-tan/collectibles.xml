@@ -19,9 +19,9 @@ https://wikimediafoundation.org/support/</text>
         <title>Witch Hat</title>
         <subtitle>It'll put a spell on you~</subtitle>
         <text>A faint echo emanates from this magical, perhaps cursed artifact. Wearing it makes you feel knowledgeable, serviceable, and kind of... wanting to donate to a popular, free, online encyclopedia.</text>
-        <unlock>Win a game against Wikipe-tan wearing her Halloween outfit.</unlock>
+        <unlock>Either win a game against Wikipe-tan wearing her Halloween outfit, or beat Wikipe-tan playing against three witch characters.</unlock>
         <wearable>true</wearable>
-        <clothing name="Witch Hat" generic="hat" position="head" type="extra" img="opponents/wikipe-tan/witch_hat.png" />
+        <clothing img="opponents/wikipe-tan/witch_hat.png" name="Witch Hat" generic="hat" position="head" type="extra" />
     </collectible>
     <collectible id="maid_dress" status="online" img="opponents/wikipe-tan/maid_dress.png" thumbnail="opponents/wikipe-tan/maid_dress.png">
         <title>Maid Dress</title>
@@ -29,6 +29,6 @@ https://wikimediafoundation.org/support/</text>
         <text>Spare maid outfit from Wikipe-tan, without the puzzle pieces.</text>
         <unlock>Finish a game where Wikipe-tan wins.</unlock>
         <wearable>true</wearable>
-        <clothing name="maid dress" generic="dress" position="both" type="major" img="opponents/wikipe-tan/maid_dress.png" />
+        <clothing img="opponents/wikipe-tan/maid_dress.png" name="maid dress" generic="dress" position="both" type="major" />
     </collectible>
 </collectibles>
