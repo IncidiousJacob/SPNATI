@@ -232,6 +232,11 @@ input[type=search]::-webkit-search-cancel-button {
     right: 0;
     z-index: 0;
     margin: 0.5%;
+    pointer-events: none;
+}
+
+.screen>* {
+    pointer-events: initial;
 }
 
 .select-table>*,
@@ -464,12 +469,14 @@ input[type=search]::-webkit-search-cancel-button {
 .table-bug-report-button:hover,
 .table-hard-refresh-button:hover,
 .table-feedback-report-button:hover {
-    background-color: rgba(155, 155, 155, 0.9);
+    background-color: rgba(155, 155, 155, 0.75);
 }
 
 .hide-table-button:active,
-.table-bug-report-button:active {
-    background-color: rgba(155, 155, 155, 0.75);
+.table-bug-report-button:active,
+.table-hard-refresh-button:active,
+.table-feedback-report-button:active {
+    background-color: rgba(155, 155, 155, 0.9);
 }
 
 .game-menu-dropup {
@@ -2016,22 +2023,12 @@ ul.dropdown-menu>li {
     width: 4%;
 }
 
-.title-settings-button {
-    width: 6%;
-    height: 7%;
+.title-bug-report-button {
     left: 1%;
 }
 
-.title-settings-button>span {
-    font-size: 1.75em;
-}
-
-.title-bug-report-button {
-    left: 7.5%;
-}
-
 .reddit-button {
-    left: 12.0%;
+    left: 5.5%;
 }
 
 .reddit-logo {
@@ -2039,7 +2036,7 @@ ul.dropdown-menu>li {
 }
 
 .twitter-button {
-    left: 16.5%;
+    left: 10%;
 }
 
 .twitter-logo {
@@ -2047,7 +2044,7 @@ ul.dropdown-menu>li {
 }
 
 .discord-button {
-    left: 21%;
+    left: 14.5%;
     background: rgb(88, 101, 242) linear-gradient(rgb(88, 101, 242), rgb(49, 62, 207));
 }
 
@@ -2057,15 +2054,15 @@ ul.dropdown-menu>li {
 }
 
 .title-load-button {
-    left: 25.5%;
+    left: 19%;
 }
 
 .title-extras-button {
-    left: 30%;
+    left: 23.5%;
 }
 
 .title-fullscreen-button {
-    left: 34.5%;
+    left: 28%;
 }
 
 .title-resort-button {
@@ -2131,6 +2128,28 @@ ul.dropdown-menu>li {
 .version-button>.substitute-version-time {
     font-size: 75%;
     white-space: nowrap;
+}
+
+.background-select-button {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-80%);
+    width: 5rem;
+    height: 15rem;
+    position: fixed;
+    font-size: 150%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+    border-width: 0.3rem;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.background-select-button:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+.background-select-button:active {
+    background-color: rgba(200, 200, 200, 0.7);
 }
 
 .title-help-button {
@@ -2332,6 +2351,7 @@ ul.dropdown-menu>li {
     top: -19%;
     left: 0;
     right: 0;
+    pointer-events: none;
 }
 
 .opponent-suggestion-header {
@@ -2356,7 +2376,6 @@ ul.dropdown-menu>li {
     width: 50%;
     height: 100%;
     margin: 0;
-    pointer-events: auto;
 }
 
 .opponent-suggestion-image {
@@ -2367,7 +2386,6 @@ ul.dropdown-menu>li {
     opacity: 0.6;
     transform: translate(-50%);
     transform-origin: bottom;
-    pointer-events: none;
 }
 
 .opponent-suggestion-label {
@@ -2378,6 +2396,7 @@ ul.dropdown-menu>li {
     background-color: #F5F5F5;
     left: 1%;
     width: 98%;
+    pointer-events: auto;
 }
 
 .select-slot-button {

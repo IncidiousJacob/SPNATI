@@ -254,6 +254,9 @@ Save.prototype.loadLocalStorage = function () {
             Sentry.captureException(ex);
         }
     }
+    if (!('seenHints' in this)) {
+        this.seenHints = new Set(this.getItem('seenHints'));
+    }
 }
 
 Save.prototype.load = function() {
@@ -817,6 +820,23 @@ Save.prototype.hasShownResortModal = function (resortInfo) {
 Save.prototype.setResortModalFlag = function (resortInfo, val) {
     var flagVal = resortInfo.season + "-" + resortInfo.year.toString();
     this.setItem("resortModalShown", !!val ? flagVal : null);
+}
+
+/**
+ * @param (string) what
+ */
+Save.prototype.hasSeenHint = function(what) {
+    return this.seenHints.has(what);
+}
+
+/**
+ * @param (string) what
+ */
+Save.prototype.recordSeenHint = function(what) {
+    if (!this.hasSeenHint(what)) {
+        this.seenHints.add(what);
+        this.setItem('seenHints', Array.from(this.seenHints))
+    }
 }
 
 /**

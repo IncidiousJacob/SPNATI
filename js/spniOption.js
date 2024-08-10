@@ -403,6 +403,10 @@ function loadBackgrounds() {
         if (defaultBackgroundID && backgrounds[defaultBackgroundID]) {
             defaultBackground = backgrounds[defaultBackgroundID];
         }
+        $('.background-select-button').show();
+        if (!save.hasSeenHint('bgbutton')) {
+            $('#title-screen .background-select-button').tooltip('show');
+        }
     }).catch(function (err) {
         console.error("Could not load backgrounds:");
         captureError(err);
@@ -640,6 +644,8 @@ function showGameSettingsModal () {
     });
 
     $('#game-settings-modal').modal('show');
+    save.recordSeenHint('bgbutton');
+    $('#title-screen .background-select-button').tooltip('hide');
 }
 
 $('#game-settings-modal').on('shown.bs.modal', function() {
