@@ -73,8 +73,7 @@ function Clothing (name, generic, type, position, plural, fromStage, fromDeal, r
 
 /*************************************************************
  * Check if the player has major articles covering both the upper and
- * lower body.  Currently only used to determine whether the human
- * player is "decent".
+ * lower body.
  *************************************************************/
 Player.prototype.isDecent = function() {
     return this.getClothing().some(function(c) {
