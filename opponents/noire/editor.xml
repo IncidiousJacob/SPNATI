@@ -2973,6 +2973,8 @@ Noire, as a tsundere, doesn't say directly whether she will throw.</note>
         <posePreviewMarker>CDAltImg=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
+    <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
+    <validateMarkerScope>true</validateMarkerScope>
     <nextId>2883</nextId>
     <markers>
         <marker scope="Public" name="adrien_costume1" />
@@ -3716,7 +3718,7 @@ Noire, as a tsundere, doesn't say directly whether she will throw.</note>
         <marker scope="Public" name="NoireRandomLore" />
         <marker scope="Public" name="NoireRandomLoreSaid" />
         <marker scope="Public" name="NoireReplaceGoddesses" />
-        <marker scope="Public" name="NoireRoleExplanation" />
+        <marker scope="Private" name="NoireRoleExplanation" />
         <marker scope="Public" name="NoireSeesBL" />
         <marker scope="Public" name="NoireSeesBM" />
         <marker scope="Public" name="NoireSeesBS" />
@@ -3724,6 +3726,7 @@ Noire, as a tsundere, doesn't say directly whether she will throw.</note>
         <marker scope="Public" name="NoireSeesPL" />
         <marker scope="Public" name="NoireSeesPM" />
         <marker scope="Public" name="NoireSeesPS" />
+        <marker scope="Private" name="NoireSelfShavingComment" />
         <marker scope="Public" name="NoireSkirtChallenge" />
         <marker scope="Public" name="NoireSleep" />
         <marker scope="Public" name="NoireSleep1" />
