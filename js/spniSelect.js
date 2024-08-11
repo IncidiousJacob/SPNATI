@@ -1276,7 +1276,7 @@ function clickedRandomFillButton (randomMode, predicate) {
 
             /* load opponent */
             players[i] = loadedOpponentsCopy[randomOpponent];
-            players[i].loadBehaviour(i, false, {
+            players[i].loadBehaviour(i, curTable.length == 3, {
                 "source": "random",
                 "table": curTable,
                 "mode": randomMode
