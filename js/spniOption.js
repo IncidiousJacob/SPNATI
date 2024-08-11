@@ -589,7 +589,7 @@ $('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
  * 
  * @param {Background} background 
  */
-function pushBackgroundOption (background) {
+function pushBackgroundOption (background, fromSelectScreen) {
     var container = $('<div>', {
         "class": "background-option",
         "data-background": background.id,
@@ -600,7 +600,12 @@ function pushBackgroundOption (background) {
         },
         "click": function() {
             optionsBackground = background;
-            optionsBackground.activateBackground();
+            optionsBackground.activateBackground().then(() => {
+                if (fromSelectScreen) {
+                    updateAllBehaviours(null, null, SELECTED);
+                    updateSelectionVisuals();
+                }
+            });
             save.saveSettings();
             $('#game-settings-modal').modal('hide');
         }
@@ -626,7 +631,7 @@ function pushBackgroundOption (background) {
 /************************************************************
  * Shows the background selection modal.
  ************************************************************/
-function showGameSettingsModal () {
+function showGameSettingsModal (fromSelectScreen) {
     var firstOfflineBackground = false;
     
     /* Push selection images for all backgrounds not already on the menu. */
@@ -639,7 +644,7 @@ function showGameSettingsModal () {
         }
 
         if ($('#settings-background .background-option[data-background="'+id+'"]').length === 0) {
-            pushBackgroundOption(bg);
+            pushBackgroundOption(bg, fromSelectScreen);
         }
     });
 
