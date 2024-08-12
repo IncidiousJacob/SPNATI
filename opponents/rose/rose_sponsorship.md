@@ -3,7 +3,7 @@
 [X] Remillia
 
 - 2 filters to gloomy,
-	1. Cheer up, ~target~. It won't killa ya to show of down there. It'll be fun!
+	1. Cheer up, ~target~. It won't harm ya to show of down there. It'll be fun!
 	2. I know it can be difficult to want to do this, but I know you can do it, ~target~!
 - 2 filters to creepy,
 	1. Okay, I've seen enough!
@@ -89,11 +89,104 @@
 	
 [ ] Cavendish
 
-- She is under 1000 lines at the time of writing, so I'm going to ask for some generics.
-	- done
+- She is under 1000 lines at the time of writing, so I'm going to ask for some generics. (done)
+	- 1000 lines done
 
-- 14 forfeiting (female) lines
+- 14 forfeiting (female) lines (done)
+	I-If you asked someone else for advice, they'd be able to tell you more than me...
+	I've only learned bits and pieces here and there about how to... do that...
+	Ohh... T-That looks like fun, ~target~...
+	S-Sorry that things turned out this way, ~target~.
+	Now's the perfect time to really get <i>wild</i>, you get me?
+	I feel scandalised by this experience...
+	Nngh... That looks like fun...
+	O-Oh, try not to tense up...
+	Ngh... ~target~... keep going...
+	~Target~... y-you're turning me on...
+	Nyeh... ~target~... I want to...
+	~Target~... do you do this regularly? You look like you know what you're doing.
+	... Should I be enjoying this as much as I am?
+	My chest... feels like it's on fire, watching ~target~...
 - 10 forfeiting (male) lines
+	Don't tense up... let yourself get lost in it...
+	It's all so intense... I feel... hot, thinking about ~target~...
+	Ngh... ~target~... so manly... so virile...
+	I feel ready to... t-to <i>pounce</i> on you... N-Need to hold back...
+	If your thing was... inside me... hnnngh...
+	Ngh... {small}~target~, fuck, it would feel so good inside me...{!reset}
+	Guys do this all the time, don't they? That's what I've heard.
+	Woah... ~target~, you look so good right now...
+	Got a lot of pent-up frustration to let out, huh?	
+	Bet you've been waiting for this since you got here? Hehe!
 - 5 Must Strip (female)
+	You're the one, ~target~!
+	Phew. You're up next, ~target~!
+	Sorry, ~target~. You lost this one, hehe!
 - 2 each for all the Removing/Removed Accessory, Minor, and Major cases (24 total)
+	removing accessory male:
+		1. Meh... Sorry, not really... focusing on that...
+		2. I'm... Sorry, not really focusing on something like that right now.
+	removed accessory male:
+		1. I'll just have to use my imagination, then... hehe!
+		2. <i>Hnnhh</i>... only ~clothing.withart~...
+	removing accessory female:
+		1.
+		2.
+	removed accessory female:
+		1.
+		2.
+	removing minor male:
+		1.
+		2.
+	removed minor male:
+		1.
+		2.
+	removing minor female:
+		1.
+		2.
+	removed minor female:
+		1.
+		2.
+	removing major male:
+		1.
+		2.
+	removed major male:
+		1.
+		2.
+	removing major female:
+		1.
+		2.
+	removed major female:
+		1.
+		2.
 - 12 After Finished (self) lines
+
+[ ] TheTrueSaltmine
+- Add 50 more lines when she is either nearly naked, half naked, or naked.
+	1. Being surrounded by guys who have their thingies out... Hnngh...
+	2. I've never done anything like this before... my heart is pounding. I... I wanna keep going!
+	3. ... H-Huh? Sorry, I was distracted by... uhh...
+	4. ... O-Oh! The cards, right... I was distracted by... things.
+	5. We're all really, really doing this. I... I wanna see this game through to the end!
+	6. You boys are gonna go easy on me now, r-right? Myeh...
+	7. You boys need to stop looking my way. I'm getting goosebumps, and my heart is pounding!
+	8. Myeh... {small}Are you looking my way again, ~oppmale~...?{!reset}
+	9. Mmmyeh, you're just my type. Skinny, but you're still fit... Nyeh hehe!
+	10. Meh... Sorry, not really... focusing on that...
+	11. I'm... Sorry, not really focusing on something like that right now.
+	12. I'll just have to use my imagination, then... hehe!
+	13. <i>Hnnhh</i>... only ~clothing.withart~...
+	14. Hehe... You're up again, ~target~... Be a decent guy and make it nice, okay?
+	15. Make it something good, okay, ~target~? It's only fair~
+	16. You really waited until now to take your shoes off? Your poor feet.
+	17. Ah, your poor feet! Waiting this long to take those shoes off...
+
+- Add more lines that are about her getting horny, hornier, etc. So it feels more natural. Add at least 15 lines but be sure to check for yourself if she needs more or not. These lines can count for the total 50 of the previous flaw.
+Note: some of these overlap with the previous flaw but not all. Most of them are filtered/conditional in some way.
+	1. Being surrounded by guys who have their thingies out... Hnngh...
+	2. I've never done anything like this before... my heart is pounding. I... I wanna keep going!
+	3. ... H-Huh? Sorry, I was distracted by... uhh...
+	4. ... O-Oh! The cards, right... I was distracted by... things.
+	5. You boys need to stop looking my way. I'm getting goosebumps, and my heart is pounding!
+	
+	
