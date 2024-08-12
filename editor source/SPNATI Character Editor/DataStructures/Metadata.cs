@@ -18,8 +18,9 @@ namespace SPNATI_Character_Editor
 		[XmlElement("lastupdate")]
 		public long LastUpdate { get; set; }
 
+		[DefaultValue(false)]
 		[XmlElement("enabled")]
-		public bool Enabled
+		public bool LegacyEnabled
 		{
 			get { return Get<bool>(); }
 			set { Set(value); }
