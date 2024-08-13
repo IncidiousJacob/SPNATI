@@ -20,7 +20,7 @@
         <key type="boolean" description="Obvious onlookers are watching the game">exhibition</key>
         <key type="boolean" description="Whether the location is noticeably dark">dark</key>
     </auto-tag-metadata>
-    
+
     <background id="da invuntry">
         <status>event-background</status>
         <name>Da Invuntry</name>
@@ -45,7 +45,7 @@
         <category>bar</category>
         <privacy>private</privacy>
     </background>
-    
+
     <background id="tiki bar">
         <name>Tiki Bar</name>
         <preposition>at</preposition>
@@ -56,261 +56,6 @@
         <category>bar</category>
         <time>day</time>
         <temperature>hot</temperature>
-        <privacy>private</privacy>
-        <water />
-    </background>
-    
-    <background id="beach">
-        <name>Beach</name>
-        <preposition>on</preposition>
-        <src>img/backgrounds/beach.png</src>
-        <location>outdoors</location>
-        <surface>sand</surface>
-        <time>day</time>
-        <temperature>hot</temperature>
-        <privacy>private</privacy>
-        <water />
-    </background>
-    
-    <background id="classroom">
-        <name>Classroom</name>
-        <src>img/backgrounds/classroom.png</src>
-        <author>UnderscorM3</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <category>school</category>
-        <privacy>public</privacy>
-    </background>
-    
-    <background id="roof">
-        <name>Roof</name>
-        <preposition>on</preposition>
-        <src>img/backgrounds/roof.png</src>
-        <location>outdoors</location>
-        <surface>roof</surface>
-        <time>day</time>
-        <privacy>public</privacy>
-    </background>
-    
-    <background id="poolside">
-        <name>Poolside</name>
-        <term>pool</term>
-        <preposition>at</preposition>
-        <src>img/backgrounds/poolside.png</src>
-        <author>ANDRW</author>
-        <location>outdoors</location>
-        <surface>ground</surface>
-        <time>day</time>
-        <temperature>hot</temperature>
-        <privacy>public</privacy>
-        <water />
-    </background>
-    
-    <background id="hot spring">
-        <name>Hot Spring</name>
-        <preposition>at</preposition>
-        <src>img/backgrounds/hot_spring.png</src>
-        <author>Gon-san &amp; Patisdom</author>
-        <location>outdoors</location>
-        <surface>ground</surface>
-        <time>day</time>
-        <temperature>hot</temperature>
-        <privacy>public</privacy>
-        <water />
-        <bathing />
-    </background>
-    
-    <background id="mansion">
-        <name>Mansion</name>
-        <src>img/backgrounds/mansion.png</src>
-        <author>Anymouse-68</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <category>home</category>
-        <time>night</time>
-        <privacy>private</privacy>
-		<moon>full</moon>
-    </background>
-
-    <background id="holiday lodge">
-        <name>Holiday Lodge</name>
-        <preposition>at</preposition>
-        <src>img/backgrounds/holiday_lodge.png</src>
-        <author>Zeuses-Swan-Song</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <privacy>private</privacy>
-        <time>night</time>
-    </background>
-    
-    <background id="purple room">
-        <name>Purple Room</name>
-        <src>img/backgrounds/purple_room.png</src>
-        <author>AshenSorrow</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-    </background>
-
-    <background id="bedroom">
-        <name>Bedroom</name>
-        <preposition>in</preposition>
-        <src>img/backgrounds/bedroom.png</src>
-        <author>XKokone-chanX (bed) &amp; throwaway927263 (room)</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <category>home</category>
-        <time>night</time>
-        <privacy>private</privacy>
-		<moon>full</moon>
-    </background>
-    
-    <background id="locker room">
-        <name>Locker Room</name>
-        <author>UnderscorM3</author>
-        <src>img/backgrounds/locker_room.png</src>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <privacy>public</privacy>
-        <voyeur />
-        <bathing />
-    </background>
-
-    <background id="office">
-        <name>Office</name>
-        <src>img/backgrounds/office.png</src>
-        <author>UnderscorM3</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <time>night</time>
-        <privacy>public</privacy>
-    </background>
-
-    <background id="library">
-        <name>Library</name>
-        <src>img/backgrounds/library.png</src>
-        <author>UnderscorM3</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <category>library</category>
-        <time>day</time>
-        <privacy>private</privacy>
-    </background>
-
-    <background id="alley">
-        <name>Alley</name>
-        <src>img/backgrounds/alley.png</src>
-        <author>UnderscorM3</author>
-        <location>outdoors</location>
-        <surface>ground</surface>
-        <privacy>public</privacy>
-        <time>night</time>
-    </background>
-    
-    <background id="haunted forest">
-        <name>Haunted Forest</name>
-        <src>img/backgrounds/haunted_forest.png</src>
-        <author>metalytar13</author>
-        <location>outdoors</location>
-        <surface>grass</surface>
-        <category>forest</category>
-        <time>night</time>
-        <temperature>cold</temperature>
-        <viewport top="0" bottom="1500" />
-        <filter>brightness(0.8) saturate(1.2)</filter>
-        <privacy>public</privacy>
-        <dark />
-		<moon>full</moon>
-    </background>
-    
-    <background id="romantic">
-        <name>Romantic</name>
-        <term>romantic Inventory</term>
-        <src>img/backgrounds/romantic.png</src>
-        <author>Patisdom</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-    </background>
-    
-    <background id="classic">
-        <name>Classic</name>
-        <term>classic Inventory</term>
-        <src>img/backgrounds/classic.png</src>
-        <location>indoors</location>
-        <surface>floor</surface>
-    </background>
-
-    <background id="armory">
-        <name>Armory</name>
-        <src>img/backgrounds/armory.png</src>
-        <author>UnderscorM3</author>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <time>day</time>
-    </background>
-    
-    <background id="paris rooftop">
-        <name>Paris Rooftop</name>
-        <term>Paris rooftop</term>
-        <preposition>on</preposition>
-        <src>img/backgrounds/paris_rooftop.png</src>
-        <author>thelonelyphonebox</author>
-        <location>outdoors</location>
-        <surface>roof</surface>
-        <time>night</time>
-        <temperature>cold</temperature>
-        <privacy>public</privacy>
-        <dark />
-        <filter>brightness(0.8) saturate(1.1)</filter>
-		<moon>full</moon>
-    </background>
-
-    <background id="showers">
-        <name>Showers</name>
-        <author>EcchiUPS, YaterTheGamer</author>
-        <src>img/backgrounds/showers.png</src>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <bathing />
-    </background>
-
-    <background id="garden">
-        <name>Garden</name>
-        <author>UnderscorM3</author>
-        <src>img/backgrounds/garden.png</src>
-        <location>outdoors</location>
-        <surface>grass</surface>
-    </background>
-
-    <background id="throne room">
-        <name>Throne Room</name>
-        <author>UnderscorM3</author>
-        <src>img/backgrounds/throneroom.png</src>
-        <location>indoors</location>
-        <surface>floor</surface>
-        <time>day</time>
-    </background>
-
-    <background id="birthday backyard">
-        <name>Backyard Birthday</name>
-        <term>backyard</term>
-        <author>UnderscorM3</author>
-        <src>img/backgrounds/backyard_birthday.png</src>
-        <location>outdoors</location>
-        <surface>grass</surface>
-        <temperature>hot</temperature>
-        <privacy>private</privacy>
-        <time>day</time>
-        <water />
-    </background>
-
-    <background id="lake">
-        <name>Lake</name>
-        <preposition>at</preposition>
-        <src>img/backgrounds/lake.png</src>
-        <author>metalytar13</author>
-        <location>outdoors</location>
-        <surface>ground</surface>
-        <time>day</time>
         <privacy>private</privacy>
         <water />
     </background>
@@ -326,7 +71,127 @@
         <category>home</category>
         <time>night</time>
         <privacy>private</privacy>
-		<moon>crescent</moon>
+	<moon>crescent</moon>
+    </background>
+
+    <background id="lake">
+        <name>Lake</name>
+        <preposition>at</preposition>
+        <src>img/backgrounds/lake.png</src>
+        <author>metalytar13</author>
+        <location>outdoors</location>
+        <surface>ground</surface>
+        <time>day</time>
+        <privacy>private</privacy>
+        <water />
+    </background>
+
+    <background id="beach">
+        <name>Beach</name>
+        <preposition>on</preposition>
+        <src>img/backgrounds/beach.png</src>
+        <location>outdoors</location>
+        <surface>sand</surface>
+        <time>day</time>
+        <temperature>hot</temperature>
+        <privacy>private</privacy>
+        <water />
+    </background>
+
+    <background id="paris rooftop">
+        <name>Paris Rooftop</name>
+        <term>Paris rooftop</term>
+        <preposition>on</preposition>
+        <src>img/backgrounds/paris_rooftop.png</src>
+        <author>thelonelyphonebox</author>
+        <location>outdoors</location>
+        <surface>roof</surface>
+        <time>night</time>
+        <temperature>cold</temperature>
+        <privacy>public</privacy>
+        <dark />
+        <filter>brightness(0.8) saturate(1.1)</filter>
+	<moon>full</moon>
+    </background>
+
+    <background id="library">
+        <name>Library</name>
+        <src>img/backgrounds/library.png</src>
+        <author>UnderscorM3</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <category>library</category>
+        <time>day</time>
+        <privacy>private</privacy>
+    </background>
+
+    <background id="bedroom">
+        <name>Bedroom</name>
+        <preposition>in</preposition>
+        <src>img/backgrounds/bedroom.png</src>
+        <author>XKokone-chanX (bed) &amp; throwaway927263 (room)</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <category>home</category>
+        <time>night</time>
+        <privacy>private</privacy>
+	<moon>full</moon>
+    </background>
+
+    <background id="holiday lodge">
+        <name>Holiday Lodge</name>
+        <preposition>at</preposition>
+        <src>img/backgrounds/holiday_lodge.png</src>
+        <author>Zeuses-Swan-Song</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <privacy>private</privacy>
+        <time>night</time>
+    </background>
+
+    <background id="birthday backyard">
+        <name>Backyard Birthday</name>
+        <term>backyard</term>
+        <author>UnderscorM3</author>
+        <src>img/backgrounds/backyard_birthday.png</src>
+        <location>outdoors</location>
+        <surface>grass</surface>
+        <temperature>hot</temperature>
+        <privacy>private</privacy>
+        <time>day</time>
+        <water />
+    </background>
+
+    <background id="garden">
+        <name>Garden</name>
+        <author>UnderscorM3</author>
+        <src>img/backgrounds/garden.png</src>
+        <location>outdoors</location>
+        <surface>grass</surface>
+    </background>
+
+    <background id="hot spring">
+        <name>Hot Spring</name>
+        <preposition>at</preposition>
+        <src>img/backgrounds/hot_spring.png</src>
+        <author>Gon-san &amp; Patisdom</author>
+        <location>outdoors</location>
+        <surface>ground</surface>
+        <time>day</time>
+        <temperature>hot</temperature>
+        <privacy>public</privacy>
+        <water />
+        <bathing />
+    </background>
+
+    <background id="classroom">
+        <name>Classroom</name>
+        <src>img/backgrounds/classroom.png</src>
+        <author>UnderscorM3</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <category>school</category>
+        <privacy>public</privacy>
     </background>
 
     <background id="modern library">
@@ -338,6 +203,141 @@
         <surface>floor</surface>
         <category>library</category>
         <privacy>public</privacy>
+    </background>
+
+    <background id="poolside">
+        <name>Poolside</name>
+        <term>pool</term>
+        <preposition>at</preposition>
+        <src>img/backgrounds/poolside.png</src>
+        <author>ANDRW</author>
+        <location>outdoors</location>
+        <surface>ground</surface>
+        <time>day</time>
+        <temperature>hot</temperature>
+        <privacy>public</privacy>
+        <water />
+    </background>
+
+    <background id="throne room">
+        <name>Throne Room</name>
+        <author>UnderscorM3</author>
+        <src>img/backgrounds/throneroom.png</src>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <time>day</time>
+    </background>
+
+    <background id="armory">
+        <name>Armory</name>
+        <src>img/backgrounds/armory.png</src>
+        <author>UnderscorM3</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <time>day</time>
+    </background>
+
+    <background id="office">
+        <name>Office</name>
+        <src>img/backgrounds/office.png</src>
+        <author>UnderscorM3</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <time>night</time>
+        <privacy>public</privacy>
+    </background>
+
+    <background id="mansion">
+        <name>Mansion</name>
+        <src>img/backgrounds/mansion.png</src>
+        <author>Anymouse-68</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <category>home</category>
+        <time>night</time>
+        <privacy>private</privacy>
+	<moon>full</moon>
+    </background>
+
+    <background id="haunted forest">
+        <name>Haunted Forest</name>
+        <src>img/backgrounds/haunted_forest.png</src>
+        <author>metalytar13</author>
+        <location>outdoors</location>
+        <surface>grass</surface>
+        <category>forest</category>
+        <time>night</time>
+        <temperature>cold</temperature>
+        <viewport top="0" bottom="1500" />
+        <filter>brightness(0.8) saturate(1.2)</filter>
+        <privacy>public</privacy>
+        <dark />
+	<moon>full</moon>
+    </background>
+
+    <background id="alley">
+        <name>Alley</name>
+        <src>img/backgrounds/alley.png</src>
+        <author>UnderscorM3</author>
+        <location>outdoors</location>
+        <surface>ground</surface>
+        <privacy>public</privacy>
+        <time>night</time>
+    </background>
+
+    <background id="roof">
+        <name>Roof</name>
+        <preposition>on</preposition>
+        <src>img/backgrounds/roof.png</src>
+        <location>outdoors</location>
+        <surface>roof</surface>
+        <time>day</time>
+        <privacy>public</privacy>
+    </background>
+
+    <background id="locker room">
+        <name>Locker Room</name>
+        <author>UnderscorM3</author>
+        <src>img/backgrounds/locker_room.png</src>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <privacy>public</privacy>
+        <voyeur />
+        <bathing />
+    </background>
+
+    <background id="showers">
+        <name>Showers</name>
+        <author>EcchiUPS, YaterTheGamer</author>
+        <src>img/backgrounds/showers.png</src>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <bathing />
+    </background>
+
+    <background id="classic">
+        <name>Classic</name>
+        <term>classic Inventory</term>
+        <src>img/backgrounds/classic.png</src>
+        <location>indoors</location>
+        <surface>floor</surface>
+    </background>
+
+    <background id="romantic">
+        <name>Romantic</name>
+        <term>romantic Inventory</term>
+        <src>img/backgrounds/romantic.png</src>
+        <author>Patisdom</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+    </background>
+
+    <background id="purple room">
+        <name>Purple Room</name>
+        <src>img/backgrounds/purple_room.png</src>
+        <author>AshenSorrow</author>
+        <location>indoors</location>
+        <surface>floor</surface>
     </background>
 
     <!-- OFFLINE-ONLY BACKGROUNDS - make sure all online backgrounds are listed above this point and all offline ones below it -->
@@ -355,7 +355,7 @@
         <voyeur />
         <exhibition />
     </background>
-    
+
     <background id="hall">
         <status>offline</status>
         <name>Hall</name>
