@@ -537,6 +537,19 @@
         <response id="1514" opponent="roll_caskett" opponentId="144" />
         <response id="1521" opponent="lysithea" opponentId="384" />
         <response id="1522" opponent="lysithea" opponentId="383" />
+        <response id="1616" opponent="noire" opponentId="2752" />
+        <response id="1617" opponent="noire" opponentId="2755" />
+        <response id="1618" opponent="noire" opponentId="2756" />
+        <response id="1619" opponent="noire" opponentId="2753" />
+        <response id="1620" opponent="noire" opponentId="2749" />
+        <response id="1621" opponent="noire" opponentId="2751" />
+        <response id="1622" opponent="noire" opponentId="2750" />
+        <response id="1623" opponent="noire" opponentId="2877" />
+        <response id="1624" opponent="noire" opponentId="2887" />
+        <response id="1625" opponent="noire" opponentId="2892" />
+        <response id="1626" opponent="noire" opponentId="2888" />
+        <response id="1627" opponent="noire" opponentId="2889" />
+        <response id="1628" opponent="noire" opponentId="2891" />
     </responses>
     <notes>
         <note id="48">Grants the DbD tag. </note>
@@ -551,8 +564,18 @@
         <note id="1371">--There's a short joke and overlook based on size comment in here</note>
         <note id="1374">Flirtier, the one catchup line</note>
         <note id="1454">Feel free to explore the Yggdrasil transfer of mana and technology</note>
-        <note id="1599">This'll be a two stage marker, just to validate events. &lt;br&gt;1. Yae and Leon have to chat&lt;br&gt;2. Leon has to be masturbating&lt;br&gt;3. Yae has to lose her forfeit&lt;br&gt;4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan&lt;br&gt;5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
-        <note id="1600">This'll be a two stage marker, just to validate events. &lt;br&gt;1. Yae and Leon have to chat&lt;br&gt;2. Leon has to be masturbating&lt;br&gt;3. Yae has to lose her forfeit&lt;br&gt;4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan&lt;br&gt;5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
+        <note id="1599">This'll be a two stage marker, just to validate events. 
+1. Yae and Leon have to chat
+2. Leon has to be masturbating
+3. Yae has to lose her forfeit
+4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan
+5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
+        <note id="1600">This'll be a two stage marker, just to validate events. 
+1. Yae and Leon have to chat
+2. Leon has to be masturbating
+3. Yae has to lose her forfeit
+4. The following characters aren't present: Hu Tao, Nonon, Rouge, Sheena, Leviathan
+5. If any of those characters are present, Leon'll offer a "next time, until we can" </note>
     </notes>
     <labels>
         <label id="1" label="" folder="Targets" sort="11" />
@@ -1644,7 +1667,7 @@
         <label id="1614" label="Saw Nonon" folder="Yae Dual Triggers" sort="0" />
         <label id="1615" label="Saw Rouge" folder="Yae Dual Triggers" sort="0" />
     </labels>
-    <nextId>1615</nextId>
+    <nextId>1628</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -2111,6 +2134,7 @@
         <marker scope="Public" name="larachel_ff7" />
         <marker scope="Public" name="larachel_ff8" />
         <marker scope="Public" name="larachel_ff9" />
+        <marker scope="Public" name="leon" />
         <marker scope="Public" name="leon_date" />
         <marker scope="Public" name="leon_dual_finished" />
         <marker scope="Public" name="leon_dual_finishing" />
@@ -2137,6 +2161,7 @@
         <marker scope="Public" name="leon_interestedD" />
         <marker scope="Public" name="leon_missions" />
         <marker scope="Public" name="leon_ninja" />
+        <marker scope="Public" name="leon_noire41" />
         <marker scope="Public" name="leon_nononFF_continue" />
         <marker scope="Public" name="leon_nononFF_mast" />
         <marker scope="Public" name="leon_robinFF" />
@@ -2145,17 +2170,33 @@
         <marker scope="Public" name="leon_VisionC1" />
         <marker scope="Public" name="leon_yae_ff1" />
         <marker scope="Public" name="leon_yae_ff10" />
+        <marker scope="Public" name="leon_yae_ff10H" />
         <marker scope="Public" name="leon_yae_ff11" />
+        <marker scope="Public" name="leon_yae_ff11H" />
         <marker scope="Public" name="leon_yae_ff12" />
+        <marker scope="Public" name="leon_yae_ff12H" />
         <marker scope="Public" name="leon_yae_ff13" />
+        <marker scope="Public" name="leon_yae_ff13H" />
+        <marker scope="Public" name="leon_yae_ff1H" />
         <marker scope="Public" name="leon_yae_ff2" />
+        <marker scope="Public" name="leon_yae_ff2H" />
         <marker scope="Public" name="leon_yae_ff3" />
+        <marker scope="Public" name="leon_yae_ff3H" />
         <marker scope="Public" name="leon_yae_ff4" />
+        <marker scope="Public" name="leon_yae_ff4H" />
         <marker scope="Public" name="leon_yae_ff5" />
+        <marker scope="Public" name="leon_yae_ff5H" />
         <marker scope="Public" name="leon_yae_ff6" />
+        <marker scope="Public" name="leon_yae_ff6H" />
         <marker scope="Public" name="leon_yae_ff7" />
+        <marker scope="Public" name="leon_yae_ff7H" />
         <marker scope="Public" name="leon_yae_ff8" />
+        <marker scope="Public" name="leon_yae_ff8H" />
         <marker scope="Public" name="leon_yae_ff9" />
+        <marker scope="Public" name="leon_yae_ff9H" />
+        <marker scope="Public" name="leon_yae_ff9H_HT" />
+        <marker scope="Public" name="leon_yae_ff9H_NN" />
+        <marker scope="Public" name="leon_yae_ff9H_RG" />
         <marker scope="Public" name="leon_yolo" />
         <marker scope="Public" name="leon01" />
         <marker scope="Public" name="leon01a" />
@@ -2476,12 +2517,15 @@
         <marker scope="Public" name="noire33" />
         <marker scope="Public" name="noire41" />
         <marker scope="Public" name="noire42" />
+        <marker scope="Public" name="noire43" />
         <marker scope="Public" name="noire51" />
         <marker scope="Public" name="noire52" />
         <marker scope="Public" name="noire53" />
         <marker scope="Public" name="noire61" />
         <marker scope="Public" name="noire62" />
         <marker scope="Public" name="noire62b" />
+        <marker scope="Public" name="noire63" />
+        <marker scope="Public" name="noire63b" />
         <marker scope="Public" name="nonon_after01" />
         <marker scope="Public" name="nonon_after02" />
         <marker scope="Public" name="nonon_after03" />
@@ -2874,15 +2918,30 @@
         <marker scope="Public" name="trixie43" />
         <marker scope="Public" name="yae_14" />
         <marker scope="Public" name="yae_dual" />
+        <marker scope="Public" name="yae_ff_rA" />
+        <marker scope="Public" name="yae_ff_rB" />
+        <marker scope="Public" name="yae_ff_rC" />
+        <marker scope="Public" name="yae_ff_rD" />
+        <marker scope="Public" name="yae_ff_rE" />
         <marker scope="Public" name="yae_ff_req" />
         <marker scope="Public" name="yae_ff_reqIOU" />
         <marker scope="Public" name="yae_ff_reqYES" />
+        <marker scope="Public" name="yae_ff_rF" />
+        <marker scope="Public" name="yae_ff_rG" />
+        <marker scope="Public" name="yae_ff_rH" />
+        <marker scope="Public" name="yae_ff_rH2" />
+        <marker scope="Public" name="yae_ff_rI" />
+        <marker scope="Public" name="yae_ff_rJ" />
         <marker scope="Public" name="yae_ff_start" />
         <marker scope="Public" name="yae_ff1A" />
         <marker scope="Public" name="yae_ff1B" />
         <marker scope="Public" name="yae_ff1C" />
+        <marker scope="Public" name="yae_finished" />
         <marker scope="Public" name="yae_forfeit_me_first" />
         <marker scope="Public" name="yae_forfeit_yae_first" />
+        <marker scope="Public" name="yae_leon_ff" />
+        <marker scope="Public" name="yae_leon_ffA" />
+        <marker scope="Public" name="yae_leon_ffB" />
         <marker scope="Public" name="yae_roll_next" />
         <marker scope="Public" name="yae_roll_next_a" />
         <marker scope="Public" name="yae_roll_next_b" />
@@ -2922,6 +2981,7 @@
         <marker scope="Public" name="yae52" />
         <marker scope="Public" name="yae52b" />
         <marker scope="Public" name="yae53a" />
+        <marker scope="Public" name="yae61" />
         <marker scope="Public" name="yaeFF" />
         <marker scope="Public" name="yuri01" />
         <marker scope="Public" name="zls01" />
