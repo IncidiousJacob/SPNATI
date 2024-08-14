@@ -24,11 +24,11 @@
         <note id="510">Conditions are broken and need to be fixed on Futaba's end; Time in Stage condition should be removed.</note>
         <note id="545">Dummied out until the pose for this line is available.</note>
         <note id="546">Personally of the opinion this should be given an ~rng~ variable test and/or a play-once condition. --Nicole</note>
-        <note id="563">AUGHHHHHHHHHHHHH --Nicole</note>
         <note id="583">Feels a little generic. I think even "I can beat any game on Hard mode" would work better here-- informs more about Chiaki's character. Plenty of people who will play Spnati have beaten at least 2 games on hard mode. --Nicole</note>
         <note id="621">Reference to Danganronpa 2's Case 4.</note>
         <note id="635">From "Mario's Favorite Game" by Max Gilardi.</note>
-        <note id="653">Awaits poses: fierce2 (line 1), fierce (line 2), worry (line 3).</note>
+        <note id="653">Awaits poses: fierce2 (line 1), fierce (line 2).</note>
+        <note id="670">"Get lose" isn't a typo. Not in SPNatI, anyway.</note>
     </notes>
     <labels>
         <label id="5" label="" folder="Targeted" sort="0" />
@@ -570,7 +570,7 @@
         <label id="540" label="" folder="Background" sort="0" />
         <label id="541" label="" folder="Background" sort="0" />
         <label id="542" label="" folder="Background" sort="0" />
-        <label id="543" label="awaits pose: tilt" folder="Background" sort="0" />
+        <label id="543" label="" folder="Background" sort="0" />
         <label id="544" label="awaits pose: sneer" folder="Background" sort="0" />
         <label id="545" label="awaits pose: sleep" folder="Background" sort="0" />
         <label id="547" label="Wakeup" folder="Background" sort="0" />
@@ -589,13 +589,11 @@
         <label id="560" label="Mahvel baby" folder="Filtered" sort="0" />
         <label id="561" label="awaits pose: sigh" folder="Background" sort="0" />
         <label id="562" label="awaits pose: thinking2" folder="Targeted" sort="0" />
-        <label id="563" label="Pre-2012 video game characters" folder="" sort="0" />
         <label id="564" label="awaits pose: sneer (line 2)" folder="" sort="0" />
-        <label id="565" label="awaits pose: tilt (st. 0-4, 10)/sneer" folder="" sort="0" />
+        <label id="565" label="awaits pose: sneer (st. 5-9)" folder="" sort="0" />
         <label id="566" label="awaits pose: thinking2 (line 2)" folder="" sort="0" />
         <label id="568" label="awaits pose: fierce2" folder="" sort="0" />
         <label id="569" label="awaits pose: thinking2" folder="" sort="0" />
-        <label id="570" label="awaits pose: tilt (line 7)" folder="" sort="0" />
         <label id="571" label="awaits pose: thinking2" folder="" sort="0" />
         <label id="572" label="awaits pose: fierce2 (line 4)" folder="" sort="0" />
         <label id="573" label="awaits pose: yawn" folder="" sort="0" />
@@ -604,9 +602,8 @@
         <label id="576" label="awaits pose: serious" folder="" sort="0" />
         <label id="578" label="awaits pose: sigh (line 7)" folder="" sort="0" />
         <label id="581" label="awaits pose: serious" folder="" sort="0" />
-        <label id="582" label="awaits pose: tilt (0-4)/sneer" folder="" sort="0" />
+        <label id="582" label="awaits pose: sneer (5-8)" folder="" sort="0" />
         <label id="585" label="awaits pose: thinking2" folder="" sort="0" />
-        <label id="587" label="awaits pose: tilt" folder="" sort="0" />
         <label id="588" label="awaits pose: thinking2" folder="" sort="0" />
         <label id="589" label="awaits pose: thinking2" folder="Background" sort="0" />
         <label id="590" label="" folder="Background" sort="0" />
@@ -628,7 +625,7 @@
         <label id="608" label="POSE NOT DECLARED -- Idol" folder="Filtered" sort="0" />
         <label id="609" label="Idol" folder="Filtered" sort="0" />
         <label id="610" label="Idol" folder="Filtered" sort="0" />
-        <label id="611" label="awaits pose: tilt?" folder="Targeted&gt;Replies" sort="0" />
+        <label id="611" label="" folder="Targeted&gt;Replies" sort="0" />
         <label id="612" label="" folder="Targeted&gt;Replies" sort="0" />
         <label id="613" label="Idol" folder="Filtered" sort="0" />
         <label id="614" label="Idol: Sayaka" folder="Filtered" sort="0" />
@@ -646,12 +643,11 @@
         <label id="628" label="awaits pose: Calm2" folder="" sort="0" />
         <label id="629" label="awaits pose: Calm2" folder="" sort="0" />
         <label id="634" label="" folder="Targeted" sort="0" />
-        <label id="636" label="awaits pose: tilt" folder="" sort="0" />
         <label id="637" label="Larger than male's" folder="" sort="0" />
         <label id="638" label="To make the CE shut up" folder="" sort="0" />
         <label id="639" label="To make the CE shut up" folder="" sort="0" />
         <label id="640" label="Hina swim invitation" folder="Targeted&gt;Replies" sort="0" />
-        <label id="641" label="awaits pose: tilt" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="641" label="" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="642" label="" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="644" label="" folder="Filtered" sort="0" />
         <label id="645" label="" folder="Targeted" sort="0" />
@@ -679,6 +675,10 @@
         <label id="667" label="awaits pose: fierce" folder="" sort="0" />
         <label id="668" label="awaits pose: fierce2" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="0" />
         <label id="669" label="" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="670" label="awaits pose: fierce/fierce2 -- Street Fighter" folder="Filtered" sort="0" />
+        <label id="671" label="awaits pose: fierce2" folder="" sort="0" />
+        <label id="672" label="" folder="Filtered" sort="0" />
+        <label id="673" label="awaits pose: fierce?" folder="Filtered" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-broughtsomething</prefix>
@@ -726,7 +726,7 @@
         <prefix>selfie</prefix>
         <prefix>#-riding</prefix>
     </prefixes>
-    <nextId>669</nextId>
+    <nextId>673</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1v1" />
@@ -851,6 +851,7 @@
         <marker scope="Public" name="elaine_72" />
         <marker scope="Public" name="elaine_73" />
         <marker scope="Public" name="elizabeth_r63" />
+        <marker scope="Public" name="end_sf2" />
         <marker scope="Public" name="enoshima_01" />
         <marker scope="Public" name="escortMission" />
         <marker scope="Public" name="exodia" />
@@ -1301,8 +1302,10 @@
         <marker scope="Public" name="spiderGwen_22" />
         <marker scope="Public" name="spiderGwen_23" />
         <marker scope="Public" name="streamingChan_01a" />
+        <marker scope="Public" name="streetFighter_killerCombos" />
         <marker scope="Public" name="streetfighter1" />
         <marker scope="Public" name="streetfighter2" />
+        <marker scope="Public" name="streetFighterLossChain" />
         <marker scope="Public" name="strip_catday" />
         <marker scope="Public" name="strip_catDay" />
         <marker scope="Public" name="strip_fanservice" />
@@ -1344,6 +1347,7 @@
         <marker scope="Public" name="uravity_r22" />
         <marker scope="Public" name="uravity_r23" />
         <marker scope="Public" name="uravity_r31" />
+        <marker scope="Public" name="victory" />
         <marker scope="Public" name="videogametriviatime" />
         <marker scope="Public" name="vriska_01" />
         <marker scope="Public" name="vriska_02" />
