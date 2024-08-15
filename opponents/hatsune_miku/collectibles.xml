@@ -20,7 +20,7 @@
         <text>As you get ready to leave the inventory for the evening, Miku comes up to you, and in her hand is her tie. Well... not her real tie. "I usually have a couple spares on hand, and I thought you could take one!" She leaves the tie in your hand, and as she walks off, she waves and says: "I hope we get to play again soon!"</text>
         <unlock>Lose a game where Hatsune Miku, at the very least, loses her tie. She doesn't have to win.</unlock>
         <wearable>true</wearable>
-        <clothing name="Tie" generic="tie" position="neck" type="extra" img="opponents/hatsune_miku/Epilogue/tiethumbnail.png" />
+        <clothing img="opponents/hatsune_miku/Epilogue/tiethumbnail.png" name="Tie" generic="tie" position="neck" type="extra" />
     </collectible>
     <collectible id="headset" status="online" img="opponents/hatsune_miku/Epilogue/headset_thumbnail.png" thumbnail="opponents/hatsune_miku/Epilogue/headset_thumbnail.png">
         <title>Miku's Headset</title>
@@ -29,6 +29,6 @@
         <unlock>Win against Miku 3 times.</unlock>
         <counter>3</counter>
         <wearable>true</wearable>
-        <clothing name="Headset" generic="headphones" position="head" type="extra" img="opponents/hatsune_miku/Epilogue/headset_thumbnail.png" plural="true" />
+        <clothing img="opponents/hatsune_miku/Epilogue/headset_thumbnail.png" name="Headset" generic="headphones" position="head" type="extra" plural="true" />
     </collectible>
 </collectibles>
