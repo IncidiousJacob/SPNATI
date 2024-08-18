@@ -2401,7 +2401,7 @@ ul.dropdown-menu>li {
 
 .select-slot-button {
     width: 100%;
-    height: 5.44rem;
+    height: calc(4.1rem * 7/5);
     /* To match small-card-image */
     font-size: 130%;
 }
@@ -3724,18 +3724,12 @@ ul.dropdown-menu>li {
 .opponent-card-area {
     display: flex;
     justify-content: space-between;
-    /* If not supported it's not a big deal */
 }
 
 .small-card-image {
-    height: 5.44rem;
-    width: calc(5.44rem * (5 / 7));
+    height: calc(4.1rem * 7/5);
+    width: 4.1rem
     background-color: white;
-}
-
-.small-card-image+.small-card-image {
-    margin-left: 0.2rem;
-    /* not needed if space-between works. */
 }
 
 /************************************************************
