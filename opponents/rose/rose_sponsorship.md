@@ -87,41 +87,43 @@
 	2. I don't know if I'd want to do this sort of thing in the water. Water is... well, it's not very slick, if you get what I'm saying?
 	3. Ah... I just remembered the first time I went to the beach. A crab pinched my big toe! Wah...
 	
-[ ] Cavendish
+[X] Cavendish
 
 - She is under 1000 lines at the time of writing, so I'm going to ask for some generics. (done)
 	- 1000 lines done
 
 - 14 forfeiting (female) lines (done)
-	I-If you asked someone else for advice, they'd be able to tell you more than me...
-	I've only learned bits and pieces here and there about how to... do that...
-	Ohh... T-That looks like fun, ~target~...
-	S-Sorry that things turned out this way, ~target~.
-	Now's the perfect time to really get <i>wild</i>, you get me?
-	I feel scandalised by this experience...
-	Nngh... That looks like fun...
-	O-Oh, try not to tense up...
-	Ngh... ~target~... keep going...
-	~Target~... y-you're turning me on...
-	Nyeh... ~target~... I want to...
-	~Target~... do you do this regularly? You look like you know what you're doing.
-	... Should I be enjoying this as much as I am?
-	My chest... feels like it's on fire, watching ~target~...
+	1. I-If you asked someone else for advice, they'd be able to tell you more than me...
+	2. I've only learned bits and pieces here and there about how to... do that...
+	3. Ohh... T-That looks like fun, ~target~...
+	4. S-Sorry that things turned out this way, ~target~.
+	5. Now's the perfect time to really get <i>wild</i>, you get me?
+	6. I feel scandalised by this experience...
+	7. Nngh... That looks like fun...
+	8. O-Oh, try not to tense up...
+	9. Ngh... ~target~... keep going...
+	10. ~Target~... y-you're turning me on...
+	11. Nyeh... ~target~... I want to...
+	12. ~Target~... do you do this regularly? You look like you know what you're doing.
+	13. ... Should I be enjoying this as much as I am?
+	14. My chest... feels like it's on fire, watching ~target~...
 - 10 forfeiting (male) lines
-	Don't tense up... let yourself get lost in it...
-	It's all so intense... I feel... hot, thinking about ~target~...
-	Ngh... ~target~... so manly... so virile...
-	I feel ready to... t-to <i>pounce</i> on you... N-Need to hold back...
-	If your thing was... inside me... hnnngh...
-	Ngh... {small}~target~, fuck, it would feel so good inside me...{!reset}
-	Guys do this all the time, don't they? That's what I've heard.
-	Woah... ~target~, you look so good right now...
-	Got a lot of pent-up frustration to let out, huh?	
-	Bet you've been waiting for this since you got here? Hehe!
+	1. Don't tense up... let yourself get lost in it...
+	2. It's all so intense... I feel... hot, thinking about ~target~...
+	3. Ngh... ~target~... so manly... so virile...
+	4. I feel ready to... t-to <i>pounce</i> on you... N-Need to hold back...
+	5. If your thing was... inside me... hnnngh...
+	6. Ngh... {small}~target~, fuck, it would feel so good inside me...{!reset}
+	7. Guys do this all the time, don't they? That's what I've heard.
+	8. Woah... ~target~, you look so good right now...
+	9. Got a lot of pent-up frustration to let out, huh?	
+	10. Bet you've been waiting for this since you got here. Hehe!
 - 5 Must Strip (female)
-	You're the one, ~target~!
-	Phew. You're up next, ~target~!
-	Sorry, ~target~. You lost this one, hehe!
+	1. You're the one, ~target~!
+	2. Phew. You're up next, ~target~!
+	3. Sorry, ~target~. You lost this one, hehe!
+	4. I'm really taking a liking to you, ~target~. I hope you don't find that weird, hehe!
+	5. Go ahead and take some off for Rose, okay?~
 - 2 each for all the Removing/Removed Accessory, Minor, and Major cases (24 total)
 	removing accessory male:
 		1. Meh... Sorry, not really... focusing on that...
@@ -130,38 +132,50 @@
 		1. I'll just have to use my imagination, then... hehe!
 		2. <i>Hnnhh</i>... only ~clothing.withart~...
 	removing accessory female:
-		1.
-		2.
+		1. Feeling a little bit shy, ~target~?
+		2. Hehe! Take your time.
 	removed accessory female:
-		1.
-		2.
+		1. ~clothing.ifPlural(Are those|Is that)~ really all you're taking off for now? Myeh...
+		2. Remember to keep old Rosey in mind if you wanted a different look!
 	removing minor male:
-		1.
-		2.
+		1. Myeh... That's right, take the rest of it off...
+		2. Mmm... That's the sort of thing that'll make me purr!
 	removed minor male:
-		1.
-		2.
+		1. I... I <i>really</i> want to see you get naked, too!
+		2. Mmh... This is the <i>best</i>.
 	removing minor female:
-		1.
-		2.
+		1. I see the appeal of keeping things like ~clothing.ifPlural(those|that)~ on for a little longer...
+		2. We're making some real big steps here.
 	removed minor female:
-		1.
-		2.
+		1. You're such a pretty girl, ~target~...
+		2. You're such a cute little tease... Ehehe...
 	removing major male:
-		1.
-		2.
+		1. Victory feels sweeter than a freshly baked cupcake!
+		2. Take it off, ~target~! I've been waiting for this all ~background.time~!
 	removed major male:
-		1.
-		2.
+		1. Now things feel a little bit more fair between us!
+		2. Who knew losing your ~clothing~ would make for such a big change!
 	removing major female:
-		1.
-		2.
+		1. We're in a similar spot, ~target~. Don't feel too bad!
+		2. Us girls have to stick together, right? So... make things a bit more even.
 	removed major female:
-		1.
-		2.
+		1. You look... mhh... wonderful...
+		2. I... uh... y-you look great, ~target~...
 - 12 After Finished (self) lines
+		1. Brr... I'm starting to feel the chill. H-How much longer are we playing again?
+		2. I should've brought a blanket or something... I'm getting chilly.
+		3. Anyone wanna huddle together for warmth? Hehe...
+		4. My skin is covered in goosebumps now... N-Not just from the nudity, but from being so... <i>cold.</i>
+		5. I think I needed that! I feel so much better now.
+		6. Are the rest of you enjoying the game? I'm having fun over here...
+		7. Maybe I should pay more attention and try to get better at the game. The rest of you seem to be doing fine.
+		8. By the way... D-Don't tell anybody about what I did here to~background.time~, okay? Pinkie promise, ~player~!
+		9. I'm glad this place is so positive about the whole experience of... y'know, getting naked and stuff.
+		10. I still can't believe a place like this exists... and we play games like <i>this!</i> Hehe!
+		11. Pardon my language, but, <i>woof</i> is it ever hot out!
+		12. I think I need a cold drink. Did you know they have drinks with little ice cubes in them, even in summer ? This place must be crazy rich!
 
-[ ] TheTrueSaltmine
+[X] TheTrueSaltmine
 - Add 50 more lines when she is either nearly naked, half naked, or naked.
 	1. Being surrounded by guys who have their thingies out... Hnngh...
 	2. I've never done anything like this before... my heart is pounding. I... I wanna keep going!
@@ -180,6 +194,42 @@
 	15. Make it something good, okay, ~target~? It's only fair~
 	16. You really waited until now to take your shoes off? Your poor feet.
 	17. Ah, your poor feet! Waiting this long to take those shoes off...
+	18. Time to get comfortable... no big deal, Rose, you're just about to finger youself in front of a bunch of men...
+	19. Hehe! You can do it, ~target~. I know you can.
+	20. I've always wanted to see naked guys... This is like a dream come true.
+
+	21. Nyeh! Too bad, ~target~, you're the loser this time! Heheh!
+	22. It's already so big... how're you gonna do it, then? Both hands?
+	23. Y-You aren't going to pass out, are you? After all, so much blood has to go into your... y'know...
+	24. ~clothing.ifPlural(Are those|Is that)~ really all you're taking off for now? Myeh...
+	25. Remember to keep old Rosey in mind if you wanted a different look!
+	26. You're such a pretty girl, ~target~...
+	27. Mmh... This is the <i>best</i>.
+	28. Did you need a hand with ~clothing.ifPlural(those|that)~?
+	29. You look... mhh... wonderful...
+	30. I... uh... y-you look great, ~target~...
+	
+	31. It's hard being a young girl in a world full of big, scary, unknown things. Maybe that's why it's hard for me to really relax in a game like-- uh, sorry.
+	32. It's not easy being a +Anima, or a solo tradeswoman... Maybe I'll have better luck in the future?
+	33. I feel like the lewdest woman to ever come from Astaria right now! And it's about to get <i>lewder...</i>
+	34. Nngh... My neck's a little stiff now. Anybody wanna give my shoulders a rub? Hehe!
+	35. I'm starting to realize that card games really aren't my thing, if me being this exposed wasn't a hint!
+	36. H-Hey, not trying to be sappy, but as long as we all had fun... That's what really matters, right?
+	37. Nngh... Much better. My arms are feeling a little tired, gotta stretch them out!
+	38. Wait... if the goal of the game is to fiddle with ourselves when we lose... wouldn't it also be a pain to get this far and then <i>not</i> do that...?
+	39. Ehhh... You may as well throw me to the dogs now.
+	40. Aw, come on, Rose... Not what you want to see when you're already showing off so much skin...
+	
+	41. Take it off, ~target~! I've been waiting for this all ~background.time~!
+	42. Brr... I'm starting to feel the chill. H-How much longer are we playing again?
+	43. I should've brought a blanket or something... I'm getting chilly.
+	44. Anyone wanna huddle together for warmth? Hehe...
+	45. My skin is covered in goosebumps now... N-Not just from the nudity, but from being so... <i>cold.</i>
+	46. I think I needed that! I feel so much better now.
+	47. Maybe I should pay more attention and try to get better at the game. The rest of you seem to be doing fine.
+	48. Now things feel a little bit more fair between us.
+	49. Who knew losing your ~clothing~ would make for such a big change!
+	50. G...Good game, everyone! I...  I need a cold shower.
 
 - Add more lines that are about her getting horny, hornier, etc. So it feels more natural. Add at least 15 lines but be sure to check for yourself if she needs more or not. These lines can count for the total 50 of the previous flaw.
 Note: some of these overlap with the previous flaw but not all. Most of them are filtered/conditional in some way.
@@ -188,5 +238,16 @@ Note: some of these overlap with the previous flaw but not all. Most of them are
 	3. ... H-Huh? Sorry, I was distracted by... uhh...
 	4. ... O-Oh! The cards, right... I was distracted by... things.
 	5. You boys need to stop looking my way. I'm getting goosebumps, and my heart is pounding!
+	6. I-I can't stop it... I can smell his seed... haaaah, I'm gonna go wild...! // I... I can't help it... I can smell her scent... it's driving me wild...! // I... I can smell them... the scent of their sex... driving me wild...!
+	7. I... I can't help it... I can smell his cum... it's driving me wild...! // I-I can't stop it... I can smell her wetness from here... haaaah, I'm gonna go wild...! // I-I can't help it... I can hear it, smell it... their sex... it's driving me wild...!
+	8. Mmm... That's the sort of thing that'll make me purr!
+	9. You look... mhh... wonderful...
+	10. I can smell it from here... the musk of ~target~ and his penis... why does it turn me on so much? // I can smell it from here... the musk of ~target~ and her flower... why does it turn me on so much?
+	11. Nngh... Why do I have to have such good sense of smell... ~target~ is turning me on...!
+	12. Good job, ~target~... Hhhhhgh...
+	13. ~Target~... Hnnngh that was so good...
+	14. G...Good game, everyone! I...  I need a cold shower. // G-Good game, everyone! I... I need to sit down, hehe...
+	15. Ahh... it's... it's so good looking, in a way...
+	
 	
 	

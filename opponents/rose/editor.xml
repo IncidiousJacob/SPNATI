@@ -19,7 +19,7 @@
             <description>Rose lifts up her shirt to flash the others if she says flashing_2. Variation 2 - she doesn't cover her nipples.</description>
         </case>
         <case name="Everyone Else Eliminated" id="174" priority="Noteworthy" min="5" max="6">
-            <description>Description about what's interesting happening with the character (i.e. why should others target this?)</description>
+            <description>If everyone else is out of the game then Rose may start touching herself (but doesn't climax even by the end of the game).</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -126,6 +126,8 @@
         <response id="470" opponent="nonon" opponentId="226" />
         <response id="472" opponent="nonon" opponentId="597" />
         <response id="473" opponent="nephenee" opponentId="12" />
+        <response id="517" opponent="juno" opponentId="105" />
+        <response id="519" opponent="yusei_fudo" opponentId="200" />
     </responses>
     <notes>
         <note id="193">Rose has left her slot to visit Magma Grunt's slot - MG is showing her a picture of her own backside</note>
@@ -138,6 +140,7 @@
         <note id="382">'put them away' implying Rose things she is a bat +anima</note>
         <note id="398">basically asking for something like, energy bars, or even just snacks/sweets that give her energy</note>
         <note id="434">going to just have her explain out her introductory chapter straight from the manga</note>
+        <note id="518">rose is NOT going to understand any explanation</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Conditional" sort="18" />
@@ -604,12 +607,59 @@
         <label id="471" label="" folder="Conditional" sort="0" />
         <label id="472" label="" folder="Targets" sort="0" />
         <label id="473" label="" folder="Targets" sort="0" />
+        <label id="474" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="475" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="476" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="477" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="478" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="479" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="480" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="481" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="482" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="483" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="484" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="485" label="" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="486" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="487" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="488" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="489" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="490" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="491" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="492" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="493" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="494" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="495" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="496" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="497" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="498" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="499" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="500" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="501" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="502" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="503" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="504" label="joke angry response" color="15" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="505" label="hot spring variant" color="15" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="506" label="" folder="Targets" sort="0" />
+        <label id="507" label="" folder="Response&gt;Nadeshiko" sort="0" />
+        <label id="508" label="" folder="Filtered Lines" sort="0" />
+        <label id="509" label="NOT hot bg lines" folder="" sort="0" />
+        <label id="510" label="cold bg lines" folder="" sort="0" />
+        <label id="511" label="" folder="Conditional&gt;Everyone Out" sort="0" />
+        <label id="512" label="" folder="Conditional&gt;Everyone Out" sort="0" />
+        <label id="513" label="" folder="Conditional&gt;Everyone Out" sort="0" />
+        <label id="514" label="" folder="Targets" sort="0" />
+        <label id="515" label="hot bg lines" folder="" sort="0" />
+        <label id="516" label="" folder="Response" sort="0" />
+        <label id="517" label="" folder="Response" sort="0" />
+        <label id="518" label="" folder="Targets" sort="0" />
+        <label id="519" label="" folder="Targets" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>show_anima==1</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>473</nextId>
+    <nextId>519</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="3player" />
         <marker scope="Public" name="4player_latejoin" />
         <marker scope="Public" name="aaravi_BackScars" />
@@ -626,8 +676,10 @@
         <marker scope="Public" name="blind_opp" />
         <marker scope="Public" name="chica_pizza_Toppings" />
         <marker scope="Public" name="clubRouge_invitationResp" />
+        <marker scope="Public" name="cold_drink_ice_cubes" />
         <marker scope="Public" name="e" />
         <marker scope="Public" name="everyone_out_1" />
+        <marker scope="Public" name="everyone_out_2" />
         <marker scope="Public" name="family_importance" />
         <marker scope="Public" name="felix_intro_1" />
         <marker scope="Public" name="finished" />
@@ -713,6 +765,8 @@
         <marker scope="Public" name="rose_HSW_Rose_clothes1" />
         <marker scope="Public" name="rose_HSW_Rose_clothes1B" />
         <marker scope="Public" name="rose_HSW_self0a" />
+        <marker scope="Public" name="rose_juno_boots1" />
+        <marker scope="Public" name="rose_juno_self0a" />
         <marker scope="Public" name="rose_jura_hairCare1" />
         <marker scope="Public" name="rose_jura_hairCare2" />
         <marker scope="Public" name="rose_jura_hairCare3" />
@@ -763,6 +817,36 @@
         <marker scope="Public" name="rose_momo_competition1" />
         <marker scope="Public" name="rose_momo_quirk1" />
         <marker scope="Public" name="rose_moskii_animaQuestion1" />
+        <marker scope="Public" name="rose_nade_brother1" />
+        <marker scope="Public" name="rose_nade_brother2" />
+        <marker scope="Public" name="rose_nade_brother3" />
+        <marker scope="Public" name="rose_nade_campingStuff1" />
+        <marker scope="Public" name="rose_nade_campingStuff2" />
+        <marker scope="Public" name="rose_nade_campingStuff3" />
+        <marker scope="Public" name="rose_nade_family1" />
+        <marker scope="Public" name="rose_nade_family2" />
+        <marker scope="Public" name="rose_nade_family3" />
+        <marker scope="Public" name="rose_nade_happyCamper1" />
+        <marker scope="Public" name="rose_nade_happyCamper2" />
+        <marker scope="Public" name="rose_nade_happyCamper3" />
+        <marker scope="Public" name="rose_nade_hotSpring1" />
+        <marker scope="Public" name="rose_nade_hotSpring2" />
+        <marker scope="Public" name="rose_nade_hotSpring3" />
+        <marker scope="Public" name="rose_nade_leisureTravel1" />
+        <marker scope="Public" name="rose_nade_leisureTravel2" />
+        <marker scope="Public" name="rose_nade_leisureTravel3" />
+        <marker scope="Public" name="rose_nade_plusAnimaExplained" />
+        <marker scope="Public" name="rose_nade_positive1" />
+        <marker scope="Public" name="rose_nade_positive2" />
+        <marker scope="Public" name="rose_nade_positive3" />
+        <marker scope="Public" name="rose_nade_publicTransport1" />
+        <marker scope="Public" name="rose_nade_publicTransport3" />
+        <marker scope="Public" name="rose_nade_queenLife1" />
+        <marker scope="Public" name="rose_nade_queenLife2" />
+        <marker scope="Public" name="rose_nade_queenLife3" />
+        <marker scope="Public" name="rose_nade_travelingMerchant1" />
+        <marker scope="Public" name="rose_nade_travelingMerchant2" />
+        <marker scope="Public" name="rose_nade_travelingMerchant3" />
         <marker scope="Public" name="rose_resp0_1" />
         <marker scope="Public" name="rose_revy_self0a" />
         <marker scope="Public" name="rose_revy_self0b" />
@@ -833,6 +917,7 @@
         <marker scope="Public" name="scent" />
         <marker scope="Public" name="scratch_on_leg" />
         <marker scope="Public" name="senri_mention" />
+        <marker scope="Public" name="shoulder_rub" />
         <marker scope="Public" name="show_anima">If set to 1 she will show off her +Anima traits (cat claws and sharp eyes)</marker>
         <marker scope="Public" name="showing_animaFirstTime_yuno" />
         <marker scope="Public" name="standbackup" />
@@ -859,6 +944,7 @@
         <marker scope="Public" name="yuri_sourceGoodsResp" />
         <marker scope="Public" name="yuri_teadrinker1" />
         <marker scope="Public" name="yuri_teadrinker2" />
+        <marker scope="Public" name="yusei_birthday" />
     </markers>
     <recipes>
         <recipe key="4304b9c6-cdb2-4889-9ccd-fd4ccab36490">
