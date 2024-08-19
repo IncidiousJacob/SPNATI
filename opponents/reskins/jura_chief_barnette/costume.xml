@@ -213,6 +213,10 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/0-smug.png" x="0" y="0" />
             <sprite id="annoyed1" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="81" rotation="1" />
         </pose>
+        <pose id="0-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/0-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
         <pose id="0-stripb">
             <sprite id="strip" src="reskins/jura_chief_barnette/0-strip.png" x="0" y="0" />
             <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking-.png" x="315" y="0" />
@@ -220,6 +224,15 @@
         <pose id="0-strip-b">
             <sprite id="strip" src="reskins/jura_chief_barnette/0-strip-.png" x="0" y="0" />
             <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking-.png" x="315" y="0" />
+        </pose>
+        <pose id="0-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/0-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="0-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/0-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="0-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/0-talking.png" x="0" y="0" />
@@ -365,9 +378,22 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/1-smug.png" x="0" y="0" />
             <sprite id="annoyed1" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="81" rotation="1" />
         </pose>
+        <pose id="1-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/1-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
         <pose id="1-strippedb">
             <sprite id="strip" src="reskins/jura_chief_barnette/1-stripped.png" x="0" y="0" />
             <sprite id="blooking-" src="reskins/jura_chief_barnette/bselected.png" x="315" y="0" />
+        </pose>
+        <pose id="1-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/1-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="1-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/1-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="1-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/1-talking.png" x="0" y="0" />
@@ -422,6 +448,16 @@
         <pose id="2-bexcited">
             <sprite id="talking" src="reskins/jura_chief_barnette/2-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_chief_barnette/bexcited.png" x="304" y="0" />
+        </pose>
+        <pose id="2-bstrip">
+            <sprite id="strip-" src="reskins/jura_chief_barnette/2-strip.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking+.png" x="302" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_chief_barnette/bmouthopen.png" x="303" y="324" rotation="-4" />
+        </pose>
+        <pose id="2-bstrip-">
+            <sprite id="strip-" src="reskins/jura_chief_barnette/2-strip-.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_chief_barnette/bmouthopen.png" x="302" y="324" rotation="-7" />
         </pose>
         <pose id="2-bsurprised">
             <sprite id="talking" src="reskins/jura_chief_barnette/2-surprised.png" x="0" y="0" />
@@ -484,6 +520,19 @@
         <pose id="2-smug-">
             <sprite id="smug" src="reskins/jura_chief_barnette/2-smug.png" x="0" y="0" />
             <sprite id="annoyed1" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="81" rotation="1" />
+        </pose>
+        <pose id="2-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/2-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
+        <pose id="2-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/2-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="2-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/2-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="2-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/2-talking.png" x="0" y="0" />
@@ -609,6 +658,19 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/3-smug.png" x="0" y="0" />
             <sprite id="annoyed1" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="81" rotation="1" />
         </pose>
+        <pose id="3-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/3-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
+        <pose id="3-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/3-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="3-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/3-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
+        </pose>
         <pose id="3-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/3-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_chief_barnette/btalking.png" x="315" y="0" />
@@ -725,6 +787,10 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/4-smug.png" x="0" y="0" />
             <sprite id="annoyed1" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="81" rotation="1" />
         </pose>
+        <pose id="4-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/4-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
         <pose id="4-strip">
             <sprite id="strip" src="reskins/jura_chief_barnette/4-strip.png" x="0" y="0" alpha="100" />
             <sprite id="stripped_alt" src="reskins/jura_chief_barnette/5-stripped_alt.png" x="0" y="0" alpha="0" />
@@ -758,6 +824,15 @@
                 <keyframe time="0" x="278" y="0" alpha="0" />
                 <keyframe time="2" alpha="100" />
             </directive>
+        </pose>
+        <pose id="4-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/4-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="4-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/4-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="4-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/4-talking.png" x="0" y="0" />
@@ -1008,6 +1083,10 @@
             <sprite id="stripped" src="reskins/jura_chief_barnette/5-stretching.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcameraperfect.png" x="305" y="0" rotation="2" />
         </pose>
+        <pose id="5-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/5-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
         <pose id="5-stripped">
             <sprite id="stripped" src="reskins/jura_chief_barnette/5-stripped.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="278" y="0" rotation="5" />
@@ -1023,6 +1102,19 @@
         <pose id="5-strippedb+">
             <sprite id="stripped" src="reskins/jura_chief_barnette/5-stripped.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera+.png" x="278" y="0" rotation="5" />
+        </pose>
+        <pose id="5-strippedcamera">
+            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="5-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/5-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="5-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/5-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="5-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/5-talking.png" x="0" y="0" />
@@ -1093,6 +1185,9 @@
         <pose id="6-bexcited">
             <sprite id="talking" src="reskins/jura_chief_barnette/6-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_chief_barnette/bexcited.png" x="304" y="0" />
+        </pose>
+        <pose id="6-blank">
+            <sprite id="meiasmilemouth" src="reskins/jura_chief_barnette/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
         <pose id="6-bsurprised">
             <sprite id="talking" src="reskins/jura_chief_barnette/6-surprised.png" x="0" y="0" />
@@ -1312,9 +1407,38 @@
             <sprite id="stripped" src="reskins/jura_chief_barnette/6-stretching.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcameraperfect.png" x="305" y="0" rotation="2" />
         </pose>
+        <pose id="6-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/6-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
+        <pose id="6-stripped">
+            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="6-stripped_alt">
+            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="6-stripped_alt-">
+            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="6-strippedb+">
+            <sprite id="stripped" src="reskins/jura_chief_barnette/5-stripped.png" x="0" y="0" />
+            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera+.png" x="278" y="0" rotation="5" />
+        </pose>
         <pose id="6-strippedcamera">
             <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
             <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
+        </pose>
+        <pose id="6-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/6-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        </pose>
+        <pose id="6-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/6-proud.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
         </pose>
         <pose id="6-talking">
             <sprite id="talking" src="reskins/jura_chief_barnette/6-talking.png" x="0" y="0" />
@@ -1378,6 +1502,35 @@
             <sprite id="attentive" src="reskins/jura_chief_barnette/7-attentive.png" x="0" y="0" />
             <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="-3" y="828" />
         </pose>
+        <pose id="7-bmeia">
+            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="-10" y="241" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia.png" x="0" y="0" />
+        </pose>
+        <pose id="7-bmeia2">
+            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast2.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="-12" y="239" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia2.png" x="0" y="0" />
+        </pose>
+        <pose id="7-bmeia3">
+            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast3.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown.png" x="13" y="248" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia3.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="3" src="reskins/jura_chief_barnette/bmeia3hand.png" x="17" y="1098" />
+        </pose>
+        <pose id="7-bmeia4">
+            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast.png" x="350" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="5" y="239" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia4.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="3" src="reskins/jura_chief_barnette/bmeia4hand.png" x="13" y="1080" />
+        </pose>
+        <pose id="7-bmeia5">
+            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast3.png" x="266" y="0" />
+            <sprite id="meiadoggydown" z="3" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="6" y="293" />
+            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia5.png" x="0" y="0" />
+            <sprite id="bmeia3hand" z="4" src="reskins/jura_chief_barnette/bmeia5hand.png" x="15" y="1140" />
+            <sprite id="droplets" z="2" src="reskins/jura_chief_barnette/droplets.png" x="7" y="1301" />
+        </pose>
         <pose id="7-coy">
             <sprite id="dreaming" src="reskins/jura_chief_barnette/7-dreaming.png" x="0" y="0" />
             <sprite id="coy" src="reskins/jura_chief_barnette/coy.png" x="-1" y="793" rotation="0" />
@@ -1402,6 +1555,34 @@
             <sprite id="cherylarm" src="reskins/jura_chief_barnette/SPOILER_8-buttcrop.png" x="-152" y="36" rotation="14" />
             <sprite id="cherylarm2" src="reskins/jura_chief_barnette/SPOILER_8-buttcrop.png" x="164" y="85" scalex="-1" rotation="-9" />
             <sprite id="bstand" z="-2" src="reskins/jura_chief_barnette/bstand.png" x="278" y="0" />
+        </pose>
+        <pose id="7-meia">
+            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="0" y="241" />
+            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast.png" x="-330" y="0" />
+        </pose>
+        <pose id="7-meia2">
+            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia2.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="0" y="260" />
+            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast3.png" x="-336" y="2" />
+            <sprite id="meia2hand" z="3" src="reskins/jura_chief_barnette/7-meia2hand.png" x="2" y="1102" />
+        </pose>
+        <pose id="7-meia3">
+            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia3.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="2" y="252" />
+            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast2.png" x="-266" y="-2" />
+        </pose>
+        <pose id="7-meia4">
+            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia4.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="-7" y="250" />
+            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast3.png" x="-336" y="2" />
+        </pose>
+        <pose id="7-meia5">
+            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia5.png" x="0" y="0" />
+            <sprite id="meiadoggydown" z="3" src="reskins/jura_chief_barnette/meiadoggydown.png" x="-9" y="301" />
+            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast.png" x="-330" y="0" />
+            <sprite id="meia2hand" z="4" src="reskins/jura_chief_barnette/7-meia5hands.png" x="-1" y="1138" />
+            <sprite id="droplets" z="2" src="reskins/jura_chief_barnette/droplets.png" x="4" y="1313" scalex="-1" />
         </pose>
         <pose id="7-nagatoro">
             <sprite id="nagatoro" src="reskins/jura_chief_barnette/7-sexyb.png" x="0" y="0" />
@@ -1475,6 +1656,19 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/7-smug.png" x="0" y="0" />
             <sprite id="annoyed" src="reskins/jura_chief_barnette/annoyed.png" x="5" y="666" rotation="-1" />
         </pose>
+        <pose id="7-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/7-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="0" y="845" rotation="-4" />
+        </pose>
+        <pose id="7-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/7-disgusted.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="767" rotation="0" />
+        </pose>
+        <pose id="7-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/7-disgusted.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="767" rotation="0" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="843" rotation="-1" />
+        </pose>
         <pose id="7-toblerone">
             <sprite id="hug" src="reskins/jura_chief_barnette/7-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_chief_barnette/ex-toblerone.png" x="24" y="364" rotation="-305" />
@@ -1513,6 +1707,93 @@
         <pose id="8-attentivesilent">
             <sprite id="attentive" src="reskins/jura_chief_barnette/8-attentive.png" x="0" y="0" />
             <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="-3" y="818" rotation="7" />
+        </pose>
+        <pose id="8-bhug">
+            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
+            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
+            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="0" />
+                <keyframe time="3" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="8-bhug2">
+            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
+            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
+            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette2.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="0" />
+                <keyframe time="3" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="8-bhug2silent">
+            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
+            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
+            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette2.png" x="0" y="0" alpha="0" />
+            <sprite id="bmouthsilentside" delay="0.5" src="reskins/jura_chief_barnette/bmouthsilentside.png" x="-70" y="299" alpha="0" />
+            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="0" />
+                <keyframe time="3" alpha="100" />
+            </directive>
+            <directive type="animation" id="bmouthsilentside" delay="0.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-70" y="299" />
+                <keyframe time="2.5" x="-70" y="299" />
+            </directive>
+            <directive type="animation" id="bmouthsilentside" delay="0.5" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.5" alpha="100" />
+            </directive>
+            <directive type="animation" id="bmouthsilentside" delay="3" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="4" />
+            </directive>
+        </pose>
+        <pose id="8-blank">
+            <sprite id="meiasmilemouth" src="reskins/jura_chief_barnette/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
         <pose id="8-coy">
             <sprite id="dreaming" src="reskins/jura_chief_barnette/8-dreaming.png" x="0" y="0" />
@@ -1615,6 +1896,19 @@
             <sprite id="smug" src="reskins/jura_chief_barnette/8-smug.png" x="0" y="0" />
             <sprite id="annoyed" src="reskins/jura_chief_barnette/annoyed.png" x="4" y="657" rotation="-1" />
         </pose>
+        <pose id="8-stretchingsilent">
+            <sprite id="stretching" src="reskins/jura_chief_barnette/8-stretching.png" x="0" y="0" />
+            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="2" y="846" rotation="-1" />
+        </pose>
+        <pose id="8-suspicious">
+            <sprite id="proud" src="reskins/jura_chief_barnette/8-disgusted.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="784" rotation="0" />
+        </pose>
+        <pose id="8-suspicioussilent">
+            <sprite id="proud" src="reskins/jura_chief_barnette/8-disgusted.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="784" rotation="0" />
+            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="860" rotation="-1" />
+        </pose>
         <pose id="8-toblerone">
             <sprite id="hug" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_chief_barnette/ex-toblerone.png" x="24" y="364" rotation="-305" />
@@ -1646,299 +1940,13 @@
                 <keyframe time="0.4" x="-2" />
             </directive>
         </pose>
-        <pose id="0-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/0-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
+        <pose id="3-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_chief_barnette/3-stripped-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_chief_barnette/btalking-.png" x="315" y="0" />
         </pose>
-        <pose id="1-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/1-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="2-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/2-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="3-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/3-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="4-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/4-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="5-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/5-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="6-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/6-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-        </pose>
-        <pose id="7-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/7-disgusted.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="767" rotation="0" />
-        </pose>
-        <pose id="8-suspicious">
-            <sprite id="proud" src="reskins/jura_chief_barnette/8-disgusted.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="784" rotation="0" />
-        </pose>
-        <pose id="0-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/0-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="1-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/1-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="2-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/2-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="3-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/3-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="4-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/4-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="5-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/5-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="6-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/6-proud.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="2" y="177" rotation="1" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="253" />
-        </pose>
-        <pose id="7-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/7-disgusted.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="767" rotation="0" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="843" rotation="-1" />
-        </pose>
-        <pose id="8-suspicioussilent">
-            <sprite id="proud" src="reskins/jura_chief_barnette/8-disgusted.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_chief_barnette/suspicious.png" x="1" y="784" rotation="0" />
-            <sprite id="silentthinking" src="reskins/jura_chief_barnette/silentthinking.png" x="1" y="860" rotation="-1" />
-        </pose>
-        <pose id="8-bhug">
-            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
-            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
-            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
-            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette.png" x="0" y="0" alpha="0" />
-            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="0.5" alpha="0" />
-                <keyframe time="1.5" alpha="0" />
-                <keyframe time="3" alpha="100" />
-            </directive>
-        </pose>
-        <pose id="8-bhug2">
-            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
-            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
-            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
-            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette2.png" x="0" y="0" alpha="0" />
-            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="0.5" alpha="0" />
-                <keyframe time="1.5" alpha="0" />
-                <keyframe time="3" alpha="100" />
-            </directive>
-        </pose>
-        <pose id="8-bhug2silent">
-            <sprite id="hug" z="-1" src="reskins/jura_chief_barnette/8-hug.png" x="0" y="0" alpha="100" />
-            <sprite id="bhug" z="1" src="reskins/jura_chief_barnette/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
-            <sprite id="345678hugarms" z="2" src="reskins/jura_chief_barnette/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
-            <sprite id="barnette" src="reskins/jura_chief_barnette/8-barnette2.png" x="0" y="0" alpha="0" />
-            <sprite id="bmouthsilentside" delay="0.5" src="reskins/jura_chief_barnette/bmouthsilentside.png" x="-70" y="299" alpha="0" />
-            <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="bhug" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="345678hugarms" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="barnette" ease="ease-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="0.5" alpha="0" />
-                <keyframe time="1.5" alpha="0" />
-                <keyframe time="3" alpha="100" />
-            </directive>
-            <directive type="animation" id="bmouthsilentside" delay="0.5" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-70" y="299" />
-                <keyframe time="2.5" x="-70" y="299" />
-            </directive>
-            <directive type="animation" id="bmouthsilentside" delay="0.5" ease="ease-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="2.5" alpha="100" />
-            </directive>
-            <directive type="animation" id="bmouthsilentside" delay="3" ease="linear" interpolation="linear">
-                <keyframe time="0" rotation="4" />
-            </directive>
-        </pose>
-        <pose id="0-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/0-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="1-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/1-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="2-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/2-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="3-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/3-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="4-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/4-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="5-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/5-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="6-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/6-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="3" y="229" rotation="-5" />
-        </pose>
-        <pose id="7-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/7-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="0" y="845" rotation="-4" />
-        </pose>
-        <pose id="8-stretchingsilent">
-            <sprite id="stretching" src="reskins/jura_chief_barnette/8-stretching.png" x="0" y="0" />
-            <sprite id="silent" src="reskins/jura_chief_barnette/silent.png" x="2" y="846" rotation="-1" />
-        </pose>
-        <pose id="6-stripped">
-            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
-            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
-        </pose>
-        <pose id="6-stripped_alt">
-            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
-            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
-        </pose>
-        <pose id="6-stripped_alt-">
-            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
-            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
-        </pose>
-        <pose id="5-strippedcamera">
-            <sprite id="stripped" src="reskins/jura_chief_barnette/6-stripped.png" x="0" y="0" />
-            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera.png" x="339" y="0" rotation="2" />
-        </pose>
-        <pose id="6-strippedb+">
-            <sprite id="stripped" src="reskins/jura_chief_barnette/5-stripped.png" x="0" y="0" />
-            <sprite id="bcamera+" z="-1" src="reskins/jura_chief_barnette/bcamera+.png" x="278" y="0" rotation="5" />
-        </pose>
-        <pose id="2-bstrip-">
-            <sprite id="strip-" src="reskins/jura_chief_barnette/2-strip-.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_chief_barnette/bmouthopen.png" x="302" y="324" rotation="-7" />
-        </pose>
-        <pose id="7-bmeia">
-            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast.png" x="350" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="-10" y="241" />
-            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia.png" x="0" y="0" />
-        </pose>
-        <pose id="7-bmeia2">
-            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast2.png" x="350" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="-12" y="239" />
-            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia2.png" x="0" y="0" />
-        </pose>
-        <pose id="7-bmeia3">
-            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast3.png" x="350" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown.png" x="13" y="248" />
-            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia3.png" x="0" y="0" />
-            <sprite id="bmeia3hand" z="3" src="reskins/jura_chief_barnette/bmeia3hand.png" x="17" y="1098" />
-        </pose>
-        <pose id="7-bmeia4">
-            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast.png" x="350" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="5" y="239" />
-            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia4.png" x="0" y="0" />
-            <sprite id="bmeia3hand" z="3" src="reskins/jura_chief_barnette/bmeia4hand.png" x="13" y="1080" />
-        </pose>
-        <pose id="7-bmeia5">
-            <sprite id="meia" src="reskins/jura_chief_barnette/7-meiamast3.png" x="266" y="0" />
-            <sprite id="meiadoggydown" z="3" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="6" y="293" />
-            <sprite id="bmeiamast" z="1" src="reskins/jura_chief_barnette/bmeia5.png" x="0" y="0" />
-            <sprite id="bmeia3hand" z="4" src="reskins/jura_chief_barnette/bmeia5hand.png" x="15" y="1140" />
-            <sprite id="droplets" z="2" src="reskins/jura_chief_barnette/droplets.png" x="7" y="1301" />
-        </pose>
-        <pose id="7-meia">
-            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia.png" x="0" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="0" y="241" />
-            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast.png" x="-330" y="0" />
-        </pose>
-        <pose id="7-meia2">
-            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia2.png" x="0" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="0" y="260" />
-            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast3.png" x="-336" y="2" />
-            <sprite id="meia2hand" z="3" src="reskins/jura_chief_barnette/7-meia2hand.png" x="2" y="1102" />
-        </pose>
-        <pose id="7-meia3">
-            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia3.png" x="0" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown2.png" x="2" y="252" />
-            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast2.png" x="-266" y="-2" />
-        </pose>
-        <pose id="7-meia4">
-            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia4.png" x="0" y="0" />
-            <sprite id="meiadoggydown" z="2" src="reskins/jura_chief_barnette/meiadoggydown3.png" x="-7" y="250" />
-            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast3.png" x="-336" y="2" />
-        </pose>
-        <pose id="7-meia5">
-            <sprite id="meia" z="1" src="reskins/jura_chief_barnette/7-meia5.png" x="0" y="0" />
-            <sprite id="meiadoggydown" z="3" src="reskins/jura_chief_barnette/meiadoggydown.png" x="-9" y="301" />
-            <sprite id="bmeiamast" src="reskins/jura_chief_barnette/bmeiamast.png" x="-330" y="0" />
-            <sprite id="meia2hand" z="4" src="reskins/jura_chief_barnette/7-meia5hands.png" x="-1" y="1138" />
-            <sprite id="droplets" z="2" src="reskins/jura_chief_barnette/droplets.png" x="4" y="1313" scalex="-1" />
-        </pose>
-        <pose id="8-blank">
-            <sprite id="meiasmilemouth" src="reskins/jura_chief_barnette/meiasmilemouth.png" x="0" y="0" alpha="0" />
-        </pose>
-        <pose id="6-blank">
-            <sprite id="meiasmilemouth" src="reskins/jura_chief_barnette/meiasmilemouth.png" x="0" y="0" alpha="0" />
-        </pose>
-        <pose id="2-bstrip">
-            <sprite id="strip-" src="reskins/jura_chief_barnette/2-strip.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_chief_barnette/blooking+.png" x="302" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_chief_barnette/bmouthopen.png" x="303" y="324" rotation="-4" />
+        <pose id="4-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_chief_barnette/4-stripped-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_chief_barnette/btalking-.png" x="315" y="0" />
         </pose>
     </poses>
 
