@@ -8,121 +8,121 @@
  *****                    All Dialogue Triggers                   *****
  **********************************************************************/
 
-var SELECTED = "selected";
-var OPPONENT_SELECTED = "opponent_selected";
-var OPPONENT_DESELECTED = "opponent_deselected";
-var SETTINGS_CHANGED = "settings_changed";
-var GAME_START = "game_start";
+const SELECTED = "selected";
+const OPPONENT_SELECTED = "opponent_selected";
+const OPPONENT_DESELECTED = "opponent_deselected";
+const SETTINGS_CHANGED = "settings_changed";
+const GAME_START = "game_start";
 
-var DEALING_CARDS = "dealing_cards";
+const DEALING_CARDS = "dealing_cards";
 
-var SWAP_CARDS = "swap_cards";
-var ANY_HAND = "hand";
-var BAD_HAND = "bad_hand";
-var OKAY_HAND = "okay_hand";
-var GOOD_HAND = "good_hand";
+const SWAP_CARDS = "swap_cards";
+const ANY_HAND = "hand";
+const BAD_HAND = "bad_hand";
+const OKAY_HAND = "okay_hand";
+const GOOD_HAND = "good_hand";
 
-var PLAYER_MUST_STRIP = "must_strip";
-var PLAYER_MUST_STRIP_WINNING = "must_strip_winning";
-var PLAYER_MUST_STRIP_NORMAL = "must_strip_normal";
-var PLAYER_MUST_STRIP_LOSING = "must_strip_losing";
-var PLAYER_STRIPPING = "stripping";
-var PLAYER_STRIPPED = "stripped";
+const PLAYER_MUST_STRIP = "must_strip";
+const PLAYER_MUST_STRIP_WINNING = "must_strip_winning";
+const PLAYER_MUST_STRIP_NORMAL = "must_strip_normal";
+const PLAYER_MUST_STRIP_LOSING = "must_strip_losing";
+const PLAYER_STRIPPING = "stripping";
+const PLAYER_STRIPPED = "stripped";
 
-var PLAYER_MUST_MASTURBATE = "must_masturbate";
-var PLAYER_MUST_MASTURBATE_FIRST = "must_masturbate_first";
-var PLAYER_START_MASTURBATING = "start_masturbating";
-var PLAYER_MASTURBATING = "masturbating";
-var PLAYER_HEAVY_MASTURBATING = "heavy_masturbating";
-var PLAYER_FINISHING_MASTURBATING = "finishing_masturbating";
-var PLAYER_FINISHED_MASTURBATING = "finished_masturbating";
-var PLAYER_AFTER_MASTURBATING = "after_masturbating";
+const PLAYER_MUST_MASTURBATE = "must_masturbate";
+const PLAYER_MUST_MASTURBATE_FIRST = "must_masturbate_first";
+const PLAYER_START_MASTURBATING = "start_masturbating";
+const PLAYER_MASTURBATING = "masturbating";
+const PLAYER_HEAVY_MASTURBATING = "heavy_masturbating";
+const PLAYER_FINISHING_MASTURBATING = "finishing_masturbating";
+const PLAYER_FINISHED_MASTURBATING = "finished_masturbating";
+const PLAYER_AFTER_MASTURBATING = "after_masturbating";
 
-var OPPONENT_LOST = "opponent_lost";
-var OPPONENT_STRIPPING = "opponent_stripping";
-var OPPONENT_STRIPPED = "opponent_stripped";
+const OPPONENT_LOST = "opponent_lost";
+const OPPONENT_STRIPPING = "opponent_stripping";
+const OPPONENT_STRIPPED = "opponent_stripped";
 
-var OPPONENT_CHEST_WILL_BE_VISIBLE = "opponent_chest_will_be_visible";
-var OPPONENT_CROTCH_WILL_BE_VISIBLE = "opponent_crotch_will_be_visible";
-var OPPONENT_CHEST_IS_VISIBLE = "opponent_chest_is_visible";
-var OPPONENT_CROTCH_IS_VISIBLE = "opponent_crotch_is_visible";
-var OPPONENT_START_MASTURBATING = "opponent_start_masturbating";
-var OPPONENT_MASTURBATING = "opponent_masturbating";
-var OPPONENT_HEAVY_MASTURBATING = "opponent_heavy_masturbating";
-var OPPONENT_FINISHING_MASTURBATING = "opponent_finishing_masturbating";
-var OPPONENT_FINISHED_MASTURBATING = "opponent_finished_masturbating";
+const OPPONENT_CHEST_WILL_BE_VISIBLE = "opponent_chest_will_be_visible";
+const OPPONENT_CROTCH_WILL_BE_VISIBLE = "opponent_crotch_will_be_visible";
+const OPPONENT_CHEST_IS_VISIBLE = "opponent_chest_is_visible";
+const OPPONENT_CROTCH_IS_VISIBLE = "opponent_crotch_is_visible";
+const OPPONENT_START_MASTURBATING = "opponent_start_masturbating";
+const OPPONENT_MASTURBATING = "opponent_masturbating";
+const OPPONENT_HEAVY_MASTURBATING = "opponent_heavy_masturbating";
+const OPPONENT_FINISHING_MASTURBATING = "opponent_finishing_masturbating";
+const OPPONENT_FINISHED_MASTURBATING = "opponent_finished_masturbating";
 
-var PLAYERS_TIED = "tie";
+const PLAYERS_TIED = "tie";
 
-var MALE_HUMAN_MUST_STRIP = "male_human_must_strip";
-var MALE_MUST_STRIP = "male_must_strip";
+const MALE_HUMAN_MUST_STRIP = "male_human_must_strip";
+const MALE_MUST_STRIP = "male_must_strip";
 
-var MALE_REMOVING_ACCESSORY = "male_removing_accessory";
-var MALE_REMOVING_MINOR = "male_removing_minor";
-var MALE_REMOVING_MAJOR = "male_removing_major";
-var MALE_CHEST_WILL_BE_VISIBLE = "male_chest_will_be_visible";
-var MALE_CROTCH_WILL_BE_VISIBLE = "male_crotch_will_be_visible";
+const MALE_REMOVING_ACCESSORY = "male_removing_accessory";
+const MALE_REMOVING_MINOR = "male_removing_minor";
+const MALE_REMOVING_MAJOR = "male_removing_major";
+const MALE_CHEST_WILL_BE_VISIBLE = "male_chest_will_be_visible";
+const MALE_CROTCH_WILL_BE_VISIBLE = "male_crotch_will_be_visible";
 
-var MALE_REMOVED_ACCESSORY = "male_removed_accessory";
-var MALE_REMOVED_MINOR = "male_removed_minor";
-var MALE_REMOVED_MAJOR = "male_removed_major";
-var MALE_CHEST_IS_VISIBLE = "male_chest_is_visible";
-var MALE_SMALL_CROTCH_IS_VISIBLE = "male_small_crotch_is_visible";
-var MALE_MEDIUM_CROTCH_IS_VISIBLE = "male_medium_crotch_is_visible";
-var MALE_LARGE_CROTCH_IS_VISIBLE = "male_large_crotch_is_visible";
-var MALE_CROTCH_IS_VISIBLE = "male_crotch_is_visible";
+const MALE_REMOVED_ACCESSORY = "male_removed_accessory";
+const MALE_REMOVED_MINOR = "male_removed_minor";
+const MALE_REMOVED_MAJOR = "male_removed_major";
+const MALE_CHEST_IS_VISIBLE = "male_chest_is_visible";
+const MALE_SMALL_CROTCH_IS_VISIBLE = "male_small_crotch_is_visible";
+const MALE_MEDIUM_CROTCH_IS_VISIBLE = "male_medium_crotch_is_visible";
+const MALE_LARGE_CROTCH_IS_VISIBLE = "male_large_crotch_is_visible";
+const MALE_CROTCH_IS_VISIBLE = "male_crotch_is_visible";
 
-var MALE_MUST_MASTURBATE = "male_must_masturbate";
-var MALE_START_MASTURBATING = "male_start_masturbating";
-var MALE_MASTURBATING = "male_masturbating";
-var MALE_HEAVY_MASTURBATING = "male_heavy_masturbating";
-var MALE_FINISHED_MASTURBATING = "male_finished_masturbating";
+const MALE_MUST_MASTURBATE = "male_must_masturbate";
+const MALE_START_MASTURBATING = "male_start_masturbating";
+const MALE_MASTURBATING = "male_masturbating";
+const MALE_HEAVY_MASTURBATING = "male_heavy_masturbating";
+const MALE_FINISHED_MASTURBATING = "male_finished_masturbating";
 
-var FEMALE_HUMAN_MUST_STRIP = "female_human_must_strip";
-var FEMALE_MUST_STRIP = "female_must_strip";
+const FEMALE_HUMAN_MUST_STRIP = "female_human_must_strip";
+const FEMALE_MUST_STRIP = "female_must_strip";
 
-var FEMALE_REMOVING_ACCESSORY = "female_removing_accessory";
-var FEMALE_REMOVING_MINOR = "female_removing_minor";
-var FEMALE_REMOVING_MAJOR = "female_removing_major";
-var FEMALE_CHEST_WILL_BE_VISIBLE = "female_chest_will_be_visible";
-var FEMALE_CROTCH_WILL_BE_VISIBLE = "female_crotch_will_be_visible";
+const FEMALE_REMOVING_ACCESSORY = "female_removing_accessory";
+const FEMALE_REMOVING_MINOR = "female_removing_minor";
+const FEMALE_REMOVING_MAJOR = "female_removing_major";
+const FEMALE_CHEST_WILL_BE_VISIBLE = "female_chest_will_be_visible";
+const FEMALE_CROTCH_WILL_BE_VISIBLE = "female_crotch_will_be_visible";
 
-var FEMALE_REMOVED_ACCESSORY = "female_removed_accessory";
-var FEMALE_REMOVED_MINOR = "female_removed_minor";
-var FEMALE_REMOVED_MAJOR = "female_removed_major";
-var FEMALE_SMALL_CHEST_IS_VISIBLE = "female_small_chest_is_visible";
-var FEMALE_MEDIUM_CHEST_IS_VISIBLE = "female_medium_chest_is_visible";
-var FEMALE_LARGE_CHEST_IS_VISIBLE = "female_large_chest_is_visible";
-var FEMALE_CHEST_IS_VISIBLE = "female_chest_is_visible";
-var FEMALE_CROTCH_IS_VISIBLE = "female_crotch_is_visible";
+const FEMALE_REMOVED_ACCESSORY = "female_removed_accessory";
+const FEMALE_REMOVED_MINOR = "female_removed_minor";
+const FEMALE_REMOVED_MAJOR = "female_removed_major";
+const FEMALE_SMALL_CHEST_IS_VISIBLE = "female_small_chest_is_visible";
+const FEMALE_MEDIUM_CHEST_IS_VISIBLE = "female_medium_chest_is_visible";
+const FEMALE_LARGE_CHEST_IS_VISIBLE = "female_large_chest_is_visible";
+const FEMALE_CHEST_IS_VISIBLE = "female_chest_is_visible";
+const FEMALE_CROTCH_IS_VISIBLE = "female_crotch_is_visible";
 
-var FEMALE_MUST_MASTURBATE = "female_must_masturbate";
-var FEMALE_START_MASTURBATING = "female_start_masturbating";
-var FEMALE_MASTURBATING = "female_masturbating";
-var FEMALE_HEAVY_MASTURBATING = "female_heavy_masturbating";
-var FEMALE_FINISHED_MASTURBATING = "female_finished_masturbating";
+const FEMALE_MUST_MASTURBATE = "female_must_masturbate";
+const FEMALE_START_MASTURBATING = "female_start_masturbating";
+const FEMALE_MASTURBATING = "female_masturbating";
+const FEMALE_HEAVY_MASTURBATING = "female_heavy_masturbating";
+const FEMALE_FINISHED_MASTURBATING = "female_finished_masturbating";
 
-var FUTA_CROTCH_WILL_BE_VISIBLE = "futanari_crotch_will_be_visible";
-var FUTA_SMALL_CROTCH_IS_VISIBLE = "futanari_small_crotch_is_visible";
-var FUTA_MEDIUM_CROTCH_IS_VISIBLE = "futanari_medium_crotch_is_visible";
-var FUTA_LARGE_CROTCH_IS_VISIBLE = "futanari_large_crotch_is_visible";
-var FUTA_CROTCH_IS_VISIBLE = "futanari_crotch_is_visible";
+const FUTA_CROTCH_WILL_BE_VISIBLE = "futanari_crotch_will_be_visible";
+const FUTA_SMALL_CROTCH_IS_VISIBLE = "futanari_small_crotch_is_visible";
+const FUTA_MEDIUM_CROTCH_IS_VISIBLE = "futanari_medium_crotch_is_visible";
+const FUTA_LARGE_CROTCH_IS_VISIBLE = "futanari_large_crotch_is_visible";
+const FUTA_CROTCH_IS_VISIBLE = "futanari_crotch_is_visible";
 
-var FUTA_MUST_MASTURBATE = "futanari_must_masturbate";
-var FUTA_START_MASTURBATING = "futanari_start_masturbating";
-var FUTA_MASTURBATING = "futanari_masturbating";
-var FUTA_HEAVY_MASTURBATING = "futanari_heavy_masturbating";
-var FUTA_FINISHED_MASTURBATING = "futanari_finished_masturbating";
+const FUTA_MUST_MASTURBATE = "futanari_must_masturbate";
+const FUTA_START_MASTURBATING = "futanari_start_masturbating";
+const FUTA_MASTURBATING = "futanari_masturbating";
+const FUTA_HEAVY_MASTURBATING = "futanari_heavy_masturbating";
+const FUTA_FINISHED_MASTURBATING = "futanari_finished_masturbating";
 
-var GAME_OVER_VICTORY = "game_over_victory";
-var GAME_OVER_DEFEAT = "game_over_defeat";
+const GAME_OVER_VICTORY = "game_over_victory";
+const GAME_OVER_DEFEAT = "game_over_defeat";
 
-var GLOBAL_CASE = "global";
+const GLOBAL_CASE = "global";
 
 /* List of case types that are played only at game start, during a character's starting stage.
  * Stage conditions attached to these cases are ignored in order to accomodate characters with initial skip layers.
  */
-var STARTING_STAGE_CASES = [
+const STARTING_STAGE_CASES = [
     SELECTED,
     OPPONENT_SELECTED,
     OPPONENT_DESELECTED,
@@ -131,7 +131,7 @@ var STARTING_STAGE_CASES = [
 ];
 
 /* Lists of case types eligible to be autoconverted if a target condition is present. */
-var CONVERT_STRIP_CASES = [
+const CONVERT_STRIP_CASES = [
     MALE_REMOVING_ACCESSORY,
     MALE_REMOVING_MINOR,
     MALE_REMOVING_MAJOR,
@@ -145,7 +145,7 @@ var CONVERT_STRIP_CASES = [
     FUTA_CROTCH_WILL_BE_VISIBLE,
 ];
 
-var CONVERT_STRIPPED_CASES = [
+const CONVERT_STRIPPED_CASES = [
     MALE_REMOVED_ACCESSORY,
     MALE_REMOVED_MINOR,
     MALE_REMOVED_MAJOR,
@@ -169,7 +169,7 @@ var CONVERT_STRIPPED_CASES = [
 ];
 
 /* Tag alias list, mapping aliases to canonical tag names. */
-var TAG_ALIASES = {
+let TAG_ALIASES = {
     // Add new aliases as follows:
     // 'alias_name': 'tag_name',
     // Franchise abbreviations
@@ -182,7 +182,7 @@ var TAG_ALIASES = {
 };
 
 /* Tag implications list, mapping tags to lists of implied tags. */
-var TAG_IMPLICATIONS = {
+let TAG_IMPLICATIONS = {
     // Add tag implications as follows:
     'muscular': ['athletic'],
     'very_long_hair': ['long_hair'],
