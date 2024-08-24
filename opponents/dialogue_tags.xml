@@ -5,23 +5,23 @@
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after they've been selected</defaultText>
   </trigger>
-  <trigger tag="selected_individually" optional="true" start="0" end="0" label="Selected (individually)" oncePerStage="true" description="When added to the selection screen individually" group="0" order="0" color="1">
+  <trigger tag="selected_individually" optional="true" start="0" end="0" label="Selected (individually)" oncePerStage="true" description="When added to the selection screen individually" group="0" order="1" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after they've been selected individually. Only use this when it's important that they weren't selected as part of a group or the player just changed backgrounds.</defaultText>
   </trigger>
-  <trigger tag="opponent_selected" optional="true" start="0" end="0" hasTarget="true" label="Opponent Selected" description="When another character is added to the selection screen" group="0" order="1" color="1">
+  <trigger tag="opponent_selected" optional="true" start="0" end="0" hasTarget="true" label="Opponent Selected" description="When another character is added to the selection screen" group="0" order="2" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after another character has been (individually) selected</defaultText>
   </trigger>
-  <trigger tag="opponent_deselected" optional="true" start="0" end="0" hasTarget="true" label="Opponent Deselected" description="When another character is removed from the selection screen" group="0" order="2" color="1">
+  <trigger tag="opponent_deselected" optional="true" start="0" end="0" hasTarget="true" label="Opponent Deselected" description="When another character is removed from the selection screen" group="0" order="3" color="1">
     <defaultImage>calm</defaultImage>
     <defaultText>This is what the character says after another character has been (individually) deselected</defaultText>
   </trigger>
-  <trigger tag="settings_changed" optional="true" start="0" end="0" label="Settings Changed" description="When custom settings are changed" group="0" order="3" color="1">
+  <trigger tag="settings_changed" optional="true" start="0" end="0" label="Settings Changed" description="When custom settings are changed" group="0" order="4" color="1">
     <defaultImage>calm</defaultImage>
     <defaultText>This is what the character says after their custom settings have been changed.</defaultText>
   </trigger>
-  <trigger tag="game_start" start="0" end="0" label="Game Start" oncePerStage="true" description="When the game starts" group="0" order="4" color="1">
+  <trigger tag="game_start" start="0" end="0" label="Game Start" oncePerStage="true" description="When the game starts" group="0" order="5" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says when the game starts</defaultText>
   </trigger>
@@ -585,7 +585,7 @@
     <defaultImage>finishing</defaultImage>
     <defaultText>What the character says as an opponent climaxes. This is only used in special situations where another character is forfeiting together with this character.</defaultText>
   </trigger>
-  <trigger tag="opponent_finished_masturbating" start="0" end="10" optional="true" label="Finished (Opponent)" hasTarget="true" description="An opponent of either gender has climaxed" group="8" order="10" color="4">
+  <trigger tag="opponent_finished_masturbating" start="0" end="10" optional="true" label="Finished (Opponent)" hasTarget="true" description="An opponent of either gender has climaxed" group="8" order="11" color="4">
     <vars>
       <string>name</string>
       <string>target</string>
