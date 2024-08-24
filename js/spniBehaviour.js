@@ -9,6 +9,7 @@
  **********************************************************************/
 
 const SELECTED = "selected";
+const SELECTED_INDIVIDUALLY = "selected_individually";
 const OPPONENT_SELECTED = "opponent_selected";
 const OPPONENT_DESELECTED = "opponent_deselected";
 const SETTINGS_CHANGED = "settings_changed";
@@ -2695,6 +2696,9 @@ Opponent.prototype.clearChosenState = function () {
 /************************************************************
  * Updates the behaviour of the given player based on the 
  * provided triggers.
+ * triggers can be a single trigger name, an array of triggers to be
+ * considered at once, or an array of arrays of triggers to be
+ * considered in sequence.
  ************************************************************/
 Opponent.prototype.updateBehaviour = function(triggers, opp) {
     /* determine if the AI is dialogue locked */

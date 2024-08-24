@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tags xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <triggers>
-  <trigger tag="selected" start="0" end="0" label="Selected" oncePerStage="true" description="When added to the selection screen" group="0" order="0" color="1">
+  <trigger tag="selected" start="0" end="0" label="Selected" oncePerStage="true" description="When added to the selection screen, individually or together with others, or when the player changes backgrounds or re-enters the selection screen with the character already present" group="0" order="0" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after they've been selected</defaultText>
+  </trigger>
+  <trigger tag="selected_individually" optional="true" start="0" end="0" label="Selected (individually)" oncePerStage="true" description="When added to the selection screen individually" group="0" order="0" color="1">
+    <defaultImage>happy</defaultImage>
+    <defaultText>This is what the character says after they've been selected individually. Only use this when it's important that they weren't selected as part of a group or the player just changed backgrounds.</defaultText>
   </trigger>
   <trigger tag="opponent_selected" optional="true" start="0" end="0" hasTarget="true" label="Opponent Selected" description="When another character is added to the selection screen" group="0" order="1" color="1">
     <defaultImage>happy</defaultImage>
