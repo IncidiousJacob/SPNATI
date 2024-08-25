@@ -2170,26 +2170,6 @@ VariableTest.prototype.evaluate = function (self, opp, bindings) {
 
 }
 
-function ModeCondition (expr) {
-    this.expr = expr;
-}
-
-ModeCondition.parseXML = function ($xml) {
-    return new ModeCondition($xml.attr("expr"));
-}
-
-ModeCondition.prototype.evaluate = function () {
-    switch (this.expr) {
-        case "short":
-            return SHORT_GAME_MODE;
-        case "regular":
-            return !SHORT_GAME_MODE;
-        default:
-            return true;
-    }
-}
-
-
 /**********************************************************************
  *****                  Case Object Specification                 *****
  **********************************************************************/
@@ -2198,6 +2178,7 @@ function Case($xml, trigger) {
     this.trigger =                  trigger;
     this.stage =                    $xml.attr('stage');
     this.totalRounds =              parseInterval($xml.attr("totalRounds"));
+    this.gameMode =                 $xml.attr("mode");
     this.customPriority =           parseInt($xml.attr("priority"), 10);
     this.hidden =                   $xml.attr("hidden");
     this.addTags =                  $xml.attr("addCharacterTags");
@@ -2231,12 +2212,6 @@ function Case($xml, trigger) {
         tests.push(VariableTest.parseXML($(this)));
     });
     this.tests = tests;
-
-    var modeConditions = [];
-    $xml.children("mode").each(function () {
-        modeConditions.push(ModeCondition.parseXML($(this)));
-    });
-    this.modeConditions = modeConditions;
 
     if (isNaN(this.customPriority)) {
         this.customPriority = undefined;
@@ -2374,11 +2349,6 @@ Case.prototype.toJSON = function () {
 
 Case.prototype.checkConditions = function (self, opp, postDialogue) {
     var volatileDependencies = new Set();
-    
-    // game mode
-    if (!this.modeConditions.every(cond => cond.evaluate())) {
-        return false;
-    }
 
     // one-time use
     if (this.oneShotId && self.oneShotCases[this.oneShotId]) {
@@ -2397,6 +2367,13 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(this.trigger) < 0) {
         if (!checkStage(self.stage, this.stage)) {
             return false; // failed "stage" requirement
+        }
+    }
+
+    // game mode
+    if (this.gameMode) {
+        if (this.gameMode == "regular" && SHORT_GAME_MODE || this.gameMode == "short" && !SHORT_GAME_MODE) {
+            return false; //failed "gameMode" requirement
         }
     }
 

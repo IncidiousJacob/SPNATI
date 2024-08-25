@@ -120,6 +120,16 @@ namespace SPNATI_Character_Editor
 			set { if (_totalRounds != value) { _totalRounds = value; NotifyPropertyChanged(); } }
 		}
 
+		private string _gameMode;
+//		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
+		[XmlOrder(260)]
+		[XmlAttribute("mode")]
+		[JsonProperty("mode")]
+		public string GameMode
+		{
+			get { return _gameMode; }
+			set { if (_gameMode != value) { _gameMode = value; NotifyPropertyChanged(); } }
+		}
 
 		private string _priority;
 		[XmlOrder(360)]
@@ -162,11 +172,6 @@ namespace SPNATI_Character_Editor
 		[XmlElement("test")]
 		[JsonProperty("tests")]
 		public List<ExpressionTest> Expressions;
-
-		[XmlOrder(403)]
-		[XmlElement("mode")]
-		[JsonProperty("modeConditions")]
-		public List<ModeCondition> ModeConditions;
 
 		[XmlOrder(405)]
 		[XmlElement("alternative")]
@@ -215,7 +220,6 @@ namespace SPNATI_Character_Editor
 			Stages = new List<int>();
 			Conditions = new List<TargetCondition>();
 			Expressions = new List<ExpressionTest>();
-			ModeConditions = new List<ModeCondition>();
 			AlternativeConditions = new List<Case>();
 		}
 
@@ -276,9 +280,13 @@ namespace SPNATI_Character_Editor
 				alternates.Add(alternate.ToConditionsString(false));
 			}
 			List<string> result = new List<string>();
+			if (!string.IsNullOrEmpty(GameMode))
+			{
+				result.Add("(" + GameMode + " mode) ");
+			}
 			if (!string.IsNullOrEmpty(TotalRounds))
 			{
-				result.Add(string.Format("({0} overall rounds)", TotalRoundsToString(TotalRounds)));
+				result.Add(string.Format("({0} rounds)", TotalRoundsToString(TotalRounds)));
 			}
 			if (Conditions.Count > 0)
 			{
@@ -362,12 +370,6 @@ namespace SPNATI_Character_Editor
 			foreach (ExpressionTest test in Expressions)
 			{
 				copy.Expressions.Add(test.Copy());
-			}
-
-			copy.ModeConditions = new List<ModeCondition>();
-			foreach (ModeCondition cond in ModeConditions)
-			{
-				copy.ModeConditions.Add(cond.Copy());
 			}
 
 			copy.AlternativeConditions = new List<Case>();
@@ -515,6 +517,7 @@ namespace SPNATI_Character_Editor
 				return _conditionHash;
 			}
 			int hash = (TotalRounds ?? string.Empty).GetHashCode();
+			hash = (GameMode ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (AddCharacterTags ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (RemoveCharacterTags ?? string.Empty).GetHashCode();
 			if (includePriority)
@@ -525,36 +528,6 @@ namespace SPNATI_Character_Editor
 			hash = (hash * 397) ^ (OneShotId > 0 ? OneShotId : -1);
 			_conditionHash = hash;
 			return hash;
-		}
-
-		/// <summary>
-		/// Gets whether this case matches another in everything but conditions
-		/// </summary>
-		/// <param name="other"></param>
-		/// <returns></returns>
-		public bool MatchesNonConditions(Case other)
-		{
-			if (other == this)
-				return true;
-			if (Tag != other.Tag)
-				return false;
-
-			if (other.Lines.Count != Lines.Count)
-			{
-				return false;
-			}
-			if (other.GetLineCode() != GetLineCode())
-			{
-				return false;
-			}
-			if (other.RemoveCharacterTags != RemoveCharacterTags ||
-				other.AddCharacterTags != AddCharacterTags ||
-				other.CustomPriority != CustomPriority)
-			{
-				return false;
-			}
-
-			return true;
 		}
 
 		public bool MatchesConditions(Case other)
@@ -573,8 +546,8 @@ namespace SPNATI_Character_Editor
 			if (Tag != other.Tag)
 				return false;
 
-			bool sameFilters = (GetConditionHash(includePriority) == other.GetConditionHash(includePriority));
-			if (!sameFilters)
+			bool sameCaseAttributes = GetConditionHash(includePriority) == other.GetConditionHash(includePriority);
+			if (!sameCaseAttributes)
 				return false;
 
 			if (other.Conditions.Count != Conditions.Count)
@@ -595,15 +568,6 @@ namespace SPNATI_Character_Editor
 					return false;
 				}
 			}
-			if (other.ModeConditions.Count != ModeConditions.Count)
-				return false;
-			for (int i = 0; i < ModeConditions.Count; i++)
-			{
-				if (!ModeConditions[i].Equals(other.ModeConditions[i]))
-				{
-					return false;
-				}
-			}
 
 			return true;
 		}
@@ -613,6 +577,7 @@ namespace SPNATI_Character_Editor
 			get
 			{
 				return !string.IsNullOrEmpty(TotalRounds) ||
+				  !string.IsNullOrEmpty(GameMode) ||
 				  !string.IsNullOrEmpty(Hidden) ||
 				  !string.IsNullOrEmpty(Disabled) ||
 				  Conditions.Count > 0 ||
@@ -778,28 +743,6 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		public IEnumerable<Case> GetConditionSets()
-		{
-			yield return this;
-			foreach (Case alternate in AlternativeConditions)
-			{
-				yield return alternate;
-			}
-		}
-
-		/// <summary>
-		/// Gets whether this case has any targeted dialogue that is based on game state
-		/// </summary>
-		public bool HasStageConditions
-		{
-			get
-			{
-				return !string.IsNullOrEmpty(TotalRounds) ||
-					Conditions.Count > 0 ||
-					Expressions.Count > 0;
-			}
-		}
-
 		public int GetFullHashCode()
 		{
 			int hash = GetConditionHash(true);
@@ -810,10 +753,6 @@ namespace SPNATI_Character_Editor
 			foreach (ExpressionTest expr in Expressions)
 			{
 				hash = (hash * 397) ^ expr.GetHashCode();
-			}
-			foreach (ModeCondition cond in ModeConditions)
-			{
-				hash = (hash * 397) ^ cond.GetHashCode();
 			}
 			hash = (hash * 397) ^ GetLineCode();
 			return hash;
@@ -897,11 +836,6 @@ namespace SPNATI_Character_Editor
 			if (response.Tag == "-") //this is deprecated anyway
 			{
 				return null;
-			}
-
-			foreach (ModeCondition cond in ModeConditions)
-			{
-				response.ModeConditions.Add(cond.Copy());
 			}
 
 			//copy conditions are always the same. If needed, they'll be altered in the method calls below
@@ -1037,6 +971,7 @@ namespace SPNATI_Character_Editor
 			response.AdjustConditions(speaker, responder, this);
 
 			response.TotalRounds = TotalRounds;
+			response.GameMode = GameMode;
 
 			//special cases
 			if (Tag == "must_masturbate_first")
@@ -2115,6 +2050,18 @@ namespace SPNATI_Character_Editor
 			{
 				bool foundConflict = false;
 
+				if (!string.IsNullOrEmpty(c.TotalRounds) && c.TotalRounds != sourceCase.TotalRounds)
+				{
+					foundConflict = true;
+				}
+
+				if (!string.IsNullOrEmpty(c.GameMode) && c.GameMode != sourceCase.GameMode)
+				{
+					foundConflict = true;
+				}
+
+				if (foundConflict) { continue; }
+
 				foreach (TargetCondition cond in c.Conditions)
 				{
 					if (cond.Role != "self" && cond.Role != "target")
@@ -2174,12 +2121,6 @@ namespace SPNATI_Character_Editor
 							}
 
 							if (!string.IsNullOrEmpty(cond.Character) && cond.Character != speaker.FolderName && cond.Character != otherCond.Character)
-							{
-								foundConflict = true;
-								break;
-							}
-
-							if (!string.IsNullOrEmpty(c.TotalRounds) && c.TotalRounds != sourceCase.TotalRounds)
 							{
 								foundConflict = true;
 								break;

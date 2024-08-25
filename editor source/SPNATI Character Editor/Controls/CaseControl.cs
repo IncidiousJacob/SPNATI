@@ -65,6 +65,7 @@ namespace SPNATI_Character_Editor.Controls
 			gridDialogue.TextUpdated += GridDialogue_TextUpdated;
 			gridDialogue.PoseUpdated += GridDialogue_PoseUpdated;
 			gridDialogue.SelectionUpdated += GridDialogue_SelectionUpdated;
+			tableConditions.CheckedChanged += TableConditions_CheckedChanged;
 		}
 
 		public void Activate()
@@ -175,6 +176,26 @@ namespace SPNATI_Character_Editor.Controls
 		private void GridDialogue_SelectionUpdated(object sender, int e)
 		{
 			UpdateSelectedIndices();
+		}
+
+		private void TableConditions_CheckedChanged(object sender, object e)
+		{
+			if (_trackedCase == null) return;
+			if (!string.IsNullOrEmpty(_trackedCase.GameMode))
+			{
+				if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+				{
+					_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "regular" : "short";
+				}
+				else
+				{
+					_trackedCase.GameMode = string.Empty;
+				}
+			}
+			else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+			{
+				_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "regular" : "short";
+			}
 		}
 
 		public void SaveFavorites()
@@ -472,9 +493,9 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				tableConditions.Data = workingCase;
 				AddSpeedButtons(tableConditions, workingCase?.Tag);
-				if (workingCase.ModeConditions.Count > 0 && (workingCase.ModeConditions[0].Expression == "short" || workingCase.ModeConditions[0].Expression == "regular"))
+				if (!string.IsNullOrEmpty(workingCase.GameMode))
 				{
-					if (workingCase.ModeConditions[0].Expression == "short")
+					if (workingCase.GameMode == "short")
 					{
 						tableConditions.SetCheckboxes(false, true);
 					}
@@ -762,21 +783,6 @@ namespace SPNATI_Character_Editor.Controls
 				oldStages.AddRange(c.Stages);
 
 				tableConditions.Save();
-				if (c.ModeConditions.Count > 0)
-				{
-					if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
-					{
-						c.ModeConditions[0] = tableConditions.GetCheckbox1() ? new ModeCondition("regular") : new ModeCondition("short");
-					}
-					else
-					{
-						c.ModeConditions.RemoveAt(0);
-					}
-				}
-				else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
-				{
-					c.ModeConditions.Add(new ModeCondition(tableConditions.GetCheckbox1() ? "regular" : "short"));
-				}
 
 				c.CustomPriority = ReadNumericBox(valPriority);
 				c.Hidden = (chkBackground.Checked ? "1" : null);

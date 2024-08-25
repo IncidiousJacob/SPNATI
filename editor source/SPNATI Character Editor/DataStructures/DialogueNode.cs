@@ -95,12 +95,7 @@ namespace SPNATI_Character_Editor
 				{
 					return label;
 				}
-				string conditions = "";
-				if (workingCase.ModeConditions.Count > 0 && (workingCase.ModeConditions[0].Expression == "short" || workingCase.ModeConditions[0].Expression == "regular"))
-				{
-					conditions += workingCase.ModeConditions[0].Expression + " ";
-				}
-				conditions += workingCase.ToConditionsString(true);
+				string conditions = workingCase.ToConditionsString(true);
 				if (string.IsNullOrEmpty(conditions))
 				{
 					return "-";

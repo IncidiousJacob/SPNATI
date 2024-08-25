@@ -2131,9 +2131,9 @@ Player.prototype.populateDebugCaseInfo = function () {
         );
     }
 
-    for (let mode of chosenCase.modeConditions) {
+    if (chosenCase.gameMode) {
         listing.append(
-            createDebugSectionRow("Mode", $("<span>", {"class": "debug-case-test", "text": mode.expr}))
+            createDebugSectionRow("Mode", $("<span>", {"class": "debug-case-test", "text": chosenCase.gameMode}))
         );
     }
 
