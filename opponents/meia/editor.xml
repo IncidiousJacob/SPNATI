@@ -40,7 +40,7 @@
             <description>Meia mentions to the table that her Dread pilot team is looking for new recruits and asks if anyone would like to join.  (Prompt Marker)</description>
         </case>
         <case name="Gymwear" id="900" priority="Noteworthy" min="3" max="3">
-            <description>Meia is naked under her suit.  Pyoro brings her her gym clothes/underwear to keep playing.  Sometimes she was aware of this beforehand, and sometimes she wasn't, but it doesn't really matter unless you want one or the other to happen around your character specifically (I will accommodate).</description>
+            <description>Meia is naked under her suit.  Pyoro brings her her gym clothes/underwear to keep playing.  Sometimes she was aware of this beforehand, and sometimes she wasn't, but it doesn't really matter most of the time.  This DOES NOT HAPPEN on alt skins.</description>
         </case>
         <case name="Early Masturbation" id="992" priority="Noteworthy" min="6" max="6">
             <description>Meia takes a while to ease into masturbating.  Lines vary slightly based on how much of the table is in a similar position.  Ends once she says the "early_mast4" marker.</description>
@@ -49,7 +49,7 @@
             <description>Meia gets over her initial awkwardness masturbating.  Lines vary slightly based on how much of the table is in a similar position.  Uses the "early_mast4" marker.</description>
         </case>
         <case name="Gymwear 2" id="1093" priority="Noteworthy" min="3" max="3">
-            <description>The hand after stripping her suit, Meia puts her underwear on.</description>
+            <description>The hand after stripping her suit, Meia puts her underwear on.  This DOES NOT HAPPEN on alt skins.</description>
         </case>
         <case name="Pyoro" id="1119" priority="Noteworthy" min="0" max="0">
             <description>Introduces Pyoro, the "navi robot" helper on Meia's crew, who can be spoken to directly if you wish.  More info in "Other Notes."</description>
@@ -155,7 +155,7 @@
         <label id="298" label="" color="4" folder="" sort="0" />
         <label id="317" label="" color="4" folder="" sort="0" />
         <label id="318" label="" color="4" folder="" sort="0" />
-        <label id="2097" label="" color="4" folder="" sort="0" />
+        <label id="2164" label="" color="4" folder="" sort="0" />
         <label id="513" label="" color="4" folder="" sort="0" />
         <label id="2081" label="" color="4" folder="" sort="0" />
         <label id="505" label="" color="4" folder="" sort="0" />
@@ -760,7 +760,7 @@
         <label id="2001" label="" color="4" folder="" sort="0" />
         <label id="1353" label="" color="4" folder="" sort="0" />
         <label id="2023" label="" color="15" folder="" sort="0" />
-        <label id="2091" label="" color="4" folder="" sort="0" />
+        <label id="2166" label="" color="4" folder="" sort="0" />
         <label id="1996" label="" color="4" folder="" sort="0" />
         <label id="1364" label="" color="4" folder="" sort="0" />
         <label id="1366" label="" color="4" folder="" sort="0" />
@@ -1049,7 +1049,7 @@
         <label id="1995" label="" color="4" folder="" sort="0" />
         <label id="2002" label="" color="9" folder="" sort="0" />
         <label id="2003" label="" color="10" folder="" sort="0" />
-        <label id="2096" label="" color="4" folder="" sort="0" />
+        <label id="2163" label="" color="4" folder="" sort="0" />
         <label id="2005" label="" color="4" folder="" sort="0" />
         <label id="2006" label="" color="4" folder="" sort="0" />
         <label id="2007" label="" color="4" folder="" sort="0" />
@@ -1079,7 +1079,6 @@
         <label id="2071" label="" color="6" folder="" sort="0" />
         <label id="2072" label="" color="6" folder="" sort="0" />
         <label id="2073" label="" color="6" folder="" sort="0" />
-        <label id="2088" label="" color="4" folder="" sort="0" />
         <label id="2092" label="" color="4" folder="" sort="0" />
         <label id="2082" label="" color="9" folder="" sort="0" />
         <label id="2100" label="" color="4" folder="" sort="0" />
@@ -1108,7 +1107,7 @@
         <label id="2153" label="" color="4" folder="" sort="0" />
         <label id="2155" label="" color="4" folder="" sort="0" />
     </labels>
-    <nextId>2158</nextId>
+    <nextId>2166</nextId>
     <markers>
         <marker scope="Public" name="2butt">Meia shows off her butt while still in her bodysuit (or Cupid outfit).</marker>
         <marker scope="Public" name="9s0" />
@@ -1633,6 +1632,7 @@
         <marker scope="Public" name="darkness12" />
         <marker scope="Public" name="darkness1s" />
         <marker scope="Public" name="darkness2" />
+        <marker scope="Public" name="darkness23" />
         <marker scope="Public" name="darkness2s" />
         <marker scope="Public" name="darkness3" />
         <marker scope="Public" name="darkness34" />
@@ -1642,6 +1642,9 @@
         <marker scope="Public" name="darkness5" />
         <marker scope="Public" name="darkness56" />
         <marker scope="Public" name="darkness5s" />
+        <marker scope="Public" name="darkness6" />
+        <marker scope="Public" name="darkness6s" />
+        <marker scope="Public" name="darkness6s_alt" />
         <marker scope="Public" name="dating">Meia tells Mulan that she is not interested in romantic relationships because she wants to be strictly professional with her crewmates.</marker>
         <marker scope="Public" name="dawn_bsss0" />
         <marker scope="Public" name="dawn_bsss1" />
