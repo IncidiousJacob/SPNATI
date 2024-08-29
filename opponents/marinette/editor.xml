@@ -421,6 +421,12 @@
         <response id="1409" opponent="hilda" opponentId="945" />
         <response id="1412" opponent="toph" opponentId="881" />
         <response id="1413" opponent="toph" opponentId="165" />
+        <response id="1420" opponent="lysithea" opponentId="282" />
+        <response id="1421" opponent="lysithea" opponentId="283" />
+        <response id="1422" opponent="lysithea" opponentId="284" />
+        <response id="1423" opponent="lysithea" opponentId="285" />
+        <response id="1424" opponent="lysithea" opponentId="279" />
+        <response id="1425" opponent="mercy" opponentId="206" />
     </responses>
     <notes>
         <note id="32">Placeholder lines for emoting </note>
@@ -431,6 +437,8 @@
         <note id="1143">Keep Adrien's lines at a higher priority, please! </note>
         <note id="912">Had to fix this line! </note>
         <note id="1301">She's not flirting YET</note>
+        <note id="1427">I'm using Momo, will change to Creati if she prefers</note>
+        <note id="1428">I'm using Momo, will change to Creati if she prefers</note>
     </notes>
     <labels>
         <label id="1" label="" color="1" folder="adrien" sort="0" />
@@ -1339,11 +1347,12 @@
         <label id="1400" label="" folder="New Marinette Targets" sort="0" />
         <label id="1410" label="" folder="New Marinette Targets" sort="0" />
         <label id="1411" label="" folder="New Marinette Targets" sort="0" />
+        <label id="1430" label="" folder="New Marinette Targets" sort="0" />
     </labels>
     <prefixes>
         <prefix>t-</prefix>
     </prefixes>
-    <nextId>1419</nextId>
+    <nextId>1430</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="+" />
@@ -1461,6 +1470,7 @@
         <marker scope="Public" name="fs23" />
         <marker scope="Public" name="fs31" />
         <marker scope="Public" name="fs32" />
+        <marker scope="Public" name="greet_momo" />
         <marker scope="Public" name="hilda11" />
         <marker scope="Public" name="hilda12" />
         <marker scope="Public" name="hilda21" />
@@ -1530,24 +1540,33 @@
         <marker scope="Public" name="ladybug_queenie_greet" />
         <marker scope="Public" name="lb_akuma" />
         <marker scope="Public" name="lb_heroics" />
+        <marker scope="Public" name="lb_momo01" />
+        <marker scope="Public" name="lb_momo11" />
+        <marker scope="Public" name="lb_momo21" />
+        <marker scope="Public" name="lb_momo31" />
+        <marker scope="Public" name="lb_queen13" />
         <marker scope="Public" name="lysi_burdens1" />
+        <marker scope="Public" name="lysi_burdens2" />
         <marker scope="Public" name="lysi_guardian1" />
         <marker scope="Public" name="lysi_pastry1" />
+        <marker scope="Public" name="lysi_pastry2" />
         <marker scope="Public" name="lysi_responsibility1" />
+        <marker scope="Public" name="lysi_suit2" />
         <marker scope="Public" name="lysi01" />
         <marker scope="Public" name="lysi11" />
         <marker scope="Public" name="m_f_a" />
         <marker scope="Public" name="mari_adr_dual" />
         <marker scope="Public" name="mari_bc" />
         <marker scope="Public" name="mari_on_adrien_tandem" />
-        <marker scope="Private" name="mari_win0">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win1">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win2">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win3">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win4">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win5">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win6">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
-        <marker scope="Private" name="mari_win7">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_queenie31" />
+        <marker scope="Public" name="mari_win0">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win1">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win2">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win3">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win4">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win5">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win6">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
+        <marker scope="Public" name="mari_win7">Marinette is using a self_strip Winning or Normal line. # equals stage she lost in. </marker>
         <marker scope="Public" name="mari01" />
         <marker scope="Public" name="mari02" />
         <marker scope="Public" name="mari03" />
@@ -1568,6 +1587,7 @@
         <marker scope="Public" name="mari43" />
         <marker scope="Public" name="mari51" />
         <marker scope="Public" name="mari52" />
+        <marker scope="Public" name="mari53" />
         <marker scope="Public" name="maridrien_couple" />
         <marker scope="Public" name="marinette_chatter" />
         <marker scope="Public" name="marinette_fashion">Marinette asks the assembled party about their fashion tastes.</marker>
@@ -1596,6 +1616,8 @@
         <marker scope="Public" name="mercy22" />
         <marker scope="Public" name="mercy23" />
         <marker scope="Public" name="mercy31" />
+        <marker scope="Public" name="mercy32" />
+        <marker scope="Public" name="mercy33" />
         <marker scope="Public" name="miraculous_pair">If Adrien and Marinette start the game together, Marinette's difficulty will be substantially lower. </marker>
         <marker scope="Public" name="MLBoundariesAccept" />
         <marker scope="Public" name="MLBoundariesDecline" />
