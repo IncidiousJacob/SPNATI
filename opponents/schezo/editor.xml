@@ -150,6 +150,13 @@
         <response id="468" opponent="mari_setogaya" opponentId="21" />
         <response id="482" opponent="ringo_ando" opponentId="1166" />
         <response id="487" opponent="zeke_pandoria" opponentId="953" />
+        <response id="488" opponent="darkness" opponentId="696" />
+        <response id="498" opponent="darkness" opponentId="707" />
+        <response id="499" opponent="darkness" opponentId="708" />
+        <response id="500" opponent="darkness" opponentId="709" />
+        <response id="501" opponent="darkness" opponentId="711" />
+        <response id="502" opponent="darkness" opponentId="713" />
+        <response id="504" opponent="darkness" opponentId="717" />
     </responses>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -459,10 +466,10 @@
         <label id="343" label="" folder="Targets" sort="0" />
         <label id="344" label="" folder="Targets" sort="0" />
         <label id="345" label="" folder="Targets&gt;Darkness" sort="145" />
-        <label id="347" label="More like Lagnus" folder="Targets" sort="74" />
+        <label id="347" label="More like Lagnus" folder="Targets&gt;Darkness" sort="74" />
         <label id="348" label="More like Lagnus" folder="Targets" sort="86" />
         <label id="349" label="More like Lagnus" folder="Targets" sort="95" />
-        <label id="350" label="Dark Sword" folder="Targets" sort="75" />
+        <label id="350" label="Dark Sword" folder="Targets&gt;Darkness" sort="75" />
         <label id="351" label="Dark Sword" folder="Targets" sort="87" />
         <label id="352" label="Teasing 3 Late" folder="Targets&gt;Arle" sort="11" />
         <label id="353" label="" folder="Targets&gt;Darkness" sort="129" />
@@ -526,7 +533,7 @@
         <label id="412" label="" folder="Targets&gt;Player" sort="0" />
         <label id="413" label="" folder="Targets&gt;Player" sort="3" />
         <label id="414" label="" folder="Targets&gt;Player" sort="4" />
-        <label id="421" label="Why Frog? A" folder="Targets" sort="45" />
+        <label id="421" label="Why Frog? A" folder="Targets&gt; Hina" sort="45" />
         <label id="422" label="Why Frog? B" folder="Targets" sort="46" />
         <label id="425" label="About Magic" folder="Targets&gt;Hina" sort="8" />
         <label id="426" label="What's Fanfiction?" folder="Targets&gt;Hina" sort="9" />
@@ -571,16 +578,16 @@
         <label id="467" label="" folder="Targets" sort="0" />
         <label id="468" label="" folder="Targets" sort="0" />
         <label id="469" label="" color="1" folder="Targets" sort="0" />
-        <label id="470" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="471" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="472" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="473" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="474" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="475" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="476" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="477" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="478" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
-        <label id="479" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="470" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="471" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="472" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="473" label="Indecency" folder="Targets&gt;Darkness" sort="0" />
+        <label id="474" label="Staring" folder="Targets&gt;Darkness" sort="0" />
+        <label id="475" label="Dungeon" folder="Targets&gt;Darkness" sort="0" />
+        <label id="476" label="Endurance A" folder="Targets&gt;Darkness" sort="0" />
+        <label id="477" label="Endurance B" folder="Targets&gt;Darkness" sort="0" />
+        <label id="478" label="Endurance C" folder="Targets&gt;Darkness" sort="0" />
+        <label id="479" label="Endurance D" folder="Targets&gt;Darkness" sort="0" />
         <label id="480" label="" folder="Targets&gt;Darkness" sort="0" />
         <label id="481" label="" folder="Filtered" sort="0" />
         <label id="482" label="" folder="Targets&gt;Ringo" sort="0" />
@@ -589,8 +596,36 @@
         <label id="485" label="Schezo Lore!?" color="1" folder="Targets" sort="0" />
         <label id="486" label="Flirting?" folder="Targets" sort="0" />
         <label id="487" label="" folder="Targets" sort="0" />
+        <label id="488" label="Endurance A" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="489" label="Endurance A-sus" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="490" label="Indecency" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="491" label="Staring" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="492" label="Dungeon" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="493" label="Endurance B" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="494" label="Endurance B-sus" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="495" label="Endurance C" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="496" label="Endurance C-sus" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="497" label="Endurance D" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="498" label="VS Dark Matter" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="499" label="VS Dark Matter-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="500" label="Dirty Mind" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="501" label="Hard to Read" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="504" label="Dignity" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="502" label="Test" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="503" label="Unlucky" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="505" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="506" label="Bandana" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="507" label="Dirty Mind-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="508" label="Hard to Read-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="509" label="Test-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="510" label="Unlucky-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="511" label="Dignity-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="512" label="Bandana-H" color="1" folder="Targets&gt;Darkness" sort="0" />
+        <label id="513" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="514" label="" folder="Targets" sort="0" />
+        <label id="515" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>487</nextId>
+    <nextId>515</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
@@ -653,6 +688,7 @@
         <marker scope="Public" name="cape_generic" />
         <marker scope="Public" name="dark_prince_mention">Schezo mentions the Dark Prince Satan</marker>
         <marker scope="Public" name="darkness_schezo_ironicName1" />
+        <marker scope="Public" name="darkness_schezo_testing1H" />
         <marker scope="Public" name="deity_start" />
         <marker scope="Public" name="dualforfeit_watch" />
         <marker scope="Public" name="dungeon_escape" />
@@ -721,6 +757,7 @@
         <marker scope="Public" name="schezo" />
         <marker scope="Public" name="schezo_" />
         <marker scope="Public" name="schezo__darkness_ironicName3" />
+        <marker scope="Public" name="schezo_adventures" />
         <marker scope="Public" name="schezo_aoi_cosplayer1" />
         <marker scope="Public" name="schezo_aoi_cosplayer1a" />
         <marker scope="Public" name="schezo_aoi_cosplayer2" />
@@ -747,6 +784,8 @@
         <marker scope="Public" name="schezo_birthday">March 16th is Schezo's birthday!</marker>
         <marker scope="Public" name="schezo_bragresponseA" />
         <marker scope="Public" name="schezo_bragresponseB" />
+        <marker scope="Public" name="schezo_darkness_bandana1" />
+        <marker scope="Public" name="schezo_darkness_bandana1H" />
         <marker scope="Public" name="schezo_darkness_crusader1" />
         <marker scope="Public" name="schezo_darkness_crusader2" />
         <marker scope="Public" name="schezo_darkness_crusader3" />
@@ -755,7 +794,12 @@
         <marker scope="Public" name="schezo_darkness_darksword02sus" />
         <marker scope="Public" name="schezo_darkness_darksword03" />
         <marker scope="Public" name="schezo_darkness_darksword03sus" />
+        <marker scope="Public" name="schezo_darkness_dent1" />
+        <marker scope="Public" name="schezo_darkness_dent1H" />
+        <marker scope="Public" name="schezo_darkness_dirty1" />
+        <marker scope="Public" name="schezo_darkness_dirty1H" />
         <marker scope="Public" name="schezo_darkness_dungeon1" />
+        <marker scope="Public" name="schezo_darkness_dungeon2" />
         <marker scope="Public" name="schezo_darkness_endurance1A" />
         <marker scope="Public" name="schezo_darkness_endurance1Asus" />
         <marker scope="Public" name="schezo_darkness_endurance1B" />
@@ -764,20 +808,34 @@
         <marker scope="Public" name="schezo_darkness_endurance1Csus" />
         <marker scope="Public" name="schezo_darkness_endurance1D" />
         <marker scope="Public" name="schezo_darkness_endurance1Dsus" />
+        <marker scope="Public" name="schezo_darkness_endurance2A" />
+        <marker scope="Public" name="schezo_darkness_endurance2Asus" />
+        <marker scope="Public" name="schezo_darkness_endurance2Asussier" />
+        <marker scope="Public" name="schezo_darkness_endurance2B" />
+        <marker scope="Public" name="schezo_darkness_endurance2Bsus" />
+        <marker scope="Public" name="schezo_darkness_endurance2C" />
+        <marker scope="Public" name="schezo_darkness_endurance2Csus" />
         <marker scope="Public" name="schezo_darkness_EXP1" />
         <marker scope="Public" name="schezo_darkness_EXP2" />
         <marker scope="Public" name="schezo_darkness_icebreaker1" />
         <marker scope="Public" name="schezo_darkness_indecency1" />
+        <marker scope="Public" name="schezo_darkness_indecency2" />
         <marker scope="Public" name="schezo_darkness_ironicname1" />
         <marker scope="Public" name="schezo_darkness_ironicname2" />
         <marker scope="Public" name="schezo_darkness_ironicName3" />
         <marker scope="Public" name="schezo_darkness_ironicName3A" />
         <marker scope="Public" name="schezo_darkness_ironicName3B" />
+        <marker scope="Public" name="schezo_darkness_kill1" />
+        <marker scope="Public" name="schezo_darkness_kill1H" />
+        <marker scope="Public" name="schezo_darkness_luck1" />
+        <marker scope="Public" name="schezo_darkness_luck1H" />
         <marker scope="Public" name="schezo_darkness_mitsurugi01" />
         <marker scope="Public" name="schezo_darkness_mitsurugi02" />
         <marker scope="Public" name="schezo_darkness_mitsurugi03" />
         <marker scope="Public" name="schezo_darkness_mitsurugi03sus" />
         <marker scope="Public" name="schezo_darkness_mitsurugi1" />
+        <marker scope="Public" name="schezo_darkness_naive1" />
+        <marker scope="Public" name="schezo_darkness_naive1A" />
         <marker scope="Public" name="schezo_darkness_ohno1" />
         <marker scope="Public" name="schezo_darkness_ohno1_2" />
         <marker scope="Public" name="schezo_darkness_ohno1-2" />
@@ -785,9 +843,12 @@
         <marker scope="Public" name="schezo_darkness_ohno3" />
         <marker scope="Public" name="schezo_darkness_ohno4" />
         <marker scope="Public" name="schezo_darkness_staring1" />
+        <marker scope="Public" name="schezo_darkness_staring2" />
         <marker scope="Public" name="schezo_darkness_stealpanties1" />
         <marker scope="Public" name="schezo_darkness_stealpanties2" />
         <marker scope="Public" name="schezo_darkness_stealpanties2H" />
+        <marker scope="Public" name="schezo_darkness_testing1" />
+        <marker scope="Public" name="schezo_darkness_testing1H" />
         <marker scope="Public" name="schezo_darkness_waitwhat" />
         <marker scope="Public" name="schezo_darkness_waitwhat1" />
         <marker scope="Public" name="schezo_dungeon_escape2" />
@@ -850,6 +911,8 @@
         <marker scope="Public" name="schezo_zekeandpandyC" />
         <marker scope="Public" name="schezo_zekeandpandyC2" />
         <marker scope="Public" name="schezo_zekeandpandyC3" />
+        <marker scope="Public" name="schezo_zekepandy_corecrystal1" />
+        <marker scope="Public" name="schezo_zekepandy_theatrics1" />
         <marker scope="Public" name="screamyourname" />
         <marker scope="Public" name="seal_the_deal">Schezo takes Kazuma's bet.</marker>
         <marker scope="Public" name="serilly_peptalk" />
