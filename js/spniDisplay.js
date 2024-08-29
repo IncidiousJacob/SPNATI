@@ -312,12 +312,14 @@ PoseSprite.prototype.draw = function() {
 
     let clipPath = "none";
     if (this.clipleft + this.clipright + this.cliptop + this.clipbottom + this.clipradius > 0) {
+        // Probably not the most efficient way to do this, but it works -Nord
+        var clip_top = this.scaleToDisplay(this.cliptop) || 0;
+        var clip_right = this.scaleToDisplay(this.clipright) || 0;
+        var clip_bottom = this.scaleToDisplay(this.clipbottom) || 0;
+        var clip_left = this.scaleToDisplay(this.clipleft) || 0;
+        var clip_radius = this.scaleToDisplay(this.clipradius) || 0;
 
-        clipPath = "inset(" + this.cliptop + "px " + this.clipright + "px " + this.clipbottom + "px " + this.clipleft + "px";
-        if (this.clipradius > 0) {
-            clipPath += " round " + this.clipradius + "px";
-        }
-        clipPath += ")";
+        clipPath = "inset(" + clip_top + "px " + clip_right + "px " + clip_bottom + "px " + clip_left + "px round " + clip_radius + "px)";
     }
 
     $(this.pivot).css({
