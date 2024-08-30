@@ -4,6 +4,18 @@ Promoting your character from Testing to Main Game
 
 --- 
 
+## Simplified Outline
+
+**A creator must resolve all flaws in a sponsorship post to "complete a sponsorship."**  
+
+- Sponsorship posts must contain one or more flaws to count.  
+- Sponsorship posts by developers with 2+ characters on the main roster may choose to not include flaws, however.  
+
+**A creator must meet one of the two following requirements for their character to be added to the main roster:**  
+
+- If you're a first time writer (no characters on the main roster): Completion of any **5** sponsorship posts.  
+- If you're a writer with 1+ characters on the main roster: Completion of **3** sponsorship posts written by SPNatI contributors also with 1+ characters on the main roster, *or* any **5** sponsorship posts.  
+
 ## Process
 
 For release into the main game, a character must pass community sponsorship. **Five** sponsorships are required for new characters and **three** for reworks. These sponsorships will be _conditional_ sponsorships, meaning the flaws outlined in the post _must_ be addressed before the character will be accepted.  
@@ -14,7 +26,7 @@ A character is considered _new_ when it uses no prior dialogue or artwork from a
 
 Some reworked main roster characters are eligible for **Quick Pass**, and won't need to return to Testing. [For more information on Quick Pass and the difference between new characters and reworks, see here.](/docs/policy/reworks.html)
 
-### Outline
+### Procedure
 
  - When a creator is ready to submit their Testing Roster character to the main roster, they will create a sponsorship post on Reddit. 
  - The community will have an opportunity to give affirmative, conditional sponsorships.
