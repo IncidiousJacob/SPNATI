@@ -33,6 +33,9 @@
         <case name="So...Where are We?" id="151" priority="FYI" min="0" max="0">
             <description>Nadeshiko asks how they're all here together, as everyone at the table came from a wide variety of places. </description>
         </case>
+        <case name="Nadeshiko's Butt" id="602" priority="Prompt" min="8" max="8">
+            <description>Nadeshiko shows off her butt, and asks the table, as well as the player, what they think of it.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -210,6 +213,7 @@
         <response id="356" opponent="ignatz" opponentId="603" />
         <response id="589" opponent="nico_robin" opponentId="305" />
         <response id="590" opponent="nico_robin" opponentId="304" />
+        <response id="673" opponent="yusei_fudo" opponentId="363" />
     </responses>
     <labels>
         <label id="114" label="Ramen Markers Reset" folder="" sort="0" />
@@ -638,9 +642,94 @@
         <label id="586" label="" folder="Stripped (Rose)" sort="0" />
         <label id="587" label="" folder="Stripped (Rose)" sort="0" />
         <label id="588" label="" folder="Stripped (Rose)" sort="0" />
+        <label id="591" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="592" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="593" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="594" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="595" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="596" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="597" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="598" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="599" label="" color="5" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="600" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="601" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="603" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="604" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="605" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="606" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="607" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="608" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="609" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="610" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="611" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="612" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="613" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="614" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="615" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="616" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="617" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="618" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="619" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="620" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="621" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="622" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="623" label="" color="9" folder="Nadeshiko (Stripped)" sort="0" />
+        <label id="624" label="" color="3" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="625" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="626" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="627" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="628" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="629" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="630" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="631" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="632" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="633" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="634" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="635" label="" folder="Yusei (Must Strip)" sort="0" />
+        <label id="636" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="637" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="638" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="639" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="640" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="641" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="642" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="643" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="644" label="" folder="Stripped (Yusei)" sort="0" />
+        <label id="645" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="646" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="647" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="648" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="649" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="650" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="651" label="" folder="Stripping (Yusei)" sort="0" />
+        <label id="652" label="" color="1" folder="" sort="0" />
+        <label id="653" label="" color="1" folder="" sort="0" />
+        <label id="654" label="" folder="Yusei (Masturbating)" sort="0" />
+        <label id="655" label="" folder="Yusei (Masturbating, Heavy)" sort="0" />
+        <label id="656" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="657" label="" folder="Nadeshiko (Masturbating, Heavy)" sort="0" />
+        <label id="658" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="659" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="660" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="661" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="662" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="663" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="664" label="" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="665" label="" color="3" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="666" label="" color="3" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="667" label="" color="3" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="668" label="" color="3" folder="Nadeshiko (Masturbating)" sort="0" />
+        <label id="669" label="" folder="Nadeshiko (Masturbating, Heavy)" sort="0" />
+        <label id="670" label="" folder="Nadeshiko (Masturbating, Heavy)" sort="0" />
+        <label id="671" label="" folder="Nadeshiko (Masturbating, Heavy)" sort="0" />
+        <label id="672" label="" folder="Yusei (Dual Forfeit)" sort="0" />
+        <label id="673" label="" color="2" folder="" sort="0" />
+        <label id="674" label="" color="2" folder="" sort="0" />
+        <label id="675" label="" folder="Yusei (Dual Forfeit)" sort="0" />
     </labels>
-    <nextId>590</nextId>
+    <nextId>675</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="9S_Nade_1-1" />
         <marker scope="Public" name="Accomodat" />
         <marker scope="Public" name="Accomodating_Player" />
@@ -752,6 +841,7 @@
         <marker scope="Public" name="Fluttershy_Nadeshiko_Butt" />
         <marker scope="Public" name="Fluttershy_Nadeshiko_FlutterOutFirst" />
         <marker scope="Public" name="Fluttershy_Nadeshiko_FlutterStart" />
+        <marker scope="Public" name="gameover_nadeshiko_both_lost" />
         <marker scope="Public" name="gen_talent_R" />
         <marker scope="Public" name="gloria_mast_breasts" />
         <marker scope="Public" name="gloria_mast_kissing" />
@@ -795,6 +885,7 @@
         <marker scope="Public" name="I_Blew_It_2" />
         <marker scope="Public" name="I_Blew_It_3" />
         <marker scope="Public" name="IsMoonACollegeStudent" />
+        <marker scope="Public" name="IsMoonACollegeStudent?" />
         <marker scope="Public" name="ISuckAtPoker" />
         <marker scope="Public" name="Jura_Nadeshiko_Cooking" />
         <marker scope="Public" name="JuraNadeshiko_0" />
@@ -852,6 +943,7 @@
         <marker scope="Public" name="Nade_Arushalae_1-1" />
         <marker scope="Public" name="Nade_Beatrix_1-1" />
         <marker scope="Public" name="Nade_Beatrix_1-2" />
+        <marker scope="Public" name="Nade_Butt" />
         <marker scope="Public" name="Nade_CantSwim_R" />
         <marker scope="Public" name="Nade_Chica_Camping" />
         <marker scope="Public" name="Nade_Ferris_1-1" />
@@ -1020,6 +1112,47 @@
         <marker scope="Public" name="Nade_Solar_4-1" />
         <marker scope="Public" name="Nade_Wikipe_1-1" />
         <marker scope="Public" name="Nade_Wikipe_2-1" />
+        <marker scope="Public" name="Nade_Yusei_01" />
+        <marker scope="Public" name="Nade_Yusei_02" />
+        <marker scope="Public" name="Nade_Yusei_03" />
+        <marker scope="Public" name="Nade_Yusei_11" />
+        <marker scope="Public" name="Nade_Yusei_12" />
+        <marker scope="Public" name="Nade_Yusei_13" />
+        <marker scope="Public" name="Nade_Yusei_21" />
+        <marker scope="Public" name="Nade_Yusei_22" />
+        <marker scope="Public" name="Nade_Yusei_23" />
+        <marker scope="Public" name="Nade_Yusei_31" />
+        <marker scope="Public" name="Nade_Yusei_32" />
+        <marker scope="Public" name="Nade_Yusei_33" />
+        <marker scope="Public" name="Nade_Yusei_41" />
+        <marker scope="Public" name="Nade_Yusei_42" />
+        <marker scope="Public" name="Nade_Yusei_43" />
+        <marker scope="Public" name="Nade_Yusei_51" />
+        <marker scope="Public" name="Nade_Yusei_52" />
+        <marker scope="Public" name="Nade_Yusei_53" />
+        <marker scope="Public" name="Nade_Yusei_61" />
+        <marker scope="Public" name="Nade_Yusei_62" />
+        <marker scope="Public" name="Nade_Yusei_63" />
+        <marker scope="Public" name="Nade_Yusei_71" />
+        <marker scope="Public" name="Nade_Yusei_72" />
+        <marker scope="Public" name="Nade_Yusei_73" />
+        <marker scope="Public" name="nade_yusei_begin_dual_forfeit" />
+        <marker scope="Public" name="nade_yusei_engage_dual_forfeit" />
+        <marker scope="Public" name="nade_yusei_finished" />
+        <marker scope="Public" name="nade_yusei_forfeit_control" />
+        <marker scope="Public" name="nade_yusei_forfeit_kiss" />
+        <marker scope="Public" name="nade_yusei_forfeit_meal" />
+        <marker scope="Public" name="nade_yusei_forfeit_ride" />
+        <marker scope="Public" name="nade_yusei_forfeit_sex" />
+        <marker scope="Public" name="nade_yusei_forfeit_woods" />
+        <marker scope="Public" name="nade_yusei_heavy1" />
+        <marker scope="Public" name="nade_yusei_heavy2" />
+        <marker scope="Public" name="nade_yusei_heavy3" />
+        <marker scope="Public" name="Nade_Yusei_NMustForfeit" />
+        <marker scope="Public" name="nade_yusei_start_dual_forfeit" />
+        <marker scope="Public" name="nade_yusei_ymustforfeit" />
+        <marker scope="Public" name="nade_yusei_ystartforforfeit" />
+        <marker scope="Public" name="Nade_Yusei_YVictory" />
         <marker scope="Public" name="NadeMikuWhereBag" />
         <marker scope="Public" name="Nadeshiko" />
         <marker scope="Public" name="Nadeshiko_Amy_StrangeHarmony_R" />
@@ -1027,6 +1160,7 @@
         <marker scope="Public" name="Nadeshiko_BadatPoker" />
         <marker scope="Public" name="Nadeshiko_DonPatch" />
         <marker scope="Public" name="Nadeshiko_DountGirl_Reaction" />
+        <marker scope="Public" name="nadeshiko_ff_sleepingbag" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-1" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-1 " />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-1Hot" />
@@ -1263,6 +1397,37 @@
         <marker scope="Public" name="WouldYouLikeACamp" />
         <marker scope="Public" name="WouldYouLikeACampMeal" />
         <marker scope="Public" name="WouldYouLikeToGoCamping" />
+        <marker scope="Public" name="yusei_nade_begin_dual_forfeit" />
+        <marker scope="Public" name="Yusei_Nade_Bike1" />
+        <marker scope="Public" name="Yusei_Nade_Bike2" />
+        <marker scope="Public" name="Yusei_Nade_Bike3" />
+        <marker scope="Public" name="Yusei_Nade_BikeRide1" />
+        <marker scope="Public" name="Yusei_Nade_BikeRide2" />
+        <marker scope="Public" name="Yusei_Nade_BikeRide3" />
+        <marker scope="Public" name="Yusei_Nade_CrimsonDragon1" />
+        <marker scope="Public" name="Yusei_Nade_CrimsonDragon2" />
+        <marker scope="Public" name="Yusei_Nade_CrimsonDragon3" />
+        <marker scope="Public" name="Yusei_Nade_DMPopular1" />
+        <marker scope="Public" name="Yusei_Nade_DMPopular2" />
+        <marker scope="Public" name="Yusei_Nade_DMPopular3" />
+        <marker scope="Public" name="Yusei_Nade_DragonMark1" />
+        <marker scope="Public" name="Yusei_Nade_DragonMark2" />
+        <marker scope="Public" name="Yusei_Nade_DragonMark3" />
+        <marker scope="Public" name="Yusei_Nade_DuelDisk1" />
+        <marker scope="Public" name="Yusei_Nade_DuelDisk2" />
+        <marker scope="Public" name="Yusei_Nade_DuelDisk3" />
+        <marker scope="Public" name="Yusei_Nade_GenFlirt1" />
+        <marker scope="Public" name="Yusei_Nade_GenFlirt2" />
+        <marker scope="Public" name="Yusei_Nade_GenFlirt3" />
+        <marker scope="Public" name="Yusei_Nade_Helmet1" />
+        <marker scope="Public" name="Yusei_Nade_Helmet2" />
+        <marker scope="Public" name="Yusei_Nade_Helmet3" />
+        <marker scope="Public" name="Yusei_Nade_Satellite1" />
+        <marker scope="Public" name="Yusei_Nade_Satellite2" />
+        <marker scope="Public" name="Yusei_Nade_Satellite3" />
+        <marker scope="Public" name="yusei_nadeshiko_dualFF1_SETUP_FORFEIT_LOGIC" />
+        <marker scope="Public" name="yusei_nadeshiko_dualFF1_SETUP_FORFEIT_LOGIC2" />
+        <marker scope="Public" name="yusei_nadeshiko_nadeshikoJustCame" />
         <marker scope="Public" name="zeke_nadeshiko_fancy1R" />
         <marker scope="Public" name="zeke_nadeshiko_hermit1R" />
         <marker scope="Public" name="zeke_nadeshiko_tantal1R" />
