@@ -441,6 +441,9 @@ namespace SPNATI_Character_Editor
 			totalPriority += Conditions.Sum(c => c.GetPriority());
 			totalPriority += Expressions.Count * 50;
 
+			if (!string.IsNullOrEmpty(GameMode))
+				totalPriority += 3;
+
 			if (!string.IsNullOrEmpty(TotalRounds))
 				totalPriority += 10;
 
