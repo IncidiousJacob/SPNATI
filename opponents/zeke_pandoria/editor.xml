@@ -199,6 +199,9 @@
         <response id="930" opponent="sanako" opponentId="962" />
         <response id="936" opponent="natasha" opponentId="320" />
         <response id="953" opponent="schezo" opponentId="54" />
+        <response id="974" opponent="schezo" opponentId="399" />
+        <response id="976" opponent="schezo" opponentId="398" />
+        <response id="977" opponent="schezo" opponentId="400" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -240,6 +243,8 @@
         <note id="905">you can check that it is the first round by using the 'total rounds From 0' condition that this case has</note>
         <note id="941">yes, "cooped up" is another pun</note>
         <note id="951">lmk if you want me to change this, just thought about bringing up a running gag from the game where zeke and pandy keep getting knocked off of stuff team rocket style</note>
+        <note id="963">you don't need to write a unique response to this variation. if you do, you can make use of SayingText.</note>
+        <note id="973">the second version of this line sets the marker to equal the value "innuendo" in case you wanted to respond to it specifically using the sayingMarker feature of comparing the value it is setting. ask me if you need advice on what this means exactly</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -1087,7 +1092,7 @@
         <label id="855" label="" folder="Responses&gt;Stocking&gt;BeachParty" sort="0" />
         <label id="856" label="" folder="Responses" sort="0" />
         <label id="857" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="858" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="858" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="859" label="" color="4" folder="Responses" sort="0" />
         <label id="860" label="" folder="Responses" sort="0" />
         <label id="861" label="" folder="Responses" sort="0" />
@@ -1173,29 +1178,47 @@
         <label id="942" label="" color="1" folder="Targets&gt;Chica" sort="0" />
         <label id="943" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="944" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="945" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
+        <label id="945" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="946" label="" folder="Responses&gt;Juno" sort="0" />
         <label id="947" label="" color="3" folder="Responses&gt;Juno" sort="0" />
         <label id="948" label="" color="3" folder="Responses&gt;Juno" sort="0" />
         <label id="949" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="950" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="951" label="" color="4" folder="Targets&gt;Juno" sort="0" />
-        <label id="952" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
-        <label id="953" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
-        <label id="954" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="952" label="0: hero of creation" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="953" label="1: power limits" folder="Responses" sort="0" />
+        <label id="954" label="2: natural beauty" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
         <label id="955" label="" folder="Targets&gt;Juno" sort="0" />
         <label id="956" label="" folder="Targets&gt;Juno" sort="0" />
         <label id="957" label="" folder="Targets&gt;Juno" sort="0" />
         <label id="958" label="" folder="Targets&gt;Juno" sort="0" />
         <label id="959" label="" color="3" folder="Responses&gt;Juno" sort="0" />
         <label id="960" label="" folder="Responses&gt;Juno" sort="0" />
+        <label id="961" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="962" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="963" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="964" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="965" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="966" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="967" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="968" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="969" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="970" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="971" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="972" label="" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="973" label="3: love life vs hero work" folder="Targets&gt;Masq 2024&gt;Momo" sort="0" />
+        <label id="974" label="" folder="Responses" sort="0" />
+        <label id="975" label="" folder="Responses" sort="0" />
+        <label id="976" label="" folder="Responses" sort="0" />
+        <label id="977" label="" folder="Responses" sort="0" />
+        <label id="978" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>960</nextId>
+    <nextId>978</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AellaAdventures" />
@@ -1695,8 +1718,11 @@
         <marker scope="Public" name="zekepandy_sanako_self0b" />
         <marker scope="Public" name="zekepandy_sanako_self0c" />
         <marker scope="Public" name="zekepandy_schezo_respA1" />
+        <marker scope="Public" name="zekepandy_schezo_respA2" />
         <marker scope="Public" name="zekepandy_schezo_respB1" />
+        <marker scope="Public" name="zekepandy_schezo_respB2" />
         <marker scope="Public" name="zekepandy_schezo_respC1" />
+        <marker scope="Public" name="zekepandy_schezo_respC2" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_happening" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_must" />
         <marker scope="Public" name="zekepandy_sucrose_dualFF_start" />
@@ -1784,9 +1810,13 @@
         <marker scope="Public" name="zp_lysithea_intentionsS" />
         <marker scope="Public" name="zp_lysithea_whatS" />
         <marker scope="Public" name="zp_miko_self1a" />
+        <marker scope="Public" name="zp_momo_playTogether1" />
         <marker scope="Public" name="zp_momo_strip0a" />
+        <marker scope="Public" name="zp_momo_strip0b" />
         <marker scope="Public" name="zp_momo_strip1a" />
+        <marker scope="Public" name="zp_momo_strip1b" />
         <marker scope="Public" name="zp_momo_strip2a" />
+        <marker scope="Public" name="zp_momo_strip3a" />
         <marker scope="Public" name="zp_nephenee_strip0a" />
         <marker scope="Public" name="zp_nephenee_strip0b" />
         <marker scope="Public" name="zp_nephenee_strip0c" />
@@ -1833,6 +1863,7 @@
         <marker scope="Public" name="zp_sanako_self2a_default" />
         <marker scope="Public" name="zp_sanako_self2b_default" />
         <marker scope="Public" name="zp_sanako_self2c_default" />
+        <marker scope="Public" name="zp_schezo_powersExplained1" />
         <marker scope="Public" name="zp_sofia_intro1" />
         <marker scope="Public" name="zp_sofia_intro2" />
         <marker scope="Public" name="zp_sofia_intro3" />
