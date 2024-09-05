@@ -282,7 +282,14 @@ namespace SPNATI_Character_Editor
 			List<string> result = new List<string>();
 			if (!string.IsNullOrEmpty(GameMode))
 			{
-				result.Add("(" + GameMode + " mode) ");
+				if (GameMode == "!short")
+				{
+					result.Add("(regular mode) ");
+				}
+				else
+				{
+					result.Add("(" + GameMode + " mode) ");
+				}
 			}
 			if (!string.IsNullOrEmpty(TotalRounds))
 			{

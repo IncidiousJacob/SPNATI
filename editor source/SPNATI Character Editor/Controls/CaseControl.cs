@@ -185,7 +185,7 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
 				{
-					_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "regular" : "short";
+					_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "!short" : "short";
 				}
 				else
 				{
@@ -194,7 +194,7 @@ namespace SPNATI_Character_Editor.Controls
 			}
 			else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
 			{
-				_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "regular" : "short";
+				_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "!short" : "short";
 			}
 		}
 

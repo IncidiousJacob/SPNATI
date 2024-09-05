@@ -79,7 +79,7 @@ function compileBaseErrorReport(userDesc, bugType) {
         }
     } else {
         var gameState = {
-            'gameMode': SHORT_GAME_MODE? "short" : "regular",
+            'gameMode': SHORT_GAME_MODE? "short" : "!short",
             'currentRound': currentRound,
             'currentTurn': currentTurn,
             'previousLoser': previousLoser,
@@ -631,7 +631,7 @@ function recordEndGameEvent(winner) {
 function recordInterruptedGameEvent(isPageUnload) {
     var report = collectBaseUsageInfo("interrupted_game", true);
     report.gameState = {
-        'gameMode': SHORT_GAME_MODE? "short" : "regular",
+        'gameMode': SHORT_GAME_MODE? "short" : "!short",
         'currentRound': currentRound,
         'currentTurn': currentTurn,
         'previousLoser': previousLoser,

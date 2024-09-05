@@ -2373,7 +2373,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
 
     // game mode
     if (this.gameMode) {
-        if (this.gameMode == "regular" && SHORT_GAME_MODE || this.gameMode == "short" && !SHORT_GAME_MODE) {
+        if (this.gameMode == "!short" && SHORT_GAME_MODE || this.gameMode == "short" && !SHORT_GAME_MODE) {
             return false; //failed "gameMode" requirement
         }
     }
