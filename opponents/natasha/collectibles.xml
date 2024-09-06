@@ -1,5 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
+    <collectible id="bunny_shirt" img="opponents/natasha/x_shirt.png" thumbnail="opponents/natasha/x_shirt.png">
+        <title>Bow Bunny T-Shirt</title>
+        <subtitle>Textbook juxtaposition.</subtitle>
+        <text>A shirt just like Natasha's, in your size. It serves as a reminder of the person she used to be.</text>
+        <unlock>Hear the real story behind Natasha's arms (win against Natasha, then play with her again and get her to take off her hoodie).</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing name="shirt" generic="shirt" position="upper" type="major" />
+    </collectible>
+    <collectible id="spike_boots" img="opponents/natasha/x_boots.png" thumbnail="opponents/natasha/x_boots.png">
+        <title>Spike Toe Boots</title>
+        <subtitle>Your own pair of butt-kicking boots.</subtitle>
+        <text>Boots just like Natasha's, in your size. Not only are these boots spiked, but they're also steel toe, so wearing them makes your toes officially un-smashable.</text>
+        <unlock>Lose to Natasha 3 times (she must win) with a full table. You and your opponents must be wearing at least five (5) pieces of clothing at the start of the match.</unlock>
+        <hide-details>true</hide-details>
+        <counter>3</counter>
+        <wearable>true</wearable>
+        <clothing name="boots" position="feet" type="minor" plural="true" />
+    </collectible>
     <collectible id="collectible_x" img="opponents/natasha/x.png" thumbnail="opponents/natasha/x.png">
         <title>Digital 72648 CC</title>
         <subtitle>Urpqcuh nwlxmnm.</subtitle>
