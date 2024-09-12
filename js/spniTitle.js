@@ -27,12 +27,14 @@ var $gameLoadProgress = $(".game-load-progress");
 var playerTagOptions = {
     'hair_color': {
         values: [
-            { value: 'black_hair' }, { value: 'white_hair' },
+            { value: 'black_hair' }, { value: 'gray_hair' }, { value: 'white_hair' },
             { value: 'brunette' }, { value: 'ginger' }, { value: 'blonde' },
             { value: 'green_hair' },
             { value: 'blue_hair' },
             { value: 'purple_hair' },
             { value: 'pink_hair' },
+            { value: 'red_hair' },
+            { value: 'multicolored_hair' },
         ],
     },
     'eye_color': {
@@ -62,11 +64,24 @@ var playerTagOptions = {
             { value: 'very_long_hair', text: 'Very Long Hair - Reaches the Thighs or Beyond'},
         ],
     },
+    'hair_style': {
+        values: [
+            { value: 'ahoge'},
+            { value: 'braided'},
+            { value: 'bun'},
+            { value: 'drills'},
+            { value: 'messy'},
+            { value: 'ponytail'},
+            { value: 'topknot'},
+            { value: 'twintails'},
+        ],
+    },    
     'physical_build': {
         values: [
+            { value: 'twink', gender: 'male' },
             { value: 'skinny' },
-            { value: 'chubby' },
             { value: 'curvy', gender: 'female' },
+            { value: 'chubby' },
             { value: 'athletic' },
             { value: 'muscular' },
         ],
@@ -80,9 +95,12 @@ var playerTagOptions = {
     },
     'pubic_hair_style': {
         values: [
+            { value: 'pubic_hair', text: 'Any' },
             { value: 'shaved' },
             { value: 'trimmed' },
-            { value: 'hairy' },
+            { value: 'hairy', text: 'Hairy'},
+            { value: 'heart_pubes', text: 'Heart-Shaped Trim' },
+            { value: 'landing_strip' },
         ],
     },
     'circumcision': {
@@ -101,6 +119,13 @@ var playerTagOptions = {
             { value: 'reverse_bi-curious', gender: 'female', text: 'Female-leaning bi-curious' },
             { value: 'gay', gender: 'male' },
             { value: 'lesbian', gender: 'female' },
+        ]
+    },
+    'sexual_dynamic': {
+        values: [
+            { value: 'submissive' },
+            { value: 'switch'},
+            { value: 'dominant' },
         ]
     }
 };
