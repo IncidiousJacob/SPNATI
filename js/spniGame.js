@@ -353,7 +353,9 @@ function advanceTurn () {
  * information.
  ************************************************************/
 function startDealPhase () {
-    currentRound++;
+    if (currentRound++ < 0) {
+        recordStartGameEvent();
+    }
     saveTranscriptMessage("Starting round "+(currentRound+1)+"...");
 
     Sentry.addBreadcrumb({
