@@ -1853,50 +1853,30 @@ OpponentDetailsDisplay.prototype.createEpilogueCard = function (title, gender, u
     return container;
 }
 
-function isEquivalentEpilogue(e1, e2) {
-    if (e1.text() !== e2.text()) return false;
-    
-    return EPILOGUE_CONDITIONAL_ATTRIBUTES.every(function (condAttr) {
-        return e1.attr(condAttr) == e2.attr(condAttr);
-    });
-}
-
 OpponentDetailsDisplay.prototype.updateEpiloguesView = function () {
     if (!this.opponent.endings) return;
 
     // Group together any epilogues with a shared name and conditional attributes (but with different gender attributes).
-    var groups = [];
+    const groups = new Map();
 
     this.opponent.endings.each(function (idx, elem) {
         var $elem = $(elem);
-        var title = $elem.text();
+        var title = $elem.text().trim();
 
-        if(!groups.some(function (group) {
-            if (group.every(isEquivalentEpilogue.bind(null, $elem))) {
-                // This group contains all equivalent epilogues to the current one, add the current epilogue 
-                group.push(elem);
-                return true;
-            }
-            return false;
-        })) {
-            // Add the current element as a new group
-            groups.push([$elem]);
+        if (groups.has(title)) {
+            groups.get(title).push($elem);
+        } else {
+            groups.set(title, [ $elem ]);
         }
     });
     
-    var cards = groups.map(function (group) {
-        var condGender = group[0].attr('gender');
-        var genderText = '';
-        
-        if (group.length > 1) {
-            genderText = 'All Genders';
-        } else if (condGender === 'male') {
-            genderText = 'Males';
-        } else if (condGender === 'female') {
-            genderText = 'Females';
-        } else {
-            genderText = 'All Genders';
-        }
+    const cards = Array.from(groups.values()).map(function (group) {
+        let availableGenders = 0;
+        /* Map gender attribute to binary, do bitwise or, and convert back to text */
+        const genderToNum = { male: 1, female: 2, any: 3 };
+        const numToText = [ '', 'Males', 'Females', 'All Genders' ];
+        group.forEach(e => availableGenders |= genderToNum[e.attr('gender') || 'any']);
+        const genderText = numToText[availableGenders];
         
         var offlineIndicator = "";
         if (group[0].attr('status') && group[0].attr('status') != "online") {

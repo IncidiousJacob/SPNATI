@@ -286,13 +286,6 @@ function getCenteredPosition(width) {
  * Load the Epilogue data for a character
  ************************************************************/
 
-// This is just a list of all possible conditional attribute names.
-var EPILOGUE_CONDITIONAL_ATTRIBUTES = [
-    'alsoPlaying', 'playerStartingLayers', 'markers',
-    'not-markers', 'any-markers', 'alsoplaying-markers',
-    'alsoplaying-not-markers', 'alsoplaying-any-markers'
-]
-
 function checkEpilogueConditions(player, ending) {
     const humanPlayerGender = humanPlayer.gender;
     const humanPlayerWon = !humanPlayer.out;
