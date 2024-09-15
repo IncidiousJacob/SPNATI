@@ -141,11 +141,11 @@ namespace SPNATI_Character_Editor
 			set { Set(value); }
 		}
 
-		[DefaultValue(false)]
-		[XmlElement("short-game-tested")]
-		public bool ShortGameTested
+		[DefaultValue("")]
+		[XmlElement("short-game-enabled")]
+		public string ShortGameEnabled
 		{
-			get { return Get<bool>(); }
+			get { return Get<string>(); }
 			set { Set(value); }
 		}
 

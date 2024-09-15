@@ -79,6 +79,10 @@ function Player (id) {
     this.persistentMarkers = {};
 }
 
+Player.prototype.shortGameOptOut = function () {
+    return SHORT_GAME_MODE && !SHORT_GAME_UNLOCKED && !this.shortGameEnabled && this.id != 'human';
+}
+
 /*******************************************************************
  * Sets initial values of state variables used by targetStatus,
  * targetStartingLayers etc. adccording to wardrobe.
@@ -569,9 +573,10 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.artist = $metaXml.children('artist').text();
     this.writer = $metaXml.children('writer').text();
     this.description = fixupDialogue($metaXml.children('description').html());
-    this.has_collectibles = $metaXml.children('has_collectibles').text() === "true";
+    this.has_collectibles = $metaXml.children('has_collectibles').text() === 'true';
     this.collectibles = null;
-    this.shortGameTested = $metaXml.children('short-game-tested').text() === "true";
+    this.shortGameTested = $metaXml.children('short-game-enabled').text() === 'true';
+    this.shortGameEnabled = ($metaXml.children('short-game-enabled').text() || 'false') !== 'false';
     this.default_costume_name = $metaXml.children('default-costume-name').text();
     this.scale = Number($metaXml.children('scale').text()) || 100.0;
     this.release = releaseNumber;

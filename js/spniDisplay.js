@@ -1201,7 +1201,7 @@ function MainSelectScreenDisplay (slot) {
         );
     }
 
-    this.prefillSuggestion = null;
+    this.prefillSuggestion = [ { val : null }, { val : null } ]; // suggestions for regular and short game
     this.prefillButton = $("#select-prefill-button-" + slot);
     this.prefillButton.click(
         this.onSingleSuggestionSelected.bind(this)
@@ -1277,11 +1277,11 @@ MainSelectScreenDisplay.prototype.displayTargetSuggestions = function (show) {
 }
 
 MainSelectScreenDisplay.prototype.setPrefillSuggestion = function (player) {
-    this.prefillSuggestion = player;
+    this.prefillSuggestion[SHORT_GAME_MODE | 0].val = player;
 }
 
 MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
-    var player = this.prefillSuggestion;
+    var player = this.prefillSuggestion[SHORT_GAME_MODE | 0].val;
 
     this.hideBubble();
     this.drawPose(player.selection_image);
@@ -1308,17 +1308,16 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
-
+    updateModeIcon(this.modeIcon, player);
     this.statusIcon.hide();
-    this.modeIcon.hide();
 }
 
 MainSelectScreenDisplay.prototype.onSingleSuggestionSelected = function () {
-    players[this.slot] = this.prefillSuggestion;
+    players[this.slot] = this.prefillSuggestion[SHORT_GAME_MODE | 0].val;
 
     Sentry.addBreadcrumb({
         category: 'select',
-        message: 'Loading prefill suggested opponent ' + this.prefillSuggestion.id,
+        message: 'Loading prefill suggested opponent ' + players[this.slot].id,
         level: 'info'
     });
 
@@ -1363,21 +1362,23 @@ MainSelectScreenDisplay.prototype.createCharacterSettingsDropdown = function (se
 MainSelectScreenDisplay.prototype.update = function (player) {
     this.opponentArea.find(".character-setting-select").remove();
 
+    let suggestion = this.prefillSuggestion[SHORT_GAME_MODE | 0];
+
     if (!FILL_DISABLED) {
-        if (this.prefillSuggestion && this.prefillSuggestion != player
-            && players.some(function (p) { return p && p.id === this.prefillSuggestion.id; }, this)) {
-            this.prefillSuggestion = null;
+        if (suggestion.val && suggestion.val != player
+            && players.some(function (p) { return p && p.id === suggestion.val.id; }, this)) {
+            suggestion.val = null;
             loadDefaultFillSuggestions();
             return updateSelectionVisuals();
         }
 
         if (!player && !this.targetSuggestionsShown) {
             // attempt to load a prefill suggestion if missing
-            if (!this.prefillSuggestion) loadDefaultFillSuggestions();
+            if (!suggestion.val) loadDefaultFillSuggestions();
 
             // if we had one to begin with, or if we were able to load one, display
             // it
-            if (this.prefillSuggestion) return this.displaySingleSuggestion();
+            if (suggestion.val) return this.displaySingleSuggestion();
         }
     }
 
@@ -1408,7 +1409,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         return;
     }
 
-    this.prefillSuggestion = null;
+    suggestion.val = null;
     this.badges.epilogue.toggle(!!player.endings);
     var epilogueStatus = player.getEpilogueStatus(true);
     if (epilogueStatus) {
@@ -1422,6 +1423,7 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         alt: player.selectLayers + " layers",
     }).show() ;
     updateGenderIcon(this.genderIcon, player);
+    updateModeIcon(this.modeIcon, player);
 
     if (!player.isLoaded()) {
         this.hideBubble();
@@ -1639,6 +1641,8 @@ OpponentSelectionCard.prototype.onFavoriteBtnClick = function (ev) {
 OpponentSelectionCard.prototype.isVisible = function (testingView, ignoreFilter) {
     /* hide already selected opponents */
     if (this.opponent.slot) return false;
+
+    if (SHORT_GAME_MODE && !SHORT_GAME_UNLOCKED && !this.opponent.shortGameEnabled) return false;
 
     var status = this.opponent.status;
 

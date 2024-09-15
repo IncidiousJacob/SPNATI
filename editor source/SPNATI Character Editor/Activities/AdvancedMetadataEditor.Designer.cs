@@ -48,6 +48,8 @@
             this.label2 = new Desktop.Skinning.SkinnedLabel();
             this.valLayer = new Desktop.Skinning.SkinnedNumericUpDown();
             this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
+            this.lblShortGameMode = new Desktop.Skinning.SkinnedLabel();
+            this.cboShortGameMode = new Desktop.Skinning.SkinnedComboBox();
             this.cboFontSize = new Desktop.Skinning.SkinnedComboBox();
             this.skinnedLabel2 = new Desktop.Skinning.SkinnedLabel();
             this.skinnedGroupBox2 = new Desktop.Skinning.SkinnedGroupBox();
@@ -61,7 +63,6 @@
             this.skinnedGroupBox3 = new Desktop.Skinning.SkinnedGroupBox();
             this.styleControl = new SPNATI_Character_Editor.Controls.StyleControl();
             this.skinnedLabel1 = new Desktop.Skinning.SkinnedLabel();
-            this.chkShort = new Desktop.Skinning.SkinnedCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.valScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLabels)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valLayer)).BeginInit();
@@ -220,7 +221,7 @@
             this.cboDialogueLayer.Name = "cboDialogueLayer";
             this.cboDialogueLayer.SelectedIndex = -1;
             this.cboDialogueLayer.SelectedItem = null;
-            this.cboDialogueLayer.Size = new System.Drawing.Size(121, 21);
+            this.cboDialogueLayer.Size = new System.Drawing.Size(172, 21);
             this.cboDialogueLayer.Sorted = false;
             this.cboDialogueLayer.TabIndex = 91;
             // 
@@ -255,7 +256,8 @@
             // skinnedGroupBox1
             // 
             this.skinnedGroupBox1.BackColor = System.Drawing.Color.White;
-            this.skinnedGroupBox1.Controls.Add(this.chkShort);
+            this.skinnedGroupBox1.Controls.Add(this.lblShortGameMode);
+            this.skinnedGroupBox1.Controls.Add(this.cboShortGameMode);
             this.skinnedGroupBox1.Controls.Add(this.cboFontSize);
             this.skinnedGroupBox1.Controls.Add(this.skinnedLabel2);
             this.skinnedGroupBox1.Controls.Add(this.gridLabels);
@@ -277,6 +279,37 @@
             this.skinnedGroupBox1.TabStop = false;
             this.skinnedGroupBox1.Text = "Advanced Metadata";
             // 
+            // lblShortGameMode
+            // 
+            this.lblShortGameMode.AutoSize = true;
+            this.lblShortGameMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblShortGameMode.ForeColor = System.Drawing.Color.Black;
+            this.lblShortGameMode.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblShortGameMode.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
+            this.lblShortGameMode.Location = new System.Drawing.Point(6, 250);
+            this.lblShortGameMode.Name = "lblShortGameMode";
+            this.lblShortGameMode.Size = new System.Drawing.Size(93, 13);
+            this.lblShortGameMode.TabIndex = 97;
+            this.lblShortGameMode.Text = "Short game mode:";
+            // 
+            // cboShortGameMode
+            // 
+            this.cboShortGameMode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cboShortGameMode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cboShortGameMode.BackColor = System.Drawing.Color.White;
+            this.cboShortGameMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboShortGameMode.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
+            this.cboShortGameMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cboShortGameMode.FormattingEnabled = true;
+            this.cboShortGameMode.KeyMember = null;
+            this.cboShortGameMode.Location = new System.Drawing.Point(133, 247);
+            this.cboShortGameMode.Name = "cboShortGameMode";
+            this.cboShortGameMode.SelectedIndex = -1;
+            this.cboShortGameMode.SelectedItem = null;
+            this.cboShortGameMode.Size = new System.Drawing.Size(172, 21);
+            this.cboShortGameMode.Sorted = false;
+            this.cboShortGameMode.TabIndex = 96;
+            // 
             // cboFontSize
             // 
             this.cboFontSize.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -291,7 +324,7 @@
             this.cboFontSize.Name = "cboFontSize";
             this.cboFontSize.SelectedIndex = -1;
             this.cboFontSize.SelectedItem = null;
-            this.cboFontSize.Size = new System.Drawing.Size(121, 21);
+            this.cboFontSize.Size = new System.Drawing.Size(172, 21);
             this.cboFontSize.Sorted = false;
             this.cboFontSize.TabIndex = 93;
             // 
@@ -508,17 +541,6 @@
             this.skinnedLabel1.Text = "To assign a nickname mid-game, set a per-target marker named \"nickname\" on a case" +
     " where the desired character is the target.";
             // 
-            // chkShort
-            // 
-            this.chkShort.AutoSize = true;
-            this.chkShort.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
-            this.chkShort.Location = new System.Drawing.Point(133, 247);
-            this.chkShort.Name = "chkShort";
-            this.chkShort.Size = new System.Drawing.Size(273, 17);
-            this.chkShort.TabIndex = 97;
-            this.chkShort.Text = "Character tested for the Short Game Mode";
-            this.chkShort.UseVisualStyleBackColor = true;
-            // 
             // AdvancedMetadataEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,6 +591,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colLabelsLabel;
         private Desktop.Skinning.SkinnedComboBox cboFontSize;
         private Desktop.Skinning.SkinnedLabel skinnedLabel2;
-        private Desktop.Skinning.SkinnedCheckBox chkShort;
+        private Desktop.Skinning.SkinnedLabel lblShortGameMode;
+        private Desktop.Skinning.SkinnedComboBox cboShortGameMode;
     }
 }
