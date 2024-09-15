@@ -3104,12 +3104,14 @@ ul.dropdown-menu>li {
 
 .opponent-details-field>* {
     padding: 0.5% 2%;
-
     flex: 1;
     text-align: left;
     word-wrap: break-word;
 }
-
+.opponent-details-field>button.smooth-button:active:not(:disabled) {
+    padding-left: calc(2% + 0.1em);
+    padding-right: calc(2% - 0.1em);
+}
 .opponent-details-field>.opponent-details-label {
     background: linear-gradient(rgb(204, 204, 204), rgb(170, 170, 170)) rgb(204, 204, 204);
     height: auto;
