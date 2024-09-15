@@ -1817,9 +1817,11 @@ var fixupDialogueSubstitutions = { // Order matters
     "'":   '\u2019', // right single quotation mark
     '\\':  '\xad', // soft hyphen
     '~':   '\u223c', // tilde operator, bigger than ordinary tilde
+    '&lt;b&gt;': '<b>',
     '&lt;i&gt;': '<i>',
     '&lt;br&gt;': '<br>',
     '&lt;hr&gt;': '<hr>',
+    '&lt;/b&gt;': '</b>',
     '&lt;/i&gt;': '</i>',
     '&lt;/br&gt;': '</br>',
     '&lt;/hr&gt;': '</hr>'
