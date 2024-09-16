@@ -1077,6 +1077,11 @@ function showExtrasModal() {
         $(".broken-option").prop("hidden", true);
     }
 
+    /* hide the Game Length option if online version*/ 
+    if (isMainSite) {
+        $(".game-length-option").hide();
+    }
+
     updateTrackingToggles();
 
     $extrasModal.modal('show');
