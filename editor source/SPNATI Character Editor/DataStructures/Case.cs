@@ -89,7 +89,6 @@ namespace SPNATI_Character_Editor
 			set { if (_oneShotId != value) { _oneShotId = value; NotifyPropertyChanged(); } }
 		}
 
-
 		private string _hidden;
 		[XmlOrder(40)]
 		[XmlAttribute("hidden")]
@@ -110,8 +109,6 @@ namespace SPNATI_Character_Editor
 			set { if (_disabled != value) { _disabled = value; NotifyPropertyChanged(); } }
 		}
 
-
-
 		private string _totalRounds;
 		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
 		[XmlOrder(250)]
@@ -123,6 +120,16 @@ namespace SPNATI_Character_Editor
 			set { if (_totalRounds != value) { _totalRounds = value; NotifyPropertyChanged(); } }
 		}
 
+		private string _gameMode;
+//		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
+		[XmlOrder(260)]
+		[XmlAttribute("mode")]
+		[JsonProperty("mode")]
+		public string GameMode
+		{
+			get { return _gameMode; }
+			set { if (_gameMode != value) { _gameMode = value; NotifyPropertyChanged(); } }
+		}
 
 		private string _priority;
 		[XmlOrder(360)]
@@ -273,9 +280,20 @@ namespace SPNATI_Character_Editor
 				alternates.Add(alternate.ToConditionsString(false));
 			}
 			List<string> result = new List<string>();
+			if (!string.IsNullOrEmpty(GameMode))
+			{
+				if (GameMode == "!short")
+				{
+					result.Add("(regular mode) ");
+				}
+				else
+				{
+					result.Add("(" + GameMode + " mode) ");
+				}
+			}
 			if (!string.IsNullOrEmpty(TotalRounds))
 			{
-				result.Add(string.Format("({0} overall rounds)", TotalRoundsToString(TotalRounds)));
+				result.Add(string.Format("({0} rounds)", TotalRoundsToString(TotalRounds)));
 			}
 			if (Conditions.Count > 0)
 			{
@@ -430,6 +448,9 @@ namespace SPNATI_Character_Editor
 			totalPriority += Conditions.Sum(c => c.GetPriority());
 			totalPriority += Expressions.Count * 50;
 
+			if (!string.IsNullOrEmpty(GameMode))
+				totalPriority += 3;
+
 			if (!string.IsNullOrEmpty(TotalRounds))
 				totalPriority += 10;
 
@@ -506,6 +527,7 @@ namespace SPNATI_Character_Editor
 				return _conditionHash;
 			}
 			int hash = (TotalRounds ?? string.Empty).GetHashCode();
+			hash = (GameMode ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (AddCharacterTags ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (RemoveCharacterTags ?? string.Empty).GetHashCode();
 			if (includePriority)
@@ -516,36 +538,6 @@ namespace SPNATI_Character_Editor
 			hash = (hash * 397) ^ (OneShotId > 0 ? OneShotId : -1);
 			_conditionHash = hash;
 			return hash;
-		}
-
-		/// <summary>
-		/// Gets whether this case matches another in everything but conditions
-		/// </summary>
-		/// <param name="other"></param>
-		/// <returns></returns>
-		public bool MatchesNonConditions(Case other)
-		{
-			if (other == this)
-				return true;
-			if (Tag != other.Tag)
-				return false;
-
-			if (other.Lines.Count != Lines.Count)
-			{
-				return false;
-			}
-			if (other.GetLineCode() != GetLineCode())
-			{
-				return false;
-			}
-			if (other.RemoveCharacterTags != RemoveCharacterTags ||
-				other.AddCharacterTags != AddCharacterTags ||
-				other.CustomPriority != CustomPriority)
-			{
-				return false;
-			}
-
-			return true;
 		}
 
 		public bool MatchesConditions(Case other)
@@ -564,8 +556,8 @@ namespace SPNATI_Character_Editor
 			if (Tag != other.Tag)
 				return false;
 
-			bool sameFilters = (GetConditionHash(includePriority) == other.GetConditionHash(includePriority));
-			if (!sameFilters)
+			bool sameCaseAttributes = GetConditionHash(includePriority) == other.GetConditionHash(includePriority);
+			if (!sameCaseAttributes)
 				return false;
 
 			if (other.Conditions.Count != Conditions.Count)
@@ -595,6 +587,7 @@ namespace SPNATI_Character_Editor
 			get
 			{
 				return !string.IsNullOrEmpty(TotalRounds) ||
+				  !string.IsNullOrEmpty(GameMode) ||
 				  !string.IsNullOrEmpty(Hidden) ||
 				  !string.IsNullOrEmpty(Disabled) ||
 				  Conditions.Count > 0 ||
@@ -760,28 +753,6 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		public IEnumerable<Case> GetConditionSets()
-		{
-			yield return this;
-			foreach (Case alternate in AlternativeConditions)
-			{
-				yield return alternate;
-			}
-		}
-
-		/// <summary>
-		/// Gets whether this case has any targeted dialogue that is based on game state
-		/// </summary>
-		public bool HasStageConditions
-		{
-			get
-			{
-				return !string.IsNullOrEmpty(TotalRounds) ||
-					Conditions.Count > 0 ||
-					Expressions.Count > 0;
-			}
-		}
-
 		public int GetFullHashCode()
 		{
 			int hash = GetConditionHash(true);
@@ -794,25 +765,6 @@ namespace SPNATI_Character_Editor
 				hash = (hash * 397) ^ expr.GetHashCode();
 			}
 			hash = (hash * 397) ^ GetLineCode();
-			return hash;
-		}
-
-		/// <summary>
-		/// Gets a unique hash for this combination of conditions
-		/// </summary>
-		/// <returns></returns>
-		public int GetCode()
-		{
-			int hash = Tag.GetHashCode();
-			hash = (hash * 397) ^ GetConditionHash(true);
-			foreach (var condition in Conditions)
-			{
-				hash = (hash * 397) ^ condition.GetHashCode();
-			}
-			foreach (ExpressionTest expr in Expressions)
-			{
-				hash = (hash * 397) ^ expr.GetHashCode();
-			}
 			return hash;
 		}
 
@@ -1029,6 +981,7 @@ namespace SPNATI_Character_Editor
 			response.AdjustConditions(speaker, responder, this);
 
 			response.TotalRounds = TotalRounds;
+			response.GameMode = GameMode;
 
 			//special cases
 			if (Tag == "must_masturbate_first")
@@ -2107,6 +2060,18 @@ namespace SPNATI_Character_Editor
 			{
 				bool foundConflict = false;
 
+				if (!string.IsNullOrEmpty(c.TotalRounds) && c.TotalRounds != sourceCase.TotalRounds)
+				{
+					foundConflict = true;
+				}
+
+				if (!string.IsNullOrEmpty(c.GameMode) && c.GameMode != sourceCase.GameMode)
+				{
+					foundConflict = true;
+				}
+
+				if (foundConflict) { continue; }
+
 				foreach (TargetCondition cond in c.Conditions)
 				{
 					if (cond.Role != "self" && cond.Role != "target")
@@ -2166,12 +2131,6 @@ namespace SPNATI_Character_Editor
 							}
 
 							if (!string.IsNullOrEmpty(cond.Character) && cond.Character != speaker.FolderName && cond.Character != otherCond.Character)
-							{
-								foundConflict = true;
-								break;
-							}
-
-							if (!string.IsNullOrEmpty(c.TotalRounds) && c.TotalRounds != sourceCase.TotalRounds)
 							{
 								foundConflict = true;
 								break;
@@ -2297,11 +2256,6 @@ namespace SPNATI_Character_Editor
 				}
 			}
 			return list;
-		}
-
-		public int GetSliceCount()
-		{
-			return Lines.Count;
 		}
 
 		public void AddStage(int stage)
@@ -2472,31 +2426,6 @@ namespace SPNATI_Character_Editor
 				}
 			}
 			return null;
-		}
-
-		/// <summary>
-		/// Removes extraneous conditions to leave only the bare minimum
-		/// </summary>
-		public void SimplifyConditions()
-		{
-			return; //disable for now until fixed
-
-			for (int i = Conditions.Count - 1; i>= 0; i--)
-			{
-				TargetCondition condition = Conditions[i];
-				if (string.IsNullOrEmpty(condition.SayingMarker))
-				{
-					Conditions.RemoveAt(i);
-				}
-				else
-				{
-					condition.Simplify();
-				}
-			}
-			foreach (Case alt in AlternativeConditions)
-			{
-				alt.SimplifyConditions();
-			}
 		}
 	}
 

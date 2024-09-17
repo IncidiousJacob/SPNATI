@@ -17,6 +17,7 @@ namespace SPNATI_Character_Editor.Activities
 			
 			cboDialogueLayer.Items.AddRange(Enum.GetValues(typeof(DialogueLayer)));
 			cboFontSize.Items.AddRange(Enum.GetValues(typeof(FontSize)));
+			cboShortGameMode.Items.AddRange(new string[] { "Disabled", "Enabled but untested", "Enabled" });
 			ColCharacter.RecordType = typeof(Character);
 		}
 
@@ -39,6 +40,17 @@ namespace SPNATI_Character_Editor.Activities
 			valLayer.Value = _character.Metadata.Z;
 			cboDialogueLayer.SelectedItem = _character.Metadata.BubblePosition;
 			cboFontSize.SelectedItem = _character.Metadata.TextSize;
+			switch (_character.Metadata.ShortGameEnabled) {
+				case "true":
+					cboShortGameMode.SelectedItem = "Enabled";
+					break;
+				case "untested":
+					cboShortGameMode.SelectedItem = "Enabled but untested";
+					break;
+				default:
+					cboShortGameMode.SelectedItem = "Disabled";
+					break;
+			}
 			gridNicknames.Data = _character.Nicknames;
 			LoadNicknames();
 			styleControl.SetCharacter(_character);
@@ -66,6 +78,18 @@ namespace SPNATI_Character_Editor.Activities
 			_character.Metadata.BubblePosition = (DialogueLayer)cboDialogueLayer.SelectedItem;
 			_character.Metadata.TextSize = (FontSize)cboFontSize.SelectedItem;
 			_character.Metadata.Z = (int)valLayer.Value;
+			switch (cboShortGameMode.SelectedItem)
+			{
+				case "Enabled":
+					_character.Metadata.ShortGameEnabled = "true";
+					break;
+				case "Enabled but untested":
+					_character.Metadata.ShortGameEnabled = "untested";
+					break;
+				default:
+					_character.Metadata.ShortGameEnabled = "";
+					break;
+			}
 			gridLabels.Save(colLabelsStage);
 			SaveNicknames();
 			styleControl.Save();

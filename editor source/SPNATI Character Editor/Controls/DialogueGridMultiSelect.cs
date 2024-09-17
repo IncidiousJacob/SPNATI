@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SPNATI_Character_Editor.Controls
 {
-	public partial class DialogueGrid : UserControl, ISkinControl
+	public partial class DialogueGridMultiSelect : UserControl, ISkinControl
 	{
 		private Case _selectedCase;
 		private Stage _selectedStage;
@@ -27,6 +27,7 @@ namespace SPNATI_Character_Editor.Controls
 		public event EventHandler<int> TextUpdated;
 		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
+		public event EventHandler<int> SelectionUpdated;
 		#endregion
 
 		private TextBox _editBox;
@@ -54,7 +55,7 @@ namespace SPNATI_Character_Editor.Controls
 			}
 		}
 
-		public DialogueGrid()
+		public DialogueGridMultiSelect()
 		{
 			InitializeComponent();
 
@@ -151,6 +152,7 @@ namespace SPNATI_Character_Editor.Controls
 				}
 				row.Tag = null;
 				row.Cells["ColImage"].Value = null;
+				row.Cells["ColSelect"].Value = false;
 			}
 
 			UpdateAvailableImagesForCase(selectedStages, false);
@@ -634,18 +636,19 @@ namespace SPNATI_Character_Editor.Controls
 		private void gridDialogue_CellValueChanged(object sender, DataGridViewCellEventArgs e)
 		{
 			if (_modifyingLine) { return; }
-			if (e.ColumnIndex == 0)
+			if (e.ColumnIndex == ColSelect.Index)
 			{
-				SelectRow(e.RowIndex);
+				SelectionUpdated?.Invoke(this, e.RowIndex);
 			}
 			else if (e.ColumnIndex == ColText.Index)
 			{
 				TextUpdated?.Invoke(this, e.RowIndex);
-			}
+			} 
 			else if (e.ColumnIndex == ColImage.Index)
 			{
 				PoseUpdated?.Invoke(this, e.RowIndex);
 			}
+
 		}
 
 		private void gridDialogue_CurrentCellDirtyStateChanged(object sender, EventArgs e)
@@ -667,6 +670,8 @@ namespace SPNATI_Character_Editor.Controls
 			row.Cells[nameof(ColMore)].ToolTipText = "More options";
 			row.Cells[nameof(ColMarkerOptions)].ToolTipText = "Advanced marker options";
 			row.Cells[nameof(ColImageOptions)].ToolTipText = "Stage-specific images";
+			if (row.Cells[nameof(ColSelect)].Value == null)
+				row.Cells[nameof(ColSelect)].Value = false;
 		}
 
 		private void gridDialogue_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -849,6 +854,31 @@ namespace SPNATI_Character_Editor.Controls
 				return new DialogueLine();
 			}
 			return line;
+		}
+
+		public List<DialogueLine> CopySelectedLines()
+		{
+			List<DialogueLine> lines = new List<DialogueLine>();
+			for (int i = 0; i < gridDialogue.Rows.Count; i++)
+			{
+				if (!(bool)gridDialogue.Rows[i].Cells[nameof(ColSelect)].Value)
+					continue;
+				DialogueLine line = ReadLineFromDialogueGrid(i);
+				if (line != null)
+					lines.Add(line.Copy());
+			}
+			return lines;
+		}
+
+		public List<int> GetSelectedIndices()
+		{
+			List<int> indices = new List<int>();
+			for (int i = gridDialogue.Rows.Count - 1; i > -1; i--)
+			{
+				if ((bool)gridDialogue.Rows[i].Cells[nameof(ColSelect)].Value)
+					indices.Add(i);
+			}
+			return indices;
 		}
 
 		public List<DialogueLine> CopyLines()
@@ -1345,18 +1375,6 @@ namespace SPNATI_Character_Editor.Controls
 				e.Cancel = true;
 				return;
 			}
-		}
-	}
-
-	public struct Line
-	{
-		public string Text { get; set; }
-		public int Position { get; set; }
-
-		public Line(string text, int position)
-		{
-			Text = text;
-			Position = position;
 		}
 	}
 }

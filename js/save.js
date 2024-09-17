@@ -393,6 +393,7 @@ Save.prototype.loadOptionsBackground = function (settings) {
 
 Save.prototype.saveOptions = function() {
     var options = {
+        shortGame: SHORT_GAME_MODE,
         autoFade: AUTO_FADE,
         cardSuggest: CARD_SUGGEST,
         explainHands: EXPLAIN_ALL_HANDS,

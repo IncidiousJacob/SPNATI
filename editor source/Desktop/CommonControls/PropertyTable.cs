@@ -29,7 +29,7 @@ namespace Desktop.CommonControls
 		public event EventHandler RowAdded;
 		public event EventHandler RowRemoved;
 
-		private SkinnedBackgroundType _background;
+		protected SkinnedBackgroundType _background;
 		public SkinnedBackgroundType PanelType
 		{
 			get { return _background; }
@@ -42,9 +42,9 @@ namespace Desktop.CommonControls
 			set { menuSpeedButtons.Background = value; }
 		}
 
-		private int _pendingDataChanges = 0;
+		protected int _pendingDataChanges = 0;
 
-		private object _data;
+		protected object _data;
 		/// <summary>
 		/// Data to provide to the edit controls
 		/// </summary>
@@ -69,7 +69,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private object _pendingData;
+		protected object _pendingData;
 		/// <summary>
 		/// Sets the Data object after a brief delay, so that only the last request in that amount of time is honored
 		/// </summary>
@@ -90,7 +90,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private object _previewData;
+		protected object _previewData;
 		/// <summary>
 		/// Secondary data that displays on edit controls that don't have the primary data defined.
 		/// This does not come into effect automatically; Data must be set after setting this.
@@ -113,7 +113,7 @@ namespace Desktop.CommonControls
 		/// </summary>
 		public Func<PropertyRecord, bool> RequiredFilter;
 
-		private string _placeholder;
+		protected string _placeholder;
 		/// <summary>
 		/// What to show in the add field
 		/// </summary>
@@ -127,7 +127,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private bool _allowFavorites;
+		protected bool _allowFavorites;
 		public bool AllowFavorites
 		{
 			get { return _allowFavorites; }
@@ -143,12 +143,12 @@ namespace Desktop.CommonControls
 
 		public bool RunInitialAddEvents { get; set; }
 
-		private bool _allowHelp = false;
+		protected bool _allowHelp = false;
 		public bool AllowHelp { get { return _allowHelp; } set { _allowHelp = value; } }
-		private bool _allowDelete = true;
+		protected bool _allowDelete = true;
 		public bool AllowDelete { get { return _allowDelete; } set { _allowDelete = value; } }
 
-		private HashSet<PropertyRecord> _favoriteRecords = new HashSet<PropertyRecord>();
+		protected HashSet<PropertyRecord> _favoriteRecords = new HashSet<PropertyRecord>();
 
 		/// <summary>
 		/// Caption for remove buttons
@@ -169,7 +169,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private bool _hideAdd = false;
+		protected bool _hideAdd = false;
 		public bool HideAddField
 		{
 			get { return _hideAdd; }
@@ -181,7 +181,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private bool _hideMenu = false;
+		protected bool _hideMenu = false;
 		public bool HideSpeedButtons
 		{
 			get { return _hideMenu; }
@@ -193,8 +193,8 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private ToolStripMenuItem _macroMenu;
-		private bool _allowMacros = false;
+		protected ToolStripMenuItem _macroMenu;
+		protected bool _allowMacros = false;
 		public bool AllowMacros
 		{
 			get { return _allowMacros; }
@@ -209,7 +209,7 @@ namespace Desktop.CommonControls
 		/// </summary>
 		public bool PreserveControls { get; set; }
 
-		private void PositionControls()
+		protected void PositionControls()
 		{
 			recAdd.Visible = !_hideAdd;
 			menuSpeedButtons.Visible = !_hideMenu;
@@ -222,7 +222,7 @@ namespace Desktop.CommonControls
 
 		public float RowHeaderWidth { get; set; }
 
-		private DualKeyDictionary<string, int, PropertyTableRow> _rows = new DualKeyDictionary<string, int, PropertyTableRow>();
+		protected DualKeyDictionary<string, int, PropertyTableRow> _rows = new DualKeyDictionary<string, int, PropertyTableRow>();
 
 		public string ModifyingProperty { get; set; }
 
@@ -290,7 +290,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void recAdd_RecordChanged(object sender, RecordEventArgs e)
+		protected void recAdd_RecordChanged(object sender, RecordEventArgs e)
 		{
 			if (Data == null)
 			{
@@ -303,7 +303,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private PropertyEditControl FindControl(string key, object data)
+		protected PropertyEditControl FindControl(string key, object data)
 		{
 			Dictionary<int, PropertyTableRow> rows = _rows[key];
 			if (rows != null)
@@ -328,11 +328,11 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private PropertyEditControl AddControl(PropertyRecord result)
+		protected PropertyEditControl AddControl(PropertyRecord result)
 		{
 			return AddControl(result, null);
 		}
-		private PropertyEditControl AddControl(PropertyRecord result, PropertyMacro macro)
+		protected PropertyEditControl AddControl(PropertyRecord result, PropertyMacro macro)
 		{
 			bool newlyAdded;
 			PropertyEditControl ctl = EditRecord(result, -1, out newlyAdded);
@@ -363,12 +363,12 @@ namespace Desktop.CommonControls
 			return ctl;
 		}
 
-		private void focusOnAdd_Click(object sender, EventArgs e)
+		protected void focusOnAdd_Click(object sender, EventArgs e)
 		{
 			recAdd.Focus();
 		}
 
-		private bool FilterControlsToData(IRecord record)
+		protected bool FilterControlsToData(IRecord record)
 		{
 			PropertyRecord rec = record as PropertyRecord;
 			if (RecordFilter != null && !RecordFilter(rec))
@@ -381,7 +381,7 @@ namespace Desktop.CommonControls
 		/// <summary>
 		/// Creates records for all populated data members
 		/// </summary>
-		private void BuildEditControls()
+		protected void BuildEditControls()
 		{
 			this.SuspendDrawing();
 			try
@@ -517,7 +517,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void BuildSpeedMenus(SortedDictionary<string, List<PropertyRecord>> groups)
+		protected void BuildSpeedMenus(SortedDictionary<string, List<PropertyRecord>> groups)
 		{
 			menuSpeedButtons.Items.Clear();
 			foreach (KeyValuePair<string, List<PropertyRecord>> kvp in groups)
@@ -538,7 +538,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private PropertyEditControl EditRecord(PropertyRecord result, int index, out bool newControl)
+		protected PropertyEditControl EditRecord(PropertyRecord result, int index, out bool newControl)
 		{
 			newControl = false;
 			PropertyEditControl ctl = null;
@@ -662,7 +662,7 @@ namespace Desktop.CommonControls
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="height"></param>
-		private void PropertyEditControl_RequireHeight(object sender, int height)
+		protected void PropertyEditControl_RequireHeight(object sender, int height)
 		{
 			PropertyEditControl ctl = sender as PropertyEditControl;
 			PropertyTableRow row = _rows.Get(ctl.Property, ctl.Index);
@@ -672,7 +672,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void Row_EditingMacro(object sender, MacroArgs args)
+		protected void Row_EditingMacro(object sender, MacroArgs args)
 		{
 			EditingMacro?.Invoke(this, args);
 			if (args.Editor != null)
@@ -692,7 +692,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void DisposeRow(PropertyTableRow row)
+		protected void DisposeRow(PropertyTableRow row)
 		{
 			pnlRecords.Controls.Remove(row);
 			row.PropertyChanged -= Row_PropertyChanged;
@@ -704,7 +704,7 @@ namespace Desktop.CommonControls
 			row.Dispose();
 		}
 
-		private void Row_PropertyChanged(object sender, PropertyChangedEventArgs e)
+		protected void Row_PropertyChanged(object sender, PropertyChangedEventArgs e)
 		{
 			foreach (KeyValuePair<string, Dictionary<int, PropertyTableRow>> kvp in _rows)
 			{
@@ -755,13 +755,13 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void Row_RemoveRow(object sender, EventArgs e)
+		protected void Row_RemoveRow(object sender, EventArgs e)
 		{
 			PropertyTableRow row = sender as PropertyTableRow;
 			RemoveRow(row);
 		}
 
-		private void RemoveRow(PropertyTableRow row)
+		protected void RemoveRow(PropertyTableRow row)
 		{
 			PropertyEditControl ctl = row.EditControl;
 			ctl.Clear();
@@ -800,7 +800,7 @@ namespace Desktop.CommonControls
 			RowRemoved?.Invoke(this, EventArgs.Empty);
 		}
 
-		private void Row_ToggleFavorite(object sender, EventArgs e)
+		protected void Row_ToggleFavorite(object sender, EventArgs e)
 		{
 			PropertyTableRow row = sender as PropertyTableRow;
 			PropertyRecord record = row.Record;
@@ -814,7 +814,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void SpeedButtonClick(object sender, EventArgs e)
+		protected void SpeedButtonClick(object sender, EventArgs e)
 		{
 			ToolStripMenuItem item = sender as ToolStripMenuItem;
 			PropertyRecord record = item.Tag as PropertyRecord;
@@ -836,7 +836,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private ToolStripMenuItem GetOrAddGroupMenu(string group)
+		protected ToolStripMenuItem GetOrAddGroupMenu(string group)
 		{
 			int macroSeparator = -1;
 			ToolStripMenuItem groupMenu = null;
@@ -894,7 +894,7 @@ namespace Desktop.CommonControls
 			groupMenu.DropDownItems.Add(item);
 		}
 
-		private void CustomSpeedButtonClick(object sender, EventArgs e)
+		protected void CustomSpeedButtonClick(object sender, EventArgs e)
 		{
 			ToolStripMenuItem item = sender as ToolStripMenuItem;
 			Func<object, SpeedButtonData> func = item.Tag as Func<object, SpeedButtonData>;
@@ -946,7 +946,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void AddMacro(Macro macro)
+		protected void AddMacro(Macro macro)
 		{
 			//if any properties are filtered out, filter out the whole macro
 			if (RecordFilter != null)
@@ -1004,7 +1004,7 @@ namespace Desktop.CommonControls
 			}
 		}
 
-		private void MacroButtonClick(object sender, EventArgs e)
+		protected void MacroButtonClick(object sender, EventArgs e)
 		{
 			ToolStripMenuItem item = sender as ToolStripMenuItem;
 			Macro macro = item.Tag as Macro;
@@ -1026,7 +1026,7 @@ namespace Desktop.CommonControls
 		/// Applies a macro to the data
 		/// </summary>
 		/// <param name="macro"></param>
-		internal void ApplyMacro(Macro macro, Dictionary<string, string> varMap)
+		protected internal void ApplyMacro(Macro macro, Dictionary<string, string> varMap)
 		{
 			foreach (PropertyMacro application in macro.Properties)
 			{

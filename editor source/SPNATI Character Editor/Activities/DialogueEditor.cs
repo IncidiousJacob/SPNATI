@@ -49,6 +49,7 @@ namespace SPNATI_Character_Editor.Activities
 			SetupMessageHandlers();
 			panelCase.Visible = false;
 			caseControl.TextUpdated += GridDialogue_TextUpdated;
+			caseControl.PoseUpdated += GridDialogue_PoseUpdated;
 			caseControl.HighlightRow += HighlightRow;
 			caseControl.KeyDown += CaseControl_KeyDown;
 		}
@@ -66,6 +67,18 @@ namespace SPNATI_Character_Editor.Activities
 		private void GridDialogue_TextUpdated(object sender, DialogueLine e)
 		{
 			DisplayText(e);
+		}
+
+		private void GridDialogue_PoseUpdated(object sender, int index)
+		{
+			if (index == -1)
+				return;
+			PoseMapping image = caseControl.GetImage(index);
+			DialogueLine line = caseControl.GetLine(index);
+			if (image != null)
+			{
+				DisplayImage(image, caseControl.PreviewStage, line);
+			}
 		}
 
 		/// <summary>
@@ -163,6 +176,7 @@ namespace SPNATI_Character_Editor.Activities
 			SubscribeWorkspace(WorkspaceMessages.WardrobeUpdated, OnWardrobeChanged);
 			SubscribeWorkspace<IWardrobe>(WorkspaceMessages.SkinChanged, SkinChanged);			
 			SubscribeWorkspace(WorkspaceMessages.SaveCaseNotes, OnSaveCaseNotes);
+			SubscribeWorkspace<List<int>>(WorkspaceMessages.SplitCase, OnSplitCase);
 			SubscribeDesktop(DesktopMessages.SettingsUpdated, OnSettingsUpdated);
 			SubscribeDesktop(DesktopMessages.MacrosUpdated, OnMacrosUpdated);
 		}
@@ -208,6 +222,11 @@ namespace SPNATI_Character_Editor.Activities
 		private void OnSaveCaseNotes()
 		{
 			caseControl.SaveNotes();
+		}
+
+		private void OnSplitCase(List<int> indices)
+		{
+			treeDialogue.SplitCase(indices);
 		}
 
 		private void SkinChanged(IWardrobe costume)

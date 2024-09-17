@@ -48,6 +48,8 @@
             this.label2 = new Desktop.Skinning.SkinnedLabel();
             this.valLayer = new Desktop.Skinning.SkinnedNumericUpDown();
             this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
+            this.lblShortGameMode = new Desktop.Skinning.SkinnedLabel();
+            this.cboShortGameMode = new Desktop.Skinning.SkinnedComboBox();
             this.cboFontSize = new Desktop.Skinning.SkinnedComboBox();
             this.skinnedLabel2 = new Desktop.Skinning.SkinnedLabel();
             this.skinnedGroupBox2 = new Desktop.Skinning.SkinnedGroupBox();
@@ -219,7 +221,7 @@
             this.cboDialogueLayer.Name = "cboDialogueLayer";
             this.cboDialogueLayer.SelectedIndex = -1;
             this.cboDialogueLayer.SelectedItem = null;
-            this.cboDialogueLayer.Size = new System.Drawing.Size(121, 21);
+            this.cboDialogueLayer.Size = new System.Drawing.Size(172, 21);
             this.cboDialogueLayer.Sorted = false;
             this.cboDialogueLayer.TabIndex = 91;
             // 
@@ -254,6 +256,8 @@
             // skinnedGroupBox1
             // 
             this.skinnedGroupBox1.BackColor = System.Drawing.Color.White;
+            this.skinnedGroupBox1.Controls.Add(this.lblShortGameMode);
+            this.skinnedGroupBox1.Controls.Add(this.cboShortGameMode);
             this.skinnedGroupBox1.Controls.Add(this.cboFontSize);
             this.skinnedGroupBox1.Controls.Add(this.skinnedLabel2);
             this.skinnedGroupBox1.Controls.Add(this.gridLabels);
@@ -270,10 +274,41 @@
             this.skinnedGroupBox1.Name = "skinnedGroupBox1";
             this.skinnedGroupBox1.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.skinnedGroupBox1.ShowIndicatorBar = false;
-            this.skinnedGroupBox1.Size = new System.Drawing.Size(420, 248);
+            this.skinnedGroupBox1.Size = new System.Drawing.Size(420, 277);
             this.skinnedGroupBox1.TabIndex = 94;
             this.skinnedGroupBox1.TabStop = false;
             this.skinnedGroupBox1.Text = "Advanced Metadata";
+            // 
+            // lblShortGameMode
+            // 
+            this.lblShortGameMode.AutoSize = true;
+            this.lblShortGameMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblShortGameMode.ForeColor = System.Drawing.Color.Black;
+            this.lblShortGameMode.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblShortGameMode.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
+            this.lblShortGameMode.Location = new System.Drawing.Point(6, 250);
+            this.lblShortGameMode.Name = "lblShortGameMode";
+            this.lblShortGameMode.Size = new System.Drawing.Size(93, 13);
+            this.lblShortGameMode.TabIndex = 97;
+            this.lblShortGameMode.Text = "Short game mode:";
+            // 
+            // cboShortGameMode
+            // 
+            this.cboShortGameMode.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cboShortGameMode.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cboShortGameMode.BackColor = System.Drawing.Color.White;
+            this.cboShortGameMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboShortGameMode.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
+            this.cboShortGameMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cboShortGameMode.FormattingEnabled = true;
+            this.cboShortGameMode.KeyMember = null;
+            this.cboShortGameMode.Location = new System.Drawing.Point(133, 247);
+            this.cboShortGameMode.Name = "cboShortGameMode";
+            this.cboShortGameMode.SelectedIndex = -1;
+            this.cboShortGameMode.SelectedItem = null;
+            this.cboShortGameMode.Size = new System.Drawing.Size(172, 21);
+            this.cboShortGameMode.Sorted = false;
+            this.cboShortGameMode.TabIndex = 96;
             // 
             // cboFontSize
             // 
@@ -289,7 +324,7 @@
             this.cboFontSize.Name = "cboFontSize";
             this.cboFontSize.SelectedIndex = -1;
             this.cboFontSize.SelectedItem = null;
-            this.cboFontSize.Size = new System.Drawing.Size(121, 21);
+            this.cboFontSize.Size = new System.Drawing.Size(172, 21);
             this.cboFontSize.Sorted = false;
             this.cboFontSize.TabIndex = 93;
             // 
@@ -315,11 +350,11 @@
             this.skinnedGroupBox2.Controls.Add(this.label3);
             this.skinnedGroupBox2.Highlight = Desktop.Skinning.SkinnedHighlight.Heading;
             this.skinnedGroupBox2.Image = null;
-            this.skinnedGroupBox2.Location = new System.Drawing.Point(6, 260);
+            this.skinnedGroupBox2.Location = new System.Drawing.Point(6, 289);
             this.skinnedGroupBox2.Name = "skinnedGroupBox2";
             this.skinnedGroupBox2.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.skinnedGroupBox2.ShowIndicatorBar = false;
-            this.skinnedGroupBox2.Size = new System.Drawing.Size(420, 284);
+            this.skinnedGroupBox2.Size = new System.Drawing.Size(420, 294);
             this.skinnedGroupBox2.TabIndex = 95;
             this.skinnedGroupBox2.TabStop = false;
             this.skinnedGroupBox2.Text = "Nicknames";
@@ -372,7 +407,7 @@
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridOtherNicknames.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.gridOtherNicknames.RowHeadersVisible = false;
-            this.gridOtherNicknames.Size = new System.Drawing.Size(165, 235);
+            this.gridOtherNicknames.Size = new System.Drawing.Size(165, 245);
             this.gridOtherNicknames.TabIndex = 3;
             // 
             // ColOtherNickname
@@ -429,7 +464,7 @@
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridNicknames.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridNicknames.RowHeadersVisible = false;
-            this.gridNicknames.Size = new System.Drawing.Size(231, 235);
+            this.gridNicknames.Size = new System.Drawing.Size(231, 245);
             this.gridNicknames.TabIndex = 2;
             // 
             // ColCharacter
@@ -499,9 +534,9 @@
             this.skinnedLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.skinnedLabel1.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.skinnedLabel1.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.skinnedLabel1.Location = new System.Drawing.Point(3, 547);
+            this.skinnedLabel1.Location = new System.Drawing.Point(3, 586);
             this.skinnedLabel1.Name = "skinnedLabel1";
-            this.skinnedLabel1.Size = new System.Drawing.Size(423, 64);
+            this.skinnedLabel1.Size = new System.Drawing.Size(423, 36);
             this.skinnedLabel1.TabIndex = 97;
             this.skinnedLabel1.Text = "To assign a nickname mid-game, set a per-target marker named \"nickname\" on a case" +
     " where the desired character is the target.";
@@ -556,5 +591,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colLabelsLabel;
         private Desktop.Skinning.SkinnedComboBox cboFontSize;
         private Desktop.Skinning.SkinnedLabel skinnedLabel2;
+        private Desktop.Skinning.SkinnedLabel lblShortGameMode;
+        private Desktop.Skinning.SkinnedComboBox cboShortGameMode;
     }
 }

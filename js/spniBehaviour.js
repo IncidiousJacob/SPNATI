@@ -2170,7 +2170,6 @@ VariableTest.prototype.evaluate = function (self, opp, bindings) {
 
 }
 
-
 /**********************************************************************
  *****                  Case Object Specification                 *****
  **********************************************************************/
@@ -2179,6 +2178,7 @@ function Case($xml, trigger) {
     this.trigger =                  trigger;
     this.stage =                    $xml.attr('stage');
     this.totalRounds =              parseInterval($xml.attr("totalRounds"));
+    this.gameMode =                 $xml.attr("mode");
     this.customPriority =           parseInt($xml.attr("priority"), 10);
     this.hidden =                   $xml.attr("hidden");
     this.addTags =                  $xml.attr("addCharacterTags");
@@ -2256,6 +2256,7 @@ function Case($xml, trigger) {
         this.priority = this.customPriority;
     } else {
         this.priority = 0;
+        if (this.gameMode)                 this.priority += 3;
         if (this.totalRounds)              this.priority += 10;
 
         this.counters.forEach(function (c) { this.priority += c.priority; }, this);
@@ -2349,7 +2350,7 @@ Case.prototype.toJSON = function () {
 
 Case.prototype.checkConditions = function (self, opp, postDialogue) {
     var volatileDependencies = new Set();
-    
+
     // one-time use
     if (this.oneShotId && self.oneShotCases[this.oneShotId]) {
         return false;
@@ -2367,6 +2368,13 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     if (this.stage !== undefined && STARTING_STAGE_CASES.indexOf(this.trigger) < 0) {
         if (!checkStage(self.stage, this.stage)) {
             return false; // failed "stage" requirement
+        }
+    }
+
+    // game mode
+    if (this.gameMode) {
+        if (this.gameMode == "!short" && SHORT_GAME_MODE || this.gameMode == "short" && !SHORT_GAME_MODE) {
+            return false; //failed "gameMode" requirement
         }
     }
 

@@ -1,5 +1,6 @@
 ﻿using Desktop.CommonControls;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace SPNATI_Character_Editor.Controls
@@ -74,6 +75,13 @@ namespace SPNATI_Character_Editor.Controls
 		/// </summary>
 		/// <param name="removedCase"></param>
 		void RemoveCase(Case removedCase);
+
+		/// <summary>
+		/// Splits certain lines from a case into a new case
+		/// </summary>
+		/// <param name="selectedCase"></param>
+		/// <param name="indices"></param>
+		void SplitCase(Case selectedCase, List<int> indices);
 
 		/// <summary>
 		/// Gets whether a trigger in the Add menu can be used based on the currently selected node

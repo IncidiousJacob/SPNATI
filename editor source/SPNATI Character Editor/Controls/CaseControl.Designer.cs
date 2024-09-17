@@ -38,7 +38,7 @@
             this.tabsConditions = new Desktop.Skinning.SkinnedTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.skinnedPanel2 = new Desktop.Skinning.SkinnedPanel();
-            this.tableConditions = new Desktop.CommonControls.PropertyTable();
+            this.tableConditions = new Desktop.CommonControls.PropertyTableWithCheckboxes();
             this.valPriority = new Desktop.Skinning.SkinnedNumericUpDown();
             this.label73 = new Desktop.Skinning.SkinnedLabel();
             this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
@@ -51,28 +51,30 @@
             this.cboCaseTags = new Desktop.Skinning.SkinnedComboBox();
             this.lblHelpText = new Desktop.Skinning.SkinnedLabel();
             this.groupBox3 = new Desktop.Skinning.SkinnedGroupBox();
-            this.gridStages = new SPNATI_Character_Editor.Controls.StageGrid();
             this.chkBackground = new Desktop.Skinning.SkinnedCheckBox();
             this.tabTags = new System.Windows.Forms.TabPage();
-            this.lstRemoveTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
-            this.lstAddTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
             this.label3 = new Desktop.Skinning.SkinnedLabel();
             this.label2 = new Desktop.Skinning.SkinnedLabel();
             this.stripCase = new Desktop.Skinning.SkinnedTabStrip();
             this.containerDialogue = new Desktop.Skinning.SkinnedPanel();
             this.tabs = new Desktop.Skinning.SkinnedTabControl();
             this.tabDialogue = new System.Windows.Forms.TabPage();
+            this.cmdSplit = new Desktop.Skinning.SkinnedButton();
+            this.cmdDelSel = new Desktop.Skinning.SkinnedButton();
             this.tsDialogue = new System.Windows.Forms.ToolStrip();
             this.tsAddVariable = new System.Windows.Forms.ToolStripButton();
             this.lblAvailableVars = new Desktop.Skinning.SkinnedLabel();
             this.cmdCopyAll = new Desktop.Skinning.SkinnedButton();
             this.cmdPasteAll = new Desktop.Skinning.SkinnedButton();
-            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGrid();
             this.tabNotes = new System.Windows.Forms.TabPage();
             this.txtNotes = new Desktop.Skinning.SkinnedTextBox();
             this.label1 = new Desktop.Skinning.SkinnedLabel();
             this.stripTabs = new Desktop.Skinning.SkinnedTabStrip();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.gridStages = new SPNATI_Character_Editor.Controls.StageGrid();
+            this.lstRemoveTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
+            this.lstAddTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
+            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGridMultiSelect();
             ((System.ComponentModel.ISupportInitialize)(this.splitCase)).BeginInit();
             this.splitCase.Panel1.SuspendLayout();
             this.splitCase.Panel2.SuspendLayout();
@@ -456,16 +458,6 @@
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             // 
-            // gridStages
-            // 
-            this.gridStages.AutoSize = true;
-            this.gridStages.ColumnHeaderHeight = 72;
-            this.gridStages.Location = new System.Drawing.Point(6, 4);
-            this.gridStages.Name = "gridStages";
-            this.gridStages.ShowSelectAll = true;
-            this.gridStages.Size = new System.Drawing.Size(72, 102);
-            this.gridStages.TabIndex = 37;
-            // 
             // chkBackground
             // 
             this.chkBackground.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -494,33 +486,6 @@
             this.tabTags.Size = new System.Drawing.Size(657, 330);
             this.tabTags.TabIndex = 1;
             this.tabTags.Text = "Tags";
-            // 
-            // lstRemoveTags
-            // 
-            this.lstRemoveTags.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstRemoveTags.Location = new System.Drawing.Point(348, 19);
-            this.lstRemoveTags.Name = "lstRemoveTags";
-            this.lstRemoveTags.RecordContext = null;
-            this.lstRemoveTags.RecordFilter = null;
-            this.lstRemoveTags.RecordType = null;
-            this.lstRemoveTags.SelectedItems = new string[0];
-            this.lstRemoveTags.Size = new System.Drawing.Size(303, 305);
-            this.lstRemoveTags.TabIndex = 3;
-            // 
-            // lstAddTags
-            // 
-            this.lstAddTags.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lstAddTags.Location = new System.Drawing.Point(6, 19);
-            this.lstAddTags.Name = "lstAddTags";
-            this.lstAddTags.RecordContext = null;
-            this.lstAddTags.RecordFilter = null;
-            this.lstAddTags.RecordType = null;
-            this.lstAddTags.SelectedItems = new string[0];
-            this.lstAddTags.Size = new System.Drawing.Size(336, 305);
-            this.lstAddTags.TabIndex = 2;
             // 
             // label3
             // 
@@ -599,6 +564,8 @@
             // tabDialogue
             // 
             this.tabDialogue.BackColor = System.Drawing.Color.White;
+            this.tabDialogue.Controls.Add(this.cmdSplit);
+            this.tabDialogue.Controls.Add(this.cmdDelSel);
             this.tabDialogue.Controls.Add(this.tsDialogue);
             this.tabDialogue.Controls.Add(this.lblAvailableVars);
             this.tabDialogue.Controls.Add(this.cmdCopyAll);
@@ -611,6 +578,36 @@
             this.tabDialogue.Size = new System.Drawing.Size(660, 240);
             this.tabDialogue.TabIndex = 0;
             this.tabDialogue.Text = "Dialogue";
+            // 
+            // cmdSplit
+            // 
+            this.cmdSplit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdSplit.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.cmdSplit.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.cmdSplit.Flat = true;
+            this.cmdSplit.ForeColor = System.Drawing.Color.Blue;
+            this.cmdSplit.Location = new System.Drawing.Point(197, 3);
+            this.cmdSplit.Name = "cmdSplit";
+            this.cmdSplit.Size = new System.Drawing.Size(143, 23);
+            this.cmdSplit.TabIndex = 45;
+            this.cmdSplit.Text = "Split Into New Case";
+            this.cmdSplit.UseVisualStyleBackColor = true;
+            this.cmdSplit.Click += new System.EventHandler(this.cmdSplit_Click);
+            // 
+            // cmdDelSel
+            // 
+            this.cmdDelSel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdDelSel.Background = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.cmdDelSel.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
+            this.cmdDelSel.Flat = true;
+            this.cmdDelSel.ForeColor = System.Drawing.Color.Blue;
+            this.cmdDelSel.Location = new System.Drawing.Point(346, 3);
+            this.cmdDelSel.Name = "cmdDelSel";
+            this.cmdDelSel.Size = new System.Drawing.Size(127, 23);
+            this.cmdDelSel.TabIndex = 44;
+            this.cmdDelSel.Text = "Delete Selected";
+            this.cmdDelSel.UseVisualStyleBackColor = true;
+            this.cmdDelSel.Click += new System.EventHandler(this.cmdDelSel_Click);
             // 
             // tsDialogue
             // 
@@ -655,9 +652,9 @@
             this.cmdCopyAll.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
             this.cmdCopyAll.Flat = true;
             this.cmdCopyAll.ForeColor = System.Drawing.Color.Blue;
-            this.cmdCopyAll.Location = new System.Drawing.Point(496, 3);
+            this.cmdCopyAll.Location = new System.Drawing.Point(479, 3);
             this.cmdCopyAll.Name = "cmdCopyAll";
-            this.cmdCopyAll.Size = new System.Drawing.Size(77, 23);
+            this.cmdCopyAll.Size = new System.Drawing.Size(114, 23);
             this.cmdCopyAll.TabIndex = 39;
             this.cmdCopyAll.Text = "Copy All";
             this.cmdCopyAll.UseVisualStyleBackColor = true;
@@ -670,26 +667,13 @@
             this.cmdPasteAll.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
             this.cmdPasteAll.Flat = true;
             this.cmdPasteAll.ForeColor = System.Drawing.Color.Blue;
-            this.cmdPasteAll.Location = new System.Drawing.Point(579, 3);
+            this.cmdPasteAll.Location = new System.Drawing.Point(599, 3);
             this.cmdPasteAll.Name = "cmdPasteAll";
-            this.cmdPasteAll.Size = new System.Drawing.Size(77, 23);
+            this.cmdPasteAll.Size = new System.Drawing.Size(57, 23);
             this.cmdPasteAll.TabIndex = 40;
-            this.cmdPasteAll.Text = "Paste All";
+            this.cmdPasteAll.Text = "Paste";
             this.cmdPasteAll.UseVisualStyleBackColor = true;
             this.cmdPasteAll.Click += new System.EventHandler(this.cmdPasteAll_Click);
-            // 
-            // gridDialogue
-            // 
-            this.gridDialogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridDialogue.Location = new System.Drawing.Point(3, 32);
-            this.gridDialogue.Name = "gridDialogue";
-            this.gridDialogue.ReadOnly = false;
-            this.gridDialogue.Size = new System.Drawing.Size(651, 205);
-            this.gridDialogue.TabIndex = 42;
-            this.gridDialogue.KeyDown += new System.EventHandler<System.Windows.Forms.KeyEventArgs>(this.gridDialogue_KeyDown);
-            this.gridDialogue.HighlightRow += new System.EventHandler<int>(this.gridDialogue_HighlightRow);
             // 
             // tabNotes
             // 
@@ -754,6 +738,56 @@
             this.stripTabs.TabType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.stripTabs.Vertical = false;
             // 
+            // gridStages
+            // 
+            this.gridStages.AutoSize = true;
+            this.gridStages.ColumnHeaderHeight = 72;
+            this.gridStages.Location = new System.Drawing.Point(6, 4);
+            this.gridStages.Name = "gridStages";
+            this.gridStages.ShowSelectAll = true;
+            this.gridStages.Size = new System.Drawing.Size(72, 102);
+            this.gridStages.TabIndex = 37;
+            // 
+            // lstRemoveTags
+            // 
+            this.lstRemoveTags.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstRemoveTags.Location = new System.Drawing.Point(348, 19);
+            this.lstRemoveTags.Name = "lstRemoveTags";
+            this.lstRemoveTags.RecordContext = null;
+            this.lstRemoveTags.RecordFilter = null;
+            this.lstRemoveTags.RecordType = null;
+            this.lstRemoveTags.SelectedItems = new string[0];
+            this.lstRemoveTags.Size = new System.Drawing.Size(303, 305);
+            this.lstRemoveTags.TabIndex = 3;
+            // 
+            // lstAddTags
+            // 
+            this.lstAddTags.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lstAddTags.Location = new System.Drawing.Point(6, 19);
+            this.lstAddTags.Name = "lstAddTags";
+            this.lstAddTags.RecordContext = null;
+            this.lstAddTags.RecordFilter = null;
+            this.lstAddTags.RecordType = null;
+            this.lstAddTags.SelectedItems = new string[0];
+            this.lstAddTags.Size = new System.Drawing.Size(336, 305);
+            this.lstAddTags.TabIndex = 2;
+            // 
+            // gridDialogue
+            // 
+            this.gridDialogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridDialogue.Location = new System.Drawing.Point(3, 32);
+            this.gridDialogue.Name = "gridDialogue";
+            this.gridDialogue.ReadOnly = false;
+            this.gridDialogue.Size = new System.Drawing.Size(651, 205);
+            this.gridDialogue.TabIndex = 42;
+            this.gridDialogue.KeyDown += new System.EventHandler<System.Windows.Forms.KeyEventArgs>(this.gridDialogue_KeyDown);
+            this.gridDialogue.HighlightRow += new System.EventHandler<int>(this.gridDialogue_HighlightRow);
+            // 
             // CaseControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -799,7 +833,7 @@
 		private Desktop.Skinning.SkinnedGroupBox groupBox3;
 		private Desktop.Skinning.SkinnedNumericUpDown valPriority;
 		private Desktop.Skinning.SkinnedLabel label73;
-		private Desktop.CommonControls.PropertyTable tableConditions;
+		private Desktop.CommonControls.PropertyTableWithCheckboxes tableConditions;
 		private System.Windows.Forms.TabPage tabTags;
 		private RecordSelectBox lstRemoveTags;
 		private RecordSelectBox lstAddTags;
@@ -810,7 +844,7 @@
 		private Desktop.Skinning.SkinnedLabel lblAvailableVars;
 		private Desktop.Skinning.SkinnedButton cmdCopyAll;
 		private Desktop.Skinning.SkinnedButton cmdPasteAll;
-		private DialogueGrid gridDialogue;
+		private DialogueGridMultiSelect gridDialogue;
 		private System.Windows.Forms.TabPage tabNotes;
 		private Desktop.Skinning.SkinnedTextBox txtNotes;
 		private Desktop.Skinning.SkinnedLabel label1;
@@ -837,5 +871,7 @@
 		private Desktop.Skinning.SkinnedCheckBox chkPlayOnce;
 		private System.Windows.Forms.ToolStrip tsDialogue;
 		private System.Windows.Forms.ToolStripButton tsAddVariable;
-	}
+        private Desktop.Skinning.SkinnedButton cmdSplit;
+        private Desktop.Skinning.SkinnedButton cmdDelSel;
+    }
 }

@@ -84,6 +84,7 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
+		// this is used even if VS is showing 0 references
 		public string Conditions
 		{
 			get
@@ -94,7 +95,6 @@ namespace SPNATI_Character_Editor
 				{
 					return label;
 				}
-
 				string conditions = workingCase.ToConditionsString(true);
 				if (string.IsNullOrEmpty(conditions))
 				{

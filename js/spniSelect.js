@@ -68,6 +68,7 @@ $groupNewBadges = [$("#group-new-badge-1"), $("#group-new-badge-2"), $("#group-n
 $groupUpdatedBadges = [$("#group-updated-badge-1"), $("#group-updated-badge-2"), $("#group-updated-badge-3"), $("#group-updated-badge-4")];
 $groupCostumeBadges = [$("#group-costume-badge-1"), $("#group-costume-badge-2"), $("#group-costume-badge-3"), $("#group-costume-badge-4")];
 $groupStatuses = [$("#group-status-1"), $("#group-status-2"), $("#group-status-3"), $("#group-status-4")];
+$groupModes = [$("#group-mode-1"), $("#group-mode-2"), $("#group-mode-3"), $("#group-mode-4")];
 $groupLayers = [$("#group-layer-1"), $("#group-layer-2"), $("#group-layer-3"), $("#group-layer-4")];
 $groupGenders = [$("#group-gender-1"), $("#group-gender-2"), $("#group-gender-3"), $("#group-gender-4")];
 $groupCostumeSelectors = [$("#group-costume-select-1"), $("#group-costume-select-2"), $("#group-costume-select-3"), $("#group-costume-select-4")];
@@ -329,6 +330,8 @@ function loadListingFile () {
             opp.selectionCard = disp;
             disp.statusIcon.tooltip({ delay: { show: 200 }, placement: 'bottom',
                                       container: '#individual-select-screen .selection-cards-container' });
+            disp.modeIcon.tooltip({ delay: { show: 200 }, placement: 'bottom',
+                                      container: '#individual-select-screen .selection-cards-container' });
         }
 
         if (opp.id in opponentGroupMap) {
@@ -537,6 +540,22 @@ function updateGenderIcon(elem, opp) {
         src: opp.selectGender === 'male' ? MALE_SYMBOL : ((opp.selectGender === "female" && opp.isFuta) ? FUTANARI_SYMBOL : FEMALE_SYMBOL),
         alt: opp.selectGender.initCap(),
     }).show();
+}
+
+function updateModeIcon(elem, opp) {
+    if (SHORT_GAME_MODE && !opp.shortGameEnabled) {
+        elem.attr({
+            'src': 'img/badge-broken.png',
+            'data-original-title': "This opponent is unavailable for the short game mode.",
+        }).show();
+    } else if(SHORT_GAME_MODE && !opp.shortGameTested) {
+        elem.attr({
+            'src': 'img/badge-mode-testing.png',
+            'data-original-title': "This opponent has not been tested for the Short Game Mode.",
+        }).show();
+    } else {
+        elem.removeAttr('data-original-title').hide();
+    }
 }
 
 /* Creates an <option> element in a jQuery object for an alternate costume.
@@ -756,6 +775,7 @@ function updateGroupSelectScreen (ignore_bg) {
             }
 
             updateStatusIcon($groupStatuses[i], opponent);
+            updateModeIcon($groupModes[i], opponent);
 
             $groupLayers[i].attr({
                 src: "img/layers" + opponent.selectLayers + ".svg",
@@ -781,6 +801,7 @@ function updateGroupSelectScreen (ignore_bg) {
             $groupUpdatedBadges[i].hide();
             $groupCostumeBadges[i].hide();
             $groupStatuses[i].hide();
+            $groupModes[i].hide();
             $groupLayers[i].hide();
             $groupGenders[i].hide();
             $groupImages[i].hide();
@@ -1114,7 +1135,7 @@ function updateSelectableGroups() {
 
     // reset filters
     selectableGroups = loadedGroups.filter(function(group) {
-        if (!group.opponents.every(function(opp) { return opp; })) return false;
+        if (!group.opponents.every(function(opp) { return (opp); })) return false;
 
         if (groupname && group.title.toLowerCase().indexOf(groupname) < 0) return false;
 
@@ -1224,8 +1245,10 @@ function loadGroup (chosenGroup, isRandom) {
 function clickedRandomGroupButton () {
     selectedSlot = 1;
     /* get a random number for the group listings */
-    var randomGroupNumber = getRandomNumber(0, loadedGroups.length);
-    var chosenGroup = loadedGroups[randomGroupNumber];
+    var availableGroups = (SHORT_GAME_MODE && !SHORT_GAME_UNLOCKED)? loadedGroups.filter(
+        (group) => group.opponents.every((opp) => opp.shortGameEnabled)) : loadedGroups;
+    var randomGroupNumber = getRandomNumber(0, availableGroups.length);
+    var chosenGroup = availableGroups[randomGroupNumber];
 
     /* workaround for preset costumes */
     for (var i = 0; i < 4; i++) {
@@ -1297,7 +1320,7 @@ function loadDefaultFillSuggestions () {
         if (players.some(function (p) { return p && p.id === opp.id; })) {
             return true;
         }
-        if (mainSelectDisplays.some(function (d) { return d.prefillSuggestion && d.prefillSuggestion.id === opp.id; })) {
+        if (mainSelectDisplays.some(function (d) { return d.prefillSuggestion[SHORT_GAME_MODE | 0].val && d.prefillSuggestion[SHORT_GAME_MODE | 0].val.id === opp.id; })) {
             return true;
         }
     }
@@ -1312,7 +1335,7 @@ function loadDefaultFillSuggestions () {
             return false;
         }
 
-        return opp.force_prefill && !isCharacterUsed(opp);
+        return opp.force_prefill && !isCharacterUsed(opp) && !opp.shortGameOptOut();
     });
 
     if (forcedPrefills.length > 0) {
@@ -1332,7 +1355,7 @@ function loadDefaultFillSuggestions () {
         /* get a copy of the loaded opponents list */
         var possiblePicks = loadedOpponents.filter(function (opp) {
             /* Don't suggest anything but online characters, even in offline */
-            return !opp.status && !isCharacterUsed(opp) && !fillPlayers.some(function (p) {
+            return !opp.status && !isCharacterUsed(opp) && !opp.shortGameOptOut() && !fillPlayers.some(function (p) {
                 return p.id === opp.id;
             });
         });
@@ -1413,7 +1436,7 @@ function loadDefaultFillSuggestions () {
             } else {
                 if (opp.status !== "testing" || isStaleOnTesting(opp)) return false;
             }
-            return !isCharacterUsed(opp) && !fillPlayers.some(function (p) {
+            return !isCharacterUsed(opp) && !opp.shortGameOptOut() && !fillPlayers.some(function (p) {
                 return p.id === opp.id;
             });
         });
@@ -1448,7 +1471,7 @@ function loadDefaultFillSuggestions () {
 
     for (var i = 0; i < mainSelectDisplays.length; i++) {
         // Skip over slots that already have a selected opponent or a prefill suggestion
-        if (!players[i + 1] && !mainSelectDisplays[i].prefillSuggestion && fillPlayers.length > 0) {
+        if (!players[i + 1] && !mainSelectDisplays[i].prefillSuggestion[SHORT_GAME_MODE | 0].val && fillPlayers.length > 0) {
             mainSelectDisplays[i].setPrefillSuggestion(fillPlayers.shift());
         }
     }
@@ -1631,7 +1654,11 @@ function backFromGroupSelect () {
  * select screen.
  ************************************************************/
 function advanceSelectScreen () {
-    console.log("Starting game...");
+    if (SHORT_GAME_MODE) {
+        console.log("Starting short game...");
+    } else { 
+        console.log("Starting game...");
+    }
 
     gameID = generateRandomID();
     recordStartGameEvent();
@@ -1720,13 +1747,17 @@ function updateSelectionVisuals () {
 
     let displayPreviews = (loaded >= 2);
 
-    if (displayPreviews && individualSelectTesting && filled < 4) {
-        // Check that we have enough testing characters (four times
+    if (displayPreviews && (individualSelectTesting || SHORT_GAME_MODE) && filled < 4) {
+        // Check that we have enough testing characters 
+        // or short game mode characters (four times
         // the number of remaining slots) and delay showing
         // suggestions, or don't show them at all, otherwise.
-        const testingCharactersRemaining = loadedOpponents.countTrue(c => c.status === "testing")
-              - players.countTrue(p => p.status === "testing");
-        displayPreviews = (testingCharactersRemaining >= 4 * (4 - loaded));
+        const charactersRemaining = individualSelectTesting? loadedOpponents.countTrue(
+            c => (c.status === "testing" && !c.shortGameOptOut())) - players.countTrue( 
+            p => (p.status === "testing" && !p.shortGameOptOut())) : loadedOpponents.countTrue(
+            c => !c.shortGameOptOut()) - players.countTrue(
+            p => !p.shortGameOptOut());
+        displayPreviews = (charactersRemaining >= 4 * (4 - loaded));
     }
 
     if (displayPreviews) {
@@ -1737,6 +1768,7 @@ function updateSelectionVisuals () {
 
         /* Shuffle the suggestions before stable sorting them, to add variety. */
         shuffleArray(suggested_opponents);
+        console.log("array length" + suggested_opponents.length);
 
         /* Sort opponents, capping each selected character's contribution
          * to the inbound line count for each suggestion at 50 lines.
@@ -1784,8 +1816,10 @@ function updateSelectionVisuals () {
         $selectRandomTableButton.css('visibility', 'visible');
     }
 
-    /* if enough opponents are selected, and all those are loaded, then enable progression */
-    $selectMainButton.attr('disabled', filled < 2 || loaded < filled);
+    /* if enough opponents are selected, and all those are loaded
+     * and available for the selected game mode, then enable progression */
+    $selectMainButton.attr('disabled', filled < 2 || loaded < filled 
+        || players.some(p => p.shortGameOptOut()));
 
     /* if all slots are taken, disable fill buttons */
     $selectRandomButtons.attr('disabled', filled >= 4 || loadedOpponents.length == 0);

@@ -656,6 +656,15 @@ namespace SPNATI_Character_Editor.Controls
 			_view.MoveItem(e.Source, e.Target, e.Before);
 		}
 
+		public void SplitCase(List<int> indices)
+		{
+			if (_character == null || _selectedNode?.Case == null)
+				return;
+
+			Case selectedCase = _selectedNode.Case;
+			_view.SplitCase(selectedCase, indices);
+		}
+
 	}
 
 	public class CaseSelectionEventArgs : EventArgs

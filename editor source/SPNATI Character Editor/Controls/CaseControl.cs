@@ -20,13 +20,17 @@ namespace SPNATI_Character_Editor.Controls
 		private bool _populatingCase;
 		private List<DialogueLine> _lineClipboard = new List<DialogueLine>();
 		private Case _trackedCase;
+		private List<int> _selectedIndices = new List<int>();
 
 		public event EventHandler<DialogueLine> TextUpdated;
+		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
+		public event EventHandler<int> SelectionUpdated;
 
 		public CaseControl()
 		{
 			InitializeComponent();
+			tableConditions.LabelCheckboxes("Game Modes:", "Regular", "Short");
 		}
 
 		private void UpdateAddCaption()
@@ -59,6 +63,9 @@ namespace SPNATI_Character_Editor.Controls
 			gridStages.CheckedChanged += Check_CheckedChanged;
 			gridStages.LayerSelected += GridStages_LayerSelected;
 			gridDialogue.TextUpdated += GridDialogue_TextUpdated;
+			gridDialogue.PoseUpdated += GridDialogue_PoseUpdated;
+			gridDialogue.SelectionUpdated += GridDialogue_SelectionUpdated;
+			tableConditions.CheckedChanged += TableConditions_CheckedChanged;
 		}
 
 		public void Activate()
@@ -133,9 +140,62 @@ namespace SPNATI_Character_Editor.Controls
 			set { tableConditions.RunInitialAddEvents = value; }
 		}
 
+		private void UpdateSelectedIndices()
+		{
+			_selectedIndices = gridDialogue.GetSelectedIndices();
+			if (_selectedIndices.Count == 0 || _selectedCase == null)
+			{
+				cmdSplit.Visible = false;
+				cmdDelSel.Visible = false;
+				cmdCopyAll.Text = "Copy All";
+			}
+			else if (_selectedIndices.Count == _selectedCase.Lines.Count)
+			{
+				cmdSplit.Visible = false;
+				cmdDelSel.Visible = true;
+				cmdCopyAll.Text = "Copy Selected";
+			}
+			else
+			{
+				cmdSplit.Visible = true;
+				cmdDelSel.Visible = true;
+				cmdCopyAll.Text = "Copy Selected";
+			}
+		}
+
 		private void GridDialogue_TextUpdated(object sender, int e)
 		{
 			TextUpdated?.Invoke(this, gridDialogue.GetLine(e));
+		}
+
+		private void GridDialogue_PoseUpdated(object sender, int e)
+		{
+			PoseUpdated?.Invoke(this, e);
+		}
+
+		private void GridDialogue_SelectionUpdated(object sender, int e)
+		{
+			UpdateSelectedIndices();
+		}
+
+		private void TableConditions_CheckedChanged(object sender, object e)
+		{
+			if (_trackedCase == null) return;
+			if (!string.IsNullOrEmpty(_trackedCase.GameMode))
+			{
+				if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+				{
+					_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "!short" : "short";
+				}
+				else
+				{
+					_trackedCase.GameMode = string.Empty;
+				}
+			}
+			else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
+			{
+				_trackedCase.GameMode = tableConditions.GetCheckbox1() ? "!short" : "short";
+			}
 		}
 
 		public void SaveFavorites()
@@ -188,6 +248,17 @@ namespace SPNATI_Character_Editor.Controls
 			}
 		}
 
+		private void cmdDelSel_Click(object sender, EventArgs e)
+		{
+			if (_selectedCase == null || _selectedIndices.Count == 0)
+				return;
+			foreach (int ind in _selectedIndices)
+			{
+				gridDialogue.DeleteLine(ind);
+			}
+			UpdateSelectedIndices();
+		}
+
 		/// <summary>
 		/// Copies the current case's lines to the clipboard
 		/// </summary>
@@ -197,8 +268,24 @@ namespace SPNATI_Character_Editor.Controls
 		{
 			if (_selectedCase == null)
 				return;
-			_lineClipboard = gridDialogue.CopyLines();
+			if (_selectedIndices.Count > 0)
+			{
+				_lineClipboard = gridDialogue.CopySelectedLines();
+			}
+			else
+			{
+				_lineClipboard = gridDialogue.CopyLines();
+			}
 			Shell.Instance.SetStatus(string.Format("Lines from {0} copied to the clipboard.", _selectedCase));
+		}
+
+		private void cmdSplit_Click(object sender, EventArgs e)
+		{
+			if (_selectedCase == null)
+				return;
+			if (_selectedIndices.Count == 0 || _selectedIndices.Count == _selectedCase.Lines.Count)
+				return;
+			Shell.Instance.ActiveWorkspace.SendMessage(WorkspaceMessages.SplitCase, _selectedIndices);
 		}
 
 		/// <summary>
@@ -406,6 +493,21 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				tableConditions.Data = workingCase;
 				AddSpeedButtons(tableConditions, workingCase?.Tag);
+				if (!string.IsNullOrEmpty(workingCase.GameMode))
+				{
+					if (workingCase.GameMode == "short")
+					{
+						tableConditions.SetCheckboxes(false, true);
+					}
+					else
+					{
+						tableConditions.SetCheckboxes(true, false);
+					}
+				}
+				else
+				{
+					tableConditions.SetCheckboxes(true, true);
+				}
 			}
 		}
 

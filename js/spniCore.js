@@ -13,6 +13,7 @@ var EPILOGUES_ENABLED = true;
 var EPILOGUES_UNLOCKED = false;
 var COLLECTIBLES_ENABLED = true;
 var COLLECTIBLES_UNLOCKED = false;
+var SHORT_GAME_UNLOCKED = false;
 var CARD_DECKS_ENABLED = false;
 var ALT_COSTUMES_ENABLED = true;
 var DEFAULT_COSTUME_SETS = new Set();
@@ -457,6 +458,11 @@ function loadConfigFile () {
         
         DEFAULT_CARD_DECK = $xml.children('default-card-deck').text() || 'default';
         console.log("Using default card deck: " + DEFAULT_CARD_DECK);
+
+        if ($xml.children('short-game-unlocked').text() === 'true') {
+            SHORT_GAME_UNLOCKED = true;
+            console.log("All characters are selectable for the short game mode.");
+        }
 
         includedOpponentStatuses.online = true;
         $xml.children('include-status').each(function() {
@@ -1069,6 +1075,11 @@ function showExtrasModal() {
         $(".event-option").prop("hidden", true);
         $(".duplicate-option").prop("hidden", true);
         $(".broken-option").prop("hidden", true);
+    }
+
+    /* hide the Game Length option if online version*/ 
+    if (isMainSite) {
+        $(".game-length-option").hide();
     }
 
     updateTrackingToggles();
