@@ -1286,6 +1286,7 @@ namespace SPNATI_Character_Editor.Controls
 						otherLine.Gender = line.Gender;
 						otherLine.Intelligence = line.Intelligence;
 						otherLine.Location = line.Location;
+						otherLine.ZIndexLine = line.ZIndexLine;
 						otherLine.Size = line.Size;
 						otherLine.Label = line.Label;
 						otherLine.Layer = line.Layer;

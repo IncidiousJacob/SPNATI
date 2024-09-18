@@ -1328,6 +1328,7 @@ namespace SPNATI_Character_Editor.Controls
 							otherLine.OneShotId = 0;
 						}
 						otherLine.Weight = line.Weight;
+						otherLine.ZIndexLine = line.ZIndexLine;
 						otherLine.DialogueOperations = line.DialogueOperations;
 						AddLineToDialogueGrid(otherLine, row);
 					}

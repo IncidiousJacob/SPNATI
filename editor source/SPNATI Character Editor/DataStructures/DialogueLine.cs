@@ -133,6 +133,15 @@ namespace SPNATI_Character_Editor
 			set { if (_layer != value) { _layer = value; NotifyPropertyChanged(); } }
 		}
 
+		private string _z_index_line;
+		[DefaultValue("")]
+		[XmlAttribute("z-index-line")]
+		public string ZIndexLine
+		{
+			get { return _z_index_line; }
+			set { if (_z_index_line != value) { _z_index_line = value; NotifyPropertyChanged(); } }
+		}
+
 		private string _fontSize;
 		[DefaultValue("")]
 		[XmlAttribute("font-size")]
@@ -226,6 +235,7 @@ namespace SPNATI_Character_Editor
 			Direction = "down";
 			FontSize = "";
 			Weight = 1;
+			ZIndexLine = null;
 			Marker = null;
 			Images = new List<StageImage>();
 			Markers = new List<MarkerOperation>();
@@ -251,6 +261,7 @@ namespace SPNATI_Character_Editor
 			copy._direction = this._direction;
 			copy._fontSize = this._fontSize;
 			copy._location = this._location;
+			copy._z_index_line = this._z_index_line;
 			copy._gender = this._gender;
 			copy._intelligence = this._intelligence;
 			copy._layer = this._layer;
@@ -293,6 +304,7 @@ namespace SPNATI_Character_Editor
 			hash = (hash * 397) ^ (Gender ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (Intelligence ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (Size ?? string.Empty).GetHashCode();
+			hash = (hash * 397) ^ (ZIndexLine ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ (Label ?? string.Empty).GetHashCode();
 			hash = (hash * 397) ^ Weight.GetHashCode();
 			hash = (hash * 397) ^ (CollectibleId ?? string.Empty).GetHashCode();
@@ -364,7 +376,7 @@ namespace SPNATI_Character_Editor
 			get
 			{
 				return !string.IsNullOrEmpty(Gender) || !string.IsNullOrEmpty(Size) || Intelligence != null || (!string.IsNullOrEmpty(Direction) && Direction != "down") ||
-					!string.IsNullOrEmpty(FontSize) || Label != null || !string.IsNullOrEmpty(Location) || !string.IsNullOrEmpty(Layer) || (DialogueOperations != null && !DialogueOperations.IsEmpty()) || Weight != 1;
+					!string.IsNullOrEmpty(FontSize) || Label != null || !string.IsNullOrEmpty(Location) || !string.IsNullOrEmpty(Layer) || !string.IsNullOrEmpty(ZIndexLine) || (DialogueOperations != null && !DialogueOperations.IsEmpty()) || Weight != 1;
 			}
 		}
 

@@ -20,6 +20,7 @@ namespace SPNATI_Character_Editor.Controls
 		private DialogueLine _line;
 		private bool _settingData;
 		private NicknameOperation _selectedNickOp;
+		private string _z_index_line;
 		private Dictionary<string, string> _nickOps = new Dictionary<string, string>();
 
 		public event EventHandler DataUpdated;
@@ -70,6 +71,7 @@ namespace SPNATI_Character_Editor.Controls
 			cboAI.Text = line.Intelligence ?? "";
 			cboGender.Text = line.Gender ?? "";
 			txtLabel.Text = line.Label;
+			valZIndex.Text = line.ZIndexLine ?? "";
 			chkResetAI.Checked = line.Intelligence == "";
 			chkResetLabel.Checked = line.Label == "";
 			chkLayer.Checked = line.Layer == "over" || (character.Metadata.BubblePosition.ToString() == "over" && line.Layer != "under");
@@ -91,6 +93,7 @@ namespace SPNATI_Character_Editor.Controls
 			cboAttr.Text = "";
 			txtValue.Text = "";
 			cboOp.Text = "";
+			valZIndex.Text = line.ZIndexLine ?? "";
 			chkResetHeavy.Checked = false;
 			if (line.DialogueOperations != null && line.DialogueOperations.ForfeitOps != null)
 			{
@@ -183,6 +186,13 @@ namespace SPNATI_Character_Editor.Controls
 				}
 				_line.Intelligence = ai;
 			}
+
+			string line_z_index = valZIndex.Text;
+			if (line_z_index == "")
+				{
+					line_z_index = null;
+				}
+			_line.ZIndexLine = line_z_index;
 
 			string gender = cboGender.Text;
 			if (string.IsNullOrEmpty(gender))
@@ -459,6 +469,7 @@ namespace SPNATI_Character_Editor.Controls
 			if (_selectedNickOp == null || _settingData) return;
 			_selectedNickOp.Weight = cboNickOp.Text == _nickOps["="] ? 1 : (int)valNickWeight.Value;
 		}
+
 	}
 
 	public interface IDialogueDropDownControl : ISkinnedPanel, ISkinControl
