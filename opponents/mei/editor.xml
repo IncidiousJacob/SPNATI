@@ -19,6 +19,9 @@
         <response id="11" opponent="nagatoro" opponentId="1451" />
         <response id="17" opponent="hilbert" opponentId="223" />
     </responses>
+    <notes>
+        <note id="18">Make conditional on game not being over - either Regular or Short</note>
+    </notes>
     <labels>
         <label id="6" label="" folder="Ochako to left" sort="4" />
         <label id="7" label="" folder="Ochako to left" sort="0" />
@@ -32,12 +35,13 @@
         <label id="15" label="overwatch" folder="" sort="0" />
         <label id="16" label="overwatch" folder="" sort="0" />
         <label id="17" label="" folder="Hilbert to left" sort="0" />
+        <label id="18" label="" color="1" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
         <prefix>x-</prefix>
     </prefixes>
-    <nextId>17</nextId>
+    <nextId>18</nextId>
     <markers>
         <marker scope="Public" name="mei_9s_expecting_big_finish" />
         <marker scope="Public" name="mei_antarctica">Mei mentions a few times that she's worked in the Antarctic.</marker>
