@@ -48,7 +48,8 @@ namespace SPNATI_Character_Editor
 		public bool IsNew { get; set; }
 
 		[XmlIgnore]
-		public PoseMap PoseLibrary;
+		public PoseMap PoseLibrary
+		{ get; set; }
 
 		[XmlIgnore]
 		public string Group { get; }
@@ -224,7 +225,7 @@ namespace SPNATI_Character_Editor
 		[XmlArray("poses")]
 		[XmlArrayItem("pose")]
 		public List<Pose> Poses { get; set; }
-		
+
 		[XmlNewLine]
 		[XmlArray("pose-sets")]
 		[XmlArrayItem("set")]
@@ -485,11 +486,11 @@ namespace SPNATI_Character_Editor
 					if (layer < count)
 					{
 						Clothing clothes = list.GetClothing(Layers - 1 - layer);
-						if (clothes.Type != "skip") 
-						{ 
+						if (clothes.Type != "skip")
+						{
 							label = "Losing " + clothes.ToString();
 						}
-						else 
+						else
 						{
 							label = "SKIPPED";
 						}
@@ -523,11 +524,11 @@ namespace SPNATI_Character_Editor
 							{
 								label = clothes.Type == "skip" ? "EMPTY STAGE" : "Fully Clothed";
 							}
-							else if (clothes.Type == "skip") 
-							{ 
+							else if (clothes.Type == "skip")
+							{
 								label = "EMPTY STAGE";
 							}
-							else 
+							else
 							{
 								do
 								{
@@ -1070,7 +1071,7 @@ namespace SPNATI_Character_Editor
 			{
 				if (targetGender != "" && !stageCase.Tag.StartsWith(targetGender))
 					continue;
-				
+
 				bool usesTag = stageCase.Conditions.Find(c => c.FilterTag == tag && c.Count != "0" && c.Count != "0-0") != null;
 				if (usesTag)
 				{
@@ -1119,7 +1120,7 @@ namespace SPNATI_Character_Editor
 		public List<Clothing> GetConvertedWardrobe()
 		{
 			List<Clothing> ConvertedWardrobe = new List<Clothing>();
-			
+
 			foreach (Clothing c in Wardrobe)
 			{
 				ConvertedWardrobe.Add(c.Copy());
@@ -1224,7 +1225,7 @@ namespace SPNATI_Character_Editor
 			get { return Poses; }
 			set { Poses = value; }
 		}
-		
+
 		public List<PoseSet> CustomPoseSets
 		{
 			get { return PoseSets; }
@@ -1437,7 +1438,7 @@ namespace SPNATI_Character_Editor
 		public object Clone()
 		{
 			CharacterTag copy = MemberwiseClone() as CharacterTag;
-			return copy;			
+			return copy;
 		}
 
 		public int CompareTo(CharacterTag other)

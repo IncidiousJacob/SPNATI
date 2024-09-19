@@ -10,7 +10,7 @@ namespace SPNATI_Character_Editor
 	public class PoseMap
 	{
 		public bool initialized;
-		private Character _character;
+		private ISkin _character;
 
 		private static readonly Regex _regex = new Regex(@"(\d+)-(.*)");
 
@@ -29,7 +29,7 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		public PoseMap(Character character)
+		public PoseMap(ISkin character)
 		{
 			_character = character;
 		}
@@ -42,7 +42,7 @@ namespace SPNATI_Character_Editor
 		public List<PoseMapping> GetPoses(int stage, bool poseSet = false)
 		{
 			List<PoseMapping> list = new List<PoseMapping>();
-			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character);
+			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character.Character);
 
 			if (editorData != null)
 			{
@@ -78,7 +78,7 @@ namespace SPNATI_Character_Editor
 		public List<PoseMapping> GetPortraitPoses(int stage)
 		{
 			List<PoseMapping> list = new List<PoseMapping>();
-			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character);
+			CharacterEditorData editorData = CharacterDatabase.GetEditorData(_character.Character);
 
 			if (editorData != null)
 			{
@@ -367,7 +367,7 @@ namespace SPNATI_Character_Editor
 				List<int> stages = new List<int>(mapping.Stages);
 				mapping.RemovePose(poseSet);
 
-				PoseSet replacement = _character.PoseSets.Find((p) => p.Id == poseSet.Id);
+				PoseSet replacement = _character.CustomPoseSets.Find((p) => p.Id == poseSet.Id);
 				if (replacement != null)
 					Add(replacement);
 

@@ -786,7 +786,7 @@ namespace SPNATI_Character_Editor.Activities
 				image.Save(fullPath);
 
 				_thumbnails.Remove(imageKey);
-				_character.Character.PoseLibrary.Add(fullPath);
+				_character.PoseLibrary.Add(fullPath);
 
 				string backup = Path.Combine(_character.GetBackupDirectory(), "images", filename);
 				if (File.Exists(backup))
