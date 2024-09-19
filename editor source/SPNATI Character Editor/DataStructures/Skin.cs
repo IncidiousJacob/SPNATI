@@ -29,6 +29,7 @@ namespace SPNATI_Character_Editor
 		{
 			Labels = new List<StageSpecificValue>();
 			Tags = new List<CharacterTag>();
+			PoseLibrary = new PoseMap(this);
 		}
 
 		[XmlElement("id")]
@@ -85,6 +86,9 @@ namespace SPNATI_Character_Editor
 		[XmlArray("pose-sets")]
 		[XmlArrayItem("set")]
 		public List<PoseSet> PoseSets = new List<PoseSet>();
+
+		[XmlIgnore]
+		public PoseMap PoseLibrary { get; set; }
 
 		[XmlAnyElement]
 		public List<XmlElement> ExtraXml;

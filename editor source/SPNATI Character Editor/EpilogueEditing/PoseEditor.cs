@@ -265,7 +265,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			if (_labelData == _pose)
 			{
 				_sourcePose.Id = _pose.Id;
-				_character.Character.PoseLibrary.Rename(_sourcePose);
+				_character.PoseLibrary.Rename(_sourcePose);
 				lstPoses.RefreshListItems();
 			}
 		}
@@ -399,7 +399,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			lstPoses.SelectedItem = pose;
 			_character.CustomPoses.Add(pose);
 			_character.CustomPoses.Sort();
-			_character.Character.PoseLibrary.Add(pose);
+			_character.PoseLibrary.Add(pose);
 		}
 
 		private void tsRemovePose_Click(object sender, EventArgs e)
@@ -411,7 +411,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 				return;
 			}
 			_character.CustomPoses.Remove(_sourcePose);
-			_character.Character.PoseLibrary.Remove(_sourcePose);
+			_character.PoseLibrary.Remove(_sourcePose);
 			lstPoses.Items.Remove(_sourcePose);
 			if (lstPoses.Items.Count > 0)
 			{
