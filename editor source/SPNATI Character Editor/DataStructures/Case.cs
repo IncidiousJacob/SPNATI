@@ -121,7 +121,7 @@ namespace SPNATI_Character_Editor
 		}
 
 		private string _gameMode;
-//		[NumericRange(DisplayName = "Total Rounds", GroupName = "Game", GroupOrder = 1, Description = "Number of rounds since the game began")]
+		[DefaultValue("")]
 		[XmlOrder(260)]
 		[XmlAttribute("mode")]
 		[JsonProperty("mode")]

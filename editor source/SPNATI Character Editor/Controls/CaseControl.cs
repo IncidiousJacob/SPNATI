@@ -189,7 +189,7 @@ namespace SPNATI_Character_Editor.Controls
 				}
 				else
 				{
-					_trackedCase.GameMode = string.Empty;
+					_trackedCase.GameMode = null;
 				}
 			}
 			else if (tableConditions.GetCheckbox1() != tableConditions.GetCheckbox2())
