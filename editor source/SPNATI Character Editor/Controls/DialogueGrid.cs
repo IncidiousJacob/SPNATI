@@ -11,7 +11,7 @@ namespace SPNATI_Character_Editor.Controls
 	public partial class DialogueGrid : UserControl, ISkinControl
 	{
 		private Case _selectedCase;
-		private Stage _selectedStage;
+		private int? _selectedStage;
 		private Character _character;
 		private bool _populatingCase;
 		private int _selectedRow;
@@ -109,7 +109,7 @@ namespace SPNATI_Character_Editor.Controls
 			ctl.DataUpdated += Ctl_DataUpdated;
 		}
 
-		public void SetStage(Stage stage, HashSet<int> stages)
+		public void SetStage(int? stage, HashSet<int> stages)
 		{
 			_selectedStage = stage;
 			_modifyingLine = true;
@@ -120,20 +120,20 @@ namespace SPNATI_Character_Editor.Controls
 
 		public void SetData(Character character, Case c)
 		{
-			Stage stage = null;
+			int? stage = null;
 			HashSet<int> stages = new HashSet<int>();
 			foreach (int s in c.Stages)
 			{
 				if (stage == null)
 				{
-					stage = new Stage(s);
+					stage = s;
 				}
 				stages.Add(s);
 			}
 			SetData(character, stage, c, stages);
 		}
 
-		public void SetData(Character character, Stage stage, Case c, HashSet<int> selectedStages)
+		public void SetData(Character character, int? stage, Case c, HashSet<int> selectedStages)
 		{
 			HideDropdown();
 			_character = character;
@@ -365,7 +365,7 @@ namespace SPNATI_Character_Editor.Controls
 			}
 
 			bool hasStageImages = _selectedCase.Lines.Find(l => l.Images.Count > 0) != null;
-			int stageId = _selectedStage == null ? 0 : _selectedStage.Id;
+			int stageId = _selectedStage == null ? 0 : _selectedStage.Value;
 			if (_selectedCase.Tag == "stripped" && stageId < _character.Layers)
 			{
 				int i = stageId;

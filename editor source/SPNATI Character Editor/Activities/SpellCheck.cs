@@ -166,7 +166,7 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void cmdGoto_Click(object sender, EventArgs e)
 		{
-			Shell.Instance.Launch<Character, DialogueEditor>(_character, new ValidationContext(new Stage(_currentMisspelling.Case.Stages[0]), _currentMisspelling.Case, _currentMisspelling.Line));
+			Shell.Instance.Launch<Character, DialogueEditor>(_character, new ValidationContext(_currentMisspelling.Case.Stages[0], _currentMisspelling.Case, _currentMisspelling.Line));
 		}
 	}
 }

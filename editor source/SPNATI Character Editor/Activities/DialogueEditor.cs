@@ -14,7 +14,7 @@ namespace SPNATI_Character_Editor.Activities
 	{
 		private Character _character;
 		private CharacterEditorData _editorData;
-		private Stage _selectedStage;
+		private int? _selectedStage;
 		private Case _selectedCase;
 		private FindReplace _findForm;
 		private bool _pendingWardrobeChange;
@@ -138,8 +138,7 @@ namespace SPNATI_Character_Editor.Activities
 				else if (parameters[0] is Case)
 				{
 					Case jumpCase = parameters[0] as Case;
-					Stage stage = new Stage(jumpCase.Stages[0]);
-					JumpToLine(stage, jumpCase, null);
+					JumpToLine(jumpCase.Stages[0], jumpCase, null);
 				}
 			}
 		}
@@ -473,9 +472,9 @@ namespace SPNATI_Character_Editor.Activities
 			}
 		}
 
-		private void JumpToLine(Stage stage, Case stageCase, DialogueLine line)
+		private void JumpToLine(int stage, Case stageCase, DialogueLine line)
 		{
-			treeDialogue.SelectNode(stage.Id, stageCase);
+			treeDialogue.SelectNode(stage, stageCase);
 			if (line != null)
 			{
 				caseControl.SelectLine(line);
@@ -575,7 +574,7 @@ namespace SPNATI_Character_Editor.Activities
 							{
 								args.Success = true;
 								//select the case
-								if (treeDialogue.SelectNode(_selectedStage?.Id ?? c.Stages[0], c))
+								if (treeDialogue.SelectNode(_selectedStage ?? c.Stages[0], c))
 								{
 									//Select the line
 									caseControl.SelectTextInRow(l, index, args.FindText.Length, true);
@@ -610,7 +609,7 @@ namespace SPNATI_Character_Editor.Activities
 								else
 								{
 									//Select the case
-									if (treeDialogue.SelectNode(_selectedStage?.Id ?? c.Stages[0], c))
+									if (treeDialogue.SelectNode(_selectedStage ?? c.Stages[0], c))
 									{
 										//Select the line
 										caseControl.SelectTextInRow(l, index, args.FindText.Length, args.SearchAdvanced);

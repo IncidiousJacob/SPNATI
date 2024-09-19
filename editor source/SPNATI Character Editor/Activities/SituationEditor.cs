@@ -166,7 +166,7 @@ namespace SPNATI_Character_Editor.Activities
 			}
 		}
 
-		private void gridCases_SelectionChanged(object sender, System.EventArgs e)
+		private void gridCases_SelectionChanged(object sender, EventArgs e)
 		{
 			if (gridCases.SelectedCells.Count > 0)
 			{
@@ -176,8 +176,7 @@ namespace SPNATI_Character_Editor.Activities
 				if (line == null) { return; }
 				HashSet<int> selectedStages = new HashSet<int>();
 				selectedStages.Add(line.MinStage);
-				Stage stage = new Stage(line.MinStage);
-				gridLines.SetData(_character, stage, line.LinkedCase, selectedStages);
+				gridLines.SetData(_character, line.MinStage, line.LinkedCase, selectedStages);
 			}
 		}
 
@@ -253,7 +252,7 @@ namespace SPNATI_Character_Editor.Activities
 					}
 					else if (situation.LinkedCase != null)
 					{
-						Shell.Instance.Launch<Character, DialogueEditor>(_character, new ValidationContext(new Stage(situation.LinkedCase.Stages[0]), situation.LinkedCase, null));
+						Shell.Instance.Launch<Character, DialogueEditor>(_character, new ValidationContext(situation.LinkedCase.Stages[0], situation.LinkedCase, null));
 					}
 				}
 			}

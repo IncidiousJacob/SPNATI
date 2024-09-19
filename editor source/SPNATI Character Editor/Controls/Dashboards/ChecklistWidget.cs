@@ -221,7 +221,7 @@ namespace SPNATI_Character_Editor.Controls.Dashboards
 				task.MaxValue = total;
 
 				task.HelpText = "Replacing placeholders gets your character to the bare minimum of line coverage.";
-				ValidationContext context = new ValidationContext(new Stage(cases[0].Stages[0]), cases[0], null);
+				ValidationContext context = new ValidationContext(cases[0].Stages[0], cases[0], null);
 				task.LaunchData = new LaunchParameters(_character, typeof(DialogueEditor), context);
 				tasks.AddTask(task);
 				return false;

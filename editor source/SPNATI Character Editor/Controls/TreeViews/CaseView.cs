@@ -153,7 +153,7 @@ namespace SPNATI_Character_Editor.Controls
 				return;
 			}
 
-			DialogueNode wrapper = new DialogueNode(_character, new Stage(workingCase.Stages[0]), workingCase);
+			DialogueNode wrapper = new DialogueNode(_character, workingCase.Stages[0], workingCase);
 			wrapper.Mode = NodeMode.Case;
 			CreateNode(wrapper);
 		}
@@ -253,14 +253,14 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				if (modifiedCase.Stages.Count > 0)
 				{
-					node.Stage = new Stage(modifiedCase.Stages[0]);
+					node.Stage = modifiedCase.Stages[0];
 				}
 			}
 		}
 
 		public void AddCase(Case newCase)
 		{
-			DialogueNode wrapper = new DialogueNode(_character, new Stage(newCase.Stages[0]), newCase);
+			DialogueNode wrapper = new DialogueNode(_character, newCase.Stages[0], newCase);
 			wrapper.Mode = NodeMode.Case;
 			CreateNode(wrapper);
 		}
@@ -315,7 +315,7 @@ namespace SPNATI_Character_Editor.Controls
 			DialogueNode selectedNode = _listView.SelectedItem as DialogueNode;
 			if (_character == null || selectedNode?.Case == null)
 				return;
-			int stage = selectedNode.Stage.Id;
+			int stage = selectedNode.Stage;
 			Case selectedCase = selectedNode.Case;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			_character.Behavior.DivideCaseIntoSeparateStages(selectedCase, stage);
@@ -328,10 +328,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case copy = _character.Behavior.DuplicateCase(selectedCase, true);
-			SelectNode(stage, copy);
+			SelectNode(selectedNode.Stage, copy);
 		}
 
 		public void SplitCase(Case removedCase, List<int> indices)
@@ -340,10 +339,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case added = _character.Behavior.SplitIntoNewCase(selectedCase, indices);
-			SelectNode(stage, added);
+			SelectNode(selectedNode.Stage, added);
 		}
 
 		/// <summary>

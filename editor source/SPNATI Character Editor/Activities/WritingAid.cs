@@ -298,8 +298,7 @@ namespace SPNATI_Character_Editor.Activities
 			_activeCharacter = character;
 			_activeSituation = situation;
 			cmdMarkResponded.Enabled = situation.Id > 0 && !_editorData.HasResponse(_activeCharacter, _activeSituation.Id);
-			Stage stage = new Stage(situation.MinStage);
-			gridActiveSituation.SetData(character, stage, situation.LinkedCase, new HashSet<int>());
+			gridActiveSituation.SetData(character, situation.MinStage, situation.LinkedCase, new HashSet<int>());
 			Cursor.Current = Cursors.Default;
 		}
 
@@ -377,13 +376,12 @@ namespace SPNATI_Character_Editor.Activities
 
 			splitContainer1.Panel1.Enabled = false;
 			splitContainer1.Panel2Collapsed = false;
-			Stage stage = new Stage(_response.Stages[0]);
 			HashSet<int> stages = new HashSet<int>();
 			foreach (int i in _response.Stages)
 			{
 				stages.Add(i);
 			}
-			gridLines.SetData(_character, stage, _response, stages);
+			gridLines.SetData(_character, _response.Stages[0], _response, stages);
 		}
 
 		private void cmdAccept_Click(object sender, EventArgs e)
@@ -468,7 +466,7 @@ namespace SPNATI_Character_Editor.Activities
 					return;
 				}
 				Situation s = tuple.Item2;
-				Shell.Instance.Launch<Character, DialogueEditor>(tuple.Item1, new ValidationContext(new Stage(s.LinkedCase.Stages[0]), s.LinkedCase, null));
+				Shell.Instance.Launch<Character, DialogueEditor>(tuple.Item1, new ValidationContext(s.LinkedCase.Stages[0], s.LinkedCase, null));
 			}
 		}
 

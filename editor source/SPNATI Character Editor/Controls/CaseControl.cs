@@ -16,7 +16,7 @@ namespace SPNATI_Character_Editor.Controls
 		private Character _character;
 		private CharacterEditorData _editorData;
 		private Case _selectedCase;
-		private Stage _selectedStage;
+		private int? _selectedStage;
 		private bool _populatingCase;
 		private List<DialogueLine> _lineClipboard = new List<DialogueLine>();
 		private Case _trackedCase;
@@ -47,7 +47,7 @@ namespace SPNATI_Character_Editor.Controls
 
 		public int PreviewStage
 		{
-			get { return _selectedStage == null ? _selectedCase.Stages[0] : _selectedStage.Id; }
+			get { return _selectedStage.HasValue ? _selectedCase.Stages[0] : _selectedStage.Value; }
 		}
 
 		public void OnUpdateSkin(Skin skin)
@@ -86,7 +86,7 @@ namespace SPNATI_Character_Editor.Controls
 			return _selectedCase;
 		}
 
-		public void SetCase(Stage stage, Case workingCase)
+		public void SetCase(int? stage, Case workingCase)
 		{
 			if (_selectedCase != null)
 			{
@@ -242,9 +242,9 @@ namespace SPNATI_Character_Editor.Controls
 				{
 					desiredStage = stages.Min();
 				}
-				_selectedStage = new Stage(desiredStage);
+				_selectedStage = desiredStage;
 				gridDialogue.SetStage(_selectedStage, stages);
-				gridStages.SetPreviewStage(_selectedStage.Id);
+				gridStages.SetPreviewStage(_selectedStage.Value);
 			}
 		}
 
@@ -815,7 +815,7 @@ namespace SPNATI_Character_Editor.Controls
 			int stageId = -1;
 			if (_selectedStage != null)
 			{
-				stageId = _selectedStage.Id;
+				stageId = _selectedStage.Value;
 			}
 			gridStages.SetData(_character, _selectedCase, stageId);
 		}

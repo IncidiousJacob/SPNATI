@@ -53,7 +53,7 @@ namespace SPNATI_Character_Editor.Forms
 			Case replacement = src.Copy();
 			replacement.AddStages(src.Stages);
 			replacement.Tag = _case.ResolutionTag;
-			caseControl1.SetCase(new Stage(replacement.Stages[0]), replacement);
+			caseControl1.SetCase(replacement.Stages[0], replacement);
 			_replacement = replacement;
 			lstDupes.Items.Clear();
 			foreach (Case copy in _case.Duplicates)

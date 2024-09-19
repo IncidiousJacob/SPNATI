@@ -609,14 +609,13 @@ namespace SPNATI_Character_Editor.Activities
 			{
 				gridResponse.Visible = false;
 				ctlResponse.Visible = true;
-				ctlResponse.SetCase(new Stage(response.Stages[0]), response);
+				ctlResponse.SetCase(response.Stages[0], response);
 			}
 			else
 			{
 				gridResponse.Visible = true;
 				ctlResponse.Visible = false;
-				Stage stage = new Stage(response.Stages[0]);
-				gridResponse.SetData(_character, stage, response, selectedStages);
+				gridResponse.SetData(_character, response.Stages[0], response, selectedStages);
 			}			
 			
 			grpResponse.Text = $"Response from {_character}";
@@ -738,7 +737,7 @@ namespace SPNATI_Character_Editor.Activities
 					{
 						if (dialogueLine.Text == text)
 						{
-							Shell.Instance.Launch<Character, DialogueEditor>(c, new ValidationContext(new Stage(workingCase.Stages[0]), workingCase, dialogueLine));
+							Shell.Instance.Launch<Character, DialogueEditor>(c, new ValidationContext(workingCase.Stages[0], workingCase, dialogueLine));
 							return;
 						}
 					}

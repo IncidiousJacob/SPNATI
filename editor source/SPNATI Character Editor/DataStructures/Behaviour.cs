@@ -39,13 +39,6 @@ namespace SPNATI_Character_Editor
 		[XmlArrayItem("marker")]
 		public HashSet<string> PersistentMarkers = new HashSet<string>();
 
-		/// <summary>
-		/// Only used when serializing or deserializing XML. Cases that share text across stages are split into separate cases per stage here
-		/// </summary>
-		[XmlNewLine(XmlNewLinePosition.After)]
-		[XmlElement("stage")]
-		public List<Stage> Stages = new List<Stage>();
-
 		[XmlNewLine(XmlNewLinePosition.After)]
 		[XmlElement("settings")]
 		public List<CharacterSettingsGroup> CharacterSettingsGroups = new List<CharacterSettingsGroup>();
@@ -77,7 +70,6 @@ namespace SPNATI_Character_Editor
 		/// <param name="character"></param>
 		public void OnBeforeSerialize()
 		{
-			Stages.Clear();
 			BuildTriggers();
 		}
 
@@ -88,10 +80,6 @@ namespace SPNATI_Character_Editor
 		public void OnAfterDeserialize(Character character)
 		{
 			_character = character;
-			foreach (Stage stage in Stages)
-			{
-				PostProcessCases(stage.Cases);
-			}
 			foreach (Trigger trigger in Triggers)
 			{
 				PostProcessCases(trigger.Cases);
@@ -110,16 +98,6 @@ namespace SPNATI_Character_Editor
 						{
 							theCase.Tag = trigger.Id;
 						}
-						yield return theCase;
-					}
-				}
-			}
-			else
-			{
-				foreach (Stage stage in Stages)
-				{
-					foreach (Case theCase in stage.Cases)
-					{
 						yield return theCase;
 					}
 				}

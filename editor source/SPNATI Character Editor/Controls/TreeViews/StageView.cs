@@ -145,9 +145,7 @@ namespace SPNATI_Character_Editor.Controls
 
 		private void GenerateNode(Case workingCase, int stageIndex)
 		{
-			Stage stage = new Stage(stageIndex);
-
-			DialogueNode node = new DialogueNode(_character, stage, workingCase);
+			DialogueNode node = new DialogueNode(_character, stageIndex, workingCase);
 			node.Mode = NodeMode.Stage;
 			_caseMap.Set(workingCase, stageIndex, node);
 			_model.AddItem(node);
@@ -274,7 +272,7 @@ namespace SPNATI_Character_Editor.Controls
 			DialogueNode selectedNode = _listView.SelectedItem as DialogueNode;
 			if (_character == null || selectedNode?.Case == null)
 				return;
-			int stage = selectedNode.Stage.Id;
+			int stage = selectedNode.Stage;
 			Case selectedCase = selectedNode.Case;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			_character.Behavior.DivideCaseIntoSeparateStages(selectedCase, stage);
@@ -289,7 +287,7 @@ namespace SPNATI_Character_Editor.Controls
 			DialogueNode selectedNode = _listView.SelectedItem as DialogueNode;
 			if (_character == null || selectedNode?.Case == null)
 				return;
-			int stage = selectedNode.Stage.Id;
+			int stage = selectedNode.Stage;
 			Case selectedCase = selectedNode.Case;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			_character.Behavior.SplitCaseStage(selectedCase, stage);
@@ -304,7 +302,7 @@ namespace SPNATI_Character_Editor.Controls
 			DialogueNode selectedNode = _listView.SelectedItem as DialogueNode;
 			if (_character == null || selectedNode?.Case == null)
 				return;
-			int stage = selectedNode.Stage.Id;
+			int stage = selectedNode.Stage;
 			Case selectedCase = selectedNode.Case;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			_character.Behavior.SplitCaseAtStage(selectedCase, stage);
@@ -333,10 +331,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case copy = _character.Behavior.DuplicateCase(selectedCase, true);
-			SelectNode(stage, copy);
+			SelectNode(selectedNode.Stage, copy);
 		}
 
 		public void SplitCase(Case removedCase, List<int> indices)
@@ -345,10 +342,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case added = _character.Behavior.SplitIntoNewCase(selectedCase, indices);
-			SelectNode(stage, added);
+			SelectNode(selectedNode.Stage, added);
 		}
 
 		private void BulkReplace(object sender, EventArgs e)
@@ -369,12 +365,7 @@ namespace SPNATI_Character_Editor.Controls
 
 		public bool IsTriggerValid(DialogueNode selectedNode, TriggerDefinition trigger)
 		{
-			Stage stage = selectedNode?.Stage;
-			if (stage == null)
-			{
-				return true;
-			}
-			return TriggerDatabase.UsedInStage(trigger.Tag, _character, stage.Id);
+			return TriggerDatabase.UsedInStage(trigger.Tag, _character, selectedNode.Stage);
 		}
 
 		public void HideCase(Case c, bool hide)
