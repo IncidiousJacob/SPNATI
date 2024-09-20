@@ -1752,7 +1752,7 @@
             <case stage="1" priority="701">
                 <condition role="other" character="yuelia" stage="3" saidMarker="rin_hugSetup" />
                 <condition role="self" notSaidMarker="hugged1" />
-                <test expr="~rin.costume~" value="rin_yamaku_" />
+                <test expr="~rin.costume~" value="rin_yamaku" />
                 <state img="custom:#-hug1alt" oneShotId="5400" marker="hugged1" location="35%" collectible="yuelia_charm">Hey Rin? &lt;i&gt;Surprise.&lt;/i&gt;</state>
             </case>
             <case stage="0-6" totalRounds="0" priority="700">
@@ -4405,7 +4405,7 @@
             </case>
             <case stage="1" disabled="1">
                 <condition role="other" character="hk416" sayingMarker="rin_tie=1" />
-                <test expr="~rin.costume~" value="rin_yamaku_" />
+                <test expr="~rin.costume~" value="rin_yamaku" />
                 <state img="#-curious.png">Oh, my tie? It's a part of the uniform...I really don't like using the girl's uniform, so the staff had to cave in and had me use the boy's uniform... Speaking of which, can someone get this for me?</state>
                 <state img="#-DPNormal.png">Oh my tie? Eh, I have an entirely different outfit for that... Speaking of, can someone get my tie for me?</state>
             </case>
