@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <metadata>
     <owner>rin</owner>
+    <height>5'2"</height>
+    <age />
+    <pronunciation />
+    <othernotes />
     <noteworthy>
         <case name="Handless Rin" id="3" priority="FYI" min="4" max="4">
             <description>Finally, after Rin takes off her shirt, people can now see her lack of hands.</description>
@@ -11,11 +15,11 @@
         <case name="Rin Prompt: Funny Words" id="168" priority="Prompt" min="0" max="6">
             <description>Rin will ask anyone if there are any words that they find to be "funny-sounding", like "Coward" for example.</description>
         </case>
-        <case name="Rin Prompt: Weird Words" id="169" priority="Prompt" min="0" max="6">
-            <description>Rin will ask anyone if there are any words that sound weird when said out loud, like "Zucchini" for example.</description>
-        </case>
         <case name="Rin Prompt: Color Description" id="170" priority="Prompt" min="0" max="6">
             <description>Essentially, she's asking what everyone's favorite color is. She'll respond to said colors with some analysis.</description>
+        </case>
+        <case name="Rin Can't Swap Hands" id="248" priority="Noteworthy" min="0" max="0">
+            <description>At the start of the game, Rin has her sandals on which means she won't be able to swap her cards at all.</description>
         </case>
     </noteworthy>
     <responses>
@@ -202,7 +206,7 @@
         <response id="246" opponent="cynthia" opponentId="754" />
         <response id="247" opponent="cynthia" opponentId="718" />
     </responses>
-    <nextId>247</nextId>
+    <nextId>248</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1st-fap">Rin is the first to masturbate.</marker>
@@ -284,6 +288,7 @@
         <marker scope="Public" name="mad_house">Standard response to an "Insane" Tagged person.</marker>
         <marker scope="Public" name="memorynecklace_prompt" />
         <marker scope="Public" name="mess_paints">When Sei asks Rin if she messes around with "paints", Rin will respond innocently, as if she doesn't know what paints are.</marker>
+        <marker scope="Public" name="miki_whereemi" />
         <marker scope="Public" name="miko_persistence" />
         <marker scope="Public" name="mindreader">Rin discovers that Ini is a mind reader.</marker>
         <marker scope="Public" name="misha_drills">Standard response to a "Drill-Hair" Tagged person.</marker>
@@ -348,6 +353,7 @@
         <marker scope="Public" name="rin_arash_thoughts" />
         <marker scope="Public" name="rin_arash_time" />
         <marker scope="Public" name="rin_arash_yandere" />
+        <marker scope="Public" name="rin_ashowerthought" />
         <marker scope="Public" name="rin_basil_" />
         <marker scope="Public" name="rin_basil_accident" />
         <marker scope="Public" name="rin_basil_allergic" />
@@ -367,6 +373,8 @@
         <marker scope="Public" name="rin_basil_clickofabutton" />
         <marker scope="Public" name="rin_basil_colorfulflowers" />
         <marker scope="Public" name="rin_basil_complex" />
+        <marker scope="Public" name="rin_basil_complex1" />
+        <marker scope="Public" name="rin_basil_complex2" />
         <marker scope="Public" name="rin_basil_complimentdonthave" />
         <marker scope="Public" name="rin_basil_confidence" />
         <marker scope="Public" name="rin_basil_crafty" />
@@ -456,6 +464,8 @@
         <marker scope="Public" name="rin_basil_uneasy" />
         <marker scope="Public" name="rin_basil_uniform" />
         <marker scope="Public" name="rin_basil_useit" />
+        <marker scope="Public" name="rin_basil_useit1" />
+        <marker scope="Public" name="rin_basil_useit2" />
         <marker scope="Public" name="rin_basil_vague" />
         <marker scope="Public" name="rin_basil_whatdoyougrow" />
         <marker scope="Public" name="rin_basil_whattowear" />
@@ -475,6 +485,7 @@
         <marker scope="Public" name="rin_brock_questiontoquestion" />
         <marker scope="Public" name="rin_brock_sawsomeconfetti" />
         <marker scope="Public" name="rin_brock_scars" />
+        <marker scope="Public" name="rin_cantswap" />
         <marker scope="Public" name="rin_chara_attention" />
         <marker scope="Public" name="rin_chara_cutarms" />
         <marker scope="Public" name="rin_chara_fallinlove" />
@@ -506,6 +517,7 @@
         <marker scope="Public" name="rin_emi_aretheyfullofwater" />
         <marker scope="Public" name="rin_emi_areyouseeingthis" />
         <marker scope="Public" name="rin_emi_athletic" />
+        <marker scope="Public" name="rin_emi_backdoor" />
         <marker scope="Public" name="rin_emi_bangbang" />
         <marker scope="Public" name="rin_emi_barefoottrust" />
         <marker scope="Public" name="rin_emi_blastdoubt" />
@@ -666,6 +678,7 @@
         <marker scope="Public" name="rin_revy_rinny" />
         <marker scope="Public" name="rin_seimention" />
         <marker scope="Public" name="rin_shoes" />
+        <marker scope="Public" name="rin_sola_sayhello" />
         <marker scope="Public" name="rin_sola_youcansayit" />
         <marker scope="Public" name="rin_streamingchan_excuses" />
         <marker scope="Public" name="rin_streamingchan_notcelebrating" />
