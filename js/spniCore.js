@@ -264,7 +264,7 @@ function initialSetup () {
     });
 
     window.addEventListener("unload", function () {
-        if ((document.visibilityState === "hidden") && inGame && !gameOver) {
+        if ((document.visibilityState === "hidden") && inGame && currentRound >= 0 && !gameOver) {
             recordInterruptedGameEvent(true);
         }
     });
@@ -601,7 +601,7 @@ function restartGame () {
     Sentry.setTag("epilogue", undefined);
     Sentry.setTag("epilogue_gallery", undefined);
 
-    if (!gameOver) {
+    if (currentRound >= 0 && !gameOver) {
         recordInterruptedGameEvent(false);
     }
 
