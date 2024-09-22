@@ -74,7 +74,7 @@
             this.gridStages = new SPNATI_Character_Editor.Controls.StageGrid();
             this.lstRemoveTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
             this.lstAddTags = new SPNATI_Character_Editor.Controls.RecordSelectBox();
-            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGridMultiSelect();
+            this.gridDialogue = new SPNATI_Character_Editor.Controls.DialogueGrid(true);
             ((System.ComponentModel.ISupportInitialize)(this.splitCase)).BeginInit();
             this.splitCase.Panel1.SuspendLayout();
             this.splitCase.Panel2.SuspendLayout();
@@ -844,7 +844,7 @@
 		private Desktop.Skinning.SkinnedLabel lblAvailableVars;
 		private Desktop.Skinning.SkinnedButton cmdCopyAll;
 		private Desktop.Skinning.SkinnedButton cmdPasteAll;
-		private DialogueGridMultiSelect gridDialogue;
+		private DialogueGrid gridDialogue;
 		private System.Windows.Forms.TabPage tabNotes;
 		private Desktop.Skinning.SkinnedTextBox txtNotes;
 		private Desktop.Skinning.SkinnedLabel label1;

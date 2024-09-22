@@ -269,12 +269,6 @@
     <Compile Include="Charts\SkinnedChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\DialogueGridMultiSelect.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\DialogueGridMultiSelect.Designer.cs">
-      <DependentUpon>DialogueGridMultiSelect.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1601,9 +1595,6 @@
     <EmbeddedResource Include="Activities\WritingAid.resx">
       <DependentUpon>WritingAid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\DialogueGridMultiSelect.resx">
-      <DependentUpon>DialogueGridMultiSelect.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -1666,6 +1657,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DialogueGrid.resx">
       <DependentUpon>DialogueGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DialogueTree.resx">
       <DependentUpon>DialogueTree.cs</DependentUpon>
