@@ -1046,6 +1046,7 @@ OpponentDisplay.prototype.update = function(player) {
     var arrowDirection = chosenState.direction;
     var arrowLocation = chosenState.location;
     var dialogue_layering = chosenState.dialogue_layering || player.dialogue_layering;
+    var z_index = chosenState.z_index_line || player.z_index;
     var resolvedImage = player.resolvePoseName(player.chosenState.image);
 
     if (resolvedImage instanceof PoseSet) {
@@ -1085,7 +1086,8 @@ OpponentDisplay.prototype.update = function(player) {
         bubbleArrowOffsetRules[this.slot-1][0].style.left = arrowLocation  || '50%';
         bubbleArrowOffsetRules[this.slot-1][1].style.top = arrowLocation;
         /* Configure z-indices */
-        this.imageArea.css('z-index', player.z_index);
+        // this.imageArea.css('z-index', player.z_index);
+        this.imageArea.css('z-index', z_index);
         this.bubble.removeClass('over under').addClass(dialogue_layering);
         this.dialogue.removeClass('small smaller');
         if (chosenState.fontSize != "normal") this.dialogue.addClass(chosenState.fontSize || player.fontSize);
