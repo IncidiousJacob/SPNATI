@@ -44,3 +44,12 @@
   /*Tiny text for when Sucrose goes on for too long*/
   font-size: 65%;
 }
+
+.dialogue .tifa[data-character="zeke_pandoria"] {
+  /*Tifa is speaking*/
+  color: #7F0000;
+}
+
+.dark-mode .dialogue .tifa[data-character="zeke_pandoria"] {
+  color: #C10000;
+}
