@@ -164,8 +164,7 @@ function initialSetup () {
     sessionID = generateRandomID();
 
     /* enable table opacity */
-    tableOpacity = 1;
-    $gameTable.css({opacity:1});
+    forceTableVisibility(true);
 
     /* Attempt to detect broken images as caused by running SPNATI from an invalid archive. */
     detectBrokenOffline();
@@ -613,8 +612,7 @@ function restartGame () {
     currentRound = -1;
 
     /* enable table opacity */
-    tableOpacity = 1;
-    $gameTable.css({opacity:1});
+    forceTableVisibility(true);
     $gamePlayerCardArea.show();
     $gamePlayerClothingArea.css('display', '');  /* Reset to default so as not to interfere with 
                                                     switching between classic and minimal UI. */
@@ -990,23 +988,20 @@ function showPlayerTagsModal () {
  ************************************************************/
 function toggleTableVisibility () {
     if (tableOpacity > 0) {
-        $gameTable.fadeOut(100);
-        $gameTableHidden.fadeTo(100, hiddenTableOpacity);
-        tableOpacity = 0;
+        forceTableVisibility(false);
+        $gameTableHidden.addClass('fade-out');
     } else {
-        $gameTable.fadeIn(100);
-        $gameTableHidden.fadeTo(100, 1.0);
-        tableOpacity = 1;
+        forceTableVisibility(true);
     }
 }
 
 function forceTableVisibility(state) {
     if (!state) {
-        $gameTable.fadeOut(100);
+        $gameTable.addClass('fade-out');
         tableOpacity = 0;
     } else {
-        $gameTable.fadeIn(100);
-        $gameTableHidden.fadeTo(100, 1.0);
+        $gameTable.removeClass('fade-out');
+        $gameTableHidden.removeClass('fade-out');
         tableOpacity = 1;
     }
 }
