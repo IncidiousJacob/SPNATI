@@ -732,7 +732,7 @@ function handleGameOver() {
         } else if (p.out && SHORT_GAME_MODE) {
             loser = p;
         }
-        return p.out && !p.finished;
+        return p.checkStatus(STATUS_MASTURBATING);
     })) {
         /* true end */
         if (SHORT_GAME_MODE) {
