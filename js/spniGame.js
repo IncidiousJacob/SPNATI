@@ -662,17 +662,8 @@ function endRound () {
             level: 'info'
         });
 
-        for (var i = 0; i < players.length; i++) {
-            if (HUMAN_PLAYER == i) {
-                $gamePlayerCardArea.hide();
-                $gamePlayerClothingArea.hide();
-            }
-            else {
-                $gameOpponentAreas[i-1].hide();
-            }
-        }
-        endWaitDisplay = -1;
-        handleGameOver();
+        endWaitDisplay = 0;
+        allowProgression(eGamePhase.END_LOOP);
     } else if (SHORT_GAME_MODE && notInGame > 0) {
         let mostLayersLeft = 0, winner = 0, winners = "";
         for (var i = 0; i < players.length; i++) {
@@ -700,17 +691,8 @@ function endRound () {
             level: 'info'
         });
 
-        for (var i = 0; i < players.length; i++) {
-            if (HUMAN_PLAYER == i) {
-                $gamePlayerCardArea.hide();
-                $gamePlayerClothingArea.hide();
-            }
-            else {
-                $gameOpponentAreas[i-1].hide();
-            }
-        }
-        endWaitDisplay = -1;
-        handleGameOver();
+        endWaitDisplay = 0;
+        allowProgression(eGamePhase.END_LOOP);
     } else {
         updateBiggestLead();
         allowProgression(eGamePhase.DEAL);
@@ -743,8 +725,10 @@ function handleGameOver() {
 
         allowProgression(eGamePhase.GAME_OVER);
     } else {
-        // endWaitDisplay starts at -1 so we get four phases before
-        // the timeInStage:s are first incremented at game end.
+        $gameOpponentAreas.forEach(a => a.hide());
+        $gamePlayerCardArea.hide();
+        $gamePlayerClothingArea.hide();
+
         if (endWaitDisplay == 3) {
             players.forEach(function(p) { p.timeInStage++; });
         }
