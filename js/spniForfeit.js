@@ -15,7 +15,7 @@ var CANNOT_SPEAK = false;
  **********************************************************************/
  
 /* orgasm timer */
-var ORGASM_DELAY = 2000;
+const ORGASM_DELAY = 2500;
 
 /* The earliest and latest a character starts heavy masturbation, counted in phases before they finish */
 const HEAVY_EARLIEST_TIME = 5;
@@ -224,7 +224,15 @@ function tickForfeitTimers () {
 
                 /* trigger the callback */
                 var player = i, tableVisible = (tableOpacity > 0);
-                timeoutID = window.setTimeout(function(){ allowProgression(eGamePhase.END_FORFEIT); }, ORGASM_DELAY);
+                timeoutID = window.setTimeout(function() { allowProgression(eGamePhase.END_FORFEIT); },
+                                              ORGASM_DELAY
+                                              + (allowAutoAdvance && autoAdvanceSpeed ?
+                                              /* When auto advance active, make the total time until the next phase the
+                                                 maximum of the auto advance delay and the animation time, plus an extra
+                                                 ORGASM_DELAY, i.e. if the animation is longer than the auto advance delay,
+                                                 pause that much longer. */
+                                                 Math.max(gameDisplays[finishTarget.slot - 1].animationDuration() - AUTO_ADVANCE_DELAYS[autoAdvanceSpeed], 0) :
+                                                 0));
                 globalSavedTableVisibility = tableVisible;
                 if (AUTO_FADE) forceTableVisibility(false);
             }

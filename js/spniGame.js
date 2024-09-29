@@ -127,6 +127,7 @@ var recentLoser = -1;
 var recentWinner = -1;
 var gameOver = false;
 var actualMainButtonState = false;
+var allowAutoAdvance = false;
 var autoAdvanceSpeed = 0;
 var autoAdvanceProgress = 0;
 var autoAdvancePaused = false;  // Flag that prevents auto advance if a modal is opened when *not* waiting for auto advance
@@ -814,9 +815,9 @@ function allowProgression (nextPhase) {
 
     actualMainButtonState = false;
     timeoutID = undefined;
-    const allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
-          && ((humanPlayer.out && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)
-               || humanPlayer.finished || (!humanPlayer.out && gameOver)));
+    allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
+        && ((humanPlayer.out && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)
+             || humanPlayer.finished || (!humanPlayer.out && gameOver)));
     $autoAdvanceFasterButton.toggle(allowAutoAdvance);
     $autoAdvanceSlowerButton.toggle(allowAutoAdvance);
 

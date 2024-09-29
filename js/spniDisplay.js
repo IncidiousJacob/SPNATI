@@ -552,7 +552,7 @@ Pose.prototype.draw = function() {
 }
 
 Pose.prototype.needsAnimationLoop = function () {
-    if (this.animations.some(function (a) { return a.looped || !a.isComplete(); })) {
+    if (this.animations.some(function (a) { return !a.isComplete(); })) {
         return true;
     }
 
@@ -563,6 +563,13 @@ Pose.prototype.needsAnimationLoop = function () {
     }
 
     return false;
+}
+
+Pose.prototype.duration = function () {
+    // Ignore infinitely looped animations by using the fact that they have iterations == 0
+    return Math.max(...this.animations.map(a => a.delay + (a.looped ? a.iterations * a.duration : a.duration)),
+                    ...Object.values(this.sprites).map(s => s.delay),
+                   0)
 }
 
 Pose.prototype.setWillChangeHints = function (enabled) {
@@ -910,7 +917,7 @@ OpponentDisplay.prototype.drawPose = function (pose) {
         }
         this.simpleImage.attr('src', pose).show();
     } else if (pose instanceof Pose) {
-        if(pose.loaded) {
+        if (pose.loaded) {
             pose.draw();
         } else {
             this.queuedPose = pose;
@@ -1108,6 +1115,14 @@ OpponentDisplay.prototype.loop = function (timestamp) {
     }
 }
 
+OpponentDisplay.prototype.animationDuration = function () {
+    let pose = this.queuedPose || this.pose;
+    if (pose instanceof Pose) {
+        return pose.duration();
+    } else {
+        return 0;
+    }
+}
 
 function GameScreenDisplay (slot) {
     OpponentDisplay.call(
