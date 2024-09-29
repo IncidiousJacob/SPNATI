@@ -634,7 +634,7 @@ function closeStrippingModal () {
     humanPlayer.stage++
     
     /* update label */
-    if (humanPlayer.clothing.length > 0) {
+    if (humanPlayer.countLayers() > 0) {
         $gameClothingLabel.html("Your Remaining Clothing");
     } else {
         $gameClothingLabel.html("You're Naked");
