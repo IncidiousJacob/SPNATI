@@ -85,8 +85,6 @@ gameDisplays = [
 
 /* pseudo constants */
 var GAME_DELAY = 800;
-var GAME_OVER_DELAY = 1000;
-var SHOW_ENDING_DELAY = 5000; //5 seconds
 var CARD_SUGGEST = false;
 var PLAYER_FINISHING_EFFECT = true;
 var EXPLAIN_ALL_HANDS = true;
@@ -744,7 +742,6 @@ function handleGameOver() {
         }
 
         allowProgression(eGamePhase.GAME_OVER);
-        //window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
     } else {
         // endWaitDisplay starts at -1 so we get four phases before
         // the timeInStage:s are first incremented at game end.
