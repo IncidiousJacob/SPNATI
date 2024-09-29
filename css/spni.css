@@ -3928,6 +3928,24 @@ ul.dropdown-menu>li {
     bottom: 1%;
 }
 
+#auto-advance-button-container {
+    position: absolute;
+    bottom: 1%;
+    left: 44%;
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+#auto-advance-button-container>button {
+    height: 1.9em;
+    flex: 1;
+    line-height: 0.9em;
+}
+#auto-advance-button-container>button>img {
+    height: 0.9em;
+}
+
 #auto-advance-progress-bar {
     position: absolute;
     height: 100%;

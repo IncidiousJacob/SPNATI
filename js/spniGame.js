@@ -45,8 +45,7 @@ $gameClothingCells = [$(".player-0-clothing-1"),
                       $(".player-0-clothing-7"),
                       $(".player-0-clothing-8")];
 $mainButton = $("#main-game-button");
-$autoAdvanceFasterButton = $("#auto-advance-faster-button");
-$autoAdvanceSlowerButton = $("#auto-advance-slower-button");
+$autoAdvanceButtons = $("#auto-advance-button-container");
 $cardButtons = [$("#player-0-card-1"),
                 $("#player-0-card-2"),
                 $("#player-0-card-3"),
@@ -818,8 +817,7 @@ function allowProgression (nextPhase) {
     allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
         && ((humanPlayer.out && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)
              || humanPlayer.finished || (!humanPlayer.out && gameOver)));
-    $autoAdvanceFasterButton.toggle(allowAutoAdvance);
-    $autoAdvanceSlowerButton.toggle(allowAutoAdvance);
+    $autoAdvanceButtons.toggle(allowAutoAdvance);
 
     if (autoAdvancePaused) {
         // Closing the modal that the flag to be set should call allowProgression() again.
@@ -862,7 +860,7 @@ function advanceGame () {
  * If Auto-advance is auto-advancing, stop it.
  ************************************************************/
 function pauseAutoAdvance () {
-    $progressBar = $('#auto-advance-progress-bar');
+    const $progressBar = $('#auto-advance-progress-bar');
     if ($progressBar.length) {
         $progressBar.stop();
     }
@@ -876,7 +874,7 @@ function resumeAutoAdvance () {
     /* Important to clear the flag if the user opens and closes a modal during 
        game activity. */
     autoAdvancePaused = false;
-    $progressBar = $('#auto-advance-progress-bar');
+    const $progressBar = $('#auto-advance-progress-bar');
     if ($progressBar.length) {
         changeAutoAdvance();
     } else if (!actualMainButtonState) {
@@ -884,31 +882,17 @@ function resumeAutoAdvance () {
     }
 }
 
-function changeAutoAdvance (change) {
-    autoAdvanceSpeed += change || 0;
-    if (autoAdvanceSpeed < 0) autoAdvanceSpeed = 0; // Safety check; shouldn't happen. Same below.
-    if (autoAdvanceSpeed >= AUTO_ADVANCE_DELAYS.length) autoAdvanceSpeed = AUTO_ADVANCE_DELAYS.length - 1;
+function changeAutoAdvance (val) {
+    if (val !== undefined) autoAdvanceSpeed = val;
 
     // Change appearance of buttons
-    $autoAdvanceSlowerButton.attr('disabled', autoAdvanceSpeed == 0);
-    $autoAdvanceFasterButton.attr('disabled', autoAdvanceSpeed == AUTO_ADVANCE_DELAYS.length - 1);
+    $autoAdvanceButtons.children().removeAttr('disabled').eq(autoAdvanceSpeed).attr('disabled', true);
     
-    if (autoAdvanceSpeed > 0) {
-        $autoAdvanceFasterButton.children('span.glyphicon').removeClass('glyphicon-play').addClass('glyphicon-forward');
-    } else {
-        $autoAdvanceFasterButton.children('span.glyphicon').removeClass('glyphicon-forward').addClass('glyphicon-play');
-    }
-    if (autoAdvanceSpeed > 1) {
-        $autoAdvanceSlowerButton.children('span.glyphicon').removeClass('glyphicon-pause').addClass('glyphicon-play');
-    } else {
-        $autoAdvanceSlowerButton.children('span.glyphicon').removeClass('glyphicon-play').addClass('glyphicon-pause');
-    }
-
-    if (change && actualMainButtonState) return;  // Disallow any auto-advance start while the main button is disabled.
+    if (val !== undefined && actualMainButtonState) return;  // Disallow any auto-advance start while the main button is disabled.
 
     $progressBar = $('#auto-advance-progress-bar');
     if ($progressBar.length) {  // We are currently auto-advancing
-        if (change) $progressBar.stop();
+        if (val !== undefined) $progressBar.stop();
         if (autoAdvanceSpeed == 0) {
             // Reset, return to manual advance
             autoAdvanceProgress = 0;
@@ -916,7 +900,7 @@ function changeAutoAdvance (change) {
             allowProgression();
             return;
         }
-    } else if (autoAdvanceSpeed == 1 && change == 1 && !actualMainButtonState) {
+    } else if (val && !actualMainButtonState) {
         // When activating auto advance, immediately advance one phase.
         advanceGame();
         return;
