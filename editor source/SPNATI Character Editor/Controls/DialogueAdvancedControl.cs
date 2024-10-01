@@ -20,7 +20,7 @@ namespace SPNATI_Character_Editor.Controls
 		private DialogueLine _line;
 		private bool _settingData;
 		private NicknameOperation _selectedNickOp;
-		private string _z_index_line;
+		private string _z_index;
 		private Dictionary<string, string> _nickOps = new Dictionary<string, string>();
 
 		public event EventHandler DataUpdated;
@@ -187,12 +187,12 @@ namespace SPNATI_Character_Editor.Controls
 				_line.Intelligence = ai;
 			}
 
-			string line_z_index = valZIndex.Text;
-			if (line_z_index == "")
+			string z_index = valZIndex.Text;
+			if (z_index == "")
 				{
-					line_z_index = null;
+					z_index = null;
 				}
-			_line.ZIndexLine = line_z_index;
+			_line.ZIndexLine = z_index;
 
 			string gender = cboGender.Text;
 			if (string.IsNullOrEmpty(gender))

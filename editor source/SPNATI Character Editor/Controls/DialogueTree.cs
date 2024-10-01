@@ -155,7 +155,7 @@ namespace SPNATI_Character_Editor.Controls
 			int startStage;
 			TriggerDefinition trigger = TriggerDatabase.GetTrigger(tag);
 			startStage = trigger.StartStage;
-			int currentStage = _selectedNode?.Stage != -1 ? _selectedNode.Stage : startStage;
+			int currentStage = (_selectedNode == null)? startStage : _selectedNode.Stage;
 
 			//Add a default line
 			if (newCase.Lines.Count == 0)
@@ -621,7 +621,7 @@ namespace SPNATI_Character_Editor.Controls
 		private void tsRefresh_Click(object sender, EventArgs e)
 		{
 			Shell.Instance.ActiveWorkspace.SendMessage(WorkspaceMessages.SaveCaseNotes);
-			int currentStage = _selectedNode?.Stage != -1 ? _selectedNode.Stage : -1;
+			int currentStage = (_selectedNode == null) ? -1 : _selectedNode.Stage;
 			Case currentCase = _selectedNode?.Case;
 			_view?.Sort();
 			Invalidate(true);

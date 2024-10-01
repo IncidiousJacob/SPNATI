@@ -133,13 +133,13 @@ namespace SPNATI_Character_Editor
 			set { if (_layer != value) { _layer = value; NotifyPropertyChanged(); } }
 		}
 
-		private string _z_index_line;
+		private string _z_index;
 		[DefaultValue("")]
-		[XmlAttribute("z-index-line")]
+		[XmlAttribute("z-index")]
 		public string ZIndexLine
 		{
-			get { return _z_index_line; }
-			set { if (_z_index_line != value) { _z_index_line = value; NotifyPropertyChanged(); } }
+			get { return _z_index; }
+			set { if (_z_index != value) { _z_index = value; NotifyPropertyChanged(); } }
 		}
 
 		private string _fontSize;
@@ -250,30 +250,32 @@ namespace SPNATI_Character_Editor
 
 		public DialogueLine Copy()
 		{
-			DialogueLine copy = new DialogueLine();
-			//previously this used MemberwiseClone, but that clones registered event handlers too which is bad
-			copy._image = this._image;
-			copy._pose = this._pose;
-			copy.LegacyText = this.LegacyText;
-			copy._text = this._text;
-			copy._oneShotId = this._oneShotId;
-			copy._marker = this._marker;
-			copy._direction = this._direction;
-			copy._fontSize = this._fontSize;
-			copy._location = this._location;
-			copy._z_index_line = this._z_index_line;
-			copy._gender = this._gender;
-			copy._intelligence = this._intelligence;
-			copy._layer = this._layer;
-			copy._size = this._size;
-			copy._label = this._label;
-			copy._weight = this._weight;
-			copy.IsGenericImage = this.IsGenericImage;
-			copy._collectibleId = this._collectibleId;
-			copy._collectibleValue = this._collectibleValue;
-			copy._persistent = this._persistent;
+			DialogueLine copy = new DialogueLine
+			{
+				//previously this used MemberwiseClone, but that clones registered event handlers too which is bad
+				_image = this._image,
+				_pose = this._pose,
+				LegacyText = this.LegacyText,
+				_text = this._text,
+				_oneShotId = this._oneShotId,
+				_marker = this._marker,
+				_direction = this._direction,
+				_fontSize = this._fontSize,
+				_location = this._location,
+				_z_index = this._z_index,
+				_gender = this._gender,
+				_intelligence = this._intelligence,
+				_layer = this._layer,
+				_size = this._size,
+				_label = this._label,
+				_weight = this._weight,
+				IsGenericImage = this.IsGenericImage,
+				_collectibleId = this._collectibleId,
+				_collectibleValue = this._collectibleValue,
+				_persistent = this._persistent,
 
-			copy.Images = new List<StageImage>();
+				Images = new List<StageImage>()
+			};
 			foreach (StageImage img in Images)
 			{
 				copy.Images.Add(img.Copy());
