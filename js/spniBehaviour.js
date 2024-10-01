@@ -914,7 +914,7 @@ function State($xml_or_state, parentCase) {
     this.image = $xml.attr('img');
     this.direction = $xml.attr('direction') || 'down';
     this.location = $xml.attr('location') || '';
-    this.z_index_line = $xml.attr('z-index-line') || '';
+    this.z_index = parseInt($xml.attr('z-index'), 10) || undefined;
     this.dialogue_layering = $xml.attr('dialogue-layer');
     this.fontSize = $xml.attr('font-size');
     if (!['normal', 'small', 'smaller'].includes(this.fontSize)) this.fontSize = undefined;

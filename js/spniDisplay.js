@@ -131,6 +131,7 @@ function PoseSetEntry(image, attrs, tests) {
     this.location = attrs["location"];
     this.direction = attrs["direction"];
     this.dialogue_layering = attrs["dialogue-layer"];
+    this.z_index = parseInt(attrs["z-index"], 10) || undefined;
     this.priority = parseInt(attrs["priority"], 10) || 0;
     this.weight = parseFloat(attrs["weight"]) || 1;
     if (this.weight < 0) this.weight = 0;
@@ -1046,7 +1047,7 @@ OpponentDisplay.prototype.update = function(player) {
     var arrowDirection = chosenState.direction;
     var arrowLocation = chosenState.location;
     var dialogue_layering = chosenState.dialogue_layering || player.dialogue_layering;
-    var z_index = chosenState.z_index_line || player.z_index;
+    var z_index = chosenState.z_index ?? player.z_index;
     var resolvedImage = player.resolvePoseName(player.chosenState.image);
 
     if (resolvedImage instanceof PoseSet) {
@@ -1063,6 +1064,7 @@ OpponentDisplay.prototype.update = function(player) {
             arrowDirection = chosenState.direction || entry.direction;
             arrowLocation = chosenState.location || entry.location;
             dialogue_layering =  chosenState.dialogue_layering || entry.dialogue_layering || player.dialogue_layering;
+            z_index = chosenState.z_index ?? entry.z_index ?? player.z_index;
             resolvedImage = player.resolvePoseName(entry.image);
         }
     }
@@ -1086,12 +1088,11 @@ OpponentDisplay.prototype.update = function(player) {
         bubbleArrowOffsetRules[this.slot-1][0].style.left = arrowLocation  || '50%';
         bubbleArrowOffsetRules[this.slot-1][1].style.top = arrowLocation;
         /* Configure z-indices */
-        // this.imageArea.css('z-index', player.z_index);
-        this.imageArea.css('z-index', z_index);
         this.bubble.removeClass('over under').addClass(dialogue_layering);
         this.dialogue.removeClass('small smaller');
         if (chosenState.fontSize != "normal") this.dialogue.addClass(chosenState.fontSize || player.fontSize);
     }
+    this.imageArea.css('z-index', z_index);
 
     chosenState.displayed = true;
 }

@@ -583,7 +583,6 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.uniqueLineCount = parseInt($metaXml.children('lines').text(), 10) || undefined;
     this.posesImageCount = parseInt($metaXml.children('poses').text(), 10) || undefined;
     this.z_index = parseInt($metaXml.children('z-index').text(), 10) || 0;
-    this.z_index_line = parseInt($metaXml.children('z-index-line').text(), 10) || 0;
     this.dialogue_layering = $metaXml.children('dialogue-layer').text();
     this.fontSize = $metaXml.children('font-size').text();
     if (!['small', 'smaller'].includes(this.fontSize)) this.fontSize = undefined;
