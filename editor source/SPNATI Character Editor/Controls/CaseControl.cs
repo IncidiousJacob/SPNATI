@@ -47,7 +47,7 @@ namespace SPNATI_Character_Editor.Controls
 
 		public int PreviewStage
 		{
-			get { return _selectedStage.HasValue ? _selectedCase.Stages[0] : _selectedStage.Value; }
+			get { return _selectedStage ?? _selectedCase.Stages[0]; }
 		}
 
 		public void OnUpdateSkin(Skin skin)

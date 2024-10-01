@@ -56,9 +56,9 @@
 			this.ColJump = new Desktop.Skinning.SkinnedDataGridViewButtonColumn();
 			this.label5 = new Desktop.Skinning.SkinnedLabel();
 			this.containerLines = new Desktop.Skinning.SkinnedGroupBox();
-			this.gridActiveSituation = new SPNATI_Character_Editor.Controls.DialogueGrid();
+			this.gridActiveSituation = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
 			this.containerResponse = new Desktop.Skinning.SkinnedGroupBox();
-			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid();
+			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
 			this.cmdJumpToDialogue = new Desktop.Skinning.SkinnedButton();
 			this.cmdCancel = new Desktop.Skinning.SkinnedButton();
 			this.cmdAccept = new Desktop.Skinning.SkinnedButton();

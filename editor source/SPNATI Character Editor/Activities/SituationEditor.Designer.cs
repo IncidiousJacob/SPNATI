@@ -32,7 +32,7 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.gridCases = new Desktop.Skinning.SkinnedDataGridView();
-			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid();
+			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
 			this.ColName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ColDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ColPriority = new Desktop.Skinning.SkinnedDataGridViewComboBoxColumn();

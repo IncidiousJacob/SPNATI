@@ -31,7 +31,7 @@
 			this.lblFrom = new Desktop.Skinning.SkinnedLabel();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
 			this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-			this.gridSource = new SPNATI_Character_Editor.Controls.DialogueGrid();
+			this.gridSource = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
 			this.imgSource = new SPNATI_Character_Editor.Controls.CharacterImageBox();
 			this.splitContainer3 = new System.Windows.Forms.SplitContainer();
 			this.responseControl = new SPNATI_Character_Editor.Controls.CaseControl();
