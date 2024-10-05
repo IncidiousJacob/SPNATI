@@ -807,14 +807,12 @@ function allowProgression (nextPhase) {
         // Closing the modal that the flag to be set should call allowProgression() again.
         return;
     }
+    $mainButton.attr('disabled', false);
     if (allowAutoAdvance && autoAdvanceSpeed) {
-        $mainButton.attr('disabled', true);
         changeAutoAdvance();
-    } else {
-        $mainButton.attr('disabled', false);
-        if (!$(document.activeElement).is(':input')) {
-            $mainButton.focus();
-        }
+    }
+    if (!$(document.activeElement).is(':input')) {
+        $mainButton.focus();
     }
 }
 
@@ -824,6 +822,9 @@ function allowProgression (nextPhase) {
 function advanceGame () {    
     /* disable the button to prevent double clicking */
     $mainButton.attr('disabled', actualMainButtonState = true);
+    $('#auto-advance-progress-bar').stop();
+    autoAdvanceProgress = 0;
+
     if ($(document.activeElement).attr('disabled')) {
         /* It appears that in Firefox, if the active element gets
          * disabled, it can stop keyboard events from being emitted

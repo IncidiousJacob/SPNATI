@@ -3965,11 +3965,13 @@ ul.dropdown-menu>li {
     position: absolute;
     height: 100%;
     top: 0;
-    background: linear-gradient(#EEE, #CCC);
-    background-color: #DDD;
     width: 0;
     left: 0;
     z-index: -1;
+    /* This isn't perfect, but considerably simpler than setting new
+       gradients for base, hover and disabled */
+    background-color: #fbc69f;
+    opacity: 25%;
 }
 
 #player-masturbation-timer-box {
