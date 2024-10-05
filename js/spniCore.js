@@ -58,7 +58,7 @@ var versionInfo = null;
 /* game table */
 var tableOpacity = 1;
 var hiddenTableOpacity = 0.3;
-$gameTable = $('#game-table');
+$gameTable = $('#game-table, #player-name-label-minimal');
 $gameTableHidden = $('#game-hidden-area');
 
 /* useful variables */
