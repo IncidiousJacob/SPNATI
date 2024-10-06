@@ -5067,7 +5067,7 @@
             <directive type="pause" />
             <directive type="text" id="text2" width="20%" alignmentx="center" alignmenty="center" x="36%" y="29%">{epi}Who is it?</directive>
             <directive type="pause" />
-            <directive type="text" id="text3" width="20%" alignmentx="center" alignmenty="center" x="36%" y="43%">{epi}Oh, it’s ~player~. Should I let him in, dear?</directive>
+            <directive type="text" id="text3" width="20%" alignmentx="center" alignmenty="center" x="36%" y="43%">{epi}Oh, it’s ~player~. Should I let ~player.ifMale(him|her)~ in, dear?</directive>
             <directive type="pause" />
             <directive type="text" id="text5" width="20%" alignmentx="center" alignmenty="center" x="62%" y="43%">{epi}Y-Yeah! I should be fine now.</directive>
             <directive type="pause" />
@@ -6467,7 +6467,7 @@
             <directive type="pause" />
             <directive type="text" id="text2" width="20%" alignmentx="center" alignmenty="center" x="36%" y="29%">{epi}Who is it?</directive>
             <directive type="pause" />
-            <directive type="text" id="text3" width="20%" alignmentx="center" alignmenty="center" x="36%" y="43%">{epi}Oh, it’s ~player~. Should I let him in, dear?</directive>
+            <directive type="text" id="text3" width="20%" alignmentx="center" alignmenty="center" x="36%" y="43%">{epi}Oh, it’s ~player~. Should I let ~player.ifMale(him|her)~ in, dear?</directive>
             <directive type="pause" />
             <directive type="text" id="text5" width="20%" alignmentx="center" alignmenty="center" x="62%" y="43%">{epi}Y-Yeah! I should be fine now.</directive>
             <directive type="pause" />
