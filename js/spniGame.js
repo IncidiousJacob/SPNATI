@@ -45,7 +45,9 @@ $gameClothingCells = [$(".player-0-clothing-1"),
                       $(".player-0-clothing-7"),
                       $(".player-0-clothing-8")];
 $mainButton = $("#main-game-button");
+$mainButtonText = $("#main-game-button>span");
 $autoAdvanceButtons = $("#auto-advance-button-container");
+$autoAdvanceProgressBar = $("#auto-advance-progress-bar");
 $cardButtons = [$("#player-0-card-1"),
                 $("#player-0-card-2"),
                 $("#player-0-card-3"),
@@ -128,7 +130,7 @@ var gameOver = false;
 var actualMainButtonState = false;
 var allowAutoAdvance = false;
 var autoAdvanceSpeed = 0;
-var autoAdvanceProgress = 0;
+var autoAdvanceProgress = undefined;
 var autoAdvancePaused = false;  // Flag that prevents auto advance if a modal is opened when *not* waiting for auto advance
 var endWaitDisplay = 0;
 var showDebug = false;
@@ -443,7 +445,7 @@ function continueDealPhase () {
         $gameBubbles[i-1].hide();
     }
 
-    $mainButton.html("Wait...");
+    $mainButtonText.html("Wait...");
     
     /* enable player cards */
     for (var i = 0; i < $cardButtons.length; i++) {
@@ -758,7 +760,7 @@ function selectCard (card) {
 function updateMainButtonExchangeLabel() {
     if (gamePhase === eGamePhase.EXCHANGE) {
         const n = humanPlayer.hand.tradeIns.countTrue();
-        $mainButton.html(n == 0 ? 'Keep all' : 'Swap ' + n);
+        $mainButtonText.html(n == 0 ? 'Keep all' : 'Swap ' + n);
     }
 }
 
@@ -781,18 +783,18 @@ function allowProgression (nextPhase) {
     }
     
     if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP) {
-        $mainButton.html("Cum!");
+        $mainButtonText.html("Cum!");
     } else if (nextPhase[0]) {
-        $mainButton.html(nextPhase[0]);
+        $mainButtonText.html(nextPhase[0]);
     } else if (nextPhase === eGamePhase.EXCHANGE) {
         updateMainButtonExchangeLabel();
     } else if (nextPhase === eGamePhase.END_LOOP) { // Special case
         /* someone is still forfeiting */
         var dots = '.'.repeat(endWaitDisplay);
         if (humanPlayer.checkStatus(STATUS_MASTURBATING)) {
-            $mainButton.html("<small>Keep going" + dots + "</small>");
+            $mainButtonText.html("<small>Keep going" + dots + "</small>");
         } else {
-            $mainButton.html("Wait" + dots);
+            $mainButtonText.html("Wait" + dots);
         }
     }
 
@@ -822,8 +824,8 @@ function allowProgression (nextPhase) {
 function advanceGame () {    
     /* disable the button to prevent double clicking */
     $mainButton.attr('disabled', actualMainButtonState = true);
-    $('#auto-advance-progress-bar').stop();
-    autoAdvanceProgress = 0;
+    $autoAdvanceProgressBar.stop().hide();
+    autoAdvanceProgress = undefined;
 
     if ($(document.activeElement).attr('disabled')) {
         /* It appears that in Firefox, if the active element gets
@@ -845,10 +847,7 @@ function advanceGame () {
  * If Auto-advance is auto-advancing, stop it.
  ************************************************************/
 function pauseAutoAdvance () {
-    const $progressBar = $('#auto-advance-progress-bar');
-    if ($progressBar.length) {
-        $progressBar.stop();
-    }
+    $autoAdvanceProgressBar.stop();
     autoAdvancePaused = true;
 }
 /************************************************************
@@ -859,8 +858,7 @@ function resumeAutoAdvance () {
     /* Important to clear the flag if the user opens and closes a modal during 
        game activity. */
     autoAdvancePaused = false;
-    const $progressBar = $('#auto-advance-progress-bar');
-    if ($progressBar.length) {
+    if (autoAdvanceProgress !== undefined) {
         changeAutoAdvance();
     } else if (!actualMainButtonState) {
         allowProgression();
@@ -868,20 +866,19 @@ function resumeAutoAdvance () {
 }
 
 function changeAutoAdvance (val) {
-    if (val !== undefined) autoAdvanceSpeed = val;
+    if (val !== undefined) {
+        autoAdvanceSpeed = val;
+        // Change appearance of buttons
+        $autoAdvanceButtons.children().removeAttr('disabled').eq(autoAdvanceSpeed).attr('disabled', true);
+        if (actualMainButtonState) return; // Disallow any auto-advance start while the main button is disabled.
+    }
 
-    // Change appearance of buttons
-    $autoAdvanceButtons.children().removeAttr('disabled').eq(autoAdvanceSpeed).attr('disabled', true);
-    
-    if (val !== undefined && actualMainButtonState) return;  // Disallow any auto-advance start while the main button is disabled.
-
-    $progressBar = $('#auto-advance-progress-bar');
-    if ($progressBar.length) {  // We are currently auto-advancing
-        if (val !== undefined) $progressBar.stop();
+    if (autoAdvanceProgress !== undefined) {  // We are currently auto-advancing
+        if (val !== undefined) $autoAdvanceProgressBar.stop();
         if (autoAdvanceSpeed == 0) {
             // Reset, return to manual advance
-            autoAdvanceProgress = 0;
-            $progressBar.remove();
+            autoAdvanceProgress = undefined;
+            $autoAdvanceProgressBar.hide();
             allowProgression();
             return;
         }
@@ -891,23 +888,24 @@ function changeAutoAdvance (val) {
         return;
     } else {
         // Starting an auto-advance timeout. We should be called from
-        // allowProgress() with change == 0 here, so create a progress
+        // allowProgress() with change == 0 here, so show the progress
         // bar.
-        $progressBar = $('<div>', { id: 'auto-advance-progress-bar' }).prependTo($mainButton);
+        autoAdvanceProgress = 0;
+        $autoAdvanceProgressBar.width(0).show();
     }
     if (autoAdvanceSpeed) {
         // Start or restart animation
-        $progressBar.animate({ width: '100%' },
-                             { duration: AUTO_ADVANCE_DELAYS[autoAdvanceSpeed] * (1 - autoAdvanceProgress),
-                               easing: 'linear',
-                               progress: function (anim, progress, remaining) {
-                                   autoAdvanceProgress = 1 - remaining / AUTO_ADVANCE_DELAYS[autoAdvanceSpeed];
-                               },
-                               complete: function () {
-                                   autoAdvanceProgress = 0;
-                                   advanceGame();
-                               },
-                             });
+        $autoAdvanceProgressBar.animate(
+            { width: '100%' },
+            { duration: AUTO_ADVANCE_DELAYS[autoAdvanceSpeed] * (1 - autoAdvanceProgress),
+              easing: 'linear',
+              progress: function (anim, progress, remaining) {
+                  autoAdvanceProgress = 1 - remaining / AUTO_ADVANCE_DELAYS[autoAdvanceSpeed];
+              },
+              complete: function () {
+                  advanceGame();
+              },
+            });
     }
 }
 

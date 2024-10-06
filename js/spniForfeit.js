@@ -164,7 +164,7 @@ function tickForfeitTimers () {
             players[i].timer = 0;
             players[i].ticksInStage++;
             /* set the button state */
-            $mainButton.html("Cumming...");
+            $mainButtonText.html("Cumming...");
 
             saveTranscriptMessage('<b>' + players[i].label.escapeHTML() + '</b> is finishing...');
             console.log(players[i].label+" is finishing!");
