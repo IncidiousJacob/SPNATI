@@ -72,6 +72,15 @@ var endingTips = [
     "Despite what a certain spiky haired protagonist might say, believing in the heart of the cards is not a great strategy. Going for safe hands is usually the way to go.",
     "Remember, you don't need the best hand: you just need to not have the worst. Getting any hand above a high card is usually enough to survive a round.",
     "Want to find characters with specific traits or features, like being a tomboy or shaved? There's a search field at the top of the character select screen to filter for certain tags!",
+    "Want to talk about your favourite interactions or learn how to make your own character? Join the Discord servers! You can find a link on the title screen.",
+    "If you have anything nice to say, or any constructive feedback, then leave feedback reports as you play! Creators love getting feedback.",
+    "Did you know there's a SPNATI Podcast where the hosts discuss new characters and changes to the game? Look it up on YouTube!",
+    "Have you tried out the testing roster? It has newer characters who aren't quite finished yet, but are (usually) fully playable!",
+    "If you play with characters on the testing roster, you can pair them with characters they talk to on the main roster.",
+    "Characters will often have unique reactions to different backgrounds. Try playing with a variety of backgrounds to find them!",
+    "You can customize your player tags from the title screen. Characters can give you more specific and unique reactions if you tag yourself.",
+    "Wearable collectibles can make characters have special reactions. The Treasure Scope and Aura Camera in particular work with many other characters.",
+    
 ];
 
 /************************************************************
