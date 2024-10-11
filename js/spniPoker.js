@@ -757,7 +757,7 @@ function dealHand (player, numPlayers, playersBefore) {
     /* The card animation gets wonky if the table isn't visible;
      * Cards will fly off to the corner of the screen if they don't have a place to go.
      */
-    forceTableVisibility(1);
+    forceTableVisibility(true);
 
     /* deal the new cards */
     for (var i = 0; i < CARDS_PER_HAND; i++) {
@@ -787,7 +787,7 @@ function exchangeCards (player) {
     });
 
     /* See above comment in dealHand re: the card animation and table visibility */
-    forceTableVisibility(1);
+    forceTableVisibility(true);
 
     /* Refresh display. */
     displayHand(player, player == HUMAN_PLAYER);

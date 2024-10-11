@@ -56,10 +56,10 @@ var alternateCostumeSets = {};
 var versionInfo = null;
 
 /* game table */
-var tableOpacity = 1;
-var hiddenTableOpacity = 0.3;
-$gameTable = $('#game-table, #player-name-label-minimal');
-$gameTableHidden = $('#game-hidden-area');
+let tableVisibility = 1;
+$gameTable = $('.game-table');
+$gameTableHidden = $('.game-ui');
+$gameTableHideButtonEye = $('#game-table-hide-button > span.glyphicon');
 
 /* useful variables */
 var BLANK_PLAYER_IMAGE = "opponents/blank.png";
@@ -631,8 +631,6 @@ function restartGame () {
     selectTitleCandy();
     updateTitleScreen();
 
-    forceTableVisibility(true);
-
     /* there is only one call to this right now */
     $epilogueSelectionModal.hide();
     clearEpilogue();
@@ -987,22 +985,26 @@ function showPlayerTagsModal () {
  * The player clicked on a table opacity button.
  ************************************************************/
 function toggleTableVisibility () {
-    if (tableOpacity > 0) {
+    if (tableVisibility === 1) {
         forceTableVisibility(false);
+    } else if (tableVisibility === 0) {
         $gameTableHidden.addClass('fade-out');
+        $gameTableHideButtonEye.removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+        tableVisibility = -1;
     } else {
         forceTableVisibility(true);
     }
 }
 
 function forceTableVisibility(state) {
-    if (!state) {
-        $gameTable.addClass('fade-out');
-        tableOpacity = 0;
-    } else {
+    if (state) {
         $gameTable.removeClass('fade-out');
         $gameTableHidden.removeClass('fade-out');
-        tableOpacity = 1;
+        $gameTableHideButtonEye.removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+        tableVisibility = 1;
+    } else {
+        $gameTable.addClass('fade-out');
+        tableVisibility = 0;
     }
 }
 

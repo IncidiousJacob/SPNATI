@@ -20,7 +20,9 @@ const ORGASM_DELAY = 2500;
 /* The earliest and latest a character starts heavy masturbation, counted in phases before they finish */
 const HEAVY_EARLIEST_TIME = 5;
 const HEAVY_LATEST_TIME = 3;
- 
+
+var globalSavedTableVisibility;
+
 /**********************************************************************
  *****                      Forfeit Functions                     *****
  **********************************************************************/
@@ -223,7 +225,7 @@ function tickForfeitTimers () {
                 players[i].timer = 0;
 
                 /* trigger the callback */
-                var player = i, tableVisible = (tableOpacity > 0);
+                var player = i;
                 timeoutID = window.setTimeout(function() { allowProgression(eGamePhase.END_FORFEIT); },
                                               ORGASM_DELAY
                                               + (allowAutoAdvance && autoAdvanceSpeed ?
@@ -233,7 +235,7 @@ function tickForfeitTimers () {
                                                  pause that much longer. */
                                                  Math.max(gameDisplays[finishTarget.slot - 1].animationDuration() - AUTO_ADVANCE_DELAYS[autoAdvanceSpeed], 0) :
                                                  0));
-                globalSavedTableVisibility = tableVisible;
+                globalSavedTableVisibility = tableVisibility;
                 if (AUTO_FADE) forceTableVisibility(false);
             }
             return true;

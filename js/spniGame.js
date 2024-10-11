@@ -116,9 +116,7 @@ var eGamePhase = {
     EXIT_ROLLBACK: ['Return', function () { exitRollback(); }, undefined, false],
 };
 
-/* Masturbation Previous State Variables */
 var gamePhase = eGamePhase.DEAL;
-var globalSavedTableVisibility;
 
 var inGame = false;
 var currentTurn = 0;
