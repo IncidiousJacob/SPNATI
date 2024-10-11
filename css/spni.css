@@ -265,6 +265,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 #game-table.fade-out, #player-name-label-minimal.fade-out {
     opacity: 0;
+    pointer-events: none;
 }
 
 /**************************************************

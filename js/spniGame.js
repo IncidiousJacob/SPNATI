@@ -801,8 +801,8 @@ function allowProgression (nextPhase) {
     actualMainButtonState = false;
     timeoutID = undefined;
     allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
-        && ((humanPlayer.out && ((humanPlayer.timer > 1 && humanPlayer.ticksInStage > 0) || gamePhase == eGamePhase.STRIP)
-             || humanPlayer.finished || (!humanPlayer.out && gameOver && players[recentLoser].ticksInStage > 0)));
+        && ((humanPlayer.out && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)
+             || humanPlayer.finished || (!humanPlayer.out && gameOver)));
     $autoAdvanceButtons.toggle(allowAutoAdvance);
 
     if (autoAdvancePaused) {
