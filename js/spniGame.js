@@ -111,7 +111,7 @@ var eGamePhase = {
     STRIP:     [ "Strip", function() { completeStripPhase(); }, false ],
     FORFEIT:   [ "Masturbate", function() { completeMasturbatePhase(); }, false ],
     END_LOOP:  [ undefined, function() { handleGameOver(); } ],
-    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); } ],
+    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, 0 ],
     END_FORFEIT: [ "Continue..." ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
     EXIT_ROLLBACK: ['Return', function () { exitRollback(); }, undefined, false],
 };
@@ -785,6 +785,7 @@ function allowProgression (nextPhase) {
     
     if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP) {
         $mainButtonText.html("Cum!");
+        if (AUTO_FADE) forceTableVisibility(0);
     } else if (nextPhase[0]) {
         $mainButtonText.html(nextPhase[0]);
     } else if (nextPhase === eGamePhase.EXCHANGE) {
