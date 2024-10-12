@@ -1154,6 +1154,12 @@ function game_keyUp(e)
         else if (e.key.toLowerCase() == 't') {
             toggleTableVisibility();
         }
+        else if (e.key == '-' && allowAutoAdvance && autoAdvanceSpeed > 0) {
+            changeAutoAdvance(autoAdvanceSpeed - 1);
+        }
+        else if (e.key == '+' && allowAutoAdvance && autoAdvanceSpeed < AUTO_ADVANCE_DELAYS.length - 1) {
+            changeAutoAdvance(autoAdvanceSpeed + 1);
+        }
     }
 }
 $gameScreen.data('keyhandler', game_keyUp);
