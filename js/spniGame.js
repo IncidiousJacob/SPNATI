@@ -664,6 +664,9 @@ function endRound () {
 
         endWaitDisplay = 0;
         allowProgression(eGamePhase.END_LOOP);
+        endWaitDisplay = 4; /* This is just a trick to allow toggling
+                             * visibility of the game table without
+                             * introducing another variable */
     } else if (SHORT_GAME_MODE && notInGame > 0) {
         let mostLayersLeft = 0, winner = 0, winners = "";
         for (var i = 0; i < players.length; i++) {
@@ -693,6 +696,7 @@ function endRound () {
 
         endWaitDisplay = 0;
         allowProgression(eGamePhase.END_LOOP);
+        endWaitDisplay = 4; // See above
     } else {
         updateBiggestLead();
         allowProgression(eGamePhase.DEAL);
@@ -722,7 +726,6 @@ function handleGameOver() {
         } else {
             updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
         }
-
         allowProgression(eGamePhase.GAME_OVER);
     } else {
         $gameOpponentAreas.forEach(a => a.hide());

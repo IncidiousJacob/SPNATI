@@ -986,26 +986,32 @@ function showPlayerTagsModal () {
  ************************************************************/
 function toggleTableVisibility () {
     if (tableVisibility === 1) {
-        forceTableVisibility(false);
+        forceTableVisibility(0);
     } else if (tableVisibility === 0) {
-        $gameTableHidden.addClass('fade-out');
-        $gameTableHideButtonEye.removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
-        tableVisibility = -1;
+        forceTableVisibility(-1);
     } else {
-        forceTableVisibility(true);
+        if (gameOver && endWaitDisplay < 4 && (humanPlayer.checkStatus(STATUS_LOST_ALL) || !MINIMAL_UI)) {
+            // There's nothing to show
+            forceTableVisibility(0);
+        } else {
+            forceTableVisibility(1);
+        }
     }
 }
 
 function forceTableVisibility(state) {
-    if (state) {
-        $gameTable.removeClass('fade-out');
-        $gameTableHidden.removeClass('fade-out');
-        $gameTableHideButtonEye.removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+    if (state === true) {
         tableVisibility = 1;
+    } else if (state === false) {
+        if (tableVisibility > 0) tableVisibility = 0;
     } else {
-        $gameTable.addClass('fade-out');
-        tableVisibility = 0;
+        tableVisibility = state;
     }
+
+    $gameTableHidden.toggleClass('fade-out', tableVisibility < 0);
+    $gameTable.toggleClass('fade-out', tableVisibility <= 0);
+    $gameTableHideButtonEye.toggleClass('glyphicon-eye-close', tableVisibility >= 0);
+    $gameTableHideButtonEye.toggleClass('glyphicon-eye-open', tableVisibility < 0);
 }
 
 function toggleFullscreen() {
