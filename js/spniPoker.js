@@ -754,11 +754,6 @@ function setupDeck () {
  * Deals new cards to the given player.
  ************************************************************/
 function dealHand (player, numPlayers, playersBefore) {
-    /* The card animation gets wonky if the table isn't visible;
-     * Cards will fly off to the corner of the screen if they don't have a place to go.
-     */
-    forceTableVisibility(true);
-
     /* deal the new cards */
     for (var i = 0; i < CARDS_PER_HAND; i++) {
         players[player].hand.tradeIns[i] = false;
@@ -785,9 +780,6 @@ function exchangeCards (player) {
         message: players[player].id+' swaps '+players[player].hand.tradeIns.countTrue()+' cards',
         level: 'debug'
     });
-
-    /* See above comment in dealHand re: the card animation and table visibility */
-    forceTableVisibility(true);
 
     /* Refresh display. */
     displayHand(player, player == HUMAN_PLAYER);
