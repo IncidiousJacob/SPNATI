@@ -111,7 +111,7 @@ var eGamePhase = {
     STRIP:     [ "Strip", function() { completeStripPhase(); }, false ],
     FORFEIT:   [ "Masturbate", function() { completeMasturbatePhase(); }, false ],
     END_LOOP:  [ undefined, function() { handleGameOver(); } ],
-    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, 0 ],
+    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); } ],
     END_FORFEIT: [ "Continue..." ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
     EXIT_ROLLBACK: ['Return', function () { exitRollback(); }, undefined, false],
 };
@@ -727,6 +727,7 @@ function handleGameOver() {
             updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
         }
         allowProgression(eGamePhase.GAME_OVER);
+        if (AUTO_FADE && tableVisibility < 0) forceTableVisibility(0);
     } else {
         $gameOpponentAreas.forEach(a => a.hide());
         $gamePlayerCardArea.hide();
