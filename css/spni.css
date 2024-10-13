@@ -251,7 +251,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table-feedback-report-button {
-	z-index: 1001;
+    z-index: 1001;
 }
 
 .game-table,
@@ -263,6 +263,10 @@ input[type=search]::-webkit-search-cancel-button {
 .game-ui.fade-out
 {
     opacity: 0;
+    pointer-events: none;
+}
+.fade-out *
+{
     pointer-events: none;
 }
 
