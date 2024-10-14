@@ -619,8 +619,7 @@ function restartGame () {
     $autoAdvanceButtons.hide();
 
     inGame = false;
-    autoAdvancePaused = false;
-    autoAdvanceProgress = 0;
+    autoAdvanceProgress = undefined;
     $('#auto-advance-progress-bar').stop();
 
     Sentry.setTag("in_game", false);

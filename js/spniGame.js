@@ -129,7 +129,6 @@ var actualMainButtonState = false;
 var allowAutoAdvance = false;
 var autoAdvanceSpeed = 0;
 var autoAdvanceProgress = undefined;
-var autoAdvancePaused = false;  // Flag that prevents auto advance if a modal is opened when *not* waiting for auto advance
 var endWaitDisplay = 0;
 var showDebug = false;
 var chosenDebug = -1;
@@ -808,10 +807,6 @@ function allowProgression (nextPhase) {
              || humanPlayer.finished || (!humanPlayer.out && gameOver)));
     $autoAdvanceButtons.toggle(allowAutoAdvance);
 
-    if (autoAdvancePaused) {
-        // Closing the modal that the flag to be set should call allowProgression() again.
-        return;
-    }
     $mainButton.attr('disabled', false);
     if (allowAutoAdvance && autoAdvanceSpeed) {
         changeAutoAdvance();
@@ -850,17 +845,14 @@ function advanceGame () {
  * If Auto-advance is auto-advancing, stop it.
  ************************************************************/
 function pauseAutoAdvance () {
-    $autoAdvanceProgressBar.stop();
-    autoAdvancePaused = true;
+    if (inGame) $autoAdvanceProgressBar.stop();
 }
 /************************************************************
  * If Auto-advance is enabled and we're not currently in the middle of
  * something, set the timeout again by calling AllowProgression().
  ************************************************************/
 function resumeAutoAdvance () {
-    /* Important to clear the flag if the user opens and closes a modal during 
-       game activity. */
-    autoAdvancePaused = false;
+    if (!inGame || inRollback()) return;
     if (autoAdvanceProgress !== undefined) {
         changeAutoAdvance();
     } else if (!actualMainButtonState) {
@@ -889,9 +881,9 @@ function changeAutoAdvance (val) {
         // When activating auto advance, immediately advance one phase.
         advanceGame();
         return;
-    } else {
+    } else if (autoAdvanceSpeed > 0) {
         // Starting an auto-advance timeout. We should be called from
-        // allowProgress() with change == 0 here, so show the progress
+        // allowProgress() with val undefined here, so show the progress
         // bar.
         autoAdvanceProgress = 0;
         $autoAdvanceProgressBar.width(0).show();
@@ -1009,7 +1001,8 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.markers = p.markers;
         loadPlayer.chosenState = p.chosenState;
     }.bind(this));
-    
+
+    changeAutoAdvance(0);
     updateAllGameVisuals();
 }
 
@@ -1126,16 +1119,9 @@ function showLogModal () {
     $logModal.modal('show');
 }
 
-$('#restart-modal,#log-modal,#bug-report-modal,#feedback-report-modal,#options-modal,#help-modal')
-    .on('show.bs.modal', function() {
-        if (inGame) {
-            pauseAutoAdvance();
-        }})
-    .on('hidden.bs.modal', function() {
-        if (inGame) {
-            resumeAutoAdvance();
-        }
-    });
+$('#restart-modal,#log-modal,#bug-report-modal,#feedback-report-modal,#options-modal,#help-modal,#character-debug-modal')
+    .on('show.bs.modal', pauseAutoAdvance)
+    .on('hidden.bs.modal', resumeAutoAdvance);
 
 /************************************************************
  * A keybound handler.
