@@ -576,6 +576,9 @@ $('ul[data-option="ui-theme"]').on('click', 'a', function() {
 
 $('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
     PLAYER_FINISHING_EFFECT = $(this).attr('data-value') == 'true';
+    if (inGame) {
+        updateHumanPlayerMasturbationVisual();
+    }
 });
 
 /************************************************************

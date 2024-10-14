@@ -31,6 +31,7 @@ $gameOpponentAreas = [$("#game-opponent-area-1"),
                       $("#game-opponent-area-3"),
                       $("#game-opponent-area-4")];
 $gamePlayerCountdown = $("#player-countdown");
+$gameClimaxOverlay = $('#game-climax-overlay');
 $gamePlayerClothingArea = $("#player-game-clothing-area, #player-name-label-minimal");
 $gamePlayerCardArea = $("#player-game-card-area");
 
@@ -167,9 +168,6 @@ function loadGameScreen () {
     recentLoser = -1;
     gameOver = false;
 
-    $gamePlayerCardArea.show();
-    $gamePlayerCountdown.hide();
-    $gamePlayerCountdown.removeClass('pulse');
     chosenDebug = -1;
     updateDebugState(showDebug);
     
@@ -225,6 +223,15 @@ function updateAllGameVisuals () {
     for (var i = 1; i < players.length; i++) {
         updateGameVisual (i);
     }
+    updateHumanPlayerMasturbationVisual();
+}
+
+function updateHumanPlayerMasturbationVisual () {
+    $gameClimaxOverlay.toggle(PLAYER_FINISHING_EFFECT && humanPlayer.checkStatus(STATUS_HEAVY_MASTURBATING));
+    $gameClimaxOverlay.toggleClass('intense', humanPlayer.timer == 1);
+    $gamePlayerCountdown.toggle(humanPlayer.out && humanPlayer.timer > 0);
+    $gamePlayerCountdown.html(humanPlayer.timer);
+    $gamePlayerCountdown.toggleClass('pulse', humanPlayer.checkStatus(STATUS_HEAVY_MASTURBATING));
 }
 
 /************************************************************
@@ -783,7 +790,7 @@ function allowProgression (nextPhase) {
         nextPhase = gamePhase;
     }
     
-    if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP) {
+    if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP && !inRollback()) {
         $mainButtonText.html("Cum!");
         if (AUTO_FADE) forceTableVisibility(0);
     } else if (nextPhase[0]) {
@@ -934,14 +941,21 @@ function RollbackPoint (logPlayers) {
         data.poseSets = p.poseSets;
         data.timeInStage = p.timeInStage;
         data.ticksInStage = p.ticksInStage;
-        data.markers = {};
         
+        data.markers = {};
         for (let marker in p.markers) {
             data.markers[marker] = p.markers[marker];
         }
         
         if (p.chosenState) data.chosenState = new State(p.chosenState);
-        
+
+        data.label = p.label;
+        // These probably only matter for the human player
+        data.timer = p.timer;
+        data.forfeit = p.forfeit?.slice();
+        data.out = p.out;
+        data.finished = p.finished;
+
         this.playerData.push(data);
     }.bind(this));
     
@@ -1000,6 +1014,11 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.ticksInStage = p.ticksInStage;
         loadPlayer.markers = p.markers;
         loadPlayer.chosenState = p.chosenState;
+        loadPlayer.timer = p.timer;
+        loadPlayer.forfeit = p.forfeit;
+        loadPlayer.out = p.out;
+        loadPlayer.finished = p.finished;
+        loadPlayer.label = p.label;
     }.bind(this));
 
     changeAutoAdvance(0);

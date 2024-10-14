@@ -114,7 +114,7 @@ Player.prototype.resetState = function () {
     this.out = this.finished = false;
     this.outOrder = undefined;
     this.biggestLead = 0;
-    this.forfeit = "";
+    this.forfeit = [];
     this.forfeitLocked = false;
     this.finishingTarget = this;
     this.stage = this.consecutiveLosses = 0;

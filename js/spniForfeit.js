@@ -137,8 +137,7 @@ function startMasturbation (player) {
     
     if (player == HUMAN_PLAYER) {
         $gameClothingLabel.html("You're Masturbating...");
-        $gamePlayerCountdown.html(humanPlayer.timer);
-        $gamePlayerCountdown.show();
+        updateHumanPlayerMasturbationVisual();
     }
     
     /* allow progression */
@@ -178,19 +177,13 @@ function tickForfeitTimers () {
 
                 /* player's timer is up */
                 /* TEMP FIX: prevent this animation on Safari */
+                $gamePlayerCountdown.hide();
                 if (PLAYER_FINISHING_EFFECT) {
-                    $gamePlayerCountdown.one('animationend', function() {
-                        $gamePlayerCountdown.hide();
-                        $gamePlayerCountdown.removeClass('explode');
-                        /* finish */
-                        finishMasturbation(i);
-                    });
-                    $gamePlayerCountdown.addClass('explode');
+                    $gameClimaxOverlay.one('animationend', finishMasturbation.bind(null, i))
+                        .addClass('climax');
                 } else {
-                    $gamePlayerCountdown.hide();
                     finishMasturbation(i);
                 }
-                $gamePlayerCountdown.html('');
                 $gameClothingLabel.html("<b>You're 'Finished'</b>");
 
             } else {
@@ -256,12 +249,8 @@ function tickForfeitTimers () {
             if (inHeavyMasturbation) heavyMasturbatingPlayers.push(i);
 
             if (i == HUMAN_PLAYER) {
-                /* human player */
-                /* update the player label */
-                $gameClothingLabel.html("<b>'Finished' in "+players[i].timer+" phases</b>");
-                $gamePlayerCountdown.html(players[i].timer);
-                if (inHeavyMasturbation) $gamePlayerCountdown.addClass('pulse');
                 masturbatingPlayers.push(i); // Double the chance of commenting on human player
+                updateHumanPlayerMasturbationVisual();
             }
         }
     }
@@ -308,6 +297,10 @@ function finishMasturbation (player) {
     );
     players[player].ticksInStage = 0;
     players[player].timeInStage = 0;
+    if (player == HUMAN_PLAYER) {
+        updateHumanPlayerMasturbationVisual();
+        $gameClimaxOverlay.removeClass('climax');
+    }
     
     if (AUTO_FADE && globalSavedTableVisibility !== undefined) {
         forceTableVisibility(globalSavedTableVisibility);
