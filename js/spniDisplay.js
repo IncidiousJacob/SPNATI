@@ -1085,8 +1085,7 @@ OpponentDisplay.prototype.update = function(player) {
         this.bubble.show();
         this.bubble.removeClass('arrow-down arrow-left arrow-right arrow-up');
         if (arrowDirection != 'none') this.bubble.addClass('arrow-'+arrowDirection);
-        bubbleArrowOffsetRules[this.slot-1][0].style.left = arrowLocation  || '50%';
-        bubbleArrowOffsetRules[this.slot-1][1].style.top = arrowLocation;
+        this.bubble.css('--arrow-location', arrowLocation || '');
         /* Configure z-indices */
         this.bubble.removeClass('over under').addClass(dialogue_layering);
         this.dialogue.removeClass('small smaller');
