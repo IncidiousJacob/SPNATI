@@ -2768,6 +2768,16 @@
             <sprite id="butt2" src="reskins/meia_cupid/3-ultrainstinct.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_cupid/sidemouthsilent.png" x="-52" y="290" scalex="-1" rotation="-4" />
         </pose>
+        <pose id="3-strip-pyorofearm">
+            <sprite id="silent" src="reskins/meia_cupid/3-strip.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_cupid/pyorofearm.png" x="-298" y="165" alpha="100" rotation="-4" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_cupid/pyorohand.png" x="29" y="86" pivotx="48%" pivoty="52%" rotation="8" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_cupid/pyorohand.png" x="216" y="62" scalex="-1" scaley="-1" rotation="-128" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroleg.png" x="211" y="205" scalex="-1" rotation="-14" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroleg.png" x="108" y="205" scalex="1" rotation="16" />
+        </pose>
     </poses>
 
 </costume>
