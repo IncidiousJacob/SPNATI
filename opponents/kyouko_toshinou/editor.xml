@@ -1124,6 +1124,40 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1101" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
         <label id="1102" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
         <label id="1103" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1104" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1105" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1106" label="Shoes" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1107" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1108" label="Tangzhuang" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1109" label="Shoes" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1110" label="Tangzhuang" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1111" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1112" label="Hat" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1113" label="Hat" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1114" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1115" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1116" label="Pants" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1117" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1118" label="Pants" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1119" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1120" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1121" label="Dudou" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1122" label="Dudou" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1123" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1124" label="Talisman" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1125" label="Talisman" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1126" label="Replace hat (jiangshi)" folder="" sort="0" />
+        <label id="1127" label="Jianghsi costume - hat not replaced" folder="" sort="0" />
+        <label id="1128" label="Jianghsi costume - hat not replaced" folder="" sort="0" />
+        <label id="1129" label="Jiangshi costume" folder="" sort="0" />
+        <label id="1130" label="Kyouko's birthday (Jiangshi)" folder="" sort="0" />
+        <label id="1131" label="Silly girl jumpscare (Jiangshi)" folder="" sort="0" />
+        <label id="1132" label="Jiangshi - after jumpscare" folder="" sort="0" />
+        <label id="1133" label="Hat (alt)" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1134" label="Hat (alt)" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1136" label="" folder="Costume&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1137" label="Bad" folder="AI Level&gt;Kyonshi Kyouko" sort="0" />
+        <label id="1138" label="Good" folder="AI Level&gt;Kyonshi Kyouko" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1132,8 +1166,9 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1103</nextId>
+    <nextId>1138</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
         <marker scope="Public" name="B_DarkTricks">Dark backgrounds</marker>
         <marker scope="Public" name="B_Inventory_Booth">Inventory background</marker>
@@ -1174,6 +1209,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_InventoryTime">On her birthday, Kyouko remembers that time just doesn't pass (like in her series; yes, that's canon)</marker>
         <marker scope="Public" name="D_Items">Throwing items into a game of poker</marker>
         <marker scope="Public" name="D_JacketLast" />
+        <marker scope="Public" name="D_Jumpscare" />
         <marker scope="Public" name="D_LewdSketch" />
         <marker scope="Public" name="D_LightningRounds" />
         <marker scope="Public" name="D_LittleCardClub" />
@@ -1189,6 +1225,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_RemovingRibbon">Someone else is removing their hair ribbon.</marker>
         <marker scope="Public" name="D_RibbonTrade">Someone else is removing their hair ribbon after Kyouko has taken hers off.</marker>
         <marker scope="Public" name="D_SexyPose">Her idea of "sexy" is weird.</marker>
+        <marker scope="Public" name="D_SocksStay" />
         <marker scope="Public" name="D_SwitchHandsA">She tries switching hands... for exactly one phase.</marker>
         <marker scope="Public" name="D_SwitchHandsB">Switches back to her right hand (or rather, both) immediately after trying to switch hands.</marker>
         <marker scope="Public" name="D_ToplessSquad">Triple Topless</marker>
@@ -1256,6 +1293,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="S_RibbonOff">Self Stripping 6 - Taking the ribbon off (Club Uniform)</marker>
         <marker scope="Public" name="S_RibbonStays">Self Stripping - Kyouko plans to keep her ribbon.</marker>
         <marker scope="Public" name="S_Sweater4" />
+        <marker scope="Public" name="S_TalismanInEyes" />
         <marker scope="Public" name="S_TomatoesRevealed">Self Stripped - The tomato pattern on her underwear is visible. (Club Uniform)</marker>
         <marker scope="Public" name="S_TopBetter" />
         <marker scope="Public" name="S_Uniform">Self Stripping 2 - Explain the uniform (Club Uniform)</marker>
