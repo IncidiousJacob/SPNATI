@@ -714,9 +714,9 @@
         </pose>
         <pose id="name-pride">
             <sprite id="pride" src="reskins/kyouko_toshinou_swimsuit/#-pride.png" x="0" y="0" />
-            <sprite id="kyouko" z="-2" src="kyouko_toshinou/posemaker/kyouko.png" x="185" y="74" scalex="0.95" scaley="0.95" alpha="0" />
+            <sprite id="kyouko" z="-2" src="kyouko_toshinou/posemaker/kyouko.png" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
             <directive type="animation" id="kyouko" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="0.95" alpha="0" />
+                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
                 <keyframe time="0.5" alpha="0" />
                 <keyframe time="1.5" alpha="100" />
             </directive>
