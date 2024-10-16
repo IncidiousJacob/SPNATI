@@ -77,6 +77,9 @@
         <response id="514" opponent="jim" opponentId="7" />
         <response id="516" opponent="aqua_kh" opponentId="67" />
         <response id="517" opponent="aqua_kh" opponentId="51" />
+        <response id="519" opponent="yuno_uno" opponentId="167" />
+        <response id="520" opponent="yuno_uno" opponentId="1260" />
+        <response id="521" opponent="yuno_uno" opponentId="375" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -89,6 +92,7 @@
         <note id="448">he's lying, not a bug that his AI doesn't change</note>
         <note id="481">the implication is fellatio</note>
         <note id="503">"your friend there" referring to Barnette in this instance</note>
+        <note id="519">thanks, spaceman, for the musical insight</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Backgrounds" sort="0" />
@@ -208,7 +212,7 @@
         <label id="116" label="" folder="Situations" sort="4" />
         <label id="117" label="" folder="Filters" sort="7" />
         <label id="118" label="self crotch visible" folder="" sort="0" />
-        <label id="119" label="milk 1" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="119" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="120" label="" folder="Filters" sort="9" />
         <label id="121" label="" folder="Filters" sort="10" />
         <label id="122" label="" folder="Filters" sort="11" />
@@ -454,11 +458,11 @@
         <label id="363" label="SETUP FORFEIT LOGIC" color="2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
         <label id="364" label="gloria + nadeshiko triple pose" color="6" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="365" label="gloria and nadeshiko doing their double pose fallback" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="366" label="milk 2" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="367" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="368" label="milk 3" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="366" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="367" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="368" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="369" label="milk 4" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="370" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="370" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="371" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="372" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="373" label="" color="4" folder="Targets&gt;Tifa Lockheart" sort="0" />
@@ -607,8 +611,26 @@
         <label id="516" label="" folder="Targets" sort="0" />
         <label id="517" label="" folder="Targets" sort="0" />
         <label id="518" label="" folder="Targets" sort="0" />
+        <label id="519" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="520" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="521" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="522" label="2 - bartender " folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="523" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="524" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="525" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="526" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="527" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="528" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="529" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="530" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
+        <label id="531" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
+        <label id="532" label="yusei_assist_yuno_offer_5" folder="Targets&gt;Yuno" sort="0" />
+        <label id="533" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
+        <label id="534" label="" folder="Targets" sort="0" />
+        <label id="535" label="" folder="Targets&gt;Human" sort="0" />
+        <label id="536" label="" folder="Targets&gt;Human" sort="0" />
     </labels>
-    <nextId>518</nextId>
+    <nextId>536</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
@@ -675,6 +697,7 @@
         <marker scope="Public" name="rose_flashing2" />
         <marker scope="Public" name="rose_showing_anima" />
         <marker scope="Public" name="samus_removed_her_armor" />
+        <marker scope="Public" name="samus_removed_zerosuit" />
         <marker scope="Public" name="samus_removing_armor" />
         <marker scope="Public" name="sannytess_sexo" />
         <marker scope="Public" name="say_the_line1" />
@@ -707,6 +730,8 @@
         <marker scope="Public" name="velvet_personality_resp" />
         <marker scope="Public" name="wrgp_explain" />
         <marker scope="Public" name="yu-nade_pose_nadeshiko_climax" />
+        <marker scope="Public" name="yuno_prompt_earworm_songs" />
+        <marker scope="Public" name="yuno_uno_and_poker_4" />
         <marker scope="Public" name="yuno_yusei_duelDanger1" />
         <marker scope="Public" name="yuno_yusei_duelDanger2" />
         <marker scope="Public" name="yuno_yusei_duelDanger3" />
@@ -716,6 +741,14 @@
         <marker scope="Public" name="yuno_yusei_synchroSummon1" />
         <marker scope="Public" name="yuno_yusei_synchroSummon2" />
         <marker scope="Public" name="yuno_yusei_synchroSummon3" />
+        <marker scope="Public" name="yuno_yusei_synchroSummon4" />
+        <marker scope="Public" name="yunoi_yusei_paying1" />
+        <marker scope="Public" name="yunoi_yusei_paying2" />
+        <marker scope="Public" name="yunoi_yusei_paying3" />
+        <marker scope="Public" name="yusei_assist_yuno_mustStrip_5" />
+        <marker scope="Public" name="yusei_assist_yuno_offer_5" />
+        <marker scope="Public" name="yusei_assist_yuno_stripped_5" />
+        <marker scope="Public" name="yusei_assist_yuno_stripping_5" />
         <marker scope="Public" name="yusei_birthday" />
         <marker scope="Public" name="yusei_chiaki_strip0a" />
         <marker scope="Public" name="yusei_chiaki_strip1a" />
@@ -860,6 +893,14 @@
         <marker scope="Public" name="yusei_schezo_sword2" />
         <marker scope="Public" name="yusei_tifa_athletic1" />
         <marker scope="Public" name="yusei_tifa_athletic2" />
+        <marker scope="Public" name="yusei_tifa_athletic3" />
+        <marker scope="Public" name="yusei_tifa_bartender1" />
+        <marker scope="Public" name="yusei_tifa_bartender2" />
+        <marker scope="Public" name="yusei_tifa_bartender3a" />
+        <marker scope="Public" name="yusei_tifa_bartender3b" />
+        <marker scope="Public" name="yusei_tifa_finishingBlows1" />
+        <marker scope="Public" name="yusei_tifa_finishingBlows2" />
+        <marker scope="Public" name="yusei_tifa_finishingBlows3" />
         <marker scope="Public" name="yusei_tifa_milk1" />
         <marker scope="Public" name="yusei_tifa_milk2" />
         <marker scope="Public" name="yusei_tifa_milk3" />
@@ -939,6 +980,9 @@
         <marker scope="Public" name="yusei_yuno_strip3a" />
         <marker scope="Public" name="yusei_yuno_strip3b" />
         <marker scope="Public" name="yusei_yuno_strip3c" />
+        <marker scope="Public" name="yusei_yuno_strip4a" />
+        <marker scope="Public" name="yusei_yuno_strip4b" />
+        <marker scope="Public" name="yusei_yuno_strip4c" />
         <marker scope="Public" name="yusei_yuno_unoGame1" />
         <marker scope="Public" name="yusei_yuno_unoGame2" />
         <marker scope="Public" name="yusei_yuno_unoGame3" />
