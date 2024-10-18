@@ -30,6 +30,7 @@ html {
     --base-font-weight: 500;
     --medium-font-weight: calc(var(--base-font-weight) + 100);
     --base-font-stretch: 100%;
+    --arrow-location: 50%;
 }
 
 body {
@@ -1274,28 +1275,28 @@ ul.dropdown-menu>li {
 }
 
 .arrow-down::before {
-    left: 50%;
+    left: var(--arrow-location);
     bottom: calc(-2.5rem / 2);
     margin-left: calc(-2.5rem / 2);
     transform: scaleX(0.6) rotate(45deg);
 }
 
 .arrow-left::before {
-    top: 50%;
+    top: var(--arrow-location);
     left: calc(-2.5rem / 2);
     margin-top: calc(-2.5rem / 2);
     transform: scaleY(0.6) rotate(135deg);
 }
 
 .arrow-right::before {
-    top: 50%;
+    top: var(--arrow-location);
     margin-top: calc(-2.5rem / 2);
     right: calc(-2.5rem / 2);
     transform: scaleY(0.6) rotate(-45deg);
 }
 
 .arrow-up::before {
-    left: 50%;
+    left: var(--arrow-location);
     margin-left: calc(-2.5rem / 2);
     top: calc(-2.5rem / 2);
     transform: scaleX(0.6) rotate(-135deg);
