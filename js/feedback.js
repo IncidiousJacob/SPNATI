@@ -93,6 +93,7 @@ function compileBaseErrorReport(userDesc, bugType) {
             } else {
                 circumstances.gamePhase = nextGamePhase[0];
             }
+            circumstances.gamePhaseID = getGamePhaseString(gamePhase);
         }
 
         var tableReports = [];
@@ -643,6 +644,7 @@ function recordInterruptedGameEvent(isPageUnload) {
         } else {
             report.gameState.gamePhase = nextGamePhase[0];
         }
+        report.gameState.gamePhaseID = getGamePhaseString(gamePhase);
     }
 
     /* Interruption reasons are related to game sessions. */

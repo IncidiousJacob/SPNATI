@@ -163,6 +163,7 @@ function tickForfeitTimers () {
         if (players[i] && players[i].out && players[i].timer == 1) {
             players[i].timer = 0;
             players[i].ticksInStage++;
+            gamePhase = eGamePhase.END_FORFEIT;
             /* set the button state */
             $mainButtonText.html("Cumming...");
 
