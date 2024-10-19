@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>jenna_halloween</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag>halloween_skin</tag>
+        <tag from="0" to="2">hat</tag>
+        <tag remove="true">no_bra</tag>
+        <tag from="5" to="5">thong</tag>
+    </tags>
+    <layers>7</layers>
+    <folder>opponents/reskins/jenna_halloween/</folder>
+    <folder stage="7">opponents/jenna/</folder>
+    <wardrobe>
+        <clothing name="bra" generic="bra" position="upper" type="important" />
+        <clothing name="thong" generic="underwear" position="lower" type="important" />
+        <clothing name="dress" generic="dress" position="both" type="major" />
+        <clothing name="cravat" generic="" position="upper" type="extra" />
+        <clothing name="hat" generic="hat" position="head" type="extra" />
+        <clothing name="cape" generic="cape" position="other" type="minor" />
+        <clothing name="boots" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="zz_psynergy">
+            <sprite id="zz_psynergy_1" z="1" src="reskins/jenna_halloween/#-zz_psynergy_1.png" />
+            <sprite id="zz_psynergy_2" z="1" src="reskins/jenna_halloween/#-zz_psynergy_2.png" alpha="0" />
+            <sprite id="mia_psynergy_ring_front" z="6" src="jenna/kibble/jenna_psynergy_ring_front.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <sprite id="mia_psynergy_ring_back" z="-6" src="jenna/kibble/jenna_psynergy_ring_back.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <sprite id="mia_psynergy_ring_front_2" delay="1" z="6" src="jenna/kibble/jenna_psynergy_ring_front.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <sprite id="mia_psynergy_ring_back_2" delay="1" z="-6" src="jenna/kibble/jenna_psynergy_ring_back.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <sprite id="mia_psynergy_ring_front_3" delay="2" z="6" src="jenna/kibble/jenna_psynergy_ring_front.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <sprite id="mia_psynergy_ring_back_3" delay="2" z="-6" src="jenna/kibble/jenna_psynergy_ring_back.png" x="0" y="1200" scalex="1" scaley="1" alpha="0" />
+            <directive type="animation" id="zz_psynergy_2" ease="smooth" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="1" alpha="70" />
+                <keyframe time="3" alpha="100" />
+                <keyframe time="7" alpha="100" />
+                <keyframe time="11" alpha="100" />
+                <keyframe time="16" alpha="100" />
+                <keyframe time="17" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_front" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_back" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_front_2" delay="1" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_back_2" delay="1" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_front_3" delay="2" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="mia_psynergy_ring_back_3" delay="2" loop="true" ease="smooth" interpolation="linear" iterations="3">
+                <keyframe time="0" y="1200" scalex="1" scaley="1" alpha="0" />
+                <keyframe time="0.5" y="1000" alpha="100" />
+                <keyframe time="0.75" scalex="1" scaley="1" />
+                <keyframe time="3.5" y="0" scalex="0.5" scaley="0.6" alpha="100" />
+                <keyframe time="3.75" alpha="0" />
+                <keyframe time="4" y="-200" scalex="0.5" scaley="0.6" alpha="0" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>
