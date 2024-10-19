@@ -1,4 +1,4 @@
-﻿using SPNATI_Character_Editor.DataStructures;
+using SPNATI_Character_Editor.DataStructures;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -302,7 +302,21 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 		private void UpdateImage()
 		{
 			string src = GetImagePath(Src);
-			Image = LiveImageCache.Get(src);
+			Bitmap image = null;
+			if (Data is LivePose)
+			{
+				ISkin character = (Data as LivePose).Character;
+				if (character.Skin.GetDirectory() != character.GetDirectory())
+				{
+					string altSrc = LiveSceneSegment.FixPath(src.Replace(character.FolderName + "/", "/" + character.Skin.FolderName), character.Character);
+					image = LiveImageCache.Get(altSrc);
+				}
+			}
+			if (image == null)
+			{
+				image = LiveImageCache.Get(src);
+			}
+			Image = image;
 		}
 
 		public string GetImagePath(string src)

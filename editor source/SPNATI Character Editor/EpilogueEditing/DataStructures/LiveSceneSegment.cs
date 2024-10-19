@@ -103,6 +103,10 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			{
 				return path.Substring("/opponents/".Length);
 			}
+			else if (path.StartsWith(character.FolderName + "/") || path.StartsWith("reskins/"))
+			{
+				return path;
+			}
 			else
 			{
 				return character.FolderName + "/" + path;
