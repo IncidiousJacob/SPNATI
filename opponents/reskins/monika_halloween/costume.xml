@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>monika_halloween</id>
+    <label>Monika</label>
+    <tags>
+        <tag remove="true">ahoge</tag>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="2">choker</tag>
+        <tag from="0" to="3">fake_wings</tag>
+        <tag>no_bra</tag>
+        <tag from="0" to="6">pantyhose</tag>
+        <tag remove="true">ponytail</tag>
+        <tag remove="true">school_uniform</tag>
+        <tag remove="true">thigh_highs</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/monika_halloween/</folder>
+    <folder stage="8">opponents/monika/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="pantyhose" generic="leggings" position="legs" type="minor" plural="true" />
+        <clothing name="dress" generic="dress" position="both" type="major" plural="true" />
+        <clothing name="halo" generic="hair decoration" position="head" type="extra" />
+        <clothing name="wings" generic="" position="other" type="extra" plural="true" />
+        <clothing name="choker" generic="" position="neck" type="minor" />
+        <clothing name="belt" generic="belt" position="waist" type="minor" />
+        <clothing name="shoes" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+
+</costume>
