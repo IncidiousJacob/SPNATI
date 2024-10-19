@@ -102,6 +102,17 @@ Hand.prototype.toString = function() {
     return handStrengthToString(this.strength);
 }
 
+Hand.prototype.clone = function() {
+    let clone = Object.create(Hand.prototype);
+    clone.cards = this.cards.slice();
+    clone.strength = this.strength;
+    clone.value = this.value.slice();
+    clone.tradeIns = this.tradeIns.slice();
+    clone.suits = this.suits ? this.suits.slice() : undefined;
+    clone.ranks = this.ranks ? this.ranks.slice() : undefined;
+    return clone;
+}
+
 /************************************************************
  * Deck class
  ************************************************************/
@@ -694,25 +705,32 @@ function clearCard (player, i) {
 }
 
 /************************************************************
- * Shows the given player's hand at full opacity.
- ************************************************************/
-function showHand (player) {
-    displayHand(player, true);
-    if (player > 0) {
-        $gameOpponentAreas[player-1].attr('data-original-title', players[player].hand.describeFormal());
-        if (EXPLAIN_ALL_HANDS) $gameOpponentAreas[player-1].tooltip('show');
-    } else {
-        $gamePlayerCardArea.attr('data-original-title', players[player].hand.describeFormal());
-        if (EXPLAIN_ALL_HANDS) $gamePlayerCardArea.tooltip('show');
-    }
-}
-
-/************************************************************
  * Renders the given player's hand
  ************************************************************/
-function displayHand (player, visible) {
+function displayHand (player, reveal) {
     for (var i = 0; i < CARDS_PER_HAND; i++) {
-        ACTIVE_CARD_IMAGES.displayCard(player, i, visible);
+        ACTIVE_CARD_IMAGES.displayCard(player, i, reveal || player == HUMAN_PLAYER);
+    }
+    $gamePlayerAreas[player].toggleClass('revealed-cards', reveal);
+    if (reveal) {
+        $gamePlayerAreas[player].toggleClass('loser', recentLoser == player);
+        $gamePlayerAreas[player].toggleClass('tied', !!recentTied && recentTied.includes(player));
+        $gamePlayerAreas[player].removeClass('current');
+        if (player == HUMAN_PLAYER) {
+            $gamePlayerCardArea.attr('data-original-title', players[player].hand.describeFormal());
+            if (EXPLAIN_ALL_HANDS) $gamePlayerCardArea.tooltip('show');
+        } else {
+            $gameOpponentAreas[player-1].attr('data-original-title', players[player].hand.describeFormal());
+            if (EXPLAIN_ALL_HANDS) $gameOpponentAreas[player-1].tooltip('show');
+        }
+    } else {
+        $gamePlayerAreas[player].removeClass('loser tied');
+        $gamePlayerAreas[player].toggleClass('current', currentTurn == player);
+        if (player == HUMAN_PLAYER) {
+            $gamePlayerCardArea.attr('data-original-title', '').tooltip('hide');
+        } else {
+            $gameOpponentAreas[player-1].attr('data-original-title', '').tooltip('hide');
+        }
     }
 }
 
@@ -723,10 +741,24 @@ function clearHand (player) {
     for (var i = 0; i < CARDS_PER_HAND; i++) {
         clearCard(player, i);
     }
+    $gamePlayerAreas[player].removeClass('loser tied current revealed-cards');
     if (player > 0) {
         $gameOpponentAreas[player-1].attr('data-original-title', '').tooltip('hide');
     } else {
         $gamePlayerCardArea.attr('data-original-title', '').tooltip('hide');
+    }
+}
+
+/************************************************************
+ * Update display of all player hands (not sure if we really need to call clearHand())
+ ************************************************************/
+function displayAllHands(reveal) {
+    for (var i = 0; i < players.length; i++) {
+        if (!players[i] || !players[i].hand) {
+            clearHand(i);
+        } else {
+            displayHand(i, reveal);
+        }
     }
 }
 
@@ -782,7 +814,7 @@ function exchangeCards (player) {
     });
 
     /* Refresh display. */
-    displayHand(player, player == HUMAN_PLAYER);
+    displayHand(player, false);
 
     /* draw new cards */
     var n = 0;

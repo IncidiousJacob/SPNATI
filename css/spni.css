@@ -4057,7 +4057,7 @@ ul.dropdown-menu>li {
     transition-duration: 0.5s;
 }
 
-.ui-minimal .opponent-revealed-cards {
+.ui-minimal .opponent-area.revealed-cards {
     opacity: 0.75;
     transition-property: opacity;
     transition-duration: 0.25s;
@@ -4075,9 +4075,9 @@ ul.dropdown-menu>li {
     transition: none;
 }
 
-.ui-minimal .opponent-area.opponent-revealed-cards:hover,
-.ui-minimal .opponent-area.opponent-revealed-cards:active,
-.ui-minimal .opponent-area.opponent-lost {
+.ui-minimal .opponent-area.revealed-cards:hover,
+.ui-minimal .opponent-area.revealed-cards:active,
+.ui-minimal .opponent-area.loser {
     opacity: 1.0;
     transition-property: opacity;
     transition-duration: 0.25s;
@@ -4103,7 +4103,7 @@ ul.dropdown-menu>li {
     transform: translateX(-1.3rem);
 }
 
-.ui-minimal .opponent-revealed-cards .small-card-image {
+.ui-minimal .revealed-cards .small-card-image {
     margin-right: 0.05rem;
     transform: none;
 
@@ -4111,9 +4111,10 @@ ul.dropdown-menu>li {
     transition-duration: 0.5s;
 }
 
-.ui-minimal .opponent-area.opponent-lost .small-card-image,
-.ui-minimal .opponent-area.opponent-revealed-cards:hover .small-card-image,
-.ui-minimal .opponent-area.opponent-revealed-cards:active .small-card-image {
+.ui-minimal .opponent-area.loser .small-card-image,
+.ui-minimal .opponent-area.tied .small-card-image,
+.ui-minimal .opponent-area.revealed-cards:hover .small-card-image,
+.ui-minimal .opponent-area.revealed-cards:active .small-card-image {
     height: 5.5rem;
     width: calc(5.5rem * (5 / 7));
     transition-property: width, height;
@@ -4314,15 +4315,15 @@ ul.dropdown-menu>li {
 /************************************************************
  * Classes for name labels to indicate current player, loser, etc.
  ************************************************************/
-.name-label.loser {
+.name-label.loser, .opponent-area.loser .name-label, #player-game-clothing-area.loser .name-label {
     background-color: var(--loser-label-color);
 }
 
-.name-label.tied {
+.name-label.tied, .opponent-area.tied .name-label, #player-game-clothing-area.tied .name-label {
     background-color: var(--tied-label-color);
 }
 
-.name-label.current {
+.name-label.current, .opponent-area.current .name-label, #player-game-clothing-area.current .name-label {
     background-color: var(--current-label-color);
 }
 

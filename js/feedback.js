@@ -89,9 +89,9 @@ function compileBaseErrorReport(userDesc, bugType) {
         mergeObjects(circumstances, gameState);
         if (gamePhase) {
             if (inRollback()) {
-                circumstances.gamePhase = rolledBackGamePhase[0];
-            } else {
                 circumstances.gamePhase = gamePhase[0];
+            } else {
+                circumstances.gamePhase = nextGamePhase[0];
             }
         }
 
@@ -639,9 +639,9 @@ function recordInterruptedGameEvent(isPageUnload) {
 
     if (gamePhase) {
         if (inRollback()) {
-            report.gameState.gamePhase = rolledBackGamePhase[0];
-        } else {
             report.gameState.gamePhase = gamePhase[0];
+        } else {
+            report.gameState.gamePhase = nextGamePhase[0];
         }
     }
 

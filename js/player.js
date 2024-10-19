@@ -77,6 +77,7 @@ function Player (id) {
     this.tags = this.baseTags = [];
     this.xml = null;
     this.persistentMarkers = {};
+    this.hand = null;
 }
 
 Player.prototype.shortGameOptOut = function () {

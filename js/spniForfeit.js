@@ -111,7 +111,6 @@ function startMasturbation (player) {
     players[player].forfeitLocked = false;
     players[player].finishingTarget = players[player];
     players[player].out = true;
-    players[player].hand = null;
     players[player].outOrder = players.countTrue(function(p) { return p.out; });
 
     if (chosenDebug === player) {
@@ -136,8 +135,8 @@ function startMasturbation (player) {
     players[player].stageChangeUpdate();
     
     if (player == HUMAN_PLAYER) {
-        $gameClothingLabel.html("You're Masturbating...");
         updateHumanPlayerMasturbationVisual();
+        displayHumanPlayerClothing();
     }
     
     /* allow progression */

@@ -34,6 +34,8 @@ $gamePlayerCountdown = $("#player-countdown");
 $gameClimaxOverlay = $('#game-climax-overlay');
 $gamePlayerClothingArea = $("#player-game-clothing-area, #player-name-label-minimal");
 $gamePlayerCardArea = $("#player-game-card-area");
+// This is used to apply the current, loser, tied, and revealed-cards classes
+$gamePlayerAreas = [$('#player-game-clothing-area, #player-name-label-minimal, #player-game-card-area')].concat($gameOpponentAreas);
 
 /* dock UI elements */
 $gameClothingLabel = $("#game-clothing-label");
@@ -49,11 +51,7 @@ $mainButton = $("#main-game-button");
 $mainButtonText = $("#main-game-button>span");
 $autoAdvanceButtons = $("#auto-advance-button-container");
 $autoAdvanceProgressBar = $("#auto-advance-progress-bar");
-$cardButtons = [$("#player-0-card-1"),
-                $("#player-0-card-2"),
-                $("#player-0-card-3"),
-                $("#player-0-card-4"),
-                $("#player-0-card-5")];
+$cardButtons = $gamePlayerCardArea.children('input');
 $characterDebugButtons =   [$("#character-debug-button-1"),
                             $("#character-debug-button-2"),
                             $("#character-debug-button-3"),
@@ -101,23 +99,24 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
  * First element: text to display on main button to begin the phase
  * Second element: function to call when main button is clicked
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
- * Fourth element (optional): whether to call tickForfeitTimers on main button click. 
+ * Fourth element: whether the cards are revealed. 
  */
-var eGamePhase = {
-    DEAL:      [ "Deal", function() { startDealPhase(); }, true ],
-    AITURN:    [ "Next", function() { continueDealPhase(); } ],
-    EXCHANGE:  [ undefined, function() { completeExchangePhase(); }, true ],
-    REVEAL:    [ "Reveal", function() { completeRevealPhase(); }, true ],
-    PRESTRIP:  [ "Continue", function() { completeContinuePhase(); }, false ],
-    STRIP:     [ "Strip", function() { completeStripPhase(); }, false ],
-    FORFEIT:   [ "Masturbate", function() { completeMasturbatePhase(); }, false ],
-    END_LOOP:  [ undefined, function() { handleGameOver(); } ],
-    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); } ],
+const eGamePhase = {
+    GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
+    DEAL:      [ "Deal", startDealPhase, true, false ],
+    AITURN:    [ "Next", continueDealPhase, undefined, false ],
+    EXCHANGE:  [ undefined, completeExchangePhase, true, false ],
+    REVEAL:    [ "Reveal", completeRevealPhase, true, true ],
+    PRESTRIP:  [ "Continue", completeContinuePhase, false, true ],
+    STRIP:     [ "Strip", completeStripPhase, false, true ],
+    FORFEIT:   [ "Masturbate", completeMasturbatePhase, false, true ],
+    END_LOOP:  [ undefined, handleGameOver, undefined, true ],
+    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
     END_FORFEIT: [ "Continue..." ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
-    EXIT_ROLLBACK: ['Return', function () { exitRollback(); }, undefined, false],
 };
 
-var gamePhase = eGamePhase.DEAL;
+let gamePhase = null;
+let nextGamePhase = null;
 
 var inGame = false;
 var currentTurn = 0;
@@ -125,6 +124,7 @@ var currentRound = -1;
 var previousLoser = -1;
 var recentLoser = -1;
 var recentWinner = -1;
+let recentTied = null;
 var gameOver = false;
 var actualMainButtonState = false;
 var allowAutoAdvance = false;
@@ -136,17 +136,11 @@ var chosenDebug = -1;
 
 var transcriptHistory = [];
 
-/*When in rollback, we store a RollbackPoint for the most current game state
-   to returnRollbackPoint. 
-  When exiting rollback, we load state from returnRollbackPoint.
-  
-  The only thing we don't load from a RollbackPoint is the game phase,
-  since we set it to eGamePhase.EXIT_ROLLBACK.
-  So, to make it available for bug reporting, we copy the game phase in the
-  rollback point to rolledBackGamePhase.
+/* When going into rollback, we store a RollbackPoint for the most
+ * current game state to returnRollbackPoint.  When exiting rollback,
+ * we load state from returnRollbackPoint.
  */
 var returnRollbackPoint = null;
-var rolledBackGamePhase = null;
 
 /**********************************************************************
  *****                    Start Up Functions                      *****
@@ -161,9 +155,9 @@ function loadGameScreen () {
     for (var i = 1; i < players.length; i++) {
         gameDisplays[i-1].reset(players[i]);
     }
-    $gameLabels[HUMAN_PLAYER].removeClass("loser tied current");
-    clearHand(HUMAN_PLAYER);
-
+    gamePhase = eGamePhase.GAME_START;
+    nextGamePhase = null;
+    currentRound = -1;
     previousLoser = -1;
     recentLoser = -1;
     gameOver = false;
@@ -186,14 +180,13 @@ function loadGameScreen () {
     saveAllTranscriptEntries();
     updateAllBehaviours(null, null, GAME_START);
     updateBiggestLead();
+    displayAllHands();
 
     /* set up the poker library */
     setupPoker();
 
     /* disable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-        $cardButtons[i].attr('disabled', true);
-    }
+    $cardButtons.attr('disabled', true);
 
     /* Set up strip modal selectors */
     setupStrippingModal();
@@ -220,12 +213,20 @@ function updateGameVisual (player) {
  ************************************************************/
 function updateAllGameVisuals () {
     /* update all opponents */
-    for (var i = 1; i < players.length; i++) {
-        updateGameVisual (i);
+    for (var i = 0; i < players.length; i++) {
+        // This incorrectly sets the player clothing area display to block, but that's corrected by displayHumanPlayerClothing
+        $gamePlayerAreas[i].toggle(!!players[i] && !(players[i].out && !players[i].hand)
+                                   && !(gameOver && players.every(p => p.hand == null)));
+        if (i > 0) updateGameVisual(i);
     }
     updateHumanPlayerMasturbationVisual();
+    displayHumanPlayerClothing();
+    displayAllHands(gamePhase[3]);
 }
 
+/************************************************************
+ * Updates the human player forfeit countdown and finishing effect.
+ ************************************************************/
 function updateHumanPlayerMasturbationVisual () {
     $gameClimaxOverlay.toggle(PLAYER_FINISHING_EFFECT && humanPlayer.checkStatus(STATUS_HEAVY_MASTURBATING));
     $gameClimaxOverlay.toggleClass('intense', humanPlayer.timer == 1);
@@ -238,15 +239,32 @@ function updateHumanPlayerMasturbationVisual () {
  * Updates the visuals of the player clothing cells.
  ************************************************************/
 function displayHumanPlayerClothing () {
+    /* Checking that a player is not only out but also had their hand
+     * removed is used to keep their area visible for another phase
+     * (until cards dealt, or just another tick at game end) */
+    if ((humanPlayer.out && !humanPlayer.hand) || (gameOver && players.every(p => p.hand == null))) {
+        $gamePlayerClothingArea.hide();
+    } else {
+        $gamePlayerClothingArea.css('display', '');
+    }
+
     /* collect the images */
     var clothingImages = humanPlayer.getClothing().map(function(c) {
         return { src: c.image,
                  alt: c.name.initCap() };
     });
-    
+
     /* display the remaining clothing items */
     clothingImages.reverse();
-    $gameClothingLabel.html("Your Clothing");
+    /* update label */
+    if (humanPlayer.out) {
+        $gameClothingLabel.html("You're Masturbating...");
+    } else if (humanPlayer.countLayers() > 0) {
+        $gameClothingLabel.html("Your Remaining Clothing");
+    } else {
+        $gameClothingLabel.html("You're Naked");
+    }
+
     for (var i = 0; i < 8; i++) {
         if (clothingImages[i]) {
             $gameClothingCells[i].attr(clothingImages[i]);
@@ -311,13 +329,7 @@ function advanceTurn () {
     if (players[currentTurn]) {
         /* highlight the player whose turn it is */
         for (var i = 0; i < players.length; i++) {
-            if (currentTurn == i) {
-                $gameLabels[i].addClass("current");
-                if (i > 0) $gameOpponentAreas[i-1].addClass('current');
-            } else {
-                $gameLabels[i].removeClass("current");
-                if (i > 0) $gameOpponentAreas[i-1].removeClass('current');
-            }
+            $gamePlayerAreas[i].toggleClass('current', currentTurn == i);
         }
 
         /* check to see if they are still in the game */
@@ -377,10 +389,6 @@ function startDealPhase () {
         if (players[i]) {
             /* collect the player's hand */
             clearHand(i);
-            
-            if (i !== 0) {
-                $gameOpponentAreas[i-1].removeClass('opponent-revealed-cards opponent-lost');
-            }
         }
     }
 
@@ -396,23 +404,13 @@ function startDealPhase () {
                 /* deal out a new hand to this player */
                 dealHand(i, numPlayers, n++);
             } else {
-                if (HUMAN_PLAYER == i) {
-                    $gamePlayerCardArea.hide();
-                    $gamePlayerClothingArea.hide();
-                }
-                else {
-                    $gameOpponentAreas[i-1].hide();
-                }
+                players[i].hand = null;
+                $gamePlayerAreas[i].hide();
             }
         }
     }
 
     /* IMPLEMENT STACKING/RANDOMIZED TRIGGERS HERE SO THAT AIs CAN COMMENT ON PLAYER "ACTIONS" */
-
-    /* clear the labels */
-    for (var i = 0; i < players.length; i++) {
-        $gameLabels[i].removeClass("loser tied");
-    }
 
     timeoutID = window.setTimeout(checkDealLock, ANIM_DELAY * CARDS_PER_HAND * numPlayers + ANIM_TIME);
 }
@@ -425,15 +423,14 @@ function checkDealLock () {
     if (dealLock > 0) {
         timeoutID = window.setTimeout(checkDealLock, 100);
     } else {
-        gamePhase = eGamePhase.AITURN;
-        
         /* Set up main button.  If there is not pause for the human
            player to exchange cards, and someone is masturbating, and
            the card animation speed is to great, we need a pause so
            that the masturbation talk can be read. */
         if (humanPlayer.out && getNumPlayersInStage(STATUS_MASTURBATING) > 0 && ANIM_DELAY < 100) {
-            allowProgression();
+            allowProgression(eGamePhase.AITURN);
         } else {
+            gamePhase = eGamePhase.AITURN;
             continueDealPhase();
         }
     }
@@ -452,9 +449,7 @@ function continueDealPhase () {
     $mainButtonText.html("Wait...");
     
     /* enable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-       $cardButtons[i].attr('disabled', false);
-    }
+    $cardButtons.attr('disabled', false);
 
     /* suggest cards to swap, if enabled */
     if (CARD_SUGGEST && !humanPlayer.out) {
@@ -492,13 +487,12 @@ function continueDealPhase () {
 function completeExchangePhase () {
     detectCheat();
     /* disable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-       $cardButtons[i].attr('disabled', true);
-    }
+    $cardButtons.attr('disabled', true);
+
     /* exchange the player's chosen cards */
     exchangeCards(HUMAN_PLAYER);
 
-    $gameLabels[HUMAN_PLAYER].removeClass("current");
+    $gamePlayerAreas[HUMAN_PLAYER].removeClass("current");
     allowProgression(eGamePhase.REVEAL);
 }
 
@@ -514,9 +508,6 @@ function completeRevealPhase () {
     for (var i = 0; i < players.length; i++) {
         if (players[i] && !players[i].out) {
             players[i].hand.sort();
-            showHand(i);
-            
-            if (i > 0) $gameOpponentAreas[i-1].addClass('opponent-revealed-cards');
         }
     }
 
@@ -531,6 +522,7 @@ function completeRevealPhase () {
         /* Check if (at least) the two worst hands are equal. */
         if (compareHands(sortedPlayers[0].hand, sortedPlayers[1].hand) == 0) {
             console.log("Fuck... there was an absolute tie");
+            recentTied = [];
             /* inform the player */
             players.forEach(function (p) {
                 if (p.chosenState) {
@@ -547,8 +539,9 @@ function completeRevealPhase () {
                            && compareHands(sortedPlayers[0].hand,
                                            sortedPlayers[i].hand) == 0);
                  i++) {
-                $gameLabels[sortedPlayers[i].slot].addClass("tied");
+                recentTied.push(sortedPlayers[i].slot);
             };
+            displayAllHands(true);
             /* reset the round */
             allowProgression(eGamePhase.DEAL);
             return;
@@ -557,6 +550,7 @@ function completeRevealPhase () {
         recentLoser = sortedPlayers[0].slot;
     }
     recentWinner = sortedPlayers[sortedPlayers.length-1].slot;
+    recentTied = null;
 
     console.log("Player "+recentLoser+" is the loser.");
     Sentry.addBreadcrumb({
@@ -580,14 +574,8 @@ function completeRevealPhase () {
 
     /* playerMustStrip() calls updateAllBehaviours. */
 
-    /* highlight the loser */
-    for (var i = 0; i < players.length; i++) {
-        if (recentLoser == i) {
-            $gameLabels[i].addClass("loser");
-            
-            if (i > 0) $gameOpponentAreas[i-1].addClass('opponent-lost');
-        }
-    }
+    /* Reveal all hands and show the loser */
+    displayAllHands(true);
 
     /* set up the main button */
     if (recentLoser != HUMAN_PLAYER && clothes > 0) {
@@ -670,9 +658,6 @@ function endRound () {
 
         endWaitDisplay = 0;
         allowProgression(eGamePhase.END_LOOP);
-        endWaitDisplay = 4; /* This is just a trick to allow toggling
-                             * visibility of the game table without
-                             * introducing another variable */
     } else if (SHORT_GAME_MODE && notInGame > 0) {
         let mostLayersLeft = 0, winner = 0, winners = "";
         for (var i = 0; i < players.length; i++) {
@@ -702,7 +687,6 @@ function endRound () {
 
         endWaitDisplay = 0;
         allowProgression(eGamePhase.END_LOOP);
-        endWaitDisplay = 4; // See above
     } else {
         updateBiggestLead();
         allowProgression(eGamePhase.DEAL);
@@ -735,9 +719,9 @@ function handleGameOver() {
         allowProgression(eGamePhase.GAME_OVER);
         if (AUTO_FADE && tableVisibility < 0) forceTableVisibility(0);
     } else {
-        $gameOpponentAreas.forEach(a => a.hide());
-        $gamePlayerCardArea.hide();
-        $gamePlayerClothingArea.hide();
+        players.forEach(p => p.hand = null);
+
+        $gamePlayerAreas.forEach(a => a.hide());
 
         if (endWaitDisplay == 3) {
             players.forEach(function(p) { p.timeInStage++; });
@@ -755,6 +739,7 @@ function handleGameOver() {
  * The player selected one of their cards.
  ************************************************************/
 function selectCard (card) {
+    if (inRollback()) return;
     humanPlayer.hand.tradeIns[card] = !humanPlayer.hand.tradeIns[card];
     
     if (humanPlayer.hand.tradeIns[card]) {
@@ -766,7 +751,7 @@ function selectCard (card) {
 }
 
 function updateMainButtonExchangeLabel() {
-    if (gamePhase === eGamePhase.EXCHANGE) {
+    if (nextGamePhase === eGamePhase.EXCHANGE) {
         const n = humanPlayer.hand.tradeIns.countTrue();
         $mainButtonText.html(n == 0 ? 'Keep all' : 'Swap ' + n);
     }
@@ -785,12 +770,14 @@ function getGamePhaseString(phase) {
  ************************************************************/
 function allowProgression (nextPhase) {
     if (nextPhase !== undefined && nextPhase !== eGamePhase.END_FORFEIT) {
-        gamePhase = nextPhase;
+        nextGamePhase = nextPhase;
     } else if (nextPhase === undefined) {
-        nextPhase = gamePhase;
+        nextPhase = nextGamePhase;
     }
-    
-    if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP && !inRollback()) {
+
+    if (inRollback()) {
+        $mainButtonText.html('Return');
+    } else if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && nextPhase != eGamePhase.STRIP) {
         $mainButtonText.html("Cum!");
         if (AUTO_FADE) forceTableVisibility(0);
     } else if (nextPhase[0]) {
@@ -810,7 +797,7 @@ function allowProgression (nextPhase) {
     actualMainButtonState = false;
     timeoutID = undefined;
     allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
-        && ((humanPlayer.out && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)
+        && ((humanPlayer.out && (humanPlayer.timer > 1 || nextPhase == eGamePhase.STRIP)
              || humanPlayer.finished || (!humanPlayer.out && gameOver)));
     $autoAdvanceButtons.toggle(allowAutoAdvance);
 
@@ -839,13 +826,18 @@ function advanceGame () {
         $(document.activeElement).blur();
     }
     
-    /* lower the timers of everyone who is forfeiting */
-    if (gamePhase[3] !== false && tickForfeitTimers()) return;
+    if (inRollback()) {
+        exitRollback();
+    } else {
+        /* lower the timers of everyone who is forfeiting */
+        if (tickForfeitTimers()) return;
 
-    if (AUTO_FADE && gamePhase[2] !== undefined) {
-        forceTableVisibility(gamePhase[2]);
+        gamePhase = nextGamePhase;
+        if (AUTO_FADE && gamePhase[2] !== undefined) {
+            forceTableVisibility(gamePhase[2]);
+        }
+        gamePhase[1]();
     }
-    gamePhase[1]();
 }
 
 /************************************************************
@@ -949,12 +941,17 @@ function RollbackPoint (logPlayers) {
         
         if (p.chosenState) data.chosenState = new State(p.chosenState);
 
+        if (p.hand) data.hand = p.hand.clone(); else data.hand = p.hand;
+
         data.label = p.label;
         // These probably only matter for the human player
         data.timer = p.timer;
         data.forfeit = p.forfeit?.slice();
         data.out = p.out;
         data.finished = p.finished;
+        if (p.clothing) {
+            data.clothingRemovalStatus = p.clothing.map(c => c.removed);
+        }
 
         this.playerData.push(data);
     }.bind(this));
@@ -965,6 +962,7 @@ function RollbackPoint (logPlayers) {
     this.previousLoser = previousLoser;
     this.recentLoser = recentLoser;
     this.recentWinner = recentWinner;
+    this.recentTied = recentTied;
     this.gameOver = gameOver;
     this.gamePhase = gamePhase;
     
@@ -985,8 +983,9 @@ function RollbackPoint (logPlayers) {
 RollbackPoint.prototype.load = function () {
     if (!returnRollbackPoint) {
         returnRollbackPoint = new RollbackPoint();
-        allowProgression(eGamePhase.EXIT_ROLLBACK);
-        $mainButton.attr('disabled', false);
+        returnRollbackPoint.nextGamePhase = nextGamePhase;
+        $cardButtons.attr('disabled', true);
+        allowProgression();
     }
 
     Sentry.addBreadcrumb({
@@ -1000,8 +999,12 @@ RollbackPoint.prototype.load = function () {
     previousLoser = this.previousLoser;
     recentLoser = this.recentLoser;
     recentWinner = this.recentWinner;
+    recentTied = this.recentTied;
     gameOver = this.gameOver;
-    rolledBackGamePhase = this.gamePhase;
+    gamePhase = this.gamePhase;
+    if (this.nextGamePhase) {
+        nextGamePhase = this.nextGamePhase;
+    }
     
     this.playerData.forEach(function (p) {
         var loadPlayer = players[p.slot];
@@ -1019,10 +1022,15 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.out = p.out;
         loadPlayer.finished = p.finished;
         loadPlayer.label = p.label;
+        loadPlayer.hand = p.hand;
+        loadPlayer.clothing.forEach((c, i) => { c.removed = p.clothingRemovalStatus ? p.clothingRemovalStatus[i] : true });
     }.bind(this));
 
     changeAutoAdvance(0);
     updateAllGameVisuals();
+    if (AUTO_FADE && gamePhase[2] !== undefined) {
+        forceTableVisibility(gamePhase[2] && players.some(p => p.hand));
+    }
 }
 
 function inRollback() {
@@ -1039,9 +1047,14 @@ function exitRollback() {
     });
 
     returnRollbackPoint.load();
-    var prevPhase = returnRollbackPoint.gamePhase;
     returnRollbackPoint = null;
-    allowProgression(prevPhase);
+    allowProgression();
+    $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
+    if (nextGamePhase == eGamePhase.EXCHANGE) {
+        humanPlayer.hand.tradeIns.forEach(function(v, i) {
+            $cardCells[HUMAN_PLAYER][i].toggleClass('tradein', v);
+        });
+    }
 }
 
 /* Adds a log message to the dialogue transcript */
@@ -1154,7 +1167,7 @@ function game_keyUp(e)
             e.preventDefault();
             advanceGame();
         }
-        else if (e.key >= '1' && e.key <= '5' && !$cardButtons[e.key - 1].prop('disabled')) {
+        else if (e.key >= '1' && e.key <= '5' && !$cardButtons.eq(e.key - 1).prop('disabled')) {
             selectCard(e.key - 1);
         }
         else if (e.key.toLowerCase() == 'q' && DEBUG) {

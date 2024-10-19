@@ -536,7 +536,7 @@ function setupStrippingModal () {
 }
 
 $stripModal.on('hidden.bs.modal', function () {
-    if (gamePhase === eGamePhase.STRIP) {
+    if (nextGamePhase === eGamePhase.STRIP) {
         console.error("Possible softlock: player strip modal hidden with game phase still at STRIP");
 
         Sentry.captureException(new Error("Possible softlock: player strip modal hidden with phase still at STRIP"));
@@ -633,13 +633,6 @@ function closeStrippingModal () {
     /* count the clothing the player has remaining */
     humanPlayer.stage++
     
-    /* update label */
-    if (humanPlayer.countLayers() > 0) {
-        $gameClothingLabel.html("Your Remaining Clothing");
-    } else {
-        $gameClothingLabel.html("You're Naked");
-    }
-        
     /* update behaviour */
     dialogueTrigger.push(OPPONENT_STRIPPED);
     updateAllBehaviours(HUMAN_PLAYER, null, [dialogueTrigger]);

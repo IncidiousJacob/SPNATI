@@ -1155,7 +1155,6 @@ GameScreenDisplay.prototype.reset = function (player) {
     
     if (player) {
         this.opponentArea.show();
-        this.label.removeClass("current loser tied");
     } else {
         this.opponentArea.hide();
         this.clearPose();

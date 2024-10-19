@@ -611,7 +611,6 @@ function restartGame () {
     stopCardAnimations();
     $('link[href^="opponents/"]').remove();
     resetPlayers();
-    currentRound = -1;
 
     /* enable table opacity */
     forceTableVisibility(true);
@@ -628,7 +627,6 @@ function restartGame () {
 
     /* trigger screen refreshes */
     updateSelectionVisuals();
-    updateAllGameVisuals();
     selectTitleCandy();
     updateTitleScreen();
 
@@ -991,7 +989,7 @@ function toggleTableVisibility () {
     } else if (tableVisibility === 0) {
         forceTableVisibility(-1);
     } else {
-        if (gameOver && endWaitDisplay < 4 && (humanPlayer.checkStatus(STATUS_LOST_ALL) || !MINIMAL_UI)) {
+        if (!players.some(p => p.hand) && (humanPlayer.checkStatus(STATUS_LOST_ALL) || !MINIMAL_UI)) {
             // There's nothing to show
             forceTableVisibility(0);
         } else {
