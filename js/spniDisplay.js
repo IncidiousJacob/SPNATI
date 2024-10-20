@@ -89,7 +89,7 @@ PoseSet.prototype.selectEntry = function (self) {
 PoseSet.prototype.getUsedImages = function (stage) {
     return this.entries.flatMap((entry) => {
         if (entry.validForStage(stage)) {
-            let resolved = this.player.resolvePoseName(entry.image);
+            let resolved = this.player.resolvePoseName(entry.image, stage);
             if (resolved instanceof PoseSet) {
                 /* Shouldn't happen. */
                 return [];
