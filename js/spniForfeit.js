@@ -143,6 +143,10 @@ function startMasturbation (player) {
     endRound();
 }
 
+function justFinishedPlayer () {
+    return players.findIndex(p => p && p.out && !p.finished && p.timer == 0);
+}
+
 /************************************************************
  * The forfeit timers of all players tick down, if they have 
  * been set.
@@ -150,14 +154,12 @@ function startMasturbation (player) {
 function tickForfeitTimers () {
     console.log("Ticking forfeit timers...");
     
-    var masturbatingPlayers = [], heavyMasturbatingPlayers = [];
-
-    for (var i = 0; i < players.length; i++) {
-        if (players[i] && players[i].out && !players[i].finished && players[i].timer == 0) {
-            finishMasturbation(i);
-            return true;
-        }
+    const finishedPlayer = justFinishedPlayer();
+    if (finishedPlayer >= 0) {
+        finishMasturbation(finishedPlayer);
+        return true;
     }
+    let masturbatingPlayers = [], heavyMasturbatingPlayers = [];
 
     if (gamePhase != eGamePhase.STRIP) for (var i = 0; i < players.length; i++) {
         if (players[i] && players[i].out && players[i].timer == 1) {
@@ -187,6 +189,13 @@ function tickForfeitTimers () {
                 $gameClothingLabel.html("<b>You're 'Finished'</b>");
 
             } else {
+                // Clear all dialogue, like for a tie, so all other character are silent.
+                players.forEach(function (p) {
+                    if (p.chosenState) {
+                        p.chosenState.dialogue = '';
+                        updateGameVisual(p.slot);
+                    }
+                });
                 /* let the player speak again */
                 players[i].forfeit = [PLAYER_FINISHING_MASTURBATING, CAN_SPEAK];
 
@@ -197,17 +206,8 @@ function tickForfeitTimers () {
                      * play Opponent Finishing dialogue for them.
                      */
 
-                    /* Hide everyone else's dialogue bubbles... */
-                    gameDisplays.forEach(function (d) {
-                        if (d.slot != finishTarget.slot) d.hideBubble();
-                    });
-
                     finishTarget.singleBehaviourUpdate(OPPONENT_FINISHING_MASTURBATING, players[i]);
                 } else {
-                    gameDisplays.forEach(function (d) {
-                        if (d.slot != i) d.hideBubble();
-                    });
-
                     players[i].singleBehaviourUpdate(PLAYER_FINISHING_MASTURBATING);
                 }
 
@@ -219,7 +219,7 @@ function tickForfeitTimers () {
 
                 /* trigger the callback */
                 var player = i;
-                timeoutID = window.setTimeout(function() { allowProgression(eGamePhase.END_FORFEIT); },
+                timeoutID = window.setTimeout(function() { allowProgression(); },
                                               ORGASM_DELAY
                                               + (allowAutoAdvance && autoAdvanceSpeed ?
                                               /* When auto advance active, make the total time until the next phase the

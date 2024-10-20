@@ -669,12 +669,10 @@ function stripAIPlayer (player) {
     dialogueTrigger.push(OPPONENT_STRIPPED);
     updateAllBehaviours(player, PLAYER_STRIPPED, [dialogueTrigger]);
 
-    layer--;
-    if (layer >= 0 && players[player].clothing[layer].type == "skip") {
-        while (layer >= 0 && players[player].clothing[layer--].type == "skip") {
-            players[player].stage++;
-            players[player].stageChangeUpdate();
-        }
+    let skipToStage = players[player].findNextRealStage();
+    if (skipToStage != false) {
+        players[player].stage = skipToStage;
+        players[player].stageChangeUpdate();
         updateGameVisual(player);
     }
 

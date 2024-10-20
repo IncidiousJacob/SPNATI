@@ -178,15 +178,12 @@ Player.prototype.resetState = function () {
         this.initClothingStatus();
 
         this.loadStylesheet();
-        this.stageChangeUpdate();
 
         /* Skip over any initial skip layers. */
-        let layer = this.clothing.length - 1;
-        while (layer >= 0 && this.clothing[layer].type === "skip") {
-            this.stage++;
-            this.stageChangeUpdate();
-            layer--;
-        }
+        let skipToStage = this.findNextRealStage();
+        if (skipToStage) this.stage = skipToStage;
+
+        this.stageChangeUpdate();
     }
 }
 
@@ -197,6 +194,7 @@ Player.prototype.updateIntelligence = function () { }
 Player.prototype.updateFolder = function () { }
 Player.prototype.updateBehaviour = function() { }
 Player.prototype.singleBehaviourUpdate = function() { }
+Player.prototype.findNextRealStage = function() { return false; }
 
 /**********************************************************************
  * Convert a tags list to canonical form:
@@ -951,6 +949,20 @@ Opponent.prototype.setIntelligence = function (intelligence) {
     }
 }
 
+/* If the current stage is a skipped one, find the next unskipped one.
+ * If not, we return false to be avoid doing stuff unnecessarily. */
+Opponent.prototype.findNextRealStage = function(stage) {
+    if (stage === undefined) stage = this.stage;
+    let layer = this.clothing.length - stage - 1;
+    if (layer >= 0 && this.clothing[layer].type == "skip") {
+        while (layer >= 0 && this.clothing[layer--].type == "skip") {
+            stage++;
+        }
+        return stage;
+    }
+    return false;
+};
+
 /* Just in case a character tries to do something like clear all of their size metadata...
  * 
  * This also ensures that legacy characters using gender-changing ops under the assumption of a single size field
@@ -1668,7 +1680,7 @@ Opponent.prototype.loadXMLTriggers = function () {
     }.bind(this));
 }
 
-Player.prototype.getImagesForStage = function (stage) {
+Player.prototype.getImagesForStage = function (stage, onlyGameStart) {
     if(!this.xml) return [];
 
     var poseSet = {};
@@ -1692,16 +1704,15 @@ Player.prototype.getImagesForStage = function (stage) {
         })) return;
 
         /* Collate pose names into poseSet. */
-        c.getPossibleImages(stage === -1 ? 0 : stage).forEach(function (poseName) {
+        c.getPossibleImages(stage).forEach(function (poseName) {
             poseSet[poseName] = true;
         });
     }
 
-    if (stage > -1) {
+    if (!onlyGameStart) {
         /* Find all cases that can play within this stage, then process
          * them.
          */
-
         var keySuffix = ':'+stage;
         this.cases.forEach(function (caseList, key) {
             if (!key.endsWith(keySuffix)) return;
@@ -1718,12 +1729,11 @@ Player.prototype.getImagesForStage = function (stage) {
      * set of image file paths.
      */
     Object.keys(poseSet).forEach((poseName) => {
-        var actualStage = (stage > -1) ? stage : 0;
-        var resolved = this.resolvePoseName(poseName, actualStage);
+        var resolved = this.resolvePoseName(poseName, stage);
 
         if (!resolved) return;
         if (resolved instanceof PoseSet || resolved instanceof PoseDefinition) {
-            resolved.getUsedImages(actualStage).forEach((img) => {
+            resolved.getUsedImages(stage).forEach((img) => {
                 imageSet[img] = true;
             });
         } else {
@@ -1740,7 +1750,10 @@ Player.prototype.getImagesForStage = function (stage) {
  * @returns {Promise<Array<HTMLImageElement>>}
  */
 Player.prototype.preloadStageImages = function (stage) {
-    return Promise.all(this.getImagesForStage(stage).map(function (fn) {
+    const gameStart = (stage < 0);
+    if (stage < 0) stage = 0;
+    stage = this.findNextRealStage(stage) || stage;
+    return Promise.all(this.getImagesForStage(stage, gameStart).map(function (fn) {
         return new Promise(function (resolve, reject) {
             /* Keep references to the Image elements around so they don't get GC'd. */
             if (this.imageCache[fn]) {

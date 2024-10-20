@@ -104,7 +104,7 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
 const eGamePhase = {
     GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
     DEAL:      [ "Deal", startDealPhase, true, false ],
-    AITURN:    [ "Next", continueDealPhase, undefined, false ],
+    AITURN:    [ "Next", continueDealPhase, true, false ],
     EXCHANGE:  [ undefined, completeExchangePhase, true, false ],
     REVEAL:    [ "Reveal", completeRevealPhase, true, true ],
     PRESTRIP:  [ "Continue", completeContinuePhase, false, true ],
@@ -112,7 +112,7 @@ const eGamePhase = {
     FORFEIT:   [ "Masturbate", completeMasturbatePhase, false, true ],
     END_LOOP:  [ undefined, handleGameOver, undefined, true ],
     GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
-    END_FORFEIT: [ "Continue..." ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
+    END_FORFEIT: [ undefined ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
 };
 
 let gamePhase = null;
@@ -180,7 +180,10 @@ function loadGameScreen () {
     saveAllTranscriptEntries();
     updateAllBehaviours(null, null, GAME_START);
     updateBiggestLead();
+
+    /* update the visuals */
     displayAllHands();
+    displayHumanPlayerClothing();
 
     /* set up the poker library */
     setupPoker();
@@ -526,7 +529,7 @@ function completeRevealPhase () {
             /* inform the player */
             players.forEach(function (p) {
                 if (p.chosenState) {
-                    p.clearChosenState();
+                    p.chosenState.dialogue = '';
                     updateGameVisual(p.slot);
                 }
             });
@@ -769,22 +772,22 @@ function getGamePhaseString(phase) {
  * setting up the auto forfeit timer.
  ************************************************************/
 function allowProgression (nextPhase) {
-    if (nextPhase !== undefined && nextPhase !== eGamePhase.END_FORFEIT) {
+    if (nextPhase !== undefined) {
         nextGamePhase = nextPhase;
-    } else if (nextPhase === undefined) {
-        nextPhase = nextGamePhase;
     }
 
     if (inRollback()) {
         $mainButtonText.html('Return');
-    } else if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && nextPhase != eGamePhase.STRIP) {
+    } else if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && nextGamePhase != eGamePhase.STRIP) {
         $mainButtonText.html("Cum!");
         if (AUTO_FADE) forceTableVisibility(0);
-    } else if (nextPhase[0]) {
-        $mainButtonText.html(nextPhase[0]);
-    } else if (nextPhase === eGamePhase.EXCHANGE) {
+    } else if (justFinishedPlayer() >= 0) {
+        $mainButtonText.html("Continue...");
+    } else if (nextGamePhase[0]) {
+        $mainButtonText.html(nextGamePhase[0]);
+    } else if (nextGamePhase === eGamePhase.EXCHANGE) {
         updateMainButtonExchangeLabel();
-    } else if (nextPhase === eGamePhase.END_LOOP) { // Special case
+    } else if (nextGamePhase === eGamePhase.END_LOOP) { // Special case
         /* someone is still forfeiting */
         var dots = '.'.repeat(endWaitDisplay);
         if (humanPlayer.checkStatus(STATUS_MASTURBATING)) {
@@ -796,8 +799,8 @@ function allowProgression (nextPhase) {
 
     actualMainButtonState = false;
     timeoutID = undefined;
-    allowAutoAdvance = nextPhase != eGamePhase.GAME_OVER && !inRollback()
-        && ((humanPlayer.out && (humanPlayer.timer > 1 || nextPhase == eGamePhase.STRIP)
+    allowAutoAdvance = nextGamePhase != eGamePhase.GAME_OVER && !inRollback()
+        && ((humanPlayer.out && (humanPlayer.timer > 1 || nextGamePhase == eGamePhase.STRIP)
              || humanPlayer.finished || (!humanPlayer.out && gameOver)));
     $autoAdvanceButtons.toggle(allowAutoAdvance);
 
@@ -873,7 +876,6 @@ function changeAutoAdvance (val) {
             // Reset, return to manual advance
             autoAdvanceProgress = undefined;
             $autoAdvanceProgressBar.hide();
-            allowProgression();
             return;
         }
     } else if (val && !actualMainButtonState) {
@@ -981,19 +983,6 @@ function RollbackPoint (logPlayers) {
 }
 
 RollbackPoint.prototype.load = function () {
-    if (!returnRollbackPoint) {
-        returnRollbackPoint = new RollbackPoint();
-        returnRollbackPoint.nextGamePhase = nextGamePhase;
-        $cardButtons.attr('disabled', true);
-        allowProgression();
-    }
-
-    Sentry.addBreadcrumb({
-        category: 'ui',
-        message: 'Entering rollback.',
-        level: 'info'
-    });
-
     currentRound = this.currentRound;
     currentTurn = this.currentTurn;
     previousLoser = this.previousLoser;
@@ -1024,17 +1013,41 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.label = p.label;
         loadPlayer.hand = p.hand;
         loadPlayer.clothing.forEach((c, i) => { c.removed = p.clothingRemovalStatus ? p.clothingRemovalStatus[i] : true });
+        /* Because the rollback point will have been created after the
+         * first stage change, if in the STRIP phase, we need to redo any
+         * stage skips before updating the visuals. */
+        let skipToStage = loadPlayer.findNextRealStage();
+        if (skipToStage) {
+            loadPlayer.stage = skipToStage;
+            loadPlayer.stageChangeUpdate();
+        }
     }.bind(this));
-
-    changeAutoAdvance(0);
-    updateAllGameVisuals();
-    if (AUTO_FADE && gamePhase[2] !== undefined) {
-        forceTableVisibility(gamePhase[2] && players.some(p => p.hand));
-    }
 }
 
 function inRollback() {
     return (!!returnRollbackPoint);
+}
+
+function loadRollbackPoint(pt) {
+    if (!returnRollbackPoint) {
+        returnRollbackPoint = new RollbackPoint();
+        returnRollbackPoint.nextGamePhase = nextGamePhase;
+        $cardButtons.attr('disabled', true);
+        changeAutoAdvance(0);
+    }
+
+    Sentry.addBreadcrumb({
+        category: 'ui',
+        message: 'Entering rollback.',
+        level: 'info'
+    });
+
+    pt.load();
+    updateAllGameVisuals();
+    if (AUTO_FADE && gamePhase[2] !== undefined) {
+        forceTableVisibility(gamePhase[2] && players.some(p => p.hand));
+    }
+    allowProgression();
 }
 
 function exitRollback() {
@@ -1046,6 +1059,13 @@ function exitRollback() {
         level: 'info'
     });
 
+    /* We first load the last saved transcript entry only because when
+     * returning to a FORFEIT phase, a character that's just started
+     * masturbating will have been in the stage after the
+     * start_masturbating case when the return rollback point was
+     * created. */
+    transcriptHistory.at(-1).load();
+    updateAllGameVisuals();
     returnRollbackPoint.load();
     returnRollbackPoint = null;
     allowProgression();
@@ -1103,7 +1123,7 @@ function createLogEntryElement(label, text, pt) {
     
     container.onclick = function (ev) {
         if (!actualMainButtonState) {
-            pt.load();
+            loadRollbackPoint(pt);
             $logModal.modal('hide');
         }
     }
