@@ -39,6 +39,9 @@
         <case name="The Concept of Fate" id="315" priority="Prompt" min="0" max="0">
             <description>Schezo asks the table about their views on fate.</description>
         </case>
+        <case name="Nut Hand" id="591" priority="FYI" min="0" max="8">
+            <description>Yes, that's an actual poker term. No, that doesn't make it any less sussy coming from Schezo.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -188,6 +191,7 @@
         <response id="587" opponent="momo" opponentId="83" />
         <response id="589" opponent="kyoko_kirigiri" opponentId="2949" />
         <response id="590" opponent="kyoko_kirigiri" opponentId="414" />
+        <response id="594" opponent="zoe" opponentId="403" />
     </responses>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -725,8 +729,11 @@
         <label id="586" label="" color="1" folder="Targets" sort="0" />
         <label id="587" label="" color="1" folder="Targets" sort="0" />
         <label id="588" label="" color="1" folder="Targets" sort="0" />
+        <label id="589" label="" folder="Targets" sort="0" />
+        <label id="592" label="Ragnus Groaning" folder="" sort="0" />
+        <label id="594" label="The fuck you sayin' to me" folder="Targets" sort="0" />
     </labels>
-    <nextId>590</nextId>
+    <nextId>594</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_madou" />
@@ -1099,6 +1106,7 @@
         <marker scope="Public" name="schezo_zekeandpandyC3" />
         <marker scope="Public" name="schezo_zekepandy_corecrystal1" />
         <marker scope="Public" name="schezo_zekepandy_theatrics1" />
+        <marker scope="Public" name="schezo_zoe_himbo1" />
         <marker scope="Public" name="screamyourname" />
         <marker scope="Public" name="seal_the_deal">Schezo takes Kazuma's bet.</marker>
         <marker scope="Public" name="serilly_peptalk" />
@@ -1309,7 +1317,6 @@
         <line>I know, I know... Still a work-in-progress.</line>
         <line>(Schezo's Scar B) That was a time ago, in hindsight. Yet we have this rather odd dynamic.</line>
         <line>Fate works in strange ways. Attempt to defy fate, you get led to another.</line>
-        <line>Oh &lt;i&gt;nononono&lt;/i&gt; I cannot handle this crusader any longer!!</line>
         <line>get my hands on you</line>
         <line>beating around my bush</line>
         <line>unleash on big and hard</line>
