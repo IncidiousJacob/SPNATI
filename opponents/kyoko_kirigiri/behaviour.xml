@@ -22594,7 +22594,7 @@
 
         <trigger id="opponent_chest_is_visible">
             <case stage="0-8 10" id="3062">
-                <target character="ilulu" filterAdv="miss_kobayashis_dragon_maid&amp;huge_breasts" />
+                <condition role="target" character="ilulu" filterAdv="miss_kobayashis_dragon_maid&amp;huge_breasts" />
                 <state img="custom:#-shier2" marker="ilulu_wowYeahThatsJupiterAndSaturn">Yeah…</state>
                 <!-- Miss Kobayashi's Dragon Maid is bad and I should feel bad -->
             </case>
