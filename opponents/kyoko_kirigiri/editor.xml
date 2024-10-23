@@ -12,14 +12,14 @@
         <case name="Panty peek" id="49" priority="FYI" min="3" max="3">
             <description>Kyoko's underwear is barely visible in her Stage 3 and 4 After Stripping poses; it's hard to notice, but an especially observant or perverted character might catch it. (Use Stripped (Minor, Female) for responding to stage 4 or Opponent Stripped for responding to either stage 3 or 4.)</description>
         </case>
+        <case name="Drenched Detective" id="102" priority="FYI" min="8" max="8">
+            <description>The operative marker here is arousalVisible -- In her Naked stage (8), Kyoko can be visibly wet upon stripping, or become such at ANY point in the stage. (It’s really hard for players to see this right now, though.)</description>
+        </case>
         <case name="Jacket and jill" id="474" priority="FYI" min="8" max="8">
             <description>Kyoko prepares for the forfeit by laying her jacket on the floor.</description>
         </case>
         <case name="Kirigiri’s heavy forfeit" id="496" priority="FYI" min="9" max="9">
             <description>Throughout heavy masturbation, Kyoko covers her mouth. She also stops speaking completely until climax.</description>
-        </case>
-        <case name="Drenched Detective" id="102" priority="FYI" min="8" max="8">
-            <description>The operative marker here is arousalVisible -- In her Naked stage (8), Kyoko can be visibly wet upon stripping, or become such at ANY point in the stage. (It’s really hard for players to see this right now, though.)</description>
         </case>
         <case name="Filtered Must Strip prompts" id="2789" priority="Prompt" min="0" max="10">
             <description>Prompts from Kyoko for various tags that play on the Opponent Lost case. Make sure the tag for a line applies to your character before responding!</description>
@@ -30,7 +30,15 @@
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
+        <response id="0" opponent="aimee" opponentId="2" />
         <response id="0" opponent="chazz" opponentId="11" />
+        <response id="0" opponent="chihiro" opponentId="1" />
+        <response id="0" opponent="emi" opponentId="2" />
+        <response id="0" opponent="fina" opponentId="107" />
+        <response id="0" opponent="giygas" opponentId="209" />
+        <response id="0" opponent="giygas" opponentId="210" />
+        <response id="0" opponent="lyralei" opponentId="1584" />
+        <response id="0" opponent="shimakaze" opponentId="2" />
         <response id="61" opponent="chihiro" opponentId="2" />
         <response id="86" opponent="mia" opponentId="34" />
         <response id="89" opponent="miko" opponentId="12" />
@@ -43,21 +51,15 @@
         <response id="673" opponent="okino" opponentId="42" />
         <response id="1248" opponent="magma_grunt" opponentId="878" />
         <response id="1249" opponent="queenie" opponentId="138" />
-        <response id="0" opponent="giygas" opponentId="209" />
-        <response id="0" opponent="aimee" opponentId="2" />
-        <response id="0" opponent="giygas" opponentId="210" />
         <response id="1482" opponent="hilbert" opponentId="11" />
         <response id="1485" opponent="hilbert" opponentId="9" />
-        <response id="0" opponent="chihiro" opponentId="1" />
         <response id="2443" opponent="aoi_asahina" opponentId="158" />
         <response id="2630" opponent="cammy_white" opponentId="5" />
-        <response id="0" opponent="emi" opponentId="2" />
-        <response id="0" opponent="lyralei" opponentId="1584" />
-        <response id="0" opponent="fina" opponentId="107" />
-        <response id="0" opponent="shimakaze" opponentId="2" />
     </responses>
     <notes>
         <note id="3">This was the first line of dialogue ever written for Kyoko!</note>
+        <note id="26">The line here mentioning how long it's been since she last wore her outfit was the 1,000th line written for Kyoko on December 8, 2022.</note>
+        <note id="48">Genuine apologies if you're a foot fetishist here; this is a writing decision based on Kyoko's canon, not my, the writer's, personal attitude towards the kink. She used to be a lot cooler about people being into feet, but then I read Danganronpa Kirigiri Volume 4 and found a description of a 13-year-old Kyoko being asked by adult strangers to take her shoes off for an investigation and her being notably uncomfortable with it. Kitayama Takekuni actually wrote that and made that canon in the Danganronpa universe, because while he is a genius, he is also terrible.</note>
         <note id="138">I wrote this line the first time I got high. I don't consider it high-quality enough to include in any capacity other than as April Fool's-only dialogue.</note>
         <note id="181">In-joke from the SPNATI community Discord. I, Kiki Retzorg, used a screenshot of this line as a way to announce having hit 401 lines, but the line was a little more popular than I anticipated.</note>
         <note id="328">This is also an Othello reference, just not as transparent of one as the "outflanked" line.</note>
@@ -69,23 +71,21 @@
         <note id="417">"I can hear them, you know. The footsteps of the god of death. … I can hear the god of death as he moves."
 --Kyoko Kirigiri, Danganronpa: Trigger Happy Havoc, Chapter 5</note>
         <note id="428">This case is intended as a failsafe if something unusual (such as an opponent finishing) causes a moved-hair pose to be used when Kyoko hasn't moved her hair the normal way.</note>
-        <note id="26">The line here mentioning how long it's been since she last wore her outfit was the 1,000th line written for Kyoko on December 8, 2022.</note>
         <note id="446">This will be expanded (hehe) into a sequence later on and be given its natural priority but for now I am leaving this as-is</note>
         <note id="521">This case is intended as a failsafe if something unusual (such as an opponent finishing) causes a moved-hair pose to be used when Kyoko hasn't moved her hair the normal way.</note>
         <note id="680">Meaning "Better luck next time." Special thanks to someone who wished to be identified as "Some German Tattergreis" for translating these German lines!</note>
+        <note id="681">Meaning the same thing as "Auf Wiedersehen" (see you later), only typically used over the phone and denoting "Until I hear your voice again."</note>
         <note id="682">Meaning "Right, right, you're bloody well right." Special thanks to someone who wished to be identified as "Some German Tattergreis" for translating these German lines!</note>
         <note id="683">Meaning "You got this." Special thanks to someone who wished to be identified as "Some German Tattergreis" for translating these German lines!</note>
-        <note id="681">Meaning the same thing as "Auf Wiedersehen" (see you later), only typically used over the phone and denoting "Until I hear your voice again."</note>
         <note id="684">Included at the request of Some German Tattergreis; a line from Joseph Joestar in the German dub of JoJo's Bizarre Adventure: Stardust Crusaders. "I solve my problems with skill and grace, and now you're getting smacked in the face."</note>
-        <note id="48">Genuine apologies if you're a foot fetishist here; this is a writing decision based on Kyoko's canon, not my, the writer's, personal attitude towards the kink. She used to be a lot cooler about people being into feet, but then I read Danganronpa Kirigiri Volume 4 and found a description of a 13-year-old Kyoko being asked by adult strangers to take her shoes off for an investigation and her being notably uncomfortable with it. Kitayama Takekuni actually wrote that and made that canon in the Danganronpa universe, because while he is a genius, he is also terrible.</note>
         <note id="854">The "is that so" implies quite a bit of subtext that I'm having Kyoko shelf for later. Kyoko considers herself a born detective-- it's the family business and she's been at it since she was like 5-7 years old-- but Miko's words would imply to Kyoko that Miko is calling her entire life and career decisions into question just because Kyoko eagerly took the path that was laid in front of her instead of inventing herself her own way. Kyoko has been surrounded with detectives who went far off the normal courses of their lives to be detectives (particularly her former partner, Yui Samidare), and has a very complicated relationship with her father, who chose NOT to be a detective like the rest of the family and ended up being very absent from her life as a result.
 
 TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying this and they might come up later.</note>
         <note id="858">THE LOGIC FOR RESPONDING TO KYOKO IS THIS:
 Ignore everything in the "Duplicate dialogue" folder and just respond to these cases (Dwight on left) like normal.
 I promise, it just works.</note>
-        <note id="861">In DR1's school mode, Kyoko also takes on this exact menacing-ass stance while discussing doing this with coffee. Seriously.</note>
         <note id="860">The Dwight-on-right version of this line (which plays in the Hand=Any case) uses a different sprite if Dwight is at stage 6-9, which makes the line come off a little bit more overtly desire-laden.  It uses the marker dwight_stare3_lustVariation on the Hand=Any case, but if you want to respond to it you can also just have Dwight do that version based on his own stage.</note>
+        <note id="861">In DR1's school mode, Kyoko also takes on this exact menacing-ass stance while discussing doing this with coffee. Seriously.</note>
         <note id="902">It might happen.</note>
         <note id="1232">Kyoko's blood type is B, as it happens.</note>
         <note id="1241">First things first, the logic for responding to Kyoko is as follows: Just ignore everything in the "Duplicate dialogue" folder and respond to the "Revy-on-Kyoko's-left" cases in the "Reply stage" folders. Trust me, it'll work itself out.
@@ -126,6 +126,7 @@ Also, I've made this stage 1 instead of stage 0 because of Kyoko's line about he
         <note id="1432">The logic for responding to Kyoko targets like these is to ignore everything in the "Duplicate dialogue" folder; just respond to everything with Shamiko on the left, and the hidden lines will make sure it works out.</note>
         <note id="1446">The logic for targeting Kyoko is this: ignore everything in the "Duplicate dialogue" folder and just respond to this dialogue. The system in place will work itself out.</note>
         <note id="1460">Firstly, in case you're not familiar enough with Danganronpa for this, the joke is that the pose used is one of Kyoko's TWO prominent thinking tics (the other being custom:idea), so feel extremely free to have Reimu realize that Kyoko is having an extreme lapse of self-awareness.     /     Secondly, because the pose is actually important on this line, I wrote two separate versions of it Arndress-style instead of doing the usual left/right staggered response gimimck. Response markers use different values depending on Reimu's relative position.</note>
+        <note id="1463">Small detail here: Kyoko says yokai without a u because Danganronpa is localized that way (e.g. in her name).</note>
         <note id="1469">The "is that so" implies quite a bit of subtext that I'm having Kyoko shelf for later. Kyoko considers herself a born detective-- it's the family business and she's been at it since she was like 5-7 years old-- but Miko's words would imply to Kyoko that Miko is calling her entire life and career decisions into question just because Kyoko eagerly took the path that was laid in front of her instead of inventing herself her own way. Kyoko has been surrounded with detectives who went far off the normal courses of their lives to be detectives (particularly her former partner, Yui Samidare), and has a very complicated relationship with her father, who chose NOT to be a detective like the rest of the family and ended up being very absent from her life as a result.
 
 TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying this and they might come up later.</note>
@@ -137,16 +138,14 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <note id="1519">The first explicit Danganronpa Zero reference to make it into Kyoko's dialogue!</note>
         <note id="1521">Makoto Naegi (and Kyoko's relationship with him that she is trying her level best to not be tsundere about here)</note>
         <note id="1525">I thought of some follow-up sentences to this, but I think I like the idea of giving Miko a chance to push harder here best. Kyoko can talk about Makoto and share some of his traits (e.g. his maleness) later on.</note>
-        <note id="1463">Small detail here: Kyoko says yokai without a u because Danganronpa is localized that way (e.g. in her name).</note>
         <note id="1549">For Remillia's sponsorship: luwakCoffee is a play-once Hand line mentioning one of her friends (mentions Byakuya).</note>
         <note id="1567">You're fine to have Miko keep pressing her, I just didn't want to have Kyoko go "Fine, maybe I WILL be horny" or something like that on the last line of dialogue of this strip.</note>
         <note id="1576">Might be overwritten later by the actual target conversation, but this is noncommittal and funny to me.</note>
-        <note id="2789">In the chuunibyou prompt, she's deliberately setting up the chuunibyou character for failure.</note>
         <note id="1620">Written in commemoration of Kyoko's one-year annivesary on the Testing Roster; December 11, 2023.</note>
+        <note id="1644">These cases pre-date Futanari implimentation. They remain redundantly just in case.</note>
         <note id="1647">Kyoko's blood type is B. She's also deliberately stringing Moskii along here to get her to admit the obvious.</note>
         <note id="1653">Can also play on their first game. Wholesome!</note>
         <note id="1657">Remillia clarified that for this line and forfeitSilence_f, this condition doesn't count as a filter for the sake of the requirement it fills. You may check with her during QA.</note>
-        <note id="1644">These cases pre-date Futanari implimentation. They remain redundantly just in case.</note>
         <note id="1686">This is not a bad joke on Kyoko's part. This is completely true.</note>
         <note id="1762">Intentionally not followed by a Yumeko-on-right equivalent to 1-3.</note>
         <note id="1791">Multiple stages to futureproof for a costume where Kyoko has an important item reveal in stage 6.</note>
@@ -164,6 +163,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <note id="2649">Line number 2024, written on May 13, 2024. Presumably, this will be Kyoko's only line to line up between year of writing and writing order.</note>
         <note id="2722">Kirigiri always using Kyouko's first name in this line is intentional.</note>
         <note id="2739">Kirigiri always using Kyouko's first name in this line is intentional.</note>
+        <note id="2789">In the chuunibyou prompt, she's deliberately setting up the chuunibyou character for failure.</note>
         <note id="2832">Once I've played UDG perhaps I can titanically spoil the plot of that game</note>
         <note id="2904">The 1-in-16 chance variant was the 2222rd line written for Kyoko!</note>
         <note id="2915">DSC: Detective Shelf Classification, a system used by a detective indexing agency in Japan in the Danganronpa universe. Your call as to whether this exists in Rouge's world or if she'd be familiar with it. "910" means Kyoko is a REALLY good homicide detective specializing in "impossible murders." The first two digits pertain to her specialization, and the third digit is her rank-- lower is better, so 0 is the highest rank. The only homicide detectives ranked higher than Kyoko are [900]s (masters of all homicide cases, of which there is a single-digit amount) and [000]s (legendary detectives specializing in all crime, of which there are two in the world).</note>
@@ -171,9 +171,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <note id="2945">When responding to this case, check for the marker niceBonerIdiot's value being ~self.id~.</note>
     </notes>
     <labels>
-        <label id="1" label="" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="6" />
-        <label id="2" label="Disappointment" folder="" sort="0" />
-        <label id="3" label="DNA" folder="" sort="0" />
+        <label id="1" label="DNA" folder="" sort="0" />
+        <label id="2" label="" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="6" />
+        <label id="3" label="Disappointment" folder="" sort="0" />
         <label id="4" label="Circumcision" folder="Filtered" sort="2" />
         <label id="5" label="Circumcision" folder="Filtered" sort="44" />
         <label id="6" label="" folder="Filtered" sort="37" />
@@ -3190,8 +3190,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="3070" label="Karin R 0-2 (reserved)" folder="Technical&gt;Duplicate dialogue" />
         <label id="3071" label="Karin R 0-3 (reserved)" folder="Technical&gt;Duplicate dialogue" />
         <label id="3072" label="" folder="Targeted&gt;Replies&gt;Hand" />
-        <label id="3073" label="Footwear before skirt" folder="Clothing type&gt;Specific" sort="" />
-        <label id="3074" label="Footwear before skirt" folder="Clothing type&gt;Specific" sort="" />
+        <label id="3073" label="Footwear before skirt" folder="Clothing type&gt;Specific" />
+        <label id="3074" label="Footwear before skirt" folder="Clothing type&gt;Specific" />
     </labels>
     <prefixes>
         <prefix>#-aside</prefix>
