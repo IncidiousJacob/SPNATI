@@ -1956,7 +1956,7 @@
                 <condition filter="scantily-clad" role="target" />
                 <condition role="self" notSaidMarker="bossMode" />
                 <condition count="0-1" filter="swimwear" />
-                <state img="custom:#-think">&lt;i&gt;(~target.ifMale(His|Her)~ outfit leaves so little to guesswork already…)&lt;/i&gt;</state>
+                <state img="custom:#-think">&lt;i&gt;(~Target.poss~ outfit leaves so little to guesswork already…)&lt;/i&gt;</state>
             </case>
             <case stage="0" oneShotId="1282" priority="0">
                 <condition count="5" />
@@ -3374,6 +3374,10 @@
         </trigger>
 
         <trigger id="hand">
+            <case stage="0-8 10">
+                <condition role="opp" character="velvet" sayingMarker="heartfelt_2" />
+                <state img="custom:#-shy" marker="velvet_brother">…</state>
+            </case>
             <case stage="8" id="1777" priority="953">
                 <condition role="opp" character="yumeko" saidMarker="Kyoko7c" />
                 <condition role="self" timeInStage="0" saidMarker="yumeko_resp7b" notSaidMarker="hair" />
@@ -4330,7 +4334,7 @@
             <case stage="0-8 10" id="2094" priority="100">
                 <condition role="self" saidMarker="strangeSituationQuery==2" />
                 <condition filterAdv="adventurer|celebrity|idol|military|pirate|sex_worker|space|spy|superhero" role="opp" var="opp1" />
-                <state img="custom:#-think" marker="+strangeSituationQuery">&lt;i&gt;(~Opp1~ at least looks like ~opp1.ifMale(he|she)~ knows what it’s like to keep spending the night somewhere unfamiliar…)&lt;/i&gt;</state>
+                <state img="custom:#-think" marker="+strangeSituationQuery">&lt;i&gt;(~Opp1~ at least looks like ~opp1.subj~ knows what it’s like to keep spending the night somewhere unfamiliar…)&lt;/i&gt;</state>
             </case>
             <case stage="0-6" id="1239" oneShotId="1148" priority="100">
                 <condition role="opp" character="felix" saying="removing all my accessories first is the best way to win" />
@@ -5341,7 +5345,7 @@
                 <condition status="naked" character="human" />
                 <test expr="~nagatoro.position~" value="left" />
                 <state img="custom:calmer" marker="nagatoro_stalkingRe">
-                    <text>I’ve already identified the culprit, ~nagatoro~. I’d say I’m working on exposing ~human.ifMale(him|her)~, but that’s already been done for me.</text>
+                    <text>I’ve already identified the culprit, ~nagatoro~. I’d say I’m working on exposing ~human.obj~, but that’s already been done for me.</text>
                     <markers>
                         <marker name="careerMention" op="+" value="1" />
                         <marker name="detectiveReveal" />
@@ -5711,7 +5715,7 @@
                 <condition character="nagatoro" sayingMarker="kyoko01" />
                 <test expr="~nagatoro.position~" value="left" />
                 <state img="custom:smug" marker="nagatoro_stalkingRe">
-                    <text>There’s no need. I’ve already identified the culprit and I’m working on exposing ~human.ifMale(him|her)~ as we speak.</text>
+                    <text>There’s no need. I’ve already identified the culprit and I’m working on exposing ~human.obj~ as we speak.</text>
                     <markers>
                         <marker name="detectiveReveal" />
                         <marker name="careerMention" op="+" value="1" />
@@ -6898,7 +6902,7 @@
                 <condition status="naked" character="human" />
                 <test expr="~nagatoro.position~" value="right" />
                 <state img="custom:#-strip_c" marker="nagatoro_stalkingRe">
-                    <text>I’ve already identified the culprit, ~nagatoro~. I’d say I’m working on exposing ~human.ifMale(him|her)~, but that’s already been done for me.</text>
+                    <text>I’ve already identified the culprit, ~nagatoro~. I’d say I’m working on exposing ~human.obj~, but that’s already been done for me.</text>
                     <markers>
                         <marker name="careerMention" op="+" value="1" />
                         <marker name="detectiveReveal" />
@@ -6936,7 +6940,7 @@
                 <condition character="nagatoro" saidMarker="kyoko01" />
                 <test expr="~nagatoro.position~" value="right" />
                 <state img="custom:#-strip_c" marker="+careerMention">
-                    <text>There’s no need. I’ve already identified the culprit and I’m working on exposing ~human.ifMale(him|her)~ as we speak.</text>
+                    <text>There’s no need. I’ve already identified the culprit and I’m working on exposing ~human.obj~ as we speak.</text>
                     <markers>
                         <marker name="detectiveReveal" />
                         <marker name="quips" op="+" value="1" />
@@ -12064,7 +12068,7 @@
                 <test expr="~yellow_devil.costume~" value="default" />
                 <test expr="~yellow_devil.position~" value="right" />
                 <test expr="~yellow_devil.marker.X_copy~" value="~human~" />
-                <state img="custom:aside" marker="copyRobot_21a=r">And there ~human.ifMale(he|she)~ goes. I can’t say I’m as much of a fan of you when you’re &lt;i&gt;that&lt;/i&gt; talkative, ~player~…</state>
+                <state img="custom:aside" marker="copyRobot_21a=r">And there ~human.subj~ goes. I can’t say I’m as much of a fan of you when you’re &lt;i&gt;that&lt;/i&gt; talkative, ~player~…</state>
             </case>
             <case stage="0-8 10" id="2274">
                 <condition role="target" character="yellow_devil" stage="2" />
@@ -12078,7 +12082,7 @@
                 <test expr="~yellow_devil.costume~" value="default" />
                 <test expr="~yellow_devil.position~" value="left" />
                 <test expr="~yellow_devil.marker.X_copy~" value="~human~" />
-                <state img="custom:idea" marker="copyRobot_21a=l">And there ~human.ifMale(he|she)~ goes. I can’t say I’m as much of a fan of you when you’re &lt;i&gt;that&lt;/i&gt; talkative, ~player~…</state>
+                <state img="custom:idea" marker="copyRobot_21a=l">And there ~human.subj~ goes. I can’t say I’m as much of a fan of you when you’re &lt;i&gt;that&lt;/i&gt; talkative, ~player~…</state>
             </case>
             <case stage="0-8 10" id="2286">
                 <condition role="target" character="yellow_devil" stage="2" />
@@ -13183,7 +13187,7 @@
             <case stage="0-8 10" id="1982" priority="100">
                 <condition filterAdv="adventurer|celebrity|idol|military|pirate|sex_worker|space|spy|superhero" role="target" layers="1-" />
                 <condition role="self" saidMarker="strangeSituationQuery==2" />
-                <state img="custom:#-think" marker="+strangeSituationQuery">&lt;i&gt;(~Name~ at least looks like ~target.ifMale(he|she)~ knows what it’s like to keep spending the night somewhere unfamiliar…)&lt;/i&gt;</state>
+                <state img="custom:#-think" marker="+strangeSituationQuery">&lt;i&gt;(~Name~ at least looks like ~target.subj~ knows what it’s like to keep spending the night somewhere unfamiliar…)&lt;/i&gt;</state>
             </case>
             <case stage="0-8 10" id="650" priority="100">
                 <condition role="target" layers="1-" />
@@ -13296,14 +13300,14 @@
                 <condition role="target" layers="1-" />
                 <test expr="~target.tag.human~" value="false" />
                 <state img="custom:aside" marker="leadByExample">…~Name~, right? You have a chance to set the tone of the game here.</state>
-                <state img="custom:#-think" marker="leadByExample">I wonder what ~target.ifMale(he|she)~’ll do here. ~Target.ifMale(he|she)~’ll be able to set a precedent for the whole game with ~target.ifMale(his|her)~ strip…</state>
-                <state img="custom:#-think" marker="leadByExample">…This first strip can influence the pacing of the rest of the game. Let’s see what ~target.ifMale(he|she)~ does.</state>
+                <state img="custom:#-think" marker="leadByExample">I wonder what ~target.subj~’ll do here. ~Target.subj~’ll be able to set a precedent for the whole game with ~target.poss~ strip…</state>
+                <state img="custom:#-think" marker="leadByExample">…This first strip can influence the pacing of the rest of the game. Let’s see what ~target.subj~ does.</state>
             </case>
             <case stage="0" id="1284" totalRounds="0" priority="1">
                 <condition role="target" character="human" layers="1-" />
                 <state img="#-front.png" marker="leadByExample">…~Name~, right? You have a chance to set the tone of the game here.</state>
-                <state img="custom:idea" marker="leadByExample">I wonder what ~target.ifMale(he|she)~’ll do here…~target.ifMale(he|she)~’ll be able to set a precedent for the whole game with ~target.ifMale(his|her)~ strip…</state>
-                <state img="custom:#-think" marker="leadByExample">…This first strip can influence the pacing of the rest of the game. Let’s see what ~target.ifMale(he|she)~ does.</state>
+                <state img="custom:idea" marker="leadByExample">I wonder what ~target.subj~’ll do here…~target.subj~’ll be able to set a precedent for the whole game with ~target.poss~ strip…</state>
+                <state img="custom:#-think" marker="leadByExample">…This first strip can influence the pacing of the rest of the game. Let’s see what ~target.subj~ does.</state>
             </case>
             <case stage="0-8 10" id="342" priority="0">
                 <condition role="self" saidMarker="stripCount&gt;0" notSaidMarker="theirTurn" />
@@ -13331,13 +13335,13 @@
                 <condition role="self" saidMarker="stripCount&gt;0" notSaidMarker="theirTurn" />
                 <condition role="self" saidMarker="stripCount&lt;7" />
                 <condition count="0" role="target" character="felix" />
-                <state img="custom:#-think" marker="theirTurn">~target.ifMale(His|Her)~ turn, I believe.</state>
+                <state img="custom:#-think" marker="theirTurn">~Target.poss~ turn, I believe.</state>
             </case>
             <case stage="0-8 10" id="344" priority="0">
                 <condition role="self" saidMarker="stripCount&gt;0" notSaidMarker="theyStripHere" />
                 <condition role="self" saidMarker="stripCount&lt;7" />
                 <condition count="0" role="target" character="felix" />
-                <state img="custom:idea" marker="theyStripHere">~target.ifMale(He|She)~ strips here, correct?</state>
+                <state img="custom:idea" marker="theyStripHere">~Target.subj~ strips here, correct?</state>
             </case>
             <case stage="0-8 10" id="351" priority="0">
                 <condition role="self" saidMarker="stripCount&gt;24" notSaidMarker="howLossFeels" />
@@ -13748,7 +13752,7 @@
                 <condition role="self" saidMarker="stripCount&gt;12" notSaidMarker="whatKindaStrip" />
                 <condition role="self" saidMarker="stripCount&lt;19" />
                 <condition role="target" layers="2-" />
-                <state img="custom:smug" marker="whatKindaStrip">I’m curious about ~name~… Specifically, what kind of strip ~target.ifMale(he|she)~ has in store for us.</state>
+                <state img="custom:smug" marker="whatKindaStrip">I’m curious about ~name~… Specifically, what kind of strip ~target.subj~ has in store for us.</state>
             </case>
             <case stage="0-8 10" id="1280" priority="0">
                 <condition role="self" saidMarker="stripCount&gt;12" notSaidMarker="whatKindaStrip" />
@@ -13905,6 +13909,24 @@
         </trigger>
 
         <trigger id="opponent_stripping">
+            <case stage="0-10" id="3073">
+                <condition role="self" notSaidMarker="footwearWithSkirt" />
+                <test expr="~clothing.position~" value="feet" />
+                <test expr="~self.attracted.target~" value="true" />
+                <alternative>
+                    <test expr="~target.wearing(dress)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <alternative>
+                    <test expr="~target.wearing(skirt)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <alternative>
+                    <test expr="~target.wearing(kilt)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <state img="custom:#-calmer2" marker="footwearWithSkirt">
+                    <alt-img stage="9">custom:smug</alt-img>
+                    <text>&lt;i&gt;(I &lt;/i&gt;could&lt;i&gt; tell ~target.obj~ to take caution not to show off more than ~target.subj~ needs to. But why would I do that?)&lt;/i&gt;</text>
+                </state>
+            </case>
             <case stage="0-10" id="507">
                 <condition role="target" character="chihiro" stage="5" />
                 <condition role="opp" character="mahiru" />
@@ -13955,7 +13977,7 @@
                 <test expr="~yellow_devil.costume~" value="default" />
                 <test expr="~yellow_devil.position~" value="left" />
                 <test expr="~yellow_devil.marker.X_copy~" value="~human~" />
-                <state img="custom:stern" marker="copyRobot_12a=l">…Why ~human.ifMale(him|her)~? I’m standing right here.</state>
+                <state img="custom:stern" marker="copyRobot_12a=l">…Why ~human.obj~? I’m standing right here.</state>
             </case>
             <case stage="0-8 10" id="2284">
                 <condition role="target" character="yellow_devil" stage="1" sayingMarker="TI_kirigiri_r12b" />
@@ -14035,7 +14057,7 @@
                     <test expr="~background.location~" value="outdoors" />
                     <test expr="~background.time~" value="day" />
                 </alternative>
-                <state img="custom:#-think" marker="glassesLastStrip">&lt;i&gt;(That’s a smart move… I definitely can’t underestimate ~target.ifMale(him|her)~.)&lt;/i&gt;</state>
+                <state img="custom:#-think" marker="glassesLastStrip">&lt;i&gt;(That’s a smart move… I definitely can’t underestimate ~target.obj~.)&lt;/i&gt;</state>
             </case>
             <case stage="0-8 10" id="2501">
                 <condition role="target" character="tae" stage="1" saidMarker="kyoko_place0" />
@@ -14748,7 +14770,7 @@
                 <test expr="~clothing.type~" cmp="!=" value="minor" />
                 <state img="custom:aside" marker="notMindCamera">
                     <alt-img stage="5-7">custom:#-think</alt-img>
-                    <text>&lt;i&gt;(~Name~ really doesn’t seem to mind ~photo~’s camera… Hopefully, the emotionless act keeps the attention on ~target.ifMale(him|her)~.)&lt;/i&gt;</text>
+                    <text>&lt;i&gt;(~Name~ really doesn’t seem to mind ~photo~’s camera… Hopefully, the emotionless act keeps the attention on ~target.obj~.)&lt;/i&gt;</text>
                 </state>
                 <state img="custom:idea" marker="notMindCamera" weight="3">I’d question the decency of bringing your camera, ~photo~, but ~name~ doesn’t seem to mind…</state>
             </case>
@@ -14874,9 +14896,9 @@
                 <alternative>
                     <test expr="~clothing.type~" value="minor" />
                 </alternative>
-                <state img="custom:#-shy">&lt;i&gt;(Nothing’s left but ~target.ifMale(his|her)~ ~marker.V_clothing~…)&lt;/i&gt;</state>
-                <state img="custom:#-shy">&lt;i&gt;(Nothing left but ~target.ifMale(his|her)~ ~marker.V_clothing~…)&lt;/i&gt;</state>
-                <state img="custom:#-shy" weight="2">&lt;i&gt;(All that’s left ~clothing.ifPlural(are|is)~ ~target.ifMale(his|her)~ ~marker.V_clothing~…)&lt;/i&gt;</state>
+                <state img="custom:#-shy">&lt;i&gt;(Nothing’s left but ~target.poss~ ~marker.V_clothing~…)&lt;/i&gt;</state>
+                <state img="custom:#-shy">&lt;i&gt;(Nothing left but ~target.poss~ ~marker.V_clothing~…)&lt;/i&gt;</state>
+                <state img="custom:#-shy" weight="2">&lt;i&gt;(All that’s left ~clothing.ifPlural(are|is)~ ~target.poss~ ~marker.V_clothing~…)&lt;/i&gt;</state>
             </case>
             <case stage="0-8 10" id="171" oneShotId="156" priority="80">
                 <condition role="target" stage="0" />
@@ -14998,18 +15020,18 @@
                 <alternative>
                     <condition filter="exhibitionist" role="target" />
                 </alternative>
-                <state img="custom:smug" marker="knowsWhatTheyreDoing" weight="3">&lt;i&gt;Someone&lt;/i&gt; knows what ~target.ifMale(he|she)~’s doing.</state>
+                <state img="custom:smug" marker="knowsWhatTheyreDoing" weight="3">&lt;i&gt;Someone&lt;/i&gt; knows what ~target.subj~’s doing.</state>
             </case>
             <case stage="0-8 10" id="214" priority="0">
                 <condition filter="confident" role="target" />
                 <condition role="self" notSaidMarker="noDrama" />
                 <condition count="0" role="target" character="felix" />
-                <state img="custom:calm" marker="noDrama" weight="3">I can always commend someone who can take off ~target.ifMale(his|her)~ ~marker.V_clothing~ without drama.</state>
+                <state img="custom:calm" marker="noDrama" weight="3">I can always commend someone who can take off ~target.poss~ ~marker.V_clothing~ without drama.</state>
             </case>
             <case stage="0-8 10" id="1901" totalRounds="0-11" priority="0">
                 <condition count="0" role="target" character="felix" />
                 <test expr="~clothing.type~" value="major" />
-                <state img="custom:#-think">&lt;i&gt;(Is ~target.ifMale(he|she)~ already going for ~target.ifMale(his|her)~ ~marker.V_clothing~…?)&lt;/i&gt;</state>
+                <state img="custom:#-think">&lt;i&gt;(Is ~target.subj~ already going for ~target.poss~ ~marker.V_clothing~…?)&lt;/i&gt;</state>
             </case>
             <case stage="0-8 10" id="1331" priority="0">
                 <test expr="~clothing.type~" value="extra" />
@@ -15019,7 +15041,7 @@
             <case stage="9" id="1332" priority="0">
                 <condition count="0" role="target" character="felix" />
                 <test expr="~clothing.type~" value="extra" />
-                <state img="custom:#-shy2">&lt;i&gt;(Shouldn’t have expected more than ~target.ifMale(his|her)~ ~marker.V_clothing~. Pace yourself, Kyoko…)&lt;/i&gt;</state>
+                <state img="custom:#-shy2">&lt;i&gt;(Shouldn’t have expected more than ~target.poss~ ~marker.V_clothing~. Pace yourself, Kyoko…)&lt;/i&gt;</state>
             </case>
             <case stage="9" id="757" priority="0">
                 <condition role="target" character="felix" />
@@ -15089,7 +15111,7 @@
                 <condition role="self" notSaidMarker="noDrama" />
                 <condition count="0" role="target" character="felix" />
                 <test expr="~clothing.type~" value="major" />
-                <state img="custom:calm" marker="noDrama" weight="3">Not bad. Not everyone can take ~target.ifMale(his|her)~ ~marker.V_clothing~ without drama…</state>
+                <state img="custom:calm" marker="noDrama" weight="3">Not bad. Not everyone can take ~target.poss~ ~marker.V_clothing~ without drama…</state>
             </case>
             <case stage="9" id="2605" priority="0">
                 <condition status="not_exposed" role="target" />
@@ -17200,6 +17222,25 @@
         </trigger>
 
         <trigger id="opponent_stripped">
+            <case stage="0-10" id="3074">
+                <condition role="target" character="human" />
+                <condition role="self" notSaidMarker="footwearWithSkirt" />
+                <test expr="~clothing.position~" value="feet" />
+                <test expr="~self.attracted.target~" value="true" />
+                <alternative>
+                    <test expr="~target.wearing(dress)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <alternative>
+                    <test expr="~target.wearing(skirt)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <alternative>
+                    <test expr="~target.wearing(kilt)~" cmp="!=" value="~blank~" />
+                </alternative>
+                <state img="custom:#-calmer2" marker="footwearWithSkirt">
+                    <alt-img stage="9">custom:smug</alt-img>
+                    <text>&lt;i&gt;(I &lt;/i&gt;could&lt;i&gt; tell ~target.obj~ to take caution not to show off more than ~target.subj~ needs to. But why would I do that?)&lt;/i&gt;</text>
+                </state>
+            </case>
             <case stage="0-10" id="512">
                 <condition role="target" character="chihiro" stage="6" />
                 <condition role="opp" character="mahiru" var="mahiru" />
@@ -17283,7 +17324,7 @@
                 <test expr="~yellow_devil.marker.X_copy~" value="~human~" />
                 <state img="custom:#-strip_c" marker="copyRobot_13a=r">
                     <alt-img stage="5-8 10">custom:#-rear</alt-img>
-                    <text>Is that so? Well, I’m sure you’ll have no problem distracting ~player~ with ~human.ifMale(his|her)~ own appearance, then…</text>
+                    <text>Is that so? Well, I’m sure you’ll have no problem distracting ~player~ with ~human.poss~ own appearance, then…</text>
                 </state>
             </case>
             <case stage="0-8 10" id="2273">
@@ -17298,7 +17339,7 @@
                 <test expr="~yellow_devil.costume~" value="default" />
                 <test expr="~yellow_devil.position~" value="left" />
                 <test expr="~yellow_devil.marker.X_copy~" value="~human~" />
-                <state img="custom:aside" marker="copyRobot_13a=l">You really shouldn’t confuse ~human.ifMale(his|her)~ tenacity for talent.</state>
+                <state img="custom:aside" marker="copyRobot_13a=l">You really shouldn’t confuse ~human.poss~ tenacity for talent.</state>
             </case>
             <case stage="0-8 10" id="2285">
                 <condition role="target" character="yellow_devil" stage="2" sayingMarker="TI_kirigiri_r13b" />
@@ -18527,8 +18568,8 @@
                 <condition filterAdv="mean&amp;hero|mean&amp;kind" role="target" />
                 <condition role="self" notSaidMarker="meanHero" />
                 <test expr="~clothing.type~" value="major" />
-                <state img="custom:#-think" marker="meanHero">&lt;i&gt;(~Target.ifMale(he|she)~ acts cold, but I suspect ~name~’s heart is still in the right place.)&lt;/i&gt;</state>
-                <state img="custom:#-think" marker="meanHero">&lt;i&gt;(~Target.ifMale(he|she)~ acts cold, but I suspect ~name~ is more noble than ~target.costume.ifMale(he|she)~ lets on.)&lt;/i&gt;</state>
+                <state img="custom:#-think" marker="meanHero">&lt;i&gt;(~Target.subj~ acts cold, but I suspect ~name~’s heart is still in the right place.)&lt;/i&gt;</state>
+                <state img="custom:#-think" marker="meanHero">&lt;i&gt;(~Target.subj~ acts cold, but I suspect ~name~ is more noble than ~target.costume.subj~ lets on.)&lt;/i&gt;</state>
             </case>
             <case stage="0-8 10" id="234" oneShotId="189" totalRounds="25-">
                 <condition status="decent" role="target" stage="0-4" />
@@ -18870,7 +18911,7 @@
                 <condition role="self" notSaidMarker="enxNotRunning" />
                 <condition filterAdv="enm|enf" role="target" />
                 <test expr="~clothing.type~" value="major" />
-                <state img="custom:stern" marker="enxNotRunning" weight="3">&lt;i&gt;(Instead of running away, ~target.ifMale(he|she)~’s really continuing the game…)&lt;/i&gt;</state>
+                <state img="custom:stern" marker="enxNotRunning" weight="3">&lt;i&gt;(Instead of running away, ~target.subj~’s really continuing the game…)&lt;/i&gt;</state>
             </case>
             <case stage="0-7" id="56" oneShotId="22" priority="10">
                 <condition role="self" notSaidMarker="enxReaction" />
@@ -18957,7 +18998,7 @@
                 <condition filterAdv="enf|enm" role="target" />
                 <condition count="0" role="target" character="chihiro" stage="4" />
                 <test expr="~clothing.type~" value="major" />
-                <state img="custom:stern" marker="enxNotRunning" weight="3">&lt;i&gt;(Instead of running away, ~target.ifMale(he|she)~’s really continuing the game… I need to take ~name~ more seriously.)&lt;/i&gt;</state>
+                <state img="custom:stern" marker="enxNotRunning" weight="3">&lt;i&gt;(Instead of running away, ~target.subj~’s really continuing the game… I need to take ~name~ more seriously.)&lt;/i&gt;</state>
             </case>
             <case stage="0-10" id="1635" oneShotId="1338" priority="0">
                 <condition filter="tan_lines" role="target" />
@@ -26086,10 +26127,10 @@
                 <alternative>
                     <condition role="target" character="twisted_fate" saidMarker="Bobobo_Broken" notSaidMarker="Fate_Gone_End" />
                 </alternative>
-                <state img="custom:aside" marker="theyLeftTheGameHeadass" weight="2">~target.ifMale(He|She)~ isn’t here.</state>
-                <state img="custom:aside" marker="theyLeftTheGameHeadass" weight="2">~target.ifMale(He|She)~ isn’t there.</state>
-                <state img="custom:stern" marker="theyLeftTheGameHeadass">~target.ifMale(He|She)~ isn’t &lt;i&gt;here.&lt;/i&gt;</state>
-                <state img="custom:stern" marker="theyLeftTheGameHeadass">~target.ifMale(He|She)~ isn’t &lt;i&gt;there.&lt;/i&gt;</state>
+                <state img="custom:aside" marker="theyLeftTheGameHeadass" weight="2">~Target.subj~ isn’t here.</state>
+                <state img="custom:aside" marker="theyLeftTheGameHeadass" weight="2">~Target.subj~ isn’t there.</state>
+                <state img="custom:stern" marker="theyLeftTheGameHeadass">~Target.subj~ isn’t &lt;i&gt;here.&lt;/i&gt;</state>
+                <state img="custom:stern" marker="theyLeftTheGameHeadass">~Target.subj~ isn’t &lt;i&gt;there.&lt;/i&gt;</state>
                 <state img="custom:stern" marker="theyLeftTheGameHeadass" weight="1.5">…</state>
             </case>
             <case stage="0-8 10" id="642" oneShotId="382" priority="652">
