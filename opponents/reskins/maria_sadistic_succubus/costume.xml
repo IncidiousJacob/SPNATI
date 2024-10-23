@@ -41,5 +41,15 @@
         <clothing name="skirt" generic="skirt" position="lower" type="major" />
     </wardrobe>
 
+    <poses>
+        <pose id="7-seat_eat">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_succubus/7-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="220" y="518" scalex="-1" rotation="-6" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_succubus/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="217" y="250" scalex="-1" rotation="-10" />
+        </pose>
+    </poses>
 
 </costume>
