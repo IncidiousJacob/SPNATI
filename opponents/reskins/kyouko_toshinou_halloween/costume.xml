@@ -232,12 +232,8 @@
                 <keyframe time="1.5" src="reskins/kyouko_toshinou_halloween/3-stripping-b.png" />
             </directive>
             <directive type="animation" id="stripping-c" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/kyouko_toshinou_halloween/3-stripping-c.png" x="8" />
-                <keyframe time="1.5" src="reskins/kyouko_toshinou_halloween/3-stripping-d.png" x="12" />
-            </directive>
-            <directive type="animation" id="stripping-c" ease="linear" interpolation="spline">
-                <keyframe time="0" y="243" />
-                <keyframe time="1.5" y="252" />
+                <keyframe time="0" src="reskins/kyouko_toshinou_halloween/3-stripping-c.png" x="8" y="243" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_halloween/3-stripping-d.png" x="12" y="252" />
             </directive>
         </pose>
         <pose id="3-stripping-name">

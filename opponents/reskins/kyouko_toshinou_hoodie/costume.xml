@@ -1512,6 +1512,13 @@
                 <keyframe time="1.5" src="reskins/kyouko_toshinou_hoodie/3-stripping-d.png" x="0" y="255" />
             </directive>
         </pose>
+        <pose id="3-stripping-calm">
+            <sprite id="stripping" src="reskins/kyouko_toshinou_hoodie/3-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_hoodie/3-stripping-a.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_hoodie/3-stripping-b.png" />
+            </directive>
+        </pose>
     </poses>
 
     <pose-sets>
