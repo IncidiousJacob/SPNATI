@@ -18,5 +18,175 @@
         <clothing name="sandals" generic="shoes" position="feet" type="minor" plural="true" />
     </wardrobe>
 
+    <poses>
+        <pose id="1-hug1">
+            <sprite id="rinprehug" src="rin/1-rinprehugalt.png" x="0" y="0" />
+            <sprite id="yueliasneak" z="-1" src="rin/0-yueliasneak.png" x="-300" y="0" scalex="1" />
+            <sprite id="yuelia arms" delay="1.5" src="rin/0-yuelia arms.png" x="-128" y="457" scalex="1" scaley="-1" pivoty="51%" rotation="15" clipleft="59" />
+            <sprite id="yuelia arms(copy)" delay="1.5" src="rin/0-yuelia arms.png" x="-34" y="519" scaley="1.09" skewx="0" skewy="0" pivotx="57%" pivoty="63%" rotation="854" clipleft="33" />
+            <directive type="animation" id="rinprehug" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="1.38" x="0" />
+                <keyframe time="1.5" x="-46" />
+            </directive>
+            <directive type="animation" id="rinprehug" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/1-rinprehugalt.png" />
+                <keyframe time="1.5" src="rin/1-rinhug1-1alt.png" />
+                <keyframe time="2.38" src="rin/1-rinhug1-2alt.png" />
+                <keyframe time="2.5" src="rin/1-rinhug1-3alt.png" />
+            </directive>
+            <directive type="animation" id="rinprehug" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="0" />
+                <keyframe time="0.12" rotation="2" />
+            </directive>
+            <directive type="animation" id="yueliasneak" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-300" />
+                <keyframe time="1.38" x="-200" />
+                <keyframe time="1.5" x="-75" />
+            </directive>
+            <directive type="animation" id="yueliasneak" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/0-yueliasneak.png" />
+                <keyframe time="1.5" src="rin/0-yueliahug1.png" />
+            </directive>
+            <directive type="animation" id="yuelia arms" delay="1.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/0-yuelia arms.png" x="-128" y="457" clipleft="59" />
+                <keyframe time="0.8800001" x="-133" clipleft="44" />
+                <keyframe time="1" x="-136" y="461" />
+            </directive>
+            <directive type="animation" id="yuelia arms(copy)" delay="1.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/0-yuelia arms.png" rotation="854" clipleft="33" />
+                <keyframe time="0.8800001" rotation="128" clipleft="45" />
+                <keyframe time="1" rotation="126" clipleft="54" />
+            </directive>
+        </pose>
+        <pose id="2-stripping">
+            <sprite id="1-stripping" z="-1" src="rin/1-lucidalt.png" x="0" y="0" />
+            <sprite id="handgrab" src="rin/handgrab.png" x="-259" y="400" scalex="0.3" scaley="0.3" pivotx="53%" pivoty="48%" alpha="0" />
+            <sprite id="handgrab(copy)" src="rin/handgrab.png" x="259" y="400" scalex="-0.3" scaley="-0.3" pivotx="53%" pivoty="48%" alpha="0" />
+            <directive type="animation" id="1-stripping" ease="smooth" interpolation="none">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.5" x="0" />
+                <keyframe time="2" x="-45" />
+            </directive>
+            <directive type="animation" id="1-stripping" ease="smooth" interpolation="linear">
+                <keyframe time="0" y="0" />
+                <keyframe time="0.5" y="0" />
+            </directive>
+            <directive type="animation" id="1-stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/1-lucidalt.png" />
+                <keyframe time="2" src="rin/2-amused.png" />
+            </directive>
+            <directive type="animation" id="handgrab" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-259" y="400" scalex="0.3" scaley="0.3" alpha="0" />
+                <keyframe time="0.5" x="-50" y="259" alpha="100" />
+                <keyframe time="2" x="-50" y="265" alpha="100" />
+                <keyframe time="3" x="-259" y="400" alpha="0" />
+            </directive>
+            <directive type="animation" id="handgrab" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/handgrab.png" />
+                <keyframe time="0.5" src="rin/handclose.png" />
+                <keyframe time="2" src="rin/handgrab.png" />
+                <keyframe time="3" src="rin/handopen.png" />
+            </directive>
+            <directive type="animation" id="handgrab(copy)" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="259" y="400" scalex="-0.3" scaley="-0.3" alpha="0" />
+                <keyframe time="0.5" x="20" y="259" scaley="0.3" alpha="100" />
+                <keyframe time="2" x="20" y="265" alpha="100" />
+                <keyframe time="3" x="259" y="400" alpha="0" />
+            </directive>
+            <directive type="animation" id="handgrab(copy)" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/handgrab.png" />
+                <keyframe time="0.5" src="rin/handclose.png" />
+                <keyframe time="2" src="rin/handgrab.png" />
+                <keyframe time="3" src="rin/handopen.png" />
+            </directive>
+        </pose>
+        <pose id="startpose">
+            <sprite id="happyanimation" z="1" src="rin/0-happyanimationalt.png" x="0" y="0" skewx="0" alpha="100" rotation="-1" />
+            <sprite id="happyanimation2" delay="4" z="1" src="rin/0-happyanimation2alt.png" x="0" y="0" rotation="1" />
+            <sprite id="upper_sleeve_jumpsuit" src="rin/upper_sleeve_jumpsuit.png" x="-100" y="405" scalex="0.73" scaley="0.59" pivotx="76%" pivoty="11%" rotation="47" />
+            <sprite id="upper_sleeve_jumpsuit(copy)1" src="rin/upper_sleeve_jumpsuit.png" x="42" y="405" scalex="-0.73" scaley="0.59" pivotx="76%" pivoty="11%" alpha="100" rotation="-8" />
+            <sprite id="upper_sleeve_jumpsuit(copy)1(copy)" delay="3.88" src="rin/upper_sleeve_jumpsuit.png" x="42" y="405" scalex="-0.73" scaley="0.59" pivotx="76%" pivoty="11%" rotation="-8" />
+            <sprite id="knot_jumpsuit" src="rin/knot_jumpsuit.png" x="-227" y="466" scalex="0.6" scaley="0.8" pivotx="58%" pivoty="136%" rotation="51" />
+            <sprite id="knot_jumpsuit(copy)" src="rin/knot_jumpsuit.png" x="137" y="520" scalex="0.6" scaley="0.8" pivotx="58%" pivoty="136%" alpha="100" rotation="-27" />
+            <sprite id="knot_jumpsuit(copy)(copy)" delay="3.88" src="rin/knot_jumpsuit.png" x="137" y="520" scalex="0.6" scaley="0.8" pivotx="58%" pivoty="136%" alpha="100" rotation="-27" />
+            <sprite id="sleeve_overalls" z="-1" src="rin/sleeve_overalls.png" x="-206" y="480" scalex="0.68" scaley="0.77" alpha="100" />
+            <sprite id="sleeve_overalls(copy)" z="-1" src="rin/sleeve_overalls.png" x="128" y="527" scalex="0.68" scaley="0.77" alpha="100" />
+            <sprite id="sleeve_overalls(copy)(copy)" delay="3.88" z="-1" src="rin/sleeve_overalls.png" x="128" y="527" scalex="0.68" scaley="0.77" alpha="100" />
+            <directive type="animation" id="happyanimation" ease="smooth" interpolation="none">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="happyanimation" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="7">
+                <keyframe time="0" rotation="-1" />
+                <keyframe time="0.5" rotation="1" />
+            </directive>
+            <directive type="animation" id="happyanimation2" delay="4" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="0" y="0" rotation="1" />
+                <keyframe time="1" rotation="0" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit" loop="true" ease="linear" interpolation="linear" clamp="mirror" iterations="7">
+                <keyframe time="0" x="-100" />
+                <keyframe time="0.5" x="-110" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="7">
+                <keyframe time="0" y="405" rotation="47" />
+                <keyframe time="0.5" y="405" rotation="8" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/upper_sleeve_jumpsuit.png" />
+                <keyframe time="4" src="rin/upper_sleeve_jumpsuit.png" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit" ease="smooth" interpolation="linear">
+                <keyframe time="0" scalex="0.73" scaley="0.59" />
+                <keyframe time="4" scalex="0.73" scaley="0.59" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit(copy)1" loop="true" ease="linear" interpolation="linear" clamp="mirror" iterations="8">
+                <keyframe time="0" x="42" />
+                <keyframe time="0.5" x="25" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit(copy)1" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="8">
+                <keyframe time="0" y="405" rotation="-8" />
+                <keyframe time="0.5" y="405" rotation="-47" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit(copy)1" ease="linear" interpolation="none">
+                <keyframe time="0" src="rin/upper_sleeve_jumpsuit.png" alpha="100" />
+                <keyframe time="3.88" alpha="0" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit(copy)1" ease="smooth" interpolation="linear">
+                <keyframe time="0" scalex="-0.73" scaley="0.59" />
+                <keyframe time="4.5" scalex="-0.73" scaley="0.59" />
+            </directive>
+            <directive type="animation" id="upper_sleeve_jumpsuit(copy)1(copy)" delay="3.88" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="42" y="405" scalex="-0.73" scaley="0.59" rotation="-8" />
+                <keyframe time="1.12" scalex="-0.73" scaley="0.59" />
+            </directive>
+            <directive type="animation" id="knot_jumpsuit" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="7">
+                <keyframe time="0" x="-227" y="466" rotation="51" />
+                <keyframe time="0.5" x="-156" y="534" rotation="24" />
+            </directive>
+            <directive type="animation" id="knot_jumpsuit(copy)" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="8">
+                <keyframe time="0" x="137" y="520" rotation="-27" />
+                <keyframe time="0.5" x="199" y="456" rotation="-58" />
+            </directive>
+            <directive type="animation" id="knot_jumpsuit(copy)" ease="smooth" interpolation="none">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.5" alpha="100" />
+                <keyframe time="3.88" alpha="0" />
+            </directive>
+            <directive type="animation" id="sleeve_overalls" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="7">
+                <keyframe time="0" x="-206" y="480" />
+                <keyframe time="0.5" x="-142" y="539" />
+            </directive>
+            <directive type="animation" id="sleeve_overalls(copy)" loop="true" ease="smooth" interpolation="linear" clamp="mirror" iterations="8">
+                <keyframe time="0" x="128" y="527" />
+                <keyframe time="0.5" x="184" y="473" />
+            </directive>
+            <directive type="animation" id="sleeve_overalls(copy)" ease="smooth" interpolation="none">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="3.88" alpha="0" />
+            </directive>
+        </pose>
+    </poses>
 
 </costume>
