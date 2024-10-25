@@ -275,6 +275,17 @@
         <response id="849" opponent="meia" opponentId="1335" />
         <response id="866" opponent="jura" opponentId="1145" />
         <response id="867" opponent="jura" opponentId="976" />
+        <response id="875" opponent="meia" opponentId="2345" />
+        <response id="876" opponent="jura" opponentId="981" />
+        <response id="877" opponent="jura" opponentId="982" />
+        <response id="878" opponent="jura" opponentId="2223" />
+        <response id="879" opponent="jura" opponentId="2224" />
+        <response id="880" opponent="jura" opponentId="2225" />
+        <response id="882" opponent="meia" opponentId="2348" />
+        <response id="883" opponent="jura" opponentId="1182" />
+        <response id="885" opponent="schezo" opponentId="591" />
+        <response id="886" opponent="schezo" opponentId="90" />
+        <response id="888" opponent="schezo" opponentId="315" />
     </responses>
     <notes>
         <note id="10">Will be replaced if Sharla ever gets reworked lol</note>
@@ -334,6 +345,8 @@ c: say that he's been as high as the bionis' head?
         <note id="847">Trying to play coy and avoid xb1 spoilers...</note>
         <note id="864">the game literally opens with the colony getting attacked from above by the mechon, lolol</note>
         <note id="868">just generaly asking about vandreads and ships, xenoblade kinda has flying ships but not owned by homs (humans)</note>
+        <note id="882">gave them A and B values in case you want to write different responses, but the content is generally the same</note>
+        <note id="881">has equal priority to meia's response line</note>
     </notes>
     <labels>
         <label id="4" label="" folder="April Fools" sort="0" />
@@ -649,7 +662,7 @@ c: say that he's been as high as the bionis' head?
         <label id="330" label="" folder="Responses" sort="3" />
         <label id="331" label="" folder="Responses" sort="4" />
         <label id="332" label="" folder="Targets" sort="89" />
-        <label id="333" label="" color="4" folder="Responses" sort="19" />
+        <label id="333" label="" folder="Responses" sort="19" />
         <label id="334" label="" folder="Logic" sort="6" />
         <label id="335" label="" folder="Logic" sort="7" />
         <label id="336" label="" folder="Logic" sort="8" />
@@ -908,10 +921,10 @@ c: say that he's been as high as the bionis' head?
         <label id="594" label="stage 0, no meia" color="6" folder="Targets" sort="0" />
         <label id="595" label="stage 0 meia is there" color="6" folder="Targets" sort="0" />
         <label id="596" label="" color="6" folder="Targets" sort="0" />
-        <label id="597" label="" color="4" folder="Responses" sort="0" />
-        <label id="598" label="" color="4" folder="Responses" sort="0" />
+        <label id="597" label="" folder="Responses" sort="0" />
+        <label id="598" label="" folder="Responses" sort="0" />
         <label id="599" label="" folder="Responses" sort="0" />
-        <label id="600" label="" color="4" folder="Responses" sort="0" />
+        <label id="600" label="" folder="Responses" sort="0" />
         <label id="601" label="" color="6" folder="Targets" sort="0" />
         <label id="602" label="" folder="Targets" sort="0" />
         <label id="603" label="Dual Forfeit (Stage 1)" folder="Aqua (KH) S" sort="0" />
@@ -983,13 +996,13 @@ c: say that he's been as high as the bionis' head?
         <label id="668" label="" folder="Jim Raynor" sort="0" />
         <label id="669" label="" folder="Targets" sort="0" />
         <label id="670" label="" folder="Targets" sort="0" />
-        <label id="671" label="" color="1" folder="Responses" sort="0" />
+        <label id="671" label="" folder="Responses" sort="0" />
         <label id="672" label="" folder="Responses" sort="0" />
         <label id="673" label="" folder="Responses" sort="0" />
         <label id="674" label="" folder="Responses" sort="0" />
         <label id="675" label="" folder="Responses" sort="0" />
-        <label id="676" label="" color="1" folder="Responses" sort="0" />
-        <label id="677" label="" color="1" folder="Responses" sort="0" />
+        <label id="676" label="" folder="Responses" sort="0" />
+        <label id="677" label="" folder="Responses" sort="0" />
         <label id="678" label="" folder="Prompts" sort="0" />
         <label id="679" label="" folder="Targets" sort="0" />
         <label id="680" label="" folder="Targets" sort="0" />
@@ -1050,7 +1063,7 @@ c: say that he's been as high as the bionis' head?
         <label id="735" label="" color="3" folder="Lysithea&gt;Responses" sort="0" />
         <label id="736" label="" folder="Targets" sort="0" />
         <label id="737" label="" color="3" folder="Lysithea&gt;Targets" sort="0" />
-        <label id="738" label="" color="1" folder="Responses" sort="0" />
+        <label id="738" label="" folder="Responses" sort="0" />
         <label id="739" label="" folder="Responses" sort="0" />
         <label id="740" label="" folder="Responses" sort="0" />
         <label id="741" label="" folder="Responses" sort="0" />
@@ -1174,19 +1187,39 @@ c: say that he's been as high as the bionis' head?
         <label id="860" label="" folder="Targets" sort="0" />
         <label id="861" label="" folder="Targets" sort="0" />
         <label id="862" label="" folder="Targets" sort="0" />
-        <label id="863" label="stage 0-&gt;1 meia is there" folder="Targets" sort="0" />
+        <label id="863" label="stage 0-&gt;1 meia is there" color="6" folder="Targets" sort="0" />
         <label id="864" label="" folder="Targets" sort="0" />
         <label id="865" label="stage 0-&gt;1, no meia" folder="Targets" sort="0" />
         <label id="866" label="" folder="Responses" sort="0" />
         <label id="867" label="" folder="Responses" sort="0" />
-        <label id="868" label="" folder="Targets" sort="0" />
+        <label id="868" label="" color="6" folder="Targets" sort="0" />
         <label id="869" label="" folder="Targets" sort="0" />
+        <label id="870" label="" color="6" folder="Targets" sort="0" />
+        <label id="871" label="" folder="Targets" sort="0" />
+        <label id="872" label="" folder="Responses" sort="0" />
+        <label id="873" label="" folder="Responses" sort="0" />
+        <label id="874" label="" folder="Responses" sort="0" />
+        <label id="875" label="" folder="Responses" sort="0" />
+        <label id="876" label="" color="4" folder="Responses" sort="0" />
+        <label id="877" label="" color="4" folder="Responses" sort="0" />
+        <label id="878" label="" folder="Responses" sort="0" />
+        <label id="879" label="" color="4" folder="Responses" sort="0" />
+        <label id="880" label="" color="4" folder="Responses" sort="0" />
+        <label id="881" label="" color="4" folder="Responses" sort="0" />
+        <label id="882" label="" color="4" folder="Responses" sort="0" />
+        <label id="883" label="" folder="Responses" sort="0" />
+        <label id="884" label="" color="6" folder="Targets" sort="0" />
+        <label id="885" label="" folder="Schezo" sort="0" />
+        <label id="886" label="" folder="Schezo" sort="0" />
+        <label id="887" label="" folder="Schezo" sort="0" />
+        <label id="888" label="" folder="Schezo" sort="0" />
+        <label id="889" label="" folder="Schezo" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>aquaKH_socks==0</posePreviewMarker>
         <posePreviewMarker>epi_player_skintone==2</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>869</nextId>
+    <nextId>889</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="20gOffer">Line that plays when Dunban offers a 20g bribe to whoever loses</marker>
@@ -1440,6 +1473,7 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_juno_self1a" />
         <marker scope="Public" name="dunban_juno_strip0a" />
         <marker scope="Public" name="dunban_juno_strip1a" />
+        <marker scope="Public" name="dunban_jura_barnetteInterest1" />
         <marker scope="Public" name="dunban_jura_beauty1" />
         <marker scope="Public" name="dunban_jura_beauty2" />
         <marker scope="Public" name="dunban_jura_beauty2_meia" />
@@ -1451,15 +1485,21 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_jura_rapier03" />
         <marker scope="Public" name="dunban_jura_seduction" />
         <marker scope="Public" name="dunban_jura_self0a" />
+        <marker scope="Public" name="dunban_jura_self0b" />
         <marker scope="Public" name="dunban_jura_self1a" />
         <marker scope="Public" name="dunban_jura_self2" />
         <marker scope="Public" name="dunban_jura_self2b" />
         <marker scope="Public" name="dunban_jura_self2c" />
         <marker scope="Public" name="dunban_jura_self3a" />
         <marker scope="Public" name="dunban_jura_self3b" />
+        <marker scope="Public" name="dunban_jura_self3c" />
         <marker scope="Public" name="dunban_jura_self5a" />
+        <marker scope="Public" name="dunban_jura_self5b" />
         <marker scope="Public" name="dunban_jura_self6a" />
+        <marker scope="Public" name="dunban_jura_self6b" />
         <marker scope="Public" name="dunban_jura_selfMustFF" />
+        <marker scope="Public" name="dunban_jura_selfstartFF" />
+        <marker scope="Public" name="dunban_jura_selfStartFF" />
         <marker scope="Public" name="dunban_kaz_demonSlayer1" />
         <marker scope="Public" name="dunban_kaz_demonSlayer2" />
         <marker scope="Public" name="dunban_kaz_self0a" />
@@ -1553,6 +1593,7 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_meia_command03" />
         <marker scope="Public" name="dunban_meia_earth_sightseeResp" />
         <marker scope="Public" name="dunban_meia_piloting1" />
+        <marker scope="Public" name="dunban_meia_piloting2" />
         <marker scope="Public" name="dunban_meia_self0" />
         <marker scope="Public" name="dunban_meia_self0b" />
         <marker scope="Public" name="dunban_meia_self0c" />
@@ -1564,15 +1605,22 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_meia_self2c" />
         <marker scope="Public" name="dunban_meia_self3a" />
         <marker scope="Public" name="dunban_meia_self3b" />
+        <marker scope="Public" name="dunban_meia_self3c" />
         <marker scope="Public" name="dunban_meia_self4a" />
         <marker scope="Public" name="dunban_meia_self4b" />
+        <marker scope="Public" name="dunban_meia_self4c" />
+        <marker scope="Public" name="dunban_meia_self4c_alt" />
         <marker scope="Public" name="dunban_meia_self5a" />
         <marker scope="Public" name="dunban_meia_self5aAlt" />
         <marker scope="Public" name="dunban_meia_self5b" />
+        <marker scope="Public" name="dunban_meia_self5balt" />
+        <marker scope="Public" name="dunban_meia_self5c" />
         <marker scope="Public" name="dunban_meia_self6a" />
+        <marker scope="Public" name="dunban_meia_self6b" />
         <marker scope="Public" name="dunban_meia_selfMustFF" />
         <marker scope="Public" name="dunban_meia_startFF" />
         <marker scope="Public" name="dunban_meia_strip3a_default" />
+        <marker scope="Public" name="dunban_meia_strip3b_default" />
         <marker scope="Public" name="dunban_mercy_fuckbuddiesResp" />
         <marker scope="Public" name="dunban_mg_buttReveal" />
         <marker scope="Public" name="dunban_mia_self1a" />
@@ -1757,6 +1805,7 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="mean_royal_wealthy" />
         <marker scope="Public" name="meia_dunban_sightseeing_Resp" />
         <marker scope="Public" name="meia_jura_arefighting" />
+        <marker scope="Public" name="meia_must_mast" />
         <marker scope="Public" name="meia_revy_arefighting" />
         <marker scope="Public" name="mia_heal_dunban_arm" />
         <marker scope="Public" name="mia_heal_dunban_arm2" />
@@ -1778,6 +1827,9 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="scar_explain1" />
         <marker scope="Public" name="scar_explain2" />
         <marker scope="Public" name="scar_explain3" />
+        <marker scope="Public" name="schezo_armed_question" />
+        <marker scope="Public" name="schezo_fate_question" />
+        <marker scope="Public" name="schezo_fate_question_sus" />
         <marker scope="Public" name="self6strip_volunteer" />
         <marker scope="Public" name="setogaya_6_stripping" />
         <marker scope="Public" name="shoes_off_forest" />
