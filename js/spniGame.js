@@ -99,9 +99,9 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
  * First element: text to display on main button to begin the phase
  * Second element: function to call when main button is clicked
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
- * Fourth element: whether the cards are revealed. 
+ * Fourth element: whether the cards are revealed (used in rollback).
  */
-const eGamePhase = {
+var eGamePhase = {
     GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
     DEAL:      [ "Deal", startDealPhase, true, false ],
     AITURN:    [ "Next", continueDealPhase, true, false ],
