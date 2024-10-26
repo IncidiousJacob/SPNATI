@@ -183,8 +183,7 @@ function loadGameScreen () {
     updateBiggestLead();
 
     /* update the visuals */
-    displayAllHands();
-    displayHumanPlayerClothing();
+    updateAllGameVisuals();
 
     /* set up the poker library */
     setupPoker();
