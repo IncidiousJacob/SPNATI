@@ -112,7 +112,8 @@ const eGamePhase = {
     FORFEIT:   [ "Masturbate", completeMasturbatePhase, false, true ],
     END_LOOP:  [ undefined, handleGameOver, undefined, true ],
     GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
-    END_FORFEIT: [ undefined ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
+    END_FORFEIT: [ undefined ], // Specially handled; not a real phase. nextGamePhase will never be set to this.
+                                // tickForfeitTimers() will always return true in this situation.
 };
 
 let gamePhase = null;

@@ -81,7 +81,7 @@ Player.prototype.getForfeitTrigger = function (triggerType) {
   * In all cases, we return whether or not the player is heavily masturbating.
   *
   * @returns {boolean}
-  */
+ */
 Player.prototype.updateHeavyMasturbation = function () {
     if (this.finished || !this.out) return false;
 
@@ -130,6 +130,13 @@ function startMasturbation (player) {
         [[players[player].getForfeitTrigger("start_masturbating"), OPPONENT_START_MASTURBATING]]
     );
 
+    /* Note: It's a bit of a problem and an exception that the stage
+       is incremented after the dialogue update (and thus
+       start_masturbating happens at the end of the naked stage rather
+       than at the start of the masturbating stage, because the
+       character's current stage then doesn't match the dialogue on
+       the screen, complicating rollback and bug reports, but we can't
+       easily change this. */
     players[player].stage += 1;
     players[player].timeInStage = -1;
     players[player].stageChangeUpdate();
@@ -143,6 +150,10 @@ function startMasturbation (player) {
     endRound();
 }
 
+/************************************************************
+ * Check if any character has just finished and needs their
+ * finished_masturbating dialogue to play.
+ ************************************************************/
 function justFinishedPlayer () {
     return players.findIndex(p => p && p.out && !p.finished && p.timer == 0);
 }
@@ -161,7 +172,7 @@ function tickForfeitTimers () {
     }
     let masturbatingPlayers = [], heavyMasturbatingPlayers = [];
 
-    if (gamePhase != eGamePhase.STRIP) for (var i = 0; i < players.length; i++) {
+    if (nextGamePhase != eGamePhase.STRIP && gamePhase != eGamePhase.FORFEIT) for (var i = 0; i < players.length; i++) {
         if (players[i] && players[i].out && players[i].timer == 1) {
             players[i].timer = 0;
             players[i].ticksInStage++;
@@ -189,23 +200,23 @@ function tickForfeitTimers () {
                 $gameClothingLabel.html("<b>You're 'Finished'</b>");
 
             } else {
+                let finishTarget = players[i].finishingTarget;
+
                 // Clear all dialogue, like for a tie, so all other character are silent.
                 players.forEach(function (p) {
                     if (p.chosenState) {
                         p.chosenState.dialogue = '';
-                        updateGameVisual(p.slot);
+                        if (p != finishTarget) updateGameVisual(p.slot);
                     }
                 });
                 /* let the player speak again */
                 players[i].forfeit = [PLAYER_FINISHING_MASTURBATING, CAN_SPEAK];
 
                 /* show them cumming */
-                let finishTarget = players[i].finishingTarget;
                 if (finishTarget && finishTarget.slot !== i) {
                     /* If the player has redirected their finishing dialogue to another character,
                      * play Opponent Finishing dialogue for them.
                      */
-
                     finishTarget.singleBehaviourUpdate(OPPONENT_FINISHING_MASTURBATING, players[i]);
                 } else {
                     players[i].singleBehaviourUpdate(PLAYER_FINISHING_MASTURBATING);
@@ -241,8 +252,8 @@ function tickForfeitTimers () {
     });
 
     for (var i = 0; i < players.length; i++) {
-        if (players[i] && players[i].out && players[i].timer > 1) {
-            players[i].timer--;
+        if (players[i] && players[i].out) {
+            if (players[i].timer > 1) --players[i].timer;
             masturbatingPlayers.push(i);
 
             let inHeavyMasturbation = players[i].updateHeavyMasturbation();
@@ -260,7 +271,7 @@ function tickForfeitTimers () {
     }
     // Show a player masturbating while dealing or after the game, if there is one available
     if (masturbatingPlayers.length > 0
-        && ((gamePhase == eGamePhase.DEAL && humanPlayer.out) || gamePhase == eGamePhase.EXCHANGE || gamePhase == eGamePhase.END_LOOP)) {
+        && ((nextGamePhase == eGamePhase.DEAL && humanPlayer.out) || nextGamePhase == eGamePhase.EXCHANGE || nextGamePhase == eGamePhase.END_LOOP)) {
         var playerToShow = masturbatingPlayers[getRandomNumber(0, masturbatingPlayers.length)];
         var others_tags = [[players[playerToShow].getForfeitTrigger("masturbating"), OPPONENT_MASTURBATING]];
         if (players[playerToShow].forfeit[0] == PLAYER_HEAVY_MASTURBATING) {
