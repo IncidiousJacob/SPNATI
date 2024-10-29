@@ -85,7 +85,7 @@
             this.lblAuthors.Name = "lblAuthors";
             this.lblAuthors.Size = new System.Drawing.Size(219, 13);
             this.lblAuthors.TabIndex = 3;
-            this.lblAuthors.Text = "by spnati_edit, Kobrad, FarawayVision, Erion,";
+            this.lblAuthors.Text = "by spnati_edit, Kobrad, Erion, FarawayVision,";
             // 
             // lblAuthors2
             // 
@@ -96,9 +96,9 @@
             this.lblAuthors2.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
             this.lblAuthors2.Location = new System.Drawing.Point(13, 76);
             this.lblAuthors2.Name = "lblAuthors2";
-            this.lblAuthors2.Size = new System.Drawing.Size(206, 13);
+            this.lblAuthors2.Size = new System.Drawing.Size(249, 13);
             this.lblAuthors2.TabIndex = 4;
-            this.lblAuthors2.Text = "MyMainAccIsANord, and ReformCopyright";
+            this.lblAuthors2.Text = "MyMainAccIsANord, lil David, and ReformCopyright";
             // 
             // About
             // 
