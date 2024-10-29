@@ -113,7 +113,6 @@
 		<opponent addedDate="2018-03-03" release="101" score="6.210">pit</opponent>
 		<opponent addedDate="2023-02-10" release="289" score="6.147">solar_flare</opponent>
 		<opponent addedDate="2019-06-27" release="193" score="6.091">erufuda</opponent>
-		<opponent addedDate="2019-06-28" release="178" score="6.075">rin</opponent>
 		<opponent addedDate="2023-06-26" release="296" score="6.072">yae</opponent>
 		<opponent addedDate="2023-01-11" release="279" score="6.047">maria</opponent>
 		<opponent addedDate="2021-05-08" release="235" score="6.005">hatsune_miku</opponent>
@@ -124,7 +123,7 @@
 		<opponent addedDate="2022-05-04" release="259" score="5.878">arueshalae</opponent>
 		<opponent addedDate="2018-11-22" release="154" score="5.878">hanako</opponent>
 		<opponent addedDate="2019-10-16" release="182" score="5.860">panty</opponent>
-		<opponent addedDate="2017-11-01" release="96" score="5.860" highlight="updated">futaba</opponent> <!-- expires 2024-10-15 -->
+		<opponent addedDate="2017-11-01" release="96" score="5.860">futaba</opponent>
 		<opponent addedDate="2020-05-08" release="196" score="5.856">galatea</opponent>
 		<opponent addedDate="2018-08-17" release="131" score="5.822">ryuji</opponent>
 		<opponent addedDate="2022-01-13" release="276" score="5.731">kora</opponent>
@@ -225,6 +224,13 @@
 		<opponent addedDate="2022-12-11" release="303" highlight="unsorted">kyoko_kirigiri</opponent>
 		<opponent addedDate="2022-12-18" release="304" highlight="unsorted">kyouko_toshinou</opponent>
 		<opponent addedDate="2018-09-20" release="305" highlight="unsorted">sanako</opponent>
+		<opponent addedDate="2024-02-20" release="306" highlight="new">rose</opponent> <!-- expires 2024-11-22 -->
+		<opponent addedDate="2022-04-01" release="307" highlight="new">natasha</opponent> <!-- expires 2024-11-23 -->
+		<opponent addedDate="2022-08-24" release="308" highlight="new">darkness</opponent> <!-- expires 2024-12-02 -->
+		<opponent addedDate="2024-10-20" status="testing">karin</opponent>
+		<opponent addedDate="2024-09-30" status="testing">wiz</opponent>
+		<opponent addedDate="2024-09-27" status="testing">priscilla</opponent>
+		<opponent addedDate="2019-06-28" release="178" status="testing">rin</opponent> <!-- score="6.075" -->
 		<opponent addedDate="2021-08-17" status="testing">adora</opponent>
 		<opponent addedDate="2024-09-10" status="testing">constance</opponent>
 		<opponent addedDate="2024-09-02" status="testing">vanessa</opponent>
@@ -235,18 +241,15 @@
 		<opponent addedDate="2024-08-05" status="testing">jean</opponent>
 		<opponent addedDate="2017-09-16" release="106" status="testing">chiaki</opponent> <!-- score="3.873" -->
 		<opponent addedDate="2024-08-01" status="testing">yusei_fudo</opponent>
-		<opponent addedDate="2022-08-24" status="testing">darkness</opponent>
 		<opponent addedDate="2024-07-06" status="testing">glamrock_chica</opponent>
 		<opponent addedDate="2024-07-01" status="testing">schezo</opponent>
 		<opponent addedDate="2024-06-13" status="testing">velvet</opponent>
 		<opponent addedDate="2021-12-09" status="testing">fischl</opponent>
 		<opponent addedDate="2022-04-01" status="testing">sannytess</opponent>
-		<opponent addedDate="2022-04-01" status="testing">natasha</opponent>
 		<opponent addedDate="2020-04-01" status="testing">kokichi</opponent>
 		<opponent addedDate="2024-03-31" status="testing">nephenee</opponent>
 		<opponent addedDate="2024-03-31" status="testing">leviathan</opponent>
 		<opponent addedDate="2024-03-25" status="testing">aoi_asahina</opponent>
-		<opponent addedDate="2024-02-20" status="testing">rose</opponent>
 		<opponent addedDate="2017-06-30" release="92" status="offline">aimee</opponent>
 		<opponent addedDate="2017-09-03" release="99" status="offline">alpha</opponent>
 		<opponent addedDate="2017-04-29" release="111" status="offline">ami</opponent>
@@ -470,6 +473,7 @@
 
 	<!-- Group Listings -->
 	<groups>
+		<group title="KonoSuba!" opp1="darkness" opp2="megumin" opp3="aqua_konosuba" opp4="kazuma" background="armory" /> <!-- Darkness -->
 		<group title="Out of Your Friends, Which are You?" opp1="nadeshiko" opp2="kyouko_toshinou" costume2="kyouko_toshinou_sweater" opp3="mari_setogaya" costume3="mari_setogaya_casual_vampire" opp4="kyoko_kirigiri" background="feminine bedroom" /> <!-- Kyouko_Toshinou -->
 		<group title="Danganronpa" opp1="mahiru" opp2="chiaki" opp3="kyoko_kirigiri" opp4="chihiro" background="modern library" /> <!-- Kyoko_Kirigiri -->
 		<group title="Monster Girl Vacation" opp1="moskii" opp2="shantae" opp3="ms.fortune" opp4="aaravi" background="tiki bar" /> <!-- Moskii -->

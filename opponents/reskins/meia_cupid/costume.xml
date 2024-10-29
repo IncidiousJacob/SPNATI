@@ -2381,7 +2381,7 @@
             <sprite id="smilemouth" src="reskins/meia_cupid/smilemouth.png" x="1" y="286" scalex="1" scaley="1" rotation="8" />
         </pose>
         <pose id="5-stripped">
-            <sprite id="butt" src="reskins/meia_cupid/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="butt" src="reskins/meia_cupid/5-stripped.png" x="0" y="0" rotation="0" />
             <sprite id="shorts" z="1" src="reskins/meia_cupid/shorts.png" x="4" y="639" scalex="0.95" scaley="1.29" alpha="100" />
             <sprite id="shortsback" parent="shorts" z="-1" src="reskins/meia_cupid/shortsback.png" x="4" y="639" />
             <directive type="animation" id="butt" ease="smooth" interpolation="spline">
@@ -2714,7 +2714,7 @@
             <sprite id="mouth26_34567" src="reskins/meia_cupid/mouth26_34567.png" x="-5" y="279" />
         </pose>
         <pose id="5-stripped+">
-            <sprite id="butt" src="reskins/meia_cupid/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="butt" src="reskins/meia_cupid/5-stripped.png" x="0" y="0" rotation="0" />
             <sprite id="shorts" z="1" src="reskins/meia_cupid/shorts.png" x="4" y="639" scalex="0.95" scaley="1.29" alpha="100" />
             <sprite id="shortsback" parent="shorts" z="-1" src="reskins/meia_cupid/shortsback.png" x="4" y="639" />
             <directive type="animation" id="butt" ease="smooth" interpolation="spline">
@@ -2734,7 +2734,7 @@
             </directive>
         </pose>
         <pose id="5-stripped+coy">
-            <sprite id="butt" src="reskins/meia_cupid/5-butt.png" x="0" y="0" rotation="0" />
+            <sprite id="butt" src="reskins/meia_cupid/5-stripped.png" x="0" y="0" rotation="0" />
             <sprite id="shorts" z="1" src="reskins/meia_cupid/shorts.png" x="4" y="639" scalex="0.95" scaley="1.29" alpha="100" />
             <sprite id="shortsback" parent="shorts" z="-1" src="reskins/meia_cupid/shortsback.png" x="4" y="639" />
             <directive type="animation" id="butt" ease="smooth" interpolation="spline">
@@ -2759,6 +2759,24 @@
         </pose>
         <pose id="5-blank">
             <sprite id="headpieceblank" src="reskins/meia_cupid/lip.png" x="0" y="0" alpha="0" rotation="0" />
+        </pose>
+        <pose id="4-ultrainstinctsilent">
+            <sprite id="butt2" src="reskins/meia_cupid/4-ultrainstinct.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_cupid/sidemouthsilent.png" x="-52" y="290" scalex="-1" rotation="-4" />
+        </pose>
+        <pose id="3-ultrainstinctsilent">
+            <sprite id="butt2" src="reskins/meia_cupid/3-ultrainstinct.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_cupid/sidemouthsilent.png" x="-52" y="290" scalex="-1" rotation="-4" />
+        </pose>
+        <pose id="3-strip-pyorofearm">
+            <sprite id="silent" src="reskins/meia_cupid/3-strip.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_cupid/pyorofearm.png" x="-298" y="165" alpha="100" rotation="-4" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_cupid/pyorohand.png" x="29" y="86" pivotx="48%" pivoty="52%" rotation="8" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_cupid/pyorohand.png" x="216" y="62" scalex="-1" scaley="-1" rotation="-128" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroleg.png" x="211" y="205" scalex="-1" rotation="-14" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_cupid/pyoroleg.png" x="108" y="205" scalex="1" rotation="16" />
         </pose>
     </poses>
 

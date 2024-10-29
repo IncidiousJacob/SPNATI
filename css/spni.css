@@ -30,6 +30,7 @@ html {
     --base-font-weight: 500;
     --medium-font-weight: calc(var(--base-font-weight) + 100);
     --base-font-stretch: 100%;
+    --arrow-location: 50%;
 }
 
 body {
@@ -1274,28 +1275,28 @@ ul.dropdown-menu>li {
 }
 
 .arrow-down::before {
-    left: 50%;
+    left: var(--arrow-location);
     bottom: calc(-2.5rem / 2);
     margin-left: calc(-2.5rem / 2);
     transform: scaleX(0.6) rotate(45deg);
 }
 
 .arrow-left::before {
-    top: 50%;
+    top: var(--arrow-location);
     left: calc(-2.5rem / 2);
     margin-top: calc(-2.5rem / 2);
     transform: scaleY(0.6) rotate(135deg);
 }
 
 .arrow-right::before {
-    top: 50%;
+    top: var(--arrow-location);
     margin-top: calc(-2.5rem / 2);
     right: calc(-2.5rem / 2);
     transform: scaleY(0.6) rotate(-45deg);
 }
 
 .arrow-up::before {
-    left: 50%;
+    left: var(--arrow-location);
     margin-left: calc(-2.5rem / 2);
     top: calc(-2.5rem / 2);
     transform: scaleX(0.6) rotate(-135deg);
@@ -3109,12 +3110,14 @@ ul.dropdown-menu>li {
 
 .opponent-details-field>* {
     padding: 0.5% 2%;
-
     flex: 1;
     text-align: left;
     word-wrap: break-word;
 }
-
+.opponent-details-field>button.smooth-button:active:not(:disabled) {
+    padding-left: calc(2% + 0.1em);
+    padding-right: calc(2% - 0.1em);
+}
 .opponent-details-field>.opponent-details-label {
     background: linear-gradient(rgb(204, 204, 204), rgb(170, 170, 170)) rgb(204, 204, 204);
     height: auto;
@@ -4413,11 +4416,6 @@ ul.dropdown-menu>li {
     content: "Info: ";
 }
 
-.epilogue-entry.unlocked button::after {
-    color: darkgreen;
-    content: "\2714";
-}
-
 .epilogue-entry.unavailable {
     margin: 0.1rem 0;
 }
@@ -4428,6 +4426,11 @@ ul.dropdown-menu>li {
 
 .epilogue-entry.unavailable button::after {
     content: " (Unavailable)";
+}
+
+.epilogue-entry.unlocked button::after {
+    color: darkgreen;
+    content: "\2714";
 }
 
 .epilogue-entry.unavailable .epilogue-hint {

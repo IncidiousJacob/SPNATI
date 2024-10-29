@@ -7720,6 +7720,7 @@
             </case>
             <case stage="6-8 10">
                 <condition role="target" layers="1" />
+                <test expr="~clothing.generic~" value="glasses" />
                 <state img="#-relaxed.png" marker="GlassesLastLate">Down to just your glasses, huh, ~target~? Well, what's it going to be? Forfeit now, and be able to see me easily while you do, or lose the glasses for one last round?</state>
             </case>
             <case stage="8">

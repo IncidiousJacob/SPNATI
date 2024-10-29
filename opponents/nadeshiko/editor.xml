@@ -215,6 +215,9 @@
         <response id="590" opponent="nico_robin" opponentId="304" />
         <response id="673" opponent="yusei_fudo" opponentId="363" />
         <response id="676" opponent="shimakaze" opponentId="2" />
+        <response id="701" opponent="shantae" opponentId="10" />
+        <response id="702" opponent="rainbow_mika" opponentId="2" />
+        <response id="703" opponent="neptune" opponentId="38" />
     </responses>
     <labels>
         <label id="114" label="Ramen Markers Reset" folder="" sort="0" />
@@ -754,8 +757,9 @@
         <label id="700" label="" folder="Stripping (Fluttershy)" sort="10" />
         <label id="40" label="" folder="Stripped (Fluttershy)" sort="10" />
     </labels>
-    <nextId>700</nextId>
+    <nextId>703</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="9S_Nade_1-1" />
         <marker scope="Public" name="Accomodat" />
         <marker scope="Public" name="Accomodating_Player" />
@@ -903,7 +907,7 @@
         <marker scope="Public" name="GrammaShiko_Dealer" />
         <marker scope="Public" name="GrammaShikoHats" />
         <marker scope="Public" name="Happy_Birthday_Player" />
-        <marker scope="Public" name="HATSUNEMIKU?!" />
+        <marker scope="Public" name="HATSUNEMIKU" />
         <marker scope="Public" name="HotSpringExcitment" />
         <marker scope="Public" name="HotSpringSocial" />
         <marker scope="Public" name="Hu_Tao_Poems_R" />
@@ -946,26 +950,21 @@
         <marker scope="Public" name="Nade_Arueshalae_1-1" />
         <marker scope="Public" name="Nade_Arueshalae_1-2" />
         <marker scope="Public" name="Nade_Arueshalae_1-3" />
-        <marker scope="Public" name="Nade_Arueshalae_1-3 " />
         <marker scope="Public" name="Nade_Arueshalae_2-1" />
         <marker scope="Public" name="Nade_Arueshalae_2-2" />
         <marker scope="Public" name="Nade_Arueshalae_2-3" />
-        <marker scope="Public" name="Nade_Arueshalae_2-3 " />
         <marker scope="Public" name="Nade_Arueshalae_3-1" />
         <marker scope="Public" name="Nade_Arueshalae_3-2" />
         <marker scope="Public" name="Nade_Arueshalae_3-3" />
-        <marker scope="Public" name="Nade_Arueshalae_3-3 " />
         <marker scope="Public" name="Nade_Arueshalae_4-1" />
         <marker scope="Public" name="Nade_Arueshalae_4-2" />
         <marker scope="Public" name="Nade_Arueshalae_4-3" />
-        <marker scope="Public" name="Nade_Arueshalae_4-3 " />
         <marker scope="Public" name="Nade_Arueshalae_5-1" />
         <marker scope="Public" name="Nade_Arueshalae_5-2" />
         <marker scope="Public" name="Nade_Arueshalae_5-3" />
-        <marker scope="Public" name="Nade_Arueshalae_5-3 " />
         <marker scope="Public" name="Nade_Arueshalae_6-1" />
         <marker scope="Public" name="Nade_Arueshalae_6-2" />
-        <marker scope="Public" name="Nade_Arushalae_1-1" />
+        <marker scope="Public" name="Nade_Arueshalae_6-3" />
         <marker scope="Public" name="Nade_Beatrix_1-1" />
         <marker scope="Public" name="Nade_Beatrix_1-2" />
         <marker scope="Public" name="Nade_Butt" />
@@ -1137,6 +1136,7 @@
         <marker scope="Public" name="Nade_Solar_4-1" />
         <marker scope="Public" name="Nade_Wikipe_1-1" />
         <marker scope="Public" name="Nade_Wikipe_2-1" />
+        <marker scope="Public" name="Nade_Wiz_Coat1" />
         <marker scope="Public" name="Nade_Yusei_01" />
         <marker scope="Public" name="Nade_Yusei_02" />
         <marker scope="Public" name="Nade_Yusei_03" />
@@ -1187,10 +1187,8 @@
         <marker scope="Public" name="Nadeshiko_DountGirl_Reaction" />
         <marker scope="Public" name="nadeshiko_ff_sleepingbag" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-1" />
-        <marker scope="Public" name="Nadeshiko_Fluttershy_1-1 " />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-1Hot" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-2" />
-        <marker scope="Public" name="Nadeshiko_Fluttershy_1-2 " />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-2B" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-2Hot" />
         <marker scope="Public" name="Nadeshiko_Fluttershy_1-3" />
@@ -1319,7 +1317,6 @@
         <marker scope="Public" name="NadeshikoYumeko2_2" />
         <marker scope="Public" name="NadeshikoYumeko2_3" />
         <marker scope="Public" name="NadeshikoYumeko3_1" />
-        <marker scope="Public" name="NadeshikoYumeko3_1NadeshikoYumeko3_2" />
         <marker scope="Public" name="NadeshikoYumeko3_2" />
         <marker scope="Public" name="NadeshikoYumeko3_3" />
         <marker scope="Public" name="NadeshikoYumeko4_1" />

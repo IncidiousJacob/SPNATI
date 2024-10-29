@@ -839,7 +839,7 @@ Opponent.prototype.onSelected = function(individual) {
 
     this.preloadStageImages(-1);
     if (individual) {
-        updateAllBehaviours(this.slot, SELECTED, [[OPPONENT_SELECTED]]);
+        updateAllBehaviours(this.slot, [SELECTED, SELECTED_INDIVIDUALLY], OPPONENT_SELECTED);
     } else {
         this.singleBehaviourUpdate(SELECTED, null);
     }

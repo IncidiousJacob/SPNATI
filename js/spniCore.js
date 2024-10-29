@@ -119,9 +119,6 @@ $characterDebugModal = $("#character-debug-modal");
 /* Screen State */
 $previousScreen = null;
 
-/* CSS rules for arrow offsets */
-var bubbleArrowOffsetRules;
-
 /**********************************************************************
  *****              Overarching Game Flow Functions               *****
  **********************************************************************/
@@ -219,24 +216,6 @@ function initialSetup () {
     /* set up future resizing */
     window.onresize = autoResizeFont;
 
-    /* Construct a CSS rule for every combination of arrow direction, screen, and pseudo-element */
-    bubbleArrowOffsetRules = [];
-    var targetCssSheet = document.getElementById("spniStyleSheet").sheet;
-
-    for (var i = 1; i <= 4; i++) {
-        var pair = [];
-        [["up", "down"], ["left", "right"]].forEach(function(p) {
-            var index = targetCssSheet.cssRules.length;
-            var rule = p.map(function(d) {
-                return ["select", "game"].map(function(s) {
-                    return '#'+s+'-bubble-'+i+'.arrow-'+d+'::before';
-                }).join(', ');
-            }).join(', ') + ' {}';
-            targetCssSheet.insertRule(rule, index);
-            pair.push(targetCssSheet.cssRules[index]);
-        });
-        bubbleArrowOffsetRules.push(pair);
-    }
     $(document).keydown(function(ev) {
         if (ev.key == "Tab") {  // Tab
             $("body").addClass('focus-indicators-enabled');
@@ -264,7 +243,7 @@ function initialSetup () {
     });
 
     window.addEventListener("unload", function () {
-        if ((document.visibilityState === "hidden") && inGame && !gameOver) {
+        if ((document.visibilityState === "hidden") && inGame && currentRound >= 0 && !gameOver) {
             recordInterruptedGameEvent(true);
         }
     });
@@ -601,7 +580,7 @@ function restartGame () {
     Sentry.setTag("epilogue", undefined);
     Sentry.setTag("epilogue_gallery", undefined);
 
-    if (!gameOver) {
+    if (currentRound >= 0 && !gameOver) {
         recordInterruptedGameEvent(false);
     }
 

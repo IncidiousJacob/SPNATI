@@ -191,6 +191,13 @@
                 <keyframe time="1.5" src="reskins/kyouko_toshinou_swimsuit/2-stripping-b.png" x="-16" />
             </directive>
         </pose>
+        <pose id="2-stripping-ask">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_swimsuit/2-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_swimsuit/2-stripping-a.png" x="0" y="0" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_swimsuit/2-stripping-b.png" x="-16" />
+            </directive>
+        </pose>
         <pose id="2-suspicious">
             <sprite id="curious" src="reskins/kyouko_toshinou_swimsuit/2-curious.png" x="0" y="0" />
             <sprite id="face" src="kyouko_toshinou/posemaker/faces/0-suspicious.png" x="8" y="240" clipbottom="8" />
@@ -325,6 +332,13 @@
         <pose id="6-stripped">
             <sprite id="kyoukospin" src="reskins/kyouko_toshinou_swimsuit/6-flirt.png" x="63" scalex="1" pivoty="96%" />
             <sprite id="floor-panties" z="-1" src="reskins/kyouko_toshinou_swimsuit/posemaker/floor-bottom.png" x="1" y="1309" rotation="4" />
+        </pose>
+        <pose id="6-stripping">
+            <sprite id="stripping" src="reskins/kyouko_toshinou_swimsuit/6-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_swimsuit/6-stripping-a.png" x="0" y="0" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_swimsuit/6-stripping-b.png" x="12" y="0" />
+            </directive>
         </pose>
         <pose id="6-suspicious">
             <sprite id="curious" src="reskins/kyouko_toshinou_swimsuit/6-curious.png" x="0" y="0" />
@@ -698,18 +712,13 @@
                 <keyframe time="3" src="reskins/kyouko_toshinou_swimsuit/9-stretch-b.png" />
             </directive>
         </pose>
-        <pose id="6-stripping">
-            <sprite id="stripping" src="reskins/kyouko_toshinou_swimsuit/6-stripping-a.png" x="0" y="0" />
-            <directive type="animation" id="stripping" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/kyouko_toshinou_swimsuit/6-stripping-a.png" x="0" y="0" />
-                <keyframe time="1.5" src="reskins/kyouko_toshinou_swimsuit/6-stripping-b.png" x="12" y="0" />
-            </directive>
-        </pose>
-        <pose id="2-stripping-ask">
-            <sprite id="stripping-a" src="reskins/kyouko_toshinou_swimsuit/2-stripping-a.png" x="0" y="0" />
-            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/kyouko_toshinou_swimsuit/2-stripping-a.png" x="0" y="0" />
-                <keyframe time="1.5" src="reskins/kyouko_toshinou_swimsuit/2-stripping-b.png" x="-16" />
+        <pose id="name-pride">
+            <sprite id="pride" src="reskins/kyouko_toshinou_swimsuit/#-pride.png" x="0" y="0" />
+            <sprite id="kyouko" z="-2" src="kyouko_toshinou/posemaker/kyouko.png" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+            <directive type="animation" id="kyouko" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
             </directive>
         </pose>
     </poses>
@@ -809,6 +818,9 @@
         <set id="finished">
             <pose stage="9" img="#-finished.png" />
         </set>
+        <set id="fixhair">
+            <pose stage="9" img="#-fixhair.png" />
+        </set>
         <set id="flirt">
             <pose stage="0-9" img="#-flirt.png" />
         </set>
@@ -866,8 +878,8 @@
         <set id="myself">
             <pose stage="0-9" img="#-myself.png" />
         </set>
-        <set id="fixhair">
-            <pose stage="9" img="#-fixhair.png" />
+        <set id="name-pride">
+            <pose stage="0-7" img="custom:name-pride" />
         </set>
         <set id="offguard">
             <pose stage="0-9" img="#-offguard.png" />

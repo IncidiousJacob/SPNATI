@@ -268,7 +268,7 @@ function splitCreatorField (field) {
     // Then, split on observed creator separators.
     return field
             .replace(/\([^\)]+\)|\[[^\]]+\]/gm, '')
-            .split(/\s*(?:,|&|\:|and|\+|\/|\\|<(?:\/\\)?\s*br\s*(?:\/\\)?>)\s*/gm)
+            .split(/\s*(?:,|&|\:|and\s|\+|\/|\\|<(?:\/\\)?\s*br\s*(?:\/\\)?>)\s*/gm)
             .map(function (s) {
                 return s.trim();
             });
@@ -1661,7 +1661,6 @@ function advanceSelectScreen () {
     }
 
     gameID = generateRandomID();
-    recordStartGameEvent();
     
     var playedCharacters = save.getPlayedCharacterSet();
     players.forEach(function(player) {

@@ -1,0 +1,32 @@
+.dialogue-bubble[data-character="rose"][data-dialogue-styles~="epi-narrate"] {
+    opacity: 95%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000, 0 0 5px #000;
+    border: none;
+    font-size: 120%;
+    text-align: center;
+}
+
+.dialogue-bubble[data-character="rose"][data-dialogue-styles~="epi-narrate"]::before {
+/*    content: none; */
+}
+
+.dialogue-bubble[data-character="rose"][data-dialogue-styles~="epi"] {
+    border: none;
+    font-size: 110%;
+    text-align: center;
+    border-radius: 0;
+}
+
+.dialogue-bubble[data-character="rose"][data-dialogue-styles~="epi"]::before {
+    border: 0.5rem solid #111111;
+}
+
+
+.bordered[data-character="rose"][data-dialogue-styles~="epi"] {
+    border: 0.35rem solid #111111;
+    border-radius: 2rem;	
+    padding: 1rem;
+    min-height: 5.5rem;
+}

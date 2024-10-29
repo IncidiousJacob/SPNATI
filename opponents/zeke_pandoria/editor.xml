@@ -15,7 +15,7 @@
         <case name="Zeke's Chest Scars" id="3" priority="FYI" min="3" max="3">
             <description>Zeke has taken his coat off, revealing the core crystal piece lodged in his chest. Pandoria has also just taken her bra off.</description>
         </case>
-        <case name="Zeke + Pandoria Nudity" id="34" priority="FYI" min="6" max="6">
+        <case name="Zeke + Pandoria Nudity" id="34" priority="MustTarget" min="6" max="6">
             <description>Highlighting this case as this is a man and a woman getting naked at the same time instead of one or the other.</description>
         </case>
         <case name="Zeke/Pandoria Thigh-sex" id="50" priority="Noteworthy" min="7" max="7">
@@ -202,6 +202,7 @@
         <response id="974" opponent="schezo" opponentId="399" />
         <response id="976" opponent="schezo" opponentId="398" />
         <response id="977" opponent="schezo" opponentId="400" />
+        <response id="1003" opponent="glamrock_chica" opponentId="203" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -245,6 +246,7 @@
         <note id="951">lmk if you want me to change this, just thought about bringing up a running gag from the game where zeke and pandy keep getting knocked off of stuff team rocket style</note>
         <note id="963">you don't need to write a unique response to this variation. if you do, you can make use of SayingText.</note>
         <note id="973">the second version of this line sets the marker to equal the value "innuendo" in case you wanted to respond to it specifically using the sayingMarker feature of comparing the value it is setting. ask me if you need advice on what this means exactly</note>
+        <note id="995">I imagine darkness would be like "do you know anybody like that? please tell me you do" because of her 'preferences' for a husband lmao</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -1087,7 +1089,7 @@
         <label id="850" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
         <label id="851" label="" folder="Summer&gt;Must Strip Lines" sort="0" />
         <label id="852" label="" color="3" folder="Responses&gt;Chica" sort="0" />
-        <label id="853" label="" folder="Targets&gt;Chica" sort="0" />
+        <label id="853" label="" color="3" folder="Targets&gt;Chica" sort="0" />
         <label id="854" label="" folder="Responses&gt;Stocking&gt;BeachParty" sort="0" />
         <label id="855" label="" folder="Responses&gt;Stocking&gt;BeachParty" sort="0" />
         <label id="856" label="" folder="Responses" sort="0" />
@@ -1167,15 +1169,15 @@
         <label id="931" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
         <label id="932" label="" folder="Targets&gt;Sanako&gt;Right" sort="0" />
         <label id="933" label="" folder="Targets&gt;Sanako (No Nagisa)&gt;Right" sort="0" />
-        <label id="934" label="" color="4" folder="Targets" sort="0" />
-        <label id="935" label="" color="4" folder="Targets" sort="0" />
+        <label id="934" label="" color="3" folder="Targets" sort="0" />
+        <label id="935" label="" color="3" folder="Targets" sort="0" />
         <label id="936" label="" folder="Responses" sort="0" />
         <label id="937" label="" color="1" folder="Targets" sort="0" />
         <label id="938" label="" color="1" folder="Targets" sort="0" />
-        <label id="939" label="" folder="Responses&gt;Chica" sort="0" />
+        <label id="939" label="" color="3" folder="Responses&gt;Chica" sort="0" />
         <label id="940" label="" color="3" folder="Responses&gt;Chica" sort="0" />
-        <label id="941" label="" color="1" folder="Targets&gt;Chica" sort="0" />
-        <label id="942" label="" color="1" folder="Targets&gt;Chica" sort="0" />
+        <label id="941" label="" color="3" folder="Targets&gt;Chica" sort="0" />
+        <label id="942" label="" color="2" folder="Targets&gt;Chica" sort="0" />
         <label id="943" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="944" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
         <label id="945" label="" color="3" folder="Targets&gt;Schezo" sort="0" />
@@ -1217,13 +1219,33 @@
         <label id="981" label="" folder="Responses" sort="0" />
         <label id="982" label="" folder="Responses" sort="0" />
         <label id="983" label="" folder="Responses" sort="0" />
+        <label id="984" label="" folder="Responses" sort="0" />
+        <label id="985" label="" color="4" folder="Targets" sort="0" />
+        <label id="986" label="" color="4" folder="Targets" sort="0" />
+        <label id="987" label="" color="4" folder="Targets" sort="0" />
+        <label id="988" label="" color="10" folder="Targets&gt;Tifa" sort="0" />
+        <label id="989" label="" color="10" folder="Targets&gt;Tifa" sort="0" />
+        <label id="990" label="" color="10" folder="Targets&gt;Tifa" sort="0" />
+        <label id="991" label="" color="10" folder="Targets&gt;Tifa" sort="0" />
+        <label id="992" label="" folder="Targets&gt;Tifa" sort="0" />
+        <label id="993" label="" folder="Targets&gt;Tifa" sort="0" />
+        <label id="994" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="995" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="996" label="" folder="Targets&gt;Darkness" sort="0" />
+        <label id="997" label="" folder="Responses" sort="0" />
+        <label id="998" label="1 - kink b" folder="Responses" sort="0" />
+        <label id="999" label="1 - exhibitionist b" folder="Responses" sort="0" />
+        <label id="1000" label="1 - NTR" folder="Responses" sort="0" />
+        <label id="1001" label="" color="1" folder="Targets&gt;Chica" sort="0" />
+        <label id="1002" label="" color="1" folder="Targets&gt;Chica" sort="0" />
+        <label id="1003" label="" color="3" folder="" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>983</nextId>
+    <nextId>1003</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AellaAdventures" />
@@ -1649,21 +1671,32 @@
         <marker scope="Public" name="zekepandy_caitlin_strip0c" />
         <marker scope="Public" name="zekepandy_chica_act1" />
         <marker scope="Public" name="zekepandy_chica_act2" />
+        <marker scope="Public" name="zekepandy_chica_act3" />
         <marker scope="Public" name="zekepandy_chica_self5b" />
         <marker scope="Public" name="zekepandy_chica_self5c" />
         <marker scope="Public" name="zekepandy_chica_strip1a" />
+        <marker scope="Public" name="zekepandy_chica_strip1b" />
+        <marker scope="Public" name="zekepandy_chica_strip1c" />
         <marker scope="Public" name="zekepandy_chika_intro1" />
         <marker scope="Public" name="zekepandy_chika_intro2" />
+        <marker scope="Public" name="zekepandy_chika_intro3" />
         <marker scope="Public" name="zekepandy_darkness_exhibitionist1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_exhibitionist2Resp" />
         <marker scope="Public" name="zekepandy_darkness_kink1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_kink2Resp" />
         <marker scope="Public" name="zekepandy_darkness_NTR1Resp" />
+        <marker scope="Public" name="zekepandy_darkness_NTR2Resp" />
         <marker scope="Public" name="zekepandy_darkness_self0a" />
+        <marker scope="Public" name="zekepandy_darkness_self0b" />
         <marker scope="Public" name="zekepandy_darkness_strip0a" />
         <marker scope="Public" name="zekepandy_darkness_strip0b" />
+        <marker scope="Public" name="zekepandy_darkness_strip0c" />
         <marker scope="Public" name="zekepandy_darkness_strip1a" />
         <marker scope="Public" name="zekepandy_darkness_strip1b" />
         <marker scope="Public" name="zekepandy_darkness_strip1b_deimure" />
         <marker scope="Public" name="zekepandy_darkness_strip1b_unassuming" />
+        <marker scope="Public" name="zekepandy_darkness_strip1c_deimure" />
+        <marker scope="Public" name="zekepandy_darkness_strip1c_unassuming" />
         <marker scope="Public" name="ZekePandy_HowEvil1" />
         <marker scope="Public" name="zekepandy_jean_strip0a" />
         <marker scope="Public" name="zekepandy_jean_strip1a" />
@@ -1794,8 +1827,10 @@
         <marker scope="Public" name="zp_gloria_self3a" />
         <marker scope="Public" name="zp_jim_intro1" />
         <marker scope="Public" name="zp_jim_intro2" />
+        <marker scope="Public" name="zp_jim_intro3" />
         <marker scope="Public" name="zp_jim_preferences1" />
         <marker scope="Public" name="zp_jim_preferences2" />
+        <marker scope="Public" name="zp_jim_preferences3" />
         <marker scope="Public" name="zp_juno_self0a" />
         <marker scope="Public" name="zp_juno_self0b" />
         <marker scope="Public" name="zp_juno_self0c" />
@@ -1861,6 +1896,7 @@
         <marker scope="Public" name="zp_nonon_strip3c" />
         <marker scope="Public" name="zp_reimu_self0a" />
         <marker scope="Public" name="zp_reimu_self0b" />
+        <marker scope="Public" name="zp_reimu_self0c" />
         <marker scope="Public" name="zp_sanako_0a" />
         <marker scope="Public" name="zp_sanako_0a_nagisa_present" />
         <marker scope="Public" name="zp_sanako_0b" />
@@ -1900,9 +1936,14 @@
         <marker scope="Public" name="zp_tifa_punch1" />
         <marker scope="Public" name="zp_tifa_punch2" />
         <marker scope="Public" name="zp_tifa_punch3" />
+        <marker scope="Public" name="zp_tifa_self0a" />
         <marker scope="Public" name="zp_tifa_strip2a" />
         <marker scope="Public" name="zp_tifa_strip2b" />
         <marker scope="Public" name="zp_tifa_strip2c" />
+        <marker scope="Public" name="zp_tifa_strip3a_boobS" />
+        <marker scope="Public" name="zp_tifa_strip3b_boobS" />
+        <marker scope="Public" name="zp_tifa_strip3c_boobS" />
+        <marker scope="Public" name="zp_tifa_strip3d_boobS" />
         <marker scope="Public" name="zp_yaemiko_bookWriting1" />
         <marker scope="Public" name="zp_yaemiko_bookWriting2bio" />
         <marker scope="Public" name="zp_yaemiko_bookWriting2hero" />

@@ -196,6 +196,9 @@ Please think very carefully before adding a new folder at the top level. Add new
 #### Toshinou friendship
 - A group of lines based on Kyoukos Kirigiri and Toshinou replying to each other's generic lines or generally goofing off between strips.
 
+##### Kanji
+- Kyoko and her senpai discuss the way their first names are written.
+
 # 12. TECHNICAL
 - Lines controlling under-the-hood functions like her AI level and markers acting as variables. Most are hidden lines, but not all Technical lines are hidden and not all hidden lines are technical.
 

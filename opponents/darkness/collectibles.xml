@@ -1,2 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="weddingDress" status="online" img="opponents/darkness/Darkness_Collectible_1.png" thumbnail="opponents/darkness/Darkness_Collectible_1.png">
+        <title>Wedding Dress</title>
+        <subtitle>Even degenerates want to look nice now and then</subtitle>
+        <text>As degenerate as she may be, even Darkness wants to look good on her special day.</text>
+        <unlock>Beat Darkness in a game.</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/darkness/Darkness_Collectible_1.png" name="Wedding Dress" generic="dress" position="both" type="major" />
+    </collectible>
+</collectibles>

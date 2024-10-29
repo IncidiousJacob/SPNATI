@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>maria_sadistic_succubus</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag>bottomless_first</tag>
+        <tag from="0" to="4">choker</tag>
+        <tag from="4" to="4">clothing_destruction</tag>
+        <tag>demon</tag>
+        <tag>exhibitionist</tag>
+        <tag from="2" to="7">hair_covering_breasts</tag>
+        <tag>halloween_skin</tag>
+        <tag from="0" to="3">high_heels</tag>
+        <tag remove="true">lingerie</tag>
+        <tag>magic</tag>
+        <tag remove="true">nipple_slip</tag>
+        <tag remove="true">no_bra</tag>
+        <tag>no_underwear</tag>
+        <tag>non-human</tag>
+        <tag>perverted</tag>
+        <tag remove="true">pubic_hair</tag>
+        <tag remove="true">pubic_hair_peek</tag>
+        <tag>scantily-clad</tag>
+        <tag>shaved</tag>
+        <tag>slutty</tag>
+        <tag>succubus</tag>
+        <tag>supernatural</tag>
+        <tag>tattoo</tag>
+        <tag from="0" to="3">thigh_highs</tag>
+        <tag from="0" to="1">underboob</tag>
+        <tag from="4" to="4">vanishes_clothes</tag>
+        <tag>winged</tag>
+    </tags>
+    <layers>5</layers>
+    <folder>opponents/reskins/maria_sadistic_succubus/</folder>
+    <wardrobe>
+        <clothing name="collar" generic="collar" position="lower" type="important" />
+        <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
+        <clothing name="gloves" generic="gloves" position="hands" type="minor" plural="true" />
+        <clothing name="top" generic="" position="upper" type="major" />
+        <clothing name="skirt" generic="skirt" position="lower" type="major" />
+    </wardrobe>
+
+    <poses>
+        <pose id="7-seat_eat">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_succubus/7-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="220" y="518" scalex="-1" rotation="-6" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_succubus/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="217" y="250" scalex="-1" rotation="-10" />
+        </pose>
+    </poses>
+
+</costume>
