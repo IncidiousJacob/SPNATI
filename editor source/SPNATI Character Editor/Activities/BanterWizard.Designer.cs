@@ -71,7 +71,7 @@ namespace SPNATI_Character_Editor.Activities
             this.cmdDiscard = new Desktop.Skinning.SkinnedButton();
             this.cmdAccept = new Desktop.Skinning.SkinnedButton();
             this.cmdJump = new Desktop.Skinning.SkinnedButton();
-            this.gridResponse = new SPNATI_Character_Editor.Controls.DialogueGrid();
+            this.gridResponse = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
             this.ctlResponse = new SPNATI_Character_Editor.Controls.CaseControl();
             this.skinnedLabel2 = new Desktop.Skinning.SkinnedLabel();
             this.panelLoad = new Desktop.Skinning.SkinnedPanel();

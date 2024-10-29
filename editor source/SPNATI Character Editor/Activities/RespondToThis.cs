@@ -36,7 +36,7 @@ namespace SPNATI_Character_Editor.Activities
 			imgResponse.SetCharacter(_responder);
 			gridSource.SetData(_source, _sourceCase);
 			responseControl.SetCharacter(_responder);
-			responseControl.SetCase(new Stage(_responseCase.Stages[0]), _responseCase);
+			responseControl.SetCase(_responseCase.Stages[0], _responseCase);
 		}
 
 		protected override void OnFirstActivate()

@@ -269,12 +269,6 @@
     <Compile Include="Charts\SkinnedChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\DialogueGridMultiSelect.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\DialogueGridMultiSelect.Designer.cs">
-      <DependentUpon>DialogueGridMultiSelect.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -350,6 +344,12 @@
     </Compile>
     <Compile Include="Controls\Dashboards\TargetWidget.Designer.cs">
       <DependentUpon>TargetWidget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SheetSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SheetSelect.Designer.cs">
+      <DependentUpon>SheetSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\WardrobeAdvancedForm.cs">
       <SubType>Form</SubType>
@@ -1481,7 +1481,6 @@
     <Compile Include="Forms\SettingsSetup.Designer.cs">
       <DependentUpon>SettingsSetup.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataStructures\Stage.cs" />
     <Compile Include="DataStructures\StageName.cs" />
     <Compile Include="ShellLogic.cs" />
     <Compile Include="TagDatabase.cs" />
@@ -1596,9 +1595,6 @@
     <EmbeddedResource Include="Activities\WritingAid.resx">
       <DependentUpon>WritingAid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\DialogueGridMultiSelect.resx">
-      <DependentUpon>DialogueGridMultiSelect.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -1650,6 +1646,9 @@
     <EmbeddedResource Include="Controls\Dashboards\TargetWidget.resx">
       <DependentUpon>TargetWidget.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SheetSelect.resx">
+      <DependentUpon>SheetSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\WardrobeAdvancedForm.resx">
       <DependentUpon>WardrobeAdvancedForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1658,6 +1657,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DialogueGrid.resx">
       <DependentUpon>DialogueGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\DialogueTree.resx">
       <DependentUpon>DialogueTree.cs</DependentUpon>
@@ -2189,6 +2189,9 @@
     <None Include="Hunspellx86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="VersionHistory\v6.9.3.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="VersionHistory\v6.9.2.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

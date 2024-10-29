@@ -79,10 +79,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case copy = _character.Behavior.DuplicateCase(selectedCase, true);
-			SelectNode(stage, copy);
+			SelectNode(selectedNode.Stage, copy);
 		}
 
 		public void SplitCase(Case removedCase, List<int> indices)
@@ -91,10 +90,9 @@ namespace SPNATI_Character_Editor.Controls
 			if (_character == null || selectedNode?.Case == null)
 				return;
 			Case selectedCase = selectedNode.Case;
-			int stage = selectedNode.Stage.Id;
 			SaveNode?.Invoke(this, EventArgs.Empty);
 			Case added = _character.Behavior.SplitIntoNewCase(selectedCase, indices);
-			SelectNode(stage, added);
+			SelectNode(selectedNode.Stage, added);
 		}
 
 		/// <summary>
@@ -171,7 +169,7 @@ namespace SPNATI_Character_Editor.Controls
 				return;
 			}
 
-			DialogueNode wrapper = new DialogueNode(_character, new Stage(workingCase.Stages[0]), workingCase);
+			DialogueNode wrapper = new DialogueNode(_character, workingCase.Stages[0], workingCase);
 			wrapper.TargetCharacter = CharacterDatabase.Get(target);
 			wrapper.Mode = NodeMode.Target;
 			_model.AddItem(wrapper);

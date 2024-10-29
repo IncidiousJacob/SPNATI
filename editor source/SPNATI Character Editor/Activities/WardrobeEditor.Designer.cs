@@ -226,7 +226,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.groupBox1.ShowIndicatorBar = false;
-            this.groupBox1.Size = new System.Drawing.Size(307, 112);
+            this.groupBox1.Size = new System.Drawing.Size(367, 112);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Type Glossary";
@@ -240,11 +240,11 @@
             this.label4.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
             this.label4.Location = new System.Drawing.Point(6, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(240, 26);
+            this.label4.Size = new System.Drawing.Size(322, 26);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Important: Underwear (any kind of).\n                Makes the character indecent " +
-    "if visible.";
-            // 
+            this.label4.Text = "Important: Underwear (any kind of). Makes the character indecent\n" +
+            "                 if there is no major item covering the same position.";
+            //
             // label3
             // 
             this.label3.AutoSize = true;
@@ -254,7 +254,7 @@
             this.label3.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
             this.label3.Location = new System.Drawing.Point(6, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 26);
+            this.label3.Size = new System.Drawing.Size(322, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Major: Covers chest, crotch, or underwear.\n          Does not make the character " +
     "indecent if visible.";
@@ -293,7 +293,7 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Highlight = Desktop.Skinning.SkinnedHighlight.Heading;
             this.groupBox2.Image = null;
-            this.groupBox2.Location = new System.Drawing.Point(319, 342);
+            this.groupBox2.Location = new System.Drawing.Point(379, 342);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
             this.groupBox2.ShowIndicatorBar = false;

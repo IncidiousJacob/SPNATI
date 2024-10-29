@@ -1077,6 +1077,8 @@ OpponentDisplay.prototype.update = function(player) {
     
     /* update label */
     this.label.html(player.label.initCap());
+    
+    /* get z-index-line if available. in future, refactor for custom poses/pose sets having this */
 
     /* check silence */
     if (!chosenState.dialogue) {

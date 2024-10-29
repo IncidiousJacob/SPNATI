@@ -46,10 +46,6 @@ namespace SPNATI_Character_Editor
 			Regex targetRange = new Regex(@"^\d+(-\d+)?$");
 
 			int layers = character.Layers + Clothing.ExtraStages;
-			if (character.Behavior.Stages.Count > layers)
-			{
-				warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, string.Format("There are too many stages. Expected amount based on clothing: {0}, Actual: {1}", layers, character.Behavior.Stages.Count)));
-			}
 
 			foreach (var ai in character.Intelligence)
 			{
@@ -93,7 +89,7 @@ namespace SPNATI_Character_Editor
 			{
 				if (stageCase.Stages.Count > 0)
 				{
-					ValidationContext context = new ValidationContext(new Stage(stageCase.Stages[0]), stageCase, null);
+					ValidationContext context = new ValidationContext(stageCase.Stages[0], stageCase, null);
 					TriggerDefinition trigger = TriggerDatabase.GetTrigger(stageCase.Tag);
 					string caseLabel = string.Format("({0})", stageCase.Tag);
 					string caseTag = stageCase.Tag;
@@ -292,23 +288,23 @@ namespace SPNATI_Character_Editor
 
 				foreach (int stageIndex in stageCase.Stages)
 				{
-					Stage stage = new Stage(stageIndex);
-					HashSet<string> stageImages = usedPoses.GetOrAddDefault(stage.Id, () => new HashSet<string>());
+					int stage = stageIndex;
+					HashSet<string> stageImages = usedPoses.GetOrAddDefault(stage, () => new HashSet<string>());
 					ValidationContext context = new ValidationContext(stage, stageCase, null);
 
 					TriggerDefinition trigger = TriggerDatabase.GetTrigger(stageCase.Tag);
 					if (trigger == null || trigger.Unrecognized)
 					{
-						warnings.Add(new ValidationError(ValidationFilterLevel.Case, string.Format("Case \"{0}\" is an unknown case. (stage {1})", stageCase.Tag, stage.Id), context));
+						warnings.Add(new ValidationError(ValidationFilterLevel.Case, string.Format("Case \"{0}\" is an unknown case. (stage {1})", stageCase.Tag, stage), context));
 						continue;
 					}
 
-					if (!TriggerDatabase.UsedInStage(stageCase.Tag, character, stage.Id))
+					if (!TriggerDatabase.UsedInStage(stageCase.Tag, character, stage))
 					{
-						warnings.Add(new ValidationError(ValidationFilterLevel.Case, string.Format("Case \"{0}\" is invalid for stage {1}.", stageCase.Tag, stage.Id), context));
+						warnings.Add(new ValidationError(ValidationFilterLevel.Case, string.Format("Case \"{0}\" is invalid for stage {1}.", stageCase.Tag, stage), context));
 						continue;
 					}
-					string caseLabel = string.Format("(Stage {0}, {1})", stage.Id, stageCase.Tag);
+					string caseLabel = string.Format("(Stage {0}, {1})", stage, stageCase.Tag);
 
 					foreach (DialogueLine line in stageCase.Lines)
 					{
@@ -319,14 +315,14 @@ namespace SPNATI_Character_Editor
 						List<string> imagesInStage = new List<string>();
 						foreach (StageImage si in line.Images)
 						{
-							if (si.Stages.Contains(stage.Id))
+							if (si.Stages.Contains(stage))
 							{
-								imagesInStage.Add(si.Pose?.GetStageKey(stage.Id, true));
+								imagesInStage.Add(si.Pose?.GetStageKey(stage, true));
 							}
 						}
 						if (imagesInStage.Count == 0)
 						{
-							imagesInStage.Add(stageLine.Pose?.GetStageKey(stage.Id, true));
+							imagesInStage.Add(stageLine.Pose?.GetStageKey(stage, true));
 						}
 
 						//Validate image
@@ -778,11 +774,6 @@ namespace SPNATI_Character_Editor
 						warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, $"Clothing layer \"{c.Name}\" has no position set. Choose a position for the layer."));
 					}
 
-					if (c.Name == "SKIP")
-					{
-						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"One of the layers is named SKIP. It's a word used internally by the CE to process layers without a name. Rename the layer."));
-					}
-
 					if (IsUncountable(c.Name))
 					{
 						warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, $"Clothing layer \"{c.Name}\" uses an uncountable noun with no plural form, which makes incoming generic dialogue awkward (ex. \"I've seen many {c.Name} in my day\"). Consider renaming this layer (ex. \"armor\" to \"breastplate\")."));
@@ -930,11 +921,6 @@ namespace SPNATI_Character_Editor
 					if (string.IsNullOrEmpty(c.Position))
 					{
 						warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, $"Clothing layer \"{c.Name}\" of alternate costume \"{skin.Name}\" has no position set. Choose a position for the layer."));
-					}
-
-					if (c.Name == "SKIP")
-					{
-						warnings.Add(new ValidationError(ValidationFilterLevel.Reskins, $"Alternate costume \"{skin.Name}\" has a layer named SKIP. It's a word used internally by the CE to process layers without a name. Rename the layer."));
 					}
 
 					if (IsUncountable(c.Name))
@@ -1220,23 +1206,6 @@ namespace SPNATI_Character_Editor
 											}
 										}
 
-									}
-								}
-							}
-							else
-							{
-								for (int i = 0; i <= min && i < character.Behavior.Stages.Count; i++)
-								{
-									Stage stage = character.Behavior.Stages[i];
-									foreach (var c in stage.Cases)
-									{
-										foreach (var line in c.Lines)
-										{
-											if (line.Marker == name)
-											{
-												return;
-											}
-										}
 									}
 								}
 							}
@@ -1803,7 +1772,7 @@ namespace SPNATI_Character_Editor
 	public class ValidationContext
 	{
 		public Area ContextArea;
-		public Stage Stage;
+		public int Stage;
 		public Case Case;
 		public DialogueLine Line;
 		public Epilogue Epilogue;
@@ -1812,7 +1781,7 @@ namespace SPNATI_Character_Editor
 		public Collectible Collectible;
 
 		public ValidationContext() { }
-		public ValidationContext(Stage stage, Case stageCase, DialogueLine line)
+		public ValidationContext(int stage, Case stageCase, DialogueLine line)
 		{
 			ContextArea = Area.Dialogue;
 			Stage = stage;

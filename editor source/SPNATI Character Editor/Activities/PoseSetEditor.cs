@@ -78,7 +78,7 @@ namespace SPNATI_Character_Editor.Activities
 			}
 			_character.IsDirty = true;
 			_character.CustomPoseSets.Remove(_selectedSet);
-			_character.Character.PoseLibrary.Remove(_selectedSet);
+			_character.PoseLibrary.Remove(_selectedSet);
 			lstPoseSets.Items.Remove(_selectedSet);
 			if (lstPoseSets.Items.Count > 0)
 			{
@@ -102,7 +102,7 @@ namespace SPNATI_Character_Editor.Activities
 			lstPoseSets.SelectedItem = poseSet;
 			_character.CustomPoseSets.Add(poseSet);
 			_character.CustomPoseSets.Sort();
-			_character.Character.PoseLibrary.Add(poseSet);
+			_character.PoseLibrary.Add(poseSet);
 			poseSetControl1.ShowLblStage();
 		}
 
@@ -128,7 +128,7 @@ namespace SPNATI_Character_Editor.Activities
 			{
 				_character.IsDirty = true;
 				_selectedSet.Id = txtPoseSetRename.Text;
-				_character.Character.PoseLibrary.Rename(_selectedSet);
+				_character.PoseLibrary.Rename(_selectedSet);
 				lstPoseSets.RefreshListItems();
 			}
 		}

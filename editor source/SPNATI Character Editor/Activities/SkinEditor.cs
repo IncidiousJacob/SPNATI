@@ -127,7 +127,7 @@ namespace SPNATI_Character_Editor.Activities
 			if (_costume.Link?.PreviewImage != null)
 			{
 				string portrait = _costume.Link.PreviewImage;
-				PoseMapping pose = _costume.Character.PoseLibrary.GetPose(portrait);
+				PoseMapping pose = _costume.PoseLibrary.GetPose(portrait);
 				cboDefaultPic.SelectedItem = pose;
 			}
 		}
@@ -138,7 +138,7 @@ namespace SPNATI_Character_Editor.Activities
 		private void PopulatePortraitDropdown()
 		{
 			_populatingImages = true;
-			List<PoseMapping> poses = _costume.Character.PoseLibrary.GetPortraitPoses(_fullyClothedStage);
+			List<PoseMapping> poses = _costume.PoseLibrary.GetPortraitPoses(_fullyClothedStage);
 			cboDefaultPic.DisplayMember = "DisplayName";
 			cboDefaultPic.DataSource = poses;
 			_populatingImages = false;

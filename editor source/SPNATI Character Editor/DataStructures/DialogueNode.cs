@@ -47,7 +47,7 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		public Stage Stage;
+		public int Stage;
 		public Case Case
 		{
 			get { return Get<Case>(); }
@@ -203,7 +203,7 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
-		public DialogueNode(Character character, Stage stage, Case stageCase)
+		public DialogueNode(Character character, int stage, Case stageCase)
 		{
 			Character = character;
 			_editorData = CharacterDatabase.GetEditorData(character);
@@ -230,7 +230,7 @@ namespace SPNATI_Character_Editor
 			switch (Mode)
 			{
 				case NodeMode.Stage:
-					key = Stage.Id.ToString();
+					key = Stage.ToString();
 					break;
 				case NodeMode.Pose:
 					key = GroupKey;

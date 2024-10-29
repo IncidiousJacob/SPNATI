@@ -43,7 +43,7 @@
 			this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
 			this.skinnedGroupBox2 = new Desktop.Skinning.SkinnedGroupBox();
 			this.skinnedGroupBox3 = new Desktop.Skinning.SkinnedGroupBox();
-			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid();
+			this.gridLines = new SPNATI_Character_Editor.Controls.DialogueGrid(false);
 			this.skinnedLabel1 = new Desktop.Skinning.SkinnedLabel();
 			this.txtLabel = new Desktop.Skinning.SkinnedTextBox();
 			this.skinnedGroupBox1.SuspendLayout();

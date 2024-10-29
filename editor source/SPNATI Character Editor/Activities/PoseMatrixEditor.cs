@@ -864,7 +864,7 @@ namespace SPNATI_Character_Editor.Activities
 				//stage dependent sheet
 				img = _currentPose.Stage.Stage + "-" + _currentPose.ToString() + ".png";
 			}
-			else 
+			else
 			{
 				//stage independent sheet
 				img = _currentPose.Stage.Name + "_" + _currentPose.ToString() + ".png";
@@ -1210,7 +1210,7 @@ namespace SPNATI_Character_Editor.Activities
 						pose.LastUpdate = 0;
 						UpdateCell(cell, pose);
 					}
-				}	
+				}
 			}
 
 		}
@@ -1278,7 +1278,8 @@ namespace SPNATI_Character_Editor.Activities
 		private void ImportPosesAsync(List<PoseEntry> list)
 		{
 			// Sort by stage to try and minimize parts that change between successive requests.
-			list.Sort(delegate (PoseEntry a, PoseEntry b) {
+			list.Sort(delegate (PoseEntry a, PoseEntry b)
+			{
 				return a.Stage.Stage - b.Stage.Stage;
 			});
 
@@ -1849,7 +1850,7 @@ namespace SPNATI_Character_Editor.Activities
 						p2.Code = null;
 						p2.Crop = new Rect(0, 0, 600, 1400);
 						p2.ExtraMetadata.Clear();
-						p2.LastUpdate = 0;					
+						p2.LastUpdate = 0;
 					}
 				}
 			}
@@ -2125,12 +2126,27 @@ namespace SPNATI_Character_Editor.Activities
 			}
 		}
 
+		private void tsSelectSheet_Click(object sender, EventArgs e)
+		{
+			List <string> sheetNames = new List<string>();
+			foreach (PoseSheet sheet in _matrix.Sheets)
+			{
+				sheetNames.Add(sheet.Name);
+			}
+			SheetSelectForm form = new SheetSelectForm(sheetNames);
+			if (form.ShowDialog() == DialogResult.OK)
+			{
+				tabControl.SelectTab(form.Sheet);
+				tabStrip.ScrollToIndex(form.Sheet);
+			}
+		}
+
 		private void cmdConvert_Click(object sender, EventArgs e)
 		{
 			const int oldMajor = 105, oldMinor = 0, oldAlpha = 0;
-			const int newestMajor = 108, newestMinor = 0, newestAlpha = 0;
+			const int newestMajor = 108, newestMinor = 1, newestAlpha = 0;
 			const string oldKKLVersion = "v105";
-			const string newestKKLVersion = "v108";
+			const string newestKKLVersion = "v108.1";
 
 			int major, minor, alpha;
 			if (cboToKKLVersion.SelectedItem?.ToString() == "v107a4")
@@ -2159,28 +2175,28 @@ namespace SPNATI_Character_Editor.Activities
 			if (grid.SelectedCells.Count == 0)
 			{
 				if (_sheet != null)
-				if (MessageBox.Show("Are you sure that you want to convert the sheet's base KKL code? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
-				{
-					KisekaeCode code = new KisekaeCode(_sheet.BaseCode, true);
-					if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
+					if (MessageBox.Show("Are you sure that you want to convert the sheet's base KKL code? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
 					{
-						unsupportedVersion = true;
-					}
-					else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
-					{
-						code.UpdateCode(major, minor, alpha);
-						_sheet.BaseCode = code.ToString();
-					}
-					else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
-					{
-						if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+						KisekaeCode code = new KisekaeCode(_sheet.BaseCode, true);
+						if (code.BeforeKKLVersion(oldMajor, oldMinor, oldAlpha) > 0)
 						{
-							futureVersion = true;
+							unsupportedVersion = true;
 						}
-						code.DowndateCode(major, minor, alpha);
-						_sheet.BaseCode = code.ToString();
+						else if (code.BeforeKKLVersion(major, minor, alpha) > 0)
+						{
+							code.UpdateCode(major, minor, alpha);
+							_sheet.BaseCode = code.ToString();
+						}
+						else if (code.BeforeKKLVersion(major, minor, alpha) < 0)
+						{
+							if (code.BeforeKKLVersion(newestMajor, newestMinor, newestAlpha) < 0)
+							{
+								futureVersion = true;
+							}
+							code.DowndateCode(major, minor, alpha);
+							_sheet.BaseCode = code.ToString();
+						}
 					}
-				}
 			}
 			else if (MessageBox.Show("Are you sure that you want to convert the selected KKL code(s)? This is an experimental feature. You may want to backup poses.xml first.", "KKL Code Conversion", MessageBoxButtons.OKCancel) == DialogResult.OK)
 			{

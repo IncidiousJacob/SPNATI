@@ -11,7 +11,7 @@ namespace SPNATI_Character_Editor.Controls
 	public partial class DialogueGrid : UserControl, ISkinControl
 	{
 		private Case _selectedCase;
-		private Stage _selectedStage;
+		private int? _selectedStage;
 		private Character _character;
 		private bool _populatingCase;
 		private int _selectedRow;
@@ -21,12 +21,14 @@ namespace SPNATI_Character_Editor.Controls
 		private ToolStripDropDown _lineDropDown;
 		private ToolStripDropDown _activeDropdown;
 		private bool _modifyingLine;
+		private bool _multiSelect;
 
 		#region Events
 		public new event EventHandler<KeyEventArgs> KeyDown;
 		public event EventHandler<int> TextUpdated;
 		public event EventHandler<int> PoseUpdated;
 		public event EventHandler<int> HighlightRow;
+		public event EventHandler<int> SelectionUpdated;
 		#endregion
 
 		private TextBox _editBox;
@@ -54,10 +56,11 @@ namespace SPNATI_Character_Editor.Controls
 			}
 		}
 
-		public DialogueGrid()
+		public DialogueGrid(bool multiSelect = false)
 		{
 			InitializeComponent();
 
+			_multiSelect = multiSelect;
 			ColTrophy.Flat = ColDelete.Flat = ColMore.Flat = ColMarkerOptions.Flat = ColImageOptions.Flat = true;
 
 			_markerCtl = new MarkerOptions();
@@ -109,7 +112,7 @@ namespace SPNATI_Character_Editor.Controls
 			ctl.DataUpdated += Ctl_DataUpdated;
 		}
 
-		public void SetStage(Stage stage, HashSet<int> stages)
+		public void SetStage(int? stage, HashSet<int> stages)
 		{
 			_selectedStage = stage;
 			_modifyingLine = true;
@@ -120,20 +123,20 @@ namespace SPNATI_Character_Editor.Controls
 
 		public void SetData(Character character, Case c)
 		{
-			Stage stage = null;
+			int? stage = null;
 			HashSet<int> stages = new HashSet<int>();
 			foreach (int s in c.Stages)
 			{
 				if (stage == null)
 				{
-					stage = new Stage(s);
+					stage = s;
 				}
 				stages.Add(s);
 			}
 			SetData(character, stage, c, stages);
 		}
 
-		public void SetData(Character character, Stage stage, Case c, HashSet<int> selectedStages)
+		public void SetData(Character character, int? stage, Case c, HashSet<int> selectedStages)
 		{
 			HideDropdown();
 			_character = character;
@@ -151,6 +154,7 @@ namespace SPNATI_Character_Editor.Controls
 				}
 				row.Tag = null;
 				row.Cells["ColImage"].Value = null;
+				row.Cells["ColSelect"].Value = false;
 			}
 
 			UpdateAvailableImagesForCase(selectedStages, false);
@@ -311,7 +315,7 @@ namespace SPNATI_Character_Editor.Controls
 								{
 									i++;
 									if (i == _character.Layers) { break; }
-								}								
+								}
 								if (!imageStages.Contains(i))
 								{
 									imageStages.Add(i);
@@ -365,7 +369,7 @@ namespace SPNATI_Character_Editor.Controls
 			}
 
 			bool hasStageImages = _selectedCase.Lines.Find(l => l.Images.Count > 0) != null;
-			int stageId = _selectedStage == null ? 0 : _selectedStage.Id;
+			int stageId = _selectedStage == null ? 0 : _selectedStage.Value;
 			if (_selectedCase.Tag == "stripped" && stageId < _character.Layers)
 			{
 				int i = stageId;
@@ -411,7 +415,7 @@ namespace SPNATI_Character_Editor.Controls
 				{
 					images.AddRange(_character.PoseLibrary.GetPoses(stageId));
 				}
-				
+
 				foreach (PoseMapping image in images)
 				{
 					bool isGeneric = image.IsGeneric;
@@ -634,9 +638,9 @@ namespace SPNATI_Character_Editor.Controls
 		private void gridDialogue_CellValueChanged(object sender, DataGridViewCellEventArgs e)
 		{
 			if (_modifyingLine) { return; }
-			if (e.ColumnIndex == 0)
+			if (_multiSelect && e.ColumnIndex == ColSelect.Index)
 			{
-				SelectRow(e.RowIndex);
+				SelectionUpdated?.Invoke(this, e.RowIndex);
 			}
 			else if (e.ColumnIndex == ColText.Index)
 			{
@@ -646,6 +650,7 @@ namespace SPNATI_Character_Editor.Controls
 			{
 				PoseUpdated?.Invoke(this, e.RowIndex);
 			}
+
 		}
 
 		private void gridDialogue_CurrentCellDirtyStateChanged(object sender, EventArgs e)
@@ -667,6 +672,8 @@ namespace SPNATI_Character_Editor.Controls
 			row.Cells[nameof(ColMore)].ToolTipText = "More options";
 			row.Cells[nameof(ColMarkerOptions)].ToolTipText = "Advanced marker options";
 			row.Cells[nameof(ColImageOptions)].ToolTipText = "Stage-specific images";
+			if (row.Cells[nameof(ColSelect)].Value == null)
+				row.Cells[nameof(ColSelect)].Value = false;
 		}
 
 		private void gridDialogue_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -821,7 +828,7 @@ namespace SPNATI_Character_Editor.Controls
 				}
 			}
 			int start = GetSelectionStart(gridDialogue);
-			
+
 			return new Line(text, start);
 		}
 
@@ -849,6 +856,31 @@ namespace SPNATI_Character_Editor.Controls
 				return new DialogueLine();
 			}
 			return line;
+		}
+
+		public List<DialogueLine> CopySelectedLines()
+		{
+			List<DialogueLine> lines = new List<DialogueLine>();
+			for (int i = 0; i < gridDialogue.Rows.Count; i++)
+			{
+				if (!(bool)gridDialogue.Rows[i].Cells[nameof(ColSelect)].Value)
+					continue;
+				DialogueLine line = ReadLineFromDialogueGrid(i);
+				if (line != null)
+					lines.Add(line.Copy());
+			}
+			return lines;
+		}
+
+		public List<int> GetSelectedIndices()
+		{
+			List<int> indices = new List<int>();
+			for (int i = gridDialogue.Rows.Count - 1; i > -1; i--)
+			{
+				if ((bool)gridDialogue.Rows[i].Cells[nameof(ColSelect)].Value)
+					indices.Add(i);
+			}
+			return indices;
 		}
 
 		public List<DialogueLine> CopyLines()
@@ -906,7 +938,7 @@ namespace SPNATI_Character_Editor.Controls
 			string op;
 			marker = Marker.ExtractPieces(line.Marker, out markerValue, out perTarget, out op);
 			markerCell.Value = marker;
-			
+
 			row.Cells[nameof(ColTrophy)].Tag = new Tuple<string, string>(line.CollectibleId, line.CollectibleValue);
 			row.Cells[nameof(ColMarkerOptions)].ToolTipText = GetMarkerTooltip(line);
 			row.Cells[nameof(ColOnce)].Value = (line.OneShotId > 0 ? true : false);
@@ -1298,6 +1330,7 @@ namespace SPNATI_Character_Editor.Controls
 							otherLine.OneShotId = 0;
 						}
 						otherLine.Weight = line.Weight;
+						otherLine.ZIndexLine = line.ZIndexLine;
 						otherLine.DialogueOperations = line.DialogueOperations;
 						AddLineToDialogueGrid(otherLine, row);
 					}

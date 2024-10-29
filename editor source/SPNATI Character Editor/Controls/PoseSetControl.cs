@@ -82,7 +82,7 @@ namespace SPNATI_Character_Editor.Controls
 			PopulateImageDropdown(_selectedEntry.Stage);
 			if (!string.IsNullOrEmpty(_selectedEntry.Img))
 			{
-				PoseMapping pose = _character.Character.PoseLibrary.GetPose(_selectedEntry.Img);
+				PoseMapping pose = _character.PoseLibrary.GetPose(_selectedEntry.Img);
 				cboPose.SelectedItem = pose;
 			}
 			chkLayer.Checked = _selectedEntry.DialogueLayer == "over" || (_character.Character.Metadata.BubblePosition.ToString() == "over" && _selectedEntry.DialogueLayer != "under");
@@ -131,11 +131,17 @@ namespace SPNATI_Character_Editor.Controls
 				}
 			}
 
+			selectedStages = selectedStages.FindAll(stage => stage >= _character.Layers || _character.GetClothing(_character.Layers - stage - 1).Type != "skip");
+			if (selectedStages.Count == 0)
+			{
+				return;
+			}
+
 			List<PoseMapping> poses = new List<PoseMapping>();
 			List<PoseMapping> existingPoses = new List<PoseMapping>();
 			for (int i = 0; i < selectedStages.Count; i++)
 			{
-				foreach (PoseMapping pose in _character.Character.PoseLibrary.GetPoses(selectedStages[i], true))
+				foreach (PoseMapping pose in _character.PoseLibrary.GetPoses(selectedStages[i], true))
 				{
 					if (!poses.Contains(pose))
 						poses.Add(pose);

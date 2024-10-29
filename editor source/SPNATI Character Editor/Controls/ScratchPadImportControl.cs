@@ -71,7 +71,7 @@ namespace SPNATI_Character_Editor.Controls
 					_workingCase.Stages.Add(i);
 				}
 			}
-			caseCtl.SetCase(new Stage(_workingCase.Stages[0]), _workingCase);
+			caseCtl.SetCase(_workingCase.Stages[0], _workingCase);
 
 			split.Panel1Collapsed = true;
 		}

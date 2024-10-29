@@ -1,4 +1,6 @@
-﻿namespace SPNATI_Character_Editor.Controls
+﻿using System;
+
+namespace SPNATI_Character_Editor.Controls
 {
 	partial class DialogueAdvancedControl
 	{
@@ -45,6 +47,7 @@
             this.cboGender = new Desktop.Skinning.SkinnedComboBox();
             this.lblStateGender = new Desktop.Skinning.SkinnedLabel();
             this.chkResetAI = new Desktop.Skinning.SkinnedCheckBox();
+            this.lblStateZIndex = new Desktop.Skinning.SkinnedLabel();
             this.lblWeight = new Desktop.Skinning.SkinnedLabel();
             this.valWeight = new Desktop.Skinning.SkinnedNumericUpDown();
             this.groupBoxBubble = new Desktop.Skinning.SkinnedGroupBox();
@@ -77,6 +80,7 @@
             this.recNickChar = new Desktop.CommonControls.RecordField();
             this.txtNickname = new Desktop.Skinning.SkinnedTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.valZIndex = new Desktop.Skinning.SkinnedTextBox();
             this.groupBoxArrow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valLocation)).BeginInit();
             this.groupBoxState.SuspendLayout();
@@ -334,6 +338,19 @@
             this.chkResetAI.Text = "Reset";
             this.chkResetAI.UseVisualStyleBackColor = true;
             this.chkResetAI.CheckedChanged += new System.EventHandler(this.chkResetAI_CheckedChanged);
+            // 
+            // lblStateZIndex
+            // 
+            this.lblStateZIndex.AutoSize = true;
+            this.lblStateZIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblStateZIndex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblStateZIndex.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblStateZIndex.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
+            this.lblStateZIndex.Location = new System.Drawing.Point(175, 425);
+            this.lblStateZIndex.Name = "lblStateZIndex";
+            this.lblStateZIndex.Size = new System.Drawing.Size(46, 13);
+            this.lblStateZIndex.TabIndex = 3;
+            this.lblStateZIndex.Text = "Z-Index:";
             // 
             // lblWeight
             // 
@@ -694,7 +711,9 @@
             this.lblNickOp.Size = new System.Drawing.Size(56, 13);
             this.lblNickOp.TabIndex = 6;
             this.lblNickOp.Text = "Operation:";
-            this.toolTip1.SetToolTip(this.lblNickOp, "Set as the only nickname for the given character (Weight=1);\nAdd a new nickname or increase weight of an existing one;\nDecrease a nickname's weight;\nSet a nickname's weight to a new value.");
+            this.toolTip1.SetToolTip(this.lblNickOp, "Set as the only nickname for the given character (Weight=1);\nAdd a new nickname o" +
+        "r increase weight of an existing one;\nDecrease a nickname\'s weight;\nSet a nickna" +
+        "me\'s weight to a new value.");
             // 
             // valNickWeight
             // 
@@ -782,16 +801,30 @@
             this.txtNickname.TabIndex = 0;
             this.txtNickname.TextChanged += new System.EventHandler(this.txtNickname_TextChanged);
             // 
+            // valZIndex
+            // 
+            this.valZIndex.BackColor = System.Drawing.Color.White;
+            this.valZIndex.ForeColor = System.Drawing.Color.Black;
+            this.valZIndex.Location = new System.Drawing.Point(240, 423);
+            this.valZIndex.MaxLength = 3;
+            this.valZIndex.Name = "valZIndex";
+            this.valZIndex.Size = new System.Drawing.Size(60, 20);
+            this.valZIndex.TabIndex = 15;
+            this.valZIndex.TabStop = false;
+            //this.valZIndex.TextChanged += new System.EventHandler(this.valZIndex_TextChanged);
+            // 
             // DialogueAdvancedControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.valZIndex);
             this.Controls.Add(this.groupBoxNickname);
             this.Controls.Add(this.groupBoxForfeit);
             this.Controls.Add(this.groupBoxBubble);
             this.Controls.Add(this.valWeight);
             this.Controls.Add(this.lblWeight);
             this.Controls.Add(this.groupBoxState);
+            this.Controls.Add(this.lblStateZIndex);
             this.Controls.Add(this.groupBoxArrow);
             this.Name = "DialogueAdvancedControl";
             this.Size = new System.Drawing.Size(395, 450);
@@ -815,9 +848,9 @@
 
 		}
 
-		#endregion
+        #endregion
 
-		private Desktop.Skinning.SkinnedGroupBox groupBoxArrow;
+        private Desktop.Skinning.SkinnedGroupBox groupBoxArrow;
         private Desktop.Skinning.SkinnedLabel lblArrowLocation;
 		private Desktop.Skinning.SkinnedComboBox cboDirection;
 		private Desktop.Skinning.SkinnedLabel lblArrowDirection;
@@ -829,7 +862,8 @@
 		private Desktop.Skinning.SkinnedLabel lblWeight;
 		private Desktop.Skinning.SkinnedNumericUpDown valWeight;
 		private Desktop.Skinning.SkinnedLabel lblStateAI;
-		private Desktop.Skinning.SkinnedComboBox cboSize;
+        private Desktop.Skinning.SkinnedLabel lblStateZIndex;
+        private Desktop.Skinning.SkinnedComboBox cboSize;
 		private Desktop.Skinning.SkinnedTextBox txtLabel;
 		private Desktop.Skinning.SkinnedComboBox cboAI;
 		private Desktop.Skinning.SkinnedLabel lblStateLabel;
@@ -865,5 +899,6 @@
         private Desktop.Skinning.SkinnedListBox lstNick;
         private System.Windows.Forms.ToolStripButton tsNickMoveUp;
         private System.Windows.Forms.ToolStripButton tsNickMoveDown;
+        private Desktop.Skinning.SkinnedTextBox valZIndex;
     }
 }
