@@ -766,7 +766,7 @@ CardFrontSelector.prototype = Object.create(CardSelector.prototype);
 CardFrontSelector.prototype.constructor = CardFrontSelector;
 
 CardFrontSelector.prototype.image = function () {
-    return this.imageSet.frontImages[this.card.toString()];
+    return this.card.getImage(true);
 }
 
 CardFrontSelector.prototype.altText = function () {
@@ -774,11 +774,11 @@ CardFrontSelector.prototype.altText = function () {
 }
 
 CardFrontSelector.prototype.isSelected = function () {
-    return ACTIVE_CARD_IMAGES.isFrontImageActive(this.imageSet, this.card);
+    return ACTIVE_CARD_IMAGES.isFrontImageActive(this.card);
 }
 
 CardFrontSelector.prototype.select = function () {
-    ACTIVE_CARD_IMAGES.activateFrontImage(this.imageSet, this.card);
+    ACTIVE_CARD_IMAGES.activateFrontImage(this.card);
     this.update();
 }
 
@@ -964,7 +964,7 @@ function CardDeckDisplay (imageSet) {
     this.imageSet = imageSet;
 
     var suits = [[], [], [], []];
-    imageSet.includedFrontCards.forEach(function (c) {
+    imageSet.cards.forEach(function (c) {
         suits[c.suit].push(c);
     });
 

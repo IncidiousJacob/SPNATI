@@ -26,6 +26,9 @@ var FULL_HOUSE      = 7;
 var FOUR_OF_A_KIND  = 8;
 var STRAIGHT_FLUSH  = 9;
 var ROYAL_FLUSH     = 10;
+var FIVE_OF_A_KIND  = 11;
+var FLUSH_HOUSE     = 12;
+var FLUSH_FIVE      = 13;
 
 /**********************************************************************
  *****                      Poker UI Elements                     *****
@@ -56,10 +59,12 @@ var BLANK_CARD_IMAGE = IMG + "blank.png";
 var UNKNOWN_CARD_IMAGE = IMG + "cards/default/unknown.svg";
 var SUIT_PREFIXES = ["spade", "heart", "diamo", "clubs"];
 var ACTIVE_CARD_IMAGES = new ActiveCardImages();
+/** @type {Object.<string, CardImageSet>} */
 var CARD_IMAGE_SETS = {};
 var DEFAULT_CARD_DECK = 'default';
 
 /* card decks */
+/** @type {Deck} */
 var activeDeck;    /* deck for current round */
 
 /* deal lock */
@@ -72,10 +77,24 @@ var dealLock = 0;
  * 
  * @param {number} suit
  * @param {number} rank
+ * @param {string} sourceId      id of source set for card
+ * @param {string} front         front image
  ************************************************************/
-function Card(suit, rank) {
+function Card(suit, rank, sourceId, front) {
+    /** @type {number} */
     this.suit = suit;
+
+    /** @type {number} */
     this.rank = rank;
+    
+    /** @type {string} */
+    this.sourceId = sourceId;
+
+    /** @type {string} */
+    this.frontImage = front;
+
+    /** @type {string} */
+    this.currentBackImage = "img/cards/default/unknown.svg";
 }
 
 /* This toString() method means that using a card object in a URL
@@ -88,13 +107,70 @@ Card.prototype.altText = function() {
     return (this.rank >= 11 ? "JQKA"[this.rank-11] : this.rank) + String.fromCharCode(0x2660 + this.suit);
 };
 
+/** @returns {CardImageSet} */
+Card.prototype.sourceSet = function() {
+    return CARD_IMAGE_SETS[this.sourceId];
+}
+
+Card.prototype.selectBackImage = function() {
+    var validBacks = Object.entries(this.sourceSet().backImages).flatMap((entry) => {
+        if (ACTIVE_CARD_IMAGES.isBackImageActive(this.sourceSet(), entry[0])) {
+            return [entry[1]];
+        } else {
+            return [];
+        }
+    });
+
+    if (validBacks.length > 0) {
+        this.currentBackImage = validBacks[getRandomNumber(0, validBacks.length)];
+    } else {
+        this.currentBackImage = "img/cards/default/unknown.svg";
+    }
+}
+
+/** @returns {string} */
+Card.prototype.getImage = function(visible) {
+    if (visible) {
+        return this.frontImage ?? IMG + "cards/default/" + this.toString() + ".svg";
+    } else {
+        return this.currentBackImage ?? "img/cards/default/unknown.svg";
+    }
+}
+
+Card.prototype.displayCard = function (player, slot, visible) {
+    detectCheat();
+
+    $cardCells[player][slot].attr({
+        src: this.getImage(visible),
+        alt: visible ? this.altText() : '?'
+    });
+
+    fillCard(player, slot);
+    $cardCells[player][slot].css('visibility', '');
+}
+
+Card.prototype.clone = function() {
+    return new Card(this.suit, this.rank, this.sourceId, this.frontImage);
+}
+
+Card.prototype.equals = function(other) {
+    return other.suit === this.suit && other.rank === this.rank;
+}
+
 /************************************************************
  * Hand class
  ************************************************************/
 function Hand() {
+    /** @type {Array<Card>} */
     this.cards = Array(CARDS_PER_HAND);
+
+    /** @type {number} */
     this.strength = NONE;
+    
+    /** @type {Array<number>} */
     this.value = [];
+
+    /** @type {Array<boolean>} */
     this.tradeIns = Array(CARDS_PER_HAND);
 }
 
@@ -107,13 +183,33 @@ Hand.prototype.toString = function() {
  ************************************************************/
 
 function Deck() {
-    var cards = [];
+    var cards = ACTIVE_CARD_IMAGES.cardFronts.slice();
 
-    for (var i = 0; i < 4; i++) {
-        for (var j = 2; j <= 14; j++) {
-            cards.push(new Card(i, j));
-        }
+    /* Basic sanity checks to prevent the use of decks that are completely empty
+     * or that would lead to endless ties due to only having one card type (including length-1 decks).
+     *
+     * TODO: consider moving this validation logic into the card select UI instead?
+     */
+    if (cards.length < 1 || cards.every((card) => card.equals(cards[0]))) {
+        cards = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].cards.slice();
     }
+
+    /* If we have less than 52 cards, duplicate the deck until we have 52. */
+    while (cards.length < 52) {
+        let nClones = Math.min(52 - cards.length, ACTIVE_CARD_IMAGES.cardFronts.length);
+        Array.prototype.push.apply(
+            cards, 
+            ACTIVE_CARD_IMAGES.cardFronts.slice(0, nClones).map((card) => card.clone())
+        )
+    }
+
+    cards.forEach((card) => card.selectBackImage());
+
+    /* TODO: handle invalid deck setups here */
+    this.length = function() {
+        return cards.length;
+    }
+
 
     /* Fisher-Yates shuffling algorithm.  At step i, cards 0 through i -
      * 1 of the shuffled deck have already been selected, while cards i
@@ -133,7 +229,7 @@ function Deck() {
 
     /* The maximum number of cards we deal in a round is 50.  This
      * happens when there are five active players and they all exchange
-     * all their cards.  Since the deck starts with 52 cards we will
+     * all their cards.  Since the deck starts with at least 52 cards we will
      * never run out.
      */
     this.dealCard = function() {
@@ -161,7 +257,6 @@ function Deck() {
  * Sets up all of the information needed to start playing poker.
  ************************************************************/
 function setupPoker () {
-    ACTIVE_CARD_IMAGES.generateCardBackMapping();
     ACTIVE_CARD_IMAGES.preloadImages();
 
     /* set up the player hands */
@@ -187,7 +282,7 @@ function cardImageKey(suit, rank) {
 
 /**
  * A collection of images for cards.
- * @param {Object.<string, [Card, string]>} frontImages
+ * @param {Array<Card>} cardFronts
  * @param {Object.<string, string>} backImages 
  * @param {string} id
  * @param {string} title
@@ -198,30 +293,35 @@ function cardImageKey(suit, rank) {
  * @param {string?} unlockCollectible
  * @param {string?} status
  */
-function CardImageSet (frontImages, backImages, id, title, subtitle, credits, description, unlockChar, unlockCollectible, status) {
-    /** @type {Object.<string, string>} */
-    this.frontImages = {};
-
+function CardImageSet (cardFronts, backImages, id, title, subtitle, credits, description, unlockChar, unlockCollectible, status) {
     /** @type {Array<Card>} */
-    this.includedFrontCards = [];
+    this.cards = cardFronts;
 
-    Object.entries(frontImages).forEach(function (kv) {
-        var k = kv[0];
-        var v_pair = kv[1];
-        
-        this.includedFrontCards.push(v_pair[0]);
-        this.frontImages[k] = v_pair[1];
-    }.bind(this));
+    /** @type {Object.<string, string>} */
+    this.backImages = backImages; // maps from id to src path
 
-    this.backImages = backImages;
-
+    /** @type {string} */
     this.id = id;
+
+    /** @type {string} */
     this.title = title;
+
+    /** @type {string} */
     this.subtitle = subtitle;
+
+    /** @type {string} */
     this.credits = credits;
+
+    /** @type {string} */
     this.description = description;
+
+    /** @type {string?} */
     this.unlockChar = unlockChar;
+
+    /** @type {string?} */
     this.unlockCollectible = unlockCollectible;
+
+    /** @type {string?} */
     this.status = status;
 }
 
@@ -277,7 +377,7 @@ CardImageSet.prototype.isUnlocked = function () {
  * @returns {CardImageSet} 
  */
 function imageSetFromXML($xml) {
-    var mapping = {};
+    var fronts = [];
     var backs = {};
 
     var id = $xml.attr("id");
@@ -289,7 +389,7 @@ function imageSetFromXML($xml) {
     var unlockCollectible = $xml.children("unlockCollectible").text() || null;
     var status = $xml.children("status").text() || null;
 
-    $xml.children('front').each(function () {
+    $xml.children('front').each(function (idx) {
         var $elem = $(this);
         var imageSrc = $elem.attr("src") || "";
         var ranks = $elem.attr("rank") || "2-14";
@@ -330,14 +430,15 @@ function imageSetFromXML($xml) {
                 max = t;
             }
 
-            for (var i = min; i <= max; i++) {
-                var rank = (i === 1 ? 14 : i);
-                var imgIdx = (i === 14 ? 1 : i);
-                var im = imageSrc.replace("%i", imgIdx.toString(10));
+            for (let i = min; i <= max; i++) {
+                let rank = (i === 1 ? 14 : i);
+                let imgIdx = (i === 14 ? 1 : i);
+                let im = imageSrc.replace("%i", imgIdx.toString(10));
 
                 suits.forEach(function (suit) {
-                    var c = new Card(SUIT_PREFIXES.indexOf(suit), rank);
-                    mapping[c.toString()] = [c, im.replace("%s", suit)];
+                    fronts.push(
+                        new Card(SUIT_PREFIXES.indexOf(suit), rank, id, im.replace("%s", suit))
+                    );
                 });
             }
         });
@@ -348,7 +449,7 @@ function imageSetFromXML($xml) {
     });
 
     return new CardImageSet(
-        mapping, backs, id, title, subtitle, credits, description,
+        fronts, backs, id, title, subtitle, credits, description,
         unlockChar, unlockCollectible, status
     );
 }
@@ -385,11 +486,8 @@ function resolveBackImageRef(dotPair) {
 }
 
 function ActiveCardImages () {
-    /** @type {Object.<string, string>} */
-    this.frontImageMap = {};
-
-    /** @type {Object.<string, string>} */
-    this.backImageMap = {};
+    /** @type {Array<Card>} */
+    this.cardFronts = []; 
 
     /*
      * Note: backImages = null indicates that only default card back images are
@@ -401,14 +499,14 @@ function ActiveCardImages () {
 }
 
 ActiveCardImages.prototype.save = function () {
-    var frontOverlay = {};
-    Object.entries(this.frontImageMap).filter(function (kv) {
-        if (!kv[1] || kv[1] === DEFAULT_CARD_DECK) return false;
-        var set = CARD_IMAGE_SETS[kv[1]];
-        return set && set.frontImages[kv[0]];
-    }).forEach(function (kv) {
-        frontOverlay[kv[0]] = kv[1];
-    });
+    var frontMap = {};
+    this.cardFronts.forEach((card) => {
+        if (!frontMap[card.sourceId]) {
+            frontMap[card.sourceId] = [];
+        }
+
+        frontMap[card.sourceId].push(card.frontImage);
+    })
 
     var backArray = null;
     if (this.backImages) {
@@ -422,7 +520,8 @@ ActiveCardImages.prototype.save = function () {
     }
 
     var saveObj = {
-        "front": frontOverlay,
+        "version": 2,
+        "front": frontMap,
         "back": backArray
     };
 
@@ -431,19 +530,53 @@ ActiveCardImages.prototype.save = function () {
 
 ActiveCardImages.prototype.load = function () {
     var saveObj = save.getItem("cardDeck", false) || {};
+    var version = saveObj.version || 1;
 
-    this.frontImageMap = {};
+    this.cardFronts = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].cards.slice();
     this.backImages = null;
-    this.activateSetFront(CARD_IMAGE_SETS[DEFAULT_CARD_DECK]);
 
     if (saveObj.front) {
-        Object.entries(saveObj.front).filter(function (kv) {
-            if (!kv[1] || kv[1] === DEFAULT_CARD_DECK) return false;
-            var set = CARD_IMAGE_SETS[kv[1]];
-            return set && set.frontImages[kv[0]];
-        }).forEach(function (kv) {
-            this.frontImageMap[kv[0]] = kv[1];
-        }.bind(this));
+        if (version == 1) {
+            let overlay = {};
+
+            /* saveObj.front is a map from card type to source card set ID */
+            Object.entries(saveObj.front).forEach((kv) => {
+                let sourceId = CARD_IMAGE_SETS[kv[1]] ? kv[1] : DEFAULT_CARD_DECK;
+                let card = CARD_IMAGE_SETS[sourceId].cards.find(
+                    (candidate) => candidate.toString() == kv[0]
+                );
+
+                if (!card) {
+                    card = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].cards.find(
+                        (candidate) => candidate.toString() == kv[0]
+                    );
+                }
+
+                overlay[card.toString()] = card;
+            });
+
+            /* Populate the active card fronts list by using the computed overlay set first,
+             * falling back to the default card set if no entry was found in the save data for a given card type.
+             * 
+             * We can use the default card set here as a convenient way to iterate over all possible card types.
+             */
+            this.cardFronts = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].cards.map(
+                (defaultCard) => overlay[defaultCard.toString()] ?? defaultCard
+            );
+        } else {
+            /* saveObj.front is a map from source set IDs to lists of active images */
+            Object.entries(saveObj.front).forEach((kv) => {
+                let sourceSet = CARD_IMAGE_SETS[kv[0]];
+                if (sourceSet) {
+                    kv[1].forEach((image) => {
+                        let card = sourceSet.cards.find((candidate) => candidate.frontImage == image);
+                        if (card) {
+                            this.cardFronts.push(card);
+                        }
+                    });
+                }
+            });
+        }
     }
 
     if (saveObj.back) {
@@ -460,56 +593,40 @@ ActiveCardImages.prototype.load = function () {
 }
 
 ActiveCardImages.prototype.reset = function () {
-    this.frontImageMap = {};
+    this.cardFronts = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].cards.slice();
     this.backImages = null;
-
-    this.activateSetFront(CARD_IMAGE_SETS[DEFAULT_CARD_DECK]);
     this.preloadImages();
 }
 
 /**
  * Activate a front image from a set.
- * If the given set does not define a card front image for the specified card,
- * a default card image is used instead.
- * @param {CardImageSet} imageSet 
  * @param {Card} card
  */
-ActiveCardImages.prototype.activateFrontImage = function (imageSet, card) {
-    var k = card.toString();
-    if (imageSet.frontImages[k]) {
-        this.frontImageMap[k] = imageSet.id;
-    } else {
-        this.frontImageMap[k] = DEFAULT_CARD_DECK;
+ActiveCardImages.prototype.activateFrontImage = function (card) {
+    if (!this.cardFronts.some((candidate) => candidate.frontImage === card.frontImage)) {
+        this.cardFronts.push(card);
     }
 }
 
 /**
- * Activate all defined card front images from a set.
- * @param {CardImageSet} imageSet 
- */
-ActiveCardImages.prototype.activateSetFront = function (imageSet) {
-    Object.keys(imageSet.frontImages).forEach(function (k) {
-        this.frontImageMap[k] = imageSet.id;
-    }.bind(this));
-}
-
-/**
- * Deactivate the front image for a card, replacing it with a default card image.
+ * Deactivate the front image for a card.
  * @param {Card} card
  */
 ActiveCardImages.prototype.deactivateFrontImage = function (card) {
-    this.frontImageMap[card.toString()] = DEFAULT_CARD_DECK;
+    var idx = this.cardFronts.findIndex((candidate) => candidate.frontImage === card.frontImage);
+    if (idx >= 0) {
+        this.cardFronts.splice(idx, 1);
+    }
 }
 
 /**
  * Check whether the front image defined by a set for a given card is active.
- * 
- * @param {CardImageSet} imageSet 
+ *  
  * @param {Card} card 
  * @returns {boolean}
  */
-ActiveCardImages.prototype.isFrontImageActive = function (imageSet, card) {
-    return (this.frontImageMap[card.toString()] || DEFAULT_CARD_DECK) === imageSet.id;
+ActiveCardImages.prototype.isFrontImageActive = function (card) {
+    return this.cardFronts.some((candidate) => candidate.frontImage === card.frontImage);
 }
 
 /**
@@ -549,109 +666,18 @@ ActiveCardImages.prototype.removeBackImage = function (imageSet, imgID) {
  * @returns {boolean}
  */
 ActiveCardImages.prototype.isBackImageActive = function (imageSet, imgID) {
-    if (!this.backImages) return (imageSet.id === DEFAULT_CARD_DECK);
+    if (!this.backImages || this.backImages.size == 0) return (imageSet.id === DEFAULT_CARD_DECK);
     return this.backImages.has(imageSet.id + "." + imgID);
-}
-
-/**
- * Generate a random mapping between all 52 cards and active card back images.
- */
-ActiveCardImages.prototype.generateCardBackMapping = function () {
-    var allCards = new Deck();
-    allCards.shuffle();
-
-    var backImages = null;
-    if (this.backImages) {
-        backImages = Array.from(this.backImages).map(resolveBackImageRef).filter(function (v) {
-            return !!v;
-        });
-    }
-
-    if (!backImages || backImages.length === 0) {
-        backImages = Object.values(CARD_IMAGE_SETS[DEFAULT_CARD_DECK].backImages);
-    }
-
-    var i = 0, card;
-    while (card = allCards.dealCard()) {
-        this.backImageMap[card.toString()] = backImages[i++ % backImages.length];
-    }
-
-    /* Pre-set the "deck" image underneath the main button to an arbitrary
-     * selected card back image.
-     */
-    $('#deck').attr('src', backImages[0]);
-}
-
-/**
- * Get the appropriate front or back image to display for a given card.
- * 
- * @param {boolean} visible
- * @param {Card | number | string} card_or_suit
- * @param {number?} rank
- * @returns {string}
- */
-ActiveCardImages.prototype.getCardImage = function (visible, card) {
-    var k = card.toString();
-
-    if (visible) {
-        var set = this.frontImageMap[k];
-        var ret = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].frontImages[k] || (IMG + "cards/default/" + k + ".svg");
-
-        if (set && CARD_IMAGE_SETS[set]) {
-            ret = CARD_IMAGE_SETS[set].frontImages[k] || ret;
-        }
-
-        return ret;
-    } else {
-        return this.backImageMap[k] || UNKNOWN_CARD_IMAGE;
-    }
-}
-
-/**
- * Displays a card, face up or face down, or an empty space if the card is missing.
- * @param {number} player
- * @param {number} slot 
- * @param {boolean} visible
- */
-ActiveCardImages.prototype.displayCard = function (player, slot, visible) {
-    var card = players[player].hand.cards[slot];
-
-    if (card) {
-        detectCheat();
-        var img = this.getCardImage(visible, card);
-        var altText = card.altText();
-
-        if (!visible) altText = '?';
-        $cardCells[player][slot].attr({
-            src: img,
-            alt: altText
-        });
-
-        fillCard(player, slot);
-        $cardCells[player][slot].css('visibility', '');
-    } else {
-        clearCard(player, slot);
-    }
 }
 
 /**
  * Prefetch all active card images.
  */
 ActiveCardImages.prototype.preloadImages = function () {
-    for (var suit = 0; suit < 4; suit++) {
-        for (var i = 2; i < 15; i++) {
-            var key = cardImageKey(suit, i);
-            var src = CARD_IMAGE_SETS[DEFAULT_CARD_DECK].frontImages[key] || (IMG + "cards/default/" + key + ".svg");
-            var set_id = this.frontImageMap[key];
+    this.cardFronts.forEach((card) => {
+        new Image().src = card.frontImage;
+    })
 
-            if (set_id && CARD_IMAGE_SETS[set_id]) {
-                src = CARD_IMAGE_SETS[set_id].frontImages[key] || src;
-            }
-            
-            new Image().src = src;
-        }
-    }
-    
     var backImages = null;
     if (this.backImages) {
         backImages = Array.from(this.backImages).map(resolveBackImageRef).filter(function (v) {
@@ -712,7 +738,12 @@ function showHand (player) {
  ************************************************************/
 function displayHand (player, visible) {
     for (var i = 0; i < CARDS_PER_HAND; i++) {
-        ACTIVE_CARD_IMAGES.displayCard(player, i, visible);
+        let card = players[player].hand.cards[i];
+        if (card) {
+            card.displayCard(player, i, visible);
+        } else {
+            clearCard(player, i);
+        }
     }
 }
 
@@ -746,8 +777,10 @@ function stopCardAnimations () {
  * Compose and shuffle a new deck.
  ************************************************************/
 function setupDeck () {
-    activeDeck = new Deck();
-    activeDeck.shuffle();
+    if (!activeDeck || activeDeck.length() < 52) {
+        activeDeck = new Deck();
+        activeDeck.shuffle();
+    }
 }
 
 /************************************************************
@@ -810,10 +843,10 @@ function exchangeCards (player) {
  * Animates a small card into a player's hand.  n is the card's number
  * in the order dealt, used to calculate the initial delay.
  ************************************************************/
-function animateDealtCard (player, card, n) {
-    $('#deck').attr('src', ACTIVE_CARD_IMAGES.getCardImage(
-        false, players[player].hand.cards[card]
-    ));
+function animateDealtCard (player, cardIdx, n) {
+    var card = players[player].hand.cards[cardIdx];
+
+    $('#deck').attr('src', card.getImage(false));
 
     var $clonedCard = $('#deck').clone().attr('id', '').addClass('shown-card').prependTo($gameHiddenArea);
     
@@ -823,7 +856,7 @@ function animateDealtCard (player, card, n) {
         $clonedCard.addClass('small-card-image');
     }
 
-    var offset = $cardCells[player][card].offset();
+    var offset = $cardCells[player][cardIdx].offset();
     var top = offset.top - $gameHiddenArea.offset().top;
     var left = offset.left - $gameHiddenArea.offset().left - 6;
 
@@ -839,7 +872,7 @@ function animateDealtCard (player, card, n) {
 
     $clonedCard.delay(n * ANIM_DELAY).animate({top: top, left: left}, animTime, function() {
         $clonedCard.remove();
-        ACTIVE_CARD_IMAGES.displayCard(player, card, player == HUMAN_PLAYER);
+        card.displayCard(player, cardIdx, player == HUMAN_PLAYER);
         dealLock--;
         if (dealLock <= 0) {
             $gameScreen.removeClass('prompt-exchange');
@@ -892,6 +925,9 @@ function handStrengthToString (number) {
         case FOUR_OF_A_KIND:    return "Four of a kind";
         case STRAIGHT_FLUSH:    return "Straight flush";
         case ROYAL_FLUSH:       return "Royal flush";
+        case FIVE_OF_A_KIND:    return "Five of a kind";
+        case FLUSH_HOUSE:       return "Flush house";
+        case FLUSH_FIVE:        return "Flush five";
     }
 }
 
@@ -908,6 +944,9 @@ function handStrengthFromString (string) {
     case "four of a kind":  return FOUR_OF_A_KIND;
     case "straight flush":  return STRAIGHT_FLUSH;
     case "royal flush":     return ROYAL_FLUSH;
+    case "five of a kind":  return FIVE_OF_A_KIND;
+    case "flush house":     return FLUSH_HOUSE;
+    case "flush five":      return FLUSH_FIVE;
     }
     return NaN;
 }
@@ -952,6 +991,8 @@ Hand.prototype.describe = function(with_article) {
         description = "three " + cardRankToString(this.value[0]); break;
     case FOUR_OF_A_KIND:
         description = "four " + cardRankToString(this.value[0]); break;
+    case FIVE_OF_A_KIND:
+        description = "five " + cardRankToString(this.value[0]); break;
     default:
         description = handStrengthToString(this.strength).toLowerCase();
         use_article = true;
@@ -975,16 +1016,18 @@ Hand.prototype.describeFormal = function() {
             + cardRankToString(this.value[1], true);
         break;
     case THREE_OF_A_KIND:
+    case FOUR_OF_A_KIND:
+    case FIVE_OF_A_KIND:
+    case FLUSH_FIVE:
         description += cardRankToString(this.value[0]); break;
     case STRAIGHT:
     case FLUSH:
     case STRAIGHT_FLUSH:
         description += cardRankToString(this.value[0], false) + ' high'; break;
+    case FLUSH_HOUSE:
     case FULL_HOUSE:
         description += cardRankToString(this.value[0]) + " full of "
             + cardRankToString(this.value[1]); break;
-    case FOUR_OF_A_KIND:
-        description += cardRankToString(this.value[0]); break;
     // Royal Flush needs no further description
     }
     return description;
@@ -1007,7 +1050,7 @@ Hand.prototype.sort = function() {
 // Determine which deck is being used by most cards in the hand
 // Return "" if at least `tolerance` cards differ from the majority
 Hand.prototype.getCustomDeck = function(tolerance) {
-    var decks = this.cards.map(card => ACTIVE_CARD_IMAGES.frontImageMap[card]);
+    var decks = this.cards.map(card => card.sourceId);
 
     var deckCounts = {};
     decks.forEach((deck) => deckCounts[deck] = (deckCounts[deck] || 0) + 1);
@@ -1023,8 +1066,7 @@ Hand.prototype.getCustomDeck = function(tolerance) {
 // Determine if a custom deck is being used by any cards in the hand
 // Return "true" if any card faces use the deck specified in `args`
 Hand.prototype.findUsedCustomDeck = function(args) {
-    var decks = this.cards.map(card => ACTIVE_CARD_IMAGES.frontImageMap[card]);
-    return (decks.indexOf(args) !== -1).toString();
+    return this.cards.some((card) => card.sourceId === args).toString();
 }
 
 /**********************************************************************
@@ -1054,7 +1096,7 @@ Hand.prototype.determine = function() {
     var have_pair = [];
     var have_three_kind = 0;
     var have_straight = 0;
-    var have_flush = 0;
+    var have_flush = this.cards.every((c) => c.suit === this.cards[0].suit);
 
     /* start by collecting the ranks and suits of the cards */
     this.ranks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -1068,9 +1110,14 @@ Hand.prototype.determine = function() {
     }, this);
     this.ranks[0] = this.ranks[13];
     
-    /* look for four of a kind, three of a kind, and pairs */
+    /* look for five/four of a kind, three of a kind, and pairs */
     for (var i = this.ranks.length-1; i > 0; i--) {
-        if (this.ranks[i] == 4) {
+        if (this.ranks[i] == 5) {
+            /* If all cards' suits match, it's flush five, otherwise five of a kind */
+            this.strength = have_flush ? FLUSH_FIVE : FIVE_OF_A_KIND;
+            this.value = [i+1];
+            break;
+        } else if (this.ranks[i] == 4) {
             this.strength = FOUR_OF_A_KIND;
             this.value = [i+1];
             break;
@@ -1081,10 +1128,10 @@ Hand.prototype.determine = function() {
         }
     }
     
-    /* determine full house, three of a kind, two pair, and pair */
+    /* determine flush/full house, three of a kind, two pair, and pair */
     if (this.strength == NONE) {
         if (have_three_kind && have_pair.length > 0) {
-            this.strength = FULL_HOUSE;
+            this.strength = have_flush ? FLUSH_HOUSE : FULL_HOUSE;
             this.value = [have_three_kind, have_pair[0]];
         } else if (have_three_kind) {
             this.strength = THREE_OF_A_KIND;
@@ -1101,9 +1148,8 @@ Hand.prototype.determine = function() {
         }
     }
     
-    /* look for straights and flushes */
+    /* look for straights */
     if (this.strength == NONE) {
-        /* first, straights */
         var sequence = 0;
 
         for (var i = 0; i < this.ranks.length; i++) {
@@ -1123,18 +1169,6 @@ Hand.prototype.determine = function() {
                     /* A hole in the sequence - can't have a straight */
                     break;
                 }
-            }
-        }
-        
-        /* second, flushes */
-        for (var i = 0; i < this.suits.length; i++) {
-            if (this.suits[i] == CARDS_PER_HAND) {
-                /* this is a flush */
-                have_flush = 1;
-                break;
-            } else if (this.suits[i] > 0) {
-                /* can't have a flush */
-                break;
             }
         }
         
