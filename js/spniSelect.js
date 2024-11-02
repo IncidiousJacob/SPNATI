@@ -1836,7 +1836,9 @@ function updateSelectionVisuals () {
  * Hides the table on the single selection screen.
  ************************************************************/
 function hideSelectionTable() {
-    $selectTable.fadeToggle(100);
+    $selectTable.fadeToggle(100)
+    $('#main-select-screen .hide-table-button > span.glyphicon')
+        .toggleClass('glyphicon-eye-close glyphicon-eye-open');
 }
 
 /************************************************************

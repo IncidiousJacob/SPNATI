@@ -60,6 +60,7 @@
         monika.ext_dialogue.continue_extended_dialogue();
     }, false, false];
     var previousGamePhase = null;
+    var previousNextGamePhase = null;
     var backgroundEffects = Array(4);
 
     exports.extendedDialoguePhase = extendedDialoguePhase;
@@ -69,7 +70,7 @@
         var pl = monika.utils.get_monika_player();
         if (slot === pl.slot) return;
 
-        if (inRollback() && rolledBackGamePhase === extendedDialoguePhase) {
+        if (inRollback() && gamePhase === extendedDialoguePhase) {
             if (players[slot] && $gameBubbles[slot - 1]) {
                 $gameBubbles[slot - 1].hide();
             }
@@ -172,6 +173,7 @@
         } catch (e) {
             monika.reportException('in extended_dialogue_start', e);
         } finally {
+            previousNextGamePhase = nextGamePhase;
             previousGamePhase = gamePhase;
             $gameBubbles[pl.slot - 1].show();
 
@@ -191,14 +193,16 @@
 
         root.Sentry.setTag("extended_dialogue", null);
 
-        allowProgression(previousGamePhase);
+        gamePhase = previousGamePhase;
+        allowProgression(previousNextGamePhase);
+        $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
 
         delete pl.markers['extended-dialogue-id'];
         delete pl.markers['extended-dialogue-line'];
 
         cleanupBackgroundEffects();
 
-        if (AUTO_FADE) forceTableVisibility(true);
+        if (AUTO_FADE) forceTableVisibility(gamePhase[2]);
     }
 
     return exports;

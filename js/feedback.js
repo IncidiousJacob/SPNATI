@@ -89,10 +89,11 @@ function compileBaseErrorReport(userDesc, bugType) {
         mergeObjects(circumstances, gameState);
         if (gamePhase) {
             if (inRollback()) {
-                circumstances.gamePhase = rolledBackGamePhase[0];
-            } else {
                 circumstances.gamePhase = gamePhase[0];
+            } else {
+                circumstances.gamePhase = nextGamePhase[0];
             }
+            circumstances.gamePhaseID = getGamePhaseString(gamePhase);
         }
 
         var tableReports = [];
@@ -639,10 +640,11 @@ function recordInterruptedGameEvent(isPageUnload) {
 
     if (gamePhase) {
         if (inRollback()) {
-            report.gameState.gamePhase = rolledBackGamePhase[0];
-        } else {
             report.gameState.gamePhase = gamePhase[0];
+        } else {
+            report.gameState.gamePhase = nextGamePhase[0];
         }
+        report.gameState.gamePhaseID = getGamePhaseString(gamePhase);
     }
 
     /* Interruption reasons are related to game sessions. */

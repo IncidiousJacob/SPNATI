@@ -31,8 +31,11 @@ $gameOpponentAreas = [$("#game-opponent-area-1"),
                       $("#game-opponent-area-3"),
                       $("#game-opponent-area-4")];
 $gamePlayerCountdown = $("#player-countdown");
+$gameClimaxOverlay = $('#game-climax-overlay');
 $gamePlayerClothingArea = $("#player-game-clothing-area, #player-name-label-minimal");
 $gamePlayerCardArea = $("#player-game-card-area");
+// This is used to apply the current, loser, tied, and revealed-cards classes
+$gamePlayerAreas = [$('#player-game-clothing-area, #player-name-label-minimal, #player-game-card-area')].concat($gameOpponentAreas);
 
 /* dock UI elements */
 $gameClothingLabel = $("#game-clothing-label");
@@ -45,11 +48,10 @@ $gameClothingCells = [$(".player-0-clothing-1"),
                       $(".player-0-clothing-7"),
                       $(".player-0-clothing-8")];
 $mainButton = $("#main-game-button");
-$cardButtons = [$("#player-0-card-1"),
-                $("#player-0-card-2"),
-                $("#player-0-card-3"),
-                $("#player-0-card-4"),
-                $("#player-0-card-5")];
+$mainButtonText = $("#main-game-button>span");
+$autoAdvanceButtons = $("#auto-advance-button-container");
+$autoAdvanceProgressBar = $("#auto-advance-progress-bar");
+$cardButtons = $gamePlayerCardArea.children('input');
 $characterDebugButtons =   [$("#character-debug-button-1"),
                             $("#character-debug-button-2"),
                             $("#character-debug-button-3"),
@@ -83,42 +85,39 @@ gameDisplays = [
 
 /* pseudo constants */
 var GAME_DELAY = 800;
-var FORFEIT_DELAY = null;
-var ENDING_DELAY = null;
-var GAME_OVER_DELAY = 1000;
-var SHOW_ENDING_DELAY = 5000; //5 seconds
 var CARD_SUGGEST = false;
 var PLAYER_FINISHING_EFFECT = true;
 var EXPLAIN_ALL_HANDS = true;
 var AUTO_FADE = true;
 var MINIMAL_UI = true;
 var DEBUG = false;
-SHORT_GAME_MODE = false;
+var SHORT_GAME_MODE = false;
+const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
 
 /* game state
  * 
  * First element: text to display on main button to begin the phase
  * Second element: function to call when main button is clicked
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
- * Fourth element (optional): whether to call tickForfeitTimers on main button click. 
+ * Fourth element: whether the cards are revealed (used in rollback).
  */
 var eGamePhase = {
-    DEAL:      [ "Deal", function() { startDealPhase(); }, true ],
-    AITURN:    [ "Next", function() { continueDealPhase(); } ],
-    EXCHANGE:  [ undefined, function() { completeExchangePhase(); }, true ],
-    REVEAL:    [ "Reveal", function() { completeRevealPhase(); }, true ],
-    PRESTRIP:  [ "Continue", function() { completeContinuePhase(); }, false ],
-    STRIP:     [ "Strip", function() { completeStripPhase(); }, false ],
-    FORFEIT:   [ "Masturbate", function() { completeMasturbatePhase(); }, false ],
-    END_LOOP:  [ undefined, function() { handleGameOver(); } ],
-    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); } ],
-    END_FORFEIT: [ "Continue..." ], // Specially handled; not a real phase. tickForfeitTimers() will always return true in this state.
-    EXIT_ROLLBACK: ['Return', function () { exitRollback(); }, undefined, false],
+    GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
+    DEAL:      [ "Deal", startDealPhase, true, false ],
+    AITURN:    [ "Next", continueDealPhase, true, false ],
+    EXCHANGE:  [ undefined, completeExchangePhase, true, false ],
+    REVEAL:    [ "Reveal", completeRevealPhase, true, true ],
+    PRESTRIP:  [ "Continue", completeContinuePhase, false, true ],
+    STRIP:     [ "Strip", completeStripPhase, false, true ],
+    FORFEIT:   [ "Masturbate", completeMasturbatePhase, false, true ],
+    END_LOOP:  [ undefined, handleGameOver, undefined, true ],
+    GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
+    END_FORFEIT: [ undefined ], // Specially handled; not a real phase. nextGamePhase will never be set to this.
+                                // tickForfeitTimers() will always return true in this situation.
 };
 
-/* Masturbation Previous State Variables */
-var gamePhase = eGamePhase.DEAL;
-var globalSavedTableVisibility;
+let gamePhase = null;
+let nextGamePhase = null;
 
 var inGame = false;
 var currentTurn = 0;
@@ -126,27 +125,23 @@ var currentRound = -1;
 var previousLoser = -1;
 var recentLoser = -1;
 var recentWinner = -1;
+let recentTied = null;
 var gameOver = false;
 var actualMainButtonState = false;
-var autoAdvancePaused = false;  // Flag that prevents auto advance if a modal is opened when not waiting for auto advance
+var allowAutoAdvance = false;
+var autoAdvanceSpeed = 0;
+var autoAdvanceProgress = undefined;
 var endWaitDisplay = 0;
 var showDebug = false;
 var chosenDebug = -1;
-var autoForfeitTimeoutID; // Remember this specifically so that it can be cleared if auto forfeit is turned off.
 
 var transcriptHistory = [];
 
-/*When in rollback, we store a RollbackPoint for the most current game state
-   to returnRollbackPoint. 
-  When exiting rollback, we load state from returnRollbackPoint.
-  
-  The only thing we don't load from a RollbackPoint is the game phase,
-  since we set it to eGamePhase.EXIT_ROLLBACK.
-  So, to make it available for bug reporting, we copy the game phase in the
-  rollback point to rolledBackGamePhase.
+/* When going into rollback, we store a RollbackPoint for the most
+ * current game state to returnRollbackPoint.  When exiting rollback,
+ * we load state from returnRollbackPoint.
  */
 var returnRollbackPoint = null;
-var rolledBackGamePhase = null;
 
 /**********************************************************************
  *****                    Start Up Functions                      *****
@@ -161,16 +156,13 @@ function loadGameScreen () {
     for (var i = 1; i < players.length; i++) {
         gameDisplays[i-1].reset(players[i]);
     }
-    $gameLabels[HUMAN_PLAYER].removeClass("loser tied current");
-    clearHand(HUMAN_PLAYER);
-
+    gamePhase = eGamePhase.GAME_START;
+    nextGamePhase = null;
+    currentRound = -1;
     previousLoser = -1;
     recentLoser = -1;
     gameOver = false;
 
-    $gamePlayerCardArea.show();
-    $gamePlayerCountdown.hide();
-    $gamePlayerCountdown.removeClass('pulse');
     chosenDebug = -1;
     updateDebugState(showDebug);
     
@@ -190,13 +182,14 @@ function loadGameScreen () {
     updateAllBehaviours(null, null, GAME_START);
     updateBiggestLead();
 
+    /* update the visuals */
+    updateAllGameVisuals();
+
     /* set up the poker library */
     setupPoker();
 
     /* disable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-        $cardButtons[i].attr('disabled', true);
-    }
+    $cardButtons.attr('disabled', true);
 
     /* Set up strip modal selectors */
     setupStrippingModal();
@@ -223,24 +216,58 @@ function updateGameVisual (player) {
  ************************************************************/
 function updateAllGameVisuals () {
     /* update all opponents */
-    for (var i = 1; i < players.length; i++) {
-        updateGameVisual (i);
+    for (var i = 0; i < players.length; i++) {
+        // This incorrectly sets the player clothing area display to block, but that's corrected by displayHumanPlayerClothing
+        $gamePlayerAreas[i].toggle(!!players[i] && !(players[i].out && !players[i].hand)
+                                   && !(gameOver && players.every(p => p.hand == null)));
+        if (i > 0) updateGameVisual(i);
     }
+    updateHumanPlayerMasturbationVisual();
+    displayHumanPlayerClothing();
+    displayAllHands(gamePhase[3]);
+}
+
+/************************************************************
+ * Updates the human player forfeit countdown and finishing effect.
+ ************************************************************/
+function updateHumanPlayerMasturbationVisual () {
+    $gameClimaxOverlay.toggle(PLAYER_FINISHING_EFFECT && humanPlayer.checkStatus(STATUS_HEAVY_MASTURBATING));
+    $gameClimaxOverlay.toggleClass('intense', humanPlayer.timer == 1);
+    $gamePlayerCountdown.toggle(humanPlayer.out && humanPlayer.timer > 0);
+    $gamePlayerCountdown.html(humanPlayer.timer);
+    $gamePlayerCountdown.toggleClass('pulse', humanPlayer.checkStatus(STATUS_HEAVY_MASTURBATING));
 }
 
 /************************************************************
  * Updates the visuals of the player clothing cells.
  ************************************************************/
 function displayHumanPlayerClothing () {
+    /* Checking that a player is not only out but also had their hand
+     * removed is used to keep their area visible for another phase
+     * (until cards dealt, or just another tick at game end) */
+    if ((humanPlayer.out && !humanPlayer.hand) || (gameOver && players.every(p => p.hand == null))) {
+        $gamePlayerClothingArea.hide();
+    } else {
+        $gamePlayerClothingArea.css('display', '');
+    }
+
     /* collect the images */
     var clothingImages = humanPlayer.getClothing().map(function(c) {
         return { src: c.image,
                  alt: c.name.initCap() };
     });
-    
+
     /* display the remaining clothing items */
     clothingImages.reverse();
-    $gameClothingLabel.html("Your Clothing");
+    /* update label */
+    if (humanPlayer.out) {
+        $gameClothingLabel.html("You're Masturbating...");
+    } else if (humanPlayer.countLayers() > 0) {
+        $gameClothingLabel.html("Your Remaining Clothing");
+    } else {
+        $gameClothingLabel.html("You're Naked");
+    }
+
     for (var i = 0; i < 8; i++) {
         if (clothingImages[i]) {
             $gameClothingCells[i].attr(clothingImages[i]);
@@ -305,13 +332,7 @@ function advanceTurn () {
     if (players[currentTurn]) {
         /* highlight the player whose turn it is */
         for (var i = 0; i < players.length; i++) {
-            if (currentTurn == i) {
-                $gameLabels[i].addClass("current");
-                if (i > 0) $gameOpponentAreas[i-1].addClass('current');
-            } else {
-                $gameLabels[i].removeClass("current");
-                if (i > 0) $gameOpponentAreas[i-1].removeClass('current');
-            }
+            $gamePlayerAreas[i].toggleClass('current', currentTurn == i);
         }
 
         /* check to see if they are still in the game */
@@ -371,10 +392,6 @@ function startDealPhase () {
         if (players[i]) {
             /* collect the player's hand */
             clearHand(i);
-            
-            if (i !== 0) {
-                $gameOpponentAreas[i-1].removeClass('opponent-revealed-cards opponent-lost');
-            }
         }
     }
 
@@ -390,23 +407,13 @@ function startDealPhase () {
                 /* deal out a new hand to this player */
                 dealHand(i, numPlayers, n++);
             } else {
-                if (HUMAN_PLAYER == i) {
-                    $gamePlayerCardArea.hide();
-                    $gamePlayerClothingArea.hide();
-                }
-                else {
-                    $gameOpponentAreas[i-1].hide();
-                }
+                players[i].hand = null;
+                $gamePlayerAreas[i].hide();
             }
         }
     }
 
     /* IMPLEMENT STACKING/RANDOMIZED TRIGGERS HERE SO THAT AIs CAN COMMENT ON PLAYER "ACTIONS" */
-
-    /* clear the labels */
-    for (var i = 0; i < players.length; i++) {
-        $gameLabels[i].removeClass("loser tied");
-    }
 
     timeoutID = window.setTimeout(checkDealLock, ANIM_DELAY * CARDS_PER_HAND * numPlayers + ANIM_TIME);
 }
@@ -419,15 +426,14 @@ function checkDealLock () {
     if (dealLock > 0) {
         timeoutID = window.setTimeout(checkDealLock, 100);
     } else {
-        gamePhase = eGamePhase.AITURN;
-        
         /* Set up main button.  If there is not pause for the human
            player to exchange cards, and someone is masturbating, and
            the card animation speed is to great, we need a pause so
            that the masturbation talk can be read. */
         if (humanPlayer.out && getNumPlayersInStage(STATUS_MASTURBATING) > 0 && ANIM_DELAY < 100) {
-            allowProgression();
+            allowProgression(eGamePhase.AITURN);
         } else {
+            gamePhase = eGamePhase.AITURN;
             continueDealPhase();
         }
     }
@@ -443,12 +449,10 @@ function continueDealPhase () {
         $gameBubbles[i-1].hide();
     }
 
-    $mainButton.html("Wait...");
+    $mainButtonText.html("Wait...");
     
     /* enable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-       $cardButtons[i].attr('disabled', false);
-    }
+    $cardButtons.attr('disabled', false);
 
     /* suggest cards to swap, if enabled */
     if (CARD_SUGGEST && !humanPlayer.out) {
@@ -486,13 +490,12 @@ function continueDealPhase () {
 function completeExchangePhase () {
     detectCheat();
     /* disable player cards */
-    for (var i = 0; i < $cardButtons.length; i++) {
-       $cardButtons[i].attr('disabled', true);
-    }
+    $cardButtons.attr('disabled', true);
+
     /* exchange the player's chosen cards */
     exchangeCards(HUMAN_PLAYER);
 
-    $gameLabels[HUMAN_PLAYER].removeClass("current");
+    $gamePlayerAreas[HUMAN_PLAYER].removeClass("current");
     allowProgression(eGamePhase.REVEAL);
 }
 
@@ -508,9 +511,6 @@ function completeRevealPhase () {
     for (var i = 0; i < players.length; i++) {
         if (players[i] && !players[i].out) {
             players[i].hand.sort();
-            showHand(i);
-            
-            if (i > 0) $gameOpponentAreas[i-1].addClass('opponent-revealed-cards');
         }
     }
 
@@ -525,10 +525,11 @@ function completeRevealPhase () {
         /* Check if (at least) the two worst hands are equal. */
         if (compareHands(sortedPlayers[0].hand, sortedPlayers[1].hand) == 0) {
             console.log("Fuck... there was an absolute tie");
+            recentTied = [];
             /* inform the player */
             players.forEach(function (p) {
                 if (p.chosenState) {
-                    p.clearChosenState();
+                    p.chosenState.dialogue = '';
                     updateGameVisual(p.slot);
                 }
             });
@@ -541,8 +542,9 @@ function completeRevealPhase () {
                            && compareHands(sortedPlayers[0].hand,
                                            sortedPlayers[i].hand) == 0);
                  i++) {
-                $gameLabels[sortedPlayers[i].slot].addClass("tied");
+                recentTied.push(sortedPlayers[i].slot);
             };
+            displayAllHands(true);
             /* reset the round */
             allowProgression(eGamePhase.DEAL);
             return;
@@ -551,6 +553,7 @@ function completeRevealPhase () {
         recentLoser = sortedPlayers[0].slot;
     }
     recentWinner = sortedPlayers[sortedPlayers.length-1].slot;
+    recentTied = null;
 
     console.log("Player "+recentLoser+" is the loser.");
     Sentry.addBreadcrumb({
@@ -574,14 +577,8 @@ function completeRevealPhase () {
 
     /* playerMustStrip() calls updateAllBehaviours. */
 
-    /* highlight the loser */
-    for (var i = 0; i < players.length; i++) {
-        if (recentLoser == i) {
-            $gameLabels[i].addClass("loser");
-            
-            if (i > 0) $gameOpponentAreas[i-1].addClass('opponent-lost');
-        }
-    }
+    /* Reveal all hands and show the loser */
+    displayAllHands(true);
 
     /* set up the main button */
     if (recentLoser != HUMAN_PLAYER && clothes > 0) {
@@ -662,17 +659,8 @@ function endRound () {
             level: 'info'
         });
 
-        for (var i = 0; i < players.length; i++) {
-            if (HUMAN_PLAYER == i) {
-                $gamePlayerCardArea.hide();
-                $gamePlayerClothingArea.hide();
-            }
-            else {
-                $gameOpponentAreas[i-1].hide();
-            }
-        }
-        endWaitDisplay = -1;
-        handleGameOver();
+        endWaitDisplay = 0;
+        allowProgression(eGamePhase.END_LOOP);
     } else if (SHORT_GAME_MODE && notInGame > 0) {
         let mostLayersLeft = 0, winner = 0, winners = "";
         for (var i = 0; i < players.length; i++) {
@@ -700,17 +688,8 @@ function endRound () {
             level: 'info'
         });
 
-        for (var i = 0; i < players.length; i++) {
-            if (HUMAN_PLAYER == i) {
-                $gamePlayerCardArea.hide();
-                $gamePlayerClothingArea.hide();
-            }
-            else {
-                $gameOpponentAreas[i-1].hide();
-            }
-        }
-        endWaitDisplay = -1;
-        handleGameOver();
+        endWaitDisplay = 0;
+        allowProgression(eGamePhase.END_LOOP);
     } else {
         updateBiggestLead();
         allowProgression(eGamePhase.DEAL);
@@ -732,7 +711,7 @@ function handleGameOver() {
         } else if (p.out && SHORT_GAME_MODE) {
             loser = p;
         }
-        return p.out && !p.finished;
+        return p.checkStatus(STATUS_MASTURBATING);
     })) {
         /* true end */
         if (SHORT_GAME_MODE) {
@@ -740,12 +719,13 @@ function handleGameOver() {
         } else {
             updateAllBehaviours(winner.slot, GAME_OVER_VICTORY, GAME_OVER_DEFEAT);
         }
-
         allowProgression(eGamePhase.GAME_OVER);
-        //window.setTimeout(doEpilogueModal, SHOW_ENDING_DELAY); //start the endings
+        if (AUTO_FADE && tableVisibility < 0) forceTableVisibility(0);
     } else {
-        // endWaitDisplay starts at -1 so we get four phases before
-        // the timeInStage:s are first incremented at game end.
+        players.forEach(p => p.hand = null);
+
+        $gamePlayerAreas.forEach(a => a.hide());
+
         if (endWaitDisplay == 3) {
             players.forEach(function(p) { p.timeInStage++; });
         }
@@ -762,6 +742,7 @@ function handleGameOver() {
  * The player selected one of their cards.
  ************************************************************/
 function selectCard (card) {
+    if (inRollback()) return;
     humanPlayer.hand.tradeIns[card] = !humanPlayer.hand.tradeIns[card];
     
     if (humanPlayer.hand.tradeIns[card]) {
@@ -773,9 +754,9 @@ function selectCard (card) {
 }
 
 function updateMainButtonExchangeLabel() {
-    if (gamePhase === eGamePhase.EXCHANGE) {
+    if (nextGamePhase === eGamePhase.EXCHANGE) {
         const n = humanPlayer.hand.tradeIns.countTrue();
-        $mainButton.html(n == 0 ? 'Keep all' : 'Swap ' + n);
+        $mainButtonText.html(n == 0 ? 'Keep all' : 'Swap ' + n);
     }
 }
 
@@ -791,46 +772,42 @@ function getGamePhaseString(phase) {
  * setting up the auto forfeit timer.
  ************************************************************/
 function allowProgression (nextPhase) {
-    if (nextPhase !== undefined && nextPhase !== eGamePhase.END_FORFEIT) {
-        gamePhase = nextPhase;
-    } else if (nextPhase === undefined) {
-        nextPhase = gamePhase;
+    if (nextPhase !== undefined) {
+        nextGamePhase = nextPhase;
     }
-    
-    if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && gamePhase != eGamePhase.STRIP) {
-        $mainButton.html("Cum!");
-    } else if (nextPhase[0]) {
-        $mainButton.html(nextPhase[0]);
-    } else if (nextPhase === eGamePhase.EXCHANGE) {
+
+    if (inRollback()) {
+        $mainButtonText.html('Return');
+    } else if (humanPlayer.out && !humanPlayer.finished && humanPlayer.timer == 1 && nextGamePhase != eGamePhase.STRIP) {
+        $mainButtonText.html("Cum!");
+        if (AUTO_FADE) forceTableVisibility(0);
+    } else if (justFinishedPlayer() >= 0) {
+        $mainButtonText.html("Continue...");
+    } else if (nextGamePhase[0]) {
+        $mainButtonText.html(nextGamePhase[0]);
+    } else if (nextGamePhase === eGamePhase.EXCHANGE) {
         updateMainButtonExchangeLabel();
-    } else if (nextPhase === eGamePhase.END_LOOP) { // Special case
+    } else if (nextGamePhase === eGamePhase.END_LOOP) { // Special case
         /* someone is still forfeiting */
         var dots = '.'.repeat(endWaitDisplay);
         if (humanPlayer.checkStatus(STATUS_MASTURBATING)) {
-            $mainButton.html("<small>Keep going" + dots + "</small>");
+            $mainButtonText.html("<small>Keep going" + dots + "</small>");
         } else {
-            $mainButton.html("Wait" + dots);
+            $mainButtonText.html("Wait" + dots);
         }
     }
 
     actualMainButtonState = false;
-    if (nextPhase != eGamePhase.GAME_OVER && !inRollback()) {
-        if (autoAdvancePaused) {
-            // Closing the modal that the flag to be set should call allowProgression() again.
-            return;
-        } else if (FORFEIT_DELAY && humanPlayer.out && !humanPlayer.finished && (humanPlayer.timer > 1 || gamePhase == eGamePhase.STRIP)) {
-            timeoutID = autoForfeitTimeoutID = setTimeout(advanceGame, FORFEIT_DELAY);
-            $mainButton.attr('disabled', true);
-            return;
-        } else if (ENDING_DELAY && (humanPlayer.finished || (!humanPlayer.out && gameOver))) {
-            /* Human is finished or human is the winner */
-            timeoutID = autoForfeitTimeoutID = setTimeout(advanceGame, ENDING_DELAY);
-            $mainButton.attr('disabled', true);
-            return;
-        }
-    }
-    timeoutID = autoForfeitTimeoutID = undefined;
+    timeoutID = undefined;
+    allowAutoAdvance = nextGamePhase != eGamePhase.GAME_OVER && !inRollback()
+        && ((humanPlayer.out && (humanPlayer.timer > 1 || nextGamePhase == eGamePhase.STRIP)
+             || humanPlayer.finished || (!humanPlayer.out && gameOver)));
+    $autoAdvanceButtons.toggle(allowAutoAdvance);
+
     $mainButton.attr('disabled', false);
+    if (allowAutoAdvance && autoAdvanceSpeed) {
+        changeAutoAdvance();
+    }
     if (!$(document.activeElement).is(':input')) {
         $mainButton.focus();
     }
@@ -842,43 +819,89 @@ function allowProgression (nextPhase) {
 function advanceGame () {    
     /* disable the button to prevent double clicking */
     $mainButton.attr('disabled', actualMainButtonState = true);
+    $autoAdvanceProgressBar.stop().hide();
+    autoAdvanceProgress = undefined;
+
     if ($(document.activeElement).attr('disabled')) {
         /* It appears that in Firefox, if the active element gets
          * disabled, it can stop keyboard events from being emitted
          * altogether. So remove that focus. */
         $(document.activeElement).blur();
     }
-    autoForfeitTimeoutID = undefined;
     
-    /* lower the timers of everyone who is forfeiting */
-    if (gamePhase[3] !== false && tickForfeitTimers()) return;
+    if (inRollback()) {
+        exitRollback();
+    } else {
+        /* lower the timers of everyone who is forfeiting */
+        if (tickForfeitTimers()) return;
 
-    if (AUTO_FADE && gamePhase[2] !== undefined) {
-        forceTableVisibility(gamePhase[2]);
+        gamePhase = nextGamePhase;
+        if (AUTO_FADE && gamePhase[2] !== undefined) {
+            forceTableVisibility(gamePhase[2]);
+        }
+        gamePhase[1]();
     }
-    gamePhase[1]();
 }
 
 /************************************************************
  * If Auto-advance is auto-advancing, stop it.
  ************************************************************/
 function pauseAutoAdvance () {
-    if (autoForfeitTimeoutID) {
-        clearTimeout(autoForfeitTimeoutID);
-        timeoutID = autoForfeitTimeoutID = undefined;
-    }
-    autoAdvancePaused = true;
+    if (inGame) $autoAdvanceProgressBar.stop();
 }
 /************************************************************
  * If Auto-advance is enabled and we're not currently in the middle of
  * something, set the timeout again by calling AllowProgression().
  ************************************************************/
 function resumeAutoAdvance () {
-    /* Important to clear the flag if the user opens and closes a modal during 
-       game activity. */
-    autoAdvancePaused = false;
-    if (!actualMainButtonState) {
+    if (!inGame || inRollback()) return;
+    if (autoAdvanceProgress !== undefined) {
+        changeAutoAdvance();
+    } else if (!actualMainButtonState) {
         allowProgression();
+    }
+}
+
+function changeAutoAdvance (val) {
+    if (val !== undefined) {
+        autoAdvanceSpeed = val;
+        // Change appearance of buttons
+        $autoAdvanceButtons.children().removeAttr('disabled').eq(autoAdvanceSpeed).attr('disabled', true);
+        if (actualMainButtonState) return; // Disallow any auto-advance start while the main button is disabled.
+    }
+
+    if (autoAdvanceProgress !== undefined) {  // We are currently auto-advancing
+        if (val !== undefined) $autoAdvanceProgressBar.stop();
+        if (autoAdvanceSpeed == 0) {
+            // Reset, return to manual advance
+            autoAdvanceProgress = undefined;
+            $autoAdvanceProgressBar.hide();
+            return;
+        }
+    } else if (val && !actualMainButtonState) {
+        // When activating auto advance, immediately advance one phase.
+        advanceGame();
+        return;
+    } else if (autoAdvanceSpeed > 0) {
+        // Starting an auto-advance timeout. We should be called from
+        // allowProgress() with val undefined here, so show the progress
+        // bar.
+        autoAdvanceProgress = 0;
+        $autoAdvanceProgressBar.width(0).show();
+    }
+    if (autoAdvanceSpeed) {
+        // Start or restart animation
+        $autoAdvanceProgressBar.animate(
+            { width: '100%' },
+            { duration: AUTO_ADVANCE_DELAYS[autoAdvanceSpeed] * (1 - autoAdvanceProgress),
+              easing: 'linear',
+              progress: function (anim, progress, remaining) {
+                  autoAdvanceProgress = 1 - remaining / AUTO_ADVANCE_DELAYS[autoAdvanceSpeed];
+              },
+              complete: function () {
+                  advanceGame();
+              },
+            });
     }
 }
 
@@ -912,14 +935,26 @@ function RollbackPoint (logPlayers) {
         data.poseSets = p.poseSets;
         data.timeInStage = p.timeInStage;
         data.ticksInStage = p.ticksInStage;
-        data.markers = {};
         
+        data.markers = {};
         for (let marker in p.markers) {
             data.markers[marker] = p.markers[marker];
         }
         
         if (p.chosenState) data.chosenState = new State(p.chosenState);
-        
+
+        if (p.hand) data.hand = p.hand.clone(); else data.hand = p.hand;
+
+        data.label = p.label;
+        // These probably only matter for the human player
+        data.timer = p.timer;
+        data.forfeit = p.forfeit?.slice();
+        data.out = p.out;
+        data.finished = p.finished;
+        if (p.clothing) {
+            data.clothingRemovalStatus = p.clothing.map(c => c.removed);
+        }
+
         this.playerData.push(data);
     }.bind(this));
     
@@ -929,6 +964,7 @@ function RollbackPoint (logPlayers) {
     this.previousLoser = previousLoser;
     this.recentLoser = recentLoser;
     this.recentWinner = recentWinner;
+    this.recentTied = recentTied;
     this.gameOver = gameOver;
     this.gamePhase = gamePhase;
     
@@ -947,25 +983,17 @@ function RollbackPoint (logPlayers) {
 }
 
 RollbackPoint.prototype.load = function () {
-    if (!returnRollbackPoint) {
-        returnRollbackPoint = new RollbackPoint();
-        allowProgression(eGamePhase.EXIT_ROLLBACK);
-        $mainButton.attr('disabled', false);
-    }
-
-    Sentry.addBreadcrumb({
-        category: 'ui',
-        message: 'Entering rollback.',
-        level: 'info'
-    });
-
     currentRound = this.currentRound;
     currentTurn = this.currentTurn;
     previousLoser = this.previousLoser;
     recentLoser = this.recentLoser;
     recentWinner = this.recentWinner;
+    recentTied = this.recentTied;
     gameOver = this.gameOver;
-    rolledBackGamePhase = this.gamePhase;
+    gamePhase = this.gamePhase;
+    if (this.nextGamePhase) {
+        nextGamePhase = this.nextGamePhase;
+    }
     
     this.playerData.forEach(function (p) {
         var loadPlayer = players[p.slot];
@@ -978,13 +1006,48 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.ticksInStage = p.ticksInStage;
         loadPlayer.markers = p.markers;
         loadPlayer.chosenState = p.chosenState;
+        loadPlayer.timer = p.timer;
+        loadPlayer.forfeit = p.forfeit;
+        loadPlayer.out = p.out;
+        loadPlayer.finished = p.finished;
+        loadPlayer.label = p.label;
+        loadPlayer.hand = p.hand;
+        loadPlayer.clothing.forEach((c, i) => { c.removed = p.clothingRemovalStatus ? p.clothingRemovalStatus[i] : true });
+        /* Because the rollback point will have been created after the
+         * first stage change, if in the STRIP phase, we need to redo any
+         * stage skips before updating the visuals. */
+        let skipToStage = loadPlayer.findNextRealStage();
+        if (skipToStage) {
+            loadPlayer.stage = skipToStage;
+            loadPlayer.stageChangeUpdate();
+        }
     }.bind(this));
-    
-    updateAllGameVisuals();
 }
 
 function inRollback() {
     return (!!returnRollbackPoint);
+}
+
+function loadRollbackPoint(pt) {
+    if (!returnRollbackPoint) {
+        returnRollbackPoint = new RollbackPoint();
+        returnRollbackPoint.nextGamePhase = nextGamePhase;
+        $cardButtons.attr('disabled', true);
+        changeAutoAdvance(0);
+    }
+
+    Sentry.addBreadcrumb({
+        category: 'ui',
+        message: 'Entering rollback.',
+        level: 'info'
+    });
+
+    pt.load();
+    updateAllGameVisuals();
+    if (AUTO_FADE && gamePhase[2] !== undefined) {
+        forceTableVisibility(gamePhase[2] && players.some(p => p.hand));
+    }
+    allowProgression();
 }
 
 function exitRollback() {
@@ -996,10 +1059,22 @@ function exitRollback() {
         level: 'info'
     });
 
+    /* We first load the last saved transcript entry only because when
+     * returning to a FORFEIT phase, a character that's just started
+     * masturbating will have been in the stage after the
+     * start_masturbating case when the return rollback point was
+     * created. */
+    transcriptHistory.at(-1).load();
+    updateAllGameVisuals();
     returnRollbackPoint.load();
-    var prevPhase = returnRollbackPoint.gamePhase;
     returnRollbackPoint = null;
-    allowProgression(prevPhase);
+    allowProgression();
+    $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
+    if (nextGamePhase == eGamePhase.EXCHANGE) {
+        humanPlayer.hand.tradeIns.forEach(function(v, i) {
+            $cardCells[HUMAN_PLAYER][i].toggleClass('tradein', v);
+        });
+    }
 }
 
 /* Adds a log message to the dialogue transcript */
@@ -1048,7 +1123,7 @@ function createLogEntryElement(label, text, pt) {
     
     container.onclick = function (ev) {
         if (!actualMainButtonState) {
-            pt.load();
+            loadRollbackPoint(pt);
             $logModal.modal('hide');
         }
     }
@@ -1096,16 +1171,9 @@ function showLogModal () {
     $logModal.modal('show');
 }
 
-$('#restart-modal,#log-modal,#bug-report-modal,#feedback-report-modal,#options-modal,#help-modal')
-    .on('shown.bs.modal', function() {
-        if (inGame) {
-            pauseAutoAdvance();
-        }})
-    .on('hide.bs.modal', function() {
-        if (inGame) {
-            resumeAutoAdvance();
-        }
-    });
+$('#restart-modal,#log-modal,#bug-report-modal,#feedback-report-modal,#options-modal,#help-modal,#character-debug-modal')
+    .on('show.bs.modal', pauseAutoAdvance)
+    .on('hidden.bs.modal', resumeAutoAdvance);
 
 /************************************************************
  * A keybound handler.
@@ -1119,7 +1187,7 @@ function game_keyUp(e)
             e.preventDefault();
             advanceGame();
         }
-        else if (e.key >= '1' && e.key <= '5' && !$cardButtons[e.key - 1].prop('disabled')) {
+        else if (e.key >= '1' && e.key <= '5' && !$cardButtons.eq(e.key - 1).prop('disabled')) {
             selectCard(e.key - 1);
         }
         else if (e.key.toLowerCase() == 'q' && DEBUG) {
@@ -1128,6 +1196,12 @@ function game_keyUp(e)
         }
         else if (e.key.toLowerCase() == 't') {
             toggleTableVisibility();
+        }
+        else if (e.key == '-' && allowAutoAdvance && autoAdvanceSpeed > 0) {
+            changeAutoAdvance(autoAdvanceSpeed - 1);
+        }
+        else if (e.key == '+' && allowAutoAdvance && autoAdvanceSpeed < AUTO_ADVANCE_DELAYS.length - 1) {
+            changeAutoAdvance(autoAdvanceSpeed + 1);
         }
     }
 }

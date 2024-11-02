@@ -562,9 +562,6 @@ function wearClothing () {
     }
 
     humanPlayer.initClothingStatus();
-
-    /* update the visuals */
-    displayHumanPlayerClothing();
 }
 
 /************************************************************

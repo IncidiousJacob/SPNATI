@@ -243,6 +243,7 @@ input[type=search]::-webkit-search-cancel-button {
 .select-table>*,
 #game-table>*,
 #game-hidden-area>*,
+#player-name-label-minimal,
 .table-bug-report-button,
 .hide-table-button,
 .table-hard-refresh-button,
@@ -251,8 +252,25 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table-feedback-report-button {
-	z-index: 1001;
+    z-index: 1001;
 }
+
+.game-table,
+.game-ui {
+    transition-property: opacity;
+    transition-duration: 100ms;
+}
+.game-table.fade-out,
+.game-ui.fade-out
+{
+    opacity: 0;
+    pointer-events: none;
+}
+.fade-out *
+{
+    pointer-events: none;
+}
+
 /**************************************************
  * Background / foreground positioning.
  **************************************************/
@@ -447,7 +465,8 @@ input[type=search]::-webkit-search-cancel-button {
     position: absolute;
     width: 3.25%;
     height: 4.50%;
-    left: 48.375%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     background-color: rgba(155, 155, 155, 0.5);
 }
 
@@ -460,10 +479,14 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .table-feedback-report-button {
-	bottom: 20%;
-	width: 11%;
-	left: 50%;
-	transform: translate(-50%, 0%);
+    bottom: 19.5%;
+    width: 5%;
+    height: 5%;
+    line-height: 1.1;
+}
+
+.table-feedback-report-button>div {
+    font-size: 70%;
 }
 
 .hide-table-button:hover,
@@ -3796,14 +3819,6 @@ ul.dropdown-menu>li {
     }
 }
 
-@keyframes explode {
-    to {
-        transform: scale(100);
-        opacity: 0;
-        background-color: white;
-    }
-}
-
 #player-countdown {
     position: absolute;
     width: 4%;
@@ -3816,12 +3831,45 @@ ul.dropdown-menu>li {
 }
 
 .pulse {
-    animation: 0.5s infinite alternate pulse;
+    animation: 0.4s infinite alternate pulse;
 }
 
-.explode {
-    animation: 1s explode;
-    border: none;
+@keyframes overlay-pulse {
+    from {
+        opacity: 0.25;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes overlay-climax {
+    from {
+        background-color: transparent;
+    }
+    10%, 20% {
+        background-color: white;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#game-climax-overlay {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1049;
+    background: radial-gradient(closest-corner, transparent 50%, rgba(255, 255, 255, 0.4));
+    animation: 0.4s infinite alternate overlay-pulse;
+}
+#game-climax-overlay.intense {
+    background: radial-gradient(closest-corner, transparent 35%, rgba(255, 255, 255, 0.6));
+    animation: 0.3s infinite alternate overlay-pulse;
+}
+#game-climax-overlay.climax {
+    animation: 0.3s infinite alternate overlay-pulse, 4s overlay-climax;
 }
 
 #player-game-clothing-area {
@@ -3914,7 +3962,52 @@ ul.dropdown-menu>li {
     left: 50%;
     bottom: 5%;
     font-size: 140%;
-	transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+}
+
+#auto-advance-slower-button {
+    position: absolute;
+    width: 3%;
+    left: 50%;
+    bottom: 1%;
+}
+#auto-advance-faster-button {
+    position: absolute;
+    width: 3%;
+    left: 53%;
+    bottom: 1%;
+}
+
+#auto-advance-button-container {
+    position: absolute;
+    bottom: 1%;
+    left: 44%;
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+#auto-advance-button-container>button {
+    height: 1.9em;
+    flex: 1;
+    line-height: 0.9em;
+}
+#auto-advance-button-container>button>img {
+    height: 0.9em;
+}
+
+#auto-advance-progress-bar {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 0;
+    left: 0;
+    z-index: -1;
+    /* This isn't perfect, but considerably simpler than setting new
+       gradients for base, hover and disabled */
+    background-color: #fbc69f;
+    opacity: 25%;
 }
 
 #player-masturbation-timer-box {
@@ -3967,7 +4060,7 @@ ul.dropdown-menu>li {
     transition-duration: 0.5s;
 }
 
-.ui-minimal .opponent-revealed-cards {
+.ui-minimal .opponent-area.revealed-cards {
     opacity: 0.75;
     transition-property: opacity;
     transition-duration: 0.25s;
@@ -3985,9 +4078,9 @@ ul.dropdown-menu>li {
     transition: none;
 }
 
-.ui-minimal .opponent-area.opponent-revealed-cards:hover,
-.ui-minimal .opponent-area.opponent-revealed-cards:active,
-.ui-minimal .opponent-area.opponent-lost {
+.ui-minimal .opponent-area.revealed-cards:hover,
+.ui-minimal .opponent-area.revealed-cards:active,
+.ui-minimal .opponent-area.loser {
     opacity: 1.0;
     transition-property: opacity;
     transition-duration: 0.25s;
@@ -4013,7 +4106,7 @@ ul.dropdown-menu>li {
     transform: translateX(-1.3rem);
 }
 
-.ui-minimal .opponent-revealed-cards .small-card-image {
+.ui-minimal .revealed-cards .small-card-image {
     margin-right: 0.05rem;
     transform: none;
 
@@ -4021,9 +4114,10 @@ ul.dropdown-menu>li {
     transition-duration: 0.5s;
 }
 
-.ui-minimal .opponent-area.opponent-lost .small-card-image,
-.ui-minimal .opponent-area.opponent-revealed-cards:hover .small-card-image,
-.ui-minimal .opponent-area.opponent-revealed-cards:active .small-card-image {
+.ui-minimal .opponent-area.loser .small-card-image,
+.ui-minimal .opponent-area.tied .small-card-image,
+.ui-minimal .opponent-area.revealed-cards:hover .small-card-image,
+.ui-minimal .opponent-area.revealed-cards:active .small-card-image {
     height: 5.5rem;
     width: calc(5.5rem * (5 / 7));
     transition-property: width, height;
@@ -4102,11 +4196,11 @@ ul.dropdown-menu>li {
 }
 
 .table-feedback-report-button, .table-hard-refresh-button {
-	display: none;
+    display: none;
 }
 
 .ui-minimal .table-feedback-report-button, .ui-minimal .table-hard-refresh-button {
-	display: inline;
+    display: inline;
 }
 
 #player-game-clothing-area-minimal {
@@ -4224,15 +4318,15 @@ ul.dropdown-menu>li {
 /************************************************************
  * Classes for name labels to indicate current player, loser, etc.
  ************************************************************/
-.name-label.loser {
+.name-label.loser, .opponent-area.loser .name-label, #player-game-clothing-area.loser .name-label {
     background-color: var(--loser-label-color);
 }
 
-.name-label.tied {
+.name-label.tied, .opponent-area.tied .name-label, #player-game-clothing-area.tied .name-label {
     background-color: var(--tied-label-color);
 }
 
-.name-label.current {
+.name-label.current, .opponent-area.current .name-label, #player-game-clothing-area.current .name-label {
     background-color: var(--current-label-color);
 }
 

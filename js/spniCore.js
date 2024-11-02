@@ -56,10 +56,10 @@ var alternateCostumeSets = {};
 var versionInfo = null;
 
 /* game table */
-var tableOpacity = 1;
-var hiddenTableOpacity = 0.3;
-$gameTable = $('#game-table');
-$gameTableHidden = $('#game-hidden-area');
+let tableVisibility = 1;
+$gameTable = $('.game-table');
+$gameTableHidden = $('.game-ui');
+$gameTableHideButtonEye = $('#game-table-hide-button > span.glyphicon');
 
 /* useful variables */
 var BLANK_PLAYER_IMAGE = "opponents/blank.png";
@@ -161,8 +161,7 @@ function initialSetup () {
     sessionID = generateRandomID();
 
     /* enable table opacity */
-    tableOpacity = 1;
-    $gameTable.css({opacity:1});
+    forceTableVisibility(true);
 
     /* Attempt to detect broken images as caused by running SPNATI from an invalid archive. */
     detectBrokenOffline();
@@ -243,6 +242,7 @@ function initialSetup () {
     });
 
     window.addEventListener("unload", function () {
+        exitRollback();
         if ((document.visibilityState === "hidden") && inGame && currentRound >= 0 && !gameOver) {
             recordInterruptedGameEvent(true);
         }
@@ -580,35 +580,34 @@ function restartGame () {
     Sentry.setTag("epilogue", undefined);
     Sentry.setTag("epilogue_gallery", undefined);
 
+    exitRollback();
     if (currentRound >= 0 && !gameOver) {
         recordInterruptedGameEvent(false);
     }
 
     clearTimeout(timeoutID); // No error if undefined or no longer valid
-    timeoutID = autoForfeitTimeoutID = undefined;
+    timeoutID = undefined;
     stopCardAnimations();
     $('link[href^="opponents/"]').remove();
     resetPlayers();
-    currentRound = -1;
 
     /* enable table opacity */
-    tableOpacity = 1;
-    $gameTable.css({opacity:1});
+    forceTableVisibility(true);
     $gamePlayerCardArea.show();
     $gamePlayerClothingArea.css('display', '');  /* Reset to default so as not to interfere with 
                                                     switching between classic and minimal UI. */
+    $autoAdvanceButtons.hide();
+
     inGame = false;
-    autoAdvancePaused = false;
+    autoAdvanceProgress = undefined;
+    $('#auto-advance-progress-bar').stop().hide();
 
     Sentry.setTag("in_game", false);
 
     /* trigger screen refreshes */
     updateSelectionVisuals();
-    updateAllGameVisuals();
     selectTitleCandy();
     updateTitleScreen();
-
-    forceTableVisibility(true);
 
     /* there is only one call to this right now */
     $epilogueSelectionModal.hide();
@@ -964,26 +963,33 @@ function showPlayerTagsModal () {
  * The player clicked on a table opacity button.
  ************************************************************/
 function toggleTableVisibility () {
-    if (tableOpacity > 0) {
-        $gameTable.fadeOut(100);
-        $gameTableHidden.fadeTo(100, hiddenTableOpacity);
-        tableOpacity = 0;
+    if (tableVisibility === 1) {
+        forceTableVisibility(0);
+    } else if (tableVisibility === 0) {
+        forceTableVisibility(-1);
     } else {
-        $gameTable.fadeIn(100);
-        $gameTableHidden.fadeTo(100, 1.0);
-        tableOpacity = 1;
+        if (!players.some(p => p.hand) && (humanPlayer.checkStatus(STATUS_LOST_ALL) || !MINIMAL_UI)) {
+            // There's nothing to show
+            forceTableVisibility(0);
+        } else {
+            forceTableVisibility(1);
+        }
     }
 }
 
 function forceTableVisibility(state) {
-    if (!state) {
-        $gameTable.fadeOut(100);
-        tableOpacity = 0;
+    if (state === true) {
+        tableVisibility = 1;
+    } else if (state === false) {
+        if (tableVisibility > 0) tableVisibility = 0;
     } else {
-        $gameTable.fadeIn(100);
-        $gameTableHidden.fadeTo(100, 1.0);
-        tableOpacity = 1;
+        tableVisibility = state;
     }
+
+    $gameTableHidden.toggleClass('fade-out', tableVisibility < 0);
+    $gameTable.toggleClass('fade-out', tableVisibility <= 0);
+    $gameTableHideButtonEye.toggleClass('glyphicon-eye-close', tableVisibility >= 0);
+    $gameTableHideButtonEye.toggleClass('glyphicon-eye-open', tableVisibility < 0);
 }
 
 function toggleFullscreen() {

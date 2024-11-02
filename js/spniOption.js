@@ -442,8 +442,6 @@ function loadOptions () {
     setActiveOption('explain-hands', EXPLAIN_ALL_HANDS);
     setActiveOption('ai-turn-time', GAME_DELAY);
     setActiveOption('deal-speed', ANIM_TIME);
-    setActiveOption('auto-forfeit', FORFEIT_DELAY);
-    setActiveOption('auto-ending', ENDING_DELAY);
     setActiveOption('minimal-ui', MINIMAL_UI);
     setActiveOption('player-finishing-effect', PLAYER_FINISHING_EFFECT);
     $('[data-option="ui-font-weight"]').val(UI_FONT_WEIGHT);
@@ -559,14 +557,6 @@ $('ul[data-option="deal-speed"]').on('click', 'a', function() {
     ANIM_DELAY = 0.16 * ANIM_TIME;
 });
 
-$('ul[data-option="auto-forfeit"]').on('click', 'a', function() {
-    FORFEIT_DELAY = Number($(this).attr('data-value')) || null;
-});
-
-$('ul[data-option="auto-ending"]').on('click', 'a', function() {
-    ENDING_DELAY = Number($(this).attr('data-value')) || null;
-});
-
 $('ul[data-option="minimal-ui"]').on('click', 'a', function() {
     setUIMode($(this).attr('data-value') === 'true');
 });
@@ -586,6 +576,9 @@ $('ul[data-option="ui-theme"]').on('click', 'a', function() {
 
 $('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
     PLAYER_FINISHING_EFFECT = $(this).attr('data-value') == 'true';
+    if (inGame) {
+        updateHumanPlayerMasturbationVisual();
+    }
 });
 
 /************************************************************

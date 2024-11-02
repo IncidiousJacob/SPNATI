@@ -15,12 +15,14 @@ var CANNOT_SPEAK = false;
  **********************************************************************/
  
 /* orgasm timer */
-var ORGASM_DELAY = 2000;
+const ORGASM_DELAY = 2500;
 
 /* The earliest and latest a character starts heavy masturbation, counted in phases before they finish */
 const HEAVY_EARLIEST_TIME = 5;
 const HEAVY_LATEST_TIME = 3;
- 
+
+var globalSavedTableVisibility;
+
 /**********************************************************************
  *****                      Forfeit Functions                     *****
  **********************************************************************/
@@ -79,7 +81,7 @@ Player.prototype.getForfeitTrigger = function (triggerType) {
   * In all cases, we return whether or not the player is heavily masturbating.
   *
   * @returns {boolean}
-  */
+ */
 Player.prototype.updateHeavyMasturbation = function () {
     if (this.finished || !this.out) return false;
 
@@ -109,7 +111,6 @@ function startMasturbation (player) {
     players[player].forfeitLocked = false;
     players[player].finishingTarget = players[player];
     players[player].out = true;
-    players[player].hand = null;
     players[player].outOrder = players.countTrue(function(p) { return p.out; });
 
     if (chosenDebug === player) {
@@ -129,18 +130,32 @@ function startMasturbation (player) {
         [[players[player].getForfeitTrigger("start_masturbating"), OPPONENT_START_MASTURBATING]]
     );
 
+    /* Note: It's a bit of a problem and an exception that the stage
+       is incremented after the dialogue update (and thus
+       start_masturbating happens at the end of the naked stage rather
+       than at the start of the masturbating stage, because the
+       character's current stage then doesn't match the dialogue on
+       the screen, complicating rollback and bug reports, but we can't
+       easily change this. */
     players[player].stage += 1;
     players[player].timeInStage = -1;
     players[player].stageChangeUpdate();
     
     if (player == HUMAN_PLAYER) {
-        $gameClothingLabel.html("You're Masturbating...");
-        $gamePlayerCountdown.html(humanPlayer.timer);
-        $gamePlayerCountdown.show();
+        updateHumanPlayerMasturbationVisual();
+        displayHumanPlayerClothing();
     }
     
     /* allow progression */
     endRound();
+}
+
+/************************************************************
+ * Check if any character has just finished and needs their
+ * finished_masturbating dialogue to play.
+ ************************************************************/
+function justFinishedPlayer () {
+    return players.findIndex(p => p && p.out && !p.finished && p.timer == 0);
 }
 
 /************************************************************
@@ -150,21 +165,20 @@ function startMasturbation (player) {
 function tickForfeitTimers () {
     console.log("Ticking forfeit timers...");
     
-    var masturbatingPlayers = [], heavyMasturbatingPlayers = [];
-
-    for (var i = 0; i < players.length; i++) {
-        if (players[i] && players[i].out && !players[i].finished && players[i].timer == 0) {
-            finishMasturbation(i);
-            return true;
-        }
+    const finishedPlayer = justFinishedPlayer();
+    if (finishedPlayer >= 0) {
+        finishMasturbation(finishedPlayer);
+        return true;
     }
+    let masturbatingPlayers = [], heavyMasturbatingPlayers = [];
 
-    if (gamePhase != eGamePhase.STRIP) for (var i = 0; i < players.length; i++) {
+    if (nextGamePhase != eGamePhase.STRIP && gamePhase != eGamePhase.FORFEIT) for (var i = 0; i < players.length; i++) {
         if (players[i] && players[i].out && players[i].timer == 1) {
             players[i].timer = 0;
             players[i].ticksInStage++;
+            gamePhase = eGamePhase.END_FORFEIT;
             /* set the button state */
-            $mainButton.html("Cumming...");
+            $mainButtonText.html("Cumming...");
 
             saveTranscriptMessage('<b>' + players[i].label.escapeHTML() + '</b> is finishing...');
             console.log(players[i].label+" is finishing!");
@@ -176,43 +190,35 @@ function tickForfeitTimers () {
 
                 /* player's timer is up */
                 /* TEMP FIX: prevent this animation on Safari */
+                $gamePlayerCountdown.hide();
                 if (PLAYER_FINISHING_EFFECT) {
-                    $gamePlayerCountdown.one('animationend', function() {
-                        $gamePlayerCountdown.hide();
-                        $gamePlayerCountdown.removeClass('explode');
-                        /* finish */
-                        finishMasturbation(i);
-                    });
-                    $gamePlayerCountdown.addClass('explode');
+                    $gameClimaxOverlay.one('animationend', finishMasturbation.bind(null, i))
+                        .addClass('climax');
                 } else {
-                    $gamePlayerCountdown.hide();
                     finishMasturbation(i);
                 }
-                $gamePlayerCountdown.html('');
                 $gameClothingLabel.html("<b>You're 'Finished'</b>");
 
             } else {
+                let finishTarget = players[i].finishingTarget;
+
+                // Clear all dialogue, like for a tie, so all other character are silent.
+                players.forEach(function (p) {
+                    if (p.chosenState) {
+                        p.chosenState.dialogue = '';
+                        if (p != finishTarget) updateGameVisual(p.slot);
+                    }
+                });
                 /* let the player speak again */
                 players[i].forfeit = [PLAYER_FINISHING_MASTURBATING, CAN_SPEAK];
 
                 /* show them cumming */
-                let finishTarget = players[i].finishingTarget;
                 if (finishTarget && finishTarget.slot !== i) {
                     /* If the player has redirected their finishing dialogue to another character,
                      * play Opponent Finishing dialogue for them.
                      */
-
-                    /* Hide everyone else's dialogue bubbles... */
-                    gameDisplays.forEach(function (d) {
-                        if (d.slot != finishTarget.slot) d.hideBubble();
-                    });
-
                     finishTarget.singleBehaviourUpdate(OPPONENT_FINISHING_MASTURBATING, players[i]);
                 } else {
-                    gameDisplays.forEach(function (d) {
-                        if (d.slot != i) d.hideBubble();
-                    });
-
                     players[i].singleBehaviourUpdate(PLAYER_FINISHING_MASTURBATING);
                 }
 
@@ -223,9 +229,17 @@ function tickForfeitTimers () {
                 players[i].timer = 0;
 
                 /* trigger the callback */
-                var player = i, tableVisible = (tableOpacity > 0);
-                timeoutID = window.setTimeout(function(){ allowProgression(eGamePhase.END_FORFEIT); }, ORGASM_DELAY);
-                globalSavedTableVisibility = tableVisible;
+                var player = i;
+                timeoutID = window.setTimeout(function() { allowProgression(); },
+                                              ORGASM_DELAY
+                                              + (allowAutoAdvance && autoAdvanceSpeed ?
+                                              /* When auto advance active, make the total time until the next phase the
+                                                 maximum of the auto advance delay and the animation time, plus an extra
+                                                 ORGASM_DELAY, i.e. if the animation is longer than the auto advance delay,
+                                                 pause that much longer. */
+                                                 Math.max(gameDisplays[finishTarget.slot - 1].animationDuration() - AUTO_ADVANCE_DELAYS[autoAdvanceSpeed], 0) :
+                                                 0));
+                globalSavedTableVisibility = tableVisibility;
                 if (AUTO_FADE) forceTableVisibility(false);
             }
             return true;
@@ -238,20 +252,16 @@ function tickForfeitTimers () {
     });
 
     for (var i = 0; i < players.length; i++) {
-        if (players[i] && players[i].out && players[i].timer > 1) {
-            players[i].timer--;
+        if (players[i] && players[i].out) {
+            if (players[i].timer > 1) --players[i].timer;
             masturbatingPlayers.push(i);
 
             let inHeavyMasturbation = players[i].updateHeavyMasturbation();
             if (inHeavyMasturbation) heavyMasturbatingPlayers.push(i);
 
             if (i == HUMAN_PLAYER) {
-                /* human player */
-                /* update the player label */
-                $gameClothingLabel.html("<b>'Finished' in "+players[i].timer+" phases</b>");
-                $gamePlayerCountdown.html(players[i].timer);
-                if (inHeavyMasturbation) $gamePlayerCountdown.addClass('pulse');
                 masturbatingPlayers.push(i); // Double the chance of commenting on human player
+                updateHumanPlayerMasturbationVisual();
             }
         }
     }
@@ -261,7 +271,7 @@ function tickForfeitTimers () {
     }
     // Show a player masturbating while dealing or after the game, if there is one available
     if (masturbatingPlayers.length > 0
-        && ((gamePhase == eGamePhase.DEAL && humanPlayer.out) || gamePhase == eGamePhase.EXCHANGE || gamePhase == eGamePhase.END_LOOP)) {
+        && ((nextGamePhase == eGamePhase.DEAL && humanPlayer.out) || nextGamePhase == eGamePhase.EXCHANGE || nextGamePhase == eGamePhase.END_LOOP)) {
         var playerToShow = masturbatingPlayers[getRandomNumber(0, masturbatingPlayers.length)];
         var others_tags = [[players[playerToShow].getForfeitTrigger("masturbating"), OPPONENT_MASTURBATING]];
         if (players[playerToShow].forfeit[0] == PLAYER_HEAVY_MASTURBATING) {
@@ -298,6 +308,10 @@ function finishMasturbation (player) {
     );
     players[player].ticksInStage = 0;
     players[player].timeInStage = 0;
+    if (player == HUMAN_PLAYER) {
+        updateHumanPlayerMasturbationVisual();
+        $gameClimaxOverlay.removeClass('climax');
+    }
     
     if (AUTO_FADE && globalSavedTableVisibility !== undefined) {
         forceTableVisibility(globalSavedTableVisibility);

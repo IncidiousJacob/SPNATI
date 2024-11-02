@@ -984,7 +984,7 @@
             </div>
 
             <button id="group-hide-button" class="bordered hide-table-button" onclick="hideGroupSelectionTable()" style="display: none;">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
             </button>
 
             <!-- Dock Area -->
@@ -1572,37 +1572,6 @@
                                             </td>
                                         </tr>
 
-                                        <!-- Auto Advance -->
-                                        <tr>
-                                            <td>
-                                                <h4 class="modal-title modal-left">Auto-Advance during Forfeit</h4>
-                                            </td>
-                                            <td>
-                                                <nav>
-                                                    <ul class="pagination" data-option="auto-forfeit">
-                                                        <li><a href="#" data-value="4000">Fast</a></li>
-                                                        <li><a href="#" data-value="7500">Normal</a></li>
-                                                        <li><a href="#" data-value="10000">Slow</a></li>
-                                                        <li><a href="#">Off</a></li>
-                                                    </ul>
-                                                </nav>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h4 class="modal-title modal-left">Auto-Advance at End</h4>
-                                            </td>
-                                            <td>
-                                                <nav>
-                                                    <ul class="pagination" data-option="auto-ending">
-                                                        <li><a href="#" data-value="4000">Fast</a></li>
-                                                        <li><a href="#" data-value="7500">Normal</a></li>
-                                                        <li><a href="#" data-value="10000">Slow</a></li>
-                                                        <li><a href="#">Off</a></li>
-                                                    </ul>
-                                                </nav>
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td>
                                                 <h4 class="modal-title modal-left">Minimal UI</h4>
@@ -2203,8 +2172,8 @@
                                             <li>3: Select card 3</li>
                                             <li>4: Select card 4</li>
                                             <li>5: Select card 5</li>
-                                            <li>Q: Open Debug Screen</li>
                                             <li>T: Show/Hide UI</li>
+					    <li>+/-: Increase/decrease auto advance speed (when available)</li>
                                         </ul>
                                         <h4>When picking what to strip</h4>
                                         <ul>
@@ -3022,37 +2991,6 @@
                                                 </td>
                                             </tr>
 
-                                            <!-- Auto Advance -->
-                                            <tr>
-                                                <td>
-                                                    <h4 class="modal-title modal-left">Auto-Advance during Forfeit</h4>
-                                                </td>
-                                                <td>
-                                                    <nav>
-                                                        <ul class="pagination" data-option="auto-forfeit">
-                                                            <li><a href="#" data-value="4000">Fast</a></li>
-                                                            <li><a href="#" data-value="7500">Normal</a></li>
-                                                            <li><a href="#" data-value="10000">Slow</a></li>
-                                                            <li class="active"><a href="#">Off</a></li>
-                                                        </ul>
-                                                    </nav>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h4 class="modal-title modal-left">Auto-Advance at End</h4>
-                                                </td>
-                                                <td>
-                                                    <nav>
-                                                        <ul class="pagination" data-option="auto-ending">
-                                                            <li><a href="#" data-value="4000">Fast</a></li>
-                                                            <li><a href="#" data-value="7500">Normal</a></li>
-                                                            <li><a href="#" data-value="10000">Slow</a></li>
-                                                            <li class="active"><a href="#">Off</a></li>
-                                                        </ul>
-                                                    </nav>
-                                                </td>
-                                            </tr>
                                             <tr>
                                                 <td>
                                                     <h4 class="modal-title modal-left">Minimal UI</h4>
@@ -3469,19 +3407,19 @@
             </div>
 
             <!-- Hide and bug report buttons -->
-            <button class='bordered hide-table-button' onclick="toggleTableVisibility()" tabindex="3">
+            <button id="game-table-hide-button" class='bordered hide-table-button' onclick="toggleTableVisibility()" tabindex="3">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
             </button>
-            <button class='bordered table-bug-report-button' onclick="showBugReportModal()" tabindex="4">
+            <button class='bordered table-bug-report-button game-ui' onclick="showBugReportModal()" tabindex="4">
                 <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </button>
-            <button class="bordered table-feedback-report-button"  onclick="showFeedbackReportModal()" tabindex="5">
+            <button class="bordered table-feedback-report-button game-ui"  onclick="showFeedbackReportModal()" tabindex="5">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                <span class="game-menu-label">Feedback</span>
+                <div>Feedback</div>
             </button>			
 
             <!-- Game Table -->
-            <div id="game-table">
+            <div id="game-table" class="game-table">
 
                 <!-- Opponent Areas -->
                 <div id="game-opponent-area-1" class="optional-bordered left opponent-area" data-toggle="tooltip"
@@ -3619,7 +3557,7 @@
                 </div>
             </div>
 
-            <div id="game-hidden-area" class="centred-deck-area">
+            <div id="game-hidden-area" class="centred-deck-area game-ui">
                 <img id="deck" class="bordered dock-card" src="img/cards/default/unknown.svg" alt="Deck">
                 <div id="player-countdown" class="bordered" hidden>1</div>
 
@@ -3730,10 +3668,22 @@
                 </div>
 
                 <!-- Main Game Button -->
-                <button id="main-game-button" class="bordered smooth-button red" onclick="advanceGame()" tabindex="5">Deal</button>
-
-                <!-- Minimal UI Player name label -->
-                <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label">Player</div>
+                <button id="main-game-button" class="bordered smooth-button red" onclick="advanceGame()" tabindex="5"><div id="auto-advance-progress-bar" hidden></div><span>Deal</span></button>
+		<!-- Auto-advance buttons -->
+		<div id="auto-advance-button-container" hidden>
+                    <button class="bordered smooth-button red auto-advance-button" onclick="changeAutoAdvance(0)" tabindex="5" disabled>
+                        <img src="img/stop.svg" />
+		    </button>
+                    <button class="bordered smooth-button red auto-advance-button" onclick="changeAutoAdvance(1)" tabindex="5">
+                        <img src="img/play.svg" />
+		    </button>
+                    <button class="bordered smooth-button red auto-advance-button" onclick="changeAutoAdvance(2)" tabindex="5">
+                        <img src="img/fwd.svg" /><img src="img/fwd.svg" />
+		    </button>
+                    <button class="bordered smooth-button red auto-advance-button" onclick="changeAutoAdvance(3)" tabindex="5">
+                        <img src="img/fwd.svg" /><img src="img/fwd.svg" /><img src="img/fwd.svg" />
+		    </button>
+		</div>
 
                 <!-- Refresh visuals button -->
                 <button id="table-hard-refresh-button" class="bordered table-hard-refresh-button" onclick="updateAllGameVisuals()" tabindex="5" title="Refresh Images">
@@ -3742,8 +3692,11 @@
                 </button>
             </div>
 
+            <!-- Minimal UI Player name label -->
+            <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label game-table">Player</div>
         </div>
     </div>
+    <div id="game-climax-overlay" hidden></div>
 
     <!-- Start of Epilogue Screen -->
     <div id="epilogue-screen" role="dialog" hidden>

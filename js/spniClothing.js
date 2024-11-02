@@ -536,7 +536,7 @@ function setupStrippingModal () {
 }
 
 $stripModal.on('hidden.bs.modal', function () {
-    if (gamePhase === eGamePhase.STRIP) {
+    if (nextGamePhase === eGamePhase.STRIP) {
         console.error("Possible softlock: player strip modal hidden with game phase still at STRIP");
 
         Sentry.captureException(new Error("Possible softlock: player strip modal hidden with phase still at STRIP"));
@@ -633,13 +633,6 @@ function closeStrippingModal () {
     /* count the clothing the player has remaining */
     humanPlayer.stage++
     
-    /* update label */
-    if (humanPlayer.clothing.length > 0) {
-        $gameClothingLabel.html("Your Remaining Clothing");
-    } else {
-        $gameClothingLabel.html("You're Naked");
-    }
-        
     /* update behaviour */
     dialogueTrigger.push(OPPONENT_STRIPPED);
     updateAllBehaviours(HUMAN_PLAYER, null, [dialogueTrigger]);
@@ -676,12 +669,10 @@ function stripAIPlayer (player) {
     dialogueTrigger.push(OPPONENT_STRIPPED);
     updateAllBehaviours(player, PLAYER_STRIPPED, [dialogueTrigger]);
 
-    layer--;
-    if (layer >= 0 && players[player].clothing[layer].type == "skip") {
-        while (layer >= 0 && players[player].clothing[layer--].type == "skip") {
-            players[player].stage++;
-            players[player].stageChangeUpdate();
-        }
+    let skipToStage = players[player].findNextRealStage();
+    if (skipToStage != false) {
+        players[player].stage = skipToStage;
+        players[player].stageChangeUpdate();
         updateGameVisual(player);
     }
 
