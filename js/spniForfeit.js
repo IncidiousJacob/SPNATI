@@ -252,7 +252,7 @@ function tickForfeitTimers () {
     });
 
     for (var i = 0; i < players.length; i++) {
-        if (players[i] && players[i].out) {
+        if (players[i] && players[i].out && !players[1].finished) {
             if (players[i].timer > 1) --players[i].timer;
             masturbatingPlayers.push(i);
 
