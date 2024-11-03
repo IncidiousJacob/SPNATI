@@ -99,6 +99,8 @@
   <group label="Non-Human Species" multiselect="true">
     <tag display="Alien" description="Character is visibly extraterrestrial or freely mentions it">alien</tag>
     <tag display="Angel" paired="supernatural" description="Character is an angel">angel</tag>
+    <tag display="Anthro" paired="non-human" description="Character is an anthropomorhpic animal, ie a furry or scaly">anthro</tag>
+    <tag display="Avian" paired="anthro,non-human" description="Character is an anthropomorphic bird">avian</tag>
     <tag display="Cat Person" description="Character is a catgirl/catboy">catfolk</tag>
     <tag display="Cyborg" description="Character has both organic and artificial body parts, discounting simple artificial limbs">cyborg</tag>
     <tag display="Deity" paired="supernatural" description="Character is a god or goddess of some sort">deity</tag>
@@ -106,11 +108,12 @@
     <tag display="Elf" description="Character is an elf, or visually resembles one (Hylians, etc.)">elf</tag>
     <tag display="Fairy" description="Character is a fairy">fairy</tag>
     <tag display="Fox Person" description="Character is a fox person, kitsune, kumiho or similar">foxfolk</tag>
-    <tag display="Furry" paired="non-human" description="Character is an anthropomorphic furry animal">furry</tag>
+    <tag display="Furry" paired="anthro,non-human" description="Character is an anthropomorphic mammalian animal">furry</tag>
     <tag display="Ghost" paired="spirit,undead,supernatural" description="Character is a ghost of some sort">ghost</tag>
     <tag display="Monster" description="Character is of a classic monster species, i.e. vampires, succubi, lamias, harpies, etc.">monster</tag>
     <tag display="Non-Human" description="Character is visibly non-human">non-human</tag>
     <tag display="Robot" description="Character is visibly a robot or a synthetic human">robot</tag>
+    <tag display="Scaly" paired="anthro,non-human" description="Character is an anthropomorphic reptile">scaly</tag>
     <tag display="Spirit" paired="supernatural" description="Character is spectral or has a non-mortal essence">spirit</tag>
     <tag display="Succubus" description="Character is a succubus or mentions being one">succubus</tag>
     <tag display="Supernatural" description="Character is of an otherworldly, paranormal, or religious origin, such as an angel, ghost, fairy, or genie">supernatural</tag>
