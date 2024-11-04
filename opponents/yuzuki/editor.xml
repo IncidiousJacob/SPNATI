@@ -4,7 +4,18 @@
     <height />
     <age>31</age>
     <pronunciation>yuu-zuu-key yaa-suu-dah</pronunciation>
-    <othernotes />
+    <othernotes>Yuzuki's Summarized Backstory:&lt;br&gt;A beautiful just-turned-18 high school student had a crush on a classmate who already had a girlfriend. The girlfriend became jealous of the beautiful girl as the boyfriend kept eyeing her. Accusing her of being an adulterer, the girlfriend stabbed the pretty girl, and cut up her face. The pretty girl was dead for a few hours, then got up and carried on with her day, her face fixed into a wide grin; when she ran into the girlfriend and her boyfriend, the boyfriend fainted, and the girlfriend begged for her life. The beautiful girl is now a Kuchisake-onna and has been that way for over a decade. She does not remember what happened to the boy or his girlfriend.&lt;br&gt;&lt;br&gt;Now, she has been living as a Kuchisake-onna for more than a decade. Even being somewhere between life and death, she has to work a regular job. She keeps in touch with other spirits who get along in the modern world via social media. But, in general, she is a bit distant from everyone in her life, and is here to make friends and, hopefully, score a date.&lt;br&gt;&lt;br&gt;Targetable qualities&lt;br&gt;•    Her backstory – how she became an onryō, the folklore, her experiences with people who know the myth. How she has cut up at least one person’s face, but it was a ‘bad person’ – too many people know the myth in the modern world so thankfully most of them give an answer that means she doesn’t have to harm them. Could get dark, but I’ll embrace it.&lt;br&gt;•    Her relationships – how she longs for companionship, enjoys just being able to hang out with people in a casual way. Has a refined way of speaking, apologizing a lot. Has work buddies/colleagues that go drinking with her, and how she must drink quickly to conceal her true nature. At least one of them knows but doesn’t care.&lt;br&gt;•    Her nature – She is an Onryō and adjacent to being a Yōkai. Technically a spirit but has a physical body, somewhere between life and death, still able to experience the world of the living. Has been undead for over a decade of existence so she is used to it, doesn’t cause her direct turmoil – more upset about how she has her darker side.&lt;br&gt;•    Her dark side – how she gets ‘the urge’ to go wandering out at night, a trance-like state of compulsion to enact the myth. Talking about how it is burned into her soul, and she doesn’t know if it will ever go away, but is able to take preventive measures, e.g., locking away her scissors so it takes her longer to leave home, pathing to areas that are less populated. Getting tipsy also makes her wander slower.&lt;br&gt;•    Her physicality – Tall and mature woman. Very pale. Scars/marks across her body. Biggest thing is her slit mouth, big deal out of it being revealed. Her mask hides her mouth but also helps her avoid getting dry mouth. She has tried to get the issue resolved medically but it always fails because when the ‘trance state’ takes over, she goes back to her cursed appearance.&lt;br&gt;•    Her clothes – Wearing clothes like big coats or a sweater that hides her body almost completely? Might even be wearing winter gloves. Maybe only her eyes and hair are visible at the start of the game. She would take off bigger items of clothing before taking off her face mask, properly revealing her face at the same time as her chest. (Mechanically this is so that reactions to "wow huge boobs" play at the same time as the mask reveal and give her compliment dialogue, so that she doesn't go 'angry' by default if someone reacts negatively to her mouth)&lt;br&gt;•    Her job – she has an absurdly mundane day-job. Her job role is “Government data analytics and JP-EN translation officer”. She works 8 hours a day to pay the bills. Her coworkers comment on the fact that she always wears a mask, which she plays off as her being sick all the time, telling her to ‘find a man’ so she can stop working. The job pays the bills.&lt;br&gt;•    Her favourite food – American-style beef burgers with extra toppings and tangy sauce. For dessert, chocolate cake. For a snack, Bocchan Dango. She prefers cold drinks – hot drinks burn her mouth too much.&lt;br&gt;•    Her hobbies – Likes to save up for and collect special plush toys. Decent at cooking but reliant on instant meals. Watches romantic drama shows and films.&lt;br&gt;•    Her forfeit – Yuzuki uses a vibrator with a wireless remote for her forfeit sequence. Her timer is a bit higher than average, meaning it will take her longer to finish. She increases the intensity of the vibration up to a point for the longer she has been in her forfeit stage.&lt;br&gt;&lt;br&gt;Qualities she will target:&lt;br&gt;•    Other spirits/supernaturally focused people. Fascinated by magic, but more interested in the spiritual.&lt;br&gt;•    Characters who flirt and are her type, mainly men, but has some interest in women in an old fashioned “Class S (Sister)” sort of attitude.&lt;br&gt;•    Values kindness, compassion, and honesty. Wants people she can be honest with and not be insulted (especially because insults about her appearance can get you maimed/killed).&lt;br&gt;•    Dislikes people who are heartless, egotistical, cruel, selfish. Reminds her too much of her own personality in her younger years and especially when she is in her trance state.&lt;br&gt;•    Interested in hearing advice for how to make friends, will target towards people who are naturally charismatic.&lt;br&gt;&lt;br&gt;Adoption&lt;br&gt;Should MyMainAccIsANord retire or become unavailable for a considerable length of time (3+ months) permission is given that any one person who has been trusted to make 2+ other characters that have made it to main roster can adopt her, so long as they leave what is already there in place, read her documentation, and have not been banned from either SPNATI server.</othernotes>
+    <noteworthy>
+        <case name="Yuzuki's reveal, part 1" id="95" priority="Noteworthy" min="3" max="3">
+            <description>Yuzuki makes it clear that she is about to take her mask off, revealing her Kuchisake-onna nature (which has not been secret)</description>
+        </case>
+        <case name="Yuzuki's reveal, part 2" id="96" priority="MustTarget" min="4" max="4">
+            <description>Yuzuki is a kuchisake-onna. Please make funny or flirty responses; if you want to write a negative (scared, disgusted etc) response, please contact the writer to discuss how to diffuse the situation when she becomes enraged (e.g. with a comedic swerve)</description>
+        </case>
+        <case name="Yuzuki is a kuchisake-onna" id="102" priority="Noteworthy" min="1" max="1">
+            <description>Yuzuki reveals she has the curse of a kuchisake-onna, or 'slit mouth woman'. Other characters may know what that is and react accordingly. See her other situations for the reveal.</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="3" opponent="senko" opponentId="168" />
         <response id="4" opponent="yuno_uno" opponentId="167" />
@@ -17,6 +28,18 @@
         <response id="14" opponent="caitlin" opponentId="68" />
         <response id="90" opponent="lucina" opponentId="1" />
         <response id="91" opponent="schezo" opponentId="12" />
+        <response id="101" opponent="mari_setogaya" opponentId="150" />
+        <response id="103" opponent="toph" opponentId="2" />
+        <response id="104" opponent="toph" opponentId="6" />
+        <response id="105" opponent="arueshalae" opponentId="4" />
+        <response id="107" opponent="arueshalae" opponentId="2" />
+        <response id="108" opponent="arueshalae" opponentId="1" />
+        <response id="109" opponent="yusei_fudo" opponentId="60" />
+        <response id="110" opponent="yusei_fudo" opponentId="200" />
+        <response id="111" opponent="karin" opponentId="50" />
+        <response id="112" opponent="yusei_fudo" opponentId="540" />
+        <response id="113" opponent="yusei_fudo" opponentId="541" />
+        <response id="114" opponent="yusei_fudo" opponentId="542" />
     </responses>
     <labels>
         <label id="1" label="Caution Message" color="1" folder="" sort="0" />
@@ -111,15 +134,37 @@
         <label id="90" label="" folder="Targets" sort="0" />
         <label id="91" label="" folder="Targets" sort="0" />
         <label id="92" label="" folder="Targets" sort="0" />
+        <label id="93" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="94" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="97" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="98" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="99" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="100" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="103" label="" folder="Targets" sort="0" />
+        <label id="104" label="" folder="Targets" sort="0" />
+        <label id="105" label="" folder="Targets" sort="0" />
+        <label id="106" label="" folder="Filtered Lines" sort="0" />
+        <label id="107" label="" folder="Targets" sort="0" />
+        <label id="108" label="" folder="Targets" sort="0" />
+        <label id="109" label="" folder="Targets" sort="0" />
+        <label id="110" label="" folder="Targets" sort="0" />
+        <label id="111" label="" folder="Targets" sort="0" />
+        <label id="112" label="" folder="Targets" sort="0" />
+        <label id="114" label="" folder="Targets" sort="0" />
+        <label id="113" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>92</nextId>
+    <nextId>114</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="arue_bad_dream" />
+        <marker scope="Public" name="arue_good_dreams" />
         <marker scope="Public" name="aura_camera" />
         <marker scope="Public" name="boob_distraction" />
         <marker scope="Public" name="Caitlin_Beans" />
         <marker scope="Public" name="can_i_ara_ara" />
         <marker scope="Public" name="introducing_self" />
+        <marker scope="Public" name="karin_journalist_workplace" />
+        <marker scope="Public" name="karin_journalist_yokai" />
         <marker scope="Public" name="lying_about_adult_videos" />
         <marker scope="Public" name="maleplayer_harem" />
         <marker scope="Public" name="mari_sexposition_oral" />
@@ -132,7 +177,10 @@
         <marker scope="Public" name="schezo_neck" />
         <marker scope="Public" name="seen_mask_off" />
         <marker scope="Public" name="senko_modern_amenities" />
+        <marker scope="Public" name="setogaya_clothingLanguage" />
         <marker scope="Public" name="teacher_assistant" />
+        <marker scope="Public" name="toph_bracelet_demo" />
+        <marker scope="Public" name="toph_hair_down" />
         <marker scope="Public" name="undead_comment1" />
         <marker scope="Public" name="undead_comment2" />
         <marker scope="Public" name="what_i_am" />
@@ -140,7 +188,16 @@
         <marker scope="Public" name="what_i_am_3" />
         <marker scope="Public" name="yandere_threat" />
         <marker scope="Public" name="yuno_prompt_earworm_songs" />
+        <marker scope="Public" name="yusei_self_strip4a" />
+        <marker scope="Public" name="yusei_self_strip4b" />
+        <marker scope="Public" name="yusei_self_strip4c" />
         <marker scope="Public" name="yuzuki_face_warning" />
+        <marker scope="Public" name="yuzuki_jura_self0a" />
+        <marker scope="Public" name="yuzuki_jura_strip0a" />
+        <marker scope="Public" name="yuzuki_meia_self0a" />
+        <marker scope="Public" name="yuzuki_meia_self1a" />
+        <marker scope="Public" name="yuzuki_meia_strip0a" />
+        <marker scope="Public" name="yuzuki_meia_strip1a" />
         <marker scope="Public" name="yuzuki_wiz_strip0a" />
     </markers>
     <pendingLines>
