@@ -286,6 +286,15 @@
         <response id="885" opponent="schezo" opponentId="591" />
         <response id="886" opponent="schezo" opponentId="90" />
         <response id="888" opponent="schezo" opponentId="315" />
+        <response id="890" opponent="jura" opponentId="141" />
+        <response id="891" opponent="jura" opponentId="140" />
+        <response id="895" opponent="jura" opponentId="2248" />
+        <response id="897" opponent="jura" opponentId="128" />
+        <response id="899" opponent="meia" opponentId="2373" />
+        <response id="901" opponent="yuzuki" opponentId="102" />
+        <response id="902" opponent="yuzuki" opponentId="95" />
+        <response id="903" opponent="yuzuki" opponentId="96" />
+        <response id="904" opponent="jura" opponentId="952" />
     </responses>
     <notes>
         <note id="10">Will be replaced if Sharla ever gets reworked lol</note>
@@ -1200,13 +1209,13 @@ c: say that he's been as high as the bionis' head?
         <label id="873" label="" folder="Responses" sort="0" />
         <label id="874" label="" folder="Responses" sort="0" />
         <label id="875" label="" folder="Responses" sort="0" />
-        <label id="876" label="" color="4" folder="Responses" sort="0" />
-        <label id="877" label="" color="4" folder="Responses" sort="0" />
+        <label id="876" label="" folder="Responses" sort="0" />
+        <label id="877" label="" folder="Responses" sort="0" />
         <label id="878" label="" folder="Responses" sort="0" />
-        <label id="879" label="" color="4" folder="Responses" sort="0" />
-        <label id="880" label="" color="4" folder="Responses" sort="0" />
+        <label id="879" label="" folder="Responses" sort="0" />
+        <label id="880" label="" folder="Responses" sort="0" />
         <label id="881" label="" color="4" folder="Responses" sort="0" />
-        <label id="882" label="" color="4" folder="Responses" sort="0" />
+        <label id="882" label="" folder="Responses" sort="0" />
         <label id="883" label="" folder="Responses" sort="0" />
         <label id="884" label="" color="6" folder="Targets" sort="0" />
         <label id="885" label="" folder="Schezo" sort="0" />
@@ -1214,12 +1223,27 @@ c: say that he's been as high as the bionis' head?
         <label id="887" label="" folder="Schezo" sort="0" />
         <label id="888" label="" folder="Schezo" sort="0" />
         <label id="889" label="" folder="Schezo" sort="0" />
+        <label id="890" label="female table follow up" folder="Responses" sort="0" />
+        <label id="891" label="male table follow up" folder="Responses" sort="0" />
+        <label id="892" label="" folder="Responses" sort="0" />
+        <label id="893" label="" folder="Responses" sort="0" />
+        <label id="894" label="" folder="Responses" sort="0" />
+        <label id="895" label="" folder="Responses" sort="0" />
+        <label id="896" label="" folder="Responses" sort="0" />
+        <label id="897" label="" folder="Responses" sort="0" />
+        <label id="898" label="" folder="Responses" sort="0" />
+        <label id="899" label="" folder="Responses" sort="0" />
+        <label id="900" label="" color="6" folder="Targets" sort="0" />
+        <label id="901" label="" folder="Targets" sort="0" />
+        <label id="902" label="" folder="Targets" sort="0" />
+        <label id="903" label="" folder="Targets" sort="0" />
+        <label id="904" label="" folder="Targets" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>aquaKH_socks==0</posePreviewMarker>
         <posePreviewMarker>epi_player_skintone==2</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>889</nextId>
+    <nextId>904</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="20gOffer">Line that plays when Dunban offers a 20g bribe to whoever loses</marker>
@@ -1484,9 +1508,13 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_jura_rapier02" />
         <marker scope="Public" name="dunban_jura_rapier03" />
         <marker scope="Public" name="dunban_jura_seduction" />
+        <marker scope="Public" name="dunban_jura_seduction2" />
         <marker scope="Public" name="dunban_jura_self0a" />
         <marker scope="Public" name="dunban_jura_self0b" />
+        <marker scope="Public" name="dunban_jura_self0c" />
         <marker scope="Public" name="dunban_jura_self1a" />
+        <marker scope="Public" name="dunban_jura_self1b" />
+        <marker scope="Public" name="dunban_jura_self1c" />
         <marker scope="Public" name="dunban_jura_self2" />
         <marker scope="Public" name="dunban_jura_self2b" />
         <marker scope="Public" name="dunban_jura_self2c" />
@@ -1495,8 +1523,10 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_jura_self3c" />
         <marker scope="Public" name="dunban_jura_self5a" />
         <marker scope="Public" name="dunban_jura_self5b" />
+        <marker scope="Public" name="dunban_jura_self5c" />
         <marker scope="Public" name="dunban_jura_self6a" />
         <marker scope="Public" name="dunban_jura_self6b" />
+        <marker scope="Public" name="dunban_jura_self6c" />
         <marker scope="Public" name="dunban_jura_selfMustFF" />
         <marker scope="Public" name="dunban_jura_selfstartFF" />
         <marker scope="Public" name="dunban_jura_selfStartFF" />
@@ -1615,8 +1645,10 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="dunban_meia_self5b" />
         <marker scope="Public" name="dunban_meia_self5balt" />
         <marker scope="Public" name="dunban_meia_self5c" />
+        <marker scope="Public" name="dunban_meia_self5calt" />
         <marker scope="Public" name="dunban_meia_self6a" />
         <marker scope="Public" name="dunban_meia_self6b" />
+        <marker scope="Public" name="dunban_meia_self6c" />
         <marker scope="Public" name="dunban_meia_selfMustFF" />
         <marker scope="Public" name="dunban_meia_startFF" />
         <marker scope="Public" name="dunban_meia_strip3a_default" />
@@ -1793,6 +1825,7 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="gameEndTracker" />
         <marker scope="Public" name="gamestart_smokingHotTable" />
         <marker scope="Public" name="haru_s5_mommyharu" />
+        <marker scope="Public" name="jura_sleepy" />
         <marker scope="Public" name="kirigiri_heavyforfeit01" />
         <marker scope="Public" name="korass_rep1" />
         <marker scope="Public" name="korass_rep1_jin" />
@@ -1807,6 +1840,7 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="meia_jura_arefighting" />
         <marker scope="Public" name="meia_must_mast" />
         <marker scope="Public" name="meia_revy_arefighting" />
+        <marker scope="Public" name="meia_start_mast" />
         <marker scope="Public" name="mia_heal_dunban_arm" />
         <marker scope="Public" name="mia_heal_dunban_arm2" />
         <marker scope="Public" name="miaGS_fizz_reveal" />
