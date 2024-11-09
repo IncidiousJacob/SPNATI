@@ -16,6 +16,7 @@
             <description>Yuzuki reveals she has the curse of a kuchisake-onna, or 'slit mouth woman'. Other characters may know what that is and react accordingly. See her other situations for the reveal.</description>
         </case>
     </noteworthy>
+    <reviewed>true</reviewed>
     <responses>
         <response id="3" opponent="senko" opponentId="168" />
         <response id="4" opponent="yuno_uno" opponentId="167" />
@@ -40,6 +41,14 @@
         <response id="112" opponent="yusei_fudo" opponentId="540" />
         <response id="113" opponent="yusei_fudo" opponentId="541" />
         <response id="114" opponent="yusei_fudo" opponentId="542" />
+        <response id="116" opponent="meia" opponentId="2376" />
+        <response id="122" opponent="aqua_kh" opponentId="67" />
+        <response id="123" opponent="caulifla" opponentId="2" />
+        <response id="124" opponent="caulifla" opponentId="4" />
+        <response id="125" opponent="caulifla" opponentId="5" />
+        <response id="130" opponent="jim" opponentId="11" />
+        <response id="131" opponent="jim" opponentId="10" />
+        <response id="132" opponent="jim" opponentId="3" />
     </responses>
     <labels>
         <label id="1" label="Caution Message" color="1" folder="" sort="0" />
@@ -134,12 +143,12 @@
         <label id="90" label="" folder="Targets" sort="0" />
         <label id="91" label="" folder="Targets" sort="0" />
         <label id="92" label="" folder="Targets" sort="0" />
-        <label id="93" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="93" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="94" label="" color="4" folder="Targets&gt;Meia" sort="0" />
-        <label id="97" label="" color="4" folder="Targets&gt;Jura" sort="0" />
-        <label id="98" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="97" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="98" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="99" label="" color="4" folder="Targets&gt;Jura" sort="0" />
-        <label id="100" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="100" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="103" label="" folder="Targets" sort="0" />
         <label id="104" label="" folder="Targets" sort="0" />
         <label id="105" label="" folder="Targets" sort="0" />
@@ -152,19 +161,53 @@
         <label id="112" label="" folder="Targets" sort="0" />
         <label id="114" label="" folder="Targets" sort="0" />
         <label id="113" label="" folder="Targets" sort="0" />
+        <label id="115" label="butt" folder="" sort="0" />
+        <label id="116" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="117" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="118" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="119" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="120" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="121" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="122" label="" folder="Targets" sort="0" />
+        <label id="123" label="" folder="Targets" sort="0" />
+        <label id="101" label="" folder="Targets" sort="0" />
+        <label id="124" label="" folder="Targets" sort="0" />
+        <label id="125" label="" folder="Targets" sort="0" />
+        <label id="126" label="" color="4" folder="Targets" sort="0" />
+        <label id="127" label="" color="4" folder="Targets" sort="0" />
+        <label id="128" label="" color="4" folder="Targets" sort="0" />
+        <label id="129" label="" folder="Player Names" sort="0" />
+        <label id="130" label="" folder="Targets" sort="0" />
+        <label id="131" label="" folder="Targets" sort="0" />
+        <label id="132" label="" folder="Targets" sort="0" />
+        <label id="133" label="" folder="Filtered Lines" sort="0" />
+        <label id="134" label="" folder="Filtered Lines" sort="0" />
+        <label id="135" label="" folder="Targets&gt;Tifa" sort="0" />
     </labels>
-    <nextId>114</nextId>
+    <nextId>135</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="arue_bad_dream" />
         <marker scope="Public" name="arue_good_dreams" />
+        <marker scope="Public" name="Arueshalae_favorite_feature" />
         <marker scope="Public" name="aura_camera" />
         <marker scope="Public" name="boob_distraction" />
+        <marker scope="Public" name="butt_pose" />
         <marker scope="Public" name="Caitlin_Beans" />
         <marker scope="Public" name="can_i_ara_ara" />
+        <marker scope="Public" name="caulifla_flight" />
+        <marker scope="Public" name="caulifla_saiyan1" />
+        <marker scope="Public" name="caulifla_saiyan2" />
         <marker scope="Public" name="introducing_self" />
+        <marker scope="Public" name="jim_conkA" />
+        <marker scope="Public" name="jim_conkB" />
+        <marker scope="Public" name="jim_intergalactic_journey" />
+        <marker scope="Public" name="jim_matt_mishap" />
         <marker scope="Public" name="karin_journalist_workplace" />
         <marker scope="Public" name="karin_journalist_yokai" />
+        <marker scope="Public" name="leon_strip0a" />
+        <marker scope="Public" name="leon_strip1a" />
+        <marker scope="Public" name="leon_strip1b" />
         <marker scope="Public" name="lying_about_adult_videos" />
         <marker scope="Public" name="maleplayer_harem" />
         <marker scope="Public" name="mari_sexposition_oral" />
@@ -193,11 +236,17 @@
         <marker scope="Public" name="yusei_self_strip4c" />
         <marker scope="Public" name="yuzuki_face_warning" />
         <marker scope="Public" name="yuzuki_jura_self0a" />
+        <marker scope="Public" name="yuzuki_jura_self0b" />
         <marker scope="Public" name="yuzuki_jura_strip0a" />
+        <marker scope="Public" name="yuzuki_jura_strip0b" />
         <marker scope="Public" name="yuzuki_meia_self0a" />
+        <marker scope="Public" name="yuzuki_meia_self0b" />
         <marker scope="Public" name="yuzuki_meia_self1a" />
         <marker scope="Public" name="yuzuki_meia_strip0a" />
+        <marker scope="Public" name="yuzuki_meia_strip0b" />
         <marker scope="Public" name="yuzuki_meia_strip1a" />
+        <marker scope="Public" name="yuzuki_meia_strip1b" />
+        <marker scope="Public" name="yuzuki_meia_strip1b_jura" />
         <marker scope="Public" name="yuzuki_wiz_strip0a" />
     </markers>
     <pendingLines>
