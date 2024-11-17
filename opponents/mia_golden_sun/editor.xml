@@ -149,6 +149,10 @@
         <response id="702" opponent="jura" opponentId="1008" />
         <response id="703" opponent="jura" opponentId="1064" />
         <response id="704" opponent="jura" opponentId="1067" />
+        <response id="709" opponent="yuri" opponentId="289" />
+        <response id="710" opponent="yuri" opponentId="290" />
+        <response id="711" opponent="yuri" opponentId="291" />
+        <response id="712" opponent="yuri" opponentId="292" />
     </responses>
     <notes>
         <note id="22">this can go in whatever direction you want; I just find it funny that the two of them are pious and water-themed</note>
@@ -182,6 +186,7 @@
         <note id="618">Mia is a good healer but she is not well-learned about the intricacies of Psynergy, and can only really parrot what the party learned throughout their journey.</note>
         <note id="619">Deliberately being ironic here, as both of them improve through fighting</note>
         <note id="641">djinn is the plural, djinni is singular</note>
+        <note id="709">damnit jim i'm a doctor not an engineer</note>
     </notes>
     <labels>
         <label id="2" label="" folder="Targets" sort="2" />
@@ -885,12 +890,30 @@
         <label id="706" label="" folder="Targets" sort="0" />
         <label id="707" label="" folder="Targets" sort="0" />
         <label id="708" label="" folder="Targets" sort="0" />
+        <label id="709" label="" folder="Responses&gt;Yuri" sort="0" />
+        <label id="710" label="" folder="Responses&gt;Yuri" sort="0" />
+        <label id="711" label="" folder="Responses&gt;Yuri" sort="0" />
+        <label id="712" label="" folder="Responses&gt;Yuri" sort="0" />
+        <label id="713" label="" color="9" folder="Events&gt;Sleepover" sort="0" />
+        <label id="714" label="" folder="Events&gt;Sleepover" sort="0" />
+        <label id="715" label="" folder="Sleepover Costume" sort="0" />
+        <label id="716" label="" folder="Sleepover Costume" sort="0" />
+        <label id="717" label="" folder="Sleepover Costume" sort="0" />
+        <label id="718" label="" folder="Sleepover Costume" sort="0" />
+        <label id="719" label="" folder="Sleepover Costume" sort="0" />
+        <label id="720" label="" folder="Sleepover Costume" sort="0" />
+        <label id="721" label="" folder="Sleepover Costume" sort="0" />
+        <label id="722" label="" folder="Sleepover Costume" sort="0" />
+        <label id="723" label="" folder="Sleepover Costume" sort="0" />
+        <label id="724" label="" folder="Sleepover Costume" sort="0" />
+        <label id="725" label="" folder="Sleepover Costume" sort="0" />
+        <label id="726" label="" folder="Events&gt;Sleepover" sort="0" />
     </labels>
     <prefixes>
         <prefix>zz_</prefix>
     </prefixes>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>708</nextId>
+    <nextId>726</nextId>
     <markers>
         <marker scope="Public" name="a_djinni_was_in_my_cape">Fizz djinni situational marker</marker>
         <marker scope="Public" name="angara_is_isolated" />
@@ -1209,6 +1232,10 @@
         <marker scope="Public" name="mia_yunyun_hometown1" />
         <marker scope="Public" name="mia_yunyun_hometown2" />
         <marker scope="Public" name="mia_yunyun_hometown3" />
+        <marker scope="Public" name="mia_yuri_djinnResp" />
+        <marker scope="Public" name="mia_yuri_flatWorldResp" />
+        <marker scope="Public" name="mia_yuri_psynergyResp" />
+        <marker scope="Public" name="mia_yuri_weyardLiteratureResp" />
         <marker scope="Public" name="miaGS_barbara_waterPowers1">Interaction with Barbara</marker>
         <marker scope="Public" name="miaGS_gloria_gay1" />
         <marker scope="Public" name="miaGS_gloria_gay2" />
@@ -1252,6 +1279,7 @@
         <marker scope="Public" name="shami_postTransform" />
         <marker scope="Public" name="shami_transform" />
         <marker scope="Public" name="shamiNickname" />
+        <marker scope="Public" name="sleeping_nude" />
         <marker scope="Public" name="sly_cantswim" />
         <marker scope="Public" name="spiderwomanmask" />
         <marker scope="Public" name="steve_SongPrompt" />
