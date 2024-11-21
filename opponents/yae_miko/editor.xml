@@ -176,9 +176,9 @@
         <label id="304" label="" color="4" folder="" sort="0" />
         <label id="306" label="" color="4" folder="" sort="0" />
         <label id="307" label="" color="4" folder="" sort="0" />
-        <label id="312" label="" color="4" folder="" sort="0" />
+        <label id="361" label="" color="4" folder="" sort="0" />
         <label id="314" label="" color="4" folder="" sort="0" />
-        <label id="315" label="" color="4" folder="" sort="0" />
+        <label id="360" label="" color="4" folder="" sort="0" />
         <label id="321" label="stage 3, 3 players" folder="" sort="0" />
         <label id="322" label="stage 3, 4-5 players" folder="" sort="0" />
         <label id="334" label="" color="4" folder="" sort="0" />
@@ -193,11 +193,30 @@
         <label id="347" label="No complaining" folder="" sort="0" />
         <label id="348" label="No complaining" folder="" sort="0" />
         <label id="349" label="No complaining" folder="" sort="0" />
+        <label id="351" label="Butt pose with Monika" folder="" sort="0" />
+        <label id="352" label="Butt pose with Monika" folder="" sort="0" />
+        <label id="353" label="Butt pose with Monika" color="6" folder="" sort="0" />
+        <label id="354" label="Butt pose with Yuri" color="6" folder="" sort="0" />
+        <label id="355" label="Butt pose with Pyrrha" color="6" folder="" sort="0" />
+        <label id="356" label="Butt pose with Monika" folder="" sort="0" />
+        <label id="357" label="Butt pose with Monika and Yuri" color="6" folder="" sort="0" />
+        <label id="358" label="Butt pose with Monika and Pyrrha" color="6" folder="" sort="0" />
+        <label id="359" label="" color="4" folder="" sort="0" />
+        <label id="362" label="" color="4" folder="" sort="0" />
+        <label id="363" label="" color="4" folder="" sort="0" />
+        <label id="364" label="Butt pose with Jean" color="6" folder="" sort="0" />
+        <label id="365" label="Butt pose with Monika and Jean" color="6" folder="" sort="0" />
+        <label id="366" label="Butt pose with Monika, Yuri, Jean" color="6" folder="" sort="0" />
+        <label id="367" label="Butt pose with Jean and Yuri" color="6" folder="" sort="0" />
+        <label id="368" label="Butt pose with Jean and Pyrrha" color="6" folder="" sort="0" />
+        <label id="369" label="Butt pose with Pyrrha and Yuri" color="6" folder="" sort="0" />
+        <label id="370" label="Butt pose with Monika, Yuri, Pyrrha" color="6" folder="" sort="0" />
+        <label id="371" label="" color="4" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
     </prefixes>
-    <nextId>350</nextId>
+    <nextId>371</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9s_manufactured" />
@@ -251,6 +270,9 @@
         <marker scope="Public" name="hu_tao_resp_23" />
         <marker scope="Public" name="hu_tao_resp_53" />
         <marker scope="Public" name="hu_tao_resp_hi" />
+        <marker scope="Public" name="jean_faceAway" />
+        <marker scope="Public" name="jean_pyrrha_faceAway" />
+        <marker scope="Public" name="jean_yuri_faceAway" />
         <marker scope="Public" name="jim_invasionChar" />
         <marker scope="Public" name="jim_warStories" />
         <marker scope="Public" name="jim_warStories2" />
@@ -366,6 +388,7 @@
         <marker scope="Public" name="miko_resp_sandals3" />
         <marker scope="Public" name="mitama_careerGoal" />
         <marker scope="Public" name="mitama_careerGoal2" />
+        <marker scope="Public" name="mitama_careerGoal3" />
         <marker scope="Public" name="mitama_jobInterview" />
         <marker scope="Public" name="mitama_jobInterview2" />
         <marker scope="Public" name="mitama_jobInterview3" />
@@ -373,13 +396,21 @@
         <marker scope="Public" name="mitama_readingPrefs2" />
         <marker scope="Public" name="mitama_readingPrefs3" />
         <marker scope="Public" name="mitama_resp_inazuma" />
+        <marker scope="Public" name="mitama_resp_inazuma2" />
         <marker scope="Public" name="mitama_resp_meeting" />
         <marker scope="Public" name="mitama_resp_meeting2" />
         <marker scope="Public" name="mitama_resp_meeting3" />
+        <marker scope="Public" name="monika_faceAway" />
+        <marker scope="Public" name="monika_jean_faceAway" />
         <marker scope="Public" name="monika_otherworldly" />
         <marker scope="Public" name="monika_otherworldly2" />
         <marker scope="Public" name="monika_otherworldly3" />
+        <marker scope="Public" name="monika_pyrrha_faceAway" />
+        <marker scope="Public" name="monika_yuri_faceAway" />
+        <marker scope="Public" name="monika_yuri_jean_faceAway" />
+        <marker scope="Public" name="monika_yuri_pyrrha_faceAway" />
         <marker scope="Public" name="moon_notice" />
+        <marker scope="Public" name="multibutt" />
         <marker scope="Public" name="nagisa_leyLineDisorder" />
         <marker scope="Public" name="natsuki_impersonator" />
         <marker scope="Public" name="natsuki_insecurities" />
@@ -393,6 +424,8 @@
         <marker scope="Public" name="nonon_resp_02a" />
         <marker scope="Public" name="nonon_resp_03a" />
         <marker scope="Public" name="petra_2ndLangBooks" />
+        <marker scope="Public" name="pyrrha_faceAway" />
+        <marker scope="Public" name="pyrrha_yuri_faceAway" />
         <marker scope="Public" name="reimu_resp_konkon" />
         <marker scope="Public" name="reimu_resp_shrineDesc" />
         <marker scope="Public" name="reimu_resp_shrineDesc2" />
@@ -412,6 +445,7 @@
         <marker scope="Public" name="sakura_smellComplexion" />
         <marker scope="Public" name="sakura_smellComplexion2" />
         <marker scope="Public" name="scm_resp" />
+        <marker scope="Public" name="shamiko_cooking" />
         <marker scope="Public" name="shamiko_horns" />
         <marker scope="Public" name="shamiko_horns2" />
         <marker scope="Public" name="shamiko_horns3" />
@@ -531,6 +565,7 @@
         <marker scope="Public" name="yuri_desiresAndFears" />
         <marker scope="Public" name="yuri_desiresAndFears2" />
         <marker scope="Public" name="yuri_desiresAndFears3" />
+        <marker scope="Public" name="yuri_faceAway" />
         <marker scope="Public" name="yuri_objection" />
         <marker scope="Public" name="yuri_objection2" />
         <marker scope="Public" name="yuri_objection3" />
@@ -558,6 +593,7 @@
         <marker scope="Public" name="yuri_writer" />
         <marker scope="Public" name="yuri_writer2" />
         <marker scope="Public" name="yuri_writer3" />
+        <marker scope="Public" name="yuzuki_Kuchisake-onna" />
         <marker scope="Public" name="zeke_pandoria_favLocation" />
         <marker scope="Public" name="zeke_pandoria_jobPay" />
         <marker scope="Public" name="zeke_pandoria_jobPay2" />
