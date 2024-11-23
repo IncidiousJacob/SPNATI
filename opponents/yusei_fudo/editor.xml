@@ -6,11 +6,14 @@
     <pronunciation>you-sei</pronunciation>
     <othernotes>TARGETING NOTE: ALWAYS CHECK WHAT COSTUME HE IS IN&lt;br&gt;He brings his duel disk with him as stage 0 in his default 'Junk Warrior' costume&lt;br&gt;He wears his bike helmet as stage 0 in his 'Speed Warrior' costume&lt;br&gt;&lt;br&gt;The main character of 5Ds and one of the Signers, bearing a mark of an ancient being known as the Crimson Dragon (in SPNATI, he has the Dragon's Head on his arm, placing him as post Season 2. he was originally given the mark of the Tail.)&lt;br&gt;&lt;br&gt;5Ds is the third series of Yu-Gi-Oh! and is the one famous for the "card games on motorcycles" meme, which honestly does a disservice for how awesome and even crazier the series gets.&lt;br&gt;&lt;br&gt;He is calm and serious, and fiercely smart - it is said that his game plan typically involves going through flowcharts in his head for how to best use his cards for his current hand and deck. He is also incredibly kind and is the heart of his team, being the one who brings a lot of different people together.&lt;br&gt;&lt;br&gt;Starts out living in a slum named Satellite outside of Neo Domino City. Spends a brief time in jail, where he gets the criminal mark on his face. He's later released, confronts his old friend-turned-rival Jack Atlas (the current "king of games"), beats him in a card game on motorcycles to recover his Stardust Dragon card, and becomes a hero through a lot more plot. Thanks to his tie to the Crimson Dragon, Yusei, Jack, and other characters have to work together to save the world.&lt;br&gt;&lt;br&gt;He is technically and mechanically proficient, able to work on his own Duel Disk, his D-Wheel (his motorcycle), and the bikes of others when he works as a mechanic.&lt;br&gt;&lt;br&gt;Makes use of a Duel Monsters deck that revolves around Syncro Summoning, with signature cards Junk Warrior and Stardust Dragon. In-universe, his deck has been mostly salvaged from other discarded 'junk' cards, and appropriately enough he has 'scrap' themed monsters, spells and traps. However, due to his connection to the Crimson Dragon, his other signature cards are Stardust Dragon and related support cards.&lt;br&gt;&lt;br&gt;To reflect his level of skill I have given him Good AI for all layers, however for the sake of game balance he will lower his own AI level for a few stages if he is winning by too much (here defined as being in the same layer for 5 and then 10 rounds).</othernotes>
     <noteworthy>
-        <case name="It's Time To... Duel?" id="60" priority="FYI" min="0" max="0">
+        <case name="It's Time To... Duel?" id="60" priority="Noteworthy" min="0" max="0">
             <description>If Yusei is in his default outfit and Chazz is present, he will start playing Duel Monsters (Yu-Gi-Oh!) before realizing the mistake.</description>
         </case>
         <case name="Yusei's Birthday 7/7" id="200" priority="FYI" min="0" max="3">
             <description>The 7th of July is Yusei's canonical birthday! He has a variant of this line if the birthday background is selected.</description>
+        </case>
+        <case name="I'll have some milk." id="548" priority="FYI" min="1" max="6">
+            <description>Tifa served Yusei a chilled glass of milk. Something he canonically asks for even in the original / non 4Kids version of his show.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -83,6 +86,9 @@
         <response id="537" opponent="yuzuki" opponentId="102" />
         <response id="538" opponent="yuzuki" opponentId="96" />
         <response id="539" opponent="yuzuki" opponentId="95" />
+        <response id="556" opponent="schezo" opponentId="578" />
+        <response id="557" opponent="schezo" opponentId="579" />
+        <response id="558" opponent="schezo" opponentId="580" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -99,7 +105,7 @@
     </notes>
     <labels>
         <label id="1" label="" folder="Backgrounds" sort="0" />
-        <label id="2" label="" folder="Last Left 1v1" sort="0" />
+        <label id="2" label="" folder="Last Left 1v1" sort="2" />
         <label id="3" label="" folder="Strip Sequence&gt;Default" sort="2" />
         <label id="4" label="" folder="Strip Sequence&gt;Generic" sort="6" />
         <label id="5" label="" folder="Strip Sequence&gt;Generic" sort="7" />
@@ -152,7 +158,7 @@
         <label id="53" label="" folder="Backgrounds" sort="2" />
         <label id="54" label="" folder="Player Names" sort="5" />
         <label id="55" label="" folder="Player Names" sort="6" />
-        <label id="56" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="56" label="" folder="Targets&gt;Yuno" sort="38" />
         <label id="57" label="" folder="Targets&gt;Yuno" sort="2" />
         <label id="58" label="" folder="Targets&gt;Chazz" sort="2" />
         <label id="59" label="" folder="Targets&gt;Chazz" sort="0" />
@@ -215,7 +221,7 @@
         <label id="116" label="" folder="Situations" sort="4" />
         <label id="117" label="" folder="Filters" sort="7" />
         <label id="118" label="self crotch visible" folder="" sort="0" />
-        <label id="119" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="119" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="7" />
         <label id="120" label="" folder="Filters" sort="9" />
         <label id="121" label="" folder="Filters" sort="10" />
         <label id="122" label="" folder="Filters" sort="11" />
@@ -251,7 +257,7 @@
         <label id="152" label="" folder="Filters" sort="25" />
         <label id="153" label="" folder="Player Names" sort="9" />
         <label id="154" label="" color="3" folder="Responses&gt;Jura&gt;Speed Warrior" sort="0" />
-        <label id="155" label="" color="3" folder="Targets&gt;Meia" sort="0" />
+        <label id="155" label="" color="3" folder="Targets&gt;Meia" sort="2" />
         <label id="156" label="" folder="Targets&gt;Velvet" sort="0" />
         <label id="158" label="&quot;you just want to mate?&quot;" color="3" folder="Targets&gt;Velvet" sort="2" />
         <label id="160" label="" color="3" folder="Targets&gt;Velvet" sort="8" />
@@ -264,7 +270,7 @@
         <label id="166" label="" color="1" folder="Targets&gt;Darkness" sort="0" />
         <label id="167" label="" color="1" folder="Targets&gt;Darkness" sort="2" />
         <label id="168" label="" color="1" folder="Targets&gt;Darkness" sort="3" />
-        <label id="169" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="169" label="" folder="Targets&gt;Schezo" sort="2" />
         <label id="170" label="summoning 1 default" color="3" folder="Targets&gt;Schezo" sort="3" />
         <label id="171" label="summoning 1 helmet" color="3" folder="Targets&gt;Schezo" sort="4" />
         <label id="172" label="" folder="Responses" sort="0" />
@@ -278,129 +284,129 @@
         <label id="180" label="" folder="Filters" sort="27" />
         <label id="181" label="" folder="Responses" sort="4" />
         <label id="182" label="" folder="Responses" sort="5" />
-        <label id="183" label="" folder="Clothing" sort="0" />
-        <label id="184" label="" folder="Clothing" sort="0" />
-        <label id="185" label="summoning 2 default" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="186" label="summoning 2 helmet" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="187" label="" color="4" folder="Targets&gt;Schezo" sort="0" />
+        <label id="183" label="" folder="Clothing" sort="4" />
+        <label id="184" label="" folder="Clothing" sort="5" />
+        <label id="185" label="summoning 2 default" color="3" folder="Targets&gt;Schezo" sort="9" />
+        <label id="186" label="summoning 2 helmet" color="3" folder="Targets&gt;Schezo" sort="10" />
+        <label id="187" label="" color="4" folder="Targets&gt;Schezo" sort="16" />
         <label id="188" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
-        <label id="189" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="0" />
-        <label id="190" label="" color="3" folder="Targets&gt;Masq 2024&gt;Jean" sort="0" />
+        <label id="189" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="2" />
+        <label id="190" label="" color="3" folder="Targets&gt;Masq 2024&gt;Jean" sort="2" />
         <label id="191" label="" folder="Targets&gt;Masq 2024&gt;Chiaki" sort="0" />
         <label id="192" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
-        <label id="193" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
-        <label id="194" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
-        <label id="196" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
-        <label id="195" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
-        <label id="197" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="0" />
+        <label id="193" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="4" />
+        <label id="194" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="5" />
+        <label id="196" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="3" />
+        <label id="195" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="2" />
+        <label id="197" label="" folder="Targets&gt;Nord&gt;Zeke_Pandoria" sort="6" />
         <label id="198" label="" folder="Clothing" sort="0" />
         <label id="199" label="" folder="Targets&gt;Meia" sort="0" />
-        <label id="200" label="it's my birthday" folder="Situations" sort="0" />
-        <label id="201" label="it's my birthday" folder="Situations" sort="0" />
+        <label id="200" label="it's my birthday" folder="Situations" sort="4" />
+        <label id="201" label="it's my birthday" folder="Situations" sort="3" />
         <label id="202" label="" folder="Targets&gt;Jura" sort="0" />
-        <label id="203" label="" folder="Targets" sort="0" />
-        <label id="204" label="" color="3" folder="Responses&gt;Jura&gt;Speed Warrior" sort="0" />
-        <label id="205" label="" color="6" folder="Targets&gt;Jura&gt;Santa" sort="0" />
-        <label id="206" label="" color="3" folder="Targets&gt;Jura" sort="0" />
-        <label id="207" label="" folder="Clothing" sort="0" />
-        <label id="208" label="" folder="Clothing" sort="0" />
-        <label id="209" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="210" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="203" label="" folder="Targets" sort="9" />
+        <label id="204" label="" color="3" folder="Responses&gt;Jura&gt;Speed Warrior" sort="2" />
+        <label id="205" label="" color="6" folder="Targets&gt;Jura&gt;Santa" sort="2" />
+        <label id="206" label="" color="3" folder="Targets&gt;Jura" sort="6" />
+        <label id="207" label="" folder="Clothing" sort="7" />
+        <label id="208" label="" folder="Clothing" sort="6" />
+        <label id="209" label="" folder="Targets&gt;Yuno" sort="39" />
+        <label id="210" label="" color="3" folder="Targets&gt;Juno" sort="3" />
         <label id="211" label="" folder="Last Left 1v1" sort="0" />
-        <label id="212" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="213" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="214" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="215" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="216" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="217" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="218" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="219" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="220" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="221" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="222" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="223" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="224" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="225" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="226" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="227" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="229" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="230" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="231" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="232" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="233" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="234" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="235" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="236" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="237" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="239" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="240" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="241" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="242" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="243" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="244" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="245" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="246" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="247" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="248" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="249" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="250" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="251" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="252" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="253" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="254" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="255" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="256" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="257" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="258" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="259" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="260" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="261" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="262" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="263" label="juno fixing hair" folder="Targets&gt;Juno" sort="0" />
+        <label id="212" label="" folder="Targets&gt;Yuno" sort="53" />
+        <label id="213" label="" folder="Targets&gt;Yuno" sort="40" />
+        <label id="214" label="" folder="Targets&gt;Yuno" sort="41" />
+        <label id="215" label="" folder="Targets&gt;Yuno" sort="42" />
+        <label id="216" label="" folder="Targets&gt;Yuno" sort="43" />
+        <label id="217" label="" folder="Targets&gt;Yuno" sort="44" />
+        <label id="218" label="" folder="Targets&gt;Yuno" sort="47" />
+        <label id="219" label="" folder="Targets&gt;Yuno" sort="49" />
+        <label id="220" label="" folder="Targets&gt;Yuno" sort="48" />
+        <label id="221" label="" folder="Targets&gt;Yuno" sort="50" />
+        <label id="222" label="" folder="Targets&gt;Yuno" sort="51" />
+        <label id="223" label="" folder="Targets&gt;Yuno" sort="54" />
+        <label id="224" label="" folder="Targets&gt;Yuno" sort="56" />
+        <label id="225" label="" folder="Targets&gt;Yuno" sort="55" />
+        <label id="226" label="" folder="Targets&gt;Yuno" sort="57" />
+        <label id="227" label="" folder="Targets&gt;Yuno" sort="58" />
+        <label id="229" label="" folder="Targets&gt;Yuno" sort="9" />
+        <label id="230" label="" folder="Targets&gt;Yuno" sort="10" />
+        <label id="231" label="" folder="Targets&gt;Yuno" sort="11" />
+        <label id="232" label="" folder="Targets&gt;Yuno" sort="12" />
+        <label id="233" label="" folder="Targets&gt;Yuno" sort="14" />
+        <label id="234" label="" folder="Targets&gt;Yuno" sort="15" />
+        <label id="235" label="" folder="Targets&gt;Yuno" sort="16" />
+        <label id="236" label="" folder="Targets&gt;Yuno" sort="17" />
+        <label id="237" label="" folder="Targets&gt;Yuno" sort="13" />
+        <label id="239" label="" folder="Targets&gt;Yuno" sort="19" />
+        <label id="240" label="" folder="Targets&gt;Yuno" sort="23" />
+        <label id="241" label="" folder="Targets&gt;Yuno" sort="21" />
+        <label id="242" label="" folder="Targets&gt;Yuno" sort="22" />
+        <label id="243" label="" folder="Targets&gt;Yuno" sort="24" />
+        <label id="244" label="" folder="Targets&gt;Yuno" sort="25" />
+        <label id="245" label="" folder="Targets&gt;Yuno" sort="26" />
+        <label id="246" label="" folder="Targets&gt;Yuno" sort="27" />
+        <label id="247" label="" folder="Targets&gt;Yuno" sort="29" />
+        <label id="248" label="" folder="Targets&gt;Yuno" sort="30" />
+        <label id="249" label="" folder="Targets&gt;Yuno" sort="31" />
+        <label id="250" label="" folder="Targets&gt;Yuno" sort="32" />
+        <label id="251" label="" folder="Targets&gt;Yuno" sort="33" />
+        <label id="252" label="" folder="Targets&gt;Yuno" sort="34" />
+        <label id="253" label="" folder="Targets&gt;Yuno" sort="35" />
+        <label id="254" label="" folder="Targets&gt;Yuno" sort="36" />
+        <label id="255" label="" folder="Targets&gt;Yuno" sort="20" />
+        <label id="256" label="" folder="Targets&gt;DMG" sort="4" />
+        <label id="257" label="" folder="Targets&gt;DMG" sort="5" />
+        <label id="258" label="" folder="Targets&gt;DMG" sort="6" />
+        <label id="259" label="" folder="Targets&gt;DMG" sort="7" />
+        <label id="260" label="" folder="Targets&gt;DMG" sort="8" />
+        <label id="261" label="" color="3" folder="Targets&gt;Juno" sort="5" />
+        <label id="262" label="" color="3" folder="Targets&gt;Juno" sort="17" />
+        <label id="263" label="juno fixing hair" folder="Targets&gt;Juno" sort="2" />
         <label id="264" label="juno fixing hair, to the right of me" folder="Targets&gt;Juno" sort="0" />
-        <label id="228" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="265" label="" folder="Targets&gt;Juno" sort="0" />
-        <label id="266" label="" folder="Bad Hands" sort="0" />
-        <label id="238" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="267" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="268" label="start dual forfeit, nadeshiko already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="269" label="1_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="270" label="1_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="271" label="1_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="272" label="1_4" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="273" label="2_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="274" label="2_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="275" label="2_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="276" label="2_4" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="277" label="3_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="278" label="3_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="279" label="3_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="280" label="3_4 (nadeshiko about to finish)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
+        <label id="228" label="" color="3" folder="Targets&gt;Juno" sort="4" />
+        <label id="265" label="" folder="Targets&gt;Juno" sort="6" />
+        <label id="266" label="" folder="Bad Hands" sort="3" />
+        <label id="238" label="" folder="Targets&gt;Yuno" sort="3" />
+        <label id="267" label="" folder="Targets&gt;Velvet" sort="14" />
+        <label id="268" label="start dual forfeit, nadeshiko already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="5" />
+        <label id="269" label="1_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="13" />
+        <label id="270" label="1_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="14" />
+        <label id="271" label="1_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="15" />
+        <label id="272" label="1_4" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="16" />
+        <label id="273" label="2_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="17" />
+        <label id="274" label="2_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="18" />
+        <label id="275" label="2_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="19" />
+        <label id="276" label="2_4" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="20" />
+        <label id="277" label="3_1" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="8" />
+        <label id="278" label="3_2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="9" />
+        <label id="279" label="3_3" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="10" />
+        <label id="280" label="3_4 (nadeshiko about to finish)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="7" />
         <label id="281" label="4_1 (nadeshiko finishing)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="282" label="4_2 (nadeshiko just finished)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="283" label="4_3 (yusei finishing)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="284" label="5_1 (yusei finished)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="285" label="5_2 (dual forfeit end)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="286" label="start dual forfeit, yusei already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="287" label="start dual forfeit, nadeshiko already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="288" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="289" label="" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="290" label="(hidden) force heavy timer at 8 ticks or left left" color="2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
+        <label id="282" label="4_2 (nadeshiko just finished)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="6" />
+        <label id="283" label="4_3 (yusei finishing)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="11" />
+        <label id="284" label="5_1 (yusei finished)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="12" />
+        <label id="285" label="5_2 (dual forfeit end)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="21" />
+        <label id="286" label="start dual forfeit, yusei already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="3" />
+        <label id="287" label="start dual forfeit, nadeshiko already out" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="4" />
+        <label id="288" label="" folder="Targets&gt;Nadeshiko" sort="53" />
+        <label id="289" label="" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="2" />
+        <label id="290" label="(hidden) force heavy timer at 8 ticks or left left" color="2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="22" />
         <label id="291" label="4_1 (nadeshiko finishing)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="292" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="293" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="294" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="295" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="296" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="297" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="298" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="299" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="300" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="301" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="302" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="303" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="304" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="305" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="292" label="" folder="Targets&gt;Nadeshiko" sort="59" />
+        <label id="293" label="" folder="Targets&gt;Nadeshiko" sort="60" />
+        <label id="294" label="" color="3" folder="Targets&gt;Nadeshiko" sort="28" />
+        <label id="295" label="" color="3" folder="Targets&gt;Nadeshiko" sort="36" />
+        <label id="296" label="" color="3" folder="Targets&gt;Nadeshiko" sort="44" />
+        <label id="297" label="" color="3" folder="Targets&gt;Nadeshiko" sort="29" />
+        <label id="298" label="" color="3" folder="Targets&gt;Nadeshiko" sort="30" />
+        <label id="299" label="" color="3" folder="Targets&gt;Nadeshiko" sort="31" />
+        <label id="300" label="" color="3" folder="Targets&gt;Nadeshiko" sort="32" />
+        <label id="301" label="" color="3" folder="Targets&gt;Nadeshiko" sort="33" />
+        <label id="302" label="" color="3" folder="Targets&gt;Nadeshiko" sort="34" />
+        <label id="303" label="" color="3" folder="Targets&gt;Nadeshiko" sort="35" />
+        <label id="304" label="" color="3" folder="Targets&gt;Nadeshiko" sort="37" />
+        <label id="305" label="" color="3" folder="Targets&gt;Nadeshiko" sort="38" />
         <label id="306" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="307" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="308" label="" folder="Targets&gt;Nadeshiko" sort="0" />
@@ -409,237 +415,269 @@
         <label id="311" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="312" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="313" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="314" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="315" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="316" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="317" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="318" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="319" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="320" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="321" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="322" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="323" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="324" label="" color="2" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="325" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="314" label="" color="3" folder="Targets&gt;Nadeshiko" sort="39" />
+        <label id="315" label="" color="3" folder="Targets&gt;Nadeshiko" sort="40" />
+        <label id="316" label="" color="3" folder="Targets&gt;Nadeshiko" sort="41" />
+        <label id="317" label="" color="3" folder="Targets&gt;Nadeshiko" sort="42" />
+        <label id="318" label="" color="3" folder="Targets&gt;Nadeshiko" sort="43" />
+        <label id="319" label="" color="3" folder="Targets&gt;Nadeshiko" sort="45" />
+        <label id="320" label="" color="3" folder="Targets&gt;Nadeshiko" sort="46" />
+        <label id="321" label="" color="3" folder="Targets&gt;Nadeshiko" sort="47" />
+        <label id="322" label="" color="3" folder="Targets&gt;Nadeshiko" sort="48" />
+        <label id="323" label="" color="3" folder="Targets&gt;Nadeshiko" sort="49" />
+        <label id="324" label="" color="2" folder="Targets&gt;Nadeshiko" sort="50" />
+        <label id="325" label="" color="3" folder="Targets&gt;Nadeshiko" sort="51" />
         <label id="326" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="327" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="328" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="329" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="330" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="331" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="332" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="333" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="334" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="335" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="336" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="337" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="338" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="339" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="340" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="341" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="342" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="343" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="344" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="345" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="346" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="347" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="348" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="349" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="350" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="351" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="352" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="353" label="Flirting Forfeit Dialogue" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="354" label="Sleeping Bag followup" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="355" label="and Gloria" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="356" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="357" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="358" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="359" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="360" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
+        <label id="327" label="" color="3" folder="Targets&gt;Nadeshiko" sort="3" />
+        <label id="328" label="" color="3" folder="Targets&gt;Nadeshiko" sort="4" />
+        <label id="329" label="" color="3" folder="Targets&gt;Nadeshiko" sort="5" />
+        <label id="330" label="" color="3" folder="Targets&gt;Nadeshiko" sort="6" />
+        <label id="331" label="" color="3" folder="Targets&gt;Nadeshiko" sort="7" />
+        <label id="332" label="" color="3" folder="Targets&gt;Nadeshiko" sort="8" />
+        <label id="333" label="" color="3" folder="Targets&gt;Nadeshiko" sort="9" />
+        <label id="334" label="" color="3" folder="Targets&gt;Nadeshiko" sort="10" />
+        <label id="335" label="" color="3" folder="Targets&gt;Nadeshiko" sort="12" />
+        <label id="336" label="" color="3" folder="Targets&gt;Nadeshiko" sort="13" />
+        <label id="337" label="" color="3" folder="Targets&gt;Nadeshiko" sort="14" />
+        <label id="338" label="" color="3" folder="Targets&gt;Nadeshiko" sort="15" />
+        <label id="339" label="" color="3" folder="Targets&gt;Nadeshiko" sort="16" />
+        <label id="340" label="" color="3" folder="Targets&gt;Nadeshiko" sort="17" />
+        <label id="341" label="" color="3" folder="Targets&gt;Nadeshiko" sort="18" />
+        <label id="342" label="" color="3" folder="Targets&gt;Nadeshiko" sort="19" />
+        <label id="343" label="" color="3" folder="Targets&gt;Nadeshiko" sort="21" />
+        <label id="344" label="" color="3" folder="Targets&gt;Nadeshiko" sort="22" />
+        <label id="345" label="" color="3" folder="Targets&gt;Nadeshiko" sort="23" />
+        <label id="346" label="" color="3" folder="Targets&gt;Nadeshiko" sort="24" />
+        <label id="347" label="" color="3" folder="Targets&gt;Nadeshiko" sort="25" />
+        <label id="348" label="" color="3" folder="Targets&gt;Nadeshiko" sort="26" />
+        <label id="349" label="" color="3" folder="Targets&gt;Nadeshiko" sort="27" />
+        <label id="350" label="" color="3" folder="Targets&gt;Nadeshiko" sort="2" />
+        <label id="351" label="" color="3" folder="Targets&gt;Nadeshiko" sort="11" />
+        <label id="352" label="" color="3" folder="Targets&gt;Nadeshiko" sort="20" />
+        <label id="353" label="Flirting Forfeit Dialogue" color="3" folder="Targets&gt;Nadeshiko" sort="55" />
+        <label id="354" label="Sleeping Bag followup" color="3" folder="Targets&gt;Nadeshiko" sort="54" />
+        <label id="355" label="and Gloria" folder="Targets&gt;Nadeshiko" sort="56" />
+        <label id="356" label="" folder="Targets&gt;Nadeshiko" sort="65" />
+        <label id="357" label="" folder="Targets&gt;Nadeshiko" sort="64" />
+        <label id="358" label="" folder="Targets&gt;Nadeshiko" sort="62" />
+        <label id="359" label="" color="3" folder="Targets&gt;Nadeshiko" sort="57" />
+        <label id="360" label="" color="3" folder="Targets&gt;Nadeshiko" sort="58" />
         <label id="361" label="" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
         <label id="362" label="" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="363" label="SETUP FORFEIT LOGIC" color="2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
-        <label id="364" label="gloria + nadeshiko triple pose" color="6" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="365" label="gloria and nadeshiko doing their double pose fallback" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="366" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="367" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="368" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="369" label="milk 4" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="370" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="371" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="372" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="373" label="" color="4" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="374" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="375" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="376" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="377" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="378" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="379" label="" color="1" folder="Targets&gt;Velvet" sort="0" />
-        <label id="380" label="" color="1" folder="Targets&gt;Velvet" sort="0" />
-        <label id="381" label="summoning 3 helmet" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="382" label="summoning 3 helmet SUSSY" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="383" label="summoning 3 default" color="3" folder="Targets&gt;Schezo" sort="0" />
-        <label id="384" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
-        <label id="385" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="386" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="387" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="388" label="self 1b, juno 5-7" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="389" label="self 1b, juno 0-4" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="363" label="SETUP FORFEIT LOGIC" color="2" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="23" />
+        <label id="364" label="gloria + nadeshiko triple pose" color="6" folder="Targets&gt;Nadeshiko" sort="66" />
+        <label id="365" label="gloria and nadeshiko doing their double pose fallback" folder="Targets&gt;Nadeshiko" sort="63" />
+        <label id="366" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="11" />
+        <label id="367" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="8" />
+        <label id="368" label="0 - milk" color="3" folder="Targets&gt;Tifa Lockheart" sort="15" />
+        <label id="369" label="milk 4" color="3" folder="Targets&gt;Tifa Lockheart" sort="2" />
+        <label id="370" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="12" />
+        <label id="371" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="3" />
+        <label id="372" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="5" />
+        <label id="373" label="" color="4" folder="Targets&gt;Tifa Lockheart" sort="4" />
+        <label id="374" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="6" />
+        <label id="375" label="" folder="Targets&gt;Velvet" sort="12" />
+        <label id="376" label="" folder="Targets&gt;Velvet" sort="13" />
+        <label id="377" label="" folder="Targets&gt;Velvet" sort="15" />
+        <label id="378" label="" folder="Targets&gt;Velvet" sort="16" />
+        <label id="379" label="" color="1" folder="Targets&gt;Velvet" sort="20" />
+        <label id="380" label="" color="1" folder="Targets&gt;Velvet" sort="19" />
+        <label id="381" label="summoning 3 helmet" color="3" folder="Targets&gt;Schezo" sort="11" />
+        <label id="382" label="summoning 3 helmet SUSSY" color="3" folder="Targets&gt;Schezo" sort="12" />
+        <label id="383" label="summoning 3 default" color="3" folder="Targets&gt;Schezo" sort="13" />
+        <label id="384" label="" color="1" folder="Targets&gt;Schezo" sort="17" />
+        <label id="385" label="" color="3" folder="Targets&gt;Juno" sort="7" />
+        <label id="386" label="" color="3" folder="Targets&gt;Juno" sort="9" />
+        <label id="387" label="" color="3" folder="Targets&gt;Juno" sort="8" />
+        <label id="388" label="self 1b, juno 5-7" color="3" folder="Targets&gt;Juno" sort="11" />
+        <label id="389" label="self 1b, juno 0-4" color="3" folder="Targets&gt;Juno" sort="10" />
         <label id="390" label="" color="3" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="391" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="392" label="5_2 (dual forfeit end)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="0" />
+        <label id="391" label="" folder="Targets&gt;Nadeshiko" sort="61" />
+        <label id="392" label="5_2 (dual forfeit end)" folder="Targets&gt;Nadeshiko&gt;Dual Forfeit" sort="24" />
         <label id="393" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="394" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="395" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="396" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="397" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="398" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="399" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="400" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="401" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="402" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="403" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="404" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="405" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="406" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="407" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="408" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="409" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="410" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="411" label="" folder="Targets&gt;Vanessa" sort="0" />
+        <label id="395" label="" folder="Targets&gt;Vanessa" sort="2" />
+        <label id="396" label="" folder="Targets&gt;Vanessa" sort="3" />
+        <label id="397" label="" folder="Targets&gt;Vanessa" sort="4" />
+        <label id="398" label="" folder="Targets&gt;Vanessa" sort="5" />
+        <label id="399" label="" folder="Targets&gt;Vanessa" sort="10" />
+        <label id="400" label="" folder="Targets&gt;Vanessa" sort="11" />
+        <label id="401" label="" folder="Targets&gt;Vanessa" sort="12" />
+        <label id="402" label="" folder="Targets&gt;Vanessa" sort="13" />
+        <label id="403" label="" folder="Targets&gt;Vanessa" sort="14" />
+        <label id="404" label="" folder="Targets&gt;Vanessa" sort="19" />
+        <label id="405" label="" folder="Targets&gt;Vanessa" sort="20" />
+        <label id="406" label="" folder="Targets&gt;Vanessa" sort="21" />
+        <label id="407" label="" folder="Targets&gt;Vanessa" sort="22" />
+        <label id="408" label="" folder="Targets&gt;Vanessa" sort="23" />
+        <label id="409" label="" folder="Targets&gt;Vanessa" sort="6" />
+        <label id="410" label="" folder="Targets&gt;Vanessa" sort="7" />
+        <label id="411" label="" folder="Targets&gt;Vanessa" sort="8" />
         <label id="412" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="413" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="414" label="" folder="Vanessa" sort="0" />
-        <label id="415" label="" folder="Vanessa" sort="0" />
-        <label id="416" label="" folder="Vanessa" sort="0" />
-        <label id="417" label="" folder="Vanessa" sort="0" />
-        <label id="418" label="" folder="Vanessa" sort="0" />
-        <label id="419" label="" folder="Vanessa" sort="0" />
-        <label id="420" label="" folder="Vanessa" sort="0" />
-        <label id="421" label="" folder="Vanessa" sort="0" />
-        <label id="422" label="" folder="Vanessa" sort="0" />
-        <label id="423" label="" folder="Vanessa" sort="0" />
-        <label id="424" label="" folder="Vanessa" sort="0" />
-        <label id="425" label="" folder="Vanessa" sort="0" />
-        <label id="426" label="" folder="Vanessa" sort="0" />
-        <label id="427" label="" folder="Vanessa" sort="0" />
-        <label id="428" label="" folder="Vanessa" sort="0" />
-        <label id="429" label="" folder="Vanessa" sort="0" />
-        <label id="430" label="" folder="Vanessa" sort="0" />
-        <label id="431" label="" folder="Vanessa" sort="0" />
-        <label id="432" label="" folder="Vanessa" sort="0" />
-        <label id="433" label="" folder="Vanessa" sort="0" />
-        <label id="434" label="" folder="Vanessa" sort="0" />
-        <label id="435" label="" folder="Vanessa" sort="0" />
-        <label id="436" label="" folder="Vanessa" sort="0" />
-        <label id="437" label="" folder="Vanessa" sort="0" />
-        <label id="438" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="439" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="440" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="441" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="442" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="443" label="" folder="Targets&gt;Vanessa" sort="0" />
+        <label id="413" label="" folder="Targets&gt;Vanessa" sort="9" />
+        <label id="414" label="" folder="Vanessa" sort="10" />
+        <label id="415" label="" folder="Vanessa" sort="11" />
+        <label id="416" label="" folder="Vanessa" sort="12" />
+        <label id="417" label="" folder="Vanessa" sort="13" />
+        <label id="418" label="" folder="Vanessa" sort="14" />
+        <label id="419" label="" folder="Vanessa" sort="15" />
+        <label id="420" label="" folder="Vanessa" sort="16" />
+        <label id="421" label="" folder="Vanessa" sort="17" />
+        <label id="422" label="" folder="Vanessa" sort="2" />
+        <label id="423" label="" folder="Vanessa" sort="3" />
+        <label id="424" label="" folder="Vanessa" sort="4" />
+        <label id="425" label="" folder="Vanessa" sort="5" />
+        <label id="426" label="" folder="Vanessa" sort="6" />
+        <label id="427" label="" folder="Vanessa" sort="7" />
+        <label id="428" label="" folder="Vanessa" sort="8" />
+        <label id="429" label="" folder="Vanessa" sort="9" />
+        <label id="430" label="" folder="Vanessa" sort="18" />
+        <label id="431" label="" folder="Vanessa" sort="19" />
+        <label id="432" label="" folder="Vanessa" sort="20" />
+        <label id="433" label="" folder="Vanessa" sort="21" />
+        <label id="434" label="" folder="Vanessa" sort="22" />
+        <label id="435" label="" folder="Vanessa" sort="23" />
+        <label id="436" label="" folder="Vanessa" sort="24" />
+        <label id="437" label="" folder="Vanessa" sort="25" />
+        <label id="438" label="" folder="Targets&gt;Vanessa" sort="15" />
+        <label id="439" label="" folder="Targets&gt;Vanessa" sort="16" />
+        <label id="440" label="" folder="Targets&gt;Vanessa" sort="17" />
+        <label id="441" label="" folder="Targets&gt;Vanessa" sort="24" />
+        <label id="442" label="" folder="Targets&gt;Vanessa" sort="25" />
+        <label id="443" label="" folder="Targets&gt;Vanessa" sort="26" />
         <label id="444" label="" folder="Vanessa" sort="0" />
-        <label id="445" label="" folder="Targets&gt;Vanessa" sort="0" />
-        <label id="446" label="" folder="Targets&gt;Vanessa" sort="0" />
+        <label id="445" label="" folder="Targets&gt;Vanessa" sort="18" />
+        <label id="446" label="" folder="Targets&gt;Vanessa" sort="27" />
         <label id="447" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="448" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="449" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="450" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="451" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="452" label="" folder="Targets&gt;Rose" sort="0" />
-        <label id="453" label="" folder="Targets&gt;Must Targets" sort="0" />
+        <label id="448" label="" folder="Targets&gt;Rose" sort="3" />
+        <label id="449" label="" folder="Targets&gt;Rose" sort="5" />
+        <label id="450" label="" folder="Targets&gt;Rose" sort="6" />
+        <label id="451" label="" folder="Targets&gt;Rose" sort="2" />
+        <label id="452" label="" folder="Targets&gt;Rose" sort="4" />
+        <label id="453" label="" folder="Targets&gt;Must Targets" sort="2" />
         <label id="454" label="" folder="Targets&gt;Must Targets" sort="0" />
-        <label id="455" label="" folder="Prompt Responses" sort="0" />
+        <label id="455" label="" folder="Prompt Responses" sort="6" />
         <label id="456" label="" folder="Targets&gt;Schezo" sort="0" />
-        <label id="457" label="" color="3" folder="Targets&gt;Meia" sort="0" />
-        <label id="458" label="" color="3" folder="Responses&gt;Meia" sort="0" />
-        <label id="459" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="0" />
-        <label id="460" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="0" />
-        <label id="461" label="" folder="Responses&gt;Jura&gt;Speed Warrior" sort="0" />
-        <label id="462" label="" color="3" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="0" />
-        <label id="463" label="" color="3" folder="Targets&gt;Jura" sort="0" />
-        <label id="464" label="" color="6" folder="Targets&gt;Jura&gt;Santa" sort="0" />
+        <label id="457" label="" color="3" folder="Targets&gt;Meia" sort="4" />
+        <label id="458" label="" color="3" folder="Responses&gt;Meia" sort="3" />
+        <label id="459" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="2" />
+        <label id="460" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="2" />
+        <label id="461" label="" folder="Responses&gt;Jura&gt;Speed Warrior" sort="3" />
+        <label id="462" label="" color="3" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="2" />
+        <label id="463" label="" color="3" folder="Targets&gt;Jura" sort="7" />
+        <label id="464" label="" color="6" folder="Targets&gt;Jura&gt;Santa" sort="3" />
         <label id="465" label="" folder="Targets&gt;Juno" sort="0" />
         <label id="466" label="" folder="Targets&gt;Juno" sort="0" />
-        <label id="467" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="468" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="469" label="self 1c, juno 0-4" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="470" label="self 1c, juno 5-7" folder="Targets&gt;Juno" sort="0" />
-        <label id="471" label="self 1c, juno 0-4, v b" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="472" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="473" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="474" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="475" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
-        <label id="476" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
-        <label id="477" label="" color="1" folder="Targets&gt;Schezo" sort="0" />
-        <label id="478" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="479" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="482" label="" folder="Targets" sort="0" />
-        <label id="483" label="" color="3" folder="Responses&gt;Meia" sort="0" />
-        <label id="484" label="" color="3" folder="Targets&gt;Meia" sort="0" />
-        <label id="485" label="" color="3" folder="Responses&gt;Meia" sort="0" />
-        <label id="486" label="" color="4" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="0" />
-        <label id="487" label="" color="3" folder="Responses&gt;Jura" sort="0" />
-        <label id="488" label="" color="3" folder="Responses&gt;Jura" sort="0" />
+        <label id="467" label="" color="3" folder="Targets&gt;Juno" sort="16" />
+        <label id="468" label="" color="3" folder="Targets&gt;Juno" sort="12" />
+        <label id="469" label="self 1c, juno 0-4" color="3" folder="Targets&gt;Juno" sort="13" />
+        <label id="470" label="self 1c, juno 5-7" folder="Targets&gt;Juno" sort="14" />
+        <label id="471" label="self 1c, juno 0-4, v b" color="3" folder="Targets&gt;Juno" sort="15" />
+        <label id="472" label="" color="6" folder="Targets&gt;Juno" sort="18" />
+        <label id="473" label="" color="6" folder="Targets&gt;Juno" sort="19" />
+        <label id="474" label="" color="6" folder="Targets&gt;Juno" sort="20" />
+        <label id="475" label="" color="3" folder="Targets&gt;Schezo" sort="7" />
+        <label id="476" label="" color="3" folder="Targets&gt;Schezo" sort="8" />
+        <label id="477" label="" color="3" folder="Targets&gt;Schezo" sort="6" />
+        <label id="478" label="" folder="Targets&gt;Velvet" sort="2" />
+        <label id="479" label="" folder="Targets&gt;Velvet" sort="3" />
+        <label id="482" label="" folder="Targets" sort="28" />
+        <label id="483" label="" color="3" folder="Responses&gt;Meia" sort="5" />
+        <label id="484" label="" color="3" folder="Targets&gt;Meia" sort="5" />
+        <label id="485" label="" color="3" folder="Responses&gt;Meia" sort="4" />
+        <label id="486" label="" color="4" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="3" />
+        <label id="487" label="" color="3" folder="Responses&gt;Jura" sort="3" />
+        <label id="488" label="" color="3" folder="Responses&gt;Jura" sort="4" />
         <label id="489" label="" color="1" folder="Targets&gt;Masq 2024&gt;Wiz" sort="0" />
-        <label id="490" label="" folder="Clothing" sort="0" />
-        <label id="491" label="" folder="Clothing" sort="0" />
-        <label id="492" label="" folder="Clothing" sort="0" />
-        <label id="493" label="" folder="Clothing" sort="0" />
-        <label id="494" label="" folder="Clothing" sort="0" />
-        <label id="495" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="481" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="480" label="" folder="Targets&gt;Velvet" sort="0" />
-        <label id="496" label="" folder="Targets&gt;DMG" sort="0" />
-        <label id="497" label="" color="3" folder="Responses&gt;Meia" sort="0" />
-        <label id="498" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="0" />
-        <label id="499" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="0" />
-        <label id="500" label="" color="4" folder="Responses&gt;Meia" sort="0" />
-        <label id="501" label="" color="4" folder="Responses&gt;Jura" sort="0" />
-        <label id="502" label="" color="4" folder="Responses&gt;Jura" sort="0" />
-        <label id="503" label="(stage 1)" folder="Targets&gt;Jura" sort="0" />
-        <label id="504" label="(stage 1, also playing Meia)" folder="Targets&gt;Jura" sort="0" />
-        <label id="505" label="(stage 1)" folder="Targets&gt;Meia" sort="0" />
+        <label id="490" label="" folder="Clothing" sort="2" />
+        <label id="491" label="" folder="Clothing" sort="3" />
+        <label id="492" label="" folder="Clothing" sort="8" />
+        <label id="493" label="" folder="Clothing" sort="9" />
+        <label id="494" label="" folder="Clothing" sort="10" />
+        <label id="495" label="" folder="Targets&gt;DMG" sort="2" />
+        <label id="481" label="" folder="Targets&gt;Velvet" sort="4" />
+        <label id="480" label="" folder="Targets&gt;Velvet" sort="5" />
+        <label id="496" label="" folder="Targets&gt;DMG" sort="3" />
+        <label id="497" label="" color="3" folder="Responses&gt;Meia" sort="7" />
+        <label id="498" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="3" />
+        <label id="499" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="3" />
+        <label id="500" label="" color="4" folder="Responses&gt;Meia" sort="6" />
+        <label id="501" label="" color="4" folder="Responses&gt;Jura" sort="5" />
+        <label id="502" label="" color="4" folder="Responses&gt;Jura" sort="6" />
+        <label id="503" label="(stage 1)" folder="Targets&gt;Jura" sort="5" />
+        <label id="504" label="(stage 1, also playing Meia)" folder="Targets&gt;Jura" sort="2" />
+        <label id="505" label="(stage 1)" folder="Targets&gt;Meia" sort="3" />
         <label id="506" label="(stage 1, also playing Juno)" folder="Targets&gt;Meia" sort="0" />
-        <label id="507" label="" folder="Targets&gt;Masq 2024&gt;Jean" sort="0" />
+        <label id="507" label="" folder="Targets&gt;Masq 2024&gt;Jean" sort="3" />
         <label id="508" label="" folder="Targets&gt;Yusuke" sort="0" />
         <label id="509" label="" folder="Targets&gt;Magma Grunt" sort="0" />
         <label id="510" label="" folder="Targets&gt;SannyTess" sort="0" />
         <label id="511" label="" folder="Targets&gt;Masq 2024&gt;Jean" sort="0" />
-        <label id="512" label="" folder="Prompt Responses" sort="0" />
-        <label id="513" label="" folder="Prompt Responses" sort="0" />
-        <label id="514" label="" folder="Prompt Responses" sort="0" />
-        <label id="515" label="" folder="Prompt Responses" sort="0" />
-        <label id="516" label="" folder="Targets" sort="0" />
-        <label id="517" label="" folder="Targets" sort="0" />
+        <label id="512" label="" folder="Prompt Responses" sort="2" />
+        <label id="513" label="" folder="Prompt Responses" sort="3" />
+        <label id="514" label="" folder="Prompt Responses" sort="4" />
+        <label id="515" label="" folder="Prompt Responses" sort="5" />
+        <label id="516" label="" folder="Targets" sort="24" />
+        <label id="517" label="" folder="Targets" sort="31" />
         <label id="518" label="" folder="Targets" sort="0" />
-        <label id="519" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="520" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="521" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="522" label="2 - bartender " folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="523" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="524" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="525" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="526" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="527" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="528" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="519" label="" folder="Targets&gt;Yuno" sort="5" />
+        <label id="520" label="" folder="Targets&gt;Yuno" sort="6" />
+        <label id="521" label="" folder="Targets&gt;Yuno" sort="7" />
+        <label id="522" label="2 - bartender " folder="Targets&gt;Tifa Lockheart" sort="9" />
+        <label id="523" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="13" />
+        <label id="524" label="2 - bartender" folder="Targets&gt;Tifa Lockheart" sort="16" />
+        <label id="525" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="10" />
+        <label id="526" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="14" />
+        <label id="527" label="2 - finishing blow" folder="Targets&gt;Tifa Lockheart" sort="17" />
+        <label id="528" label="1 - athletic" folder="Targets&gt;Tifa Lockheart" sort="18" />
         <label id="529" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="530" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
-        <label id="531" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
-        <label id="532" label="yusei_assist_yuno_offer_5" folder="Targets&gt;Yuno" sort="0" />
-        <label id="533" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
-        <label id="534" label="" folder="Targets" sort="0" />
+        <label id="530" label="" color="2" folder="Targets&gt;Yuno" sort="37" />
+        <label id="531" label="" color="2" folder="Targets&gt;Yuno" sort="45" />
+        <label id="532" label="yusei_assist_yuno_offer_5" folder="Targets&gt;Yuno" sort="4" />
+        <label id="533" label="" color="2" folder="Targets&gt;Yuno" sort="52" />
+        <label id="534" label="" folder="Targets" sort="40" />
         <label id="535" label="" folder="Targets&gt;Human" sort="0" />
-        <label id="536" label="" folder="Targets&gt;Human" sort="0" />
-        <label id="537" label="" folder="Targets" sort="0" />
-        <label id="539" label="" folder="Targets" sort="0" />
-        <label id="538" label="" folder="Targets" sort="0" />
-        <label id="540" label="" folder="Targets" sort="0" />
-        <label id="541" label="" folder="Targets" sort="0" />
-        <label id="542" label="" folder="Targets" sort="0" />
+        <label id="536" label="" folder="Targets&gt;Human" sort="2" />
+        <label id="537" label="" folder="Targets" sort="23" />
+        <label id="539" label="" folder="Targets" sort="29" />
+        <label id="538" label="" folder="Targets" sort="30" />
+        <label id="540" label="" folder="Targets" sort="36" />
+        <label id="541" label="" folder="Targets" sort="38" />
+        <label id="542" label="" folder="Targets" sort="41" />
+        <label id="543" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
+        <label id="544" label="" color="2" folder="Targets&gt;Yuno" sort="2" />
+        <label id="545" label="" color="2" folder="Targets&gt;Yuno" sort="8" />
+        <label id="546" label="" color="2" folder="Targets&gt;Yuno" sort="18" />
+        <label id="547" label="" color="2" folder="Targets&gt;Yuno" sort="28" />
+        <label id="548" label="milk 5 - DRINK" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
+        <label id="549" label="" folder="Targets&gt;Tifa Lockheart" sort="19" />
+        <label id="550" label="" folder="Backgrounds" sort="3" />
+        <label id="551" label="" folder="Backgrounds" sort="0" />
+        <label id="552" label="" folder="Backgrounds" sort="0" />
+        <label id="553" label="" folder="Backgrounds" sort="0" />
+        <label id="554" label="" folder="Backgrounds" sort="0" />
+        <label id="555" label="" folder="Backgrounds" sort="0" />
+        <label id="556" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="557" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="558" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="559" label="" color="2" folder="Targets&gt;Yuno" sort="0" />
+        <label id="560" label="" folder="Preset Table" sort="0" />
+        <label id="561" label="" folder="Clothing" sort="0" />
+        <label id="562" label="" folder="Filters" sort="0" />
+        <label id="563" label="" folder="Filters" sort="0" />
+        <label id="564" label="" folder="Filters" sort="0" />
+        <label id="565" label="" folder="Strip Sequence&gt;Default" sort="0" />
+        <label id="566" label="" folder="Filters" sort="0" />
+        <label id="567" label="" folder="Filters" sort="0" />
+        <label id="568" label="" folder="Filters" sort="0" />
+        <label id="569" label="" folder="Filters" sort="0" />
+        <label id="570" label="" folder="Targets" sort="0" />
+        <label id="571" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>542</nextId>
+    <prefixes>
+        <prefix>x_</prefix>
+    </prefixes>
+    <nextId>571</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
@@ -676,6 +714,8 @@
         <marker scope="Public" name="linear_gameplay" />
         <marker scope="Public" name="mg_groupchat1" />
         <marker scope="Public" name="mg_groupchat2" />
+        <marker scope="Public" name="momo_littering" />
+        <marker scope="Public" name="momo_littering_outdoors" />
         <marker scope="Public" name="nade_yusei_engage_dual_forfeit" />
         <marker scope="Public" name="nadeshiko_ff_breasts" />
         <marker scope="Public" name="nadeshiko_ff_campingalone" />
@@ -720,6 +760,8 @@
         <marker scope="Public" name="schezo_perving_shy" />
         <marker scope="Public" name="schezo_yusei_real1_darksigners" />
         <marker scope="Public" name="schezo_yusei_real1_psychicduelist" />
+        <marker scope="Public" name="schezo_yusei_real2_darksigners" />
+        <marker scope="Public" name="schezo_yusei_real2_psychicduelist" />
         <marker scope="Public" name="sei_anal" />
         <marker scope="Public" name="sei_drink_offer" />
         <marker scope="Public" name="synchro_summoning" />
@@ -742,6 +784,9 @@
         <marker scope="Public" name="yu-nade_pose_nadeshiko_climax" />
         <marker scope="Public" name="yuno_prompt_earworm_songs" />
         <marker scope="Public" name="yuno_uno_and_poker_4" />
+        <marker scope="Public" name="yuno_yusei_crimsonDragon1" />
+        <marker scope="Public" name="yuno_yusei_crimsonDragon2" />
+        <marker scope="Public" name="yuno_yusei_crimsonDragon3" />
         <marker scope="Public" name="yuno_yusei_duelDanger1" />
         <marker scope="Public" name="yuno_yusei_duelDanger2" />
         <marker scope="Public" name="yuno_yusei_duelDanger3" />
@@ -881,6 +926,7 @@
         <marker scope="Public" name="yusei_nadeshiko_strip3c" />
         <marker scope="Public" name="yusei_nadeshiko_strip4a" />
         <marker scope="Public" name="yusei_nadeshiko_strip4b" />
+        <marker scope="Public" name="yusei_nadeshiko_strip4c" />
         <marker scope="Public" name="yusei_nadeshiko_strip5a" />
         <marker scope="Public" name="yusei_nadeshiko_strip5b" />
         <marker scope="Public" name="yusei_nadeshiko_strip5c" />
@@ -895,6 +941,7 @@
         <marker scope="Public" name="yusei_pandy_self2a" />
         <marker scope="Public" name="yusei_pandy_self2b" />
         <marker scope="Public" name="yusei_schezo_bike1" />
+        <marker scope="Public" name="yusei_schezo_bike2" />
         <marker scope="Public" name="yusei_schezo_summoning1" />
         <marker scope="Public" name="yusei_schezo_summoning2" />
         <marker scope="Public" name="yusei_schezo_summoning3" />
@@ -915,6 +962,7 @@
         <marker scope="Public" name="yusei_tifa_milk2" />
         <marker scope="Public" name="yusei_tifa_milk3" />
         <marker scope="Public" name="yusei_tifa_milk4" />
+        <marker scope="Public" name="yusei_tifa_milk5" />
         <marker scope="Public" name="yusei_tifa_self0a" />
         <marker scope="Public" name="yusei_tifa_self0b" />
         <marker scope="Public" name="yusei_tifa_self0b_cloud" />
@@ -957,6 +1005,7 @@
         <marker scope="Public" name="yusei_vanessa_strip3c" />
         <marker scope="Public" name="yusei_vanessa_strip4a" />
         <marker scope="Public" name="yusei_vanessa_strip4b" />
+        <marker scope="Public" name="yusei_vanessa_strip4c" />
         <marker scope="Public" name="yusei_vanessa_strip5a" />
         <marker scope="Public" name="yusei_vanessa_strip5b" />
         <marker scope="Public" name="yusei_vanessa_strip5c" />
@@ -984,15 +1033,25 @@
         <marker scope="Public" name="yusei_yuno_riding2" />
         <marker scope="Public" name="yusei_yuno_riding3" />
         <marker scope="Public" name="yusei_yuno_riding4" />
+        <marker scope="Public" name="yusei_yuno_self6a" />
+        <marker scope="Public" name="yusei_yuno_self6b" />
+        <marker scope="Public" name="yusei_yuno_self6c" />
+        <marker scope="Public" name="yusei_yuno_self7a_assist" />
+        <marker scope="Public" name="yusei_yuno_self7b_assist" />
+        <marker scope="Public" name="yusei_yuno_self7c_assist" />
         <marker scope="Public" name="yusei_yuno_strip0a" />
         <marker scope="Public" name="yusei_yuno_strip0b" />
         <marker scope="Public" name="yusei_yuno_strip0c" />
         <marker scope="Public" name="yusei_yuno_strip3a" />
         <marker scope="Public" name="yusei_yuno_strip3b" />
         <marker scope="Public" name="yusei_yuno_strip3c" />
+        <marker scope="Public" name="yusei_yuno_strip3c_noAki" />
         <marker scope="Public" name="yusei_yuno_strip4a" />
         <marker scope="Public" name="yusei_yuno_strip4b" />
         <marker scope="Public" name="yusei_yuno_strip4c" />
+        <marker scope="Public" name="yusei_yuno_strip5a" />
+        <marker scope="Public" name="yusei_yuno_strip5b" />
+        <marker scope="Public" name="yusei_yuno_strip5c" />
         <marker scope="Public" name="yusei_yuno_unoGame1" />
         <marker scope="Public" name="yusei_yuno_unoGame2" />
         <marker scope="Public" name="yusei_yuno_unoGame3" />
