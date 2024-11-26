@@ -229,6 +229,34 @@
                 <keyframe time="1" src="yusei_fudo/posemaker/akiza_2.png" />
             </directive>
         </pose>
+        <pose id="_yuno_akiza2">
+            <sprite id="happy" src="reskins/yusei_fudo_helmet/#-neutral.png" x="-45" y="0" />
+            <sprite id="Akiza" z="-3" src="yusei_fudo/posemaker/akiza_1.png" x="0" y="-21" alpha="0" />
+            <directive type="animation" id="Akiza" ease="ease-out" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="1" x="0" />
+                <keyframe time="3" x="290" />
+            </directive>
+            <directive type="animation" id="Akiza" delay="3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="290" />
+                <keyframe time="1" x="290" />
+            </directive>
+            <directive type="animation" id="Akiza" ease="smooth" interpolation="linear">
+                <keyframe time="0" y="-21" alpha="0" />
+                <keyframe time="1" alpha="0" />
+                <keyframe time="2" alpha="25" />
+                <keyframe time="3" alpha="50" />
+                <keyframe time="4" alpha="50" />
+            </directive>
+            <directive type="animation" id="Akiza" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/posemaker/akiza_1.png" />
+                <keyframe time="3" src="yusei_fudo/posemaker/akiza_2.png" />
+            </directive>
+            <directive type="animation" id="Akiza" delay="3" ease="linear" interpolation="none">
+                <keyframe time="0" src="yusei_fudo/posemaker/akiza_2.png" />
+                <keyframe time="1" src="yusei_fudo/posemaker/akiza_2.png" />
+            </directive>
+        </pose>
     </poses>
 
 </costume>
