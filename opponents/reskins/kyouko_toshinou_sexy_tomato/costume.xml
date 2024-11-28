@@ -819,6 +819,13 @@
                 <keyframe time="7" alpha="55" />
             </directive>
         </pose>
+        <pose id="3-stripping-horny">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_sexy_tomato/3-stripping-a.png" x="0" y="0" alpha="100" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_sexy_tomato/3-stripping-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_sexy_tomato/3-stripping-b.png" />
+            </directive>
+        </pose>
     </poses>
 
     <pose-sets>
