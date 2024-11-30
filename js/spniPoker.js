@@ -713,7 +713,7 @@ function displayHand (player, reveal) {
     }
     $gamePlayerAreas[player].toggleClass('revealed-cards', reveal);
     if (reveal) {
-        $gamePlayerAreas[player].toggleClass('loser', recentLoser == player);
+        $gamePlayerAreas[player].toggleClass('loser', !recentTied && recentLoser == player);
         $gamePlayerAreas[player].toggleClass('tied', !!recentTied && recentTied.includes(player));
         $gamePlayerAreas[player].removeClass('current');
         if (player == HUMAN_PLAYER) {
