@@ -712,7 +712,7 @@
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Happy.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Horny.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Smug.png" />
-            -->           
+            -->
             <candy uid="florina" base="reskins/florina_easter" src="0-interested.png" />
             <candy uid="florina" base="reskins/florina_easter" src="0-horny.png" />
             <candy uid="florina" base="reskins/florina_easter" src="0-calm.png" />
@@ -913,7 +913,7 @@
             </date>
             <!-- <weekOf month="11" day="30" start-on="4" days="4" />-->
             <weekOf month="5" day="31" start-on="3" days="5" />
-            <weekOf month="9" day="30" start-on="3" days="5" />     
+            <weekOf month="9" day="30" start-on="3" days="5" />
         </dates>
 
         <background>feminine bedroom</background>
@@ -921,6 +921,7 @@
         <!-- Put all costumes into the same group, but place new costumes higher -->
         <character highlight="sleepover" partition="1" sort="2">meia</character>
         <character highlight="sleepover" partition="1" sort="2">jura</character>
+        <character highlight="sleepover" partition="1" sort="2">sucrose</character>
         <character highlight="sleepover" partition="1" sort="2">senko</character>
         <character highlight="sleepover" partition="1" sort="2">roll_caskett</character>
         <character highlight="sleepover" partition="1" sort="2">yunyun</character>
@@ -928,6 +929,8 @@
         <character highlight="sleepover" partition="1" sort="2">kyouko_toshinou</character>
 
         <costumes highlight="sleepover" partition="1" sort="1">sleepover</costumes>
+		
+        <character highlight="sleepover">caitlin</character>
 
         <candy-catalog>
             <candy uid="meia" base="reskins/meia_sleep_chemise" src="0-silent2.png" />
@@ -937,7 +940,11 @@
             <candy uid="jura" base="reskins/jura_luxury_night" src="0-treasurescope.png"/>
             <candy uid="jura" base="reskins/jura_luxury_night" src="1-vain.png"/>
             <candy uid="jura" base="reskins/jura_luxury_night" src="4-teasing.png"/>
-            <candy uid="jura" base="reskins/jura_luxury_night" src="4-proud.png"/>        
+            <candy uid="jura" base="reskins/jura_luxury_night" src="4-proud.png"/>
+            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-curious.png"/>
+            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-aroused.png"/>
+            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-shy.png"/>
+            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-interested.png"/>			
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="0-wave.png"/>
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="1-smiling.png"/>
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="1-wave.png"/>
@@ -949,7 +956,7 @@
             <candy uid="yunyun" base="reskins/yunyun_wakey_wakey" src="0-Happy.png" />
             <candy uid="yunyun" base="reskins/yunyun_wakey_wakey" src="3-Shy.png" />
             <candy uid="yunyun" base="reskins/yunyun_wakey_wakey" src="4-Posing2.png" />
-            <candy uid="yunyun" base="reskins/yunyun_wakey_wakey" src="5-Facade.png" />            
+            <candy uid="yunyun" base="reskins/yunyun_wakey_wakey" src="5-Facade.png" />
             <candy uid="kyouko_toshinou" base="reskins/kyouko_toshinou_sexy_tomato" src="0-hello.png"/>
             <candy uid="kyouko_toshinou" base="reskins/kyouko_toshinou_sexy_tomato" src="0-derp.png"/>
             <candy uid="kyouko_toshinou" base="reskins/kyouko_toshinou_sexy_tomato" src="3-casual.png"/>
@@ -957,7 +964,7 @@
             <candy uid="mia_golden_sun" base="reskins/mia_golden_sun_sleepwear" src="0-calm.png"/>
             <candy uid="mia_golden_sun" base="reskins/mia_golden_sun_sleepwear" src="0-smug.png"/>
             <candy uid="mia_golden_sun" base="reskins/mia_golden_sun_sleepwear" src="0-pray.png"/>
-            <candy uid="mia_golden_sun" base="reskins/mia_golden_sun_sleepwear" src="4-praise.png"/>            
+            <candy uid="mia_golden_sun" base="reskins/mia_golden_sun_sleepwear" src="4-praise.png"/>
         </candy-catalog>
     </event>
     <event id="april_fools" consistent-timezone="true">
