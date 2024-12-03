@@ -9,6 +9,9 @@
         <case name="Teleporting Clothes" id="31" priority="Noteworthy" min="0" max="0">
             <description>Leviathan will teleport away her clothes during each stripping phase.</description>
         </case>
+        <case name="Singer Query" id="197" priority="Prompt" min="2" max="6">
+            <description>Leviathan asks a singer at the table how a person could know if they're good at it. No reason. Just curious. Probably.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -129,6 +132,29 @@
         <response id="146" opponent="glamrock_chica" opponentId="229" />
         <response id="147" opponent="karin" opponentId="86" />
         <response id="159" opponent="jura" opponentId="2243" />
+        <response id="161" opponent="karin" opponentId="135" />
+        <response id="173" opponent="darkness" opponentId="1322" />
+        <response id="174" opponent="darkness" opponentId="1320" />
+        <response id="175" opponent="darkness" opponentId="1319" />
+        <response id="176" opponent="darkness" opponentId="1325" />
+        <response id="177" opponent="darkness" opponentId="1321" />
+        <response id="178" opponent="darkness" opponentId="1323" />
+        <response id="179" opponent="darkness" opponentId="1324" />
+        <response id="182" opponent="yuzuki" opponentId="102" />
+        <response id="183" opponent="yuzuki" opponentId="10" />
+        <response id="184" opponent="yuzuki" opponentId="9" />
+        <response id="185" opponent="yuzuki" opponentId="96" />
+        <response id="186" opponent="priscilla" opponentId="78" />
+        <response id="187" opponent="critical_darling" opponentId="2" />
+        <response id="188" opponent="flash" opponentId="15" />
+        <response id="189" opponent="flash" opponentId="14" />
+        <response id="190" opponent="adora" opponentId="71" />
+        <response id="191" opponent="beatrix" opponentId="50" />
+        <response id="192" opponent="beatrix" opponentId="64" />
+        <response id="193" opponent="beatrix" opponentId="58" />
+        <response id="194" opponent="nadeshiko" opponentId="151" />
+        <response id="195" opponent="nadeshiko" opponentId="150" />
+        <response id="196" opponent="laevatein" opponentId="13" />
     </responses>
     <notes>
         <note id="123">Don't worry about giving an answer that "won't result in death." As long as the answer isn't "I refuse to answer" or "I eat babies" or any derivatives thereof, this will resolve peacefully.</note>
@@ -146,25 +172,34 @@
         <label id="10" label="" folder="Bobobo Non-conversations" sort="0" />
         <label id="11" label="" folder="Bobobo Non-conversations" sort="0" />
         <label id="12" label="" folder="Bobobo Non-conversations" sort="0" />
-        <label id="147" label="" color="15" folder="" sort="0" />
-        <label id="148" label="" color="15" folder="" sort="0" />
-        <label id="149" label="" color="15" folder="" sort="0" />
-        <label id="150" label="" color="15" folder="" sort="0" />
-        <label id="151" label="" color="15" folder="" sort="0" />
-        <label id="152" label="" color="15" folder="" sort="0" />
-        <label id="153" label="" color="15" folder="" sort="0" />
+        <label id="162" label="" color="15" folder="" sort="0" />
+        <label id="161" label="" color="15" folder="" sort="0" />
+        <label id="169" label="" color="15" folder="" sort="0" />
+        <label id="171" label="" color="15" folder="" sort="0" />
+        <label id="170" label="" color="15" folder="" sort="0" />
+        <label id="168" label="" color="15" folder="" sort="0" />
+        <label id="167" label="" color="15" folder="" sort="0" />
         <label id="154" label="" color="15" folder="" sort="0" />
-        <label id="155" label="" color="15" folder="" sort="0" />
-        <label id="156" label="" color="15" folder="" sort="0" />
+        <label id="166" label="" color="15" folder="" sort="0" />
+        <label id="172" label="" color="15" folder="" sort="0" />
         <label id="157" label="" color="15" folder="" sort="0" />
         <label id="158" label="" color="15" folder="" sort="0" />
         <label id="159" label="" color="15" folder="" sort="0" />
+        <label id="160" label="" color="15" folder="" sort="0" />
+        <label id="163" label="" color="15" folder="" sort="0" />
+        <label id="164" label="" color="15" folder="" sort="0" />
+        <label id="165" label="" color="15" folder="" sort="0" />
+        <label id="176" label="" color="15" folder="" sort="0" />
+        <label id="180" label="" color="15" folder="" sort="0" />
+        <label id="181" label="" color="15" folder="" sort="0" />
+        <label id="198" label="" folder="BlueKoin's Sponsorship" sort="0" />
     </labels>
-    <nextId>159</nextId>
+    <nextId>198</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aaravi_resp0_1" />
         <marker scope="Public" name="aaravi_resp1_1" />
+        <marker scope="Public" name="Adora_respTF" />
         <marker scope="Public" name="aoi_resp0_1" />
         <marker scope="Public" name="aoi_resp0_2" />
         <marker scope="Public" name="aoi_resp0_3" />
@@ -177,6 +212,7 @@
         <marker scope="Public" name="AquaKH_s0_1" />
         <marker scope="Public" name="AquaKH_s0_2" />
         <marker scope="Public" name="AquaKS_s0_1" />
+        <marker scope="Public" name="Beatrix_s0_1" />
         <marker scope="Public" name="bobobo_resp0_1" />
         <marker scope="Public" name="bobobo_resp0_2" />
         <marker scope="Public" name="bobobo_resp0_3" />
@@ -223,8 +259,12 @@
         <marker scope="Public" name="Chica_s0_2" />
         <marker scope="Public" name="Chica_s0_3" />
         <marker scope="Public" name="Chica_s1_1" />
+        <marker scope="Public" name="Chica_s1_2" />
         <marker scope="Public" name="Chocolate_Get" />
         <marker scope="Public" name="darkness_resp_bodysuit" />
+        <marker scope="Public" name="darkness_resp_handapologize" />
+        <marker scope="Public" name="darkness_resp_handchest" />
+        <marker scope="Public" name="darkness_resp_handnipple" />
         <marker scope="Public" name="darkness_resp_hitme" />
         <marker scope="Public" name="darkness_resp_ice" />
         <marker scope="Public" name="darkness_resp0_1" />
@@ -238,9 +278,13 @@
         <marker scope="Public" name="darkness_resp1P_3" />
         <marker scope="Public" name="darkness_resp2_1" />
         <marker scope="Public" name="darkness_resp2_2" />
+        <marker scope="Public" name="darkness_resp2_3" />
         <marker scope="Public" name="darkness_resp2P_1" />
         <marker scope="Public" name="darkness_resp2P_2" />
+        <marker scope="Public" name="darkness_resp2P_3" />
         <marker scope="Public" name="darkness_resp3_1" />
+        <marker scope="Public" name="darkness_resp3_2" />
+        <marker scope="Public" name="darkness_resp4_1" />
         <marker scope="Public" name="Darkness_s0_1" />
         <marker scope="Public" name="Darkness_s0_2" />
         <marker scope="Public" name="Darkness_s0_3" />
@@ -259,8 +303,16 @@
         <marker scope="Public" name="Darkness_s2_2A_RU" />
         <marker scope="Public" name="Darkness_s2_2A_SH" />
         <marker scope="Public" name="Darkness_s2_2A_VI" />
+        <marker scope="Public" name="Darkness_s2_3" />
+        <marker scope="Public" name="Darkness_s2_3Aqua" />
+        <marker scope="Public" name="Darkness_s2_3NotAqua" />
         <marker scope="Public" name="Darkness_s3_1" />
         <marker scope="Public" name="Darkness_s3_2" />
+        <marker scope="Public" name="Darkness_s3_3" />
+        <marker scope="Public" name="Darkness_s4_1" />
+        <marker scope="Public" name="Darkness_s5_1" />
+        <marker scope="Public" name="Gambler_Minus" />
+        <marker scope="Public" name="Gambler_Plus" />
         <marker scope="Public" name="heisenberg_resp0_1" />
         <marker scope="Public" name="heisenberg_resp1_1" />
         <marker scope="Public" name="hutao_leviathan02" />
@@ -273,10 +325,15 @@
         <marker scope="Public" name="hutao_resp2_1" />
         <marker scope="Public" name="hutao_resp2_2" />
         <marker scope="Public" name="hutao_resp2_3" />
+        <marker scope="Public" name="hutao_resp3_1" />
+        <marker scope="Public" name="hutao_resp4_1" />
+        <marker scope="Public" name="hutao_resp4_2" />
         <marker scope="Public" name="HuTao_s0_1" />
         <marker scope="Public" name="HuTao_s0_2" />
         <marker scope="Public" name="HuTao_s1_1" />
+        <marker scope="Public" name="HuTao_s1_2" />
         <marker scope="Public" name="HuTao_s2_1" />
+        <marker scope="Public" name="HuTao_s2_2" />
         <marker scope="Public" name="juno_resp0_1" />
         <marker scope="Public" name="Juno_resp0_1" />
         <marker scope="Public" name="juno_resp0_2" />
@@ -344,7 +401,9 @@
         <marker scope="Public" name="Jura_s5_2" />
         <marker scope="Public" name="Jura_s5_3" />
         <marker scope="Public" name="karin_resp0_1" />
+        <marker scope="Public" name="karin_resp0_2" />
         <marker scope="Public" name="Karin_s0_1" />
+        <marker scope="Public" name="Karin_s0_2" />
         <marker scope="Public" name="Kaz_Chocolate" />
         <marker scope="Public" name="kaz_resp0_1" />
         <marker scope="Public" name="kaz_resp0_2" />
@@ -384,6 +443,7 @@
         <marker scope="Public" name="Kaz_s5_3" />
         <marker scope="Public" name="kyoko_resp0_1" />
         <marker scope="Public" name="kyoko_resp0_2" />
+        <marker scope="Public" name="Laevatein_s0_1" />
         <marker scope="Public" name="leon_resp0_1" />
         <marker scope="Public" name="leon_resp0_2" />
         <marker scope="Public" name="leon_resp0_3" />
@@ -403,12 +463,20 @@
         <marker scope="Public" name="leon_resp4_aH" />
         <marker scope="Public" name="leon_resp4_H" />
         <marker scope="Public" name="leon_resp5_1" />
+        <marker scope="Public" name="leon_resp5_2" />
+        <marker scope="Public" name="leon_resp5_3" />
+        <marker scope="Public" name="leon_resp5_S" />
         <marker scope="Public" name="Leon_s0_1" />
         <marker scope="Public" name="Leon_s0_3" />
         <marker scope="Public" name="Leon_s1_1" />
         <marker scope="Public" name="Leon_s1_3" />
         <marker scope="Public" name="Leon_s2_1" />
+        <marker scope="Public" name="Leon_s2_2" />
         <marker scope="Public" name="Leon_s3_1" />
+        <marker scope="Public" name="Leon_s3_2" />
+        <marker scope="Public" name="Leon_spec_1" />
+        <marker scope="Public" name="Leon_spec_2" />
+        <marker scope="Public" name="Leon_Stock" />
         <marker scope="Public" name="Leviathan_BigMiss1" />
         <marker scope="Public" name="Leviathan_BigMiss2" />
         <marker scope="Public" name="Leviathan_RepeatPerformance1" />
@@ -438,6 +506,7 @@
         <marker scope="Public" name="Leviathan_Weary2" />
         <marker scope="Public" name="Leviathan_WordsAreHard1" />
         <marker scope="Public" name="Leviathan_WordsAreHard2" />
+        <marker scope="Public" name="LevSing" />
         <marker scope="Public" name="lysithea_resp0_1" />
         <marker scope="Public" name="lysithea_resp0_2" />
         <marker scope="Public" name="lysithea_resp0_3" />
@@ -574,6 +643,8 @@
         <marker scope="Public" name="Nephenee_s6_2" />
         <marker scope="Public" name="Nephenee_s6_3" />
         <marker scope="Public" name="Nephenee_s6_3x" />
+        <marker scope="Public" name="NoTolerance" />
+        <marker scope="Public" name="Priscilla_s0_1" />
         <marker scope="Public" name="revy_resp0_1" />
         <marker scope="Public" name="revy_resp0_2" />
         <marker scope="Public" name="roll_resp0_1" />
@@ -809,5 +880,10 @@
         <marker scope="Public" name="Yshtola_s7_1" />
         <marker scope="Public" name="Yshtola_s7_2" />
         <marker scope="Public" name="Yshtola_s7_3" />
+        <marker scope="Public" name="Yusei_resp1_1" />
+        <marker scope="Public" name="YuseiDE_s0_1" />
+        <marker scope="Public" name="YuseiRW_s0_1" />
+        <marker scope="Public" name="YuseiSW_s0_1" />
+        <marker scope="Public" name="ZeroTolerance" />
     </markers>
 </metadata>
