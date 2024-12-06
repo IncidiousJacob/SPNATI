@@ -608,6 +608,14 @@
                 <test expr="~player~" value="AQUA" />
                 <state img="#-curious.png" marker="gamestart_3Aquas">Oh man, my eyes must be blurry, because I'm seeing &lt;i&gt;three&lt;/i&gt; girls named Aqua with blue hair.</state>
             </case>
+            <case stage="0" id="1273">
+                <condition role="opp" character="mari_setogaya" />
+                <condition role="opp" character="nadeshiko" />
+                <condition role="other" character="yusei_fudo" sayingMarker="preset_table_start" />
+                <test expr="~background~" value="lake" />
+                <state img="#-you_forgot_to_say_uno.png">Hah! Ready to play, guys? This is a fantastic view!</state>
+                <state img="#-smiling.png">I can already tell that this is gonna be a lot of fun! I won't let you down, Yusei!</state>
+            </case>
             <case stage="0" id="939">
                 <condition role="opp" character="aqua_kh" />
                 <condition role="opp" character="aqua_konosuba" />
