@@ -564,6 +564,10 @@
         <response id="1652" opponent="yuzuki" opponentId="96" />
         <response id="1653" opponent="yuzuki" opponentId="150" />
         <response id="1654" opponent="karin" opponentId="130" />
+        <response id="1656" opponent="darkness" opponentId="1336" />
+        <response id="1657" opponent="darkness" opponentId="1334" />
+        <response id="1661" opponent="leviathan" opponentId="167" />
+        <response id="1662" opponent="leviathan" opponentId="168" />
     </responses>
     <notes>
         <note id="48">Grants the DbD tag. </note>
@@ -1684,15 +1688,17 @@
         <label id="1633" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1634" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1635" label="Proposition for Leviathan" folder="" sort="0" />
-        <label id="1636" label="" color="1" folder="" sort="0" />
-        <label id="1639" label="" color="1" folder="" sort="0" />
-        <label id="1637" label="" color="1" folder="" sort="0" />
-        <label id="1638" label="" color="1" folder="" sort="0" />
-        <label id="1640" label="" color="1" folder="" sort="0" />
+        <label id="1659" label="" color="1" folder="" sort="0" />
+        <label id="1660" label="" color="1" folder="" sort="0" />
+        <label id="1656" label="" color="1" folder="" sort="0" />
+        <label id="1658" label="" color="1" folder="" sort="0" />
+        <label id="1657" label="" color="1" folder="" sort="0" />
         <label id="1641" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1642" label="" folder="Yae Dual Triggers" sort="0" />
+        <label id="1663" label="" color="1" folder="" sort="0" />
+        <label id="1662" label="" color="1" folder="" sort="0" />
     </labels>
-    <nextId>1655</nextId>
+    <nextId>1663</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -1970,6 +1976,9 @@
         <marker scope="Public" name="darkness_leon21" />
         <marker scope="Public" name="darkness_leon22" />
         <marker scope="Public" name="darkness_leon23" />
+        <marker scope="Public" name="darkness_leon31a" />
+        <marker scope="Public" name="darkness_leon31b" />
+        <marker scope="Public" name="darkness_leon31c" />
         <marker scope="Public" name="darkness01a" />
         <marker scope="Public" name="darkness01b" />
         <marker scope="Public" name="darkness01c" />
@@ -2181,6 +2190,8 @@
         <marker scope="Public" name="leon_darkness33" />
         <marker scope="Public" name="leon_darkness41a" />
         <marker scope="Public" name="leon_darkness41b" />
+        <marker scope="Public" name="leon_darkness42a" />
+        <marker scope="Public" name="leon_darkness42b" />
         <marker scope="Public" name="leon_date" />
         <marker scope="Public" name="leon_dual_finished" />
         <marker scope="Public" name="leon_dual_finishing" />
@@ -2228,6 +2239,31 @@
         <marker scope="Public" name="leon_lev51" />
         <marker scope="Public" name="leon_lev52" />
         <marker scope="Public" name="leon_lev53" />
+        <marker scope="Public" name="leon_lev61a" />
+        <marker scope="Public" name="leon_lev61b" />
+        <marker scope="Public" name="leon_lev62a" />
+        <marker scope="Public" name="leon_lev62b" />
+        <marker scope="Public" name="leon_levff1" />
+        <marker scope="Public" name="leon_levff10" />
+        <marker scope="Public" name="leon_levff11" />
+        <marker scope="Public" name="leon_levff12" />
+        <marker scope="Public" name="leon_levff13" />
+        <marker scope="Public" name="leon_levff14" />
+        <marker scope="Public" name="leon_levff15" />
+        <marker scope="Public" name="leon_levff16" />
+        <marker scope="Public" name="leon_levff17" />
+        <marker scope="Public" name="leon_levff18" />
+        <marker scope="Public" name="leon_levff19" />
+        <marker scope="Public" name="leon_levff2" />
+        <marker scope="Public" name="leon_levff20" />
+        <marker scope="Public" name="leon_levff21" />
+        <marker scope="Public" name="leon_levff3" />
+        <marker scope="Public" name="leon_levff4" />
+        <marker scope="Public" name="leon_levff5" />
+        <marker scope="Public" name="leon_levff6" />
+        <marker scope="Public" name="leon_levff7" />
+        <marker scope="Public" name="leon_levff8" />
+        <marker scope="Public" name="leon_levff9" />
         <marker scope="Public" name="leon_leviathan34a" />
         <marker scope="Public" name="leon_leviathan44a" />
         <marker scope="Public" name="leon_missions" />
@@ -2449,6 +2485,7 @@
         <marker scope="Public" name="leontao_vison1" />
         <marker scope="Public" name="leontao_vison2" />
         <marker scope="Public" name="leontao_vison3" />
+        <marker scope="Public" name="lev_fast_ff" />
         <marker scope="Public" name="lev_leon01" />
         <marker scope="Public" name="lev_leon02" />
         <marker scope="Public" name="lev_leon03" />
@@ -2456,7 +2493,9 @@
         <marker scope="Public" name="lev_leon12" />
         <marker scope="Public" name="lev_leon13" />
         <marker scope="Public" name="lev_leon21" />
+        <marker scope="Public" name="lev_leon22" />
         <marker scope="Public" name="lev_leon31" />
+        <marker scope="Public" name="lev_leon32" />
         <marker scope="Public" name="lux01" />
         <marker scope="Public" name="lux02" />
         <marker scope="Public" name="lux03" />
@@ -3023,6 +3062,10 @@
         <marker scope="Public" name="yae_ff_rH2" />
         <marker scope="Public" name="yae_ff_rI" />
         <marker scope="Public" name="yae_ff_rJ" />
+        <marker scope="Public" name="yae_ff_rK" />
+        <marker scope="Public" name="yae_ff_rL" />
+        <marker scope="Public" name="yae_ff_rM" />
+        <marker scope="Public" name="yae_ff_rN" />
         <marker scope="Public" name="yae_ff_start" />
         <marker scope="Public" name="yae_ff1A" />
         <marker scope="Public" name="yae_ff1B" />
