@@ -467,6 +467,10 @@
         <response id="1157" opponent="jura" opponentId="21" />
         <response id="0" opponent="jura" opponentId="20" />
         <response id="1158" opponent="jura" opponentId="787" />
+        <response id="1160" opponent="nagisa" opponentId="1194" />
+        <response id="1161" opponent="nagisa" opponentId="1208" />
+        <response id="1162" opponent="estelle" opponentId="736" />
+        <response id="1163" opponent="estelle" opponentId="737" />
     </responses>
     <notes>
         <note id="159">This is a lie.</note>
@@ -1639,6 +1643,17 @@
         <label id="1156" label="" folder="Nagatoro to left or right / Jura to left" sort="0" />
         <label id="1157" label="" folder="Jura to left or right" sort="0" />
         <label id="1158" label="" folder="Nagatoro to left or right / Jura to left" sort="0" />
+        <label id="1159" label="" folder="Nagisa and Estelle to right" sort="0" />
+        <label id="1160" label="" folder="Nagisa to left / Estelle to right" sort="0" />
+        <label id="1161" label="" folder="Nagisa to left / Estelle to right" sort="0" />
+        <label id="1162" label="" folder="Nagisa and Estelle to left" sort="0" />
+        <label id="1163" label="" folder="Nagisa and Estelle to left" sort="0" />
+        <label id="1164" label="" folder="Jura to left or right" sort="0" />
+        <label id="1165" label="" folder="Jura to left or right" sort="0" />
+        <label id="1166" label="" folder="a short game" sort="0" />
+        <label id="1167" label="" folder="a short game" sort="0" />
+        <label id="1168" label="" folder="a short game" sort="0" />
+        <label id="1169" label="" folder="a short game" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
@@ -1647,9 +1662,8 @@
         <prefix>aura</prefix>
         <prefix>cameraflash</prefix>
     </prefixes>
-    <nextId>1158</nextId>
+    <nextId>1169</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="sanako_adrien_marinette_dual" />
         <marker scope="Public" name="sanako_adrien_marinette_dualforfeit" />
         <marker scope="Public" name="sanako_adrien_marinette_nagisa_dual" />
@@ -1657,7 +1671,6 @@
         <marker scope="Public" name="sanako_ae86_selected" />
         <marker scope="Public" name="sanako_ae86_selected_indoors" />
         <marker scope="Public" name="sanako_ae86_selected_street" />
-        <marker scope="Public" name="sanako_age_uncertainty">If Nagisa is not playing, Sanako can almost introduce herself as her real age.</marker>
         <marker scope="Public" name="sanako_alley_selected" />
         <marker scope="Public" name="sanako_amy_a14" />
         <marker scope="Public" name="sanako_amy_butt" />
@@ -1689,7 +1702,7 @@
         <marker scope="Public" name="sanako_birthday_opponent_selected" />
         <marker scope="Public" name="sanako_birthday_selected" />
         <marker scope="Public" name="sanako_birthday_self_victory" />
-        <marker scope="Public" name="sanako_bootstraps">Sanako's plan involves bootstraps. But only once because it's very annoying if she says it more than once.</marker>
+        <marker scope="Public" name="sanako_bootstraps" />
         <marker scope="Public" name="sanako_card_peek" />
         <marker scope="Public" name="sanako_caulifla_c5" />
         <marker scope="Public" name="sanako_caulifla_mast_finished" />
@@ -1798,13 +1811,15 @@
         <marker scope="Public" name="sanako_jim_nagisa_snj_j1" />
         <marker scope="Public" name="sanako_jim_nagisa_snj_j2" />
         <marker scope="Public" name="sanako_jim_nagisa_snj_j3" />
-        <marker scope="Public" name="sanako_joey_nice_to_meet_you">Nice to meet you, Joetta.</marker>
+        <marker scope="Public" name="sanako_joey_nice_to_meet_you" />
         <marker scope="Public" name="sanako_joey_question_1" />
         <marker scope="Public" name="sanako_joey_question_5" />
         <marker scope="Public" name="sanako_joey_question_6" />
         <marker scope="Public" name="sanako_joey_shirt_removal" />
         <marker scope="Public" name="sanako_jolyne_js_s1" />
         <marker scope="Public" name="sanako_jura_babies" />
+        <marker scope="Public" name="sanako_jura_bbuttspread2" />
+        <marker scope="Public" name="sanako_jura_bbuttspread2silent" />
         <marker scope="Public" name="sanako_jura_butt" />
         <marker scope="Public" name="sanako_jura_js_j1" />
         <marker scope="Public" name="sanako_jura_js_j10" />
@@ -2043,7 +2058,6 @@
         <marker scope="Public" name="sanako_may_nagisa_nms_m23" />
         <marker scope="Public" name="sanako_may_nagisa_nms_m4" />
         <marker scope="Public" name="sanako_may_nagisa_nms_m5" />
-        <marker scope="Public" name="sanako_may_nagisa_nms_n14" />
         <marker scope="Public" name="sanako_may_nagisa_nsm_m13" />
         <marker scope="Public" name="sanako_may_nagisa_nsm_m14" />
         <marker scope="Public" name="sanako_may_nagisa_nsm_m15" />
@@ -2171,7 +2185,6 @@
         <marker scope="Public" name="sanako_moon_nagisa_nsm_m13" />
         <marker scope="Public" name="sanako_moon_nagisa_nsm_m14" />
         <marker scope="Public" name="sanako_moon_nagisa_nsm_m15" />
-        <marker scope="Public" name="sanako_moon_nagisa_nsm_m4" />
         <marker scope="Public" name="sanako_moon_nagisa_snm_m14" />
         <marker scope="Public" name="sanako_moon_nagisa_snm_m15" />
         <marker scope="Public" name="sanako_moon_prompt_age" />
@@ -2224,8 +2237,13 @@
         <marker scope="Public" name="sanako_nagisa_deslected" />
         <marker scope="Public" name="sanako_nagisa_deslected_2" />
         <marker scope="Public" name="sanako_nagisa_deslected_3" />
-        <marker scope="Public" name="sanako_nagisa_estelle_ne_n1" />
-        <marker scope="Public" name="sanako_nagisa_estelle_reply_1" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nes_n1" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nes_n2" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nes_n3" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nse_n1" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nse_n2" />
+        <marker scope="Public" name="sanako_nagisa_estelle_nse_n3" />
+        <marker scope="Public" name="sanako_nagisa_estelle_sne_n2" />
         <marker scope="Public" name="sanako_nagisa_fallback_n20" />
         <marker scope="Public" name="sanako_nagisa_fallback_n21" />
         <marker scope="Public" name="sanako_nagisa_fallback_n21_nude" />
@@ -2242,8 +2260,6 @@
         <marker scope="Public" name="sanako_nagisa_good_husband" />
         <marker scope="Public" name="sanako_nagisa_here_with_a_boy" />
         <marker scope="Public" name="sanako_nagisa_inventory_customers" />
-        <marker scope="Public" name="sanako_nagisa_jim_age_here" />
-        <marker scope="Public" name="sanako_nagisa_jim_agefamiliarity" />
         <marker scope="Public" name="sanako_nagisa_jura_babies" />
         <marker scope="Public" name="sanako_nagisa_jura_jn_n18" />
         <marker scope="Public" name="sanako_nagisa_kyou_nks_n7" />
@@ -2295,7 +2311,6 @@
         <marker scope="Public" name="sanako_nagisa_meia_smn_n7" />
         <marker scope="Public" name="sanako_nagisa_meia_smn_n8" />
         <marker scope="Public" name="sanako_nagisa_meia_smn_n9" />
-        <marker scope="Public" name="sanako_nagisa_meia_telling_tomoya" />
         <marker scope="Public" name="sanako_nagisa_miko_mns_n4" />
         <marker scope="Public" name="sanako_nagisa_miko_mns_n5" />
         <marker scope="Public" name="sanako_nagisa_miko_mns_n6" />
@@ -2309,7 +2324,6 @@
         <marker scope="Public" name="sanako_nagisa_moon_nsm_n1" />
         <marker scope="Public" name="sanako_nagisa_moon_nsm_n2" />
         <marker scope="Public" name="sanako_nagisa_moon_nsm_n3" />
-        <marker scope="Public" name="sanako_nagisa_moon_snm_3" />
         <marker scope="Public" name="sanako_nagisa_moon_snm_n1" />
         <marker scope="Public" name="sanako_nagisa_moon_snm_n2" />
         <marker scope="Public" name="sanako_nagisa_moon_snm_n3" />
@@ -2506,7 +2520,6 @@
         <marker scope="Public" name="sanako_panty_nagisa_pns_p15" />
         <marker scope="Public" name="sanako_panty_nagisa_pns_p2" />
         <marker scope="Public" name="sanako_panty_nagisa_pns_p3" />
-        <marker scope="Public" name="sanako_panty_nsp_n4" />
         <marker scope="Public" name="sanako_panty_sp_p1" />
         <marker scope="Public" name="sanako_panty_sp_p2" />
         <marker scope="Public" name="sanako_panty_sp_p3" />
