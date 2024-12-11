@@ -142,6 +142,7 @@ var transcriptHistory = [];
  * we load state from returnRollbackPoint.
  */
 var returnRollbackPoint = null;
+var currentRollbackIndex = undefined;
 
 /**********************************************************************
  *****                    Start Up Functions                      *****
@@ -1034,6 +1035,7 @@ function loadRollbackPoint(pt) {
         returnRollbackPoint.nextGamePhase = nextGamePhase;
         $cardButtons.attr('disabled', true);
         changeAutoAdvance(0);
+        $('.transcript-step-button').show();
     }
 
     Sentry.addBreadcrumb({
@@ -1048,6 +1050,17 @@ function loadRollbackPoint(pt) {
         forceTableVisibility(gamePhase[2] && players.some(p => p.hand));
     }
     allowProgression();
+}
+
+function stepThroughTranscript(step) {
+    if (!inRollback()) return;
+    do {
+        currentRollbackIndex += step;
+    } while (currentRollbackIndex > 0 && currentRollbackIndex < transcriptHistory.length - 1
+             && !(transcriptHistory[currentRollbackIndex] instanceof RollbackPoint));
+    loadRollbackPoint(transcriptHistory[currentRollbackIndex]);
+    $('.transcript-step-button.left').toggle(currentRollbackIndex > 0);
+    $('.transcript-step-button.right').toggle(currentRollbackIndex < transcriptHistory.length - 1);
 }
 
 function exitRollback() {
@@ -1068,6 +1081,8 @@ function exitRollback() {
     updateAllGameVisuals();
     returnRollbackPoint.load();
     returnRollbackPoint = null;
+    currentRollbackIndex = undefined;
+    $('.transcript-step-button').hide();
     allowProgression();
     $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
     if (nextGamePhase == eGamePhase.EXCHANGE) {
@@ -1106,7 +1121,7 @@ function saveAllTranscriptEntries () {
 /************************************************************
  * Creates a DOM element for a log entry.
  ************************************************************/
-function createLogEntryElement(label, text, pt) {
+function createLogEntryElement(label, text, pt, idx) {
     var container = document.createElement('div');
     container.className = "log-entry-container clearfix";
     
@@ -1124,6 +1139,9 @@ function createLogEntryElement(label, text, pt) {
     container.onclick = function (ev) {
         if (!actualMainButtonState) {
             loadRollbackPoint(pt);
+            currentRollbackIndex = idx;
+            $('.transcript-step-button.left').toggle(idx > 0);
+            $('.transcript-step-button.right').toggle(idx < transcriptHistory.length - 1);
             $logModal.modal('hide');
         }
     }
@@ -1154,14 +1172,14 @@ function createLogMessageElement(text) {
 function showLogModal () {
     $logContainer.empty();
     
-    transcriptHistory.forEach(function (pt) {
+    transcriptHistory.forEach(function (pt, idx) {
         if (pt instanceof RollbackPoint) {
             pt.logEntries.forEach(function (e) {
                 logText = fixupDialogue(e[1]);
                 logText = logText.replace(/<script>.+<\/script>/g, '');
                 logText = logText.replace(/<button[^>]+>[^<]+<\/button>/g, '');
         
-                $logContainer.append(createLogEntryElement(e[0], logText, pt));
+                $logContainer.append(createLogEntryElement(e[0], logText, pt, idx));
             });
         } else {
             $logContainer.append(createLogMessageElement(pt));
