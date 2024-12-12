@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<collectibles>
+    <collectible id="Ash_ribbon" status="online" img="opponents/serena/ribbon.PNG" thumbnail="opponents/serena/ribbon.PNG">
+        <title>Ash's Ribbon</title>
+        <subtitle>It was a gift from Ash</subtitle>
+        <text>Ash's ribbon he gave to her, she gave to you. Although, she might want it back.</text>
+        <unlock>Win a game against Serena</unlock>
+        <hide-details>true</hide-details>
+    </collectible>
+    <collectible id="socks" status="online" img="opponents/serena/socks.png" thumbnail="opponents/serena/socks.png">
+        <title>Serena's Socks</title>
+        <subtitle>You know you want them, you weirdo.</subtitle>
+        <text>You got them, cuz you really do like them. You weirdo.</text>
+        <unlock>After unlocking Ash's Handkerchief, get Serena to take off her socks in a follow up game. Then ask her if you can buy them.</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/serena/socks.png" name="Serena's Socks" generic="socks" position="legs" type="minor" plural="true" />
+    </collectible>
+    <collectible id="ash_handkerchief" img="opponents/serena/handkerchief.png" thumbnail="opponents/serena/handkerchief.png">
+        <title>Ash's Handkerchief</title>
+        <subtitle>She told you about it, were you listening?</subtitle>
+        <text>This is the handkerchief Serena told you about. She must be fond of you, if she gave it to you, instead of giving it back to Ash.</text>
+        <unlock>Play a few times with Serena, and she will tell you the story about Ash and her at Pokemon Camp.</unlock>
+    </collectible>
+</collectibles>
