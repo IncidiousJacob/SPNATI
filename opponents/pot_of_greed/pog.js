@@ -177,12 +177,12 @@ if (!pog) var pog = (function (root) {
         }
     }
 
+    root.loadGameScreen = hookWrapper('loadGameScreen');
     root.startDealPhase = hookWrapper('startDealPhase');
-    root.displayHand = hookWrapper('displayHand');
-    root.clearHand = hookWrapper('clearHand');
     root.dealHand = hookWrapper('dealHand');
     root.exchangeCards = hookWrapper('exchangeCards');
-    root.showHand = hookWrapper('showHand');
+    root.displayHand = hookWrapper('displayHand');
+    root.displayAllHands = hookWrapper('displayAllHands');
     root.handStrengthFromString = hookWrapper('handStrengthFromString');
     root.determineAIAction = hookWrapper('determineAIAction');
     root.Hand.prototype.determine = hookWrapper('Hand.prototype.determine');
@@ -200,8 +200,6 @@ if (!pog) var pog = (function (root) {
         CARDS_PER_HAND = 5;
     }
 
-    registerHook('displayHand', 'pre', chooseCardAmt);
-    registerHook('clearHand', 'post', resetCardAmt);
     registerHook('dealHand', 'pre', chooseCardAmt);
     registerHook('dealHand', 'post', resetCardAmt);
     registerHook('exchangeCards', 'pre', chooseCardAmt);
@@ -238,6 +236,7 @@ if (!pog) var pog = (function (root) {
             }
         }
     }
+    registerHook('loadGameScreen', 'post', addExtraCards);
 
     function removeExtraCards() {
         for (var i = 1; i < $cardCells.length; i++) {
@@ -323,7 +322,9 @@ if (!pog) var pog = (function (root) {
     // exactly the existing startDealPhase function with PoG support
     // Note: please make this less copy-paste later, but I don't know how
     function pogStartDealPhase () {
-        currentRound++;
+        if (currentRound++ < 0) {
+            recordStartGameEvent();
+        }
         saveTranscriptMessage("Starting round "+(currentRound+1)+"...");
 
         Sentry.addBreadcrumb({
@@ -332,11 +333,6 @@ if (!pog) var pog = (function (root) {
             level: 'info'
         });
 
-        // add the extra PoG cards in round 1
-        if (currentRound === 0) {
-            addExtraCards();
-        }
-
         /* dealing cards */
         dealLock = getNumPlayersInStage(STATUS_ALIVE) * CARDS_PER_HAND;
         for (var i = 0; i < players.length; i++) {
@@ -344,10 +340,7 @@ if (!pog) var pog = (function (root) {
                 /* collect the player's hand */
                 chooseCardAmt(i);
                 clearHand(i);
-
-                if (i !== 0) {
-                    $gameOpponentAreas[i-1].removeClass('opponent-revealed-cards opponent-lost');
-                }
+                resetCardAmt();
             }
         }
 
@@ -365,27 +358,17 @@ if (!pog) var pog = (function (root) {
                     if (players[i].id === "pot_of_greed") {
                         dealLock += 2;
                     }
-
+                    
                     /* deal out a new hand to this player */
                     dealHand(i, numPlayers, n++);
                 } else {
-                    if (HUMAN_PLAYER == i) {
-                        $gamePlayerCardArea.hide();
-                        $gamePlayerClothingArea.hide();
-                    }
-                    else {
-                        $gameOpponentAreas[i-1].hide();
-                    }
+                    players[i].hand = null;
+                    $gamePlayerAreas[i].hide();
                 }
             }
         }
 
         /* IMPLEMENT STACKING/RANDOMIZED TRIGGERS HERE SO THAT AIs CAN COMMENT ON PLAYER "ACTIONS" */
-
-        /* clear the labels */
-        for (var i = 0; i < players.length; i++) {
-            $gameLabels[i].removeClass("loser tied");
-        }
 
         var realDelay = ANIM_DELAY * CARDS_PER_HAND * numPlayers;
 
@@ -967,19 +950,47 @@ if (!pog) var pog = (function (root) {
         return description;
     }
 
-    function pogShowHand (player) {
-        displayHand(player, true);
-        resetCardAmt(); // couldn't do as hook since it would break exchangeCards
+    function pogDisplayHand (player, reveal) {
+        chooseCardAmt(player);
 
-        if (player > 0) {
-            $gameOpponentAreas[player-1].attr('data-original-title', pogDescribeHandFormal(players[player].hand));
-            if (EXPLAIN_ALL_HANDS) $gameOpponentAreas[player-1].tooltip('show');
+        for (var i = 0; i < CARDS_PER_HAND; i++) {
+            ACTIVE_CARD_IMAGES.displayCard(player, i, reveal || player == HUMAN_PLAYER);
+        }
+        $gamePlayerAreas[player].toggleClass('revealed-cards', reveal);
+        if (reveal) {
+            $gamePlayerAreas[player].toggleClass('loser', !recentTied && recentLoser == player);
+            $gamePlayerAreas[player].toggleClass('tied', !!recentTied && recentTied.includes(player));
+            $gamePlayerAreas[player].removeClass('current');
+            if (player == HUMAN_PLAYER) {
+                $gamePlayerCardArea.attr('data-original-title', pogDescribeHandFormal(players[player].hand));
+                if (EXPLAIN_ALL_HANDS) $gamePlayerCardArea.tooltip('show');
+            } else {
+                $gameOpponentAreas[player-1].attr('data-original-title', pogDescribeHandFormal(players[player].hand));
+                if (EXPLAIN_ALL_HANDS) $gameOpponentAreas[player-1].tooltip('show');
+            }
         } else {
-            $gamePlayerCardArea.attr('data-original-title', pogDescribeHandFormal(players[player].hand));
-            if (EXPLAIN_ALL_HANDS) $gamePlayerCardArea.tooltip('show');
+            $gamePlayerAreas[player].removeClass('loser tied');
+            $gamePlayerAreas[player].toggleClass('current', currentTurn == player);
+            if (player == HUMAN_PLAYER) {
+                $gamePlayerCardArea.attr('data-original-title', '').tooltip('hide');
+            } else {
+                $gameOpponentAreas[player-1].attr('data-original-title', '').tooltip('hide');
+            }
         }
     }
-    registerHook('showHand', 'instead', pogShowHand);
+    registerHook('displayHand', 'instead', pogDisplayHand);
+
+    function pogDisplayAllHands(reveal) {
+        for (var i = 0; i < players.length; i++) {
+            if (!players[i] || !players[i].hand) {
+                clearHand(i);
+            } else {
+                displayHand(i, reveal);
+                resetCardAmt(); // couldn't do this inside pogDisplayHand since it would break exchangeCards
+            }
+        }
+    }
+    registerHook('displayAllHands', 'instead', pogDisplayAllHands);
 
     // exactly the existing determineAIAction function with PoG support
     // Note: please make this less copy-paste later, but I don't know how
