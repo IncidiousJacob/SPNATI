@@ -194,6 +194,8 @@
         <response id="594" opponent="zoe" opponentId="403" />
         <response id="601" opponent="karin" opponentId="151" />
         <response id="602" opponent="karin" opponentId="152" />
+        <response id="658" opponent="yusei_fudo" opponentId="620" />
+        <response id="664" opponent="carmine" opponentId="52" />
     </responses>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -578,10 +580,10 @@
         <label id="428" label="Scar Incident 2" folder="Stories" sort="20" />
         <label id="429" label="What a buzzkill" folder="Targets" sort="105" />
         <label id="431" label="What a buzzkill B" folder="Targets" sort="106" />
-        <label id="432" label="Start" folder="Targets&gt;Yusei" sort="118" />
+        <label id="432" label="Summoning (Start)" folder="Targets&gt;Yusei" sort="118" />
         <label id="433" label="" folder="Multi" sort="4" />
-        <label id="434" label="Summoning A" folder="Targets&gt;Yusei" sort="126" />
-        <label id="435" label="Summoning B" folder="Targets&gt;Yusei" sort="127" />
+        <label id="434" label="Summoning" folder="Targets&gt;Yusei" sort="126" />
+        <label id="435" label="Summoning Bikes" folder="Targets&gt;Yusei" sort="127" />
         <label id="437" label="About Magic" folder="Targets&gt;Hina" sort="12" />
         <label id="438" label="Bad Habit" folder="Targets&gt;Hina" sort="13" />
         <label id="439" label="What's Fanfiction?" folder="Targets&gt;Hina" sort="14" />
@@ -594,9 +596,9 @@
         <label id="446" label="" folder="Targets" sort="0" />
         <label id="447" label="" color="1" folder="Targets" sort="122" />
         <label id="448" label="" folder="Multi" sort="0" />
-        <label id="449" label="Summoning A" folder="Targets" sort="152" />
+        <label id="449" label="Summoning" folder="Targets&gt;Yusei" sort="152" />
         <label id="450" label="" color="1" folder="Targets" sort="0" />
-        <label id="451" label="Summoning B" folder="Targets" sort="153" />
+        <label id="451" label="Summoning Bikes" folder="Targets&gt;Yusei" sort="153" />
         <label id="452" label="" folder="Targets" sort="67" />
         <label id="453" label="" color="1" folder="Targets&gt;Hina" sort="105" />
         <label id="454" label="" folder="Targets&gt;Ringo" sort="5" />
@@ -686,9 +688,9 @@
         <label id="541" label="" folder="Targets&gt;Arle" sort="0" />
         <label id="542" label="" folder="Targets&gt;Arle" sort="0" />
         <label id="543" label="" folder="Targets&gt;Vanessa" sort="67" />
-        <label id="544" label="Real Summons" folder="Targets&gt;Yusei" sort="3" />
+        <label id="544" label="Akiza" color="1" folder="Targets&gt;Yusei" sort="3" />
         <label id="545" label="Bikes" folder="Targets&gt;Yusei" sort="0" />
-        <label id="546" label="" color="1" folder="Targets" sort="44" />
+        <label id="546" label="" folder="Targets" sort="44" />
         <label id="547" label="Schezo Lore" color="1" folder="Targets&gt;Zeke" sort="6" />
         <label id="548" label="" folder="Targets&gt;Zeke" sort="17" />
         <label id="549" label="" folder="Targets&gt;Zeke" sort="18" />
@@ -738,9 +740,9 @@
         <label id="590" label="" folder="Targets" sort="0" />
         <label id="596" label="" color="1" folder="Targets" sort="0" />
         <label id="597" label="Showdown" folder="Targets" sort="0" />
-        <label id="598" label="Bikes" color="1" folder="Targets&gt;Yusei" sort="0" />
-        <label id="599" label="Dark Signers" color="1" folder="Targets&gt;Yusei" sort="0" />
-        <label id="600" label="Psychics" color="1" folder="Targets&gt;Yusei" sort="0" />
+        <label id="598" label="Bikes" folder="Targets&gt;Yusei" sort="0" />
+        <label id="599" label="Dark Signers" folder="Targets&gt;Yusei" sort="0" />
+        <label id="600" label="Psychics" folder="Targets&gt;Yusei" sort="0" />
         <label id="601" label="" color="1" folder="Targets" sort="0" />
         <label id="602" label="" color="1" folder="Targets" sort="0" />
         <label id="603" label="" folder="Targets&gt;Vanessa" sort="0" />
@@ -798,9 +800,16 @@
         <label id="655" label="" folder="Targets" sort="0" />
         <label id="656" label="Staff Unlock" folder="Targets" sort="0" />
         <label id="657" label="" folder="Targets" sort="0" />
+        <label id="658" label="" folder="Targets" sort="0" />
+        <label id="659" label="Akiza" folder="Targets&gt;Yusei" sort="0" />
+        <label id="660" label="Bikes" folder="Targets&gt;Yusei" sort="0" />
+        <label id="661" label="Real Summons" folder="Targets&gt;Yusei" sort="0" />
+        <label id="662" label="Card Games On..." color="1" folder="Targets&gt;Yusei" sort="0" />
+        <label id="663" label="Signer Allies" color="1" folder="Targets&gt;Yusei" sort="0" />
+        <label id="665" label="" folder="Targets" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>657</nextId>
+    <nextId>665</nextId>
     <markers>
         <marker scope="Public" name="about_madou" />
         <marker scope="Public" name="about_magicaljewels" />
@@ -968,6 +977,8 @@
         <marker scope="Public" name="schezo_birthday">March 16th is Schezo's birthday!</marker>
         <marker scope="Public" name="schezo_bragresponseA" />
         <marker scope="Public" name="schezo_bragresponseB" />
+        <marker scope="Public" name="schezo_carmine_competitive1" />
+        <marker scope="Public" name="schezo_carmine_competitive1sus" />
         <marker scope="Public" name="schezo_darkness_backfoot1" />
         <marker scope="Public" name="schezo_darkness_backfoot2" />
         <marker scope="Public" name="schezo_darkness_backfoot2sus" />
@@ -1204,11 +1215,14 @@
         <marker scope="Public" name="schezo_velvetclothes" />
         <marker scope="Public" name="schezo_witch_mention" />
         <marker scope="Public" name="schezo_wiz_lich1" />
+        <marker scope="Public" name="schezo_yusei_akiza1" />
         <marker scope="Public" name="schezo_yusei_bike1" />
         <marker scope="Public" name="schezo_yusei_bike2" />
         <marker scope="Public" name="schezo_yusei_bike3" />
         <marker scope="Public" name="schezo_yusei_classyperving" />
         <marker scope="Public" name="schezo_yusei_classyperving_shy" />
+        <marker scope="Public" name="schezo_yusei_duels1" />
+        <marker scope="Public" name="schezo_yusei_friends1" />
         <marker scope="Public" name="schezo_yusei_real1" />
         <marker scope="Public" name="schezo_yusei_real2" />
         <marker scope="Public" name="schezo_yusei_real3" />
@@ -1218,6 +1232,7 @@
         <marker scope="Public" name="schezo_yusei_summoning3sus" />
         <marker scope="Public" name="schezo_yusei_sword1" />
         <marker scope="Public" name="schezo_yusei_sword2" />
+        <marker scope="Public" name="schezo_yusei_sword3" />
         <marker scope="Public" name="schezo_zeke_corecrystal1" />
         <marker scope="Public" name="schezo_zeke_corecrystalA" />
         <marker scope="Public" name="schezo_zekeandpandy" />
