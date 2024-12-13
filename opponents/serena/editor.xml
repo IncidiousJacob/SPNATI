@@ -10,7 +10,7 @@
             <description>Serena asks the group if they ever get used to being stared at by the player.</description>
         </case>
         <case name="Serena 1st Skin" id="27" priority="Noteworthy" min="5" max="5">
-            <description>This is the first time Serena is showing skin to anyone in her life. If she loses again, off comes the bra.</description>
+            <description>This is the first time Serena is showing skin to anyone in public. If she loses again, off comes the bra.</description>
         </case>
         <case name="Want Serena Naked" id="33" priority="Noteworthy" min="0" max="2">
             <description>Serena partially jokes about the group ganging up on her because they want to see her naked.</description>
@@ -241,31 +241,27 @@
     <nextId>247</nextId>
     <markers>
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
-        <marker scope="Public" name="buy_socks" />
+        <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
         <marker scope="Public" name="camp_story">the logic for Serena's camp story</marker>
         <marker scope="Private" name="camp_story2" />
         <marker scope="Private" name="camp_story3" />
         <marker scope="Private" name="camp_story4" />
-        <marker scope="Private" name="camp_storyend" />
+        <marker scope="Private" name="camp_storyend">end of Serena's camp story</marker>
         <marker scope="Public" name="feet_compare">Serena asks if the girl's want to compare feet</marker>
-        <marker scope="Public" name="first_skin">This is the first time Serena has been naked in front of anyone</marker>
+        <marker scope="Public" name="first_skin">This is the first time Serena has been naked in front of anyone in public</marker>
         <marker scope="Private" name="gameover_defeat">has lost, how many times has lost</marker>
         <marker scope="Private" name="gameover_tie">Ties in a game</marker>
         <marker scope="Private" name="gameover_victory">has won, how many times has won</marker>
-        <marker scope="Public" name="killing" />
+        <marker scope="Public" name="killing">appears to be part of a converstaion with Megumin</marker>
         <marker scope="Public" name="naga_defend">Serena comes to Nagatoro's rescue when Ladybug starts pressing her</marker>
-        <marker scope="Public" name="nagatoro_swimsuit_query" />
+        <marker scope="Public" name="nagatoro_swimsuit_query">responding to Nagatoro's comment</marker>
         <marker scope="Public" name="nice_o">marker for responding to Serena's orgasm &amp; floor cleaning</marker>
-        <marker scope="Public" name="pink_dedenne" />
+        <marker scope="Public" name="pink_dedenne">marker for Serena accidentally divulging she calls her vaginia "Pink Dedenne."</marker>
         <marker scope="Public" name="players_gaze">Serena asks if the girls have ever gotten used to player's intense gaze</marker>
-        <marker scope="Public" name="really_strip" />
-        <marker scope="Public" name="really_stripf" />
-        <marker scope="Public" name="really_stripm" />
         <marker scope="Public" name="see_her_naked">Serena is losing, and thinks everyone is picking on her just to see her naked</marker>
         <marker scope="Public" name="toenail_compare">Serena asks what color toenail polish the girls like</marker>
         <marker scope="Public" name="vagina_compare">Serena asks the player with a room full of crotch exposed girls, who has the best vagina</marker>
-        <marker scope="Public" name="What are you" />
-        <marker scope="Public" name="why_misty" />
+        <marker scope="Public" name="why_misty">Start of a potential converstaion with Misty</marker>
     </markers>
     <pendingLines>
         <line>POSES:</line>
@@ -283,8 +279,9 @@
         <line>halloween= pikachu costume</line>
         <line>xmas= sexy santa</line>
         <line>FEEDBACK:</line>
-        <line>  (...) instead of (..)</line>
         <line>  bring up ash less?</line>
+        <line>  remove all anime references?</line>
+        <line>  more about her</line>
         <line>RIBBON:</line>
         <line>  1) something behind hair</line>
         <line>  2) right hat shadow</line>
