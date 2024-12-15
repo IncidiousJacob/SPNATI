@@ -169,6 +169,10 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <note id="2915">DSC: Detective Shelf Classification, a system used by a detective indexing agency in Japan in the Danganronpa universe. Your call as to whether this exists in Rouge's world or if she'd be familiar with it. "910" means Kyoko is a REALLY good homicide detective specializing in "impossible murders." The first two digits pertain to her specialization, and the third digit is her rank-- lower is better, so 0 is the highest rank. The only homicide detectives ranked higher than Kyoko are [900]s (masters of all homicide cases, of which there is a single-digit amount) and [000]s (legendary detectives specializing in all crime, of which there are two in the world).</note>
         <note id="2944">When responding to this case, check for the marker niceCoochieIdiot's value being ~self.id~.</note>
         <note id="2945">When responding to this case, check for the marker niceBonerIdiot's value being ~self.id~.</note>
+        <note id="126">Quote from Faulerro's Danganronpa Abridged Thing.</note>
+        <note id="3079">Pretend that ~marker.V_clothing~ is ~clothing~.</note>
+        <note id="1837">Temporarily disabled as more pre-planned Raynor targets are being added.</note>
+        <note id="3135">Update conditions once the Nadeshiko/Toshinou dual forfeit is implemented.</note>
     </notes>
     <labels>
         <label id="1" label="DNA" folder="" sort="0" />
@@ -184,7 +188,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="11" label="Hot out" folder="" sort="0" />
         <label id="12" label="Baby got back" folder="" sort="0" />
         <label id="13" label="Baby got back" folder="" sort="0" />
-        <label id="14" label="Mikan 1-3 variant" folder="Technical&gt;Duplicate dialogue" sort="0" />
+        <label id="14" label="Mikan 1-3 variant" folder="Technical&gt;Duplicate dialogue" sort="371" />
         <label id="15" label="Topless M" folder="Antics&gt;Player exposed" sort="2" />
         <label id="16" label="Topless F" folder="Antics&gt;Player exposed" sort="4" />
         <label id="17" label="Nude" folder="Antics&gt;Player exposed" sort="6" />
@@ -259,7 +263,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="90" label="" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="8" />
         <label id="91" label="Mirror match" color="6" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="10" />
         <label id="92" label="" color="1" folder="Technical&gt;Arousal" sort="18" />
-        <label id="93" label="" folder="Targeted&gt;Replies&gt;Hand" sort="3" />
+        <label id="93" label="" folder="Targeted&gt;Replies&gt;Hand" sort="14" />
         <label id="95" label="" folder="Filtered" sort="7" />
         <label id="96" label="" folder="Filtered" sort="0" />
         <label id="97" label="Loss to villain" folder="Filtered" sort="0" />
@@ -320,7 +324,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="156" label="Boots" folder="" sort="0" />
         <label id="157" label="" folder="Filtered" sort="46" />
         <label id="158" label="" folder="Technical&gt;Duplicate dialogue" sort="256" />
-        <label id="159" label="" folder="Targeted&gt;Replies&gt;Hand" sort="12" />
+        <label id="159" label="" folder="Targeted&gt;Replies&gt;Hand" sort="38" />
         <label id="161" label="" folder="Filtered" sort="22" />
         <label id="162" label="" folder="Filtered" sort="2" />
         <label id="163" label="Junko" folder="" sort="0" />
@@ -754,7 +758,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="607" label="Nagatoro R 0-1" folder="Technical&gt;Duplicate dialogue" sort="17" />
         <label id="608" label="Nagatoro R 0-2" folder="Technical&gt;Duplicate dialogue" sort="27" />
         <label id="609" label="Remember Toshinou" folder="Technical" sort="11" />
-        <label id="610" label="Toshinou L GodivaHair" folder="Targeted&gt;Replies&gt;Hand" sort="7" />
+        <label id="610" label="Toshinou L GodivaHair" folder="Targeted&gt;Replies&gt;Hand" sort="32" />
         <label id="611" label="Quite" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="6" />
         <label id="612" label="Toshinou R boobies" folder="Technical&gt;Duplicate dialogue" sort="29" />
         <label id="613" label="Toshinou R boobies" folder="Technical&gt;Duplicate dialogue" sort="30" />
@@ -1037,9 +1041,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="894" label="Giygas 5-1" folder="Targeted&gt;Outbounds&gt;Stage 5" sort="2" />
         <label id="895" label="Giygas 6-1A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="18" />
         <label id="896" label="Giygas 6-1B" color="3" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="16" />
-        <label id="897" label="SCM In X-1" folder="Targeted&gt;Replies&gt;Hand" sort="2" />
-        <label id="898" label="SCM In X-1 conditional" folder="Targeted&gt;Replies&gt;Hand" sort="2" />
-        <label id="899" label="SCM In X-1 conditional" folder="Targeted&gt;Replies&gt;Hand" sort="3" />
+        <label id="897" label="SCM In X-1" folder="Targeted&gt;Replies&gt;Hand" sort="8" />
+        <label id="898" label="SCM In X-1 conditional" folder="Targeted&gt;Replies&gt;Hand" sort="6" />
+        <label id="899" label="SCM In X-1 conditional" folder="Targeted&gt;Replies&gt;Hand" sort="12" />
         <label id="900" label="Solar Flare 6-1" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="12" />
         <label id="901" label="Solar Flare 6-2" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="14" />
         <label id="902" label="Bunnies" folder="Seasonal" sort="5" />
@@ -1379,8 +1383,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1236" label="Suzuya PL Zodiac 3" folder="Targeted&gt;Replies&gt;Prompted" sort="6" />
         <label id="1237" label="Suzuya PL Zodiac 4" folder="Targeted&gt;Replies&gt;Prompted" sort="7" />
         <label id="1238" label="Suzuya PL Zodiac 5" folder="Targeted&gt;Replies&gt;Prompted" sort="2" />
-        <label id="1239" label="Ferris" folder="Targeted&gt;Replies&gt;Hand" sort="4" />
-        <label id="1240" label="Chihiro" folder="Targeted&gt;Replies&gt;Hand" sort="5" />
+        <label id="1239" label="Ferris" folder="Targeted&gt;Replies&gt;Hand" sort="16" />
+        <label id="1240" label="Chihiro" folder="Targeted&gt;Replies&gt;Hand" sort="24" />
         <label id="1241" label="Revy L 0-1" folder="Targeted&gt;Replies&gt;Stage 0" sort="68" />
         <label id="1242" label="Revy R 0-1a" folder="Technical&gt;Duplicate dialogue" sort="64" />
         <label id="1243" label="Revy R 0-1b" folder="Technical&gt;Duplicate dialogue" sort="65" />
@@ -1544,7 +1548,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1404" label="Yae 1-3" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="30" />
         <label id="1405" label="Sofia 0-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="80" />
         <label id="1406" label="Bobobo+Yae" folder="Targeted&gt;Trio+" sort="4" />
-        <label id="1407" label="Treasure Scope" color="5" folder="Targeted&gt;Replies&gt;Hand" sort="6" />
+        <label id="1407" label="Treasure Scope" color="5" folder="Targeted&gt;Replies&gt;Hand" sort="28" />
         <label id="1408" label="" color="6" folder="Seasonal&gt;April Fool's" sort="244" />
         <label id="1409" label="Noises" folder="" sort="0" />
         <label id="1410" label="Tandem/Extreme" folder="Filtered" sort="12" />
@@ -1562,7 +1566,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1422" label="" folder="Sponsorships&gt;Remillia&gt;Sexuality" sort="2" />
         <label id="1423" label="Series-specific: DC" folder="Prompts" sort="2" />
         <label id="1425" label="Pasties" folder="Clothing type&gt;Specific" sort="3" />
-        <label id="1426" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="12" />
+        <label id="1426" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="16" />
         <label id="1427" label="Also has a prompt!" folder="Sponsorships&gt;Remillia&gt;Sexuality" sort="8" />
         <label id="1428" label="" folder="Sponsorships&gt;Remillia&gt;Sexuality" sort="12" />
         <label id="1429" label="" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="0" />
@@ -1645,7 +1649,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1506" label="Nami pR 0-1" folder="Technical&gt;Duplicate dialogue" sort="64" />
         <label id="1507" label="Bowsette 0-1" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="62" />
         <label id="1508" label="" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="2" />
-        <label id="1509" label="" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
+        <label id="1509" label="" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="2" />
         <label id="1510" label="Meia L 3-1" folder="Targeted&gt;Replies&gt;Stage 3" sort="0" />
         <label id="1511" label="" color="6" folder="Antics&gt;Collectible worn" sort="2" />
         <label id="1512" label="" color="6" folder="Antics&gt;Collectible worn" sort="0" />
@@ -1654,8 +1658,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1515" label="" color="6" folder="Antics&gt;Collectible worn" sort="15" />
         <label id="1516" label="" color="6" folder="Antics&gt;Collectible worn" sort="16" />
         <label id="1517" label="" folder="Antics&gt;Collectible worn" sort="18" />
-        <label id="1518" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="22" />
-        <label id="1519" label="Bobobo 3-3B" color="3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="16" />
+        <label id="1518" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="32" />
+        <label id="1519" label="Bobobo 3-3B" color="3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="20" />
         <label id="1520" label="Unused" folder="Prompts" sort="4" />
         <label id="1521" label="Miko L 1-1" folder="Targeted&gt;Replies&gt;Stage 1" sort="12" />
         <label id="1522" label="Shamiko L 0-2A" color="2" folder="Targeted&gt;Replies&gt;Stage 0" sort="34" />
@@ -1814,9 +1818,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1679" label="Yumeko 2-1" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="4" />
         <label id="1680" label="Yumeko 2-2" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="6" />
         <label id="1681" label="Yumeko 2-3" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="8" />
-        <label id="1682" label="Yumeko 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="6" />
-        <label id="1683" label="Yumeko 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="18" />
-        <label id="1684" label="Yumeko 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="30" />
+        <label id="1682" label="Yumeko 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="8" />
+        <label id="1683" label="Yumeko 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="24" />
+        <label id="1684" label="Yumeko 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="48" />
         <label id="1685" label="Yumeko 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="3" />
         <label id="1686" label="Yumeko 4-2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="8" />
         <label id="1687" label="Yumeko 4-3" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="10" />
@@ -1927,13 +1931,13 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1792" label="" folder="Targeted&gt;Replies&gt;Stage 6" sort="13" />
         <label id="1793" label="" folder="Targeted&gt;Replies&gt;Stage 6" sort="2" />
         <label id="1794" label="" folder="Targeted&gt;Outbounds&gt;Hand" sort="13" />
-        <label id="1795" label="" folder="Targeted&gt;Replies&gt;Hand" sort="2" />
+        <label id="1795" label="" folder="Targeted&gt;Replies&gt;Hand" sort="10" />
         <label id="1796" label="" folder="Targeted&gt;Outbounds&gt;Hand" sort="4" />
         <label id="1797" label="" folder="Targeted&gt;Outbounds&gt;Hand" sort="5" />
         <label id="1798" label="" folder="Targeted&gt;Outbounds&gt;Hand" sort="9" />
         <label id="1799" label="" folder="Targeted&gt;Outbounds&gt;Hand" sort="10" />
-        <label id="1800" label="" folder="Targeted&gt;Replies&gt;Hand" sort="10" />
-        <label id="1801" label="" folder="Targeted&gt;Replies&gt;Hand" sort="13" />
+        <label id="1800" label="" folder="Targeted&gt;Replies&gt;Hand" sort="36" />
+        <label id="1801" label="" folder="Targeted&gt;Replies&gt;Hand" sort="40" />
         <label id="1802" label="Bonus 1A" folder="Targeted&gt;Replies&gt;Stage 7" sort="2" />
         <label id="1803" label="Bonus 2" folder="Targeted&gt;Replies&gt;Stage 7" sort="5" />
         <label id="1804" label="" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="26" />
@@ -1969,7 +1973,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1834" label="" folder="Targeted&gt;Replies&gt;Stage X" sort="4" />
         <label id="1835" label="" folder="Targeted&gt;Replies&gt;Stage X" sort="7" />
         <label id="1836" label="" folder="Targeted&gt;Replies&gt;Stage X" sort="8" />
-        <label id="1837" label="" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="14" />
+        <label id="1837" label="Legacy?" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="14" />
         <label id="1838" label="" folder="Targeted&gt;Replies&gt;Generic" sort="2" />
         <label id="1839" label="" folder="Technical&gt;Duplicate dialogue" sort="57" />
         <label id="1840" label="" folder="Technical&gt;Duplicate dialogue" sort="106" />
@@ -1985,7 +1989,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1850" label="" folder="Technical&gt;Duplicate dialogue" sort="258" />
         <label id="1851" label="" folder="Technical&gt;Duplicate dialogue" sort="251" />
         <label id="1852" label="" folder="Targeted&gt;Replies&gt;Generic" sort="16" />
-        <label id="1853" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="10" />
+        <label id="1853" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="12" />
         <label id="1854" label="" folder="Targeted&gt;Replies&gt;Generic" sort="5" />
         <label id="1855" label="" folder="Targeted&gt;Replies&gt;Generic" sort="4" />
         <label id="1856" label="" folder="Targeted&gt;Replies&gt;Generic" sort="6" />
@@ -2022,7 +2026,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1887" label="" folder="Filtered&gt;Advanced gender" sort="2" />
         <label id="1888" label="" folder="Filtered" sort="0" />
         <label id="1889" label="" folder="Technical&gt;Nicknames" sort="29" />
-        <label id="1890" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="34" />
+        <label id="1890" label="" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="52" />
         <label id="1891" label="" folder="Filtered&gt;Unattracted" sort="9" />
         <label id="1892" label="" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="40" />
         <label id="1893" label="" folder="Technical" sort="2" />
@@ -2032,7 +2036,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="1897" label="" folder="Filtered" sort="9" />
         <label id="1898" label="" folder="Filtered&gt;Unattracted" sort="10" />
         <label id="1899" label="" folder="Clothing type&gt;Major" sort="11" />
-        <label id="1900" label="" folder="Clothing type&gt;Specific" sort="3" />
+        <label id="1900" label="Jacket" folder="Clothing type&gt;Specific" sort="3" />
         <label id="1901" label="" folder="Clothing type&gt;Major" sort="8" />
         <label id="1902" label="" folder="Filtered" sort="0" />
         <label id="1903" label="" folder="Sponsorships&gt;Polo" sort="2" />
@@ -2625,9 +2629,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2502" label="Yamada 1-3B" color="3" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="34" />
         <label id="2503" label="Yamada 2-1" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="16" />
         <label id="2504" label="Yamada 2-2" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="18" />
-        <label id="2505" label="Yamada 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="28" />
-        <label id="2506" label="Yamada 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="32" />
-        <label id="2507" label="Yamada 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="36" />
+        <label id="2505" label="Yamada 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="46" />
+        <label id="2506" label="Yamada 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="50" />
+        <label id="2507" label="Yamada 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="54" />
         <label id="2508" label="Yamada 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="11" />
         <label id="2509" label="Yamada 4-2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="17" />
         <label id="2510" label="Yamada 4-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="24" />
@@ -2673,9 +2677,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2550" label="Bobobo 2-1" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="48" />
         <label id="2551" label="Bobobo 2-2" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="50" />
         <label id="2552" label="Bobobo 2-3" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="52" />
-        <label id="2553" label="Bobobo 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="38" />
-        <label id="2554" label="Bobobo 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="40" />
-        <label id="2555" label="Bobobo 3-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="20" />
+        <label id="2553" label="Bobobo 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="56" />
+        <label id="2554" label="Bobobo 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="58" />
+        <label id="2555" label="Bobobo 3-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="26" />
         <label id="2556" label="Bobobo 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="13" />
         <label id="2557" label="Bobobo 4-2A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="20" />
         <label id="2558" label="Bobobo 4-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="35" />
@@ -2862,15 +2866,15 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2740" label="Toshinou R  4-1" folder="Technical&gt;Duplicate dialogue" sort="143" />
         <label id="2741" label="Toshinou R 4-2" folder="Technical&gt;Duplicate dialogue" sort="237" />
         <label id="2742" label="Toshinou R 4-3" folder="Technical&gt;Duplicate dialogue" sort="28" />
-        <label id="2744" label="Toshinou 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="8" />
-        <label id="2745" label="Toshinou 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="14" />
-        <label id="2746" label="Toshinou 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="24" />
+        <label id="2744" label="Toshinou 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="10" />
+        <label id="2745" label="Toshinou 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="18" />
+        <label id="2746" label="Toshinou 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="34" />
         <label id="2747" label="Toshinou 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="12" />
         <label id="2748" label="Toshinou 4-2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="20" />
         <label id="2749" label="Toshinou 4-3" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="28" />
         <label id="2750" label="Nihonjin da, bake" folder="Targeted&gt;Replies&gt;Generic" sort="7" />
-        <label id="2751" label="Sandwich" folder="Targeted&gt;Replies&gt;Hand" sort="5" />
-        <label id="2752" label="" folder="Targeted&gt;Replies&gt;Hand" sort="0" />
+        <label id="2751" label="Sandwich" folder="Targeted&gt;Replies&gt;Hand" sort="22" />
+        <label id="2752" label="" folder="Targeted&gt;Replies&gt;Hand" sort="4" />
         <label id="2753" label="Toshinou 5-1" folder="Targeted&gt;Outbounds&gt;Stage 5" sort="2" />
         <label id="2754" label="Toshinou 5-2" folder="Targeted&gt;Outbounds&gt;Stage 5" sort="10" />
         <label id="2755" label="Toshinou 5-3A" folder="Targeted&gt;Outbounds&gt;Stage 5" sort="16" />
@@ -2949,7 +2953,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2828" label="" folder="Seasonal&gt;April Fool's" sort="154" />
         <label id="2829" label="" folder="Technical" sort="21" />
         <label id="2830" label="" folder="Targeted&gt;Replies&gt;Stage 3" sort="11" />
-        <label id="2831" label="Sandwich 2" folder="Targeted&gt;Replies&gt;Hand" sort="6" />
+        <label id="2831" label="Sandwich 2" folder="Targeted&gt;Replies&gt;Hand" sort="30" />
         <label id="2832" label="Natasha L 0-1" folder="Targeted&gt;Replies&gt;Stage 0" sort="22" />
         <label id="2833" label="Default" folder="Costume" sort="0" />
         <label id="2834" label="Suit" color="14" folder="Costume" sort="1" />
@@ -2960,12 +2964,12 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2839" label="Portrayed in BG" folder="Targeted&gt;Outbounds&gt;Hand" sort="15" />
         <label id="2840" label="Out of your friends" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="0" />
         <label id="2841" label="" folder="Targeted&gt;Replies&gt;Stage 3" sort="12" />
-        <label id="2842" label="" folder="Targeted&gt;Replies&gt;Hand" sort="4" />
+        <label id="2842" label="" folder="Targeted&gt;Replies&gt;Hand" sort="20" />
         <label id="2843" label="" folder="Targeted&gt;Replies&gt;Generic" sort="28" />
         <label id="2844" label="" folder="Filtered" sort="97" />
         <label id="2845" label="" color="6" folder="Seasonal&gt;April Fool's" sort="123" />
         <label id="2846" label="" folder="Technical" sort="39" />
-        <label id="2847" label="" folder="Antics" sort="11" />
+        <label id="2847" label="Playername anon" folder="Antics" sort="11" />
         <label id="2848" label="" color="6" folder="Seasonal&gt;April Fool's" sort="125" />
         <label id="2849" label="Tick FF Start" folder="Seasonal&gt;April Fool's" sort="129" />
         <label id="2850" label="Tick FF End" folder="Seasonal&gt;April Fool's" sort="136" />
@@ -3043,13 +3047,13 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2922" label="Kizuna L A-2" folder="Targeted&gt;Replies&gt;Stage X" sort="11" />
         <label id="2923" label="" folder="Technical&gt;Duplicate dialogue" sort="287" />
         <label id="2924" label="Kora L X-1" folder="Targeted&gt;Replies&gt;Stage X" sort="5" />
-        <label id="2925" label="Blacklight" folder="Targeted&gt;Replies&gt;Hand" sort="9" />
+        <label id="2925" label="Blacklight" folder="Targeted&gt;Replies&gt;Hand" sort="34" />
         <label id="2926" label="" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="3" />
         <label id="2927" label="" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="2928" label="" folder="Targeted&gt;Replies&gt;Hand" sort="5" />
+        <label id="2928" label="" folder="Targeted&gt;Replies&gt;Hand" sort="26" />
         <label id="2929" label="" folder="Targeted&gt;Outbounds&gt;Stage 6" sort="0" />
         <label id="2930" label="Rumors" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="21" />
-        <label id="2931" label="Yan L A-1" folder="Targeted&gt;Replies&gt;Stage X" sort="0" />
+        <label id="2931" label="Yan L A-1" folder="Targeted&gt;Replies&gt;Stage X" sort="3" />
         <label id="2932" label="Yan 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="39" />
         <label id="2933" label="Yan 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="0" />
         <label id="2934" label="" folder="Targeted&gt;Replies&gt;Stage X" sort="0" />
@@ -3062,136 +3066,195 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="2941" label="Bobobo wiggin'" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="26" />
         <label id="2942" label="Bobobo TV" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="27" />
         <label id="2943" label="Bobobo Duel Noir" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="28" />
-        <label id="2945" label="" folder="Filtered" sort="0" />
+        <label id="2945" label="" folder="Filtered" sort="26" />
         <label id="2946" label="" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="2" />
         <label id="2947" label="Me, an intellectual, aho" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="12" />
-        <label id="2948" label="Toshinou 3-3B (Aho outfit)" color="15" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="26" />
+        <label id="2948" label="Toshinou 3-3B (Aho outfit)" color="15" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="38" />
         <label id="2949" label="Schezo where's Arle" folder="Targeted&gt;Replies&gt;Prompted" sort="16" />
         <label id="2950" label="Me, an intellectual, aho" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="14" />
-        <label id="2951" label="Tifa 3-3 Generic?" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="21" />
+        <label id="2951" label="Tifa 3-3 Generic?" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="30" />
         <label id="2952" label="Weapon" folder="Clothing type&gt;Specific" sort="18" />
         <label id="2953" label="Weapon" folder="Clothing type&gt;Specific" sort="19" />
         <label id="2954" label="Weapon" folder="Clothing type&gt;Specific" sort="20" />
-        <label id="2955" label="Shimakaze explodes" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="0" />
-        <label id="2956" label="Shimakaze Nihongo" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="0" />
-        <label id="2957" label="Shimakaze FF-2" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="0" />
-        <label id="2958" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="0" />
-        <label id="2959" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="0" />
-        <label id="2960" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="0" />
-        <label id="2961" label="" folder="Technical&gt;Nicknames" sort="0" />
-        <label id="2962" label="Constance uppies" folder="Technical" sort="0" />
-        <label id="2963" label="Constance sad" folder="Technical" sort="0" />
+        <label id="2955" label="Shimakaze explodes" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="7" />
+        <label id="2956" label="Shimakaze Nihongo" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="28" />
+        <label id="2957" label="Shimakaze FF-2" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="18" />
+        <label id="2958" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="9" />
+        <label id="2959" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="10" />
+        <label id="2960" label="" folder="Technical&gt;Clothing vocabulary&gt;Player" sort="11" />
+        <label id="2961" label="" folder="Technical&gt;Nicknames" sort="33" />
+        <label id="2962" label="Constance uppies" folder="Technical" sort="26" />
+        <label id="2963" label="Constance sad" folder="Technical" sort="27" />
         <label id="2964" label="" folder="Targeted&gt;Replies&gt;Stage 0" sort="0" />
-        <label id="2965" label="Mikan 0-1A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="0" />
-        <label id="2966" label="Mikan 0-1B" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="0" />
-        <label id="2967" label="Mikan 1-1" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="0" />
-        <label id="2968" label="Mikan 2-1" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
-        <label id="2969" label="Mikan 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="0" />
-        <label id="2970" label="Mikan 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="0" />
-        <label id="2971" label="Mikan 0-2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="0" />
-        <label id="2972" label="Mikan 1-2" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="0" />
-        <label id="2973" label="Mikan 2-2" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
-        <label id="2974" label="Mikan 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="0" />
-        <label id="2975" label="Mikan 4-2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="0" />
-        <label id="2976" label="Mikan 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="0" />
-        <label id="2977" label="Mikan 1-3" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="0" />
-        <label id="2978" label="Mikan 2-3" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
-        <label id="2979" label="Mikan 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="0" />
-        <label id="2980" label="Mikan 4-3" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="0" />
-        <label id="2981" label="Mikan 1-3B" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="2982" label="Mikan L 0-1" folder="Targeted&gt;Replies&gt;Stage 0" sort="0" />
-        <label id="2983" label="Mikan L 1-1" folder="Targeted&gt;Replies&gt;Stage 1" sort="0" />
-        <label id="2984" label="Mikan L 2-1" folder="Targeted&gt;Replies&gt;Stage 2" sort="0" />
-        <label id="2985" label="Mikan L 3-1" folder="Targeted&gt;Replies&gt;Stage 3" sort="0" />
-        <label id="2986" label="Mikan L 4-1" folder="Targeted&gt;Replies&gt;Stage 4" sort="0" />
-        <label id="2987" label="Mikan L 5-1" folder="Targeted&gt;Replies&gt;Stage 5" sort="0" />
-        <label id="2988" label="Mikan L 6-1" folder="Targeted&gt;Replies&gt;Stage 6" sort="0" />
-        <label id="2989" label="Mikan L 7-1" folder="Targeted&gt;Replies&gt;Stage 7" sort="0" />
-        <label id="2990" label="Mikan L 0-2" folder="Targeted&gt;Replies&gt;Stage 0" sort="0" />
-        <label id="2991" label="Mikan L 1-2" folder="Targeted&gt;Replies&gt;Stage 1" sort="0" />
-        <label id="2992" label="Mikan L 2-2" folder="Targeted&gt;Replies&gt;Stage 2" sort="0" />
-        <label id="2993" label="Mikan L 3-2" folder="Targeted&gt;Replies&gt;Stage 3" sort="0" />
-        <label id="2994" label="Mikan L 4-2" folder="Targeted&gt;Replies&gt;Stage 4" sort="0" />
-        <label id="2995" label="Mikan L 5-2" folder="Targeted&gt;Replies&gt;Stage 5" sort="0" />
-        <label id="2996" label="Mikan L 6-2" folder="Targeted&gt;Replies&gt;Stage 6" sort="0" />
-        <label id="2997" label="Mikan L 7-2" folder="Targeted&gt;Replies&gt;Stage 7" sort="0" />
-        <label id="2998" label="Mikan L 0-3" folder="Targeted&gt;Replies&gt;Stage 0" sort="0" />
-        <label id="2999" label="Mikan L 1-3" folder="Targeted&gt;Replies&gt;Stage 1" sort="0" />
-        <label id="3000" label="Mikan L 2-3" folder="Targeted&gt;Replies&gt;Stage 2" sort="0" />
-        <label id="3001" label="Mikan L 3-3" folder="Targeted&gt;Replies&gt;Stage 3" sort="0" />
-        <label id="3002" label="Mikan L 4-3" folder="Targeted&gt;Replies&gt;Stage 4" sort="0" />
-        <label id="3003" label="Mikan L 5-3" folder="Targeted&gt;Replies&gt;Stage 5" sort="0" />
-        <label id="3004" label="Mikan L 6-3" folder="Targeted&gt;Replies&gt;Stage 6" sort="0" />
-        <label id="3005" label="Mikan L 7-3" folder="Targeted&gt;Replies&gt;Stage 7" sort="0" />
+        <label id="2965" label="Mikan 0-1A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="8" />
+        <label id="2966" label="Mikan 0-1B" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="9" />
+        <label id="2967" label="Mikan 1-1" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="3" />
+        <label id="2968" label="Mikan 2-1" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="15" />
+        <label id="2969" label="Mikan 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="6" />
+        <label id="2970" label="Mikan 4-1" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="10" />
+        <label id="2971" label="Mikan 0-2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="28" />
+        <label id="2972" label="Mikan 1-2" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="14" />
+        <label id="2973" label="Mikan 2-2" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="22" />
+        <label id="2974" label="Mikan 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="14" />
+        <label id="2975" label="Mikan 4-2" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="19" />
+        <label id="2976" label="Mikan 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="52" />
+        <label id="2977" label="Mikan 1-3" folder="Targeted&gt;Outbounds&gt;Stage 1" sort="27" />
+        <label id="2978" label="Mikan 2-3" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="29" />
+        <label id="2979" label="Mikan 3-3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="22" />
+        <label id="2980" label="Mikan 4-3" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="30" />
+        <label id="2981" label="Mikan 1-3B" folder="Technical&gt;Duplicate dialogue" sort="370" />
+        <label id="2982" label="Mikan L 0-1" folder="Targeted&gt;Replies&gt;Stage 0" sort="4" />
+        <label id="2983" label="Mikan L 1-1" folder="Targeted&gt;Replies&gt;Stage 1" sort="3" />
+        <label id="2984" label="Mikan L 2-1" folder="Targeted&gt;Replies&gt;Stage 2" sort="4" />
+        <label id="2985" label="Mikan L 3-1" folder="Targeted&gt;Replies&gt;Stage 3" sort="2" />
+        <label id="2986" label="Mikan L 4-1" folder="Targeted&gt;Replies&gt;Stage 4" sort="3" />
+        <label id="2987" label="Mikan L 5-1" folder="Targeted&gt;Replies&gt;Stage 5" sort="3" />
+        <label id="2988" label="Mikan L 6-1" folder="Targeted&gt;Replies&gt;Stage 6" sort="5" />
+        <label id="2989" label="Mikan L 7-1" folder="Targeted&gt;Replies&gt;Stage 7" sort="3" />
+        <label id="2990" label="Mikan L 0-2" folder="Targeted&gt;Replies&gt;Stage 0" sort="31" />
+        <label id="2991" label="Mikan L 1-2" folder="Targeted&gt;Replies&gt;Stage 1" sort="16" />
+        <label id="2992" label="Mikan L 2-2" folder="Targeted&gt;Replies&gt;Stage 2" sort="10" />
+        <label id="2993" label="Mikan L 3-2" folder="Targeted&gt;Replies&gt;Stage 3" sort="9" />
+        <label id="2994" label="Mikan L 4-2" folder="Targeted&gt;Replies&gt;Stage 4" sort="8" />
+        <label id="2995" label="Mikan L 5-2" folder="Targeted&gt;Replies&gt;Stage 5" sort="6" />
+        <label id="2996" label="Mikan L 6-2" folder="Targeted&gt;Replies&gt;Stage 6" sort="12" />
+        <label id="2997" label="Mikan L 7-2" folder="Targeted&gt;Replies&gt;Stage 7" sort="9" />
+        <label id="2998" label="Mikan L 0-3" folder="Targeted&gt;Replies&gt;Stage 0" sort="53" />
+        <label id="2999" label="Mikan L 1-3" folder="Targeted&gt;Replies&gt;Stage 1" sort="24" />
+        <label id="3000" label="Mikan L 2-3" folder="Targeted&gt;Replies&gt;Stage 2" sort="14" />
+        <label id="3001" label="Mikan L 3-3" folder="Targeted&gt;Replies&gt;Stage 3" sort="11" />
+        <label id="3002" label="Mikan L 4-3" folder="Targeted&gt;Replies&gt;Stage 4" sort="12" />
+        <label id="3003" label="Mikan L 5-3" folder="Targeted&gt;Replies&gt;Stage 5" sort="10" />
+        <label id="3004" label="Mikan L 6-3" folder="Targeted&gt;Replies&gt;Stage 6" sort="18" />
+        <label id="3005" label="Mikan L 7-3" folder="Targeted&gt;Replies&gt;Stage 7" sort="14" />
         <label id="3006" label="Mikan 2-4" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
         <label id="3007" label="L1" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3008" label="L2" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3009" label="L3" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3010" label="R1" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3011" label="R2" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3012" label="R3" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="0" />
-        <label id="3013" label="Omega End" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3014" label="Mikan pR 0-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3015" label="Mikan pR 1-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3016" label="Mikan pR 2-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3017" label="Mikan pR 3-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3018" label="Mikan pR 4-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3019" label="Mikan pR 5-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3020" label="Mikan pR 6-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3021" label="Mikan pR 7-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3022" label="Mikan pR 0-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3023" label="Mikan pR 1-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3024" label="Mikan pR 2-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3025" label="Mikan pR 3-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3026" label="Mikan pR 4-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3027" label="Mikan pR 5-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3028" label="Mikan pR 6-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3029" label="Mikan pR 7-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3030" label="Mikan pR 0-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3031" label="Mikan pR 1-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3032" label="Mikan pR 2-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3033" label="Mikan pR 3-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3034" label="Mikan pR 4-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3035" label="Mikan pR 5-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3036" label="Mikan pR 6-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3037" label="Mikan pR 7-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3038" label="Mikan R 0-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3039" label="Mikan R 1-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3040" label="Mikan R 2-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3041" label="Mikan R 3-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3042" label="Mikan R 4-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3043" label="Mikan R 5-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3044" label="Mikan R 6-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3045" label="Mikan R 7-1" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3046" label="Mikan R 0-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3047" label="Mikan R 1-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3048" label="Mikan R 2-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3049" label="Mikan R 3-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3050" label="Mikan R 4-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3051" label="Mikan R 5-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3052" label="Mikan R 6-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3053" label="Mikan R 7-2" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3054" label="Mikan R 0-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3055" label="Mikan R 1-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3056" label="Mikan R 2-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3057" label="Mikan R 3-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3058" label="Mikan R 4-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3059" label="Mikan R 5-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3060" label="Mikan R 6-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3061" label="Mikan R 7-3" folder="Technical&gt;Duplicate dialogue" sort="0" />
-        <label id="3062" label="" folder="Targeted&gt;Outbounds&gt;Stage 4" />
-        <label id="3063" label="Karin L 0-1" folder="Replies&gt;Stage 0" />
-        <label id="3064" label="Karin L 0-2 (reserved)" folder="Replies&gt;Stage 0" />
-        <label id="3065" label="Karin L 0-3 (reserved)" folder="Replies&gt;Stage 0" />
-        <label id="3066" label="Karin pR 0-1" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3067" label="Karin pR 0-2 (reserved)" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3068" label="Karin pR 0-3 (reserved)" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3069" label="Karin R 0-1" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3070" label="Karin R 0-2 (reserved)" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3071" label="Karin R 0-3 (reserved)" folder="Technical&gt;Duplicate dialogue" />
-        <label id="3072" label="" folder="Targeted&gt;Replies&gt;Hand" />
-        <label id="3073" label="Footwear before skirt" folder="Clothing type&gt;Specific" />
-        <label id="3074" label="Footwear before skirt" folder="Clothing type&gt;Specific" />
+        <label id="3008" label="L2" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="2" />
+        <label id="3009" label="L3" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="3" />
+        <label id="3010" label="R1" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="4" />
+        <label id="3011" label="R2" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="5" />
+        <label id="3012" label="R3" color="3" folder="Targeted&gt;Xtra&gt;Toshinou friendship&gt;Kanji" sort="6" />
+        <label id="3013" label="Omega End" folder="Technical&gt;Duplicate dialogue" sort="397" />
+        <label id="3014" label="Mikan pR 0-1" folder="Technical&gt;Duplicate dialogue" sort="83" />
+        <label id="3015" label="Mikan pR 1-1" folder="Technical&gt;Duplicate dialogue" sort="84" />
+        <label id="3016" label="Mikan pR 2-1" folder="Technical&gt;Duplicate dialogue" sort="85" />
+        <label id="3017" label="Mikan pR 3-1" folder="Technical&gt;Duplicate dialogue" sort="86" />
+        <label id="3018" label="Mikan pR 4-1" folder="Technical&gt;Duplicate dialogue" sort="87" />
+        <label id="3019" label="Mikan pR 5-1" folder="Technical&gt;Duplicate dialogue" sort="88" />
+        <label id="3020" label="Mikan pR 6-1" folder="Technical&gt;Duplicate dialogue" sort="89" />
+        <label id="3021" label="Mikan pR 7-1" folder="Technical&gt;Duplicate dialogue" sort="90" />
+        <label id="3022" label="Mikan pR 0-2" folder="Technical&gt;Duplicate dialogue" sort="226" />
+        <label id="3023" label="Mikan pR 1-2" folder="Technical&gt;Duplicate dialogue" sort="227" />
+        <label id="3024" label="Mikan pR 2-2" folder="Technical&gt;Duplicate dialogue" sort="228" />
+        <label id="3025" label="Mikan pR 3-2" folder="Technical&gt;Duplicate dialogue" sort="229" />
+        <label id="3026" label="Mikan pR 4-2" folder="Technical&gt;Duplicate dialogue" sort="230" />
+        <label id="3027" label="Mikan pR 5-2" folder="Technical&gt;Duplicate dialogue" sort="231" />
+        <label id="3028" label="Mikan pR 6-2" folder="Technical&gt;Duplicate dialogue" sort="232" />
+        <label id="3029" label="Mikan pR 7-2" folder="Technical&gt;Duplicate dialogue" sort="233" />
+        <label id="3030" label="Mikan pR 0-3" folder="Technical&gt;Duplicate dialogue" sort="330" />
+        <label id="3031" label="Mikan pR 1-3" folder="Technical&gt;Duplicate dialogue" sort="331" />
+        <label id="3032" label="Mikan pR 2-3" folder="Technical&gt;Duplicate dialogue" sort="332" />
+        <label id="3033" label="Mikan pR 3-3" folder="Technical&gt;Duplicate dialogue" sort="333" />
+        <label id="3034" label="Mikan pR 4-3" folder="Technical&gt;Duplicate dialogue" sort="334" />
+        <label id="3035" label="Mikan pR 5-3" folder="Technical&gt;Duplicate dialogue" sort="335" />
+        <label id="3036" label="Mikan pR 6-3" folder="Technical&gt;Duplicate dialogue" sort="336" />
+        <label id="3037" label="Mikan pR 7-3" folder="Technical&gt;Duplicate dialogue" sort="337" />
+        <label id="3038" label="Mikan R 0-1" folder="Technical&gt;Duplicate dialogue" sort="180" />
+        <label id="3039" label="Mikan R 1-1" folder="Technical&gt;Duplicate dialogue" sort="181" />
+        <label id="3040" label="Mikan R 2-1" folder="Technical&gt;Duplicate dialogue" sort="182" />
+        <label id="3041" label="Mikan R 3-1" folder="Technical&gt;Duplicate dialogue" sort="183" />
+        <label id="3042" label="Mikan R 4-1" folder="Technical&gt;Duplicate dialogue" sort="184" />
+        <label id="3043" label="Mikan R 5-1" folder="Technical&gt;Duplicate dialogue" sort="185" />
+        <label id="3044" label="Mikan R 6-1" folder="Technical&gt;Duplicate dialogue" sort="186" />
+        <label id="3045" label="Mikan R 7-1" folder="Technical&gt;Duplicate dialogue" sort="187" />
+        <label id="3046" label="Mikan R 0-2" folder="Technical&gt;Duplicate dialogue" sort="292" />
+        <label id="3047" label="Mikan R 1-2" folder="Technical&gt;Duplicate dialogue" sort="293" />
+        <label id="3048" label="Mikan R 2-2" folder="Technical&gt;Duplicate dialogue" sort="294" />
+        <label id="3049" label="Mikan R 3-2" folder="Technical&gt;Duplicate dialogue" sort="295" />
+        <label id="3050" label="Mikan R 4-2" folder="Technical&gt;Duplicate dialogue" sort="296" />
+        <label id="3051" label="Mikan R 5-2" folder="Technical&gt;Duplicate dialogue" sort="297" />
+        <label id="3052" label="Mikan R 6-2" folder="Technical&gt;Duplicate dialogue" sort="298" />
+        <label id="3053" label="Mikan R 7-2" folder="Technical&gt;Duplicate dialogue" sort="299" />
+        <label id="3054" label="Mikan R 0-3" folder="Technical&gt;Duplicate dialogue" sort="38" />
+        <label id="3055" label="Mikan R 1-3" folder="Technical&gt;Duplicate dialogue" sort="39" />
+        <label id="3056" label="Mikan R 2-3" folder="Technical&gt;Duplicate dialogue" sort="40" />
+        <label id="3057" label="Mikan R 3-3" folder="Technical&gt;Duplicate dialogue" sort="41" />
+        <label id="3058" label="Mikan R 4-3" folder="Technical&gt;Duplicate dialogue" sort="42" />
+        <label id="3059" label="Mikan R 5-3" folder="Technical&gt;Duplicate dialogue" sort="43" />
+        <label id="3060" label="Mikan R 6-3" folder="Technical&gt;Duplicate dialogue" sort="44" />
+        <label id="3061" label="Mikan R 7-3" folder="Technical&gt;Duplicate dialogue" sort="45" />
+        <label id="3062" label="" folder="Targeted&gt;Outbounds&gt;Stage 4" sort="42" />
+        <label id="3063" label="Karin L 0-1" folder="Targeted&gt;Replies&gt;Stage 0" sort="6" />
+        <label id="3064" label="Karin L 0-2" folder="Targeted&gt;Replies&gt;Stage 0" sort="36" />
+        <label id="3065" label="Karin L 0-3 (to be written)" folder="Targeted&gt;Replies&gt;Stage 0" sort="69" />
+        <label id="3066" label="Karin pR 0-1" folder="Technical&gt;Duplicate dialogue" sort="82" />
+        <label id="3067" label="Karin pR 0-2" folder="Technical&gt;Duplicate dialogue" sort="238" />
+        <label id="3068" label="Karin pR 0-3 (reserved)" folder="Technical&gt;Duplicate dialogue" sort="349" />
+        <label id="3069" label="Karin R 0-1" folder="Technical&gt;Duplicate dialogue" sort="194" />
+        <label id="3070" label="Karin R 0-2" folder="Technical&gt;Duplicate dialogue" sort="317" />
+        <label id="3071" label="Karin R 0-3 (to be written)" folder="Technical&gt;Duplicate dialogue" sort="76" />
+        <label id="3072" label="" folder="Targeted&gt;Replies&gt;Hand" sort="18" />
+        <label id="3073" label="Footwear before skirt" folder="Clothing type&gt;Specific" sort="7" />
+        <label id="3074" label="Footwear before skirt" folder="Clothing type&gt;Specific" sort="14" />
+        <label id="3075" label="Target jobbing" folder="" sort="0" />
+        <label id="3076" label="Target jobbing" folder="" sort="0" />
+        <label id="3077" label="" folder="Seasonal&gt;April Fool's" sort="0" />
+        <label id="3078" label="" color="6" folder="Seasonal&gt;April Fool's" sort="18" />
+        <label id="3079" label="Leviathan 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="54" />
+        <label id="3080" label="" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="0" />
+        <label id="3081" label="Squish squash" color="1" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="3" />
+        <label id="3082" label="" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="24" />
+        <label id="3083" label="Held, round 1" folder="Clothing type&gt;Specific" sort="23" />
+        <label id="3084" label="" folder="Filtered" sort="134" />
+        <label id="3085" label="Held" folder="Clothing type&gt;Specific" sort="12" />
+        <label id="3086" label="Held" folder="Clothing type&gt;Specific" sort="13" />
+        <label id="3087" label="Held L" color="1" folder="Clothing type&gt;Specific" sort="25" />
+        <label id="3088" label="Held R" color="3" folder="Clothing type&gt;Specific" sort="26" />
+        <label id="3089" label="Held, human" folder="Clothing type&gt;Specific" sort="22" />
+        <label id="3090" label="Held, round 1" folder="Duplicate dialogue" sort="7" />
+        <label id="3091" label="Held" folder="Clothing type&gt;Specific" sort="27" />
+        <label id="3092" label="Held" folder="Clothing type&gt;Specific" sort="28" />
+        <label id="3093" label="" folder="Filtered" sort="135" />
+        <label id="3094" label="" color="1" folder="Filtered" sort="136" />
+        <label id="3095" label="" color="3" folder="Filtered" sort="137" />
+        <label id="3096" label="Yuzuki who 1A" folder="Targeted&gt;Replies&gt;Hand" sort="42" />
+        <label id="3097" label="Yuzuki who 1B" folder="Targeted&gt;Replies&gt;Hand" sort="46" />
+        <label id="3098" label="Yuzuki who 1A" folder="Targeted&gt;Replies&gt;Hand" sort="44" />
+        <label id="3099" label="Yuzuki 3-1" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="36" />
+        <label id="3100" label="Yuzuki 3-2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="40" />
+        <label id="3101" label="Yuzuki 3-3A" color="2" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="42" />
+        <label id="3102" label="Yuzuki 3-3B" color="3" folder="Targeted&gt;Outbounds&gt;Stage 3" sort="44" />
+        <label id="3103" label="Raynor 0-1" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="10" />
+        <label id="3104" label="Raynor 0-2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="35" />
+        <label id="3105" label="Raynor 0-3" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="64" />
+        <label id="3106" label="Raynor 0-3 Santa" color="1" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="65" />
+        <label id="3107" label="Raynor L 0-1A" color="2" folder="Targeted&gt;Replies&gt;Stage 0" sort="6" />
+        <label id="3108" label="Raynor L 0-1B" color="3" folder="Targeted&gt;Replies&gt;Stage 0" sort="7" />
+        <label id="3109" label="Raynor L 0-2" folder="Targeted&gt;Replies&gt;Stage 0" sort="35" />
+        <label id="3110" label="Raynor L 0-3A" color="2" folder="Targeted&gt;Replies&gt;Stage 0" sort="57" />
+        <label id="3111" label="Raynor L 0-3B" color="3" folder="Targeted&gt;Replies&gt;Stage 0" sort="58" />
+        <label id="3112" label="Raynor L 1-1" folder="Targeted&gt;Replies&gt;Stage 1" sort="4" />
+        <label id="3113" label="Raynor L 1-2" folder="Targeted&gt;Replies&gt;Stage 1" sort="18" />
+        <label id="3114" label="Raynor L 1-3" folder="Targeted&gt;Replies&gt;Stage 1" sort="28" />
+        <label id="3115" label="Raynor pR 0-1A" folder="Technical&gt;Duplicate dialogue" sort="86" />
+        <label id="3116" label="Raynor pR 0-1B" folder="Technical&gt;Duplicate dialogue" sort="87" />
+        <label id="3117" label="Raynor pR 0-2" folder="Technical&gt;Duplicate dialogue" sort="236" />
+        <label id="3118" label="Raynor pR 0-3A" folder="Technical&gt;Duplicate dialogue" sort="346" />
+        <label id="3119" label="Raynor pR 0-3B" folder="Technical&gt;Duplicate dialogue" sort="347" />
+        <label id="3120" label="Raynor pR 1-1" folder="Technical&gt;Duplicate dialogue" sort="88" />
+        <label id="3121" label="Raynor pR 1-2" folder="Technical&gt;Duplicate dialogue" sort="237" />
+        <label id="3122" label="Raynor pR 1-3" folder="Technical&gt;Duplicate dialogue" sort="348" />
+        <label id="3123" label="Raynor R 0-1A" folder="Technical&gt;Duplicate dialogue" sort="199" />
+        <label id="3124" label="Raynor R 0-1B" folder="Technical&gt;Duplicate dialogue" sort="200" />
+        <label id="3125" label="Raynor R 0-2" folder="Technical&gt;Duplicate dialogue" sort="315" />
+        <label id="3126" label="Raynor R 0-3A" folder="Technical&gt;Duplicate dialogue" sort="29" />
+        <label id="3127" label="Raynor R 0-3B" folder="Technical&gt;Duplicate dialogue" sort="30" />
+        <label id="3128" label="Raynor R 1-1" folder="Technical&gt;Duplicate dialogue" sort="203" />
+        <label id="3129" label="Raynor R 1-2" folder="Technical&gt;Duplicate dialogue" sort="316" />
+        <label id="3130" label="Raynor R 1-3" folder="Technical&gt;Duplicate dialogue" sort="40" />
+        <label id="3133" label="Leviathan 1-1" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="64" />
+        <label id="3134" label="" folder="Filtered" sort="138" />
+        <label id="3135" label="When spnati is a porn game" folder="Targeted&gt;Xtra&gt;Toshinou friendship" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-aside</prefix>
@@ -3218,21 +3281,21 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <prefix>#-stand</prefix>
         <prefix>#-heavier</prefix>
         <prefix>custom:10-submerged</prefix>
+        <prefix>custom:aside-kanji</prefix>
+        <prefix>custom:#-strip_a-kanji</prefix>
         <prefix>custom:blank</prefix>
     </prefixes>
     <posePreviewMarkers>
         <posePreviewMarker>hair==1</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>3074</nextId>
+    <nextId>3135</nextId>
     <markers>
         <marker scope="Public" name="1v1" />
         <marker scope="Public" name="absent" />
-        <marker scope="Public" name="ae86_strip" />
-        <marker scope="Public" name="ae86_strip01" />
         <marker scope="Public" name="aella_weapons" />
         <marker scope="Public" name="ahogeTrend" />
         <marker scope="Public" name="aloy_sakoku" />
-        <marker scope="Public" name="alwaysReady">Semper paratus!</marker>
+        <marker scope="Public" name="alwaysReady" />
         <marker scope="Public" name="aquaKH_aceDetective" />
         <marker scope="Public" name="aquaKH_masterNickname" />
         <marker scope="Public" name="aquaKH_shadow" />
@@ -3253,22 +3316,15 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="arle_confirmation" />
         <marker scope="Public" name="arle_ghosts" />
         <marker scope="Public" name="arle_pale" />
-        <marker scope="Public" name="arle_pale2" />
         <marker scope="Public" name="arousalVisible" />
-        <marker scope="Public" name="aroused">Her vulva is or will be visibly secreting fluid prior to her forfeit while nude (and in the second tick of her forfeit).</marker>
+        <marker scope="Public" name="aroused" />
         <marker scope="Public" name="assMansInTown" />
         <marker scope="Public" name="attractedAttention" />
-        <marker scope="Public" name="ayano_knife" />
-        <marker scope="Public" name="background_birthday_makoto" />
         <marker scope="Public" name="backgroundPortrait" />
         <marker scope="Public" name="bagSportsmanship" />
         <marker scope="Public" name="bareBack" />
         <marker scope="Public" name="batmanPrompt" />
-        <marker scope="Public" name="bedroomBG" />
-        <marker scope="Public" name="bella_1" />
         <marker scope="Public" name="bella_885" />
-        <marker scope="Public" name="bella_invegaroo" />
-        <marker scope="Public" name="bestailock" />
         <marker scope="Public" name="bestAILock" />
         <marker scope="Public" name="BGalley" />
         <marker scope="Public" name="BGbday_byakuya" />
@@ -3281,13 +3337,10 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="BGbday_ibuki" />
         <marker scope="Public" name="BGbday_kokichi" />
         <marker scope="Public" name="BGbday_komaru" />
-        <marker scope="Public" name="BGbday_mahiru" />
         <marker scope="Public" name="BGbday_makoto" />
         <marker scope="Public" name="BGbday_mikani" />
         <marker scope="Public" name="BGbday_sakura" />
-        <marker scope="Public" name="BGbday_sakuraOgami" />
         <marker scope="Public" name="BGbday_self" />
-        <marker scope="Public" name="BGbday_self_" />
         <marker scope="Public" name="BGbday_self_canon" />
         <marker scope="Public" name="BGbday_self_preTesting" />
         <marker scope="Public" name="BGbday_self_testing" />
@@ -3303,25 +3356,22 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="BGmodlibrary_playedOn" />
         <marker scope="Public" name="BGoffice" />
         <marker scope="Public" name="BGparis" />
-        <marker scope="Public" name="biAtFinish">Finished forfeit while having the bisexual tag</marker>
-        <marker scope="Public" name="biFromStart">An all-female table with bisexualGameFinish marked fast-tracks Kyoko's trip to the world of girl love.</marker>
-        <marker scope="Public" name="bigButt">"(Don't comment on their rear...)" and alternate versions of the line</marker>
+        <marker scope="Public" name="biAtFinish" />
+        <marker scope="Public" name="biFromStart" />
         <marker scope="Public" name="bigWhoopSmallBoop" />
-        <marker scope="Public" name="birthday">The game is being played on Kyoko's birthday, October 6, and she has mentioned it X times.</marker>
+        <marker scope="Public" name="birthday" />
         <marker scope="Public" name="birthdaySuit" />
-        <marker scope="Public" name="bisexualGameFinish">Kyoko has ended the game after a fully bisexual awakening at least once. Persistent tag.</marker>
-        <marker scope="Public" name="blackIsYourColor">Removed Major, Female - Target is also wearing black underwear</marker>
-        <marker scope="Public" name="blackjack">Hand, 14+ rounds: She favorably compares the game to blackjack and says it feels a bit boring without betting</marker>
-        <marker scope="Public" name="blades">"I didn't take you for the type to put sharp blades near their most delicate parts."</marker>
-        <marker scope="Public" name="blimbsplobrother">April Fool's, Male Removing Extra. Courtesy of Ms. Janine, first name Maria.</marker>
-        <marker scope="Public" name="bluffing">Set to "hi", "lo", or "no" during her bluffing phase (game rounds 8-11) depending on how she's bluffing in this current hand.</marker>
-        <marker scope="Public" name="bluffsLost_hi">Lost X hands while bluffing=hi</marker>
-        <marker scope="Public" name="bluffsLost_lo">Lost X hands while bluffing=lo</marker>
-        <marker scope="Public" name="bluffsLost_no">Lost X hands while bluffing=no</marker>
-        <marker scope="Public" name="bluffsWon_hi">Won X hands while bluffing=hi</marker>
-        <marker scope="Public" name="bluffsWon_lo">Won X hands while bluffing=lo</marker>
-        <marker scope="Public" name="bluffsWon_no">Won X hands while bluffing=no</marker>
-        <marker scope="Public" name="bobob_31" />
+        <marker scope="Public" name="bisexualGameFinish" />
+        <marker scope="Public" name="blackIsYourColor" />
+        <marker scope="Public" name="blackjack" />
+        <marker scope="Public" name="blimbsplobrother" />
+        <marker scope="Public" name="bluffing" />
+        <marker scope="Public" name="bluffsLost_hi" />
+        <marker scope="Public" name="bluffsLost_lo" />
+        <marker scope="Public" name="bluffsLost_no" />
+        <marker scope="Public" name="bluffsWon_hi" />
+        <marker scope="Public" name="bluffsWon_lo" />
+        <marker scope="Public" name="bluffsWon_no" />
         <marker scope="Public" name="bobobo_02" />
         <marker scope="Public" name="bobobo_03" />
         <marker scope="Public" name="bobobo_11" />
@@ -3339,19 +3389,16 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="bobobo_51" />
         <marker scope="Public" name="bobobo_52" />
         <marker scope="Public" name="bobobo_53" />
-        <marker scope="Public" name="bobobo_HEY_PAUL">I know that it's crazy, I know that it's nowhere.</marker>
+        <marker scope="Public" name="bobobo_HEY_PAUL" />
         <marker scope="Public" name="bobobo_introNoir" />
         <marker scope="Public" name="bobobo_introTV" />
         <marker scope="Public" name="bobobo_introWig" />
-        <marker scope="Public" name="bobobo_layerLimit">Eight right? Yeah, eight.</marker>
-        <marker scope="Public" name="bobobo_leto" />
         <marker scope="Public" name="bobobo_maxwell" />
         <marker scope="Public" name="bobobo_octuplets" />
-        <marker scope="Public" name="boboboOctuplets" />
         <marker scope="Public" name="bodyNvm" />
         <marker scope="Public" name="bodysuitHelp" />
         <marker scope="Public" name="bodyUsefulLesbians" />
-        <marker scope="Public" name="bossMode">Game started with a player name triggering stronger AI for Kyoko</marker>
+        <marker scope="Public" name="bossMode" />
         <marker scope="Public" name="bowsette_crown" />
         <marker scope="Public" name="boyInShorts" />
         <marker scope="Public" name="braColor" />
@@ -3363,7 +3410,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="buttPoseOffer" />
         <marker scope="Public" name="buttPoseOfferA" />
         <marker scope="Public" name="buttPoseOfferB" />
-        <marker scope="Public" name="buttPoses">Counts how many times she's used a rear-facing pose with no lower clothing left.</marker>
+        <marker scope="Public" name="buttPoses" />
         <marker scope="Public" name="buttSurvey" />
         <marker scope="Public" name="caitlin_kinesis1" />
         <marker scope="Public" name="caitlin_kinesis2" />
@@ -3389,7 +3436,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="car_strip02" />
         <marker scope="Public" name="car_surprises" />
         <marker scope="Public" name="cardsWillDo" />
-        <marker scope="Public" name="careerMention">Counts how many times she's alluded to her career as a detective.</marker>
+        <marker scope="Public" name="careerMention" />
         <marker scope="Public" name="caseBriefsTrimComment" />
         <marker scope="Public" name="cassanovaTrickery" />
         <marker scope="Public" name="cats_61" />
@@ -3405,13 +3452,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="cd_goodSave" />
         <marker scope="Public" name="cd_maleStaminaRe" />
         <marker scope="Public" name="cheryl_homicide" />
-        <marker scope="Public" name="chihiro_" />
         <marker scope="Public" name="chihiro_build" />
         <marker scope="Public" name="chihiro_chivulva" />
         <marker scope="Public" name="chihiro_chivulva_alter" />
         <marker scope="Public" name="chihiro_chivulva_main" />
         <marker scope="Public" name="chihiro_defeat" />
-        <marker scope="Public" name="chihiro_endingA" />
         <marker scope="Public" name="chihiro_hamsterballWtf" />
         <marker scope="Public" name="chihiro_mahiru_noselfieRe" />
         <marker scope="Public" name="chihiro_mahiru_selfieRe" />
@@ -3420,22 +3465,18 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="chihiro_victory0" />
         <marker scope="Public" name="chihiro_victory5" />
         <marker scope="Public" name="chihiro_victory6" />
-        <marker scope="Public" name="chihiroOutsGeneric" />
-        <marker scope="Public" name="chivulva" />
         <marker scope="Public" name="chuuniPowersPrompt" />
         <marker scope="Public" name="chuuniVocab" />
-        <marker scope="Public" name="classicBG" />
         <marker scope="Public" name="classicGloves" />
         <marker scope="Public" name="cleanup" />
         <marker scope="Public" name="clothing404" />
         <marker scope="Public" name="clothMessage" />
         <marker scope="Public" name="clue" />
-        <marker scope="Public" name="coffee">X times, she's mentioned coffee. She's a fan.</marker>
+        <marker scope="Public" name="coffee" />
         <marker scope="Public" name="coffeeHandLine" />
-        <marker scope="Public" name="collectible_underwear">kirigiri_underwear collectible is unlocked</marker>
         <marker scope="Public" name="confidentGothLoli" />
-        <marker scope="Public" name="consent">She has given express verbal consent to a character looking at her while they masturbate. Nicole, do you even use this?</marker>
-        <marker scope="Public" name="consentB">"There's no reason to feel guilty about glancing at my body."</marker>
+        <marker scope="Public" name="consent" />
+        <marker scope="Public" name="consentB" />
         <marker scope="Public" name="constance_playedWith" />
         <marker scope="Public" name="constance_playedWith_sad" />
         <marker scope="Public" name="constance_playedWith_up" />
@@ -3447,50 +3488,42 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="contrabandBreasts" />
         <marker scope="Public" name="copyRobot_12a" />
         <marker scope="Public" name="copyRobot_12b" />
-        <marker scope="Public" name="copyRobot_13" />
         <marker scope="Public" name="copyRobot_13a" />
         <marker scope="Public" name="copyRobot_13b" />
-        <marker scope="Public" name="copyRobot_21" />
         <marker scope="Public" name="copyRobot_21a" />
         <marker scope="Public" name="copyRobot_21b" />
-        <marker scope="Public" name="corner" />
         <marker scope="Public" name="cornered" />
-        <marker scope="Public" name="costume">Marker indicating her costume using strings. 0 = default; FF = Future Foundation costume; swimsuit = Danganronpa S swimsuit costume.</marker>
+        <marker scope="Public" name="costume" />
         <marker scope="Public" name="creepyCompany" />
         <marker scope="Public" name="criminalClassmates" />
-        <marker scope="Public" name="cute">"It really is quite cute." "What? I'm allowed to like cute things." (=3 if triggered by male opponent)</marker>
+        <marker scope="Public" name="cute" />
         <marker scope="Public" name="cwu01p_02" />
         <marker scope="Public" name="cwu01p_03" />
         <marker scope="Public" name="cwu01p_11" />
-        <marker scope="Public" name="cwu01p_12" />
-        <marker scope="Public" name="cwu01p_12a" />
-        <marker scope="Public" name="cwu01p_13" />
         <marker scope="Public" name="dbd_intro" />
         <marker scope="Public" name="death_accusation" />
         <marker scope="Public" name="december" />
         <marker scope="Public" name="decemberPartner" />
         <marker scope="Public" name="deepBreathStart" />
         <marker scope="Public" name="defeatRibbon" />
-        <marker scope="Public" name="detectiveReveal">She has stated outright or otherwise confirmed that she is a detective.</marker>
-        <marker scope="Public" name="deutsch">X times, she has said something in the German language</marker>
+        <marker scope="Public" name="detectiveReveal" />
+        <marker scope="Public" name="deutsch" />
         <marker scope="Public" name="diamondsInTheBuff" />
         <marker scope="Public" name="didYouThrow" />
         <marker scope="Public" name="dirtyTalk" />
         <marker scope="Public" name="dirtyTalkReview" />
-        <marker scope="Public" name="disappointment">"No human language can describe the disappointment I'm feeling right now."</marker>
-        <marker scope="Public" name="dna" />
+        <marker scope="Public" name="disappointment" />
         <marker scope="Public" name="dnaEvidence" />
-        <marker scope="Public" name="doIt">Line indicating she knows the human's forfeit timer is 1 (clears if human doesn't finish next screen)</marker>
+        <marker scope="Public" name="doIt" />
         <marker scope="Public" name="dontExpletive" />
         <marker scope="Public" name="dontHesitate" />
         <marker scope="Public" name="dontStealMeJacket" />
         <marker scope="Public" name="dorothy_nami_superAwkward" />
         <marker scope="Public" name="doubleShoes" />
-        <marker scope="Public" name="draws">Absolute ties.</marker>
+        <marker scope="Public" name="draws" />
         <marker scope="Public" name="dressCode" />
         <marker scope="Public" name="duelNoir" />
         <marker scope="Public" name="duelNoir_sirius" />
-        <marker scope="Public" name="DUMMY" />
         <marker scope="Public" name="dunban_career1" />
         <marker scope="Public" name="dunban_career2" />
         <marker scope="Public" name="dunban_career3" />
@@ -3499,10 +3532,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="dunban_specialty3" />
         <marker scope="Public" name="dwight_blackCoffee1" />
         <marker scope="Public" name="dwight_blackCoffee2" />
-        <marker scope="Public" name="dwight_blackCoffee2_a" />
-        <marker scope="Public" name="dwight_blackCoffee2_c" />
         <marker scope="Public" name="dwight_blackCoffee3" />
-        <marker scope="Public" name="dwight_stare" />
         <marker scope="Public" name="dwight_stare1" />
         <marker scope="Public" name="dwight_stare2" />
         <marker scope="Public" name="dwight_stare3" />
@@ -3528,23 +3558,22 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="earpieceQuery" />
         <marker scope="Public" name="eatShitYuuhain" />
         <marker scope="Public" name="EHCount" />
-        <marker scope="Private" name="ellipsisCount">She's said X lines that are just ellipsis, lacking any letters that a word could be made out of. Decrements by 1 each strip phase. Swapping cards lines are not counted.</marker>
+        <marker scope="Public" name="ellipsisCount" />
         <marker scope="Public" name="elphaba_notWitchcraft" />
         <marker scope="Public" name="elphaba_sorceryVsWitchcraft" />
         <marker scope="Public" name="elphaba_witchcraft" />
-        <marker scope="Public" name="embarrassedYanks">She thought you were Ameri-can, not Ameri-can't.</marker>
+        <marker scope="Public" name="embarrassedYanks" />
         <marker scope="Public" name="emi_unlegged1" />
         <marker scope="Public" name="emi_unlegged2" />
         <marker scope="Public" name="enxNotRunning" />
-        <marker scope="Public" name="enxReaction">Stripped important, tag=ENF/ENM, lines referencing ~target~ covering up with their hands.</marker>
-        <marker scope="Public" name="evidenceFloor">"I see now I should've kept my shoes on longer" and other versions of the line</marker>
+        <marker scope="Public" name="enxReaction" />
+        <marker scope="Public" name="evidenceFloor" />
         <marker scope="Public" name="exhibitionExpectation" />
-        <marker scope="Public" name="explainedForfeit">She's explained early in the game that masturbation is a penalty for losing.</marker>
+        <marker scope="Public" name="explainedForfeit" />
         <marker scope="Public" name="extraRound1" />
         <marker scope="Public" name="eyepatchPower" />
         <marker scope="Public" name="eyepatchTryHarder" />
         <marker scope="Public" name="fastLearnerPrompt" />
-        <marker scope="Public" name="Felix_QuestionNotMyMethods2" />
         <marker scope="Public" name="ferris_anyPronouns" />
         <marker scope="Public" name="ferris_causeArousal" />
         <marker scope="Public" name="ferris_causeArousal2" />
@@ -3565,12 +3594,12 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="ferris_tights2c" />
         <marker scope="Public" name="ferris_tightsBasedArousal" />
         <marker scope="Public" name="ferris_tummy" />
-        <marker scope="Private" name="ferris_V_po" />
-        <marker scope="Private" name="ferris_V_pp" />
-        <marker scope="Private" name="ferris_V_pq" />
-        <marker scope="Private" name="ferris_V_ps" />
-        <marker scope="Private" name="ferris_VK_p" />
-        <marker scope="Public" name="ferrisDom">Escape-velocity horny for a certain he/her catboy.</marker>
+        <marker scope="Public" name="ferris_V_po" />
+        <marker scope="Public" name="ferris_V_pp" />
+        <marker scope="Public" name="ferris_V_pq" />
+        <marker scope="Public" name="ferris_V_ps" />
+        <marker scope="Public" name="ferris_VK_p" />
+        <marker scope="Public" name="ferrisDom" />
         <marker scope="Public" name="ferrisDom_anything" />
         <marker scope="Public" name="ferrisDom_cuffs" />
         <marker scope="Public" name="ferrisDom_cushionSlip" />
@@ -3587,7 +3616,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="ferrisDom_FHevidence" />
         <marker scope="Public" name="ferrisDom_FHlast" />
         <marker scope="Public" name="ferrisDom_FHpermission" />
-        <marker scope="Public" name="ferrisDom_H" />
         <marker scope="Public" name="ferrisDom_hairPull" />
         <marker scope="Public" name="ferrisDom_KHcute" />
         <marker scope="Public" name="ferrisDom_KHeyes" />
@@ -3596,7 +3624,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="ferrisDom_KHnoStop" />
         <marker scope="Public" name="ferrisDom_KHtail" />
         <marker scope="Public" name="ferrisDom_mouthCover" />
-        <marker scope="Public" name="ferrisDom_nextTime" />
         <marker scope="Public" name="ferrisDom_post" />
         <marker scope="Public" name="ferrisDom_postNextTime" />
         <marker scope="Public" name="ferrisDom_purr" />
@@ -3607,13 +3634,10 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="ferrisDom_stand" />
         <marker scope="Public" name="ferrisDom_tailPull" />
         <marker scope="Public" name="ferrisDom_whereLooking" />
-        <marker scope="Public" name="FFcostume">Used while Kyoko is wearing the Future Foundation outfit.</marker>
-        <marker scope="Public" name="finishedApology" />
-        <marker scope="Public" name="finishLikeThatQuery" />
-        <marker scope="Public" name="forfeitAct">Throughout her forfeit, things get progressively more redacted to conform with local and international censorship laws. Goes from 1 to 3, and that's before her heavy phase.</marker>
+        <marker scope="Public" name="footwearWithSkirt" />
+        <marker scope="Public" name="forfeitAct" />
         <marker scope="Public" name="forfeitFlesh" />
         <marker scope="Public" name="forfeitMaleAttention" />
-        <marker scope="Public" name="forfeitPile" />
         <marker scope="Public" name="forfeitSensation" />
         <marker scope="Public" name="forfeitSilence" />
         <marker scope="Public" name="forfeitSilence_f" />
@@ -3624,7 +3648,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="gamblingDetectives" />
         <marker scope="Public" name="gamblingDislike" />
         <marker scope="Public" name="gawking" />
-        <marker scope="Public" name="giddyCount">X times, the giddy pose has appeared this game. Counted with hidden lines.</marker>
+        <marker scope="Public" name="giddyCount" />
         <marker scope="Public" name="girlInShorts" />
         <marker scope="Public" name="giygas_doThyWorst" />
         <marker scope="Public" name="giygas_flashback" />
@@ -3640,7 +3664,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="gloria_01Travels" />
         <marker scope="Public" name="gloria_02Travels" />
         <marker scope="Public" name="gloria_dry" />
-        <marker scope="Public" name="gloria_kirigiri_strip0bAA" />
         <marker scope="Public" name="gloria_pokeTrainers2" />
         <marker scope="Public" name="gloria_scoobyCount" />
         <marker scope="Public" name="gloria_selfStrip0a" />
@@ -3651,20 +3674,16 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="gloria_selfStrip0ba" />
         <marker scope="Public" name="gloria_selfStrip0bb" />
         <marker scope="Public" name="gloria_selfStrip0bc" />
-        <marker scope="Public" name="gloria_selfStrip0bExpectations" />
-        <marker scope="Public" name="gloria_selfStrip0bLearning" />
-        <marker scope="Public" name="gloria_selfStrip0bPlace" />
-        <marker scope="Public" name="gloria_selfStripPlace" />
         <marker scope="Public" name="gloria_watching" />
         <marker scope="Public" name="gloria_youBall" />
         <marker scope="Public" name="gloveSilence" />
-        <marker scope="Public" name="glovesOn">She has said she won't take her gloves off this game.</marker>
+        <marker scope="Public" name="glovesOn" />
         <marker scope="Public" name="glovesOnForfeit" />
         <marker scope="Public" name="gloveWhyNotKeepOn" />
         <marker scope="Public" name="goingThrough" />
         <marker scope="Public" name="gothLoli" />
         <marker scope="Public" name="greedyPokerPrompt" />
-        <marker scope="Private" name="hair">Controls position of her hair (whether standing or sitting.)</marker>
+        <marker scope="Public" name="hair" />
         <marker scope="Public" name="handBluffN0" />
         <marker scope="Public" name="handBluffN1" />
         <marker scope="Public" name="handBluffN2" />
@@ -3674,19 +3693,19 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="handBluffP2" />
         <marker scope="Public" name="handBluffP3" />
         <marker scope="Public" name="happyNewYear" />
-        <marker scope="Public" name="hardEvidence">It's not just hard, it's conclusive too!</marker>
+        <marker scope="Public" name="hardEvidence" />
         <marker scope="Public" name="hattersGonnaHat" />
-        <marker scope="Public" name="hatterSuggestion" />
         <marker scope="Public" name="hauntedVoyeurs" />
-        <marker scope="Public" name="haveToUntie">"Just a second. I have to untie this."</marker>
-        <marker scope="Public" name="hayato">She stares into your soul and utters not one word but your name.</marker>
+        <marker scope="Public" name="haveToUntie" />
+        <marker scope="Public" name="hayato" />
         <marker scope="Public" name="heavyLead" />
         <marker scope="Public" name="heavyNoise" />
-        <marker scope="Public" name="heavyReddy" />
         <marker scope="Public" name="heavyReset" />
+        <marker scope="Public" name="heldClothing" />
+        <marker scope="Public" name="heldClothing2" />
+        <marker scope="Public" name="heldClothingRound1" />
         <marker scope="Public" name="hidingCards" />
         <marker scope="Public" name="hilbert_scars" />
-        <marker scope="Public" name="hilbert_scars2" />
         <marker scope="Public" name="hilbert_scars2a" />
         <marker scope="Public" name="hilbert_scars2b" />
         <marker scope="Public" name="hilbert_truth" />
@@ -3697,7 +3716,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="hina_71b" />
         <marker scope="Public" name="hina_71c" />
         <marker scope="Public" name="hina_72a" />
-        <marker scope="Public" name="hina_bothLost" />
         <marker scope="Public" name="hina_callMeKirigiri" />
         <marker scope="Public" name="hina_coMast1" />
         <marker scope="Public" name="hina_coMast2" />
@@ -3707,7 +3725,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="hina_coMast5b" />
         <marker scope="Public" name="hina_coMast6" />
         <marker scope="Public" name="hina_deselect" />
-        <marker scope="Public" name="hina_doubleKyoko" />
         <marker scope="Public" name="hina_hinaWin" />
         <marker scope="Public" name="hina_intro" />
         <marker scope="Public" name="hina_intro_ab" />
@@ -3717,23 +3734,18 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="hina_lossDate" />
         <marker scope="Public" name="hina_lossWhatDo" />
         <marker scope="Public" name="hina_malePopularity" />
-        <marker scope="Public" name="hina_malePopularity2" />
         <marker scope="Public" name="hina_mammaryMemory" />
         <marker scope="Public" name="hina_r73" />
         <marker scope="Public" name="hina_r74" />
-        <marker scope="Public" name="hina_sensitivity" />
-        <marker scope="Public" name="hina_sensitivtitty" />
         <marker scope="Public" name="hina_talkingAboutJunko" />
         <marker scope="Public" name="hina_topTouch1" />
-        <marker scope="Public" name="hopesPeak">X times, she has mentioned Hope's Peak Academy, her High School.</marker>
+        <marker scope="Public" name="hopesPeak" />
         <marker scope="Public" name="howLossFeels" />
-        <marker scope="Public" name="hsw_01" />
         <marker scope="Public" name="hsw_02" />
         <marker scope="Public" name="hsw_03" />
         <marker scope="Public" name="hsw_11" />
         <marker scope="Public" name="hsw_12" />
         <marker scope="Public" name="hsw_13" />
-        <marker scope="Public" name="hsw_background2" />
         <marker scope="Public" name="hsw_ending" />
         <marker scope="Public" name="hsw_ff1" />
         <marker scope="Public" name="hsw_ff2" />
@@ -3744,17 +3756,17 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="hsw_mixed" />
         <marker scope="Public" name="hsw_preJoin" />
         <marker scope="Public" name="hsw_submerged" />
-        <marker scope="Public" name="hugePenis">She has seen and reacted to a penis with the huge_penis tag.</marker>
+        <marker scope="Public" name="hugePenis" />
         <marker scope="Public" name="humanBra" />
-        <marker scope="Public" name="humanExtraLayers">"Already completely exposed yourself, yet you still have layers to spare?" (to human)</marker>
+        <marker scope="Public" name="humanExtraLayers" />
         <marker scope="Public" name="humanMagician" />
-        <marker scope="Public" name="humanNoBra">Female human player has been detected to not be wearing a bra this game</marker>
         <marker scope="Public" name="humanPenis" />
         <marker scope="Public" name="humanVulvaWonder" />
         <marker scope="Public" name="humanWeaponStrip" />
         <marker scope="Public" name="humanWearingCaseBriefs" />
         <marker scope="Public" name="humanWearingRamen" />
         <marker scope="Public" name="ibtcompany" />
+        <marker scope="Public" name="ilulu_wowYeahThatsJupiterAndSaturn" />
         <marker scope="Public" name="immaculateFrame" />
         <marker scope="Public" name="inTheirSleevies" />
         <marker scope="Public" name="intro_theFighter" />
@@ -3768,9 +3780,10 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="jura_wh_02" />
         <marker scope="Public" name="jura_wh_03" />
         <marker scope="Public" name="jura_wh_sip" />
-        <marker scope="Public" name="kamishiro" />
+        <marker scope="Public" name="karin_r01" />
+        <marker scope="Public" name="karin_r02" />
+        <marker scope="Public" name="karin_r03" />
         <marker scope="Public" name="kazumaTinder" />
-        <marker scope="Public" name="keepInShape" />
         <marker scope="Public" name="kekko_glovesOnly1" />
         <marker scope="Public" name="kekko_glovesOnly2" />
         <marker scope="Public" name="kekko_glovesOnly2A" />
@@ -3795,41 +3808,38 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="kora_custard" />
         <marker scope="Public" name="kriegstAufDuFresse" />
         <marker scope="Public" name="kyoka_intro" />
-        <marker scope="Public" name="Kyoko_SelfDeads_replyA" />
-        <marker scope="Public" name="Kyoko_SelfDeads_replyB" />
-        <marker scope="Public" name="kyuSchoolPrompt">Kyoko will respond to one of Kyu's comments about her schoolgirl uniform.</marker>
-        <marker scope="Public" name="kyuSchoolResponse">Kyoko has responded to one of Kyu's comments about her schoolgirl uniform.</marker>
+        <marker scope="Public" name="kyuSchoolPrompt" />
+        <marker scope="Public" name="kyuSchoolResponse" />
         <marker scope="Public" name="largeBreastPrompt" />
         <marker scope="Public" name="lastDone" />
-        <marker scope="Public" name="lastHand">Only the human player and Kyoko Kirigiri remain in the game, and both have lost all layers.</marker>
-        <marker scope="Public" name="lastOut" />
+        <marker scope="Public" name="lastHand" />
         <marker scope="Public" name="leadByExample" />
         <marker scope="Public" name="legTouch" />
         <marker scope="Public" name="lesbianLogicPuzzle" />
         <marker scope="Public" name="leviathan_01" />
         <marker scope="Public" name="leviathan_02" />
+        <marker scope="Public" name="leviathan_03" />
+        <marker scope="Public" name="leviathan_11" />
         <marker scope="Public" name="lingerieStrip" />
-        <marker scope="Public" name="longFap">"I'm surprised it's taking you so long. After all, you're a man."</marker>
+        <marker scope="Public" name="longFap" />
         <marker scope="Public" name="loseClothesNotHope" />
-        <marker scope="Public" name="lossToVillain">"..." in response to a villain being ahead of her with two pair or better.</marker>
+        <marker scope="Public" name="lossToVillain" />
         <marker scope="Public" name="lostToHuman" />
         <marker scope="Public" name="lucina_02" />
         <marker scope="Public" name="lucina_03" />
         <marker scope="Public" name="luckster" />
-        <marker scope="Public" name="luwakCoffee">If it hasn't been through an animal China got a zoonotic epidemic from, Byakuya's not interested!</marker>
-        <marker scope="Public" name="lysithea_" />
+        <marker scope="Public" name="luwakCoffee" />
         <marker scope="Public" name="lysithea_cantYou" />
         <marker scope="Public" name="mahiru_cumeraResponse" />
-        <marker scope="Private" name="mahiru_fingerCount">X times, Mahiru has used her "excited" pose.</marker>
+        <marker scope="Public" name="mahiru_fingerCount" />
         <marker scope="Public" name="maidCloset" />
         <marker scope="Public" name="makeOfThisFeeling" />
-        <marker scope="Public" name="malebadhandtell" />
         <marker scope="Public" name="maleBadHandTell" />
         <marker scope="Public" name="maleBody" />
         <marker scope="Public" name="maleCaseBriefSurprise" />
         <marker scope="Public" name="maleGothLoli" />
         <marker scope="Public" name="maleJewelry" />
-        <marker scope="Public" name="mardiGras">X times, Kyoko has said a related to asking an American female character about toplessness at Mardi Gras. These lines play on Tuesdays February 3-March 9.</marker>
+        <marker scope="Public" name="mardiGras" />
         <marker scope="Public" name="maria_buttSpin" />
         <marker scope="Public" name="maria_buttSpinBefore" />
         <marker scope="Public" name="maria_buttSpinL" />
@@ -3838,17 +3848,14 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="maria_smodeDressStrip1Forfeit" />
         <marker scope="Public" name="maria_smodeDressStrip1Normal" />
         <marker scope="Public" name="maria_smodeDressStrip2" />
-        <marker scope="Public" name="maria_smodeDressStrip2Normal" />
         <marker scope="Public" name="matchTheNumbersDummy" />
         <marker scope="Public" name="mathematician" />
-        <marker scope="Public" name="meanHero">"They act cold, but I suspect they're nobler than they let on.""</marker>
+        <marker scope="Public" name="meanHero" />
         <marker scope="Public" name="meia_01" />
         <marker scope="Public" name="meia_11" />
         <marker scope="Public" name="meia_21" />
-        <marker scope="Public" name="meia_familyWhat" />
         <marker scope="Public" name="meia_r01" />
         <marker scope="Public" name="meia_r03a" />
-        <marker scope="Public" name="meia_r03c" />
         <marker scope="Public" name="meia_r11" />
         <marker scope="Public" name="meia_r31a" />
         <marker scope="Public" name="meia_r31c" />
@@ -3897,7 +3904,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="mikan_introA2" />
         <marker scope="Public" name="mikan_introB1" />
         <marker scope="Public" name="mikan_introB2" />
-        <marker scope="Public" name="Mikan_Kyoko_leave" />
         <marker scope="Public" name="mikan_listen" />
         <marker scope="Public" name="mikan_overflow" />
         <marker scope="Public" name="mikan_quietRe" />
@@ -3944,19 +3950,17 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="monika_flashedNani" />
         <marker scope="Public" name="moon_blacklight" />
         <marker scope="Public" name="moon_l01" />
-        <marker scope="Public" name="moon_moon_selfEnvy" />
         <marker scope="Public" name="moon_multiTable" />
         <marker scope="Public" name="moon_selfEnvy" />
+        <marker scope="Public" name="moreNipsPlease" />
         <marker scope="Public" name="moskii_01" />
         <marker scope="Public" name="moskii_02a" />
         <marker scope="Public" name="moskii_bloodType1" />
-        <marker scope="Public" name="movedHair">Activates if she has moved her hair out of the way of her chest at stage 8 (naked). Should activate automatically if she uses any pose other than the strips or aside2 during stage 8.</marker>
-        <marker scope="Public" name="multiBelt">Heaven or Hell! Duel One! Let's Rock!</marker>
+        <marker scope="Public" name="movedHair" />
+        <marker scope="Public" name="multiBelt" />
         <marker scope="Public" name="mundaneMask" />
         <marker scope="Public" name="nadia_headDrop" />
         <marker scope="Public" name="nagatoro_fun" />
-        <marker scope="Public" name="nagatoro_funBest" />
-        <marker scope="Public" name="nagatoro_funWork" />
         <marker scope="Public" name="nagatoro_heyCriminals" />
         <marker scope="Public" name="nagatoro_stalkingArrest" />
         <marker scope="Public" name="nagatoro_stalkingLawyer" />
@@ -3964,7 +3968,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="nagatoro_swimsuitWeapon" />
         <marker scope="Public" name="nagatoro_watchful" />
         <marker scope="Public" name="nakedWorkInProgress" />
-        <marker scope="Public" name="nami_" />
         <marker scope="Public" name="nami_title" />
         <marker scope="Public" name="namiHito_bye" />
         <marker scope="Public" name="namiHito_cashPoker" />
@@ -3983,12 +3986,12 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="niceBody" />
         <marker scope="Public" name="niceBonerIdiot" />
         <marker scope="Public" name="niceCoochieIdiot" />
-        <marker scope="Public" name="nikaidou_headOff" />
         <marker scope="Public" name="nipplePiercingQuery" />
         <marker scope="Public" name="nippleStim" />
         <marker scope="Public" name="nnoPairTrick" />
-        <marker scope="Public" name="noCeleste">"I'm glad Celeste isn't here tonight."</marker>
+        <marker scope="Public" name="noCeleste" />
         <marker scope="Public" name="noDrama" />
+        <marker scope="Public" name="nonClothingOppSel" />
         <marker scope="Public" name="nonon_53" />
         <marker scope="Public" name="nonon_dressMystery" />
         <marker scope="Public" name="nonon_dressSpeechless" />
@@ -4000,13 +4003,12 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="nonon_regular" />
         <marker scope="Public" name="noPairTrick" />
         <marker scope="Public" name="nopSlop" />
-        <marker scope="Public" name="noSwap">Kyoko swaps no cards for the hand. Values 1-4 depend on line said.</marker>
-        <marker scope="Public" name="notetaking">Kyoko says she is taking notes as a male character masturbates.</marker>
+        <marker scope="Public" name="noSwap" />
+        <marker scope="Public" name="notetaking" />
         <marker scope="Public" name="nothingToBeAshamed" />
-        <marker scope="Public" name="noticedAlterEgo">Kyoko has noticed Alter Ego, Chihiro Fujisaki's AI, on the ground before he introduced himself.</marker>
-        <marker scope="Public" name="notLast">Kyoko has not become the first player to forfeit this game.</marker>
+        <marker scope="Public" name="noticedAlterEgo" />
+        <marker scope="Public" name="notLast" />
         <marker scope="Public" name="notMindCamera" />
-        <marker scope="Public" name="notNervous" />
         <marker scope="Public" name="nudeAppearance" />
         <marker scope="Public" name="nudityGuarantee" />
         <marker scope="Public" name="ohRightYourCoochieOut" />
@@ -4017,12 +4019,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="okino_revealNormal" />
         <marker scope="Public" name="okino_revealRe" />
         <marker scope="Public" name="okino_toshinou_tomatoNickname" />
-        <marker scope="Public" name="onlineShopping">eBay: world’s aptest auctioner of anonymous anemometers!</marker>
-        <marker scope="Public" name="pantsPreference">In the "Skirts 4 Lyfe" vs. "Give Me Pants Or Else" Splatfest, Kyoko sides with Marie.</marker>
-        <marker scope="Public" name="parentTrouble">Kyoko has reacted with X divided by 2 lines to Mia Fey asking about if anyone else had parents leave at a young age.</marker>
-        <marker scope="Public" name="parisBG" />
+        <marker scope="Public" name="onlineShopping" />
+        <marker scope="Public" name="pantsPreference" />
         <marker scope="Public" name="penisTiming" />
         <marker scope="Public" name="pirateBooty" />
+        <marker scope="Public" name="pjNoBra" />
         <marker scope="Public" name="plantDNA" />
         <marker scope="Public" name="playername_anon" />
         <marker scope="Public" name="playerWearingRamen" />
@@ -4030,9 +4031,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="pokerFace" />
         <marker scope="Public" name="pokeTrainers" />
         <marker scope="Public" name="popo1" />
-        <marker scope="Public" name="posterPerson" />
         <marker scope="Public" name="precumQuestion" />
-        <marker scope="Public" name="prompt" />
         <marker scope="Public" name="promptAhoge" />
         <marker scope="Public" name="promptCoward" />
         <marker scope="Public" name="promptCyborg" />
@@ -4052,7 +4051,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="proteinSwimmer" />
         <marker scope="Public" name="pubicHairTwin" />
         <marker scope="Public" name="punkTie" />
-        <marker scope="Public" name="quadRoyalFlush" />
         <marker scope="Public" name="quadRoyalLoss" />
         <marker scope="Public" name="quadRoyalWin" />
         <marker scope="Public" name="queen_stare" />
@@ -4060,20 +4058,28 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="queen_yareyare" />
         <marker scope="Public" name="queenie_magician" />
         <marker scope="Public" name="queenie_villains" />
-        <marker scope="Public" name="quieresVungen">May she interest you in some 'jayjay juice? Some pussy punch? A snatch Slurpee? Some Cunt-a-Cola?</marker>
+        <marker scope="Public" name="quieresVungen" />
         <marker scope="Public" name="quieresVungenNonsmall" />
         <marker scope="Public" name="quieresVungenSmall" />
-        <marker scope="Public" name="quips">X times, she's cracked a joke this game.</marker>
+        <marker scope="Public" name="quips" />
+        <marker scope="Public" name="quips+" />
         <marker scope="Public" name="quiteTheTime" />
         <marker scope="Public" name="ramenHatFishcake" />
         <marker scope="Public" name="ramenHatSmelly" />
-        <marker scope="Public" name="rappSnitchKnishes">Kyoko has advised an opponent not to tell all their business, sit in the court, and be their own star witness.</marker>
+        <marker scope="Public" name="rappSnitchKnishes" />
+        <marker scope="Public" name="raynor_01" />
+        <marker scope="Public" name="raynor_02" />
+        <marker scope="Public" name="raynor_03" />
         <marker scope="Public" name="raynor_bar" />
-        <marker scope="Public" name="raynor_butt" />
         <marker scope="Public" name="raynor_buttForfeit" />
         <marker scope="Public" name="raynor_buttStandard" />
+        <marker scope="Public" name="raynor_r01" />
+        <marker scope="Public" name="raynor_r02" />
+        <marker scope="Public" name="raynor_r03" />
+        <marker scope="Public" name="raynor_r11" />
+        <marker scope="Public" name="raynor_r12" />
+        <marker scope="Public" name="raynor_r13" />
         <marker scope="Public" name="redAndHeavy" />
-        <marker scope="Public" name="reimu_columbo" />
         <marker scope="Public" name="reimu_columbo1" />
         <marker scope="Public" name="reimu_columbo2" />
         <marker scope="Public" name="reimu_dontProvoke" />
@@ -4088,8 +4094,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="revy_discipline" />
         <marker scope="Public" name="revy_disciplineA" />
         <marker scope="Public" name="revy_disciplineB" />
-        <marker scope="Public" name="revy_killingRe">She makes a killing off of people who make a killing.</marker>
-        <marker scope="Public" name="revy_wtfbbqlol">Any resemblance between Kyoko's gloves and the Hamburger Helper mascot is entirely coincidential.</marker>
+        <marker scope="Public" name="revy_killingRe" />
+        <marker scope="Public" name="revy_wtfbbqlol" />
         <marker scope="Public" name="ribbonOfVictory" />
         <marker scope="Public" name="ringo_bornDetective" />
         <marker scope="Public" name="ringo_deduction1" />
@@ -4101,19 +4107,15 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="ringo_deduction3" />
         <marker scope="Public" name="ringo_glovesForfeit" />
         <marker scope="Public" name="ringo_glovesRe" />
-        <marker scope="Public" name="ringo_hopesPeak" />
-        <marker scope="Public" name="ringo_ultimateDetectiveRe" />
         <marker scope="Public" name="ringo_ultimatesRe" />
         <marker scope="Public" name="ringo_ultimateTalentRe" />
         <marker scope="Public" name="ripAndTear" />
-        <marker scope="Public" name="robin_armies" />
         <marker scope="Public" name="robin_flowersAndCoffee" />
         <marker scope="Public" name="robin_flowersAndCoffee_A" />
         <marker scope="Public" name="robin_flowersAndCoffee_B" />
         <marker scope="Public" name="robin_hanaHana" />
         <marker scope="Public" name="roboPrivates" />
-        <marker scope="Public" name="robot" />
-        <marker scope="Public" name="roll_spa">As in Small Penis Appreciation, not as in mud masks and tiny towels for your toes.</marker>
+        <marker scope="Public" name="roll_spa" />
         <marker scope="Public" name="rosa_hairstyles" />
         <marker scope="Public" name="rose_01" />
         <marker scope="Public" name="rose_02" />
@@ -4126,8 +4128,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="rouge_treasureScope_B" />
         <marker scope="Public" name="safeAnotherRound" />
         <marker scope="Public" name="safeForNow" />
-        <marker scope="Public" name="saidNameFinish">Kyoko said the human player's name while finishing.</marker>
-        <marker scope="Public" name="sakura_kyokoBeingInappropriate" />
         <marker scope="Public" name="samus_armor" />
         <marker scope="Public" name="sanako_ks_k1" />
         <marker scope="Public" name="sanako_ks_s1" />
@@ -4136,9 +4136,9 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="sanako_whyCover" />
         <marker scope="Public" name="sandyCrime" />
         <marker scope="Public" name="sannytess_hyakkiya" />
-        <marker scope="Public" name="santaHatStory">She regales the story of how a nice man invited her to Christmas dinner and leaves out the detail that they had Roast Maid for the main course.</marker>
+        <marker scope="Public" name="santaHatStory" />
         <marker scope="Public" name="santaShikiba" />
-        <marker scope="Public" name="sayMyName">Per-target marker; Kyoko says a certain character's name while finishing.</marker>
+        <marker scope="Public" name="sayMyName" />
         <marker scope="Public" name="scarMemories" />
         <marker scope="Public" name="schezo_arleTheCurryFreak" />
         <marker scope="Public" name="scm_batDeduction" />
@@ -4149,7 +4149,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="scm_deduction" />
         <marker scope="Public" name="scm_payDeduction" />
         <marker scope="Public" name="secondBiggestMistake" />
-        <marker scope="Public" name="seekAWayOut" />
         <marker scope="Public" name="selfIntro" />
         <marker scope="Public" name="selfNudeOutcome" />
         <marker scope="Public" name="selfTrimComment" />
@@ -4157,7 +4156,6 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="sempai_socksWhy" />
         <marker scope="Public" name="sempai01" />
         <marker scope="Public" name="setogaya_getOffMyDick" />
-        <marker scope="Public" name="setogaya_GETOFFMYDICK" />
         <marker scope="Public" name="sflare_elimination" />
         <marker scope="Public" name="sflare_start" />
         <marker scope="Public" name="shamiko_bibliophile" />
@@ -4175,7 +4173,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="shyExtraFirst" />
         <marker scope="Public" name="simpleMinded" />
         <marker scope="Public" name="skimpyPacing" />
-        <marker scope="Public" name="smallPenisSpeech">X times, she's said a line in a multi-screen speech on her preference to small penises, which she begins once 3 or more small penises are exposed with no women other than herself and/or the player present.</marker>
+        <marker scope="Public" name="smallPenisSpeech" />
         <marker scope="Public" name="smallSolicitation" />
         <marker scope="Public" name="sockPromise" />
         <marker scope="Public" name="sofia_opening" />
@@ -4184,15 +4182,12 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="spiderGwen_12" />
         <marker scope="Public" name="spiderGwen_12a" />
         <marker scope="Public" name="spiderGwen_12b" />
-        <marker scope="Public" name="spiderGwen_13" />
         <marker scope="Public" name="spiderGwen_Identity" />
-        <marker scope="Public" name="splashZone">"Stand back unless you feel like being in the splash zone.</marker>
-        <marker scope="Public" name="stage5Reasons" />
+        <marker scope="Public" name="splashZone" />
         <marker scope="Public" name="stage8Arousal" />
-        <marker scope="Private" name="stood">Get up, stand up, stand up for your rights-- to watch the rest of the game play out after orgasming in front of everyone.</marker>
-        <marker scope="Public" name="strangeNudity">"It feels strange, doesn't it? Kind of like a part of your body is missing..."</marker>
+        <marker scope="Public" name="stood" />
+        <marker scope="Public" name="strangeNudity" />
         <marker scope="Public" name="strangeSituationQuery" />
-        <marker scope="Public" name="strip0" />
         <marker scope="Public" name="strip0Known" />
         <marker scope="Public" name="strip1Strategy" />
         <marker scope="Public" name="strip2Analysis" />
@@ -4203,11 +4198,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="strip3Wonder" />
         <marker scope="Public" name="strip4Decision" />
         <marker scope="Public" name="strip5Reasons" />
-        <marker scope="Public" name="strip6Reasons" />
-        <marker scope="Public" name="strip6speech" />
         <marker scope="Public" name="strip6Speech" />
         <marker scope="Public" name="strip7LastChance" />
-        <marker scope="Public" name="strip7OneMore" />
         <marker scope="Public" name="stripCount" />
         <marker scope="Public" name="stripNanamura" />
         <marker scope="Public" name="subThrowCommand" />
@@ -4230,10 +4222,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="suzuya_zodiac4" />
         <marker scope="Public" name="suzuya_zodiac5" />
         <marker scope="Public" name="sweetheart_selfPillow" />
-        <marker scope="Public" name="swissFrancs">Despite being Japanese, she says her jacket cost 90 Swiss francs.</marker>
-        <marker scope="Public" name="T_Kirigiri_InCollege" />
-        <marker scope="Public" name="T_Kirigiri_Reading" />
-        <marker scope="Public" name="T_Kirigiri_Yui" />
+        <marker scope="Public" name="swissFrancs" />
         <marker scope="Public" name="tae_01" />
         <marker scope="Public" name="tae_02" />
         <marker scope="Public" name="tae_03" />
@@ -4261,7 +4250,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="tae_playedWith" />
         <marker scope="Public" name="tae_selfMustForfeit" />
         <marker scope="Public" name="tae_zombie" />
-        <marker scope="Public" name="takeOffMyUndies">And don't let her catch you wearing them again!</marker>
+        <marker scope="Public" name="takeOffMyUndies" />
         <marker scope="Public" name="tanlines" />
         <marker scope="Public" name="tea_dontCare" />
         <marker scope="Public" name="tea_dontCare_A" />
@@ -4272,24 +4261,19 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="tea_sideBet2" />
         <marker scope="Public" name="tea_whyQuit" />
         <marker scope="Public" name="tellMeWhatYouWant" />
-        <marker scope="Public" name="tellMeWhatYouWantWhatYouReallyReallyWant" />
-        <marker scope="Public" name="TESTBUILDPOSE" />
-        <marker scope="Public" name="theiaCH_">Moon and her Mom on the Clubs or Hearts routes.</marker>
         <marker scope="Public" name="theiaCH_relationship" />
         <marker scope="Public" name="theirTurn" />
-        <marker scope="Public" name="thenThereWereNone">Sayonara, cracka!</marker>
+        <marker scope="Public" name="thenThereWereNone" />
         <marker scope="Public" name="theyLeftTheGameHeadass" />
         <marker scope="Public" name="theyStripHere" />
-        <marker scope="Public" name="thighRub">"Word of advice...try rubbing your thighs together."</marker>
         <marker scope="Public" name="thinkIllBeJoining" />
         <marker scope="Public" name="throwLast" />
         <marker scope="Public" name="tick_exit" />
         <marker scope="Public" name="tick_return" />
-        <marker scope="Public" name="tieCompletes">"A classmate in high school once told me this tie completes my outfit."</marker>
-        <marker scope="Public" name="tifa_" />
+        <marker scope="Public" name="tieCompletes" />
         <marker scope="Public" name="tifa_33suspenders" />
-        <marker scope="Public" name="timeline">A value of either thh or school. Fewer people she knows are dead in the latter. "if" is also an option if the sixteenth student, hidden somewhere in this school, the one they call the Ultimate Despair (watch out for her) is present as an opponent.</marker>
-        <marker scope="Public" name="timeline2">What has become of Yui Samidare?</marker>
+        <marker scope="Public" name="timeline" />
+        <marker scope="Public" name="timeline2" />
         <marker scope="Public" name="TO_mg_quieres" />
         <marker scope="Public" name="TO_sciTwi_horse" />
         <marker scope="Public" name="TO_sciTwi_nonHuman" />
@@ -4297,7 +4281,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="TO_toshinou_noDyingZone" />
         <marker scope="Public" name="toko_selected" />
         <marker scope="Public" name="toko_selfSelected" />
-        <marker scope="Public" name="tooManyKyokos">No such thing.</marker>
+        <marker scope="Public" name="tooManyKyokos" />
         <marker scope="Public" name="toru_chest" />
         <marker scope="Public" name="toru_chestB" />
         <marker scope="Public" name="toru_secretShlick" />
@@ -4308,14 +4292,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_12" />
         <marker scope="Public" name="toshinou_13" />
         <marker scope="Public" name="toshinou_21" />
-        <marker scope="Public" name="toshinou_21a" />
         <marker scope="Public" name="toshinou_22" />
-        <marker scope="Public" name="toshinou_22a" />
         <marker scope="Public" name="toshinou_23" />
         <marker scope="Public" name="toshinou_31" />
         <marker scope="Public" name="toshinou_32" />
         <marker scope="Public" name="toshinou_33" />
-        <marker scope="Public" name="toshinou_33ahoA" />
         <marker scope="Public" name="toshinou_41" />
         <marker scope="Public" name="toshinou_42" />
         <marker scope="Public" name="toshinou_43" />
@@ -4326,14 +4307,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_62" />
         <marker scope="Public" name="toshinou_63" />
         <marker scope="Public" name="toshinou_aHand" />
-        <marker scope="Public" name="toshinou_aho" />
         <marker scope="Public" name="toshinou_ahoNopan" />
-        <marker scope="Public" name="toshinou_ahoShirt" />
         <marker scope="Public" name="toshinou_ahoShirtOfIntellect" />
         <marker scope="Public" name="toshinou_anythingElse" />
         <marker scope="Public" name="toshinou_beneathNotice" />
         <marker scope="Public" name="toshinou_cheerUp" />
-        <marker scope="Public" name="toshinou_cleanUpAcknowledgement" />
         <marker scope="Public" name="toshinou_cleanUpFollowUp" />
         <marker scope="Public" name="toshinou_coffeeMindRead" />
         <marker scope="Public" name="toshinou_dontLookAtMe" />
@@ -4351,6 +4329,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_howManyTomatoes" />
         <marker scope="Public" name="toshinou_howManyTomatoes_mustStrip" />
         <marker scope="Public" name="toshinou_hsw_ending" />
+        <marker scope="Public" name="toshinou_iCantBelieveYoureHavingSexAndDidntInviteMe" />
         <marker scope="Public" name="toshinou_justRemembered" />
         <marker scope="Public" name="toshinou_kanji1" />
         <marker scope="Public" name="toshinou_kanji2" />
@@ -4363,9 +4342,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_nagisaJuiceRun" />
         <marker scope="Public" name="toshinou_nakeySwimmy" />
         <marker scope="Public" name="toshinou_nextOuting" />
-        <marker scope="Public" name="toshinou_playedWith">She has played X games with Kyouko Toshinou. Increments at Game Over.</marker>
+        <marker scope="Public" name="toshinou_playedWith" />
         <marker scope="Public" name="toshinou_r11" />
-        <marker scope="Public" name="toshinou_r12" />
         <marker scope="Public" name="toshinou_r12a" />
         <marker scope="Public" name="toshinou_r13a" />
         <marker scope="Public" name="toshinou_r21a" />
@@ -4396,62 +4374,58 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_ribbonGone2" />
         <marker scope="Public" name="toshinou_seenTomatoUndies" />
         <marker scope="Public" name="toshinou_skinnyDip" />
+        <marker scope="Public" name="toshinou_squash" />
         <marker scope="Public" name="toshinou_stopKreygasmingIKnowImHot" />
         <marker scope="Public" name="toshinou_survival" />
-        <marker scope="Public" name="toshinou_theBoobs" />
-        <marker scope="Public" name="toshinou_theFighter" />
         <marker scope="Public" name="toshinou_theKyoukoRe" />
         <marker scope="Public" name="toshinou_theOtherBoobs" />
         <marker scope="Public" name="toshinou_tomatoUndies" />
         <marker scope="Public" name="toshinou_uniformFakeout" />
+        <marker scope="Public" name="toshinou_urGay" />
         <marker scope="Public" name="toshinou_zp_hungy" />
-        <marker scope="Public" name="toshinouBoobies">Response to Kyouko Toshinou simply asking, "Boobies?" =2 when fully responded, =1 when preparing to respond next case.</marker>
+        <marker scope="Public" name="toshinouBoobies" />
         <marker scope="Public" name="traditionalSwimsuit" />
         <marker scope="Public" name="travelPerk" />
-        <marker scope="Public" name="twilight_prime_playedwith" />
-        <marker scope="Public" name="twilight_prime_playedWith">X times, she has finished a game with Twilight Sparkle from Equestria. Activates once only 1 player remains in a game with Twilight in her default costume.</marker>
-        <marker scope="Public" name="ultimateMathematician" />
+        <marker scope="Public" name="twilight_prime_playedWith" />
         <marker scope="Public" name="ultimatePhotographer" />
         <marker scope="Public" name="ultimatePhotographer_classmates" />
         <marker scope="Public" name="ultimatePhotographer_strangers" />
         <marker scope="Public" name="ultimateSpy" />
         <marker scope="Public" name="undeadPrompt" />
         <marker scope="Public" name="undeadUnpantsu" />
-        <marker scope="Public" name="underdog">She's lost the first 8 hands in a row, but goes up to Best AI instantly.</marker>
+        <marker scope="Public" name="underdog" />
         <marker scope="Public" name="underPressure" />
         <marker scope="Public" name="unmasked" />
         <marker scope="Public" name="upskirtSituation" />
-        <marker scope="Public" name="V_cameLikeThatQuery" />
-        <marker scope="Private" name="V_clothing">Based on custom vocabulary; for use in-line in place of ~clothing~.</marker>
-        <marker scope="Private" name="V_clothing_uncountable">Boolean companion to V_clothing.</marker>
-        <marker scope="Public" name="V_customFirst">Some goofy edge cases change this; her first name, for use in-line if you’re too weird for ~target~, or if you want to change a nickname for her mid-game.</marker>
-        <marker scope="Public" name="V_customLast">Some goofy edge cases change this; her last name, for use in-line if you’re too weird for ~target~, or if you want to change a nickname for her mid-game.</marker>
-        <marker scope="Public" name="V_linekey" />
-        <marker scope="Private" name="V_lineKey" />
-        <marker scope="Private" name="V_revealed">Based on custom vocabulary; for use in-line in place of ~revealed~.</marker>
-        <marker scope="Private" name="V_revealed_uncountable">Boolean companion to V_revealed.</marker>
-        <marker scope="Private" name="V_seed">Mysterious mayhem makes you merry! Spin the wheel of fun!</marker>
-        <marker scope="Public" name="vanessa_boobily" />
+        <marker scope="Public" name="V_clothing" />
+        <marker scope="Public" name="V_clothing_uncountable" />
+        <marker scope="Public" name="V_customFirst" />
+        <marker scope="Public" name="V_customLast" />
+        <marker scope="Public" name="V_lineKey" />
+        <marker scope="Public" name="V_revealed" />
+        <marker scope="Public" name="V_revealed_uncountable" />
+        <marker scope="Public" name="V_seed" />
         <marker scope="Public" name="vanessa_booby" />
+        <marker scope="Public" name="velvet_brother" />
         <marker scope="Public" name="velvet_killMe" />
         <marker scope="Public" name="volleyball" />
         <marker scope="Public" name="wario_01" />
         <marker scope="Public" name="wellYouLost" />
         <marker scope="Public" name="whatKindaStrip" />
-        <marker scope="Public" name="wheresWallysWeapons">I spy with my little eye, something that could make you die!</marker>
-        <marker scope="Public" name="whydYouNameYourselfAnthrax">I wouldn't be caught dead with a name like that.</marker>
+        <marker scope="Public" name="wheresWallysWeapons" />
+        <marker scope="Public" name="whoseOC" />
+        <marker scope="Public" name="whydYouNameYourselfAnthrax" />
         <marker scope="Public" name="whySocks" />
         <marker scope="Public" name="wiki_intro" />
         <marker scope="Public" name="willBeStaring" />
         <marker scope="Public" name="wilyMachine_22" />
         <marker scope="Public" name="wilyMachine_23" />
-        <marker scope="Public" name="won7High">X times, she's remarked on having High Card 7 as her hand and winning anyway.</marker>
-        <marker scope="Public" name="wristsUp" />
+        <marker scope="Public" name="won7High" />
         <marker scope="Public" name="yae_compromised" />
-        <marker scope="Public" name="yae_fuqYouSay">Choose yaer next words very carefully.</marker>
+        <marker scope="Public" name="yae_fuqYouSay" />
         <marker scope="Public" name="yaeMiko_rA1" />
         <marker scope="Public" name="yaeMiko_rA2" />
-        <marker scope="Public" name="yagami_pseudonym">Changes ~kyoko_kirigiri.marker.V_customFirst~ to Yoko and ~kyoko_kirigiri.marker.V_customLast~ to Yadorigi with it. Detective Yadorigi is ready to hand Mr. Yagami an L.</marker>
+        <marker scope="Public" name="yagami_pseudonym" />
         <marker scope="Public" name="yan_innerDanger" />
         <marker scope="Public" name="yan_innerOpportunity" />
         <marker scope="Public" name="yan_knife" />
@@ -4537,16 +4511,20 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="yuno_erect" />
         <marker scope="Public" name="yuno_erectForfeit" />
         <marker scope="Public" name="yuno_erectNormal" />
-        <marker scope="Public" name="yuno_erectSamesies">OMG, we have, like, so much in common!</marker>
+        <marker scope="Public" name="yuno_erectSamesies" />
         <marker scope="Public" name="yuno_nyc" />
         <marker scope="Public" name="yuno_nyc_hontou" />
         <marker scope="Public" name="yuno_nyc_truly" />
-        <marker scope="Public" name="yuto">Dude has an infinite pastry hack and still can't hit a growth spurt.</marker>
+        <marker scope="Public" name="yuzuki_31" />
+        <marker scope="Public" name="yuzuki_32" />
+        <marker scope="Public" name="yuzuki_33" />
+        <marker scope="Public" name="yuzuki_whoYouAre" />
+        <marker scope="Public" name="yuzuki_whoYouAre2" />
         <marker scope="Public" name="zenobia_finished" />
         <marker scope="Public" name="zeroEscape" />
         <marker scope="Public" name="zlsHeadDrop1" />
         <marker scope="Public" name="zlsHeadDrop2" />
-        <marker scope="Public" name="zombieHeadDrops">X times, a targeted line for a zombie character's head falling off has played. We got at least three of those in this game!</marker>
+        <marker scope="Public" name="zombieHeadDrops" />
         <marker scope="Public" name="zp_coitusStart" />
         <marker scope="Public" name="zp_hsw_turters" />
     </markers>
@@ -4647,5 +4625,11 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <line>Reaction to Schezo name_origin: hibiki/sound/echo</line>
         <line>KARIN: Is that coat of any religious significance? It’ll help to know what group of fools you come from… And near all of them are content to worship their gods by wearing junk.</line>
         <line>KARIN: I’m not cut or bruised anywhere, am I? If you’re all so intent on ogling me, at least make it productive.</line>
+        <line>Magic wands? (ACTUAL wands not sex toys)</line>
+        <line>Hold off on entering heavy until after stripped? or first heavy strip reaction maybe (major+ only, less priority than to small penis right away)</line>
+        <line>Heavy reaction to opp orgasm</line>
+        <line>Aoi Asahina, never seen her masturbate before</line>
+        <line>Barnette/Nico Robin early cum</line>
+        <line>Reaction to Toshinou "main course"</line>
     </pendingLines>
 </metadata>
