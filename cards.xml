@@ -119,6 +119,26 @@
         <back id="1" src="img/cards/xmas/unknown.png" />
     </deck>
 
+    <deck id="english">
+        <title>English Pattern</title>
+        <subtitle>Standard faces suitable for larger displays.</subtitle>
+        <description>Modified from card images by Byron Knoll, released into the public domain and hosted at https://code.google.com/archive/p/vector-playing-cards/</description>
+        <credits>Byron Knoll, lil David</credits>
+        <front src="img/cards/englishDeck/%s%i.svg" />
+    </deck>
+
+    <deck id="english-contrast">
+        <title>High-Contrast English Pattern</title>
+        <subtitle>Standard faces. Blue clubs, orange diamonds, and color-coded face cards.</subtitle>
+        <description>Modified from card images by Byron Knoll, released into the public domain and hosted at https://code.google.com/archive/p/vector-playing-cards/</description>
+        <credits>Byron Knoll, lil David</credits>
+        <front src="img/cards/englishDeck/%s%i.svg" suit="spade" rank="1-10" />
+        <front src="img/cards/englishDeck/%s%i-alt.svg" suit="spade" rank="11-13" />
+        <front src="img/cards/englishDeck/%s%i.svg" suit="heart" />
+        <front src="img/cards/englishDeck/%s%i-alt.svg" suit="clubs" />
+        <front src="img/cards/englishDeck/%s%i-alt.svg" suit="diamo" />
+    </deck>
+
     <deck id="wordsalad">
         <title>Word Salad</title>
         <subtitle>Every card is a letter. A, J, Q, K are unchanged. Easiest to play with.</subtitle>
@@ -396,6 +416,7 @@
         <front src="img/cards/DDLC/%s%i.jpg" />
         <back id="1" src="img/cards/DDLC/back.jpg" />
     </deck>
+
     <deck id="yusei_deck">
         <title>Cuddles and Card Games</title>
         <subtitle>Friends and friends-of-friends</subtitle>
