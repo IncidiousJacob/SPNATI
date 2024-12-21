@@ -227,6 +227,8 @@ opponents/reskins/monika_love_bug/ contains images unused by any dialogue: 2-rem
 opponents/reskins/monika_stirring_mermaid/ is missing the following images: 0-admonish.png,0-jealous.png,0-angry.png,1-jealous.png,1-angry.png,1-admonish.png,2-jealous.png,2-angry.png,3-jealous.png,4-angry.png,4-admonish.png,7-jealous.png,7-angry.png,5-admonish.png,6-jealous.png,6-admonish.png,6-angry.png
 opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogue: 2-removed-glasses.png
 </note>
+        <note id="1650">the line this is responding needs its conditions fixed. it should be a stripped line and target a specific stage</note>
+        <note id="1651">the line this is responding needs its conditions fixed. it should target a specific stage, and maybe be moved to must strip</note>
     </notes>
     <labels>
         <label id="1147" label="FarawayVision" folder="Player Name" sort="0" />
@@ -375,7 +377,6 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1389" label="" color="4" folder="" sort="0" />
         <label id="1390" label="" color="4" folder="" sort="0" />
         <label id="1545" label="Bluejae" folder="Player Name" sort="12" />
-        <label id="1544" label="" color="4" folder="" sort="0" />
         <label id="1486" label="" color="4" folder="" sort="0" />
         <label id="1487" label="" color="3" folder="" sort="0" />
         <label id="1488" label="" color="3" folder="" sort="0" />
@@ -395,7 +396,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1501" label="blazer" folder="" sort="0" />
         <label id="1569" label="" color="4" folder="" sort="0" />
         <label id="1570" label="" color="4" folder="" sort="0" />
-        <label id="1575" label="" color="4" folder="" sort="0" />
+        <label id="1637" label="" color="4" folder="" sort="0" />
         <label id="1510" label="" color="4" folder="" sort="0" />
         <label id="1512" label="" color="4" folder="" sort="0" />
         <label id="1513" label="" color="4" folder="" sort="0" />
@@ -415,7 +416,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1540" label="Alias" folder="Player Name" sort="9" />
         <label id="1541" label="Salt" folder="Player Name" sort="10" />
         <label id="1542" label="Wrasp" folder="Player Name" sort="11" />
-        <label id="1543" label="" color="4" folder="" sort="0" />
+        <label id="1649" label="" color="4" folder="" sort="0" />
         <label id="1547" label="JustKidding" folder="Player Name" sort="14" />
         <label id="1548" label="Latke" folder="Player Name" sort="15" />
         <label id="1549" label="Zorc James" folder="Player Name" sort="16" />
@@ -430,14 +431,10 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1561" label="Daddy" folder="Player Name" sort="25" />
         <label id="1562" label="Kuroi" folder="Player Name" sort="26" />
         <label id="1563" label="Oppenheimer" folder="Player Name" sort="27" />
-        <label id="1565" label="" color="4" folder="" sort="0" />
-        <label id="1566" label="" color="4" folder="" sort="0" />
+        <label id="1636" label="" color="4" folder="" sort="0" />
         <label id="1568" label="" color="4" folder="" sort="0" />
-        <label id="1571" label="" color="4" folder="" sort="0" />
-        <label id="1572" label="" color="4" folder="" sort="0" />
-        <label id="1573" label="" color="4" folder="" sort="0" />
-        <label id="1574" label="" color="4" folder="" sort="0" />
-        <label id="1585" label="" color="4" folder="" sort="0" />
+        <label id="1639" label="" color="4" folder="" sort="0" />
+        <label id="1628" label="" color="4" folder="" sort="0" />
         <label id="1578" label="" color="4" folder="" sort="0" />
         <label id="1579" label="" color="4" folder="" sort="0" />
         <label id="1580" label="Old" folder="" sort="0" />
@@ -447,8 +444,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1584" label="" color="4" folder="" sort="0" />
         <label id="1586" label="Custom Javascript" folder="" sort="0" />
         <label id="1587" label="" color="4" folder="" sort="0" />
-        <label id="1588" label="" color="4" folder="" sort="0" />
-        <label id="1589" label="" color="4" folder="" sort="0" />
+        <label id="1629" label="" color="4" folder="" sort="0" />
         <label id="1590" label="" folder="Stirring Mermaid" sort="4" />
         <label id="1591" label="" folder="Stirring Mermaid" sort="5" />
         <label id="1592" label="" folder="Stirring Mermaid" sort="6" />
@@ -484,13 +480,24 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <label id="1622" label="Butt pose with Jean" color="10" folder="" sort="0" />
         <label id="1623" label="Butt pose with Yae Miko, Yuri, Jean" folder="" sort="0" />
         <label id="1624" label="Butt pose with Yae Miko, Yuri, Jean" folder="" sort="0" />
+        <label id="1625" label="" color="4" folder="" sort="0" />
+        <label id="1626" label="" color="4" folder="" sort="0" />
+        <label id="1627" label="" color="4" folder="" sort="0" />
+        <label id="1630" label="" color="4" folder="" sort="0" />
+        <label id="1631" label="" color="4" folder="" sort="0" />
+        <label id="1632" label="" color="4" folder="" sort="0" />
+        <label id="1633" label="" color="4" folder="" sort="0" />
+        <label id="1634" label="" color="4" folder="" sort="0" />
+        <label id="1635" label="" color="4" folder="" sort="0" />
+        <label id="1638" label="" color="4" folder="" sort="0" />
+        <label id="1648" label="" color="4" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>blazer</prefix>
         <prefix>poem-1</prefix>
         <prefix>monika_skirtlift</prefix>
     </prefixes>
-    <nextId>1624</nextId>
+    <nextId>1651</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="3_musician_table_reaction" />
@@ -585,7 +592,9 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="basil_gardening" />
         <marker scope="Public" name="basil_mysteries" />
         <marker scope="Public" name="blake_belladonna_selfDetermination" />
+        <marker scope="Public" name="blake_belladonna_selfDetermination2" />
         <marker scope="Public" name="blake_resp_bothLikeReading" />
+        <marker scope="Public" name="blake_resp_bothLikeReading2" />
         <marker scope="Public" name="bobobo_2ndUnderwear" />
         <marker scope="Public" name="bobobo_3rdUnderwear" />
         <marker scope="Public" name="bobobo_donPatchArrives" />
@@ -733,6 +742,8 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="fluttershy_resp_lit_club_question2" />
         <marker scope="Public" name="fluttershy_yuri" />
         <marker scope="Public" name="frisk_resp_power" />
+        <marker scope="Public" name="glamrock_chica_guitarPiano1" />
+        <marker scope="Public" name="glamrock_chica_resp_coding1" />
         <marker scope="Public" name="glitched">Monika has glitched a round of gameplay. This includes the current round and any previous rounds.</marker>
         <marker scope="Public" name="glitch-type-corrupt">Someone in the round is being affected by the 'corruption' glitch, causing their dialogue to be corrupted either with 'zalgotext' characters or by making their dialogue text overflow the speech bubble boundaries.</marker>
         <marker scope="Public" name="glitch-type-delete">Someone in the round is being affected by the 'deletion' glitch, causing their character sprite to be replaced by glitch blocks, replacing their character label with glitch characters, and partially corrupting their dialogue.</marker>
@@ -932,6 +943,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="mari_setogaya_menQualities" />
         <marker scope="Public" name="mari_setogaya_menQualities2" />
         <marker scope="Public" name="mari_setogaya_menQualities3" />
+        <marker scope="Public" name="mari_setogaya_resp_allGirlsClub" />
         <marker scope="Public" name="mari_setogaya_resp_DateWhoops" />
         <marker scope="Public" name="mari_setogaya_resp_DateWhoops2" />
         <marker scope="Public" name="mari_setogaya_resp_DateWhoops3" />
@@ -942,10 +954,12 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="mari_setogaya_resp_FemPlayerComeHereTogether2" />
         <marker scope="Public" name="mari_setogaya_resp_FemPlayerComeHereTogether3" />
         <marker scope="Public" name="mari_setogaya_resp_Monika_FemPlayerComeHereTogether" />
+        <marker scope="Public" name="mari_setogaya_resp_playerOnlyGuyClub" />
         <marker scope="Public" name="mari_setogaya_resp_susVibes_question" />
         <marker scope="Public" name="mari_setogaya_resp_susVibes_question2" />
         <marker scope="Public" name="mari_setogaya_resp_susVibes_question3" />
         <marker scope="Public" name="mari_setogaya_succubusPower" />
+        <marker scope="Public" name="mari_setogaya_succubusPower2" />
         <marker scope="Public" name="mari_setogaya_wing_reveal" />
         <marker scope="Public" name="mari_studyField" />
         <marker scope="Public" name="mari_studyField2" />
@@ -954,6 +968,8 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="maria_resp_playerCozy3" />
         <marker scope="Public" name="maria_sadismJoke" />
         <marker scope="Public" name="maria_sadismJoke2" />
+        <marker scope="Public" name="maria_sadismJoke3" />
+        <marker scope="Public" name="may_resp_blazer_vanished" />
         <marker scope="Public" name="meia_01" />
         <marker scope="Public" name="meia_2" />
         <marker scope="Public" name="meia_23" />
@@ -1013,10 +1029,13 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="miko_eternalCelestial2" />
         <marker scope="Public" name="miko_eternalCelestial3" />
         <marker scope="Public" name="miko_gensokyoPlan" />
+        <marker scope="Public" name="miko_gensokyoPlan2" />
         <marker scope="Public" name="miko_position" />
         <marker scope="Public" name="miko_position2" />
         <marker scope="Public" name="miko_position3" />
         <marker scope="Public" name="miko_resp_careerPlans" />
+        <marker scope="Public" name="miko_resp_careerPlans2" />
+        <marker scope="Public" name="miko_resp_careerPlans3" />
         <marker scope="Public" name="miko_resp_innerDesires" />
         <marker scope="Public" name="miko_resp_innerDesires2" />
         <marker scope="Public" name="miko_resp_innerDesires3" />
@@ -1180,12 +1199,20 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="realization_3b" />
         <marker scope="Public" name="realization-1" />
         <marker scope="Public" name="RealName">Stores your "real name", which is the last name you used that Monika liked. If you've never used a name she approved of, "Player" will be stored here.</marker>
+        <marker scope="Public" name="reimu_getRichQuick" />
+        <marker scope="Public" name="reimu_getRichQuick2" />
+        <marker scope="Public" name="reimu_getRichQuick3" />
         <marker scope="Public" name="reimu_greatHakuraiBarrier" />
         <marker scope="Public" name="reimu_greatHakuraiBarrier2" />
+        <marker scope="Public" name="reimu_greatHakuraiBarrier3" />
         <marker scope="Public" name="reimu_purpleHair" />
         <marker scope="Public" name="reimu_purpleHair2" />
         <marker scope="Public" name="reimu_purpleHair3" />
+        <marker scope="Public" name="reimu_resp_chuuni" />
+        <marker scope="Public" name="reimu_resp_chuuni2" />
         <marker scope="Public" name="reimu_resp_murderMysteries" />
+        <marker scope="Public" name="reimu_resp_murderMysteries2" />
+        <marker scope="Public" name="reimu_resp_murderMysteries3" />
         <marker scope="Public" name="reimu_resp_troublemaking" />
         <marker scope="Public" name="reimu_resp_troublemaking2" />
         <marker scope="Public" name="reimu_resp_troublemaking3" />
@@ -1418,7 +1445,9 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="rosa_resp_rosasHS2" />
         <marker scope="Public" name="rosa_resp_rosasHS3" />
         <marker scope="Public" name="rose_emeraldJewelry" />
+        <marker scope="Public" name="rose_emeraldJewelry2" />
         <marker scope="Public" name="rose_resp_leadership1" />
+        <marker scope="Public" name="rose_resp_leadership2" />
         <marker scope="Public" name="rouge_resp_favorite_jewel" />
         <marker scope="Public" name="rouge_resp_shadow_hobbies" />
         <marker scope="Public" name="round-glitched">Monika is glitching the current round of gameplay. This is set and unset at the very beginning of each round, before anyone speaks.</marker>
@@ -1444,6 +1473,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="samus_greatestWarrior2" />
         <marker scope="Public" name="samus_greatestWarrior3" />
         <marker scope="Public" name="samus_impossibleSituations" />
+        <marker scope="Public" name="samus_impossibleSituations2" />
         <marker scope="Public" name="samus_resp_playerClose" />
         <marker scope="Public" name="samus_resp_playerClose2" />
         <marker scope="Public" name="samus_resp_playerClose3" />
@@ -1478,6 +1508,9 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="stocking_baking_natsuki" />
         <marker scope="Public" name="stocking_baking_natsuki2" />
         <marker scope="Public" name="stocking_baking2" />
+        <marker scope="Public" name="stocking_resp_cupcakes" />
+        <marker scope="Public" name="stocking_resp_mon_ika" />
+        <marker scope="Public" name="stocking_resp_surfing" />
         <marker scope="Public" name="streamingchan_kink_resp" />
         <marker scope="Public" name="streamingchan_linecount_resp" />
         <marker scope="Public" name="streamingchan_partner_resp" />
@@ -1489,6 +1522,7 @@ opponents/reskins/monika_stirring_mermaid/ contains images unused by any dialogu
         <marker scope="Public" name="sucrose_shyLikeYuri3" />
         <marker scope="Public" name="supernova_killtosavetheworld_resp" />
         <marker scope="Public" name="supernova_SheWhoFightsMonsters" />
+        <marker scope="Public" name="supernova_SheWhoFightsMonsters2" />
         <marker scope="Public" name="suzuya_hairContrast" />
         <marker scope="Public" name="suzuya_hairContrast2" />
         <marker scope="Public" name="suzuya_resp_prompt_bloodtypes" />
