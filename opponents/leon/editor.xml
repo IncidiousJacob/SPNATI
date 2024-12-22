@@ -570,6 +570,11 @@
         <response id="1662" opponent="leviathan" opponentId="168" />
         <response id="1664" opponent="karin" opponentId="166" />
         <response id="1665" opponent="karin" opponentId="167" />
+        <response id="1666" opponent="darkness" opponentId="1385" />
+        <response id="1668" opponent="darkness" opponentId="1384" />
+        <response id="1669" opponent="darkness" opponentId="1386" />
+        <response id="1672" opponent="leviathan" opponentId="213" />
+        <response id="1673" opponent="leviathan" opponentId="212" />
     </responses>
     <notes>
         <note id="48">Grants the DbD tag. </note>
@@ -1690,17 +1695,16 @@
         <label id="1633" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1634" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1635" label="Proposition for Leviathan" folder="" sort="0" />
-        <label id="1659" label="" color="1" folder="" sort="0" />
-        <label id="1660" label="" color="1" folder="" sort="0" />
-        <label id="1656" label="" color="1" folder="" sort="0" />
-        <label id="1658" label="" color="1" folder="" sort="0" />
-        <label id="1657" label="" color="1" folder="" sort="0" />
+        <label id="1666" label="" color="1" folder="" sort="0" />
+        <label id="1668" label="" color="1" folder="" sort="0" />
+        <label id="1667" label="" color="1" folder="" sort="0" />
         <label id="1641" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1642" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1663" label="" color="1" folder="" sort="0" />
         <label id="1662" label="" color="1" folder="" sort="0" />
+        <label id="1669" label="" color="1" folder="" sort="0" />
     </labels>
-    <nextId>1665</nextId>
+    <nextId>1673</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -1981,6 +1985,9 @@
         <marker scope="Public" name="darkness_leon31a" />
         <marker scope="Public" name="darkness_leon31b" />
         <marker scope="Public" name="darkness_leon31c" />
+        <marker scope="Public" name="darkness_leon32a" />
+        <marker scope="Public" name="darkness_leon32b" />
+        <marker scope="Public" name="darkness_leon32c" />
         <marker scope="Public" name="darkness01a" />
         <marker scope="Public" name="darkness01b" />
         <marker scope="Public" name="darkness01c" />
@@ -2198,6 +2205,7 @@
         <marker scope="Public" name="leon_darkness41b" />
         <marker scope="Public" name="leon_darkness42a" />
         <marker scope="Public" name="leon_darkness42b" />
+        <marker scope="Public" name="leon_darkness43b" />
         <marker scope="Public" name="leon_date" />
         <marker scope="Public" name="leon_dual_finished" />
         <marker scope="Public" name="leon_dual_finishing" />
@@ -2266,11 +2274,32 @@
         <marker scope="Public" name="leon_levff21" />
         <marker scope="Public" name="leon_levff3" />
         <marker scope="Public" name="leon_levff4" />
+        <marker scope="Public" name="leon_levFF4" />
         <marker scope="Public" name="leon_levff5" />
         <marker scope="Public" name="leon_levff6" />
         <marker scope="Public" name="leon_levff7" />
         <marker scope="Public" name="leon_levff8" />
         <marker scope="Public" name="leon_levff9" />
+        <marker scope="Public" name="leon_levFFH1" />
+        <marker scope="Public" name="leon_levFFH10" />
+        <marker scope="Public" name="leon_levFFH11" />
+        <marker scope="Public" name="leon_levFFH12" />
+        <marker scope="Public" name="leon_levFFH13" />
+        <marker scope="Public" name="leon_levFFH14" />
+        <marker scope="Public" name="leon_levFFH15" />
+        <marker scope="Public" name="leon_levFFH16" />
+        <marker scope="Public" name="leon_levFFH17" />
+        <marker scope="Public" name="leon_levFFH18" />
+        <marker scope="Public" name="leon_levFFH19" />
+        <marker scope="Public" name="leon_levFFH2" />
+        <marker scope="Public" name="leon_levFFH20" />
+        <marker scope="Public" name="leon_levFFH21" />
+        <marker scope="Public" name="leon_levFFH3" />
+        <marker scope="Public" name="leon_levFFH5" />
+        <marker scope="Public" name="leon_levFFH6" />
+        <marker scope="Public" name="leon_levFFH7" />
+        <marker scope="Public" name="leon_levFFH8" />
+        <marker scope="Public" name="leon_levFFH9" />
         <marker scope="Public" name="leon_leviathan34a" />
         <marker scope="Public" name="leon_leviathan44a" />
         <marker scope="Public" name="leon_missions" />
@@ -2278,6 +2307,7 @@
         <marker scope="Public" name="leon_noire41" />
         <marker scope="Public" name="leon_nononFF_continue" />
         <marker scope="Public" name="leon_nononFF_mast" />
+        <marker scope="Public" name="leon_resp5_3" />
         <marker scope="Public" name="leon_robinFF" />
         <marker scope="Public" name="leon_shamiko01" />
         <marker scope="Public" name="leon_shamiko02" />
@@ -2501,8 +2531,10 @@
         <marker scope="Public" name="lev_leon13" />
         <marker scope="Public" name="lev_leon21" />
         <marker scope="Public" name="lev_leon22" />
+        <marker scope="Public" name="lev_leon23" />
         <marker scope="Public" name="lev_leon31" />
         <marker scope="Public" name="lev_leon32" />
+        <marker scope="Public" name="lev_leon33" />
         <marker scope="Public" name="lux01" />
         <marker scope="Public" name="lux02" />
         <marker scope="Public" name="lux03" />
