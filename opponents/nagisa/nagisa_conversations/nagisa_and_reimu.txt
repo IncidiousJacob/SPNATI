@@ -62,7 +62,7 @@ Reimu [NagisaSkirt1B]: Don't worry, Nagisa. It's true I've only ever worn bloome
 
 NAGISA STRIPPING SKIRT (major):
 Nagisa [nagisa_reimu_nr_n14]: J-Just because you meet a girl doesn't necessarily mean she's going to show you her underwear. Unless... well, I seem to find it more difficult to make friends than most girls do. T-They... they wouldn't... would they?
-Reimu [NagisaSkirt2B]: What kind of friends do you think I'm making? When we go to the hotsprings, we all get undressed in the changing room, right? 
+Reimu [NagisaSkirt2B]: What kind of friends do you think I'm making? When we go to the hot springs, we all get undressed in the changing room, right? 
 
 NAGISA STRIPPED SKIRT (major):
 Nagisa [nagisa_reimu_nr_n15]: So I'm not being weird. This is just a changing room. Except ~background.if.indoors(we're playing poker|it's not a room)~ and ~background.if.exhibition(I don't even know how many people are watching|I'm the center of attention)~... So... just a little weird.
@@ -115,7 +115,7 @@ Reimu [NagisaSocks1B_resp]: Prefecture? Um, I wouldn't know. It's sealed off fro
 
 REIMU STRIPPING SOCKS (minor):
 Nagisa [nagisa_reimu_nr_r5]: Oh, I hope you can find your way home then. If we can find a personal computer later, maybe we can print you some directions from MapQuest.
-Reimu [NagisaSocks2B_resp]: You don't need to draw a map, Nagisa. The border is controlled by this gap hag named Yukari. I pestered her into bringing me, and she’ll take me back after the game. I'm… not actually sure where "here" is.
+Reimu [NagisaSocks2B_resp]: You don't need to draw a map, Nagisa. The border is controlled by this gap hag named Yukari. I pestered her into bringing me, and she'll take me back after the game. I'm… not actually sure where "here" is.
 
 REIMU STRIPPED SOCKS (minor):
 Nagisa [nagisa_reimu_nr_r6]: I don't have the address, but I'm pretty sure they call this place the... um.... ~background.term~?
@@ -197,7 +197,7 @@ DUE TO POSITION DETECTION, CONVERSATIONS ABOVE AND BELOW THIS LINE WON'T PLAY IN
 If Reimu to left and Nagisa to right:
 
 NAGISA MUST STRIP SHOES:
-Reimu [NagisaShoes1A]: Nagisa, you're so bright and cheerful. Too bright and cheerful. People only act like that when they’re up to some trickery, so spit it out.
+Reimu [NagisaShoes1A]: Nagisa, you're so bright and cheerful. Too bright and cheerful. People only act like that when they're up to some trickery, so spit it out.
 Nagisa [nagisa_reimu_rn_n1]: I'm not up to anything, I swear! I'm not in the wrong place, am I? I was told this group welcomed inexperienced players like me...
 
 NAGISA STRIPPING SHOES (accessory):
@@ -210,6 +210,7 @@ Nagisa [nagisa_reimu_rn_n3]: I wonder who's going to be assigned to be my partne
 
 
 NAGISA MUST STRIP SOCKS: (conditional on previous case) Sanako chimes in if present
+Sanako [sanako_nagisa_reimu_srn_n4]: Here's our precious girl, back for a second helping.
 Reimu [NagisaSocks1A]: Say, Nagisa… it sounded earlier like you didn't care about <i>who</i> you married. Are you really so unparticular about love?
 Sanako [sanako_nagisa_reimu_rsn_n4] if between Reimu and Nagisa: I'm curious about that too, Nagisa. You wouldn't just rush into marriage with the first ~player.ifMale(boy|person)~ that came along, would you?
 Nagisa [nagisa_reimu_rn_n4]: I'm sorry, but that's not true, Reimu. If someone asked me to marry them, I'd take it very seriously, and I might even say no. If anyone ever wanted to marry a girl like me, that is...
@@ -328,17 +329,25 @@ Nagisa [nagisa_reimu_rn_r6]: Who, me? I-I don't think I'm the right girl for you
 
 
 REIMU MUST STRIP SHIRT: Sanako only chimes in if present
+Sanako [sanako_reimu_nagisa_srn_r7]: We're back to visit you for just a bit, missy.
 Reimu [NagisaShirt1A_resp]: I should take off something impressive to <i>really</i> catch your eyes. Be sure to praise me a lot for this!
+Sanako [sanako_reimu_nagisa_rsn_r7]: She's a master at building our anticipation; I'll give her that.
 Nagisa [nagisa_reimu_rn_r7]: Of course, Reimu! Getting praised for doing hard things is something everybody appreciates.
+Sanako [sanako_reimu_nagisa_rns_r7]: Let's see what she has in mind first, just in case she's planning to continue teasing us instead.
 
-REIMU STRIPPING SHIRT (major):
+REIMU STRIPPING SHIRT: Sanako only chimes in if present
+Sanako [sanako_reimu_nagisa_srn_r8]: I'm sure we'll appreciate whatever you're ready to let go of.
 Reimu [NagisaShirt2A_resp]: I wish people in Gensokyo recognized my efforts. All everyone does is criticize or lecture me. That's why I need a cute wife who will compliment me.
+Sanako [sanako_reimu_nagisa_rsn_r8]: Lecturing is one of a wife's most important duties.
 Nagisa [nagisa_reimu_rn_r8]: My mom says you shouldn't get married to try to fix your problems. Otherwise you'll just bring your problems with you. You have to work on yourself first before you're ready to support someone else.
 Sanako [sanako_nagisa_reimu_rn_r8]: Your mom sounds like a smart lady. I'm glad you've been listening to her.
 
-REIMU STRIPPED SHIRT (major):
+REIMU STRIPPED SHIRT: Sanako only chimes in if present
+Sanako [sanako_reimu_nagisa_srn_r9]: It seems like the common denominator here is maybe a bit of a need for some self improvement.
 Reimu [NagisaShirt3A_resp]: I don't have any problems. It's everyone else who is unreasonable in their expectations, or who causes trouble for me. <i>You'd</i> never cause an incident or make me train, would you Nagisa?
+Sanako [sanako_reimu_nagisa_rsn_r9]: I have a feeling we're only hearing one side of the story.
 Nagisa [nagisa_reimu_rn_r9]: Me? I don't think you can change a person. You just have to love them for who they are.
+Sanako [sanako_reimu_nagisa_rns_r9]: You can still encourage them to improve themselves. But they have to want it too.
 
 
 REIMU MUST STRIP SKIRT:
