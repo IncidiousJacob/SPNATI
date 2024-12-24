@@ -9,7 +9,9 @@ February 29, 2024 - Following a discussion between Kyoko’s writer and one of h
 March 10, 2024 - Kyoko receives a sixth sponsorship.
 May 8, 2024 - Kyoko Kirigiri reaches 2,000 lines.
 May 23, 2024 - At 2,154 lines, Kyoko Kirigiri’s last update before Mod QA is submitted.
-June 6, 2024 - At 2,172 lines, Kyoko Kirigiri completes Mod QA with minimal changes needed and kyoko_kirigiri is added to the Main Roster as the 303rd release, 282 releases later than the original version of Kyoko.
+June 2, 2024 - At 2,172 lines, Kyoko Kirigiri completes Mod QA with minimal changes needed and kyoko_kirigiri is added to the Main Roster as the 303rd release, 282 releases later than the original version of Kyoko.
+December 10, 2024 - Kiki Retzorg reaches out to Poloshroom and Critfinyti about becoming “Interim Writers” for Kyoko for a 3-month period.
+December 24, 2024 - Control of Kyoko’s writing is handed to Poloshroom and Critfinyti, making them the first additional collaborators on the character’s writing. Kiki Retzorg takes a leave of absence from SPNatI.
 
 SPECIAL THANKS
 PurpleKuroi, for being a phenomenal artist, an absolute joy to work with, and honestly for making this whole project remotely possible
@@ -24,6 +26,7 @@ ThisIsMySinAlias for doing the posing on Sly Cooper, whose coding I copied becau
 DonOuttaDan and Critfinyti, for being the pioneers of writing Ms. Kirigiri as a Strip Poker Night character
 Everyone who wrote a sponsorship for Kyoko
 Every other writer and artist for Danganronpa characters in Strip Poker Night, for being my inspiration to make my contribution to the list
+Poloshroom and Critfinyti again, for being the Near and Mello to my L
 The writers and artists of all the characters Kyoko targets, and those of all the characters who target her or will target her in the future
 All the rest of the SPNatI community, for contributing to one of the most positive, supportive, and helpful creative communities I have ever had the pleasure of being part of, for a pornographic game of all things
 A friend of mine whom I will avoid naming for her sake, who graciously answered my questions about detective work as the family member of someone in the business
