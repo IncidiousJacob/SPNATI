@@ -104,6 +104,7 @@ function unescapeHTML(in_text) {
 function Collectible(xmlElem, player) {
     this.id = xmlElem.attr('id');
     this.status = xmlElem.attr('status');
+    this.set = xmlElem.children('set').text() || undefined;
     this.title = unescapeHTML(xmlElem.children('title').text());
     this.subtitle = unescapeHTML(xmlElem.children('subtitle').text());
     this.unlock_hint = unescapeHTML(xmlElem.children('unlock').text());
@@ -219,7 +220,7 @@ Collectible.prototype.display = function () {
         offlineIndicator = "[Offline] ";
     }
     
-    if ((!this.detailsHidden && !this.hidden) || this.isUnlocked()) {
+    if ((!this.detailsHidden && !this.isHidden()) || this.isUnlocked()) {
         $collectibleTitle.html(offlineIndicator + this.title);
         $collectibleSubtitle.html(this.subtitle).show();
     } else {
@@ -308,12 +309,20 @@ function collectibleNextImage() {
 }
 
 
+Collectible.prototype.isHidden = function () {
+    if (this.hidden) return true;
+    if (this.set !== undefined) {
+        return !(alternateCostumeSets['all'] || alternateCostumeSets[this.set]);
+    }
+    return false;
+}
+
 Collectible.prototype.listElement = function () {
     if (this.status && !includedOpponentStatuses[this.status]) {
         return null;
     }
     
-    if (this.hidden && !this.isUnlocked()) {
+    if (this.isHidden() && !this.isUnlocked()) {
         return null;
     }
     
