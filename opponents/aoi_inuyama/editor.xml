@@ -52,7 +52,19 @@
         <response id="101" opponent="aoi_asahina" opponentId="702" />
         <response id="102" opponent="aoi_asahina" opponentId="703" />
         <response id="103" opponent="darkness" opponentId="1442" />
+        <response id="107" opponent="aoi_asahina" opponentId="707" />
+        <response id="108" opponent="aoi_asahina" opponentId="708" />
+        <response id="110" opponent="aoi_asahina" opponentId="709" />
+        <response id="111" opponent="aoi_asahina" opponentId="711" />
+        <response id="112" opponent="chiaki" opponentId="734" />
+        <response id="113" opponent="aoi_asahina" opponentId="717" />
+        <response id="120" opponent="meia" opponentId="2471" />
+        <response id="121" opponent="meia" opponentId="2474" />
+        <response id="124" opponent="jura" opponentId="2346" />
     </responses>
+    <notes>
+        <note id="122">Inuyama is not in the Mie region.</note>
+    </notes>
     <labels>
         <label id="1" label="" folder="Bobobo Non-conversationals" sort="0" />
         <label id="2" label="" folder="Bobobo Non-conversationals" sort="0" />
@@ -78,22 +90,18 @@
         <label id="36" label="" color="15" folder="" sort="0" />
         <label id="37" label="" color="15" folder="" sort="0" />
         <label id="38" label="" color="15" folder="" sort="0" />
-        <label id="96" label="" color="15" folder="" sort="0" />
-        <label id="90" label="" color="15" folder="" sort="0" />
-        <label id="99" label="" color="15" folder="" sort="0" />
-        <label id="98" label="" color="15" folder="" sort="0" />
-        <label id="100" label="" color="15" folder="" sort="0" />
-        <label id="95" label="" color="15" folder="" sort="0" />
-        <label id="91" label="" color="15" folder="" sort="0" />
-        <label id="92" label="" color="15" folder="" sort="0" />
-        <label id="93" label="" color="15" folder="" sort="0" />
-        <label id="94" label="" color="15" folder="" sort="0" />
-        <label id="97" label="" color="15" folder="" sort="0" />
+        <label id="123" label="" color="15" folder="" sort="0" />
+        <label id="119" label="" color="15" folder="" sort="0" />
+        <label id="124" label="" color="15" folder="" sort="0" />
+        <label id="109" label="" color="15" folder="" sort="0" />
+        <label id="115" label="" color="15" folder="" sort="0" />
+        <label id="118" label="" color="15" folder="" sort="0" />
+        <label id="125" label="" color="15" folder="" sort="0" />
         <label id="104" label="" color="15" folder="" sort="0" />
         <label id="105" label="" color="15" folder="" sort="0" />
         <label id="106" label="" color="15" folder="" sort="0" />
     </labels>
-    <nextId>106</nextId>
+    <nextId>125</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_loss" />
@@ -106,11 +114,16 @@
         <marker scope="Public" name="aoi_resp0b_3" />
         <marker scope="Public" name="aoi_resp1_1" />
         <marker scope="Public" name="aoi_resp1_2" />
+        <marker scope="Public" name="aoi_resp1_3" />
         <marker scope="Public" name="aoi_resp2_1" />
         <marker scope="Public" name="aoi_resp2_2" />
+        <marker scope="Public" name="aoi_resp2_3" />
         <marker scope="Public" name="aoi_resp6_1" />
         <marker scope="Public" name="aoi_resp6_2" />
+        <marker scope="Public" name="aoi_resp6_3" />
+        <marker scope="Public" name="aoi_resp6_3t" />
         <marker scope="Public" name="Aoi_s0_1" />
+        <marker scope="Public" name="Aoi_s0_2" />
         <marker scope="Public" name="aoi_showdown" />
         <marker scope="Public" name="aoi_start" />
         <marker scope="Public" name="aoi_upperhand" />
@@ -132,8 +145,11 @@
         <marker scope="Public" name="Aruesshalae_s0_1" />
         <marker scope="Public" name="binah_resp0_1" />
         <marker scope="Public" name="binah_resp0_2" />
+        <marker scope="Public" name="binah_resp0_3" />
         <marker scope="Public" name="Binah_s0_1" />
         <marker scope="Public" name="Binah_s0_2" />
+        <marker scope="Public" name="Binah_s0_3" />
+        <marker scope="Public" name="Binah_s1_1" />
         <marker scope="Public" name="bobobo_resp_friendlyfire" />
         <marker scope="Public" name="Bobobo_s0_1" />
         <marker scope="Public" name="Bobobo_s1_1" />
@@ -187,20 +203,28 @@
         <marker scope="Public" name="Carmine_s5_1" />
         <marker scope="Public" name="Carmine_s5_2" />
         <marker scope="Public" name="Carmine_s5_3" />
+        <marker scope="Public" name="chiaki_resp0_1" />
         <marker scope="Public" name="darkness_resph_breb" />
         <marker scope="Public" name="Jean_s0_1" />
         <marker scope="Public" name="jura_resp0_1" />
+        <marker scope="Public" name="jura_resp0_2" />
         <marker scope="Public" name="Jura_s0_1" />
         <marker scope="Public" name="Jura_s0_2" />
+        <marker scope="Public" name="Jura_s0_3" />
+        <marker scope="Public" name="Jura_s1_1" />
         <marker scope="Public" name="megumin_resp0_1" />
         <marker scope="Public" name="megumin_resp1_1" />
         <marker scope="Public" name="megumin_resph_brebs" />
         <marker scope="Public" name="Megumin_s0_1" />
         <marker scope="Public" name="meia_resp0_1" />
         <marker scope="Public" name="meia_resp0_2" />
+        <marker scope="Public" name="meia_resp0_3" />
+        <marker scope="Public" name="meia_resp2_1" />
         <marker scope="Public" name="Meia_s0_1" />
         <marker scope="Public" name="Meia_s0_2" />
+        <marker scope="Public" name="Meia_s0_3" />
         <marker scope="Public" name="Meia_s1_1" />
+        <marker scope="Public" name="Meia_s1_2" />
         <marker scope="Public" name="Nadeshiko_MutualLoss" />
         <marker scope="Public" name="nadeshiko_resp_afterwards1" />
         <marker scope="Public" name="nadeshiko_resp_afterwards2" />
@@ -270,6 +294,7 @@
         <marker scope="Public" name="NadeYusei_s6" />
         <marker scope="Public" name="NadeYusei_s7" />
         <marker scope="Public" name="Senko_s0_1" />
+        <marker scope="Public" name="serena_carmine_s1" />
         <marker scope="Public" name="Toph_s0_1" />
         <marker scope="Public" name="Velvet_s0_1" />
         <marker scope="Public" name="Wingman_NY0" />
@@ -294,6 +319,8 @@
         <marker scope="Public" name="YuseiNade_ACK" />
         <marker scope="Public" name="YuseiNade_s7" />
         <marker scope="Public" name="YuseiNade_s8" />
+        <marker scope="Public" name="yuzuki_resp0_1" />
+        <marker scope="Public" name="Yuzuki_s0_1" />
     </markers>
     <recipes>
         <recipe key="a1a9dd86-eb52-4983-9ac7-ed361b7e463f">
