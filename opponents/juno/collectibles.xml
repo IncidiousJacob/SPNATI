@@ -1,7 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="JUNO_helmet" status="unlisted">
-        <title>New Collectible</title>
-        <text>Juno's helmet but with a kissmark</text>
+    <collectible id="juno_helmet" status="online" img="opponents/juno/n-helmetblank.png" thumbnail="opponents/juno/n-helmetblank.png">
+        <title>Juno's Helmet</title>
+        <text>Take a moment to breathe!</text>
+        <unlock>Win in a game vs. Juno.</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/juno/n-helmetblank.png" name="Red Promise Helmet" generic="helmet" position="head" type="extra" />
     </collectible>
 </collectibles>
