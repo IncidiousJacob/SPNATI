@@ -122,6 +122,10 @@
         <response id="625" opponent="aoi_inuyama" opponentId="41" />
         <response id="656" opponent="jura" opponentId="2218" />
         <response id="657" opponent="jura" opponentId="2217" />
+        <response id="688" opponent="juno" opponentId="496" />
+        <response id="689" opponent="juno" opponentId="497" />
+        <response id="691" opponent="juno" opponentId="495" />
+        <response id="696" opponent="juno" opponentId="498" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -766,7 +770,7 @@
         <label id="626" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
         <label id="627" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
         <label id="628" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
-        <label id="629" label="" folder="Targets&gt;Juno" sort="0" />
+        <label id="629" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="630" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="631" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="632" label="" color="3" folder="Targets&gt;Juno" sort="0" />
@@ -814,21 +818,34 @@
         <label id="674" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="675" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="676" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
-        <label id="677" label="" folder="Targets&gt;Juno" sort="0" />
-        <label id="678" label="" folder="Targets&gt;Juno" sort="0" />
-        <label id="679" label="" folder="Targets&gt;Juno" sort="0" />
-        <label id="681" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="682" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="683" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="684" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="677" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="678" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="679" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="681" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="682" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="683" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="684" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="685" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
         <label id="686" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
+        <label id="687" label="" folder="Targets&gt;Juno" sort="0" />
+        <label id="690" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="691" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="692" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="693" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="694" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="695" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="696" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="697" label="" color="6" folder="Targets&gt;Juno" sort="0" />
+        <label id="680" label="" color="3" folder="" sort="0" />
+        <label id="698" label="" color="3" folder="" sort="0" />
+        <label id="699" label="" color="6" folder="Targets&gt;Juno" sort="0" />
     </labels>
     <prefixes>
         <prefix>x_</prefix>
     </prefixes>
-    <nextId>686</nextId>
+    <nextId>699</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
         <marker scope="Public" name="aoi_returns_swim" />
         <marker scope="Public" name="Aoi_Wingman_YN3" />
@@ -861,6 +878,10 @@
         <marker scope="Public" name="jacket_wrgp" />
         <marker scope="Public" name="Jim_future01Resp" />
         <marker scope="Public" name="juno_hairfix" />
+        <marker scope="Public" name="juno_yusei_cardsResp" />
+        <marker scope="Public" name="juno_yusei_lawResp" />
+        <marker scope="Public" name="juno_yusei_partnerResp" />
+        <marker scope="Public" name="juno_yusei_partnerResp2" />
         <marker scope="Public" name="jura_birthday" />
         <marker scope="Public" name="jura_mustMast" />
         <marker scope="Public" name="kirigiri_glovesOn" />
@@ -996,6 +1017,7 @@
         <marker scope="Public" name="yusei_jean_self0a_dice" />
         <marker scope="Public" name="yusei_jean_strip0a" />
         <marker scope="Public" name="yusei_jean_strip0b" />
+        <marker scope="Public" name="yusei_juno_jumpsuitComment" />
         <marker scope="Public" name="yusei_juno_self0a_helmet" />
         <marker scope="Public" name="yusei_juno_self0b_helmet" />
         <marker scope="Public" name="yusei_juno_self1a" />
@@ -1008,10 +1030,15 @@
         <marker scope="Public" name="yusei_juno_self2c" />
         <marker scope="Public" name="yusei_juno_self3a" />
         <marker scope="Public" name="yusei_juno_self3b" />
+        <marker scope="Public" name="yusei_juno_self3c" />
         <marker scope="Public" name="yusei_juno_self4a" />
         <marker scope="Public" name="yusei_juno_self4b" />
         <marker scope="Public" name="yusei_juno_self4c" />
         <marker scope="Public" name="yusei_juno_self5a" />
+        <marker scope="Public" name="yusei_juno_self5b" />
+        <marker scope="Public" name="yusei_juno_self6a" />
+        <marker scope="Public" name="yusei_juno_self6b" />
+        <marker scope="Public" name="yusei_juno_self7a" />
         <marker scope="Public" name="yusei_juno_strip0a" />
         <marker scope="Public" name="yusei_juno_strip0b" />
         <marker scope="Public" name="yusei_juno_strip0c" />
@@ -1027,10 +1054,14 @@
         <marker scope="Public" name="yusei_juno_strip4a" />
         <marker scope="Public" name="yusei_juno_strip4b" />
         <marker scope="Public" name="yusei_juno_strip4c" />
+        <marker scope="Public" name="yusei_juno_strip4d" />
         <marker scope="Public" name="yusei_juno_strip5a" />
         <marker scope="Public" name="yusei_juno_strip5b" />
+        <marker scope="Public" name="yusei_juno_strip5c" />
         <marker scope="Public" name="yusei_juno_strip6a" />
         <marker scope="Public" name="yusei_juno_strip6b" />
+        <marker scope="Public" name="yusei_juno_strip6c" />
+        <marker scope="Public" name="yusei_juno51" />
         <marker scope="Public" name="yusei_jura_self0a" />
         <marker scope="Public" name="yusei_jura_self0a_sw" />
         <marker scope="Public" name="yusei_jura_self0b" />
