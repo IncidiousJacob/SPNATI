@@ -4,7 +4,7 @@
     <height />
     <age>22</age>
     <pronunciation />
-    <othernotes>Writing, modifications, posing, alternate skins and custom artwork by: StealthPE&lt;br&gt;Original Model by: AriaSakata &amp; PuzzledT&lt;br&gt;&lt;br&gt;MOD LIST: pretty much everything about the original model has been modified or changed in some way&lt;br&gt;&lt;br&gt;CHARACTER TRAITS:&lt;br&gt; -Is best Pokegirl.&lt;br&gt; -Serena has a wide range of emotions&lt;br&gt; -Is always cheerful, encourages others, starts embarrassed, but warms up as game progresses&lt;br&gt; -She's reluctant to show herself off, but grows a custom to it&lt;br&gt; -She has moments where she will get playful or almost flirty with the player or maybe another male opponant&lt;br&gt; -She will talk about Pokemon adventures, battles she's had and the Pokemon Performances shes done, comparing or tying     them into what is currently happening&lt;br&gt; -will not get jealous about anyone's chest size&lt;br&gt; -Is a bit shy and reserved, but will "leap" out of her comfort zone when she is feeling "steamy."&lt;br&gt; -Will talk about her Pokemon sometimes</othernotes>
+    <othernotes>Writing, modifications, posing, alternate skins and custom artwork by: StealthPE&lt;br&gt;Original Model by: AriaSakata &amp; PuzzledT&lt;br&gt;&lt;br&gt;MOD LIST: pretty much everything about the original model has been modified or changed in some way&lt;br&gt;&lt;br&gt;CHARACTER TRAITS:&lt;br&gt; -Is best Pokegirl.&lt;br&gt; -Based on game, with some elements pulled from anime&lt;br&gt; -Serena has a wide range of emotions&lt;br&gt; -Is always cheerful, encourages others, starts embarrassed, but warms up as game progresses&lt;br&gt; -She's reluctant to show herself off, but grows a custom to it&lt;br&gt; -She has moments where she will get playful or almost flirty with the player or maybe another male opponant&lt;br&gt; -She will talk about Pokemon adventures, battles she's had and the Pokemon Performances shes done, comparing or tying     them into what is currently happening&lt;br&gt; -will not get jealous about anyone's chest size&lt;br&gt; -Is a bit shy and reserved, but will "leap" out of her comfort zone when she is feeling "steamy."&lt;br&gt; -Will talk about her Pokemon sometimes</othernotes>
     <noteworthy>
         <case name="Serena 1st Skin" id="27" priority="Noteworthy" min="5" max="5">
             <description>This is the first time Serena is showing skin to anyone in public. If she loses again, off comes the bra.</description>
@@ -264,8 +264,10 @@
         <label id="288" label="" color="12" folder="" sort="0" />
         <label id="289" label="" color="12" folder="" sort="0" />
         <label id="290" label="" color="12" folder="" sort="0" />
+        <label id="291" label="" color="12" folder="" sort="0" />
+        <label id="292" label="" color="12" folder="" sort="0" />
     </labels>
-    <nextId>290</nextId>
+    <nextId>292</nextId>
     <markers>
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
@@ -287,6 +289,7 @@
         <marker scope="Public" name="serena_aoiasahina_11_2">Third response to Aoi A's second target</marker>
         <marker scope="Public" name="serena_aoiasahina_2">First response to Aoi A's "stage presense/ultimate" target</marker>
         <marker scope="Public" name="serena_aoiasahina_21">Second response to Aoi A's "idol/ultimate" comment, stearing towards Sayaka</marker>
+        <marker scope="Public" name="serena_aoiasahina_21praise">Praise branch of Aoi A's Sayaka idol/hardwork comment</marker>
         <marker scope="Public" name="serena_aoiasahina_5">First response to Aoi A's skirt strip "part of performance" target</marker>
         <marker scope="Public" name="serena_aoiasahina_51">Second response to Aoi A's "take off top" target</marker>
         <marker scope="Public" name="serena_aoiasahina_51guts">Alternate response to Aoi A'ls "take off top" target, Serena has "guts and strength" comment</marker>
@@ -312,7 +315,8 @@
         <marker scope="Public" name="serena_binah_pokemon22">second response to Binah's first target</marker>
         <marker scope="Public" name="serena_bobobo_as1">First response to Bobobo's first target</marker>
         <marker scope="Public" name="serena_carmine_s1">First response to Carmine's target</marker>
-        <marker scope="Public" name="serena_carmine_s1_1">First response to Carmine's second target</marker>
+        <marker scope="Public" name="serena_carmine_s1_1">First response to Carmine's Kalos people are mean target</marker>
+        <marker scope="Public" name="serena_carmine_s1_2">Second response to Carmie's Kalos people are mean target</marker>
         <marker scope="Public" name="serena_carmine_s1a">Second response to Carmine's first target alt response "eat dirt prude"</marker>
         <marker scope="Public" name="serena_carmine_s2">Second response to Carmine's first tagret</marker>
         <marker scope="Public" name="serena_chiaki_0">First response to Chiaki's must strip 0 target not having mentioned Sayaka</marker>
