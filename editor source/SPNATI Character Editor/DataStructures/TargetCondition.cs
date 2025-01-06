@@ -234,6 +234,7 @@ namespace SPNATI_Character_Editor
 			new KeyValuePair<string, string>("mostly_clothed", "Lost only accessories"),
 			new KeyValuePair<string, string>("decent", "Still covered by major articles"),
 			new KeyValuePair<string, string>("exposed", "Chest and/or crotch visible"),
+			new KeyValuePair<string, string>("really_exposed", "Breasts and/or crotch visible"),
 			new KeyValuePair<string, string>("chest_visible", "Chest visible"),
 			new KeyValuePair<string, string>("crotch_visible", "Crotch visible"),
 			new KeyValuePair<string, string>("topless", "Topless (not naked)"),
