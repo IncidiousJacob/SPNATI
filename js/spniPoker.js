@@ -986,7 +986,10 @@ Hand.prototype.describe = function(with_article) {
 };
 
 Hand.prototype.describeFormal = function() {
-    var description = handStrengthToString(this.strength) + ', ';
+    var description = handStrengthToString(this.strength);
+    // Royal Flush needs no further description
+    if (this.strength == ROYAL_FLUSH) return description;
+    description += ', ';
     switch (this.strength) {
     case NONE:
         description = undefined;
@@ -1009,7 +1012,6 @@ Hand.prototype.describeFormal = function() {
             + cardRankToString(this.value[1]); break;
     case FOUR_OF_A_KIND:
         description += cardRankToString(this.value[0]); break;
-    // Royal Flush needs no further description
     }
     return description;
 };
