@@ -815,9 +815,14 @@ function showCalendarModal() {
             event.getDateRanges(currentDate)
                 .filter(range => yearMatches(currentDate, range, event.useUTC))
                 .forEach(range => {
-                    const end = new Date(range.to);
-                    end.setSeconds(end.getSeconds() - 1);
-                    eventDates.push({event: event.name, start: range.from, end});
+                    const endDate = new Date(range.to);
+                    endDate.setSeconds(endDate.getSeconds() - 1);
+                    eventDates.push({
+                        event: event.name,
+                        costumes: event.costumes.ids,
+                        start: range.from,
+                        end: endDate
+                    });
                 })
         });
         eventDates.sort((a, b) => a.start.getTime() - b.start.getTime());
@@ -835,7 +840,8 @@ function showCalendarModal() {
 function displayEvents(eventDates) {
     let eventHtml = '';
     eventDates.forEach(date => {
-        eventHtml += `<p><strong>${date.event}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
+        const emoji = date.costumes.map(costume => EVENT_COSTUME_PREFIXES[costume] || '').join('');
+        eventHtml += `<p><strong>${emoji} ${date.event}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
     });
 
     // Display the events or a message if no events were found

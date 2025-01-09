@@ -233,6 +233,16 @@ const MAGNET_TAGS = [
     "vandread",
 ];
 
+const EVENT_COSTUME_PREFIXES = {
+    "valentines": '\u{2764}\u{fe0f} ',
+    "april_fools": '\u{1f921} ',
+    "easter": '\u{1f430} ',
+    "summer": '\u{2600}\u{fe0f} ',
+    "halloween": '\u{1f383} ',
+    "xmas": '\u{1f384} ',
+    "sleepover": '\u{1f6cf}\u{fe0f} ',
+};
+
 /**********************************************************************
  *****               Opponent & Group Specification               *****
  **********************************************************************/
@@ -627,23 +637,10 @@ function fillCostumeSelector($selector, defaultname, costumes, selected_costume)
         if (c.status != "online") {
             emoji = '\u{1f455} [Offline] ';
         }
-        
-        if (c.set == "valentines") {
-            emoji = '\u{2764}\u{fe0f} ';
-        } else if (c.set == "april_fools") {
-            emoji = '\u{1f921} ';
-        } else if (c.set == "easter") {
-            emoji = '\u{1f430} ';
-        } else if (c.set == "summer") {
-            emoji = '\u{2600}\u{fe0f} ';
-        } else if (c.set == "halloween") {
-            emoji = '\u{1f383} ';
-        } else if (c.set == "xmas") {
-            emoji = '\u{1f384} ';
-        } else if (c.set == "sleepover") {
-            emoji = '\u{1f6cf}\u{fe0f} ';
-        }
-        
+
+        if (EVENT_COSTUME_PREFIXES[c.set] !== undefined)
+            emoji = EVENT_COSTUME_PREFIXES[c.set]
+
         return $('<option>', {
             val: c.folder, text: emoji+c.name,
             selected: c.folder == selected_costume
