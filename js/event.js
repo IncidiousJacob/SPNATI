@@ -808,73 +808,105 @@ function showCalendarModal() {
     fetch('events.xml')
         .then(response => response.text())
         .then(xmlText => {
+            const currentYear = new Date().getFullYear();
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
-            displayEvents(xmlDoc);
+            const eventDates = getEventDates(xmlDoc, currentYear);
+            eventDates.sort((a, b) => a.start.getTime() - b.start.getTime());
+            displayEvents(eventDates);
         })
         .catch(error => {
             console.error("Error loading events.xml:", error);
             document.getElementById('eventList').innerHTML = "<p>Error loading events.</p>";
         });
-    
+
     // Show the modal
     document.getElementById('calendar-modal').style.display = 'block';
     // Get the current year for the header
     document.getElementById('calendar-header-year').innerHTML = currentYear;
     // Show the modal
     $calendarModal.modal('show');
-    // 
 }
 
-function displayEvents(xmlDoc) {
-    const events = xmlDoc.getElementsByTagName('event');
-    const currentYear = new Date().getFullYear();
+function getEventDates(xmlDoc, year) {
+    const events = Array.from(xmlDoc.getElementsByTagName('event'));
+    const eventDates = [];
+    events.forEach(event => {
+        const name = event.getElementsByTagName('name')[0].textContent;
+        const useUTC = event.getAttribute('consistent-timezone') === 'true';
+
+        function dateFromXml(dateTag) {
+            const month = parseInt(dateTag.getAttribute('month'), 10) - 1;
+            const day = parseInt(dateTag.getAttribute('day'), 10);
+            const yearAttr = dateTag.getAttribute('year');
+            const eventYear = yearAttr === null ? year : parseInt(yearAttr);
+
+            return new Date(eventYear, month, day);
+        }
+
+        let dates = Array.from(event.getElementsByTagName('date')).map(date => {
+            const from = date.getElementsByTagName('from')[0];
+            const to = date.getElementsByTagName('to')[0];
+            const days = to.getAttribute('days');
+            const override = date.getAttribute('override') === 'true';
+
+            const start = dateFromXml(from);
+            let end;
+            if (days === null) {
+                end = dateFromXml(to);
+            } else {
+                end = new Date(start);
+                end.setDate(start.getDate() + parseInt(days));
+            }
+            end.setHours(23);
+            end.setMinutes(59);
+            end.setSeconds(59);
+
+            return {start, end, override};
+        });
+
+        Array.from(event.getElementsByTagName('weekOf')).map(weekOf => {
+            const baseDate = dateFromXml(weekOf);
+            const startDay = parseInt(weekOf.getAttribute('start-on'), 10);  // 0 = Sunday, 3 = Wednesday
+            const durationDays = parseInt(weekOf.getAttribute('days'), 10);
+            const override = weekOf.getAttribute('override') === 'true';
+
+            const startDate = new Date(baseDate);
+            startDate.setDate(baseDate.getDate() - (baseDate.getDay() - startDay + 7) % 7);
+            const endDate = new Date(startDate);
+            endDate.setDate(startDate.getDate() + durationDays - 1);
+            endDate.setHours(23);
+            endDate.setMinutes(59);
+            endDate.setSeconds(59);
+
+            return {start: startDate, end: endDate, override};
+        }).forEach(date => dates.push(date));
+
+        console.log(name, dates);
+
+        dates = dates.filter(date => date.start.getFullYear() == year);
+
+        const overrides = dates.filter(date => date.override);
+        if (overrides.length > 0)
+            dates = overrides;
+
+        if (useUTC)
+            dates.forEach(date => {
+                date.start = new Date(date.start.getTime() - date.start.getTimezoneOffset() * 60 * 1000);
+                date.end = new Date(date.end.getTime() - date.end.getTimezoneOffset() * 60 * 1000);
+            });
+
+        dates.forEach(date => eventDates.push({event: name, start: date.start, end: date.end}));
+    });
+    return eventDates;
+}
+
+function displayEvents(eventDates) {
     let eventHtml = '';
+    eventDates.forEach(date => {
+        eventHtml += `<p><strong>${date.event}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
+    });
 
-    // I got large chunks of this from StackOverflow so I pray it works fine    
-    for (let i = 0; i < events.length; i++) {
-        const name = events[i].getElementsByTagName('name')[0].textContent;
-        const dates = events[i].getElementsByTagName('date');
-        const weekOf = events[i].getElementsByTagName('weekOf');
-
-        // Handle <date> elements (e.g., Easter)
-        for (let j = 0; j < dates.length; j++) {
-            const from = dates[j].getElementsByTagName('from')[0];
-            const to = dates[j].getElementsByTagName('to')[0];
-
-            const fromDate = new Date(currentYear, from.getAttribute('month') - 1, from.getAttribute('day'));
-            const toDate = new Date(currentYear, to.getAttribute('month') - 1, to.getAttribute('day'));
-
-            // Only display events that fall within the current year
-            if (fromDate.getFullYear() === currentYear && toDate.getFullYear() === currentYear) {
-                // Check if it's Easter and if we've already added it for this year
-                // Without this it'll display Easter multiple times per year
-                if (name.toLowerCase() !== 'easter' || !eventHtml.includes(name)) {
-                    eventHtml += `<p><strong>${name}</strong>: ${formatDate(fromDate)} to ${formatDate(toDate)}</p>`;
-                }
-            }
-        }
-
-        // Handle <weekOf> elements (e.g., Sleepover)
-        for (let j = 0; j < weekOf.length; j++) {
-            const month = parseInt(weekOf[j].getAttribute('month'), 10) - 1;
-            const day = parseInt(weekOf[j].getAttribute('day'), 10);
-            const startOn = parseInt(weekOf[j].getAttribute('start-on'), 10); // day of the week (0 = Sunday, 3 = Wednesday)
-            const days = parseInt(weekOf[j].getAttribute('days'), 10); // duration, in days
-
-            const baseDate = new Date(currentYear, month, day); // the start date
-            const firstDayOfWeek = new Date(baseDate); // get the first day of the week
-            firstDayOfWeek.setDate(baseDate.getDate() - (baseDate.getDay() - startOn + 7) % 7); // calculate start-on date
-
-            const endDate = new Date(firstDayOfWeek); // get the last day of the event
-            endDate.setDate(firstDayOfWeek.getDate() + days - 1); // calculate the end date
-
-            // Ensure the event occurs within the current year
-            if (firstDayOfWeek.getFullYear() === currentYear) {
-                eventHtml += `<p><strong>${name}</strong>: ${formatDate(firstDayOfWeek)} to ${formatDate(endDate)}</p>`;
-            }
-        }
-    }
     // Display the events or a message if no events were found
     // Adding this in case I do something wrong with events.xml or if it is missing/blank
     document.getElementById('eventList').innerHTML = eventHtml || "<p>No events found for this year.</p>";

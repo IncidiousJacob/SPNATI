@@ -54,31 +54,31 @@
                 <to days="14" />
             </date>
 
-                <!-- <date override="true"> -->
-                    <!-- 
-                        Repeating date ranges and year-specific date ranges aren't mutually exclusive.
-                        For example, a "rerun" of an event outside of the usual repeating dates can be scheduled
-                        by adding another, one-shot date range with years specified.
+            <date override="true">
+                <!--
+                    Repeating date ranges and year-specific date ranges aren't mutually exclusive.
+                    For example, a "rerun" of an event outside of the usual repeating dates can be scheduled
+                    by adding another, one-shot date range with years specified.
 
-                        Additionally, adding `override="true"` to a date range will cause that date range
-                        to override other date ranges for that year.
+                    Additionally, adding `override="true"` to a date range will cause that date range
+                    to override other date ranges for that year.
 
-                        To be specific: when a date range is marked as an override, it will take priority
-                        over all other date ranges for that year (and that year only).
-                        Other date ranges not marked as overrides will not be checked during years where
-                        overrides are scheduled.
+                    To be specific: when a date range is marked as an override, it will take priority
+                    over all other date ranges for that year (and that year only).
+                    Other date ranges not marked as overrides will not be checked during years where
+                    overrides are scheduled.
 
-                        Multiple override ranges can be listed (either for different years, or for the same year).
+                    Multiple override ranges can be listed (either for different years, or for the same year).
 
-                        This can be used to reschedule, shorten, or lengthen an event during a particular year.
+                    This can be used to reschedule, shorten, or lengthen an event during a particular year.
 
-                        This override, for example, shortens the 2019 Summer Event to end on July 7, instead of July 14.
+                    This override, for example, shortens the 2019 Summer Event to end on July 7, instead of July 14.
 
-                        NOTE: these are just examples, and are not meant to be indicative of actual scheduling.
-                    -->
-                    <!-- <from year="2019" month="7" day="1" /> -->
-                    <!-- <to year="2019" month="7" day="7" /> -->
-                <!-- </date> -->
+                    NOTE: these are just examples, and are not meant to be indicative of actual scheduling.
+                -->
+                <from year="2019" month="7" day="1" />
+                <to year="2019" month="7" day="7" />
+            </date>
 
             <date override="true">
                 <!-- This particular override reschedules the 2020 Summer Event to June, instead of July. -->
