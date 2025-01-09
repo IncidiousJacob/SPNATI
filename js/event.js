@@ -19,6 +19,9 @@ var MANUAL_EVENTS = new Set();
 /** @type {Set<string>} */
 var OVERRIDE_EVENTS = new Set();
 
+/** @type {GameEvent[]?} */
+var EVENTS = null;
+
 /** @type {GameEvent[]} */
 var activeGameEvents = [];
 
@@ -504,43 +507,42 @@ function GameEvent(id, name, dateRanges, costumes, background, candyImages, tags
     this.useUTC = useUTC;
 }
 
-/**
- * 
- * @param {Date} queryDate 
- * @returns {DateRange[]}
- */
- GameEvent.prototype.getActiveRanges = function (queryDate) {
-    if (OVERRIDE_EVENTS.size > 0 || MANUAL_EVENTS.has(this.id)) return [];
-
+function yearMatches(queryDate, range, useUTC) {
     var queryYear;
-    var currentYearOverrides;
-
-    if (this.useUTC) {
+    if (useUTC) {
         queryYear = queryDate.getUTCFullYear();
-        currentYearOverrides = this.dateRanges.filter(function (range) {
-            return range.override && queryYear >= range.from.getUTCFullYear() && queryYear <= range.to.getUTCFullYear();
-        });
+        return queryYear >= range.from.getUTCFullYear() && queryYear <= range.to.getUTCFullYear();
     } else {
         queryYear = queryDate.getFullYear();
-        currentYearOverrides = this.dateRanges.filter(function (range) {
-            return range.override && queryYear >= range.from.getFullYear() && queryYear <= range.to.getFullYear();
-        });
-    }
-
-    if (currentYearOverrides.length > 0) {
-        /*
-         * At least one override exists for this year. Match _only_ the ranges marked as overrides.
-         * This allows override ranges to be shorter than repeating ranges (since the repeating range would overlap and cause the event to activate past the override).
-         */
-        return currentYearOverrides.filter(function (range) { return range.contains(queryDate); })
-    } else {
-        /* Otherwise, just match against everything. */
-        return this.dateRanges.filter(function (range) { return range.contains(queryDate); })
+        return queryYear >= range.from.getFullYear() && queryYear <= range.to.getFullYear();
     }
 }
 
 /**
  * 
+ * @param {Date} queryDate 
+ * @returns {DateRange[]}
+ */
+ GameEvent.prototype.getDateRanges = function (queryDate) {
+    const currentYearOverrides = this.dateRanges.filter(range => range.override && yearMatches(queryDate, range, this.useUTC))
+
+    if (currentYearOverrides.length > 0)
+        return currentYearOverrides;
+    return this.dateRanges;
+}
+
+/**
+ * 
+ * @param {Date} queryDate
+ * @returns {DateRange[]}
+ */
+ GameEvent.prototype.getActiveRanges = function (queryDate) {
+    if (OVERRIDE_EVENTS.size > 0 || MANUAL_EVENTS.has(this.id)) return [];
+    return this.getDateRanges(queryDate).filter(function (range) { return range.contains(queryDate); })
+}
+
+/**
+ *
  * @returns {boolean}
  */
 GameEvent.prototype.isManuallyActivated = function () {
@@ -644,14 +646,14 @@ function loadEventData () {
     console.log("Loading events...");
 
     return fetchXML("events.xml").then(function ($xml) {
-        var events = $xml.find("event").map(function (index, elem) {
+        EVENTS = $xml.find("event").map(function (index, elem) {
             return parseEventElement($(elem));
         }).get();
 
         /** @type {Set<string>} */
         var activeIds = new Set();
 
-        events.forEach(function (event) {
+        EVENTS.forEach(function (event) {
             if (!activeIds.has(event.id) && event.isActive()) {
                 console.log("Activating event: " + event.name);
                 activeIds.add(event.id);
@@ -803,100 +805,31 @@ function showResortModal () {
 }
 
 function showCalendarModal() {
-    const currentYear = new Date().getFullYear();
-    // Load events.xml
-    fetch('events.xml')
-        .then(response => response.text())
-        .then(xmlText => {
-            const currentYear = new Date().getFullYear();
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
-            const eventDates = getEventDates(xmlDoc, currentYear);
-            eventDates.sort((a, b) => a.start.getTime() - b.start.getTime());
-            displayEvents(eventDates);
-        })
-        .catch(error => {
-            console.error("Error loading events.xml:", error);
-            document.getElementById('eventList').innerHTML = "<p>Error loading events.</p>";
+    const currentDate = new Date();
+
+    if (EVENTS === null) {
+        document.getElementById('eventList').innerHTML = "<p>Error loading events.</p>";
+    } else {
+        const eventDates = [];
+        EVENTS.forEach(event => {
+            event.getDateRanges(currentDate)
+                .filter(range => yearMatches(currentDate, range, event.useUTC))
+                .forEach(range => {
+                    const end = new Date(range.to);
+                    end.setSeconds(end.getSeconds() - 1);
+                    eventDates.push({event: event.name, start: range.from, end});
+                })
         });
+        eventDates.sort((a, b) => a.start.getTime() - b.start.getTime());
+        displayEvents(eventDates);
+    }
 
     // Show the modal
     document.getElementById('calendar-modal').style.display = 'block';
     // Get the current year for the header
-    document.getElementById('calendar-header-year').innerHTML = currentYear;
+    document.getElementById('calendar-header-year').innerHTML = currentDate.getFullYear();
     // Show the modal
     $calendarModal.modal('show');
-}
-
-function getEventDates(xmlDoc, year) {
-    const events = Array.from(xmlDoc.getElementsByTagName('event'));
-    const eventDates = [];
-    events.forEach(event => {
-        const name = event.getElementsByTagName('name')[0].textContent;
-        const useUTC = event.getAttribute('consistent-timezone') === 'true';
-
-        function dateFromXml(dateTag) {
-            const month = parseInt(dateTag.getAttribute('month'), 10) - 1;
-            const day = parseInt(dateTag.getAttribute('day'), 10);
-            const yearAttr = dateTag.getAttribute('year');
-            const eventYear = yearAttr === null ? year : parseInt(yearAttr);
-
-            return new Date(eventYear, month, day);
-        }
-
-        let dates = Array.from(event.getElementsByTagName('date')).map(date => {
-            const from = date.getElementsByTagName('from')[0];
-            const to = date.getElementsByTagName('to')[0];
-            const days = to.getAttribute('days');
-            const override = date.getAttribute('override') === 'true';
-
-            const start = dateFromXml(from);
-            let end;
-            if (days === null) {
-                end = dateFromXml(to);
-            } else {
-                end = new Date(start);
-                end.setDate(start.getDate() + parseInt(days));
-            }
-            end.setHours(23);
-            end.setMinutes(59);
-            end.setSeconds(59);
-
-            return {start, end, override};
-        });
-
-        Array.from(event.getElementsByTagName('weekOf')).map(weekOf => {
-            const baseDate = dateFromXml(weekOf);
-            const startDay = parseInt(weekOf.getAttribute('start-on'), 10);  // 0 = Sunday, 3 = Wednesday
-            const durationDays = parseInt(weekOf.getAttribute('days'), 10);
-            const override = weekOf.getAttribute('override') === 'true';
-
-            const startDate = new Date(baseDate);
-            startDate.setDate(baseDate.getDate() - (baseDate.getDay() - startDay + 7) % 7);
-            const endDate = new Date(startDate);
-            endDate.setDate(startDate.getDate() + durationDays - 1);
-            endDate.setHours(23);
-            endDate.setMinutes(59);
-            endDate.setSeconds(59);
-
-            return {start: startDate, end: endDate, override};
-        }).forEach(date => dates.push(date));
-
-        dates = dates.filter(date => date.start.getFullYear() == year);
-
-        const overrides = dates.filter(date => date.override);
-        if (overrides.length > 0)
-            dates = overrides;
-
-        if (useUTC)
-            dates.forEach(date => {
-                date.start = new Date(date.start.getTime() - date.start.getTimezoneOffset() * 60 * 1000);
-                date.end = new Date(date.end.getTime() - date.end.getTimezoneOffset() * 60 * 1000);
-            });
-
-        dates.forEach(date => eventDates.push({event: name, start: date.start, end: date.end}));
-    });
-    return eventDates;
 }
 
 function displayEvents(eventDates) {
