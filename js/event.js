@@ -801,3 +801,91 @@ function updateAnnouncementDropdown () {
 function showResortModal () {
     if (curResortEvent) curResortEvent.resort.show();
 }
+
+function showCalendarModal() {
+    const currentYear = new Date().getFullYear();
+    // Load events.xml
+    fetch('events.xml')
+        .then(response => response.text())
+        .then(xmlText => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+            displayEvents(xmlDoc);
+        })
+        .catch(error => {
+            console.error("Error loading events.xml:", error);
+            document.getElementById('eventList').innerHTML = "<p>Error loading events.</p>";
+        });
+    
+    // Show the modal
+    document.getElementById('calendar-modal').style.display = 'block';
+    // Get the current year for the header
+    document.getElementById('calendar-header-year').innerHTML = currentYear;
+    // Show the modal
+    $calendarModal.modal('show');
+    // 
+}
+
+function displayEvents(xmlDoc) {
+    const events = xmlDoc.getElementsByTagName('event');
+    const currentYear = new Date().getFullYear();
+    let eventHtml = '';
+
+    // I got large chunks of this from StackOverflow so I pray it works fine    
+    for (let i = 0; i < events.length; i++) {
+        const name = events[i].getElementsByTagName('name')[0].textContent;
+        const dates = events[i].getElementsByTagName('date');
+        const weekOf = events[i].getElementsByTagName('weekOf');
+
+        // Handle <date> elements (e.g., Easter)
+        for (let j = 0; j < dates.length; j++) {
+            const from = dates[j].getElementsByTagName('from')[0];
+            const to = dates[j].getElementsByTagName('to')[0];
+
+            const fromDate = new Date(currentYear, from.getAttribute('month') - 1, from.getAttribute('day'));
+            const toDate = new Date(currentYear, to.getAttribute('month') - 1, to.getAttribute('day'));
+
+            // Only display events that fall within the current year
+            if (fromDate.getFullYear() === currentYear && toDate.getFullYear() === currentYear) {
+                // Check if it's Easter and if we've already added it for this year
+                // Without this it'll display Easter multiple times per year
+                if (name.toLowerCase() !== 'easter' || !eventHtml.includes(name)) {
+                    eventHtml += `<p><strong>${name}</strong>: ${formatDate(fromDate)} to ${formatDate(toDate)}</p>`;
+                }
+            }
+        }
+
+        // Handle <weekOf> elements (e.g., Sleepover)
+        for (let j = 0; j < weekOf.length; j++) {
+            const month = parseInt(weekOf[j].getAttribute('month'), 10) - 1;
+            const day = parseInt(weekOf[j].getAttribute('day'), 10);
+            const startOn = parseInt(weekOf[j].getAttribute('start-on'), 10); // day of the week (0 = Sunday, 3 = Wednesday)
+            const days = parseInt(weekOf[j].getAttribute('days'), 10); // duration, in days
+
+            const baseDate = new Date(currentYear, month, day); // the start date
+            const firstDayOfWeek = new Date(baseDate); // get the first day of the week
+            firstDayOfWeek.setDate(baseDate.getDate() - (baseDate.getDay() - startOn + 7) % 7); // calculate start-on date
+
+            const endDate = new Date(firstDayOfWeek); // get the last day of the event
+            endDate.setDate(firstDayOfWeek.getDate() + days - 1); // calculate the end date
+
+            // Ensure the event occurs within the current year
+            if (firstDayOfWeek.getFullYear() === currentYear) {
+                eventHtml += `<p><strong>${name}</strong>: ${formatDate(firstDayOfWeek)} to ${formatDate(endDate)}</p>`;
+            }
+        }
+    }
+    // Display the events or a message if no events were found
+    // Adding this in case I do something wrong with events.xml or if it is missing/blank
+    document.getElementById('eventList').innerHTML = eventHtml || "<p>No events found for this year.</p>";
+}
+
+function formatDate(date) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
+}
+
+function hideCalendarModal() {
+    document.getElementById('calendar-Modal').style.display = 'none';
+}
+
