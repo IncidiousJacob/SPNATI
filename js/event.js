@@ -882,8 +882,6 @@ function getEventDates(xmlDoc, year) {
             return {start: startDate, end: endDate, override};
         }).forEach(date => dates.push(date));
 
-        console.log(name, dates);
-
         dates = dates.filter(date => date.start.getFullYear() == year);
 
         const overrides = dates.filter(date => date.override);
