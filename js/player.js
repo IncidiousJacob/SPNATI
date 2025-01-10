@@ -743,7 +743,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
                 'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
             };
 
-            if (set && DEFAULT_COSTUME_SETS.has(set)) {
+            if (set && DEFAULT_COSTUME_SETS.has(set) || HIGHLIGHT_EVERGREEN_ALTS && !set && DEFAULT_COSTUME_SETS.size == 0) {
                 defaultCostumes.push(costume_descriptor);
             }
 
@@ -751,9 +751,13 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
         }
     }.bind(this)).get();
 
+    if (HIGHLIGHT_EVERGREEN_ALTS && DEFAULT_COSTUME_SETS.size == 0)
+        defaultCostumes.push(null);
+
     this.hasDefaultCostume = defaultCostumes.length > 0;
     if (this.hasDefaultCostume) {
         var selectedDefault = defaultCostumes[getRandomNumber(0, defaultCostumes.length)];
+        if (selectedDefault === null) return;
         var costumeSet = selectedDefault.set;
 
         this.selection_image = selectedDefault['folder'] + selectedDefault['image'];

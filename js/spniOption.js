@@ -447,6 +447,7 @@ function loadOptions () {
     $('[data-option="ui-font-weight"]').val(UI_FONT_WEIGHT);
     $('[data-option="ui-font-width"]').val(UI_FONT_WIDTH);
     setActiveOption('ui-theme', UI_THEME);
+    setActiveOption('hl-evergreen-alts', HIGHLIGHT_EVERGREEN_ALTS);
 
     /* Don't display UI theme selector on spnati.net yet
      * TODO: remove this once transition period is over
@@ -580,6 +581,10 @@ $('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
         updateHumanPlayerMasturbationVisual();
     }
 });
+
+$('ul[data-option="hl-evergreen-alts"').on('click', 'a', function() {
+    HIGHLIGHT_EVERGREEN_ALTS = $(this).attr('data-value') == 'true';
+})
 
 /************************************************************
  * Push a selection image for the given background onto the

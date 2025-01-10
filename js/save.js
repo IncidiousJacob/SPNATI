@@ -358,6 +358,8 @@ Save.prototype.loadOptions = function(){
     if (gender) {
         humanPlayer.gender = gender;
     }
+
+    if ('highlightEvergreenAlts' in settings) HIGHLIGHT_EVERGREEN_ALTS = settings.highlightEvergreenAlts;
 };
 
 Save.prototype.loadOptionsBackground = function (settings) {
@@ -409,6 +411,7 @@ Save.prototype.saveSettings = function() {
         useGroupBackgrounds: useGroupBackgrounds,
         fillDisabled: FILL_DISABLED,
         showStatuses: Object.keys(includedOpponentStatuses).filter(k => k != 'testing' && k != 'online' && includedOpponentStatuses[k]),
+        highlightEvergreenAlts: HIGHLIGHT_EVERGREEN_ALTS,
     };
 
     if (optionsBackground && optionsBackground.id !== defaultBackground.id) {
