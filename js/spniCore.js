@@ -196,6 +196,7 @@ function initialSetup () {
         save.load();
         return loadVersionInfo();
     }).then(metadataIndex.loadIndex.bind(metadataIndex)).then(loadSelectScreen).then(loadAllCollectibles).then(function () {
+        loadedOpponents.forEach(opponent => opponent.selectDefaultCostume());
         selectTitleCandy();
         setupTitleClothing();
         finishStartupLoading();
