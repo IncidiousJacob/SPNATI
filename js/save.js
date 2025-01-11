@@ -360,6 +360,7 @@ Save.prototype.loadOptions = function(){
     }
 
     if ('highlightEvergreenAlts' in settings) HIGHLIGHT_EVERGREEN_ALTS = settings.highlightEvergreenAlts;
+    if (isMainSite && HIGHLIGHT_EVERGREEN_ALTS == 'all') HIGHLIGHT_EVERGREEN_ALTS = 'evergreen';
 };
 
 Save.prototype.loadOptionsBackground = function (settings) {

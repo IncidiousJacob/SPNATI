@@ -17,7 +17,7 @@ var SHORT_GAME_UNLOCKED = false;
 var CARD_DECKS_ENABLED = false;
 var ALT_COSTUMES_ENABLED = true;
 var DEFAULT_COSTUME_SETS = new Set();
-var HIGHLIGHT_EVERGREEN_ALTS = false;
+var HIGHLIGHT_EVERGREEN_ALTS = "none";
 var BASE_FONT_SIZE = 14;
 var BASE_SCREEN_WIDTH = 100;
 var UI_FONT_WEIGHT = 500;
@@ -1066,6 +1066,12 @@ function showExtrasModal() {
     /* hide the Game Length option if online version*/ 
     if (isMainSite) {
         $(".game-length-option").hide();
+    }
+
+    // Show Start with costumes selected option as All/No events/Disabled if offline and Enabled/Disabled if online
+    if (isMainSite) {
+        $('#hl-evergreen-alts-option>li:has(a[data-value="all"])').remove();
+        $('#hl-evergreen-alts-option>li>a[data-value="evergreen"]').text("Enabled");
     }
 
     updateTrackingToggles();

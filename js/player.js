@@ -743,7 +743,9 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
                 'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
             };
 
-            if (set && DEFAULT_COSTUME_SETS.has(set) || HIGHLIGHT_EVERGREEN_ALTS && !set && DEFAULT_COSTUME_SETS.size == 0) {
+            if (set && DEFAULT_COSTUME_SETS.has(set) ||
+                DEFAULT_COSTUME_SETS.size == 0 && (HIGHLIGHT_EVERGREEN_ALTS == 'evergreen' && !set || HIGHLIGHT_EVERGREEN_ALTS == 'all')
+            ) {
                 defaultCostumes.push(costume_descriptor);
             }
 

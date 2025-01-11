@@ -583,7 +583,7 @@ $('ul[data-option="player-finishing-effect"]').on('click', 'a', function() {
 });
 
 $('ul[data-option="hl-evergreen-alts"').on('click', 'a', function() {
-    HIGHLIGHT_EVERGREEN_ALTS = $(this).attr('data-value') == 'true';
+    HIGHLIGHT_EVERGREEN_ALTS = $(this).attr('data-value');
 })
 
 /************************************************************
