@@ -315,6 +315,9 @@ Save.prototype.loadOptions = function(){
 
     if ('stamina' in options) humanPlayer.stamina = options.stamina;
 
+    if ('highlightEvergreenAlts' in options) HIGHLIGHT_EVERGREEN_ALTS = options.highlightEvergreenAlts
+    if (isMainSite && HIGHLIGHT_EVERGREEN_ALTS == 'all') HIGHLIGHT_EVERGREEN_ALTS = 'evergreen';
+
     /* Load extra characters settings - if spnati.net or rehost, all are disabled by default;
      * if personal offline, offline and incomplete are enabled but event, duplicate, and broken aren't
      */
@@ -358,9 +361,6 @@ Save.prototype.loadOptions = function(){
     if (gender) {
         humanPlayer.gender = gender;
     }
-
-    if ('highlightEvergreenAlts' in settings) HIGHLIGHT_EVERGREEN_ALTS = settings.highlightEvergreenAlts;
-    if (isMainSite && HIGHLIGHT_EVERGREEN_ALTS == 'all') HIGHLIGHT_EVERGREEN_ALTS = 'evergreen';
 };
 
 Save.prototype.loadOptionsBackground = function (settings) {
@@ -402,6 +402,7 @@ Save.prototype.saveOptions = function() {
         uiTheme: UI_THEME,
         stamina: humanPlayer.stamina,
         playerFinishingEffect: PLAYER_FINISHING_EFFECT,
+        highlightEvergreenAlts: HIGHLIGHT_EVERGREEN_ALTS,
     };
     
     this.setItem("options", options);
@@ -412,7 +413,6 @@ Save.prototype.saveSettings = function() {
         useGroupBackgrounds: useGroupBackgrounds,
         fillDisabled: FILL_DISABLED,
         showStatuses: Object.keys(includedOpponentStatuses).filter(k => k != 'testing' && k != 'online' && includedOpponentStatuses[k]),
-        highlightEvergreenAlts: HIGHLIGHT_EVERGREEN_ALTS,
     };
 
     if (optionsBackground && optionsBackground.id !== defaultBackground.id) {
