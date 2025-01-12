@@ -8,31 +8,32 @@
  **********************************************************************/
 
 /* clothing types */
-var IMPORTANT_ARTICLE = "important";
-var MAJOR_ARTICLE = "major";
-var MINOR_ARTICLE = "minor";
-var EXTRA_ARTICLE = "extra";
+const IMPORTANT_ARTICLE = "important";
+const MAJOR_ARTICLE = "major";
+const MINOR_ARTICLE = "minor";
+const EXTRA_ARTICLE = "extra";
 
 /* clothing positions */
-var UPPER_ARTICLE = "upper";
-var LOWER_ARTICLE = "lower";
-var FULL_ARTICLE = "both";
-var OTHER_ARTICLE = "other";
+const UPPER_ARTICLE = "upper";
+const LOWER_ARTICLE = "lower";
+const FULL_ARTICLE = "both";
+const OTHER_ARTICLE = "other";
 
-var STATUS_LOST_SOME = "lost_some"
-var STATUS_MOSTLY_CLOTHED = "mostly_clothed"
-var STATUS_DECENT = "decent";
-var STATUS_EXPOSED = "exposed";
-var STATUS_EXPOSED_TOP = "chest_visible";
-var STATUS_EXPOSED_BOTTOM = "crotch_visible";
-var STATUS_EXPOSED_TOP_ONLY = "topless";
-var STATUS_EXPOSED_BOTTOM_ONLY = "bottomless";
-var STATUS_NAKED = "naked";
-var STATUS_LOST_ALL = "lost_all";
-var STATUS_ALIVE = "alive";
-var STATUS_MASTURBATING = "masturbating";
-var STATUS_HEAVY_MASTURBATING = "heavy_masturbating";
-var STATUS_FINISHED = "finished";
+const STATUS_LOST_SOME = "lost_some"
+const STATUS_MOSTLY_CLOTHED = "mostly_clothed"
+const STATUS_DECENT = "decent";
+const STATUS_EXPOSED = "exposed";
+const STATUS_REALLY_EXPOSED = "really_exposed";
+const STATUS_EXPOSED_TOP = "chest_visible";
+const STATUS_EXPOSED_BOTTOM = "crotch_visible";
+const STATUS_EXPOSED_TOP_ONLY = "topless";
+const STATUS_EXPOSED_BOTTOM_ONLY = "bottomless";
+const STATUS_NAKED = "naked";
+const STATUS_LOST_ALL = "lost_all";
+const STATUS_ALIVE = "alive";
+const STATUS_MASTURBATING = "masturbating";
+const STATUS_HEAVY_MASTURBATING = "heavy_masturbating";
+const STATUS_FINISHED = "finished";
 
 /************************************************************
  * Stores information on an article of clothing.

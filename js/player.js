@@ -361,6 +361,8 @@ Player.prototype.checkStatus = function(status) {
         return !this.isCovered(UPPER_ARTICLE) && this.isCovered(LOWER_ARTICLE);
     case STATUS_EXPOSED_BOTTOM_ONLY:
         return this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
+    case STATUS_REALLY_EXPOSED:
+	return !this.isCovered(LOWER_ARTICLE) || (!this.isCovered(UPPER_ARTICLE) && this.breasts);
     case STATUS_NAKED:
         return !this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
     case STATUS_ALIVE:
