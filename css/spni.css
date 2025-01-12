@@ -3854,7 +3854,7 @@ ul.dropdown-menu>li {
     from {
         background-color: transparent;
     }
-    10%, 20% {
+    13.3%, 20% {
         background-color: white;
         opacity: 1;
     }
@@ -3869,15 +3869,15 @@ ul.dropdown-menu>li {
     width: 100%;
     height: 100%;
     z-index: 1049;
-    background: radial-gradient(closest-corner, transparent 50%, rgba(255, 255, 255, 0.4));
+    background: radial-gradient(closest-corner, transparent 60%, rgba(255, 255, 255, 0.3));
     animation: 0.4s infinite alternate overlay-pulse;
 }
 #game-climax-overlay.intense {
-    background: radial-gradient(closest-corner, transparent 35%, rgba(255, 255, 255, 0.6));
-    animation: 0.3s infinite alternate overlay-pulse;
+    background: radial-gradient(closest-corner, transparent 50%, rgba(255, 255, 255, 0.4));
+    animation: 0.3333s infinite alternate overlay-pulse;
 }
 #game-climax-overlay.climax {
-    animation: 0.3s infinite alternate overlay-pulse, 4s overlay-climax;
+    animation: 0.3333s infinite alternate overlay-pulse, 3s overlay-climax;
 }
 
 #player-game-clothing-area {
