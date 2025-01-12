@@ -1162,6 +1162,13 @@ State.prototype.checkUnwanteds = function (self, target) {
             }, this)) {
             return true;  // At least one line of text matched.
         }
+        if (p.chosenState.parentCase.unwantedAddressings
+            && p.chosenState.parentCase.unwantedAddressings.some(function(item) {
+                return self == item[0]
+                    && (item[2] == item[3] || item[1] == null && Object.values(this.variableBindings).indexOf(addressee) != -1);
+            }, this)) {
+            return true;  // At least one variable binding matched.
+        }
         if (p.chosenState.parentCase.unwantedPoses
             && p.chosenState.parentCase.unwantedPoses.some(function (item) {
                 return self == item[0] && poseNameMatches(item[1], this.image);
@@ -2092,6 +2099,7 @@ function Condition($xml) {
     this.sayingMarker   = $xml.attr('sayingMarker');
     this.notSaidMarker  = $xml.attr('notSaidMarker');
     this.saying         = $xml.attr('saying');
+    this.addressing     = $xml.attr('addressing');
     this.said           = $xml.attr('said');
     this.pose           = $xml.attr('pose');
     this.priority = 0;
@@ -2117,7 +2125,7 @@ function Condition($xml) {
              + (this.hand ? 15 : 0) + (this.gender ? 5 : 0))
     }
     this.priority += (this.saidMarker ? 1 : 0) + (this.notSaidMarker ? 1 : 0)
-        + (this.sayingMarker ? 1 : 0) + (this.saying ? 1 : 0)
+        + (this.sayingMarker ? 1 : 0) + (this.saying ? 1 : 0) + (this.addressing ? 1 : 0)
         + (this.said ? 1 : 0) + (this.pose ? 1 : 0);
 
     if (this.id && !this.variable) {
@@ -2277,7 +2285,7 @@ function Case($xml, trigger) {
     }
 
     this.isVolatile = this.counters.some(function(c) {
-        return c.sayingMarker || c.saying || c.pose;
+        return c.sayingMarker || c.saying || c.addressing || c.pose;
     });
 }
 
@@ -2390,7 +2398,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     }
 
     var counterMatches = {};
-    var unwantedSayings = [], unwantedMarkers = [], unwantedPoses = [];
+    var unwantedSayings = [], unwantedMarkers = [], unwantedPoses = [], unwantedAddressings = [];
     // filter counter targets
     if (!this.counters.every(function (ctr) {
         var matches = players.filter(function(p) {
@@ -2418,7 +2426,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
                 && (ctr.said === undefined || checkSaidText(ctr.said, p));
         });
         var hasUpperBound = (ctr.count.max !== null && ctr.count.max < matches.length);
-        if (ctr.sayingMarker !== undefined || ctr.saying !== undefined || ctr.pose !== undefined) matches = matches.filter(function(p) {
+        if (ctr.sayingMarker !== undefined || ctr.saying !== undefined || ctr.addressing !== undefined || ctr.pose !== undefined) matches = matches.filter(function(p) {
             if (ctr.sayingMarker !== undefined) {
                 // The human player can't talk, and using
                 // saying/sayingMarker/pose on self would be circular (unless we're evaluating post-dialogue cases).
@@ -2447,6 +2455,20 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
                     return false;
                 }
             }
+            if (ctr.addressing !== undefined) {
+                if ((p == self && !postDialogue) || p == humanPlayer) return false;
+                const [_addressee, variable] = ctr.addressing.split("=").toReversed();
+                const addressee = findVariablePlayer(_addressee.toLowerCase(), self, opp)
+                const binding = findVariablePlayer((variable || "target").toLowerCase(), self, p.currentTarget, p.chosenState ? p.chosenState.parentCase.variableBindings : null)
+                if (!p.updatePending && p.chosenState && (binding == addressee || variable == null && Object.values(p.chosenState.parentCase.variableBindings).indexOf(addressee) != -1)) {
+                    volatileDependencies.add(p);
+                } else {
+                    if (hasUpperBound) {
+                        unwantedAddressings.push([p, variable, binding, addressee]);
+                    }
+                    return false;
+                }
+            }
             if (ctr.pose !== undefined) {
                 if ((p == self && !postDialogue) || p == humanPlayer) return false;
                 if (!p.updatePending && p.chosenState && poseNameMatches(ctr.pose, p.chosenState.image)) {
@@ -2462,10 +2484,11 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
         });
         /* Don't limit what other characters can say before the've had
          * a first chance to pick something to say. */
-        if ((unwantedSayings.length || unwantedMarkers.length || unwantedPoses.length) && players.some(function(p) {
+        if ((unwantedSayings.length || unwantedMarkers.length || unwantedPoses.length || unwantedAddressings) && players.some(function(p) {
             return p.updatePending && (unwantedSayings.some(function(item) { return item[0] == p; })
                                        || unwantedMarkers.some(function(item) { return item[0] == p; })
-                                       || unwantedPoses.some(function (item) { return item[0] == p; }));
+                                       || unwantedPoses.some(function (item) { return item[0] == p; })
+                                       || unwantedAddressings.some(function (item) { return item[0] = p; }));
         })) {
             return false;
         }
@@ -2500,6 +2523,7 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
             this.unwantedSayings = unwantedSayings;
             this.unwantedMarkers = unwantedMarkers;
             this.unwantedPoses = unwantedPoses;
+            this.unwantedAddressings = unwantedAddressings;
             return true;
         }
     }
@@ -2512,6 +2536,7 @@ Case.prototype.cleanupMutableState = function () {
     delete this.volatileDependencies;
     delete this.unwantedMarkers;
     delete this.unwantedSayings;
+    delete this.unwantedAddressings;
     delete this.unwantedPoses;
 }
 
