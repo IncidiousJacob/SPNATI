@@ -839,9 +839,15 @@ function showCalendarModal() {
 
 function displayEvents(eventDates) {
     let eventHtml = '';
+    x = 1;
     eventDates.forEach(date => {
         const emoji = date.costumes.map(costume => EVENT_COSTUME_PREFIXES[costume] || '').join('');
-        eventHtml += `<p><strong>${emoji} ${date.event}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
+        let eventName = date.event;
+        if (date.event == 'Sleepover') { 
+                eventName += (' ' + x);
+                x++;
+        }
+        eventHtml += `<p><strong>${emoji} ${eventName}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
     });
 
     // Display the events or a message if no events were found
