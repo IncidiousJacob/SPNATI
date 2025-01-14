@@ -5,6 +5,17 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="screaming (male)" id="33" priority="Noteworthy" min="0" max="5">
+            <description>He's screaming like a toddler. It'd be pretty hard to ignore, but someone not reacting could just be them not wanting to give him the attention he's looking for tbh</description>
+        </case>
+        <case name="screaming (female)" id="34" priority="Noteworthy" min="0" max="5">
+            <description>Same as the male one. Only one of these should happen in a given game. If both happen in the same game, then I fucked something up.</description>
+        </case>
+        <case name="switch-up (male)" id="35" priority="Noteworthy" min="0" max="5">
+            <description>He went from screaming and crying to all happy and bubbly in the span of five seconds. Talk about mood swings, right?</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="27" opponent="jasmine" opponentId="1" />
         <response id="29" opponent="jason" opponentId="26" />
@@ -14,7 +25,7 @@
     <notes>
         <note id="32">This case was hidden due to no longer making sense after changes were made to the targeted character. If you're rewriting this character, feel free to delete it.</note>
     </notes>
-    <nextId>32</nextId>
+    <nextId>35</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="acces" />
@@ -41,7 +52,10 @@
         <marker scope="Public" name="bad_lie3" />
         <marker scope="Public" name="bad_lost" />
         <marker scope="Public" name="bad_mayber" />
+        <marker scope="Public" name="better" />
+        <marker scope="Public" name="bin" />
         <marker scope="Public" name="binah_response1" />
+        <marker scope="Public" name="binah_response2" />
         <marker scope="Public" name="bitter" />
         <marker scope="Public" name="bob_cut" />
         <marker scope="Public" name="bottom" />
@@ -95,6 +109,7 @@
         <marker scope="Public" name="good_liar" />
         <marker scope="Public" name="good_lie" />
         <marker scope="Public" name="good_lying" />
+        <marker scope="Public" name="good_scream" />
         <marker scope="Public" name="good_scream1" />
         <marker scope="Public" name="good_scream2" />
         <marker scope="Public" name="good_see" />
@@ -128,6 +143,7 @@
         <marker scope="Public" name="maki_idolsbad" />
         <marker scope="Public" name="maki_santadead" />
         <marker scope="Public" name="mary_coward" />
+        <marker scope="Public" name="megu_response1" />
         <marker scope="Public" name="meia_clapback" />
         <marker scope="Public" name="meia_reply" />
         <marker scope="Public" name="meiaclapback" />
@@ -183,6 +199,7 @@
         <marker scope="Public" name="skin" />
         <marker scope="Public" name="slip-ons" />
         <marker scope="Public" name="smart_boy" />
+        <marker scope="Public" name="sobbing_violently" />
         <marker scope="Public" name="song1" />
         <marker scope="Public" name="song10" />
         <marker scope="Public" name="song11" />
