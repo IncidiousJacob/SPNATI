@@ -818,7 +818,7 @@ ul.dropdown-menu>li {
 }
 
 .wide-dropdown {
-    width: 70%;
+    width: 100%;
     margin: 0.5rem 0;
     background-color: #BBBBBB;
 }
@@ -2109,13 +2109,20 @@ ul.dropdown-menu>li {
     padding-top: 0.1em;
 }
 
+.title-calendar-button {
+    left: 62.25%;
+}
+
 .title-announcement-dropdown {
     position: absolute;
-    right: 33.5%;
-    width: 25%;
+    right: 41%;
+    left: 41%;
+    /* width: 25%; */
     top: 16.25%;
     font-size: 1.8rem;
     padding-top: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #announcement-dropdown-selection {
