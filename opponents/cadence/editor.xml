@@ -79,6 +79,10 @@
         <response id="483" opponent="yuzuki" opponentId="96" />
         <response id="489" opponent="yuzuki" opponentId="102" />
         <response id="490" opponent="rosie" opponentId="23" />
+        <response id="491" opponent="serena" opponentId="62" />
+        <response id="492" opponent="serena" opponentId="34" />
+        <response id="493" opponent="serena" opponentId="33" />
+        <response id="494" opponent="serena" opponentId="27" />
     </responses>
     <notes>
         <note id="1">At the start of the very first round (and ONLY the very first round, regardless of the result), Cadence wrongfully assumes she's playing the Club Penguin minigame "Card Jitsu" and exchanges one of her higher-value cards. This is the line as she's "playing" the card.</note>
@@ -593,17 +597,23 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="486" label="" folder="Responses&gt;Rosie" sort="0" />
         <label id="483" label="" folder="Responses&gt;Yuzuki" sort="0" />
         <label id="482" label="" folder="Responses&gt;Yuzuki" sort="0" />
-        <label id="487" label="Trends" folder="Responses&gt;Yuzuki" sort="0" />
-        <label id="488" label="Introductions" folder="Responses&gt;Yuzuki" sort="0" />
+        <label id="487" label="Trends" folder="Yuzuki" sort="0" />
+        <label id="488" label="Introductions" folder="Yuzuki" sort="0" />
+        <label id="492" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="494" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="491" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="493" label="" folder="Responses&gt;Serena" sort="0" />
     </labels>
-    <nextId>490</nextId>
+    <nextId>494</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
         <marker scope="Public" name="Banter_JuraToCadence_0A" />
-        <marker scope="Public" name="Banter_JuraToCadence_A0" />
         <marker scope="Public" name="Banter_MeiaToCadence_0A" />
+        <marker scope="Public" name="Banter_YuzukiToCadence0A" />
+        <marker scope="Public" name="Banter_YuzukiToCadence1A" />
         <marker scope="Public" name="BeanCounter">This "Lore" line references the "Bean Counter" Club Penguin minigame.</marker>
         <marker scope="Public" name="Blackout" />
         <marker scope="Public" name="Cadenky">These lines are for when Cadence mentions Franky, someone she's very often shipped with. If your character cares about shipping fictional characters, you might want them to react the first time she brings him up.</marker>
@@ -657,7 +667,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="NinjaBad" />
         <marker scope="Public" name="NinjaGood" />
         <marker scope="Public" name="NotABot">This "Lore" line references the players' suspicions that the in-game Cadence player was a bot. Fun Fact: In actuality, it was a Club Penguin employee playing the Cadence character every time!</marker>
-        <marker scope="Public" name="NowShesSad">Lines where Cadence begins to cry. Intended to carry over to the next round's Swapping phase.</marker>
+        <marker scope="Public" name="NowShesSad">Lines where Cadence begins to cry. Intended to start a chain of events starting from the next round's Swapping phase.</marker>
         <marker scope="Public" name="NudityIssue1" />
         <marker scope="Public" name="NudityIssue2" />
         <marker scope="Public" name="OutOfPatience">When Cadence's opponents strip accessories too many times in a row, she gets bored and loses her composure. This also ties in to when someone strips a major article; if she's gotten bored prior to this, she'll feel relief once the article is stripped.</marker>
@@ -695,6 +705,10 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_RosieMusic" />
         <marker scope="Public" name="Responses_SanakoGame" />
         <marker scope="Public" name="Responses_SchezoName" />
+        <marker scope="Public" name="Responses_Serena1stSkin" />
+        <marker scope="Public" name="Responses_SerenaMustStrip" />
+        <marker scope="Public" name="Responses_SerenaPoker" />
+        <marker scope="Public" name="Responses_SerenaToenails" />
         <marker scope="Public" name="Responses_ShantaeDanceFirst" />
         <marker scope="Public" name="Responses_SpookyArachneGross">When Spooky mentions spiders, this will trigger Cadence's instinctive disdain for bugs.</marker>
         <marker scope="Public" name="Responses_SpookyFears">When Spooky asks the players about their fears, Cadence will answer with her fear of bugs.</marker>
@@ -702,8 +716,6 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_SupernovaAnimals">When Supernova asks if animals can talk in this universe, Cadence will remark that she is, in fact, a talking penguin.</marker>
         <marker scope="Public" name="Responses_TrixieCleric" />
         <marker scope="Public" name="Responses_WikiBirthday">When Wikipe-tan mentions her birthday, Cadence will express surprise that Wikipedia's birthday and Cadence's first meetable appearance share the same date.</marker>
-        <marker scope="Public" name="Responses_YuzukiPenguin" />
-        <marker scope="Public" name="Responses_YuzukiTrends" />
         <marker scope="Public" name="SannyTessFrom2" />
         <marker scope="Public" name="SawBraFirst" />
         <marker scope="Public" name="ScarfSiblingsEnd" />
