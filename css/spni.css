@@ -2174,24 +2174,38 @@ ul.dropdown-menu>li {
 }
 
 .background-select-button {
-    left: 0px;
-    top: 50%;
-    transform: translateY(-80%);
     width: 5rem;
     height: 15rem;
+}
+
+.transcript-step-button {
+    width: 3.5rem;
+    height: 6rem;
+}
+
+.edge-button {
+    top: 50%;
+    transform: translateY(-80%);
     position: fixed;
     font-size: 150%;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-left: none;
     border-width: 0.3rem;
     background-color: rgba(200, 200, 200, 0.3);
 }
 
-.background-select-button:hover {
+.edge-button.left {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: none;
+}
+.edge-button.right {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+.edge-button:hover {
     background-color: rgba(200, 200, 200, 0.5);
 }
-.background-select-button:active {
+.edge-button:active {
     background-color: rgba(200, 200, 200, 0.7);
 }
 

@@ -237,7 +237,7 @@
 
         </div>
 
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden
+        <button class="bordered edge-button left background-select-button" onclick="showGameSettingsModal()" hidden
                 data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
@@ -583,7 +583,7 @@
                 <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </button>
         </div>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal(true)"
+        <button class="bordered edge-button left background-select-button" onclick="showGameSettingsModal(true)"
                 data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
@@ -3730,6 +3730,14 @@
             <!-- Minimal UI Player name label -->
             <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label game-table">Player</div>
         </div>
+        <button class="bordered edge-button left transcript-step-button" onclick="stepThroughTranscript(-1)"
+                data-toggle="tooltip" data-placement="right" title="Step backwards" hidden>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="bordered edge-button right transcript-step-button" onclick="stepThroughTranscript(+1)"
+                data-toggle="tooltip" data-placement="left" title="Step forwards" hidden>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
     </div>
     <div id="game-climax-overlay" hidden></div>
 
