@@ -174,6 +174,22 @@
         <response id="244" opponent="carmine" opponentId="50" />
         <response id="245" opponent="guzma" opponentId="13" />
         <response id="246" opponent="felix" opponentId="568" />
+        <response id="348" opponent="aoi_asahina" opponentId="772" />
+        <response id="349" opponent="carmine" opponentId="106" />
+        <response id="350" opponent="carmine" opponentId="105" />
+        <response id="356" opponent="aoi_asahina" opponentId="777" />
+        <response id="357" opponent="aoi_asahina" opponentId="776" />
+        <response id="358" opponent="chiaki" opponentId="800" />
+        <response id="359" opponent="chiaki" opponentId="799" />
+        <response id="360" opponent="chiaki" opponentId="801" />
+        <response id="361" opponent="chiaki" opponentId="802" />
+        <response id="363" opponent="jura" opponentId="2428" />
+        <response id="364" opponent="meia" opponentId="2547" />
+        <response id="365" opponent="schezo" opponentId="701" />
+        <response id="368" opponent="nadeshiko" opponentId="934" />
+        <response id="369" opponent="nadeshiko" opponentId="935" />
+        <response id="371" opponent="nadeshiko" opponentId="938" />
+        <response id="372" opponent="nadeshiko" opponentId="940" />
     </responses>
     <notes>
         <note id="37">A male character has just removed that small item early in game</note>
@@ -210,125 +226,154 @@
         <label id="181" label="" folder="Sleepover Serena" sort="0" />
         <label id="182" label="" folder="Performance Serena" sort="0" />
         <label id="185" label="" folder="Bedroom" sort="0" />
-        <label id="186" label="" folder="Beachtime Serena" sort="0" />
-        <label id="187" label="" folder="Bedroom" sort="0" />
-        <label id="188" label="" folder="Beachtime Serena" sort="0" />
-        <label id="189" label="" folder="Beachtime Serena" sort="0" />
+        <label id="186" label="" folder="Beachtime Serena" sort="2" />
+        <label id="187" label="" folder="Bedroom" sort="2" />
+        <label id="188" label="" folder="Beachtime Serena" sort="3" />
+        <label id="189" label="" folder="Beachtime Serena" sort="4" />
         <label id="190" label="" folder="Beachtime Serena" sort="0" />
-        <label id="210" label="" folder="Bedroom" sort="0" />
-        <label id="211" label="" folder="Bedroom" sort="0" />
-        <label id="212" label="" folder="Bedroom" sort="0" />
-        <label id="213" label="" folder="Bedroom" sort="0" />
-        <label id="214" label="" folder="Bedroom" sort="0" />
-        <label id="215" label="" folder="Bedroom" sort="0" />
-        <label id="248" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="249" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="210" label="" folder="Bedroom" sort="3" />
+        <label id="211" label="" folder="Bedroom" sort="4" />
+        <label id="212" label="" folder="Bedroom" sort="5" />
+        <label id="213" label="" folder="Bedroom" sort="6" />
+        <label id="214" label="" folder="Bedroom" sort="7" />
+        <label id="215" label="" folder="Bedroom" sort="8" />
+        <label id="248" label="" color="15" folder="Stage 0" sort="4" />
+        <label id="249" label="" color="15" folder="Stage 0" sort="16" />
         <label id="250" label="" color="15" folder="" sort="0" />
-        <label id="251" label="" color="15" folder="" sort="0" />
-        <label id="252" label="" color="15" folder="" sort="0" />
-        <label id="253" label="" color="15" folder="" sort="0" />
-        <label id="254" label="" color="15" folder="" sort="0" />
-        <label id="255" label="" color="15" folder="" sort="0" />
-        <label id="256" label="" color="15" folder="" sort="0" />
-        <label id="257" label="" color="15" folder="" sort="0" />
-        <label id="258" label="" color="15" folder="" sort="0" />
+        <label id="251" label="" color="15" folder="Stage 1" sort="9" />
+        <label id="252" label="" color="15" folder="Stage 1" sort="10" />
+        <label id="253" label="" color="15" folder="Stage 0" sort="21" />
+        <label id="254" label="" color="15" folder="Stage 1" sort="14" />
+        <label id="255" label="" color="15" folder="Stage 0" sort="3" />
+        <label id="256" label="" color="15" folder="Stage 0" sort="13" />
+        <label id="257" label="" color="15" folder="Stage 0" sort="6" />
+        <label id="258" label="" color="15" folder="Stage 0" sort="14" />
         <label id="259" label="" color="15" folder="" sort="0" />
-        <label id="260" label="" color="12" folder="" sort="0" />
-        <label id="261" label="" color="12" folder="" sort="0" />
-        <label id="262" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="263" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="264" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="265" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="266" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="267" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="260" label="" color="15" folder="" sort="0" />
+        <label id="261" label="" color="15" folder="" sort="0" />
+        <label id="262" label="" color="15" folder="Stage 0" sort="2" />
+        <label id="263" label="" color="15" folder="Stage 1" sort="2" />
+        <label id="264" label="" color="15" folder="Stage 1" sort="8" />
+        <label id="265" label="" color="15" folder="Stage 0" sort="15" />
+        <label id="266" label="" color="15" folder="Stage 0" sort="5" />
+        <label id="267" label="" color="15" folder="Stage 0" sort="17" />
         <label id="268" label="" color="12" folder="" sort="0" />
         <label id="269" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="270" label="" color="15" folder="Stage 5" sort="0" />
+        <label id="270" label="" color="15" folder="Stage 5" sort="2" />
         <label id="271" label="" color="15" folder="Stage 5" sort="0" />
-        <label id="272" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="273" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="272" label="" color="15" folder="Stage 1" sort="12" />
+        <label id="273" label="" color="15" folder="Stage 2" sort="10" />
         <label id="274" label="" color="6" folder="Stage 6" sort="0" />
         <label id="275" label="" color="12" folder="" sort="0" />
-        <label id="276" label="" color="15" folder="Stage 5" sort="0" />
-        <label id="277" label="" color="15" folder="Stage 6" sort="0" />
+        <label id="276" label="" color="15" folder="Stage 5" sort="3" />
+        <label id="277" label="" color="15" folder="Stage 6" sort="2" />
         <label id="278" label="" color="15" folder="" sort="0" />
-        <label id="279" label="" color="15" folder="Stage 5" sort="0" />
-        <label id="280" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="279" label="" color="15" folder="Stage 5" sort="4" />
+        <label id="280" label="" color="15" folder="Stage 3" sort="3" />
         <label id="281" label="" color="15" folder="Swimsuit" sort="0" />
-        <label id="282" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="283" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="284" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="285" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="286" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="282" label="" color="15" folder="Stage 3" sort="4" />
+        <label id="283" label="" color="15" folder="Stage 3" sort="5" />
+        <label id="284" label="" color="15" folder="Stage 3" sort="2" />
+        <label id="285" label="" color="15" folder="Stage 3" sort="6" />
+        <label id="286" label="" color="15" folder="Stage 0" sort="9" />
         <label id="287" label="" color="12" folder="" sort="0" />
-        <label id="288" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="289" label="" color="15" folder="Stage 5" sort="0" />
-        <label id="290" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="291" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="292" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="288" label="" color="15" folder="Stage 2" sort="8" />
+        <label id="289" label="" color="15" folder="Stage 5" sort="5" />
+        <label id="290" label="" color="15" folder="Stage 2" sort="9" />
+        <label id="291" label="" color="15" folder="Stage 2" sort="4" />
+        <label id="292" label="" color="15" folder="Stage 2" sort="3" />
         <label id="293" label="" color="15" folder="" sort="0" />
-        <label id="294" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="294" label="" color="15" folder="Stage 0" sort="8" />
         <label id="295" label="" color="15" folder="" sort="0" />
-        <label id="296" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="296" label="" color="15" folder="Stage 0" sort="7" />
         <label id="297" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="298" label="" color="15" folder="Stage 1" sort="0" />
+        <label id="298" label="" color="15" folder="Stage 1" sort="3" />
         <label id="299" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="300" label="" color="15" folder="" sort="0" />
-        <label id="301" label="" color="15" folder="Stage 1" sort="0" />
+        <label id="300" label="" color="15" folder="Stage 1" sort="7" />
+        <label id="301" label="" color="15" folder="Stage 1" sort="11" />
         <label id="302" label="" color="15" folder="" sort="0" />
-        <label id="303" label="" color="15" folder="" sort="0" />
-        <label id="304" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="305" label="" color="6" folder="Stage 6" sort="0" />
-        <label id="306" label="" color="15" folder="Stage 6" sort="0" />
-        <label id="307" label="" color="6" folder="Stage 6" sort="0" />
-        <label id="308" label="" color="6" folder="Stage 7" sort="0" />
-        <label id="309" label="" color="15" folder="Stage 6" sort="0" />
-        <label id="310" label="" color="6" folder="Stage 6" sort="0" />
-        <label id="311" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="312" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="313" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="314" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="315" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="316" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="317" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="318" label="" color="15" folder="Stage 6" sort="0" />
-        <label id="319" label="" color="15" folder="Stage 6" sort="0" />
-        <label id="320" label="" color="15" folder="Stage 6" sort="0" />
-        <label id="321" label="" color="15" folder="Stage 1" sort="0" />
+        <label id="303" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="304" label="" color="15" folder="Stage 2" sort="2" />
+        <label id="305" label="" color="6" folder="Stage 6" sort="3" />
+        <label id="306" label="" color="15" folder="Stage 6" sort="4" />
+        <label id="307" label="" color="6" folder="Stage 6" sort="6" />
+        <label id="308" label="" color="6" folder="" sort="0" />
+        <label id="309" label="" color="15" folder="Stage 6" sort="10" />
+        <label id="310" label="" color="6" folder="Stage 6" sort="5" />
+        <label id="311" label="" color="15" folder="Stage 4" sort="6" />
+        <label id="312" label="" color="15" folder="Stage 4" sort="3" />
+        <label id="313" label="" color="15" folder="Stage 3" sort="7" />
+        <label id="314" label="" color="15" folder="Stage 3" sort="8" />
+        <label id="315" label="" color="15" folder="Stage 4" sort="5" />
+        <label id="316" label="" color="15" folder="Stage 4" sort="4" />
+        <label id="317" label="" color="15" folder="Stage 4" sort="7" />
+        <label id="318" label="" color="15" folder="Stage 6" sort="7" />
+        <label id="319" label="" color="15" folder="Stage 6" sort="9" />
+        <label id="320" label="" color="15" folder="Stage 6" sort="8" />
+        <label id="321" label="" color="15" folder="Stage 1" sort="5" />
         <label id="322" label="" color="15" folder="Stage 9" sort="0" />
-        <label id="323" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="324" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="325" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="326" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="327" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="323" label="" color="15" folder="Stage 0" sort="12" />
+        <label id="324" label="" color="15" folder="Stage 0" sort="10" />
+        <label id="325" label="" color="15" folder="Stage 0" sort="11" />
+        <label id="326" label="" color="15" folder="Stage 1" sort="6" />
+        <label id="327" label="" color="15" folder="Stage 4" sort="2" />
         <label id="176" label="" color="15" folder="" sort="0" />
-        <label id="79" label="" color="15" folder="Stage 7" sort="0" />
-        <label id="80" label="" color="15" folder="Stage 7" sort="0" />
+        <label id="79" label="" color="15" folder="Stage 7" sort="3" />
+        <label id="80" label="" color="15" folder="Stage 7" sort="4" />
         <label id="73" label="" color="12" folder="" sort="0" />
         <label id="74" label="" color="15" folder="Stage 0" sort="0" />
         <label id="136" label="" color="15" folder="" sort="0" />
         <label id="83" label="" color="15" folder="" sort="0" />
         <label id="75" label="" color="12" folder="" sort="0" />
         <label id="76" label="" color="15" folder="Stage 7" sort="0" />
-        <label id="328" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="329" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="330" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="331" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="332" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="333" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="334" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="335" label="" color="15" folder="Stage 7" sort="0" />
-        <label id="336" label="" color="15" folder="Stage 7" sort="0" />
-        <label id="337" label="" color="6" folder="Stage 7" sort="0" />
-        <label id="338" label="" color="15" folder="Stage 6" sort="0" />
+        <label id="328" label="" color="15" folder="Stage 1" sort="4" />
+        <label id="329" label="" color="15" folder="Stage 2" sort="7" />
+        <label id="330" label="" color="15" folder="Stage 1" sort="13" />
+        <label id="331" label="" color="15" folder="Stage 0" sort="18" />
+        <label id="332" label="" color="15" folder="Stage 0" sort="20" />
+        <label id="333" label="" color="15" folder="Stage 0" sort="19" />
+        <label id="334" label="" color="15" folder="Stage 2" sort="5" />
+        <label id="335" label="" color="15" folder="Stage 7" sort="5" />
+        <label id="336" label="" color="15" folder="" sort="0" />
+        <label id="337" label="" color="6" folder="Stage 7" sort="2" />
+        <label id="338" label="" color="15" folder="Stage 6" sort="11" />
         <label id="339" label="" color="2" folder="" sort="0" />
         <label id="340" label="" color="2" folder="" sort="0" />
         <label id="341" label="" color="2" folder="" sort="0" />
         <label id="342" label="" color="2" folder="" sort="0" />
         <label id="20" label="" color="15" folder="" sort="0" />
-        <label id="343" label="" color="15" folder="" sort="0" />
+        <label id="343" label="" color="2" folder="" sort="0" />
+        <label id="344" label="" color="2" folder="" sort="0" />
+        <label id="345" label="" color="2" folder="" sort="0" />
+        <label id="346" label="" color="2" folder="" sort="0" />
+        <label id="347" label="" color="2" folder="" sort="0" />
+        <label id="349" label="" color="2" folder="Stage 2" sort="6" />
+        <label id="350" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="351" label="" color="15" folder="Stage 7" sort="6" />
+        <label id="352" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="353" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="354" label="" color="6" folder="Stage 7" sort="0" />
+        <label id="355" label="" color="15" folder="Stage 5" sort="0" />
+        <label id="348" label="" color="6" folder="Stage 7" sort="0" />
+        <label id="356" label="" color="2" folder="Stage 7" sort="0" />
+        <label id="357" label="" color="2" folder="Stage 7" sort="0" />
+        <label id="358" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="359" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="360" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="361" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="362" label="" color="15" folder="Stage 0" sort="0" />
+        <label id="363" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="364" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="365" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="366" label="" color="15" folder="" sort="0" />
+        <label id="367" label="" color="15" folder="1 Must Strip" sort="0" />
+        <label id="368" label="" color="15" folder="2 Stripping" sort="0" />
+        <label id="369" label="" color="15" folder="3 After Stripping" sort="0" />
+        <label id="370" label="" color="15" folder="1 Must Strip" sort="0" />
+        <label id="371" label="" color="15" folder="2 Stripping" sort="0" />
+        <label id="372" label="" color="15" folder="3 After Stripping" sort="0" />
     </labels>
-    <nextId>343</nextId>
+    <nextId>372</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
@@ -384,12 +429,15 @@
         <marker scope="Public" name="serena_aoiasahina_cute_71">Serena target to Aoi, clarifying that Aoi is crushing on her</marker>
         <marker scope="Public" name="serena_aoiasahina_cute_72">Response to Aoi A's "you are atractive, but this isn't the place to catch feelings?" dual forfeit target</marker>
         <marker scope="Public" name="serena_aoiasahina_cute_73">Serena targeting Aoi A, continuing the confession arc when Aoi has to strip panties. Kind but misunderstood comment</marker>
+        <marker scope="Public" name="serena_aoiasahina_cute_74">Aoi A's "Then I'm all yours" response to Serena's "I could just hug you n stuff"</marker>
+        <marker scope="Public" name="serena_aoiasahina_cutegay_71">Serena's response to Aoi A's "Not at all, I hope I didn't make the awkward again."</marker>
         <marker scope="Public" name="serena_aoiasahina_love_6">First response to Aoi A's psuedo love confession</marker>
         <marker scope="Public" name="serena_aoiasahina_love_62">Second response to Aoi A's "love confession" branch</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_6">First response to Aoi A's lucky trio comment</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_62">Second response to Aoi A's "you think I'm cute cute" target</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_62tricky">Responding to Aoi A's "I try my best, you're the first girl to say that to me" target when Serena calls her a sweetheart</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_6tricky">"Tricky" branch of Aoi A's "love can be tricky to find" she likes serena target</marker>
+        <marker scope="Public" name="serena_aoiasahina_trio_71">Aoi, I-I don't know what to say. I-I mean, you're certainly cute... and um, but I...</marker>
         <marker scope="Public" name="serena_aoii_s1">First response to Aoi I's first target</marker>
         <marker scope="Public" name="serena_aoii_s1a">First resposne to Aoi I's first target alt response</marker>
         <marker scope="Public" name="serena_binah_pokemon1">First response Binah's pokemon target</marker>
@@ -407,12 +455,16 @@
         <marker scope="Public" name="serena_carmine_s1_2">Second response to Carmie's Kalos people are mean target</marker>
         <marker scope="Public" name="serena_carmine_s1a">Second response to Carmine's first target alt response "eat dirt prude"</marker>
         <marker scope="Public" name="serena_carmine_s2">Second response to Carmine's first tagret</marker>
+        <marker scope="Public" name="serena_carmine_s2_1">Third response to Carmine's cab response</marker>
+        <marker scope="Public" name="serena_carmine_s21">First response to Carmine's "whats your deal, you travel?" target</marker>
         <marker scope="Public" name="serena_chiaki_0">First response to Chiaki's must strip 0 target not having mentioned Sayaka</marker>
         <marker scope="Public" name="serena_chiaki_02">Second response to Chiaki's performing target not mentioning Sayaka</marker>
         <marker scope="Public" name="serena_chiaki_0rockband">Second response to Chiaki's performing target rockband branch</marker>
         <marker scope="Public" name="serena_chiaki_1">First response to Chiaki's lost shoes target</marker>
+        <marker scope="Public" name="serena_chiaki_11">Response to Chiaki's "you look like the avatar in the game, maybe you modeled for the game?"</marker>
         <marker scope="Public" name="serena_chiaki_12">Second response to Chiaki's come up with a goal like Serena has </marker>
         <marker scope="Public" name="serena_chiaki_21">Response to Chiaki's "have a good goal like try a hard game to see what it's about" to Serena's "got to have a goal"</marker>
+        <marker scope="Public" name="serena_chiaki_23">Response to Chiaki's "bringing large pokemon would be an issue maybe eevee?"</marker>
         <marker scope="Public" name="serena_chiaki_bra_4">First response to Chiaki's must strip 4 target commenting on Serena's bra</marker>
         <marker scope="Public" name="serena_chiaki_bra_42">Second response to Chiaki's cute bra target</marker>
         <marker scope="Public" name="serena_chiaki_bra_51">Response to Chiaki's "stats are like pokemon moves" line</marker>
@@ -421,8 +473,10 @@
         <marker scope="Public" name="serena_chiaki_class_21">Response to Chiaki's "trapping in the class made us close" target</marker>
         <marker scope="Public" name="serena_chiaki_classroom21">First response to Chiaki's "bring your pokemon" target when in a classroom</marker>
         <marker scope="Public" name="serena_chiaki_megaevolve">First resposne to Chiaki's losing when Serena wins "strong bond, maybe I'll mega evolve" target</marker>
+        <marker scope="Public" name="serena_chiaki_rockband_11">Response to Chiaki's "you'd love dance manis then."</marker>
         <marker scope="Public" name="serena_chiaki_sayaka_0">First response to Chiaki's must strip 0 target having mentioned Sayaka.</marker>
         <marker scope="Public" name="serena_chiaki_sayaka_02">Second response to Chiaki's must strip 0 target having mentioned Sayaka.</marker>
+        <marker scope="Public" name="serena_chiaki_sayaka_11">Response to Chiaki's "she can be a handful, like a pokemon using helping hand"</marker>
         <marker scope="Public" name="serena_chiaki_trio_61">First response to Chiaki's "my rack wins" target</marker>
         <marker scope="Public" name="serena_darkness_cute2">Response to Darkness's "Other trying to get you naked, protection depends." target</marker>
         <marker scope="Public" name="serena_darkness_cute3">Response to Darkness's "feel free to ask anytime" to Serena's "I'll ask if I need help some help!"</marker>
@@ -437,7 +491,8 @@
         <marker scope="Public" name="serena_jura_1">First response to Jura's first target</marker>
         <marker scope="Public" name="serena_jura_12">Second response to Jura's first target</marker>
         <marker scope="Public" name="serena_jura_13">Third response to Jura's first target</marker>
-        <marker scope="Public" name="serena_jura_2">Repsonse to Jura's "you dont' breed them, you wander and collect them" target</marker>
+        <marker scope="Public" name="serena_jura_2">Response to Jura's "you dont' breed them, you wander and collect them" target</marker>
+        <marker scope="Public" name="serena_jura_22">Response to Jura's "animals from earth sound nasty" response</marker>
         <marker scope="Public" name="serena_jura_m1">First response to Jura's m stage target</marker>
         <marker scope="Public" name="serena_megumin_biggestmonster">First response to Megumin asking about the biggest monster Serena has killed</marker>
         <marker scope="Public" name="serena_megumin_bothnobra_7">Target towards Megumin not wearing a bra when Serena doesn't have hers</marker>
@@ -449,12 +504,24 @@
         <marker scope="Public" name="serena_megumin_shave">First response to Megumin asking about being shaved down there, when Serena is clothed</marker>
         <marker scope="Public" name="serena_megumin_shavenude">First response to Megumin asking about being shaved down there, when Serena is naked</marker>
         <marker scope="Public" name="serena_meia_21">First response to Meia's "how do you know what pokemon are good for performing" target</marker>
-        <marker scope="Private" name="serena_meia_s1">First response to Meia's strip stage target</marker>
+        <marker scope="Public" name="serena_meia_22">Reponse to Meia's "You talk about Pokemon like they are humans"</marker>
+        <marker scope="Public" name="serena_meia_s1">First response to Meia's strip stage target</marker>
         <marker scope="Public" name="serena_meia_s12">Seconrd response to Meia's first target</marker>
         <marker scope="Public" name="serena_meia_s13">Third response (i think) to Meia's "tell me about kalos" target</marker>
+        <marker scope="Public" name="serena_nade_hair01" />
+        <marker scope="Public" name="serena_nade_hair1" />
+        <marker scope="Public" name="serena_nade_hair2" />
+        <marker scope="Public" name="serena_nade_hair3" />
+        <marker scope="Public" name="serena_nade_hobbies1" />
+        <marker scope="Public" name="serena_nade_hobbies2" />
+        <marker scope="Public" name="serena_nade_hobbies3" />
+        <marker scope="Public" name="serena_nade_siblings1" />
+        <marker scope="Public" name="serena_nade_siblings2" />
+        <marker scope="Public" name="serena_nade_siblings3" />
         <marker scope="Public" name="serena_nagisa_badpoker1">Response to Nagisa's "keep the hearts, they are cute" reponse to "bad_poker" situation</marker>
         <marker scope="Public" name="serena_schezo_0">First response to Schexo's "tell me about sights you've seen" target</marker>
         <marker scope="Public" name="serena_schezo_01">Second response to Schezo's "tell me about what you've seen" target</marker>
+        <marker scope="Public" name="serena_schezo_11">Response to Schezo's "Pressing matters didn't let me tour Suzuran, there was a district with much business."</marker>
         <marker scope="Public" name="toenail_compare">Serena asks what color toenail polish the girls like</marker>
         <marker scope="Public" name="vagina_compare">Serena asks the player with a room full of crotch exposed girls, who has the best vagina</marker>
         <marker scope="Public" name="why_misty">Start of a potential converstaion with Misty</marker>
