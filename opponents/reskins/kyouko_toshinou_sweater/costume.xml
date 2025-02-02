@@ -1578,6 +1578,13 @@
                 <keyframe time="1.5" alpha="100" />
             </directive>
         </pose>
+        <pose id="3-stripping-calm">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_sweater/3-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_sweater/3-stripping-a.png" />
+                <keyframe time="1" src="reskins/kyouko_toshinou_sweater/3-stripping-b.png" />
+            </directive>
+        </pose>
     </poses>
 
     <pose-sets>
