@@ -597,7 +597,7 @@
         <label id="598" label="" folder="Filtered" sort="7" />
         <label id="599" label="" folder="Filtered" sort="8" />
         <label id="604" label="" folder="Background" sort="27" />
-        <label id="606" label="Idol" folder="Filtered" sort="11" />
+        <label id="606" label="Idol" folder="Filtered" sort="0" />
         <label id="607" label="Idol" folder="Filtered" sort="12" />
         <label id="608" label="POSE NOT DECLARED -- Idol" folder="Filtered" sort="13" />
         <label id="609" label="Idol" folder="Filtered" sort="9" />
@@ -731,8 +731,8 @@
         <label id="755" label="Lost Stage 4" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="756" label="Lost Stage 1 Classroom" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="757" label="Lost Stage 0 DR" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="759" label="" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="760" label="" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="759" label="" color="6" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="760" label="" color="6" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="761" label="" color="2" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="762" label="" color="10" folder="Targeted&gt;Trio+" sort="0" />
         <label id="763" label="Stripping Stage 0 DR" folder="Targeted&gt;Outbounds" sort="0" />
@@ -771,13 +771,20 @@
         <label id="796" label="" color="9" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="797" label="" color="9" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="798" label="" color="9" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="799" label="Stripped Stage 0 DR" color="2" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="800" label="Stripping Stage 2" color="2" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="801" label="Stripped Stage 0 Adventuring" color="2" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="802" label="Stripped Stage 0 Rhythm Games" color="2" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="799" label="Stripped Stage 0 DR" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="800" label="Stripping Stage 2" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="801" label="Stripped Stage 0 Adventuring" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="802" label="Stripped Stage 0 Rhythm Games" folder="Targeted&gt;Outbounds" sort="0" />
         <label id="803" label="" color="10" folder="Targeted&gt;Trio+" sort="0" />
-        <label id="804" label="" color="2" folder="Targeted&gt;Outbounds" sort="0" />
-        <label id="805" label="" color="2" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="804" label="" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="805" label="" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="806" label="Idol" folder="Filtered" sort="0" />
+        <label id="807" label="Idol" color="6" folder="Filtered" sort="0" />
+        <label id="808" label="" color="2" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="809" label="" color="2" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="810" label="" color="6" folder="Targeted&gt;Outbounds" sort="0" />
+        <label id="811" label="" color="6" folder="Targeted&gt;Trio+" sort="0" />
+        <label id="812" label="Stripped Stage 2" color="2" folder="Targeted&gt;Outbounds" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-broughtsomething</prefix>
@@ -825,7 +832,7 @@
         <prefix>selfie</prefix>
         <prefix>#-riding</prefix>
     </prefixes>
-    <nextId>805</nextId>
+    <nextId>812</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1v1" />
@@ -886,6 +893,8 @@
         <marker scope="Public" name="cadence_01club" />
         <marker scope="Public" name="cadence_02" />
         <marker scope="Public" name="cadence_02club" />
+        <marker scope="Public" name="cadence_03" />
+        <marker scope="Public" name="cadence_03club" />
         <marker scope="Public" name="cadence_2009arcade" />
         <marker scope="Public" name="challengeaccepted" />
         <marker scope="Public" name="chess_sacrifice" />
@@ -1126,11 +1135,13 @@
         <marker scope="Public" name="hina_42" />
         <marker scope="Public" name="hina_43" />
         <marker scope="Public" name="hina_51" />
+        <marker scope="Public" name="hina_51trio" />
         <marker scope="Public" name="hina_52" />
         <marker scope="Public" name="hina_53" />
         <marker scope="Public" name="hina_61" />
         <marker scope="Public" name="hina_62" />
         <marker scope="Public" name="hina_63" />
+        <marker scope="Public" name="hina_63serena" />
         <marker scope="Public" name="hina_chestvisible" />
         <marker scope="Public" name="hina_compareReply" />
         <marker scope="Public" name="hina_end_defeat" />
@@ -1401,6 +1412,7 @@
         <marker scope="Public" name="recognize" />
         <marker scope="Public" name="requestingbuff" />
         <marker scope="Public" name="res" />
+        <marker scope="Public" name="Resp_rosie_01" />
         <marker scope="Public" name="revy_r01" />
         <marker scope="Public" name="rinkah_01a" />
         <marker scope="Public" name="rinkah_02" />
@@ -1493,16 +1505,21 @@
         <marker scope="Public" name="serena_21" />
         <marker scope="Public" name="serena_21classroom" />
         <marker scope="Public" name="serena_22" />
+        <marker scope="Public" name="serena_23" />
         <marker scope="Public" name="serena_41" />
         <marker scope="Public" name="serena_42" />
         <marker scope="Public" name="serena_43" />
         <marker scope="Public" name="serena_chiaki_0" />
+        <marker scope="Public" name="serena_chiaki_02" />
+        <marker scope="Public" name="serena_chiaki_0rockband" />
         <marker scope="Public" name="serena_chiaki_1" />
         <marker scope="Public" name="serena_chiaki_12" />
+        <marker scope="Public" name="serena_chiaki_21" />
         <marker scope="Public" name="serena_chiaki_bra_42" />
         <marker scope="Public" name="serena_chiaki_class_1" />
         <marker scope="Public" name="serena_chiaki_class_12" />
         <marker scope="Public" name="serena_chiaki_sayaka_0" />
+        <marker scope="Public" name="serena_chiaki_sayaka_02" />
         <marker scope="Public" name="serena_chiaki_trio_61" />
         <marker scope="Public" name="serena_hina_trio1" />
         <marker scope="Public" name="serena_hina_trio2" />
@@ -1533,6 +1550,7 @@
         <marker scope="Public" name="strip_catDay" />
         <marker scope="Public" name="strip_fanservice" />
         <marker scope="Public" name="strip_fanservice2" />
+        <marker scope="Public" name="strip_fanserviceRosie1" />
         <marker scope="Public" name="strip_gamers" />
         <marker scope="Public" name="strip_idol" />
         <marker scope="Public" name="strip_kaizo" />
