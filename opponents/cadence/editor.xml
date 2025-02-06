@@ -89,6 +89,8 @@
         <response id="503" opponent="aoi_asahina" opponentId="39" />
         <response id="511" opponent="kokichi" opponentId="34" />
         <response id="515" opponent="velvet" opponentId="1" />
+        <response id="537" opponent="miko" opponentId="12" />
+        <response id="540" opponent="miko" opponentId="7" />
     </responses>
     <notes>
         <note id="1">At the start of the very first round (and ONLY the very first round, regardless of the result), Cadence wrongfully assumes she's playing the Club Penguin minigame "Card Jitsu" and exchanges one of her higher-value cards. This is the line as she's "playing" the card.</note>
@@ -125,7 +127,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="98">When the player selects an opponent with the tag "singer", Cadence will be elated by the opportunity to befriend a fellow singer.</note>
         <note id="99">When playing against tall characters who are either mean or villainous, Cadence will notice the similarities to the main villain from her source material and get nervous.</note>
         <note id="77">When an opponent is taking off an accessory, Cadence has a chance of taking and posting a selfie to pass the time. </note>
-        <note id="109">Cadence made her official Club Penguin debut on January 15  for the Waddle-On Dance-A-Thon. If a player chooses to play with Cadence on this day, Cadence will comment on it.</note>
+        <note id="109">Cadence made her official Club Penguin debut on January 15  for the Waddle-On Dance-A-Thon. If a player chooses to play with Cadence on this day, Cadence will comment on it. Also, Legacy and Journey are capitalized because I'm referencing the last remaining major private servers with all the subtlety of a brick through a window.</note>
         <note id="114">Playing in a background with the "hot" property will make Cadence much less comfortable, given the climate of her source material.</note>
         <note id="115">Playing in the "club" background will make Cadence feel at home, given her role in her source material.</note>
         <note id="122">If the player somehow breaks the game and allows two Cadences to play at once, the second Cadence will be revealed to be Dot the Disguise Gal.</note>
@@ -188,7 +190,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="301">When Cadence doesn't have an ongoing conversation and must strip off her shoes, she'll tell a story about one of the handful of major events she was part of. Each of these stories will continue through the Stripping and After Stripping phases before ending on the start of next round's Hand=Any phase. If you would like your character to react to the story as opposed to the stripping of her shoes, please make sure to set the condition for Target = Cadence AND Saying Marker "StoryTime_[Letter][Number]" where Letter is the story in question and Number is the part of the story she's on. Just in case it wasn't obvious: do not include brackets when selecting the marker for the Target Saying Marker variable.</note>
         <note id="302">After losing a game against Brazilian opponents, Cadence may hop on her phone for a lesson. A subtle reference to the fact that Cadence has previously made sporadic appearances in Club Penguin's Portuguese servers.</note>
         <note id="304">Playing in the "Da Invuntry" background will make Cadence note the similarity to Club Penguin's "April Fool's" party decorations.</note>
-        <note id="322">A special "thank you" to any player who repeatedly plays SPNatI with Cadence.</note>
+        <note id="322">Cadence doesn't exactly take losing to someone named "Daddy" or "Master" very well.</note>
         <note id="339">Upon entering Stage 4 of her stripping, Cadence will move the scarf out of the way so the player can see her breasts.</note>
         <note id="357">When the player selects an opponent with the tag "spy", Cadence will comment on the EPF, a spy agency from her own home series.</note>
         <note id="362">Cadence doesn't exactly take losing to someone named "Daddy" or "Master" very well.</note>
@@ -203,7 +205,9 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="477">Cadence's "Humanization" marker won't play if she's already mentioned her new body in banter, such as with Meia.</note>
         <note id="481">True story, by the way. In 2013, Club Penguin's "Coins For Change" charity garnered enough donations from its player base to equate $10,000,000, every dime of which went towards things like providing clean water to Ecuador, snow leopard conservation in Russia, a maternity ward in Malawa, toys for orphanages in the United States, nesting grounds for REAL penguins in the REAL Antarctica, and so much more. Not a sexiy fact by any stretch, but if kids giving to the needy out of the goodness in their hearts doesn't put a smile on your face, I'm not sure what to tell you.</note>
         <note id="483">Lemme know if this would count as "too close to 'yes' to be confusing". The idea is that, canonically, certain characters from Club Penguin (notably Rookie and Captain Rockhopper) have a hard time deciphering Cadence's heavy use of slang, so if she had to deliberately confuse someone, odds are her best course of action is to just start using Cadence-isms to an outright excessive degree.</note>
-        <note id="507">Reminder: Club Penguin Island was an attempt to reboot the franchise. This Cadence is from the original Club Penguin, and won't know any specifics about what Island was supposed to be nor its fate at the end of 2018.</note>
+        <note id="528">Up until Club Penguin started to gain a significant fanbase outside of English-speaking parts of the world, St. Patrick's Day was a heavily-celebrated holiday on the island. Playing Cadence on St. Patrick's Day will trigger a response.</note>
+        <note id="529">Fun fact: in Club Penguin's "Dance Contest" minigame, there actually WAS a hidden Expert difficulty. The player could unlock this mode at the 'difficulty select' menu by clicking on Cadence instead of selecting an actual difficulty. Fittingly, Cadence in the "Club" background bumps her difficulty up to the highest SPNatI will allow.</note>
+        <note id="537">For MisterSolitaire: This is only about 80% of her desire. To get the other 20%, have Miko ask her about Franky; getting more chances to talk about the Sonic to her Amy would really help with the whole 'doesn't express sexuality' issue you said she has at the moment. If needed, I can provide a picture and summarized backstory; you only need to ask.</note>
     </notes>
     <labels>
         <label id="3" label="(Self: Full House, Threes &amp; Twos)" folder="" sort="0" />
@@ -383,7 +387,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="262" label="I Have Lost My Patience (Not Lost Sneakers)" folder="!Generic&gt;Extra" sort="19" />
         <label id="263" label="I Have Lost My Patience (Lost Sneakers)" folder="!Generic&gt;Extra" sort="20" />
         <label id="264" label="" folder="Extra" sort="0" />
-        <label id="265" label="Cadence Indecent, Opponent Decent" folder="!Generic&gt;Extra" sort="12" />
+        <label id="265" label="Cadence Indecent, Opponent Decent" folder="!Generic&gt;Extra" sort="0" />
         <label id="266" label="Target Exposed" folder="!Generic&gt;Extra" sort="0" />
         <label id="267" label="Opponent Exposed" folder="!Generic&gt;Extra" sort="13" />
         <label id="268" label="Headphones" folder="Tags" sort="17" />
@@ -610,41 +614,70 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="494" label="" folder="Responses&gt;Serena" sort="0" />
         <label id="491" label="" folder="Responses&gt;Serena" sort="0" />
         <label id="493" label="" folder="Responses&gt;Serena" sort="0" />
-        <label id="495" label="" folder="Responses&gt;Chiaki" sort="0" />
-        <label id="496" label="" folder="Responses&gt;Chiaki" sort="0" />
-        <label id="497" label="" folder="Responses&gt;Chiaki" sort="0" />
+        <label id="495" label="" folder="Chiaki" sort="0" />
+        <label id="496" label="" folder="Chiaki" sort="0" />
+        <label id="497" label="" folder="Chiaki&gt;Club" sort="0" />
         <label id="500" label="" folder="Responses&gt;AoiAsahina" sort="0" />
-        <label id="501" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="501" label="" folder="AoiAsahina" sort="0" />
         <label id="502" label="" folder="Responses&gt;AoiAsahina" sort="0" />
         <label id="504" label="" folder="Responses&gt;AoiAsahina" sort="0" />
-        <label id="505" label="" folder="Responses&gt;AoiAsahina" sort="0" />
-        <label id="508" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="505" label="" folder="AoiAsahina&gt;Water" sort="0" />
+        <label id="508" label="" folder="AoiAsahina" sort="0" />
         <label id="509" label="Target Exposed" folder="!Generic&gt;Extra" sort="0" />
         <label id="510" label="Opponent Indecent" folder="!Generic&gt;Extra" sort="0" />
         <label id="511" label="" folder="Responses&gt;Kokichi" sort="0" />
         <label id="512" label="" folder="Responses&gt;Kokichi" sort="0" />
-        <label id="506" label="" folder="Responses&gt;Chiaki" sort="0" />
+        <label id="506" label="" folder="Responses&gt;Chiaki&gt;Club" sort="0" />
         <label id="507" label="" folder="Responses&gt;Chiaki" sort="0" />
         <label id="513" label="" folder="Responses&gt;Kokichi" sort="0" />
         <label id="514" label="" folder="Responses&gt;Kokichi" sort="0" />
         <label id="516" label="" folder="Responses&gt;AoiAsahina" sort="0" />
-        <label id="517" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="517" label="" folder="AoiAsahina" sort="0" />
         <label id="518" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="519" label="" folder="Schezo" sort="0" />
+        <label id="520" label="" folder="Responses&gt;Wii Fit Trainer" sort="0" />
+        <label id="521" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="522" label="" folder="Responses&gt;Wii Fit Trainer" sort="0" />
+        <label id="523" label="" folder="Responses&gt;Wii Fit Trainer" sort="0" />
+        <label id="524" label="" folder="Responses&gt;Wii Fit Trainer" sort="0" />
+        <label id="525" label="Cadence Indecent, IHLMP" folder="!Generic&gt;Extra" sort="0" />
+        <label id="526" label="I Have Lost My Patience" folder="!Generic&gt;Extra" sort="0" />
+        <label id="527" label="Previously Lost Patience (0-5)" folder="!Generic&gt;Minor" sort="0" />
+        <label id="528" label="(St. Patrick's Day)" folder="" sort="0" />
+        <label id="515" label="" folder="Responses&gt;Velvet" sort="0" />
+        <label id="530" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="531" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="532" label="" folder="Responses&gt;Serena" sort="0" />
+        <label id="533" label="" folder="Responses&gt;Chiaki" sort="0" />
+        <label id="529" label="" folder="Responses&gt;Chiaki&gt;Club" sort="0" />
+        <label id="534" label="" folder="Responses&gt;AoiAsahina&gt;Water" sort="0" />
+        <label id="535" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="536" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="537" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="538" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="539" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="540" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="541" label="" folder="Responses&gt;Chiaki" sort="0" />
     </labels>
-    <nextId>518</nextId>
+    <nextId>541</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
-        <marker scope="Public" name="Banter_Chiaki0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0B" />
+        <marker scope="Public" name="Banter_ChiakiToCadence0C" />
         <marker scope="Public" name="Banter_ChiakiToClubCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToClubCadence0B" />
+        <marker scope="Public" name="Banter_ChiakiToClubCadence0C" />
         <marker scope="Public" name="Banter_HinaToCadence0A" />
-        <marker scope="Public" name="Banter_JuraToCadence_0A" />
-        <marker scope="Public" name="Banter_MeiaToCadence_0A" />
+        <marker scope="Public" name="Banter_HinaToCadence0B" />
+        <marker scope="Public" name="Banter_JuraToCadence0A" />
+        <marker scope="Public" name="Banter_MeiaToCadence0A" />
+        <marker scope="Public" name="Banter_SchezoToCadence0A" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0A" />
+        <marker scope="Public" name="Banter_WaterHinaToCadence0B" />
         <marker scope="Public" name="Banter_YuzukiToCadence0A" />
         <marker scope="Public" name="Banter_YuzukiToCadence1A" />
         <marker scope="Public" name="BeanCounter">This "Lore" line references the "Bean Counter" Club Penguin minigame.</marker>
@@ -729,6 +762,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_JuraChristmasTraditions" />
         <marker scope="Public" name="Responses_JuraSanta" />
         <marker scope="Public" name="Responses_MeiaPilot" />
+        <marker scope="Public" name="Responses_MikoDesire" />
         <marker scope="Public" name="Responses_NamiBody" />
         <marker scope="Public" name="Responses_NamiDanger">When Nami asks the players about any dangerous places, Cadence will lament that the only place she knows is Penguin Island.</marker>
         <marker scope="Public" name="Responses_NamiDangerCold" />
@@ -744,7 +778,10 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_SchezoName" />
         <marker scope="Public" name="Responses_Serena1stSkin" />
         <marker scope="Public" name="Responses_SerenaMustStrip" />
+        <marker scope="Public" name="Responses_SerenaPairs" />
+        <marker scope="Public" name="Responses_SerenaPenguin" />
         <marker scope="Public" name="Responses_SerenaPoker" />
+        <marker scope="Public" name="Responses_SerenaStripping" />
         <marker scope="Public" name="Responses_SerenaToenails" />
         <marker scope="Public" name="Responses_ShantaeDanceFirst" />
         <marker scope="Public" name="Responses_SpookyArachneGross">When Spooky mentions spiders, this will trigger Cadence's instinctive disdain for bugs.</marker>
