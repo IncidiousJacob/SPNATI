@@ -766,9 +766,9 @@ function updateGroupSelectScreen (ignore_bg) {
             */
             $groupCostumeSelectors[i].hide();
 
-            let unlocked_costumes = opponent.listUnlockedCostumes();
-            if (unlocked_costumes.length > 0) {
-                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, unlocked_costumes,
+            const alt_costumes = opponent.getAvailableCostumes();
+            if (alt_costumes.length > 0) {
+                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, alt_costumes,
                                     opponent.selected_costume).show();
             } else {
                 $groupCostumeSelectors[i].empty();
@@ -1018,10 +1018,13 @@ function isIndividualSelectViewTypeLocked() {
  * Update displayed epilogue badges for opponents on the individual
  * selection screen.
  */
-function updateIndividualEpilogueBadges () {
+function updateIndividualBadges () {
     loadedOpponents.forEach(function(opp) {
         if (opp.endings) {
             opp.selectionCard.updateEpilogueBadge();
+        }
+        if (opp.alternate_costumes.length > 0) {
+            opp.selectionCard.updateCostumeBadge();
         }
     });
 }
@@ -1077,7 +1080,7 @@ function showIndividualSelectionScreen() {
         $talkedToOption.show();
     }
 
-    updateIndividualEpilogueBadges();
+    updateIndividualBadges();
 
     /* switch screens */
     Sentry.setTag("screen", "select-individual");
@@ -1257,8 +1260,8 @@ function clickedRandomGroupButton () {
         if (costume) {
             var costumeFolder = (costume.toLowerCase() == "default") ? '' : "opponents/reskins/" + costume + "/";
             
-          let unlocked_costumes = chosenGroup.opponents[i].listUnlockedCostumes();
-            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, unlocked_costumes, costumeFolder);
+            const alt_costumes = chosenGroup.opponents[i].getAvailableCostumes();
+            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, alt_costumes, costumeFolder);
         } else {
             $groupCostumeSelectors[i].empty();
         }
