@@ -1241,7 +1241,7 @@
                 <state img="#-bored.png">You kind of remind me of Dr. Light.</state>
             </case>
             <case stage="0-9" priority="-1">
-                <state img="#-horny.png">If you see this line, send a bug report.</state>
+                <state img="#-horny.png">Nice...</state>
             </case>
         </trigger>
 
@@ -1553,7 +1553,7 @@
                 <condition status="lost_some" role="target" />
                 <test expr="~clothing.type~" value="extra" />
                 <state img="#-angry.png">I can't believe you still have little things to take off, ~name~. When will you run out!?</state>
-                <state img="#-embarrassed.png">I thought you looked cute in your ~clothing~, name~. Err, not that I... you know what I mean...</state>
+                <state img="#-embarrassed.png">I thought you looked cute in your ~clothing~, ~name~. Err, not that I... you know what I mean...</state>
             </case>
             <case stage="7-9" priority="0">
                 <test expr="~clothing.type~" value="extra" />
