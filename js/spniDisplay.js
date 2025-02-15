@@ -1471,9 +1471,9 @@ MainSelectScreenDisplay.prototype.update = function (player) {
         );
 
         this.altCostumeSelector.hide();
-        let unlocked_costumes = player.listUnlockedCostumes();
-        if (unlocked_costumes.length > 0) {
-            fillCostumeSelector(this.altCostumeSelector, player.default_costume_name, unlocked_costumes, player.selected_costume)
+        const alt_costumes = player.getAvailableCostumes();
+        if (alt_costumes.length > 0) {
+            fillCostumeSelector(this.altCostumeSelector, player.default_costume_name, alt_costumes, player.selected_costume)
                 .show();
         }
     }
@@ -1537,7 +1537,7 @@ function OpponentSelectionCard (opponent) {
     }
 
     if (opponent.alternate_costumes.length > 0) {
-        $(badgeSidebar.appendChild(createElementWithClass('img', 'badge-icon'))).attr({
+        this.costumeBadge = $(badgeSidebar.appendChild(createElementWithClass('img', 'badge-icon'))).attr({
             src: "img/costume_badge.svg",
             alt: "SPNatI Alternate Costume available"
         });
@@ -1626,6 +1626,11 @@ OpponentSelectionCard.prototype.updateEpilogueBadge = function () {
     var epilogueStatus = this.opponent.getEpilogueStatus();
     this.epilogueBadge.attr({'src': epilogueStatus.badge,
                              'data-original-title': epilogueStatus.tooltip || '' });
+}
+
+OpponentSelectionCard.prototype.updateCostumeBadge = function () {
+    if (!this.costumeBadge) return;
+    this.costumeBadge.toggle(this.opponent.getAvailableCostumes().length > 0);
 }
 
 OpponentSelectionCard.prototype.clear = function () {}
@@ -2119,9 +2124,9 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
         this.collectiblesField.removeClass('has-collectibles');
     }
 
-    let unlocked_costumes = opponent.listUnlockedCostumes();
-    if (unlocked_costumes.length > 0) {
-        fillCostumeSelector(this.costumeSelector, opponent.default_costume_name, unlocked_costumes, opponent.selected_costume)
+    const alt_costumes = opponent.getAvailableCostumes();
+    if (alt_costumes.length > 0) {
+        fillCostumeSelector(this.costumeSelector, opponent.default_costume_name, alt_costumes, opponent.selected_costume)
             .show().prop('disabled', false);
     } else {
         this.costumeSelector.hide();
