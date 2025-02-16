@@ -1013,21 +1013,15 @@ Opponent.prototype.setFavorited = function (value) {
 }
 
 Opponent.prototype.selectDefaultCostume = function () {
-    const defaultCostumes =
-        this.getAvailableCostumes().filter(costume => {
-            if (costume.set && DEFAULT_COSTUME_SETS.has(costume.set))
-                return true;
-            if (DEFAULT_COSTUME_SETS.size == 0 &&
-                (HIGHLIGHT_EVERGREEN_ALTS == 'evergreen' && !costume.set ||
-                 HIGHLIGHT_EVERGREEN_ALTS == 'all'))
-                return true;
-            return false;
-        });
-    if (HIGHLIGHT_EVERGREEN_ALTS != 'off' && DEFAULT_COSTUME_SETS.size == 0)
-        defaultCostumes.push(null);
-    if (defaultCostumes.length == 0)
-        return null;
+    const availableCostumes = this.getAvailableCostumes();
+    const eventCostumes = availableCostumes.filter(costume => costume.set && DEFAULT_COSTUME_SETS.has(costume.set));
+    const evergreenCostumes = availableCostumes.filter(costume =>
+        HIGHLIGHT_EVERGREEN_ALTS == 'evergreen' && !costume.set ||
+        HIGHLIGHT_EVERGREEN_ALTS == 'all'
+    );
+    evergreenCostumes.push(null);
 
+    const defaultCostumes = eventCostumes.length > 0 ? eventCostumes : evergreenCostumes;
     const selectedDefault = defaultCostumes[getRandomNumber(0, defaultCostumes.length)];
     this.selectAlternateCostume(selectedDefault);
     const costumeSet = selectedDefault == null ? null : selectedDefault.set;
