@@ -19,6 +19,9 @@ var MANUAL_EVENTS = new Set();
 /** @type {Set<string>} */
 var OVERRIDE_EVENTS = new Set();
 
+/** @type {GameEvent[]?} */
+var EVENTS = null;
+
 /** @type {GameEvent[]} */
 var activeGameEvents = [];
 
@@ -504,43 +507,42 @@ function GameEvent(id, name, dateRanges, costumes, background, candyImages, tags
     this.useUTC = useUTC;
 }
 
-/**
- * 
- * @param {Date} queryDate 
- * @returns {DateRange[]}
- */
- GameEvent.prototype.getActiveRanges = function (queryDate) {
-    if (OVERRIDE_EVENTS.size > 0 || MANUAL_EVENTS.has(this.id)) return [];
-
+function yearMatches(queryDate, range, useUTC) {
     var queryYear;
-    var currentYearOverrides;
-
-    if (this.useUTC) {
+    if (useUTC) {
         queryYear = queryDate.getUTCFullYear();
-        currentYearOverrides = this.dateRanges.filter(function (range) {
-            return range.override && queryYear >= range.from.getUTCFullYear() && queryYear <= range.to.getUTCFullYear();
-        });
+        return queryYear >= range.from.getUTCFullYear() && queryYear <= range.to.getUTCFullYear();
     } else {
         queryYear = queryDate.getFullYear();
-        currentYearOverrides = this.dateRanges.filter(function (range) {
-            return range.override && queryYear >= range.from.getFullYear() && queryYear <= range.to.getFullYear();
-        });
-    }
-
-    if (currentYearOverrides.length > 0) {
-        /*
-         * At least one override exists for this year. Match _only_ the ranges marked as overrides.
-         * This allows override ranges to be shorter than repeating ranges (since the repeating range would overlap and cause the event to activate past the override).
-         */
-        return currentYearOverrides.filter(function (range) { return range.contains(queryDate); })
-    } else {
-        /* Otherwise, just match against everything. */
-        return this.dateRanges.filter(function (range) { return range.contains(queryDate); })
+        return queryYear >= range.from.getFullYear() && queryYear <= range.to.getFullYear();
     }
 }
 
 /**
  * 
+ * @param {Date} queryDate 
+ * @returns {DateRange[]}
+ */
+ GameEvent.prototype.getDateRanges = function (queryDate) {
+    const currentYearOverrides = this.dateRanges.filter(range => range.override && yearMatches(queryDate, range, this.useUTC))
+
+    if (currentYearOverrides.length > 0)
+        return currentYearOverrides;
+    return this.dateRanges;
+}
+
+/**
+ * 
+ * @param {Date} queryDate
+ * @returns {DateRange[]}
+ */
+ GameEvent.prototype.getActiveRanges = function (queryDate) {
+    if (OVERRIDE_EVENTS.size > 0 || MANUAL_EVENTS.has(this.id)) return [];
+    return this.getDateRanges(queryDate).filter(function (range) { return range.contains(queryDate); })
+}
+
+/**
+ *
  * @returns {boolean}
  */
 GameEvent.prototype.isManuallyActivated = function () {
@@ -644,14 +646,14 @@ function loadEventData () {
     console.log("Loading events...");
 
     return fetchXML("events.xml").then(function ($xml) {
-        var events = $xml.find("event").map(function (index, elem) {
+        EVENTS = $xml.find("event").map(function (index, elem) {
             return parseEventElement($(elem));
         }).get();
 
         /** @type {Set<string>} */
         var activeIds = new Set();
 
-        events.forEach(function (event) {
+        EVENTS.forEach(function (event) {
             if (!activeIds.has(event.id) && event.isActive()) {
                 console.log("Activating event: " + event.name);
                 activeIds.add(event.id);
@@ -801,3 +803,64 @@ function updateAnnouncementDropdown () {
 function showResortModal () {
     if (curResortEvent) curResortEvent.resort.show();
 }
+
+function showCalendarModal() {
+    const currentDate = new Date();
+
+    if (EVENTS === null) {
+        document.getElementById('eventList').innerHTML = "<p>Error loading events.</p>";
+    } else {
+        const eventDates = [];
+        EVENTS.forEach(event => {
+            event.getDateRanges(currentDate)
+                .filter(range => yearMatches(currentDate, range, event.useUTC))
+                .forEach(range => {
+                    const endDate = new Date(range.to);
+                    endDate.setSeconds(endDate.getSeconds() - 1);
+                    eventDates.push({
+                        event: event.name,
+                        costumes: event.costumes.ids,
+                        start: range.from,
+                        end: endDate
+                    });
+                })
+        });
+        eventDates.sort((a, b) => a.start.getTime() - b.start.getTime());
+        displayEvents(eventDates);
+    }
+
+    // Show the modal
+    document.getElementById('calendar-modal').style.display = 'block';
+    // Get the current year for the header
+    document.getElementById('calendar-header-year').innerHTML = currentDate.getFullYear();
+    // Show the modal
+    $calendarModal.modal('show');
+}
+
+function displayEvents(eventDates) {
+    let eventHtml = '';
+    x = 1;
+    eventDates.forEach(date => {
+        const emoji = date.costumes.map(costume => EVENT_COSTUME_PREFIXES[costume] || '').join('');
+        let eventName = date.event;
+        if (date.event == 'Sleepover') { 
+                eventName += (' ' + x);
+                x++;
+        }
+        eventHtml += `<p><strong>${emoji} ${eventName}</strong>: ${formatDate(date.start)} to ${formatDate(date.end)}</p>`;
+    });
+
+    // Display the events or a message if no events were found
+    // Adding this in case I do something wrong with events.xml or if it is missing/blank
+    document.getElementById('eventList').innerHTML = eventHtml || "<p>No events found for this year.</p>";
+}
+
+function formatDate(date) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
+}
+
+function hideCalendarModal() {
+    document.getElementById('calendar-Modal').style.display = 'none';
+}
+

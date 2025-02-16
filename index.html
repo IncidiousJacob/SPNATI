@@ -206,6 +206,10 @@
 		    onclick="showResortModal()" style="display:none">
                 Re-Sort Poll
             </button>
+            <button class="title-calendar-button bordered smooth-button red banner-flair"
+                onclick="showCalendarModal()">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+            </button>            
 
             <div class="dropdown title-announcement-dropdown" style="display: none;">
                 <button id="announcement-dropdown" class="bordered btn btn-sm dropdown-toggle wide-dropdown red smooth-button"
@@ -233,7 +237,7 @@
 
         </div>
 
-        <button class="bordered background-select-button" onclick="showGameSettingsModal()" hidden
+        <button class="bordered edge-button left background-select-button" onclick="showGameSettingsModal()" hidden
                 data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
@@ -579,7 +583,7 @@
                 <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
             </button>
         </div>
-        <button class="bordered background-select-button" onclick="showGameSettingsModal(true)"
+        <button class="bordered edge-button left background-select-button" onclick="showGameSettingsModal(true)"
                 data-toggle="tooltip" data-placement="bottom" title="Choose a different background">
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
         </button>
@@ -1879,6 +1883,34 @@
         </div>
     </div>
     <!-- End of Event Announcement Modal -->
+
+    <!-- Start of Event Calendar Modal -->
+    <div id="calendar-modal" class="modal table-modal fade" role="dialog">
+        <div class="modal-table-container">
+            <div class="modal-cell-container">
+                <div class="bordered modal-dialog wide-modal-dialog">
+                    <div class="bordered modal-dialog-surface">
+                        <!-- Start of Modal Content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-center"><b id="calendar-header"><p>Events in <span id="calendar-header-year"></span></p></b></h3>
+                            </div>
+                            <div class="modal-body">
+                                <div id="event_summary">During an event the default background changes, and some characters receive unique costumes and dialogue relating to the special occasion. An 'Extension' of an event means that the content of the event is still available, but is no longer highlighted.</div>
+                                <hr>
+                                <div id="eventList"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="bordered smooth-button modal-button" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!-- End of Modal Content -->
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>    
+    <!-- End of Event Calendar Modal -->
 
     <!-- Start of Help Modal -->
     <div id="help-modal" class="modal table-modal fade" role="dialog">
@@ -3716,6 +3748,14 @@
             <!-- Minimal UI Player name label -->
             <div id="player-name-label-minimal" class="game-name-label-0 bordered name-label game-table">Player</div>
         </div>
+        <button class="bordered edge-button left transcript-step-button" onclick="stepThroughTranscript(-1)"
+                data-toggle="tooltip" data-placement="right" title="Step backwards" hidden>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="bordered edge-button right transcript-step-button" onclick="stepThroughTranscript(+1)"
+                data-toggle="tooltip" data-placement="left" title="Step forwards" hidden>
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
     </div>
     <div id="game-climax-overlay" hidden></div>
 

@@ -188,42 +188,45 @@ const MAGNET_TAGS = [
     "fire_emblem",
 
     "pokemon",
-
-    "ddlc",
-    "my_little_pony",
+	
     "genshin_impact",
 
     "danganronpa",
+    "ddlc",
+    "my_little_pony",
     "konosuba",
+
     "persona",
     "rwby_franchise",
     "street_fighter",
+    "yugioh",
 
     "ace_attorney",
+    "clannad",
     "dragon_ball",
-    "katawa_shoujo",
     "little_witch_academia",
     "monster_prom",
     "one_piece",
     "touhou_project",
     "xenoblade_chronicles",
-    "yugioh",
 
     "battleborn",
-    "clannad",
     "zombieland_saga",
     "golden_sun",
     "huniepop",
     "jjba",
+    "katawa_shoujo",
     "kid_icarus",
     "kill_la_kill",
     "league_of_legends",
     "legend_of_zelda",
     "lobotomy_corporation",
     "marvel",
+    "mega_man",
     "miraculous",
     "hyperdimension_neptunia",
     "omori",
+    "overwatch_franchise",
     "panty_and_stocking",
     "puyo_puyo",
     "sonic_franchise",
@@ -232,6 +235,16 @@ const MAGNET_TAGS = [
     "va-11_hall-a",
     "vandread",
 ];
+
+const EVENT_COSTUME_PREFIXES = {
+    "valentines": '\u{2764}\u{fe0f} ',
+    "april_fools": '\u{1f921} ',
+    "easter": '\u{1f430} ',
+    "summer": '\u{2600}\u{fe0f} ',
+    "halloween": '\u{1f383} ',
+    "xmas": '\u{1f384} ',
+    "sleepover": '\u{1f6cf}\u{fe0f} ',
+};
 
 /**********************************************************************
  *****               Opponent & Group Specification               *****
@@ -627,23 +640,10 @@ function fillCostumeSelector($selector, defaultname, costumes, selected_costume)
         if (c.status != "online") {
             emoji = '\u{1f455} [Offline] ';
         }
-        
-        if (c.set == "valentines") {
-            emoji = '\u{2764}\u{fe0f} ';
-        } else if (c.set == "april_fools") {
-            emoji = '\u{1f921} ';
-        } else if (c.set == "easter") {
-            emoji = '\u{1f430} ';
-        } else if (c.set == "summer") {
-            emoji = '\u{2600}\u{fe0f} ';
-        } else if (c.set == "halloween") {
-            emoji = '\u{1f383} ';
-        } else if (c.set == "xmas") {
-            emoji = '\u{1f384} ';
-        } else if (c.set == "sleepover") {
-            emoji = '\u{1f6cf}\u{fe0f} ';
-        }
-        
+
+        if (EVENT_COSTUME_PREFIXES[c.set] !== undefined)
+            emoji = EVENT_COSTUME_PREFIXES[c.set]
+
         return $('<option>', {
             val: c.folder, text: emoji+c.name,
             selected: c.folder == selected_costume
@@ -766,9 +766,9 @@ function updateGroupSelectScreen (ignore_bg) {
             */
             $groupCostumeSelectors[i].hide();
 
-            let unlocked_costumes = opponent.listUnlockedCostumes();
-            if (unlocked_costumes.length > 0) {
-                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, unlocked_costumes,
+            const alt_costumes = opponent.getAvailableCostumes();
+            if (alt_costumes.length > 0) {
+                fillCostumeSelector($groupCostumeSelectors[i], opponent.default_costume_name, alt_costumes,
                                     opponent.selected_costume).show();
             } else {
                 $groupCostumeSelectors[i].empty();
@@ -1018,10 +1018,13 @@ function isIndividualSelectViewTypeLocked() {
  * Update displayed epilogue badges for opponents on the individual
  * selection screen.
  */
-function updateIndividualEpilogueBadges () {
+function updateIndividualBadges () {
     loadedOpponents.forEach(function(opp) {
         if (opp.endings) {
             opp.selectionCard.updateEpilogueBadge();
+        }
+        if (opp.alternate_costumes.length > 0) {
+            opp.selectionCard.updateCostumeBadge();
         }
     });
 }
@@ -1077,7 +1080,7 @@ function showIndividualSelectionScreen() {
         $talkedToOption.show();
     }
 
-    updateIndividualEpilogueBadges();
+    updateIndividualBadges();
 
     /* switch screens */
     Sentry.setTag("screen", "select-individual");
@@ -1257,8 +1260,8 @@ function clickedRandomGroupButton () {
         if (costume) {
             var costumeFolder = (costume.toLowerCase() == "default") ? '' : "opponents/reskins/" + costume + "/";
             
-          let unlocked_costumes = chosenGroup.opponents[i].listUnlockedCostumes();
-            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, unlocked_costumes, costumeFolder);
+            const alt_costumes = chosenGroup.opponents[i].getAvailableCostumes();
+            fillCostumeSelector($groupCostumeSelectors[i], chosenGroup.opponents[i].default_costume_name, alt_costumes, costumeFolder);
         } else {
             $groupCostumeSelectors[i].empty();
         }

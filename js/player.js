@@ -361,6 +361,8 @@ Player.prototype.checkStatus = function(status) {
         return !this.isCovered(UPPER_ARTICLE) && this.isCovered(LOWER_ARTICLE);
     case STATUS_EXPOSED_BOTTOM_ONLY:
         return this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
+    case STATUS_REALLY_EXPOSED:
+	return !this.isCovered(LOWER_ARTICLE) || (!this.isCovered(UPPER_ARTICLE) && this.breasts);
     case STATUS_NAKED:
         return !this.isCovered(UPPER_ARTICLE) && !this.isCovered(LOWER_ARTICLE);
     case STATUS_ALIVE:
@@ -726,24 +728,23 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     if (!ALT_COSTUMES_ENABLED) return;
 
     $metaXml.find('>alternates>costume').each(function (i, elem) {
-        var set = $(elem).attr('set');
-        var status = $(elem).attr('status') || 'online';
+        const set = $(elem).attr('set');
+        const status = $(elem).attr('status') || 'online';
+        if (!includedOpponentStatuses[status]) return;
 
-        if ((set === undefined || alternateCostumeSets['all'] || alternateCostumeSets[set]) && includedOpponentStatuses[status]) {
-            var costume_descriptor = {
-                'folder': $(elem).attr('folder'),
-                'name': $(elem).text(),
-                'image': $(elem).attr('img'),
-                'gender': $(elem).attr('gender') || this.metaGender,
-                'label': $(elem).attr('label') || this.metaLabel,
-                'set': set,
-                'status': status,
-                'unlocked_by': $(elem).attr('collectible') || '',
-                'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
-            };
+        const costume_descriptor = {
+            'folder': $(elem).attr('folder'),
+            'name': $(elem).text(),
+            'image': $(elem).attr('img'),
+            'gender': $(elem).attr('gender') || this.metaGender,
+            'label': $(elem).attr('label') || this.metaLabel,
+            'set': set,
+            'status': status,
+            'unlocked_by': $(elem).attr('collectible'),
+            'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
+        };
 
-            this.alternate_costumes.push(costume_descriptor);
-        }
+        this.alternate_costumes.push(costume_descriptor);
     }.bind(this)).get();
 }
 
@@ -1253,21 +1254,15 @@ Opponent.prototype.fetchCollectibles = function () {
     }.bind(this));
 }
 
-Opponent.prototype.listUnlockedCostumes = function () {
-    let unlocked_costumes = [];
-    let thisOpponent = this; 
-    this.alternate_costumes.map(function(costume) {
-        if (costume.unlocked_by == '')
-        {
-            unlocked_costumes.push(costume);
-        }
-        else if (thisOpponent.collectibles.some(
-            function (collectible) { if(collectible.id === costume.unlocked_by) {return collectible.isUnlocked();} else return false;}))
-            {
-                unlocked_costumes.push(costume);
-            }      
+Opponent.prototype.getAvailableCostumes = function () {
+    return this.alternate_costumes.filter(costume => {
+        const unlocked = costume.unlocked_by && this.collectibles.some(c => c.id === costume.unlocked_by && c.isUnlocked()),
+              locked = costume.unlocked_by && !unlocked;
+
+        return costume.set === undefined ?
+            !locked :
+            (alternateCostumeSets['all'] || alternateCostumeSets[costume.set] || unlocked)
     });
-    return unlocked_costumes;
 }
 
 /**

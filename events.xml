@@ -55,7 +55,7 @@
             </date>
 
             <date override="true">
-                <!-- 
+                <!--
                     Repeating date ranges and year-specific date ranges aren't mutually exclusive.
                     For example, a "rerun" of an event outside of the usual repeating dates can be scheduled
                     by adding another, one-shot date range with years specified.
@@ -442,7 +442,7 @@
         -->
     </event>
     <event id="summer_2">
-        <name>Summer Extension</name>
+        <name>Summer (Extension)</name>
 
         <dates>
             <date>
@@ -498,11 +498,9 @@
         <background>paris rooftop</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="valentines" partition="1" sort="3">yuno_uno</character>
-        <character highlight="valentines" partition="1" sort="3">roll_caskett</character>
-        <character highlight="valentines" partition="1" sort="3">maria</character>
-        <character highlight="valentines" partition="1" sort="3">sheena</character>
-        <character highlight="valentines" partition="1" sort="2">meia</character>
+        <character highlight="valentines" partition="1" sort="3">yuzuki</character>
+        <character highlight="valentines" partition="1" sort="2">monika</character>
+        <character highlight="valentines" partition="1" sort="2">uravity</character>
 
         <costumes highlight="valentines" partition="1" sort="1">valentines</costumes>
 
@@ -988,7 +986,7 @@
     </event>
     <!-- Second event to handle the second half - will be eventually replaced by the event toggle feature -->
     <event id="april_fools_2" consistent-timezone="true">
-        <name>April Fools Day</name>
+        <name>April Fools Day (Extension)</name>
 
         <dates>
             <date>
@@ -1001,6 +999,7 @@
 
         <!-- NO FEATURED INDIVIDUAL CHARACTERS OR HIGHLIGHTS  -->
 
+        <costumes partition="0" sort="0" prefill="default">april_fools</costumes>
         <include-status>event</include-status>
         <include-status>event-background</include-status>
     </event>
@@ -1034,14 +1033,14 @@
 
         <dates>
             <date>
-                <from year="2024" month="4" day="12" />
-                <to year="2024" month="4" day="21" />
+                <from year="2025" month="1" day="24" />
+                <to year="2025" month="2" day="2" />
             </date>
         </dates>
 
         <resort>
             <season>auto</season>
-            <poll>https://forms.gle/rTFWwPkRsLffETSk8</poll>
+            <poll>https://forms.gle/exu1hVRiWuGBS59WA</poll>
             <min-characters>40</min-characters>
         </resort>
     </event>
