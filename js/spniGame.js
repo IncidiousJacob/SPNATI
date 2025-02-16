@@ -129,7 +129,7 @@ var autoAdvanceSpeed = 0;
 var autoAdvanceProgress = undefined;
 var endWaitDisplay = 0;
 var showDebug = false;
-var chosenDebug = null;
+const chosenDebug = new Set();
 
 var transcriptHistory = [];
 
@@ -160,7 +160,7 @@ function loadGameScreen () {
     recentLoser = -1;
     gameOver = false;
 
-    chosenDebug = null;
+    chosenDebug.clear();
     updateDebugState(showDebug);
     
     /* randomize start lines for characters using legacy start lines.
@@ -515,11 +515,12 @@ function completeRevealPhase () {
     var sortedPlayers = players.filter(function(p) { return !p.out; });
     sortedPlayers.sort(function(p1, p2) { return compareHands(p1.hand, p2.hand); });
 
-    if (DEBUG && chosenDebug instanceof Set) {
+    if (DEBUG && chosenDebug.size > 1) {
         recentTied = [...chosenDebug];
-    } else if (DEBUG && chosenDebug !== null) {
+    } else if (DEBUG && chosenDebug.size == 1) {
         previousLoser = recentLoser;
-        recentLoser = chosenDebug;
+        recentLoser = chosenDebug.keys().next().value;
+        recentTied = null;
     } else {
         /* Check if (at least) the two worst hands are equal. */
         if (compareHands(sortedPlayers[0].hand, sortedPlayers[1].hand) == 0) {
@@ -556,7 +557,6 @@ function completeRevealPhase () {
         return;
     }
     recentWinner = sortedPlayers[sortedPlayers.length-1].slot;
-    recentTied = null;
 
     console.log("Player "+recentLoser+" is the loser.");
     Sentry.addBreadcrumb({
@@ -1230,22 +1230,16 @@ $gameScreen.data('keyhandler', game_keyUp);
 function selectDebug(ev) {
     const player = Number($(ev.target).data('player'));
 
-    if (chosenDebug === player) {
-        chosenDebug = null;
-    } else if (chosenDebug === null || !ev.ctrlKey) {
-        chosenDebug = player;
-    } else {
-        if (!(chosenDebug instanceof Set)) {
-            chosenDebug = new Set([chosenDebug]);
-        }
+    // If Ctrl is held or the button of the single selected player is clicked, toggle
+    if (ev.ctrlKey || (chosenDebug.size == 1 && chosenDebug.has(player))) {
         if (chosenDebug.has(player)) {
             chosenDebug.delete(player);
-            if (chosenDebug.size == 1) {
-                chosenDebug = [...chosenDebug][0];
-            }
         } else {
             chosenDebug.add(player);
         }
+    } else { // else select the clicked player
+        chosenDebug.clear();
+        chosenDebug.add(player);
     }
     updateDebugState(showDebug);
 }
@@ -1268,7 +1262,7 @@ function updateDebugState(show)
             if (!players[i] || players[i].out) {
                 $(this).hide();
             } else {
-                $(this).toggleClass("active", (chosenDebug instanceof Set && chosenDebug.has(i)) || chosenDebug === i);
+                $(this).toggleClass("active", chosenDebug.has(i));
             }
         });
 
