@@ -60,11 +60,7 @@ $devSelectButtons =    [$("#dev-select-button-1"),
                         $("#dev-select-button-2"),
                         $("#dev-select-button-3"),
                         $("#dev-select-button-4")];                
-$debugButtons = [$("#debug-button-0"),
-                 $("#debug-button-1"),
-                 $("#debug-button-2"),
-                 $("#debug-button-3"),
-                 $("#debug-button-4")];
+$debugButtons = $('.debug-button');
 
 /* restart modal */
 $restartModal = $("#restart-modal");
@@ -133,7 +129,7 @@ var autoAdvanceSpeed = 0;
 var autoAdvanceProgress = undefined;
 var endWaitDisplay = 0;
 var showDebug = false;
-var chosenDebug = -1;
+var chosenDebug = null;
 
 var transcriptHistory = [];
 
@@ -164,7 +160,7 @@ function loadGameScreen () {
     recentLoser = -1;
     gameOver = false;
 
-    chosenDebug = -1;
+    chosenDebug = null;
     updateDebugState(showDebug);
     
     /* randomize start lines for characters using legacy start lines.
@@ -519,23 +515,16 @@ function completeRevealPhase () {
     var sortedPlayers = players.filter(function(p) { return !p.out; });
     sortedPlayers.sort(function(p1, p2) { return compareHands(p1.hand, p2.hand); });
 
-    if (chosenDebug !== -1 && DEBUG) {
+    if (DEBUG && chosenDebug instanceof Set) {
+        recentTied = [...chosenDebug];
+    } else if (DEBUG && chosenDebug !== null) {
         previousLoser = recentLoser;
         recentLoser = chosenDebug;
     } else {
         /* Check if (at least) the two worst hands are equal. */
         if (compareHands(sortedPlayers[0].hand, sortedPlayers[1].hand) == 0) {
             console.log("Fuck... there was an absolute tie");
-            recentTied = [];
-            /* inform the player */
-            players.forEach(function (p) {
-                if (p.chosenState) {
-                    p.chosenState.dialogue = '';
-                    updateGameVisual(p.slot);
-                }
-            });
-            updateAllBehaviours(null, null, PLAYERS_TIED);
-
+            recentTied = new Set();
             /* The probability of a three-way tie is basically zero,
              * but it's theoretically possible. */
             for (var i = 0;
@@ -543,15 +532,28 @@ function completeRevealPhase () {
                            && compareHands(sortedPlayers[0].hand,
                                            sortedPlayers[i].hand) == 0);
                  i++) {
-                recentTied.push(sortedPlayers[i].slot);
+                recentTied.add(sortedPlayers[i].slot);
             };
-            displayAllHands(true);
-            /* reset the round */
-            allowProgression(eGamePhase.DEAL);
-            return;
+        } else {
+            previousLoser = recentLoser;
+            recentLoser = sortedPlayers[0].slot;
+            recentTied = null;
         }
-        previousLoser = recentLoser;
-        recentLoser = sortedPlayers[0].slot;
+    }
+    if (recentTied !== null) {
+        /* inform the player */
+        players.forEach(function (p) {
+            if (p.chosenState) {
+                p.chosenState.dialogue = '';
+                updateGameVisual(p.slot);
+            }
+        });
+        updateAllBehaviours(null, null, PLAYERS_TIED);
+
+        displayAllHands(true);
+        /* reset the round */
+        allowProgression(eGamePhase.DEAL);
+        return;
     }
     recentWinner = sortedPlayers[sortedPlayers.length-1].slot;
     recentTied = null;
@@ -1225,17 +1227,29 @@ function game_keyUp(e)
 }
 $gameScreen.data('keyhandler', game_keyUp);
 
-function selectDebug(player)
-{
+function selectDebug(ev) {
+    const player = Number($(ev.target).data('player'));
+
     if (chosenDebug === player) {
-        chosenDebug = -1;
-    }
-    else {
+        chosenDebug = null;
+    } else if (chosenDebug === null || !ev.ctrlKey) {
         chosenDebug = player;
+    } else {
+        if (!(chosenDebug instanceof Set)) {
+            chosenDebug = new Set([chosenDebug]);
+        }
+        if (chosenDebug.has(player)) {
+            chosenDebug.delete(player);
+            if (chosenDebug.size == 1) {
+                chosenDebug = [...chosenDebug][0];
+            }
+        } else {
+            chosenDebug.add(player);
+        }
     }
     updateDebugState(showDebug);
 }
-
+$debugButtons.on('click', selectDebug);
 
 function updateDebugState(show)
 {
@@ -1249,16 +1263,14 @@ function updateDebugState(show)
         $('.dev-select-button').show();
         $('.debug-button').show();
 
-        for (var i = 0; i < $debugButtons.length; i++) {
-            if (!players[i] || players[i].out)
-            {
-                $debugButtons[i].hide();              
+        $debugButtons.each(function() {
+            const i = $(this).data('player');
+            if (!players[i] || players[i].out) {
+                $(this).hide();
+            } else {
+                $(this).toggleClass("active", (chosenDebug instanceof Set && chosenDebug.has(i)) || chosenDebug === i);
             }
-            else
-            {
-                $debugButtons[i].removeClass("active");
-            }
-        }
+        });
 
         for (var i = 0; i < $devSelectButtons.length; i++) {
             if (!players[i + 1])
@@ -1266,10 +1278,6 @@ function updateDebugState(show)
                 $devSelectButtons[i].hide();                
                 $characterDebugButtons[i].hide();
             }
-        }
-
-        if (chosenDebug !== -1) {
-            $debugButtons[chosenDebug].addClass("active");
         }
     }
 }
