@@ -1014,15 +1014,7 @@ Opponent.prototype.setFavorited = function (value) {
 
 Opponent.prototype.selectDefaultCostume = function () {
     const defaultCostumes =
-        this.alternate_costumes.filter(costume => {
-            if (costume.unlocked_by == '')
-                return true;
-            if (this.collectibles == null)
-                return false;
-            if (this.collectibles.some(collectible => collectible.id == costume.unlocked_by && collectible.isUnlocked()))
-                return true;
-            return false;
-        }).filter(costume => {
+        this.getAvailableCostumes().filter(costume => {
             if (costume.set && DEFAULT_COSTUME_SETS.has(costume.set))
                 return true;
             if (DEFAULT_COSTUME_SETS.size == 0 &&
