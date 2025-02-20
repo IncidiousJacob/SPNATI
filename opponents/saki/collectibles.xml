@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="saki_bra" img="opponents/saki/99-bra.png" thumbnail="opponents/saki/99-bra.png">
+    <collectible id="saki_bra" img="opponents/saki/6-embarrassed.png" thumbnail="opponents/saki/99-bra.png">
         <title>Saki's bra</title>
         <subtitle>Thrown hastily at you before she ran away.</subtitle>
         <text>"Um, th-the girls at school said that you should give the winner of the game your underwear? Just my bra is good enough, r-right? I needed to buy a new one anyways..."</text>
         <unlock>Win a game against Saki Yoshida.</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/saki/99-bra.png" name="bra" generic="bra" position="upper" type="important" />
     </collectible>
 </collectibles>
