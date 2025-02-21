@@ -1070,12 +1070,6 @@ function showExtrasModal() {
         $(".game-length-option").hide();
     }
 
-    // Show Start with costumes selected option as All/No events/Disabled if offline and Enabled/Disabled if online
-    if (isMainSite) {
-        $('#hl-evergreen-alts-option>li:has(a[data-value="all"])').remove();
-        $('#hl-evergreen-alts-option>li>a[data-value="evergreen"]').text("Enabled");
-    }
-
     updateTrackingToggles();
 
     $extrasModal.modal('show');
