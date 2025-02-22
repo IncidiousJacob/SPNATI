@@ -688,6 +688,7 @@
         <response id="2255" opponent="serena" opponentId="34" />
         <response id="2256" opponent="jean" opponentId="325" />
         <response id="2263" opponent="zeke_pandoria" opponentId="1" />
+        <response id="2274" opponent="jean" opponentId="469" />
     </responses>
     <notes>
         <note id="401">This is a special version of this line for Fluttershy to react to, but it uses the regular marker to allow for replied from anyone.
@@ -752,13 +753,13 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="38" label="nagisa_sakura_43 (Sakura to left)" folder="" sort="0" />
         <label id="39" label="indoors" folder="" sort="0" />
         <label id="40" label="nagisa_sakura_43 (Sakura to right)" folder="Sakura to right" sort="2" />
-        <label id="41" label="" folder="Waitress" sort="10" />
-        <label id="42" label="" folder="Waitress" sort="12" />
-        <label id="43" label="" folder="Waitress" sort="16" />
-        <label id="44" label="" folder="Waitress" sort="18" />
-        <label id="45" label="" folder="Waitress" sort="20" />
+        <label id="41" label="Valentine's Day, round 0" folder="Waitress" sort="10" />
+        <label id="42" label="round 1+" folder="Waitress" sort="12" />
+        <label id="43" label="Valentine's Day, round 2+" folder="Waitress" sort="16" />
+        <label id="44" label="round 1" folder="Waitress" sort="18" />
+        <label id="45" label="round 2+" folder="Waitress" sort="20" />
         <label id="46" label="" folder="Waitress" sort="36" />
-        <label id="187" label="" folder="Waitress" sort="14" />
+        <label id="187" label="round 0" folder="Waitress" sort="14" />
         <label id="48" label="" folder="Waitress" sort="24" />
         <label id="56" label="inventory prompt" folder="CONVERSATION STARTERS" sort="9" />
         <label id="57" label="inventory prompt" folder="CONVERSATION STARTERS" sort="10" />
@@ -856,15 +857,15 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="184" label="school uniform prompt" folder="CONVERSATION STARTERS" sort="0" />
         <label id="185" label="beach" folder="" sort="0" />
         <label id="186" label="water" folder="" sort="0" />
-        <label id="188" label="" folder="Waitress" sort="11" />
-        <label id="189" label="" folder="Waitress" sort="12" />
+        <label id="188" label="round 4+" folder="Waitress" sort="11" />
+        <label id="189" label="outdoors" folder="Waitress" sort="12" />
         <label id="190" label="indoors" folder="" sort="0" />
         <label id="191" label="" folder="Waitress" sort="14" />
         <label id="192" label="" folder="Waitress" sort="3" />
         <label id="193" label="" folder="Waitress" sort="4" />
-        <label id="194" label="" folder="Waitress" sort="15" />
+        <label id="194" label="haunted forest" folder="Waitress" sort="15" />
         <label id="195" label="" folder="Waitress" sort="24" />
-        <label id="196" label="" folder="Waitress" sort="16" />
+        <label id="196" label="February" folder="Waitress" sort="16" />
         <label id="197" label="" folder="Waitress" sort="19" />
         <label id="198" label="" folder="Waitress" sort="2" />
         <label id="199" label="muscular" folder="" sort="0" />
@@ -2920,13 +2921,22 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="2266" label="" folder="Waitress" sort="0" />
         <label id="2267" label="" folder="Waitress" sort="0" />
         <label id="2268" label="" folder="Waitress" sort="0" />
+        <label id="2269" label="" folder="Waitress" sort="0" />
+        <label id="2270" label="" folder="Waitress" sort="0" />
+        <label id="2271" label="" folder="a short game / Waitress" sort="0" />
+        <label id="2272" label="" folder="a short game / Waitress" sort="0" />
+        <label id="2273" label="" folder="a short game / Waitress" sort="0" />
+        <label id="2274" label="" folder="Jean to left" sort="0" />
+        <label id="2275" label="male player" folder="" sort="0" />
+        <label id="2276" label="" folder="Sanako to left or right" sort="0" />
+        <label id="2277" label="" folder="Hermione to left or rght" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue</prefix>
         <prefix>collectible</prefix>
         <prefix>x-</prefix>
     </prefixes>
-    <nextId>2268</nextId>
+    <nextId>2277</nextId>
     <markers>
         <marker scope="Public" name="nagisa_9s_n9_91" />
         <marker scope="Public" name="nagisa_9s_n9_n1" />
@@ -3695,6 +3705,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_jasmine_identity_reveal" />
         <marker scope="Public" name="nagisa_jason_brother" />
         <marker scope="Public" name="nagisa_jean_jn_n01" />
+        <marker scope="Public" name="nagisa_jean_jn_n02" />
         <marker scope="Public" name="nagisa_jessie_backdoor" />
         <marker scope="Public" name="nagisa_jessie_been_in_any_movies" />
         <marker scope="Public" name="nagisa_jessie_brave_like_a_lion" />
