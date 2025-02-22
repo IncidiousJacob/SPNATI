@@ -113,8 +113,8 @@ function startMasturbation (player) {
     players[player].out = true;
     players[player].outOrder = players.countTrue(function(p) { return p.out; });
 
-    if (chosenDebug === player) {
-        chosenDebug = -1;
+    if (chosenDebug.has(player)) {
+        chosenDebug.clear();
         updateDebugState(showDebug);
     }
 
