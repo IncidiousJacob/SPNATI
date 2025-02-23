@@ -525,7 +525,7 @@ function completeRevealPhase () {
         /* Check if (at least) the two worst hands are equal. */
         if (compareHands(sortedPlayers[0].hand, sortedPlayers[1].hand) == 0) {
             console.log("Fuck... there was an absolute tie");
-            recentTied = new Set();
+            recentTied = [];
             /* The probability of a three-way tie is basically zero,
              * but it's theoretically possible. */
             for (var i = 0;
@@ -533,7 +533,7 @@ function completeRevealPhase () {
                            && compareHands(sortedPlayers[0].hand,
                                            sortedPlayers[i].hand) == 0);
                  i++) {
-                recentTied.add(sortedPlayers[i].slot);
+                recentTied.push(sortedPlayers[i].slot);
             };
         } else {
             previousLoser = recentLoser;
