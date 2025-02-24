@@ -2,3 +2,9 @@
   /*When Tojiko shares a speech bubble with Miko*/
   color: #2A7047;
 }
+
+.dialogue-bubble[data-character="miko"] hr {
+	padding: 0;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
