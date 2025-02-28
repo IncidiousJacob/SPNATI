@@ -212,6 +212,8 @@
         <response id="523" opponent="aoi_asahina" opponentId="795" />
         <response id="524" opponent="aoi_asahina" opponentId="747" />
         <response id="525" opponent="aoi_asahina" opponentId="794" />
+        <response id="527" opponent="schezo" opponentId="786" />
+        <response id="528" opponent="carmine" opponentId="129" />
     </responses>
     <notes>
         <note id="37">A male character has just removed that small item early in game</note>
@@ -263,13 +265,13 @@
         <label id="248" label="" color="15" folder="Stage 0" sort="4" />
         <label id="249" label="" color="15" folder="Stage 0" sort="16" />
         <label id="250" label="" color="15" folder="" sort="0" />
-        <label id="251" label="" color="15" folder="Stage 1" sort="9" />
-        <label id="252" label="" color="15" folder="Stage 1" sort="10" />
+        <label id="251" label="" folder="Stage 1" sort="9" />
+        <label id="252" label="" folder="Stage 1" sort="10" />
         <label id="253" label="" color="15" folder="Stage 0" sort="21" />
         <label id="254" label="" color="15" folder="Stage 1" sort="14" />
         <label id="255" label="" color="15" folder="Stage 0" sort="3" />
         <label id="256" label="" color="15" folder="Stage 0" sort="13" />
-        <label id="257" label="" color="15" folder="Stage 0" sort="6" />
+        <label id="257" label="" color="15" folder="Stage 1" sort="6" />
         <label id="258" label="" color="15" folder="Stage 0" sort="14" />
         <label id="259" label="" color="15" folder="" sort="0" />
         <label id="260" label="" color="15" folder="" sort="0" />
@@ -370,8 +372,8 @@
         <label id="345" label="" color="15" folder="" sort="0" />
         <label id="346" label="" color="15" folder="" sort="0" />
         <label id="347" label="" color="15" folder="" sort="0" />
-        <label id="349" label="" color="2" folder="Stage 2" sort="6" />
-        <label id="350" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="349" label="" color="15" folder="Stage 2" sort="6" />
+        <label id="350" label="" color="15" folder="Stage 2" sort="0" />
         <label id="351" label="" color="15" folder="Stage 7" sort="6" />
         <label id="352" label="" color="15" folder="Stage 2" sort="0" />
         <label id="353" label="" color="15" folder="Stage 2" sort="0" />
@@ -540,13 +542,16 @@
         <label id="518" label="" color="15" folder="Stage 6" sort="0" />
         <label id="519" label="" color="15" folder="Stage 6" sort="0" />
         <label id="520" label="" color="15" folder="Stage 7" sort="0" />
-        <label id="521" label="" color="2" folder="" sort="0" />
-        <label id="522" label="" color="2" folder="" sort="0" />
-        <label id="523" label="" color="2" folder="Stage 9" sort="0" />
-        <label id="524" label="" color="2" folder="Stage 8" sort="0" />
-        <label id="525" label="" color="2" folder="Stage 8" sort="0" />
+        <label id="521" label="" color="15" folder="" sort="0" />
+        <label id="522" label="" color="15" folder="Stage 7" sort="0" />
+        <label id="523" label="" color="15" folder="Stage 9" sort="0" />
+        <label id="524" label="" color="15" folder="Stage 8" sort="0" />
+        <label id="525" label="" color="15" folder="Stage 8" sort="0" />
+        <label id="526" label="" color="2" folder="" sort="0" />
+        <label id="527" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="528" label="" color="2" folder="Stage 2" sort="0" />
     </labels>
-    <nextId>525</nextId>
+    <nextId>528</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
@@ -562,6 +567,7 @@
         <marker scope="Public" name="nagatoro_swimsuit_query">responding to Nagatoro's comment</marker>
         <marker scope="Public" name="nice_o">marker for responding to Serena's orgasm &amp; floor cleaning</marker>
         <marker scope="Public" name="panties_first">Bottomless picture collectible marker</marker>
+        <marker scope="Public" name="pokemon_day" />
         <marker scope="Public" name="see_her_naked">Serena is losing, and thinks everyone is picking on her just to see her naked</marker>
         <marker scope="Public" name="serena_aoiasahina_1">First response to Aoi Asahina</marker>
         <marker scope="Public" name="serena_aoiasahina_1_1">Second response to Aoi A's first target</marker>
@@ -613,6 +619,8 @@
         <marker scope="Public" name="serena_aoiasahina_love_6">First response to Aoi A's psuedo love confession</marker>
         <marker scope="Public" name="serena_aoiasahina_love_62">Second response to Aoi A's "love confession" branch</marker>
         <marker scope="Public" name="serena_aoiasahina_swimcrazy91" />
+        <marker scope="Public" name="serena_aoiasahina_swimloop" />
+        <marker scope="Public" name="serena_aoiasahina_swimreturn" />
         <marker scope="Public" name="serena_aoiasahina_touch1">proposal from Aoi A for them to touch eacn other during forfeit</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_6">First response to Aoi A's lucky trio comment</marker>
         <marker scope="Public" name="serena_aoiasahina_trio_62">Second response to Aoi A's "you think I'm cute cute" target</marker>
@@ -640,6 +648,7 @@
         <marker scope="Public" name="serena_carmine_s2">Second response to Carmine's first tagret</marker>
         <marker scope="Public" name="serena_carmine_s2_1">Third response to Carmine's cab response</marker>
         <marker scope="Public" name="serena_carmine_s21">First response to Carmine's "whats your deal, you travel?" target</marker>
+        <marker scope="Public" name="serena_carmine_s22" />
         <marker scope="Public" name="serena_chiaki_0">First response to Chiaki's must strip 0 target not having mentioned Sayaka</marker>
         <marker scope="Public" name="serena_chiaki_02">Second response to Chiaki's performing target not mentioning Sayaka</marker>
         <marker scope="Public" name="serena_chiaki_0rockband">Second response to Chiaki's performing target rockband branch</marker>
@@ -789,6 +798,7 @@
         <marker scope="Public" name="serena_schezo_01">Second response to Schezo's "tell me about what you've seen" target</marker>
         <marker scope="Public" name="serena_schezo_11">Response to Schezo's "Pressing matters didn't let me tour Suzuran, there was a district with much business."</marker>
         <marker scope="Public" name="serena_schezo_lumiose11">First response to Scheco's "tell me about a city" target</marker>
+        <marker scope="Public" name="serena_schezo_lumiose12" />
         <marker scope="Public" name="serena_yuzuki_first_skin" />
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
         <marker scope="Public" name="sernea_nade_finale1" />

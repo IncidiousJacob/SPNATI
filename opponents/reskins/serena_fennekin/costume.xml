@@ -334,25 +334,34 @@
             </directive>
         </pose>
         <pose id="MButt">
-            <sprite id="MButt" src="reskins/serena_fennekin/MButt.png" x="0" y="850" scalex="1" />
-            <sprite id="MButtHand" src="serena/MButtHand.png" x="-125" y="973" scaley="1" pivotx="17%" pivoty="94%" rotation="2" />
+            <sprite id="MButt" src="reskins/serena_fennekin/MButt.png" x="0" y="900" scalex="1" />
+            <sprite id="MButtHand" src="serena/MButtHand.png" x="-103" y="1005" scalex="0.85" scaley="0.85" pivotx="17%" pivoty="94%" rotation="1" />
             <directive type="animation" id="MButt" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="850" />
-                <keyframe time="0.5" x="0" y="850" />
+                <keyframe time="0" x="0" y="900" />
+                <keyframe time="0.5" x="0" y="900" />
+            </directive>
+            <directive type="animation" id="MButt" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/serena_fennekin/MButt.png" />
+                <keyframe time="0.5" src="reskins/serena_fennekin/MButt.png" />
             </directive>
             <directive type="animation" id="MButt" loop="true" ease="linear" interpolation="linear">
                 <keyframe time="0" scalex="1" />
                 <keyframe time="0.5" scalex="1" />
             </directive>
             <directive type="animation" id="MButtHand" loop="true" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-125" y="973" scaley="1" rotation="2" />
-                <keyframe time="0.25" x="-125" y="972" scaley="0.85" rotation="-2" />
-                <keyframe time="0.5" x="-125" y="973" scaley="1" rotation="2" />
+                <keyframe time="0" x="-103" y="1005" scaley="0.85" rotation="1" />
+                <keyframe time="0.25" x="-103" y="1006" scaley="0.8" rotation="-1" />
+                <keyframe time="0.5" x="-103" y="1005" scaley="0.85" rotation="1" />
             </directive>
             <directive type="animation" id="MButtHand" loop="true" ease="linear" interpolation="none">
                 <keyframe time="0" src="serena/MButtHand.png" />
                 <keyframe time="0.25" src="serena/MButtHand.png" />
                 <keyframe time="0.5" src="serena/MButtHand.png" />
+            </directive>
+            <directive type="animation" id="MButtHand" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="0.85" />
+                <keyframe time="0.25" scalex="0.85" />
+                <keyframe time="0.5" scalex="0.85" />
             </directive>
         </pose>
         <pose id="Orgasm">
@@ -1794,6 +1803,9 @@
                 <keyframe time="10.7" src="serena/puddle.png" />
                 <keyframe time="10.72" src="serena/puddle.png" />
             </directive>
+        </pose>
+        <pose id="SwimReturn">
+            <sprite id="peace" src="reskins/serena_fennekin/7-peace.png" x="0" y="0" />
         </pose>
     </poses>
 
