@@ -33,6 +33,10 @@
         <response id="28" opponent="sweetheart" opponentId="43" />
         <response id="29" opponent="emi" opponentId="2" />
         <response id="30" opponent="giygas" opponentId="210" />
+        <response id="38" opponent="yuzuki" opponentId="102" />
+        <response id="39" opponent="yuzuki" opponentId="96" />
+        <response id="0" opponent="yuzuki" opponentId="95" />
+        <response id="41" opponent="yuri" opponentId="160" />
     </responses>
     <notes>
         <note id="21">This case was hidden due to no longer making sense after changes were made to the targeted character. If you're rewriting this character, feel free to delete it.</note>
@@ -45,8 +49,14 @@
         <label id="34" label="" folder="Conditional Lines" sort="0" />
         <label id="36" label="stage 0 sad pose" folder="Aura Camera" sort="0" />
         <label id="37" label="stage 5 happy" folder="Aura Camera" sort="0" />
+        <label id="38" label="stage 1 generic version" folder="" sort="0" />
+        <label id="40" label="stage 3 generic version" folder="" sort="0" />
+        <label id="39" label="stage 4 generic version" folder="" sort="0" />
     </labels>
-    <nextId>37</nextId>
+    <posePreviewMarkers>
+        <posePreviewMarker>yuzuki_stage==4</posePreviewMarker>
+    </posePreviewMarkers>
+    <nextId>41</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2futas" />
@@ -92,6 +102,7 @@
         <marker scope="Public" name="rinkahrespond" />
         <marker scope="Public" name="rwby" />
         <marker scope="Public" name="saki_bra_reveal" />
+        <marker scope="Public" name="saki_toy_queryResp" />
         <marker scope="Public" name="SakiAGPirate" />
         <marker scope="Public" name="SakiAGPirate2" />
         <marker scope="Public" name="SakiAGPirate3" />
@@ -220,6 +231,7 @@
         <marker scope="Public" name="SakiYunoOtherGames2" />
         <marker scope="Public" name="SakiYunoRamble" />
         <marker scope="Public" name="SakiYuriBraids" />
+        <marker scope="Public" name="SakiYuriBraids2" />
         <marker scope="Public" name="SakiYuriLiterature" />
         <marker scope="Public" name="SakiYuriLiterature2" />
         <marker scope="Public" name="SakiYuriMonikaCommonGround" />
@@ -227,6 +239,7 @@
         <marker scope="Public" name="SakiYuriNerves2" />
         <marker scope="Public" name="SakiZoeHello" />
         <marker scope="Public" name="schoolworry" />
+        <marker scope="Public" name="seehhh" />
         <marker scope="Public" name="SeiDrinks" />
         <marker scope="Public" name="silentcheck1" />
         <marker scope="Public" name="silentcheck2" />
@@ -242,6 +255,50 @@
         <marker scope="Public" name="yuno_saki_likeUno1" />
         <marker scope="Public" name="yuno_saki_self0b" />
         <marker scope="Public" name="yuno_saki_self4b" />
+        <marker scope="Public" name="yuzuki__00" />
+        <marker scope="Public" name="yuzuki__01" />
+        <marker scope="Public" name="yuzuki__02" />
+        <marker scope="Public" name="yuzuki__10" />
+        <marker scope="Public" name="yuzuki__11" />
+        <marker scope="Public" name="yuzuki__12" />
+        <marker scope="Public" name="yuzuki__20" />
+        <marker scope="Public" name="yuzuki__21" />
+        <marker scope="Public" name="yuzuki__22" />
+        <marker scope="Public" name="yuzuki__30" />
+        <marker scope="Public" name="yuzuki__31" />
+        <marker scope="Public" name="yuzuki__32" />
+        <marker scope="Public" name="yuzuki__40" />
+        <marker scope="Public" name="yuzuki__41" />
+        <marker scope="Public" name="yuzuki__42" />
+        <marker scope="Public" name="yuzuki__50" />
+        <marker scope="Public" name="yuzuki__51" />
+        <marker scope="Public" name="yuzuki__52" />
+        <marker scope="Public" name="yuzuki__resp_00" />
+        <marker scope="Public" name="yuzuki__resp_01" />
+        <marker scope="Public" name="yuzuki__resp_02" />
+        <marker scope="Public" name="yuzuki__resp_10" />
+        <marker scope="Public" name="yuzuki__resp_11" />
+        <marker scope="Public" name="yuzuki__resp_12" />
+        <marker scope="Public" name="yuzuki__resp_20" />
+        <marker scope="Public" name="yuzuki__resp_21" />
+        <marker scope="Public" name="yuzuki__resp_22" />
+        <marker scope="Public" name="yuzuki__resp_30" />
+        <marker scope="Public" name="yuzuki__resp_31" />
+        <marker scope="Public" name="yuzuki__resp_32" />
+        <marker scope="Public" name="yuzuki__resp_40" />
+        <marker scope="Public" name="yuzuki__resp_41" />
+        <marker scope="Public" name="yuzuki__resp_42" />
+        <marker scope="Public" name="yuzuki__resp_50" />
+        <marker scope="Public" name="yuzuki__resp_51" />
+        <marker scope="Public" name="yuzuki__resp_52" />
+        <marker scope="Public" name="yuzuki__resp_60" />
+        <marker scope="Public" name="yuzuki__resp_61" />
+        <marker scope="Public" name="yuzuki__resp_62" />
+        <marker scope="Public" name="yuzuki_hug" />
+        <marker scope="Public" name="yuzuki_hug_initiate" />
+        <marker scope="Public" name="yuzuki_stage" />
+        <marker scope="Public" name="yuzuki_toy_query" />
+        <marker scope="Public" name="yuzuki_toy_query2" />
     </markers>
     <recipes>
         <recipe key="cc28d236-6b17-48ce-a010-48a75ded118c">
