@@ -2163,7 +2163,7 @@
             </directive>
             <directive type="animation" id="pyorom" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/meia_sleep_chemise/pyorohappy.png" />
-                <keyframe time="1" src="reskins/meia_sleep_chemise/pyoro.png" />
+                <keyframe time="1" src="reskins/meia_sleep_chemise/pyorohappy.png" />
             </directive>
             <directive type="animation" id="pyorohand" ease="smooth" interpolation="linear">
                 <keyframe time="0" x="29" y="88" rotation="0" />
@@ -2738,6 +2738,66 @@
                 <keyframe time="0" alpha="0" />
                 <keyframe time="2" alpha="100" />
             </directive>
+        </pose>
+        <pose id="0-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/0-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
+        <pose id="2-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/2-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
+        <pose id="4-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/4-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
+        <pose id="5-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/5-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
+        <pose id="7-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/7-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
+        <pose id="6-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/6-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorohappy.png" x="-361" y="771" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
         </pose>
     </poses>
 
