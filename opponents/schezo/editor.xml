@@ -213,6 +213,7 @@
         <response id="786" opponent="serena" opponentId="437" />
         <response id="787" opponent="kokichi" opponentId="137" />
         <response id="792" opponent="gloria" opponentId="823" />
+        <response id="797" opponent="serena" opponentId="527" />
     </responses>
     <notes>
         <note id="685">Devs of Kagamine Rin, if you're seeing this, Rin has an Arle cosplay module in Project Diva, named "Apprentice Magician".</note>
@@ -530,11 +531,11 @@
         <label id="349" label="More like Lagnus" folder="Targets&gt;Darkness" sort="95" />
         <label id="350" label="Dark Sword" folder="Targets&gt;Darkness" sort="75" />
         <label id="351" label="Dark Sword" folder="Targets&gt;Darkness" sort="87" />
-        <label id="352" label="Dark Sword" folder="Targets&gt;Darkness" sort="11" />
+        <label id="352" label="Teasing 3 Late" color="1" folder="Targets&gt;Arle" sort="11" />
         <label id="353" label="Crusader" folder="Targets&gt;Darkness" sort="129" />
         <label id="354" label="See More A" color="1" folder="Targets&gt;Arle" sort="6" />
         <label id="355" label="See More B" color="1" folder="Targets&gt;Arle" sort="7" />
-        <label id="356" label="" folder="Targets&gt;Arle" sort="76" />
+        <label id="356" label="Stage 2" folder="Targets&gt;Arle" sort="76" />
         <label id="357" label="" folder="Targets&gt;Arle" sort="94" />
         <label id="358" label="" folder="Targets&gt;Arle" sort="81" />
         <label id="359" label="" folder="Targets" sort="0" />
@@ -555,7 +556,7 @@
         <label id="374" label="" folder="Targets&gt;" sort="122" />
         <label id="375" label="" folder="Targets&gt;Arle" sort="55" />
         <label id="376" label="" folder="Targets&gt;Arle" sort="28" />
-        <label id="377" label="Teasing 2 Late" folder="Targets&gt;Arle" sort="10" />
+        <label id="377" label="Teasing 2 Late" color="1" folder="Targets&gt;Arle" sort="10" />
         <label id="378" label="" folder="Targets" sort="0" />
         <label id="379" label="Sword B2" folder="Targets&gt;Jura" sort="151" />
         <label id="380" label="Sword A2" folder="Targets&gt;Jura" sort="152" />
@@ -877,7 +878,7 @@
         <label id="718" label="" color="1" folder="Targets" sort="0" />
         <label id="719" label="" folder="Filtered" sort="0" />
         <label id="720" label="" folder="Filtered" sort="0" />
-        <label id="721" label="" folder="Targets&gt;Arle" sort="0" />
+        <label id="721" label="Stage 2" folder="Targets&gt;Arle" sort="0" />
         <label id="722" label="" folder="Targets" sort="0" />
         <label id="723" label="" color="1" folder="Targets" sort="0" />
         <label id="724" label="" color="1" folder="Targets" sort="0" />
@@ -940,17 +941,22 @@
         <label id="783" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="784" label="" folder="Targets&gt;Nadeshiko" sort="0" />
         <label id="785" label="" folder="Targets" sort="0" />
-        <label id="786" label="" color="1" folder="Targets" sort="0" />
+        <label id="786" label="" folder="Targets" sort="0" />
         <label id="787" label="" color="1" folder="" sort="0" />
         <label id="788" label="Summer" folder="Holiday Alt Lines" sort="0" />
         <label id="789" label="Valentine's" folder="Holiday Alt Lines" sort="0" />
         <label id="790" label="Halloween" folder="Holiday Alt Lines" sort="0" />
         <label id="791" label="Christmas" folder="Holiday Alt Lines" sort="0" />
-        <label id="793" label="" color="1" folder="Targets" sort="0" />
+        <label id="793" label="" folder="Targets" sort="0" />
         <label id="794" label="" color="1" folder="Targets" sort="0" />
+        <label id="795" label="" color="1" folder="Targets" sort="0" />
+        <label id="796" label="" folder="Targets" sort="0" />
+        <label id="797" label="" color="6" folder="Targets" sort="0" />
+        <label id="798" label="Teasing 2 Late 2" color="1" folder="Targets&gt;Arle" sort="0" />
+        <label id="799" label="Post-Teasing Banter Box" color="6" folder="Targets&gt;Arle" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>794</nextId>
+    <nextId>799</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009mayberetro" />
@@ -967,6 +973,7 @@
         <marker scope="Public" name="about_puyo4" />
         <marker scope="Public" name="aboutdarksword1" />
         <marker scope="Public" name="aboutdarksword1_sus" />
+        <marker scope="Public" name="alre_adventures1" />
         <marker scope="Public" name="aoi_abouthopespeak1" />
         <marker scope="Public" name="aoi_abouthopespeak2" />
         <marker scope="Public" name="aoi_abouthopespeak3" />
@@ -980,6 +987,7 @@
         <marker scope="Public" name="arle_blue2" />
         <marker scope="Public" name="arle_creeper" />
         <marker scope="Public" name="arle_creepercallout" />
+        <marker scope="Public" name="arle_curry1" />
         <marker scope="Public" name="arle_doors">Arle Nadja, Apprentice Mage, Lover of Curry, Popper of Puyo...Yeeter of Doors.</marker>
         <marker scope="Public" name="arle_dungeon_escape" />
         <marker scope="Public" name="arle_dungeon_escape2" />
@@ -988,6 +996,7 @@
         <marker scope="Public" name="arle_dungeon_guards" />
         <marker scope="Public" name="arle_dungeon_guards2" />
         <marker scope="Public" name="arle_intimate1" />
+        <marker scope="Public" name="arle_intimate2" />
         <marker scope="Public" name="arle_intimateA" />
         <marker scope="Public" name="arle_intimateB" />
         <marker scope="Public" name="arle_is_here" />
@@ -995,12 +1004,16 @@
         <marker scope="Public" name="arle_naked2_2" />
         <marker scope="Public" name="arle_naked2_2A" />
         <marker scope="Public" name="arle_naked2_2B" />
+        <marker scope="Public" name="arle_pervloss_R" />
+        <marker scope="Public" name="arle_pervplan_R" />
         <marker scope="Public" name="arle_pervself_R" />
         <marker scope="Public" name="arle_reputation_R" />
         <marker scope="Public" name="arle_reputation_R2" />
         <marker scope="Public" name="arle_reputation_R3" />
+        <marker scope="Public" name="arle_romance1" />
         <marker scope="Public" name="arle_teasing_response2" />
         <marker scope="Public" name="arle_teasing_response3" />
+        <marker scope="Public" name="arle_teasingcounter" />
         <marker scope="Public" name="arle_whipdung_R" />
         <marker scope="Public" name="arle_witch_response" />
         <marker scope="Public" name="armed_question">Who else wields a weapon here?</marker>
@@ -1057,6 +1070,9 @@
         <marker scope="Public" name="meia_darkmage_response3" />
         <marker scope="Public" name="Miko_cape1" />
         <marker scope="Public" name="Miko_cape2" />
+        <marker scope="Public" name="Miko_cape3" />
+        <marker scope="Public" name="miko_immortal1" />
+        <marker scope="Public" name="miko_power1" />
         <marker scope="Public" name="momo_schezo_allegiance1" />
         <marker scope="Public" name="momo_schezo_sword1" />
         <marker scope="Public" name="moon_disaster" />
@@ -1380,6 +1396,7 @@
         <marker scope="Public" name="schezo_serena_adventures3" />
         <marker scope="Public" name="schezo_serena_cities1" />
         <marker scope="Public" name="schezo_serena_cities2" />
+        <marker scope="Public" name="schezo_serena_cities3" />
         <marker scope="Public" name="schezo_serena_lumiose1" />
         <marker scope="Public" name="schezo_showdown" />
         <marker scope="Public" name="schezo_sun_incident" />
