@@ -123,6 +123,10 @@
         <response id="506" opponent="zeke_pandoria" opponentId="172" />
         <response id="507" opponent="zeke_pandoria" opponentId="2" />
         <response id="508" opponent="zeke_pandoria" opponentId="50" />
+        <response id="510" opponent="jura" opponentId="2447" />
+        <response id="511" opponent="meia" opponentId="2567" />
+        <response id="512" opponent="meia" opponentId="2568" />
+        <response id="515" opponent="jura" opponentId="2446" />
     </responses>
     <notes>
         <note id="142">("Because I'm about to take my mask off, too...")</note>
@@ -436,7 +440,7 @@
         <label id="302" label="" folder="Filtered Lines" sort="35" />
         <label id="303" label="" folder="Filtered Lines" sort="33" />
         <label id="304" label="" folder="Targets&gt;Jura" sort="6" />
-        <label id="305" label="" folder="Targets" sort="63" />
+        <label id="305" label="" folder="Targets&gt;Jura" sort="63" />
         <label id="306" label="" folder="Targets&gt;Yae Miko" sort="4" />
         <label id="307" label="" folder="Targets&gt;Yae Miko" sort="2" />
         <label id="308" label="" folder="Targets" sort="89" />
@@ -526,7 +530,7 @@
         <label id="395" label="" folder="April Fools" sort="0" />
         <label id="396" label="" folder="Targets&gt;Miko" sort="0" />
         <label id="397" label="" folder="Targets&gt;Jura" sort="9" />
-        <label id="398" label="" color="4" folder="Targets&gt;Jura" sort="4" />
+        <label id="398" label="" folder="Targets&gt;Jura" sort="4" />
         <label id="399" label="" folder="Targets" sort="112" />
         <label id="400" label="" folder="Targets" sort="113" />
         <label id="401" label="" folder="Targets" sort="114" />
@@ -576,7 +580,7 @@
         <label id="444" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="445" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="447" label="" folder="Mouth Followups" sort="0" />
-        <label id="449" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="449" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="450" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="451" label="" folder="Targets&gt;Saki" sort="0" />
         <label id="452" label="" folder="Targets&gt;Saki" sort="0" />
@@ -638,8 +642,14 @@
         <label id="507" label="" folder="Targets" sort="0" />
         <label id="508" label="" folder="Targets" sort="0" />
         <label id="509" label="" folder="Filtered Lines" sort="0" />
+        <label id="510" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="511" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="512" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="513" label="" color="15" folder="Targets&gt;Meia" sort="0" />
+        <label id="514" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="515" label="" color="4" folder="Targets&gt;Jura" sort="0" />
     </labels>
-    <nextId>509</nextId>
+    <nextId>515</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="30k_yen_underwear" />
@@ -865,6 +875,7 @@
         <marker scope="Public" name="yuzuki_juno_strip0a" />
         <marker scope="Public" name="yuzuki_juno_strip1a" />
         <marker scope="Public" name="yuzuki_jura_self0a" />
+        <marker scope="Public" name="yuzuki_jura_self0a_office" />
         <marker scope="Public" name="yuzuki_jura_self0a_valentine" />
         <marker scope="Public" name="yuzuki_jura_self0b" />
         <marker scope="Public" name="yuzuki_jura_self0c" />
@@ -875,6 +886,7 @@
         <marker scope="Public" name="yuzuki_jura_self3b" />
         <marker scope="Public" name="yuzuki_jura_self3c" />
         <marker scope="Public" name="yuzuki_jura_self4a" />
+        <marker scope="Public" name="yuzuki_jura_self4b" />
         <marker scope="Public" name="yuzuki_jura_strip0a" />
         <marker scope="Public" name="yuzuki_jura_strip0b" />
         <marker scope="Public" name="yuzuki_jura_strip0c" />
@@ -891,10 +903,12 @@
         <marker scope="Public" name="yuzuki_meia_self1c" />
         <marker scope="Public" name="yuzuki_meia_self2a" />
         <marker scope="Public" name="yuzuki_meia_self2b" />
+        <marker scope="Public" name="yuzuki_meia_self2c" />
         <marker scope="Public" name="yuzuki_meia_self3a" />
         <marker scope="Public" name="yuzuki_meia_self3b" />
         <marker scope="Public" name="yuzuki_meia_self3c" />
         <marker scope="Public" name="yuzuki_meia_self4a" />
+        <marker scope="Public" name="yuzuki_meia_self4b" />
         <marker scope="Public" name="yuzuki_meia_strip0a" />
         <marker scope="Public" name="yuzuki_meia_strip0b" />
         <marker scope="Public" name="yuzuki_meia_strip0c" />
@@ -904,6 +918,7 @@
         <marker scope="Public" name="yuzuki_meia_strip1c" />
         <marker scope="Public" name="yuzuki_meia_strip1c_jura" />
         <marker scope="Public" name="yuzuki_meia_strip2a" />
+        <marker scope="Public" name="yuzuki_meia_strip2b" />
         <marker scope="Public" name="yuzuki_mikan_health1" />
         <marker scope="Public" name="yuzuki_miko_self0a" />
         <marker scope="Public" name="yuzuki_miko_self0b" />
