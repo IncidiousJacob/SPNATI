@@ -165,6 +165,43 @@
         <label id="175" label="" color="15" folder="" sort="0" />
         <label id="180" label="" color="15" folder="" sort="0" />
         <label id="181" label="" color="15" folder="" sort="0" />
+        <label id="185" label="" folder="Leon FF" sort="0" />
+        <label id="186" label="" folder="Leon FF" sort="0" />
+        <label id="187" label="" folder="Leon FF" sort="0" />
+        <label id="188" label="" folder="Leon FF" sort="0" />
+        <label id="189" label="Pose 1" folder="Leon FF - Starting" sort="0" />
+        <label id="190" label="Pose 2" folder="Leon FF - Starting" sort="0" />
+        <label id="191" label="Pose 3" folder="Leon FF - Starting" sort="0" />
+        <label id="192" label="Pose 4" folder="Leon FF - Starting" sort="0" />
+        <label id="193" label="Heavy Swap" color="5" folder="Leon FF - Starting" sort="0" />
+        <label id="194" label="Heavy Pose 1" folder="Leon FF - T Heavy" sort="0" />
+        <label id="195" label="Heavy Pose 2" folder="Leon FF - T Heavy" sort="0" />
+        <label id="196" label="Heavy Pose 3" folder="Leon FF - T Heavy" sort="0" />
+        <label id="197" label="Heavy Pose 4" folder="Leon FF - T Heavy" sort="0" />
+        <label id="198" label="Yae Finishing" folder="Leon FF - T Heavy" sort="0" />
+        <label id="199" label="Yae Finished" folder="Leon FF - T Heavy" sort="0" />
+        <label id="200" label="Leon Finale" folder="Leon FF - U Heavy" sort="0" />
+        <label id="201" label="Leon Finishing" folder="Leon FF" sort="0" />
+        <label id="202" label="Leon Finished" folder="Leon FF" sort="0" />
+        <label id="203" label="After Pose 1" folder="Leon FF" sort="0" />
+        <label id="204" label="After Pose 2" folder="Leon FF" sort="0" />
+        <label id="205" label="After Pose 3" folder="Leon FF" sort="0" />
+        <label id="206" label="After Pose 4" folder="Leon FF" sort="0" />
+        <label id="207" label="After Special 1" folder="Leon FF" sort="0" />
+        <label id="208" label="After Special 2" folder="Leon FF" sort="0" />
+        <label id="209" label="After Special 3" folder="Leon FF" sort="0" />
+        <label id="210" label="Continuation" folder="Leon FF" sort="0" />
+        <label id="211" label="Continuation 2" folder="Leon FF" sort="0" />
+        <label id="212" label="Continuation 3" folder="Leon FF" sort="0" />
+        <label id="213" label="" folder="Leon FF" sort="0" />
+        <label id="214" label="Yae Finishing" folder="Leon FF - T Heavy" sort="0" />
+        <label id="215" label="After Special 2" folder="Leon FF" sort="0" />
+        <label id="216" label="After Special 3" folder="Leon FF" sort="0" />
+        <label id="217" label="After Pose 1" folder="Leon FF" sort="0" />
+        <label id="218" label="After Pose 2" folder="Leon FF" sort="0" />
+        <label id="219" label="After Pose 4" folder="Leon FF" sort="0" />
+        <label id="220" label="After Pose 3" folder="Leon FF" sort="0" />
+        <label id="221" label="After Special 1" folder="Leon FF" sort="0" />
     </labels>
     <prefixes>
         <prefix>ex</prefix>
@@ -175,7 +212,7 @@
         <prefix>arms</prefix>
         <prefix>Esheena</prefix>
     </prefixes>
-    <nextId>184</nextId>
+    <nextId>221</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoii_resp0_1" />
@@ -383,12 +420,27 @@
         <marker scope="Public" name="Kyouko_s1_1" />
         <marker scope="Public" name="Kyouko_s4_1" />
         <marker scope="Public" name="leon_date_resp" />
+        <marker scope="Public" name="leon_dual_heavy_ongoing" />
+        <marker scope="Public" name="leon_dual_heavy_start" />
+        <marker scope="Public" name="leon_dual_leon_finale" />
+        <marker scope="Public" name="leon_dual_leon_finished" />
+        <marker scope="Public" name="leon_dual_leon_finished_after1" />
+        <marker scope="Public" name="leon_dual_leon_finished_after2" />
+        <marker scope="Public" name="leon_dual_leon_finished_after3" />
+        <marker scope="Public" name="leon_dual_leon_finishing" />
+        <marker scope="Public" name="leon_dual_ongoing" />
+        <marker scope="Public" name="leon_dual_yae_ff" />
+        <marker scope="Public" name="leon_dual_yae_finished" />
+        <marker scope="Public" name="leon_dual_yae_finishing" />
+        <marker scope="Public" name="leon_dual_yae_started" />
         <marker scope="Public" name="leon_govt_resp" />
         <marker scope="Public" name="Leon_IOU_HA" />
         <marker scope="Public" name="Leon_IOU_OS" />
         <marker scope="Public" name="leon_missions_resp" />
         <marker scope="Public" name="leon_ninja_resp" />
         <marker scope="Public" name="Leon_REhutao" />
+        <marker scope="Public" name="leon_rein2" />
+        <marker scope="Public" name="leon_re-initiate" />
         <marker scope="Public" name="Leon_REnonon" />
         <marker scope="Public" name="Leon_RErogue" />
         <marker scope="Public" name="Leon_RErouge" />
@@ -720,11 +772,50 @@
         <marker scope="Public" name="Roll_s5_1" />
         <marker scope="Public" name="Roll_s5_2" />
         <marker scope="Public" name="Roll_s5_3" />
+        <marker scope="Public" name="senko_resp0_1" />
+        <marker scope="Public" name="senko_resp0_2" />
+        <marker scope="Public" name="senko_resp0_3" />
+        <marker scope="Public" name="senko_resp1_1" />
+        <marker scope="Public" name="senko_resp1_2" />
+        <marker scope="Public" name="senko_resp1_3" />
+        <marker scope="Public" name="senko_resp2_1" />
+        <marker scope="Public" name="senko_resp2_2" />
+        <marker scope="Public" name="senko_resp2_3" />
+        <marker scope="Public" name="senko_resp3_1" />
+        <marker scope="Public" name="senko_resp3_2" />
+        <marker scope="Public" name="senko_resp3_3" />
+        <marker scope="Public" name="senko_resp4_1" />
+        <marker scope="Public" name="senko_resp4_2" />
+        <marker scope="Public" name="senko_resp4_3" />
+        <marker scope="Public" name="senko_resp5_1" />
+        <marker scope="Public" name="senko_resp5_2" />
+        <marker scope="Public" name="senko_resp5_3" />
+        <marker scope="Public" name="senko_resp6_1" />
+        <marker scope="Public" name="senko_resp6_2" />
+        <marker scope="Public" name="senko_resph_mech" />
         <marker scope="Public" name="Senko_s0_1" />
         <marker scope="Public" name="Senko_s0_2" />
+        <marker scope="Public" name="Senko_s0_3" />
         <marker scope="Public" name="Senko_s1_1" />
         <marker scope="Public" name="Senko_s1_2" />
+        <marker scope="Public" name="Senko_s1_3" />
         <marker scope="Public" name="Senko_s2_1" />
+        <marker scope="Public" name="Senko_s2_2" />
+        <marker scope="Public" name="Senko_s2_3" />
+        <marker scope="Public" name="Senko_s3_1" />
+        <marker scope="Public" name="Senko_s3_2" />
+        <marker scope="Public" name="Senko_s3_3" />
+        <marker scope="Public" name="Senko_s4_1" />
+        <marker scope="Public" name="Senko_s4_2" />
+        <marker scope="Public" name="Senko_s4_3" />
+        <marker scope="Public" name="Senko_s5_1" />
+        <marker scope="Public" name="Senko_s5_2" />
+        <marker scope="Public" name="Senko_s5_3" />
+        <marker scope="Public" name="Senko_s6_1" />
+        <marker scope="Public" name="Senko_s6_2" />
+        <marker scope="Public" name="Senko_s6_3" />
+        <marker scope="Public" name="Senko_s7_1" />
+        <marker scope="Public" name="Senko_s7_2" />
         <marker scope="Public" name="Sheena_Evening" />
         <marker scope="Public" name="Sheena_Proposition" />
         <marker scope="Public" name="Sheena_Regular" />
@@ -854,6 +945,7 @@
         <marker scope="Public" name="yae_resp6_2" />
         <marker scope="Public" name="yae_resp7_1" />
         <marker scope="Public" name="yae_resp7_2" />
+        <marker scope="Public" name="Yae_SelfFlirting_end" />
         <marker scope="Public" name="yae_tao01" />
         <marker scope="Public" name="yae_tao11" />
         <marker scope="Public" name="yae_tao21" />
