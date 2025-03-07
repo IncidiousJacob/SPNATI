@@ -577,6 +577,10 @@
         <response id="1673" opponent="leviathan" opponentId="212" />
         <response id="1675" opponent="leviathan" opponentId="235" />
         <response id="1676" opponent="leviathan" opponentId="236" />
+        <response id="1684" opponent="leviathan" opponentId="243" />
+        <response id="1685" opponent="leviathan" opponentId="244" />
+        <response id="1686" opponent="yuzuki" opponentId="148" />
+        <response id="1687" opponent="yuzuki" opponentId="149" />
     </responses>
     <notes>
         <note id="48">Grants the DbD tag. </note>
@@ -1702,13 +1706,55 @@
         <label id="1667" label="" color="1" folder="" sort="0" />
         <label id="1641" label="" folder="Yae Dual Triggers" sort="0" />
         <label id="1642" label="" folder="Yae Dual Triggers" sort="0" />
-        <label id="1663" label="" color="1" folder="" sort="0" />
-        <label id="1675" label="" color="1" folder="" sort="0" />
         <label id="1669" label="" color="1" folder="" sort="0" />
         <label id="1674" label="Leviathan, After" folder="" sort="0" />
-        <label id="1676" label="" color="1" folder="" sort="0" />
+        <label id="1677" label="Start - Leon First" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1678" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1679" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1680" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1681" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1682" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1683" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1688" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1689" label="1" folder="Momo Forfeit" sort="0" />
+        <label id="1690" label="2" folder="Momo Forfeit" sort="0" />
+        <label id="1691" label="3" folder="Momo Forfeit" sort="0" />
+        <label id="1692" label="4" folder="Momo Forfeit" sort="0" />
+        <label id="1693" label="5" folder="Momo Forfeit" sort="0" />
+        <label id="1694" label="6" folder="Momo Forfeit" sort="0" />
+        <label id="1695" label="7" folder="Momo Forfeit" sort="0" />
+        <label id="1696" label="8" folder="Momo Forfeit" sort="0" />
+        <label id="1697" label="9" folder="Momo Forfeit" sort="0" />
+        <label id="1698" label="10" folder="Momo Forfeit" sort="0" />
+        <label id="1699" label="11" folder="Momo Forfeit" sort="0" />
+        <label id="1700" label="12" folder="Momo Forfeit" sort="0" />
+        <label id="1701" label="13" folder="Momo Forfeit" sort="0" />
+        <label id="1702" label="13r" folder="Momo Forfeit" sort="0" />
+        <label id="1703" label="1" folder="Momo Forfeit" sort="0" />
+        <label id="1704" label="2" folder="Momo Forfeit" sort="0" />
+        <label id="1705" label="3" folder="Momo Forfeit" sort="0" />
+        <label id="1706" label="4" folder="Momo Forfeit" sort="0" />
+        <label id="1707" label="5" folder="Momo Forfeit" sort="0" />
+        <label id="1708" label="6" folder="Momo Forfeit" sort="0" />
+        <label id="1709" label="7" folder="Momo Forfeit" sort="0" />
+        <label id="1710" label="8" folder="Momo Forfeit" sort="0" />
+        <label id="1711" label="9" folder="Momo Forfeit" sort="0" />
+        <label id="1712" label="10" folder="Momo Forfeit" sort="0" />
+        <label id="1713" label="11" folder="Momo Forfeit" sort="0" />
+        <label id="1714" label="12" folder="Momo Forfeit" sort="0" />
+        <label id="1715" label="13" folder="Momo Forfeit" sort="0" />
+        <label id="1716" label="H1" folder="Momo Forfeit" sort="0" />
+        <label id="1717" label="H2" folder="Momo Forfeit" sort="0" />
+        <label id="1718" label="H3" folder="Momo Forfeit" sort="0" />
+        <label id="1719" label="H4" folder="Momo Forfeit" sort="0" />
+        <label id="1720" label="H5" folder="Momo Forfeit" sort="0" />
+        <label id="1721" label="H6" folder="Momo Forfeit" sort="0" />
+        <label id="1722" label="Heavy Enable" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1723" label="" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1724" label="After" folder="Yae Dual Forfeit" sort="0" />
+        <label id="1725" label="After" folder="Yae Dual Forfeit" sort="0" />
     </labels>
-    <nextId>1676</nextId>
+    <nextId>1725</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -2213,9 +2259,12 @@
         <marker scope="Public" name="leon_date" />
         <marker scope="Public" name="leon_dual_finished" />
         <marker scope="Public" name="leon_dual_finishing" />
+        <marker scope="Public" name="leon_dual_heavy_start" />
         <marker scope="Public" name="leon_dual_kiss" />
+        <marker scope="Public" name="leon_dual_leon_finished" />
         <marker scope="Public" name="leon_dual_leon_first" />
         <marker scope="Public" name="leon_dual_me_first" />
+        <marker scope="Public" name="leon_dual_yae_started" />
         <marker scope="Public" name="leon_dualFFheavy" />
         <marker scope="Public" name="leon_dualFFmust" />
         <marker scope="Public" name="leon_dualFFstart" />
@@ -2312,6 +2361,55 @@
         <marker scope="Public" name="leon_levpost4" />
         <marker scope="Public" name="leon_levpost5" />
         <marker scope="Public" name="leon_missions" />
+        <marker scope="Public" name="leon_momo01" />
+        <marker scope="Public" name="leon_momo02" />
+        <marker scope="Public" name="leon_momo03" />
+        <marker scope="Public" name="leon_momo11" />
+        <marker scope="Public" name="leon_momo12" />
+        <marker scope="Public" name="leon_momo13" />
+        <marker scope="Public" name="leon_momo21" />
+        <marker scope="Public" name="leon_momo22" />
+        <marker scope="Public" name="leon_momo23" />
+        <marker scope="Public" name="leon_momo31" />
+        <marker scope="Public" name="leon_momo32" />
+        <marker scope="Public" name="leon_momo33" />
+        <marker scope="Public" name="leon_momo41" />
+        <marker scope="Public" name="leon_momo42" />
+        <marker scope="Public" name="leon_momo43" />
+        <marker scope="Public" name="leon_momo51" />
+        <marker scope="Public" name="leon_momo52" />
+        <marker scope="Public" name="leon_momo53" />
+        <marker scope="Public" name="leon_momo61" />
+        <marker scope="Public" name="leon_momo62" />
+        <marker scope="Public" name="leon_momoA1" />
+        <marker scope="Public" name="leon_momoA2" />
+        <marker scope="Public" name="leon_momoff1" />
+        <marker scope="Public" name="leon_momoff10" />
+        <marker scope="Public" name="leon_momoff11" />
+        <marker scope="Public" name="leon_momoff12" />
+        <marker scope="Public" name="leon_momoff13" />
+        <marker scope="Public" name="leon_momoff2" />
+        <marker scope="Public" name="leon_momoff3" />
+        <marker scope="Public" name="leon_momoff4" />
+        <marker scope="Public" name="leon_momoff5" />
+        <marker scope="Public" name="leon_momoff6" />
+        <marker scope="Public" name="leon_momoff7" />
+        <marker scope="Public" name="leon_momoff8" />
+        <marker scope="Public" name="leon_momoff9" />
+        <marker scope="Public" name="leon_momoH1" />
+        <marker scope="Public" name="leon_momoH10" />
+        <marker scope="Public" name="leon_momoH11" />
+        <marker scope="Public" name="leon_momoH12" />
+        <marker scope="Public" name="leon_momoH13" />
+        <marker scope="Public" name="leon_momoH13r" />
+        <marker scope="Public" name="leon_momoH2" />
+        <marker scope="Public" name="leon_momoH3" />
+        <marker scope="Public" name="leon_momoH4" />
+        <marker scope="Public" name="leon_momoH5" />
+        <marker scope="Public" name="leon_momoH6" />
+        <marker scope="Public" name="leon_momoH7" />
+        <marker scope="Public" name="leon_momoH8" />
+        <marker scope="Public" name="leon_momoH9" />
         <marker scope="Public" name="leon_ninja" />
         <marker scope="Public" name="leon_noire41" />
         <marker scope="Public" name="leon_nononFF_continue" />
@@ -2367,6 +2465,8 @@
         <marker scope="Public" name="leon_yae_ff9H_RG" />
         <marker scope="Public" name="leon_yolo" />
         <marker scope="Public" name="leon_yuzuki01" />
+        <marker scope="Public" name="leon_yuzuki02" />
+        <marker scope="Public" name="leon_yuzuki12" />
         <marker scope="Public" name="leon_yuzuki33" />
         <marker scope="Public" name="leon01" />
         <marker scope="Public" name="leon01a" />
@@ -2634,6 +2734,54 @@
         <marker scope="Public" name="miko01" />
         <marker scope="Public" name="miko02" />
         <marker scope="Public" name="miko03" />
+        <marker scope="Public" name="momo_after0" />
+        <marker scope="Public" name="momo_after2" />
+        <marker scope="Public" name="momo_after3" />
+        <marker scope="Public" name="momo_after4" />
+        <marker scope="Public" name="momo_finish" />
+        <marker scope="Public" name="momo_leon_post2" />
+        <marker scope="Public" name="momo_leon_post3" />
+        <marker scope="Public" name="momo_leon_post4" />
+        <marker scope="Public" name="momo_leon01" />
+        <marker scope="Public" name="momo_leon02" />
+        <marker scope="Public" name="momo_leon03" />
+        <marker scope="Public" name="momo_leon11" />
+        <marker scope="Public" name="momo_leon12" />
+        <marker scope="Public" name="momo_leon13" />
+        <marker scope="Public" name="momo_leon21" />
+        <marker scope="Public" name="momo_leon22" />
+        <marker scope="Public" name="momo_leon23" />
+        <marker scope="Public" name="momo_leon31" />
+        <marker scope="Public" name="momo_leon32" />
+        <marker scope="Public" name="momo_leon33" />
+        <marker scope="Public" name="momo_leon41" />
+        <marker scope="Public" name="momo_leon42" />
+        <marker scope="Public" name="momo_leon43" />
+        <marker scope="Public" name="momo_leon51" />
+        <marker scope="Public" name="momo_leon52" />
+        <marker scope="Public" name="momo_leon53" />
+        <marker scope="Public" name="momo_leon61" />
+        <marker scope="Public" name="momo_leon62" />
+        <marker scope="Public" name="momo_leon63" />
+        <marker scope="Public" name="momo_leonff1" />
+        <marker scope="Public" name="momo_leonff10" />
+        <marker scope="Public" name="momo_leonff11" />
+        <marker scope="Public" name="momo_leonff12" />
+        <marker scope="Public" name="momo_leonff13" />
+        <marker scope="Public" name="momo_leonff2" />
+        <marker scope="Public" name="momo_leonff3" />
+        <marker scope="Public" name="momo_leonff4" />
+        <marker scope="Public" name="momo_leonff5" />
+        <marker scope="Public" name="momo_leonff6" />
+        <marker scope="Public" name="momo_leonff7" />
+        <marker scope="Public" name="momo_leonff8" />
+        <marker scope="Public" name="momo_leonff9" />
+        <marker scope="Public" name="momo_leonH1" />
+        <marker scope="Public" name="momo_leonH2" />
+        <marker scope="Public" name="momo_leonH3" />
+        <marker scope="Public" name="momo_leonH4" />
+        <marker scope="Public" name="momo_leonH5" />
+        <marker scope="Public" name="momo_leonH6" />
         <marker scope="Public" name="monika01" />
         <marker scope="Public" name="monika02" />
         <marker scope="Public" name="monika03" />
@@ -2904,6 +3052,7 @@
         <marker scope="Public" name="rosa63" />
         <marker scope="Public" name="rouge_dual" />
         <marker scope="Public" name="rouge_dual_furry" />
+        <marker scope="Public" name="rouge_dual_perm" />
         <marker scope="Public" name="rouge_ff" />
         <marker scope="Public" name="rouge01" />
         <marker scope="Public" name="rouge02" />
@@ -3176,6 +3325,8 @@
         <marker scope="Public" name="yuri01" />
         <marker scope="Public" name="yuzuki_leon01a" />
         <marker scope="Public" name="yuzuki_leon01b" />
+        <marker scope="Public" name="yuzuki_leon02a" />
+        <marker scope="Public" name="yuzuki_leon02b" />
         <marker scope="Public" name="yuzuki_leon11" />
         <marker scope="Public" name="yuzuki_leon12" />
         <marker scope="Public" name="yuzuki_leon13" />
