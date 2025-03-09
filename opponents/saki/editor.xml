@@ -5,6 +5,11 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Saki Hugged by Yuzuki" id="71" priority="FYI" min="7" max="7">
+            <description>Yuzuki takes on a big-sisterly vibe and gives Saki a comforting hug</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="1" opponent="pinkie_pie" opponentId="1" />
         <response id="2" opponent="sayaka" opponentId="5" />
@@ -37,6 +42,8 @@
         <response id="39" opponent="yuzuki" opponentId="96" />
         <response id="0" opponent="yuzuki" opponentId="95" />
         <response id="41" opponent="yuri" opponentId="160" />
+        <response id="72" opponent="mari_setogaya" opponentId="16" />
+        <response id="73" opponent="mari_setogaya" opponentId="1254" />
     </responses>
     <notes>
         <note id="21">This case was hidden due to no longer making sense after changes were made to the targeted character. If you're rewriting this character, feel free to delete it.</note>
@@ -52,13 +59,44 @@
         <label id="38" label="stage 1 generic version" folder="" sort="0" />
         <label id="40" label="stage 3 generic version" folder="" sort="0" />
         <label id="39" label="stage 4 generic version" folder="" sort="0" />
+        <label id="42" label="" folder="Mari Setogaya" sort="0" />
+        <label id="43" label="" folder="Mari Setogaya" sort="0" />
+        <label id="44" label="" folder="Mari Setogaya" sort="0" />
+        <label id="45" label="" folder="Mari Setogaya" sort="0" />
+        <label id="46" label="" folder="Mari Setogaya" sort="0" />
+        <label id="47" label="" folder="Mari Setogaya" sort="0" />
+        <label id="48" label="" folder="Mari Setogaya" sort="0" />
+        <label id="49" label="" folder="Mari Setogaya" sort="0" />
+        <label id="50" label="" folder="Mari Setogaya" sort="0" />
+        <label id="51" label="" folder="Mari Setogaya" sort="0" />
+        <label id="52" label="" folder="Mari Setogaya" sort="0" />
+        <label id="53" label="" folder="Mari Setogaya" sort="0" />
+        <label id="54" label="" folder="Mari Setogaya" sort="0" />
+        <label id="55" label="" folder="Mari Setogaya" sort="0" />
+        <label id="56" label="" folder="Mari Setogaya" sort="0" />
+        <label id="57" label="" folder="Mari Setogaya" sort="0" />
+        <label id="58" label="" folder="Mari Setogaya" sort="0" />
+        <label id="59" label="" folder="Mari Setogaya" sort="0" />
+        <label id="60" label="" folder="Mari Setogaya" sort="0" />
+        <label id="61" label="" folder="Mari Setogaya" sort="0" />
+        <label id="62" label="" folder="Mari Setogaya" sort="0" />
+        <label id="63" label="" folder="Mari Setogaya" sort="0" />
+        <label id="64" label="" folder="Mari Setogaya" sort="0" />
+        <label id="65" label="" folder="Mari Setogaya" sort="0" />
+        <label id="66" label="" folder="Mari Setogaya" sort="0" />
+        <label id="67" label="stage 4 generic version" folder="Mari Setogaya" sort="0" />
+        <label id="68" label="" folder="Mari Setogaya" sort="0" />
+        <label id="69" label="" folder="Mari Setogaya" sort="0" />
+        <label id="70" label="" folder="Mari Setogaya" sort="0" />
+        <label id="72" label="" folder="Mari Setogaya" sort="0" />
+        <label id="74" label="" folder="Mari Setogaya" sort="0" />
+        <label id="73" label="" folder="Mari Setogaya" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>yuzuki_stage==7</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>41</nextId>
+    <nextId>74</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="2futas" />
         <marker scope="Public" name="amy_saki_sleepover" />
         <marker scope="Public" name="AmySchool" />
@@ -98,10 +136,36 @@
         <marker scope="Public" name="mahirucheck" />
         <marker scope="Public" name="mahirucheck2" />
         <marker scope="Public" name="mahirucheck3" />
+        <marker scope="Public" name="mariS_favSexPosition" />
+        <marker scope="Public" name="mariS_havingfun" />
         <marker scope="Public" name="models" />
         <marker scope="Public" name="rinkahrespond" />
         <marker scope="Public" name="rwby" />
         <marker scope="Public" name="saki_bra_reveal" />
+        <marker scope="Public" name="saki_mariS_confidence1" />
+        <marker scope="Public" name="saki_mariS_confidence2" />
+        <marker scope="Public" name="saki_mariS_confidence3" />
+        <marker scope="Public" name="saki_mariS_demiHuman1" />
+        <marker scope="Public" name="saki_mariS_demiHuman2" />
+        <marker scope="Public" name="saki_mariS_demiHuman3" />
+        <marker scope="Public" name="saki_mariS_firstStripA" />
+        <marker scope="Public" name="saki_mariS_firstStripb" />
+        <marker scope="Public" name="saki_mariS_firstStripC" />
+        <marker scope="Public" name="saki_mariS_okayResp1" />
+        <marker scope="Public" name="saki_mariS_okayResp2" />
+        <marker scope="Public" name="saki_mariS_okayResp3" />
+        <marker scope="Public" name="saki_mariS_outgoing1" />
+        <marker scope="Public" name="saki_mariS_outgoing2" />
+        <marker scope="Public" name="saki_mariS_outgoing3" />
+        <marker scope="Public" name="saki_mariS_prettySuccubus1" />
+        <marker scope="Public" name="saki_mariS_prettySuccubus2" />
+        <marker scope="Public" name="saki_mariS_prettySuccubus3" />
+        <marker scope="Public" name="saki_mariS_selfChestReveal1" />
+        <marker scope="Public" name="saki_mariS_selfChestReveal2" />
+        <marker scope="Public" name="saki_mariS_selfChestReveal3" />
+        <marker scope="Public" name="saki_mariS_uniqueCharmResp1" />
+        <marker scope="Public" name="saki_mariS_uniqueCharmResp2" />
+        <marker scope="Public" name="saki_mariS_uniqueCharmResp3" />
         <marker scope="Public" name="saki_toy_queryResp" />
         <marker scope="Public" name="SakiAGPirate" />
         <marker scope="Public" name="SakiAGPirate2" />
