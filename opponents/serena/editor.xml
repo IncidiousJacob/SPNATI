@@ -231,6 +231,7 @@
         <response id="546" opponent="darkness" opponentId="1541" />
         <response id="547" opponent="schezo" opponentId="800" />
         <response id="548" opponent="schezo" opponentId="797" />
+        <response id="549" opponent="schezo" opponentId="802" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -556,16 +557,17 @@
         <label id="538" label="" color="2" folder="Stage 6" sort="0" />
         <label id="539" label="" color="2" folder="Stage 3" sort="0" />
         <label id="540" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="541" label="" color="2" folder="" sort="0" />
+        <label id="541" label="" color="2" folder="1 Must Strip" sort="0" />
         <label id="542" label="" color="2" folder="Stage 1" sort="0" />
         <label id="543" label="" color="2" folder="Stage 2" sort="0" />
         <label id="544" label="" color="2" folder="Stage 3" sort="0" />
         <label id="545" label="" color="2" folder="Stage 3" sort="0" />
         <label id="546" label="" color="2" folder="Stage 1" sort="0" />
-        <label id="547" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="547" label="" color="15" folder="Stage 2" sort="0" />
         <label id="548" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="549" label="" color="2" folder="Stage 2" sort="0" />
     </labels>
-    <nextId>548</nextId>
+    <nextId>549</nextId>
     <markers>
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
@@ -595,6 +597,7 @@
         <marker scope="Public" name="serena_aoiasahina_21praise">Praise branch of Aoi A's Sayaka idol/hardwork comment</marker>
         <marker scope="Public" name="serena_aoiasahina_22">Second response to Aoi A's "idol/ultimate: target</marker>
         <marker scope="Public" name="serena_aoiasahina_22sayaka">Second response to Aoi A's "idol/ultimate" comment, stearing towards Sayaka</marker>
+        <marker scope="Public" name="serena_aoiasahina_31" />
         <marker scope="Public" name="serena_aoiasahina_5">First response to Aoi A's skirt strip "part of performance" target</marker>
         <marker scope="Public" name="serena_aoiasahina_51">Second response to Aoi A's "take off top" target</marker>
         <marker scope="Public" name="serena_aoiasahina_51guts">Alternate response to Aoi A'ls "take off top" target, Serena has "guts and strength" comment</marker>
@@ -829,6 +832,7 @@
         <marker scope="Public" name="serena_schezo_01">Second response to Schezo's "tell me about what you've seen" target</marker>
         <marker scope="Public" name="serena_schezo_11">Response to Schezo's "Pressing matters didn't let me tour Suzuran, there was a district with much business."</marker>
         <marker scope="Public" name="serena_schezo_21" />
+        <marker scope="Public" name="serena_schezo_22" />
         <marker scope="Public" name="serena_schezo_lumiose11">First response to Scheco's "tell me about a city" target</marker>
         <marker scope="Public" name="serena_schezo_lumiose12" />
         <marker scope="Public" name="serena_schezo_lumiose2f" />
