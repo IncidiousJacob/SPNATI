@@ -127,6 +127,11 @@
         <response id="511" opponent="meia" opponentId="2567" />
         <response id="512" opponent="meia" opponentId="2568" />
         <response id="515" opponent="jura" opponentId="2446" />
+        <response id="519" opponent="aoi_inuyama" opponentId="250" />
+        <response id="522" opponent="ringo_ando" opponentId="1178" />
+        <response id="523" opponent="ringo_ando" opponentId="1177" />
+        <response id="524" opponent="ringo_ando" opponentId="310" />
+        <response id="542" opponent="natsuki" opponentId="681" />
     </responses>
     <notes>
         <note id="142">("Because I'm about to take my mask off, too...")</note>
@@ -138,6 +143,7 @@
         <note id="306">if you have a better suggestion for a continuation let me know</note>
         <note id="310">yeah it's a basic opening, a lot of characters may end up this way lol</note>
         <note id="499">writing this as a 'reaction' to rosie's called out situation, but I think you may want to give a more specific reply here</note>
+        <note id="536">I had to research popular music in japan for this line</note>
     </notes>
     <labels>
         <label id="1" label="Caution Message" color="1" folder="" sort="0" />
@@ -444,8 +450,8 @@
         <label id="306" label="" folder="Targets&gt;Yae Miko" sort="4" />
         <label id="307" label="" folder="Targets&gt;Yae Miko" sort="2" />
         <label id="308" label="" folder="Targets" sort="89" />
-        <label id="310" label="" folder="Targets&gt;Cadence" sort="4" />
-        <label id="311" label="" folder="Targets&gt;Cadence" sort="5" />
+        <label id="310" label="" color="3" folder="Targets&gt;Cadence" sort="4" />
+        <label id="311" label="" color="3" folder="Targets&gt;Cadence" sort="5" />
         <label id="312" label="" folder="Targets" sort="52" />
         <label id="313" label="" folder="Targets" sort="53" />
         <label id="314" label="" folder="Targets" sort="54" />
@@ -626,12 +632,12 @@
         <label id="492" label="" folder="Targets&gt;Saki" sort="0" />
         <label id="493" label="" folder="Targets&gt;Saki" sort="0" />
         <label id="494" label="" folder="Targets&gt;Saki" sort="0" />
-        <label id="495" label="" folder="Targets" sort="0" />
+        <label id="495" label="" color="3" folder="Targets" sort="0" />
         <label id="446" label="" folder="Targets" sort="0" />
         <label id="496" label="" folder="Targets" sort="0" />
         <label id="497" label="" folder="Targets" sort="0" />
-        <label id="498" label="" folder="Targets" sort="0" />
-        <label id="499" label="" folder="Targets" sort="0" />
+        <label id="498" label="" color="3" folder="Targets" sort="0" />
+        <label id="499" label="" color="3" folder="Targets" sort="0" />
         <label id="500" label="" folder="Targets" sort="0" />
         <label id="501" label="" folder="999" sort="0" />
         <label id="502" label="" folder="Targets" sort="0" />
@@ -648,8 +654,35 @@
         <label id="513" label="" color="15" folder="Targets&gt;Meia" sort="0" />
         <label id="514" label="" color="4" folder="Targets&gt;Meia" sort="0" />
         <label id="515" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="516" label="" folder="Conditional Lines" sort="0" />
+        <label id="517" label="lake (butt pose)" folder="Background Reacts" sort="0" />
+        <label id="518" label="" folder="Costumes&gt;Valentines" sort="0" />
+        <label id="519" label="" folder="Targets" sort="0" />
+        <label id="520" label="" folder="Targets" sort="0" />
+        <label id="521" label="" folder="Targets" sort="0" />
+        <label id="522" label="" folder="Targets" sort="0" />
+        <label id="523" label="" folder="Targets" sort="0" />
+        <label id="524" label="" folder="Targets" sort="0" />
+        <label id="525" label="" folder="Targets" sort="0" />
+        <label id="526" label="" folder="Targets" sort="0" />
+        <label id="527" label="" folder="Targets" sort="0" />
+        <label id="528" label="" folder="Targets" sort="0" />
+        <label id="529" label="" folder="Targets" sort="0" />
+        <label id="530" label="" folder="Targets" sort="0" />
+        <label id="531" label="" folder="Targets" sort="0" />
+        <label id="532" label="" folder="Targets" sort="0" />
+        <label id="533" label="" folder="Targets" sort="0" />
+        <label id="534" label="" folder="Targets&gt;Saki" sort="0" />
+        <label id="535" label="" folder="Targets&gt;Saki" sort="0" />
+        <label id="536" label="" folder="Targets&gt;Cadence" sort="0" />
+        <label id="537" label="" folder="Targets&gt;Cadence" sort="0" />
+        <label id="538" label="" folder="Targets" sort="0" />
+        <label id="539" label="" folder="Targets" sort="0" />
+        <label id="540" label="" folder="Targets" sort="0" />
+        <label id="541" label="" folder="Targets" sort="0" />
+        <label id="542" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>515</nextId>
+    <nextId>542</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="30k_yen_underwear" />
@@ -672,6 +705,8 @@
         <marker scope="Public" name="caulifla_saiyan1" />
         <marker scope="Public" name="caulifla_saiyan2" />
         <marker scope="Public" name="dangerous_table" />
+        <marker scope="Public" name="heisenberg_smashResp" />
+        <marker scope="Public" name="heisenberg_smashRespStare" />
         <marker scope="Public" name="hutao_ghost" />
         <marker scope="Public" name="hutao_ghost_b" />
         <marker scope="Public" name="introducing_self" />
@@ -721,6 +756,10 @@
         <marker scope="Public" name="physical_body" />
         <marker scope="Public" name="plush_kachikachi_kan" />
         <marker scope="Public" name="reimu_spouseQuestion" />
+        <marker scope="Public" name="Resp_Dinosaurlife_Yuzuki" />
+        <marker scope="Public" name="ringo_face_followup" />
+        <marker scope="Public" name="ringo_hair_down" />
+        <marker scope="Public" name="ringo_mouth_resp" />
         <marker scope="Public" name="rosie_vivosaurs" />
         <marker scope="Public" name="saki__00" />
         <marker scope="Public" name="saki__01" />
@@ -768,6 +807,7 @@
         <marker scope="Public" name="schezo_neck" />
         <marker scope="Public" name="scissors_bad_idea" />
         <marker scope="Public" name="seen_mask_off" />
+        <marker scope="Public" name="self_assurance" />
         <marker scope="Public" name="senko_modern_amenities" />
         <marker scope="Public" name="senko_pamperingResp" />
         <marker scope="Public" name="serena_badPoker" />
@@ -844,8 +884,11 @@
         <marker scope="Public" name="yuzuki_aoiInu_self0b" />
         <marker scope="Public" name="yuzuki_aoiInu_self0c" />
         <marker scope="Public" name="yuzuki_aoiInu_self1a" />
+        <marker scope="Public" name="yuzuki_aoiInu_self1b" />
         <marker scope="Public" name="yuzuki_cadence_strip0a" />
+        <marker scope="Public" name="yuzuki_cadence_strip0b" />
         <marker scope="Public" name="yuzuki_cadence_strip1a" />
+        <marker scope="Public" name="yuzuki_cadence_strip1b" />
         <marker scope="Public" name="yuzuki_cheryl_34r" />
         <marker scope="Public" name="yuzuki_cheryl_self0a" />
         <marker scope="Public" name="yuzuki_cheryl_self1a" />
@@ -861,6 +904,13 @@
         <marker scope="Public" name="yuzuki_flash_strip0a" />
         <marker scope="Public" name="yuzuki_glamrockChica_strip0a" />
         <marker scope="Public" name="yuzuki_glamrockChica_strip1a" />
+        <marker scope="Public" name="yuzuki_heisenberg_self0a" />
+        <marker scope="Public" name="yuzuki_heisenberg_self1a" />
+        <marker scope="Public" name="yuzuki_heisenberg_self2a" />
+        <marker scope="Public" name="yuzuki_heisenberg_self2b" />
+        <marker scope="Public" name="yuzuki_heisenberg_strip0a" />
+        <marker scope="Public" name="yuzuki_heisenberg_strip1a" />
+        <marker scope="Public" name="yuzuki_heisenberg_strip1b" />
         <marker scope="Public" name="yuzuki_hutao_self0a" />
         <marker scope="Public" name="yuzuki_hutao_self1a" />
         <marker scope="Public" name="yuzuki_jean_abyss1" />
@@ -924,6 +974,8 @@
         <marker scope="Public" name="yuzuki_miko_self0b" />
         <marker scope="Public" name="yuzuki_miko_self0c" />
         <marker scope="Public" name="yuzuki_miko_self1a" />
+        <marker scope="Public" name="yuzuki_miko_self1b" />
+        <marker scope="Public" name="yuzuki_miko_self1c" />
         <marker scope="Public" name="yuzuki_miko_strip0a" />
         <marker scope="Public" name="yuzuki_miko_strip0b" />
         <marker scope="Public" name="yuzuki_miko_strip0c" />
@@ -976,15 +1028,22 @@
         <marker scope="Public" name="yuzuki_nadeshiko_Sick3" />
         <marker scope="Public" name="yuzuki_natsuki_self0a" />
         <marker scope="Public" name="yuzuki_natsuki_self0b" />
+        <marker scope="Public" name="yuzuki_natsuki_self0c" />
         <marker scope="Public" name="yuzuki_natsuki_self1a" />
+        <marker scope="Public" name="yuzuki_natsuki_self1b" />
         <marker scope="Public" name="yuzuki_natsuki_self2a" />
+        <marker scope="Public" name="yuzuki_natsuki_self2b" />
         <marker scope="Public" name="yuzuki_natsuki_self3a" />
+        <marker scope="Public" name="yuzuki_natsuki_self3b" />
+        <marker scope="Public" name="yuzuki_natsuki_self3c" />
         <marker scope="Public" name="yuzuki_rosie_intro1" />
         <marker scope="Public" name="yuzuki_rosie_intro2" />
         <marker scope="Public" name="yuzuki_rosie_strip1a" />
         <marker scope="Public" name="yuzuki_rosie_strip1b" />
         <marker scope="Public" name="yuzuki_rosie_strip2a" />
+        <marker scope="Public" name="yuzuki_rosie_strip2b" />
         <marker scope="Public" name="yuzuki_rosie_strip4a" />
+        <marker scope="Public" name="yuzuki_rosie_strip4b" />
         <marker scope="Public" name="yuzuki_tifa_drinkRequest" />
         <marker scope="Public" name="yuzuki_tifa_drinkTaken" />
         <marker scope="Public" name="yuzuki_tifa_strip0a" />
