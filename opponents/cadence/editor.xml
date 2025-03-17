@@ -15,9 +15,6 @@
         <case name="Cadence Story" id="230" priority="FYI" min="1" max="1">
             <description>To compensate for taking off an accessory, Cadence opts to tell the table about a major event from her life. ((NOTE: There are multiple stories, each with different markers. Read the note attached to this case.))</description>
         </case>
-        <case name="Penguins Playing Poker" id="288" priority="FYI" min="0" max="0">
-            <description>If an anthropomorphic, talking, SINGING penguin would be an unusual sight for your character, now would be a good time to address the elephant – or rather, the penguin – in the room.</description>
-        </case>
         <case name="It's A Wig" id="46" priority="FYI" min="5" max="5">
             <description>When explaining that she's not willing to remove her headphones for the game, she casually drops the fact that she's wearing a wig.</description>
         </case>
@@ -97,6 +94,9 @@
         <response id="546" opponent="mari_setogaya" opponentId="16" />
         <response id="548" opponent="mari_setogaya" opponentId="22" />
         <response id="549" opponent="mari_setogaya" opponentId="35" />
+        <response id="581" opponent="magma_grunt" opponentId="171" />
+        <response id="593" opponent="magma_grunt" opponentId="92" />
+        <response id="617" opponent="mari_setogaya" opponentId="3499" />
     </responses>
     <notes>
         <note id="1">At the start of the very first round (and ONLY the very first round, regardless of the result), Cadence wrongfully assumes she's playing the Club Penguin minigame "Card Jitsu" and exchanges one of her higher-value cards. This is the line as she's "playing" the card.</note>
@@ -209,13 +209,14 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="429">Frozen's Elsa has made a grand total of three appearances in Club Penguin as a meetable "penguin". Cadence will recognize her.</note>
         <note id="430">Marvel's Captain America has made a grand total of two appearances in Club Penguin. Cadence will recognize him.</note>
         <note id="477">Cadence's "Humanization" marker won't play if she's already mentioned her new body in banter, such as with Meia.</note>
-        <note id="481">True story, by the way. In 2013, Club Penguin's "Coins For Change" charity garnered enough donations from its player base to equate $10,000,000, every dime of which went towards things like providing clean water to Ecuador, snow leopard conservation in Russia, a maternity ward in Malawa, toys for orphanages in the United States, nesting grounds for REAL penguins in the REAL Antarctica, and so much more. Not a sexiy fact by any stretch, but if kids giving to the needy out of the goodness in their hearts doesn't put a smile on your face, I'm not sure what to tell you.</note>
+        <note id="481">True story, by the way. In 2013, Club Penguin's "Coins For Change" charity garnered enough donations from its player base to equate $10,000,000, every dime of which went towards things like providing clean water to Ecuador, snow leopard conservation in Russia, a maternity ward in Malawa, toys for orphanages in the United States, nesting grounds for REAL penguins in the REAL Antarctica, and so much more. Not a sexy fact by any stretch, but if kids giving to the needy out of the goodness in their hearts doesn't put a smile on your face, I'm not sure what to tell you.</note>
         <note id="483">Lemme know if this would count as "too close to 'yes' to be confusing". The idea is that, canonically, certain characters from Club Penguin (notably Rookie and Captain Rockhopper) have a hard time deciphering Cadence's heavy use of slang, so if she had to deliberately confuse someone, odds are her best course of action is to just start using Cadence-isms to an outright excessive degree.</note>
         <note id="528">Up until Club Penguin started to gain a significant fanbase outside of English-speaking parts of the world, St. Patrick's Day was a heavily-celebrated holiday on the island. Playing Cadence on St. Patrick's Day will trigger a response.</note>
         <note id="529">Fun fact: in Club Penguin's "Dance Contest" minigame, there actually WAS a hidden Expert difficulty. The player could unlock this mode at the 'difficulty select' menu by clicking on Cadence instead of selecting an actual difficulty. Fittingly, Cadence in the "Club" background bumps her difficulty up to the highest SPNatI will allow.</note>
         <note id="537">For MisterSolitaire: This is only about 80% of her desire. To get the other 20%, have Miko ask her about Franky; getting more chances to talk about the Sonic to her Amy would really help with the whole 'doesn't express sexuality' issue you said she has at the moment. If needed, I can provide a picture and summarized backstory; you only need to ask.</note>
         <note id="559">After enough time in the After Finished stage, there's a very minuscule chance of Cadence saying the Music Note emoticon from her home series. As an Easter Egg within an Easter Egg, the text hidden behind the emoji is the keyboard command used to produce the Music Note emoticon.</note>
         <note id="577">https://www.tiktok.com/@gatorchris1/video/7324859118882278686?lang=en</note>
+        <note id="596">Up until Club Penguin started to gain a significant fanbase outside of English-speaking parts of the world, St. Patrick's Day was a heavily-celebrated holiday on the island. Playing Cadence on St. Patrick's Day will trigger a response.</note>
     </notes>
     <labels>
         <label id="3" label="(Self: Full House, Threes &amp; Twos)" folder="" sort="0" />
@@ -610,7 +611,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="478" label="Opponent Indecent" folder="!Generic&gt;Extra" sort="15" />
         <label id="479" label="Opponent Indecent" folder="!Generic&gt;Minor" sort="13" />
         <label id="480" label="" folder="Responses&gt;Jura" sort="0" />
-        <label id="481" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="481" label="Coins For Change" folder="Responses&gt;Jura" sort="0" />
         <label id="484" label="Yuzuki Mask B" folder="Responses&gt;Yuzuki" sort="0" />
         <label id="485" label="Yuzuki Mask A" folder="Responses&gt;Yuzuki" sort="0" />
         <label id="486" label="" folder="Responses&gt;Rosie" sort="0" />
@@ -702,10 +703,48 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="576" label="" folder="Responses&gt;Nadeshiko" sort="0" />
         <label id="578" label="" folder="Responses&gt;Miko" sort="0" />
         <label id="577" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="579" label="Nudity Issue" folder="Responses&gt;!Nudity Issue&gt;Gloria" sort="0" />
+        <label id="580" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="581" label="Water Speech" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="582" label="Water Speech (Heard Magma Speech)" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="583" label="Water Speech (Magma Edition)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="584" label="Magma Speech" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="585" label="Magma Speech (Aqua Edition)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="586" label="Magma Speech" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="587" label="Magma Speech (Heard Aqua Speech)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="588" label="Jeff the Ref" folder="Club Penguin Player Names" sort="0" />
+        <label id="589" label="Water Speech (Stop Humans)" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="590" label="Water Speech (Stop Humans)" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="591" label="Water Speech (Bring Balance)" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="592" label="Water Speech (Bring Balance)" folder="Responses&gt;Aqua Grunt" sort="0" />
+        <label id="594" label="" folder="Responses&gt;Chiaki" sort="0" />
+        <label id="595" label="Magma Speech (Who Needs Water)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="596" label="(St. Patrick's Day)" folder="" sort="0" />
+        <label id="597" label="Magma Speech (Take Back Land)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="598" label="Magma Speech (Who Needs Water)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="599" label="" folder="!Generic&gt;Held" sort="0" />
+        <label id="600" label="Magma Speech (Take Back Land)" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="593" label="" folder="Responses&gt;Magma Grunt" sort="0" />
+        <label id="601" label="Rory the Construction Worker" folder="Club Penguin Player Names" sort="0" />
+        <label id="602" label="Rory" folder="Club Penguin Player Names" sort="0" />
+        <label id="603" label="" folder="Selfies&gt;MariSetogaya" sort="0" />
+        <label id="604" label="Wig Responses" folder="Game Scenario" sort="0" />
+        <label id="605" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="606" label="Stage 0" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="607" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="608" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="609" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="610" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="611" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="612" label="" folder="Responses&gt;Meia" sort="0" />
+        <label id="613" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="614" label="Stage 1" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="615" label="Stage 2" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="616" label="" folder="Responses&gt;MariSetogaya" sort="0" />
+        <label id="617" label="" folder="Selfies&gt;MariSetogaya" sort="0" />
     </labels>
-    <nextId>578</nextId>
+    <nextId>617</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
@@ -718,21 +757,46 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToNadeshiko2A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko2B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko2C" />
-        <marker scope="Public" name="Banter_CadenceToSetogaya0A">I know this marker currently does not exist. Mymans and I are working on the banter, and the line referencing this marker is made in preperation.</marker>
+        <marker scope="Public" name="Banter_CadenceToSetogaya0A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya0B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya0C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya1A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya1B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya1C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya1D" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya2A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya2B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya2C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya3A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya3B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya3C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya4A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya4B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya4C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya5A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya5B" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya5C" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya5C_Alt" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya6A" />
+        <marker scope="Public" name="Banter_CadenceToSetogaya6B" />
         <marker scope="Public" name="Banter_ChiakiToCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0B" />
         <marker scope="Public" name="Banter_ChiakiToCadence0C" />
         <marker scope="Public" name="Banter_ChiakiToClubCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToClubCadence0B" />
         <marker scope="Public" name="Banter_ChiakiToClubCadence0C" />
+        <marker scope="Public" name="Banter_ClassroomChiakiToCadence0A" />
         <marker scope="Public" name="Banter_HinaToCadence0A" />
         <marker scope="Public" name="Banter_HinaToCadence0B" />
+        <marker scope="Public" name="Banter_HinaToCadence0C" />
         <marker scope="Public" name="Banter_JuraToCadence0A" />
         <marker scope="Public" name="Banter_MeiaToCadence_0A" />
         <marker scope="Public" name="Banter_MeiaToCadence0A" />
+        <marker scope="Public" name="Banter_MeiaToCadence0B" />
         <marker scope="Public" name="Banter_MikoToCadence0A" />
         <marker scope="Public" name="Banter_MikoToCadence0B" />
         <marker scope="Public" name="Banter_MikoToCadence0C" />
+        <marker scope="Public" name="Banter_MikoToCadence1A" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0A" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0B" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0C" />
@@ -740,8 +804,29 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_NadeshikoToCadence1B" />
         <marker scope="Public" name="Banter_NadeshikoToCadence1C" />
         <marker scope="Public" name="Banter_SchezoToCadence0A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence0A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence0B" />
+        <marker scope="Public" name="Banter_SetogayaToCadence0C" />
+        <marker scope="Public" name="Banter_SetogayaToCadence1A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence1B" />
+        <marker scope="Public" name="Banter_SetogayaToCadence1C" />
+        <marker scope="Public" name="Banter_SetogayaToCadence2A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence2B" />
+        <marker scope="Public" name="Banter_SetogayaToCadence2C" />
+        <marker scope="Public" name="Banter_SetogayaToCadence3A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence3B" />
+        <marker scope="Public" name="Banter_SetogayaToCadence3C" />
+        <marker scope="Public" name="Banter_SetogayaToCadence3D" />
+        <marker scope="Public" name="Banter_SetogayaToCadence4A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence4B" />
+        <marker scope="Public" name="Banter_SetogayaToCadence4C" />
+        <marker scope="Public" name="Banter_SetogayaToCadence4D" />
+        <marker scope="Public" name="Banter_SetogayaToCadence5A" />
+        <marker scope="Public" name="Banter_SetogayaToCadence5B" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0A" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0B" />
+        <marker scope="Public" name="Banter_WaterHinaToCadence0C" />
+        <marker scope="Public" name="Banter_WaterHinaToCadence3A" />
         <marker scope="Public" name="Banter_YuzukiToCadence0A" />
         <marker scope="Public" name="Banter_YuzukiToCadence1A" />
         <marker scope="Public" name="BeanCounter">This "Lore" line references the "Bean Counter" Club Penguin minigame.</marker>
@@ -793,20 +878,31 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Humanization">This "Lore" line addresses Cadence's more humanlike appearance in her SPNatI iteration, giving it an explanation.</marker>
         <marker scope="Public" name="Is2009Retro" />
         <marker scope="Public" name="LostScarf" />
+        <marker scope="Public" name="MagmaGruntTo4" />
         <marker scope="Public" name="NaturalDisasters" />
         <marker scope="Public" name="NewBandDiscovery" />
         <marker scope="Public" name="NinjaBad" />
         <marker scope="Public" name="NinjaGood" />
         <marker scope="Public" name="NotABot">This "Lore" line references the players' suspicions that the in-game Cadence player was a bot. Fun Fact: In actuality, it was a Club Penguin employee playing the Cadence character every time!</marker>
         <marker scope="Public" name="NowShesSad">Lines where Cadence begins to cry. Intended to start a chain of events starting from the next round's Swapping phase.</marker>
+        <marker scope="Public" name="NudityIssue0" />
         <marker scope="Public" name="NudityIssue1" />
         <marker scope="Public" name="NudityIssue2" />
+        <marker scope="Public" name="NudityIssue3" />
         <marker scope="Public" name="OutOfPatience">When Cadence's opponents strip accessories too many times in a row, she gets bored and loses her composure. This also ties in to when someone strips a major article; if she's gotten bored prior to this, she'll feel relief once the article is stripped.</marker>
         <marker scope="Public" name="PlayerCardStrip">If an opponent makes their clothes appear to vanish (i.e. Monika's blazer, Fairy Leviathan's boots, etc.) Cadence will confuse it with using the Player Card, a game mechanic from her home series.</marker>
         <marker scope="Public" name="PlayerIsCringe" />
         <marker scope="Public" name="PollyFrom3" />
         <marker scope="Public" name="PollyTo4" />
         <marker scope="Public" name="PuffleInflation">This "Lore" line has Cadence remark on the obsurd surge in puffle types over the course of Disney's total control over Club Penguin. Don't Google the term I used to describe the phenomenon.</marker>
+        <marker scope="Public" name="Responses_AquaSpeech" />
+        <marker scope="Public" name="Responses_AquaSpeech1A" />
+        <marker scope="Public" name="Responses_AquaSpeech1B" />
+        <marker scope="Public" name="Responses_AquaSpeech2" />
+        <marker scope="Public" name="Responses_AquaSpeech2A" />
+        <marker scope="Public" name="Responses_AquaSpeech2B" />
+        <marker scope="Public" name="Responses_AquaSpeech3A" />
+        <marker scope="Public" name="Responses_AquaSpeech3B" />
         <marker scope="Public" name="Responses_ChiakiGameDay" />
         <marker scope="Public" name="Responses_ChicaPizza">When Glamrock Chica asks the players what their favorite pizza topping is, she'll start mentioning her favorites before quickly asking if dessert pizza counts.</marker>
         <marker scope="Public" name="Responses_CynthiaImpactful" />
@@ -825,6 +921,14 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_IbukiInstrument" />
         <marker scope="Public" name="Responses_JuraChristmasTraditions" />
         <marker scope="Public" name="Responses_JuraSanta" />
+        <marker scope="Public" name="Responses_MagmaSpeech" />
+        <marker scope="Public" name="Responses_MagmaSpeech1A" />
+        <marker scope="Public" name="Responses_MagmaSpeech1B" />
+        <marker scope="Public" name="Responses_MagmaSpeech2A" />
+        <marker scope="Public" name="Responses_MagmaSpeech2B" />
+        <marker scope="Public" name="Responses_MagmaSpeech3A" />
+        <marker scope="Public" name="Responses_MagmaSpeech3B" />
+        <marker scope="Public" name="Responses_MagmaSpielA" />
         <marker scope="Public" name="Responses_MeiaPilot" />
         <marker scope="Public" name="Responses_MikoDesire" />
         <marker scope="Public" name="Responses_NamiBody" />
