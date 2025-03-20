@@ -17,6 +17,7 @@ var SHORT_GAME_UNLOCKED = false;
 var CARD_DECKS_ENABLED = false;
 var ALT_COSTUMES_ENABLED = true;
 var DEFAULT_COSTUME_SETS = new Set();
+var HIGHLIGHT_EVERGREEN_ALTS = "off";
 var BASE_FONT_SIZE = 14;
 var BASE_SCREEN_WIDTH = 100;
 var UI_FONT_WEIGHT = 500;
@@ -196,6 +197,7 @@ function initialSetup () {
         save.load();
         return loadVersionInfo();
     }).then(metadataIndex.loadIndex.bind(metadataIndex)).then(loadSelectScreen).then(loadAllCollectibles).then(function () {
+        loadedOpponents.forEach(opponent => opponent.selectDefaultCostume());
         selectTitleCandy();
         setupTitleClothing();
         finishStartupLoading();

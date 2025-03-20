@@ -727,7 +727,6 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
 
     if (!ALT_COSTUMES_ENABLED) return;
 
-    var defaultCostumes = [];
     $metaXml.find('>alternates>costume').each(function (i, elem) {
         const set = $(elem).attr('set');
         const status = $(elem).attr('status') || 'online';
@@ -744,63 +743,9 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
             'unlocked_by': $(elem).attr('collectible'),
             'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
         };
-        if (set && DEFAULT_COSTUME_SETS.has(set)) {
-            defaultCostumes.push(costume_descriptor);
-        }
 
         this.alternate_costumes.push(costume_descriptor);
     }.bind(this)).get();
-
-    this.hasDefaultCostume = defaultCostumes.length > 0;
-    if (this.hasDefaultCostume) {
-        var selectedDefault = defaultCostumes[getRandomNumber(0, defaultCostumes.length)];
-        var costumeSet = selectedDefault.set;
-
-        this.selection_image = selectedDefault['folder'] + selectedDefault['image'];
-        this.selectAlternateCostume(selectedDefault);
-
-        if (eventCostumeSettings.ids.has(costumeSet)) {
-            this.event_character = true;
-            
-            if (eventCostumeSettings.highlights[costumeSet] && !eventCharacterSettings.highlights[id]) {
-                this.highlightStatus = eventCostumeSettings.highlights[costumeSet];
-            }
-    
-            if (eventCharacterSettings.sorting[id] === undefined) {
-                if (eventCostumeSettings.sorting[costumeSet] !== undefined) {
-                    this.event_sort_order = eventCostumeSettings.sorting[costumeSet];
-                } else if (!this.matchesEventTag) {
-                    this.event_sort_order = 3;
-                }
-
-                if (this.event_sort_order != 0) eventSortingActive = true;
-            }
-    
-            if (eventCharacterSettings.partitions[costumeSet] === undefined && eventCostumeSettings.partitions[costumeSet] !== undefined) {
-                this.event_partition = eventCostumeSettings.partitions[costumeSet];
-                if (this.event_partition != 0) eventSortingActive = true;
-            }
-
-            if (eventCharacterSettings.prefills[id] === undefined) {
-                if (eventCostumeSettings.prefills[costumeSet] !== undefined) {
-                    this.force_prefill = eventCostumeSettings.prefills[costumeSet];
-                } else if (!this.matchesEventTag) {
-                    this.force_prefill = true;
-                }
-                // If an event tag is matched, fall back to the value used there
-            }
-
-            if (eventCharacterSettings.allowTestingGuests[id] === undefined) {
-                if (eventCostumeSettings.allowTestingGuests[costumeSet] !== undefined) {
-                    this.allow_testing_guest = eventCostumeSettings.allowTestingGuests[costumeSet];
-                } else if (!this.matchesEventTag) {
-                    this.allow_testing_guest = false;
-                }
-            }
-        }
-    }
-
-    // Not reached if alt costumes are disabled
 }
 
 Opponent.prototype = Object.create(Player.prototype);
@@ -1065,6 +1010,63 @@ Opponent.prototype.setFavorited = function (value) {
     this.favorite = value;
     save.setCharacterFavorited(this, value);
     updateIndividualSelectSort();
+}
+
+Opponent.prototype.selectDefaultCostume = function () {
+    const availableCostumes = this.getAvailableCostumes();
+    const eventCostumes = availableCostumes.filter(costume => costume.set && DEFAULT_COSTUME_SETS.has(costume.set));
+    const evergreenCostumes = availableCostumes.filter(costume =>
+        HIGHLIGHT_EVERGREEN_ALTS == 'evergreen' && !costume.set ||
+        HIGHLIGHT_EVERGREEN_ALTS == 'all'
+    );
+    evergreenCostumes.push(null);
+
+    const defaultCostumes = eventCostumes.length > 0 ? eventCostumes : evergreenCostumes;
+    const selectedDefault = defaultCostumes[getRandomNumber(0, defaultCostumes.length)];
+    this.selectAlternateCostume(selectedDefault);
+    const costumeSet = selectedDefault == null ? null : selectedDefault.set;
+    if (!eventCostumeSettings.ids.has(costumeSet))
+        return selectedDefault;
+
+    this.event_character = true;
+
+    if (eventCostumeSettings.highlights[costumeSet] && !eventCharacterSettings.highlights[this.id]) {
+        this.highlightStatus = eventCostumeSettings.highlights[costumeSet];
+    }
+
+    if (eventCharacterSettings.sorting[this.id] === undefined) {
+        if (eventCostumeSettings.sorting[costumeSet] !== undefined) {
+            this.event_sort_order = eventCostumeSettings.sorting[costumeSet];
+        } else if (!this.matchesEventTag) {
+            this.event_sort_order = 3;
+        }
+
+        if (this.event_sort_order != 0) eventSortingActive = true;
+    }
+
+    if (eventCharacterSettings.partitions[costumeSet] === undefined && eventCostumeSettings.partitions[costumeSet] !== undefined) {
+        this.event_partition = eventCostumeSettings.partitions[costumeSet];
+        if (this.event_partition != 0) eventSortingActive = true;
+    }
+
+    if (eventCharacterSettings.prefills[this.id] === undefined) {
+        if (eventCostumeSettings.prefills[costumeSet] !== undefined) {
+            this.force_prefill = eventCostumeSettings.prefills[costumeSet];
+        } else if (!this.matchesEventTag) {
+            this.force_prefill = true;
+        }
+        // If an event tag is matched, fall back to the value used there
+    }
+
+    if (eventCharacterSettings.allowTestingGuests[this.id] === undefined) {
+        if (eventCostumeSettings.allowTestingGuests[costumeSet] !== undefined) {
+            this.allow_testing_guest = eventCostumeSettings.allowTestingGuests[costumeSet];
+        } else if (!this.matchesEventTag) {
+            this.allow_testing_guest = false;
+        }
+    }
+
+    return selectedDefault;
 }
 
 Opponent.prototype.selectAlternateCostume = function (costumeDesc) {

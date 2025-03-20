@@ -2906,7 +2906,7 @@
                                 <nav aria-label="Page navigation" class="text-center">
                                     <ul class="pagination">
                                         <li class="settings-page-select active" data-page="game-settings"><a href="#" data-select-page="game-settings">Game Settings</a></li>
-                                        <li class="settings-page-select" data-page="roster-settings"><a href="#" data-select-page="roster-settings">Extra Characters</a>
+                                        <li class="settings-page-select" data-page="roster-settings"><a href="#" data-select-page="roster-settings">Character Settings</a>
                                         </li>
                                         <li class="settings-page-select" data-page="privacy-settings"><a href="#" data-select-page="privacy-settings">Privacy Settings</a>
                                         </li>
@@ -3114,6 +3114,24 @@
                                     </div>
 
                                     <div class="settings-page container-fluid" data-page="roster-settings" style="display:none">
+                                        <h3 class="modal-title text-center extra-characters-options" hidden><b>Costumes</b></h3>
+
+                                        <table class="extra-settings-group extra-characters-options" hidden>
+                                            <tr>
+                                                <td class="setting-toggle">
+                                                    <ul class="pagination" id="hl-evergreen-alts-option" data-option="hl-evergreen-alts">
+                                                        <li><a href="#" data-value="all">All</a></li>
+                                                        <li><a href="#" data-value="evergreen">No events</a></li>
+                                                        <li class="active"><a href="#" data-value="off">Disabled</a></li>
+                                                    </ul>
+                                                </td>
+                                                <td class="setting-description">
+                                                    <h4 class="modal-title modal-left">Randomize costumes on selection screen</h4>
+                                                    <h5 class="modal-left">When an event isn't active, randomly select an available costume<br />for each character.</h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+
                                         <h3 class="modal-title text-center extra-characters-options" hidden><b>Extra Characters</b></h3>
 
                                         <table class="extra-settings-group extra-characters-options" hidden>
@@ -3237,7 +3255,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="options-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="saveSettings()">Close</button>
+                                    data-dismiss="modal" onclick="saveOptions(); saveSettings()">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->

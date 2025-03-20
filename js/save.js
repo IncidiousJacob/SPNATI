@@ -315,6 +315,8 @@ Save.prototype.loadOptions = function(){
 
     if ('stamina' in options) humanPlayer.stamina = options.stamina;
 
+    if ('highlightEvergreenAlts' in options) HIGHLIGHT_EVERGREEN_ALTS = options.highlightEvergreenAlts
+
     /* Load extra characters settings - if spnati.net or rehost, all are disabled by default;
      * if personal offline, offline and incomplete are enabled but event, duplicate, and broken aren't
      */
@@ -399,6 +401,7 @@ Save.prototype.saveOptions = function() {
         uiTheme: UI_THEME,
         stamina: humanPlayer.stamina,
         playerFinishingEffect: PLAYER_FINISHING_EFFECT,
+        highlightEvergreenAlts: HIGHLIGHT_EVERGREEN_ALTS,
     };
     
     this.setItem("options", options);
