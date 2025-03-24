@@ -240,6 +240,8 @@
         <response id="558" opponent="darkness" opponentId="1564" />
         <response id="559" opponent="darkness" opponentId="1561" />
         <response id="560" opponent="aoi_asahina" opponentId="820" />
+        <response id="561" opponent="aoi_asahina" opponentId="822" />
+        <response id="562" opponent="schezo" opponentId="817" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -562,7 +564,7 @@
         <label id="533" label="" color="2" folder="Stage 4" sort="0" />
         <label id="534" label="" color="2" folder="Fennekin Serena" sort="0" />
         <label id="537" label="" color="15" folder="Stage 3" sort="0" />
-        <label id="538" label="" color="2" folder="Stage 6" sort="0" />
+        <label id="538" label="" color="15" folder="Stage 6" sort="0" />
         <label id="539" label="" color="15" folder="Stage 3" sort="0" />
         <label id="540" label="" color="15" folder="Stage 3" sort="0" />
         <label id="541" label="" color="15" folder="1 Must Strip" sort="0" />
@@ -582,9 +584,11 @@
         <label id="557" label="" color="2" folder="Stage 3" sort="0" />
         <label id="558" label="" color="2" folder="Stage 3" sort="0" />
         <label id="559" label="" color="2" folder="Stage 2" sort="0" />
-        <label id="560" label="" color="2" folder="Stage 3" sort="0" />
+        <label id="560" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="561" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="562" label="" folder="Stage 2" sort="0" />
     </labels>
-    <nextId>560</nextId>
+    <nextId>562</nextId>
     <markers>
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
@@ -602,6 +606,8 @@
         <marker scope="Public" name="nice_o">marker for responding to Serena's orgasm &amp; floor cleaning</marker>
         <marker scope="Public" name="panties_first">Bottomless picture collectible marker</marker>
         <marker scope="Public" name="pokemon_day" />
+        <marker scope="Public" name="schezo_serena_wilds1" />
+        <marker scope="Public" name="scho" />
         <marker scope="Public" name="see_her_naked">Serena is losing, and thinks everyone is picking on her just to see her naked</marker>
         <marker scope="Public" name="serena_aoiasahina_1">First response to Aoi Asahina</marker>
         <marker scope="Public" name="serena_aoiasahina_1_1">Second response to Aoi A's first target</marker>
@@ -667,6 +673,7 @@
         <marker scope="Public" name="serena_aoiasahina_triolovefar">Reponse to Aoi A claiming she hasn't gotten too far with love</marker>
         <marker scope="Public" name="serena_aoii_s1">First response to Aoi I's first target</marker>
         <marker scope="Public" name="serena_aoii_s1a">First resposne to Aoi I's first target alt response</marker>
+        <marker scope="Public" name="serena_asahina_41" />
         <marker scope="Public" name="serena_binah_pokemon1">First response Binah's pokemon target</marker>
         <marker scope="Public" name="serena_binah_pokemon2">Second response to Binah's pokemon target</marker>
         <marker scope="Public" name="serena_binah_pokemon22">second response to Binah's first target</marker>
