@@ -146,7 +146,7 @@ var sortingOptionsMap = {
     target: sortOpponentsByMostTargeted(50, Infinity),
     oldest: sortOpponentsByMultipleFields(["release", "-listingIndex"]),
     newest: sortOpponentsByMultipleFields(["-release", "listingIndex"]),
-    featured: sortOpponentsByMultipleFields(["-hasBirthday", "-effectiveScore"]),
+    featured: sortOpponentsByMultipleFields(["-hasBirthdayToday", "-effectiveScore"]),
 };
 var groupCreditsShown = false;
 
@@ -994,6 +994,7 @@ function updateIndividualSelectVisibility (autoclear) {
         } else {
             $(opp.selectionCard.mainElem).hide();
         }
+        opp.selectionCard.updateHighlight();
     });
 
     // If a unique match was made, automatically clear the search so
@@ -1344,7 +1345,7 @@ function loadDefaultFillSuggestions () {
     if (forcedPrefills.length > 0) {
         /* select forced prefill characters from events and birthdays */
         shuffleArray(forcedPrefills);
-        forcedPrefills.sort(sortOpponentsByField("-hasBirthday"));
+        forcedPrefills.sort(sortOpponentsByField("-hasBirthdayToday"));
         for (let i = 0; i < 4 && i < forcedPrefills.length; i++) {
             fillPlayers.push(forcedPrefills[i]);
         }

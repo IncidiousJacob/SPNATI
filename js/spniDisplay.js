@@ -1531,15 +1531,6 @@ function OpponentSelectionCard (opponent) {
 
     var badgeSidebar = this.mainElem.appendChild(createElementWithClass('div', 'badge-sidebar'));
 
-    if (opponent.hasBirthday) {
-        $(badgeSidebar.appendChild(createElementWithClass('img', 'badge-icon'))).attr({
-            src: "img/balloon.svg",
-            alt: "Birthday"
-        }).css({
-            padding: '7%',
-        });
-    }
-
     if (opponent.endings) {
         this.epilogueBadge = $(badgeSidebar.appendChild(createElementWithClass('img', 'badge-icon epilogue-badge'))).attr({
             src: "img/epilogue.svg",
@@ -1643,6 +1634,32 @@ OpponentSelectionCard.prototype.updateCostumeBadge = function () {
     if (!this.costumeBadge) return;
     this.costumeBadge.toggle(this.opponent.getAvailableCostumes().length > 0);
 }
+
+OpponentSelectionCard.prototype.updateHighlight = function () {
+    if (this.opponent.hasBirthdayToday) {
+        if (!$(this.mainElem).has('.badge-sidebar>.birthday-icon').length) {
+            $(this.mainElem).children('.badge-sidebar').prepend(
+                $('<img>', {
+                    'class': 'badge-icon birthday-icon',
+                    src: "img/balloon.svg",
+                    alt: "Birthday"
+                }).css({
+                    padding: '7%',
+                })
+            );
+        }
+        if (!this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = 'birthday';
+        }
+    } else {
+        if (this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = this.opponent.highlistStatus;
+        } else {
+            delete this.mainElem.dataset.highlight;
+        }
+        $(this.mainElem).find('.badge-sidebar>.birthday-icon').remove();
+    }
+};
 
 OpponentSelectionCard.prototype.clear = function () {}
 
