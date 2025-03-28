@@ -5,7 +5,7 @@
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after they've been selected</defaultText>
   </trigger>
-  <trigger tag="selected_individually" optional="true" start="0" end="0" label="Selected (individually)" oncePerStage="true" description="When added to the selection screen separately" group="0" order="1" color="1">
+  <trigger tag="selected_individually" optional="true" start="0" end="0" label="Selected (Individually)" oncePerStage="true" description="When added to the selection screen separately" group="0" order="1" color="1">
     <defaultImage>happy</defaultImage>
     <defaultText>This is what the character says after they've been individually selected. Only use this when it's important that they were actually selected right now and weren't selected as part of a group or random fill.</defaultText>
   </trigger>
