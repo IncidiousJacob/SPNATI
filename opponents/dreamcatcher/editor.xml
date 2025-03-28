@@ -4,7 +4,7 @@
     <height />
     <age />
     <pronunciation />
-    <othernotes />
+    <othernotes>Dreamcatcher is an Air element Villain. In the context of the game, this means that she's an antagonist who becomes playable after being defeated and "trapped" in an Air element Traptanium Crystal, where she will then fight for the side of good. Unlike some other Villains, though, Dreamcatcher never returned in future games, neither as a racer in Superchargers nor a Sensei in Imaginators (where some Villains became true Skylanders).&lt;br&gt;&lt;br&gt;In source, Dreamcatcher is a giant, floating head. In SPNatI, she's using her psychic powers to create an illusion-based body.&lt;br&gt;&lt;br&gt;As a being from the Realm of Dreams, she has the ability to manipulate dreams, often turning them into nightmares for her own amusement. In the waking world, she can read minds, create illusions, and summon tornados.&lt;br&gt;&lt;br&gt;Dreamcatcher was once a member of the Doom Raiders, a group of villains who enacted general villainery around the world of Skylands lead by Golden Queen. At one point, the Doom Raiders were all captured by a specialized group of Skylanders called the Trap Team, who used Traptanium weapons to seal them in Traptanium Crystals and send them away to Cloudcracker Prison. They were later set free by the series' regular antagonist, Kaos, in attempt to become their new leader.&lt;br&gt;&lt;br&gt;After being defeated by the Skylanders throughout the course of the game, the Doom Raiders disbanded. Many of them were returned to Cloudcracker Prison, but some of them were given a chance at redemption and became Sensei. Unfortunately, Dreamcatcher was not one of them, and she was never seen again in the mainline series.&lt;br&gt;&lt;br&gt;Dreamcatcher believe the player is a Portal Master, a powerful mage capable of using Portals of Power to summon things. This is because in Skylanders, the player is always a Portal Master who uses their Portal of Power to summon Skylanders to play as. She's unable to read the player's mind because of their Portal Master status making them too powerful to be read.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Targeting notes:&lt;br&gt;&lt;br&gt;Dreamcatcher's body is an illusion. Characters who are able to detect and/or are resistant to psychic powers or illusions may point this out. Her clothes are part of the illusion, save for her bow, which is her only real piece of clothing and the only thing she doesn't take off.&lt;br&gt;&lt;br&gt;She's mischievous and flirty. She likes messing with people, but will mostly stick to lighthearted mischief in SPNatI.&lt;br&gt;&lt;br&gt;She'll use her mind-reading powers to peek at her opponents' poker hands before they've been revealed, and after enough time, she'll start prying at their inner secrets too.&lt;br&gt;&lt;br&gt;She has a big sweet tooth. She also has braces, likely due to this love of sweets.</othernotes>
     <noteworthy>
         <case name="Dreamcatcher" id="4" priority="FYI" min="0" max="5">
             <description>Dreamcatcher is an unspecified creature from the Realm of Dreams. She can manipulate the dreams of others and bring their nightmares to life.</description>
@@ -20,9 +20,6 @@
         </case>
         <case name="Portal Master Minds" id="10" priority="FYI" min="0" max="5">
             <description>Dreamcatcher explains that her mind-reading power doesn't work on Portal Masters, and that she's intent on finding out the player's secrets one way or another.</description>
-        </case>
-        <case name="Vanishing Clothes" id="19" priority="Noteworthy" min="0" max="0">
-            <description>Dreamcatcher strips by making her clothes fade away. Note: This happens at every stage.</description>
         </case>
         <case name="Wet Dream" id="20" priority="Noteworthy" min="5" max="5">
             <description>Dreamcatcher floats and summons dream penises for her forfeit. She remains floating after her forfeit is finished.</description>
@@ -46,6 +43,7 @@
         <response id="47" opponent="natasha" opponentId="22" />
         <response id="60" opponent="nadeshiko" opponentId="151" />
         <response id="61" opponent="nadeshiko" opponentId="9" />
+        <response id="67" opponent="glamrock_chica" opponentId="10" />
     </responses>
     <notes>
         <note id="42">In case you haven't seen her other lines about it, "Portal Master" is refering to the player.</note>
@@ -54,13 +52,12 @@
         <label id="1" label="Portal Master Intro" folder="Noteworthy Things" sort="2" />
         <label id="2" label="Misc Things" folder="Noteworthy Things" sort="9" />
         <label id="3" label="" folder="Noteworthy Things" sort="0" />
-        <label id="4" label="What Is Dreamcatcher?" folder="Noteworthy Things" sort="10" />
         <label id="5" label="Prompt - Sleepwear" folder="Prompts" sort="0" />
         <label id="6" label="" folder="Noteworthy Things" sort="0" />
         <label id="7" label="" folder="Noteworthy Things" sort="3" />
         <label id="8" label="Prompt - Giant for a Day" folder="Prompts" sort="2" />
-        <label id="9" label="" folder="Noteworthy Things" sort="5" />
-        <label id="10" label="" folder="Noteworthy Things" sort="4" />
+        <label id="9" label="" color="7" folder="Noteworthy Things" sort="5" />
+        <label id="10" label="" color="7" folder="Noteworthy Things" sort="4" />
         <label id="11" label="Prompt - Spicy Food" folder="Prompts" sort="3" />
         <label id="12" label="" folder="Noteworthy Things" sort="6" />
         <label id="13" label="" folder="Noteworthy Things" sort="0" />
@@ -69,17 +66,21 @@
         <label id="16" label="" folder="Hand Peeking" sort="0" />
         <label id="17" label="" folder="Hand Peeking" sort="0" />
         <label id="18" label="" folder="Hand Peeking" sort="2" />
-        <label id="21" label="" folder="Noteworthy Things" sort="8" />
         <label id="23" label="" folder="Hand Peeking" sort="3" />
         <label id="25" label="" color="2" folder="" sort="0" />
         <label id="49" label="Dream-Related Topics" folder="Noteworthy Things" sort="11" />
         <label id="50" label="" folder="Noteworthy Things" sort="0" />
         <label id="51" label="" folder="Noteworthy Things" sort="0" />
         <label id="52" label="(~player~==Eon)" folder="" sort="0" />
-        <label id="53" label="" folder="Noteworthy Things" sort="0" />
+        <label id="53" label="" color="7" folder="Noteworthy Things" sort="0" />
         <label id="59" label="Butt Pose" folder="" sort="0" />
+        <label id="62" label="" folder="Noteworthy Things" sort="0" />
+        <label id="70" label="" folder="Hand Peeking" sort="0" />
+        <label id="69" label="" folder="Hand Peeking" sort="0" />
+        <label id="71" label="" folder="Noteworthy Things" sort="0" />
+        <label id="73" label="" folder="Noteworthy Things" sort="0" />
     </labels>
-    <nextId>61</nextId>
+    <nextId>75</nextId>
     <markers>
         <marker scope="Public" name="BecomingSensei" />
         <marker scope="Public" name="BlasterTronLight" />
@@ -103,10 +104,13 @@
         <marker scope="Public" name="CD_Wings3" />
         <marker scope="Public" name="ClothesTheft" />
         <marker scope="Public" name="CortexChompyMage" />
+        <marker scope="Public" name="Death_Faker1" />
         <marker scope="Public" name="DreamBeing" />
         <marker scope="Public" name="DreamOrNightmare" />
         <marker scope="Public" name="DreamText" />
+        <marker scope="Public" name="Flash" />
         <marker scope="Public" name="FrontButt" />
+        <marker scope="Public" name="GameStart" />
         <marker scope="Public" name="HandPeeking" />
         <marker scope="Public" name="Intro" />
         <marker scope="Public" name="Jura_Dreams1" />
@@ -134,7 +138,7 @@
         <marker scope="Public" name="Natasha_Prison3" />
         <marker scope="Public" name="Nattybumpo" />
         <marker scope="Public" name="nickname" />
-        <marker scope="Public" name="nickname*==Portal Master" />
+        <marker scope="Public" name="NoPhoneInBed" />
         <marker scope="Public" name="NotSensei" />
         <marker scope="Public" name="NotSoStealthElf" />
         <marker scope="Public" name="PainYattaCandy" />
@@ -149,6 +153,16 @@
         <marker scope="Public" name="Revy_DreamTaste1" />
         <marker scope="Public" name="SannyTess_FutaDream1" />
         <marker scope="Public" name="SleepIsImportant" />
+        <marker scope="Public" name="Stripping0_LeadFakeout" />
+        <marker scope="Public" name="Stripping0_Shoes" />
+        <marker scope="Public" name="Stripping1_Flash" />
+        <marker scope="Public" name="Stripping1_Robots" />
+        <marker scope="Public" name="Stripping1_Undead" />
+        <marker scope="Public" name="Stripping1_Wind" />
+        <marker scope="Public" name="Stripping2_Illusions" />
+        <marker scope="Public" name="Stripping2_MakeClothes" />
+        <marker scope="Public" name="Stripping3_BreastSize" />
+        <marker scope="Public" name="Stripping3_PlayingNice" />
         <marker scope="Public" name="StripSkystonesSmash" />
         <marker scope="Public" name="TraptaniumMustard" />
         <marker scope="Public" name="TriggerHappyCoins" />
