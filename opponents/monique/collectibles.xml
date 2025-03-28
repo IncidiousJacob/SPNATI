@@ -1,2 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="monique_hat" img="opponents/monique/attachments/monique_hat.png" thumbnail="opponents/monique/attachments/monique_hat.png">
+        <title>Red Barrette</title>
+        <subtitle>It came back.</subtitle>
+        <text>The source of her power, Monique's iconic red barrette has been passed down in her family for many generations, going as far back as 1776. The mystical power to create invisible objects is said to have aided King Louis XVI in escaping an assassination attempt, having been worn by his court jester, Arno Lecoq. Rumors say the hat is even older than this, possibly being an artifact created by an advanced civilization that predates humans. These same sources also claim that the hat is the key to a vault underneath the Vatican that contains God himself, so it's best to take this with a grain of salt.</text>
+        <unlock>Watch Monique remove her hat without using her hands.</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/monique/attachments/monique_hat.png" name="hat" generic="hat" position="head" type="extra" />
+    </collectible>
+</collectibles>

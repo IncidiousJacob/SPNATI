@@ -1,19 +1,72 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <metadata>
     <owner>monique</owner>
+    <height>5'8"</height>
+    <age />
+    <pronunciation />
+    <othernotes>Monique is a mine, a form of entertainer who performs stories or skits exclusively through body language. This means that she is mute. She's not unable to talk, but simply unwilling, being very commited to her role.&lt;br&gt;&lt;br&gt;Her grandfather is Jacques Lecoq, founder of École Internationale de Théâtre Jacques Lecoq, a theatre school located in France that's renowned for its influence on mime culture.&lt;br&gt;&lt;br&gt;She enjoys gymnastics, swimming, and, of course, theatre.&lt;br&gt;&lt;br&gt;Despite being mute, she's open to target interactions with other characters. She can answer yes or no questions, and use her body language to convey answers to other questions (check the "notes" tab to see her intent).&lt;br&gt;&lt;br&gt;If your character is so inclined, you can have them try to make Monique talk. She will always refuse to talk, which might make a character even more determined to get her to.</othernotes>
+    <noteworthy>
+        <case name="Stripping Weirdness" id="8" priority="Noteworthy" min="0" max="0">
+            <description>Monique stripping in a variety of ways, some of which may surprise your character. Some of the most reaction-worthy ones are listed below.</description>
+        </case>
+        <case name="Backwards Gloves" id="7" priority="Noteworthy" min="0" max="0">
+            <description>Monique may remove her gloves backwards, making them vanish from her fingertips to her wrists. Target the marker "Stripping0-3" to react to this.</description>
+        </case>
+        <case name="Flying Hat" id="9" priority="Noteworthy" min="1" max="1">
+            <description>Monique's hat may fly off on its own, much to her confusion. Target the marker "Stripping1-3" to react to this.</description>
+        </case>
+        <case name="Shoe Hazard" id="10" priority="FYI" min="2" max="2">
+            <description>Monique may kick her boots off, sending them flying. Target the marker "Stripping2-3" to react to this.</description>
+        </case>
+        <case name="Shirt Tricks" id="11" priority="MustTarget" min="3" max="3">
+            <description>Monique may make her shirt vanish using a magic trick, similar to Joey. Target the marker "Stripping3-2" to react to this. She may also rip her shirt off instead, using the marker "Stripping3-3."</description>
+        </case>
+        <case name="Sheet Trick" id="13" priority="Noteworthy" min="4" max="4">
+            <description>Monique may pull out a sheet to cover herself with while she removes her bra. Target the marker "Stripping4-2" to react to this -- be mindful of which case you target this in.</description>
+        </case>
+        <case name="Vanishing Bra" id="12" priority="MustTarget" min="4" max="4">
+            <description>Monique's bra may instantaneously vanish, only to appear in her pocket somehow. Target the marker "Stripping4-3" to react to this.</description>
+        </case>
+        <case name="Fake Socks" id="14" priority="FYI" min="5" max="5">
+            <description>Monique may shoot her socks with water, revealing that they were painted on. Note: If she doesn't perform this trick, they were real socks. Target the marker "Stripping5-3" to react to this.</description>
+        </case>
+        <case name="Pocket Panties" id="15" priority="FYI" min="6" max="6">
+            <description>Monique may notice a scarf sticking out from her pocket, only to pull on it and find that her panties are tied onto the end of the scarf chain. Target the marker "Stripping6-3" to react -- be mindful of the case.</description>
+        </case>
+        <case name="Panty Rip" id="16" priority="FYI" min="6" max="6">
+            <description>Monique may reach a hand into her skirt to pull her panties out without stepping out of them, which may or may not involve ripping them. Target the marker "Stripping6-2" to react to this.</description>
+        </case>
+        <case name="Fading Skirt" id="17" priority="MustTarget" min="7" max="7">
+            <description>Monique may make her skirt fade out of existence. Target the marker "Stripping7-3" to react to this. She may also slingshot her skirt off of her body, using the marker "Stripping7-2."</description>
+        </case>
+        <case name="Silent Orgasm" id="18" priority="Noteworthy" min="10" max="10">
+            <description>Monique is so comitted to her act, she's even silent through her forfeit, including her orgasm.</description>
+        </case>
+        <case name="Butt" id="19" priority="FYI" min="8" max="8">
+            <description>Butt.</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="2" opponent="joey" opponentId="26" />
         <response id="3" opponent="joey" opponentId="27" />
         <response id="4" opponent="joey" opponentId="32" />
     </responses>
+    <notes>
+        <note id="5">Monique resents the idea that mimes are lesser than clowns.</note>
+        <note id="6">Monique is wondering why she needed an invitation to play.</note>
+    </notes>
     <labels>
         <label id="1" label="Error" folder="" sort="0" />
     </labels>
-    <nextId>4</nextId>
+    <nextId>23</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="Butt" />
         <marker scope="Public" name="CD_Metal" />
         <marker scope="Public" name="CD_Talking" />
+        <marker scope="Public" name="Derpina_Walls1" />
+        <marker scope="Public" name="Kokichi_Cool1" />
+        <marker scope="Public" name="SCM_Invite1" />
         <marker scope="Public" name="Stripping0-1">Monique strips her gloves in a normal fashion.</marker>
         <marker scope="Public" name="Stripping0-2">Monique strips her gloves using her mouth.</marker>
         <marker scope="Public" name="Stripping0-3">Monique strips her gloves backwards, from fingers to wrists</marker>
@@ -38,5 +91,28 @@
         <marker scope="Public" name="Stripping7-1">Monique strips her skirt in a normal fashion.</marker>
         <marker scope="Public" name="Stripping7-2">Monique strips her skirt by slingshotting it off of her body.</marker>
         <marker scope="Public" name="Stripping7-3">Monique strips her skirt by allowing it to fade away.</marker>
+        <marker scope="Public" name="Tag_CheatsWithClothes" />
     </markers>
+    <recipes>
+        <recipe key="1ac2b058-5e06-4321-9ea7-d6bc3098748e">
+            <cases>
+                <id>20</id>
+            </cases>
+        </recipe>
+        <recipe key="8338b475-6f72-461a-9cb7-4510428e1297">
+            <cases>
+                <id>21</id>
+            </cases>
+        </recipe>
+        <recipe key="4df79a02-26c8-4fa7-b7cd-e8377533ed58">
+            <cases>
+                <id>22</id>
+            </cases>
+        </recipe>
+        <recipe key="dba5778a-dbed-4079-9052-d204275d6f93">
+            <cases>
+                <id>23</id>
+            </cases>
+        </recipe>
+    </recipes>
 </metadata>
