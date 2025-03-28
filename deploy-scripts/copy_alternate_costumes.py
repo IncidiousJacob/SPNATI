@@ -21,7 +21,7 @@ def main():
     delete_stages = {}
     
     for opp in listing_xml.find('individuals').iter('opponent'):
-        if 'status' not in opp.attrib or opp.attrib['status'] in ("testing", "incomplete", "offline"):
+        if 'status' not in opp.attrib or opp.attrib['status'] in ("testing", "offline", "incomplete", "event"):
             meta_xml = ET.parse(osp.join(base_dir, 'opponents',  opp.text, 'meta.xml'))
             for alts in meta_xml.iter('alternates'):               
                 n_stages = int(meta_xml.find('layers').text) + 2

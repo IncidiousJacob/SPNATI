@@ -16,5 +16,5 @@ else:
 tree = ET.parse(filename)
 
 for opp in tree.getroot().find('individuals'):
-    if 'status' not in opp.attrib or opp.attrib['status'] in ("testing", "incomplete", "offline"):
+    if 'status' not in opp.attrib or opp.attrib['status'] in ("testing", "incomplete", "offline", "event"):
         print(os.path.join(directory_name, opp.text))

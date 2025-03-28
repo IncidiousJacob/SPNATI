@@ -12,7 +12,7 @@ def iter_listing(opponents_base):
     listing_elem = bp.parse_listing(osp.join(opponents_base, 'listing.xml'))
 
     for individual in listing_elem.find('individuals').iter('opponent'):
-        if ('status' not in individual.attributes) or (individual.attributes['status'] in ("testing", "offline", "incomplete")):
+        if ('status' not in individual.attributes) or (individual.attributes['status'] in ("testing", "offline", "incomplete", "event")):
             yield individual.text
 
 def calc_image_space(opponents_base, opponent):
