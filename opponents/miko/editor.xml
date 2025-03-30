@@ -224,6 +224,15 @@
         <response id="302" opponent="jura" opponentId="2481" />
         <response id="306" opponent="schezo" opponentId="805" />
         <response id="308" opponent="yuzuki" opponentId="594" />
+        <response id="309" opponent="meia" opponentId="2631" />
+        <response id="310" opponent="meia" opponentId="2628" />
+        <response id="311" opponent="meia" opponentId="2627" />
+        <response id="312" opponent="zeke_pandoria" opponentId="1211" />
+        <response id="313" opponent="zeke_pandoria" opponentId="1202" />
+        <response id="314" opponent="jura" opponentId="2505" />
+        <response id="315" opponent="jura" opponentId="2506" />
+        <response id="316" opponent="jura" opponentId="2507" />
+        <response id="317" opponent="schezo" opponentId="824" />
     </responses>
     <notes>
         <note id="75">Note: She absolutely does.</note>
@@ -335,7 +344,7 @@
         <label id="305" label="" folder="COLLECTABLES" sort="3" />
     </labels>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>308</nextId>
+    <nextId>318</nextId>
     <markers>
         <marker scope="Public" name="9SBoots1" />
         <marker scope="Public" name="9SBoots2" />
@@ -681,12 +690,18 @@
         <marker scope="Public" name="JoJoke01">Touhou is full of Jojo references. Miko is no exception.</marker>
         <marker scope="Public" name="JoJoke02" />
         <marker scope="Public" name="jura_babies_resp" />
+        <marker scope="Public" name="jura_MikoBabies_resp" />
         <marker scope="Public" name="jura_seduction01_resp">Miko's responce to Jura's "seduction" marker.</marker>
         <marker scope="Public" name="jura_seduction02_resp">Miko's responce to Jura's "seduction" marker, all female ver.</marker>
         <marker scope="Public" name="jura_seduction04_resp">Miko's responce to Jura's "seduction" marker, with Meia ver.</marker>
         <marker scope="Public" name="JuraBelts1_resp" />
+        <marker scope="Public" name="JuraBelts2_resp" />
         <marker scope="Public" name="JuraCape1_resp" />
+        <marker scope="Public" name="JuraCape2_resp" />
+        <marker scope="Public" name="JuraDesires_resp" />
+        <marker scope="Public" name="JuraShirt1_resp" />
         <marker scope="Public" name="JuraSword1" />
+        <marker scope="Public" name="JuraSword2" />
         <marker scope="Public" name="KamiKaze">Shima was successfully lewded so that Miko may survive.</marker>
         <marker scope="Public" name="KazAdornments1_resp" />
         <marker scope="Public" name="KazAdornments2_resp" />
@@ -881,9 +896,13 @@
         <marker scope="Public" name="meia_men_resp">Miko's response to Meia's "Men Info" marker.</marker>
         <marker scope="Public" name="meia_pilot_resp" />
         <marker scope="Public" name="meia_sightseeing_resp">Miko's response to Meia's "Sightseeing" marker.</marker>
+        <marker scope="Public" name="MeiaAdornments1_resp" />
         <marker scope="Public" name="MeiaBelts1_resp" />
+        <marker scope="Public" name="MeiaBelts2_resp" />
         <marker scope="Public" name="MeiaCape1_resp" />
+        <marker scope="Public" name="MeiaCape2_resp" />
         <marker scope="Public" name="MeiaHeadpiece1" />
+        <marker scope="Public" name="MeiaTemple_resp" />
         <marker scope="Private" name="MeiSaku" />
         <marker scope="Public" name="MiaShoes1" />
         <marker scope="Public" name="MiaShoes2" />
@@ -922,6 +941,7 @@
         <marker scope="Public" name="MitamaArmor2" />
         <marker scope="Public" name="MitamaArmor3" />
         <marker scope="Public" name="MitamaBra1" />
+        <marker scope="Public" name="MitamaBra2" />
         <marker scope="Public" name="MitamaCape1_resp" />
         <marker scope="Public" name="MitamaCape2_resp" />
         <marker scope="Public" name="MitamaCape3_resp" />
@@ -930,6 +950,7 @@
         <marker scope="Public" name="MitamaDress1" />
         <marker scope="Public" name="MitamaDress2" />
         <marker scope="Public" name="MitamaDress3" />
+        <marker scope="Public" name="MitamaFlirt_resp" />
         <marker scope="Public" name="MitamaGloves1" />
         <marker scope="Public" name="MitamaGloves2" />
         <marker scope="Public" name="MitamaGloves3" />
@@ -1183,10 +1204,13 @@
         <marker scope="Public" name="SchezoCape2" />
         <marker scope="Public" name="SchezoCape2_resp" />
         <marker scope="Public" name="SchezoCape3" />
+        <marker scope="Public" name="SchezoCape3_resp" />
+        <marker scope="Public" name="SchezoCape3sus_resp" />
         <marker scope="Public" name="SchezoFate_resp" />
         <marker scope="Public" name="SchezoFateSus_resp" />
         <marker scope="Public" name="SchezoGloves1" />
         <marker scope="Public" name="SchezoGloves2" />
+        <marker scope="Public" name="SchezoGloves3" />
         <marker scope="Public" name="SchezoName_resp" />
         <marker scope="Public" name="SchezoSword_resp" />
         <marker scope="Public" name="ScienceBabies01">The Hourai Pharmacist is Eirin Yagokoro, who dabbles in shady new drugs.</marker>
@@ -1356,6 +1380,8 @@
         <marker scope="Public" name="VanessaChoker3" />
         <marker scope="Public" name="VanessaCoat1" />
         <marker scope="Public" name="VanessaCoat2" />
+        <marker scope="Public" name="VanessaCoat3" />
+        <marker scope="Public" name="VanessaHeadphones1_resp" />
         <marker scope="Public" name="VanessaSleeves1" />
         <marker scope="Public" name="VanessaSleeves2" />
         <marker scope="Public" name="VanessaSleeves3" />
@@ -1481,9 +1507,12 @@
         <marker scope="Public" name="YuriSocks2" />
         <marker scope="Public" name="YuriSocks3" />
         <marker scope="Public" name="YuzukiAdornments1_resp" />
+        <marker scope="Public" name="YuzukiAdornments2_resp" />
+        <marker scope="Public" name="YuzukiAdornments3_resp" />
         <marker scope="Public" name="YuzukiBelts1_resp" />
         <marker scope="Public" name="YuzukiBelts2_resp" />
         <marker scope="Public" name="YuzukiBelts3_resp" />
+        <marker scope="Public" name="YuzukiBra1" />
         <marker scope="Public" name="YuzukiCape1_resp" />
         <marker scope="Public" name="YuzukiCape2_resp" />
         <marker scope="Public" name="YuzukiCape3_resp" />
@@ -1497,12 +1526,15 @@
         <marker scope="Public" name="YuzukiSweater2" />
         <marker scope="Public" name="YuzukiSweater3" />
         <marker scope="Public" name="ZekePandyAdornments1_resp" />
+        <marker scope="Public" name="ZekePandyAdornments2_resp" />
+        <marker scope="Public" name="ZekePandyAdornments3_resp" />
         <marker scope="Public" name="ZekePandyBelts1_resp" />
         <marker scope="Public" name="ZekePandyBelts2_resp" />
         <marker scope="Public" name="ZekePandyBelts3_resp" />
         <marker scope="Public" name="ZekePandyBoots1" />
         <marker scope="Public" name="ZekePandyBoots2" />
         <marker scope="Public" name="ZekePandyBoots3" />
+        <marker scope="Public" name="ZekePandyBoxers1" />
         <marker scope="Public" name="ZekePandyCape1_resp" />
         <marker scope="Public" name="ZekePandyCape2_resp" />
         <marker scope="Public" name="ZekePandyCape3_resp" />
@@ -1512,8 +1544,10 @@
         <marker scope="Public" name="ZekePandyGloves1" />
         <marker scope="Public" name="ZekePandyGloves2" />
         <marker scope="Public" name="ZekePandyGloves3" />
+        <marker scope="Public" name="ZekePandyHeadphones1_resp" />
         <marker scope="Public" name="ZekePandyPants1" />
         <marker scope="Public" name="ZekePandyPants2" />
+        <marker scope="Public" name="ZekePandyPants3" />
         <marker scope="Public" name="ZekePandyPauldrons1" />
         <marker scope="Public" name="ZekePandyPauldrons2" />
         <marker scope="Public" name="ZekePandyPauldrons3" />
