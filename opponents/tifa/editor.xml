@@ -9,6 +9,8 @@
         <response id="26" opponent="aoi_asahina" opponentId="225" />
         <response id="46" opponent="jura" opponentId="17" />
         <response id="61" opponent="meia" opponentId="2113" />
+        <response id="145" opponent="aqua_kh" opponentId="67" />
+        <response id="146" opponent="chihiro" opponentId="2" />
     </responses>
     <labels>
         <label id="1" label="" color="13" folder="stripping0_filter" sort="0" />
@@ -68,7 +70,7 @@
         <label id="60" label="" color="5" folder="Meia" sort="0" />
         <label id="61" label="" color="5" folder="Meia" sort="0" />
         <label id="62" label="" color="5" folder="Yusei" sort="0" />
-        <label id="63" label="" folder="Yusei" sort="0" />
+        <label id="63" label="" color="5" folder="Yusei" sort="0" />
         <label id="64" label="" color="5" folder="vanessa" sort="0" />
         <label id="65" label="" color="5" folder="vanessa" sort="0" />
         <label id="66" label="" color="5" folder="vanessa" sort="0" />
@@ -78,8 +80,8 @@
         <label id="70" label="" folder="vanessa" sort="0" />
         <label id="71" label="" folder="vanessa" sort="0" />
         <label id="72" label="" folder="vanessa" sort="0" />
-        <label id="73" label="" folder="Yusei" sort="0" />
-        <label id="74" label="" folder="Yusei" sort="0" />
+        <label id="73" label="" color="5" folder="Yusei" sort="0" />
+        <label id="74" label="" color="5" folder="Yusei" sort="0" />
         <label id="75" label="" color="5" folder="Yusei" sort="0" />
         <label id="76" label="" color="5" folder="Yusei" sort="0" />
         <label id="77" label="" color="5" folder="yusei" sort="0" />
@@ -132,8 +134,27 @@
         <label id="124" label="" color="5" folder="yusei" sort="0" />
         <label id="125" label="" color="5" folder="Yusei" sort="0" />
         <label id="126" label="" color="5" folder="Yusei" sort="0" />
+        <label id="127" label="" color="5" folder="Yusei" sort="0" />
+        <label id="128" label="" color="5" folder="Yusei" sort="0" />
+        <label id="129" label="" color="5" folder="Yusei" sort="0" />
+        <label id="130" label="" color="5" folder="Yusei" sort="0" />
+        <label id="131" label="" color="5" folder="Yusei" sort="0" />
+        <label id="132" label="" color="5" folder="Yusei" sort="0" />
+        <label id="133" label="" color="5" folder="Yusei" sort="0" />
+        <label id="134" label="" color="5" folder="Yusei" sort="0" />
+        <label id="135" label="" color="5" folder="Yusei" sort="0" />
+        <label id="136" label="" color="5" folder="Yusei" sort="0" />
+        <label id="137" label="" color="5" folder="Yusei" sort="0" />
+        <label id="138" label="" color="5" folder="Yusei" sort="0" />
+        <label id="139" label="" color="5" folder="Yusei" sort="0" />
+        <label id="140" label="" color="5" folder="Yusei" sort="0" />
+        <label id="141" label="" color="5" folder="Yusei" sort="0" />
+        <label id="142" label="" color="5" folder="Yusei" sort="0" />
+        <label id="143" label="" color="5" folder="Yusei" sort="0" />
+        <label id="144" label="" color="5" folder="Yusei" sort="0" />
+        <label id="145" label="" color="5" folder="" sort="0" />
     </labels>
-    <nextId>126</nextId>
+    <nextId>146</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="accidental_stage3" />
@@ -143,6 +164,7 @@
         <marker scope="Public" name="allm_strip0" />
         <marker scope="Public" name="allm_strip6" />
         <marker scope="Public" name="Cloud_Strife_Mention" />
+        <marker scope="Public" name="css_enable-custom-box" />
         <marker scope="Public" name="gym_challenge" />
         <marker scope="Public" name="materia_mention" />
         <marker scope="Public" name="Meia0" />
@@ -158,6 +180,7 @@
         <marker scope="Public" name="spar_challenge" />
         <marker scope="Public" name="Tifa_AG0a" />
         <marker scope="Public" name="Tifa_AquaKH" />
+        <marker scope="Public" name="tifa_aquakh_keyblade_reveal" />
         <marker scope="Public" name="Tifa_AquaKH0a" />
         <marker scope="Public" name="Tifa_AquaKHcomfort09a" />
         <marker scope="Public" name="Tifa_Jura0a" />
@@ -174,7 +197,17 @@
         <marker scope="Public" name="tifa_yusei_athletic1" />
         <marker scope="Public" name="tifa_yusei_athletic2" />
         <marker scope="Public" name="tifa_yusei_athletic3" />
+        <marker scope="Public" name="tifa_yusei_bartender1" />
+        <marker scope="Public" name="tifa_yusei_bartender2" />
+        <marker scope="Public" name="tifa_yusei_bartender3a" />
+        <marker scope="Public" name="tifa_yusei_bartender3b" />
+        <marker scope="Public" name="tifa_yusei_composure1" />
+        <marker scope="Public" name="tifa_yusei_composure2" />
+        <marker scope="Public" name="tifa_yusei_composure3" />
         <marker scope="Public" name="tifa_yusei_finished" />
+        <marker scope="Public" name="tifa_yusei_finishingblows1" />
+        <marker scope="Public" name="tifa_yusei_finishingblows2" />
+        <marker scope="Public" name="tifa_yusei_finishingblows3" />
         <marker scope="Public" name="tifa_yusei_heavy1" />
         <marker scope="Public" name="tifa_yusei_mast1" />
         <marker scope="Public" name="tifa_yusei_mast2" />
@@ -183,8 +216,17 @@
         <marker scope="Public" name="tifa_yusei_milk2" />
         <marker scope="Public" name="tifa_yusei_milk3" />
         <marker scope="Public" name="tifa_yusei_milk4" />
+        <marker scope="Public" name="tifa_yusei_muscles1" />
+        <marker scope="Public" name="tifa_yusei_muscles2" />
+        <marker scope="Public" name="tifa_yusei_muscles3" />
         <marker scope="Public" name="tifa_yusei_mustFF" />
+        <marker scope="Public" name="tifa_yusei_scar1" />
+        <marker scope="Public" name="tifa_yusei_scar2" />
+        <marker scope="Public" name="tifa_yusei_scar3" />
         <marker scope="Public" name="tifa_yusei_startFF" />
+        <marker scope="Public" name="tifa_yusei_strip6a" />
+        <marker scope="Public" name="tifa_yusei_strip6b" />
+        <marker scope="Public" name="tifa_yusei_strip6c" />
         <marker scope="Public" name="Tifa_Yusei0a" />
         <marker scope="Public" name="Tifa_Yusei0b" />
         <marker scope="Public" name="tifa_yusei0c" />
