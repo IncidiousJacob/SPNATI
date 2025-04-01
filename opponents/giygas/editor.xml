@@ -992,6 +992,13 @@
         <label id="1023" label="Students" folder="Prayer&gt;Clannad" sort="0" />
         <label id="1024" label="Saotome" folder="Prayer&gt;!1-Rep Series&gt;Manga" sort="0" />
         <label id="1025" label="Hiropon" folder="Prayer&gt;KonoSuba" sort="0" />
+        <label id="1026" label="%Level-Up&gt;!Slot 1" folder="" sort="0" />
+        <label id="1027" label="%Level-Up&gt;!Slot 2" folder="" sort="0" />
+        <label id="1028" label="%Level-Up&gt;!Slot 3" folder="" sort="0" />
+        <label id="1029" label="%Level-Up&gt;!Slot 4" folder="" sort="0" />
+        <label id="1030" label="Website%Prayer&gt;!AF&gt;Web Original" folder="" sort="0" />
+        <label id="1031" label="Yellow%Prayer&gt;Pocky" folder="" sort="0" />
+        <label id="1032" label="Yellow%Prayer&gt;Pocky" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-giegue</prefix>
@@ -1002,7 +1009,10 @@
         <prefix>5-</prefix>
         <prefix>6-</prefix>
     </prefixes>
-    <nextId>1025</nextId>
+    <posePreviewMarkers>
+        <posePreviewMarker>L_spawnPresent==1</posePreviewMarker>
+    </posePreviewMarkers>
+    <nextId>1032</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="+TO_rosaHero_galactus" />
@@ -1354,6 +1364,7 @@
         <marker scope="Public" name="P_fey" />
         <marker scope="Public" name="P_fina" />
         <marker scope="Public" name="P_fischl" />
+        <marker scope="Public" name="P_fisher" />
         <marker scope="Public" name="P_florina" />
         <marker scope="Public" name="P_fluttershy" />
         <marker scope="Public" name="P_freaker" />
@@ -1422,6 +1433,7 @@
         <marker scope="Public" name="P_laevatein" />
         <marker scope="Public" name="P_lalatina" />
         <marker scope="Public" name="P_larachel" />
+        <marker scope="Public" name="P_legallyDistinctFastFoodPR" />
         <marker scope="Public" name="P_leggy" />
         <marker scope="Public" name="P_leon" />
         <marker scope="Public" name="P_leonie" />
@@ -1643,6 +1655,7 @@
         <marker scope="Public" name="PG_final_pnati1" />
         <marker scope="Public" name="PG_fugAppears" />
         <marker scope="Public" name="PG_hits" />
+        <marker scope="Public" name="PG_noSale" />
         <marker scope="Public" name="PG_ready" />
         <marker scope="Public" name="PG_s1" />
         <marker scope="Public" name="PG_s2" />
