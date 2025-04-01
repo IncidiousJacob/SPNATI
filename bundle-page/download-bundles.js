@@ -22,6 +22,7 @@ var SPECIAL_CASE_NAMES = {
     "pa-15": "PA-15",
     "pauling": "Miss Pauling",
     "penny_polendina": "Penny (RWBY)",
+    "pokemon_fisher": "Fisher",
     "pot_of_greed": "Pot of Greed",
     "ringo_ando": "Ringo",
     "rogue_x-men": "Rogue (X-Men)",
