@@ -164,8 +164,8 @@ if (!giygas) var giygas = (function (root) {
     var shouldPray = false;
 
     function showPrayText () {
-        if (shouldPray && $mainButton.html() === 'Keep all') {
-            $mainButton.html('Pray');
+        if (shouldPray && $mainButtonText.html() === 'Keep all') {
+            $mainButtonText.html('Pray');
         }
     }
     registerHook('updateMainButtonExchangeLabel', 'post', showPrayText);
