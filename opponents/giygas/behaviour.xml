@@ -552,7 +552,8 @@
             </directive>
         </pose>
         <pose id="5-byegas">
-            <sprite id="noise" src="5-static1.png" x="0" y="-800" scalex="1" scaley="1" alpha="100" />
+            <sprite id="noise" z="1" src="5-static1.png" x="0" y="-800" scalex="1" scaley="1" alpha="100" />
+            <sprite id="present" marker="L_spawnPresent==1" z="0" src="6-closed.png" x="0" y="0" alpha="100" rotation="0" />
             <directive type="animation" id="noise" ease="linear" interpolation="linear">
                 <keyframe time="0" scaley="1" />
                 <keyframe time="0.25" scaley="0.01" />
@@ -623,8 +624,12 @@
                 <keyframe time="5.76" y="1472" scaley="1" />
             </directive>
         </pose>
-        <pose id="6-closed" />
-        <pose id="6-open" />
+        <pose id="6-closed">
+            <sprite id="present" marker="L_spawnPresent==1" z="0" src="6-closed.png" x="0" y="0" alpha="100" rotation="0" />
+        </pose>
+        <pose id="6-open">
+            <sprite id="present" marker="L_spawnPresent==1" z="0" src="6-open.png" x="0" y="0" alpha="100" rotation="0" />
+        </pose>
         <pose id="blank" />
         <pose id="dark">
             <sprite id="black" src="7-black.png" x="0" y="-800" />
@@ -1695,6 +1700,7 @@
                         <nickname character="kumatora" op="=" name="Kuma" weight="0" />
                         <nickname character="sannytess" op="=" name="Tess" weight="0" />
                         <nickname character="uhura" op="=" name="Uhura" weight="0" />
+                        <nickname character="vanessa" op="=" name="Ness" weight="0" />
                     </operations>
                 </state>
             </case>
@@ -1751,6 +1757,26 @@
             </case>
             <case stage="0">
                 <state img="#-aoi.png">A tie? What is this, Little League?</state>
+            </case>
+            <case stage="5">
+                <alternative>
+                    <condition character="ann" filter="phantom_thieves" var="pThief" />
+                </alternative>
+                <alternative>
+                    <condition character="haru" filter="phantom_thieves" var="pThief" />
+                </alternative>
+                <alternative>
+                    <condition character="haru" filter="phantom_thieves" var="pThief" />
+                </alternative>
+                <alternative>
+                    <condition character="ryuji" filter="phantom_thieves" var="pThief" />
+                </alternative>
+                <alternative>
+                    <condition character="yusuke" filter="phantom_thieves" var="pThief" />
+                </alternative>
+                <state img="custom:#-diegas" direction="none">
+                    <text>{eb}•Did you know that ~pThief~ is one of the Phantom Thieves of Hearts?{!reset}</text>
+                </state>
             </case>
             <case stage="5-6" id="193" priority="-404">
                 <state direction="none">
@@ -4006,9 +4032,8 @@
             </case>
             <case stage="4" hidden="1">
                 <condition role="self" saidMarker="PG_tries" />
-                <test expr="~self.marker.DUMMY~" value="When it's ready." />
-                <test expr="~self.collectible.*~" value="false" />
-                <state marker="L_spawnPresent">Spawn the present box if the collectible is to be unlocked this game</state>
+                <test expr="~self.collectible.giygas_apple~" value="false" />
+                <state marker="L_spawnPresent=1">Spawn the present box if the collectible is to be unlocked this game</state>
             </case>
             <case stage="4" id="715" hidden="1">
                 <state><script>giygas.stopPraying();</script></state>
@@ -4049,6 +4074,7 @@
                         <nickname character="komi-san" op="clear" weight="0" />
                         <nickname character="kumatora" op="clear" weight="0" />
                         <nickname character="sannytess" op="clear" weight="0" />
+                        <nickname character="vanessa" op="clear" weight="0" />
                         <nickname character="uhura" op="clear" weight="0" />
                     </operations>
                 </state>
@@ -4239,8 +4265,7 @@
             </case>
             <case stage="6" hidden="1">
                 <condition role="self" saidMarker="PG_tries" />
-                <test expr="~self.collectible.*~" value="false" />
-                <test expr="~self.marker.DUMMY~" value="When it's ready." />
+                <test expr="~self.collectible.giygas_apple~" value="false" />
                 <state collectible="giygas_apple">Unlock giygas_apple</state>
             </case>
         </trigger>
@@ -11557,8 +11582,7 @@
                 <state img="custom:#-closed" marker="LP_stats2" direction="none" weight="0.3">{eb}•~Marker.LV_sweet~!&lt;br&gt;•Gay Energy went up by ~rng(1-3)~!{!reset}</state>
             </case>
             <case stage="6" id="627" priority="351">
-                <condition role="self" saidMarker="L_spawnPresent" />
-                <test expr="~self.marker.DUMMY~" value="When it's ready." />
+                <condition role="self" saidMarker="L_spawnPresent==1" />
                 <test expr="~self.collectible.giygas_apple~" value="false" />
                 <alternative>
                     <condition role="self" notSaidMarker="L_endAll" />
@@ -11670,7 +11694,7 @@
                 <state img="custom:#-giygas" marker="G_megalovania=2" direction="none">{gy}“Haha… ha… ha… ha…”</state>
             </case>
             <case stage="6" id="628" priority="1">
-                <condition role="self" saidMarker="L_spawnPresent" />
+                <condition role="self" saidMarker="L_spawnPresent==1" />
                 <condition role="self" saidMarker="LP_present" />
                 <state img="custom:#-open" marker="L_endAll">~blank~</state>
             </case>
