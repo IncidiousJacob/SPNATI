@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<collectibles>
+    <collectible id="fishing_book" img="opponents/pokemon_fisher/image_attachments/book_page.png" thumbnail="opponents/pokemon_fisher/image_attachments/fisher_book.png">
+        <title>Fishing Book</title>
+        <subtitle>Includes a page with what you can fish up!</subtitle>
+        <text>Welcome aspiring fishers! Here we will give you a friendly guide on how to catch everything your heart desires with that trusty fishing rod!
+
+&lt;br&gt;
+&lt;br&gt;
+HOW TO FISH:
+&lt;br&gt;
+If you are playing in a fishing compatible background, the fisher will catch something every time she loses!
+&lt;br&gt;
+&lt;br&gt;
+
+
+FISH RARITY:
+&lt;br&gt;
+Different Pokémon are more likely to show up than others. The more rare the more difficult it is for them to show up!
+&lt;br&gt;
+&lt;br&gt;
+
+THE LEGENDARY CATCHES WON'T BITE:
+
+&lt;br&gt;Don't lose hope, fisher! If you keep trying enough times, you'll eventually have the catches guaranteed! It takes a good amount of fishing, but you can do it!
+&lt;br&gt;
+&lt;br&gt;
+
+Now go out there, and wield your mighty rod!</text>
+        <unlock>Finish a game with the fisher.</unlock>
+    </collectible>
+    <collectible id="fish_hat" img="opponents/pokemon_fisher/image_attachments/hat_pose.png" thumbnail="opponents/pokemon_fisher/image_attachments/fisher_funny_hat.png">
+        <title>Fisher Hat</title>
+        <subtitle>Nice fishing! Have this!</subtitle>
+        <text>This legendary hat proves you are a real fisher.</text>
+        <unlock>Fish up all 12 possible Pokémon.</unlock>
+        <hide-details>true</hide-details>
+        <counter>12</counter>
+        <wearable>true</wearable>
+        <clothing img="opponents/pokemon_fisher/image_attachments/fisher_funny_hat.png" name="hat" generic="hat" position="head" type="extra" />
+    </collectible>
+</collectibles>

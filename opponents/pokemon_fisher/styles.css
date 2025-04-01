@@ -1,0 +1,24 @@
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "Pokemon GB";
+    src: url('fonts/PKMN RBYGSC.woff') format("woff"),
+         url('fonts/PKMN RBYGSC.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dialogue-bubble .pkmn[data-character="pokemon_fisher"] {
+  border-radius: 2px;
+  background: white;
+  border: 2px solid white;
+  box-shadow: 0 1px 0 1px black,
+              inset 0 1px 0 1px black,
+              0 0 0 1px black,
+              inset 0 0 0 1px black;
+}
+
+.dialogue .pkmn[data-character="pokemon_fisher"] {
+  font-size: 75%;
+  font-family: "Pokemon GB", Arial, sans-serif;
+  line-height: 0;  
+}
