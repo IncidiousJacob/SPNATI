@@ -1382,6 +1382,11 @@
                 <condition role="self" notSaidMarker="TO_mg_slugma" />
                 <state img="custom:#-giygas" marker="TO_mg_slugma" direction="none">{gy}“Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma, Slugma.....”{!reset}</state>
             </case>
+            <case stage="0">
+                <condition role="opp" character="rosie" sayingMarker="Whos_Giygas_Rosie" />
+                <condition role="self" notSaidMarker="TI_rosie_who" />
+                <state img="#-neutral.png" marker="TI_rosie_who">Hmph! The identity of my homeworld and species is nothing for &lt;i&gt;you&lt;/i&gt; to know, Earthling. You’ve taken enough of my planet’s secrets as it is…</state>
+            </case>
             <case stage="0" oneShotId="8">
                 <condition role="opp" character="sannytess" />
                 <condition role="self" saidMarker="TO_tess_PKFuta" />
