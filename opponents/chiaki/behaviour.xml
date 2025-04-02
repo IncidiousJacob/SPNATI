@@ -1237,6 +1237,15 @@
                 <condition role="other" character="darkness" sayingMarker="darkness_chiaki_thisGame1" />
                 <state img="#-thinking2.png" marker="darkness_r31">This game? It was a good chance for me to go beyond the genres I'm used to... I think.</state>
             </case>
+            <case stage="4" id="891" oneShotId="77">
+                <condition role="other" character="darkness" sayingMarker="darkness_chiaki_dangerZone1" />
+                <state img="#-calm.png" marker="darkness_r41">Looks like it. But that's alright. I like when games have incremental difficulty.</state>
+                <state img="#-calm.png" marker="darkness_r41">That's right. Games with incremental difficulty often present this challenge...</state>
+            </case>
+            <case stage="4" id="892" oneShotId="78">
+                <condition role="other" character="darkness" sayingMarker="darkness_chiaki_pervyGames1" />
+                <state img="#-thinking2.png" marker="darkness_r41N">Oh, you must be thinking of hentai games. They come in many genres, but the goal is to see the characters get naked.</state>
+            </case>
             <case stage="2" id="38" priority="100">
                 <condition role="other" character="9s" sayingMarker="ChiakiStrip2a" />
                 <state img="#-thinking.png" marker="9s_r21=a">I'm actually rather fond of the hair pin... And it's so small, I don't think it'd be fair to count it...</state>
@@ -1822,6 +1831,19 @@
                 </alternative>
                 <state img="#-excited.png" marker="mahiru_selfie1">Oh! Okay, ~mahiru~!</state>
             </case>
+            <case stage="3" id="895" oneShotId="81">
+                <condition role="other" character="darkness" sayingMarker="darkness_chiaki_thisGame2" />
+                <condition role="self" saidMarker="darkness_r31dr" />
+                <condition filter="danganronpa" status="chest_visible" role="other" var="dangan" />
+                <state img="#-strip.png" marker="darkness_r32dr_topless">That should be fair. If ~dangan~'s chest is out, I should show mine.</state>
+            </case>
+            <case stage="3" id="894" oneShotId="80">
+                <condition role="other" character="darkness" sayingMarker="darkness_chiaki_thisGame2" />
+                <condition role="self" saidMarker="darkness_r31dr" />
+                <condition filter="danganronpa" role="other" var="dangan" />
+                <state img="#-strip.png" marker="darkness_r32dr">Maybe one day if we get close enough...</state>
+                <state img="#-strip.png" marker="darkness_r32dr">I don't think ~dangan~ and I are close enough for that yet. Maybe some day.</state>
+            </case>
             <case stage="0" id="65" totalRounds="1-">
                 <condition role="other" character="natsuki" />
                 <state img="#-strip.png" marker="natsuki_r02">We do have a bit in common. Do you like video games, ~natsuki~?</state>
@@ -1840,6 +1862,12 @@
                 <condition role="other" character="darkness" sayingMarker="darkness_chiaki_gameSystem2" />
                 <condition role="self" saidMarker="darkness_r21" />
                 <state img="#-strip.png" marker="darkness_r22">It's not easy, since it relies on how many people will watch. Think of it like a newspaper that's constantly updating.</state>
+            </case>
+            <case stage="3" id="893" oneShotId="79">
+                <condition role="other" character="darkness" sayingMarker="darkness_chiaki_thisGame2" />
+                <condition role="self" saidMarker="darkness_r31" />
+                <state img="#-strip.png" marker="darkness_r32">I've never flashed anyone before, actually. No one really notices me, anyway, so it's not like I get many chances.</state>
+                <state img="#-strip.png" marker="darkness_r32">Even if I was, I don't get many chances to try. I tend to fall under the radar.</state>
             </case>
             <case stage="0" id="58">
                 <condition role="self" saidMarker="KaminaBanter" />
@@ -3785,7 +3813,7 @@
                 <state img="#-embarrassed.png" marker="ibuki_01b">I guess that you're better at this sort of game than I am, Ibuki.</state>
             </case>
             <case stage="0-10" id="193">
-                <condition role="target" character="wendy" stage="0" />
+                <condition role="target" character="smug_wendy" stage="0" />
                 <alternative>
                     <condition role="other" character="kool-aid" stage="0" />
                 </alternative>
@@ -4422,13 +4450,13 @@
                 <state img="#-thinking.png" marker="uravity_21">It sure does feel like high schools for special students pop up in a lot of different worlds, right, ~uravity~?</state>
             </case>
             <case stage="0-10" id="268">
-                <condition role="target" character="wendy" stage="0" />
+                <condition role="target" character="smug_wendy" stage="0" />
                 <state img="#-excited.png" marker="wendy_01=a">Whoa! You're real!? I have to introduce you to Teruteru!</state>
                 <state img="#-excited.png" marker="wendy_01=b">Whoa! You're real!? I bet Teruteru would die to meat, er, meet you!</state>
                 <state img="#-excited.png" marker="wendy_01=c">Whoa! You're real!? I bet Teruteru wishes he could be here!</state>
             </case>
             <case stage="0-10" id="269">
-                <condition role="target" character="wendy" stage="1" />
+                <condition role="target" character="smug_wendy" stage="1" />
                 <state img="#-thinking.png" marker="wendy_11">So, uh, do you know how to cook, or are you just the face of the business?</state>
             </case>
             <case stage="0-10" id="270">
@@ -4649,6 +4677,11 @@
                 <condition role="target" character="vanessa" stage="0" />
                 <state img="#-fierce1.png" marker="vanessa_01">You have a lot of confidence for someone up against the Ultimate Gamer herself.</state>
                 <state img="#-fierce2.png" marker="vanessa_01">You think you can win, huh? I'm warning you, I'm good too!</state>
+            </case>
+            <case stage="0-8" id="896">
+                <condition role="target" character="darkness" stage="7" />
+                <state img="#-serious.png" marker="darkness_71">You lose, Darkness! Now to end this once and for all!</state>
+                <state img="#-surprised.png" marker="darkness_71">I've got you! Now, you will be cleansed of any underhanded desires, Darkness!</state>
             </case>
             <case stage="0-10" id="642" oneShotId="36" totalRounds="20-">
                 <condition role="target" character="wario" layers="1-" />
@@ -5756,7 +5789,7 @@
             <case stage="7-8" id="881">
                 <condition role="target" character="darkness" stage="7" saidMarker="darkness_chiaki_helpingHand2" />
                 <condition role="self" saidMarker="darkness_62N" />
-                <state img="#-angry.png" marker="darkness_63N">Fine, then. I'll just have to defeat you here and now! Prepare to lose, because this is the final boss!</state>
+                <state img="#-surprised.png" marker="darkness_63N">Fine, then. I'll just have to defeat you here and now! Prepare to lose, because this is the final boss!</state>
             </case>
             <case stage="0" id="887">
                 <condition role="target" character="schezo" stage="1" saidMarker="chiaki_rpg2A" />
@@ -6299,6 +6332,11 @@
                     <alt-img stage="0-8">#-fierce2.png</alt-img>
                     <alt-img stage="9-10">#-surprised.png</alt-img>
                     <text>Thought you could defeat hope? {b i}No, that's wrong!{!reset}</text>
+                </state>
+                <state img="#-surprised.png" marker="giygas_finished">
+                    <alt-img stage="0-8">#-fierce2.png</alt-img>
+                    <alt-img stage="9-10">#-surprised.png</alt-img>
+                    <text>{b i}No, that's wrong!{!reset} As long as there's hope, we can always change the world!</text>
                 </state>
             </case>
         </trigger>
