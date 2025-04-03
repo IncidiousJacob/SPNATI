@@ -5369,7 +5369,7 @@
                 <condition count="0" filter="konosuba" character="sedol" />
                 <condition count="0" filter="konosuba" character="heinz" />
                 <condition count="0" filter="konosuba" character="galil" />
-                <test expr="~darkness.costume~" value="darkness_dankness" />
+                <test expr="~darkness.costume~" cmp="!=" value="darkness_dankness" />
                 <state img="custom:#-prayer" marker="P_lalatina" direction="none" set-intelligence="throw">
                     <text>{eb}•(Suddenly, Sedol, Heinz, and Galil all at once remembered what they saw the time they got brought back to life,&lt;br&gt;•and they decided to return the favor by praying for Darkness.){!reset}</text>
                     <markers>
