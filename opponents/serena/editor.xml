@@ -247,6 +247,14 @@
         <response id="565" opponent="jura" opponentId="2517" />
         <response id="566" opponent="jura" opponentId="2518" />
         <response id="567" opponent="jura" opponentId="2519" />
+        <response id="569" opponent="jura" opponentId="2537" />
+        <response id="570" opponent="jura" opponentId="2535" />
+        <response id="571" opponent="jura" opponentId="2536" />
+        <response id="572" opponent="meia" opponentId="2656" />
+        <response id="573" opponent="meia" opponentId="2657" />
+        <response id="574" opponent="darkness" opponentId="1629" />
+        <response id="575" opponent="darkness" opponentId="1631" />
+        <response id="576" opponent="darkness" opponentId="1630" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -562,8 +570,8 @@
         <label id="526" label="" color="15" folder="" sort="0" />
         <label id="527" label="" color="2" folder="Stage 1" sort="0" />
         <label id="528" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="530" label="" color="2" folder="Stage 3" sort="0" />
-        <label id="529" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="530" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="529" label="" color="15" folder="Stage 2" sort="0" />
         <label id="531" label="" color="15" folder="Fennekin Serena &gt; Stage 0" sort="0" />
         <label id="532" label="" color="15" folder="Stage 3" sort="0" />
         <label id="533" label="" color="15" folder="Stage 4" sort="0" />
@@ -584,28 +592,39 @@
         <label id="551" label="" color="2" folder="2 Stripping" sort="0" />
         <label id="552" label="" color="2" folder="Stage 3" sort="0" />
         <label id="553" label="" color="2" folder="Stage 0" sort="0" />
-        <label id="555" label="" color="2" folder="" sort="0" />
-        <label id="556" label="" color="2" folder="Stage 2" sort="0" />
-        <label id="557" label="" color="2" folder="Stage 3" sort="0" />
-        <label id="558" label="" color="2" folder="Stage 3" sort="0" />
-        <label id="559" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="555" label="" color="15" folder="" sort="0" />
+        <label id="556" label="" color="15" folder="Stage 2" sort="0" />
+        <label id="557" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="558" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="559" label="" color="15" folder="Stage 2" sort="0" />
         <label id="560" label="" color="15" folder="Stage 3" sort="0" />
         <label id="561" label="" color="15" folder="Stage 4" sort="0" />
         <label id="562" label="" folder="Stage 2" sort="0" />
-        <label id="563" label="" color="2" folder="Fennekin Serena &gt; Stage 0" sort="0" />
-        <label id="564" label="" color="2" folder="Stage 4" sort="0" />
-        <label id="565" label="" color="2" folder="Fennekin Serena &gt; Stage 0" sort="0" />
-        <label id="566" label="" color="2" folder="Stage 3" sort="0" />
-        <label id="567" label="" color="2" folder="Stage 3" sort="0" />
+        <label id="563" label="" color="15" folder="Fennekin Serena &gt; Stage 0" sort="0" />
+        <label id="564" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="565" label="" color="15" folder="Fennekin Serena &gt; Stage 0" sort="0" />
+        <label id="566" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="567" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="569" label="" color="15" folder="Fennekin Serena &gt; Stage 1" sort="0" />
+        <label id="570" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="571" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="572" label="" color="15" folder="Fennekin Serena &gt; Stage 1" sort="0" />
+        <label id="573" label="" color="15" folder="Stage 5" sort="0" />
+        <label id="574" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="575" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="576" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="577" label="" color="15" folder="" sort="0" />
     </labels>
-    <nextId>567</nextId>
+    <nextId>577</nextId>
     <markers>
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
         <marker scope="Public" name="fennekin_jura_01" />
         <marker scope="Public" name="fennekin_jura_02" />
+        <marker scope="Public" name="fennekin_jura_11" />
         <marker scope="Public" name="fennekin_meia_01" />
         <marker scope="Public" name="fennekin_meia_02" />
+        <marker scope="Public" name="fennekin_meia_11" />
         <marker scope="Public" name="first_skin">This is the first time Serena has been naked in front of anyone in public</marker>
         <marker scope="Public" name="frontdoor_clothing_item">front door telling serena the wrist bands wouldn't count as a separate clothing item.</marker>
         <marker scope="Public" name="frontdoor_clothing_item2">continuation</marker>
@@ -741,6 +760,8 @@
         <marker scope="Public" name="serena_darkness_31early" />
         <marker scope="Public" name="serena_darkness_32early" />
         <marker scope="Public" name="serena_darkness_32late" />
+        <marker scope="Public" name="serena_darkness_41early" />
+        <marker scope="Public" name="serena_darkness_41late" />
         <marker scope="Public" name="serena_darkness_cute2">Response to Darkness's "Other trying to get you naked, protection depends." target</marker>
         <marker scope="Public" name="serena_darkness_cute3">Response to Darkness's "feel free to ask anytime" to Serena's "I'll ask if I need help some help!"</marker>
         <marker scope="Public" name="serena_darkness_h1">First response to Darkness's hand target</marker>
@@ -768,6 +789,8 @@
         <marker scope="Public" name="serena_jura_31sol" />
         <marker scope="Public" name="serena_jura_32gard" />
         <marker scope="Public" name="serena_jura_32sol" />
+        <marker scope="Public" name="serena_jura_41gard" />
+        <marker scope="Public" name="serena_jura_41sol" />
         <marker scope="Public" name="serena_jura_m1">First response to Jura's m stage target</marker>
         <marker scope="Public" name="serena_maris_boyfriend41" />
         <marker scope="Public" name="serena_maris_boyfriend42" />
@@ -826,6 +849,7 @@
         <marker scope="Public" name="serena_meia_31" />
         <marker scope="Public" name="serena_meia_41" />
         <marker scope="Public" name="serena_meia_42" />
+        <marker scope="Public" name="serena_meia_51" />
         <marker scope="Public" name="serena_meia_s1">First response to Meia's strip stage target</marker>
         <marker scope="Public" name="serena_meia_s12">Seconrd response to Meia's first target</marker>
         <marker scope="Public" name="serena_meia_s13">Third response (i think) to Meia's "tell me about kalos" target</marker>
@@ -884,6 +908,7 @@
         <marker scope="Public" name="serena_schezo_lumiose11">First response to Scheco's "tell me about a city" target</marker>
         <marker scope="Public" name="serena_schezo_lumiose12" />
         <marker scope="Public" name="serena_schezo_lumiose2f" />
+        <marker scope="Public" name="serena_suctioncup_b" />
         <marker scope="Public" name="serena_yuzuki_first_skin" />
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
         <marker scope="Public" name="sernea_carmine_s12" />
