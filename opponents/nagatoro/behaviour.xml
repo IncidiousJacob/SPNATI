@@ -6250,18 +6250,6 @@
             </case>
         </trigger>
 
-        <trigger id="futanari_crotch_will_be_visible">
-            <case stage="0-7">
-                <state>What the character says when a futanari character is about to remove the last piece of clothing covering their crotch. This is a clothing element on the "lower" location, with the "important" type.</state>
-            </case>
-        </trigger>
-
-        <trigger id="futanari_crotch_is_visible">
-            <case stage="0-7">
-                <state>What the character says after the futanari character's crotch is visible.</state>
-            </case>
-        </trigger>
-
         <trigger id="opponent_lost">
             <case stage="0-3" id="1468" oneShotId="372" priority="999">
                 <condition count="0" status="alive" role="opp" />
@@ -10069,30 +10057,6 @@
                 <state img="#-ohwell.png" oneShotId="6471">See? Losing wasn't so bad, was it, ~target~?</state>
                 <state img="#-peace.png" oneShotId="6480">Not as amazing as &lt;i&gt;me&lt;/i&gt;, but not bad!</state>
                 <state img="#-staycool.png" oneShotId="25227">{quiet}I didn't make an embarrassing orgasm face like that... did I?{!reset}</state>
-            </case>
-        </trigger>
-
-        <trigger id="futanari_must_masturbate">
-            <case stage="0-7">
-                <state>What the character says when a futanari character has lost a hand while nude, and must masturbate.</state>
-            </case>
-        </trigger>
-
-        <trigger id="futanari_start_masturbating">
-            <case stage="0-7">
-                <state>What the character says when a futanari character has started masturbating.</state>
-            </case>
-        </trigger>
-
-        <trigger id="futanari_masturbating">
-            <case stage="0-7">
-                <state>What the character says while a futanari character is masturbating.</state>
-            </case>
-        </trigger>
-
-        <trigger id="futanari_finished_masturbating">
-            <case stage="0-7">
-                <state>What the character says when a futanari character "finishes" masturbating.</state>
             </case>
         </trigger>
 
