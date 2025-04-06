@@ -28,19 +28,23 @@ A: Playtest, playtest, playtest! Find all the obvious bugs yourself before the p
 
 ### Q: There's a character on the roster that isn't getting updated, and I'd like to write for them. Can I adopt them?
 
-A: Maybe! In order to adopt a character, you need the permission of the original author. If you cannot contact the original author, or if two months pass without a response from the original author, then you are free to take over that character. Note that Original Characters cannot be adopted.
+A: Maybe! In order to adopt a character, you need the permission of the original author. If you cannot contact the original author, or if two months pass without a response from the original author, then you are free to take over that character. Note that Original Characters cannot be adopted. [For more information on adoption, please see the policy documentation here](../policy/reworks.html)
 
 ### Q: Is it possible to make a transgender or non-binary character?
 
-A: Unfortunately not. When this game was first created it only supported male/female binary options, and attempting to alter that would break too many existing characters. While many of the developers would like to be able to cater to our trans and non-binary players, it simply isn't feasible now or in the foreseeable future.
+A: Unfortunately not at this time. When this game was first created it only supported male/female binary options, and attempting to alter that would break too many existing characters. While many of the developers would like to be able to cater to our trans and non-binary players, it simply isn't feasible now or in the foreseeable future.
+
+### Q: Is it possible to make a futanari character?
+
+This *is* currently supported by the game. Please note however that not every character has dialogue options for futanari characters at this time. You may encounter issues with other characters' dialogue when developing for futanari characters or alt costumes.
 
 ### Q: Why can I not make an OC for my first character?
 
-[One of our rules](/docs/policy/rules.html) prohibits new creators from making an original character. Starting with an OC effectively doubles a new dev's workload, as they need to both learn proper SPNatI development *and* design an appealing character. It's also more difficult to get the community excited for a character they don't know over a familiar face. We're not opposed to OCs, but seek to prevent new creators from giving themselves uphill battles at the outset.
+[One of our rules](../policy/rules.html) prohibits new creators from making an original character. Starting with an OC effectively doubles a new dev's workload, as they need to both learn proper SPNatI development *and* design an appealing character. It's also more difficult to get the community excited for a character they don't know over a familiar face. We're not opposed to OCs, but seek to prevent new creators from giving themselves uphill battles at the outset.
 
 ### Q: Do I need to join the Discord?
 
-A: At some point you'll want to join the SPNatI Development Discord server. It's the best place to troubleshoot technical issues or get feedback on dialogue or art. You'll also be able to submit updates directly using the **SPNATI_Utilties bot**, so you won't need to bother with any tricky Git operations. Plus, you get to meet fellow smut-smiths. What's not to like?
+A: At some point you'll need to join the SPNatI Development Discord server. Not only will you be able to receive critical feedback on your characters or help with technical troubleshooting, you'll also be able to submit updates directly using the **SPNATI_Utilties bot**. The bot also takes care of bug reports and in-game feedback.
 
 ### Q: What if I have a question that isn't answered here?
 
@@ -55,7 +59,7 @@ A: Creators are only allowed to write lines for their own characters, or charact
 
 ### Q: I want to target X character, but I don't know the first thing about them.
 
-A: Every character has their own channel on the SPNatI Development Discord server, and many have a post with targetable qualities pinned. Give those a read if you're stumped. Otherwise, you could try asking a creator directly on the server or through DMs. Lastly, if all else fails, you can always target based on what you see before you when playing the character.
+A: Every character has their own channel on the SPNatI Development Discord server, and many have a post with targetable qualities pinned. Give those a read if you're stumped. Some characters have info boxes in their character file, viewable in the metadata tab in the Character Editor. Otherwise, you could try asking a creator directly on the server or through DMs. Lastly, if all else fails, you can always target based on what you see before you when playing the character.
 
 ### Q: If I want to write conversations with a character, what's the best way to go about it mechanically?
 
@@ -98,7 +102,7 @@ A: A proper guide to generic and targeted dialogue is beyond the scope of this F
 
 ### Q: Do I need to have any artistic skills to make a character?
 
-A: You don't need to be an artist! All our models are created in Kisekae, a "paper doll" program. [A basic guide is available here](/docs/kkl/kisekae_guide.html). Kisekae has a lot of little tricks that can make your models stand out, so if you'd like direct advice from experienced members, feel free to ask on the Development Discord server!
+A: You don't need to be an artist! All our models are created in Kisekae, a "paper doll" program. [A basic guide is available here](../kkl/kisekae_guide.html). Kisekae has a lot of little tricks that can make your models stand out, so if you'd like direct advice from experienced members, feel free to ask on the Development Discord server!
 
 ### Q: What's the difference between Kisekae and KKL?
 
@@ -133,7 +137,7 @@ A: Most commonly, this is because your character folder is "locked". To unlock i
 
 ### Q: I made changes to my character, or downloaded a new version, but when I launch SPNatI via offline_start.exe they don't show up.
 
-A: Offline_start.exe has issues with cacheing, specifically the cache is not cleared automatically. To fix this, manually clear your browser's cache. Or use the no_buggers workaround to allow Firefox to access local files directly.
+A: Offline_start.exe has issues with cacheing, specifically the cache is not cleared automatically. To fix this, manually clear your browser's cache. Or use [no_buggers workaround to allow Firefox to access local files directly.](../basics/playingoffline.html)
 
 ### Q: Why isn't my WIP character showing up in my offline version of the game, despite clearing my cache?
 
@@ -149,7 +153,7 @@ A: Those files often get changed upstream (meaning, in the main repository). Whe
 
 ### Q: I'm trying to download new updates through GitHub Desktop. It's saying there are "Conflicts" and asking me if I want to Stash Changes? Should I stash changes?
 
-A: Nope. Do not. Nooooo. That is just going to create headaches fo you down the road. Odds are your own character's files haven't been touched, since only someone with your character's role could update them. Most likely, it's just `config.xml` and `listing.xml`, like above. Those aren't worth stashing, so follow the steps above to discard your changes.
+A: Nope. Do not. Nooooo. That is just going to create headaches for you down the road. Odds are your own character's files haven't been touched, since only someone with your character's role could update them. Most likely, it's just `config.xml` and `listing.xml`, like above. Those aren't worth stashing, so follow the steps above to discard your changes.
 
 ### Q: How do I revert a changed file back to how it should be?
 
@@ -163,13 +167,17 @@ A: The validator tab in the CE will list out any issues that arise with your cha
 
 A: Unfortunately, not at this time.
 
+### Q: Is it possible to develop on MacOS? The Character Editor folder I unzipped only contains an .exe file.
+
+A: It's actually quite easy to develop on MacOS! [You can follow the guide here for a step-by-step guide on how to get the Character Editor up and running.](../advanced/macguide.html) Additionally, a Mac-Native version of KKL is available in the repository's "tools" folder.
+
 ### Q: How can I give my character a custom in-game feedback message?
 
 A: Characters can receive anonymous feedback from players in-game, this is enabled by default but can be turned off. To change the feedback message, a user with update permissions must type in the character's channel on the Developer Discord server `b!feedback message [Message Here]`.
 
 ### Q: How do I update my character using the bot?
 
-A: Once your character is on the Testing Roster, a channel on the Development Discord Server will be made for them, along with a role for that character. If you have a character's role, you can use the **SPNATI_Utilites bot** to submit updates as Merge Requests. Post (or DM the bot) `b!update [character name] [update description]` and attach a .zip file containing **only the files that have been changed**. Usually, this will be your `behaviour.xml` file, your `meta.xml` file, and your `editor.xml` file. The bot will tell you if your update request has been successfully submitted, or if there was an error.
+A: Once your character is on the Testing Roster, a channel on the Development Discord Server will be made for them, along with a role for that character. If you have a character's role, you can use the **SPNATI_Utilites bot** to submit updates as Merge Requests. Post (or DM the bot) `b!update [character name] [update description]` and attach **only the files that have been changed**. Usually, this will be your `behaviour.xml` file, your `meta.xml` file, and your `editor.xml` file. If in doubt, attach all three. The bot will tell you if your update request has been successfully submitted, or if there was an error. If you have too many files to fit in one Discord message, you can compress them into a single .zip file and submit that instead (Note: must be a .zip file, other compression types will not work).
 
 ### Q: Can I push my changes directly to the main SPNatI repository?
 

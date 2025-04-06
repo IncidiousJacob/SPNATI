@@ -4,11 +4,13 @@ Attributes that characters can target
 
 ---
 
-This is a comprehensive list of all tags you can give your characters, or which your character can target in dialogue. [Having a certain amount of filtered dialogue is necessary for being added to test](/docs/policy/testing.html).
+"Tags" are simple descriptors you can give your character, or which your character can target in dialogue. This is **not** a comprehensive list of all tags available. The complete list changes too often to be worth documenting here. However, the Character Editor will always have the full list of tags available, so be sure to keep your copy of the SPNatI repository up-to-date. 
 
 If your character is from a new franchise, please add a new franchise tag in the Character Editor for them. Otherwise, do not add new tags yourself. However, if you have an idea for a new tag and know of multiple characters in-game it could apply to, you are welcome to suggest it.
 
 Tags can be set to only the stages for when they are applicable. This includes tags for specific items of clothing, changes in attitude, or changes in appearance. Tags for personality, physical features, or overall outfit should be set for all stages.
+
+[Having a certain amount of filtered dialogue is necessary for being added to test](/docs/policy/testing.html). You may be asked by sponsors to include [additional filtered lines, as part of their sponsorship requirements,](../policy/sponsorship.html) so be sure to familiarize yourself with the tag list.
 
 # Physical Features
 
@@ -21,8 +23,9 @@ Many of these should be self-explanatory.
 |`black_hair`| |
 |`blonde`    | |
 |`brunette`  | |Brown hair, NOT black 
-|`ginger`    | |Generally used for red hair
-|`white_hair`| |For white, gray, or silver hair
+|`ginger`    | |Used for naturally "red" hair (orange hair)
+|`white_hair`| |
+|`gray_hair` | |
 
 ### Exotic Hair Colors
 
@@ -34,6 +37,7 @@ Many of these should be self-explanatory.
 |`green_hair`|`exotic_hair`| |
 |`pink_hair`|`exotic_hair`| |
 |`purple_hair`|`exotic_hair`| |
+|`red_hair`|`exotic_hair`| Used for unnaturally red hair |
 
 ## Hair Length
 
@@ -47,8 +51,8 @@ Many of these should be self-explanatory.
 
 ## Hair Style
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`ahoge`| | The character has a hair antenna or messy locks above their hair, like Nagisa. Does NOT imply the messy hair tag.
 |`drill_hair`| | The character sports anime-style drill hair, for example Nugi-chan.
 |`messy_hair`| | The character's hair is notably untidy.
@@ -57,21 +61,24 @@ Many of these should be self-explanatory.
 
 ## Eye Colors
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`dark_eyes`| | For black, brown, or dark grey eyes.
 |`blue_eyes`| |
+|`brown_eyes`| |
 |`pale_eyes`| | For white to medium-light grey eyes.
 |`green_eyes`| |
-|`violet_eyes`| | Also covers pink or purple eyes.
-|`red_eyes`| |
-|`amber_eyes`| | Also covers orange or yellow eyes.
-|`heterochromia`| | Characters eyes are two different colors. Include both other colors as well. 
+|`violet_eyes`| `exotic_eyes` | Also covers purple eyes.
+|`pink_eyes`| `exotic_eyes` | 
+|`red_eyes`| `exotic_eyes` |
+|`amber_eyes`| `exotic_eyes` | Also covers orange or yellow eyes.
+|`heterochromia`| | Characters eyes are two different colors. Include both eye color tags as well. 
+|`black_sclera`| | The sclera (whites of the eyes) are black
 
 ## Skin Tones
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`dark-skinned`| | For anything north of general brownness.
 |`olive-skinned`| | For characters with skin in the light browns or orange hues. 
 |`fair-skinned`| | For characters in the ruddy white to lighter asiatic skin tones.
@@ -81,8 +88,8 @@ Many of these should be self-explanatory.
 
 ## Physical Builds
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`skinny`  | | Notably skinnier than an average build
 |`athletic`| |  Characters that are traditionally athletic; they’re thin but have defined builds. (EG not skinnyfat).
 |`muscular`|`athletic` |  Characters that are built, with overt musculature. Muscular characters usually have defined abs, large arms, or formidable legs. Characters with the muscular tag should also have the athletic supertype tag.
@@ -101,13 +108,15 @@ Many of these should be self-explanatory.
 |`hairy`|`pubic_hair` |  Characters with high amounts or dense pubic hair. Note that the pubic_hair tag is for *any* amount of hair, while this is for notably hairy characters. 
 |`trimmed`|`pubic_hair`| Characters with manicured pubic hair, either by regular grooming, or styling (such as into a heart or a landing strip). 
 |`shaved`| | Characters with no pubic hair. This is inclusive of naturally hairless species/automata, and any method that removes pubic hair including waxes, etc. 
+|`heart_pubes`| `pubic_hair`, `trimmed` | Pubic hair is styled into a heart shape
+|`landing_strip`| `pubic_hair`, `trimmed` | Pubic hair is styled into a narrow landing strip style
 
 ## Attribute Sizes
 
 **NOTE:** These should correspond to a character’s size category, and is mostly used for multiple incidences of the same size using `count-filter:X`, or for characters ogling another in their underwear. Please note that for the latter situation, a targeted line will usually yield best results.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`small_breasts`| |
 |`medium_breasts`| |
 |`large_breasts`| |
@@ -119,12 +128,23 @@ Many of these should be self-explanatory.
 |`circumcised`| | The character has no foreskin. Only target during/after penis reveals.
 |`uncircumcised`| | The character has a foreskin. Only target during/after penis reveals.
 
+## Futanari
+
+**NOTE:** Only applies to Futanari characters.
+
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
+|`futanari`||Character is a futanari of any kind
+|`futanari_sans_testicles`|`futanari`|Character is a futanari with a penis and vagina, but no testicles
+|`futanari_full_package`|`futanari`|Character is a futanari with a penis, vagina, and testicles
+|`futanari_sans_vagina`|`futanari`|Character is a futanari with a penis and testicles, but no vagina
+
 ## Species
 
 **NOTE:** Only tag with these if the character is visibly non-human, or, failing that, freely mentions that they aren't human.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`alien`| | The character is visibly of extraterrestrial origin, or freely mentions it.
 |`angel`| | Character is an angel
 |`catfolk`| | Catgirls/catboys
@@ -145,18 +165,18 @@ Many of these should be self-explanatory.
 
 **NOTE:** Please only tag these features if they're visible from the start of the game. For example, Blake isn't tagged as "animal_ears" because she keeps them hidden for most of the game.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`animal_ears`| | The character has an animal's ears, such as cat ears.
 |`tail`| | The character has a tail.
 |`winged`| | The character has wings.
 |`horned`| | The character has horns.
 |`pointy_ears`| | The character has pointy ears.
 
-## Body Quirks:
+## Body Quirks
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`freckles`| | The character has freckles visible on their face or body.
 |`pierced_nipples`| | The character has had their nipples pierced. Only target during/after chest reveals.
 |`scarred`| | The character has one or more scars present on their face or body. Only tag if visible from the start of the game.
@@ -167,8 +187,8 @@ Many of these should be self-explanatory.
 
 ## Weapons
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`weapon`| | The character has brought a weapon to the game. Tag in addition to one of the following, if applicable.
 |`blade`|`weapon`| An edged weapon such as a sword or knife
 |`gun`|`weapon`| A firearm or beam weapon, E.g. Revy, Aimee
@@ -176,8 +196,8 @@ Many of these should be self-explanatory.
 
 ## Other Clothing and Accessories:
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`armor`| | The character wears armor.
 |`bodysuit`| | The character wears a full bodysuit or jumpsuit.
 |`cape`| | The character wears a cape or mantle. 
@@ -207,8 +227,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** These tags should be used mostly as a reference to how the character is written in SPNatI. If a character’s canon lacks sufficient information, it’s okay to omit a sexuality tag. Some characters will react to both sexes, but this does not necessarily make them bisexual.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`straight`| | The character is exclusively attracted to the opposite gender.
 |`gay`| | The character is male and exclusively attracted to other males.
 |`lesbian`| | The character is female and exclusively attracted to other females.
@@ -220,8 +240,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** Avoid tagging if your character keeps this a secret.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`adventurer`| | Goes on adventures around their world, likely in a traditional RPG/Fantasy sense
 |`artist`| | Is an artist of a traditional medium, such as painting or sculpting
 |`bounty_hunter`| | 
@@ -260,8 +280,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** Additionally, feel free to not use either of these tags if the character being single is not important, or if you want to leave it ambiguous.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`single`| | The character is not currently in a romantic/sexual relationship.
 |`taken`| | The character is currently in a serious romantic/sexual relationship. However, it can still be an open relationship, E.G. Aimee.
 
@@ -269,8 +289,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** You are allowed to pick more than one if applicable. Try not to pick conflicting ones, however.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`aggressive`| | The character is outright hostile, and may regularly make threats of harm to the other players, e.g. Revy.
 |`cheerful`| | The character is naturally happy and optimistic, and just tries to have fun with the game, e.g. Ruby.
 |`confident`| | The character has little issue with their own nudity, may be proud of their body, and is unlikely to get embarrassed, e.g. Rinkah, Saki (ZLS).
@@ -323,8 +343,8 @@ Many of these should be self-explanatory.
 
 ##Forfeit
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`bondage_forfeit`| | The character is restrained during forfeit, e.g. Croix, Vriska 
 |`chair_forfeit`| | Character sits in a chair when masturbating
 |`tandem`| | Another character helps the character masturbate, e.g. Elizabeth, Miko
@@ -335,8 +355,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** These tags don't fit anywhere else easily.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`april_fools`| | Character is exclusive to April Fool's Day events
 |`creepy`| | The character has a creepy or unnerving appearance or personality, e.g. Spooky, Raven.
 |`drunk`| | The character drinks alcohol over the course of the game, e.g. Sei, Misato.
@@ -359,8 +379,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** For mixed-heritage characters, used the `mixed_heritage` tag as well as the tag for the country they're a citizen of. For example, Marinette would be tagged with `french` and `mixed_heritage`, as she is a French citizen, but has Chinese ancestry.)
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`african`| | 
 |`american`| | The character is from the USA.
 |`australian`| |
@@ -394,8 +414,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** This list is non-exhaustive. New characters added to the game with their own source material are included in subsequent versions of the character editor. 
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`mystery_inc`| | The character is part of Mystery Inc. in Scooby Doo.
 |`phantom_thieves`| | The character is a member of the Phantom Thieves in Persona 5.
 |`ua_academy`| | The character attends the UA Hero school in My Hero Academia.
@@ -418,8 +438,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** The genre of your character's source material.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`fantasy`| | The character is from a fantasy setting.
 |`future`| | The character is from the future.
 |`post-apocalyptic`| | The character is from a conventional post-apocalyptic setting, such as Fallout, a zombie apocalypse, etc.
@@ -430,8 +450,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** Select multiple if applicable. For example, Clannad, Nagisa's source material is known as both an anime and a visual novel.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`anime`| | The character is from a Japanese animation - RWBY and Avatar do not fall under this, as despite their art styles, they are of western origin.
 |`book`| | The character is from written literature.
 |`cartoon`| | The character is from non-Japanese animation.
@@ -453,8 +473,8 @@ Many of these should be self-explanatory.
 
 **NOTE:** This list is non-exhaustive. New characters added to the game with their own source material are included in subsequent versions of the character editor. 
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`original_character`| | The character is your own original creation. If they are an original character but based on an existing franchise, tag them for that too.
 |`.hack`| |
 |`ace_attorney`| |
@@ -535,8 +555,8 @@ Many of these should be self-explanatory.
 
 Tags for the human player specifically. Able to be targeted, but do not put these on your character.
 
-|Tag Name|Supertag|Description
-|--------|--------|-----------
+|Tag Name|Supertag|Description|
+|--------|--------|-----------|
 |`human`| |Character is the human player
 |`human_male`| |Character is the human player as a male
 |`human_female`| |Character is the human player as a female
