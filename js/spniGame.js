@@ -1079,7 +1079,7 @@ function exitRollback() {
      * masturbating will have been in the stage after the
      * start_masturbating case when the return rollback point was
      * created. */
-    transcriptHistory.at(-1).load();
+    transcriptHistory.findLast(e => e instanceof RollbackPoint).load();
     updateAllGameVisuals();
     returnRollbackPoint.load();
     returnRollbackPoint = null;
