@@ -21,6 +21,9 @@
         <case name="Carbuncle" id="317" priority="Noteworthy" min="8" max="8">
             <description>Carbuncle shows up after Arle finishes herself. He is the yellow creature.</description>
         </case>
+        <case name="Strip flashing" id="557" priority="Noteworthy" min="1" max="1">
+            <description>Arle gives an upskirt to spice the early strips</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="1" opponent="roll_caskett" opponentId="37" />
@@ -165,6 +168,7 @@
         <response id="542" opponent="schezo" opponentId="297" />
         <response id="544" opponent="schezo" opponentId="312" />
         <response id="546" opponent="schezo" opponentId="275" />
+        <response id="561" opponent="felix" opponentId="220" />
     </responses>
     <labels>
         <label id="2" label="" color="1" folder="Targets" sort="0" />
@@ -710,11 +714,16 @@
         <label id="554" label="" folder="Targets" sort="0" />
         <label id="555" label="" folder="Targets" sort="0" />
         <label id="556" label="" folder="Targets" sort="0" />
+        <label id="558" label="" folder="Targets" sort="0" />
+        <label id="447" label="" folder="Targets" sort="0" />
+        <label id="559" label="" folder="Filtered" sort="0" />
+        <label id="560" label="" folder="Filtered" sort="0" />
+        <label id="561" label="" folder="Targets" sort="0" />
     </labels>
     <prefixes>
         <prefix>aa</prefix>
     </prefixes>
-    <nextId>556</nextId>
+    <nextId>561</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="~strongstarter~" />
@@ -891,6 +900,7 @@
         <marker scope="Public" name="nonon_puyo2" />
         <marker scope="Public" name="nonon_puyoteleport" />
         <marker scope="Public" name="one_on_one" />
+        <marker scope="Public" name="one-on-one" />
         <marker scope="Public" name="perona_cuteprompt" />
         <marker scope="Public" name="perona_hollow" />
         <marker scope="Public" name="petquestion" />
@@ -988,6 +998,7 @@
         <marker scope="Public" name="solar_living" />
         <marker scope="Public" name="spidergwen_enemies" />
         <marker scope="Public" name="steve_gfcash" />
+        <marker scope="Public" name="stripflash" />
         <marker scope="Public" name="suz_doublestrip" />
         <marker scope="Public" name="suzuya_conspiring" />
         <marker scope="Public" name="sweetheard_AandA2" />
