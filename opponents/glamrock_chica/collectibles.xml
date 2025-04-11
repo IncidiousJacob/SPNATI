@@ -7,6 +7,15 @@
         <unlock>Win a match against Chica.</unlock>
         <hide-details>true</hide-details>
     </collectible>
+    <collectible id="chica_sweater" img="opponents/glamrock_chica/x_sweater.png" thumbnail="opponents/glamrock_chica/x_sweater.png">
+        <title>Chica Sweater</title>
+        <subtitle>Fresh out of Glamrock Gifts.</subtitle>
+        <text>Chica thought you looked a little cold after losing, so she gifted you this sweater. How she paid for it is unclear, given that management doesn't pay her...</text>
+        <unlock>Lose a match with Chica (she doesn't have to win).</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/glamrock_chica/x_sweater.png" name="sweater" generic="shirt" position="upper" type="major" />
+    </collectible>
     <collectible id="faz-wrench" img="opponents/glamrock_chica/x_faz-wrench.png" thumbnail="opponents/glamrock_chica/x_faz-wrench.png">
         <title>Faz-Wrench</title>
         <subtitle>Time to screw with Chica, mechanically speaking.</subtitle>
