@@ -255,6 +255,10 @@
         <response id="574" opponent="darkness" opponentId="1629" />
         <response id="575" opponent="darkness" opponentId="1631" />
         <response id="576" opponent="darkness" opponentId="1630" />
+        <response id="578" opponent="gloria" opponentId="836" />
+        <response id="579" opponent="gloria" opponentId="831" />
+        <response id="580" opponent="gloria" opponentId="834" />
+        <response id="581" opponent="gloria" opponentId="833" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -614,9 +618,16 @@
         <label id="575" label="" color="15" folder="Stage 4" sort="0" />
         <label id="576" label="" color="15" folder="Stage 4" sort="0" />
         <label id="577" label="" color="15" folder="" sort="0" />
+        <label id="578" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="579" label="" color="2" folder="" sort="0" />
+        <label id="580" label="" color="2" folder="Stage 0" sort="0" />
+        <label id="581" label="" color="2" folder="Stage 0" sort="0" />
+        <label id="584" label="" color="11" folder="" sort="0" />
+        <label id="583" label="" color="11" folder="" sort="0" />
     </labels>
-    <nextId>577</nextId>
+    <nextId>584</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
         <marker scope="Public" name="fennekin_jura_01" />
@@ -631,6 +642,7 @@
         <marker scope="Private" name="gameover_defeat">has lost, how many times has lost</marker>
         <marker scope="Private" name="gameover_tie">Ties in a game</marker>
         <marker scope="Private" name="gameover_victory">has won, how many times has won</marker>
+        <marker scope="Public" name="gloria_see_her_naked1" />
         <marker scope="Public" name="killing">appears to be part of a converstaion with Megumin</marker>
         <marker scope="Public" name="naga_defend">Serena comes to Nagatoro's rescue when Ladybug starts pressing her</marker>
         <marker scope="Public" name="nagatoro_swimsuit_query">responding to Nagatoro's comment</marker>
@@ -775,6 +787,9 @@
         <marker scope="Public" name="serena_darkness_scream3">Response to Darkness's "ok no worries," reponse to Serena's "thanks for the offer, but you dont' have to"</marker>
         <marker scope="Public" name="serena_darkness_sword2">Response to Darkness's "Ok with sword, best with taking punishment" target</marker>
         <marker scope="Public" name="serena_darkness_sword3">Response to Darkness's "I'm sturdy, I'd like to see someone try to hurt me."</marker>
+        <marker scope="Public" name="serena_gloria_01" />
+        <marker scope="Public" name="serena_gloria_12" />
+        <marker scope="Public" name="serena_gloria_firstloss1" />
         <marker scope="Public" name="serena_heisenberg_01" />
         <marker scope="Public" name="serena_hina_nice71" />
         <marker scope="Public" name="serena_hina_nice72" />
@@ -913,6 +928,7 @@
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
         <marker scope="Public" name="sernea_carmine_s12" />
         <marker scope="Public" name="sernea_nade_finale1" />
+        <marker scope="Public" name="showcase_explination" />
         <marker scope="Public" name="toenail_compare">Serena asks what color toenail polish the girls like</marker>
         <marker scope="Public" name="vagina_compare">Serena asks the player with a room full of crotch exposed girls, who has the best vagina</marker>
         <marker scope="Public" name="why_misty">Start of a potential converstaion with Misty</marker>
