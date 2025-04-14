@@ -13,7 +13,7 @@
             <description>Cadence refers to her Scarf-Only look as "Retro Cadence" before pondering if 2009 counts as "retro" yet. ((NOTE: Cadence has only one line where this comes up. Use the marker if targeting. For reference: in 2025, 2009 would be considered 16 years ago.))</description>
         </case>
         <case name="Cadence Story" id="230" priority="FYI" min="1" max="1">
-            <description>To compensate for taking off an accessory, Cadence opts to tell the table about a major event from her life. ((NOTE: There are multiple stories, each with different markers. Read the note attached to this case.))</description>
+            <description>To compensate for taking off an accessory, Cadence opts to tell the table about a major event from her life. ((NOTE: There are multiple stories, each with different markers. Read the note attached to this case by clicking the blue "Go To Case" arrow.))</description>
         </case>
         <case name="It's A Wig" id="46" priority="FYI" min="5" max="5">
             <description>When explaining that she's not willing to remove her headphones for the game, she casually drops the fact that she's wearing a wig.</description>
@@ -23,6 +23,9 @@
         </case>
         <case name="Obligatory Butt Pose Prompt" id="377" priority="FYI" min="4" max="5">
             <description>hey what's up gamers, Max0r here and today we're gonna be questioning why Cadence is packing an entire bakery. This isn't even a SPNatI-exclusive thing, she's caked up a little extra in Club Penguin too.</description>
+        </case>
+        <case name="Shy First Strip" id="411" priority="FYI" min="0" max="7">
+            <description>When a character with the "shy" tag must strip for the first time, Cadence will take notice of their attitude and spend the rest of the game consoling the shy character. She has plenty of generics to cover the cases, but if you'd like more "personalized" targets, here's where it all starts.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -97,6 +100,9 @@
         <response id="581" opponent="magma_grunt" opponentId="171" />
         <response id="593" opponent="magma_grunt" opponentId="92" />
         <response id="617" opponent="mari_setogaya" opponentId="3499" />
+        <response id="657" opponent="yuno_uno" opponentId="167" />
+        <response id="661" opponent="meia" opponentId="1119" />
+        <response id="675" opponent="yuno_uno" opponentId="775" />
     </responses>
     <notes>
         <note id="1">At the start of the very first round (and ONLY the very first round, regardless of the result), Cadence wrongfully assumes she's playing the Club Penguin minigame "Card Jitsu" and exchanges one of her higher-value cards. This is the line as she's "playing" the card.</note>
@@ -218,10 +224,11 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="596">Up until Club Penguin started to gain a significant fanbase outside of English-speaking parts of the world, St. Patrick's Day was a heavily-celebrated holiday on the island. Playing Cadence on St. Patrick's Day will trigger a response.</note>
         <note id="551">Playing a game where the human player is named after Cadence's SPNatI writer will cause Cadence to say the Music Note emoticon from her home series.</note>
         <note id="636">I'm making the "outdated meme line" more common to see for the April Fool's event.</note>
+        <note id="321">If the player starts the game named "Daddy" or "Master", Cadence will call the player cringe.</note>
     </notes>
     <labels>
         <label id="3" label="(Self: Full House, Threes &amp; Twos)" folder="" sort="0" />
-        <label id="4" label="(cadence's debut date)" folder="" sort="0" />
+        <label id="4" label="Cadence's Proper Debut Date" folder="" sort="0" />
         <label id="5" label="Herbert" folder="Club Penguin Player Names" sort="2" />
         <label id="6" label="Aunt Arctic" folder="Club Penguin Player Names" sort="0" />
         <label id="7" label="Herbert P Bear" folder="Club Penguin Player Names" sort="3" />
@@ -264,7 +271,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="103" label="" folder="Selfie" sort="0" />
         <label id="104" label="" folder="Selfie" sort="0" />
         <label id="82" label="Someone Said Poker" folder="" sort="0" />
-        <label id="109" label="(club penguin anniversary)" folder="" sort="0" />
+        <label id="109" label="Club Penguin Anniversary" folder="" sort="0" />
         <label id="122" label="Cadence vs Cadence" folder="" sort="0" />
         <label id="123" label="Cadence vs Cadence" folder="" sort="0" />
         <label id="125" label="Loss With Pair Reaction" folder="" sort="0" />
@@ -293,7 +300,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="138" label="7.grand.dad" folder="SPNatI Dev/Contributor Player Names" sort="0" />
         <label id="133" label="Cat: Library" folder="Backgrounds" sort="2" />
         <label id="134" label="Cat: School" folder="Backgrounds" sort="3" />
-        <label id="115" label="Name: Club" folder="Backgrounds" sort="0" />
+        <label id="115" label="Name: Club (Cadence Boss Mode)" folder="Backgrounds" sort="0" />
         <label id="90" label="Prop: Exhibition" folder="Backgrounds" sort="10" />
         <label id="129" label="Cat: Home" folder="Backgrounds" sort="4" />
         <label id="114" label="Temp: Hot" folder="Backgrounds" sort="12" />
@@ -319,7 +326,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="166" label="(card jitsu)" folder="" sort="0" />
         <label id="169" label="" folder="Responses&gt;Futaba" sort="0" />
         <label id="176" label="Spaceman" folder="SPNatI Dev/Contributor Player Names" sort="0" />
-        <label id="180" label="(&quot;local dj&quot; debut date)" folder="" sort="0" />
+        <label id="180" label="&quot;Local DJ&quot; Debut Date" folder="" sort="0" />
         <label id="182" label="Dance Machine" folder="Responses&gt;Rainbow Dash" sort="2" />
         <label id="183" label="Penguin High 3" folder="Responses&gt;Rainbow Dash" sort="3" />
         <label id="181" label="Is Breaking a Sport?" folder="Responses&gt;Rainbow Dash" sort="0" />
@@ -653,7 +660,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="525" label="Cadence Indecent, IHLMP" folder="!Generic&gt;Extra" sort="0" />
         <label id="526" label="I Have Lost My Patience" folder="!Generic&gt;Extra" sort="0" />
         <label id="527" label="Previously Lost Patience (0-5)" folder="!Generic&gt;Minor" sort="0" />
-        <label id="528" label="(St. Patrick's Day)" folder="" sort="0" />
+        <label id="528" label="St. Patrick's Day" folder="" sort="0" />
         <label id="515" label="" folder="Responses&gt;Velvet" sort="0" />
         <label id="530" label="" folder="Responses&gt;Serena" sort="0" />
         <label id="531" label="" folder="Responses&gt;Serena" sort="0" />
@@ -720,7 +727,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="592" label="Water Speech (Bring Balance)" folder="Responses&gt;Aqua Grunt" sort="0" />
         <label id="594" label="" folder="Responses&gt;Chiaki" sort="0" />
         <label id="595" label="Magma Speech (Who Needs Water)" folder="Responses&gt;Magma Grunt" sort="0" />
-        <label id="596" label="(St. Patrick's Day)" folder="" sort="0" />
+        <label id="596" label="St. Patrick's Day" folder="" sort="0" />
         <label id="597" label="Magma Speech (Take Back Land)" folder="Responses&gt;Magma Grunt" sort="0" />
         <label id="598" label="Magma Speech (Who Needs Water)" folder="Responses&gt;Magma Grunt" sort="0" />
         <label id="599" label="" folder="!Generic&gt;Held" sort="0" />
@@ -778,16 +785,62 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="650" label="" folder="Responses&gt;MariSetogaya" sort="0" />
         <label id="654" label="" folder="Responses&gt;Jura" sort="0" />
         <label id="655" label="" folder="Responses&gt;Meia" sort="0" />
-        <label id="656" label="" folder="Responses&gt;Meia" sort="0" />
+        <label id="656" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="658" label="" folder="Responses&gt;Yuno" sort="0" />
+        <label id="659" label="" folder="Responses&gt;Yuno" sort="0" />
+        <label id="660" label="" folder="Responses&gt;Meia" sort="0" />
+        <label id="430" label="Captain America" folder="" sort="0" />
+        <label id="429" label="Elsa" folder="" sort="0" />
+        <label id="662" label="Magma vs Aqua" folder="" sort="0" />
+        <label id="663" label="Magma vs Aqua (Jeff the Ref edition)" folder="" sort="0" />
+        <label id="287" label="Charlie" folder="" sort="0" />
+        <label id="99" label="Villain &amp;&amp; Tall" folder="" sort="0" />
+        <label id="357" label="Spy" folder="" sort="0" />
+        <label id="98" label="Singer" folder="" sort="0" />
+        <label id="45" label="Ninja" folder="" sort="0" />
+        <label id="124" label="Musician" folder="" sort="0" />
+        <label id="376" label="Ghost" folder="" sort="0" />
+        <label id="97" label="Dancer" folder="" sort="0" />
+        <label id="64" label="Pirate (Classic)" folder="" sort="0" />
+        <label id="651" label="Artist" folder="" sort="0" />
+        <label id="281" label="Musician &amp;&amp; Singer" folder="" sort="0" />
+        <label id="664" label="Full Table" folder="" sort="0" />
+        <label id="179" label="Birthday BG On Special Date" folder="" sort="0" />
+        <label id="93" label="Human Naked" folder="" sort="0" />
+        <label id="211" label="Cadence Boss Mode" folder="" sort="0" />
+        <label id="213" label="Buddy Lines" folder="" sort="0" />
+        <label id="665" label="Generic Lines" folder="" sort="0" />
+        <label id="212" label="Cadence Boss Mode" folder="" sort="0" />
+        <label id="321" label="Player Is Cringe" folder="" sort="0" />
+        <label id="95" label="Naked Human" folder="" sort="0" />
+        <label id="666" label="No Human Opponents" folder="" sort="0" />
+        <label id="170" label="Ninja" folder="" sort="0" />
+        <label id="171" label="All Singers/Musicians" folder="" sort="0" />
+        <label id="135" label="All Females" folder="" sort="0" />
+        <label id="153" label="3-Player Game" folder="" sort="0" />
+        <label id="193" label="Cadence Only Female" folder="" sort="0" />
+        <label id="667" label="" folder="Responses&gt;Yuno" sort="0" />
+        <label id="653" label="" folder="Responses&gt;Meia" sort="0" />
+        <label id="668" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="669" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="670" label="" folder="Responses&gt;Miko" sort="0" />
+        <label id="671" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="672" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="673" label="" folder="Responses&gt;Yuzuki" sort="0" />
+        <label id="674" label="" folder="Responses&gt;Yuzuki" sort="0" />
     </labels>
-    <nextId>656</nextId>
+    <nextId>675</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
         <marker scope="Public" name="Banter_CadenceToJura0A" />
+        <marker scope="Public" name="Banter_CadenceToJura0B" />
         <marker scope="Public" name="Banter_CadenceToMeia0A" />
+        <marker scope="Public" name="Banter_CadenceToMeia0B" />
         <marker scope="Public" name="Banter_CadenceToMiko0A" />
+        <marker scope="Public" name="Banter_CadenceToMiko0B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0C" />
@@ -819,6 +872,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToSetogaya5C_Alt" />
         <marker scope="Public" name="Banter_CadenceToSetogaya6A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya6B" />
+        <marker scope="Public" name="Banter_CadenceToYuno0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0B" />
         <marker scope="Public" name="Banter_ChiakiToCadence0C" />
@@ -830,6 +884,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_HinaToCadence0B" />
         <marker scope="Public" name="Banter_HinaToCadence0C" />
         <marker scope="Public" name="Banter_HinaToCadence1A" />
+        <marker scope="Public" name="Banter_HinaToCadence1B" />
         <marker scope="Public" name="Banter_JuraToCadence0A" />
         <marker scope="Public" name="Banter_JuraToCadence0B" />
         <marker scope="Public" name="Banter_JuraToCadence0C" />
@@ -838,10 +893,13 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_MeiaToCadence0A" />
         <marker scope="Public" name="Banter_MeiaToCadence0B" />
         <marker scope="Public" name="Banter_MeiaToCadence1A" />
+        <marker scope="Public" name="Banter_MeiaToCadence1B" />
         <marker scope="Public" name="Banter_MikoToCadence0A" />
         <marker scope="Public" name="Banter_MikoToCadence0B" />
         <marker scope="Public" name="Banter_MikoToCadence0C" />
         <marker scope="Public" name="Banter_MikoToCadence1A" />
+        <marker scope="Public" name="Banter_MikoToCadence1B" />
+        <marker scope="Public" name="Banter_MikoToCadence1C" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0A" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0B" />
         <marker scope="Public" name="Banter_NadeshikoToCadence0C" />
@@ -872,9 +930,14 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_WaterHinaToCadence0B" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0C" />
         <marker scope="Public" name="Banter_WaterHinaToCadence3A" />
+        <marker scope="Public" name="Banter_WaterHinaToCadence3B" />
+        <marker scope="Public" name="Banter_YunoToCadence0A" />
         <marker scope="Public" name="Banter_YuzukiToCadence0A" />
+        <marker scope="Public" name="Banter_YuzukiToCadence0B" />
+        <marker scope="Public" name="Banter_YuzukiToCadence0C" />
         <marker scope="Public" name="Banter_YuzukiToCadence1A" />
         <marker scope="Public" name="Banter_YuzukiToCadence1B" />
+        <marker scope="Public" name="Banter_YuzukiToCadence1C" />
         <marker scope="Public" name="BeanCounter">This "Lore" line references the "Bean Counter" Club Penguin minigame.</marker>
         <marker scope="Public" name="Blackout" />
         <marker scope="Public" name="Cadenky">These lines are for when Cadence mentions Franky, someone she's very often shipped with. If your character cares about shipping fictional characters, you might want them to react the first time she brings him up.</marker>
@@ -1011,9 +1074,11 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_SpookyFears">When Spooky asks the players about their fears, Cadence will answer with her fear of bugs.</marker>
         <marker scope="Public" name="Responses_SpookyWerewolvesHairy">When Spooky compares dogs' shedding problem to dating werewolves, Cadence will mention that her pet Lolz doesn't have a shedding problem.</marker>
         <marker scope="Public" name="Responses_SupernovaAnimals">When Supernova asks if animals can talk in this universe, Cadence will remark that she is, in fact, a talking penguin.</marker>
+        <marker scope="Public" name="Responses_TheBigSucc" />
         <marker scope="Public" name="Responses_TrixieCleric" />
         <marker scope="Public" name="Responses_VelvetBirds" />
         <marker scope="Public" name="Responses_WikiBirthday">When Wikipe-tan mentions her birthday, Cadence will express surprise that Wikipedia's birthday and Cadence's first meetable appearance share the same date.</marker>
+        <marker scope="Public" name="Responses_YunoSongs" />
         <marker scope="Public" name="SannyTessFrom2" />
         <marker scope="Public" name="SawBraFirst" />
         <marker scope="Public" name="ScarfSiblingsEnd" />
@@ -1021,9 +1086,11 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="SeesPirate">If a Traditional Pirate is selected after Cadence, she'll excitedly ask the new arrival if they know a 'traditional pirate' character from her home series.</marker>
         <marker scope="Public" name="SeesSpy" />
         <marker scope="Public" name="Selfie">Cadence has a tendency to take selfies to pass the time when other opponents are taking off accessories.</marker>
+        <marker scope="Public" name="SelfiePrompts_Yuno" />
         <marker scope="Public" name="Selfies_MariSetogaya1" />
         <marker scope="Public" name="Selfies_MariSetogaya2" />
         <marker scope="Public" name="ShantaeFrom0">When Shantae starts to dance while stripping, Cadence will excitedly cheer on a fellow dancer.</marker>
+        <marker scope="Public" name="ShyFirstStrip" />
         <marker scope="Public" name="SledFail">This "Lore" line will reference the "Sled Race" minigame from Club Penguin, and a common fate to those overconfident in their lead.</marker>
         <marker scope="Public" name="SlyFrom0">When Sly Cooper strips his pants first due to never wearing them in his game, Cadence will remark that she had to put on pants for this game as well.</marker>
         <marker scope="Public" name="SlyTo1">Continuation from Sly Cooper stripping his pants first.</marker>
