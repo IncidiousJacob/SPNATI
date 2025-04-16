@@ -22,7 +22,7 @@
         -->
         <dates>
             <date>
-                <!-- 
+                <!--
                     The <from> element specifies the start date of the event.
                     The month and day must both be specified.
 
@@ -39,7 +39,7 @@
                     The end date itself is included as part of the date range in this case.
 
                     The second option uses the `days` attribute to specify the length of time the event should last,
-                    starting from the date specified in the <from> element. 
+                    starting from the date specified in the <from> element.
 
                     This particular event is scheduled every year, starting July 1 and lasting for 14 days.
 
@@ -182,7 +182,7 @@
             to the default prefill pool).
 
             Note that, if there aren't enough event characters to completely fill the selection screen slots
-            (i.e. if there are less than four event characters configured to be force-prefilled), then 
+            (i.e. if there are less than four event characters configured to be force-prefilled), then
             the remaining slots will be prefilled with characters from the default prefilling pool.
 
             The "testing-guest" attribute can be set to "true" or "false", to either show or hide matching
@@ -329,11 +329,11 @@
             <candy uid="rosa" base="reskins/rosa_summer" src="0-bun_touching.png" />
             <candy uid="rosa" base="reskins/rosa_summer" src="0-portrait.png" />
             <candy uid="rosa" base="reskins/rosa_summer" src="2-stripped.png" />
-            <candy uid="rosa" base="reskins/rosa_summer" src="2-thinking.png" />			
+            <candy uid="rosa" base="reskins/rosa_summer" src="2-thinking.png" />
             <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="0-conversational.png" />
             <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="0-relaxed.png" />
             <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="2-smug.png" />
-            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="3-flirty.png" />	
+            <candy uid="hilda" base="reskins/hilda_sundrenched_nobility" src="3-flirty.png" />
             <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-kind2.png" />
             <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-flirty.png" />
             <candy uid="fluttershy" base="reskins/fluttershy_summer-shy" src="0-amused.png" />
@@ -373,7 +373,7 @@
 			<candy uid="maria" base="reskins/maria_sadistic_heatwave" src="0-smug.png"/>
 			<candy uid="maria" base="reskins/maria_sadistic_heatwave" src="0-seductive.png"/>
 			<candy uid="maria" base="reskins/maria_sadistic_heatwave" src="1-sadistic.png"/>
-			<candy uid="maria" base="reskins/maria_sadistic_heatwave" src="1-chuckling.png"/>	
+			<candy uid="maria" base="reskins/maria_sadistic_heatwave" src="1-chuckling.png"/>
 			<candy uid="mitama" base="reskins/mitama_aestival_haijin" src="0-yawn.png"/>
 			<candy uid="mitama" base="reskins/mitama_aestival_haijin" src="1-writing.png"/>
 			<candy uid="mitama" base="reskins/mitama_aestival_haijin" src="3-mischievous.png"/>
@@ -405,9 +405,9 @@
             <candy uid="zeke_pandoria" base="reskins/zeke_pandoria_summer" src="0-select.png"/>			<!-- Has Recent Updates -->
             <candy uid="zeke_pandoria" base="reskins/zeke_pandoria_summer" src="0-zeke_thinking.png"/>
             <candy uid="zeke_pandoria" base="reskins/zeke_pandoria_summer" src="pandoria/0-pandoria_dab.png"/>
-            <candy uid="zeke_pandoria" base="reskins/zeke_pandoria_summer" src="pandoria/0-pandoria_sassy.png"/>			
+            <candy uid="zeke_pandoria" base="reskins/zeke_pandoria_summer" src="pandoria/0-pandoria_sassy.png"/>
 			
-            <!--			
+            <!--
 			<candy uid="sweetheart" base="reskins/sweetheart_sweet_summer_pastry" src="0-cutesy.png"/>
   			<candy uid="sweetheart" base="reskins/sweetheart_sweet_summer_pastry" src="1-graceful.png"/>
   			<candy uid="sweetheart" base="reskins/sweetheart_sweet_summer_pastry" src="1-despair.png"/>
@@ -433,7 +433,7 @@
             the <include-status> element.
 
             <include-status> is used to mark additional character statuses for
-            inclusion in the selection screen. 
+            inclusion in the selection screen.
 
             This is mainly used by the April Fools event, where
             `event` status characters are included.
@@ -455,7 +455,7 @@
 		
         <!-- Highlight the summer costumes but don't separate them into partitions or sort them, and disable the special prefill-->
 		<costumes partition="0" sort="0" prefill="default">summer</costumes>
-    </event>	
+    </event>
     <event id="valentines">
         <name>Valentine's Day</name>
 
@@ -543,7 +543,7 @@
             <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-cheerful.png" />
             <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-flustered.png" />
             <candy uid="kumatora" base="reskins/kumatora_waitress" src="0-laughing.png" />
-            <!--            
+            <!--
             <candy uid="uravity" base="reskins/cheerleaderochako" src="0-calm.png" />
             <candy uid="uravity" base="reskins/cheerleaderochako" src="1-heroic.png" />
             <candy uid="uravity" base="reskins/cheerleaderochako" src="2-happy.png" />
@@ -690,9 +690,7 @@
         <background>garden</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
-        <character highlight="easter" partition="1" sort="2">mari</character>
-        <character highlight="easter" partition="1" sort="2">senko</character>
-        <character highlight="easter" partition="1" sort="2">gloria</character>
+        <character highlight="easter" partition="1" sort="2">kyouko_toshinou</character>
 
         <costumes highlight="easter" partition="1" sort="1">easter</costumes>
 
@@ -705,7 +703,7 @@
             <candy uid="catria" base="reskins/bunny_catria" src="0-ironic.png" />
             <candy uid="catria" base="reskins/bunny_catria" src="0-heart.png" />
             <candy uid="catria" base="reskins/bunny_catria" src="0-behind.png" />
-            <!--         
+            <!--
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Cutesy.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Happy.png" />
             <candy uid="cagliostro" base="reskins/cagliostro_bunny_alchemist" src="0-Horny.png" />
@@ -727,7 +725,7 @@
             <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-grin.png" />
             <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-nice.png" />
             <candy uid="mari_setogaya" base="reskins/mari_setogaya_succu-bunny" src="0-strip.png" />
-          
+            
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-cute.png" />
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-oopsy.png" />
             <candy uid="may" base="reskins/may_hopping_bunny" src="0-ready.png" />
@@ -939,7 +937,7 @@
             <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-curious.png"/>
             <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-aroused.png"/>
             <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-shy.png"/>
-            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-interested.png"/>			
+            <candy uid="sucrose" base="reskins/sucrose_sweet_dreams" src="0-interested.png"/>
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="0-wave.png"/>
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="1-smiling.png"/>
             <candy uid="roll_caskett" base="reskins/roll_caskett_cozy_mechanic" src="1-wave.png"/>
