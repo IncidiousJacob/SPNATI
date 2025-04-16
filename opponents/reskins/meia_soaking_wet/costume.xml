@@ -2015,6 +2015,54 @@
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
         </pose>
+        <pose id="2-stripbutt">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-stripbutt+">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2+.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-stripbuttsilent">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2silent.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
     </poses>
 
 </costume>
