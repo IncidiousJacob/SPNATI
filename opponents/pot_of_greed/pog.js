@@ -50,24 +50,35 @@ if (!pog) var pog = (function (root) {
         level: 'info'
     });
 
-    var SIX_STRAIGHT = 7.2;
-    var STRAIGHT_PLUS_PAIR = 7.35;
-    var THREE_PAIR = 7.5;
-    var SIX_FLUSH = 7.65;
-    var FULL_HOUSE_PLUS_PAIR = 7.8;
-    var SEVEN_STRAIGHT = 8.2;
-    var TWO_THREE_OF_A_KINDS = 8.5;
-    var FULLER_HOUSE = 8.8;
-    var SEVEN_FLUSH = 9.5;
-    var STRAIGHT_FLUSH_PLUS_PAIR = 11;
-    var SIX_STRAIGHT_FLUSH = 12;
-    var FULLEST_HOUSE = 13;
-    var STRAIGHT_AND_PAIR_FLUSH = 14;
-    var ROYAL_FLUSH_PLUS_PAIR = 15;
-    var SIX_ROYAL_FLUSH = 16;
+//  var NONE                          = 0;
+//  var HIGH_CARD                     = 1;
+//  var PAIR                          = 2;
+//  var TWO_PAIR                      = 3;
+//  var THREE_OF_A_KIND               = 4;
+//  var STRAIGHT                      = 5;
+//  var FLUSH                         = 6;
+//  var FULL_HOUSE                    = 7;
+    var SIX_STRAIGHT                  = 7.2;
+    var STRAIGHT_PLUS_PAIR            = 7.35;
+    var THREE_PAIR                    = 7.5;
+    var SIX_FLUSH                     = 7.65;
+    var FULL_HOUSE_PLUS_PAIR          = 7.8;
+//  var FOUR_OF_A_KIND                = 8;
+    var SEVEN_STRAIGHT                = 8.2;
+    var TWO_THREE_OF_A_KINDS          = 8.5;
+    var FULLER_HOUSE                  = 8.8;
+//  var STRAIGHT_FLUSH                = 9;
+    var SEVEN_FLUSH                   = 9.5;
+//  var ROYAL_FLUSH                   = 10;
+    var STRAIGHT_FLUSH_PLUS_PAIR      = 11;
+    var SIX_STRAIGHT_FLUSH            = 12;
+    var FULLEST_HOUSE                 = 13;
+    var STRAIGHT_AND_PAIR_FLUSH       = 14;
+    var ROYAL_FLUSH_PLUS_PAIR         = 15;
+    var SIX_ROYAL_FLUSH               = 16;
     var ROYAL_STRAIGHT_AND_PAIR_FLUSH = 17;
-    var SEVEN_STRAIGHT_FLUSH = 18;
-    var SEVEN_ROYAL_FLUSH = 19;
+    var SEVEN_STRAIGHT_FLUSH          = 18;
+    var SEVEN_ROYAL_FLUSH             = 19;
 
     function loadScript(scriptName) {
         console.log("[Pot of Greed] Loading module: " + scriptName);
