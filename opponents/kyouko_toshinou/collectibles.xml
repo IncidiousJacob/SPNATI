@@ -7,16 +7,42 @@
 
 ...Or so you tell yourself.</text>
         <unlock>Play a game with Kyouko where she loses.</unlock>
+        <hide-details>true</hide-details>
         <wearable>true</wearable>
         <clothing img="opponents/kyouko_toshinou/collectibles/ribbon.png" name="ribbon" generic="ribbon" position="head" type="extra" />
     </collectible>
     <collectible id="kyouko_toshinou_kigurumi" status="offline" img="opponents/kyouko_toshinou/collectibles/kappa-mannequin.png" thumbnail="opponents/kyouko_toshinou/collectibles/kappa.png">
         <title>Kappa Onesie</title>
         <subtitle>Now you match!</subtitle>
-        <text>Kyouko handed this to you after you had to go without any pajamas of your own. It looks bizarre, but it's comfortable and sort of cute somehow.</text>
+        <text>Kyouko handed this to you after you had to go without any pajamas of your own. It looks bizarre, but it's comfortable and sort of cute somehow.
+
+You might be able to convince her to bring her pajamas again, too!</text>
         <unlock>Bring your "sleepwear" to a pajama party with Kyouko. It's only a pajama party if you play at someone's home and everyone's in sleepwear. Don't overdress!</unlock>
         <hide-details>true</hide-details>
+        <costume>true</costume>
+        <costume-folder>opponents/reskins/kyouko_toshinou_sexy_tomato/</costume-folder>
         <wearable>true</wearable>
         <clothing img="opponents/kyouko_toshinou/collectibles/kappa-wearable.png" name="onesie" generic="" position="both" type="major" />
+    </collectible>
+    <collectible id="kyouko_toshinou_movietickets" status="unlisted">
+        <title>Mirakurun Tickets</title>
+        <subtitle>The witch girl of love and justice has arrived!</subtitle>
+        <text>Tickets to the latest movie in Kyouko's favorite anime series.</text>
+        <unlock>Play a game with Kyouko and Nadeshiko right next to each other.</unlock>
+        <hide-details>true</hide-details>
+    </collectible>
+    <collectible id="kyouko_toshinou_rootbeer" status="unlisted">
+        <title>Masochist Cider</title>
+        <subtitle>For the ultra-masochist in you</subtitle>
+        <text>Kyouko handed you a can of "masochist cider" to help you beat the heat. It's just root beer, but she finds the name funny because her friends all either like it or hate it.</text>
+        <unlock>Take Kyouko to the beach and get naked with her.</unlock>
+        <hide-details>true</hide-details>
+    </collectible>
+    <collectible id="kyouko_toshinou_rumraisin" status="unlisted">
+        <title>Rum Raisin</title>
+        <text>Kyouko shared some of her favorite ice cream with you. They normally only make this stuff in winter, but Kyouko stashes it so she can eat it year round.</text>
+        <unlock>Make friends with Kyouko, then play with her somewhere cold and somewhere cozy.</unlock>
+        <hide-details>true</hide-details>
+        <counter>2</counter>
     </collectible>
 </collectibles>
