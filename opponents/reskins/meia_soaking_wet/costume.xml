@@ -32,6 +32,52 @@
     </wardrobe>
 
     <poses>
+        <pose id="0-aura">
+            <sprite id="embarrassed" src="reskins/meia_soaking_wet/0-silent2.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="reskins/meia_soaking_wet/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="reskins/meia_soaking_wet/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/meia_soaking_wet/aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/meia_soaking_wet/auracamera.png" />
+                <keyframe time="1" src="meia/auracamera.png" />
+                <keyframe time="1.38" src="meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="0-earnest">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest0.png" x="1" y="192" />
+        </pose>
+        <pose id="0-earnestopen">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest0.png" x="1" y="192" />
+            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
+        </pose>
         <pose id="0-embarrassed+">
             <sprite id="embarrassed" src="reskins/meia_soaking_wet/0-embarrassed.png" x="0" y="0" />
             <sprite id="smilemouth" src="reskins/meia_soaking_wet/smilemouth.png" x="11" y="281" scalex="1" scaley="1" rotation="0" />
@@ -155,6 +201,16 @@
                 <keyframe time="1" alpha="100" />
             </directive>
         </pose>
+        <pose id="0-pyorodeterminedstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/0-silent2.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
         <pose id="0-pyorofear">
             <sprite id="silent" src="reskins/meia_soaking_wet/0-silent2.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorofear.png" x="-298" y="190" alpha="100" rotation="-4" />
@@ -264,6 +320,16 @@
                 <keyframe time="1" x="116" rotation="0" />
             </directive>
         </pose>
+        <pose id="0-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/0-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
         <pose id="0-pyorom">
             <sprite id="silent" src="reskins/meia_soaking_wet/0-silent.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorom.png" x="-363" y="-56" alpha="0" rotation="-1" />
@@ -327,6 +393,17 @@
             <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
+        <pose id="0-pyorostaticm">
+            <sprite id="silent" src="reskins/meia_soaking_wet/0-pyoro.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
         </pose>
         <pose id="0-pyorostill">
             <sprite id="silent" src="reskins/meia_soaking_wet/0-silent.png" x="0" y="0" alpha="100" />
@@ -409,6 +486,43 @@
         <pose id="0-stretching+">
             <sprite id="stretching" src="reskins/meia_soaking_wet/0-stretching.png" x="0" y="0" />
             <sprite id="smilemouth" src="reskins/meia_soaking_wet/smilemouth.png" x="1" y="286" scalex="1" scaley="1" rotation="4" />
+        </pose>
+        <pose id="0-treasure_scope">
+            <sprite id="flirty" z="1" src="reskins/meia_soaking_wet/0-treasurescope.png" x="0" y="0" alpha="100" />
+            <sprite id="Rouge_TreasureScope_XRay" src="reskins/meia_soaking_wet/treasurescope.png" x="0" y="0" alpha="100" />
+            <sprite id="Rouge_TreasureScope_Lens" z="100" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" x="250" y="341" alpha="0" />
+            <directive type="animation" id="flirty" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_XRay" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="3" alpha="100" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="ease-out" interpolation="linear">
+                <keyframe time="0" x="250" alpha="0" />
+                <keyframe time="1" x="250" alpha="0" />
+                <keyframe time="2" x="10" alpha="100" />
+                <keyframe time="3" x="10" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="smooth" interpolation="linear">
+                <keyframe time="0" y="341" />
+                <keyframe time="3" y="341" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" />
+                <keyframe time="3" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" />
+            </directive>
+        </pose>
+        <pose id="1-earnest">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest1.png" x="1" y="192" />
+        </pose>
+        <pose id="1-earnestopen">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest1.png" x="1" y="192" />
+            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
         </pose>
         <pose id="1-embarrassed+">
             <sprite id="embarrassed" src="reskins/meia_soaking_wet/1-embarrassed.png" x="0" y="0" />
@@ -533,6 +647,16 @@
                 <keyframe time="1" alpha="100" />
             </directive>
         </pose>
+        <pose id="1-pyorodeterminedstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/1-silent2.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
         <pose id="1-pyorofear">
             <sprite id="silent" src="reskins/meia_soaking_wet/1-silent2.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorofear.png" x="-298" y="190" alpha="100" rotation="-4" />
@@ -642,6 +766,16 @@
                 <keyframe time="1" x="116" rotation="0" />
             </directive>
         </pose>
+        <pose id="1-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/1-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
         <pose id="1-pyorom">
             <sprite id="silent" src="reskins/meia_soaking_wet/1-silent.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorom.png" x="-363" y="-56" alpha="0" rotation="-1" />
@@ -705,6 +839,17 @@
             <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
+        <pose id="1-pyorostaticm">
+            <sprite id="silent" src="reskins/meia_soaking_wet/1-pyoro.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
         </pose>
         <pose id="1-pyorostill">
             <sprite id="silent" src="reskins/meia_soaking_wet/1-silent.png" x="0" y="0" alpha="100" />
@@ -787,6 +932,19 @@
         <pose id="1-stretching+">
             <sprite id="stretching" src="reskins/meia_soaking_wet/1-stretching.png" x="0" y="0" />
             <sprite id="smilemouth" src="reskins/meia_soaking_wet/smilemouth.png" x="1" y="286" scalex="1" scaley="1" rotation="4" />
+        </pose>
+        <pose id="2-buttsilent">
+            <sprite id="butt" src="reskins/meia_soaking_wet/2-butt.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="58" y="285" scaley="1" rotation="5" />
+        </pose>
+        <pose id="2-earnest">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/2-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
+        </pose>
+        <pose id="2-earnestopen">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/2-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
+            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
         </pose>
         <pose id="2-embarrassed+">
             <sprite id="embarrassed" src="reskins/meia_soaking_wet/2-embarrassed.png" x="0" y="0" />
@@ -911,6 +1069,16 @@
                 <keyframe time="1" alpha="100" />
             </directive>
         </pose>
+        <pose id="2-pyorodeterminedstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/2-silent2.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
         <pose id="2-pyorofear">
             <sprite id="silent" src="reskins/meia_soaking_wet/2-silent2.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorofear.png" x="-298" y="190" alpha="100" rotation="-4" />
@@ -1020,6 +1188,16 @@
                 <keyframe time="1" x="116" rotation="0" />
             </directive>
         </pose>
+        <pose id="2-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/2-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
         <pose id="2-pyorom">
             <sprite id="silent" src="reskins/meia_soaking_wet/2-silent.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorom.png" x="-363" y="-56" alpha="0" rotation="-1" />
@@ -1083,6 +1261,17 @@
             <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
+        <pose id="2-pyorostaticm">
+            <sprite id="silent" src="reskins/meia_soaking_wet/2-pyoro.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
         </pose>
         <pose id="2-pyorosuspicious">
             <sprite id="silent" src="reskins/meia_soaking_wet/2-disappointed.png" x="0" y="0" alpha="100" />
@@ -1180,29 +1369,235 @@
                 <keyframe time="4" alpha="100" />
             </directive>
         </pose>
+        <pose id="2-stripbutt">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-stripbutt+">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2+.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-stripbuttsilent">
+            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
+            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2silent.png" x="3" y="-3" alpha="0" />
+            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="4" alpha="0" />
+            </directive>
+            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="-3" />
+                <keyframe time="4" y="-3" />
+            </directive>
+            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="3-stripped">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="3-stripped+">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="3-stripped+coy">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped+">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="4-stripped+coy">
+            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
+            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
+            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
+                <keyframe time="0" x="0" rotation="0" />
+                <keyframe time="0.12" x="1" rotation="-1" />
+                <keyframe time="0.25" x="1" rotation="1" />
+                <keyframe time="0.62" x="0" rotation="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="6" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="521" />
+                <keyframe time="2" y="1121" />
+            </directive>
+        </pose>
+        <pose id="5-blank">
+            <sprite id="headpieceblank" src="reskins/meia_soaking_wet/lip.png" x="0" y="0" alpha="0" rotation="0" />
+        </pose>
         <pose id="5-butt2silent">
             <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt2.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="72" y="281" />
+        </pose>
+        <pose id="5-butt2silentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt2.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="71" y="281" />
         </pose>
         <pose id="5-butt3silent">
             <sprite id="butt3" src="reskins/meia_soaking_wet/5-butt3.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="55" y="292" scaley="1" rotation="8" />
         </pose>
+        <pose id="5-butt3silentsmile">
+            <sprite id="butt3" src="reskins/meia_soaking_wet/5-butt3.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="54" y="292" scaley="1" rotation="8" />
+        </pose>
         <pose id="5-butt4silent">
             <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt4.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="58" y="277" rotation="-2" />
+        </pose>
+        <pose id="5-butt4silentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt4.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="57" y="277" rotation="-2" />
         </pose>
         <pose id="5-buttchecksilent">
             <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttcheck.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="82" y="277" rotation="-11" />
         </pose>
+        <pose id="5-buttchecksilentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttcheck.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="81" y="277" rotation="-11" />
+        </pose>
         <pose id="5-buttspread2silent">
             <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread2.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="82" y="280" rotation="-3" />
         </pose>
+        <pose id="5-buttspread2silentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread2.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="81" y="280" rotation="-3" />
+        </pose>
+        <pose id="5-buttspread3silent">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread3.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="63" y="277" rotation="-6" />
+        </pose>
+        <pose id="5-buttspread3silentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread3.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="62" y="277" rotation="-6" />
+        </pose>
         <pose id="5-buttspreadsilent">
             <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread.png" x="0" y="0" />
             <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="67" y="293" rotation="4" />
+        </pose>
+        <pose id="5-buttspreadsilentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="66" y="293" rotation="4" />
+        </pose>
+        <pose id="5-earnest">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/5-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
+        </pose>
+        <pose id="5-earnestopen">
+            <sprite id="thinking" src="reskins/meia_soaking_wet/5-thinking.png" x="0" y="0" />
+            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
+            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
         </pose>
         <pose id="5-embarrassed+">
             <sprite id="embarrassed" src="reskins/meia_soaking_wet/5-embarrassed.png" x="0" y="0" />
@@ -1327,6 +1722,16 @@
                 <keyframe time="1" alpha="100" />
             </directive>
         </pose>
+        <pose id="5-pyorodeterminedstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/5-silent2.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
         <pose id="5-pyorofear">
             <sprite id="silent" src="reskins/meia_soaking_wet/5-silent2.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorofear.png" x="-298" y="190" alpha="100" rotation="-4" />
@@ -1436,6 +1841,16 @@
                 <keyframe time="1" x="116" rotation="0" />
             </directive>
         </pose>
+        <pose id="5-pyorohappymstill">
+            <sprite id="silent" src="reskins/meia_soaking_wet/5-pleased.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        </pose>
         <pose id="5-pyorom">
             <sprite id="silent" src="reskins/meia_soaking_wet/5-silent.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorom.png" x="-363" y="-56" alpha="0" rotation="-1" />
@@ -1499,6 +1914,17 @@
             <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+        </pose>
+        <pose id="5-pyorostaticm">
+            <sprite id="silent" src="reskins/meia_soaking_wet/5-pyoro.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
+            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
         </pose>
         <pose id="5-pyorosuspicious">
             <sprite id="silent" src="reskins/meia_soaking_wet/5-disappointed.png" x="0" y="0" alpha="100" />
@@ -1591,231 +2017,6 @@
                 <keyframe time="2" y="1121" />
             </directive>
         </pose>
-        <pose id="5-ultrainstinctsilent">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-ultrainstinct.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="-50" y="280" scalex="-1" rotation="4" />
-        </pose>
-        <pose id="5-ultrainstinctsilentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-ultrainstinct.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="-48" y="280" scalex="-1" rotation="4" />
-        </pose>
-        <pose id="5-butt2silentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt2.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="71" y="281" />
-        </pose>
-        <pose id="5-butt3silentsmile">
-            <sprite id="butt3" src="reskins/meia_soaking_wet/5-butt3.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="54" y="292" scaley="1" rotation="8" />
-        </pose>
-        <pose id="5-butt4silentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-butt4.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="57" y="277" rotation="-2" />
-        </pose>
-        <pose id="5-buttchecksilentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttcheck.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="81" y="277" rotation="-11" />
-        </pose>
-        <pose id="5-buttspread2silentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread2.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="81" y="280" rotation="-3" />
-        </pose>
-        <pose id="5-buttspreadsilentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="66" y="293" rotation="4" />
-        </pose>
-        <pose id="5-buttspread3silent">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread3.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="63" y="277" rotation="-6" />
-        </pose>
-        <pose id="5-buttspread3silentsmile">
-            <sprite id="butt2" src="reskins/meia_soaking_wet/5-buttspread3.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="62" y="277" rotation="-6" />
-        </pose>
-        <pose id="0-treasure_scope">
-            <sprite id="flirty" z="1" src="reskins/meia_soaking_wet/0-treasurescope.png" x="0" y="0" alpha="100" />
-            <sprite id="Rouge_TreasureScope_XRay" src="reskins/meia_soaking_wet/treasurescope.png" x="0" y="0" alpha="100" />
-            <sprite id="Rouge_TreasureScope_Lens" z="100" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" x="250" y="341" alpha="0" />
-            <directive type="animation" id="flirty" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" alpha="100" />
-                <keyframe time="2" alpha="100" />
-                <keyframe time="2.5" alpha="0" />
-            </directive>
-            <directive type="animation" id="Rouge_TreasureScope_XRay" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" alpha="100" />
-                <keyframe time="3" alpha="100" />
-            </directive>
-            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="ease-out" interpolation="linear">
-                <keyframe time="0" x="250" alpha="0" />
-                <keyframe time="1" x="250" alpha="0" />
-                <keyframe time="2" x="10" alpha="100" />
-                <keyframe time="3" x="10" />
-            </directive>
-            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="smooth" interpolation="linear">
-                <keyframe time="0" y="341" />
-                <keyframe time="3" y="341" />
-            </directive>
-            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" />
-                <keyframe time="3" src="reskins/meia_soaking_wet/Rouge_TreasureScope_Lens.png" />
-            </directive>
-        </pose>
-        <pose id="0-aura">
-            <sprite id="embarrassed" src="reskins/meia_soaking_wet/0-silent2.png" x="0" y="0" alpha="100" />
-            <sprite id="auracamera" z="1" src="reskins/meia_soaking_wet/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
-            <sprite id="cameraflash" delay="1.25" src="reskins/meia_soaking_wet/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
-            <sprite id="aura" delay="1.38" src="reskins/meia_soaking_wet/aura.png" x="0" y="0" alpha="0" />
-            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="1.38" alpha="100" />
-                <keyframe time="2.5" alpha="0" />
-            </directive>
-            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
-                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
-                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
-                <keyframe time="2.5" alpha="0" />
-            </directive>
-            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/meia_soaking_wet/auracamera.png" />
-                <keyframe time="1" src="meia/auracamera.png" />
-                <keyframe time="1.38" src="meia/auracamera.png" />
-            </directive>
-            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
-                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
-                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
-                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
-                <keyframe time="2.75" alpha="0" />
-            </directive>
-            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" />
-                <keyframe time="2.62" x="0" y="0" />
-            </directive>
-            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="2.62" alpha="100" />
-            </directive>
-        </pose>
-        <pose id="0-pyorodeterminedstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/0-silent2.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-        </pose>
-        <pose id="1-pyorodeterminedstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/1-silent2.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-        </pose>
-        <pose id="2-pyorodeterminedstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/2-silent2.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-        </pose>
-        <pose id="5-pyorodeterminedstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/5-silent2.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorodetermined.png" x="-333" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="38" y="85" pivotx="48%" pivoty="52%" rotation="-4" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="265" y="80" scalex="-1" scaley="1" rotation="-357" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-        </pose>
-        <pose id="0-pyorostaticm">
-            <sprite id="silent" src="reskins/meia_soaking_wet/0-pyoro.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
-        </pose>
-        <pose id="1-pyorostaticm">
-            <sprite id="silent" src="reskins/meia_soaking_wet/1-pyoro.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
-        </pose>
-        <pose id="2-pyorostaticm">
-            <sprite id="silent" src="reskins/meia_soaking_wet/2-pyoro.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
-        </pose>
-        <pose id="5-pyorostaticm">
-            <sprite id="silent" src="reskins/meia_soaking_wet/5-pyoro.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorosadm.png" x="-298" y="152" alpha="100" rotation="-2" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="85" pivotx="48%" pivoty="52%" rotation="-3" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="84" scalex="-1" scaley="1" rotation="-349" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="204" y="205" scalex="-1" rotation="12" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="2" />
-            <sprite id="static" z="2" src="reskins/meia_soaking_wet/static.png" x="-300" y="149" rotation="-2" />
-        </pose>
-        <pose id="0-earnest">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest0.png" x="1" y="192" />
-        </pose>
-        <pose id="1-earnest">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest1.png" x="1" y="192" />
-        </pose>
-        <pose id="2-earnest">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/2-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
-        </pose>
-        <pose id="5-earnest">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/5-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
-        </pose>
-        <pose id="0-earnestopen">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest0.png" x="1" y="192" />
-            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
-        </pose>
-        <pose id="1-earnestopen">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/1-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest1.png" x="1" y="192" />
-            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
-        </pose>
-        <pose id="2-earnestopen">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/2-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
-            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
-        </pose>
-        <pose id="5-earnestopen">
-            <sprite id="thinking" src="reskins/meia_soaking_wet/5-thinking.png" x="0" y="0" />
-            <sprite id="earnest0" src="reskins/meia_soaking_wet/earnest25.png" x="1" y="192" />
-            <sprite id="mouth26_34567" src="reskins/meia_soaking_wet/mouth26_34567.png" x="-1" y="281" />
-        </pose>
         <pose id="5-stripped+">
             <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
             <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
@@ -1854,214 +2055,49 @@
                 <keyframe time="2" y="1121" />
             </directive>
         </pose>
-        <pose id="3-stripped">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-ultrainstinctsilent">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-ultrainstinct.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilent.png" x="-50" y="280" scalex="-1" rotation="4" />
         </pose>
-        <pose id="3-stripped+">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-ultrainstinctsilentsmile">
+            <sprite id="butt2" src="reskins/meia_soaking_wet/5-ultrainstinct.png" x="0" y="0" />
+            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="-48" y="280" scalex="-1" rotation="4" />
         </pose>
-        <pose id="3-stripped+coy">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-strippedbutt">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt.png" x="0" y="0" />
         </pose>
-        <pose id="4-stripped">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-strippedbutt+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt+.png" x="0" y="0" />
         </pose>
-        <pose id="4-stripped+">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-strippedbuttpyoro">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro.png" x="0" y="0" />
         </pose>
-        <pose id="4-stripped+coy">
-            <sprite id="butt" src="reskins/meia_soaking_wet/5-stripped.png" x="0" y="0" rotation="0" />
-            <sprite id="shorts" z="1" src="reskins/meia_soaking_wet/shortsback.png" x="6" y="521" scalex="0.95" scaley="1.29" alpha="100" rotation="5" />
-            <directive type="animation" id="butt" ease="smooth" interpolation="spline">
-                <keyframe time="0" x="0" rotation="0" />
-                <keyframe time="0.12" x="1" rotation="-1" />
-                <keyframe time="0.25" x="1" rotation="1" />
-                <keyframe time="0.62" x="0" rotation="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="smooth" interpolation="linear">
-                <keyframe time="0" x="6" alpha="100" />
-                <keyframe time="1" alpha="100" />
-                <keyframe time="2" alpha="0" />
-            </directive>
-            <directive type="animation" id="shorts" ease="ease-in-cubic" interpolation="linear">
-                <keyframe time="0" y="521" />
-                <keyframe time="2" y="1121" />
-            </directive>
+        <pose id="5-strippedbuttpyoro+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro+.png" x="0" y="0" />
         </pose>
-        <pose id="2-buttsilent">
-            <sprite id="butt" src="reskins/meia_soaking_wet/2-butt.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_soaking_wet/sidemouthsilentsmile.png" x="58" y="285" scaley="1" rotation="5" />
+        <pose id="3-strippedbutt">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt.png" x="0" y="0" />
         </pose>
-        <pose id="5-blank">
-            <sprite id="headpieceblank" src="reskins/meia_soaking_wet/lip.png" x="0" y="0" alpha="0" rotation="0" />
+        <pose id="4-strippedbutt">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt.png" x="0" y="0" />
         </pose>
-        <pose id="0-pyorohappymstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/0-pleased.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        <pose id="3-strippedbutt+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt+.png" x="0" y="0" />
         </pose>
-        <pose id="1-pyorohappymstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/1-pleased.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        <pose id="4-strippedbutt+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbutt+.png" x="0" y="0" />
         </pose>
-        <pose id="2-pyorohappymstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/2-pleased.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        <pose id="3-strippedbuttpyoro">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro.png" x="0" y="0" />
         </pose>
-        <pose id="5-pyorohappymstill">
-            <sprite id="silent" src="reskins/meia_soaking_wet/5-pleased.png" x="0" y="0" alpha="100" />
-            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyorohappy.png" x="-361" y="148" alpha="100" rotation="-1" />
-            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
-            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
-            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="29" y="88" pivotx="48%" pivoty="52%" rotation="0" />
-            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="272" y="82" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="205" y="208" scalex="-1" rotation="0" />
-            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="116" y="208" scalex="1" rotation="0" />
+        <pose id="4-strippedbuttpyoro">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro.png" x="0" y="0" />
         </pose>
-        <pose id="2-stripbutt">
-            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
-            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2.png" x="3" y="-3" alpha="0" />
-            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="4" alpha="0" />
-            </directive>
-            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
-                <keyframe time="0" x="3" y="-3" />
-                <keyframe time="4" y="-3" />
-            </directive>
-            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="4" alpha="100" />
-            </directive>
+        <pose id="3-strippedbuttpyoro+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro+.png" x="0" y="0" />
         </pose>
-        <pose id="2-stripbutt+">
-            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
-            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2+.png" x="3" y="-3" alpha="0" />
-            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="4" alpha="0" />
-            </directive>
-            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
-                <keyframe time="0" x="3" y="-3" />
-                <keyframe time="4" y="-3" />
-            </directive>
-            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="4" alpha="100" />
-            </directive>
-        </pose>
-        <pose id="2-stripbuttsilent">
-            <sprite id="2-strip" src="reskins/meia_soaking_wet/2-stripbutt.png" x="0" y="0" alpha="100" />
-            <sprite id="strip2" src="reskins/meia_soaking_wet/2-stripbutt2silent.png" x="3" y="-3" alpha="0" />
-            <directive type="animation" id="2-strip" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="100" />
-                <keyframe time="4" alpha="0" />
-            </directive>
-            <directive type="animation" id="strip2" ease="linear" interpolation="linear">
-                <keyframe time="0" x="3" y="-3" />
-                <keyframe time="4" y="-3" />
-            </directive>
-            <directive type="animation" id="strip2" ease="ease-in-out-cubic" interpolation="linear">
-                <keyframe time="0" alpha="0" />
-                <keyframe time="4" alpha="100" />
-            </directive>
+        <pose id="4-strippedbuttpyoro+">
+            <sprite id="strippedbutt" src="reskins/meia_soaking_wet/5-strippedbuttpyoro+.png" x="0" y="0" />
         </pose>
     </poses>
 
