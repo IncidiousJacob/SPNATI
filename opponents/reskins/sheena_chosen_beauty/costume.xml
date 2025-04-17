@@ -4,25 +4,27 @@
     <label>Sheena</label>
     <tags>
         <tag>alternative_skin</tag>
-        <tag from="0" to="4">bunnysuit</tag>
+        <tag from="0" to="2">bunnysuit</tag>
         <tag from="5" to="5">cameltoe</tag>
+        <tag from="3" to="4">covered_erect_nipples</tag>
         <tag>easter_skin</tag>
-        <tag from="0" to="3">fake_animal_ears</tag>
-        <tag from="0" to="5">fishnets</tag>
+        <tag>fake_animal_ears</tag>
         <tag remove="true">japanese_clothing</tag>
+        <tag from="3" to="4">nipple_pasties</tag>
         <tag>no_bra</tag>
-        <tag from="0" to="5">pantyhose</tag>
+        <tag remove="true">no_underwear</tag>
+        <tag from="0" to="3">pantyhose</tag>
+        <tag from="4" to="5">pubic_hair_peek</tag>
     </tags>
     <layers>6</layers>
     <folder>opponents/reskins/sheena_chosen_beauty/</folder>
-    <folder stage="6">opponents/sheena/</folder>
     <wardrobe>
-        <clothing name="pantyhose" generic="leggings" position="lower" type="major" />
-        <clothing name="bunny suit" generic="leotard" position="upper" type="important" />
-        <clothing name="bunny ears" generic="headband" position="head" type="extra" plural="true" />
-        <clothing name="jacket" generic="jacket" position="upper" type="major" />
+        <clothing name="panties" generic="underwear" position="lower" type="important" />
+        <clothing name="pasties" generic="" position="upper" type="important" />
+        <clothing name="pantyhose" generic="leggings" position="lower" type="major" plural="true" />
+        <clothing name="bunny suit" generic="leotard" position="upper" type="major" />
+        <clothing name="jacket" generic="jacket" position="upper" type="minor" />
         <clothing name="shoes" generic="shoes" position="feet" type="extra" plural="true" />
-        <clothing name="collar" generic="collar" position="neck" type="extra" />
     </wardrobe>
 
     <poses>
@@ -83,7 +85,7 @@
             </directive>
         </pose>
         <pose id="4-celsius">
-            <sprite id="strip" src="sheena/4-strip.png" x="0" y="0" />
+            <sprite id="strip" src="reskins/sheena_chosen_beauty/4-strip.png" x="0" y="0" />
             <sprite id="c_ice" delay="1" src="sheena/c_ice.png" x="0" y="185" scaley="0.05" pivotx="45%" pivoty="100%" alpha="80" />
             <sprite id="c_celsius" src="sheena/c_celsius.png" x="-279" y="560" alpha="0" />
             <directive type="animation" id="c_ice" delay="1" ease="smooth" interpolation="linear">
@@ -96,7 +98,7 @@
             </directive>
         </pose>
         <pose id="4-gnome">
-            <sprite id="strip" src="sheena/4-strip.png" x="0" y="0" rotation="0" />
+            <sprite id="strip" src="reskins/sheena_chosen_beauty/4-strip.png" x="0" y="0" rotation="0" />
             <sprite id="gnome" delay="1" src="sheena/gnome.png" x="0" y="-1060" rotation="0" />
             <directive type="animation" id="strip" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" rotation="0" />
@@ -137,7 +139,7 @@
             </directive>
         </pose>
         <pose id="4-sylph">
-            <sprite id="strip" src="sheena/4-strip.png" x="0" y="0" />
+            <sprite id="strip" src="reskins/sheena_chosen_beauty/4-strip.png" x="0" y="0" />
             <sprite id="c_sylph0" z="1" src="sheena/c_sylph0.png" x="-6" y="260" alpha="0" />
             <sprite id="c_sylph1" delay="0.75" z="-1" src="sheena/c_sylph1.png" x="0" y="0" alpha="0" />
             <directive type="animation" id="c_sylph0" ease="smooth" interpolation="linear">
@@ -151,7 +153,7 @@
             </directive>
         </pose>
         <pose id="4-undine">
-            <sprite id="strip" z="-1" src="sheena/4-strip.png" x="0" y="0" />
+            <sprite id="strip" z="-1" src="reskins/sheena_chosen_beauty/4-strip.png" x="0" y="0" />
             <sprite id="c_undine" z="1" src="sheena/c_undine.png" x="-347" y="55" alpha="0" />
             <sprite id="c_fish" delay="1" src="sheena/c_fish.png" x="-479" y="761" pivotx="48%" />
             <sprite id="c_fish(copy)" delay="1" src="sheena/c_fish.png" x="-423" y="866" />
@@ -278,6 +280,34 @@
             <directive type="animation" id="malheur1" delay="2" ease="smooth" interpolation="linear">
                 <keyframe time="0" x="0" y="0" scalex="1.1" scaley="1.1" alpha="50" />
                 <keyframe time="1" scalex="1.7" scaley="1.7" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="6-victoryB">
+            <sprite id="card0" src="sheena/card0.png" x="-233" y="255" scalex="1" />
+            <sprite id="victory" src="reskins/sheena_chosen_beauty/6-sideeye.png" x="0" y="0" />
+            <directive type="animation" id="card0" loop="true" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-233" y="255" scalex="1" />
+                <keyframe time="0.25" x="-233" y="255" scalex="0.05" />
+                <keyframe time="0.5" x="-233" y="255" scalex="1" />
+            </directive>
+            <directive type="animation" id="card0" loop="true" ease="linear" interpolation="none">
+                <keyframe time="0" src="sheena/card0.png" />
+                <keyframe time="0.25" src="sheena/card0.png" />
+                <keyframe time="0.5" src="sheena/card0.png" />
+            </directive>
+        </pose>
+        <pose id="6-victoryC">
+            <sprite id="card0" src="sheena/card0.png" x="213" y="284" scalex="1" />
+            <sprite id="victory" src="reskins/sheena_chosen_beauty/6-victory.png" x="0" y="0" />
+            <directive type="animation" id="card0" loop="true" ease="linear" interpolation="linear">
+                <keyframe time="0" x="213" y="284" scalex="1" />
+                <keyframe time="0.25" x="213" y="284" scalex="0.05" />
+                <keyframe time="0.5" x="213" y="284" scalex="1" />
+            </directive>
+            <directive type="animation" id="card0" loop="true" ease="linear" interpolation="none">
+                <keyframe time="0" src="sheena/card0.png" />
+                <keyframe time="0.25" src="sheena/card0.png" />
+                <keyframe time="0.5" src="sheena/card0.png" />
             </directive>
         </pose>
     </poses>
