@@ -4,7 +4,6 @@
     <label>Joey</label>
     <tags>
         <tag>alternative_skin</tag>
-        <tag remove="true">butt_pose</tag>
         <tag>thigh_highs</tag>
     </tags>
     <layers>6</layers>
@@ -18,5 +17,416 @@
         <clothing name="gloves" generic="gloves" position="hands" type="extra" plural="true" />
     </wardrobe>
 
+    <poses>
+        <pose id="4-magicstrip">
+            <sprite id="stripping" src="reskins/joey_renaissance_clothes/4-stripping.png" x="0" y="0" />
+            <sprite id="new_panties_image" z="1" src="joey/attachments/new_panties_image.png" x="2" y="663" scalex="0.54" scaley="0.54" />
+            <directive type="animation" id="new_panties_image" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="663" />
+                <keyframe time="2" x="2" y="663" />
+                <keyframe time="2.06" x="0" />
+                <keyframe time="2.38" x="2" />
+                <keyframe time="3" x="1" y="1213" />
+            </directive>
+            <directive type="animation" id="new_panties_image" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/new_panties_image.png" />
+                <keyframe time="2" src="joey/attachments/new_panties_image.png" />
+                <keyframe time="3" src="joey/attachments/new_panties_image.png" />
+            </directive>
+            <directive type="animation" id="new_panties_image" ease="linear" interpolation="spline">
+                <keyframe time="0" scalex="0.54" scaley="0.54" />
+                <keyframe time="2" scalex="0.54" scaley="0.54" />
+                <keyframe time="2.06" scalex="0.57" />
+                <keyframe time="2.12" scalex="0.58" />
+                <keyframe time="2.19" scalex="0.59" />
+                <keyframe time="2.25" scalex="0.58" />
+                <keyframe time="2.38" scalex="0.53" />
+                <keyframe time="2.5" scalex="0.47" scaley="0.59" />
+                <keyframe time="2.69" scalex="0.56" />
+                <keyframe time="2.8" scalex="0.55" />
+                <keyframe time="3" scalex="0.53" scaley="0.55" />
+            </directive>
+        </pose>
+        <pose id="3-magicstrip">
+            <sprite id="puff_cloud" z="1" src="joey/attachments/puff_cloud.png" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+            <sprite id="puff_cloud1" src="joey/attachments/puff_cloud.png" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+            <sprite id="puff_cloud2" src="joey/attachments/puff_cloud.png" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+            <sprite id="puff_cloud3" src="joey/attachments/puff_cloud.png" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+            <sprite id="strip" src="reskins/joey_renaissance_clothes/2-stripping.png" x="0" y="0" />
+            <sprite id="after" delay="0.38" z="-2" src="reskins/joey_renaissance_clothes/3-stripped.png" x="2" y="0" alpha="0" />
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" x="3" y="388" scalex="1" scaley="1" />
+                <keyframe time="0.62" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.88" scalex="1" scaley="1" />
+                <keyframe time="1.12" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.38" scalex="1" scaley="1" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-190" y="189" scalex="0.8" scaley="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="228" y="232" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="0.62" scalex="0.5" scaley="0.5" />
+                <keyframe time="0.88" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.12" scalex="0.5" scaley="0.5" />
+                <keyframe time="1.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-153" y="594" scalex="0.5" scaley="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="193" y="563" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="strip" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.06" alpha="0" />
+            </directive>
+            <directive type="animation" id="after" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="0" alpha="0" />
+                <keyframe time="0.06" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="3-magicstripU">
+            <sprite id="puff_cloud" z="1" src="joey/attachments/puff_cloud.png" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+            <sprite id="puff_cloud1" src="joey/attachments/puff_cloud.png" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+            <sprite id="puff_cloud2" src="joey/attachments/puff_cloud.png" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+            <sprite id="puff_cloud3" src="joey/attachments/puff_cloud.png" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+            <sprite id="strip" src="reskins/joey_renaissance_clothes/2-stripping.png" x="0" y="0" />
+            <sprite id="after" delay="0.38" z="-2" src="reskins/joey_renaissance_clothes/3-strippedU.png" x="2" y="0" alpha="0" />
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" x="3" y="388" scalex="1" scaley="1" />
+                <keyframe time="0.62" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.88" scalex="1" scaley="1" />
+                <keyframe time="1.12" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.38" scalex="1" scaley="1" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-190" y="189" scalex="0.8" scaley="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="228" y="232" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="0.62" scalex="0.5" scaley="0.5" />
+                <keyframe time="0.88" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.12" scalex="0.5" scaley="0.5" />
+                <keyframe time="1.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-153" y="594" scalex="0.5" scaley="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="193" y="563" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="strip" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.06" alpha="0" />
+            </directive>
+            <directive type="animation" id="after" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="0" alpha="0" />
+                <keyframe time="0.06" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="6-magicstrip">
+            <sprite id="puff_cloud" z="1" src="joey/attachments/puff_cloud.png" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+            <sprite id="puff_cloud1" src="joey/attachments/puff_cloud.png" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+            <sprite id="puff_cloud2" src="joey/attachments/puff_cloud.png" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+            <sprite id="puff_cloud3" src="joey/attachments/puff_cloud.png" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+            <sprite id="strip" src="reskins/joey_renaissance_clothes/5-stripping.png" x="0" y="0" />
+            <sprite id="after" delay="0.38" z="-2" src="reskins/joey_renaissance_clothes/6-stripped.png" x="2" y="0" alpha="0" />
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" x="3" y="388" scalex="1" scaley="1" />
+                <keyframe time="0.62" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.88" scalex="1" scaley="1" />
+                <keyframe time="1.12" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.38" scalex="1" scaley="1" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-190" y="189" scalex="0.8" scaley="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="228" y="232" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="0.62" scalex="0.5" scaley="0.5" />
+                <keyframe time="0.88" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.12" scalex="0.5" scaley="0.5" />
+                <keyframe time="1.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-153" y="594" scalex="0.5" scaley="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="193" y="563" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="strip" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.06" alpha="0" />
+            </directive>
+            <directive type="animation" id="after" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="0" alpha="0" />
+                <keyframe time="0.06" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="6-magicstripB">
+            <sprite id="puff_cloud" z="1" src="joey/attachments/puff_cloud.png" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+            <sprite id="puff_cloud1" src="joey/attachments/puff_cloud.png" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+            <sprite id="puff_cloud2" src="joey/attachments/puff_cloud.png" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+            <sprite id="puff_cloud3" src="joey/attachments/puff_cloud.png" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+            <sprite id="strip" src="reskins/joey_renaissance_clothes/5-strippingB.png" x="0" y="0" />
+            <sprite id="after" delay="0.38" z="-2" src="reskins/joey_renaissance_clothes/6-strippedB.png" x="2" y="0" alpha="0" />
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" x="3" y="388" scalex="1" scaley="1" />
+                <keyframe time="0.62" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.88" scalex="1" scaley="1" />
+                <keyframe time="1.12" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.38" scalex="1" scaley="1" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-190" y="189" scalex="0.8" scaley="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="228" y="232" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="0.62" scalex="0.5" scaley="0.5" />
+                <keyframe time="0.88" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.12" scalex="0.5" scaley="0.5" />
+                <keyframe time="1.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-153" y="594" scalex="0.5" scaley="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="193" y="563" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="strip" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.06" alpha="0" />
+            </directive>
+            <directive type="animation" id="after" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="0" alpha="0" />
+                <keyframe time="0.06" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="6-magicstripT">
+            <sprite id="puff_cloud" z="1" src="joey/attachments/puff_cloud.png" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+            <sprite id="puff_cloud1" src="joey/attachments/puff_cloud.png" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+            <sprite id="puff_cloud2" src="joey/attachments/puff_cloud.png" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+            <sprite id="puff_cloud3" src="joey/attachments/puff_cloud.png" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+            <sprite id="strip" src="reskins/joey_renaissance_clothes/5-stripping.png" x="0" y="0" />
+            <sprite id="after" delay="0.38" z="-2" src="reskins/joey_renaissance_clothes/6-strippedB.png" x="2" y="0" alpha="0" />
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="linear">
+                <keyframe time="0" x="3" y="388" scalex="0.1" scaley="0.1" alpha="0" rotation="-10" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" x="3" y="388" scalex="1" scaley="1" />
+                <keyframe time="0.62" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.88" scalex="1" scaley="1" />
+                <keyframe time="1.12" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.38" scalex="1" scaley="1" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-190" y="189" scalex="0.8" scaley="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="56" y="335" scalex="0.1" scaley="0.1" alpha="0" rotation="12" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="228" y="232" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud1" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-19" y="442" scalex="0.1" scaley="0.1" alpha="0" rotation="-2" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="0.62" scalex="0.5" scaley="0.5" />
+                <keyframe time="0.88" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.12" scalex="0.5" scaley="0.5" />
+                <keyframe time="1.38" scalex="0.7" scaley="0.7" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="-153" y="594" scalex="0.5" scaley="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud2" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="14" y="370" scalex="0.1" scaley="0.1" alpha="0" rotation="4" />
+                <keyframe time="0.06" alpha="100" />
+                <keyframe time="0.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="0.62" scalex="0.6" scaley="0.6" />
+                <keyframe time="0.88" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.12" scalex="0.6" scaley="0.6" />
+                <keyframe time="1.38" scalex="0.8" scaley="0.8" />
+                <keyframe time="1.44" alpha="100" />
+                <keyframe time="1.62" x="193" y="563" scalex="0.6" scaley="0.6" alpha="0" />
+            </directive>
+            <directive type="animation" id="puff_cloud3" ease="linear" interpolation="none">
+                <keyframe time="0" src="joey/attachments/puff_cloud.png" />
+                <keyframe time="1.62" src="joey/attachments/puff_cloud.png" />
+            </directive>
+            <directive type="animation" id="strip" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.06" alpha="0" />
+            </directive>
+            <directive type="animation" id="after" delay="0.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="2" y="0" alpha="0" />
+                <keyframe time="0.06" alpha="100" />
+            </directive>
+        </pose>
+    </poses>
 
 </costume>
