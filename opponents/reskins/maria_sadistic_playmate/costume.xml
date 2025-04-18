@@ -18,11 +18,21 @@
     <folder>opponents/reskins/maria_sadistic_playmate/</folder>
     <wardrobe>
         <clothing name="pasty" generic="" position="lower" type="important" plural="true" />
-        <clothing name="bunnysuit" generic="" position="both" type="important" />
-        <clothing name="leggings" generic="leggings" position="legs" type="minor" />
+        <clothing name="bunnysuit" generic="" position="both" type="major" />
+        <clothing name="leggings" generic="leggings" position="legs" type="minor" plural="true" />
         <clothing name="gloves" generic="gloves" position="arms" type="minor" plural="true" />
         <clothing name="shoes" generic="shoes" position="feet" type="extra" />
     </wardrobe>
 
+    <poses>
+        <pose id="7-seat_eat">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_playmate/7-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="164" y="475" scalex="-1" rotation="-6" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_playmate/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="163" y="262" scalex="-1" rotation="7" />
+        </pose>
+    </poses>
 
 </costume>

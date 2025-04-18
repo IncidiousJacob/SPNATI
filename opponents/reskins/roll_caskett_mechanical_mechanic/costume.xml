@@ -24,7 +24,7 @@
     <layers>6</layers>
     <folder>opponents/reskins/roll_caskett_mechanical_mechanic/</folder>
     <wardrobe>
-        <clothing name="panties" generic="underwear" position="lower" type="important" />
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
         <clothing name="chestplate" generic="armor" position="upper" type="major" />
         <clothing name="hat" generic="hat" position="head" type="extra" />
         <clothing name="skirt" generic="skirt" position="lower" type="major" />
@@ -32,5 +32,44 @@
         <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
     </wardrobe>
 
+    <poses>
+        <pose id="8-seat_eat">
+            <sprite id="munch" z="1" src="reskins/roll_caskett_mechanical_mechanic/8-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="roll_caskett/choco_piece.png" x="229" y="932" scalex="-1" rotation="24" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/roll_caskett_mechanical_mechanic/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="roll_caskett/choco_piece.png" x="221" y="399" scalex="-1" rotation="27" />
+        </pose>
+        <pose id="yae4_presenting_roll">
+            <sprite id="xyae" z="2" src="reskins/roll_caskett_mechanical_mechanic/#-xyae.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="backofhair" src="reskins/roll_caskett_mechanical_mechanic/ex-backofhair.png" x="0" y="0" />
+            <sprite id="yae-presenting4" marker="Yae_CheckD" z="1" src="roll_caskett/ex-yae-presenting4.png" x="84" y="0" />
+            <sprite id="yaeRpresenting4" marker="Yae_CheckR" z="1" src="roll_caskett/ex-yaeRpresenting4.png" x="84" y="0" />
+            <sprite id="yaeBpresenting4" marker="Yae_CheckB" z="1" src="roll_caskett/ex-yaeBpresenting4.png" x="84" y="0" />
+            <sprite id="yae-armleft" z="3" src="roll_caskett/ex-yae-armleft.png" x="74" y="-19" scalex="0.9" scaley="1" rotation="16" />
+            <sprite id="yaeRarmleft" marker="Yae_CheckR" z="3" src="roll_caskett/ex-yaeRarmleft.png" x="74" y="-19" scalex="0.9" scaley="1" rotation="16" />
+            <sprite id="yae-armright" z="3" src="roll_caskett/ex-yae-armright.png" x="65" y="-23" rotation="-9" />
+            <sprite id="yaeRarmright" marker="Yae_CheckR" z="3" src="roll_caskett/ex-yaeRarmright.png" x="65" y="-23" rotation="-9" />
+        </pose>
+        <pose id="yae5_presenting_roll">
+            <sprite id="xyae" z="2" src="reskins/roll_caskett_mechanical_mechanic/#-xyae.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="backofhair" src="reskins/roll_caskett_mechanical_mechanic/ex-backofhair.png" x="0" y="0" />
+            <sprite id="yae-presenting5" marker="Yae_CheckD" z="1" src="roll_caskett/ex-yae-presenting5.png" x="84" y="0" />
+            <sprite id="yaeRpresenting5" marker="Yae_CheckR" z="1" src="roll_caskett/ex-yaeRpresenting5.png" x="84" y="0" />
+            <sprite id="yaeBpresenting5" marker="Yae_CheckB" z="1" src="roll_caskett/ex-yaeBpresenting5.png" x="84" y="0" />
+            <sprite id="yae-armleft" z="3" src="roll_caskett/ex-yae-armleft.png" x="74" y="-19" scalex="0.9" scaley="1" rotation="16" />
+            <sprite id="yae-armright" z="3" src="roll_caskett/ex-yae-armright.png" x="65" y="-23" rotation="-9" />
+        </pose>
+        <pose id="yae6_presenting_roll">
+            <sprite id="xyae" z="2" src="reskins/roll_caskett_mechanical_mechanic/#-xyae.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="backofhair" src="reskins/roll_caskett_mechanical_mechanic/ex-backofhair.png" x="0" y="0" />
+            <sprite id="yae-presenting6" marker="Yae_CheckD" z="1" src="roll_caskett/ex-yae-presenting6.png" x="84" y="0" />
+            <sprite id="yaeRpresenting6" marker="Yae_CheckR" z="1" src="roll_caskett/ex-yaeRpresenting6.png" x="84" y="0" />
+            <sprite id="yaeBpresenting6" marker="Yae_CheckB" z="1" src="roll_caskett/ex-yaeBpresenting6.png" x="84" y="0" />
+            <sprite id="yae-armleft" z="3" src="roll_caskett/ex-yae-armleft.png" x="74" y="-19" scalex="0.9" scaley="1" rotation="16" />
+            <sprite id="yae-armright" z="3" src="roll_caskett/ex-yae-armright.png" x="65" y="-23" rotation="-9" />
+        </pose>
+    </poses>
 
 </costume>

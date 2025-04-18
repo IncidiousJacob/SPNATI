@@ -28,5 +28,11 @@
         <clothing name="knives" generic="weapon" position="legs" type="extra" plural="true" />
     </wardrobe>
 
+    <poses>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/maria_sadistic_heatwave/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="maria/choco_piece.png" x="163" y="262" scalex="-1" rotation="7" />
+        </pose>
+    </poses>
 
 </costume>

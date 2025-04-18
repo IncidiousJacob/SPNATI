@@ -40,5 +40,15 @@
         <clothing name="blindfold" generic="wrappings" position="head" type="minor" />
     </wardrobe>
 
+    <poses>
+        <pose id="10-eat_seat">
+            <sprite id="munch" z="1" src="reskins/yshtola_forgiven_scion/10-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="yshtola/choco_piece.png" x="-73" y="744" rotation="42" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/yshtola_forgiven_scion/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="yshtola/choco_piece.png" x="225" y="311" scalex="-1" scaley="1" rotation="80" />
+        </pose>
+    </poses>
 
 </costume>

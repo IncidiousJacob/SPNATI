@@ -459,6 +459,201 @@
                 <keyframe time="7.5" src="yae/ex-cloud.png" />
             </directive>
         </pose>
+        <pose id="ninpo_yukata">
+            <sprite id="ninpo" src="reskins/yae_retro_ninja/#-ninpo.png" />
+            <sprite id="cloud" src="yae/ex-cloud.png" y="290" scalex="0" scaley="0" alpha="100" />
+            <sprite id="cloud(copy)" src="yae/ex-cloud.png" y="290" scalex="0" scaley="0" alpha="100" />
+            <directive type="animation" id="ninpo" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/yae_retro_ninja/#-ninpo.png" />
+                <keyframe time="1.5" src="reskins/yae_retro_ninja/ex-yukata.png" />
+                <keyframe time="5.5" src="reskins/yae_retro_ninja/#-ninpo.png" />
+                <keyframe time="7.5" src="reskins/yae_retro_ninja/#-ninpo.png" />
+            </directive>
+            <directive type="animation" id="cloud" ease="smooth" interpolation="linear">
+                <keyframe time="0" y="290" scalex="0" scaley="0" alpha="100" />
+                <keyframe time="1" scalex="0" scaley="0" />
+                <keyframe time="1.38" scalex="1" scaley="1.9" alpha="100" />
+                <keyframe time="1.62" scalex="1" scaley="1.9" alpha="100" />
+                <keyframe time="3" scalex="0.7" scaley="0.7" alpha="0" />
+            </directive>
+            <directive type="animation" id="cloud" ease="linear" interpolation="none">
+                <keyframe time="0" src="yae/ex-cloud.png" />
+                <keyframe time="1" src="yae/ex-cloud.png" />
+                <keyframe time="1.38" src="yae/ex-cloud.png" />
+                <keyframe time="1.62" src="yae/ex-cloud.png" />
+                <keyframe time="3" src="yae/ex-cloud.png" />
+            </directive>
+            <directive type="animation" id="cloud(copy)" ease="smooth" interpolation="linear">
+                <keyframe time="0" y="290" scalex="0" scaley="0" alpha="100" />
+                <keyframe time="5" scalex="0" scaley="0" />
+                <keyframe time="5.88" scalex="1" scaley="1.9" alpha="100" />
+                <keyframe time="6.12" scalex="1" scaley="1.9" alpha="100" />
+                <keyframe time="7.5" scalex="0.7" scaley="0.7" alpha="0" />
+            </directive>
+            <directive type="animation" id="cloud(copy)" ease="linear" interpolation="none">
+                <keyframe time="0" src="yae/ex-cloud.png" />
+                <keyframe time="5" src="yae/ex-cloud.png" />
+                <keyframe time="5.88" src="yae/ex-cloud.png" />
+                <keyframe time="6.12" src="yae/ex-cloud.png" />
+                <keyframe time="7.5" src="yae/ex-cloud.png" />
+            </directive>
+        </pose>
+        <pose id="8-seat_eat">
+            <sprite id="munch" z="1" src="reskins/yae_retro_ninja/8-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="yae/choco_piece.png" x="-191" y="817" rotation="6" />
+        </pose>
+        <pose id="dual_sheena_fin1">
+            <sprite id="yae_sy_fin1" z="1" src="reskins/yae_retro_ninja/yae_sy_fin1.png" x="0" y="0" />
+            <sprite id="sheena_sy_fin1" marker="Sheena_Regular" src="yae/sheena_sy_fin1.png" x="30" y="-76" />
+            <sprite id="Esheena_sy_fin1" marker="Sheena_Evening" src="yae/Esheena_sy_fin1.png" x="30" y="-75" />
+            <sprite id="Bsheena_sy_fin1" marker="Sheena_Bunny" src="yae/Bsheena_sy_fin1.png" x="30" y="-75" />
+            <sprite id="yaelegs_sy_fin1" z="3" src="yae/yaelegs_sy_fin1.png" x="0" y="0" />
+            <sprite id="arms_sy_fin1" z="2" src="yae/arms_sy_fin1.png" x="30" y="-76" />
+        </pose>
+        <pose id="dual_sheena_fin2">
+            <sprite id="yae_sy_fin1" z="1" src="reskins/yae_retro_ninja/yae_sy_fin2.png" x="0" y="0" />
+            <sprite id="sheena_sy_fin1" marker="Sheena_Regular" src="yae/sheena_sy_fin2.png" x="30" y="-76" />
+            <sprite id="Esheena_sy_fin1" marker="Sheena_Evening" src="yae/Esheena_sy_fin2.png" x="30" y="-76" />
+            <sprite id="Bsheena_sy_fin1" marker="Sheena_Bunny" src="yae/Bsheena_sy_fin2.png" x="30" y="-76" />
+            <sprite id="yaelegs_sy_fin1" z="3" src="yae/yaelegs_sy_fin1.png" x="0" y="0" />
+            <sprite id="arms_sy_fin1" z="2" src="yae/arms_sy_fin2.png" x="30" y="-76" />
+        </pose>
+        <pose id="dual_sheena_fin3">
+            <sprite id="yae_sy_fin1" z="1" src="reskins/yae_retro_ninja/yae_sy_fin3.png" x="0" y="0" />
+            <sprite id="sheena_sy_fin1" marker="Sheena_Regular" src="yae/sheena_sy_fin3.png" x="30" y="-76" />
+            <sprite id="Esheena_sy_fin1" marker="Sheena_Evening" src="yae/Esheena_sy_fin3.png" x="30" y="-76" />
+            <sprite id="Bsheena_sy_fin1" marker="Sheena_Bunny" src="yae/Bsheena_sy_fin3.png" x="30" y="-76" />
+            <sprite id="yaelegs_sy_fin1" z="3" src="yae/yaelegs_sy_fin1.png" x="0" y="0" />
+            <sprite id="arms_sy_fin1" z="2" src="yae/arms_sy_fin3.png" x="30" y="-76" />
+        </pose>
+        <pose id="dual_sheena_hi1">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_hi1.png" x="68" y="-7" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_hi1.png" x="-33" y="30" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_hi1.png" x="-33" y="30" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_hi1.png" x="-33" y="30" />
+            <sprite id="arms_sy_hi1" z="2" src="yae/arms_sy_hi1.png" x="69" y="-7" />
+        </pose>
+        <pose id="dual_sheena_hi2">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_hi2.png" x="65" y="-7" rotation="1" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_hi2.png" x="-35" y="30" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_hi2.png" x="-35" y="30" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_hi2.png" x="-35" y="30" />
+            <sprite id="arms_sy_hi1" z="2" src="yae/arms_sy_hi1.png" x="164" y="-23" rotation="24" />
+        </pose>
+        <pose id="dual_sheena_hi3">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_hi3.png" x="67" y="-7" rotation="-1" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_hi3.png" x="-33" y="30" rotation="1" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_hi3.png" x="-33" y="29" rotation="1" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_hi3.png" x="-33" y="29" rotation="1" />
+            <sprite id="arms_sy_hi1" z="2" src="yae/arms_sy_hi1.png" x="117" y="-20" rotation="10" />
+        </pose>
+        <pose id="dual_sheena_hi4">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_hi4.png" x="67" y="-7" rotation="-1" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_hi4.png" x="-33" y="30" rotation="-1" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_hi4.png" x="-33" y="31" rotation="-1" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_hi4.png" x="-33" y="31" rotation="-1" />
+            <sprite id="arms_sy_hi1" z="2" src="yae/arms_sy_hi1.png" x="335" y="82" rotation="78" />
+        </pose>
+        <pose id="dual_sheena_hi5">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_hi5.png" x="69" y="-7" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_hi5.png" x="-34" y="30" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_hi5.png" x="-34" y="30" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_hi5.png" x="-34" y="30" />
+            <sprite id="arms_sy_hi1" z="2" src="yae/arms_sy_hi1.png" x="359" y="122" rotation="90" />
+        </pose>
+        <pose id="dual_sheena_histart">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_intohi.png" x="68" y="-10" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_intohi.png" x="-92" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_intohi.png" x="-92" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_intohi.png" x="-92" y="40" />
+        </pose>
+        <pose id="dual_sheena_lite1">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_lite1.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite1.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite1.png" x="0" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite1.png" x="0" y="40" />
+            <sprite id="arms_sy_lite1" z="2" src="yae/arms_sy_lite1.png" x="0" y="-50" />
+        </pose>
+        <pose id="dual_sheena_lite2">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_lite2.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite2.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite2.png" x="0" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite2.png" x="0" y="40" />
+        </pose>
+        <pose id="dual_sheena_lite3">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_lite3.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite3.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite3.png" x="0" y="39" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite3.png" x="0" y="39" />
+            <sprite id="arms_sy_lite3" z="2" src="yae/arms_sy_lite3.png" x="0" y="-50" />
+        </pose>
+        <pose id="dual_sheena_lost1">
+            <sprite id="yae_lost1" z="1" src="reskins/yae_retro_ninja/yae_lost1.png" x="102" y="0" />
+            <sprite id="sheena_lost1" marker="Sheena_Regular" src="yae/sheena_lost1.png" x="-100" y="-10" />
+            <sprite id="Esheena_lost1" marker="Sheena_Evening" src="yae/Esheena_lost1.png" x="-100" y="-10" />
+            <sprite id="Bsheena_lost1" marker="Sheena_Bunny" src="yae/Bsheena_lost1.png" x="-100" y="-10" />
+        </pose>
+        <pose id="dual_sheena_lost2">
+            <sprite id="yae_lost2" src="reskins/yae_retro_ninja/yae_lost2.png" x="102" y="0" />
+            <sprite id="sheena_lost2" marker="Sheena_Regular" src="yae/sheena_lost2.png" x="-100" y="20" />
+            <sprite id="Esheena_lost2" marker="Sheena_Evening" src="yae/Esheena_lost2.png" x="-100" y="20" />
+            <sprite id="Bsheena_lost2" marker="Sheena_Bunny" src="yae/Bsheena_lost2.png" x="-100" y="20" />
+        </pose>
+        <pose id="dual_sheena_mid1">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_mid1.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite2.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite2.png" x="0" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite2.png" x="0" y="40" />
+            <sprite id="arms_sy_lite1" z="2" src="yae/arms_sy_mid1.png" x="0" y="-50" />
+        </pose>
+        <pose id="dual_sheena_mid2">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_mid2.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite3.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite3.png" x="0" y="39" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite3.png" x="0" y="39" />
+        </pose>
+        <pose id="dual_sheena_mid3">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_mid3.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_lite1.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_lite1.png" x="0" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_lite1.png" x="0" y="40" />
+        </pose>
+        <pose id="dual_sheena_mid4">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_mid4.png" x="0" y="-50" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_mid4.png" x="0" y="40" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_mid4.png" x="0" y="40" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_mid4.png" x="0" y="40" />
+        </pose>
+        <pose id="dual_sheena_sheenaO">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_sheenaO.png" x="69" y="-7" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_sheenaO.png" x="-34" y="30" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_sheenaO.png" x="-34" y="30" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_sheenaO.png" x="-34" y="30" />
+        </pose>
+        <pose id="dual_sheena_sheenaP">
+            <sprite id="yae_sy_lite1" src="reskins/yae_retro_ninja/yae_sy_sheenaP.png" x="69" y="-7" />
+            <sprite id="sheena_sy_lite1" marker="Sheena_Regular" z="1" src="yae/sheena_sy_sheenaP.png" x="-133" y="85" />
+            <sprite id="Esheena_sy_lite1" marker="Sheena_Evening" z="1" src="yae/Esheena_sy_sheenaP.png" x="-133" y="87" />
+            <sprite id="Bsheena_sy_lite1" marker="Sheena_Bunny" z="1" src="yae/Bsheena_sy_sheenaP.png" x="-133" y="87" />
+        </pose>
+        <pose id="dual_sheena_yaeO">
+            <sprite id="yae_sy_fin1" z="1" src="reskins/yae_retro_ninja/yae_sy_yaeO.png" x="0" y="0" />
+            <sprite id="sheena_sy_fin1" marker="Sheena_Regular" src="yae/sheena_sy_yaeO.png" x="30" y="-76" />
+            <sprite id="Esheena_sy_fin1" marker="Sheena_Evening" src="yae/Esheena_sy_yaeO.png" x="30" y="-77" />
+            <sprite id="Bsheena_sy_fin1" marker="Sheena_Bunny" src="yae/Bsheena_sy_yaeO.png" x="30" y="-77" />
+            <sprite id="yaelegs_sy_fin1" z="3" src="yae/yaelegs_sy_yaeO.png" x="0" y="0" />
+            <sprite id="arms_sy_fin1" z="2" src="yae/arms_sy_fin1.png" x="30" y="-76" />
+        </pose>
+        <pose id="dual_sheena_yaeP">
+            <sprite id="yae_sy_fin1" z="1" src="reskins/yae_retro_ninja/yae_sy_yaeP.png" x="-8" y="-38" />
+            <sprite id="sheena_sy_fin1" marker="Sheena_Regular" src="yae/sheena_sy_yaeP.png" x="27" y="-103" />
+            <sprite id="Esheena_sy_fin1" marker="Sheena_Evening" src="yae/Esheena_sy_yaeP.png" x="27" y="-104" />
+            <sprite id="Bsheena_sy_fin1" marker="Sheena_Bunny" src="yae/Bsheena_sy_yaeP.png" x="27" y="-104" />
+        </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/yae_retro_ninja/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="yae/choco_piece.png" x="-229" y="327" rotation="-3" />
+        </pose>
     </poses>
 
 </costume>

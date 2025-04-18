@@ -418,6 +418,10 @@
                 <keyframe time="1.5" scalex="1" scaley="1" />
             </directive>
         </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/yshtola_scion_vacationer/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="yshtola/choco_piece.png" x="225" y="311" scalex="-1" scaley="1" rotation="80" />
+        </pose>
     </poses>
 
 </costume>
