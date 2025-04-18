@@ -49,6 +49,10 @@
             <sprite id="yae-armleft" z="3" src="roll_caskett/ex-yae-armleft.png" x="74" y="-19" scalex="0.9" scaley="1" rotation="16" />
             <sprite id="yae-armright" z="3" src="roll_caskett/ex-yae-armright.png" x="65" y="-23" rotation="-9" />
         </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/roll_caskett_scrapped_mechanic/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="roll_caskett/choco_piece.png" x="221" y="399" scalex="-1" rotation="27" />
+        </pose>
     </poses>
 
 </costume>

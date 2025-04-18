@@ -294,6 +294,10 @@
                 <keyframe time="0.5" src="sheena/card0.png" />
             </directive>
         </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/sheena_sugary_summoner/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="sheena/choco_piece.png" x="-178" y="299" rotation="42" />
+        </pose>
     </poses>
 
 </costume>

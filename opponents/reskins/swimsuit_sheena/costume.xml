@@ -347,6 +347,10 @@
                 <keyframe time="1" scalex="1.7" scaley="1.7" alpha="0" />
             </directive>
         </pose>
+        <pose id="eating">
+            <sprite id="munch" z="1" src="reskins/swimsuit_sheena/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="sheena/choco_piece.png" x="-178" y="299" rotation="42" />
+        </pose>
     </poses>
 
 </costume>

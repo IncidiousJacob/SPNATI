@@ -28,5 +28,53 @@
         <clothing name="skirt" generic="skirt" position="lower" type="major" />
     </wardrobe>
 
+    <poses>
+        <pose id="4-anistrip">
+            <sprite id="stripping" src="reskins/sofia_turnip_lies/4-stripping.png" x="0" y="0" />
+            <directive type="animation" id="stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="1.9" y="0" />
+                <keyframe time="1.95" y="22" />
+                <keyframe time="2" y="0" />
+                <keyframe time="2.5" y="0" />
+            </directive>
+            <directive type="animation" id="stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/sofia_turnip_lies/4-stripping.png" />
+                <keyframe time="1.95" src="reskins/sofia_turnip_lies/ex-outcorset.png" />
+                <keyframe time="2.5" src="reskins/sofia_turnip_lies/ex-outcorset.png" />
+            </directive>
+            <directive type="animation" id="stripping" delay="1.9" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.05000007" scalex="1.03" scaley="0.97" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+                <keyframe time="0.6" scalex="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="5-anistrip">
+            <sprite id="stripping" src="reskins/sofia_turnip_lies/5-stripping.png" x="0" y="0" />
+            <directive type="animation" id="stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="1.9" y="0" />
+                <keyframe time="1.95" y="22" />
+                <keyframe time="2" y="0" />
+                <keyframe time="2.5" y="0" />
+            </directive>
+            <directive type="animation" id="stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/sofia_turnip_lies/5-stripping.png" />
+                <keyframe time="1.95" src="reskins/sofia_turnip_lies/ex-outpanties.png" />
+                <keyframe time="2.5" src="reskins/sofia_turnip_lies/ex-outpanties.png" />
+            </directive>
+            <directive type="animation" id="stripping" delay="1.9" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.05000007" scalex="1.03" scaley="0.97" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+                <keyframe time="0.6" scalex="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="not_eating">
+            <sprite id="munch" z="1" src="reskins/sofia_turnip_lies/#-munch.png" x="0" y="0" />
+            <sprite id="choco_piece" marker="Chocolate_Get" src="sofia/choco_piece.png" x="-221" y="435" rotation="134" />
+        </pose>
+    </poses>
 
 </costume>
