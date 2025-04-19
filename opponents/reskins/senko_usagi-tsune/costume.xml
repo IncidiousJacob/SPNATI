@@ -29,5 +29,19 @@
         <clothing name="sandals" generic="shoes" position="feet" type="extra" plural="true" />
     </wardrobe>
 
+    <poses>
+        <pose id="yae_tail_fluff_easter">
+            <sprite id="senko_tail_fluff" src="senko/pose_maker/#-senko_tail_fluff_easter.png" x="0" y="0" />
+            <sprite id="yae_tail_fluff" z="-1" src="senko/pose_maker/yae_tail_fluff.png" x="156" y="0" />
+        </pose>
+        <pose id="yae_tail_fluff_easter_bunny">
+            <sprite id="senko_tail_fluff" src="senko/pose_maker/#-senko_tail_fluff_easter.png" x="0" y="0" />
+            <sprite id="yae_tail_fluff" z="-1" src="senko/pose_maker/yae_tail_fluff_bunny.png" x="156" y="0" />
+        </pose>
+        <pose id="yae_tail_fluff_easter_retro">
+            <sprite id="senko_tail_fluff" src="senko/pose_maker/#-senko_tail_fluff_easter.png" x="0" y="0" />
+            <sprite id="yae_tail_fluff" z="-1" src="senko/pose_maker/yae_tail_fluff_retro.png" x="156" y="0" />
+        </pose>
+    </poses>
 
 </costume>
