@@ -12,6 +12,9 @@
         <case name="Talking Graffiti" id="39" priority="Prompt" min="0" max="0">
             <description>Description about what's interesting happening with the character (i.e. why should others target this?)</description>
         </case>
+        <case name="Lewd Selfie!" id="53" priority="Noteworthy" min="7" max="7">
+            <description>Vinyl gets ahead of herself and sends a lewd picture to one of her friends!</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -55,34 +58,93 @@
         <response id="48" opponent="yuelia" opponentId="1" />
         <response id="49" opponent="mulan" opponentId="76" />
         <response id="50" opponent="mulan" opponentId="33" />
+        <response id="51" opponent="yshtola" opponentId="170" />
+        <response id="52" opponent="yshtola" opponentId="6" />
+        <response id="54" opponent="wikipe-tan" opponentId="175" />
+        <response id="55" opponent="wikipe-tan" opponentId="174" />
     </responses>
-    <nextId>50</nextId>
+    <nextId>55</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="AaraviScars" />
         <marker scope="Public" name="AloyAskRobots" />
+        <marker scope="Public" name="AloyFuture" />
+        <marker scope="Public" name="AmyroseSega" />
+        <marker scope="Public" name="AmySega" />
         <marker scope="Public" name="AquaAskGangs" />
+        <marker scope="Public" name="AquaCheating" />
         <marker scope="Public" name="Astrology" />
+        <marker scope="Public" name="BoboboAfro" />
         <marker scope="Public" name="CadenceAskPhone" />
+        <marker scope="Public" name="CaitlinFloat" />
+        <marker scope="Public" name="CharaKnife" />
+        <marker scope="Public" name="ChazzConfused" />
+        <marker scope="Public" name="ChazzDarkMagicFlirt" />
+        <marker scope="Public" name="ChazzNotMagic" />
         <marker scope="Public" name="ChihiroButtFlirt" />
         <marker scope="Public" name="ChihiroFlirt" />
+        <marker scope="Public" name="DashSkateDate" />
         <marker scope="Public" name="FateAskCards" />
         <marker scope="Public" name="FateFelix" />
         <marker scope="Public" name="FeetPics" />
         <marker scope="Public" name="FlipPhone" />
+        <marker scope="Public" name="FluttershyBooty" />
+        <marker scope="Public" name="FluttershyJunkInTrunk" />
+        <marker scope="Public" name="FuttershyPets" />
         <marker scope="Public" name="GlamrockAskAppearance" />
+        <marker scope="Public" name="JessieAnal" />
+        <marker scope="Public" name="JessieAss" />
+        <marker scope="Public" name="JessieSecrets" />
+        <marker scope="Public" name="KyokoRetro" />
+        <marker scope="Public" name="KyokoWet" />
+        <marker scope="Public" name="KyoukoDance" />
+        <marker scope="Public" name="KyoukoMasterLiar" />
+        <marker scope="Public" name="KyoukoRibbon" />
         <marker scope="Public" name="MagmaAskGangs" />
         <marker scope="Public" name="MasturbatingNudeBel" />
         <marker scope="Public" name="MasturbatingNudeDJCyber" />
         <marker scope="Public" name="MasturbatingNudeRed" />
         <marker scope="Public" name="MasturbatingNudeTryce" />
+        <marker scope="Public" name="MeguminDevilTheoryMixup" />
+        <marker scope="Public" name="MeguminRobotCuffs" />
+        <marker scope="Public" name="MeguminTableGames" />
+        <marker scope="Public" name="MeguminTanks" />
         <marker scope="Public" name="MentionSolace" />
+        <marker scope="Public" name="MercyGlasses" />
+        <marker scope="Public" name="MercyNoBenefits" />
+        <marker scope="Public" name="MercyWings" />
         <marker scope="Public" name="MikuAskMusic" />
+        <marker scope="Public" name="MikuBlueHair" />
+        <marker scope="Public" name="MulanOldheads" />
+        <marker scope="Public" name="MulanPerfectMan" />
+        <marker scope="Public" name="NatsukiStroopwafels" />
+        <marker scope="Public" name="NatsukiTompouce" />
+        <marker scope="Public" name="NayruBrainHack" />
+        <marker scope="Public" name="NudeMalePlayer" />
+        <marker scope="Public" name="NudePlayer" />
+        <marker scope="Public" name="NudePlayerFemale" />
+        <marker scope="Public" name="OchakoAntigravity" />
         <marker scope="Public" name="PhantomThieves" />
         <marker scope="Public" name="PromptDances" />
         <marker scope="Public" name="PromptGraffiti" />
         <marker scope="Public" name="PromptMusic" />
         <marker scope="Public" name="PsychicAskHelp" />
+        <marker scope="Public" name="RaynorAliens" />
+        <marker scope="Public" name="RaynorDevice" />
+        <marker scope="Public" name="RaynorStreetCulture" />
+        <marker scope="Public" name="Rose" />
+        <marker scope="Public" name="RoseBodymod" />
+        <marker scope="Public" name="RoseClaws" />
+        <marker scope="Public" name="RyujiBeg" />
+        <marker scope="Public" name="RyujiBooti" />
+        <marker scope="Public" name="RyujiBulge" />
+        <marker scope="Public" name="RyujiFeelings" />
+        <marker scope="Public" name="RyujiGraffitiDate" />
         <marker scope="Public" name="SadAboutBoys" />
+        <marker scope="Public" name="SamusCyberhead" />
+        <marker scope="Public" name="SamusNoHelmet" />
+        <marker scope="Public" name="ShantaeBlueballs" />
+        <marker scope="Public" name="ShantaeClothes" />
         <marker scope="Public" name="StartForest" />
         <marker scope="Public" name="StartMataan" />
         <marker scope="Public" name="StartParisMataan" />
@@ -103,5 +165,13 @@
         <marker scope="Public" name="VinylFlipPhone" />
         <marker scope="Public" name="VinylLookForCops" />
         <marker scope="Public" name="VinylStripMaleFaux" />
+        <marker scope="Public" name="WikiHairDye" />
+        <marker scope="Public" name="WikiSwimsuit" />
+        <marker scope="Public" name="YshtolaFocus" />
+        <marker scope="Public" name="YshtolaSkateboard" />
+        <marker scope="Public" name="YueliaButterfly" />
+        <marker scope="Public" name="YuellaRelief" />
+        <marker scope="Public" name="YuzukiAnswer" />
+        <marker scope="Public" name="YuzukiThink" />
     </markers>
 </metadata>
