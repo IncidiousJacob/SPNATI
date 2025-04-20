@@ -29,6 +29,12 @@ namespace SPNATI_Character_Editor
 		[XmlElement("directive")]
 		public List<PoseDirective> Directives = new List<PoseDirective>();
 
+		[Text(DisplayName = "Z Layer", Key = "ZIndexPose", GroupOrder = 16)]
+		[DefaultValue("")]
+		[XmlAttribute("z-index")]
+		public string ZIndexPose;
+
+
 		public override string ToString()
 		{
 			if (string.IsNullOrEmpty(Id))
@@ -77,6 +83,7 @@ namespace SPNATI_Character_Editor
 
 			Id = pose.Id;
 			BaseHeight = pose.BaseHeight.ToString();
+			ZIndexPose = pose._z_index;
 
 			//1. Create Sprites for each LiveSprite's first frame
 			foreach (LiveSprite item in pose.Sprites)

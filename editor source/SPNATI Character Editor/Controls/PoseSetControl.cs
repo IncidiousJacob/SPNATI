@@ -43,6 +43,7 @@ namespace SPNATI_Character_Editor.Controls
 			valPriority.Value = 0;
 			valLocation.Value = 50;
 			cboDirection.Text = "";
+			valZIndex.Text = "";
 		}
 
 		public void ShowLblStage()
@@ -100,6 +101,7 @@ namespace SPNATI_Character_Editor.Controls
 			valLocation.Value = Math.Max(valLocation.Minimum, Math.Min(valLocation.Maximum, (decimal)location));
 			cboDirection.Text = _selectedEntry.Direction ?? "";
 			valPriority.Value = Math.Max(valPriority.Minimum, Math.Min(valPriority.Maximum, _selectedEntry.Priority));
+			valZIndex.Text = _selectedEntry.ZIndexPoseSet ?? "";
 			PopulatePoseEntryTable();
 		}
 
@@ -206,6 +208,7 @@ namespace SPNATI_Character_Editor.Controls
 			_selectedEntry.Weight = (float)valWeight.Value == 0.001f ? 0f : (float)valWeight.Value;
 			_selectedEntry.Priority = (int) valPriority.Value;
 			_selectedEntry.Direction = cboDirection.Text;
+			_selectedEntry.ZIndexPoseSet = valZIndex.Text;
 			PoseMapping image = cboPose.SelectedItem as PoseMapping;
 			if (image == null)
 				return;
