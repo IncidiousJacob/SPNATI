@@ -126,6 +126,7 @@
         <response id="689" opponent="juno" opponentId="497" />
         <response id="691" opponent="juno" opponentId="495" />
         <response id="696" opponent="juno" opponentId="498" />
+        <response id="816" opponent="vinyl" opponentId="18" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -603,7 +604,7 @@
         <label id="458" label="" color="3" folder="Responses&gt;Meia" sort="3" />
         <label id="459" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="2" />
         <label id="460" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="2" />
-        <label id="461" label="" folder="Responses&gt;Jura&gt;Speed Warrior" sort="3" />
+        <label id="461" label="" color="3" folder="Responses&gt;Jura&gt;Speed Warrior" sort="3" />
         <label id="462" label="" color="3" folder="Responses&gt;Jura&gt;Junk Warrior (Default)" sort="2" />
         <label id="463" label="" color="3" folder="Targets&gt;Jura" sort="7" />
         <label id="464" label="" color="6" folder="Targets&gt;Jura&gt;Santa" sort="3" />
@@ -643,7 +644,7 @@
         <label id="498" label="" color="3" folder="Responses&gt;Meia&gt;Junk Warrior (Default)" sort="3" />
         <label id="499" label="" color="3" folder="Responses&gt;Meia&gt;Speed Warrior" sort="3" />
         <label id="500" label="" color="3" folder="Responses&gt;Meia" sort="6" />
-        <label id="501" label="" color="4" folder="Responses&gt;Jura" sort="5" />
+        <label id="501" label="" color="3" folder="Responses&gt;Jura" sort="5" />
         <label id="502" label="" color="3" folder="Responses&gt;Jura" sort="6" />
         <label id="503" label="(stage 1)" folder="Targets&gt;Jura" sort="5" />
         <label id="504" label="(stage 1, also playing Meia)" folder="Targets&gt;Jura" sort="2" />
@@ -757,7 +758,7 @@
         <label id="613" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="614" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="615" label="" color="3" folder="Targets&gt;Juno" sort="0" />
-        <label id="616" label="" color="3" folder="" sort="0" />
+        <label id="616" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="617" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="618" label="(stage 1)" folder="Targets&gt;Meia" sort="0" />
         <label id="619" label="" color="3" folder="Responses&gt;Meia" sort="0" />
@@ -797,8 +798,8 @@
         <label id="653" label="" color="3" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="654" label="" folder="Targets" sort="0" />
         <label id="655" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
-        <label id="656" label="" folder="Responses&gt;Jura" sort="0" />
-        <label id="657" label="" folder="Responses&gt;Jura" sort="0" />
+        <label id="656" label="" color="3" folder="Responses&gt;Jura" sort="0" />
+        <label id="657" label="" color="3" folder="Responses&gt;Jura" sort="0" />
         <label id="658" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="659" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
         <label id="660" label="" folder="Targets&gt;Tifa Lockheart" sort="0" />
@@ -836,8 +837,8 @@
         <label id="695" label="" color="6" folder="Targets&gt;Juno" sort="0" />
         <label id="696" label="" color="6" folder="Targets&gt;Juno" sort="0" />
         <label id="697" label="" color="6" folder="Targets&gt;Juno" sort="0" />
-        <label id="680" label="" color="3" folder="" sort="0" />
-        <label id="698" label="" color="3" folder="" sort="0" />
+        <label id="680" label="" color="3" folder="Targets&gt;Juno" sort="0" />
+        <label id="698" label="" color="3" folder="Targets&gt;Juno" sort="0" />
         <label id="699" label="" color="6" folder="Targets&gt;Juno" sort="0" />
         <label id="700" label="" folder="Filters" sort="0" />
         <label id="701" label="" folder="Filters" sort="0" />
@@ -952,11 +953,21 @@
         <label id="810" label="" folder="Targets&gt;Mari S" sort="0" />
         <label id="811" label="" folder="Targets&gt;Mari S" sort="0" />
         <label id="812" label="" folder="Targets&gt;Mari S" sort="0" />
+        <label id="689" label="" folder="Targets&gt;Juno" sort="0" />
+        <label id="688" label="" folder="Targets&gt;Juno" sort="0" />
+        <label id="813" label="" folder="Targets&gt;Giygas" sort="0" />
+        <label id="814" label="" color="1" folder="Targets" sort="0" />
+        <label id="815" label="" color="1" folder="Targets" sort="0" />
+        <label id="816" label="" folder="Prompt Responses" sort="0" />
+        <label id="817" label="" folder="Prompt Responses" sort="0" />
+        <label id="818" label="" folder="Prompt Responses" sort="0" />
+        <label id="819" label="" folder="Responses" sort="0" />
+        <label id="820" label="" folder="Responses" sort="0" />
     </labels>
     <prefixes>
         <prefix>x_</prefix>
     </prefixes>
-    <nextId>812</nextId>
+    <nextId>820</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
@@ -1085,6 +1096,7 @@
         <marker scope="Public" name="schezo_yusei_real2_psychicduelist" />
         <marker scope="Public" name="schezo_yusei_real3_darksigners" />
         <marker scope="Public" name="schezo_yusei_real3_psychicduelist" />
+        <marker scope="Public" name="scm_yuseiResp" />
         <marker scope="Public" name="sei_anal" />
         <marker scope="Public" name="sei_drink_offer" />
         <marker scope="Public" name="self_mustmast_mariS" />
@@ -1109,6 +1121,9 @@
         <marker scope="Public" name="velvet_mate" />
         <marker scope="Public" name="velvet_mate2" />
         <marker scope="Public" name="velvet_personality_resp" />
+        <marker scope="Public" name="vinyl_dances_Resp" />
+        <marker scope="Public" name="vinyl_graffiti_Resp" />
+        <marker scope="Public" name="vinyl_music_Resp" />
         <marker scope="Public" name="wrgp_explain" />
         <marker scope="Public" name="yu-nade_pose_nadeshiko_climax" />
         <marker scope="Public" name="yuno_copycat" />
@@ -1519,6 +1534,8 @@
         <marker scope="Public" name="yusei_velvet_self1a" />
         <marker scope="Public" name="yusei_velvet_self2a" />
         <marker scope="Public" name="yusei_velvet_self3a" />
+        <marker scope="Public" name="yusei_vinyl_strip0a" />
+        <marker scope="Public" name="yusei_vinyl_strip1a" />
         <marker scope="Public" name="yusei_wiz_strip0a" />
         <marker scope="Public" name="yusei_yuno_riding1" />
         <marker scope="Public" name="yusei_yuno_riding2" />
