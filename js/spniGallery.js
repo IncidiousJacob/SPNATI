@@ -346,11 +346,15 @@ function goToCardsScreen() {
 }
 
 function createFilterOption (opp) {
+    const fullName = opp.last ? `${opp.first} ${opp.last}` : opp.first;
+    const nameWithLabel = opp.metaLabel == opp.first || opp.metaLabel == fullName
+        ? fullName
+        : `${opp.metaLabel} (${fullName})`;
+
     var elem = document.createElement('option');
+    elem.text = opp.last ? nameWithLabel : `${fullName} (${opp.source})`;
     elem.value = opp.id;
-    elem.text = opp.metaLabel;
-    elem.className = 'gallery-character-filter-option'
-    
+    elem.classList.add('gallery-character-filter-option');
     return elem;
 }
 
