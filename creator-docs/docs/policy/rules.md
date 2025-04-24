@@ -20,10 +20,12 @@ A) All characters must appear to be a legal adult (18 or older physically and me
 B) If the character is not 18 or older in their canon source material, they can be aged up from a minimum general age of being a teenager in source. The character’s art and dialogue *must* be altered to show that they have matured since appearing in their source material. The more a character needs to be aged up, the greater the changes required. 
 
 C) As general practice, the following guidelines are always in effect;
+
 - Characters under the age of 12 will not be considered,
 - Characters that are under the age of 14-15 years can expect to face heavier scrutiny,
 - Scrutiny in this context refers to the level of critical examination of a character with regards to their physical appearance, general personality, and feeling of maturity with respect to adult topics and situations,
-- **Moderator discretion takes precedence with regards to any development decision for character development, including but not limited to apparent age of a character.**
+
+**Moderator discretion takes precedence with regards to any development decision for character development, including but not limited to apparent age of a character.**
 
 D) Characters that are notably immature in regards to appearance, personality, and maturity may be excluded from entry into the game. In particular for instances of the “1000 year old dragon child” trope, rejection from testing is likely. Lolicon/Shotacon and attempts to disguise lolicon/shotacon or adjacent fetishes are banned. 
 
