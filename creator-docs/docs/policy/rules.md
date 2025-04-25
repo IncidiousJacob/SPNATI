@@ -73,4 +73,4 @@ The Moderation Team will be the final arbitrators of whether a character deserve
 
 ---
 
-*Rules Effective 2021-11-23*
+*Rules Last Modified 2025-04-23*
