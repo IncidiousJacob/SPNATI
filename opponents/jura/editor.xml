@@ -18,12 +18,6 @@
         <case name="Birthday" id="14" priority="Noteworthy" min="0" max="0">
             <description>On August 31st, Jura proudly exclaims that it's her birthday.</description>
         </case>
-        <case name="Butt (Thong)" id="20" priority="Noteworthy" min="5" max="5">
-            <description>Jura shows off her butt, still in her thong.</description>
-        </case>
-        <case name="Butt (Nude)" id="21" priority="Noteworthy" min="6" max="6">
-            <description>Jura shows off her nude butt.</description>
-        </case>
         <case name="Babies" id="33" priority="Prompt" min="0" max="6">
             <description>Jura describes how she wants to have a baby soon and asks her tablemates if any of them are interested in having children of their own.</description>
         </case>
@@ -59,12 +53,6 @@
         </case>
         <case name="Santa-F" id="1364" priority="Prompt" min="2" max="2">
             <description>Jura offhandedly refers to Santa as a woman.</description>
-        </case>
-        <case name="Mahiru Selfie" id="1412" priority="Noteworthy" min="6" max="6">
-            <description>Jura excitedly poses for a nude selfie with Mahiru.</description>
-        </case>
-        <case name="Mahiru/Natsuki Selfie" id="1413" priority="Noteworthy" min="6" max="6">
-            <description>Jura smushes Natsuki between her breasts, dragging her into a selfie with Mahiru.</description>
         </case>
         <case name="Meia Reverse Dual Forfeit" id="1903" priority="Noteworthy" min="6" max="6">
             <description>Jura drags Meia over to "help" her and Barnette.</description>
@@ -1077,14 +1065,14 @@
         <label id="2176" label="" color="4" folder="" sort="0" />
         <label id="2188" label="" color="4" folder="" sort="0" />
         <label id="2229" label="" color="4" folder="" sort="0" />
-        <label id="2323" label="" color="4" folder="" sort="0" />
+        <label id="2572" label="" color="4" folder="" sort="0" />
         <label id="2230" label="" color="4" folder="" sort="0" />
         <label id="2231" label="" color="4" folder="" sort="0" />
         <label id="2234" label="" color="4" folder="" sort="0" />
         <label id="2438" label="" color="4" folder="" sort="0" />
         <label id="2321" label="" color="4" folder="" sort="0" />
         <label id="2235" label="" color="4" folder="" sort="0" />
-        <label id="2514" label="" color="4" folder="" sort="0" />
+        <label id="2573" label="" color="4" folder="" sort="0" />
         <label id="2445" label="" color="4" folder="" sort="0" />
         <label id="2370" label="" color="4" folder="" sort="0" />
         <label id="2253" label="" color="4" folder="" sort="0" />
@@ -1146,7 +1134,7 @@
         <label id="2309" label="" color="11" folder="" sort="0" />
         <label id="2310" label="" color="2" folder="" sort="0" />
         <label id="2311" label="" color="2" folder="" sort="0" />
-        <label id="2322" label="" color="4" folder="" sort="0" />
+        <label id="2571" label="" color="4" folder="" sort="0" />
         <label id="2404" label="" color="4" folder="" sort="0" />
         <label id="2570" label="" color="4" folder="" sort="0" />
         <label id="2553" label="" color="4" folder="" sort="0" />
@@ -1171,7 +1159,7 @@
         <label id="2531" label="" color="4" folder="" sort="0" />
         <label id="2559" label="" color="4" folder="" sort="0" />
         <label id="2561" label="" color="4" folder="" sort="0" />
-        <label id="2513" label="" color="4" folder="" sort="0" />
+        <label id="2574" label="" color="4" folder="" sort="0" />
         <label id="2450" label="" color="4" folder="" sort="0" />
         <label id="2483" label="" color="4" folder="" sort="0" />
         <label id="2437" label="" color="4" folder="" sort="0" />
@@ -1186,11 +1174,10 @@
         <label id="2563" label="" color="4" folder="" sort="0" />
         <label id="2528" label="" color="4" folder="" sort="0" />
         <label id="2564" label="" color="4" folder="" sort="0" />
-        <label id="2511" label="" color="4" folder="" sort="0" />
+        <label id="2575" label="" color="4" folder="" sort="0" />
         <label id="2512" label="" color="4" folder="" sort="0" />
         <label id="2520" label="" color="4" folder="" sort="0" />
         <label id="2562" label="" color="4" folder="" sort="0" />
-        <label id="2532" label="" color="4" folder="" sort="0" />
         <label id="2534" label="" color="4" folder="" sort="0" />
         <label id="2538" label="" color="4" folder="" sort="0" />
         <label id="2539" label="" color="4" folder="" sort="0" />
@@ -1205,11 +1192,13 @@
         <label id="2549" label="" color="4" folder="" sort="0" />
         <label id="2550" label="" color="4" folder="" sort="0" />
         <label id="2557" label="" color="4" folder="" sort="0" />
+        <label id="2576" label="" color="4" folder="" sort="0" />
+        <label id="2577" label="" color="4" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>jura</prefix>
     </prefixes>
-    <nextId>2570</nextId>
+    <nextId>2577</nextId>
     <markers>
         <marker scope="Public" name="1v1">Jura acknowledges that the game has come down to her and one other player.</marker>
         <marker scope="Public" name="9s0" />
@@ -1429,6 +1418,7 @@
         <marker scope="Public" name="buttspread">For butt-spreading poses.</marker>
         <marker scope="Public" name="cadence_christmas" />
         <marker scope="Public" name="cadence_resp0" />
+        <marker scope="Public" name="cadence_resp01" />
         <marker scope="Public" name="cadence_walrus" />
         <marker scope="Public" name="cadence0" />
         <marker scope="Public" name="cadence01" />
@@ -3298,6 +3288,7 @@
         <marker scope="Public" name="priscilla1s" />
         <marker scope="Public" name="priscilla2" />
         <marker scope="Public" name="priscilla23" />
+        <marker scope="Public" name="priscilla3s" />
         <marker scope="Public" name="pyrrha_sm0" />
         <marker scope="Public" name="queenie0" />
         <marker scope="Public" name="rainbowdash0" />
@@ -3699,6 +3690,8 @@
         <marker scope="Public" name="stocking0" />
         <marker scope="Public" name="sucrose_sd0" />
         <marker scope="Public" name="sucrose0" />
+        <marker scope="Public" name="sunset_shimmer0" />
+        <marker scope="Public" name="sunset_shimmer1" />
         <marker scope="Public" name="supernova_babies" />
         <marker scope="Public" name="susie0" />
         <marker scope="Public" name="suzuya_bloodtype" />
@@ -3958,8 +3951,10 @@
         <marker scope="Public" name="yusuke1s" />
         <marker scope="Public" name="yusuke2s" />
         <marker scope="Public" name="yusuke2s_meia" />
+        <marker scope="Public" name="yuzuki_jura_self4b" />
         <marker scope="Public" name="yuzuki_oo0" />
         <marker scope="Public" name="yuzuki_oo01" />
+        <marker scope="Public" name="yuzuki_resp1" />
         <marker scope="Public" name="yuzuki_valentine0" />
         <marker scope="Public" name="yuzuki_valentine01" />
         <marker scope="Public" name="yuzuki0" />
@@ -3967,6 +3962,7 @@
         <marker scope="Public" name="yuzuki1" />
         <marker scope="Public" name="yuzuki12" />
         <marker scope="Public" name="yuzuki1s" />
+        <marker scope="Public" name="yuzuki2" />
         <marker scope="Public" name="yuzuki2s" />
         <marker scope="Public" name="yuzuki3" />
         <marker scope="Public" name="yuzuki34" />
@@ -3974,6 +3970,7 @@
         <marker scope="Public" name="yuzuki45" />
         <marker scope="Public" name="yuzuki4s" />
         <marker scope="Public" name="yuzuki5" />
+        <marker scope="Public" name="yuzuki56" />
         <marker scope="Public" name="yuzuki5s" />
         <marker scope="Public" name="zeke_jura_self0b" />
         <marker scope="Public" name="zeke_jura_self1b" />
