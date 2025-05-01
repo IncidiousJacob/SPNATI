@@ -259,6 +259,7 @@
         <response id="579" opponent="gloria" opponentId="831" />
         <response id="580" opponent="gloria" opponentId="834" />
         <response id="581" opponent="gloria" opponentId="833" />
+        <response id="585" opponent="schezo" opponentId="842" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -592,7 +593,7 @@
         <label id="546" label="" color="15" folder="Stage 1" sort="0" />
         <label id="547" label="" color="15" folder="Stage 2" sort="0" />
         <label id="548" label="" color="15" folder="Stage 2" sort="0" />
-        <label id="549" label="" color="2" folder="Stage 2" sort="0" />
+        <label id="549" label="" color="15" folder="Stage 2" sort="0" />
         <label id="551" label="" color="2" folder="2 Stripping" sort="0" />
         <label id="552" label="" color="2" folder="Stage 3" sort="0" />
         <label id="553" label="" color="2" folder="Stage 0" sort="0" />
@@ -624,12 +625,13 @@
         <label id="581" label="" color="2" folder="Stage 0" sort="0" />
         <label id="584" label="" color="11" folder="" sort="0" />
         <label id="583" label="" color="11" folder="" sort="0" />
+        <label id="585" label="" color="2" folder="Stage 3" sort="0" />
     </labels>
-    <nextId>584</nextId>
+    <nextId>589</nextId>
     <markers>
-        <marker scope="Public" name="" />
+        <marker scope="Public" name="3pokemonmoves" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
-        <marker scope="Public" name="buy_socks">Trigger for Serena's sock collectible</marker>
+        <marker scope="Public" name="bottomless_picture" />
         <marker scope="Public" name="fennekin_jura_01" />
         <marker scope="Public" name="fennekin_jura_02" />
         <marker scope="Public" name="fennekin_jura_11" />
@@ -643,14 +645,17 @@
         <marker scope="Private" name="gameover_tie">Ties in a game</marker>
         <marker scope="Private" name="gameover_victory">has won, how many times has won</marker>
         <marker scope="Public" name="gloria_see_her_naked1" />
+        <marker scope="Public" name="HowItsPlayed" />
         <marker scope="Public" name="killing">appears to be part of a converstaion with Megumin</marker>
+        <marker scope="Public" name="lysandre" />
+        <marker scope="Public" name="lysandre2" />
+        <marker scope="Public" name="lysandre3" />
         <marker scope="Public" name="naga_defend">Serena comes to Nagatoro's rescue when Ladybug starts pressing her</marker>
         <marker scope="Public" name="nagatoro_swimsuit_query">responding to Nagatoro's comment</marker>
         <marker scope="Public" name="nice_o">marker for responding to Serena's orgasm &amp; floor cleaning</marker>
         <marker scope="Public" name="panties_first">Bottomless picture collectible marker</marker>
         <marker scope="Public" name="pokemon_day" />
         <marker scope="Public" name="schezo_serena_wilds1" />
-        <marker scope="Public" name="scho" />
         <marker scope="Public" name="see_her_naked">Serena is losing, and thinks everyone is picking on her just to see her naked</marker>
         <marker scope="Public" name="serena_aoiasahina_1">First response to Aoi Asahina</marker>
         <marker scope="Public" name="serena_aoiasahina_1_1">Second response to Aoi A's first target</marker>
@@ -920,6 +925,8 @@
         <marker scope="Public" name="serena_schezo_11">Response to Schezo's "Pressing matters didn't let me tour Suzuran, there was a district with much business."</marker>
         <marker scope="Public" name="serena_schezo_21" />
         <marker scope="Public" name="serena_schezo_22" />
+        <marker scope="Public" name="serena_schezo_31" />
+        <marker scope="Public" name="serena_schezo_32" />
         <marker scope="Public" name="serena_schezo_lumiose11">First response to Scheco's "tell me about a city" target</marker>
         <marker scope="Public" name="serena_schezo_lumiose12" />
         <marker scope="Public" name="serena_schezo_lumiose2f" />
