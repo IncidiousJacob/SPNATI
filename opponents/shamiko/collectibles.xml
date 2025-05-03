@@ -1,2 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="collectible_Fork" status="online" img="opponents/shamiko/shamiko_fork.png" thumbnail="opponents/shamiko/crown.png">
+        <title>Devil's Trident </title>
+        <subtitle>Mwahahaha!</subtitle>
+        <text>A weapon truly fit for a demon queen, or for eating giant pancakes. Picking it up, you can faintly hear villainous laughter, and maybe a cough or two.
+
+(Unlocks Shamiko's "Demon of Fantasia costume!)</text>
+        <unlock>Give Shamiko the demonic experience she needs by having her learn from the most horned, demonic, and villainous opponents around.</unlock>
+        <counter>3</counter>
+        <costume>true</costume>
+        <costume-folder>opponents/reskins/shamiko_demon_of_fantasia/</costume-folder>
+    </collectible>
+</collectibles>
