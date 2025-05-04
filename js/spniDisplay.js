@@ -2052,6 +2052,17 @@ function getTagsForOpponent(id, costume_selected, costume_selected_path) {
 }
 
 OpponentDetailsDisplay.prototype.updateTagsView = async function () {
+    // Clickable tags because it is out of scope for opponent-details-value
+    this.tagsView.on('click', 'a', function (ev) {
+        const $link = $(ev.target);
+        const $field = $link.data('search-field');
+        const value = $link.data('search-text') || $link.text();
+        
+        if ($field && value) {
+            $field.val(value).trigger('input');
+        }
+    });
+        
     // Get the base opponent tags
     var baseTags = await getTagsForOpponent(this.opponent.id);
 
@@ -2073,16 +2084,41 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
     var list = document.createElement('ul');
     list.className = 'bordered tag-list';
 
-    baseTags.forEach(tag => {
-        // Loop through the base tags first
-        var listItem = document.createElement('li');
-        listItem.className = 'tag-item';
-        listItem.textContent = tag;
-        list.appendChild(listItem);
-    });
+    // This function makes the tags into click-able refs
+    // that send the tag to the tag-search
+    function appendTagsToList(tagArray, list) {
+        tagArray.forEach(tag => {
+            const listItem = document.createElement('li');
+            listItem.className = 'tag-item';
 
-    // If costume tags exist, make a separator list Element
-    // then add the tags on
+            // Extract raw tag and annotation (e.g., "(Removed by Costume)")
+            // It makes more sense to me to do it here than in the other function
+            const match = tag.match(/^(.+?)(\s+\(.*?\))?$/);
+            const rawTag = match[1];
+            const annotation = match[2] || '';
+
+            // Create clickable text anchor for the raw tag only
+            const anchor = $('<a>', {
+                href: '#',
+                text: rawTag
+            }).data({
+                'search-field': $searchTag,
+                'search-text': rawTag
+            });
+
+            // Append anchor and plain annotation text to the <li>
+            $(listItem).append(anchor);
+            if (annotation) {
+                listItem.appendChild(document.createTextNode(annotation));
+            }
+
+            list.appendChild(listItem);
+        });
+    }
+
+    // Base tags go first
+    appendTagsToList(baseTags, list);
+
     if (costumeTags.length) {
         const separator = document.createElement('li');
         separator.className = 'tag-item';
@@ -2091,15 +2127,10 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
         separator.style.textAlign = "center";
         list.appendChild(separator);
 
-        // Now loop through the costume tags
-        costumeTags.forEach(tag => {
-            const listItem = document.createElement('li');
-            listItem.className = 'tag-item';
-            listItem.textContent = tag;
-            list.appendChild(listItem);
-        });
+        // Then add the costume tags
+        appendTagsToList(costumeTags, list);
     }
-    
+
     // Append the list of tags to the tagsContainer
     this.tagsContainer.append(list);
 };
