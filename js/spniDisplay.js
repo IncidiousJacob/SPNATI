@@ -1715,8 +1715,12 @@ OpponentDetailsDisplay = function () {
     this.collectiblesView = $('#individual-select-screen .opponent-details-collectibles');
     this.collectiblesContainer = $('#individual-select-screen .opponent-collectibles-container');
     
+    this.tagsView = $('#individual-select-screen .opponent-details-tags');
+    this.tagsContainer = $('#individual-select-screen .opponent-tags-container');    
+    
     this.epiloguesField = $('#individual-select-screen .opponent-epilogues-field');
     this.collectiblesField = $('#individual-select-screen .opponent-collectibles-field');
+    this.tagsField = $('#individual-select-screen .opponent-tags-field');
     
     this.nameLabel = $("#individual-select-screen .opponent-full-name");
     this.sourceLabel = $("#individual-select-screen .opponent-source");
@@ -1737,6 +1741,7 @@ OpponentDetailsDisplay = function () {
     this.collectiblesNavButton = $('#individual-select-screen .opponent-collectibles');
     
     this.showMoreButton = $('#individual-select-screen .show-more-button');
+    this.showTagsButton = $('#individual-select-screen .show-tags-button');
     
     $('#individual-select-screen .opponent-nav-button').click(this.handlePanelNavigation.bind(this));
     
@@ -1751,6 +1756,7 @@ OpponentDetailsDisplay = function () {
 
     this.epiloguesView.hide();
     this.collectiblesView.hide();
+    this.tagsView.hide();
     
     var query = window.matchMedia('(min-aspect-ratio: 4/3)');
     if (query.matches) {
@@ -1822,6 +1828,9 @@ OpponentDetailsDisplay.prototype.handlePanelNavigation = function (ev) {
     } else if (targetPanel === 'collectibles') {
         this.updateCollectiblesView();
         this.collectiblesView.show();
+    } else if (targetPanel === 'tags') {
+        this.updateTagsView();
+        this.tagsView.show();
     } else {
         this.mainView.show();
     }
@@ -1983,6 +1992,76 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     }.bind(this));
     this.collectiblesContainer.empty().append(cards);
 }
+
+function getTagsForOpponent(id) {
+    console.log("Attempting to load tags for opponent:", id);
+    
+    // Made this a variable for future expansion e.g. for alt costumes?
+    var directory = ("opponents/" + id + "/tags.xml");
+
+    return metadataIndex.getFile(directory)
+        .then(function ($tagsXml) {
+            // Extract tags if the XML is valid
+            if ($tagsXml && $tagsXml.find('tags').length > 0) {
+                var tags = [];
+
+                // Loop through each tag element
+                $tagsXml.find('tags tag').each(function () {
+                    var tagText = $(this).text().trim();  // The actual tag text
+
+                    // Check if the tag has from and to attributes
+                    var from = $(this).attr('from');
+                    var to = $(this).attr('to');
+
+                    if (from && to) {
+                        // If stages are defined then append them to the tag
+                        tags.push(tagText + " (Stages " + from + " to " + to + ")");
+                    } else {
+                        // Otherwise just add the tag as-is 
+                        tags.push(tagText);
+                    }
+                });
+                
+                tags.sort();
+
+                console.log("Extracted Tags:", tags); // Log the extracted tags
+                return tags;
+            } else {
+                console.error("No <tags> element found in the XML.");
+                return [];
+            }
+        })
+        .catch(function (err) {
+            console.error("Error loading tags.xml for " + id + ":", err);
+            return [];
+        });
+}
+
+OpponentDetailsDisplay.prototype.updateTagsView = async function () {
+    var tags = await getTagsForOpponent(this.opponent.id);
+    this.tagsContainer.empty(); // Clear any existing content
+
+    if (!tags.length) {
+        this.tagsContainer.html("<p>No tags available.</p>");
+        return;
+    }
+
+    // Create a single <ul> for the tags because
+    // using the collectible/epilogue method would make a hundred divs
+    var list = document.createElement('ul');
+    list.className = 'bordered tag-list'; // Style class
+
+    // Loop through the tags and create <li> elements for each tag
+    tags.forEach(tag => {
+        var listItem = document.createElement('li');
+        listItem.className = 'tag-item'; // Add class for styling
+        listItem.textContent = tag; // Set the text content to the tag name
+        list.appendChild(listItem);
+    });
+
+    // Append the list of tags to the tagsContainer
+    this.tagsContainer.append(list);
+};
 
 OpponentDetailsDisplay.prototype.update = function (opponent) {
     if (this.opponent === opponent) {
@@ -2172,5 +2251,6 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
     
     this.epiloguesView.hide();
     this.collectiblesView.hide();
+    this.tagsView.hide();
     this.mainView.show();
 }

@@ -684,8 +684,11 @@
                 <div class="opponent-details-panel bordered" hidden>
                     <div class="opponent-details-view opponent-details-basic show-more">
                         <div class="opponent-options-row">
-                            <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
                             <select class="bordered alt-costume-dropdown"></select>
+                        </div>
+                        <div class="opponent-options-row">
+                            <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
+                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags">Character Tags</button>
                         </div>
                         <div class="bordered opponent-details-field opponent-details-name">
                             <div class="opponent-details-value opponent-full-name"></div>
@@ -747,6 +750,13 @@
                                 data-target="main">Back</button>
                         </div>
                         <div class="opponent-collectibles-container"></div>
+                    </div>
+                    <div class="opponent-details-view opponent-details-tags" hidden>
+                        <div class="opponent-options-row">
+                            <button type="button" class="bordered smooth-button red opponent-nav-button"
+                                data-target="main">Back</button>
+                        </div>
+                        <div class="opponent-tags-container"></div>
                     </div>
                 </div>
                 <div class="opponent-select-button">
