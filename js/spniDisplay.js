@@ -1993,14 +1993,18 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     this.collectiblesContainer.empty().append(cards);
 }
 
-function getTagsForOpponent(id) {
-    console.log("Attempting to load tags for opponent:", id);
+function getTagsForOpponent(id, costume_selected, costume_selected_path) {
+    console.log("Attempting to load tags for opponent:", id, costume_selected ? "(alt costume selected)" : "");
     
     // Made this a variable for future expansion e.g. for alt costumes?
-    var directory = ("opponents/" + id + "/tags.xml");
+    // var directory = ("opponents/" + id + "/tags.xml");
+    var directory = costume_selected
+        ? `${costume_selected_path}costume.xml`
+        : `opponents/${id}/tags.xml`;
 
     return metadataIndex.getFile(directory)
         .then(function ($tagsXml) {
+            console.log("Loaded tags content from:", directory, $tagsXml);
             // Extract tags if the XML is valid
             if ($tagsXml && $tagsXml.find('tags').length > 0) {
                 var tags = [];
@@ -2013,13 +2017,23 @@ function getTagsForOpponent(id) {
                     var from = $(this).attr('from');
                     var to = $(this).attr('to');
 
+                    // If stages are defined then append them to the tag
                     if (from && to) {
-                        // If stages are defined then append them to the tag
-                        tags.push(tagText + " (Stages " + from + " to " + to + ")");
-                    } else {
-                        // Otherwise just add the tag as-is 
-                        tags.push(tagText);
+                        tagText += " (Stages " + from + " to " + to + ")";
                     }
+                    
+                    // Check if the tag is removed
+                    var removed = $(this).attr('remove');
+                    
+                    // Add the costume context
+                    if (costume_selected) {
+                        if (removed === "true") {
+                            tagText += " (Removed by Costume)";
+                        } else {
+                            tagText += " (Added by Costume)";
+                        }
+                    }
+                    tags.push(tagText);
                 });
                 
                 tags.sort();
@@ -2038,10 +2052,18 @@ function getTagsForOpponent(id) {
 }
 
 OpponentDetailsDisplay.prototype.updateTagsView = async function () {
-    var tags = await getTagsForOpponent(this.opponent.id);
+    // Get the base opponent tags
+    var baseTags = await getTagsForOpponent(this.opponent.id);
+
+    // Get costume tags second if a costume is selected
+    let costumeTags = [];
+    if (this.opponent.selected_costume) {
+        costumeTags = await getTagsForOpponent(this.opponent.id, true, this.opponent.selected_costume);
+    }
+
     this.tagsContainer.empty(); // Clear any existing content
 
-    if (!tags.length) {
+    if (!baseTags.length && !costumeTags.length) {
         this.tagsContainer.html("<p>No tags available.</p>");
         return;
     }
@@ -2049,16 +2071,35 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
     // Create a single <ul> for the tags because
     // using the collectible/epilogue method would make a hundred divs
     var list = document.createElement('ul');
-    list.className = 'bordered tag-list'; // Style class
+    list.className = 'bordered tag-list';
 
-    // Loop through the tags and create <li> elements for each tag
-    tags.forEach(tag => {
+    baseTags.forEach(tag => {
+        // Loop through the base tags first
         var listItem = document.createElement('li');
-        listItem.className = 'tag-item'; // Add class for styling
-        listItem.textContent = tag; // Set the text content to the tag name
+        listItem.className = 'tag-item';
+        listItem.textContent = tag;
         list.appendChild(listItem);
     });
 
+    // If costume tags exist, make a separator list Element
+    // then add the tags on
+    if (costumeTags.length) {
+        const separator = document.createElement('li');
+        separator.className = 'tag-item';
+        separator.textContent = "Costume tag changes:";
+        separator.style.fontWeight = "bold";
+        separator.style.textAlign = "center";
+        list.appendChild(separator);
+
+        // Now loop through the costume tags
+        costumeTags.forEach(tag => {
+            const listItem = document.createElement('li');
+            listItem.className = 'tag-item';
+            listItem.textContent = tag;
+            list.appendChild(listItem);
+        });
+    }
+    
     // Append the list of tags to the tagsContainer
     this.tagsContainer.append(list);
 };
