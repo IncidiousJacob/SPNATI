@@ -1,2 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="collectible_Fork" status="online" img="opponents/shamiko/shamiko_fork.png" thumbnail="opponents/shamiko/crown.png">
+        <title>Queen's Trident </title>
+        <subtitle>Mwahahaha!</subtitle>
+        <text>A weapon truly fit for a demon queen, or for eating giant pancakes. Picking it up, you can faintly hear villainous laughter, and maybe a cough or two.
+
+(Unlocks Shamiko's "Demon of Fantasia costume!)</text>
+        <unlock>Give Shamiko the demonic experience she needs by having her learn from the most horned, demonic, and villainous opponents around.</unlock>
+        <counter>3</counter>
+        <costume>true</costume>
+        <costume-folder>opponents/reskins/shamiko_demon_of_fantasia/</costume-folder>
+    </collectible>
+    <collectible id="Shamiko_Gozenso" img="opponents/shamiko/gosenzo.png" thumbnail="opponents/shamiko/gosenzo.png">
+        <title>Ancestor's Idol</title>
+        <subtitle>"Shamiko? You didn't forget me again, did you? Shamiko?"</subtitle>
+        <text>An odd-looking statue Shamiko left behind. While it looks malevolent, for some reason, you can almost hear mournful tears when you hold it.</text>
+        <unlock>Finish a game against Shamiko</unlock>
+    </collectible>
+</collectibles>

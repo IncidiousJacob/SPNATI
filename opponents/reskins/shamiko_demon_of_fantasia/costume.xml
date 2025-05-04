@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>shamiko_demon_of_fantasia</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="5" to="5">crown</tag>
+        <tag from="5" to="5">formal_attire</tag>
+        <tag>pantyhose</tag>
+        <tag from="5" to="5">pointy_ears</tag>
+        <tag from="6" to="9">scantily-clad</tag>
+        <tag from="5" to="5">staff</tag>
+        <tag remove="true">thigh_highs</tag>
+        <tag from="5" to="5">weapon</tag>
+    </tags>
+    <layers>7</layers>
+    <folder>opponents/reskins/shamiko_demon_of_fantasia/</folder>
+    <folder stage="7">opponents/shamiko/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="Demon Queen form" generic="" position="both" type="major" />
+        <clothing name="bra" generic="underwear" position="upper" type="important" />
+        <clothing name="uniform top" generic="shirt" position="upper" type="major" />
+        <clothing name="skirt" generic="skirt" position="legs" type="major" />
+        <clothing name="tights" generic="" position="legs" type="minor" plural="true" />
+        <clothing name="shoes" generic="shoes" position="feet" type="minor" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="4-strip">
+            <sprite id="stripped1" src="reskins/shamiko_demon_of_fantasia/4-stripped1.png" x="0" y="229" alpha="100" />
+            <sprite id="stripped2" delay="0.25" src="reskins/shamiko_demon_of_fantasia/4-stripped2.png" x="-8" y="78" alpha="0" />
+            <sprite id="stripped" delay="1" src="reskins/shamiko_demon_of_fantasia/4-stripped.png" x="-8" y="78" alpha="0" />
+            <sprite id="stripheart" src="reskins/shamiko_demon_of_fantasia/4-stripheart.png" x="-15" y="339" scalex="0.06" scaley="0.06" pivoty="48%" alpha="50" />
+            <sprite id="Stripped3" delay="2.25" src="reskins/shamiko_demon_of_fantasia/4-Stripped3.png" x="-6" y="121" alpha="0" />
+            <sprite id="stripped7" delay="5.5" src="reskins/shamiko_demon_of_fantasia/4-stripped7.png" x="0" y="0" alpha="0" />
+            <sprite id="Stripped4" delay="6" src="reskins/shamiko_demon_of_fantasia/4-Stripped4.png" x="-6" y="29" alpha="0" />
+            <sprite id="stripped5" delay="6.25" src="reskins/shamiko_demon_of_fantasia/4-stripped6.png" x="-6" y="50" alpha="0" />
+            <sprite id="stripped51" delay="6.75" src="reskins/shamiko_demon_of_fantasia/4-stripped5.png" x="-8" y="66" alpha="0" />
+            <sprite id="piece2" delay="6.75" src="reskins/shamiko_demon_of_fantasia/piece2.png" x="5" y="183" scalex="0.48" scaley="0.53" pivotx="69%" pivoty="64%" alpha="100" rotation="34" />
+            <sprite id="piece1" delay="3.25" src="reskins/shamiko_demon_of_fantasia/piece1.png" x="214" y="831" scalex="0.81" scaley="1.02" alpha="0" rotation="268" />
+            <sprite id="piece11" delay="3.25" src="reskins/shamiko_demon_of_fantasia/piece1.png" x="-167" y="530" scalex="0.82" scaley="0.95" alpha="0" rotation="-98" />
+            <sprite id="part4" delay="3.25" src="reskins/shamiko_demon_of_fantasia/part4.png" x="185" y="332" scalex="0.83" scaley="0.92" alpha="0" />
+            <sprite id="part41" delay="3.25" src="reskins/shamiko_demon_of_fantasia/part4.png" x="-299" y="756" pivotx="62%" pivoty="90%" alpha="0" />
+            <sprite id="heartbreak1" delay="4.5" src="reskins/shamiko_demon_of_fantasia/heartbreak1.png" x="-40" y="353" alpha="100" rotation="-12" />
+            <sprite id="heartbreak2" delay="4.75" src="reskins/shamiko_demon_of_fantasia/heartbreak1.png" x="-54" y="570" scalex="0.66" scaley="1.4" alpha="94" rotation="-242" />
+            <sprite id="heartbreak3" delay="4.75" src="reskins/shamiko_demon_of_fantasia/heartbreak1.png" x="-5" y="774" scalex="0.89" scaley="1.09" alpha="0" rotation="-16" />
+            <sprite id="heartbreak4" delay="4.75" src="reskins/shamiko_demon_of_fantasia/heartbreak1.png" x="-14" y="967" scalex="0.39" scaley="1.03" alpha="0" rotation="-237" />
+            <sprite id="part1" delay="5.5" src="reskins/shamiko_demon_of_fantasia/part1.png" x="59" y="540" scalex="2.64" scaley="2.48" alpha="0" />
+            <sprite id="part11" delay="5.5" src="reskins/shamiko_demon_of_fantasia/part1.png" x="-122" y="552" scalex="2.08" scaley="2.47" pivotx="46%" pivoty="51%" alpha="0" />
+            <sprite id="part2" delay="5.5" src="reskins/shamiko_demon_of_fantasia/part2.png" x="42" y="790" scalex="2.04" scaley="2.36" alpha="0" rotation="-63" />
+            <sprite id="part21" delay="5.5" src="reskins/shamiko_demon_of_fantasia/part2.png" x="-133" y="785" scalex="2.17" scaley="1.66" alpha="0" rotation="-21" />
+            <sprite id="shamiko_fork" delay="6.75" src="reskins/shamiko_demon_of_fantasia/shamiko_fork.png" x="277" y="244" alpha="0" rotation="8" />
+            <directive type="animation" id="stripped1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="229" alpha="100" />
+                <keyframe time="1" x="-8" y="78" alpha="0" />
+                <keyframe time="1.25" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped2" delay="0.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-8" y="78" alpha="0" />
+                <keyframe time="1.25" alpha="100" />
+                <keyframe time="1.5" x="-8" y="78" alpha="100" />
+                <keyframe time="1.75" x="-8" y="78" alpha="11" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-8" y="78" alpha="0" />
+                <keyframe time="1.75" x="-6" y="121" alpha="100" />
+                <keyframe time="2.25" x="-6" y="121" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripheart" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-15" y="339" scalex="0.06" scaley="0.06" alpha="50" />
+                <keyframe time="1" scalex="0.27" scaley="0.27" alpha="70" />
+                <keyframe time="3.25" x="-25" y="289" scalex="1.01" scaley="1.17" alpha="80" />
+                <keyframe time="4.25" x="-25" y="289" />
+                <keyframe time="4.5" x="-25" />
+                <keyframe time="4.75" y="289" scalex="1.01" scaley="1.17" />
+                <keyframe time="5.25" scalex="1.01" scaley="1.17" alpha="80" />
+                <keyframe time="5.5" y="289" scalex="0.15" scaley="0.17" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripheart" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" skewx="0.542429" rotation="1" />
+                <keyframe time="2.25" rotation="0" />
+            </directive>
+            <directive type="animation" id="Stripped3" delay="2.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-6" y="121" alpha="0" />
+                <keyframe time="0.5" x="-13" y="112" />
+                <keyframe time="1" x="-12" y="111" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.25" x="-12" y="111" alpha="100" />
+                <keyframe time="3.25" x="-12" y="111" />
+                <keyframe time="3.37" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped7" delay="5.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="0" />
+                <keyframe time="0.3800001" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="Stripped4" delay="6" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-6" y="29" alpha="0" />
+                <keyframe time="0.25" x="-6" y="29" alpha="100" />
+                <keyframe time="0.75" x="-8" y="133" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped5" delay="6.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-6" y="50" alpha="0" />
+                <keyframe time="0.5" x="-8" y="66" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped51" delay="6.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-8" y="66" alpha="0" />
+                <keyframe time="0.25" x="-8" y="66" alpha="100" />
+                <keyframe time="0.5" x="-8" y="66" alpha="100" />
+                <keyframe time="0.75" x="-8" y="66" />
+            </directive>
+            <directive type="animation" id="piece2" delay="6.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="5" y="183" scalex="0.48" scaley="0.53" alpha="100" rotation="34" />
+                <keyframe time="0.25" rotation="90" />
+                <keyframe time="0.5" x="-17" y="161" scalex="1.06" scaley="0.94" alpha="100" rotation="150" />
+                <keyframe time="0.75" x="-15" y="143" alpha="0" rotation="200" />
+            </directive>
+            <directive type="animation" id="piece1" delay="3.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="214" y="831" scalex="0.81" scaley="1.02" alpha="0" rotation="268" />
+                <keyframe time="0.5" x="214" y="831" scalex="1.46" scaley="1.66" alpha="92" rotation="191" />
+                <keyframe time="0.75" x="214" y="831" scalex="0.85" scaley="0.95" alpha="0" rotation="145" />
+            </directive>
+            <directive type="animation" id="piece1" delay="3.25" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/shamiko_demon_of_fantasia/piece1.png" />
+                <keyframe time="0.5" src="reskins/shamiko_demon_of_fantasia/piece1.png" />
+            </directive>
+            <directive type="animation" id="piece11" delay="3.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-167" y="530" scalex="0.82" scaley="0.95" alpha="0" rotation="-98" />
+                <keyframe time="0.5" scalex="1.64" scaley="1.83" alpha="100" rotation="71" />
+                <keyframe time="0.75" scalex="0.87" scaley="1.07" alpha="0" rotation="180" />
+            </directive>
+            <directive type="animation" id="part4" delay="3.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="185" y="332" scalex="0.83" scaley="0.92" alpha="0" />
+                <keyframe time="0.5" scalex="1.35" scaley="1.53" alpha="95" />
+                <keyframe time="0.75" scalex="0.79" scaley="0.91" alpha="0" />
+            </directive>
+            <directive type="animation" id="part4" delay="3.75" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="-11" />
+            </directive>
+            <directive type="animation" id="part41" delay="3.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-299" y="756" alpha="0" />
+                <keyframe time="0.25" x="-354" y="782" alpha="100" />
+                <keyframe time="0.75" x="-299" y="756" alpha="0" />
+            </directive>
+            <directive type="animation" id="part41" delay="3.5" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1.41" scaley="1.27" rotation="-285" />
+                <keyframe time="0.5" scalex="1.06" scaley="1.07" rotation="-543" />
+            </directive>
+            <directive type="animation" id="heartbreak1" delay="4.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-40" y="353" alpha="100" rotation="-12" />
+                <keyframe time="0.5" x="-40" y="353" alpha="100" />
+                <keyframe time="0.75" alpha="100" />
+                <keyframe time="0.8800001" alpha="0" />
+            </directive>
+            <directive type="animation" id="heartbreak2" delay="4.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-54" y="570" scalex="0.66" scaley="1.4" alpha="94" rotation="-242" />
+                <keyframe time="0.5" x="-56" y="570" scalex="0.66" scaley="1.4" alpha="100" rotation="-242" />
+                <keyframe time="0.6300001" alpha="0" />
+            </directive>
+            <directive type="animation" id="heartbreak3" delay="4.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-5" y="774" scalex="0.89" scaley="1.09" alpha="0" rotation="-16" />
+                <keyframe time="0.1300001" alpha="100" />
+                <keyframe time="0.5" x="-5" y="774" scalex="0.82" scaley="1.09" alpha="100" />
+                <keyframe time="0.6300001" alpha="0" />
+            </directive>
+            <directive type="animation" id="heartbreak4" delay="4.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-14" y="967" scalex="0.39" scaley="1.03" alpha="0" rotation="-237" />
+                <keyframe time="0.25" alpha="100" />
+                <keyframe time="0.5" alpha="100" />
+                <keyframe time="0.6300001" alpha="0" />
+            </directive>
+            <directive type="animation" id="part1" delay="5.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="59" y="540" scalex="2.64" scaley="2.48" alpha="0" />
+                <keyframe time="0.3699999" alpha="100" />
+                <keyframe time="0.75" x="403" y="212" alpha="0" />
+            </directive>
+            <directive type="animation" id="part11" delay="5.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-122" y="552" scalex="2.08" scaley="2.47" alpha="0" />
+                <keyframe time="0.3699999" alpha="100" />
+                <keyframe time="0.75" x="-467" y="184" alpha="0" />
+            </directive>
+            <directive type="animation" id="part2" delay="5.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="42" y="790" scalex="2.04" scaley="2.36" alpha="0" rotation="-63" />
+                <keyframe time="0.25" alpha="100" />
+                <keyframe time="0.75" x="426" y="1112" alpha="0" />
+            </directive>
+            <directive type="animation" id="part21" delay="5.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-133" y="785" scalex="2.17" scaley="1.66" alpha="0" rotation="-21" />
+                <keyframe time="0.3699999" alpha="100" />
+                <keyframe time="0.75" x="-436" y="1066" alpha="0" />
+            </directive>
+            <directive type="animation" id="shamiko_fork" delay="6.75" ease="linear" interpolation="linear">
+                <keyframe time="0" x="277" y="244" alpha="0" rotation="8" />
+                <keyframe time="0.5" x="277" y="244" alpha="100" />
+            </directive>
+            <directive type="animation" id="shamiko_fork" delay="7.25" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="8" />
+            </directive>
+        </pose>
+        <pose id="5-strip">
+            <sprite id="Shamistrip" src="reskins/shamiko_demon_of_fantasia/5-shamistrip.png" x="-12" y="4" alpha="100" />
+            <sprite id="stripped8" src="reskins/shamiko_demon_of_fantasia/4-stripped8.png" x="0" y="0" alpha="0" />
+            <sprite id="piece2" src="reskins/shamiko_demon_of_fantasia/piece2.png" x="-330" y="-45" scalex="1.36" scaley="1.25" pivotx="59%" pivoty="33%" alpha="0" />
+            <directive type="animation" id="Shamistrip" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-12" y="4" alpha="100" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="stripped8" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+            <directive type="animation" id="piece2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-330" y="-45" scalex="1.36" scaley="1.25" alpha="0" />
+                <keyframe time="1.5" x="-361" y="-29" alpha="100" />
+            </directive>
+            <directive type="animation" id="piece2" delay="1.5" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="32" />
+            </directive>
+        </pose>
+        <pose id="6-after">
+            <sprite id="Shamiafter" src="reskins/shamiko_demon_of_fantasia/6-shamiafter.png" x="0" y="0" />
+            <sprite id="piece2" src="reskins/shamiko_demon_of_fantasia/piece2.png" x="-318" y="-19" scalex="1.36" scaley="1.25" pivotx="59%" pivoty="33%" alpha="100" />
+            <sprite id="piece1" src="reskins/shamiko_demon_of_fantasia/piece1.png" x="108" y="433" scalex="1.19" scaley="1.41" pivotx="40%" pivoty="59%" alpha="100" />
+            <sprite id="piece11" src="reskins/shamiko_demon_of_fantasia/piece1.png" x="-188" y="428" scaley="1.48" />
+            <sprite id="piece21" src="reskins/shamiko_demon_of_fantasia/piece2.png" x="55" y="611" pivotx="60%" pivoty="59%" />
+            <sprite id="piece12" src="reskins/shamiko_demon_of_fantasia/piece1.png" x="-104" y="707" pivoty="60%" alpha="100" />
+            <sprite id="piece22" src="reskins/shamiko_demon_of_fantasia/piece2.png" x="53" y="687" />
+            <directive type="animation" id="Shamiafter" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="1.5" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="piece2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-318" y="-19" scalex="1.36" scaley="1.25" alpha="100" />
+                <keyframe time="0.38" x="-280" y="352" alpha="100" />
+                <keyframe time="0.75" x="-406" y="747" alpha="100" />
+                <keyframe time="1.06" x="-315" y="992" alpha="100" />
+                <keyframe time="1.5" x="-377" y="1136" alpha="0" />
+            </directive>
+            <directive type="animation" id="piece1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="108" y="433" scalex="1.19" scaley="1.41" alpha="100" />
+                <keyframe time="1.06" x="194" y="288" alpha="100" />
+                <keyframe time="1.5" x="255" y="235" alpha="0" />
+            </directive>
+            <directive type="animation" id="piece11" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-188" y="428" scaley="1.48" />
+                <keyframe time="0.62" x="-288" y="314" />
+                <keyframe time="1.06" x="-353" y="235" />
+                <keyframe time="1.5" x="-410" y="166" />
+            </directive>
+            <directive type="animation" id="piece11" delay="1.06" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.4400001" alpha="25" />
+            </directive>
+            <directive type="animation" id="piece21" ease="linear" interpolation="linear">
+                <keyframe time="0" x="55" y="611" />
+                <keyframe time="0.62" x="238" y="611" />
+                <keyframe time="1.06" x="336" y="615" />
+                <keyframe time="1.5" x="424" y="627" />
+            </directive>
+            <directive type="animation" id="piece21" delay="1.06" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.4400001" alpha="0" />
+            </directive>
+            <directive type="animation" id="piece12" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-104" y="707" alpha="100" />
+                <keyframe time="0.62" x="-261" y="927" />
+                <keyframe time="1.06" x="-391" y="1086" alpha="100" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="piece22" ease="linear" interpolation="linear">
+                <keyframe time="0" x="53" y="687" />
+                <keyframe time="0.62" x="216" y="891" />
+                <keyframe time="1.06" x="306" y="1005" />
+            </directive>
+            <directive type="animation" id="piece22" delay="1.06" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.4400001" alpha="0" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>
