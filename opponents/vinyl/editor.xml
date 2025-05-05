@@ -10,10 +10,13 @@
             <description>Vinyl asks the other players about an aspect of their own cultures.</description>
         </case>
         <case name="Talking Graffiti" id="39" priority="Prompt" min="0" max="0">
-            <description>Description about what's interesting happening with the character (i.e. why should others target this?)</description>
+            <description>Vinyl asks if anyone else does street art.</description>
         </case>
         <case name="Lewd Selfie!" id="53" priority="Noteworthy" min="7" max="7">
             <description>Vinyl gets ahead of herself and sends a lewd picture to one of her friends!</description>
+        </case>
+        <case name="Money Talks" id="75" priority="Prompt" min="0" max="6">
+            <description>Vinyl admits her financial struggles and wonders how the others get by.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -76,8 +79,14 @@
         <response id="67" opponent="aella" opponentId="266" />
         <response id="68" opponent="laevatein" opponentId="12" />
         <response id="69" opponent="laevatein" opponentId="13" />
+        <response id="70" opponent="tharja" opponentId="11" />
+        <response id="71" opponent="eichi" opponentId="123" />
+        <response id="72" opponent="kaz" opponentId="95" />
+        <response id="73" opponent="kaz" opponentId="15" />
+        <response id="74" opponent="kaz" opponentId="96" />
+        <response id="76" opponent="arle" opponentId="573" />
     </responses>
-    <nextId>69</nextId>
+    <nextId>76</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviScars" />
@@ -86,10 +95,13 @@
         <marker scope="Public" name="AellaStreaking" />
         <marker scope="Public" name="AloyAskRobots" />
         <marker scope="Public" name="AloyFuture" />
+        <marker scope="Public" name="AmyroseCrew" />
         <marker scope="Public" name="AmyroseSega" />
         <marker scope="Public" name="AmySega" />
         <marker scope="Public" name="AquaAskGangs" />
         <marker scope="Public" name="AquaCheating" />
+        <marker scope="Public" name="ArleBrag" />
+        <marker scope="Public" name="ArleBragging" />
         <marker scope="Public" name="ArtOffer" />
         <marker scope="Public" name="Astrology" />
         <marker scope="Public" name="BoboboAfro" />
@@ -101,21 +113,47 @@
         <marker scope="Public" name="ChazzNotMagic" />
         <marker scope="Public" name="ChihiroButtFlirt" />
         <marker scope="Public" name="ChihiroFlirt" />
+        <marker scope="Public" name="CocoShaved" />
         <marker scope="Public" name="DashSkateDate" />
+        <marker scope="Public" name="EichiKink1" />
         <marker scope="Public" name="FateAskCards" />
         <marker scope="Public" name="FateFelix" />
         <marker scope="Public" name="FeetPics" />
         <marker scope="Public" name="FlipPhone" />
         <marker scope="Public" name="FluttershyBooty" />
+        <marker scope="Public" name="FluttershyButtReact" />
         <marker scope="Public" name="FluttershyJunkInTrunk" />
+        <marker scope="Public" name="FluttershyPets" />
         <marker scope="Public" name="FuttershyPets" />
         <marker scope="Public" name="GlamrockAskAppearance" />
         <marker scope="Public" name="JessieAnal" />
         <marker scope="Public" name="JessieAss" />
         <marker scope="Public" name="JessieSecrets" />
+        <marker scope="Public" name="Juno_Boots_00" />
+        <marker scope="Public" name="Juno_Boots_01" />
+        <marker scope="Public" name="Juno_Boots_02" />
+        <marker scope="Public" name="Juno_Cute_20" />
+        <marker scope="Public" name="Juno_Cute_21" />
+        <marker scope="Public" name="Juno_Cute_22" />
+        <marker scope="Public" name="Juno_Dancing_50" />
+        <marker scope="Public" name="Juno_Dancing_51" />
+        <marker scope="Public" name="Juno_Dancing_52" />
+        <marker scope="Public" name="Juno_Retro_30" />
+        <marker scope="Public" name="Juno_Retro_31" />
+        <marker scope="Public" name="Juno_Retro_32" />
+        <marker scope="Public" name="Juno_Socializing_40" />
+        <marker scope="Public" name="Juno_Socializing_41" />
+        <marker scope="Public" name="Juno_Socializing_42" />
+        <marker scope="Public" name="Juno_Space_10" />
+        <marker scope="Public" name="Juno_Space_11" />
+        <marker scope="Public" name="Juno_Space_12" />
         <marker scope="Public" name="JuraBRC" />
         <marker scope="Public" name="JuraFuturism" />
         <marker scope="Public" name="JuraGangs" />
+        <marker scope="Public" name="KazBoostpack" />
+        <marker scope="Public" name="KazQueen" />
+        <marker scope="Public" name="KazUndiesAdmission" />
+        <marker scope="Public" name="KazUndiesOff" />
         <marker scope="Public" name="KyokoRetro" />
         <marker scope="Public" name="KyokoWet" />
         <marker scope="Public" name="KyoukoDance" />
@@ -124,6 +162,7 @@
         <marker scope="Public" name="LaevateinBodysuits" />
         <marker scope="Public" name="LaevateinSkateboard" />
         <marker scope="Public" name="MagmaAskGangs" />
+        <marker scope="Public" name="MaleProposition" />
         <marker scope="Public" name="MasturbatingNudeBel" />
         <marker scope="Public" name="MasturbatingNudeDJCyber" />
         <marker scope="Public" name="MasturbatingNudeRed" />
@@ -148,8 +187,11 @@
         <marker scope="Public" name="NudePlayerFemale" />
         <marker scope="Public" name="OchakoAntigravity" />
         <marker scope="Public" name="PhantomThieves" />
+        <marker scope="Public" name="PriscillaDiss" />
+        <marker scope="Public" name="PriscillaStreetwear" />
         <marker scope="Public" name="PromptDances" />
         <marker scope="Public" name="PromptGraffiti" />
+        <marker scope="Public" name="PromptMoney" />
         <marker scope="Public" name="PromptMusic" />
         <marker scope="Public" name="PsychicAskHelp" />
         <marker scope="Public" name="RaynorAliens" />
@@ -166,10 +208,54 @@
         <marker scope="Public" name="SadAboutBoys" />
         <marker scope="Public" name="SamusCyberhead" />
         <marker scope="Public" name="SamusNoHelmet" />
+        <marker scope="Public" name="saria_adventures_40" />
+        <marker scope="Public" name="saria_adventures_41" />
+        <marker scope="Public" name="saria_adventures_42" />
+        <marker scope="Public" name="saria_Authority_resp_10" />
+        <marker scope="Public" name="saria_Authority_resp_11" />
+        <marker scope="Public" name="saria_Authority_resp_12" />
+        <marker scope="Public" name="saria_Desert_women_resp_00" />
+        <marker scope="Public" name="saria_Desert_women_resp_01" />
+        <marker scope="Public" name="saria_Desert_women_resp_02" />
+        <marker scope="Public" name="saria_fairies_00" />
+        <marker scope="Public" name="saria_fairies_01" />
+        <marker scope="Public" name="saria_fairies_02" />
+        <marker scope="Public" name="saria_Hot_resp_50" />
+        <marker scope="Public" name="saria_Hot_resp_51" />
+        <marker scope="Public" name="saria_magic_30" />
+        <marker scope="Public" name="saria_magic_31" />
+        <marker scope="Public" name="saria_magic_32" />
+        <marker scope="Public" name="saria_music_resp_40" />
+        <marker scope="Public" name="saria_music_resp_41" />
+        <marker scope="Public" name="saria_music_resp_42" />
+        <marker scope="Public" name="saria_phone_20" />
+        <marker scope="Public" name="saria_phone_21" />
+        <marker scope="Public" name="saria_phone_22" />
+        <marker scope="Public" name="saria_phone_resp_20" />
+        <marker scope="Public" name="saria_phone_resp_21" />
+        <marker scope="Public" name="saria_phone_resp_22" />
+        <marker scope="Public" name="saria_street_resp_30" />
+        <marker scope="Public" name="saria_street_resp_31" />
+        <marker scope="Public" name="saria_street_resp_32" />
+        <marker scope="Public" name="saria_trees_10" />
+        <marker scope="Public" name="saria_trees_11" />
+        <marker scope="Public" name="saria_trees_12" />
+        <marker scope="Public" name="SariaAdventures" />
         <marker scope="Public" name="SariaFairies" />
         <marker scope="Public" name="SariaMagic" />
         <marker scope="Public" name="SariaPhone" />
         <marker scope="Public" name="SariaWoods" />
+        <marker scope="Public" name="SelfContests" />
+        <marker scope="Public" name="SelfContests1" />
+        <marker scope="Public" name="SelfContests2" />
+        <marker scope="Public" name="SelfContests3" />
+        <marker scope="Public" name="SelfMoney1" />
+        <marker scope="Public" name="SelfMoney2" />
+        <marker scope="Public" name="SelfMoney3" />
+        <marker scope="Public" name="SelfPolice" />
+        <marker scope="Public" name="SelfPolice1" />
+        <marker scope="Public" name="SelfPolice2" />
+        <marker scope="Public" name="SelfPolice3" />
         <marker scope="Public" name="ShantaeBlueballs" />
         <marker scope="Public" name="ShantaeClothes" />
         <marker scope="Public" name="StartForest" />
@@ -180,15 +266,19 @@
         <marker scope="Public" name="StripBraRed" />
         <marker scope="Public" name="StripBraTryce" />
         <marker scope="Public" name="StripMaleFaux" />
+        <marker scope="Public" name="StripMaleMuscular" />
+        <marker scope="Public" name="StripMaleTwink" />
         <marker scope="Public" name="StripVestFelix" />
         <marker scope="Public" name="SweetheartJoke" />
         <marker scope="Public" name="TextBRC" />
         <marker scope="Public" name="TextBRCrew" />
         <marker scope="Public" name="TextFUTURISM" />
+        <marker scope="Public" name="TharjaMagic" />
         <marker scope="Public" name="TrixieAskSpecies" />
         <marker scope="Public" name="VinylAstrology" />
         <marker scope="Public" name="VinylButt" />
         <marker scope="Public" name="VinylDecks" />
+        <marker scope="Public" name="VinylFlashing" />
         <marker scope="Public" name="VinylFlipPhone" />
         <marker scope="Public" name="VinylFunkSpirit" />
         <marker scope="Public" name="VinylLookForCops" />
