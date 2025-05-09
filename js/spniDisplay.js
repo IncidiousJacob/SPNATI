@@ -1993,18 +1993,38 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     this.collectiblesContainer.empty().append(cards);
 }
 
+let tagDisplayNames = {};
+let tagDescriptions = {};
+
+function loadTagDictionary() {
+    // Loads all tags from the dictionary and puts the info in the above arrays
+    // This is called when the game is first loaded so they can be referenced anytime
+    console.log("Loading tag_dictionary.xml");
+    return metadataIndex.getFile("opponents/tag_dictionary.xml").then(function ($xml) {
+        $xml.find('group tag').each(function () {
+            const tagName = $(this).text().trim();
+            const description = $(this).attr('description');
+            const display = $(this).attr('display') || tagName;
+            if (tagName && description) {
+                tagDescriptions[tagName] = description;
+                tagDisplayNames[tagName] = display;
+            }
+        });
+    });
+}
+
+
 function getTagsForOpponent(id, costume_selected, costume_selected_path) {
     console.log("Attempting to load tags for opponent:", id, costume_selected ? "(alt costume selected)" : "");
     
-    // Made this a variable for future expansion e.g. for alt costumes?
-    // var directory = ("opponents/" + id + "/tags.xml");
+    // Get the right path
     var directory = costume_selected
         ? `${costume_selected_path}costume.xml`
         : `opponents/${id}/tags.xml`;
 
     return metadataIndex.getFile(directory)
         .then(function ($tagsXml) {
-            console.log("Loaded tags content from:", directory, $tagsXml);
+            // console.log("Loaded tags content from:", directory, $tagsXml);
             // Extract tags if the XML is valid
             if ($tagsXml && $tagsXml.find('tags').length > 0) {
                 var tags = [];
@@ -2036,7 +2056,19 @@ function getTagsForOpponent(id, costume_selected, costume_selected_path) {
                     tags.push(tagText);
                 });
                 
-                tags.sort();
+                tags.sort((a, b) => {
+                    // Extract the raw tag names from the start of the string to sort them
+                    // There is almost certainly a more clever way to do this
+                    // Maybe refactoring the tag list to be an object instead of an array?
+                    const rawA = a.split(' (')[0].trim();
+                    const rawB = b.split(' (')[0].trim();
+
+                    const displayA = tagDisplayNames[rawA] || rawA;
+                    const displayB = tagDisplayNames[rawB] || rawB;
+
+                    return displayA.localeCompare(displayB);
+                });
+
 
                 console.log("Extracted Tags:", tags); // Log the extracted tags
                 return tags;
@@ -2091,30 +2123,78 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
             const listItem = document.createElement('li');
             listItem.className = 'tag-item';
 
-            // Extract raw tag and annotation (e.g., "(Removed by Costume)")
-            // It makes more sense to me to do it here than in the other function
-            const match = tag.match(/^(.+?)(\s+\(.*?\))?$/);
+            // Extract raw tag and annotation (e.g., "(Stages...)" etc.)
+            const match = tag.match(/^(.+?)(\s+\(.*\))?$/);
             const rawTag = match[1];
             const annotation = match[2] || '';
 
-            // Create clickable text anchor for the raw tag only
+            // Create clickable text anchor for the tag only
             const anchor = $('<a>', {
                 href: '#',
-                text: rawTag
+                text: tagDisplayNames[rawTag] // Get display name from the array
             }).data({
                 'search-field': $searchTag,
-                'search-text': rawTag
+                'search-text': rawTag // Send the raw tag to the search bar
             });
 
-            // Append anchor and plain annotation text to the <li>
-            $(listItem).append(anchor);
+            // This creates the ? Tooltip button
+            const infoBtn = $('<i>', {
+                class: 'tag-help glyphicon glyphicon-question-sign', // Glyphicon ? symbol
+                title: 'Click for tag description' // Mouseover text
+            }).on('click', function (e) {
+                e.stopPropagation(); // Needed so that it actually works
+                $('.tag-tooltip').remove(); // Close any existing tag pop up
+
+                const description = tagDescriptions[rawTag] || "No description available.";
+                const tooltip = $('<div>', {
+                    class: 'tag-tooltip',
+                    text: description
+                });
+
+                $('body').append(tooltip);
+
+                // Fix the offset so the tooltip doesn't go off-screen
+                const offset = $(this).offset();
+                const tooltipWidth = tooltip.outerWidth();
+                const tooltipHeight = tooltip.outerHeight();
+                const pageWidth = $(window).width();
+                const pageHeight = $(window).height();
+
+                let left = offset.left;
+                let top = offset.top + $(this).outerHeight();
+
+                // Adjust horizontal position if overflowing right
+                if (left + tooltipWidth > pageWidth - 10) {
+                    left = pageWidth - tooltipWidth - 10;
+                    if (left < 10) left = 10; // Prevent left side clipping
+                }
+
+                // Adjust vertical position if overflowing bottom
+                if (top + tooltipHeight > pageHeight - 10) {
+                    // Try placing it above the ? instead
+                    const aboveTop = offset.top - tooltipHeight;
+                    if (aboveTop > 10) {
+                        top = aboveTop;
+                    } else {
+                        // If even that doesn't fit, pin to bottom
+                        top = pageHeight - tooltipHeight - 10;
+                    }
+                }
+
+                tooltip.css({ top: top, left: left });
+            });
+
+            // Append the pieces of the 'item'
+            $(listItem).append(anchor);       // Clickable tag name
+            $(listItem).append(infoBtn);      // Tooltip icon
             if (annotation) {
-                listItem.appendChild(document.createTextNode(annotation));
+                listItem.appendChild(document.createTextNode(annotation));  // Other info e.g. stages, added/removed
             }
 
             list.appendChild(listItem);
         });
     }
+
 
     // Base tags go first
     appendTagsToList(baseTags, list);
@@ -2134,6 +2214,11 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
     // Append the list of tags to the tagsContainer
     this.tagsContainer.append(list);
 };
+
+// Remove the tooltip if you click literally anywhere
+$(document).on('click', function () {
+    $('.tag-tooltip').remove();
+});
 
 OpponentDetailsDisplay.prototype.update = function (opponent) {
     if (this.opponent === opponent) {
