@@ -4,7 +4,7 @@
     <height>149cm</height>
     <age />
     <pronunciation />
-    <othernotes />
+    <othernotes>Witch is a secondary character in the Puyo Puyo and Madou Monogatari series. Sometimes a direct rival to Arle, sometimes an ally. Regardless of her role, she constantly is egotistical, selfish and will take shortcuts when possible. She is the kind of person to fly on a broom on a 100m foot race after all.&lt;br&gt;&lt;br&gt;Witch is always looking to make sales on her potions, and also for rare ingredients for these. It doesn't matter who she needs to yoink those ingredients from, or even if they consent to it. Her potions are always wacky and not really that useful. She considers more traditional potions like "healing" ones boring. If you think of a wacky effect one of your characters could have with them, hit me up on DMs, we can think of something funny with those.&lt;br&gt;&lt;br&gt;Witch has no proper name; she comes from a clan of witches where in order to earn a name you have to prove yourself first. She has the skill and power to be worthy already, as she is a powerful magic user and a decent puyo player, however her tendency to take shortcuts lead to her failing her last exam when she used Schezo to cheese it and got caught.&lt;br&gt;&lt;br&gt;Witch will be mean and cocky at the start of the game; she used a luck spell that sets her intelligence to "best" during the first 3 stages. Beat her till this point and she will try to cast a different one that fails, leaving her topless and setting her intelligence to bad. She's cooked after that, and she knows it.&lt;br&gt;&lt;br&gt;Her birthday falls on the 31st of October, right on Halloween.&lt;br&gt;&lt;br&gt;She is one year younger than Arle in source, which would turn her 20 in SPNATI&lt;br&gt;&lt;br&gt;Unlike the rest of her puyo female in-game partners, I've written her to have had sexual experiences before, she knows what she likes and what she doesn't. And once that aphrodisiac potion she drinks during her forfeit kicks in. She'll let everyone else know it too.&lt;br&gt;</othernotes>
     <noteworthy>
         <case name="Failed luck spell" id="33" priority="Noteworthy" min="2" max="2">
             <description>Witch will attempt to cast a luck spell to cheat, this instantly backfires, she is oblivious to her toplesness till the next hand line.</description>
@@ -22,6 +22,12 @@
         <response id="66" opponent="kyoko_kirigiri" opponentId="2118" />
         <response id="68" opponent="aqua_konosuba" opponentId="16" />
         <response id="71" opponent="sweetheart" opponentId="43" />
+        <response id="80" opponent="schezo" opponentId="8" />
+        <response id="82" opponent="schezo" opponentId="259" />
+        <response id="89" opponent="rosie" opponentId="24" />
+        <response id="95" opponent="cadence" opponentId="409" />
+        <response id="96" opponent="aqua_konosuba" opponentId="35" />
+        <response id="102" opponent="akko" opponentId="29" />
     </responses>
     <labels>
         <label id="1" label="" folder="Filters" sort="0" />
@@ -99,20 +105,55 @@
         <label id="77" label="" folder="Targets&gt;Schezo" sort="0" />
         <label id="78" label="" folder="Targets&gt;Schezo" sort="0" />
         <label id="79" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="81" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="83" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="62" label="" folder="Targets&gt;Ringo" sort="0" />
+        <label id="71" label="" folder="Targets&gt;Sweetheart" sort="0" />
+        <label id="84" label="" folder="Targets&gt;Priscilla" sort="0" />
+        <label id="85" label="" folder="Targets&gt;Priscilla" sort="0" />
+        <label id="86" label="" folder="Targets&gt;Priscilla" sort="0" />
+        <label id="87" label="" folder="Targets&gt;Priscilla" sort="0" />
+        <label id="88" label="" folder="Targets&gt;Priscilla" sort="0" />
+        <label id="89" label="" folder="Targets&gt;Rosie" sort="0" />
+        <label id="90" label="" folder="Targets&gt;Rosie" sort="0" />
+        <label id="91" label="" folder="Targets&gt;Rosie" sort="0" />
+        <label id="92" label="" folder="Targets&gt;Aqua" sort="0" />
+        <label id="93" label="" folder="Targets&gt;Aqua" sort="0" />
+        <label id="94" label="" folder="Targets&gt;Aqua" sort="0" />
+        <label id="95" label="" folder="Targets&gt;Cadence" sort="0" />
+        <label id="97" label="" folder="Targets&gt;Aqua" sort="0" />
+        <label id="98" label="" folder="Targets&gt;Aqua" sort="0" />
+        <label id="80" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="99" label="" folder="Filters" sort="0" />
+        <label id="100" label="" folder="Targets&gt;Akko" sort="0" />
+        <label id="101" label="" folder="Filters" sort="0" />
+        <label id="102" label="" folder="Targets&gt;Akko" sort="0" />
+        <label id="103" label="" folder="Targets&gt;Akko" sort="0" />
+        <label id="104" label="" folder="Targets&gt;Akko" sort="0" />
+        <label id="105" label="" folder="Targets&gt;Akko" sort="0" />
     </labels>
-    <nextId>79</nextId>
+    <nextId>105</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="aqua_cheat" />
+        <marker scope="Public" name="aqua_cheatearly" />
+        <marker scope="Public" name="aqua_cheatlate" />
+        <marker scope="Public" name="aqua_cheatmid" />
         <marker scope="Public" name="arle_round0" />
         <marker scope="Public" name="arle_suspicious" />
+        <marker scope="Public" name="cadence_beak" />
         <marker scope="Public" name="Icheat" />
+        <marker scope="Public" name="potion_catears" />
         <marker scope="Public" name="potioningredient" />
         <marker scope="Public" name="prostarmlost" />
         <marker scope="Public" name="schezo_cape" />
+        <marker scope="Public" name="schezo_dedicatedstrip" />
         <marker scope="Public" name="schezo_touch" />
         <marker scope="Public" name="spcountincrease">Witch keeps track of how many small penises have been revealed.</marker>
         <marker scope="Public" name="strip1-" />
         <marker scope="Public" name="strip1+" />
+        <marker scope="Public" name="witch_alltable" />
         <marker scope="Public" name="witch_failedluckspell">Witch attempts to cheat with a luck spell, instantly backfiring and leaving her topless, and luckless.</marker>
+        <marker scope="Public" name="witch_instantloss" />
     </markers>
 </metadata>
