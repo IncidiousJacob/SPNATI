@@ -973,6 +973,27 @@ ul.dropdown-menu>li {
     overflow-x: hidden;
 }
 
+.tag-tooltip {
+    position: absolute;
+    background: #f0f0f0;
+    color: #000;
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    padding: 6px 10px;
+    font-size: 1em;
+    max-width: 20rem;
+    min-width: 15rem;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.tag-help {
+    cursor: help;
+    color: #888;
+    margin-left: 5px;
+}
+
+
 .modal a {
     color: hsla(207, 56%, 37%, 1);
 }
