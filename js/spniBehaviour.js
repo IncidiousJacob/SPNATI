@@ -1289,7 +1289,7 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
     switch (fn) {
     case 'id':
         return player.id;
-    case 'happybirthday':
+    case 'hasbirthdaytoday':
         return player.hasBirthdayToday.toString();
     case 'position':
         var other = (!args ? self : findVariablePlayer(args, self, target, bindings));
