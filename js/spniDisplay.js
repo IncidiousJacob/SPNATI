@@ -187,7 +187,7 @@ function PoseSprite(id, src, onload, pose, args) {
     this.x = args.x || 0;
     this.y = args.y || 0;
     this.z = args.z || 'auto';
-    this.layer = Number(args.layer) || this.player.z_index;
+    this.layer = Number(args.layer) || undefined;
     this.scalex = args.scalex || 1;
     this.scaley = args.scaley || 1;
     this.skewx = args.skewx || 0;
@@ -448,7 +448,7 @@ PoseAnimation.prototype.updateSprite = function (fromFrame, toFrame, t, idx) {
 }
 
 
-function Pose(poseDef, display, onLoadCallback) {
+function Pose(poseDef, display, onLoadCallback, z_index) {
     this.id = poseDef.id;
     this.player = poseDef.player;
     this.display = display;
@@ -469,10 +469,11 @@ function Pose(poseDef, display, onLoadCallback) {
         if (def.marker && !checkMarkers(def.marker, this.player)) {
             return;
         }
-        var sprite = new PoseSprite(def.id, def.src, this.onSpriteLoaded.bind(this), this, def);
+        const sprite = new PoseSprite(def.id, def.src, this.onSpriteLoaded.bind(this), this, def);
+        const layer = sprite.layer ?? z_index;
         this.sprites[def.id] = sprite
         this.totalSprites++;
-        let container = containerMap.get(sprite.layer);
+        let container = containerMap.get(layer);
         if (!container) {
             container = createElementWithClass('div', 'opponent-image custom-pose');
             if (this.player.scale != 100) {
@@ -480,8 +481,8 @@ function Pose(poseDef, display, onLoadCallback) {
                     "transform": "translate(-50%) scale("+this.player.scale/100.0+")",
                 });
             }
-            $(container).css('z-index', sprite.layer);
-            containerMap.set(sprite.layer, container);
+            $(container).css('z-index', layer);
+            containerMap.set(layer, container);
             this.containers.push(container);
         }
         
@@ -1023,7 +1024,7 @@ OpponentDisplay.prototype.updateText = function (player) {
     this.dialogue.empty().append(displayElems);
 }
 
-OpponentDisplay.prototype.updateImage = function(player, image) {
+OpponentDisplay.prototype.updateImage = function(player, image, z_index) {
     if (!image || image instanceof PoseSet) {
         /* The only way we can get a PoseSet here as input is if we selected a
          * pose set entry in .update() that itself resolved to another pose set.
@@ -1034,7 +1035,8 @@ OpponentDisplay.prototype.updateImage = function(player, image) {
          */
         this.clearPose();
     } else if (image instanceof PoseDefinition) {
-        var pose = new Pose(image, this, () => { this.drawPose(pose) });
+        let pose;
+        pose = new Pose(image, this, () => { this.drawPose(pose) }, z_index);
         this.drawPose(pose);
     } else {
         this.drawPose(image);
@@ -1084,7 +1086,7 @@ OpponentDisplay.prototype.update = function(player) {
     }
 
     /* update image */
-    this.updateImage(player, resolvedImage);
+    this.updateImage(player, resolvedImage, z_index);
 
     /* update dialogue */
     this.updateText(player);
