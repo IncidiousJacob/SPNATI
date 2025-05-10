@@ -1229,6 +1229,7 @@ function MainSelectScreenDisplay (slot) {
     this.prefillSuggestionBadges = {
         'new': this.prefillBadgeRow.children('.badge-icon[data-badge="new"]'),
         'updated': this.prefillBadgeRow.children('.badge-icon[data-badge="updated"]'),
+        'birthday': this.prefillBadgeRow.children('.badge-icon[data-badge="birthday"]'),
         'epilogue': this.prefillBadgeRow.children('.badge-icon[data-badge="epilogue"]'),
         'costume': this.prefillBadgeRow.children('.badge-icon[data-badge="costume"]'),
     }
@@ -1314,6 +1315,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
 
     this.prefillSuggestionBadges.new.toggle(player.highlightStatus === 'new');
     this.prefillSuggestionBadges.updated.toggle(player.highlightStatus === 'updated');
+    this.prefillSuggestionBadges.birthday.toggle(player.hasBirthdayToday);
     this.badges.epilogue.toggle(!!player.endings);
     var epilogueStatus = player.getEpilogueStatus();
     if (epilogueStatus) {
@@ -1633,6 +1635,32 @@ OpponentSelectionCard.prototype.updateCostumeBadge = function () {
     this.costumeBadge.toggle(this.opponent.getAvailableCostumes().length > 0);
 }
 
+OpponentSelectionCard.prototype.updateHighlight = function () {
+    if (this.opponent.hasBirthdayToday) {
+        if (!$(this.mainElem).has('.badge-sidebar>.birthday-icon').length) {
+            $(this.mainElem).children('.badge-sidebar').prepend(
+                $('<img>', {
+                    'class': 'badge-icon birthday-icon',
+                    src: "img/balloon.svg",
+                    alt: "Birthday"
+                }).css({
+                    padding: '7%',
+                })
+            );
+        }
+        if (!this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = 'birthday';
+        }
+    } else {
+        if (this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = this.opponent.highlistStatus;
+        } else {
+            delete this.mainElem.dataset.highlight;
+        }
+        $(this.mainElem).find('.badge-sidebar>.birthday-icon').remove();
+    }
+};
+
 OpponentSelectionCard.prototype.clear = function () {}
 
 OpponentSelectionCard.prototype.handleClick = function (ev) {
@@ -1726,6 +1754,8 @@ OpponentDetailsDisplay = function () {
     this.sourceLabel = $("#individual-select-screen .opponent-source");
     this.writerLabel = $("#individual-select-screen .opponent-writer");
     this.artistLabel = $("#individual-select-screen .opponent-artist");
+    this.birthdayLabelField = $("#individual-select-screen .opponent-birthday-field");
+    this.birthdayLabel = $("#individual-select-screen .opponent-birthday");
     this.descriptionLabel = $("#individual-select-screen .opponent-details-description");
     this.linecountLabel = $("#individual-select-screen .opponent-linecount");
     this.posecountLabel = $("#individual-select-screen .opponent-posecount");
@@ -1849,6 +1879,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.sourceLabel.empty();
     this.writerLabel.empty();
     this.artistLabel.empty();
+    this.birthdayLabel.empty();
     this.descriptionLabel.empty();
     this.lastUpdateLabel.empty();
     this.addedLabel.empty();
@@ -1858,6 +1889,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.epiloguesField.removeClass('has-epilogues');
     this.collectiblesField.removeClass('has-collectibles');
     this.addedLabelField.removeClass('has-added-date');
+    this.birthdayLabelField.removeClass('has-birthday');
     this.costumeSelector.hide();
 
     
@@ -2260,6 +2292,13 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
                                   + " (" + fuzzyTimeAgo(opponent.lastUpdated) + ")");
     } else {
         this.lastUpdateLabel.text('Unknown');
+    }
+    if (this.opponent.birthday) {
+        this.birthdayLabelField.addClass('has-birthday');
+        this.birthdayLabel.text(new Intl.DateTimeFormat([], { month: 'long', day: 'numeric' })
+                                .format(new Date(2000, opponent.birthday.month - 1, opponent.birthday.day)));
+    } else {
+        this.birthdayLabelField.removeClass('has-birthday');
     }
 
     if (this.opponent.addedDate) {

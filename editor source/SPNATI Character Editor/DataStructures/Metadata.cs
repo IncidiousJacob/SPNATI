@@ -86,6 +86,9 @@ namespace SPNATI_Character_Editor
 			set { Set(value); }
 		}
 
+		[XmlElement("birthday")]
+		public Birthday Birthday { get; set; }
+
 		[XmlElement("description")]
 		public string Description
 		{
@@ -333,6 +336,15 @@ namespace SPNATI_Character_Editor
 
 		[XmlText]
 		public string Title;
+	}
+
+	public class Birthday
+	{
+		[XmlAttribute("month")]
+		public int Month;
+
+		[XmlAttribute("day")]
+		public int Day;
 	}
 
 	public enum DialogueLayer
