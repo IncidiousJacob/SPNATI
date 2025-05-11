@@ -785,22 +785,22 @@
                 <state img="#-lol.png" marker="reply_jura_nerves01">Oh, no... did I strike a nerve?</state>
             </case>
             <case stage="3" id="631">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-lol.png">Since I'm not going to be gripping any weapons...</state>
                 <state img="#-lol.png">My handwraps are to make it easier to keep my grip. Anything else to~background.time~ doesn't need anything &lt;i&gt;that&lt;/i&gt; firm, right?</state>
             </case>
             <case stage="4" id="632">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-hmph.png">You really got me on that one...</state>
                 <state img="#-hmph.png">I guess I didn't give you enough credit...</state>
             </case>
             <case stage="5" id="633">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-sus.png">Ruto and Tetra say I should get some "nicer" underwear. How can it be more nice than being comfortable? I'm a warrior.</state>
                 <state img="#-shy.png">What makes a pair of underwear "hot," anyway? Shouldn't the person wearing them be more important?</state>
             </case>
             <case stage="6" id="634">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-fiiine.png">Well. Time for you to see my boobs.</state>
                 <state img="#-fiiine.png">I'm almost sad to take this off. It's a lot more comfy than I expected.</state>
             </case>
@@ -1068,21 +1068,21 @@
                 <state img="#-stripping+.png" marker="lysithea_anime_girl_feelings_resp_71">I just need to have a big climax.</state>
             </case>
             <case stage="3" id="636">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripping-.png">My hands aren't dainty and soft, but I don't like getting roughed up when climbing or fighting.</state>
                 <state img="#-stripping+.png">Armwraps are helpful. You can use them to help cavalry or scouts to find you if you pack herbs in them... They make your arms not bleed if you mispull on a bow or a slingshot...</state>
                 <state img="#-stripping-.png">These are normally the &lt;i&gt;first&lt;/i&gt; things I put on. Everything else goes on or comes off so... Simply.</state>
                 <state img="#-stripping+.png">You're not complaining that this is all I'm taking off, right? The last person who complained about how I undressed turned into a Stalfos.</state>
             </case>
             <case stage="5" id="640">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripping-.png">The funniest question anyone's ever asked me was if Kokiri wear underwear. And &lt;i&gt;then&lt;/i&gt; they asked me if Sages had special underwear... No...?</state>
                 <state img="#-stripping+.png">Something I &lt;i&gt;did&lt;/i&gt; learn in my travels is that however the Golden Goddesses made us, pretty much anyone and everyone looks the same down there. Or, not as different as you'd expect.</state>
                 <state img="#-stripping-.png">What's &lt;i&gt;that&lt;/i&gt; look...? It's nothing you haven't seen before... Unless you're somehow &lt;i&gt;less&lt;/i&gt; experienced than me?</state>
                 <state img="#-stripping+.png">I've tried dressing up like a Hylian, or a Sheikah, and... It just doesn't really &lt;i&gt;work&lt;/i&gt; for me. I like the way I dress...</state>
             </case>
             <case stage="6" id="641">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripping-.png">If you wouldn't mind saying something &lt;i&gt;nice&lt;/i&gt; about my chest...</state>
                 <state img="#-stripping+.png">I'm not exactly &lt;i&gt;shy&lt;/i&gt; about my body, but I like to keep &lt;i&gt;some&lt;/i&gt; woodland mysteries... a mystery.</state>
             </case>
@@ -1144,13 +1144,13 @@
             </case>
             <case stage="4" id="637" priority="0">
                 <test expr="~background.location~" value="indoors" />
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripping-.png">I'm not blushing, am I? I'm not &lt;i&gt;embarrassed&lt;/i&gt;! It's just warm in here... So I'm not blushing.</state>
             </case>
             <case stage="4" id="638" priority="0">
                 <test expr="~background.location~" value="outdoors" />
                 <test expr="~background.temperature~" value="hot" />
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripping-.png">I'm just getting too warm out here. You'll know when I'm blushing for real.</state>
             </case>
         </trigger>
@@ -1361,28 +1361,28 @@
                 <state img="#-stripped+.png" marker="lysithea_anime_girl_feelings_resp_72">Well, if you decide to be &lt;i&gt;more&lt;/i&gt; direct, Lysithea, I'm right here.</state>
             </case>
             <case stage="4" id="642">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripped-.png">I'm good at a lot of things, but making a game out of looking sexy isn't one of them.</state>
                 <state img="#-stripped+.png">See? I'm not &lt;i&gt;too&lt;/i&gt; beat up. Thanks to those.</state>
                 <state img="#-stripped-.png">Deep pockets are the norm in Hyrule... I'll just shove these in.</state>
                 <state img="#-stripped+.png">You're not in a &lt;i&gt;hurry&lt;/i&gt;, are you? Games are fun when you play them out.</state>
             </case>
             <case stage="5" id="643">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripped-.png">Don't forget, I'm &lt;i&gt;still&lt;/i&gt; a Sage, and one of the most powerful!</state>
                 <state img="#-stripped+.png">I can be a bit &lt;i&gt;bouncy&lt;/i&gt; at times... But I'm feeling really cozy right now.</state>
                 <state img="#-stripped-.png">Hold your does! You'll see more of me soon, just not &lt;i&gt;now.&lt;/i&gt;</state>
                 <state img="#-stripped+.png">I'm pretty cute, even if I'm not trying &lt;i&gt;too&lt;/i&gt; hard, right...?</state>
             </case>
             <case stage="6" id="644">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripped-.png">...I &lt;i&gt;am&lt;/i&gt; cute? Even if I like playing rough, right...?</state>
                 <state img="#-stripped+.png">I'm &lt;i&gt;not&lt;/i&gt; blushing! You'll &lt;i&gt;know&lt;/i&gt; when I blush!</state>
                 <state img="#-stripped-.png">I don't mind being naked. But I'm not going to &lt;i&gt;frolic&lt;/i&gt; or anything...</state>
                 <state img="#-stripped+.png">The Sheikah absolutely make the best underwear. And they even make it in Farore green!</state>
             </case>
             <case stage="7" id="645">
-                <test expr="~self.costume~" value="saria_conquesting_chieftan" />
+                <test expr="~self.costume~" value="saria_conquesting_chieftain" />
                 <state img="#-stripped-.png">When you use a bow, you have to keep your upper body warm. I'm not trying to pad my chest... like some people.</state>
                 <state img="#-stripped+.png">There you go! You've seen a Sage's boobs. Keep it a secret or don't, who'd believe you anyway?</state>
             </case>
@@ -1773,7 +1773,7 @@
                 <state img="#-bruh.png">Not &lt;i&gt;all&lt;/i&gt; Kokiri smother ourselves in mud and ambush travelers... I mean, Mudmen do, but what do you expect? It's in their name.</state>
                 <state img="#-gentle.png">I'm glad you have such a unique name, ~name~. It takes a lot to remember all the Fados, Rutos, Larutos...</state>
                 <state img="#-gentle.png">~Name~. I was thinking about going home, but... I'd be missing out on experiences like this.</state>
-                <state img="#-bruh.png">Just because I was a chieftan doesn't mean you need to listen to what I say, ~name~. Being a Sage might, though...</state>
+                <state img="#-bruh.png">Just because I was a chieftain doesn't mean you need to listen to what I say, ~name~. Being a Sage might, though...</state>
             </case>
             <case stage="3-5">
                 <state img="#-song.png">♬▼◀▶▼◀▶,♬</state>
