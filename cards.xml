@@ -437,5 +437,16 @@
         <unlockChar>toph</unlockChar>
         <unlockCollectible>four_elements_deck</unlockCollectible>
     </deck>
+    
+    <deck id="puyodeck">
+        <title>Puyo Puyo</title>
+        <subtitle>Popping puzzle fun deck!</subtitle>
+        <description>A colorful deck celebrating the different eras of the series.</description>
+        <credits>Horsecatdraws</credits>
+        <front src="img/cards/puyoDeck/%s%i.jpg" />
+        <back id="last_card1" src="img/cards/puyodeck/backcard.jpg" />
+        <unlockChar>arle</unlockChar>
+        <unlockCollectible>puyodeck</unlockCollectible>
+    </deck> 
 
 </card-decks>
