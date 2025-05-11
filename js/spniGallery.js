@@ -104,13 +104,15 @@ function unescapeHTML(in_text) {
 function Collectible(xmlElem, player) {
     this.id = xmlElem.attr('id');
     this.status = xmlElem.attr('status');
-    this.set = xmlElem.children('set').text() || undefined;
     this.title = unescapeHTML(xmlElem.children('title').text());
     this.subtitle = unescapeHTML(xmlElem.children('subtitle').text());
     this.unlock_hint = unescapeHTML(xmlElem.children('unlock').text());
     this.text = unescapeHTML(xmlElem.children('text').html());
     this.detailsHidden = xmlElem.children('hide-details').text() === 'true';
     this.hidden = xmlElem.children('hidden').text() === 'true';
+    this.hideExceptions = xmlElem.children('hidden-exception').map(function() {
+        return { type: $(this).attr('type'), name: $(this).attr('name') };
+    }).get();
     this.counter = parseInt(xmlElem.children('counter').text(), 10) || undefined;
     if (this.counter <= 0) this.counter = undefined;
     
@@ -310,11 +312,17 @@ function collectibleNextImage() {
 
 
 Collectible.prototype.isHidden = function () {
-    if (this.hidden) return true;
-    if (this.set !== undefined) {
-        return !(alternateCostumeSets['all'] || alternateCostumeSets[this.set]);
-    }
-    return false;
+    return this.hidden &&
+        !this.hideExceptions.some(function(ex) {
+            switch (ex.type) {
+            case 'event':
+                return activeGameEvents.some(ev => ev.id === ex.name);
+            case 'costume-set':
+                return alternateCostumeSets['all'] || alternateCostumeSets[ex.name];
+            case 'costume':
+                return this.player && this.player.getAvailableCostumes().some(c => c.folder = "opponents/reskins/" + ex.name + "/");
+            }
+        });
 }
 
 Collectible.prototype.listElement = function () {
