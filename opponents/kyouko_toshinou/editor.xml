@@ -95,6 +95,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <note id="1149">Currently assuming it's animal themed</note>
         <note id="1150">Currently assuming it's animal themed</note>
         <note id="1258">I'd like to make a joke about "adult" games or something like that. Preferably in the after stripping phase because I have a pose for it</note>
+        <note id="1275">I don't like that I have to filter to Easter skins for this</note>
     </notes>
     <labels>
         <label id="2" label="Imitating Yuno" color="5" folder="Targets&gt;Yuno Uno" sort="0" />
@@ -1275,6 +1276,45 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1255" label="Fallback" folder="" sort="0" />
         <label id="1256" label="Fallback" folder="" sort="0" />
         <label id="1257" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1259" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1260" label="" folder="Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1261" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1262" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1263" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1264" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1265" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1266" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1267" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1268" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1269" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1270" label="" folder="Revealed" sort="0" />
+        <label id="1271" label="" folder="Targets&gt;Noire" sort="0" />
+        <label id="1272" label="" folder="Targets&gt;Noire" sort="0" />
+        <label id="1273" label="" folder="Targets&gt;Noire" sort="0" />
+        <label id="1274" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1276" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1277" label="Full pasties" folder="Revealed" sort="0" />
+        <label id="1278" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1279" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1280" label="Crotch pasty (skirt)" folder="Revealed" sort="0" />
+        <label id="1281" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1282" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1283" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1284" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1285" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1286" label="Crotch pasty (butts)" folder="Revealed" sort="0" />
+        <label id="1287" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1288" label="" folder="Revealed" sort="0" />
+        <label id="1289" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1290" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1291" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1292" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1293" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1294" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1295" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1296" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1297" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1298" label="" folder="Backgrounds" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1283,8 +1323,9 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1258</nextId>
+    <nextId>1298</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
         <marker scope="Public" name="B_DarkTricks">Dark backgrounds</marker>
         <marker scope="Public" name="B_Inventory_Booth">Inventory background</marker>
@@ -1498,6 +1539,8 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Kirigiri_Nuisance" />
         <marker scope="Public" name="T_Kirigiri_OnlyNeededItemL" />
         <marker scope="Public" name="T_Kirigiri_OnlyNeededItemR" />
+        <marker scope="Public" name="T_Kirigiri_PastiesTip" />
+        <marker scope="Public" name="T_Kirigiri_PastiesTip2" />
         <marker scope="Public" name="T_Kirigiri_ProofEnoughR" />
         <marker scope="Public" name="T_Kirigiri_Ramuko" />
         <marker scope="Public" name="T_Kirigiri_RamukoFinding" />
@@ -1533,6 +1576,10 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Kirigiri_Yui" />
         <marker scope="Public" name="T_Kirigiri_YuiConversationSeen" />
         <marker scope="Public" name="T_MagicalSempai_TStrip1MagicTricks">Sempai Must Strip 1</marker>
+        <marker scope="Public" name="T_Mari_Dress1" />
+        <marker scope="Public" name="T_Mari_Dress2" />
+        <marker scope="Public" name="T_Mari_Dress3" />
+        <marker scope="Public" name="T_Mari_Dress4" />
         <marker scope="Public" name="T_Mari_NoPantiesA">Mari Stripping 2 (Informality)</marker>
         <marker scope="Public" name="T_Mari_NoPantiesB">Mari Stripped 3 (Informality)</marker>
         <marker scope="Public" name="T_Mari_Strip0Personal">Self Must Strip 0</marker>
@@ -1633,6 +1680,9 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Natsuki_HidingPanties">Natsuki Stage 5 - Kyouko sees fun underwear</marker>
         <marker scope="Public" name="T_Natsuki_MatchingPanties">Natsuki Stage 5 - Kyouko sees fun underwear</marker>
         <marker scope="Public" name="T_Natsuki_PantyPattern">Natsuki Stripped 5</marker>
+        <marker scope="Public" name="T_Noire_CGSFW" />
+        <marker scope="Public" name="T_Noire_NothingWrong" />
+        <marker scope="Public" name="T_Noire_PastyBreasts" />
         <marker scope="Public" name="T_Okino_DoubleKyoko">Self Must Strip 0 / Kirigiri Must Strip 0</marker>
         <marker scope="Public" name="T_Okino_Strip0Mangaka">Self Stripping 0</marker>
         <marker scope="Public" name="T_Queenie_Strip0Villains">Queenie Stripping 0</marker>
@@ -1689,6 +1739,9 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Setogaya_RibbonRemoval" />
         <marker scope="Public" name="T_Setogaya_RibbonTrick" />
         <marker scope="Public" name="T_Setogaya_SexyUndies" />
+        <marker scope="Public" name="T_Setogaya_SexyUndies1" />
+        <marker scope="Public" name="T_Setogaya_SexyUndies2" />
+        <marker scope="Public" name="T_Setogaya_SexyUndies3" />
         <marker scope="Public" name="T_Setogaya_StartMast" />
         <marker scope="Public" name="T_Setogaya_Strip0Activities">Self Must Strip 0</marker>
         <marker scope="Public" name="T_Setogaya_Strip1Activities">Self Stripping 1</marker>
