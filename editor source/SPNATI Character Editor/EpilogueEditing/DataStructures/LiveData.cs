@@ -38,5 +38,6 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 		public abstract ITimelineBreak AddBreak(float time);
 
 		public virtual bool AllowsCrossStageImages { get { return false; } }
+		public virtual string ZIndexPose { get; set; }
 	}
 }

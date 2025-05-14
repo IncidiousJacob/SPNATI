@@ -29,10 +29,13 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.stripPoseSetEntries = new Desktop.Skinning.SkinnedTabStrip();
             this.tabsPoseSetEntries = new Desktop.Skinning.SkinnedTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.skinnedPanel1 = new Desktop.Skinning.SkinnedPanel();
+            this.valZIndex = new Desktop.Skinning.SkinnedTextBox();
+            this.lblZIndex = new Desktop.Skinning.SkinnedLabel();
             this.lblStage = new Desktop.Skinning.SkinnedLabel();
             this.chkLayer = new Desktop.Skinning.SkinnedCheckBox();
             this.lblDirection = new Desktop.Skinning.SkinnedLabel();
@@ -47,7 +50,6 @@
             this.lblPoseSelect = new Desktop.Skinning.SkinnedLabel();
             this.cboPose = new System.Windows.Forms.ComboBox();
             this.tablePoseSetEntry = new Desktop.CommonControls.PropertyTable();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabsPoseSetEntries.SuspendLayout();
             this.skinnedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.valWeight)).BeginInit();
@@ -109,6 +111,8 @@
             this.skinnedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.skinnedPanel1.Controls.Add(this.valZIndex);
+            this.skinnedPanel1.Controls.Add(this.lblZIndex);
             this.skinnedPanel1.Controls.Add(this.lblStage);
             this.skinnedPanel1.Controls.Add(this.chkLayer);
             this.skinnedPanel1.Controls.Add(this.lblDirection);
@@ -132,6 +136,30 @@
             this.skinnedPanel1.TabIndex = 32;
             this.skinnedPanel1.TabSide = Desktop.Skinning.TabSide.Top;
             // 
+            // valZIndex
+            // 
+            this.valZIndex.BackColor = System.Drawing.Color.White;
+            this.valZIndex.ForeColor = System.Drawing.Color.Black;
+            this.valZIndex.Location = new System.Drawing.Point(572, 66);
+            this.valZIndex.MaxLength = 3;
+            this.valZIndex.Name = "valZIndex";
+            this.valZIndex.Size = new System.Drawing.Size(60, 20);
+            this.valZIndex.TabIndex = 77;
+            this.valZIndex.TabStop = false;
+            // 
+            // lblZIndex
+            // 
+            this.lblZIndex.AutoSize = true;
+            this.lblZIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblZIndex.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblZIndex.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblZIndex.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
+            this.lblZIndex.Location = new System.Drawing.Point(527, 68);
+            this.lblZIndex.Name = "lblZIndex";
+            this.lblZIndex.Size = new System.Drawing.Size(42, 13);
+            this.lblZIndex.TabIndex = 76;
+            this.lblZIndex.Text = "Z layer:";
+            // 
             // lblStage
             // 
             this.lblStage.AutoSize = true;
@@ -149,7 +177,7 @@
             // 
             this.chkLayer.AutoSize = true;
             this.chkLayer.FieldType = Desktop.Skinning.SkinnedFieldType.Primary;
-            this.chkLayer.Location = new System.Drawing.Point(469, 122);
+            this.chkLayer.Location = new System.Drawing.Point(367, 122);
             this.chkLayer.Name = "chkLayer";
             this.chkLayer.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.chkLayer.Size = new System.Drawing.Size(115, 17);
@@ -165,7 +193,7 @@
             this.lblDirection.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblDirection.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.lblDirection.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.lblDirection.Location = new System.Drawing.Point(396, 92);
+            this.lblDirection.Location = new System.Drawing.Point(281, 92);
             this.lblDirection.Name = "lblDirection";
             this.lblDirection.Size = new System.Drawing.Size(52, 13);
             this.lblDirection.TabIndex = 73;
@@ -180,7 +208,7 @@
             this.cboDirection.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
             this.cboDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.cboDirection.KeyMember = null;
-            this.cboDirection.Location = new System.Drawing.Point(469, 92);
+            this.cboDirection.Location = new System.Drawing.Point(362, 92);
             this.cboDirection.Name = "cboDirection";
             this.cboDirection.SelectedIndex = -1;
             this.cboDirection.SelectedItem = null;
@@ -262,7 +290,7 @@
             this.lblLocation.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblLocation.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.lblLocation.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.lblLocation.Location = new System.Drawing.Point(396, 68);
+            this.lblLocation.Location = new System.Drawing.Point(281, 68);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(51, 13);
             this.lblLocation.TabIndex = 67;
@@ -273,7 +301,7 @@
             this.valLocation.BackColor = System.Drawing.Color.White;
             this.valLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.valLocation.ForeColor = System.Drawing.Color.Black;
-            this.valLocation.Location = new System.Drawing.Point(469, 66);
+            this.valLocation.Location = new System.Drawing.Point(362, 66);
             this.valLocation.Name = "valLocation";
             this.valLocation.Size = new System.Drawing.Size(120, 20);
             this.valLocation.TabIndex = 66;
@@ -285,7 +313,7 @@
             this.lblBubble.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblBubble.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.lblBubble.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
-            this.lblBubble.Location = new System.Drawing.Point(386, 40);
+            this.lblBubble.Location = new System.Drawing.Point(281, 40);
             this.lblBubble.Name = "lblBubble";
             this.lblBubble.Size = new System.Drawing.Size(201, 13);
             this.lblBubble.TabIndex = 65;
@@ -382,5 +410,7 @@
         private Desktop.Skinning.SkinnedComboBox cboDirection;
         private Desktop.Skinning.SkinnedLabel lblWeight;
         private Desktop.Skinning.SkinnedLabel lblStage;
+        private Desktop.Skinning.SkinnedLabel lblZIndex;
+        private Desktop.Skinning.SkinnedTextBox valZIndex;
     }
 }

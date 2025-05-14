@@ -348,9 +348,9 @@ namespace SPNATI_Character_Editor.Controls
             this.lblStateZIndex.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
             this.lblStateZIndex.Location = new System.Drawing.Point(175, 425);
             this.lblStateZIndex.Name = "lblStateZIndex";
-            this.lblStateZIndex.Size = new System.Drawing.Size(46, 13);
+            this.lblStateZIndex.Size = new System.Drawing.Size(42, 13);
             this.lblStateZIndex.TabIndex = 3;
-            this.lblStateZIndex.Text = "Z-Index:";
+            this.lblStateZIndex.Text = "Z layer:";
             // 
             // lblWeight
             // 
@@ -811,7 +811,6 @@ namespace SPNATI_Character_Editor.Controls
             this.valZIndex.Size = new System.Drawing.Size(60, 20);
             this.valZIndex.TabIndex = 15;
             this.valZIndex.TabStop = false;
-            //this.valZIndex.TextChanged += new System.EventHandler(this.valZIndex_TextChanged);
             // 
             // DialogueAdvancedControl
             // 

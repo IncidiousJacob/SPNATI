@@ -658,6 +658,7 @@ function parseDirective ($xml) {
 function PoseDefinition ($xml, player) {
     this.id = $xml.attr('id').trim();
     this.baseHeight = $xml.attr('baseHeight');
+    this.z_index = parseInt($xml.attr('z-index'), 10) || undefined;
     
     this.sprites = [];
     $xml.find('sprite').each(function (i, elem) {
@@ -1054,7 +1055,7 @@ OpponentDisplay.prototype.update = function(player) {
     var arrowDirection = chosenState.direction;
     var arrowLocation = chosenState.location;
     var dialogue_layering = chosenState.dialogue_layering || player.dialogue_layering;
-    var z_index = chosenState.z_index ?? player.z_index;
+    let z_index = chosenState.z_index;
     var resolvedImage = player.resolvePoseName(player.chosenState.image);
 
     if (resolvedImage instanceof PoseSet) {
@@ -1071,10 +1072,14 @@ OpponentDisplay.prototype.update = function(player) {
             arrowDirection = chosenState.direction || entry.direction;
             arrowLocation = chosenState.location || entry.location;
             dialogue_layering =  chosenState.dialogue_layering || entry.dialogue_layering || player.dialogue_layering;
-            z_index = chosenState.z_index ?? entry.z_index ?? player.z_index;
+            z_index ??= entry.z_index;
             resolvedImage = player.resolvePoseName(entry.image);
         }
     }
+    if (resolvedImage instanceof PoseDefinition) {
+        z_index ??= resolvedImage.z_index;
+    }
+    z_index ??= player.z_index;
 
     /* update image */
     this.updateImage(player, resolvedImage);
