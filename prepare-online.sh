@@ -20,6 +20,7 @@ sed "s/__CI_COMMIT_SHA/${CI_COMMIT_SHA}/g; s/__VERSION/${VERSION}/g" prod-config
 cp opponents/listing.xml .public/opponents
 cp opponents/general_collectibles.xml .public/opponents
 cp opponents/candy.xml .public/opponents
+cp opponents/tag_dictionary.xml .public/opponents
 
 # Copy online background images and set initial background to display during
 # loading.

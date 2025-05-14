@@ -34,6 +34,7 @@ var SPECIAL_CASE_NAMES = {
     "toru_hagakure": "Toru",
     "uravity": "Ochako", // nmasp, wtf?
     "wiifitfemale": "Wii Fit Trainer",
+    "witch_puyopuyo": "Witch",
     "yshtola": "Y'shtola",
     "yuna_ffx": "Yuna (FFX)",
     "yuno_uno": "Yuno",

@@ -57,3 +57,15 @@ The developer will submit the art update and ask for Quick Pass. Creators can vo
 At the conclusion of 24 hours, a character must have **five more** "yes" votes than "no" votes. If so, the character gets to stay on the main roster as-is.
 
 If no effort to Quick Pass occurs, or the character fails Quick Pass, they undergo testing as usual for a rework. 
+
+### Failed Reworks
+
+In the event that a reworked character fails [Mod QA](/docs/policy/sponsorship.html#mod-qa) without indication that the issues listed will be fixed by the developer, or that the character in Testing goes without an update for 90 consecutive days, the character will be put up for a Reversion Quick Pass vote.
+
+This Quick Pass vote will be open to contributors who have made 1+ character(s), and will have two possible outcomes: 
+
+A) The character remains incomplete in their reworked state,
+
+B) The character is reverted back into their pre-rework state (including, if applicible, returning them to main roster in their previous rank).
+
+This poll will be open for **24 hours**. At the conclusion of 24 hours, a character must have **five more** votes to **remain in their reworked state** than otherwise. If so, the character rework is kept in place, even if the character is taken offline.

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>yuzuki_sleepover</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag remove="true">high_heels</tag>
+        <tag from="1" to="3">nipple_slip</tag>
+        <tag>no_bra</tag>
+        <tag remove="true">pantyhose</tag>
+        <tag remove="true">pubic_hair</tag>
+        <tag>scantily-clad</tag>
+        <tag>scarred</tag>
+        <tag>shaved</tag>
+        <tag>sleepover_skin</tag>
+        <tag>sleepwear</tag>
+        <tag remove="true">sweater</tag>
+        <tag from="0" to="5">thong</tag>
+    </tags>
+    <layers>4</layers>
+    <folder>opponents/reskins/yuzuki_sleepover/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="dressing gown" generic="" position="both" type="major" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="socks" generic="socks" position="feet" type="minor" plural="true" />
+        <clothing name="slippers" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-caution">
+            <sprite id="gentle" src="reskins/yuzuki_sleepover/0-shy.png" x="0" y="0" />
+            <sprite id="caution" src="yuzuki/temp/0-chibi_warning.png" x="0" y="-409" scalex="0.6" scaley="0.6" />
+        </pose>
+        <pose id="0-aura" z-index="5">
+            <sprite id="embarrassed" src="reskins/yuzuki_sleepover/0-calm.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" delay="0.5" z="1" src="yuzuki/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="2.12" src="yuzuki/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="2.25" src="yuzuki/extra/6-zz_aura_camera.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.38" alpha="100" />
+                <keyframe time="3.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1.5" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.88" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="3" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.5" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.88" src="yuzuki/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="2.12" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.26" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="1.51" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="3.13" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="1-aura">
+            <sprite id="embarrassed" src="reskins/yuzuki_sleepover/1-calm.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" delay="0.5" z="1" src="yuzuki/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="2.12" src="yuzuki/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="2.25" src="yuzuki/extra/6-zz_aura_camera.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.38" alpha="100" />
+                <keyframe time="3.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1.5" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.88" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="3" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.5" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.88" src="yuzuki/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="2.12" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.26" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="1.51" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="3.13" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>

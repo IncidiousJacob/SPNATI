@@ -973,6 +973,27 @@ ul.dropdown-menu>li {
     overflow-x: hidden;
 }
 
+.tag-tooltip {
+    position: absolute;
+    background: #f0f0f0;
+    color: #000;
+    border: 0.2rem solid #111111;
+    border-radius: 0.5rem;
+    padding: 6px 10px;
+    font-size: 1em;
+    max-width: 20rem;
+    min-width: 15rem;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.tag-help {
+    cursor: help;
+    color: #888;
+    margin-left: 5px;
+}
+
+
 .modal a {
     color: hsla(207, 56%, 37%, 1);
 }
@@ -2876,6 +2897,10 @@ ul.dropdown-menu>li {
     background-color: rgba(255, 103, 126, 0.6);
 }
 
+.selection-card[data-highlight=birthday]:hover,
+.selection-card[data-highlight=birthday]:active {
+    background-color: rgba(151, 130, 208, 0.8);
+}
 
 .selection-card:hover .selection-card-footer .selection-card-label,
 .selection-card:active .selection-card-footer .selection-card-label {
@@ -3032,7 +3057,8 @@ ul.dropdown-menu>li {
 }
 
 .smooth-button.select-back-btn:active,
-.smooth-button.show-more-button:active {
+.smooth-button.show-more-button:active,
+.smooth-button.show-tags-button:active {
     padding-left: 0.55em;
     padding-right: 0.45em;
 }
@@ -3210,7 +3236,7 @@ ul.dropdown-menu>li {
 }
 
 .opponent-source {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2em;
     text-align: center;
 }
@@ -3288,11 +3314,26 @@ ul.dropdown-menu>li {
     flex: 1;
 }
 
-.show-more-button {
+.show-more-button,
+.show-tags-button {
     font-size: 0.7em;
     padding: 0 0.5em;
     white-space: nowrap;
 }
+
+.tag-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.tag-item {
+    margin-bottom: 0.2em;
+    margin-left: 0.3em;
+    padding: 0.2em;
+    font-size: 1em
+}
+
 
 .show-more-button::after {
     content: "More";
@@ -3319,11 +3360,13 @@ ul.dropdown-menu>li {
     display: none;
 }
 
-.opponent-added-field:not(.has-added-date) {
+.opponent-added-field:not(.has-added-date),
+.opponent-birthday-field:not(.has-birthday) {
     display: none;
 }
 
-.opponent-added-field .has-added-date {
+.opponent-added-field .has-added-date,
+.opponent-birthday-field .has-birthday {
     display: flex;
 }
 

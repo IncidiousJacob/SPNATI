@@ -1234,6 +1234,7 @@ function MainSelectScreenDisplay (slot) {
     this.prefillSuggestionBadges = {
         'new': this.prefillBadgeRow.children('.badge-icon[data-badge="new"]'),
         'updated': this.prefillBadgeRow.children('.badge-icon[data-badge="updated"]'),
+        'birthday': this.prefillBadgeRow.children('.badge-icon[data-badge="birthday"]'),
         'epilogue': this.prefillBadgeRow.children('.badge-icon[data-badge="epilogue"]'),
         'costume': this.prefillBadgeRow.children('.badge-icon[data-badge="costume"]'),
     }
@@ -1319,6 +1320,7 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
 
     this.prefillSuggestionBadges.new.toggle(player.highlightStatus === 'new');
     this.prefillSuggestionBadges.updated.toggle(player.highlightStatus === 'updated');
+    this.prefillSuggestionBadges.birthday.toggle(player.hasBirthdayToday);
     this.badges.epilogue.toggle(!!player.endings);
     var epilogueStatus = player.getEpilogueStatus();
     if (epilogueStatus) {
@@ -1638,6 +1640,32 @@ OpponentSelectionCard.prototype.updateCostumeBadge = function () {
     this.costumeBadge.toggle(this.opponent.getAvailableCostumes().length > 0);
 }
 
+OpponentSelectionCard.prototype.updateHighlight = function () {
+    if (this.opponent.hasBirthdayToday) {
+        if (!$(this.mainElem).has('.badge-sidebar>.birthday-icon').length) {
+            $(this.mainElem).children('.badge-sidebar').prepend(
+                $('<img>', {
+                    'class': 'badge-icon birthday-icon',
+                    src: "img/balloon.svg",
+                    alt: "Birthday"
+                }).css({
+                    padding: '7%',
+                })
+            );
+        }
+        if (!this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = 'birthday';
+        }
+    } else {
+        if (this.opponent.highlightStatus) {
+            this.mainElem.dataset.highlight = this.opponent.highlistStatus;
+        } else {
+            delete this.mainElem.dataset.highlight;
+        }
+        $(this.mainElem).find('.badge-sidebar>.birthday-icon').remove();
+    }
+};
+
 OpponentSelectionCard.prototype.clear = function () {}
 
 OpponentSelectionCard.prototype.handleClick = function (ev) {
@@ -1720,13 +1748,19 @@ OpponentDetailsDisplay = function () {
     this.collectiblesView = $('#individual-select-screen .opponent-details-collectibles');
     this.collectiblesContainer = $('#individual-select-screen .opponent-collectibles-container');
     
+    this.tagsView = $('#individual-select-screen .opponent-details-tags');
+    this.tagsContainer = $('#individual-select-screen .opponent-tags-container');    
+    
     this.epiloguesField = $('#individual-select-screen .opponent-epilogues-field');
     this.collectiblesField = $('#individual-select-screen .opponent-collectibles-field');
+    this.tagsField = $('#individual-select-screen .opponent-tags-field');
     
     this.nameLabel = $("#individual-select-screen .opponent-full-name");
     this.sourceLabel = $("#individual-select-screen .opponent-source");
     this.writerLabel = $("#individual-select-screen .opponent-writer");
     this.artistLabel = $("#individual-select-screen .opponent-artist");
+    this.birthdayLabelField = $("#individual-select-screen .opponent-birthday-field");
+    this.birthdayLabel = $("#individual-select-screen .opponent-birthday");
     this.descriptionLabel = $("#individual-select-screen .opponent-details-description");
     this.linecountLabel = $("#individual-select-screen .opponent-linecount");
     this.posecountLabel = $("#individual-select-screen .opponent-posecount");
@@ -1742,6 +1776,7 @@ OpponentDetailsDisplay = function () {
     this.collectiblesNavButton = $('#individual-select-screen .opponent-collectibles');
     
     this.showMoreButton = $('#individual-select-screen .show-more-button');
+    this.showTagsButton = $('#individual-select-screen .show-tags-button');
     
     $('#individual-select-screen .opponent-nav-button').click(this.handlePanelNavigation.bind(this));
     
@@ -1756,6 +1791,7 @@ OpponentDetailsDisplay = function () {
 
     this.epiloguesView.hide();
     this.collectiblesView.hide();
+    this.tagsView.hide();
     
     var query = window.matchMedia('(min-aspect-ratio: 4/3)');
     if (query.matches) {
@@ -1827,6 +1863,9 @@ OpponentDetailsDisplay.prototype.handlePanelNavigation = function (ev) {
     } else if (targetPanel === 'collectibles') {
         this.updateCollectiblesView();
         this.collectiblesView.show();
+    } else if (targetPanel === 'tags') {
+        this.updateTagsView();
+        this.tagsView.show();
     } else {
         this.mainView.show();
     }
@@ -1845,6 +1884,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.sourceLabel.empty();
     this.writerLabel.empty();
     this.artistLabel.empty();
+    this.birthdayLabel.empty();
     this.descriptionLabel.empty();
     this.lastUpdateLabel.empty();
     this.addedLabel.empty();
@@ -1854,6 +1894,7 @@ OpponentDetailsDisplay.prototype.clear = function () {
     this.epiloguesField.removeClass('has-epilogues');
     this.collectiblesField.removeClass('has-collectibles');
     this.addedLabelField.removeClass('has-added-date');
+    this.birthdayLabelField.removeClass('has-birthday');
     this.costumeSelector.hide();
 
     
@@ -1989,6 +2030,233 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     this.collectiblesContainer.empty().append(cards);
 }
 
+let tagDisplayNames = {};
+let tagDescriptions = {};
+
+function loadTagDictionary() {
+    // Loads all tags from the dictionary and puts the info in the above arrays
+    // This is called when the game is first loaded so they can be referenced anytime
+    console.log("Loading tag_dictionary.xml");
+    return metadataIndex.getFile("opponents/tag_dictionary.xml").then(function ($xml) {
+        $xml.find('group tag').each(function () {
+            const tagName = $(this).text().trim();
+            const description = $(this).attr('description');
+            const display = $(this).attr('display') || tagName;
+            if (tagName && description) {
+                tagDescriptions[tagName] = description;
+                tagDisplayNames[tagName] = display;
+            }
+        });
+    });
+}
+
+
+function getTagsForOpponent(id, costume_selected, costume_selected_path) {
+    console.log("Attempting to load tags for opponent:", id, costume_selected ? "(alt costume selected)" : "");
+    
+    // Get the right path
+    var directory = costume_selected
+        ? `${costume_selected_path}costume.xml`
+        : `opponents/${id}/tags.xml`;
+
+    return metadataIndex.getFile(directory)
+        .then(function ($tagsXml) {
+            // console.log("Loaded tags content from:", directory, $tagsXml);
+            // Extract tags if the XML is valid
+            if ($tagsXml && $tagsXml.find('tags').length > 0) {
+                var tags = [];
+
+                // Loop through each tag element
+                $tagsXml.find('tags tag').each(function () {
+                    var tagText = $(this).text().trim();  // The actual tag text
+
+                    // Check if the tag has from and to attributes
+                    var from = $(this).attr('from');
+                    var to = $(this).attr('to');
+
+                    // If stages are defined then append them to the tag
+                    if (from && to) {
+                        tagText += " (Stages " + from + " to " + to + ")";
+                    }
+                    
+                    // Check if the tag is removed
+                    var removed = $(this).attr('remove');
+                    
+                    // Add the costume context
+                    if (costume_selected) {
+                        if (removed === "true") {
+                            tagText += " (Removed by Costume)";
+                        } else {
+                            tagText += " (Added by Costume)";
+                        }
+                    }
+                    tags.push(tagText);
+                });
+                
+                tags.sort((a, b) => {
+                    // Extract the raw tag names from the start of the string to sort them
+                    // There is almost certainly a more clever way to do this
+                    // Maybe refactoring the tag list to be an object instead of an array?
+                    const rawA = a.split(' (')[0].trim();
+                    const rawB = b.split(' (')[0].trim();
+
+                    const displayA = tagDisplayNames[rawA] || rawA;
+                    const displayB = tagDisplayNames[rawB] || rawB;
+
+                    return displayA.localeCompare(displayB);
+                });
+
+
+                console.log("Extracted Tags:", tags); // Log the extracted tags
+                return tags;
+            } else {
+                console.error("No <tags> element found in the XML.");
+                return [];
+            }
+        })
+        .catch(function (err) {
+            console.error("Error loading tags.xml for " + id + ":", err);
+            return [];
+        });
+}
+
+OpponentDetailsDisplay.prototype.updateTagsView = async function () {
+    // Clickable tags because it is out of scope for opponent-details-value
+    this.tagsView.on('click', 'a', function (ev) {
+        const $link = $(ev.target);
+        const $field = $link.data('search-field');
+        const value = $link.data('search-text') || $link.text();
+        
+        if ($field && value) {
+            $field.val(value).trigger('input');
+        }
+    });
+        
+    // Get the base opponent tags
+    var baseTags = await getTagsForOpponent(this.opponent.id);
+
+    // Get costume tags second if a costume is selected
+    let costumeTags = [];
+    if (this.opponent.selected_costume) {
+        costumeTags = await getTagsForOpponent(this.opponent.id, true, this.opponent.selected_costume);
+    }
+
+    this.tagsContainer.empty(); // Clear any existing content
+
+    if (!baseTags.length && !costumeTags.length) {
+        this.tagsContainer.html("<p>No tags available.</p>");
+        return;
+    }
+
+    // Create a single <ul> for the tags because
+    // using the collectible/epilogue method would make a hundred divs
+    var list = document.createElement('ul');
+    list.className = 'bordered tag-list';
+
+    // This function makes the tags into click-able refs
+    // that send the tag to the tag-search
+    function appendTagsToList(tagArray, list) {
+        tagArray.forEach(tag => {
+            const listItem = document.createElement('li');
+            listItem.className = 'tag-item';
+
+            // Extract raw tag and annotation (e.g., "(Stages...)" etc.)
+            const match = tag.match(/^(.+?)(\s+\(.*\))?$/);
+            const rawTag = match[1];
+            const annotation = match[2] || '';
+
+            // Create clickable text anchor for the tag only
+            const anchor = $('<a>', {
+                href: '#',
+                text: tagDisplayNames[rawTag] // Get display name from the array
+            }).data({
+                'search-field': $searchTag,
+                'search-text': rawTag // Send the raw tag to the search bar
+            });
+
+            // This creates the ? Tooltip button
+            const infoBtn = $('<i>', {
+                class: 'tag-help glyphicon glyphicon-question-sign', // Glyphicon ? symbol
+                title: 'Click for tag description' // Mouseover text
+            }).on('click', function (e) {
+                e.stopPropagation(); // Needed so that it actually works
+                $('.tag-tooltip').remove(); // Close any existing tag pop up
+
+                const description = tagDescriptions[rawTag] || "No description available.";
+                const tooltip = $('<div>', {
+                    class: 'tag-tooltip',
+                    text: description
+                });
+
+                $('body').append(tooltip);
+
+                // Fix the offset so the tooltip doesn't go off-screen
+                const offset = $(this).offset();
+                const tooltipWidth = tooltip.outerWidth();
+                const tooltipHeight = tooltip.outerHeight();
+                const pageWidth = $(window).width();
+                const pageHeight = $(window).height();
+
+                let left = offset.left;
+                let top = offset.top + $(this).outerHeight();
+
+                // Adjust horizontal position if overflowing right
+                if (left + tooltipWidth > pageWidth - 10) {
+                    left = pageWidth - tooltipWidth - 10;
+                    if (left < 10) left = 10; // Prevent left side clipping
+                }
+
+                // Adjust vertical position if overflowing bottom
+                if (top + tooltipHeight > pageHeight - 10) {
+                    // Try placing it above the ? instead
+                    const aboveTop = offset.top - tooltipHeight;
+                    if (aboveTop > 10) {
+                        top = aboveTop;
+                    } else {
+                        // If even that doesn't fit, pin to bottom
+                        top = pageHeight - tooltipHeight - 10;
+                    }
+                }
+
+                tooltip.css({ top: top, left: left });
+            });
+
+            // Append the pieces of the 'item'
+            $(listItem).append(anchor);       // Clickable tag name
+            $(listItem).append(infoBtn);      // Tooltip icon
+            if (annotation) {
+                listItem.appendChild(document.createTextNode(annotation));  // Other info e.g. stages, added/removed
+            }
+
+            list.appendChild(listItem);
+        });
+    }
+
+
+    // Base tags go first
+    appendTagsToList(baseTags, list);
+
+    if (costumeTags.length) {
+        const separator = document.createElement('li');
+        separator.className = 'tag-item';
+        separator.textContent = "Costume tag changes:";
+        separator.style.fontWeight = "bold";
+        separator.style.textAlign = "center";
+        list.appendChild(separator);
+
+        // Then add the costume tags
+        appendTagsToList(costumeTags, list);
+    }
+
+    // Append the list of tags to the tagsContainer
+    this.tagsContainer.append(list);
+};
+
+// Remove the tooltip if you click literally anywhere
+$(document).on('click', function () {
+    $('.tag-tooltip').remove();
+});
+
 OpponentDetailsDisplay.prototype.update = function (opponent) {
     if (this.opponent === opponent) {
         // Interpret double-clicks as selection events.
@@ -2029,6 +2297,13 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
                                   + " (" + fuzzyTimeAgo(opponent.lastUpdated) + ")");
     } else {
         this.lastUpdateLabel.text('Unknown');
+    }
+    if (this.opponent.birthday) {
+        this.birthdayLabelField.addClass('has-birthday');
+        this.birthdayLabel.text(new Intl.DateTimeFormat([], { month: 'long', day: 'numeric' })
+                                .format(new Date(2000, opponent.birthday.month - 1, opponent.birthday.day)));
+    } else {
+        this.birthdayLabelField.removeClass('has-birthday');
     }
 
     if (this.opponent.addedDate) {
@@ -2177,5 +2452,6 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
     
     this.epiloguesView.hide();
     this.collectiblesView.hide();
+    this.tagsView.hide();
     this.mainView.show();
 }

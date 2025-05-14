@@ -266,24 +266,28 @@
             <div id="selection-badge-row-1" class="left selection-badge-row">
                 <img data-badge="new" class="badge-icon" src="img/new-star.svg" alt="New character" style="display:none;"/>
                 <img data-badge="updated" class="badge-icon" src="img/updated-star.svg" alt="Updated character" style="display:none;"/>
+                <img data-badge="birthday" class="badge-icon" src="img/balloon.svg" alt="Birthday" style="display:none;"/>
                 <img data-badge="epilogue" class="badge-icon epilogue-badge" src="img/epilogue.svg" alt="SPNatI Epilogue available" style="display:none;"/>
                 <img data-badge="costume" class="badge-icon" src="img/costume_icon.png" alt="SPNatI Alternate Costume available" style="display:none;"/>
             </div>
             <div id="selection-badge-row-2" class="halfLeft selection-badge-row">
                 <img data-badge="new" class="badge-icon" src="img/new-star.svg" alt="New character" style="display:none;"/>
                 <img data-badge="updated" class="badge-icon" src="img/updated-star.svg" alt="Updated character" style="display:none;"/>
+                <img data-badge="birthday" class="badge-icon" src="img/balloon.svg" alt="Birthday" style="display:none;"/>
                 <img data-badge="epilogue" class="badge-icon epilogue-badge" src="img/epilogue.svg" alt="SPNatI Epilogue available" style="display:none;"/>
                 <img data-badge="costume" class="badge-icon" src="img/costume_icon.png" alt="SPNatI Alternate Costume available" style="display:none;"/>
             </div>
             <div id="selection-badge-row-3" class="halfRight selection-badge-row">
                 <img data-badge="new" class="badge-icon" src="img/new-star.svg" alt="New character" style="display:none;"/>
                 <img data-badge="updated" class="badge-icon" src="img/updated-star.svg" alt="Updated character" style="display:none;"/>
+                <img data-badge="birthday" class="badge-icon" src="img/balloon.svg" alt="Birthday" style="display:none;"/>
                 <img data-badge="epilogue" class="badge-icon epilogue-badge" src="img/epilogue.svg" alt="SPNatI Epilogue available" style="display:none;"/>
                 <img data-badge="costume" class="badge-icon" src="img/costume_icon.png" alt="SPNatI Alternate Costume available" style="display:none;"/>
             </div>
             <div id="selection-badge-row-4" class="right selection-badge-row">
                 <img data-badge="new" class="badge-icon" src="img/new-star.svg" alt="New character" style="display:none;"/>
                 <img data-badge="updated" class="badge-icon" src="img/updated-star.svg" alt="Updated character" style="display:none;"/>
+                <img data-badge="birthday" class="badge-icon" src="img/balloon.svg" alt="Birthday" style="display:none;"/>
                 <img data-badge="epilogue" class="badge-icon epilogue-badge" src="img/epilogue.svg" alt="SPNatI Epilogue available" style="display:none;"/>
                 <img data-badge="costume" class="badge-icon" src="img/costume_icon.png" alt="SPNatI Alternate Costume available" style="display:none;"/>
             </div>
@@ -684,8 +688,11 @@
                 <div class="opponent-details-panel bordered" hidden>
                     <div class="opponent-details-view opponent-details-basic show-more">
                         <div class="opponent-options-row">
-                            <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
                             <select class="bordered alt-costume-dropdown"></select>
+                        </div>
+                        <div class="opponent-options-row">
+                            <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
+                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags">Character Tags</button>
                         </div>
                         <div class="bordered opponent-details-field opponent-details-name">
                             <div class="opponent-details-value opponent-full-name"></div>
@@ -731,6 +738,10 @@
                                 <div class="opponent-details-label left-cap">Added</div>
                                 <div class="opponent-details-value opponent-added"></div>
 			</div>
+                        <div class="bordered left-cap extra-details-row opponent-details-field opponent-birthday-field">
+                            <div class="opponent-details-label left-cap">Birthday</div>
+                            <div class="opponent-details-value opponent-birthday"></div>
+                        </div>
                         <div class="bordered opponent-details-field extra-details-row opponent-details-description">
                         </div>
                     </div>
@@ -747,6 +758,13 @@
                                 data-target="main">Back</button>
                         </div>
                         <div class="opponent-collectibles-container"></div>
+                    </div>
+                    <div class="opponent-details-view opponent-details-tags" hidden>
+                        <div class="opponent-options-row">
+                            <button type="button" class="bordered smooth-button red opponent-nav-button"
+                                data-target="main">Back</button>
+                        </div>
+                        <div class="opponent-tags-container"></div>
                     </div>
                 </div>
                 <div class="opponent-select-button">
@@ -1111,7 +1129,8 @@
                     onchange="changeCharacterFilter(true)">
                     <option value="" disabled selected>Filter by Character...</option>
                     <option value="">(no filter)</option>
-                    <option value="__locked">(only locked)</option> 
+                    <option value="__locked">(only locked)</option>
+                    <option value="__unlocked">(only unlocked)</option>                    
                     <option value="__general">The Inventory</option>
                 </select>
             </div>
@@ -1184,6 +1203,8 @@
                     onchange="changeCharacterFilter(false)">
                     <option value="" disabled selected>Filter by Character...</option>
                     <option value="">(no filter)</option>
+                    <option value="__locked">(only locked)</option>
+                    <option value="__unlocked">(only unlocked)</option>
                 </select>
             </div>
             <div id="gallery-gender-block">
@@ -2466,7 +2487,7 @@
                                             is also no space on the UI to show the player character.</p>
                                         <p>Most developers for SPNatI will encourage you to simply use your imagination,
                                             or to strip along in real life. SPNatI is built around watching crossover
-                                            characters interact, not detailed role-playing.</p>
+                                            characters interact, not detailed role-playing.  Think of the game as if it is in first-person.</p>
                                         <p>You can always make yourself in Kisekae and/or for SPNatI if you really want
                                             to--you just can't submit them to the online version of the game. No real
                                             people.</p>

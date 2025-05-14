@@ -346,11 +346,15 @@ function goToCardsScreen() {
 }
 
 function createFilterOption (opp) {
+    const fullName = opp.last ? `${opp.first} ${opp.last}` : opp.first;
+    const nameWithLabel = opp.metaLabel == opp.first || opp.metaLabel == fullName
+        ? fullName
+        : `${opp.metaLabel} (${fullName})`;
+
     var elem = document.createElement('option');
+    elem.text = opp.last ? nameWithLabel : `${fullName} (${opp.source})`;
     elem.value = opp.id;
-    elem.text = opp.metaLabel;
-    elem.className = 'gallery-character-filter-option'
-    
+    elem.classList.add('gallery-character-filter-option');
     return elem;
 }
 
@@ -432,19 +436,18 @@ function updateCollectiblesScreen() {
     $collectibleListPane.empty();
     
     var filter = $('#collectible-character-filter').val();
-    var showLocked = filter && filter === '__locked' 
-    
-    if (!filter || filter === '__general' || showLocked) {
+
+    if (filter) {
         generalCollectibles.forEach(function (item) {
-            if (showLocked && item.isUnlocked()) return;
+            if (filter === '__locked' && item.isUnlocked()) return false;            
+            if (filter === '__unlocked' && !item.isUnlocked()) return false;
 
             var elem = item.listElement();
             if (elem) {
-                $collectibleListPane.append(elem);    
+                $collectibleListPane.append(elem);
             }
         });
     }
-    
     loadedOpponents.forEach(function (opp) {
         if (!opp) return;
 
@@ -454,10 +457,11 @@ function updateCollectiblesScreen() {
                 return;
             }
 
-            if (filter && !showLocked && opp.id !== filter) return;
+            if (filter && filter !== '__unlocked' && filter !== '__locked' && opp.id !== filter) return;
             
             opp.collectibles.forEach(function (item) {
-                if (showLocked && item.isUnlocked()) return;
+                if (filter === '__locked' && item.isUnlocked()) return;
+                if (filter === '__unlocked' && !item.isUnlocked()) return;
 
                 var elem = item.listElement();
                 if (elem) {
@@ -492,7 +496,11 @@ function updateGalleryScreen () {
     var charFilter = $('#epilogue-character-filter').val();
     
     galleryEndings = allEndings.filter(function (ending) {
-        if (charFilter && ending.player.id !== charFilter) return false;
+        if (charFilter) {
+            if (charFilter === '__locked' && ending.unlocked()) return false;
+            if (charFilter === '__unlocked' && !ending.unlocked()) return false;
+            if (charFilter !== '__locked' && charFilter !== '__unlocked' && ending.player.id !== charFilter) return false;
+        }
         
         switch (GALLERY_GENDER) {
         case 'male':
@@ -1103,8 +1111,17 @@ function createDeckListElement (imageSet) {
     var baseElem = createElementWithClass("div", "gallery-pane-list-item deck-list-item bordered");
     var titleElem = createElementWithClass("div", "gallery-pane-item-title");
     var subtitleElem = createElementWithClass("div", "gallery-pane-item-subtitle");
+
+    var titleHtml = imageSet.title;
+    // isUnlocked returns an object promise, not a boolean
+    // thank you stack overflow for the knowledge of this
+    imageSet.isUnlocked().then(function (unlocked) {
+        if (!unlocked) {
+            $(titleElem).append(' <span class="icon-lock" title="Locked">🔒</span>');
+        }
+    });
     
-    $(titleElem).html(imageSet.title);
+    $(titleElem).html(titleHtml);
     $(subtitleElem).html(imageSet.subtitle);
     $(baseElem).append(titleElem, subtitleElem).click(displayCardDeck.bind(null, imageSet));
 
