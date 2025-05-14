@@ -61,6 +61,23 @@ namespace SPNATI_Character_Editor
 				warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, "Character has no description (on the Metadata tab)."));
 			}
 
+			if (character.Metadata.Birthday != null)
+			{
+				Dictionary<int, string> shortMonths = new Dictionary<int, string>()
+				{
+					{ 4, "April" },
+					{ 6, "June" },
+					{ 9, "September" },
+					{ 11, "November" },
+				};
+				int month = character.Metadata.Birthday.Month;
+				int day = character.Metadata.Birthday.Day;
+				if (month == 2 && day > 29)
+					warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, string.Format("Character's birthday is February {0}, which is an impossible date", day)));
+				if (shortMonths.ContainsKey(month) && day > 30)
+					warnings.Add(new ValidationError(ValidationFilterLevel.Metadata, string.Format("Character's birthday is {0} {1}, which is an impossible date", shortMonths[month], day)));
+			}
+
 			//wardrobe
 			ValidateWardrobe(character, warnings);
 

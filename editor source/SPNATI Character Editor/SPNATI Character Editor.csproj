@@ -275,6 +275,12 @@
     <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.Designer.cs">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.Designer.cs">
+      <DependentUpon>PlayerBirthdayControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PoseSetControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1597,6 +1603,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.resx">
+      <DependentUpon>PlayerBirthdayControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BulkReplaceTool.resx">
       <DependentUpon>BulkReplaceTool.cs</DependentUpon>
