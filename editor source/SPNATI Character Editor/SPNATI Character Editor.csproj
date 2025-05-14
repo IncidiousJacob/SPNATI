@@ -275,6 +275,12 @@
     <Compile Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.Designer.cs">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.Designer.cs">
+      <DependentUpon>PlayerBirthdayControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PoseSetControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -1598,6 +1604,9 @@
     <EmbeddedResource Include="Controls\EditControls\VariableControls\CollectibleVisibleControl.resx">
       <DependentUpon>CollectibleVisibleControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EditControls\VariableControls\PlayerBirthdayControl.resx">
+      <DependentUpon>PlayerBirthdayControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BulkReplaceTool.resx">
       <DependentUpon>BulkReplaceTool.cs</DependentUpon>
     </EmbeddedResource>
@@ -2189,6 +2198,9 @@
     <None Include="Hunspellx86.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="VersionHistory\v6.9.3.1.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="VersionHistory\v6.9.3.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

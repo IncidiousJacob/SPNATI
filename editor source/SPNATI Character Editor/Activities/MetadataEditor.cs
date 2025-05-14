@@ -19,6 +19,12 @@ namespace SPNATI_Character_Editor.Activities
 			cboTitleGender.Items.AddRange(new string[] { "", "female", "male" });
 			cboSize.Items.AddRange(new string[] { "small", "medium", "large" });
 			cboFutanariPenisSize.Items.AddRange(new string[] { "", "small", "medium", "large" });
+			cboBirthdayMonth.Items.AddRange(new string[] { "", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" });
+			cboBirthdayDate.Items.Add("");
+			for (int i = 1; i <= 31; i++)
+			{
+				cboBirthdayDate.Items.Add(i.ToString());
+			}
 			ColDifficulty.Items.AddRange(DialogueLine.AILevels);
 		}
 
@@ -76,9 +82,13 @@ namespace SPNATI_Character_Editor.Activities
 			{
 				txtHeight.Text = CharacterDatabase.GetEditorData(_character).Height;
 			}
-
-			txtAge.Text = CharacterDatabase.GetEditorData(_character).Age;
 			txtpronunciationGuide.Text = CharacterDatabase.GetEditorData(_character).pronunciationGuide;
+			txtAge.Text = CharacterDatabase.GetEditorData(_character).Age;
+			if (_character.Metadata.Birthday != null)
+			{
+				cboBirthdayMonth.SelectedIndex = Math.Max(0, Math.Min(12, _character.Metadata.Birthday.Month));
+				cboBirthdayDate.SelectedIndex = Math.Max(0, Math.Min(31, _character.Metadata.Birthday.Day));
+			}
 			txtSource.Text = _character.Metadata.Source;
 			txtWriter.Text = _character.Metadata.Writer;
 			txtArtist.Text = _character.Metadata.Artist;
@@ -168,10 +178,20 @@ namespace SPNATI_Character_Editor.Activities
 			_character.LegacySize = "";
 			_character.Metadata.Description = txtDescription.Text.Replace(Environment.NewLine, "<br>");
 			CharacterDatabase.GetEditorData(_character).Height = txtHeight.Text;
-			_character.Metadata.LegacyHeight = "";
+			_character.Metadata.LegacyHeight = null;
 			_character.Metadata.LegacyTags = null;
-			CharacterDatabase.GetEditorData(_character).Age = txtAge.Text;
 			CharacterDatabase.GetEditorData(_character).pronunciationGuide = txtpronunciationGuide.Text;
+			CharacterDatabase.GetEditorData(_character).Age = txtAge.Text;
+			if (cboBirthdayMonth.SelectedIndex > 0 && cboBirthdayDate.SelectedIndex > 0)
+			{
+				_character.Metadata.Birthday = new Birthday();
+				_character.Metadata.Birthday.Month = cboBirthdayMonth.SelectedIndex;
+				_character.Metadata.Birthday.Day = cboBirthdayDate.SelectedIndex;
+			}
+			else
+			{
+				_character.Metadata.Birthday = null;
+			}
 			_character.Metadata.Source = txtSource.Text;
 			_character.Metadata.DefaultCostumeName = txtDefaultCostumeName.Text;
 			_character.Metadata.Layers = (int)valLayers.Value;

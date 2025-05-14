@@ -68,6 +68,13 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			set { Set(value); }
 		}
 
+		[Text(DisplayName = "Z Layer", Key = "ZIndexPose", GroupOrder = 16, Description = "Designate a Z layer value for this pose specifically. Higher values layer in front of lower values. Can be negative.")]
+		public string _z_index
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
 		private float _time;
 
 		public LivePose()
@@ -113,6 +120,8 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 
 			//1. Pose-level data
 			Id = pose.Id;
+			_z_index = pose.ZIndexPose;
+
 			int height;
 			if (int.TryParse(pose.BaseHeight, out height))
 			{
@@ -695,5 +704,14 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 				return CrossStage;
 			}
 		}
-	}
+
+		public override string ZIndexPose
+			{
+				get
+				{
+					return _z_index;
+				}
+				set { Set(value); }
+		}
+		}
 }

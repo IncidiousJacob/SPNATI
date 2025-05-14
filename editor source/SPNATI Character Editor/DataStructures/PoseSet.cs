@@ -84,6 +84,10 @@ namespace SPNATI_Character_Editor
 		[XmlAttribute("weight")]
 		public float Weight;
 
+		[DefaultValue("")]
+		[XmlAttribute("z-index")]
+		public string ZIndexPoseSet;
+
 		[Expression(DisplayName = "Variable Test (+)", GroupName = "Conditions", GroupOrder = 1, Description = "Tests the value of a variable. Multiple can be added")]
 		[XmlArray("tests")]
 		[XmlArrayItem("test")]
