@@ -30,9 +30,9 @@ namespace SPNATI_Character_Editor.Activities
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtLabel = new Desktop.Skinning.SkinnedTextBox();
             this.label1 = new Desktop.Skinning.SkinnedLabel();
             this.gridAI = new Desktop.Skinning.SkinnedDataGridView();
@@ -62,6 +62,9 @@ namespace SPNATI_Character_Editor.Activities
             this.lblSize = new Desktop.Skinning.SkinnedLabel();
             this.cboGender = new Desktop.Skinning.SkinnedComboBox();
             this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
+            this.lblDefaultCostume = new Desktop.Skinning.SkinnedLabel();
+            this.lblPicX = new Desktop.Skinning.SkinnedLabel();
+            this.valLayers = new Desktop.Skinning.SkinnedNumericUpDown();
             this.cboFutanariPenisSize = new Desktop.Skinning.SkinnedComboBox();
             this.lblFutanariPenisSize = new Desktop.Skinning.SkinnedLabel();
             this.cmdExpandFutanariSize = new Desktop.Skinning.SkinnedIcon();
@@ -89,12 +92,13 @@ namespace SPNATI_Character_Editor.Activities
             this.lblTitleLabel = new Desktop.Skinning.SkinnedLabel();
             this.skinnedGroupBox4 = new Desktop.Skinning.SkinnedGroupBox();
             this.skinnedGroupBox5 = new Desktop.Skinning.SkinnedGroupBox();
-            this.valLayers = new Desktop.Skinning.SkinnedNumericUpDown();
-            this.lblPicX = new Desktop.Skinning.SkinnedLabel();
-            this.lblDefaultCostume = new Desktop.Skinning.SkinnedLabel();
+            this.cboBirthdayDate = new Desktop.Skinning.SkinnedComboBox();
+            this.birthdaylabel = new Desktop.Skinning.SkinnedLabel();
+            this.cboBirthdayMonth = new Desktop.Skinning.SkinnedComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridAI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valRounds)).BeginInit();
             this.skinnedGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.valLayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicScale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicX)).BeginInit();
@@ -102,7 +106,6 @@ namespace SPNATI_Character_Editor.Activities
             this.skinnedGroupBox3.SuspendLayout();
             this.skinnedGroupBox4.SuspendLayout();
             this.skinnedGroupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.valLayers)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLabel
@@ -136,27 +139,27 @@ namespace SPNATI_Character_Editor.Activities
             this.gridAI.BackgroundColor = System.Drawing.Color.White;
             this.gridAI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridAI.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAI.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAI.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gridAI.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridAI.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColAIStage,
             this.ColDifficulty});
             this.gridAI.Data = null;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridAI.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridAI.DefaultCellStyle = dataGridViewCellStyle20;
             this.gridAI.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.gridAI.EnableHeadersVisualStyles = false;
             this.gridAI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -164,14 +167,14 @@ namespace SPNATI_Character_Editor.Activities
             this.gridAI.Location = new System.Drawing.Point(107, 27);
             this.gridAI.Name = "gridAI";
             this.gridAI.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridAI.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridAI.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.gridAI.RowHeadersVisible = false;
             this.gridAI.Size = new System.Drawing.Size(230, 125);
             this.gridAI.TabIndex = 18;
@@ -553,6 +556,59 @@ namespace SPNATI_Character_Editor.Activities
             this.skinnedGroupBox1.TabStop = false;
             this.skinnedGroupBox1.Text = "Demographics";
             // 
+            // lblDefaultCostume
+            // 
+            this.lblDefaultCostume.AutoSize = true;
+            this.lblDefaultCostume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblDefaultCostume.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDefaultCostume.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblDefaultCostume.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
+            this.lblDefaultCostume.Location = new System.Drawing.Point(365, 107);
+            this.lblDefaultCostume.Name = "lblDefaultCostume";
+            this.lblDefaultCostume.Size = new System.Drawing.Size(146, 13);
+            this.lblDefaultCostume.TabIndex = 124;
+            this.lblDefaultCostume.Text = "Name of the default costume:";
+            // 
+            // lblPicX
+            // 
+            this.lblPicX.AutoSize = true;
+            this.lblPicX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.lblPicX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPicX.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.lblPicX.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
+            this.lblPicX.Location = new System.Drawing.Point(451, 80);
+            this.lblPicX.Name = "lblPicX";
+            this.lblPicX.Size = new System.Drawing.Size(17, 13);
+            this.lblPicX.TabIndex = 123;
+            this.lblPicX.Text = "X:";
+            this.lblPicX.Visible = false;
+            // 
+            // valLayers
+            // 
+            this.valLayers.BackColor = System.Drawing.Color.White;
+            this.valLayers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.valLayers.ForeColor = System.Drawing.Color.Black;
+            this.valLayers.Location = new System.Drawing.Point(408, 76);
+            this.valLayers.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.valLayers.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.valLayers.Name = "valLayers";
+            this.valLayers.Size = new System.Drawing.Size(37, 20);
+            this.valLayers.TabIndex = 122;
+            this.valLayers.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.valLayers.Visible = false;
+            // 
             // cboFutanariPenisSize
             // 
             this.cboFutanariPenisSize.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -741,8 +797,8 @@ namespace SPNATI_Character_Editor.Activities
             this.lblLayers.Size = new System.Drawing.Size(41, 13);
             this.lblLayers.TabIndex = 109;
             this.lblLayers.Text = "Layers:";
-            this.lblLayers.Visible = false;
             this.toolTip1.SetToolTip(this.lblLayers, "Number of layers shows on the selection screen.");
+            this.lblLayers.Visible = false;
             // 
             // cmdExpandGender
             // 
@@ -799,7 +855,7 @@ namespace SPNATI_Character_Editor.Activities
             this.agelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.agelabel.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.agelabel.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
-            this.agelabel.Location = new System.Drawing.Point(6, 71);
+            this.agelabel.Location = new System.Drawing.Point(6, 99);
             this.agelabel.Name = "agelabel";
             this.agelabel.Size = new System.Drawing.Size(29, 13);
             this.agelabel.TabIndex = 110;
@@ -809,7 +865,7 @@ namespace SPNATI_Character_Editor.Activities
             // 
             this.txtAge.BackColor = System.Drawing.Color.White;
             this.txtAge.ForeColor = System.Drawing.Color.Black;
-            this.txtAge.Location = new System.Drawing.Point(107, 68);
+            this.txtAge.Location = new System.Drawing.Point(107, 96);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(101, 20);
             this.txtAge.TabIndex = 109;
@@ -822,7 +878,7 @@ namespace SPNATI_Character_Editor.Activities
             this.pronunciationguidelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pronunciationguidelabel.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
             this.pronunciationguidelabel.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
-            this.pronunciationguidelabel.Location = new System.Drawing.Point(6, 97);
+            this.pronunciationguidelabel.Location = new System.Drawing.Point(6, 73);
             this.pronunciationguidelabel.Name = "pronunciationguidelabel";
             this.pronunciationguidelabel.Size = new System.Drawing.Size(75, 13);
             this.pronunciationguidelabel.TabIndex = 111;
@@ -832,7 +888,7 @@ namespace SPNATI_Character_Editor.Activities
             // 
             this.txtpronunciationGuide.BackColor = System.Drawing.Color.White;
             this.txtpronunciationGuide.ForeColor = System.Drawing.Color.Black;
-            this.txtpronunciationGuide.Location = new System.Drawing.Point(107, 94);
+            this.txtpronunciationGuide.Location = new System.Drawing.Point(107, 70);
             this.txtpronunciationGuide.Name = "txtpronunciationGuide";
             this.txtpronunciationGuide.Size = new System.Drawing.Size(101, 20);
             this.txtpronunciationGuide.TabIndex = 109;
@@ -934,6 +990,9 @@ namespace SPNATI_Character_Editor.Activities
             // 
             this.skinnedGroupBox4.BackColor = System.Drawing.Color.White;
             this.skinnedGroupBox4.Controls.Add(this.agelabel);
+            this.skinnedGroupBox4.Controls.Add(this.birthdaylabel);
+            this.skinnedGroupBox4.Controls.Add(this.cboBirthdayDate);
+            this.skinnedGroupBox4.Controls.Add(this.cboBirthdayMonth);
             this.skinnedGroupBox4.Controls.Add(this.pronunciationguidelabel);
             this.skinnedGroupBox4.Controls.Add(this.txtAge);
             this.skinnedGroupBox4.Controls.Add(this.txtpronunciationGuide);
@@ -965,58 +1024,56 @@ namespace SPNATI_Character_Editor.Activities
             this.skinnedGroupBox5.TabStop = false;
             this.skinnedGroupBox5.Text = "Other Notes";
             // 
-            // valLayers
+            // cboBirthdayDate
             // 
-            this.valLayers.BackColor = System.Drawing.Color.White;
-            this.valLayers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.valLayers.ForeColor = System.Drawing.Color.Black;
-            this.valLayers.Location = new System.Drawing.Point(408, 76);
-            this.valLayers.Maximum = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.valLayers.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.valLayers.Name = "valLayers";
-            this.valLayers.Size = new System.Drawing.Size(37, 20);
-            this.valLayers.TabIndex = 122;
-            this.valLayers.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.valLayers.Visible = false;
+            this.cboBirthdayDate.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cboBirthdayDate.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cboBirthdayDate.BackColor = System.Drawing.Color.White;
+            this.cboBirthdayDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBirthdayDate.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
+            this.cboBirthdayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cboBirthdayDate.FormattingEnabled = true;
+            this.cboBirthdayDate.KeyMember = null;
+            this.cboBirthdayDate.Location = new System.Drawing.Point(107, 148);
+            this.cboBirthdayDate.Name = "cboBirthdayDate";
+            this.cboBirthdayDate.SelectedIndex = -1;
+            this.cboBirthdayDate.SelectedItem = null;
+            this.cboBirthdayDate.Size = new System.Drawing.Size(101, 20);
+            this.cboBirthdayDate.Sorted = false;
+            this.cboBirthdayDate.TabIndex = 126;
+            this.toolTip1.SetToolTip(this.cboBirthdayDate, "The date of the character\'s birthday");
             // 
-            // lblPicX
+            // birthdaylabel
             // 
-            this.lblPicX.AutoSize = true;
-            this.lblPicX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.lblPicX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblPicX.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
-            this.lblPicX.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
-            this.lblPicX.Location = new System.Drawing.Point(451, 80);
-            this.lblPicX.Name = "lblPicX";
-            this.lblPicX.Size = new System.Drawing.Size(17, 13);
-            this.lblPicX.TabIndex = 123;
-            this.lblPicX.Text = "X:";
-            this.lblPicX.Visible = false;
+            this.birthdaylabel.AutoSize = true;
+            this.birthdaylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.birthdaylabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.birthdaylabel.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.birthdaylabel.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
+            this.birthdaylabel.Location = new System.Drawing.Point(6, 125);
+            this.birthdaylabel.Name = "birthdaylabel";
+            this.birthdaylabel.Size = new System.Drawing.Size(48, 13);
+            this.birthdaylabel.TabIndex = 127;
+            this.birthdaylabel.Text = "Birthday:";
             // 
-            // lblDefaultCostume
+            // cboBirthdayMonth
             // 
-            this.lblDefaultCostume.AutoSize = true;
-            this.lblDefaultCostume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.lblDefaultCostume.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDefaultCostume.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
-            this.lblDefaultCostume.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
-            this.lblDefaultCostume.Location = new System.Drawing.Point(365, 107);
-            this.lblDefaultCostume.Name = "lblDefaultCostume";
-            this.lblDefaultCostume.Size = new System.Drawing.Size(146, 13);
-            this.lblDefaultCostume.TabIndex = 124;
-            this.lblDefaultCostume.Text = "Name of the default costume:";
+            this.cboBirthdayMonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.cboBirthdayMonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.cboBirthdayMonth.BackColor = System.Drawing.Color.White;
+            this.cboBirthdayMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBirthdayMonth.FieldType = Desktop.Skinning.SkinnedFieldType.Surface;
+            this.cboBirthdayMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cboBirthdayMonth.FormattingEnabled = true;
+            this.cboBirthdayMonth.KeyMember = null;
+            this.cboBirthdayMonth.Location = new System.Drawing.Point(107, 122);
+            this.cboBirthdayMonth.Name = "cboBirthdayMonth";
+            this.cboBirthdayMonth.SelectedIndex = -1;
+            this.cboBirthdayMonth.SelectedItem = null;
+            this.cboBirthdayMonth.Size = new System.Drawing.Size(101, 20);
+            this.cboBirthdayMonth.Sorted = false;
+            this.cboBirthdayMonth.TabIndex = 128;
+            this.toolTip1.SetToolTip(this.cboBirthdayMonth, "The month of the character\'s birthday");
             // 
             // MetadataEditor
             // 
@@ -1039,6 +1096,7 @@ namespace SPNATI_Character_Editor.Activities
             ((System.ComponentModel.ISupportInitialize)(this.valRounds)).EndInit();
             this.skinnedGroupBox1.ResumeLayout(false);
             this.skinnedGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.valLayers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicScale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.valPicX)).EndInit();
@@ -1050,7 +1108,6 @@ namespace SPNATI_Character_Editor.Activities
             this.skinnedGroupBox4.PerformLayout();
             this.skinnedGroupBox5.ResumeLayout(false);
             this.skinnedGroupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.valLayers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1117,5 +1174,8 @@ namespace SPNATI_Character_Editor.Activities
         private Desktop.Skinning.SkinnedLabel lblPicX;
         private Desktop.Skinning.SkinnedNumericUpDown valLayers;
         private Desktop.Skinning.SkinnedLabel lblDefaultCostume;
+        private Desktop.Skinning.SkinnedComboBox cboBirthdayMonth;
+        private Desktop.Skinning.SkinnedLabel birthdaylabel;
+        private Desktop.Skinning.SkinnedComboBox cboBirthdayDate;
     }
 }
