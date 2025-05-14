@@ -338,7 +338,11 @@ namespace SPNATI_Character_Editor.Controls
 								break;
 							}
 						}
-						if (eligibleEntry.Img.StartsWith("custom:"))
+						if (eligibleEntry.Img == null)
+						{
+							_imageReference = null;
+						}
+						else if (eligibleEntry.Img.StartsWith("custom:"))
 						{
 							Pose p = _character.Skin.CustomPoses.Find(customPose => customPose.Id == eligibleEntry.Img.Substring("custom:".Length));
 							if (p == null)

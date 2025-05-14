@@ -178,7 +178,7 @@ namespace SPNATI_Character_Editor.Activities
 			_character.LegacySize = "";
 			_character.Metadata.Description = txtDescription.Text.Replace(Environment.NewLine, "<br>");
 			CharacterDatabase.GetEditorData(_character).Height = txtHeight.Text;
-			_character.Metadata.LegacyHeight = "";
+			_character.Metadata.LegacyHeight = null;
 			_character.Metadata.LegacyTags = null;
 			CharacterDatabase.GetEditorData(_character).pronunciationGuide = txtpronunciationGuide.Text;
 			CharacterDatabase.GetEditorData(_character).Age = txtAge.Text;
