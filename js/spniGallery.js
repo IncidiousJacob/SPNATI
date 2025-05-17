@@ -20,7 +20,7 @@ $galleryEndings = $('#gallery-endings-block').children();
 $galleryPrevButton = $('#gallery-prev-page-button');
 $galleryNextButton = $('#gallery-next-page-button');
 $galleryStartButton = $('#gallery-start-ending-button');
-$selectedEndingPreview = $('#selected-ending-previev');
+$selectedEndingPreview = $('#selected-ending-preview');
 $selectedEndingLabels = [$('#selected-ending-title'), $('#selected-ending-character'), $('#selected-ending-gender')];
 $selectedEndingHint = [$('#selected-ending-hint-container'), $('#selected-ending-hint')];
 $selectedEndingDesc = [$('#selected-ending-description-container'), $('#selected-ending-description')];
@@ -531,26 +531,25 @@ function updateGalleryScreen () {
     loadThumbnails();
 }
 
-function loadEndingThunbnail(element, ending){
+function loadEndingThumbnail(element, ending){
     element.removeClass('empty-thumbnail');
+    element.css('--image', `url('../${ending.image}')`);
     if (ending.unlocked()) {
-        element.removeClass('unlocked-thumbnail');
-        element.css('background-image','url(\''+ending.image+'\')');
+        element.removeClass('locked-thumbnail');
     } else {
-        element.css('background-image', '');
-        element.addClass('unlocked-thumbnail');
+        element.addClass('locked-thumbnail');
     }
 }
 
 function loadThumbnails(){
     var i=0;
     for(; i<epp && epp*galleryPage+i<galleryEndings.length; i++){
-        loadEndingThunbnail($galleryEndings.eq(i), galleryEndings[epp*galleryPage+i]);
+        loadEndingThumbnail($galleryEndings.eq(i), galleryEndings[epp*galleryPage+i]);
     }
     for( ; i<epp; i++){
-        $galleryEndings.eq(i).removeClass('unlocked-thumbnail');
+        $galleryEndings.eq(i).removeClass('locked-thumbnail');
         $galleryEndings.eq(i).addClass('empty-thumbnail');
-        $galleryEndings.eq(i).css('background-image', 'none');
+        $galleryEndings.eq(i).css('--image', 'none');
     }
 }
 
@@ -628,7 +627,7 @@ function selectEnding(i) {
     
     $galleryEndings.css('opacity', '');
     $galleryEndings.eq(i).css('opacity', 1);
-    loadEndingThunbnail($selectedEndingPreview, ending);
+    loadEndingThumbnail($selectedEndingPreview, ending);
     $selectedEndingLabels[1].html(ending.player.metaLabel);
     $selectedEndingLabels[2].html(ending.gender);
     switch(ending.gender){
