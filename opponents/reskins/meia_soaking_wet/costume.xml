@@ -2213,6 +2213,16 @@
             <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
             <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="-4" />
         </pose>
+        <pose id="1-pstripped+">
+            <sprite id="silent" src="reskins/meia_soaking_wet/1-stripped+.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_soaking_wet/pyoro.png" x="-298" y="152" alpha="100" rotation="0" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyorohand.png" x="40" y="87" pivotx="48%" pivoty="52%" rotation="-8" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_soaking_wet/pyorohand.png" x="264" y="82" scalex="-1" scaley="1" rotation="-351" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_soaking_wet/pyoroleg.png" x="114" y="205" scalex="1" rotation="-4" />
+        </pose>
     </poses>
 
 </costume>
