@@ -1383,7 +1383,7 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
 
         // Define vowels and numbers (for l33t names)
         var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
-        var nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+        var nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
         var chars = '';
         
         // Don't stutter 1 letter names
