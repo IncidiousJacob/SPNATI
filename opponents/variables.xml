@@ -25,7 +25,7 @@
     <function name="obj" description="Expands to 'him' or 'her' depending on the character's gender." example="her"/>
     <function name="poss" description="Expands to 'his' or 'her' depending on the character's gender." example="his"/>
     <function name="poss2" description="Expands to 'his' or 'her' depending on the character's gender." example="hers"/>
-    <function name="toStutter" description="Returns the character's name, prefixed with the first letter and a dash to indicate a stutter." example="F-Florina">
+    <function name="toStutter" description="Returns the character's name, prefixed with the first consonant cluster and a dash to indicate a stutter. Skips 1-letter names ('N')." example="Fl-Florina">
       <param name="count" label="Stutter count:" description="How many times to stutter the letter. Min 1, Max 10." example="2" />
     </function>
   </variable>
