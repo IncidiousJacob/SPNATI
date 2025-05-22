@@ -4872,11 +4872,55 @@ ul.dropdown-menu>li {
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
 
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
+}
 
+#collectibles-image-pane .collectible-img-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-img-nav {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    flex: 0 0 3rem;
+    margin: 0 8px;
+}
+
+.gallery-img-nav:disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
+
+.gallery-img-nav:hover {
+    background-color: #eee;
+    background: linear-gradient(white, #aaa);
+}
+
+.image-gallery-wrapper {
+    display:block;
+    max-width:100%;
+    max-height:100%; 
+    margin:0 auto;   
+}
+
+#collectible-img-counter {
+    font-size: 140%;
+    color: #DD3333;
+    text-shadow: black -0.2rem 0 0, black 0.2rem 0 0, black 0 -0.2rem 0, black 0 0.2rem 0, black 0.14rem 0.14rem 0, black -0.14rem 0.14rem 0, black -0.14rem -0.14rem 0, black 0.14rem -0.14rem 0;
 }
 
 .collectibles-modal-dialog {
@@ -5180,7 +5224,7 @@ ul.dropdown-menu>li {
     height: 65%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.4);
+    background: rgba(240, 240, 240, .8);
     border-radius: 0.8rem;
     border-width: thin;
     border-style: solid;
@@ -5209,10 +5253,11 @@ ul.dropdown-menu>li {
     width: 100%;
     margin-bottom: 3%;
     border-radius: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #gallery-selected-ending-block label {
-    text-shadow: 0px 0px 2px #aaa;
+    text-shadow: 0px 0px 2px #FFF;
 }
 
 #gallery-prev-page-button {
@@ -5229,12 +5274,17 @@ ul.dropdown-menu>li {
 
 .female-style {
     color: #f0869b;
-    text-shadow: none;
+    text-shadow: 0px 0px 2px #FFF, 0px 0px 1px #FFF;
 }
 
 .male-style {
     color: #7ba1e4;
-    text-shadow: none;
+    text-shadow: 0px 0px 2px #FFF, 0px 0px 1px #FFF;
+}
+
+#selected-ending-title {
+    text-align: center;
+    text-decoration: underline;
 }
 
 /************************************************************
