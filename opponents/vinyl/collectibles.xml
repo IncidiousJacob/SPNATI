@@ -1,2 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="vinyl_vest" status="online" img="opponents/vinyl/collectible_vest.png" thumbnail="opponents/vinyl/collectible_vest.png">
+        <title>Vinyl's Vest</title>
+        <text>Doesn't come with the boostpack, sadly. Still a stylish top for skaters!</text>
+        <unlock>Win a game against Vinyl.</unlock>
+        <wearable>true</wearable>
+        <clothing name="street vest" generic="vest" position="upper" type="minor" />
+    </collectible>
+</collectibles>

@@ -18,6 +18,12 @@
         <case name="Money Talks" id="75" priority="Prompt" min="0" max="6">
             <description>Vinyl admits her financial struggles and wonders how the others get by.</description>
         </case>
+        <case name="Booty Jam (General)" id="88" priority="Noteworthy" min="6" max="6">
+            <description>Vinyl shows off her tight butt!</description>
+        </case>
+        <case name="Booty Jam (Cops)" id="89" priority="Noteworthy" min="6" max="6">
+            <description>Vinyl looks for any police watching her, ends up showing her butt.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -86,10 +92,20 @@
         <response id="74" opponent="kaz" opponentId="96" />
         <response id="76" opponent="arle" opponentId="573" />
         <response id="77" opponent="orendi" opponentId="172" />
+        <response id="78" opponent="yusei_fudo" opponentId="883" />
+        <response id="79" opponent="yusei_fudo" opponentId="884" />
+        <response id="80" opponent="yusei_fudo" opponentId="885" />
+        <response id="81" opponent="yusei_fudo" opponentId="886" />
+        <response id="82" opponent="rosie" opponentId="95" />
+        <response id="83" opponent="jura" opponentId="2591" />
+        <response id="84" opponent="cadence" opponentId="168" />
+        <response id="85" opponent="yuno_uno" opponentId="175" />
+        <response id="86" opponent="yuzuki" opponentId="676" />
+        <response id="87" opponent="zoe" opponentId="26" />
+        <response id="90" opponent="ayano" opponentId="85" />
     </responses>
-    <nextId>77</nextId>
+    <nextId>90</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviScars" />
         <marker scope="Public" name="AellaArmor" />
         <marker scope="Public" name="AellaBaths" />
@@ -105,8 +121,10 @@
         <marker scope="Public" name="ArleBragging" />
         <marker scope="Public" name="ArtOffer" />
         <marker scope="Public" name="Astrology" />
+        <marker scope="Public" name="AyanoScars" />
         <marker scope="Public" name="BoboboAfro" />
         <marker scope="Public" name="CadenceAskPhone" />
+        <marker scope="Public" name="CadenceRetro" />
         <marker scope="Public" name="CaitlinFloat" />
         <marker scope="Public" name="CharaKnife" />
         <marker scope="Public" name="ChazzConfused" />
@@ -172,6 +190,8 @@
         <marker scope="Public" name="MeguminRobotCuffs" />
         <marker scope="Public" name="MeguminTableGames" />
         <marker scope="Public" name="MeguminTanks" />
+        <marker scope="Public" name="MeiaGangActivity" />
+        <marker scope="Public" name="MeiaSubculture" />
         <marker scope="Public" name="MentionSolace" />
         <marker scope="Public" name="MercyGlasses" />
         <marker scope="Public" name="MercyNoBenefits" />
@@ -197,8 +217,11 @@
         <marker scope="Public" name="PromptMusic" />
         <marker scope="Public" name="PsychicAskHelp" />
         <marker scope="Public" name="RaynorAliens" />
+        <marker scope="Public" name="RaynorCheeks" />
         <marker scope="Public" name="RaynorDevice" />
         <marker scope="Public" name="RaynorStreetCulture" />
+        <marker scope="Public" name="RaynorTattoos" />
+        <marker scope="Public" name="RaynorThick" />
         <marker scope="Public" name="Rose" />
         <marker scope="Public" name="RoseBodymod" />
         <marker scope="Public" name="RoseClaws" />
@@ -278,13 +301,32 @@
         <marker scope="Public" name="TharjaMagic" />
         <marker scope="Public" name="TrixieAskSpecies" />
         <marker scope="Public" name="VinylAstrology" />
+        <marker scope="Public" name="VinylBreakdanceFighting" />
         <marker scope="Public" name="VinylButt" />
+        <marker scope="Public" name="VinylButtReveal" />
+        <marker scope="Public" name="VinylCollectible1" />
         <marker scope="Public" name="VinylDecks" />
         <marker scope="Public" name="VinylFlashing" />
         <marker scope="Public" name="VinylFlipPhone" />
+        <marker scope="Public" name="VinylForest1" />
+        <marker scope="Public" name="VinylForest2" />
+        <marker scope="Public" name="VinylForest3" />
+        <marker scope="Public" name="VinylForest4" />
+        <marker scope="Public" name="VinylForestFeet1" />
+        <marker scope="Public" name="VinylForestFeet2" />
+        <marker scope="Public" name="VinylForestHands1" />
+        <marker scope="Public" name="VinylForestHands2" />
+        <marker scope="Public" name="VinylForestHands3" />
         <marker scope="Public" name="VinylFunkSpirit" />
+        <marker scope="Public" name="VinylGrassLater" />
+        <marker scope="Public" name="VinylHipShaker" />
         <marker scope="Public" name="VinylLookForCops" />
+        <marker scope="Public" name="VinylLookGreen" />
         <marker scope="Public" name="VinylStripMaleFaux" />
+        <marker scope="Public" name="VinylTouchGrass" />
+        <marker scope="Public" name="VinylVoyeur1" />
+        <marker scope="Public" name="VinylVoyeur2" />
+        <marker scope="Public" name="VinylVoyeur3" />
         <marker scope="Public" name="VinylYuseiDisappointed" />
         <marker scope="Public" name="WallartOffer" />
         <marker scope="Public" name="WikiHairDye" />
@@ -295,11 +337,21 @@
         <marker scope="Public" name="YuellaRelief" />
         <marker scope="Public" name="YuseiCityHistory" />
         <marker scope="Public" name="YuseiDuelRunner" />
+        <marker scope="Public" name="YuseiGameCharacters" />
+        <marker scope="Public" name="YuseiNeoDominoFoot" />
+        <marker scope="Public" name="YuseiNeoDominoWhere" />
         <marker scope="Public" name="YuseiNewYork" />
         <marker scope="Public" name="YuseiPhoneNumber" />
         <marker scope="Public" name="YuseiSkateBattle" />
+        <marker scope="Public" name="YuseiStylin" />
         <marker scope="Public" name="YuseiVersusMonsters" />
         <marker scope="Public" name="YuzukiAnswer" />
+        <marker scope="Public" name="YuzukiCoolCop" />
+        <marker scope="Public" name="YuzukiRietveld" />
         <marker scope="Public" name="YuzukiThink" />
+        <marker scope="Public" name="ZoeDreamMachine" />
     </markers>
+    <pendingLines>
+        <line>Girl, I don't know what you're doing to me, but you're stirring &lt;i&gt;something&lt;/i&gt; up inside.</line>
+    </pendingLines>
 </metadata>
