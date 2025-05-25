@@ -103,8 +103,6 @@ function unescapeHTML(in_text) {
 
 function Collectible(xmlElem, player) {
     this.id = xmlElem.attr('id');
-    //this.image = xmlElem.attr('img');
-    //this.thumbnail = xmlElem.attr('thumbnail') || this.image;
     this.status = xmlElem.attr('status');
     this.title = unescapeHTML(xmlElem.children('title').text());
     this.subtitle = unescapeHTML(xmlElem.children('subtitle').text());
@@ -113,24 +111,38 @@ function Collectible(xmlElem, player) {
     this.detailsHidden = xmlElem.children('hide-details').text() === 'true';
     this.hidden = xmlElem.children('hidden').text() === 'true';
     this.counter = parseInt(xmlElem.children('counter').text(), 10) || undefined;
-    
     if (this.counter <= 0) this.counter = undefined;
     
-    // A single img attribute can be comma-separated for galleries
-    var imgAttr = xmlElem.attr('img') || '';
-    this.images = imgAttr
-        .split(',')
+    // Find <image> elements
+    var subImages = xmlElem.children('image').map(function() {
+        // works for either <img src="filename.png" /> or <img>filename.png</img>
+        var $img = $(this);
+        return $img.attr('src') ? $img.attr('src').trim() : $img.text().trim();
+    }).get();
+    
+    // If none are found, use the old 'img' attribute
+    if (subImages.length > 0){
+        this.images = subImages;
+    } else {
+        var imgAttr = xmlElem.attr('img') || '';
+        // If it has a comma, treat it as multiple images
+        this.images = imgAttr
+            .split(',')
         .map(function(s){ return s.trim(); })
         .filter(function(s){ return s.length; });
-    // fallback to a single blank image if none defined
-    if (this.images.length === 0) this.images = [''];
+    }
+    
+    // Ensure there is at least one image slot
+    if (this.images.length === 0) {
+        this.images = [''];
+    }
 
-    // the "primary" image is just the first one
+    // The "primary" image is just the first one
     this.image     = this.images[0];
     // thumbnail fallback to the primary image
     this.thumbnail = xmlElem.attr('thumbnail') || this.image;
     
-    // track which image  we're showing
+    // Track which image  we're showing
     this._galleryIndex = 0;    
     
     if (player) {
