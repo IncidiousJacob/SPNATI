@@ -188,6 +188,11 @@
             <sprite id="mouthopen" src="reskins/jura_luxury_night/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
+        <pose id="0-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/0-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
         <pose id="0-selected">
             <sprite id="vain" src="reskins/jura_luxury_night/0-vain.png" x="0" y="0" />
             <sprite id="bselected" z="1" src="reskins/jura_luxury_night/bselected.png" x="325" y="0" />
@@ -208,6 +213,11 @@
         <pose id="0-selectedsmug">
             <sprite id="vain" src="reskins/jura_luxury_night/0-smug.png" x="0" y="0" />
             <sprite id="bselected" z="1" src="reskins/jura_luxury_night/bselected.png" x="324" y="0" />
+        </pose>
+        <pose id="0-selectedsmug-">
+            <sprite id="vain" src="reskins/jura_luxury_night/0-smug.png" x="0" y="0" />
+            <sprite id="bselected" z="1" src="reskins/jura_luxury_night/bselected.png" x="324" y="0" />
+            <sprite id="annoyed" src="reskins/jura_luxury_night/annoyed.png" x="5" y="82" rotation="1" />
         </pose>
         <pose id="0-shocked">
             <sprite id="surprised" src="reskins/jura_luxury_night/0-surprised.png" x="0" y="0" />
@@ -328,6 +338,10 @@
             <sprite id="talking" src="reskins/jura_luxury_night/1-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/bexcited.png" x="304" y="0" />
         </pose>
+        <pose id="1-bstrip-">
+            <sprite id="strip" src="reskins/jura_luxury_night/1-strip-.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="415" y="0" />
+        </pose>
         <pose id="1-bsurprised">
             <sprite id="talking" src="reskins/jura_luxury_night/1-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/bexcited.png" x="196" y="0" rotation="0" />
@@ -372,6 +386,11 @@
             <sprite id="talking" src="reskins/jura_luxury_night/1-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_luxury_night/mouthopen.png" x="2" y="246" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="1-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/1-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
         <pose id="1-shocked">
@@ -448,6 +467,56 @@
                 <keyframe time="0.4" x="-2" />
             </directive>
         </pose>
+        <pose id="2-bstripped">
+            <sprite id="strip" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_luxury_night/btalking-.png" x="415" y="0" />
+        </pose>
+        <pose id="2-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="2-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="324" rotation="-7" />
+        </pose>
+        <pose id="3-bmuststrip-">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-muststrip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking+.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="316" y="324" rotation="-4" />
+        </pose>
+        <pose id="3-bmuststrip-2">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-muststrip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-6" />
+        </pose>
+        <pose id="3-bstrip-">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstriplooking-open">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="324" rotation="-7" />
+            <sprite id="talking-" src="reskins/jura_luxury_night/talking-.png" x="0" y="132" rotation="-2" />
+        </pose>
+        <pose id="3-bstripped">
+            <sprite id="strip" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_luxury_night/btalking-.png" x="415" y="0" />
+        </pose>
+        <pose id="3-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/5-stripped_alt-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="3-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="324" rotation="-7" />
+        </pose>
         <pose id="4-angry">
             <sprite id="surprised" src="reskins/jura_luxury_night/4-surprised.png" x="0" y="0" />
             <sprite id="shocked" src="reskins/jura_luxury_night/angry.png" x="0" y="174" rotation="1" />
@@ -459,6 +528,18 @@
         <pose id="4-bexcited">
             <sprite id="talking" src="reskins/jura_luxury_night/4-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/bexcited.png" x="304" y="0" />
+        </pose>
+        <pose id="4-bstripped">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking+.png" x="315" y="0" />
+        </pose>
+        <pose id="4-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="4-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
         </pose>
         <pose id="4-bsurprised">
             <sprite id="talking" src="reskins/jura_luxury_night/4-surprised.png" x="0" y="0" />
@@ -504,6 +585,11 @@
             <sprite id="talking" src="reskins/jura_luxury_night/4-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_luxury_night/mouthopen.png" x="2" y="246" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="4-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
         <pose id="4-shocked">
@@ -559,6 +645,10 @@
                 <keyframe time="0" x="278" y="0" alpha="0" />
                 <keyframe time="2" alpha="100" />
             </directive>
+        </pose>
+        <pose id="4-stripped-">
+            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_luxury_night/suspicious.png" x="3" y="171" rotation="4" />
         </pose>
         <pose id="4-suspicious">
             <sprite id="proud" src="reskins/jura_luxury_night/4-proud.png" x="0" y="0" />
@@ -626,6 +716,16 @@
         <pose id="5-bexcited">
             <sprite id="talking" src="reskins/jura_luxury_night/5-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/bexcited.png" x="304" y="0" />
+        </pose>
+        <pose id="5-bstrip">
+            <sprite id="strip" src="reskins/jura_luxury_night/5-strip.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-4" />
+        </pose>
+        <pose id="5-bstrip-">
+            <sprite id="strip" src="reskins/jura_luxury_night/5-strip-.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-4" />
         </pose>
         <pose id="5-bsurprised">
             <sprite id="talking" src="reskins/jura_luxury_night/5-surprised.png" x="0" y="0" />
@@ -735,6 +835,11 @@
             <sprite id="talking" src="reskins/jura_luxury_night/5-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_luxury_night/mouthopen.png" x="2" y="246" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="5-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/5-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
         <pose id="5-nagatoro">
@@ -924,6 +1029,10 @@
         <pose id="6-blank">
             <sprite id="meiasmilemouth" src="reskins/jura_luxury_night/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
+        <pose id="6-bstripped">
+            <sprite id="talking" src="reskins/jura_luxury_night/6-stripped.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking+.png" x="309" y="0" />
+        </pose>
         <pose id="6-bsurprised">
             <sprite id="talking" src="reskins/jura_luxury_night/6-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/bexcited.png" x="196" y="0" rotation="0" />
@@ -1059,6 +1168,11 @@
             <sprite id="talking" src="reskins/jura_luxury_night/6-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_luxury_night/mouthopen.png" x="2" y="246" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="6-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_luxury_night/6-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
         <pose id="6-nagatoro">
@@ -1675,119 +1789,9 @@
                 <keyframe time="0.4" x="-2" />
             </directive>
         </pose>
-        <pose id="3-bstripped-">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/5-stripped_alt-.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="4-bstripped-">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped-.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="3-bmuststrip-">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-muststrip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking+.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="316" y="324" rotation="-4" />
-        </pose>
-        <pose id="0-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/0-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
-        </pose>
-        <pose id="1-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/1-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
-        </pose>
-        <pose id="2-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="324" rotation="-7" />
-        </pose>
-        <pose id="3-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="324" rotation="-7" />
-        </pose>
-        <pose id="4-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
-        </pose>
-        <pose id="5-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/5-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
-        </pose>
-        <pose id="6-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_luxury_night/6-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="302" y="323" rotation="-7" />
-        </pose>
-        <pose id="5-bstrip">
-            <sprite id="strip" src="reskins/jura_luxury_night/5-strip.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-4" />
-        </pose>
-        <pose id="5-bstrip-">
-            <sprite id="strip" src="reskins/jura_luxury_night/5-strip-.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-4" />
-        </pose>
-        <pose id="3-bstrip-">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-strip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking.png" x="315" y="0" />
-        </pose>
-        <pose id="6-bstripped">
-            <sprite id="talking" src="reskins/jura_luxury_night/6-stripped.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking+.png" x="309" y="0" />
-        </pose>
-        <pose id="4-bstripped">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking+.png" x="315" y="0" />
-        </pose>
-        <pose id="0-selectedsmug-">
-            <sprite id="vain" src="reskins/jura_luxury_night/0-smug.png" x="0" y="0" />
-            <sprite id="bselected" z="1" src="reskins/jura_luxury_night/bselected.png" x="324" y="0" />
-            <sprite id="annoyed" src="reskins/jura_luxury_night/annoyed.png" x="5" y="82" rotation="1" />
-        </pose>
-        <pose id="3-bmuststrip-2">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-muststrip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="323" rotation="-6" />
-        </pose>
-        <pose id="4-stripped-">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_luxury_night/suspicious.png" x="3" y="171" rotation="4" />
-        </pose>
-        <pose id="3-bstriplooking-open">
-            <sprite id="talking" src="reskins/jura_luxury_night/4-strip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_luxury_night/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_luxury_night/bmouthopen.png" x="315" y="324" rotation="-7" />
-            <sprite id="talking-" src="reskins/jura_luxury_night/talking-.png" x="0" y="132" rotation="-2" />
-        </pose>
-        <pose id="1-bstrip-">
-            <sprite id="strip" src="reskins/jura_luxury_night/1-strip-.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_luxury_night/blooking-.png" x="415" y="0" />
-        </pose>
-        <pose id="2-bstripped">
-            <sprite id="strip" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_luxury_night/btalking-.png" x="415" y="0" />
-        </pose>
-        <pose id="3-bstripped">
-            <sprite id="strip" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_luxury_night/btalking-.png" x="415" y="0" />
-        </pose>
-        <pose id="4-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="3-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="2-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_luxury_night/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_luxury_night/btalking-.png" x="315" y="0" />
+        <pose id="1-stripshocked">
+            <sprite id="strip" src="reskins/jura_luxury_night/1-strip.png" x="0" y="0" />
+            <sprite id="shocked" src="reskins/jura_luxury_night/shocked.png" x="0" y="179" rotation="-3" />
         </pose>
     </poses>
 
