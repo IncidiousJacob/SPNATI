@@ -186,6 +186,11 @@
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
         </pose>
+        <pose id="0-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/0-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
+        </pose>
         <pose id="0-selected">
             <sprite id="vain" src="reskins/jura_santa/0-vain.png" x="0" y="0" />
             <sprite id="bselected" z="1" src="reskins/jura_santa/bselected.png" x="325" y="0" />
@@ -328,6 +333,10 @@
             <sprite id="talking" src="reskins/jura_santa/1-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="304" y="0" />
         </pose>
+        <pose id="1-bstrip-">
+            <sprite id="talking" src="reskins/jura_santa/1-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="415" y="0" />
+        </pose>
         <pose id="1-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/1-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="196" y="0" rotation="0" />
@@ -373,6 +382,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="1-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/1-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
         </pose>
         <pose id="1-shocked">
             <sprite id="surprised" src="reskins/jura_santa/1-surprised.png" x="0" y="0" />
@@ -470,6 +484,19 @@
             <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="302" y="1" />
             <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="302" y="324" rotation="-7" />
         </pose>
+        <pose id="2-bstrip2">
+            <sprite id="strip-" src="reskins/jura_santa/2-strip.png" x="3" y="0" />
+            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="302" y="1" />
+            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="302" y="324" rotation="-7" />
+        </pose>
+        <pose id="2-bstripped">
+            <sprite id="talking" src="reskins/jura_santa/2-stripped.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking-.png" x="415" y="0" />
+        </pose>
+        <pose id="2-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
+        </pose>
         <pose id="2-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/2-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="196" y="0" rotation="0" />
@@ -516,6 +543,11 @@
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
         </pose>
+        <pose id="2-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/2-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
+        </pose>
         <pose id="2-shocked">
             <sprite id="surprised" src="reskins/jura_santa/2-surprised.png" x="0" y="0" />
             <sprite id="shocked" src="reskins/jura_santa/shocked.png" x="1" y="176" rotation="2" />
@@ -535,6 +567,10 @@
         <pose id="2-stretchingsilent">
             <sprite id="stretching" src="reskins/jura_santa/2-stretching.png" x="0" y="0" />
             <sprite id="silent" src="reskins/jura_santa/silent.png" x="3" y="229" rotation="-5" />
+        </pose>
+        <pose id="2-stripped-">
+            <sprite id="proud" src="reskins/jura_santa/2-stripped.png" x="0" y="0" />
+            <sprite id="suspicious" src="reskins/jura_santa/suspicious.png" x="3" y="171" rotation="4" />
         </pose>
         <pose id="2-suspicious">
             <sprite id="proud" src="reskins/jura_santa/2-proud.png" x="0" y="0" />
@@ -599,9 +635,41 @@
             <sprite id="talking" src="reskins/jura_santa/3-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="304" y="0" />
         </pose>
+        <pose id="3-bmuststrip-">
+            <sprite id="talking" src="reskins/jura_santa/3-muststrip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking+.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="316" y="324" rotation="-4" />
+        </pose>
+        <pose id="3-bmuststrip-2">
+            <sprite id="talking" src="reskins/jura_santa/3-muststrip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-6" />
+        </pose>
         <pose id="3-bstrip">
             <sprite id="talking" src="reskins/jura_santa/3-strip.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bselected.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstrip-">
+            <sprite id="talking" src="reskins/jura_santa/3-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstriplooking-open">
+            <sprite id="talking" src="reskins/jura_santa/3-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-7" />
+            <sprite id="talking-" src="reskins/jura_santa/talking-.png" x="1" y="131" />
+        </pose>
+        <pose id="3-bstripped">
+            <sprite id="stripped-" src="reskins/jura_santa/3-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_santa/3-stripped-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="3-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="3-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/3-surprised.png" x="0" y="0" />
@@ -652,6 +720,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="3-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/3-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
         </pose>
         <pose id="3-shocked">
             <sprite id="surprised" src="reskins/jura_santa/3-surprised.png" x="0" y="0" />
@@ -736,6 +809,18 @@
             <sprite id="talking" src="reskins/jura_santa/4-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="304" y="0" />
         </pose>
+        <pose id="4-bstripped">
+            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
+        </pose>
+        <pose id="4-bstripped-">
+            <sprite id="stripped-" src="reskins/jura_santa/4-stripped-.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
+        </pose>
+        <pose id="4-bstrippedln">
+            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
+            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
+        </pose>
         <pose id="4-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/4-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="196" y="0" rotation="0" />
@@ -781,6 +866,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="4-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/4-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
         </pose>
         <pose id="4-shocked">
             <sprite id="surprised" src="reskins/jura_santa/4-surprised.png" x="0" y="0" />
@@ -903,6 +993,16 @@
             <sprite id="talking" src="reskins/jura_santa/5-talking.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="304" y="0" />
         </pose>
+        <pose id="5-bstrip">
+            <sprite id="strip" src="reskins/jura_santa/5-strip.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-4" />
+        </pose>
+        <pose id="5-bstrip-">
+            <sprite id="strip" src="reskins/jura_santa/5-strip-.png" x="0" y="0" />
+            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-4" />
+        </pose>
         <pose id="5-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/5-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="196" y="0" rotation="0" />
@@ -1012,6 +1112,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="5-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/5-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
         </pose>
         <pose id="5-nagatoro">
             <sprite id="nagatoro" src="reskins/jura_santa/5-sexyb.png" x="0" y="0" />
@@ -1200,6 +1305,10 @@
         <pose id="6-blank">
             <sprite id="meiasmilemouth" src="reskins/jura_santa/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
+        <pose id="6-bstripped">
+            <sprite id="talking" src="reskins/jura_santa/6-stripped.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="309" y="0" />
+        </pose>
         <pose id="6-bsurprised">
             <sprite id="talking" src="reskins/jura_santa/6-surprised.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/bexcited.png" x="196" y="0" rotation="0" />
@@ -1336,6 +1445,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_santa/mouthopen.png" x="2" y="246" />
             <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="323" rotation="-7" />
+        </pose>
+        <pose id="6-looking-open_fear">
+            <sprite id="talking" src="reskins/jura_santa/6-disgusted.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
         </pose>
         <pose id="6-nagatoro">
             <sprite id="nagatoro" src="reskins/jura_santa/6-sexyb.png" x="0" y="0" />
@@ -1951,119 +2065,9 @@
                 <keyframe time="0.4" x="-2" />
             </directive>
         </pose>
-        <pose id="3-bstripped-">
-            <sprite id="stripped-" src="reskins/jura_santa/3-stripped-.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="4-bstripped-">
-            <sprite id="stripped-" src="reskins/jura_santa/4-stripped-.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="3-bmuststrip-">
-            <sprite id="talking" src="reskins/jura_santa/3-muststrip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking+.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="316" y="324" rotation="-4" />
-        </pose>
-        <pose id="0-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/0-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="1-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/1-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="2-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/2-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="3-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/3-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="4-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/4-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="5-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/5-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="6-looking-open_fear">
-            <sprite id="talking" src="reskins/jura_santa/6-disgusted.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="302" y="322" rotation="-7" />
-        </pose>
-        <pose id="5-bstrip">
-            <sprite id="strip" src="reskins/jura_santa/5-strip.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-4" />
-        </pose>
-        <pose id="5-bstrip-">
-            <sprite id="strip" src="reskins/jura_santa/5-strip-.png" x="0" y="0" />
-            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-4" />
-        </pose>
-        <pose id="3-bstrip-">
-            <sprite id="talking" src="reskins/jura_santa/3-strip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking.png" x="315" y="0" />
-        </pose>
-        <pose id="6-bstripped">
-            <sprite id="talking" src="reskins/jura_santa/6-stripped.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="309" y="0" />
-        </pose>
-        <pose id="4-bstripped">
-            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
-        </pose>
-        <pose id="2-bstrip2">
-            <sprite id="strip-" src="reskins/jura_santa/2-strip.png" x="3" y="0" />
-            <sprite id="blooking-" src="reskins/jura_santa/blooking-.png" x="302" y="1" />
-            <sprite id="bmouthopen" src="reskins/jura_santa/bmouthopen.png" x="302" y="324" rotation="-7" />
-        </pose>
-        <pose id="3-bmuststrip-2">
-            <sprite id="talking" src="reskins/jura_santa/3-muststrip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-6" />
-        </pose>
-        <pose id="2-stripped-">
-            <sprite id="proud" src="reskins/jura_santa/2-stripped.png" x="0" y="0" />
-            <sprite id="suspicious" src="reskins/jura_santa/suspicious.png" x="3" y="171" rotation="4" />
-        </pose>
-        <pose id="3-bstriplooking-open">
-            <sprite id="talking" src="reskins/jura_santa/3-strip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="315" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_santa/bmouthopen.png" x="315" y="322" rotation="-7" />
-            <sprite id="talking-" src="reskins/jura_santa/talking-.png" x="1" y="131" />
-        </pose>
-        <pose id="1-bstrip-">
-            <sprite id="talking" src="reskins/jura_santa/1-strip-.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/blooking-.png" x="415" y="0" />
-        </pose>
-        <pose id="2-bstripped">
-            <sprite id="talking" src="reskins/jura_santa/2-stripped.png" x="0" y="0" />
-            <sprite id="btalking" z="1" src="reskins/jura_santa/btalking-.png" x="415" y="0" />
-        </pose>
-        <pose id="3-bstripped">
-            <sprite id="stripped-" src="reskins/jura_santa/3-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking-.png" x="315" y="0" />
-        </pose>
-        <pose id="4-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
-        </pose>
-        <pose id="3-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
-        </pose>
-        <pose id="2-bstrippedln">
-            <sprite id="stripped-" src="reskins/jura_santa/4-stripped.png" x="0" y="0" />
-            <sprite id="btalking-" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
+        <pose id="1-stripshocked">
+            <sprite id="strip" src="reskins/jura_santa/1-strip.png" x="0" y="0" />
+            <sprite id="shocked" src="reskins/jura_santa/shocked.png" x="1" y="177" rotation="-3" />
         </pose>
     </poses>
 
