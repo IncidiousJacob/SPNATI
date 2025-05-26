@@ -114,7 +114,7 @@ function Collectible(xmlElem, player) {
     if (this.counter <= 0) this.counter = undefined;
     
     // Find <image> elements
-    var subImages = xmlElem.children('image').map(function() {
+    var subImages = xmlElem.children('picture').map(function() {
         // works for either <img src="filename.png" /> or <img>filename.png</img>
         var $img = $(this);
         return $img.attr('src') ? $img.attr('src').trim() : $img.text().trim();
