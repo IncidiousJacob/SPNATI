@@ -3296,11 +3296,22 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <label id="3173" label="" folder="Targeted&gt;Outbounds&gt;Forfeit" sort="22" />
         <label id="3174" label="" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="4" />
         <label id="3175" label="" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="5" />
-        <label id="3132" label="Jura guns" folder="Antics&gt;Collectible worn" sort="0" />
-        <label id="3176" label="" folder="Targeted&gt;Replies&gt;Hand" sort="0" />
-        <label id="3177" label="Clover+Tifa+Yang" folder="Targeted&gt;Trio+" sort="0" />
+        <label id="3132" label="Jura guns" folder="Antics&gt;Collectible worn" sort="3" />
+        <label id="3176" label="" folder="Targeted&gt;Replies&gt;Hand" sort="3" />
+        <label id="3177" label="Clover+Tifa+Yang" folder="Targeted&gt;Trio+" sort="3" />
         <label id="3178" label="Skirt off" folder="" sort="0" />
         <label id="3179" label="Topless, all small" folder="" sort="0" />
+        <label id="3180" label="Game win bad hand" folder="Must forfeit" sort="4" />
+        <label id="3181" label="Nude, full table" folder="Antics&gt;Player exposed" sort="3" />
+        <label id="3182" label="Yuzuki sleep 0-2" folder="Targeted&gt;Outbounds&gt;Stage 0" sort="73" />
+        <label id="3183" label="Caitlin Focus Sash" folder="Targeted&gt;Outbounds&gt;Stage 2" sort="0" />
+        <label id="3184" label="" folder="Targeted&gt;Outbounds&gt;Intro/Ending" sort="0" />
+        <label id="3185" label="Toshinou Kappa" color="3" folder="Antics&gt;Collectible worn" sort="0" />
+        <label id="3186" label="Toshinou Kappa" color="3" folder="Antics&gt;Collectible worn" sort="0" />
+        <label id="3187" label="" folder="Technical&gt;Duplicate dialogue" sort="0" />
+        <label id="3188" label="Toshinou Kappa" color="3" folder="Antics&gt;Collectible worn" sort="0" />
+        <label id="3189" label="Toshinou Kappa" color="3" folder="Antics&gt;Collectible worn" sort="0" />
+        <label id="3190" label="Toshinou Kappa" color="3" folder="Antics&gt;Collectible worn" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-aside</prefix>
@@ -3334,10 +3345,8 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
     <posePreviewMarkers>
         <posePreviewMarker>hair==1</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>3179</nextId>
+    <nextId>3190</nextId>
     <markers>
-        <marker scope="Public" name="+careerMention" />
-        <marker scope="Public" name="+quips" />
         <marker scope="Public" name="1v1" />
         <marker scope="Public" name="absent" />
         <marker scope="Public" name="ae86_strip" />
@@ -3484,6 +3493,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="buttPoseOfferB" />
         <marker scope="Public" name="buttPoses">Counts how many times she's used a rear-facing pose with no lower clothing left.</marker>
         <marker scope="Public" name="buttSurvey" />
+        <marker scope="Public" name="caitlin_focusSash" />
         <marker scope="Public" name="caitlin_kinesis1" />
         <marker scope="Public" name="caitlin_kinesis2" />
         <marker scope="Public" name="callways" />
@@ -3580,6 +3590,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="corner" />
         <marker scope="Public" name="cornered" />
         <marker scope="Public" name="costume">Marker indicating her costume using strings. 0 = default; FF = Future Foundation costume; swimsuit = Danganronpa S swimsuit costume.</marker>
+        <marker scope="Public" name="crappyCardWinsGame" />
         <marker scope="Public" name="creepyCompany" />
         <marker scope="Public" name="criminalClassmates" />
         <marker scope="Public" name="cute">"It really is quite cute." "What? I'm allowed to like cute things." (=3 if triggered by male opponent)</marker>
@@ -4454,6 +4465,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toru_chest" />
         <marker scope="Public" name="toru_chestB" />
         <marker scope="Public" name="toru_secretShlick" />
+        <marker scope="Public" name="toshinou_" />
         <marker scope="Public" name="toshinou_01" />
         <marker scope="Public" name="toshinou_02" />
         <marker scope="Public" name="toshinou_03" />
@@ -4514,6 +4526,14 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="toshinou_kanjiR1" />
         <marker scope="Public" name="toshinou_kanjiR2" />
         <marker scope="Public" name="toshinou_kanjiR3" />
+        <marker scope="Public" name="toshinou_kappaStart" />
+        <marker scope="Public" name="toshinou_kappaStartCumber" />
+        <marker scope="Public" name="toshinou_kappaStartHmm" />
+        <marker scope="Public" name="toshinou_kappaStartMultiply" />
+        <marker scope="Public" name="toshinou_kappaStartSolo" />
+        <marker scope="Public" name="toshinou_kappaStartStaring" />
+        <marker scope="Public" name="toshinou_kappaStartThink" />
+        <marker scope="Public" name="toshinou_kappaStartWhy" />
         <marker scope="Public" name="toshinou_kyouko" />
         <marker scope="Public" name="toshinou_mittenOuchies" />
         <marker scope="Public" name="toshinou_mittenOuchies2" />
@@ -4708,6 +4728,7 @@ TL;DR: Kyoko is feeling a lot of complicated feelings as a result of Miko saying
         <marker scope="Public" name="yuzuki_31" />
         <marker scope="Public" name="yuzuki_32" />
         <marker scope="Public" name="yuzuki_33" />
+        <marker scope="Public" name="yuzuki_sleep_02" />
         <marker scope="Public" name="yuzuki_whoYouAre" />
         <marker scope="Public" name="yuzuki_whoYouAre2" />
         <marker scope="Public" name="zenobia_finished" />
