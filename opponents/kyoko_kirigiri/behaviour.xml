@@ -1932,7 +1932,7 @@
             </case>
             <case stage="0" id="3189" priority="350">
                 <condition role="target" character="kyouko_toshinou" />
-                <condition role="self" notSaidMarker="toshinou_kappaStartSolo" />
+                <condition role="self" saidMarker="toshinou_kappaStartSolo" />
                 <test expr="~kyouko_toshinou.collectible.kyouko_toshinou_kigurumi.wearing~" value="true" />
                 <test expr="~self.marker.toshinou_playedWith~" cmp="&gt;" value="0" />
                 <state img="custom:aside" marker="toshinou_kappaStartWhy">&lt;i&gt;There&lt;/i&gt; you are. So, ~kyouko_toshinou~, why did you put ~human.obj~ in a kappa one?</state>
