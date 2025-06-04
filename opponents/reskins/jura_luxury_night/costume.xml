@@ -364,11 +364,12 @@
             <sprite id="coy" src="reskins/jura_luxury_night/excited.png" x="-1" y="179" />
         </pose>
         <pose id="1-hug">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/1-hug.png" x="0" y="0" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/4-hug.png" x="0" y="0" />
             <sprite id="cheryl" z="1" src="reskins/jura_luxury_night/8c-notarm.png" x="-2" y="0" rotation="6" />
             <sprite id="012hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="16" y="338" scalex="0.96" />
             <sprite id="cherylarm" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="-152" y="36" rotation="14" />
             <sprite id="cherylarm2" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="164" y="85" scalex="-1" rotation="-9" />
+            <sprite id="hug1" src="reskins/jura_luxury_night/hug1.png" x="17" y="1270" />
         </pose>
         <pose id="1-looking">
             <sprite id="talking" src="reskins/jura_luxury_night/1-looking.png" x="0" y="0" />
@@ -813,11 +814,12 @@
             <sprite id="coy" src="reskins/jura_luxury_night/excited.png" x="-1" y="179" />
         </pose>
         <pose id="5-hug">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/5-hug.png" x="0" y="0" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="cheryl" z="1" src="reskins/jura_luxury_night/8c-notarm.png" x="-2" y="0" rotation="6" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="16" y="338" scalex="0.96" />
             <sprite id="cherylarm" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="-152" y="36" rotation="14" />
             <sprite id="cherylarm2" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="164" y="85" scalex="-1" rotation="-9" />
+            <sprite id="hair5" src="reskins/jura_luxury_night/hair5.png" x="7" y="277" />
         </pose>
         <pose id="5-looking">
             <sprite id="talking" src="reskins/jura_luxury_night/5-looking.png" x="0" y="0" />
@@ -849,10 +851,12 @@
             <sprite id="nagatoro1" src="reskins/jura_luxury_night/nagatoroface.png" x="2" y="156" />
         </pose>
         <pose id="5-nagatorolift">
-            <sprite id="nagatorolift" src="reskins/jura_luxury_night/5-nagatorolift.png" x="0" y="0" alpha="100" />
+            <sprite id="nagatorolift" src="reskins/jura_luxury_night/6-nagatorolift.png" x="0" y="0" alpha="100" />
             <sprite id="nagatoroarm" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="21" y="419" scalex="1.1" scaley="1.1" pivoty="57%" alpha="100" rotation="25" />
             <sprite id="nagatoroarm(copy)" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="157" y="443" scalex="-1.1" scaley="1.1" alpha="100" rotation="3" />
-            <sprite id="jura_lift" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
+            <sprite id="jura_lift" z="1" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
+            <sprite id="hair5" src="reskins/jura_luxury_night/hair5.png" x="9" y="269" alpha="100" />
+            <sprite id="thong5" src="reskins/jura_luxury_night/thong5.png" x="14" y="606" alpha="100" />
             <directive type="animation" id="nagatorolift" ease="ease-in-out-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
@@ -869,6 +873,16 @@
                 <keyframe time="3.66" alpha="0" />
             </directive>
             <directive type="animation" id="jura_lift" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="hair5" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="thong5" ease="ease-in-out-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
                 <keyframe time="3.66" alpha="0" />
@@ -1398,7 +1412,7 @@
             <sprite id="coy" src="reskins/jura_luxury_night/excited.png" x="-3" y="790" pivotx="51%" pivoty="53%" rotation="0" />
         </pose>
         <pose id="7-hug">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/7-hug.png" x="0" y="0" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="cheryl" z="1" src="reskins/jura_luxury_night/8c-notarm.png" x="-2" y="0" rotation="6" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="16" y="338" scalex="0.96" />
             <sprite id="cherylarm" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="-152" y="36" rotation="14" />
@@ -1441,11 +1455,12 @@
             <sprite id="nagatoroface2" src="reskins/jura_luxury_night/nagatoroface2.png" x="0" y="685" />
         </pose>
         <pose id="7-nagatorolift">
-            <sprite id="nagatorolift" src="reskins/jura_luxury_night/7-nagatorolift.png" x="0" y="0" alpha="100" />
+            <sprite id="nagatorolift" src="reskins/jura_luxury_night/6-nagatorolift.png" x="0" y="0" alpha="100" />
             <sprite id="nagatoroarm" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="21" y="419" scalex="1.1" scaley="1.1" pivoty="57%" alpha="100" rotation="25" />
             <sprite id="nagatoroarm(copy)" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="157" y="443" scalex="-1.1" scaley="1.1" alpha="100" rotation="3" />
-            <sprite id="jura_lift" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
+            <sprite id="jura_lift" z="1" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
             <sprite id="bstand" z="-1" src="reskins/jura_luxury_night/bstand.png" x="278" y="0" />
+            <sprite id="fluid7" src="reskins/jura_luxury_night/fluid7.png" x="15" y="659" alpha="100" />
             <directive type="animation" id="nagatorolift" ease="ease-in-out-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
@@ -1462,6 +1477,11 @@
                 <keyframe time="3.66" alpha="0" />
             </directive>
             <directive type="animation" id="jura_lift" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="fluid7" ease="ease-in-out-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
                 <keyframe time="3.66" alpha="0" />
@@ -1558,10 +1578,12 @@
             <sprite id="silentthinking" src="reskins/jura_luxury_night/silentthinking.png" x="-3" y="818" rotation="7" />
         </pose>
         <pose id="8-bhug">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" alpha="100" />
             <sprite id="bhug" z="1" src="reskins/jura_luxury_night/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
             <sprite id="barnette" src="reskins/jura_luxury_night/8-barnette.png" x="0" y="0" alpha="0" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-87" y="1148" alpha="100" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="124" y="1146" alpha="100" />
             <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="2" alpha="0" />
@@ -1579,13 +1601,23 @@
                 <keyframe time="0.5" alpha="0" />
                 <keyframe time="1.5" alpha="0" />
                 <keyframe time="3" alpha="100" />
+            </directive>
+            <directive type="animation" id="bootright" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
             </directive>
         </pose>
         <pose id="8-bhug2">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" alpha="100" />
             <sprite id="bhug" z="1" src="reskins/jura_luxury_night/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
             <sprite id="barnette" src="reskins/jura_luxury_night/8-barnette2.png" x="0" y="0" alpha="0" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-87" y="1148" alpha="100" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="124" y="1146" alpha="100" />
             <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="2" alpha="0" />
@@ -1604,13 +1636,23 @@
                 <keyframe time="1.5" alpha="0" />
                 <keyframe time="3" alpha="100" />
             </directive>
+            <directive type="animation" id="bootright" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-87" y="1148" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
         </pose>
         <pose id="8-bhug2silent">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/8-hug.png" x="0" y="0" alpha="100" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" alpha="100" />
             <sprite id="bhug" z="1" src="reskins/jura_luxury_night/bhug.png" x="37" y="-18" alpha="100" rotation="-2" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="21" y="343" scalex="0.96" alpha="100" rotation="4" />
             <sprite id="barnette" src="reskins/jura_luxury_night/8-barnette2.png" x="0" y="0" alpha="0" />
             <sprite id="bmouthsilentside" delay="0.5" src="reskins/jura_luxury_night/bmouthsilentside.png" x="-70" y="299" alpha="0" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-87" y="1148" alpha="100" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="124" y="1146" alpha="100" />
             <directive type="animation" id="hug" ease="ease-in-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="2" alpha="0" />
@@ -1640,6 +1682,14 @@
             <directive type="animation" id="bmouthsilentside" delay="3" ease="linear" interpolation="linear">
                 <keyframe time="0" rotation="4" />
             </directive>
+            <directive type="animation" id="bootright" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-87" y="1148" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="2" alpha="0" />
+            </directive>
         </pose>
         <pose id="8-blank">
             <sprite id="meiasmilemouth" src="reskins/jura_luxury_night/meiasmilemouth.png" x="0" y="0" alpha="0" />
@@ -1662,12 +1712,14 @@
             <sprite id="coy" src="reskins/jura_luxury_night/excited.png" x="-2" y="757" pivotx="51%" pivoty="53%" rotation="0" />
         </pose>
         <pose id="8-hug">
-            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/8-hug.png" x="0" y="0" />
+            <sprite id="hug" z="-1" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="cheryl" z="1" src="reskins/jura_luxury_night/8c-notarm.png" x="-2" y="0" rotation="6" />
             <sprite id="345678hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="16" y="338" scalex="0.96" />
             <sprite id="cherylarm" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="-152" y="36" rotation="14" />
             <sprite id="cherylarm2" src="reskins/jura_luxury_night/SPOILER_8-buttcrop.png" x="164" y="85" scalex="-1" rotation="-9" />
             <sprite id="bstand" z="-2" src="reskins/jura_luxury_night/bstand.png" x="278" y="0" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-87" y="1148" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="124" y="1146" />
         </pose>
         <pose id="8-meia+">
             <sprite id="meia" src="reskins/jura_luxury_night/8-meia.png" x="0" y="0" />
@@ -1681,11 +1733,14 @@
             <sprite id="nagatoroface2" src="reskins/jura_luxury_night/nagatoroface2.png" x="0" y="666" />
         </pose>
         <pose id="8-nagatorolift">
-            <sprite id="nagatorolift" src="reskins/jura_luxury_night/8-nagatorolift.png" x="0" y="0" alpha="100" />
+            <sprite id="nagatorolift" src="reskins/jura_luxury_night/6-nagatorolift.png" x="0" y="0" alpha="100" />
             <sprite id="nagatoroarm" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="21" y="419" scalex="1.1" scaley="1.1" pivoty="57%" alpha="100" rotation="25" />
             <sprite id="nagatoroarm(copy)" z="2" src="reskins/jura_luxury_night/nagatoroarm.png" x="157" y="443" scalex="-1.1" scaley="1.1" alpha="100" rotation="3" />
-            <sprite id="jura_lift" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
+            <sprite id="jura_lift" z="1" src="reskins/jura_luxury_night/jura_lift.png" x="62" y="28" alpha="100" rotation="7" />
             <sprite id="bstand" z="-1" src="reskins/jura_luxury_night/bstand.png" x="278" y="0" />
+            <sprite id="fluid8" src="reskins/jura_luxury_night/fluid8.png" x="15" y="650" alpha="100" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-123" y="1148" alpha="100" rotation="0" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="126" y="1146" alpha="100" />
             <directive type="animation" id="nagatorolift" ease="ease-in-out-cubic" interpolation="linear">
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
@@ -1705,6 +1760,20 @@
                 <keyframe time="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
                 <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="fluid8" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="bootright" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-123" y="1148" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="3.66" alpha="0" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
             </directive>
         </pose>
         <pose id="8-sexy">
