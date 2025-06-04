@@ -8,7 +8,7 @@
 ...But the battery's dead, and he didn't give you a charging cable. Whoops.</text>
         <unlock>Win a game against Hilbert.</unlock>
         <wearable>true</wearable>
-        <clothing name="x-transceiver" generic="armbands" position="hands" type="extra" img="opponents/hilbert/Xtransceiver_icon.png" />
+        <clothing img="opponents/hilbert/Xtransceiver_icon.png" name="x-transceiver" generic="armbands" position="hands" type="extra" />
     </collectible>
     <collectible id="lightstone" status="unlisted" img="opponents/hilbert/light_stone.png" thumbnail="opponents/hilbert/light_stone_icon.png">
         <title>Light Stone</title>
@@ -24,6 +24,6 @@
         <text>Hilbert's lucky hat, one that he's worn since he first stepped foot out his door to take on the world. You swiped it from his pile of clothes to see if it really was lucky...</text>
         <unlock>Lose a round to Hilbert while he's still wearing his hat.</unlock>
         <wearable>true</wearable>
-        <clothing name="Lucky Baseball Cap" generic="hat" position="head" type="extra" img="opponents/hilbert/Hat.png" />
+        <clothing img="opponents/hilbert/Hat.png" name="Lucky Baseball Cap" generic="hat" position="head" type="extra" />
     </collectible>
 </collectibles>
