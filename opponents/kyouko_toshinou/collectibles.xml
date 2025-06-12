@@ -19,14 +19,14 @@
 You might be able to convince her to bring her pajamas again, too!</text>
         <unlock>Go to a pajama party with Kyouko without wearing any pajamas yourself. If you really shock her, she might be willing to hook you up...</unlock>
         <hidden>true</hidden>
-        <hidden-exception type="costume-set" name="sleepover"/>
         <hide-details>true</hide-details>
         <costume>true</costume>
         <costume-folder>opponents/reskins/kyouko_toshinou_sexy_tomato/</costume-folder>
         <wearable>true</wearable>
         <clothing img="opponents/kyouko_toshinou/collectibles/kappa-wearable.png" name="onesie" generic="" position="both" type="major" />
+        <hidden-exception type="costume-set" name="sleepover" />
     </collectible>
-    <collectible id="kyouko_toshinou_rootbeer" status="unlisted" img="opponents/kyouko_toshinou/collectibles/beachphotos.png" thumbnail="opponents/kyouko_toshinou/collectibles/masochistcider.png">
+    <collectible id="kyouko_toshinou_rootbeer" status="online" img="opponents/kyouko_toshinou/collectibles/beachphoto-1.png,opponents/kyouko_toshinou/collectibles/beachphoto-2.png" thumbnail="opponents/kyouko_toshinou/collectibles/masochistcider.png">
         <title>Masochist Cider</title>
         <subtitle>For the masochist in you</subtitle>
         <text>Kyouko handed you a can of "Masochist Cider" root beer to help you beat the heat.&lt;br /&gt;&lt;br /&gt;"Isn't this so much more fun than putting our clothes back on?"</text>
@@ -35,6 +35,8 @@ You might be able to convince her to bring her pajamas again, too!</text>
         <hide-details>true</hide-details>
         <costume>true</costume>
         <costume-folder>opponents/reskins/kyouko_toshinou_summer/</costume-folder>
+        <hidden-exception type="event" name="summer" />
+        <hidden-exception type="event" name="summer_2" />
     </collectible>
     <collectible id="kyouko_toshinou_rumraisin" status="unlisted">
         <title>Rum Raisin</title>
@@ -42,6 +44,7 @@ You might be able to convince her to bring her pajamas again, too!</text>
         <unlock>Make friends with Kyouko, then play with her somewhere cold and somewhere cozy.</unlock>
         <hide-details>true</hide-details>
         <counter>2</counter>
+        <hidden-exception type="event" name="xmas" />
     </collectible>
     <collectible id="kyouko_toshinou_movietickets" status="unlisted">
         <title>Mirakurun Tickets</title>
