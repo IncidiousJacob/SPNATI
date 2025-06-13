@@ -147,6 +147,7 @@ var sortingOptionsMap = {
     oldest: sortOpponentsByMultipleFields(["release", "-listingIndex"]),
     newest: sortOpponentsByMultipleFields(["-release", "listingIndex"]),
     featured: sortOpponentsByMultipleFields(["-effectiveScore"]),
+    communityRank: sortOpponentsByMultipleFields(["-rosterScore"]),
 };
 var groupCreditsShown = false;
 
