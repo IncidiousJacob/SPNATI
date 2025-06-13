@@ -421,11 +421,11 @@ function loadListingFile () {
                 releaseNumber = Number(releaseNumber);
             }
             var highlightStatus = $(this).attr('highlight');
-            var rosterScore = $(this).attr('score');
+            var rosterScore = Number.parseFloat($(this).attr('score'), 10);
             var addedDate = $(this).attr('addedDate');
 
             // Keep the unsorted characters in order
-            if (rosterScore === undefined) {
+            if (Number.isNaN(rosterScore)) {
                 rosterScore = unsortedScore;
                 unsortedScore -= 1;
             }
