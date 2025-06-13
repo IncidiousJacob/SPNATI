@@ -274,15 +274,13 @@ function randomizeRosterOrder(startStd, endStd) {
     startStd = (startStd !== undefined) ? startStd : 0.3;
     endStd = (endStd !== undefined) ? endStd : 0.15;
 
-    var roster = loadedOpponents.slice().filter(function (opp) {
+    var roster = loadedOpponents.filter(function (opp) {
         return opp && !!opp.rosterScore;
     }).sort(function (a, b) {
         return b.rosterScore - a.rosterScore;
     });
 
-    var rosterLength = roster.slice().filter(function (opp) {
-        return opp && opp.rosterScore > 0;
-    }).length;
+    var rosterLength = roster.countTrue(opp => opp.rosterScore > 0);
 
     roster.forEach(function (opp, idx) {
         if (opp.rosterScore > 0) {
