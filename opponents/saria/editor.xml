@@ -131,6 +131,8 @@
         <response id="804" opponent="jura" opponentId="2632" />
         <response id="805" opponent="jura" opponentId="2624" />
         <response id="813" opponent="yuzuki" opponentId="706" />
+        <response id="860" opponent="yuzuki" opponentId="769" />
+        <response id="862" opponent="mitama" opponentId="3302" />
     </responses>
     <notes>
         <note id="29">Not quite Kansai mockery, but enough to create conflict.
@@ -141,7 +143,6 @@
         <note id="673">The Kokiri are fascinating in HC. They are all made from humans, or were, originally, and now grown from the Great Deku Tree. Until the Deku Sprout matures, it is not certain if their race will stall out, leaving a period of "elder" Kokiri until younger ones can be created. As a race, they are all sterile owing to the way the Deku Tree played with their hormones and biology. In a sense, all the Kokiri are brothers and sisters.</note>
         <note id="706">Can one anyone overcome their past?</note>
         <note id="807">I think there is incongruity between having a very human base and not being able to have children/Kokiri are never "babies". But since a big part of the flaw of Kokiri is that they cannot actually move past their human biology, I think having that crop up in weird ways is super fun.</note>
-        <note id="811">There is a great deal of irony that Saria is chastising Miko for things Miko is not responsible for, but are grand achievements.</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Saria Idle Thoughts" sort="0" />
@@ -771,7 +772,7 @@
         <label id="626" label="Achieve [2]" folder="Stal" sort="0" />
         <label id="627" label="Knight [0]" folder="Kingdom of Hyrule" sort="0" />
         <label id="628" label="Goals [1]" folder="Kingdom of Hyrule" sort="0" />
-        <label id="629" label="Sword [2]" folder="Kingdom of Hyrule" sort="0" />
+        <label id="629" label="Sword [2]" color="2" folder="Kingdom of Hyrule" sort="0" />
         <label id="630" label="" folder="Player" sort="0" />
         <label id="631" label="" folder="Conquesting Chieftain" sort="0" />
         <label id="632" label="" folder="Conquesting Chieftain" sort="0" />
@@ -901,8 +902,8 @@
         <label id="756" label="" folder="Order of the Wizzrobe" sort="0" />
         <label id="757" label="" folder="Gerudo" sort="0" />
         <label id="758" label="lategame opps" folder="" sort="0" />
-        <label id="759" label="Fate [2]" color="6" folder="Order of the Wizzrobe" sort="0" />
-        <label id="760" label="Hoshido [3]" color="6" folder="Order of the Wizzrobe" sort="0" />
+        <label id="759" label="Fate [2]" folder="Order of the Wizzrobe" sort="0" />
+        <label id="760" label="Hoshido [3]" folder="Order of the Wizzrobe" sort="0" />
         <label id="761" label="Origin [0]" color="6" folder="Darknut Legion" sort="0" />
         <label id="762" label="Lynel [1]" color="6" folder="Darknut Legion" sort="0" />
         <label id="763" label="Lynel [1]" color="6" folder="Darknut Legion" sort="0" />
@@ -997,8 +998,30 @@
         <label id="852" label="" folder="Order of the Wizzrobe" sort="0" />
         <label id="853" label="" folder="Summer" sort="0" />
         <label id="854" label="Auracam" folder="Special Poses" sort="0" />
+        <label id="855" label="N [0]" folder="Kingdom of Hyrule" sort="0" />
+        <label id="856" label="Adventurer [0]" folder="Kingdom of Hyrule" sort="0" />
+        <label id="857" label="Competitive Games [1]" folder="Kingdom of Hyrule" sort="0" />
+        <label id="858" label="Imposter [0]" color="6" folder="Labyrnna" sort="0" />
+        <label id="859" label="Majesty [1]" color="6" folder="Labyrnna" sort="0" />
+        <label id="860" label="" folder="Stal" sort="0" />
+        <label id="861" label="Underwear [5]" folder="Stal" sort="0" />
+        <label id="862" label="Order [1]" folder="Order of the Wizzrobe" sort="0" />
+        <label id="863" label="Fate [2]" folder="Order of the Wizzrobe" sort="0" />
+        <label id="864" label="Hoshido [3]" folder="Order of the Wizzrobe" sort="0" />
+        <label id="865" label="Type [3]" folder="Kingdom of Hyrule" sort="0" />
+        <label id="866" label="Arle [3]" color="2" folder="Kingdom of Hyrule" sort="0" />
+        <label id="867" label="Couple [2]" color="6" folder="Labyrnna" sort="0" />
+        <label id="868" label="Jelly [3]" color="6" folder="Labyrnna" sort="0" />
+        <label id="869" label="Bard [0]" folder="Outlanders" sort="0" />
+        <label id="870" label="Bard [0]" folder="Outlanders" sort="0" />
+        <label id="871" label="Name [1]" folder="Outlanders" sort="0" />
+        <label id="872" label="Tunes [2]" folder="Outlanders" sort="0" />
+        <label id="873" label="Origin [0]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="874" label="Phantom [1]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="875" label="Armor [0]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="876" label="Wolfos [1]" color="6" folder="Darknut Legion" sort="0" />
     </labels>
-    <nextId>854</nextId>
+    <nextId>876</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="~dick~" />
@@ -1032,13 +1055,20 @@
         <marker scope="Public" name="ask_carmine_volatileI" />
         <marker scope="Public" name="ask_carmine_volatileS" />
         <marker scope="Public" name="ask_chazz_fogI" />
+        <marker scope="Public" name="ask_chica_cuccoS" />
+        <marker scope="Public" name="ask_chica_phantomS" />
         <marker scope="Public" name="ask_chihiro_alteregoI" />
         <marker scope="Public" name="ask_chihiro_boyE" />
+        <marker scope="Public" name="ask_criticaldarling_bardI" />
+        <marker scope="Public" name="ask_criticaldarling_bardS" />
+        <marker scope="Public" name="ask_criticaldarling_nameS" />
+        <marker scope="Public" name="ask_criticaldarling_songS" />
         <marker scope="Public" name="ask_emi_legsI" />
         <marker scope="Public" name="ask_fairy_leviathanE" />
         <marker scope="Public" name="ask_fairy_leviathanI" />
         <marker scope="Public" name="ask_fairy_leviathanS" />
         <marker scope="Public" name="ask_gwen_maskE" />
+        <marker scope="Public" name="ask_hilbert_adventureS" />
         <marker scope="Public" name="ask_hutao_necromancerS" />
         <marker scope="Public" name="ask_hutao_sheikahS" />
         <marker scope="Public" name="ask_jim_ELSEXOI" />
@@ -1109,11 +1139,15 @@
         <marker scope="Public" name="ask_meia_pyoroE" />
         <marker scope="Public" name="ask_meia_pyoroI" />
         <marker scope="Public" name="ask_meia_pyoroS" />
+        <marker scope="Public" name="ask_miko_coupleS" />
+        <marker scope="Public" name="ask_miko_imposterE" />
         <marker scope="Public" name="ask_miko_imposterI" />
         <marker scope="Public" name="ask_miko_imposterS" />
+        <marker scope="Public" name="ask_miko_jellyS" />
         <marker scope="Public" name="ask_miko_shacklesS" />
         <marker scope="Public" name="ask_mitama_fateI" />
         <marker scope="Public" name="ask_mitama_fateS" />
+        <marker scope="Public" name="ask_mitama_hoshidoE" />
         <marker scope="Public" name="ask_mitama_hoshidoI" />
         <marker scope="Public" name="ask_mitama_hoshidoS" />
         <marker scope="Public" name="ask_mitama_poemsE" />
@@ -1135,10 +1169,13 @@
         <marker scope="Public" name="ask_robin_ffI" />
         <marker scope="Public" name="ask_rosie_fossilsS" />
         <marker scope="Public" name="ask_rosie_homeS" />
+        <marker scope="Public" name="ask_roxy_armorS" />
+        <marker scope="Public" name="ask_roxy_wolfosS" />
         <marker scope="Public" name="ask_sakura_makeupI" />
         <marker scope="Public" name="ask_samus_armor_gen" />
         <marker scope="Public" name="ask_sannytess_tessI" />
         <marker scope="Public" name="ask_sannytess_tessS" />
+        <marker scope="Public" name="ask_schezo_arleS" />
         <marker scope="Public" name="ask_schezo_goalE" />
         <marker scope="Public" name="ask_schezo_goalI" />
         <marker scope="Public" name="ask_schezo_goalS" />
@@ -1150,6 +1187,7 @@
         <marker scope="Public" name="ask_schezo_prince_gen" />
         <marker scope="Public" name="ask_schezo_swordE" />
         <marker scope="Public" name="ask_schezo_swordS" />
+        <marker scope="Public" name="ask_schezo_typeS" />
         <marker scope="Public" name="ask_sheena_poofE" />
         <marker scope="Public" name="ask_sly_pantsI" />
         <marker scope="Public" name="ask_spooky_poeS" />
@@ -1203,6 +1241,7 @@
         <marker scope="Public" name="ask_yaemiko_ffI" />
         <marker scope="Public" name="ask_yaemiko_ffS" />
         <marker scope="Public" name="ask_yaemiko_magicS" />
+        <marker scope="Public" name="ask_yshtola_cuccoS" />
         <marker scope="Public" name="ask_yshtola_elezenS" />
         <marker scope="Public" name="ask_yshtola_lynelE" />
         <marker scope="Public" name="ask_yshtola_lynelI" />
@@ -1213,6 +1252,7 @@
         <marker scope="Public" name="ask_yshtola_originE" />
         <marker scope="Public" name="ask_yshtola_originI" />
         <marker scope="Public" name="ask_yshtola_originS" />
+        <marker scope="Public" name="ask_yshtola_phantomS" />
         <marker scope="Public" name="ask_yusei_diskE" />
         <marker scope="Public" name="ask_yusei_diskI" />
         <marker scope="Public" name="ask_yusei_diskS" />
@@ -1270,6 +1310,7 @@
         <marker scope="Public" name="ask_yuzuki_maskI" />
         <marker scope="Public" name="ask_yuzuki_maskS" />
         <marker scope="Public" name="ask_yuzuki_necromancerS" />
+        <marker scope="Public" name="ask_yuzuki_sexyS" />
         <marker scope="Public" name="ask_yuzuki_stalE" />
         <marker scope="Public" name="ask_yuzuki_stalI" />
         <marker scope="Public" name="ask_yuzuki_stalS" />
@@ -1401,6 +1442,7 @@
         <marker scope="Public" name="reply_fluttershy_spiders_Gen" />
         <marker scope="Public" name="reply_galatea_armos_gen" />
         <marker scope="Public" name="reply_gloria_scottish_gen" />
+        <marker scope="Public" name="reply_hilbert_nS" />
         <marker scope="Public" name="reply_hilda_ffE_gen" />
         <marker scope="Public" name="reply_jim_ff1" />
         <marker scope="Public" name="reply_jim_ff10" />
@@ -1458,6 +1500,7 @@
         <marker scope="Public" name="reply_mia_swimsuit_gen" />
         <marker scope="Public" name="reply_miku_ads_gen" />
         <marker scope="Public" name="reply_mitama_nap_gen" />
+        <marker scope="Public" name="reply_mitama_orderS" />
         <marker scope="Public" name="reply_nagisa_bed_gen" />
         <marker scope="Public" name="reply_nonon_dress_gen" />
         <marker scope="Public" name="reply_queenie_staff_gen" />
@@ -1534,6 +1577,7 @@
         <marker scope="Public" name="reply_yusei_warmE" />
         <marker scope="Public" name="reply_yusei_warmI" />
         <marker scope="Public" name="reply_yusei_warmS" />
+        <marker scope="Public" name="reply_yuzuki_familyE" />
         <marker scope="Public" name="reply_yuzuki_familyI" />
         <marker scope="Public" name="reply_yuzuki_familyS" />
         <marker scope="Public" name="reply_yuzuki_kodamaE" />
