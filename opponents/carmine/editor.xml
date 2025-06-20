@@ -99,6 +99,9 @@
         <response id="185" opponent="meia" opponentId="2682" />
         <response id="186" opponent="meia" opponentId="2695" />
         <response id="188" opponent="jean" opponentId="484" />
+        <response id="190" opponent="velvet" opponentId="83" />
+        <response id="195" opponent="jean" opponentId="517" />
+        <response id="197" opponent="yae_miko" opponentId="407" />
     </responses>
     <labels>
         <label id="1" label="" folder="Bobobo Non-conversationals" sort="0" />
@@ -118,7 +121,7 @@
         <label id="20" label="" folder="Elesa Non-conversationals" sort="0" />
         <label id="21" label="" folder="Elesa Non-conversationals" sort="0" />
         <label id="22" label="" folder="Elesa Non-conversationals" sort="0" />
-        <label id="187" label="" color="15" folder="" sort="0" />
+        <label id="195" label="" color="15" folder="" sort="0" />
         <label id="25" label="" color="15" folder="" sort="0" />
         <label id="27" label="" color="15" folder="" sort="0" />
         <label id="28" label="" color="15" folder="" sort="0" />
@@ -129,7 +132,7 @@
         <label id="33" label="" color="15" folder="" sort="0" />
         <label id="43" label="" color="15" folder="" sort="0" />
         <label id="44" label="" color="15" folder="" sort="0" />
-        <label id="45" label="" color="15" folder="" sort="0" />
+        <label id="190" label="" color="15" folder="" sort="0" />
         <label id="46" label="" color="15" folder="" sort="0" />
         <label id="47" label="" color="15" folder="" sort="0" />
         <label id="180" label="" color="15" folder="" sort="0" />
@@ -148,11 +151,10 @@
         <label id="185" label="" color="15" folder="" sort="0" />
         <label id="156" label="" color="15" folder="" sort="0" />
         <label id="87" label="" color="15" folder="" sort="0" />
-        <label id="125" label="" color="15" folder="" sort="0" />
-        <label id="188" label="" color="15" folder="" sort="0" />
+        <label id="197" label="" color="15" folder="" sort="0" />
+        <label id="194" label="" color="15" folder="" sort="0" />
         <label id="170" label="" color="15" folder="" sort="0" />
-        <label id="130" label="" color="15" folder="" sort="0" />
-        <label id="131" label="" color="15" folder="" sort="0" />
+        <label id="198" label="" color="15" folder="" sort="0" />
         <label id="139" label="" color="15" folder="" sort="0" />
         <label id="157" label="" color="15" folder="" sort="0" />
         <label id="155" label="" color="15" folder="" sort="0" />
@@ -164,8 +166,13 @@
         <label id="178" label="" color="15" folder="" sort="0" />
         <label id="179" label="" color="15" folder="" sort="0" />
         <label id="182" label="" color="15" folder="" sort="0" />
+        <label id="189" label="" color="15" folder="" sort="0" />
+        <label id="191" label="" color="15" folder="" sort="0" />
+        <label id="192" label="" color="15" folder="" sort="0" />
+        <label id="193" label="" color="15" folder="" sort="0" />
+        <label id="196" label="" color="15" folder="" sort="0" />
     </labels>
-    <nextId>188</nextId>
+    <nextId>198</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_resp0_1" />
@@ -321,6 +328,9 @@
         <marker scope="Public" name="Elesa_sB_0" />
         <marker scope="Public" name="Elesa_sB_1" />
         <marker scope="Private" name="Godiva">Controls the position of Carmine's hair. 0 is in front and 1 is in back.</marker>
+        <marker scope="Public" name="hilbert_respA_1" />
+        <marker scope="Public" name="hilbert_respK_1" />
+        <marker scope="Public" name="hilbert_respV_1" />
         <marker scope="Public" name="Hina_s0_1" />
         <marker scope="Public" name="Hina_s0_2" />
         <marker scope="Public" name="Hina_s0_2b" />
@@ -328,11 +338,14 @@
         <marker scope="Public" name="Hina_s0_3b" />
         <marker scope="Public" name="jean_resp0_1" />
         <marker scope="Public" name="jean_resp0_2" />
+        <marker scope="Public" name="jean_resp0_3" />
         <marker scope="Public" name="Jean_s0_1" />
         <marker scope="Public" name="Jean_s0_2" />
         <marker scope="Public" name="Jean_s0_3" />
         <marker scope="Public" name="Jean_s1_1" />
         <marker scope="Public" name="Jean_s1_2" />
+        <marker scope="Public" name="Jean_s1_3" />
+        <marker scope="Public" name="Jean_s2_1" />
         <marker scope="Public" name="jura_resp0_1" />
         <marker scope="Public" name="jura_resp0_2" />
         <marker scope="Public" name="jura_resp0_3" />
@@ -686,7 +699,9 @@
         <marker scope="Public" name="Sprung" />
         <marker scope="Public" name="Toph_s0_1" />
         <marker scope="Public" name="Toucannon" />
+        <marker scope="Public" name="velvet_resp0_1" />
         <marker scope="Public" name="Velvet_s0_1" />
+        <marker scope="Public" name="Velvet_s0_2" />
         <marker scope="Public" name="yae_resp0_1" />
         <marker scope="Public" name="yae_resp0_2" />
         <marker scope="Public" name="yae_resp0_3" />
@@ -728,6 +743,7 @@
         <marker scope="Public" name="YaeMiko_s0_2" />
         <marker scope="Public" name="YaeMiko_s0_3" />
         <marker scope="Public" name="YaeMiko_s1_1" />
+        <marker scope="Public" name="YaeMiko_s1_2" />
         <marker scope="Public" name="yshtola_resp0_1" />
         <marker scope="Public" name="yshtola_resp0_2" />
         <marker scope="Public" name="yshtola_resp0_3" />
