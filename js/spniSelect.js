@@ -549,10 +549,18 @@ function updateStatusIcon(elem, opp) {
     }
 }
 
+function getGenderLabel (gender) {
+    switch (gender) {
+    case eGender.MALE: return 'Male';
+    case eGender.FEMALE: return 'Female';
+    case eGender.FUTA: return 'Female (futanari)';
+    }
+}
+
 function updateGenderIcon(elem, opp) {
     elem.attr({
         src: IMG + opp.selectGender + '.svg',
-        alt: opp.selectGender.initCap(),
+        alt: getGenderLabel(opp.selectGender),
     }).show();
 }
 
@@ -744,7 +752,7 @@ function updateGroupSelectScreen (ignore_bg) {
 
             $groupNameLabels[i].html(opponent.first + " " + opponent.last);
             $groupPrefersLabels[i].html(opponent.label);
-            $groupSexLabels[i].html(opponent.gender);
+            $groupSexLabels[i].html(getGenderLabel(opponent.gender));
             $groupSourceLabels[i].html(opponent.source);
             $groupWriterLabels[i].html(opponent.writer);
             $groupArtistLabels[i].html(opponent.artist);
