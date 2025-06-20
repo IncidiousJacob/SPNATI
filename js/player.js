@@ -10,32 +10,32 @@
 /************************************************************
  * An enumeration for gender.
  **/
-var eGender = {
+const eGender = Object.freeze({
     MALE   : "male",
     FEMALE : "female",
     FUTA   : "futanari"
-};
+});
 
 /************************************************************
  * An enumeration for player size.
  **/
-var eSize = {
+const eSize = Object.freeze({
     SMALL  : "small",
     MEDIUM : "medium",
     LARGE  : "large"
-};
+});
 
 /************************************************************
  * An enumeration for player intelligence.
  **/
-var eIntelligence = {
+const eIntelligence = Object.freeze({
     NOSWAP  : "no-swap",
     THROW   : "throw",
     BAD     : "bad",
     AVERAGE : "average",
     GOOD    : "good",
     BEST    : "best"
-};
+});
 
 /**********************************************************************
  *****                Player Object Specification                 *****
