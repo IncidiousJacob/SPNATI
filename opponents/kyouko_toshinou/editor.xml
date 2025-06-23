@@ -73,7 +73,6 @@ That said, do not use this specifically for an interaction. There's a reason I d
 
 Also, this is global because an opponent masturbating line somehow snuck in between this line and the one that was supposed to precede it.</note>
         <note id="57">kinda wish 2D and 3D art had separate tags cuz this is kinda hard when I can't assume the target draws a lot</note>
-        <note id="63">Kyouko will try to fix her hair literally the next case after "Finished (Self)" plays. This and the game ending should be the only things that interrupt that in order to prevent inconsistency.</note>
         <note id="83">Kyoko says she keeps her ribbon on (and sets the same marker) in a few other cases, but this one is the most reliable.
 Yes, there are two markers for this. Feel free to target whichever you like.</note>
         <note id="158">In case it doesn't come through, she's trying to mislead him</note>
@@ -1336,7 +1335,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1331" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
         <label id="1332" label="Tank top (MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
         <label id="1333" label="MSC (Gloria)" folder="Costume&gt;Easy Breezy" sort="0" />
-        <label id="1334" label="Tank top (Gloria MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1334" label="Tank top (Moskii MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
         <label id="1335" label="" folder="Costume&gt;Easy Breezy" sort="0" />
         <label id="1336" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
         <label id="1337" label="Tank top (hot)" folder="Costume&gt;Easy Breezy" sort="0" />
@@ -1362,6 +1361,24 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1358" label="Good" folder="AI Level&gt;Easy Breezy" sort="0" />
         <label id="1359" label="Good (normal)" folder="AI Level&gt;Easy Breezy" sort="0" />
         <label id="1360" label="Good (alt)" folder="AI Level&gt;Easy Breezy" sort="0" />
+        <label id="1362" label="" folder="Someone's exposed" sort="0" />
+        <label id="1363" label="" folder="Someone's exposed" sort="0" />
+        <label id="1364" label="" folder="Someone's exposed" sort="0" />
+        <label id="1365" label="" folder="Someone's exposed" sort="0" />
+        <label id="1366" label="" folder="Someone's exposed" sort="0" />
+        <label id="1367" label="" folder="Someone's exposed" sort="0" />
+        <label id="1368" label="MSC (Moskii)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1369" label="MSC (Moskii)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1370" label="Tank top (Gloria MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1371" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1372" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1373" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1374" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1375" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1376" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1377" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1378" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1379" label="" folder="Targets&gt;Shamiko" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1370,9 +1387,8 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1361</nextId>
+    <nextId>1379</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
         <marker scope="Public" name="B_DarkTricks">Dark backgrounds</marker>
         <marker scope="Public" name="B_Inventory_Booth">Inventory background</marker>
@@ -1542,6 +1558,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Elphaba_Strip0Silliness">Self Must Strip 0</marker>
         <marker scope="Public" name="T_Elphaba_TwinNamesHelpful" />
         <marker scope="Public" name="T_Elphaba_TwinNamesUnhelpful" />
+        <marker scope="Public" name="T_Gloria_MscIdea" />
         <marker scope="Public" name="T_HSW_InBG" />
         <marker scope="Public" name="T_HSW_Joining" />
         <marker scope="Public" name="T_HSW_JumpIn" />
@@ -1646,6 +1663,10 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Meia_Pajamas" />
         <marker scope="Public" name="T_Miko_Strip0Necessities">Self Stripping 0</marker>
         <marker scope="Public" name="T_Miko_Strip0Refined">Self Must Strip 0</marker>
+        <marker scope="Public" name="T_Moskii_Msc" />
+        <marker scope="Public" name="T_Moskii_MscA" />
+        <marker scope="Public" name="T_Moskii_MscB" />
+        <marker scope="Public" name="T_Moskii_MscJoin" />
         <marker scope="Public" name="T_Nadeshiko_AdventureAnte" />
         <marker scope="Public" name="T_Nadeshiko_AllTogether" />
         <marker scope="Public" name="T_Nadeshiko_Alone" />
@@ -1820,11 +1841,20 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Setogaya_Wings" />
         <marker scope="Public" name="T_Setogaya_WingSensitivity" />
         <marker scope="Public" name="T_Shamiko_BadGuy" />
+        <marker scope="Public" name="T_Shamiko_Confidence1" />
+        <marker scope="Public" name="T_Shamiko_Confidence2" />
+        <marker scope="Public" name="T_Shamiko_Confidence3" />
         <marker scope="Public" name="T_Shamiko_Demon" />
         <marker scope="Public" name="T_Shamiko_Fremesis1" />
         <marker scope="Public" name="T_Shamiko_Fremesis2" />
         <marker scope="Public" name="T_Shamiko_Fremesis3" />
         <marker scope="Public" name="T_Shamiko_Nemesis" />
+        <marker scope="Public" name="T_Shamiko_Poker1" />
+        <marker scope="Public" name="T_Shamiko_Poker2" />
+        <marker scope="Public" name="T_Shamiko_Poker3" />
+        <marker scope="Public" name="T_Shamiko_Rivalry1" />
+        <marker scope="Public" name="T_Shamiko_Rivalry2" />
+        <marker scope="Public" name="T_Shamiko_Rivalry3" />
         <marker scope="Public" name="T_Shamiko_Spontaneous1" />
         <marker scope="Public" name="T_Shamiko_Spontaneous2" />
         <marker scope="Public" name="T_Shamiko_Spontaneous3" />
