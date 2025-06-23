@@ -24,6 +24,9 @@
         <case name="Zeke/Pandoria Sex" id="172" priority="Noteworthy" min="7" max="7">
             <description>Zeke and Pandy may have penetrative sex for the last part of their masturbation (but it is not guaranteed, check the conditions).</description>
         </case>
+        <case name="Zeke eats Pandy out" id="1246" priority="Noteworthy" min="7" max="7">
+            <description>Based on factors that influence RNG, Zeke may eat Pandy out. Check that oral_pandy is said or that one of the other markers are also being said. Note he is strong enough to lift her easily.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -1482,13 +1485,31 @@
         <label id="1234" label="" folder="Targets&gt;Miko" sort="0" />
         <label id="1235" label="" folder="Targets&gt;Miko" sort="0" />
         <label id="1236" label="" folder="Targets&gt;Miko" sort="0" />
+        <label id="1237" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1238" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1239" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1240" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1241" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1242" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1243" label="" folder="Masturbation Logic&gt;Oral (Cunnilingus, Pandy)" sort="0" />
+        <label id="1244" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1245" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1246" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1247" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1248" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1249" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1250" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1251" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1252" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1253" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
+        <label id="1254" label="" color="6" folder="Sex&gt;Cunnilingus (Partial)" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>1236</nextId>
+    <nextId>1254</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AellaAdventures" />
@@ -1515,6 +1536,8 @@
         <marker scope="Public" name="darkness_rejectedStrip" />
         <marker scope="Public" name="dontUseRegularForfeitStateOperation" />
         <marker scope="Public" name="dunban_arm_reveal" />
+        <marker scope="Public" name="dunban_DualForfeit_END" />
+        <marker scope="Public" name="dunban_DualForfeit_START" />
         <marker scope="Public" name="eichi_eattherichResp" />
         <marker scope="Public" name="eichi_spnatihellResp" />
         <marker scope="Public" name="elizabeth_forfeit_react1" />
@@ -1564,9 +1587,15 @@
         <marker scope="Public" name="nonon_panties_reveal_situation" />
         <marker scope="Public" name="nonon_postcum_threat_Resp" />
         <marker scope="Public" name="opp_lost_jjba" />
+        <marker scope="Public" name="oral_pandy" />
+        <marker scope="Public" name="oral_pandy_early" />
+        <marker scope="Public" name="oral_pandy_late" />
+        <marker scope="Public" name="oral_pandy_middle" />
+        <marker scope="Public" name="oral_pandy_start" />
         <marker scope="Public" name="oralOpportunity" />
         <marker scope="Public" name="oralOpportunity_cunnilingus" />
         <marker scope="Public" name="oralOpportunity_tandem_ff" />
+        <marker scope="Public" name="oralOpportunityRNG" />
         <marker scope="Public" name="pandoria_dialogue">Pandoria is the one speaking when this marker is being said. This marker doesn't always appear, but is used in cases where you might need to differentiate, e.g. if there are two versions of a single line, one where she speaks and one where she doesnt.</marker>
         <marker scope="Public" name="pandoria_meia_self4a" />
         <marker scope="Public" name="pandoriaToggle">if set to 1, Pandoria's dialogue is de-emphasised at certain moments.</marker>
@@ -2381,5 +2410,6 @@
     <pendingLines>
         <line>{pandy}What do you mean? Zeke has loads of good qualities! Like uh...and huh...{!reset}</line>
         <line>{pandy}Between you and me, I think Rex could use some more of your training. He's getting good, but he's not as good as you.{!reset}</line>
+        <line>&lt;li&gt;If you pair them with Dunban, there's a good chance that Zeke and Dunban can show Pandy a very good time if they lose around the same point...&lt;/li&gt;</line>
     </pendingLines>
 </metadata>
