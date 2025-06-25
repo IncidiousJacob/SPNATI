@@ -6,11 +6,11 @@
     <pronunciation />
     <othernotes>Vinyl lives in the future in a city called New Amsterdam, where various gangs fight to go "All City" by covering every burough with their gang's graffiti and competing in skating competitions with rollerblades, skateboards, BMX bicycles and jetpacks. Spoilers ahead for the plot of Bomb Rush Cyberfunk.&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt;After an unfortunate accident that happens to her friend Red, Vinyl poses as a spy for the gang "FUTURISM" working for a leader named "DJ Cyber." In truth, she is working with DJ Cyber to recover Red's memory and bring down the gangster that tried to kill him, a rival known as Faux who is attempting to get all gangsters in the city killed with his connections to the city's police force.&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt;Spoilers over. Vinyl in-game doesn't have a lot of dialogue, has no facial animations in-game, and BRC has few cutscenes, so her personality is largely an extrapolation from the mannerisms she shows in her dialogue and her few voice lines. I decided to write her serious side as a facade she maintains when on important business, and give her a more loose and easy-going tone when she's having fun.</othernotes>
     <noteworthy>
-        <case name="Culture Icebreaker" id="18" priority="Prompt" min="0" max="3">
-            <description>Vinyl asks the other players about an aspect of their own cultures.</description>
+        <case name="Icebreaker - Music" id="18" priority="Prompt" min="0" max="3">
+            <description>Asking the other players about their taste in music.</description>
         </case>
         <case name="Talking Graffiti" id="39" priority="Prompt" min="0" max="0">
-            <description>Vinyl asks if anyone else does street art.</description>
+            <description>Wondering if anyone else does street art.</description>
         </case>
         <case name="Lewd Selfie!" id="53" priority="Noteworthy" min="7" max="7">
             <description>Vinyl gets ahead of herself and sends a lewd picture to one of her friends!</description>
@@ -19,10 +19,16 @@
             <description>Vinyl admits her financial struggles and wonders how the others get by.</description>
         </case>
         <case name="Booty Jam (General)" id="88" priority="Noteworthy" min="6" max="6">
-            <description>Vinyl shows off her tight butt!</description>
+            <description>Showing off her tight butt!</description>
         </case>
         <case name="Booty Jam (Cops)" id="89" priority="Noteworthy" min="6" max="6">
-            <description>Vinyl looks for any police watching her, ends up showing her butt.</description>
+            <description>Looking for any police watching her, she ends up showing her butt.</description>
+        </case>
+        <case name="Icebreaker - Graffiti" id="100" priority="Prompt" min="0" max="3">
+            <description>Asking if anyone is interested in graffiti.</description>
+        </case>
+        <case name="Icebreaker - Dances" id="99" priority="Prompt" min="0" max="3">
+            <description>Asking if anyone has fun dances to share.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -109,15 +115,36 @@
         <response id="94" opponent="panty" opponentId="166" />
         <response id="95" opponent="mitama" opponentId="920" />
         <response id="96" opponent="jin" opponentId="20" />
+        <response id="102" opponent="myriam" opponentId="35" />
+        <response id="103" opponent="myriam" opponentId="36" />
+        <response id="104" opponent="myriam" opponentId="34" />
+        <response id="105" opponent="komi-san" opponentId="1" />
+        <response id="106" opponent="komi-san" opponentId="22" />
+        <response id="107" opponent="joey" opponentId="39" />
+        <response id="108" opponent="joey" opponentId="41" />
+        <response id="109" opponent="joey" opponentId="206" />
+        <response id="110" opponent="joey" opponentId="201" />
+        <response id="111" opponent="joey" opponentId="33" />
+        <response id="112" opponent="joey" opponentId="28" />
+        <response id="113" opponent="starfire" opponentId="157" />
+        <response id="114" opponent="felix" opponentId="734" />
+        <response id="115" opponent="beatrix" opponentId="58" />
+        <response id="121" opponent="elphaba" opponentId="120" />
+        <response id="122" opponent="elphaba" opponentId="119" />
+        <response id="123" opponent="elphaba" opponentId="134" />
+        <response id="126" opponent="elphaba" opponentId="155" />
+        <response id="127" opponent="amalia" opponentId="2" />
     </responses>
-    <nextId>101</nextId>
+    <nextId>127</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviScars" />
         <marker scope="Public" name="AellaArmor" />
         <marker scope="Public" name="AellaBaths" />
         <marker scope="Public" name="AellaStreaking" />
         <marker scope="Public" name="AloyAskRobots" />
         <marker scope="Public" name="AloyFuture" />
+        <marker scope="Public" name="AmaliaMasturbate" />
         <marker scope="Public" name="AmyroseCrew" />
         <marker scope="Public" name="AmyroseSega" />
         <marker scope="Public" name="AmySega" />
@@ -141,9 +168,14 @@
         <marker scope="Public" name="CocoShaved" />
         <marker scope="Public" name="DashSkateDate" />
         <marker scope="Public" name="EichiKink1" />
+        <marker scope="Public" name="ElphabaDyes" />
+        <marker scope="Public" name="ElphabaGoldenRule" />
+        <marker scope="Public" name="ElphabaNecks" />
         <marker scope="Public" name="FateAskCards" />
         <marker scope="Public" name="FateFelix" />
         <marker scope="Public" name="FeetPics" />
+        <marker scope="Public" name="FelixPervClean" />
+        <marker scope="Public" name="FemaleBlueHair" />
         <marker scope="Public" name="FlipPhone" />
         <marker scope="Public" name="FluttershyBooty" />
         <marker scope="Public" name="FluttershyButtReact" />
@@ -154,7 +186,58 @@
         <marker scope="Public" name="JessieAnal" />
         <marker scope="Public" name="JessieAss" />
         <marker scope="Public" name="JessieSecrets" />
+        <marker scope="Public" name="jim__resp_00" />
+        <marker scope="Public" name="jim__resp_01" />
+        <marker scope="Public" name="jim__resp_02" />
+        <marker scope="Public" name="jim__resp_10" />
+        <marker scope="Public" name="jim__resp_11" />
+        <marker scope="Public" name="jim__resp_12" />
+        <marker scope="Public" name="jim__resp_20" />
+        <marker scope="Public" name="jim__resp_21" />
+        <marker scope="Public" name="jim__resp_22" />
+        <marker scope="Public" name="jim__resp_30" />
+        <marker scope="Public" name="jim__resp_31" />
+        <marker scope="Public" name="jim__resp_32" />
+        <marker scope="Public" name="jim__resp_40" />
+        <marker scope="Public" name="jim__resp_41" />
+        <marker scope="Public" name="jim__resp_42" />
+        <marker scope="Public" name="jim__resp_50" />
+        <marker scope="Public" name="jim__resp_51" />
+        <marker scope="Public" name="jim__resp_52" />
+        <marker scope="Public" name="jim__resp_60" />
+        <marker scope="Public" name="jim__resp_61" />
+        <marker scope="Public" name="jim__resp_62" />
+        <marker scope="Public" name="jim_aliens_20" />
+        <marker scope="Public" name="jim_aliens_21" />
+        <marker scope="Public" name="jim_aliens_22" />
+        <marker scope="Public" name="jim_art_50" />
+        <marker scope="Public" name="jim_art_51" />
+        <marker scope="Public" name="jim_art_52" />
+        <marker scope="Public" name="jim_biker_00" />
+        <marker scope="Public" name="jim_biker_01" />
+        <marker scope="Public" name="jim_biker_02" />
+        <marker scope="Public" name="jim_date_60" />
+        <marker scope="Public" name="jim_date_61" />
+        <marker scope="Public" name="jim_date_62" />
+        <marker scope="Public" name="jim_feelings_40" />
+        <marker scope="Public" name="jim_feelings_41" />
+        <marker scope="Public" name="jim_feelings_42" />
+        <marker scope="Public" name="jim_muscles_10" />
+        <marker scope="Public" name="jim_muscles_11" />
+        <marker scope="Public" name="jim_muscles_12" />
+        <marker scope="Public" name="jim_rebels_30" />
+        <marker scope="Public" name="jim_rebels_31" />
+        <marker scope="Public" name="jim_rebels_32" />
+        <marker scope="Public" name="jim_sex_70" />
+        <marker scope="Public" name="jim_sex_71" />
+        <marker scope="Public" name="jim_sex_72" />
         <marker scope="Public" name="JinGlowCum" />
+        <marker scope="Public" name="JoeyDoink" />
+        <marker scope="Public" name="JoeyIntrovert" />
+        <marker scope="Public" name="JoeyPantieDrop" />
+        <marker scope="Public" name="JoeyPowers" />
+        <marker scope="Public" name="JoeyStreaking" />
+        <marker scope="Public" name="JoeyVibrator" />
         <marker scope="Public" name="Juno_Boots_00" />
         <marker scope="Public" name="Juno_Boots_01" />
         <marker scope="Public" name="Juno_Boots_02" />
@@ -180,6 +263,8 @@
         <marker scope="Public" name="KazQueen" />
         <marker scope="Public" name="KazUndiesAdmission" />
         <marker scope="Public" name="KazUndiesOff" />
+        <marker scope="Public" name="KomiJacket" />
+        <marker scope="Public" name="KomiTights" />
         <marker scope="Public" name="KyokoRetro" />
         <marker scope="Public" name="KyokoWet" />
         <marker scope="Public" name="KyoukoDance" />
@@ -188,6 +273,8 @@
         <marker scope="Public" name="LaevateinBodysuits" />
         <marker scope="Public" name="LaevateinSkateboard" />
         <marker scope="Public" name="MagmaAskGangs" />
+        <marker scope="Public" name="MaleBlueHair" />
+        <marker scope="Public" name="MalePale" />
         <marker scope="Public" name="MaleProposition" />
         <marker scope="Public" name="MasturbatingNudeBel" />
         <marker scope="Public" name="MasturbatingNudeDJCyber" />
@@ -208,6 +295,9 @@
         <marker scope="Public" name="MitamaSnooze" />
         <marker scope="Public" name="MulanOldheads" />
         <marker scope="Public" name="MulanPerfectMan" />
+        <marker scope="Public" name="MyriamBoxless" />
+        <marker scope="Public" name="MyriamBraless" />
+        <marker scope="Public" name="MyriamLoseTie" />
         <marker scope="Public" name="NatsukiStroopwafels" />
         <marker scope="Public" name="NatsukiTompouce" />
         <marker scope="Public" name="NayruBrainHack" />
@@ -222,10 +312,14 @@
         <marker scope="Public" name="PhantomThieves" />
         <marker scope="Public" name="PriscillaDiss" />
         <marker scope="Public" name="PriscillaStreetwear" />
+        <marker scope="Public" name="PromptBlueHair" />
         <marker scope="Public" name="PromptDances" />
         <marker scope="Public" name="PromptGraffiti" />
+        <marker scope="Public" name="PromptMagicMale" />
         <marker scope="Public" name="PromptMoney" />
         <marker scope="Public" name="PromptMusic" />
+        <marker scope="Public" name="PromptUnarmed" />
+        <marker scope="Public" name="PromptWitch" />
         <marker scope="Public" name="PsychicAskHelp" />
         <marker scope="Public" name="RaynorAliens" />
         <marker scope="Public" name="RaynorCheeks" />
@@ -304,6 +398,7 @@
         <marker scope="Public" name="SelfPolice3" />
         <marker scope="Public" name="ShantaeBlueballs" />
         <marker scope="Public" name="ShantaeClothes" />
+        <marker scope="Public" name="StarfirePanties" />
         <marker scope="Public" name="StartForest" />
         <marker scope="Public" name="StartMataan" />
         <marker scope="Public" name="StartParisMataan" />
@@ -321,6 +416,7 @@
         <marker scope="Public" name="TextFUTURISM" />
         <marker scope="Public" name="TharjaMagic" />
         <marker scope="Public" name="TrixieAskSpecies" />
+        <marker scope="Public" name="UnarmedFighting" />
         <marker scope="Public" name="VinylAstrology" />
         <marker scope="Public" name="VinylBreakdanceFighting" />
         <marker scope="Public" name="VinylButt" />
@@ -340,14 +436,20 @@
         <marker scope="Public" name="VinylForestHands3" />
         <marker scope="Public" name="VinylFunkSpirit" />
         <marker scope="Public" name="VinylGrassLater" />
+        <marker scope="Public" name="VinylGuns" />
+        <marker scope="Public" name="VinylHatesGuns" />
         <marker scope="Public" name="VinylHipShaker" />
         <marker scope="Public" name="VinylLookForCops" />
         <marker scope="Public" name="VinylLookGreen" />
+        <marker scope="Public" name="VinylNatural" />
+        <marker scope="Public" name="VinylRobots" />
+        <marker scope="Public" name="VinylScareGuns" />
         <marker scope="Public" name="VinylStripMaleFaux" />
         <marker scope="Public" name="VinylTouchGrass" />
         <marker scope="Public" name="VinylVoyeur1" />
         <marker scope="Public" name="VinylVoyeur2" />
         <marker scope="Public" name="VinylVoyeur3" />
+        <marker scope="Public" name="VinylWings" />
         <marker scope="Public" name="VinylYuseiDisappointed" />
         <marker scope="Public" name="WallartOffer" />
         <marker scope="Public" name="WikiHairDye" />
@@ -372,6 +474,33 @@
         <marker scope="Public" name="YuzukiThink" />
         <marker scope="Public" name="ZoeDreamMachine" />
     </markers>
+    <recipes>
+        <recipe key="93fb1799-f582-4f08-a53c-49d5e56f6278">
+            <cases>
+                <id>116</id>
+            </cases>
+        </recipe>
+        <recipe key="6091088d-2c85-4d55-a5f3-05bab45351a8">
+            <cases>
+                <id>117</id>
+            </cases>
+        </recipe>
+        <recipe key="5fee06f1-d467-44e0-a256-1d46c2d934a5">
+            <cases>
+                <id>118</id>
+            </cases>
+        </recipe>
+        <recipe key="1ac2b058-5e06-4321-9ea7-d6bc3098748e">
+            <cases>
+                <id>119</id>
+            </cases>
+        </recipe>
+        <recipe key="8338b475-6f72-461a-9cb7-4510428e1297">
+            <cases>
+                <id>120</id>
+            </cases>
+        </recipe>
+    </recipes>
     <pendingLines>
         <line>Girl, I don't know what you're doing to me, but you're stirring &lt;i&gt;something&lt;/i&gt; up inside.</line>
     </pendingLines>
