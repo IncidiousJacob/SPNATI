@@ -133,6 +133,10 @@
         <response id="813" opponent="yuzuki" opponentId="706" />
         <response id="860" opponent="yuzuki" opponentId="769" />
         <response id="862" opponent="mitama" opponentId="3302" />
+        <response id="877" opponent="jura" opponentId="2655" />
+        <response id="881" opponent="meia" opponentId="2778" />
+        <response id="883" opponent="meia" opponentId="2799" />
+        <response id="887" opponent="mitama" opponentId="3306" />
     </responses>
     <notes>
         <note id="29">Not quite Kansai mockery, but enough to create conflict.
@@ -838,7 +842,7 @@
         <label id="692" label="Conquest [0]" folder="Gerudo" sort="0" />
         <label id="693" label="Geography [3]" folder="Gerudo" sort="0" />
         <label id="694" label="Fairies [2]" folder="Gerudo" sort="0" />
-        <label id="695" label="Forest [0]" folder="Gerudo" sort="0" />
+        <label id="695" label="Conquest [0]" color="6" folder="Gerudo" sort="0" />
         <label id="696" label="Forest b [0]" folder="Gerudo" sort="0" />
         <label id="697" label="Chief [0]" folder="Gerudo" sort="0" />
         <label id="698" label="Senior Discount [1]" folder="Gerudo" sort="0" />
@@ -938,12 +942,12 @@
         <label id="792" label="Woods [2]" color="6" folder="Sheikah" sort="0" />
         <label id="794" label="Energy [3]" color="6" folder="Gerudo" sort="0" />
         <label id="795" label="" folder="Gerudo" sort="0" />
-        <label id="796" label="Age [1]" color="6" folder="Gerudo" sort="0" />
-        <label id="797" label="Home [5]" color="6" folder="Gerudo" sort="0" />
-        <label id="798" label="Conquest [0]" color="6" folder="Gerudo" sort="0" />
+        <label id="796" label="Age [1]" folder="Gerudo" sort="0" />
+        <label id="797" label="Home [5]" folder="Gerudo" sort="0" />
+        <label id="798" label="Conquest [0]" folder="Gerudo" sort="0" />
         <label id="799" label="Fairies [2]" folder="Gerudo" sort="0" />
         <label id="800" label="Geography [3]" color="6" folder="Gerudo" sort="0" />
-        <label id="801" label="Chief [0]" color="6" folder="Gerudo" sort="0" />
+        <label id="801" label="Chief [0]" folder="Gerudo" sort="0" />
         <label id="802" label="Senior Discount [1]" color="6" folder="Gerudo" sort="0" />
         <label id="803" label="Nerves [4]" folder="Gerudo" sort="0" />
         <label id="804" label="Cebe [6]" folder="Gerudo" sort="0" />
@@ -1020,8 +1024,19 @@
         <label id="874" label="Phantom [1]" color="6" folder="Darknut Legion" sort="0" />
         <label id="875" label="Armor [0]" color="6" folder="Darknut Legion" sort="0" />
         <label id="876" label="Wolfos [1]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="877" label="Summer [0]" color="6" folder="Gerudo" sort="0" />
+        <label id="878" label="Chief [0]" color="6" folder="Gerudo" sort="0" />
+        <label id="879" label="Mother [2]" color="6" folder="Gerudo" sort="0" />
+        <label id="880" label="Mother [2]" color="6" folder="Gerudo" sort="0" />
+        <label id="881" label="Summer [0]" color="6" folder="Gerudo" sort="0" />
+        <label id="882" label="Forest [0]" folder="Gerudo" sort="0" />
+        <label id="883" label="Age [1]" color="6" folder="Gerudo" sort="0" />
+        <label id="884" label="Armor [0]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="885" label="Wolfos [1]" color="6" folder="Darknut Legion" sort="0" />
+        <label id="886" label="" folder="Darknut Legion" sort="0" />
+        <label id="887" label="" folder="Order of the Wizzrobe" sort="0" />
     </labels>
-    <nextId>876</nextId>
+    <nextId>887</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="~dick~" />
@@ -1105,6 +1120,8 @@
         <marker scope="Public" name="ask_jura_menE" />
         <marker scope="Public" name="ask_jura_menI" />
         <marker scope="Public" name="ask_jura_menS" />
+        <marker scope="Public" name="ask_jura_motherE1" />
+        <marker scope="Public" name="ask_jura_motherE2" />
         <marker scope="Public" name="ask_jura_motherI" />
         <marker scope="Public" name="ask_jura_motherI1" />
         <marker scope="Public" name="ask_jura_motherI2" />
@@ -1169,7 +1186,9 @@
         <marker scope="Public" name="ask_robin_ffI" />
         <marker scope="Public" name="ask_rosie_fossilsS" />
         <marker scope="Public" name="ask_rosie_homeS" />
+        <marker scope="Public" name="ask_roxy_armorI" />
         <marker scope="Public" name="ask_roxy_armorS" />
+        <marker scope="Public" name="ask_roxy_wolfosI" />
         <marker scope="Public" name="ask_roxy_wolfosS" />
         <marker scope="Public" name="ask_sakura_makeupI" />
         <marker scope="Public" name="ask_samus_armor_gen" />
@@ -1466,8 +1485,10 @@
         <marker scope="Public" name="reply_jin_glow_gen" />
         <marker scope="Public" name="reply_jura_ageS" />
         <marker scope="Public" name="reply_jura_cebeS" />
+        <marker scope="Public" name="reply_jura_chiefE" />
         <marker scope="Public" name="reply_jura_chiefI" />
         <marker scope="Public" name="reply_jura_chiefS" />
+        <marker scope="Public" name="reply_jura_kukuiS" />
         <marker scope="Public" name="reply_jura_nakedandafraidS" />
         <marker scope="Public" name="reply_jura_nerves01" />
         <marker scope="Public" name="reply_jura_nervesE" />
@@ -1481,6 +1502,7 @@
         <marker scope="Public" name="reply_lux_hangout_gen" />
         <marker scope="Public" name="reply_lux_lastpun_gen" />
         <marker scope="Public" name="reply_megumin_warcrimes_gen" />
+        <marker scope="Public" name="reply_meia_ageI" />
         <marker scope="Public" name="reply_meia_ageS" />
         <marker scope="Public" name="reply_meia_fairyE" />
         <marker scope="Public" name="reply_meia_fairyI" />
@@ -1494,12 +1516,15 @@
         <marker scope="Public" name="reply_meia_geographyI" />
         <marker scope="Public" name="reply_meia_geographyS" />
         <marker scope="Public" name="reply_meia_homeS" />
+        <marker scope="Public" name="reply_meia_summerS" />
+        <marker scope="Public" name="reply_meia_warE" />
         <marker scope="Public" name="reply_meia_warI" />
         <marker scope="Public" name="reply_meia_warS" />
         <marker scope="Public" name="reply_mg_LANDI" />
         <marker scope="Public" name="reply_mia_swimsuit_gen" />
         <marker scope="Public" name="reply_miku_ads_gen" />
         <marker scope="Public" name="reply_mitama_nap_gen" />
+        <marker scope="Public" name="reply_mitama_orderI" />
         <marker scope="Public" name="reply_mitama_orderS" />
         <marker scope="Public" name="reply_nagisa_bed_gen" />
         <marker scope="Public" name="reply_nonon_dress_gen" />
@@ -1510,6 +1535,7 @@
         <marker scope="Public" name="reply_rosie_forestS" />
         <marker scope="Public" name="reply_rouge_jewelry_gen" />
         <marker scope="Public" name="reply_rouge_jewels_gen" />
+        <marker scope="Public" name="reply_roxy_elfS" />
         <marker scope="Public" name="reply_sakizls_zombie" />
         <marker scope="Public" name="reply_sanako_greet_gen" />
         <marker scope="Public" name="reply_sayaka_familiar_gen" />
