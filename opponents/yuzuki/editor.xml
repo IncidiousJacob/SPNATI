@@ -15,6 +15,9 @@
         <case name="Yuzuki is a kuchisake-onna" id="102" priority="Noteworthy" min="1" max="1">
             <description>Yuzuki reveals she has the curse of a kuchisake-onna, or 'slit mouth woman'. Other characters may know what that is and react accordingly. See her other situations for the reveal.</description>
         </case>
+        <case name="(Sleepover) Yuzuki's robe opened" id="656" priority="FYI" min="1" max="4">
+            <description>Yuzuki's sleepover robe opens slightly when she bends down to take her slippers off. Her areola are heavily visible, and she has only just noticed.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -60,7 +63,6 @@
         <response id="160" opponent="flash" opponentId="14" />
         <response id="166" opponent="karin" opponentId="147" />
         <response id="170" opponent="momo" opponentId="102" />
-        <response id="171" opponent="momo" opponentId="104" />
         <response id="173" opponent="yae_miko" opponentId="371" />
         <response id="176" opponent="bella_goth" opponentId="6" />
         <response id="177" opponent="nephenee" opponentId="13" />
@@ -162,6 +164,15 @@
         <response id="670" opponent="noire" opponentId="799" />
         <response id="671" opponent="meia" opponentId="6" />
         <response id="675" opponent="vinyl" opponentId="6" />
+        <response id="714" opponent="meia" opponentId="2736" />
+        <response id="718" opponent="jura" opponentId="2574" />
+        <response id="720" opponent="jura" opponentId="2572" />
+        <response id="770" opponent="meia" opponentId="2764" />
+        <response id="771" opponent="meia" opponentId="2761" />
+        <response id="774" opponent="jura" opponentId="2610" />
+        <response id="776" opponent="jura" opponentId="2641" />
+        <response id="808" opponent="yae_miko" opponentId="398" />
+        <response id="815" opponent="momo" opponentId="1056" />
     </responses>
     <notes>
         <note id="142">("Because I'm about to take my mask off, too...")</note>
@@ -177,6 +188,8 @@
         <note id="591">"what are your weaknesses" job interview responses</note>
         <note id="620">deliberately not finishing her sentence</note>
         <note id="658">senko could challenge the motherly comment?</note>
+        <note id="722">going to ask about her love life</note>
+        <note id="815">fallback line in case their banter didnt play</note>
     </notes>
     <labels>
         <label id="1" label="Caution Message" color="1" folder="" sort="0" />
@@ -213,7 +226,7 @@
         <label id="32" label="lift lines" folder="" sort="0" />
         <label id="33" label="" folder="Conditional Lines" sort="4" />
         <label id="34" label="" folder="Filtered Lines" sort="20" />
-        <label id="35" label="" folder="Player Names" sort="0" />
+        <label id="35" label="" folder="Player Names" sort="2" />
         <label id="36" label="" folder="Player Names" sort="2" />
         <label id="37" label="" folder="Player Names" sort="3" />
         <label id="38" label="" folder="Forfeit" sort="2" />
@@ -271,9 +284,9 @@
         <label id="90" label="" folder="Targets" sort="31" />
         <label id="91" label="" folder="Targets" sort="7" />
         <label id="92" label="" folder="Targets" sort="22" />
-        <label id="93" label="" folder="Targets&gt;Meia" sort="2" />
+        <label id="93" label="default [0]" folder="Targets&gt;Meia" sort="2" />
         <label id="94" label="" folder="Targets&gt;Meia" sort="2" />
-        <label id="97" label="" folder="Targets&gt;Jura" sort="3" />
+        <label id="97" label="default [0]" folder="Targets&gt;Jura" sort="3" />
         <label id="98" label="" folder="Targets&gt;Meia" sort="4" />
         <label id="99" label="" folder="Targets&gt;Jura" sort="3" />
         <label id="100" label="" folder="Targets&gt;Meia" sort="5" />
@@ -290,11 +303,11 @@
         <label id="114" label="" folder="Targets" sort="18" />
         <label id="113" label="" folder="Targets" sort="17" />
         <label id="115" label="butt" folder="" sort="0" />
-        <label id="116" label="" folder="Targets&gt;Meia" sort="3" />
+        <label id="116" label="default [0]" folder="Targets&gt;Meia" sort="3" />
         <label id="117" label="" folder="Targets&gt;Meia" sort="7" />
         <label id="118" label="" folder="Targets&gt;Meia" sort="8" />
         <label id="119" label="" folder="Targets&gt;Meia" sort="6" />
-        <label id="120" label="" folder="Targets&gt;Jura" sort="2" />
+        <label id="120" label="default [0]" folder="Targets&gt;Jura" sort="2" />
         <label id="121" label="" folder="Targets&gt;Jura" sort="4" />
         <label id="122" label="" folder="Targets" sort="24" />
         <label id="123" label="" folder="Targets" sort="25" />
@@ -346,9 +359,9 @@
         <label id="169" label="" folder="Targets&gt;Meia" sort="15" />
         <label id="170" label="" folder="Mouth Followups" sort="0" />
         <label id="171" label="" folder="Targets&gt;Momo" sort="0" />
-        <label id="172" label="" folder="Targets&gt;Momo" sort="2" />
+        <label id="172" label="" folder="Targets&gt;Momo" sort="0" />
         <label id="173" label="" folder="Targets&gt;Yae Miko" sort="0" />
-        <label id="174" label="" folder="Targets&gt;Momo" sort="3" />
+        <label id="174" label="DISABLED" folder="Targets&gt;Momo" sort="3" />
         <label id="175" label="" folder="Situations" sort="0" />
         <label id="176" label="" folder="Targets" sort="10" />
         <label id="177" label="Wrath (don't respond here)" color="3" folder="Targets&gt;Nephenee" sort="3" />
@@ -375,7 +388,7 @@
         <label id="198" label="" folder="Targets&gt;Meia" sort="6" />
         <label id="199" label="" folder="Targets&gt;Meia" sort="8" />
         <label id="200" label="" folder="Targets&gt;Jura" sort="12" />
-        <label id="201" label="" folder="Targets&gt;Jura" sort="8" />
+        <label id="201" label="default [0]" folder="Targets&gt;Jura" sort="8" />
         <label id="202" label="" folder="Targets&gt;Jura" sort="2" />
         <label id="203" label="" folder="Targets" sort="105" />
         <label id="204" label="" folder="Targets" sort="5" />
@@ -386,7 +399,7 @@
         <label id="209" label="" folder="Prompt Responses" sort="5" />
         <label id="210" label="" color="1" folder="Targets" sort="67" />
         <label id="211" label="" folder="Targets" sort="20" />
-        <label id="212" label="" color="1" folder="Targets" sort="72" />
+        <label id="212" label="" folder="Targets" sort="72" />
         <label id="213" label="" folder="Targets" sort="21" />
         <label id="214" label="" folder="Targets" sort="22" />
         <label id="215" label="" folder="Targets" sort="23" />
@@ -597,12 +610,12 @@
         <label id="423" label="" folder="Costumes&gt;Office" sort="11" />
         <label id="424" label="" folder="Costumes&gt;Office" sort="12" />
         <label id="425" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="426" label="" folder="Targets&gt;Miko" sort="11" />
+        <label id="426" label="Cape [0]" folder="Targets&gt;Miko" sort="11" />
         <label id="427" label="" folder="Targets&gt;Miko" sort="0" />
         <label id="428" label="" folder="Targets&gt;Miko" sort="0" />
         <label id="429" label="" folder="Targets&gt;Miko" sort="14" />
         <label id="430" label="" folder="Targets&gt;Miko" sort="16" />
-        <label id="431" label="" folder="Targets&gt;Miko" sort="12" />
+        <label id="431" label="Sword and Belt [1]" folder="Targets&gt;Miko" sort="12" />
         <label id="432" label="" folder="Targets&gt;Miko" sort="15" />
         <label id="433" label="" folder="Targets&gt;Miko" sort="17" />
         <label id="434" label="" folder="Targets&gt;Miko" sort="0" />
@@ -615,12 +628,12 @@
         <label id="441" label="" folder="Targets" sort="168" />
         <label id="354" label="" color="3" folder="Targets" sort="56" />
         <label id="442" label="" color="3" folder="Targets" sort="86" />
-        <label id="443" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="443" label="valentine [0]" folder="Targets&gt;Meia" sort="2" />
         <label id="444" label="" folder="Targets&gt;Meia" sort="6" />
         <label id="445" label="" folder="Targets&gt;Meia" sort="10" />
         <label id="447" label="" folder="Mouth Followups" sort="3" />
         <label id="449" label="" folder="Targets&gt;Meia" sort="18" />
-        <label id="450" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="450" label="valentine [0]" folder="Targets&gt;Jura" sort="0" />
         <label id="451" label="" folder="Targets&gt;Saki" sort="2" />
         <label id="452" label="" folder="Targets&gt;Saki" sort="3" />
         <label id="453" label="" folder="Targets&gt;Saki" sort="4" />
@@ -666,7 +679,7 @@
         <label id="493" label="" folder="Targets&gt;Saki" sort="35" />
         <label id="494" label="" folder="Targets&gt;Saki" sort="43" />
         <label id="495" label="" color="3" folder="Targets" sort="95" />
-        <label id="446" label="" folder="Targets" sort="96" />
+        <label id="446" label="" folder="Targets&gt;Meia" sort="96" />
         <label id="496" label="" folder="Targets" sort="160" />
         <label id="497" label="" folder="Targets" sort="161" />
         <label id="498" label="" color="3" folder="Targets" sort="148" />
@@ -686,7 +699,7 @@
         <label id="512" label="" folder="Targets&gt;Meia" sort="15" />
         <label id="513" label="" color="15" folder="Targets&gt;Meia" sort="12" />
         <label id="514" label="" folder="Targets&gt;Meia" sort="22" />
-        <label id="515" label="" color="4" folder="Targets&gt;Jura" sort="2" />
+        <label id="515" label="office [0]" folder="Targets&gt;Jura" sort="2" />
         <label id="516" label="" folder="Conditional Lines" sort="19" />
         <label id="517" label="lake (butt pose)" folder="Background Reacts" sort="2" />
         <label id="518" label="" folder="Costumes&gt;Valentines" sort="3" />
@@ -764,7 +777,7 @@
         <label id="591" label="" folder="Targets" sort="93" />
         <label id="592" label="" folder="Targets&gt;Miko" sort="4" />
         <label id="593" label="" folder="Targets&gt;Miko" sort="7" />
-        <label id="594" label="" folder="Targets&gt;Miko" sort="13" />
+        <label id="594" label="Adornments [2]" folder="Targets&gt;Miko" sort="13" />
         <label id="595" label="" folder="Targets&gt;Miko" sort="10" />
         <label id="596" label="" folder="Filtered Lines" sort="55" />
         <label id="597" label="" folder="Targets" sort="137" />
@@ -778,75 +791,213 @@
         <label id="605" label="" folder="Filtered Lines&gt;Human Forfeit" sort="2" />
         <label id="606" label="" folder="Filtered Lines&gt;Human Forfeit" sort="3" />
         <label id="607" label="" folder="Filtered Lines&gt;Human Forfeit" sort="4" />
-        <label id="608" label="" folder="Collectible" sort="0" />
+        <label id="608" label="" folder="Collectible" sort="2" />
         <label id="610" label="" folder="Filtered Lines" sort="0" />
         <label id="611" label="" folder="Targets" sort="152" />
         <label id="612" label="" folder="Targets" sort="142" />
         <label id="613" label="" folder="Targets" sort="0" />
         <label id="614" label="" folder="Targets" sort="164" />
-        <label id="615" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="616" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="617" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="618" label="" color="4" folder="Targets&gt;Meia" sort="0" />
-        <label id="619" label="" folder="Targets&gt;Meia" sort="0" />
-        <label id="620" label="" folder="Targets&gt;Meia" sort="0" />
-        <label id="621" label="" folder="Targets&gt;Meia" sort="0" />
-        <label id="622" label="" folder="Targets" sort="0" />
-        <label id="623" label="" color="4" folder="Targets&gt;Jura" sort="0" />
-        <label id="625" label="" color="4" folder="Targets&gt;Jura" sort="0" />
-        <label id="626" label="" folder="Targets&gt;Cadence" sort="0" />
-        <label id="627" label="" folder="Targets&gt;Cadence" sort="0" />
-        <label id="628" label="" folder="Targets" sort="0" />
-        <label id="629" label="" folder="Targets" sort="0" />
-        <label id="630" label="" folder="Targets" sort="0" />
-        <label id="631" label="" folder="Targets" sort="0" />
-        <label id="632" label="" folder="Filtered Lines" sort="0" />
-        <label id="633" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="634" label="" folder="Targets&gt;Miko" sort="0" />
-        <label id="635" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="636" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="637" label="" folder="Costumes&gt;Sleepover" sort="0" />
+        <label id="615" label="" folder="Targets&gt;Miko" sort="5" />
+        <label id="616" label="" folder="Targets&gt;Miko" sort="19" />
+        <label id="617" label="" folder="Targets&gt;Miko" sort="22" />
+        <label id="618" label="" color="4" folder="Targets&gt;Meia" sort="30" />
+        <label id="619" label="office [0]" folder="Targets&gt;Meia" sort="3" />
+        <label id="620" label="" folder="Targets&gt;Meia" sort="9" />
+        <label id="621" label="" folder="Targets&gt;Meia" sort="18" />
+        <label id="622" label="" color="3" folder="Targets" sort="182" />
+        <label id="623" label="" folder="Targets&gt;Jura" sort="7" />
+        <label id="625" label="" folder="Targets&gt;Jura" sort="16" />
+        <label id="626" label="" folder="Targets&gt;Cadence" sort="8" />
+        <label id="627" label="" folder="Targets&gt;Cadence" sort="9" />
+        <label id="628" label="" folder="Targets" sort="103" />
+        <label id="629" label="" folder="Targets" sort="104" />
+        <label id="630" label="" folder="Targets" sort="106" />
+        <label id="631" label="" folder="Targets" sort="2" />
+        <label id="632" label="" folder="Filtered Lines" sort="56" />
+        <label id="633" label="" folder="Targets&gt;Miko" sort="9" />
+        <label id="634" label="" folder="Targets&gt;Miko" sort="13" />
+        <label id="635" label="" folder="Costumes&gt;Sleepover" sort="4" />
+        <label id="636" label="" folder="Costumes&gt;Sleepover" sort="5" />
+        <label id="637" label="" folder="Costumes&gt;Sleepover" sort="6" />
         <label id="638" label="" folder="Hidden" sort="0" />
-        <label id="639" label="" folder="Conditional Lines" sort="0" />
+        <label id="639" label="" folder="Conditional Lines" sort="30" />
         <label id="640" label="" folder="Collectible" sort="0" />
-        <label id="641" label="" folder="Collectible" sort="0" />
+        <label id="641" label="" folder="Collectible" sort="3" />
         <label id="642" label="" folder="Player Names" sort="0" />
         <label id="643" label="lift lines (not no_bra)" folder="" sort="0" />
         <label id="644" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="645" label="" folder="Costumes&gt;Sleepover" sort="0" />
+        <label id="645" label="" folder="Costumes&gt;Sleepover" sort="9" />
         <label id="646" label="" folder="Costumes&gt;Sleepover" sort="0" />
         <label id="647" label="" folder="Costumes&gt;Sleepover" sort="0" />
         <label id="648" label="" folder="Costumes&gt;Sleepover" sort="0" />
         <label id="649" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="650" label="" folder="Costumes&gt;Sleepover" sort="0" />
+        <label id="650" label="" folder="Costumes&gt;Sleepover" sort="10" />
         <label id="651" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="652" label="" folder="Costumes&gt;Sleepover" sort="0" />
+        <label id="652" label="" folder="Costumes&gt;Sleepover" sort="11" />
         <label id="653" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="654" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="655" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="656" label="" folder="Costumes&gt;Sleepover" sort="0" />
+        <label id="654" label="" folder="Costumes&gt;Sleepover" sort="12" />
+        <label id="655" label="" folder="Costumes&gt;Sleepover" sort="8" />
+        <label id="656" label="" folder="Costumes&gt;Sleepover" sort="7" />
         <label id="657" label="" folder="Targets&gt;Senko" sort="0" />
-        <label id="658" label="" folder="Targets&gt;Senko" sort="0" />
-        <label id="659" label="" folder="Targets" sort="0" />
-        <label id="660" label="" folder="Targets" sort="0" />
-        <label id="661" label="" folder="Targets" sort="0" />
-        <label id="662" label="Kodama [0]" color="6" folder="Targets" sort="0" />
-        <label id="663" label="Kodama [0]" color="6" folder="Targets" sort="0" />
-        <label id="664" label="Family [1]" color="6" folder="Targets" sort="0" />
-        <label id="665" label="variety targets [0-2]" color="6" folder="Targets" sort="0" />
-        <label id="666" label="Tomato [0] (non-event)" folder="Targets" sort="0" />
-        <label id="667" label="Tomato [0] (sleepover event)" folder="Targets" sort="0" />
-        <label id="668" label="" folder="Targets" sort="0" />
+        <label id="658" label="" folder="Targets&gt;Senko" sort="2" />
+        <label id="659" label="" folder="Targets" sort="63" />
+        <label id="660" label="" folder="Targets" sort="64" />
+        <label id="661" label="" folder="Targets" sort="65" />
+        <label id="662" label="Kodama [0]" color="3" folder="Targets" sort="166" />
+        <label id="663" label="Kodama [0]" color="3" folder="Targets" sort="185" />
+        <label id="664" label="Family [1]" color="3" folder="Targets" sort="167" />
+        <label id="665" label="variety targets [0-2]" color="6" folder="Targets" sort="168" />
+        <label id="666" label="Tomato [0] (non-event)" folder="Targets" sort="154" />
+        <label id="667" label="Tomato [0] (sleepover event)" folder="Targets" sort="153" />
+        <label id="668" label="" folder="Targets" sort="189" />
         <label id="669" label="" folder="Targets&gt;Noire" sort="0" />
-        <label id="670" label="" folder="Targets" sort="0" />
+        <label id="670" label="" folder="Targets" sort="13" />
         <label id="671" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="672" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="673" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="674" label="" folder="Costumes&gt;Sleepover" sort="0" />
-        <label id="675" label="" folder="Targets" sort="0" />
-        <label id="676" label="government [0]" color="6" folder="Targets" sort="0" />
+        <label id="673" label="" folder="Costumes&gt;Sleepover" sort="2" />
+        <label id="674" label="" folder="Costumes&gt;Sleepover" sort="3" />
+        <label id="675" label="" folder="Targets" sort="37" />
+        <label id="676" label="government [0]" color="3" folder="Targets" sort="169" />
+        <label id="677" label="" folder="Filtered Lines" sort="8" />
+        <label id="678" label="" folder="Conditional Lines" sort="18" />
+        <label id="679" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="680" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="681" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="682" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="683" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="684" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="685" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="686" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="687" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="688" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="689" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="690" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="691" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="692" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="693" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="694" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="695" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="696" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="697" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="698" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="699" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="700" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="701" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="702" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="703" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="704" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="705" label="" folder="Targets&gt;Dunban" sort="0" />
+        <label id="706" label="Kodama [0]" color="3" folder="Targets" sort="0" />
+        <label id="707" label="Family [1]" color="3" folder="Targets" sort="0" />
+        <label id="708" label="" folder="Targets" sort="0" />
+        <label id="709" label="" folder="Targets" sort="0" />
+        <label id="710" label="" folder="Targets" sort="0" />
+        <label id="711" label="" folder="Targets" sort="0" />
+        <label id="712" label="" color="3" folder="Targets" sort="0" />
+        <label id="713" label="" color="3" folder="Targets" sort="0" />
+        <label id="714" label="sleepover [0]" folder="Targets&gt;Meia" sort="0" />
+        <label id="715" label="office [0]" folder="Targets&gt;Meia" sort="0" />
+        <label id="716" label="valentine [0]" folder="Targets&gt;Meia" sort="0" />
+        <label id="717" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="718" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="719" label="office [0]" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="720" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="721" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="722" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="723" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="724" label="government [0]" color="6" folder="Targets" sort="0" />
+        <label id="725" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="726" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="727" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="728" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="729" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="730" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="731" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="732" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="733" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="734" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="735" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="736" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="737" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="738" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="739" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="740" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="741" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="742" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="743" label="" folder="Momo" sort="0" />
+        <label id="744" label="" folder="Momo" sort="0" />
+        <label id="745" label="" folder="Momo" sort="0" />
+        <label id="746" label="" folder="Momo" sort="0" />
+        <label id="747" label="" folder="Momo" sort="0" />
+        <label id="748" label="" folder="Momo" sort="0" />
+        <label id="749" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="750" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="751" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="752" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="753" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="754" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="755" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="756" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="757" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="758" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="759" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="760" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="761" label="" folder="Targets&gt;Miko" sort="0" />
+        <label id="762" label="" folder="Targets&gt;Miko" sort="0" />
+        <label id="763" label="" folder="Targets&gt;Miko" sort="0" />
+        <label id="764" label="Headphones [4]" folder="Targets&gt;Miko" sort="0" />
+        <label id="765" label="Headphones [4]" folder="Targets&gt;Miko" sort="0" />
+        <label id="766" label="" folder="Targets" sort="0" />
+        <label id="767" label="" folder="Targets" sort="0" />
+        <label id="768" label="" folder="Targets" sort="0" />
+        <label id="769" label="Family [1]" color="6" folder="Targets" sort="0" />
+        <label id="770" label="sleepover [0]" folder="Targets&gt;Meia" sort="0" />
+        <label id="772" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="773" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="774" label="sleepover [0]" folder="Targets&gt;Jura" sort="0" />
+        <label id="775" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="776" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="624" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="777" label="" folder="Background Reacts" sort="0" />
+        <label id="778" label="" folder="Player Names" sort="0" />
+        <label id="779" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="780" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="781" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="782" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="783" label="default (no meia)" folder="Aura Camera" sort="0" />
+        <label id="784" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="785" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="787" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="788" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="789" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="790" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="791" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="792" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="793" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="794" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="795" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="796" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="797" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="798" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="799" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="800" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="801" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="802" label="" folder="Costumes&gt;Summer" sort="0" />
+        <label id="803" label="" folder="Conditional Lines" sort="0" />
+        <label id="804" label="" folder="Targets" sort="0" />
+        <label id="805" label="" folder="Targets" sort="0" />
+        <label id="806" label="" folder="Targets" sort="0" />
+        <label id="807" label="" folder="Targets" sort="0" />
+        <label id="808" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="809" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="810" label="" color="1" folder="Targets" sort="0" />
+        <label id="811" label="" folder="Targets" sort="0" />
+        <label id="812" label="" folder="Filtered Lines" sort="0" />
+        <label id="813" label="" folder="Filtered Lines" sort="0" />
+        <label id="814" label="" folder="Targets" sort="0" />
+        <label id="815" label="" folder="Targets&gt;Momo" sort="0" />
     </labels>
-    <nextId>676</nextId>
+    <nextId>815</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="30k_yen_underwear" />
@@ -889,7 +1040,38 @@
         <marker scope="Public" name="cd_collectible_shirt_removed" />
         <marker scope="Public" name="collectible_momo_panties_revealed" />
         <marker scope="Public" name="counting_in_english" />
+        <marker scope="Public" name="covid" />
+        <marker scope="Public" name="coworker_lies" />
         <marker scope="Public" name="dangerous_table" />
+        <marker scope="Public" name="dunban_dunban_yuzukiFaceReveal_resp_30" />
+        <marker scope="Public" name="dunban_dunban_yuzukiFaceReveal_resp_31" />
+        <marker scope="Public" name="dunban_dunban_yuzukiFaceReveal_resp_32" />
+        <marker scope="Public" name="dunban_dunban_yuzukiJobs_resp_10" />
+        <marker scope="Public" name="dunban_dunban_yuzukiJobs_resp_11" />
+        <marker scope="Public" name="dunban_dunban_yuzukiJobs_resp_12" />
+        <marker scope="Public" name="dunban_dunban_yuzukiLoveLife_resp_20" />
+        <marker scope="Public" name="dunban_dunban_yuzukiLoveLife_resp_21" />
+        <marker scope="Public" name="dunban_dunban_yuzukiLoveLife_resp_22" />
+        <marker scope="Public" name="dunban_dunban_yuzukiScars_resp_40" />
+        <marker scope="Public" name="dunban_dunban_yuzukiScars_resp_41" />
+        <marker scope="Public" name="dunban_dunban_yuzukiScars_resp_42" />
+        <marker scope="Public" name="dunban_dunbanArmEarly_30" />
+        <marker scope="Public" name="dunban_dunbanArmEarly_31" />
+        <marker scope="Public" name="dunban_dunbanArmEarly_32" />
+        <marker scope="Public" name="dunban_dunbanArmReveal_40" />
+        <marker scope="Public" name="dunban_dunbanArmReveal_41" />
+        <marker scope="Public" name="dunban_dunbanArmReveal_42" />
+        <marker scope="Public" name="dunban_dunbanIntro_00" />
+        <marker scope="Public" name="dunban_dunbanIntro_01" />
+        <marker scope="Public" name="dunban_dunbanIntro_02" />
+        <marker scope="Public" name="dunban_dunbanMature_20" />
+        <marker scope="Public" name="dunban_dunbanMature_21" />
+        <marker scope="Public" name="dunban_dunbanMature_22" />
+        <marker scope="Public" name="dunban_dunbanPoetry_10" />
+        <marker scope="Public" name="dunban_dunbanPoetry_11" />
+        <marker scope="Public" name="dunban_dunbanPoetry_12" />
+        <marker scope="Public" name="fem_bedroom" />
+        <marker scope="Public" name="fem_bedroom_like_hers" />
         <marker scope="Public" name="fitness_routinesResp" />
         <marker scope="Public" name="gwen_spiderwoman" />
         <marker scope="Public" name="gwen_spiderwoman2" />
@@ -923,6 +1105,7 @@
         <marker scope="Public" name="miko_desiresResp" />
         <marker scope="Public" name="miko_startFF" />
         <marker scope="Public" name="miko_startFF_APRILFOOLS" />
+        <marker scope="Public" name="mlp_filter" />
         <marker scope="Public" name="momo_clothesResp" />
         <marker scope="Public" name="momo_goodLooking" />
         <marker scope="Public" name="momo_playerResp" />
@@ -952,7 +1135,9 @@
         <marker scope="Public" name="ringo_face_followup" />
         <marker scope="Public" name="ringo_hair_down" />
         <marker scope="Public" name="ringo_mouth_resp" />
+        <marker scope="Public" name="rosie_scars_resp" />
         <marker scope="Public" name="rosie_vivosaurs" />
+        <marker scope="Public" name="Rosie_Yuzuki_Strip4a" />
         <marker scope="Public" name="saki__00" />
         <marker scope="Public" name="saki__01" />
         <marker scope="Public" name="saki__02" />
@@ -1003,6 +1188,7 @@
         <marker scope="Public" name="schezo_neck" />
         <marker scope="Public" name="schezo_noRingoArle_tease" />
         <marker scope="Public" name="schezo_nut_hand" />
+        <marker scope="Public" name="scissors_at_home" />
         <marker scope="Public" name="scissors_bad_idea" />
         <marker scope="Public" name="seen_mask_off" />
         <marker scope="Public" name="self_assurance" />
@@ -1013,6 +1199,7 @@
         <marker scope="Public" name="serena_badPoker" />
         <marker scope="Public" name="serena_firstSkin" />
         <marker scope="Public" name="setogaya_clothingLanguage" />
+        <marker scope="Public" name="she_shaved" />
         <marker scope="Public" name="sleepwear_robe_opened" />
         <marker scope="Public" name="SpikeTheMonkey" />
         <marker scope="Public" name="teacher_assistant" />
@@ -1033,6 +1220,7 @@
         <marker scope="Public" name="what_i_am" />
         <marker scope="Public" name="what_i_am_2" />
         <marker scope="Public" name="what_i_am_3" />
+        <marker scope="Public" name="wiifit_1" />
         <marker scope="Public" name="yandere_threat" />
         <marker scope="Public" name="yumeko__00" />
         <marker scope="Public" name="yumeko__01" />
@@ -1111,6 +1299,7 @@
         <marker scope="Public" name="yuzuki_flash_strip0a" />
         <marker scope="Public" name="yuzuki_glamrockChica_strip0a" />
         <marker scope="Public" name="yuzuki_glamrockChica_strip0b" />
+        <marker scope="Public" name="yuzuki_glamrockChica_strip0c" />
         <marker scope="Public" name="yuzuki_glamrockChica_strip1a" />
         <marker scope="Public" name="yuzuki_heisenberg_self0a" />
         <marker scope="Public" name="yuzuki_heisenberg_self1a" />
@@ -1134,12 +1323,15 @@
         <marker scope="Public" name="yuzuki_juno_strip1a" />
         <marker scope="Public" name="yuzuki_jura_self0a" />
         <marker scope="Public" name="yuzuki_jura_self0a_office" />
+        <marker scope="Public" name="yuzuki_jura_self0a_sleepover" />
         <marker scope="Public" name="yuzuki_jura_self0a_valentine" />
         <marker scope="Public" name="yuzuki_jura_self0b" />
+        <marker scope="Public" name="yuzuki_jura_self0b_office" />
         <marker scope="Public" name="yuzuki_jura_self0c" />
         <marker scope="Public" name="yuzuki_jura_self1a" />
         <marker scope="Public" name="yuzuki_jura_self1b" />
         <marker scope="Public" name="yuzuki_jura_self1c" />
+        <marker scope="Public" name="yuzuki_jura_self2a" />
         <marker scope="Public" name="yuzuki_jura_self3a" />
         <marker scope="Public" name="yuzuki_jura_self3b" />
         <marker scope="Public" name="yuzuki_jura_self3c" />
@@ -1147,18 +1339,28 @@
         <marker scope="Public" name="yuzuki_jura_self4b" />
         <marker scope="Public" name="yuzuki_jura_self4c" />
         <marker scope="Public" name="yuzuki_jura_self5a" />
+        <marker scope="Public" name="yuzuki_jura_self5b" />
+        <marker scope="Public" name="yuzuki_jura_self5c" />
         <marker scope="Public" name="yuzuki_jura_strip0a" />
         <marker scope="Public" name="yuzuki_jura_strip0b" />
         <marker scope="Public" name="yuzuki_jura_strip0c" />
         <marker scope="Public" name="yuzuki_jura_strip1a" />
+        <marker scope="Public" name="yuzuki_jura_strip1b" />
+        <marker scope="Public" name="yuzuki_jura_strip1c" />
+        <marker scope="Public" name="yuzuki_jura_strip2a" />
+        <marker scope="Public" name="yuzuki_jura_strip2b" />
         <marker scope="Public" name="yuzuki_karin_self0a" />
         <marker scope="Public" name="yuzuki_leon_self0a" />
         <marker scope="Public" name="yuzuki_leon_self1a" />
         <marker scope="Public" name="yuzuki_leon12" />
         <marker scope="Public" name="yuzuki_meia_self0a" />
         <marker scope="Public" name="yuzuki_meia_self0a_office" />
+        <marker scope="Public" name="yuzuki_meia_self0a_sleepover" />
         <marker scope="Public" name="yuzuki_meia_self0a_valentine" />
         <marker scope="Public" name="yuzuki_meia_self0b" />
+        <marker scope="Public" name="yuzuki_meia_self0b_office" />
+        <marker scope="Public" name="yuzuki_meia_self0b_sleepover" />
+        <marker scope="Public" name="yuzuki_meia_self0b_valentine" />
         <marker scope="Public" name="yuzuki_meia_self0c" />
         <marker scope="Public" name="yuzuki_meia_self1a" />
         <marker scope="Public" name="yuzuki_meia_self1b" />
@@ -1173,6 +1375,8 @@
         <marker scope="Public" name="yuzuki_meia_self4b" />
         <marker scope="Public" name="yuzuki_meia_self4c" />
         <marker scope="Public" name="yuzuki_meia_self5a" />
+        <marker scope="Public" name="yuzuki_meia_self5b" />
+        <marker scope="Public" name="yuzuki_meia_self5c" />
         <marker scope="Public" name="yuzuki_meia_strip0a" />
         <marker scope="Public" name="yuzuki_meia_strip0b" />
         <marker scope="Public" name="yuzuki_meia_strip0c" />
@@ -1184,6 +1388,7 @@
         <marker scope="Public" name="yuzuki_meia_strip2a" />
         <marker scope="Public" name="yuzuki_meia_strip2b" />
         <marker scope="Public" name="yuzuki_meia_strip2c" />
+        <marker scope="Public" name="yuzuki_meia_strip3a" />
         <marker scope="Public" name="yuzuki_mikan_health1" />
         <marker scope="Public" name="yuzuki_miko_self0a" />
         <marker scope="Public" name="yuzuki_miko_self0b" />
@@ -1197,6 +1402,9 @@
         <marker scope="Public" name="yuzuki_miko_self3a" />
         <marker scope="Public" name="yuzuki_miko_self3b" />
         <marker scope="Public" name="yuzuki_miko_self3c" />
+        <marker scope="Public" name="yuzuki_miko_self4a" />
+        <marker scope="Public" name="yuzuki_miko_self4b" />
+        <marker scope="Public" name="yuzuki_miko_self4c" />
         <marker scope="Public" name="yuzuki_miko_strip0a" />
         <marker scope="Public" name="yuzuki_miko_strip0b" />
         <marker scope="Public" name="yuzuki_miko_strip0c" />
@@ -1206,6 +1414,44 @@
         <marker scope="Public" name="yuzuki_miko_strip2a" />
         <marker scope="Public" name="yuzuki_miko_strip2b" />
         <marker scope="Public" name="yuzuki_miko_strip2c" />
+        <marker scope="Public" name="yuzuki_miko_strip3a" />
+        <marker scope="Public" name="yuzuki_miko_strip3b" />
+        <marker scope="Public" name="yuzuki_momo_beauty1" />
+        <marker scope="Public" name="yuzuki_momo_beauty2" />
+        <marker scope="Public" name="yuzuki_momo_beauty3" />
+        <marker scope="Public" name="yuzuki_momo_clothesShopping1" />
+        <marker scope="Public" name="yuzuki_momo_clothesShopping2" />
+        <marker scope="Public" name="yuzuki_momo_clothesShopping3" />
+        <marker scope="Public" name="yuzuki_momo_daysOff1" />
+        <marker scope="Public" name="yuzuki_momo_daysOff2" />
+        <marker scope="Public" name="yuzuki_momo_daysOff3" />
+        <marker scope="Public" name="yuzuki_momo_intro1" />
+        <marker scope="Public" name="yuzuki_momo_intro2" />
+        <marker scope="Public" name="yuzuki_momo_intro3" />
+        <marker scope="Public" name="yuzuki_momo_leotard1" />
+        <marker scope="Public" name="yuzuki_momo_leotard2" />
+        <marker scope="Public" name="yuzuki_momo_leotard3" />
+        <marker scope="Public" name="yuzuki_momo_panties1" />
+        <marker scope="Public" name="yuzuki_momo_panties2" />
+        <marker scope="Public" name="yuzuki_momo_panties3" />
+        <marker scope="Public" name="yuzuki_momo_self0a" />
+        <marker scope="Public" name="yuzuki_momo_self0b" />
+        <marker scope="Public" name="yuzuki_momo_self0c" />
+        <marker scope="Public" name="yuzuki_momo_self1a" />
+        <marker scope="Public" name="yuzuki_momo_self1b" />
+        <marker scope="Public" name="yuzuki_momo_self1c" />
+        <marker scope="Public" name="yuzuki_momo_self2a" />
+        <marker scope="Public" name="yuzuki_momo_self2b" />
+        <marker scope="Public" name="yuzuki_momo_self2c" />
+        <marker scope="Public" name="yuzuki_momo_self3a" />
+        <marker scope="Public" name="yuzuki_momo_self3b" />
+        <marker scope="Public" name="yuzuki_momo_self3c" />
+        <marker scope="Public" name="yuzuki_momo_self4a" />
+        <marker scope="Public" name="yuzuki_momo_self4b" />
+        <marker scope="Public" name="yuzuki_momo_self4c" />
+        <marker scope="Public" name="yuzuki_momo_self5a" />
+        <marker scope="Public" name="yuzuki_momo_self5b" />
+        <marker scope="Public" name="yuzuki_momo_self5c" />
         <marker scope="Public" name="yuzuki_nade_campCooking1" />
         <marker scope="Public" name="yuzuki_nade_campCooking2" />
         <marker scope="Public" name="yuzuki_nade_campCooking3" />
@@ -1271,11 +1517,19 @@
         <marker scope="Public" name="yuzuki_rosie_strip4a" />
         <marker scope="Public" name="yuzuki_rosie_strip4b" />
         <marker scope="Public" name="yuzuki_saria_family1" />
+        <marker scope="Public" name="yuzuki_saria_family2" />
         <marker scope="Public" name="yuzuki_saria_kodama1" />
         <marker scope="Public" name="yuzuki_saria_kodama2" />
+        <marker scope="Public" name="yuzuki_saria_kodama3" />
         <marker scope="Public" name="yuzuki_saria_self0a" />
+        <marker scope="Public" name="yuzuki_saria_self0b" />
+        <marker scope="Public" name="yuzuki_saria_self0c" />
         <marker scope="Public" name="yuzuki_saria_self1a" />
+        <marker scope="Public" name="yuzuki_saria_self1b" />
+        <marker scope="Public" name="yuzuki_saria_self1c" />
         <marker scope="Public" name="yuzuki_saria_self2a" />
+        <marker scope="Public" name="yuzuki_saria_self2b" />
+        <marker scope="Public" name="yuzuki_saria_self2c" />
         <marker scope="Public" name="yuzuki_tifa_drinkRequest" />
         <marker scope="Public" name="yuzuki_tifa_drinkTaken" />
         <marker scope="Public" name="yuzuki_tifa_strip0a" />
@@ -1285,13 +1539,20 @@
         <marker scope="Public" name="yuzuki_tifa_strip1b" />
         <marker scope="Public" name="yuzuki_tifa_strip1c" />
         <marker scope="Public" name="yuzuki_velvet_armQuery1" />
+        <marker scope="Public" name="yuzuki_velvet_armQuery2" />
         <marker scope="Public" name="yuzuki_velvet_self0a" />
+        <marker scope="Public" name="yuzuki_velvet_self0b" />
         <marker scope="Public" name="yuzuki_vinyl_government1" />
+        <marker scope="Public" name="yuzuki_vinyl_government2" />
+        <marker scope="Public" name="yuzuki_WFT_strip0a" />
+        <marker scope="Public" name="yuzuki_WFT_strip0b" />
         <marker scope="Public" name="yuzuki_wiz_strip0a" />
         <marker scope="Public" name="yuzuki_yaemiko_kuchisakeonna1" />
         <marker scope="Public" name="yuzuki_yaemiko_kuchisakeonna2" />
+        <marker scope="Public" name="yuzuki_yaemiko_kuchisakeonna3" />
         <marker scope="Public" name="yuzuki_yaemiko_strip0a" />
         <marker scope="Public" name="yuzuki_yaemiko_strip0b" />
+        <marker scope="Public" name="yuzuki_yaemiko_strip0c" />
         <marker scope="Public" name="zombie_comment" />
     </markers>
     <pendingLines>

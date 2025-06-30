@@ -721,6 +721,11 @@
                 <keyframe time="1.5" alpha="100" />
             </directive>
         </pose>
+        <pose id="2-stripped">
+            <sprite id="playful" src="reskins/kyouko_toshinou_swimsuit/2-playful.png" x="0" y="0" />
+            <sprite id="flipflop-side" z="-1" src="reskins/kyouko_toshinou_swimsuit/posemaker/flipflop-side.png" x="159" y="1299" rotation="16" />
+            <sprite id="flipflop-front" z="1" src="reskins/kyouko_toshinou_swimsuit/posemaker/flipflop-front.png" x="-168" y="1297" />
+        </pose>
     </poses>
 
     <pose-sets>

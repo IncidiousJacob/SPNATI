@@ -260,6 +260,9 @@
         <response id="580" opponent="gloria" opponentId="834" />
         <response id="581" opponent="gloria" opponentId="833" />
         <response id="585" opponent="schezo" opponentId="842" />
+        <response id="590" opponent="schezo" opponentId="862" />
+        <response id="713" opponent="schezo" opponentId="946" />
+        <response id="714" opponent="schezo" opponentId="962" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -268,6 +271,8 @@
         <note id="53">The female character has just removed that minor item early in the game</note>
         <note id="54">The female character has just removed that minor item late in the game</note>
         <note id="69">A female character is about to remove a clothing item with the type "minor" early in the game</note>
+        <note id="701">Starts at Must Strip Winning Stage 0</note>
+        <note id="702">Starts at Must Strip Winning Stage 0</note>
     </notes>
     <labels>
         <label id="178" label="" folder="Fennekin Serena" sort="0" />
@@ -275,18 +280,18 @@
         <label id="180" label="" folder="Christmas Serena" sort="0" />
         <label id="181" label="" folder="Sleepover Serena" sort="0" />
         <label id="182" label="" folder="Performance Serena" sort="0" />
-        <label id="185" label="" folder="Bedroom" sort="0" />
+        <label id="185" label="" folder="Background Cases&gt;Bedroom" sort="0" />
         <label id="186" label="" folder="Beachtime Serena" sort="2" />
-        <label id="187" label="" folder="Bedroom" sort="2" />
+        <label id="187" label="" folder="Background Cases&gt;Bedroom" sort="2" />
         <label id="188" label="" folder="Beachtime Serena" sort="3" />
         <label id="189" label="" folder="Beachtime Serena" sort="4" />
         <label id="190" label="" folder="Beachtime Serena" sort="0" />
-        <label id="210" label="" folder="Bedroom" sort="3" />
-        <label id="211" label="" folder="Bedroom" sort="4" />
-        <label id="212" label="" folder="Bedroom" sort="5" />
-        <label id="213" label="" folder="Bedroom" sort="6" />
-        <label id="214" label="" folder="Bedroom" sort="7" />
-        <label id="215" label="" folder="Bedroom" sort="8" />
+        <label id="210" label="" folder="Background Cases&gt;Bedroom" sort="3" />
+        <label id="211" label="" folder="Background Cases&gt;Bedroom" sort="4" />
+        <label id="212" label="" folder="Background Cases&gt;Bedroom" sort="5" />
+        <label id="213" label="" folder="Background Cases&gt;Bedroom" sort="6" />
+        <label id="214" label="" folder="Background Cases&gt;Bedroom" sort="7" />
+        <label id="215" label="" folder="Background Cases&gt;Bedroom" sort="8" />
         <label id="248" label="" color="15" folder="Stage 0" sort="4" />
         <label id="249" label="" color="15" folder="Stage 0" sort="16" />
         <label id="250" label="" color="15" folder="" sort="0" />
@@ -485,7 +490,7 @@
         <label id="434" label="" folder="Fennekin Serena" sort="0" />
         <label id="435" label="" color="11" folder="Fennekin Serena" sort="0" />
         <label id="436" label="" folder="Fennekin Serena" sort="0" />
-        <label id="437" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="437" label="" color="15" folder="Stage 1" sort="0" />
         <label id="438" label="" color="15" folder="1 Must Strip" sort="0" />
         <label id="440" label="" color="15" folder="3 After Stripping" sort="0" />
         <label id="439" label="" color="15" folder="2 Stripping" sort="0" />
@@ -573,7 +578,7 @@
         <label id="524" label="" color="15" folder="Stage 8" sort="0" />
         <label id="525" label="" color="15" folder="Stage 8" sort="0" />
         <label id="526" label="" color="15" folder="" sort="0" />
-        <label id="527" label="" color="2" folder="Stage 1" sort="0" />
+        <label id="527" label="" color="15" folder="Stage 1" sort="0" />
         <label id="528" label="" color="15" folder="Stage 2" sort="0" />
         <label id="530" label="" color="15" folder="Stage 3" sort="0" />
         <label id="529" label="" color="15" folder="Stage 2" sort="0" />
@@ -604,7 +609,7 @@
         <label id="559" label="" color="15" folder="Stage 2" sort="0" />
         <label id="560" label="" color="15" folder="Stage 3" sort="0" />
         <label id="561" label="" color="15" folder="Stage 4" sort="0" />
-        <label id="562" label="" folder="Stage 2" sort="0" />
+        <label id="562" label="" color="15" folder="Stage 2" sort="0" />
         <label id="563" label="" color="15" folder="Fennekin Serena &gt; Stage 0" sort="0" />
         <label id="564" label="" color="15" folder="Stage 4" sort="0" />
         <label id="565" label="" color="15" folder="Fennekin Serena &gt; Stage 0" sort="0" />
@@ -625,13 +630,154 @@
         <label id="581" label="" color="2" folder="Stage 0" sort="0" />
         <label id="584" label="" color="11" folder="" sort="0" />
         <label id="583" label="" color="11" folder="" sort="0" />
-        <label id="585" label="" color="2" folder="Stage 3" sort="0" />
+        <label id="585" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="590" label="" color="2" folder="Stage 3" sort="0" />
+        <label id="591" label="" folder="Fennekin Serena" sort="0" />
+        <label id="592" label="" folder="Fennekin Serena" sort="0" />
+        <label id="593" label="" color="12" folder="" sort="0" />
+        <label id="594" label="" color="12" folder="" sort="0" />
+        <label id="595" label="" color="12" folder="" sort="0" />
+        <label id="596" label="" color="12" folder="" sort="0" />
+        <label id="597" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="598" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="599" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="600" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="601" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="602" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="603" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="604" label="" color="12" folder="" sort="0" />
+        <label id="605" label="" color="12" folder="" sort="0" />
+        <label id="606" label="" color="12" folder="" sort="0" />
+        <label id="607" label="" color="12" folder="" sort="0" />
+        <label id="608" label="" color="12" folder="" sort="0" />
+        <label id="609" label="" color="12" folder="" sort="0" />
+        <label id="610" label="" color="12" folder="" sort="0" />
+        <label id="611" label="" color="12" folder="" sort="0" />
+        <label id="612" label="" color="12" folder="" sort="0" />
+        <label id="613" label="" color="12" folder="" sort="0" />
+        <label id="614" label="" color="12" folder="" sort="0" />
+        <label id="615" label="" color="12" folder="" sort="0" />
+        <label id="616" label="" color="12" folder="" sort="0" />
+        <label id="617" label="" color="12" folder="" sort="0" />
+        <label id="618" label="" color="12" folder="" sort="0" />
+        <label id="619" label="" color="12" folder="" sort="0" />
+        <label id="620" label="" color="13" folder="" sort="0" />
+        <label id="621" label="" color="13" folder="" sort="0" />
+        <label id="622" label="" color="13" folder="" sort="0" />
+        <label id="623" label="" color="13" folder="" sort="0" />
+        <label id="624" label="" color="13" folder="" sort="0" />
+        <label id="625" label="" color="13" folder="" sort="0" />
+        <label id="626" label="" color="9" folder="" sort="0" />
+        <label id="627" label="" color="13" folder="" sort="0" />
+        <label id="628" label="" color="13" folder="" sort="0" />
+        <label id="629" label="" color="13" folder="" sort="0" />
+        <label id="630" label="" color="13" folder="" sort="0" />
+        <label id="631" label="" color="13" folder="" sort="0" />
+        <label id="632" label="" color="9" folder="" sort="0" />
+        <label id="633" label="" color="9" folder="" sort="0" />
+        <label id="634" label="" color="9" folder="" sort="0" />
+        <label id="635" label="" color="9" folder="" sort="0" />
+        <label id="636" label="" color="9" folder="" sort="0" />
+        <label id="637" label="" color="9" folder="" sort="0" />
+        <label id="638" label="" color="9" folder="" sort="0" />
+        <label id="639" label="" color="9" folder="" sort="0" />
+        <label id="640" label="" color="9" folder="" sort="0" />
+        <label id="641" label="" color="9" folder="" sort="0" />
+        <label id="642" label="" color="9" folder="" sort="0" />
+        <label id="643" label="" color="9" folder="" sort="0" />
+        <label id="644" label="" color="9" folder="" sort="0" />
+        <label id="645" label="" color="9" folder="" sort="0" />
+        <label id="646" label="" color="9" folder="" sort="0" />
+        <label id="647" label="" color="9" folder="" sort="0" />
+        <label id="648" label="" color="9" folder="" sort="0" />
+        <label id="649" label="" color="9" folder="" sort="0" />
+        <label id="650" label="" color="9" folder="" sort="0" />
+        <label id="651" label="" color="9" folder="" sort="0" />
+        <label id="652" label="" color="13" folder="" sort="0" />
+        <label id="653" label="" color="13" folder="" sort="0" />
+        <label id="654" label="" color="13" folder="" sort="0" />
+        <label id="655" label="" color="9" folder="" sort="0" />
+        <label id="656" label="" color="9" folder="" sort="0" />
+        <label id="659" label="" folder="Gameover Logic" sort="0" />
+        <label id="660" label="" folder="Gameover Logic" sort="0" />
+        <label id="661" label="" folder="Gameover Logic" sort="0" />
+        <label id="662" label="" folder="Gameover Logic" sort="0" />
+        <label id="663" label="" folder="Gameover Logic" sort="0" />
+        <label id="664" label="" folder="Gameover Logic" sort="0" />
+        <label id="665" label="" folder="Gameover Logic" sort="0" />
+        <label id="666" label="" folder="Day or Date Cases" sort="0" />
+        <label id="667" label="" folder="Day or Date Cases" sort="0" />
+        <label id="668" label="" folder="Background Cases&gt;Green Screen" sort="0" />
+        <label id="669" label="" folder="Background Cases&gt;Paris Rooftop" sort="0" />
+        <label id="670" label="" folder="Day or Date Cases" sort="0" />
+        <label id="671" label="" folder="Gameover Logic" sort="0" />
+        <label id="672" label="" folder="Gameover Logic" sort="0" />
+        <label id="673" label="" folder="Gameover Logic" sort="0" />
+        <label id="674" label="" folder="Gameover Logic" sort="0" />
+        <label id="675" label="" folder="Gameover Logic" sort="0" />
+        <label id="676" label="" folder="Gameover Logic" sort="0" />
+        <label id="677" label="" folder="Gameover Logic" sort="0" />
+        <label id="678" label="" folder="Gameover Logic" sort="0" />
+        <label id="679" label="" folder="Gameover Logic" sort="0" />
+        <label id="680" label="" folder="Gameover Logic" sort="0" />
+        <label id="681" label="" folder="Gameover Logic" sort="0" />
+        <label id="682" label="" folder="Gameover Logic" sort="0" />
+        <label id="683" label="" folder="Gameover Logic" sort="0" />
+        <label id="684" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="685" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="686" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="687" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="688" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="689" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="690" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="691" label="" folder="Elite Four Dialogue" sort="0" />
+        <label id="692" label="" folder="Elite Four Dialogue" sort="0" />
+        <label id="693" label="" folder="Elite Four Dialogue" sort="0" />
+        <label id="694" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="695" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="696" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="697" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="698" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="699" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="700" label="" color="12" folder="With Four Males" sort="0" />
+        <label id="701" label="" folder="Strip Dialogue Chain" sort="0" />
+        <label id="702" label="" folder="Strip Dialogue Chain" sort="0" />
+        <label id="703" label="" folder="Background Cases&gt;Misc" sort="0" />
+        <label id="704" label="" folder="Background Cases&gt;Haunted Forrest" sort="0" />
+        <label id="705" label="" folder="Hand=Any Cases&gt;Markers" sort="0" />
+        <label id="706" label="" folder="Hand=Any Cases&gt;Markers" sort="0" />
+        <label id="707" label="" folder="Hand=Any Cases&gt;# of Rounds" sort="0" />
+        <label id="708" label="" folder="Background Cases&gt;Paris Rooftop" sort="0" />
+        <label id="709" label="" folder="Background Cases&gt;Haunted Forrest" sort="0" />
+        <label id="710" label="" folder="Background Cases&gt;Showers" sort="0" />
+        <label id="711" label="" folder="Background Cases&gt;Showers" sort="0" />
+        <label id="712" label="" folder="Background Cases&gt;Showers" sort="0" />
+        <label id="713" label="" color="15" folder="Stage 4" sort="0" />
+        <label id="714" label="" color="2" folder="Stage 4" sort="0" />
     </labels>
-    <nextId>589</nextId>
+    <nextId>714</nextId>
     <markers>
+        <marker scope="Public" name="0strip_losing" />
+        <marker scope="Public" name="0strip_winning" />
+        <marker scope="Public" name="1strip_winning" />
+        <marker scope="Public" name="2strip_losing" />
+        <marker scope="Public" name="2strip_winning" />
         <marker scope="Public" name="3pokemonmoves" />
+        <marker scope="Public" name="3strip_losing" />
+        <marker scope="Public" name="3strip_winning" />
+        <marker scope="Public" name="4strip_losing" />
+        <marker scope="Public" name="4strip_winning" />
+        <marker scope="Public" name="5strip_losing" />
+        <marker scope="Public" name="5strip_winning" />
+        <marker scope="Public" name="6strip_losing" />
+        <marker scope="Public" name="6strip_winning" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="bottomless_picture" />
+        <marker scope="Public" name="catch_golbat" />
+        <marker scope="Public" name="elite_four" />
+        <marker scope="Public" name="elite_four2" />
+        <marker scope="Public" name="elite_four3" />
+        <marker scope="Public" name="elite_four4" />
         <marker scope="Public" name="fennekin_jura_01" />
         <marker scope="Public" name="fennekin_jura_02" />
         <marker scope="Public" name="fennekin_jura_11" />
@@ -639,11 +785,14 @@
         <marker scope="Public" name="fennekin_meia_02" />
         <marker scope="Public" name="fennekin_meia_11" />
         <marker scope="Public" name="first_skin">This is the first time Serena has been naked in front of anyone in public</marker>
-        <marker scope="Public" name="frontdoor_clothing_item">front door telling serena the wrist bands wouldn't count as a separate clothing item.</marker>
+        <marker scope="Public" name="frontdoor_clothing_item">someone telling serena her mega ring wouldn't count as a separate clothing item.</marker>
         <marker scope="Public" name="frontdoor_clothing_item2">continuation</marker>
-        <marker scope="Private" name="gameover_defeat">has lost, how many times has lost</marker>
-        <marker scope="Private" name="gameover_tie">Ties in a game</marker>
-        <marker scope="Private" name="gameover_victory">has won, how many times has won</marker>
+        <marker scope="Private" name="gameover_defeat">How many times she has lost, in total</marker>
+        <marker scope="Private" name="gameover_defeat_count">How many consecutive defeats there are (in a row)</marker>
+        <marker scope="Private" name="gameover_victory">How many times she has won, in total</marker>
+        <marker scope="Private" name="gameover_victory_count">How many consecutive victories there are (in a row)</marker>
+        <marker scope="Public" name="ghost_cards" />
+        <marker scope="Public" name="girl_palossand" />
         <marker scope="Public" name="gloria_see_her_naked1" />
         <marker scope="Public" name="HowItsPlayed" />
         <marker scope="Public" name="killing">appears to be part of a converstaion with Megumin</marker>
@@ -652,6 +801,10 @@
         <marker scope="Public" name="lysandre3" />
         <marker scope="Public" name="naga_defend">Serena comes to Nagatoro's rescue when Ladybug starts pressing her</marker>
         <marker scope="Public" name="nagatoro_swimsuit_query">responding to Nagatoro's comment</marker>
+        <marker scope="Public" name="naughty_scale" />
+        <marker scope="Public" name="naughty_scale2" />
+        <marker scope="Public" name="naughty_scale3" />
+        <marker scope="Public" name="naughty_scaleE" />
         <marker scope="Public" name="nice_o">marker for responding to Serena's orgasm &amp; floor cleaning</marker>
         <marker scope="Public" name="panties_first">Bottomless picture collectible marker</marker>
         <marker scope="Public" name="pokemon_day" />
@@ -741,6 +894,7 @@
         <marker scope="Public" name="serena_carmine_s1_1">First response to Carmine's Kalos people are mean target</marker>
         <marker scope="Public" name="serena_carmine_s1_2">Second response to Carmie's Kalos people are mean target</marker>
         <marker scope="Public" name="serena_carmine_s11" />
+        <marker scope="Public" name="serena_carmine_s12" />
         <marker scope="Public" name="serena_carmine_s1a">Second response to Carmine's first target alt response "eat dirt prude"</marker>
         <marker scope="Public" name="serena_carmine_s2">Second response to Carmine's first tagret</marker>
         <marker scope="Public" name="serena_carmine_s2_1">Third response to Carmine's cab response</marker>
@@ -885,7 +1039,6 @@
         <marker scope="Public" name="serena_nade_dating1" />
         <marker scope="Public" name="serena_nade_dating2" />
         <marker scope="Public" name="serena_nade_dating3" />
-        <marker scope="Public" name="serena_nade_fash2on1" />
         <marker scope="Public" name="serena_nade_fashion1" />
         <marker scope="Public" name="serena_nade_fashion2" />
         <marker scope="Public" name="serena_nade_fashion3" />
@@ -927,39 +1080,35 @@
         <marker scope="Public" name="serena_schezo_22" />
         <marker scope="Public" name="serena_schezo_31" />
         <marker scope="Public" name="serena_schezo_32" />
+        <marker scope="Public" name="serena_schezo_41" />
         <marker scope="Public" name="serena_schezo_lumiose11">First response to Scheco's "tell me about a city" target</marker>
         <marker scope="Public" name="serena_schezo_lumiose12" />
         <marker scope="Public" name="serena_schezo_lumiose2f" />
+        <marker scope="Public" name="serena_schezo_magic1" />
         <marker scope="Public" name="serena_suctioncup_b" />
         <marker scope="Public" name="serena_yuzuki_first_skin" />
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
-        <marker scope="Public" name="sernea_carmine_s12" />
-        <marker scope="Public" name="sernea_nade_finale1" />
+        <marker scope="Public" name="serve_others" />
+        <marker scope="Public" name="serve_others2" />
         <marker scope="Public" name="showcase_explination" />
+        <marker scope="Public" name="strip_losing" />
+        <marker scope="Public" name="strip_winning" />
         <marker scope="Public" name="toenail_compare">Serena asks what color toenail polish the girls like</marker>
         <marker scope="Public" name="vagina_compare">Serena asks the player with a room full of crotch exposed girls, who has the best vagina</marker>
-        <marker scope="Public" name="why_misty">Start of a potential converstaion with Misty</marker>
     </markers>
     <pendingLines>
         <line>POSES:</line>
-        <line>  pose for holding pokeball</line>
-        <line>  pose for holding a card?</line>
         <line>  ohwell - sticking out tongue</line>
-        <line>  yay pose off center?</line>
         <line>  default pose for default costume and default pose for feenekin costume at odds?</line>
         <line>OUTFITS:</line>
-        <line>none= fennekin costume</line>
-        <line>none= cut hair outfit</line>
-        <line>none=pokemon journeys outfit</line>
-        <line>april fools= team rocket</line>
-        <line>sleepover= pajamas</line>
-        <line>valentines= pokemon masters black dress</line>
-        <line>easter= bunny costume</line>
-        <line>summer= swimsuit</line>
-        <line>halloween= pikachu costume</line>
-        <line>xmas= sexy santa</line>
-        <line>FEEDBACK:</line>
-        <line>  more about her</line>
+        <line>  none= fennekin costume</line>
+        <line>  april fools= team flare</line>
+        <line>  sleepover= pajamas</line>
+        <line>  valentines= pokemon masters black dress</line>
+        <line>  easter= bunny costume</line>
+        <line>  summer= swimsuit</line>
+        <line>  halloween= pikachu costume</line>
+        <line>  xmas= christmas dress</line>
         <line>RIBBON:</line>
         <line>  1) something behind hair</line>
         <line>  2) right hat shadow</line>
@@ -972,7 +1121,7 @@
         <line>  22-28) shirt collar</line>
         <line>  35) dress hiding leaf</line>
         <line>  36) dress buttons</line>
-        <line>  42-53) hat</line>
+        <line>  40-74, 88) hat</line>
         <line>  55-65) rest of hat</line>
         <line>  75-87) purse</line>
         <line>  994) triangle shoulder shadow</line>

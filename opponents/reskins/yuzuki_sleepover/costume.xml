@@ -14,7 +14,7 @@
         <tag>sleepover_skin</tag>
         <tag>sleepwear</tag>
         <tag remove="true">sweater</tag>
-        <tag from="0" to="5">thong</tag>
+        <tag from="5" to="5">thong</tag>
     </tags>
     <layers>4</layers>
     <folder>opponents/reskins/yuzuki_sleepover/</folder>
@@ -106,6 +106,166 @@
                 <keyframe time="2.62" alpha="100" />
             </directive>
         </pose>
+        <pose id="3-aura">
+            <sprite id="embarrassed" src="reskins/yuzuki_sleepover/3-calm.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" delay="0.5" z="1" src="yuzuki/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="2.12" src="yuzuki/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="2.25" src="yuzuki/extra/6-zz_aura_camera.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.38" alpha="100" />
+                <keyframe time="3.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1.5" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.88" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="3" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.5" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.88" src="yuzuki/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="2.12" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.26" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="1.51" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="3.13" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-aura">
+            <sprite id="embarrassed" src="reskins/yuzuki_sleepover/3-calm.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" delay="0.5" z="1" src="yuzuki/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="2.12" src="yuzuki/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="2.25" src="yuzuki/extra/6-zz_aura_camera.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.38" alpha="100" />
+                <keyframe time="3.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1.5" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.88" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="3" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" delay="0.5" ease="linear" interpolation="none">
+                <keyframe time="0" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.5" src="yuzuki/../meia/auracamera.png" />
+                <keyframe time="1.88" src="yuzuki/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="2.12" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.26" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="1.51" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="3.13" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="2.25" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
     </poses>
 
+    <pose-sets>
+        <set id="aroused">
+            <pose stage="0-8" img="#-aroused.png" />
+        </set>
+        <set id="calm">
+            <pose stage="0-8" img="#-calm.png" />
+        </set>
+        <set id="casual">
+            <pose stage="0-8" img="#-casual.png" />
+        </set>
+        <set id="dread">
+            <pose stage="0-8" img="#-dread.png" />
+        </set>
+        <set id="embarrassed">
+            <pose stage="0-8" img="#-embarrassed.png" />
+        </set>
+        <set id="enraged">
+            <pose stage="0-8" img="#-enraged.png" />
+        </set>
+        <set id="fidget">
+            <pose stage="0-8" img="#-fidget.png" />
+        </set>
+        <set id="flabbergasted">
+            <pose stage="0-8" img="#-flabbergasted.png" />
+        </set>
+        <set id="flustered">
+            <pose stage="0-8" img="#-flustered.png" />
+        </set>
+        <set id="glad">
+            <pose stage="0-8" img="#-glad.png" />
+        </set>
+        <set id="happy">
+            <pose stage="0-8" img="#-happy.png" />
+        </set>
+        <set id="horny">
+            <pose stage="0-8" img="#-horny.png" />
+        </set>
+        <set id="interested">
+            <pose stage="0-8" img="#-interested.png" />
+        </set>
+        <set id="lewd">
+            <pose stage="0-8" img="#-lewd.png" />
+        </set>
+        <set id="mast_1">
+            <pose stage="7" img="#-mast_1.png" />
+        </set>
+        <set id="mast_2">
+            <pose stage="7" img="#-mast_2.png" />
+        </set>
+        <set id="mast_finished">
+            <pose stage="8" img="#-mast_finished.png" />
+        </set>
+        <set id="mast_heavy_1">
+            <pose stage="7" img="#-mast_heavy_1.png" />
+        </set>
+        <set id="mast_heavy_2">
+            <pose stage="7" img="#-mast_heavy_2.png" />
+        </set>
+        <set id="mast_orgasm">
+            <pose stage="7" img="#-mast_orgasm.png" />
+        </set>
+        <set id="butt">
+            <pose stage="4-8" img="#-butt.png" />
+        </set>
+        <set id="shy">
+            <pose stage="0-8" img="#-shy.png" />
+        </set>
+        <set id="supershy">
+            <pose stage="0-8" img="#-supershy.png" />
+        </set>
+        <set id="thinking">
+            <pose stage="0-8" img="#-thinking.png" />
+        </set>
+        <set id="trance">
+            <pose stage="0-8" img="#-trance.png" />
+        </set>
+        <set id="upbeat">
+            <pose stage="0-8" img="#-upbeat.png" />
+        </set>
+        <set id="vacant">
+            <pose stage="0-8" img="#-vacant.png" />
+        </set>
+        <set id="wave">
+            <pose stage="0-8" img="#-wave.png" />
+        </set>
+    </pose-sets>
 </costume>

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>saria_kukui_kokiri</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag remove="true">cape</tag>
+        <tag from="0" to="6">choker</tag>
+        <tag from="0" to="1">hat</tag>
+        <tag from="0" to="2">jewelry</tag>
+        <tag remove="true">no_bra</tag>
+        <tag>summer_skin</tag>
+        <tag remove="true">sweater</tag>
+        <tag from="0" to="7">swimwear</tag>
+        <tag>trimmed</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/saria_kukui_kokiri/</folder>
+    <wardrobe>
+        <clothing name="bottoms" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="top" generic="bra" position="upper" type="important" />
+        <clothing name="sandals" generic="shoes" position="feet" type="extra" plural="true" />
+        <clothing name="sarong" generic="skirt" position="lower" type="major" />
+        <clothing name="wraps" generic="gloves" position="hands" type="extra" plural="true" />
+        <clothing name="bracelets" generic="bag" position="other" type="extra" />
+        <clothing name="hat" generic="hat" position="head" type="extra" />
+        <clothing name="pack" generic="weapon" position="held" type="extra" />
+    </wardrobe>
+
+    <poses>
+        <pose id="bruh_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-bruh.png" x="0" y="0" />
+        </pose>
+        <pose id="calm_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-calm.png" x="0" y="0" />
+        </pose>
+        <pose id="cmon_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-comeon.png" x="0" y="0" />
+        </pose>
+        <pose id="consider_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-consider.png" x="0" y="0" />
+        </pose>
+        <pose id="fiiine_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-fiiine.png" x="0" y="0" />
+        </pose>
+        <pose id="gentle_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-gentle.png" x="0" y="0" />
+        </pose>
+        <pose id="gulp_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-gulp.png" x="0" y="0" />
+        </pose>
+        <pose id="hmph_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-hmph.png" x="0" y="0" />
+        </pose>
+        <pose id="imp_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-imp.png" x="0" y="0" />
+        </pose>
+        <pose id="joy_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-joy.png" x="0" y="0" />
+        </pose>
+        <pose id="lolo_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-lol.png" x="0" y="0" />
+        </pose>
+        <pose id="mad_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-mad.png" x="0" y="0" />
+        </pose>
+        <pose id="pity_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-pity.png" x="0" y="0" />
+        </pose>
+        <pose id="shy_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-shy.png" x="0" y="0" />
+        </pose>
+        <pose id="sus_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-sus.png" x="0" y="0" />
+        </pose>
+        <pose id="think_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-think.png" x="0" y="0" />
+        </pose>
+        <pose id="unf_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-unf.png" x="0" y="0" />
+        </pose>
+        <pose id="wow_cebe">
+            <sprite id="cebeglow" src="saria/cebeglow.png" x="205" y="-240" scalex="0.1" scaley="0.1" rotation="20" />
+            <sprite id="calm" src="reskins/saria_kukui_kokiri/#-wow.png" x="9" y="0" />
+        </pose>
+        <pose id="0-aura">
+            <sprite id="embarrassed" src="reskins/saria_kukui_kokiri/0-calm.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="saria/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="saria/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="saria/0-auracam.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="embarrassed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="saria/../meia/auracamera.png" />
+                <keyframe time="1" src="saria/../meia/auracamera.png" />
+                <keyframe time="1.38" src="saria/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>
