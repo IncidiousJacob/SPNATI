@@ -20,7 +20,7 @@ $galleryEndings = $('#gallery-endings-block').children();
 $galleryPrevButton = $('#gallery-prev-page-button');
 $galleryNextButton = $('#gallery-next-page-button');
 $galleryStartButton = $('#gallery-start-ending-button');
-$selectedEndingPreview = $('#selected-ending-previev');
+$selectedEndingPreview = $('#selected-ending-preview');
 $selectedEndingLabels = [$('#selected-ending-title'), $('#selected-ending-character'), $('#selected-ending-gender')];
 $selectedEndingHint = [$('#selected-ending-hint-container'), $('#selected-ending-hint')];
 $selectedEndingDesc = [$('#selected-ending-description-container'), $('#selected-ending-description')];
@@ -103,8 +103,6 @@ function unescapeHTML(in_text) {
 
 function Collectible(xmlElem, player) {
     this.id = xmlElem.attr('id');
-    this.image = xmlElem.attr('img');
-    this.thumbnail = xmlElem.attr('thumbnail') || this.image;
     this.status = xmlElem.attr('status');
     this.title = unescapeHTML(xmlElem.children('title').text());
     this.subtitle = unescapeHTML(xmlElem.children('subtitle').text());
@@ -113,8 +111,39 @@ function Collectible(xmlElem, player) {
     this.detailsHidden = xmlElem.children('hide-details').text() === 'true';
     this.hidden = xmlElem.children('hidden').text() === 'true';
     this.counter = parseInt(xmlElem.children('counter').text(), 10) || undefined;
-    
     if (this.counter <= 0) this.counter = undefined;
+    
+    // Find <image> elements
+    var subImages = xmlElem.children('picture').map(function() {
+        // works for either <img src="filename.png" /> or <img>filename.png</img>
+        var $img = $(this);
+        return $img.attr('src') ? $img.attr('src').trim() : $img.text().trim();
+    }).get();
+    
+    // If none are found, use the old 'img' attribute
+    if (subImages.length > 0){
+        this.images = subImages;
+    } else {
+        var imgAttr = xmlElem.attr('img') || '';
+        // If it has a comma, treat it as multiple images
+        this.images = imgAttr
+            .split(',')
+        .map(function(s){ return s.trim(); })
+        .filter(function(s){ return s.length; });
+    }
+    
+    // Ensure there is at least one image slot
+    if (this.images.length === 0) {
+        this.images = [''];
+    }
+
+    // The "primary" image is just the first one
+    this.image     = this.images[0];
+    // thumbnail fallback to the primary image
+    this.thumbnail = xmlElem.attr('thumbnail') || this.image;
+    
+    // Track which image  we're showing
+    this._galleryIndex = 0;    
     
     if (player) {
         this.source = player.metaLabel;
@@ -219,20 +248,65 @@ Collectible.prototype.display = function () {
     $collectibleTextPane.show();
     
     if (this.isUnlocked()) {
-        $collectibleText.html(this.text);
-        $collectibleTextContainer.show();
-        
-        if (this.image) {
-            $collectibleImage.attr('src', this.image);
+      $collectibleText.html(this.text);
+      $collectibleTextContainer.show();
+        if (this.images.length) {
+            this._galleryIndex = 0;
+            renderCollectibleGallery(this);
             $collectibleImagePane.show();
-        } else {
+        }
+        else {
             $collectibleImagePane.hide();
         }
-    } else {
+    }
+    else {
         $collectibleTextContainer.hide();
         $collectibleImagePane.hide();
     }
 };
+
+var _currentCollectible = null;
+
+function renderCollectibleGallery(coll) {
+    _currentCollectible = coll;
+    const images = coll.images;
+    const idx    = coll._galleryIndex;
+    const imgEl  = $('#collectible-image'); // Image Element
+    const prev   = $('#collectible-img-prev'); // Previous button
+    const next   = $('#collectible-img-next'); // Next button
+    const ctr    = $('#collectible-img-counter'); // Counter
+    const header = $('.collectible-img-header'); // Prev/Counter/Next
+
+    // Always set the displayed image
+    imgEl.attr('src', images[idx] || 'img/blank.png');
+
+    // only show nav buttons if 2+ images
+    if (images.length > 1) {
+        header.show();
+        prev.prop('disabled', idx === 0);
+        next.prop('disabled', idx === images.length - 1);
+        ctr.show().text((idx + 1) + ' / ' + images.length);
+    } else {
+    header.hide();
+    }
+}
+
+function collectiblePrevImage() {
+    var c = _currentCollectible;
+    if (c && c._galleryIndex > 0) {
+        c._galleryIndex--;
+        renderCollectibleGallery(c);
+    }
+}
+
+function collectibleNextImage() {
+    var c = _currentCollectible;
+    if (c && c._galleryIndex < c.images.length - 1) {
+        c._galleryIndex++;
+        renderCollectibleGallery(c);
+    }
+}
+
 
 Collectible.prototype.listElement = function () {
     if (this.status && !includedOpponentStatuses[this.status]) {
@@ -531,26 +605,25 @@ function updateGalleryScreen () {
     loadThumbnails();
 }
 
-function loadEndingThunbnail(element, ending){
+function loadEndingThumbnail(element, ending){
     element.removeClass('empty-thumbnail');
+    element.css('--image', `url('../${ending.image}')`);
     if (ending.unlocked()) {
-        element.removeClass('unlocked-thumbnail');
-        element.css('background-image','url(\''+ending.image+'\')');
+        element.removeClass('locked-thumbnail');
     } else {
-        element.css('background-image', '');
-        element.addClass('unlocked-thumbnail');
+        element.addClass('locked-thumbnail');
     }
 }
 
 function loadThumbnails(){
     var i=0;
     for(; i<epp && epp*galleryPage+i<galleryEndings.length; i++){
-        loadEndingThunbnail($galleryEndings.eq(i), galleryEndings[epp*galleryPage+i]);
+        loadEndingThumbnail($galleryEndings.eq(i), galleryEndings[epp*galleryPage+i]);
     }
     for( ; i<epp; i++){
-        $galleryEndings.eq(i).removeClass('unlocked-thumbnail');
+        $galleryEndings.eq(i).removeClass('locked-thumbnail');
         $galleryEndings.eq(i).addClass('empty-thumbnail');
-        $galleryEndings.eq(i).css('background-image', 'none');
+        $galleryEndings.eq(i).css('--image', 'none');
     }
 }
 
@@ -628,7 +701,7 @@ function selectEnding(i) {
     
     $galleryEndings.css('opacity', '');
     $galleryEndings.eq(i).css('opacity', 1);
-    loadEndingThunbnail($selectedEndingPreview, ending);
+    loadEndingThumbnail($selectedEndingPreview, ending);
     $selectedEndingLabels[1].html(ending.player.metaLabel);
     $selectedEndingLabels[2].html(ending.gender);
     switch(ending.gender){

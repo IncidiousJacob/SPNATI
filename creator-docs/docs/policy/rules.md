@@ -14,28 +14,26 @@ If you are uncertain about any of these rules, please reach out to a SPNatI game
 
 *All characters in the game must be adults.* This means:
 
+ 1. All characters must appear to be a legal adult (18 or older physically and mentally) to a reasonable, uninterested observer who is not aware of their source material.
 
-A) All characters must appear to be a legal adult (18 or older physically and mentally) to a reasonable, uninterested observer who is not aware of their source material.
+ 2. If the character is not 18 or older in their canon source material, they can be aged up from a minimum general age of being a teenager in source. The character’s art and dialogue *must* be altered to show that they have matured since appearing in their source material. The more a character needs to be aged up, the greater the changes required. 
 
-B) If the character is not 18 or older in their canon source material, they can be aged up from a minimum general age of being a teenager in source. The character’s art and dialogue *must* be altered to show that they have matured since appearing in their source material. The more a character needs to be aged up, the greater the changes required. 
+ 3. As general practice, the following guidelines are always in effect;  
+   • Characters under the age of 12 will not be considered,  
+   • Characters that are under the age of 14-15 years can expect to face heavier scrutiny,  
+   • Scrutiny in this context refers to the level of critical examination of a character with regards to their physical appearance, general personality, and feeling of maturity with respect to adult topics and situations.  
 
-C) As general practice, the following guidelines are always in effect;
+    **Moderator discretion takes precedence with regards to any development decision for character development, including but not limited to apparent age of a character.**
 
-- Characters under the age of 12 will not be considered,
-- Characters that are under the age of 14-15 years can expect to face heavier scrutiny,
-- Scrutiny in this context refers to the level of critical examination of a character with regards to their physical appearance, general personality, and feeling of maturity with respect to adult topics and situations,
+ 4. Characters that are notably immature in regards to appearance, personality, and maturity may be excluded from entry into the game. In particular for instances of the “1000 year old dragon child” trope, rejection from testing is likely. Lolicon/Shotacon and attempts to disguise lolicon/shotacon or adjacent fetishes are banned. 
 
-**Moderator discretion takes precedence with regards to any development decision for character development, including but not limited to apparent age of a character.**
+ 5. In the case of “born as an adult” characters, such as a robotic character or other artificial life form that has the appearance, personality, and maturity of a fully grown adult, exception can be made for strict chronological age.
 
-D) Characters that are notably immature in regards to appearance, personality, and maturity may be excluded from entry into the game. In particular for instances of the “1000 year old dragon child” trope, rejection from testing is likely. Lolicon/Shotacon and attempts to disguise lolicon/shotacon or adjacent fetishes are banned. 
+ 6. Physical and mental age of the character are more important than chronological age in the case of sections D and E.
 
-E) In the case of “born as an adult” characters, such as a robotic character or other artificial life form that has the appearance, personality, and maturity of a fully grown adult, exception can be made for strict chronological age.
+ 7. Characters that make use of “fanon” (fan-canon) to tweak a character to suit the rules of the game may do so as long as they meet the basic requirements outlined elsewhere – they must still be considered physically and mentally above the minimum age threshold in their original (non-fanon) source.
 
-F) Physical and mental age of the character are more important than chronological age in the case of sections D and E.
-
-G) Characters that make use of “fanon” (fan-canon) to tweak a character to suit the rules of the game may do so as long as they meet the basic requirements outlined elsewhere – they must still be considered physically and mentally above the minimum age threshold in their original (non-fanon) source.
-
-H) As previously mentioned, all of the above is subject to mod and community discretion, with the moderation team reserving the right to reject content if it suspects that it either does not meet the listed criteria or is an attempt to circumvent it, or that the primary appeal is meant to be its underage nature.
+ 8. As previously mentioned, all of the above is subject to mod and community discretion, with the moderation team reserving the right to reject content if it suspects that it either does not meet the listed criteria or is an attempt to circumvent it, or that the primary appeal is meant to be its underage nature.
 
 *If any moderators believe a character does not fit this criteria, they will not be allowed to join the Testing Roster or online game until approved alterations are made.*
 
@@ -49,11 +47,22 @@ This rule extends to "self-inserts" of the creator.
 
 ## Characters Must Have Human Anatomy
 
-Characters must possess humanoid sexual organs, and have basic human anatomy.
+ 1. All characters must, depending on gender, have a reasonable facsimile of the expected anatomy, but are not required to have a human variant of that anatomy. For male characters, this is a penis and testicles, and for female characters, something approximating a vagina/vulva.  
 
-"Monstergirls" and similar sorts of characters are allowed, but they should still look recognizably humanoid. For instance, a lamia character who limits most of her snake attributes to below the crotch would be accepted.
+    Examples: A male Krogan Character from Mass Effect could have a "turtle" type penis and four testicles. A werewolf male character could have two testicles and a non-human phallus. A female harpy character could have a cloaca, provided it looks reasonably vaginal.  
 
-Note that a character's anatomy should match the character's sex and gender. This is partially a game code limitation.
+    Mods have final say, and for truly unusual or atypical anatomy, it is **strongly** recommend to clear your ideas with the moderators first. 
+
+ 2. Characters in SPNatI must have a humanoid torso, and must be able to display their genitals and the entire face at the same time.
+
+ 3. Companion characters may prove an exception to this rule, and do not, broadly, need to meet requirements 1 and 2. However, they should be considered in the context of SPNatI, and must follow these additional rules for forfeits:  
+
+    **3a.** Beastmen, centaurs, and other near-humanoid creatures are allowed provided there is established consent between the primary character and the companion, or the companion is a non-real facsimile or construct.  
+    **3b.** Quadrupeds or other beings with no discernible humanoid anatomy are not permissible during forfeits, regardless of sentience. E.g., no Scooby-Doo.  
+    **3c.** Tools such as tentacles, robotic parts, and so on, are explicitly allowed.  
+    **3d.** Unusual monsters such as dragons, spiders, slimes, etc. are allowed provided they demonstrate sentience or are constructs.  
+
+Companion characters who don't fully meet requirements 1 & 2 are subject to mod discretion, so it is recommended to check in with them before doing any work.
 
 ## No Non-Consensual Activities
 

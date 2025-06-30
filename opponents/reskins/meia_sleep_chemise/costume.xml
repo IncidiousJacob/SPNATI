@@ -2339,7 +2339,7 @@
         </pose>
         <pose id="7-buttspreadsilent">
             <sprite id="butt2" src="reskins/meia_sleep_chemise/7-buttspread.png" x="0" y="0" />
-            <sprite id="sidemouthsilent" src="reskins/meia_sleep_chemise/sidemouthsilentsmile.png" x="-37" y="299" scalex="-1" rotation="-5" />
+            <sprite id="sidemouthsilent" src="reskins/meia_sleep_chemise/sidemouthsilentsmile.png" x="-46" y="294" scalex="-1" rotation="-5" />
         </pose>
         <pose id="7-earnest">
             <sprite id="thinking" src="reskins/meia_sleep_chemise/7-thinking.png" x="0" y="0" />
@@ -3051,6 +3051,16 @@
         <pose id="0-pstrip">
             <sprite id="silent" src="reskins/meia_sleep_chemise/0-strip.png" x="0" y="0" alpha="100" />
             <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyorounimpressedm.png" x="-298" y="152" alpha="100" rotation="0" />
+            <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
+            <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
+            <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="40" y="87" pivotx="48%" pivoty="52%" rotation="-8" />
+            <sprite id="pyorohand(copy)" parent="pyorom" src="reskins/meia_sleep_chemise/pyorohand.png" x="264" y="82" scalex="-1" scaley="1" rotation="-351" />
+            <sprite id="pyoroleg" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="208" y="205" scalex="-1" rotation="5" />
+            <sprite id="pyoroleg(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroleg.png" x="114" y="205" scalex="1" rotation="-4" />
+        </pose>
+        <pose id="1-pstripped+">
+            <sprite id="silent" src="reskins/meia_sleep_chemise/1-stripped+.png" x="0" y="0" alpha="100" />
+            <sprite id="pyorom" z="2" src="reskins/meia_sleep_chemise/pyoro.png" x="-298" y="152" alpha="100" rotation="0" />
             <sprite id="pyoroarm" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="84" y="119" scalex="1" />
             <sprite id="pyoroarm(copy)" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyoroarm.png" x="221" y="116" scalex="-1" />
             <sprite id="pyorohand" parent="pyorom" z="-1" src="reskins/meia_sleep_chemise/pyorohand.png" x="40" y="87" pivotx="48%" pivoty="52%" rotation="-8" />

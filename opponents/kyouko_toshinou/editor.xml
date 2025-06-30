@@ -18,9 +18,6 @@
         <case name="Sexy Poses" id="108" priority="FYI" min="3" max="3">
             <description>Kyouko sometimes pulls "sexy" poses throughout the game to distract the others. Well, sexy for her, maybe.</description>
         </case>
-        <case name="The tomato's birthday" id="142" priority="FYI" min="0" max="0">
-            <description>Kyouko's birthday is March 28</description>
-        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -66,6 +63,7 @@
         <response id="1002" opponent="zeke_pandoria" opponentId="575" />
         <response id="1046" opponent="zeke_pandoria" opponentId="864" />
         <response id="1196" opponent="kyoko_kirigiri" opponentId="3082" />
+        <response id="1310" opponent="kyoko_kirigiri" opponentId="3173" />
     </responses>
     <notes>
         <note id="5">The marker is available so other characters can see which uniform she's wearing just in case they absolutely need to know for whatever reason. FYI, it's always unset when she loses the red dress.
@@ -75,7 +73,6 @@ That said, do not use this specifically for an interaction. There's a reason I d
 
 Also, this is global because an opponent masturbating line somehow snuck in between this line and the one that was supposed to precede it.</note>
         <note id="57">kinda wish 2D and 3D art had separate tags cuz this is kinda hard when I can't assume the target draws a lot</note>
-        <note id="63">Kyouko will try to fix her hair literally the next case after "Finished (Self)" plays. This and the game ending should be the only things that interrupt that in order to prevent inconsistency.</note>
         <note id="83">Kyoko says she keeps her ribbon on (and sets the same marker) in a few other cases, but this one is the most reliable.
 Yes, there are two markers for this. Feel free to target whichever you like.</note>
         <note id="158">In case it doesn't come through, she's trying to mislead him</note>
@@ -151,7 +148,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="35" label="Close second" folder="Placement" sort="0" />
         <label id="67" label="" folder="Put the jacket back on" sort="0" />
         <label id="66" label="" folder="Put the jacket back on" sort="0" />
-        <label id="65" label="Give ~player~ the ribbon *and* say the line, god dammit" folder="" sort="0" />
+        <label id="65" label="" folder="Collectible&gt;Ribbon" sort="0" />
         <label id="70" label="Reset long sleeves" folder="" sort="0" />
         <label id="71" label="All players 1HP" folder="" sort="0" />
         <label id="76" label="Triple Kyo(u)ko - Kyoko majority" folder="" sort="0" />
@@ -216,10 +213,10 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="141" label="" folder="Exposition" sort="0" />
         <label id="142" label="Kyouko's birthday" folder="Seasonal" sort="2" />
         <label id="143" label="" folder="Exposition" sort="0" />
-        <label id="148" label="" folder="Player exposed" sort="2" />
-        <label id="149" label="" folder="Player exposed" sort="2" />
-        <label id="150" label="" folder="Player exposed" sort="3" />
-        <label id="151" label="" folder="Player exposed" sort="4" />
+        <label id="148" label="" folder="Someone's exposed" sort="2" />
+        <label id="149" label="" folder="Someone's exposed" sort="2" />
+        <label id="150" label="" folder="Someone's exposed" sort="3" />
+        <label id="151" label="" folder="Someone's exposed" sort="4" />
         <label id="156" label="" folder="Targets&gt;Kyoko Kirigiri" sort="12" />
         <label id="157" label="" folder="Targets&gt;Kyoko Kirigiri" sort="6" />
         <label id="114" label="Stripping extra last" folder="Targets&gt;Nagatoro" sort="14" />
@@ -312,7 +309,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="235" label="Wearing only ribbon" folder="" sort="0" />
         <label id="236" label="Played a few games" folder="Kyouko's ribbon" sort="7" />
         <label id="237" label="To ogle, hm?" color="5" folder="Targets&gt;Nagatoro" sort="16" />
-        <label id="239" label="Wearing only ribbon" folder="Player exposed" sort="0" />
+        <label id="239" label="Wearing only ribbon" folder="Someone's exposed" sort="0" />
         <label id="240" label="0: No one" color="5" folder="Targets&gt;Bobobo" sort="3" />
         <label id="241" label="1: Lanes between?" color="5" folder="Targets&gt;Aqua KH" sort="3" />
         <label id="242" label="Something different" color="5" folder="Targets&gt;Aqua KH" sort="3" />
@@ -364,7 +361,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="289" label="Panties" folder="Costume&gt;Spirit Animal" sort="0" />
         <label id="290" label="Hood" folder="Costume&gt;Spirit Animal" sort="4" />
         <label id="291" label="Hood" folder="Costume&gt;Spirit Animal" sort="16" />
-        <label id="292" label="If she didn't take her ribbon off" folder="" sort="0" />
+        <label id="292" label="If she didn't take her ribbon off" folder="Collectible&gt;Ribbon" sort="0" />
         <label id="293" label="Socks" folder="Spirit Animal" sort="0" />
         <label id="294" label="Top" folder="Costume&gt;Spirit Animal" sort="0" />
         <label id="295" label="Bottom" folder="Costume&gt;Spirit Animal" sort="0" />
@@ -430,19 +427,6 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="360" label="Fallback" folder="" sort="0" />
         <label id="361" label="Fallback" folder="" sort="0" />
         <label id="362" label="Oh no" folder="" sort="0" />
-        <label id="363" label="" folder="Basics" sort="13" />
-        <label id="364" label="" folder="Basics" sort="9" />
-        <label id="365" label="" folder="Basics" sort="12" />
-        <label id="366" label="" folder="Basics" sort="10" />
-        <label id="367" label="" folder="Basics" sort="11" />
-        <label id="12" label="" folder="Basics" sort="5" />
-        <label id="139" label="" folder="Basics" sort="6" />
-        <label id="368" label="" folder="Basics" sort="7" />
-        <label id="369" label="" folder="Basics" sort="3" />
-        <label id="370" label="" folder="Basics" sort="0" />
-        <label id="371" label="" folder="Basics" sort="2" />
-        <label id="372" label="" folder="Basics" sort="8" />
-        <label id="374" label="" folder="Basics" sort="4" />
         <label id="375" label="Removing hat, indecent" folder="Minor/Accessory late" sort="6" />
         <label id="376" label="Removing hat, naked" folder="Minor/Accessory late" sort="3" />
         <label id="377" label="" color="5" folder="Targets&gt;Miko" sort="0" />
@@ -467,7 +451,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="400" label="Birthday (first naked)" folder="Seasonal" sort="3" />
         <label id="401" label="Birthday (all naked)" folder="Seasonal" sort="16" />
         <label id="402" label="get it cuz she's a tomato and tomatoes go squish" folder="" sort="0" />
-        <label id="405" label="April Fools'" folder="" sort="0" />
+        <label id="405" label="April Fools'" folder="Collectible&gt;Ribbon" sort="0" />
         <label id="406" label="" folder="Tags" sort="0" />
         <label id="407" label="" folder="Tags" sort="0" />
         <label id="408" label="" folder="filter" sort="0" />
@@ -503,7 +487,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="444" label="" folder="Sponsors&gt;Spaceman&gt;Filters" sort="16" />
         <label id="445" label="" folder="Tags" sort="0" />
         <label id="446" label="" folder="Backgrounds" sort="0" />
-        <label id="447" label="" folder="Backgrounds" sort="0" />
+        <label id="447" label="" folder="Backgrounds" sort="2" />
         <label id="448" label="" folder="Backgrounds" sort="0" />
         <label id="449" label="" folder="Sponsors&gt;Spaceman&gt;Filters" sort="18" />
         <label id="450" label="" folder="Stripping gimmicks" sort="0" />
@@ -802,7 +786,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="745" label="" folder="Costume&gt;Magenta Sweat" sort="5" />
         <label id="761" label="Birthday" folder="" sort="2" />
         <label id="762" label="" folder="Costume&gt;Club Uniform" sort="8" />
-        <label id="763" label="Panties" folder="Costume&gt;Magenta Sweat" sort="14" />
+        <label id="763" label="Panties" folder="Costume" sort="14" />
         <label id="764" label="Bra" folder="Costume&gt;Magenta Sweat" sort="20" />
         <label id="765" label="Target removed pantyhose with underwear under" folder="Sponsors&gt;Remillia&gt;Imagination" sort="7" />
         <label id="766" label="Indicate pantyhose wearer" folder="Sponsors&gt;Remillia&gt;Imagination" sort="8" />
@@ -838,7 +822,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="798" label="" folder="Targets&gt;Mari Setogaya" sort="31" />
         <label id="799" label="" folder="Targets&gt;Mari Setogaya" sort="35" />
         <label id="800" label="" folder="Targets&gt;Mari Setogaya" sort="36" />
-        <label id="801" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="801" label="" folder="Targets&gt;Mari Setogaya" sort="2" />
         <label id="802" label="" folder="Targets&gt;Mari Setogaya" sort="8" />
         <label id="803" label="" folder="Targets&gt;Mari Setogaya" sort="14" />
         <label id="804" label="" folder="Targets&gt;Mari Setogaya" sort="24" />
@@ -1031,11 +1015,11 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1002" label="" folder="Targets&gt;Zeke+Pandy" sort="0" />
         <label id="1003" label="" color="5" folder="Targets&gt;Kyoko Kirigiri" sort="43" />
         <label id="1004" label="" color="5" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
-        <label id="1005" label="Flip-flops - water" folder="Costume&gt;Watercolor Dapples" sort="9" />
-        <label id="1006" label="Flip-flops - sand/grass" folder="Costume&gt;Watercolor Dapples" sort="10" />
-        <label id="1007" label="Flip-flops" folder="Costume&gt;Watercolor Dapples" sort="12" />
-        <label id="1008" label="Flip-flops" folder="Costume&gt;Watercolor Dapples" sort="8" />
-        <label id="1009" label="" folder="Costume&gt;Watercolor Dapples" sort="3" />
+        <label id="1005" label="Flip-flops - water" folder="Costume" sort="9" />
+        <label id="1006" label="Flip-flops - sand/grass" folder="Costume" sort="10" />
+        <label id="1007" label="Flip-flops - hot" folder="Costume" sort="12" />
+        <label id="1008" label="Flip-flops" folder="Costume" sort="8" />
+        <label id="1009" label="Summer alts" folder="Costume" sort="3" />
         <label id="1010" label="" folder="Costume&gt;Watercolor Dapples" sort="0" />
         <label id="1011" label="Bikini bottom" folder="Costume&gt;Watercolor Dapples" sort="7" />
         <label id="1012" label="Bikini bottom (no swim)" folder="Costume&gt;Watercolor Dapples" sort="0" />
@@ -1152,7 +1136,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1124" label="Talisman" folder="Costume&gt;Kyonshi Kyouko" sort="13" />
         <label id="1125" label="Talisman" folder="Costume&gt;Kyonshi Kyouko" sort="20" />
         <label id="1126" label="Replace hat (jiangshi)" folder="" sort="0" />
-        <label id="1127" label="Jianghsi/Santa/Bunny - hat/socks/bowtie not replaced" folder="" sort="0" />
+        <label id="1127" label="Jianghsi/Santa/Bunny - hat/socks/bowtie not replaced" folder="Collectible&gt;Ribbon" sort="0" />
         <label id="1128" label="Jianghsi/Santa/Bunny - hat/socks/bowtie not replaced" folder="" sort="0" />
         <label id="1129" label="Jiangshi costume" folder="" sort="0" />
         <label id="1130" label="Kyouko's birthday (Jiangshi)" folder="Seasonal" sort="3" />
@@ -1177,21 +1161,21 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1152" label="Christmas" folder="Seasonal" sort="15" />
         <label id="1153" label="" folder="Seasonal" sort="13" />
         <label id="1154" label="" folder="Seasonal" sort="11" />
-        <label id="1155" label="" folder="Pajama party" sort="2" />
+        <label id="1155" label="Indecent" folder="Pajama party" sort="2" />
         <label id="1156" label="" folder="Pajama party" sort="10" />
         <label id="1157" label="" folder="Pajama party" sort="14" />
-        <label id="1158" label="" folder="Pajama party" sort="6" />
-        <label id="1159" label="" folder="Pajama party" sort="8" />
-        <label id="1160" label="" folder="Pajama party" sort="12" />
-        <label id="1161" label="" folder="Pajama party" sort="4" />
+        <label id="1158" label="Bottomless" folder="Pajama party" sort="6" />
+        <label id="1159" label="Topless female" folder="Pajama party" sort="8" />
+        <label id="1160" label="Nude" folder="Pajama party" sort="12" />
+        <label id="1161" label="Socks only" folder="Pajama party" sort="4" />
         <label id="1162" label="" folder="Pajama party" sort="20" />
         <label id="1163" label="" folder="Pajama party" sort="16" />
         <label id="1164" label="" folder="Pajama party" sort="18" />
         <label id="1165" label="" folder="Pajama party" sort="24" />
-        <label id="1166" label="" folder="Pajama party" sort="22" />
-        <label id="1167" label="Ribbon fallback" folder="" sort="0" />
-        <label id="1168" label="Kigurumi unlock" folder="" sort="0" />
-        <label id="1169" label="Kigurumi unlock (Human won)" folder="" sort="0" />
+        <label id="1166" label="" folder="Collectible&gt;Kigurumi" sort="22" />
+        <label id="1167" label="Fallback" folder="Collectible&gt;Ribbon" sort="0" />
+        <label id="1168" label="" folder="Collectible&gt;Kigurumi" sort="0" />
+        <label id="1169" label="Human won" folder="Collectible&gt;Kigurumi" sort="0" />
         <label id="1170" label="" folder="Costume&gt;Santa Suit" sort="0" />
         <label id="1171" label="Mittens" folder="Costume&gt;Santa Suit" sort="15" />
         <label id="1172" label="Mittens" folder="Costume&gt;Santa Suit" sort="9" />
@@ -1215,106 +1199,196 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1190" label="" folder="Costume&gt;Santa Suit" sort="8" />
         <label id="1191" label="Socks" folder="Costume&gt;Santa Suit" sort="14" />
         <label id="1192" label="Socks" folder="Costume&gt;Santa Suit" sort="19" />
-        <label id="1193" label="Kigurumi unlock" folder="" sort="0" />
+        <label id="1193" label="" folder="Collectible&gt;Kigurumi" sort="0" />
         <label id="1194" label="Ribbon unlock" folder="" sort="0" />
         <label id="1195" label="Socks on (Santa)" folder="" sort="0" />
         <label id="1196" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="15" />
         <label id="1197" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="16" />
         <label id="1198" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="17" />
         <label id="1199" label="Self-exposition" folder="Sponsors&gt;Remillia" sort="0" />
-        <label id="1201" label="Kigurumi fallback" folder="" sort="0" />
-        <label id="1202" label="Kigurumi fallback" folder="" sort="0" />
+        <label id="1201" label="Fallback" folder="Collectible&gt;Kigurumi" sort="0" />
+        <label id="1202" label="Fallback" folder="Collectible&gt;Kigurumi" sort="0" />
         <label id="1203" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
         <label id="1204" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
         <label id="1206" label="" folder="Unusual Ordering" sort="0" />
-        <label id="1207" label="" folder="Sponsors&gt;Tweetsie&gt;Sexy generics" sort="0" />
-        <label id="1208" label="" folder="Seasonal" sort="0" />
+        <label id="1207" label="" folder="Sponsors&gt;Tweetsie&gt;Sexy generics" sort="23" />
+        <label id="1208" label="" folder="Seasonal" sort="16" />
         <label id="1209" label="" folder="Seasonal" sort="0" />
         <label id="1210" label="" folder="Game state" sort="0" />
-        <label id="1212" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1212" label="" folder="Targets&gt;Mari Setogaya" sort="75" />
         <label id="1213" label="Marked one-offs" folder="" sort="0" />
         <label id="1214" label="Reset 'mistaken about bad hand' sequence" folder="" sort="0" />
-        <label id="1215" label="Very competitive hand" folder="Game state" sort="0" />
+        <label id="1215" label="Very competitive hand" folder="Game state" sort="8" />
         <label id="1216" label="Noncompetitive hand" folder="Game state" sort="0" />
         <label id="1217" label="" folder="Costume" sort="0" />
-        <label id="1218" label="Shoes" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1219" label="Socks and vest" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1220" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1221" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1222" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1223" label="Socks and vest" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1218" label="Shoes" folder="Costume&gt;Cotton-tailed Cutie" sort="18" />
+        <label id="1219" label="Socks and vest" folder="Costume&gt;Cotton-tailed Cutie" sort="19" />
+        <label id="1220" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="7" />
+        <label id="1221" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="8" />
+        <label id="1222" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="9" />
+        <label id="1223" label="Socks and vest" folder="Costume&gt;Cotton-tailed Cutie" sort="12" />
         <label id="1224" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1225" label="Cuffs and bowtie" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1226" label="Cuffs and Shirt" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1225" label="Cuffs and bowtie" folder="Costume&gt;Cotton-tailed Cutie" sort="13" />
+        <label id="1226" label="Cuffs and Shirt" folder="Costume&gt;Cotton-tailed Cutie" sort="20" />
         <label id="1227" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1228" label="Shorts" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1228" label="Shorts" folder="Costume&gt;Cotton-tailed Cutie" sort="21" />
         <label id="1229" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1230" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1231" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1232" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1233" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1234" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1232" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="10" />
+        <label id="1233" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="4" />
+        <label id="1234" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="5" />
         <label id="1235" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1236" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1237" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1238" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1239" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
         <label id="1240" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1241" label="Shorts" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1242" label="Panties" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1243" label="Bra" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1244" label="Panties" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1245" label="Bra" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1246" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1241" label="Shorts" folder="Costume&gt;Cotton-tailed Cutie" sort="14" />
+        <label id="1242" label="Panties" folder="Costume&gt;Cotton-tailed Cutie" sort="11" />
+        <label id="1243" label="Bra" folder="Costume&gt;Cotton-tailed Cutie" sort="15" />
+        <label id="1244" label="Panties" folder="Costume&gt;Cotton-tailed Cutie" sort="16" />
+        <label id="1245" label="Bra" folder="Costume&gt;Cotton-tailed Cutie" sort="17" />
+        <label id="1246" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="6" />
         <label id="1247" label="First out (bunny)" folder="" sort="0" />
         <label id="1248" label="Bowtie on (Bunny)" folder="" sort="0" />
         <label id="1250" label="Bad (late game)" folder="AI Level&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1251" label="Good" folder="AI Level&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1252" label="Bad" folder="AI Level&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1251" label="Good" folder="AI Level&gt;Cotton-tailed Cutie" sort="2" />
+        <label id="1252" label="Bad" folder="AI Level&gt;Cotton-tailed Cutie" sort="3" />
         <label id="1253" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1254" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
+        <label id="1254" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="2" />
         <label id="1255" label="Fallback" folder="" sort="0" />
         <label id="1256" label="Fallback" folder="" sort="0" />
-        <label id="1257" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="0" />
-        <label id="1259" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
+        <label id="1257" label="" folder="Costume&gt;Cotton-tailed Cutie" sort="3" />
+        <label id="1259" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="15" />
         <label id="1260" label="" folder="Kyoko Kirigiri&gt;Friendship" sort="0" />
-        <label id="1261" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="0" />
-        <label id="1262" label="Nipple pasties" folder="Revealed" sort="0" />
-        <label id="1263" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1264" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1265" label="Nipple pasties" folder="Revealed" sort="0" />
-        <label id="1266" label="Nipple pasties" folder="Revealed" sort="0" />
-        <label id="1267" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1268" label="Nipple pasties" folder="Revealed" sort="0" />
+        <label id="1261" label="" folder="Targets&gt;Kyoko Kirigiri&gt;Friendship" sort="16" />
+        <label id="1262" label="Nipple pasties" folder="Revealed" sort="9" />
+        <label id="1263" label="Full pasties" folder="Revealed" sort="4" />
+        <label id="1264" label="Full pasties" folder="Revealed" sort="7" />
+        <label id="1265" label="Nipple pasties" folder="Revealed" sort="11" />
+        <label id="1266" label="Nipple pasties" folder="Revealed" sort="12" />
+        <label id="1267" label="Full pasties" folder="Revealed" sort="8" />
+        <label id="1268" label="Nipple pasties" folder="Revealed" sort="13" />
         <label id="1269" label="Nipple pasties" folder="Revealed" sort="0" />
         <label id="1270" label="" folder="Revealed" sort="0" />
         <label id="1271" label="" folder="Targets&gt;Noire" sort="0" />
-        <label id="1272" label="" folder="Targets&gt;Noire" sort="0" />
-        <label id="1273" label="" folder="Targets&gt;Noire" sort="0" />
-        <label id="1274" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1276" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1277" label="Full pasties" folder="Revealed" sort="0" />
-        <label id="1278" label="Crotch pasty" folder="Revealed" sort="0" />
-        <label id="1279" label="Crotch pasty" folder="Revealed" sort="0" />
-        <label id="1280" label="Crotch pasty (skirt)" folder="Revealed" sort="0" />
+        <label id="1272" label="" folder="Targets&gt;Noire" sort="2" />
+        <label id="1273" label="" folder="Targets&gt;Noire" sort="3" />
+        <label id="1274" label="Full pasties" folder="Revealed" sort="3" />
+        <label id="1276" label="Full pasties" folder="Revealed" sort="5" />
+        <label id="1277" label="Full pasties" folder="Revealed" sort="6" />
+        <label id="1278" label="Crotch pasty" folder="Revealed" sort="14" />
+        <label id="1279" label="Crotch pasty" folder="Revealed" sort="15" />
+        <label id="1280" label="Crotch pasty (skirt)" folder="Revealed" sort="10" />
         <label id="1281" label="Crotch pasty" folder="Revealed" sort="0" />
-        <label id="1282" label="Crotch pasty" folder="Revealed" sort="0" />
+        <label id="1282" label="Crotch pasty" folder="Revealed" sort="16" />
         <label id="1283" label="Crotch pasty" folder="Revealed" sort="0" />
         <label id="1284" label="Crotch pasty" folder="Revealed" sort="0" />
-        <label id="1285" label="Nipple pasties" folder="Revealed" sort="0" />
-        <label id="1286" label="Crotch pasty (butts)" folder="Revealed" sort="0" />
+        <label id="1285" label="Nipple pasties" folder="Revealed" sort="2" />
+        <label id="1286" label="Crotch pasty (butts)" folder="Revealed" sort="17" />
         <label id="1287" label="Nipple pasties" folder="Revealed" sort="0" />
         <label id="1288" label="" folder="Revealed" sort="0" />
-        <label id="1289" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1290" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1291" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1289" label="" folder="Targets&gt;Mari Setogaya" sort="26" />
+        <label id="1290" label="" folder="Targets&gt;Mari Setogaya" sort="41" />
+        <label id="1291" label="" folder="Targets&gt;Mari Setogaya" sort="8" />
         <label id="1292" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1293" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1294" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1295" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1293" label="" folder="Targets&gt;Mari Setogaya" sort="42" />
+        <label id="1294" label="" folder="Targets&gt;Mari Setogaya" sort="50" />
+        <label id="1295" label="" folder="Targets&gt;Mari Setogaya" sort="58" />
         <label id="1296" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
-        <label id="1297" label="" folder="Targets&gt;Mari Setogaya" sort="0" />
+        <label id="1297" label="" folder="Targets&gt;Mari Setogaya" sort="6" />
         <label id="1298" label="" folder="Backgrounds" sort="0" />
+        <label id="1299" label="" folder="Targets&gt;Shamiko" sort="5" />
+        <label id="1300" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1258" label="" folder="Targets&gt;Saria" sort="0" />
+        <label id="1301" label="" folder="Targets&gt;Shamiko" sort="2" />
+        <label id="1302" label="" folder="Targets&gt;Shamiko" sort="4" />
+        <label id="1303" label="" folder="Targets&gt;Shamiko" sort="6" />
+        <label id="1304" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1305" label="Fallback" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1306" label="Fallback" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1307" label="" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1308" label="" folder="Collectible&gt;Masochist Cider" sort="2" />
+        <label id="1309" label="" folder="Sponsors&gt;Lokkit&gt;Hand quality" sort="0" />
+        <label id="1310" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1311" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1312" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1313" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1314" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1315" label="" folder="Player exposed" sort="0" />
+        <label id="1316" label="" folder="Someone's exposed" sort="0" />
+        <label id="1317" label="" folder="Targets&gt;Kyoko Kirigiri" sort="0" />
+        <label id="1318" label="Flip-flops - water" folder="Costume&gt;Watercolor Dapples" sort="0" />
+        <label id="1319" label="Flip-flops" folder="Costume&gt;Watercolor Dapples" sort="0" />
+        <label id="1320" label="Flip-flops" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1321" label="Flip-flops - hot" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1322" label="Flip-flops - few  layers" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1323" label="Shirt" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1324" label="Shirt" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1325" label="Strip order setup" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1326" label="Alt order setup - " folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1327" label="" folder="Backgrounds" sort="0" />
+        <label id="1328" label="" folder="Backgrounds" sort="0" />
+        <label id="1329" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1330" label="Tank top (MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1331" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1332" label="Tank top (MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1333" label="MSC (Gloria)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1334" label="Tank top (Moskii MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1335" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1336" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1337" label="Tank top (hot)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1338" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1341" label="Shorts" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1340" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1342" label="Shorts" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1343" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1344" label="Shirt" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1345" label="Tank top or shorts" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1346" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1347" label="Shorts" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1348" label="" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1349" label="" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1350" label="" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1351" label="" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1352" label="" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1353" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1354" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1355" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1356" label="Collectible image 1" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1357" label="Collectible image 2" folder="Collectible&gt;Masochist Cider" sort="0" />
+        <label id="1358" label="Good" folder="AI Level&gt;Easy Breezy" sort="0" />
+        <label id="1359" label="Good (normal)" folder="AI Level&gt;Easy Breezy" sort="0" />
+        <label id="1360" label="Good (alt)" folder="AI Level&gt;Easy Breezy" sort="0" />
+        <label id="1362" label="" folder="Someone's exposed" sort="0" />
+        <label id="1363" label="" folder="Someone's exposed" sort="0" />
+        <label id="1364" label="" folder="Someone's exposed" sort="0" />
+        <label id="1365" label="" folder="Someone's exposed" sort="0" />
+        <label id="1366" label="" folder="Someone's exposed" sort="0" />
+        <label id="1367" label="" folder="Someone's exposed" sort="0" />
+        <label id="1368" label="MSC (Moskii)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1369" label="MSC (Moskii)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1370" label="Tank top (Gloria MSC)" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1371" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1372" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1373" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1374" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1375" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1376" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1377" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1378" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1379" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1380" label="Tank top" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1381" label="Panties" folder="Costume&gt;Easy Breezy" sort="0" />
+        <label id="1382" label="" folder="Targets&gt;Moskii" sort="0" />
+        <label id="1383" label="" folder="Targets&gt;Toph" sort="0" />
+        <label id="1384" label="" folder="Targets&gt;Moskii" sort="0" />
+        <label id="1385" label="" folder="Targets&gt;Toph" sort="0" />
+        <label id="1386" label="" folder="Targets&gt;Toph" sort="0" />
+        <label id="1387" label="" folder="Targets&gt;Toph" sort="0" />
+        <label id="1388" label="" folder="Targets&gt;Toph" sort="0" />
+        <label id="1389" label="" folder="Targets&gt;Toph" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1323,9 +1397,8 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1298</nextId>
+    <nextId>1389</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
         <marker scope="Public" name="B_DarkTricks">Dark backgrounds</marker>
         <marker scope="Public" name="B_Inventory_Booth">Inventory background</marker>
@@ -1341,6 +1414,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_AuraCameraFollowUp" />
         <marker scope="Public" name="D_BadHandNotWorst" />
         <marker scope="Public" name="D_BadHandTrick">Kyouko will bluff on a good hand once per game.</marker>
+        <marker scope="Public" name="D_BeachNudeTogether" />
         <marker scope="Public" name="D_Birthday">Her birthday is March 28</marker>
         <marker scope="Public" name="D_Birthday_NoCostumes">She's the only one wearing a costume to her party?</marker>
         <marker scope="Public" name="D_Blackjack" />
@@ -1379,6 +1453,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="D_NonFutaReveal" />
         <marker scope="Public" name="D_NoPanDisappointment" />
         <marker scope="Public" name="D_NoSwimsuit" />
+        <marker scope="Public" name="D_NoSwimsuitNoProblem" />
         <marker scope="Public" name="D_NudePhoto" />
         <marker scope="Public" name="D_PenisFeel" />
         <marker scope="Public" name="D_PlayerToplessFollow" />
@@ -1436,7 +1511,6 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="F_Formal_TakeOff" />
         <marker scope="Public" name="F_MaidUniform" />
         <marker scope="Public" name="F_NoBra" />
-        <marker scope="Public" name="F_NoBra*" />
         <marker scope="Public" name="F_PubePeek" />
         <marker scope="Public" name="F_QuoteSilent">"Say the line, Bart!" "..." "Hooray!"</marker>
         <marker scope="Public" name="F_SchoolUniform_Why">Lots of horny students at the Inventory</marker>
@@ -1458,6 +1532,8 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="S_BirthdayUniform">Self Must Strip - First to get "in uniform" on her birthday</marker>
         <marker scope="Public" name="S_FullTomato">Self Stripped - Both her bra and panties—tomato themed—are visible. (Club Uniform)</marker>
         <marker scope="Public" name="S_GodivaHair">Early in first topless stage - the barely visible nipples</marker>
+        <marker scope="Public" name="S_MensSwimsuitChallenge" />
+        <marker scope="Public" name="S_MscFollowUp" />
         <marker scope="Public" name="S_NoRibbonOrSidetails">First hand on stage 7 - Kyouko took away her ribbon and sidetails at the same time, making a pretty jarring change of appearance. (Club Uniform)</marker>
         <marker scope="Public" name="S_RibbonOff">Self Stripping 6 - Taking the ribbon off (Club Uniform)</marker>
         <marker scope="Public" name="S_RibbonStays">Self Stripping - Kyouko plans to keep her ribbon.</marker>
@@ -1493,6 +1569,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Elphaba_Strip0Silliness">Self Must Strip 0</marker>
         <marker scope="Public" name="T_Elphaba_TwinNamesHelpful" />
         <marker scope="Public" name="T_Elphaba_TwinNamesUnhelpful" />
+        <marker scope="Public" name="T_Gloria_MscIdea" />
         <marker scope="Public" name="T_HSW_InBG" />
         <marker scope="Public" name="T_HSW_Joining" />
         <marker scope="Public" name="T_HSW_JumpIn" />
@@ -1528,12 +1605,16 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Kirigiri_KanjiR1" />
         <marker scope="Public" name="T_Kirigiri_KanjiR2" />
         <marker scope="Public" name="T_Kirigiri_KanjiR3" />
+        <marker scope="Public" name="T_Kirigiri_KappaBecause" />
+        <marker scope="Public" name="T_Kirigiri_KappaStaring" />
         <marker scope="Public" name="T_Kirigiri_LuwakCoffee" />
         <marker scope="Public" name="T_Kirigiri_MasturThinking" />
         <marker scope="Public" name="T_Kirigiri_Mirakurun" />
         <marker scope="Public" name="T_Kirigiri_MirakurunPopularity" />
         <marker scope="Public" name="T_Kirigiri_MoreSecrets" />
         <marker scope="Public" name="T_Kirigiri_NBD" />
+        <marker scope="Public" name="T_Kirigiri_NeededPajamas" />
+        <marker scope="Public" name="T_Kirigiri_NoProblemo" />
         <marker scope="Public" name="T_Kirigiri_NoWorry" />
         <marker scope="Public" name="T_Kirigiri_NoYui" />
         <marker scope="Public" name="T_Kirigiri_Nuisance" />
@@ -1549,6 +1630,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Kirigiri_RamukoReveal" />
         <marker scope="Public" name="T_Kirigiri_RamukoWork" />
         <marker scope="Public" name="T_Kirigiri_Reading" />
+        <marker scope="Public" name="T_Kirigiri_RearComparison" />
         <marker scope="Public" name="T_Kirigiri_RepeatAcceptedL" />
         <marker scope="Public" name="T_Kirigiri_RepeatAcceptedR" />
         <marker scope="Public" name="T_Kirigiri_RepeatDeniedL" />
@@ -1592,6 +1674,12 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Meia_Pajamas" />
         <marker scope="Public" name="T_Miko_Strip0Necessities">Self Stripping 0</marker>
         <marker scope="Public" name="T_Miko_Strip0Refined">Self Must Strip 0</marker>
+        <marker scope="Public" name="T_Moskii_Msc" />
+        <marker scope="Public" name="T_Moskii_MscA" />
+        <marker scope="Public" name="T_Moskii_MscB" />
+        <marker scope="Public" name="T_Moskii_MscJoin" />
+        <marker scope="Public" name="T_Moskii_MscResponse" />
+        <marker scope="Public" name="T_Moskii_MscReveal" />
         <marker scope="Public" name="T_Nadeshiko_AdventureAnte" />
         <marker scope="Public" name="T_Nadeshiko_AllTogether" />
         <marker scope="Public" name="T_Nadeshiko_Alone" />
@@ -1766,7 +1854,23 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Setogaya_Wings" />
         <marker scope="Public" name="T_Setogaya_WingSensitivity" />
         <marker scope="Public" name="T_Shamiko_BadGuy" />
+        <marker scope="Public" name="T_Shamiko_Confidence1" />
+        <marker scope="Public" name="T_Shamiko_Confidence2" />
+        <marker scope="Public" name="T_Shamiko_Confidence3" />
         <marker scope="Public" name="T_Shamiko_Demon" />
+        <marker scope="Public" name="T_Shamiko_Fremesis1" />
+        <marker scope="Public" name="T_Shamiko_Fremesis2" />
+        <marker scope="Public" name="T_Shamiko_Fremesis3" />
+        <marker scope="Public" name="T_Shamiko_Nemesis" />
+        <marker scope="Public" name="T_Shamiko_Poker1" />
+        <marker scope="Public" name="T_Shamiko_Poker2" />
+        <marker scope="Public" name="T_Shamiko_Poker3" />
+        <marker scope="Public" name="T_Shamiko_Rivalry1" />
+        <marker scope="Public" name="T_Shamiko_Rivalry2" />
+        <marker scope="Public" name="T_Shamiko_Rivalry3" />
+        <marker scope="Public" name="T_Shamiko_Spontaneous1" />
+        <marker scope="Public" name="T_Shamiko_Spontaneous2" />
+        <marker scope="Public" name="T_Shamiko_Spontaneous3" />
         <marker scope="Public" name="T_SolarFlare_TomatoPlant" />
         <marker scope="Public" name="T_SolarFlare_ZombieApocalypse" />
         <marker scope="Public" name="T_Stocking_Slaughter" />
@@ -1781,7 +1885,12 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Tea_Strip3Normal">Self Stripping 3</marker>
         <marker scope="Public" name="T_Tea_Strip3Tomato">Self Must strip 3</marker>
         <marker scope="Public" name="T_Tea_TStrip0CardGame">Tea Must Strip 0</marker>
+        <marker scope="Public" name="T_Toph_NoSwimsuit" />
+        <marker scope="Public" name="T_Toph_NoSwimsuitFollowUp" />
+        <marker scope="Public" name="T_Toph_NoSwimsuitFollowUp2" />
+        <marker scope="Public" name="T_Toph_NoSwimsuitFollowUp3" />
         <marker scope="Public" name="T_Toph_SpoilerAlert" />
+        <marker scope="Public" name="T_Toph_SwimmingLessons" />
         <marker scope="Public" name="T_TripleKyokoKyou_Confusing">Kyoko Kirigiri and Kyou Fujibayashi selected, player named Kyouko or Kyoko</marker>
         <marker scope="Public" name="T_Vanessa_UndressNow" />
         <marker scope="Public" name="T_Vanessa_Whoa" />
@@ -1853,6 +1962,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_ZekePandy_TomatoCollection" />
         <marker scope="Public" name="T_ZekePandy_TomatoTheme" />
         <marker scope="Private" name="Z_">Intenal state. Vast majority of this will only be relevant to Kyouko herself.</marker>
+        <marker scope="Public" name="Z_AltStrippingOrder" />
         <marker scope="Public" name="Z_AuraPhoto" />
         <marker scope="Public" name="Z_CatEars" />
         <marker scope="Public" name="Z_ComuketSoon">Set when Comuket is less than two weeks away. (That is, the first couple weeks of August and last couple weeks of December; the real-life Comiket is held around the end of those time frames)</marker>
@@ -1874,6 +1984,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Private" name="Z_RibbonTrickLastGame">Kyouko tricked the others by taking her ribbon off last game.</marker>
         <marker scope="Private" name="Z_SeenNotBadHand">Kyouko has only gotten bad hands until this is set.</marker>
         <marker scope="Private" name="Z_SmallStripLastHand">People keep taking off small stuff, meanwhile Kyouko's the only one who's down to her underwear.</marker>
+        <marker scope="Private" name="Z_SummerCostume_SeenGuaranteedAltOrder" />
         <marker scope="Private" name="Z_UnderwearCount">Count how many pairs of underwear someone's wearing.</marker>
         <marker scope="Public" name="Z_Unpunished" />
         <marker scope="Public" name="Z_WinterUniform">If set, Kyouko is wearing her long-sleeved uniform. There's a reason I didn't make a situation for this.</marker>

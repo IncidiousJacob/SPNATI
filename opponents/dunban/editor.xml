@@ -303,6 +303,11 @@
         <response id="914" opponent="rosie" opponentId="23" />
         <response id="915" opponent="momo" opponentId="105" />
         <response id="921" opponent="jura" opponentId="2312" />
+        <response id="956" opponent="schezo" opponentId="132" />
+        <response id="957" opponent="priscilla" opponentId="78" />
+        <response id="959" opponent="cadence" opponentId="168" />
+        <response id="960" opponent="cadence" opponentId="46" />
+        <response id="961" opponent="cadence" opponentId="411" />
     </responses>
     <notes>
         <note id="10">Will be replaced if Sharla ever gets reworked lol</note>
@@ -1243,9 +1248,9 @@ c: say that he's been as high as the bionis' head?
         <label id="898" label="" folder="Responses" sort="0" />
         <label id="899" label="" folder="Responses" sort="0" />
         <label id="900" label="" color="6" folder="Targets" sort="0" />
-        <label id="901" label="" folder="Targets" sort="0" />
-        <label id="902" label="" folder="Targets" sort="0" />
-        <label id="903" label="" folder="Targets" sort="0" />
+        <label id="901" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="902" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="903" label="" folder="Targets&gt;Yuzuki" sort="0" />
         <label id="904" label="" folder="Targets" sort="0" />
         <label id="905" label="" folder="Prompts" sort="0" />
         <label id="906" label="" folder="Prompts" sort="0" />
@@ -1269,12 +1274,47 @@ c: say that he's been as high as the bionis' head?
         <label id="924" label="" folder="Targets" sort="0" />
         <label id="925" label="" folder="Responses" sort="0" />
         <label id="926" label="" folder="Responses" sort="0" />
+        <label id="927" label="" color="6" folder="Targets" sort="0" />
+        <label id="928" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="929" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="930" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="931" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="932" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="933" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="934" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="935" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="936" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="937" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="938" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="939" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="940" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="941" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="942" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="943" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="944" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="945" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="946" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="947" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="948" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="949" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="950" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="951" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="952" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="953" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="954" label="" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="956" label="" folder="Prompts" sort="0" />
+        <label id="957" label="" folder="Targets" sort="0" />
+        <label id="958" label="" folder="Targets" sort="0" />
+        <label id="961" label="" folder="Targets" sort="0" />
+        <label id="960" label="" folder="Prompts" sort="0" />
+        <label id="959" label="" folder="Targets" sort="0" />
+        <label id="962" label="" folder="Targets" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>aquaKH_socks==0</posePreviewMarker>
         <posePreviewMarker>epi_player_skintone==2</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>926</nextId>
+    <nextId>962</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="20gOffer">Line that plays when Dunban offers a 20g bribe to whoever loses</marker>
@@ -1315,6 +1355,9 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="braile_cards" />
         <marker scope="Public" name="brock_hitbyrocket" />
         <marker scope="Public" name="brock_hitbyrocket2" />
+        <marker scope="Public" name="cadence_retro" />
+        <marker scope="Public" name="cadence_shySupport" />
+        <marker scope="Public" name="cadenceWig" />
         <marker scope="Public" name="cag_ChangePrompt" />
         <marker scope="Public" name="caulifla_transformation" />
         <marker scope="Public" name="caulifla_transformation2" />
@@ -1900,6 +1943,8 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="polly_disappear" />
         <marker scope="Public" name="polly_reappear" />
         <marker scope="Public" name="pollyPossessionAccept" />
+        <marker scope="Public" name="priscilla_strip0a" />
+        <marker scope="Public" name="priscilla_sword" />
         <marker scope="Public" name="revy_butt_Reaction" />
         <marker scope="Public" name="rosie_Vivosaurs" />
         <marker scope="Public" name="samus_removing_armor" />
@@ -1916,6 +1961,8 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="schezo_scar" />
         <marker scope="Public" name="schezo_scar1" />
         <marker scope="Public" name="schezo_scar2" />
+        <marker scope="Public" name="schezo_swordPrompt1a" />
+        <marker scope="Public" name="schezo_swordPrompt1b" />
         <marker scope="Public" name="self6strip_volunteer" />
         <marker scope="Public" name="setogaya_6_stripping" />
         <marker scope="Public" name="shoes_off_forest" />
@@ -1934,6 +1981,33 @@ c: say that he's been as high as the bionis' head?
         <marker scope="Public" name="yuri_geographyResp" />
         <marker scope="Public" name="yuri_poetryResp" />
         <marker scope="Public" name="yuri_poetryRespB" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiFaceReveal_30" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiFaceReveal_31" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiFaceReveal_32" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiJobs_10" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiJobs_11" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiJobs_12" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiLoveLife_20" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiLoveLife_21" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiLoveLife_22" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiScars_40" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiScars_41" />
+        <marker scope="Public" name="yuzuki_dunban_yuzukiScars_42" />
+        <marker scope="Public" name="yuzuki_dunbanArmEarly_resp_30" />
+        <marker scope="Public" name="yuzuki_dunbanArmEarly_resp_31" />
+        <marker scope="Public" name="yuzuki_dunbanArmEarly_resp_32" />
+        <marker scope="Public" name="yuzuki_dunbanArmReveal_resp_40" />
+        <marker scope="Public" name="yuzuki_dunbanArmReveal_resp_41" />
+        <marker scope="Public" name="yuzuki_dunbanArmReveal_resp_42" />
+        <marker scope="Public" name="yuzuki_dunbanIntro_resp_00" />
+        <marker scope="Public" name="yuzuki_dunbanIntro_resp_01" />
+        <marker scope="Public" name="yuzuki_dunbanIntro_resp_02" />
+        <marker scope="Public" name="yuzuki_dunbanMature_resp_20" />
+        <marker scope="Public" name="yuzuki_dunbanMature_resp_21" />
+        <marker scope="Public" name="yuzuki_dunbanMature_resp_22" />
+        <marker scope="Public" name="yuzuki_dunbanPoetry_resp_10" />
+        <marker scope="Public" name="yuzuki_dunbanPoetry_resp_11" />
+        <marker scope="Public" name="yuzuki_dunbanPoetry_resp_12" />
         <marker scope="Public" name="zeke_pandy_nude" />
     </markers>
     <recipes>

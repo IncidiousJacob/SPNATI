@@ -617,6 +617,7 @@
                         </button>
                         <ul class="dropdown-menu sort-dropdown-options">
                             <li><a href="#" data-value="featured">Featured</a></li>
+                            <li><a href="#" data-value="communityRank">Community Ranked</a></li>
                             <li><a href="#" data-value="-lastUpdated">Recently Updated</a></li>
                             <li><a href="#" data-value="newest">Newest</a></li>
                             <li><a href="#" data-value="oldest">Oldest</a></li>
@@ -1164,9 +1165,32 @@
                 </div>
             </div>
             <div class="gallery-pane bordered" id="collectibles-image-pane">
-                <img id="collectible-image" src="img/blank.png" alt="">
+              <div class="image-gallery-wrapper" style="position:relative; width:100%; height:100%;">
+                <img id="collectible-image"
+                     src="img/blank.png"
+                     alt="Collectible preview"/>
+              </div>
+
+              <!-- Bottom nav bar -->
+              <div class="collectible-img-header text-center" style="margin-top:-42.5em;">
+                <button id="collectible-img-prev"
+                        class="gallery-img-nav btn btn-default btn-lg"
+                        onclick="collectiblePrevImage()">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </button>
+
+                <span id="collectible-img-counter"
+                      style="margin: 0 12px; font-weight: bold;">1 / 1</span>
+
+                <button id="collectible-img-next"
+                        class="gallery-img-nav btn btn-default btn-lg"
+                        onclick="collectibleNextImage()">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+              </div>
             </div>
         </div>
+
 
         <div id="deck-gallery-screen" class="screen" hidden>
             <div class="gallery-select-block">
@@ -1248,7 +1272,7 @@
                     onclick="doEpilogueFromGallery()" disabled>Start</button>
             </div>
             <div id="gallery-selected-ending-block">
-                <div id="selected-ending-previev"></div>
+                <div id="selected-ending-preview"></div>
                 <label id="selected-ending-title"></label>
                 <label>Character: <span id="selected-ending-character"></span></label>
                 <label>For: <span id="selected-ending-gender"></span></label>

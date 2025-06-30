@@ -1380,11 +1380,38 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         var n = Math.min(Math.max((parseInt(args, 10) || 1), 1), 10);
         var name = expandNicknames(self, player);
         var ret = name;
-        if (name[0].toLowerCase() != name[0].toUpperCase()) {
+
+        // Define vowels and numbers (for l33t names)
+        var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+        var nums = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+        var chars = '';
+        
+        // Don't stutter 1 letter names
+        if (name.length <= 1) {
+            return name;
+        }
+
+        // Find first consonant cluster before first vowel or number
+        for (var i = 0; i < name.length; i++) {
+            if (vowels.includes(name[i].toLowerCase()) || nums.includes(name[i])) {
+                break;
+            }
+            chars += name[i];
+        }
+
+        // Fallback to at least one char
+        if (chars.length === 0) {
+            chars = name[0];
+        }
+
+        // If the name starts with a letter or number, apply the stutter
+        if (name[0].toLowerCase() != name[0].toUpperCase() || nums.includes(name[0])){
+            ret = name;
             for (var i = 0; i < n; i++) {
-                ret = name[0] + "-" + ret;
+                ret = chars + "-" + ret;
             }
         }
+
         return ret;
     case 'ifmale':
         return args.split('|')[(player.gender == 'male' ? 0 : 1)];
