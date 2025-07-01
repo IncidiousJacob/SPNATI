@@ -147,6 +147,12 @@ namespace SPNATI_Character_Editor.Activities
 			return img;
 		}
 
+		public static Bitmap GetImage(CollectibleImage src)
+		{
+			return GetImage(src.Path);
+		}
+
+
 		private void tsAdd_Click(object sender, EventArgs e)
 		{
 			Collectible c = new Collectible()
@@ -301,9 +307,9 @@ namespace SPNATI_Character_Editor.Activities
 				return;
 			}
 			Collectible collectible = _selectedItem.Tag as Collectible;
-			if (collectible != null)
+			if (collectible != null && collectible.Images.Count > 0)
 			{
-				Bitmap bmp = GetImage(collectible.Image);
+				Bitmap bmp = GetImage(collectible.Images[0]);
 				picPreview.Image = bmp;
 			}
 			else

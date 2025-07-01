@@ -1531,17 +1531,22 @@ namespace SPNATI_Character_Editor
 					warnings.Add(new ValidationError(ValidationFilterLevel.Collectibles, $"The thumbnail \"{collectible.Thumbnail}\" for collectible \"{collectible.Id}\" does not exist.", context));
 				}
 			}
-			if (!string.IsNullOrEmpty(collectible.Image))
+			if (collectible.Images != null)
 			{
-				string path = GetRelativeImagePath(character, collectible.Image);
-				if (!string.IsNullOrEmpty(path))
+				foreach (CollectibleImage img in collectible.Images)
 				{
-					unusedImages.Remove(path);
-				}
-				string fullpath = Path.Combine(Config.SpnatiDirectory, collectible.Image);
-				if (!File.Exists(fullpath))
-				{
-					warnings.Add(new ValidationError(ValidationFilterLevel.Collectibles, $"The image \"{collectible.Image}\" for collectible \"{collectible.Id}\" does not exist.", context));
+
+					string path = GetRelativeImagePath(character, img.Path);
+					if (!string.IsNullOrEmpty(path))
+					{
+						unusedImages.Remove(path);
+					}
+
+					string fullpath = Path.Combine(Config.SpnatiDirectory, img.Path);
+					if (!File.Exists(fullpath))
+					{
+						warnings.Add(new ValidationError(ValidationFilterLevel.Collectibles, $"The image \"{img.Path}\" for collectible \"{collectible.Id}\" does not exist.", context));
+					}
 				}
 			}
 
