@@ -66,11 +66,13 @@ var playerTagOptions = {
     },
     'hair_style': {
         values: [
+            { value: 'afro'},
             { value: 'ahoge'},
-            { value: 'braided'},
-            { value: 'bun'},
-            { value: 'drills'},
-            { value: 'messy'},
+            { value: 'braided_hair'},
+            { value: 'dreadlocks'},
+            { value: 'hair_bun'},
+            { value: 'drill_hair'},
+            { value: 'messy_hair'},
             { value: 'ponytail'},
             { value: 'topknot'},
             { value: 'twintails'},
