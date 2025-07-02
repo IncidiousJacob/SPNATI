@@ -10,6 +10,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace SPNATI_Character_Editor.Activities
 {
@@ -158,7 +159,8 @@ namespace SPNATI_Character_Editor.Activities
 			Collectible c = new Collectible()
 			{
 				Id = "new_collectible",
-				Title = "New Collectible"
+				Title = "New Collectible",
+				Images = new List<CollectibleImage>(),
 			};
 			_character.Collectibles.Add(c);
 			AddCollectible(c, true);
@@ -190,11 +192,39 @@ namespace SPNATI_Character_Editor.Activities
 				table.Data = null;
 				return;
 			}
+
 			ListViewItem item = lstCollectibles.SelectedItems[0];
 			_selectedItem = item;
 			Collectible collectible = item.Tag as Collectible;
 			collectible.Character = _character;
 			table.Data = collectible;
+
+			lstImages.Items.Clear();
+
+			if (collectible != null)
+			{
+				if (collectible.Images.Count > 0)
+				{
+					foreach (CollectibleImage img in collectible.Images)
+					{
+						lstImages.Items.Add(img);
+					}
+				}
+				else
+				{
+					// Automatically add a picture entry if the collectible doesn't have any yet
+					CollectibleImage newImg = new CollectibleImage();
+					collectible.Images.Add(newImg);
+					lstImages.Items.Add(newImg);
+				}
+
+				lstImages.SelectedIndex = 0;
+			}
+			else
+			{
+				lstImages.SelectedIndex = -1;
+			}
+
 			UpdatePreview();
 			ToggleClothingVisibility();
 			ToggleCostumeVisibility();
@@ -301,15 +331,9 @@ namespace SPNATI_Character_Editor.Activities
  
         private void UpdatePreview()
 		{
-			if (Config.SafeMode)
+			if (!Config.SafeMode && lstImages.SelectedItems.Count > 0)
 			{
-				picPreview.Image = null;
-				return;
-			}
-			Collectible collectible = _selectedItem.Tag as Collectible;
-			if (collectible != null && collectible.Images.Count > 0)
-			{
-				Bitmap bmp = GetImage(collectible.Images[0]);
+				Bitmap bmp = GetImage(lstImages.SelectedItem as CollectibleImage);
 				picPreview.Image = bmp;
 			}
 			else
@@ -383,6 +407,160 @@ namespace SPNATI_Character_Editor.Activities
 			base.OnSkinChanged(skin);
 			lstCollectibles.BackColor = skin.FieldBackColor;
 			lstCollectibles.ForeColor = skin.Surface.ForeColor;
+		}
+
+		private void lstImages_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			txtImagePath.Text = (lstImages.SelectedItem as CollectibleImage)?.Path;
+			UpdatePreview();
+		}
+
+		private void cmdAddImage_Click(object sender, EventArgs e)
+		{
+			Collectible collectible = _selectedItem?.Tag as Collectible;
+			if (collectible == null)
+			{
+				return;
+			}
+
+			CollectibleImage newImg = new CollectibleImage();
+			collectible.Images.Add(newImg);
+			lstImages.Items.Add(newImg);
+			lstImages.SelectedIndex = lstImages.Items.Count - 1;
+
+			// Auto-open the image selection dialog
+			cmdImageBrowse_Click(cmdImageBrowse, e);
+		}
+
+		private void cmdRemoveImage_Click(object sender, EventArgs e)
+		{
+			Collectible collectible = _selectedItem?.Tag as Collectible;
+			if (collectible == null)
+			{
+				return;
+			}
+
+			int idx = lstImages.SelectedIndex;
+			if (idx < 0)
+			{
+				return;
+			}
+
+			collectible.Images.RemoveAt(idx);
+			lstImages.Items.RemoveAt(idx);
+
+			if (lstImages.Items.Count > 0)
+			{
+				lstImages.SelectedIndex = (idx > 0) ? (idx - 1) : 0;
+			}
+			else
+			{
+				lstImages.SelectedIndex = -1;
+			}
+
+			UpdatePreview();
+		}
+
+		private void txtImagePath_TextChanged(object sender, EventArgs e)
+		{
+			CollectibleImage selectedImage = lstImages.SelectedItem as CollectibleImage;
+			if (selectedImage == null)
+			{
+				return;
+			}
+
+			selectedImage.Path = txtImagePath.Text;
+			UpdatePreview();
+		}
+
+		private void txtImagePath_Leave(object sender, EventArgs e)
+		{
+			CollectibleImage selectedImage = lstImages.SelectedItem as CollectibleImage;
+			if (selectedImage == null || lstImages.SelectedIndex < 0)
+			{
+				return;
+			}
+
+			lstImages.Items[lstImages.SelectedIndex] = selectedImage;
+		}
+
+		private void cmdImageUp_Click(object sender, EventArgs e)
+		{
+			Collectible collectible = _selectedItem?.Tag as Collectible;
+			CollectibleImage img = lstImages.SelectedItem as CollectibleImage;
+			if (collectible == null || img == null)
+			{
+				return;
+			}
+
+			int idx = collectible.Images.IndexOf(img);
+			if (idx == 0)
+			{
+				return;
+			}
+
+			collectible.Images.Remove(img);
+			collectible.Images.Insert(idx - 1, img);
+
+			lstImages.Items.Remove(img);
+			lstImages.Items.Insert(idx - 1, img);
+			lstImages.SelectedIndex = idx - 1;
+		}
+
+		private void cmdImageDown_Click(object sender, EventArgs e)
+		{
+			Collectible collectible = _selectedItem?.Tag as Collectible;
+			CollectibleImage img = lstImages.SelectedItem as CollectibleImage;
+			if (collectible == null || img == null)
+			{
+				return;
+			}
+
+			int idx = collectible.Images.IndexOf(img);
+			if (idx == collectible.Images.Count - 1)
+			{
+				return;
+			}
+
+			collectible.Images.Remove(img);
+			collectible.Images.Insert(idx + 1, img);
+
+			lstImages.Items.Remove(img);
+			lstImages.Items.Insert(idx + 1, img);
+			lstImages.SelectedIndex = idx + 1;
+		}
+
+		private void cmdImageBrowse_Click(object sender, EventArgs e)
+		{
+			CollectibleImage img = lstImages.SelectedItem as CollectibleImage;
+			if (img == null)
+			{
+				return;
+			}
+
+			string path = Path.Combine(Config.SpnatiDirectory, img.Path ?? "");
+			if (path == Config.SpnatiDirectory)
+			{
+				openFileDialog1.FileName = "";
+				path = _character.GetDirectory();
+			}
+			else
+			{
+				openFileDialog1.FileName = Path.GetFileName(path);
+				path = Path.GetDirectoryName(path);
+			}
+			openFileDialog1.InitialDirectory = path;
+
+			if (openFileDialog1.ShowDialog() == DialogResult.OK)
+			{
+				string filename = openFileDialog1.FileName;
+				string relPath = filename.Substring(Config.SpnatiDirectory.Length + 1).Replace('\\', '/');
+				img.Path = relPath;
+
+				lstImages.Items[lstImages.SelectedIndex] = img;
+				txtImagePath.Text = relPath;
+				UpdatePreview();
+			}
 		}
 	}
 
