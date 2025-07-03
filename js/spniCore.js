@@ -959,6 +959,47 @@ function showPlayerTagsModal () {
             }
         }
     });
+    
+    var $length = $('#player-tag-choice-hair_length');
+    var $style  = $('#player-tag-choice-hair_style');
+
+    function syncHairStyle() {
+      if ($length.val() === 'bald') {
+        // when bald, disable and clear any style
+        $style.prop('disabled', true)
+              .val(''); 
+      } else {
+        // otherwise re-enable
+        $style.prop('disabled', false);
+      }
+    }
+    $length.on('change', syncHairStyle);
+    syncHairStyle(); 
+        
+    var $build = $('#player-tag-choice-physical_build');
+    // if female, clear the twink option
+    if (humanPlayer.gender === 'female' && $build.val() === 'twink') {
+      $build.val('');
+    }
+    // if male, clear the curvy option
+    if (humanPlayer.gender === 'male' && $build.val() === 'curvy') {
+      $build.val('');
+    }
+
+    var $orient = $('#player-tag-choice-sexual_orientation');
+    // relabel the bi-curious option to match gender
+    $orient.find('option[value="reverse_bi-curious"]')
+           .text(humanPlayer.gender === 'female'
+                 ? 'Female-leaning bi-curious'
+                 : 'Male-leaning bi-curious');
+    // swap gay and lesbian
+    var ore = $orient.val();
+    if (humanPlayer.gender === 'female' && ore === 'gay') {
+      $orient.val('lesbian');
+    } else if (humanPlayer.gender === 'male' && ore === 'lesbian') {
+      $orient.val('gay');
+    }
+    
     $playerTagsModal.modal('show');
 }
 
