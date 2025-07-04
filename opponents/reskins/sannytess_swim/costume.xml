@@ -14,7 +14,7 @@
     <folder>opponents/reskins/sannytess_swim/</folder>
     <folder stage="6">opponents/sannytess/</folder>
     <wardrobe>
-        <clothing name="swim top" generic="bra" position="upper" type="important" />
+        <clothing name="swim top" generic="bra" position="upper" type="major" />
         <clothing name="armbands" generic="armbands" position="arms" type="extra" plural="true" />
         <clothing name="bracelet" generic="jewelry" position="arms" type="extra" />
         <clothing name="sarong" generic="skirt" position="lower" type="major" />
@@ -127,8 +127,8 @@
             <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-excited2.png" x="-159" y="0" />
             <sprite id="t-horni" src="reskins/sannytess_swim/#-t-excited2.png" x="157" y="0" />
         </pose>
-        <pose id="happy">
-            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy.png" x="-159" y="0" />
+        <pose id="happy2+happy">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy2.png" x="-159" y="0" />
             <sprite id="t-horni" src="reskins/sannytess_swim/#-t-happy.png" x="193" y="0" />
         </pose>
         <pose id="horn">
@@ -185,6 +185,34 @@
         <pose id="smug+nervous">
             <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-smug.png" x="-159" y="0" />
             <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="117" y="0" />
+        </pose>
+        <pose id="happy+happy2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-happy2.png" x="193" y="0" />
+        </pose>
+        <pose id="happy">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-happy.png" x="193" y="0" />
+        </pose>
+        <pose id="happy2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-happy2.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-happy2.png" x="193" y="0" />
+        </pose>
+        <pose id="edufuta+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-edufuta.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="117" y="0" />
+        </pose>
+        <pose id="nervous+shocked">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-nervous.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-shocked.png" x="117" y="0" />
+        </pose>
+        <pose id="relax+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-relax.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassed+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_swim/#-s-embarassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_swim/#-t-nervous.png" x="186" y="0" />
         </pose>
     </poses>
 
