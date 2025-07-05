@@ -15,6 +15,9 @@
         <case name="Scarred" id="11" priority="Noteworthy" min="3" max="3">
             <description>Hilbert reveals a rather large scar on his torso after removing his shirt.</description>
         </case>
+        <case name="A Girl in Every Port" id="657" priority="Prompt" min="4" max="8">
+            <description>Hilbert asks the more traveled players at the table if they've ever had any foreign romances.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -187,12 +190,10 @@
         <response id="561" opponent="colress" opponentId="323" />
         <response id="562" opponent="streaming-chan" opponentId="13" />
         <response id="0" opponent="rosa" opponentId="43" />
-        <response id="563" opponent="megumin" opponentId="53" />
         <response id="0" opponent="brock" opponentId="1" />
         <response id="557" opponent="jura" opponentId="906" />
         <response id="555" opponent="lucy" opponentId="864" />
         <response id="564" opponent="meia" opponentId="474" />
-        <response id="558" opponent="revy" opponentId="502" />
         <response id="565" opponent="aaravi" opponentId="119" />
         <response id="0" opponent="merlin" opponentId="47" />
         <response id="0" opponent="ayano" opponentId="117" />
@@ -277,7 +278,6 @@
         <response id="644" opponent="yuno_uno" opponentId="1034" />
         <response id="645" opponent="maki" opponentId="22" />
         <response id="0" opponent="pit" opponentId="121" />
-        <response id="646" opponent="marceline" opponentId="2" />
         <response id="647" opponent="serena" opponentId="33" />
         <response id="648" opponent="rouge" opponentId="7" />
         <response id="649" opponent="nonon" opponentId="638" />
@@ -288,6 +288,32 @@
         <response id="652" opponent="schezo" opponentId="956" />
         <response id="653" opponent="schezo" opponentId="957" />
         <response id="654" opponent="schezo" opponentId="960" />
+        <response id="658" opponent="glamrock_chica" opponentId="83" />
+        <response id="659" opponent="haru" opponentId="1" />
+        <response id="660" opponent="vinyl" opponentId="75" />
+        <response id="661" opponent="vinyl" opponentId="39" />
+        <response id="662" opponent="vinyl" opponentId="89" />
+        <response id="669" opponent="brock" opponentId="165" />
+        <response id="670" opponent="yuzuki" opponentId="96" />
+        <response id="0" opponent="dawn" opponentId="133" />
+        <response id="0" opponent="wasp" opponentId="110" />
+        <response id="0" opponent="aimee" opponentId="2" />
+        <response id="671" opponent="shimakaze" opponentId="2" />
+        <response id="672" opponent="nadeshiko" opponentId="9" />
+        <response id="673" opponent="rainbow_mika" opponentId="10" />
+        <response id="674" opponent="aster" opponentId="4" />
+        <response id="675" opponent="ini" opponentId="3" />
+        <response id="676" opponent="roll" opponentId="77" />
+        <response id="677" opponent="rin" opponentId="170" />
+        <response id="678" opponent="eichi" opponentId="526" />
+        <response id="679" opponent="serena" opponentId="34" />
+        <response id="681" opponent="yshtola" opponentId="15" />
+        <response id="682" opponent="perona" opponentId="119" />
+        <response id="683" opponent="perona" opponentId="15" />
+        <response id="684" opponent="perona" opponentId="122" />
+        <response id="685" opponent="steve" opponentId="3" />
+        <response id="686" opponent="darkness" opponentId="257" />
+        <response id="687" opponent="megumin" opponentId="222" />
     </responses>
     <notes>
         <note id="422">No pun intended, he doesn't know what Russia is</note>
@@ -317,14 +343,14 @@
         <label id="440" label="Buttshot" folder="" sort="0" />
         <label id="441" label="Butt" folder="" sort="0" />
         <label id="442" label="" folder="Halloween" sort="0" />
-        <label id="443" label="" folder="Halloween" sort="0" />
-        <label id="444" label="" folder="Halloween" sort="2" />
-        <label id="445" label="" folder="Halloween" sort="3" />
-        <label id="446" label="" folder="Halloween" sort="4" />
-        <label id="447" label="" folder="halloween" sort="0" />
-        <label id="448" label="" folder="Halloween" sort="5" />
-        <label id="449" label="" folder="Halloween" sort="6" />
-        <label id="450" label="" folder="Halloween" sort="7" />
+        <label id="443" label="" folder="halloween" sort="0" />
+        <label id="444" label="" folder="halloween" sort="0" />
+        <label id="445" label="" folder="halloween" sort="3" />
+        <label id="446" label="" folder="halloween" sort="4" />
+        <label id="447" label="" folder="halloween" sort="4" />
+        <label id="448" label="" folder="halloween" sort="5" />
+        <label id="449" label="" folder="halloween" sort="6" />
+        <label id="450" label="" folder="halloween" sort="7" />
         <label id="451" label="" folder="halloween" sort="2" />
         <label id="452" label="" folder="halloween" sort="3" />
         <label id="453" label="" folder="halloween" sort="4" />
@@ -338,15 +364,15 @@
         <label id="461" label="" folder="halloween" sort="12" />
         <label id="463" label="" folder="halloween" sort="13" />
         <label id="464" label="" folder="Halloween" sort="0" />
-        <label id="467" label="" folder="Halloween" sort="8" />
-        <label id="468" label="" folder="Halloween" sort="9" />
+        <label id="467" label="" folder="halloween" sort="8" />
+        <label id="468" label="" folder="halloween" sort="9" />
         <label id="469" label="" folder="Halloween" sort="0" />
         <label id="470" label="" folder="Songs" sort="0" />
         <label id="380" label="Bedroom" folder="BGs" sort="8" />
         <label id="376" label="Greenscreen" folder="BGs" sort="5" />
         <label id="375" label="Springs" folder="BGs" sort="4" />
         <label id="374" label="Paris" folder="BGs" sort="3" />
-        <label id="265" label="Forest" folder="BGs" sort="0" />
+        <label id="265" label="Forest" folder="BGs" sort="6" />
         <label id="377" label="Tiki" folder="BGs" sort="6" />
         <label id="378" label="Locker" folder="BGs" sort="7" />
         <label id="373" label="Inventory" folder="BGs" sort="2" />
@@ -374,10 +400,10 @@
         <label id="263" label="Witch" folder="Tags" sort="9" />
         <label id="476" label="Pokemon" folder="Tags" sort="8" />
         <label id="581" label="Idol" folder="Tags" sort="15" />
-        <label id="608" label="Arcade" folder="BGs" sort="0" />
-        <label id="609" label="Beach" folder="BGs" sort="0" />
-        <label id="610" label="Paris" folder="BGs" sort="0" />
-        <label id="611" label="Classroom" folder="BGs" sort="0" />
+        <label id="608" label="Arcade" folder="BGs" sort="3" />
+        <label id="609" label="Beach" folder="BGs" sort="5" />
+        <label id="610" label="Paris" folder="BGs" sort="2" />
+        <label id="611" label="Classroom" folder="BGs" sort="4" />
         <label id="612" label="Street" folder="BGs" sort="0" />
         <label id="613" label="Pokemon" folder="" sort="0" />
         <label id="614" label="Met Hilbert" folder="" sort="0" />
@@ -389,8 +415,15 @@
         <label id="618" label="Master" folder="" sort="0" />
         <label id="619" label="Mom" folder="" sort="0" />
         <label id="2" label="Three-Person" folder="" sort="0" />
+        <label id="663" label="Sages" folder="Sage Arrests" sort="19" />
+        <label id="664" label="Prelude" folder="Sage Arrests" sort="20" />
+        <label id="665" label="Ghetsis (Shirtless)" folder="Sage Arrests" sort="21" />
+        <label id="666" label="N (Not Present)" folder="Sage Arrests" sort="22" />
+        <label id="667" label="Ghetsis" folder="Sage Arrests" sort="23" />
+        <label id="668" label="N (Present)" folder="Sage Arrests" sort="24" />
+        <label id="680" label="N (Not Present)" folder="Sage Arrests" sort="0" />
     </labels>
-    <nextId>656</nextId>
+    <nextId>687</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9s_blind" />
@@ -533,6 +566,8 @@
         <marker scope="Public" name="cynthia_ruins" />
         <marker scope="Public" name="cynthia_smash" />
         <marker scope="Public" name="cynthia_volo" />
+        <marker scope="Public" name="darkness_strip1" />
+        <marker scope="Public" name="DarknessBooba" />
         <marker scope="Public" name="deimos_clown" />
         <marker scope="Public" name="Dennis" />
         <marker scope="Public" name="dreamcatcher_prof_fennel" />
@@ -546,6 +581,7 @@
         <marker scope="Public" name="dwight_shirtless2" />
         <marker scope="Public" name="dwight_tics" />
         <marker scope="Public" name="eichi_answer" />
+        <marker scope="Public" name="eichi_comehere" />
         <marker scope="Public" name="eichi_compliment" />
         <marker scope="Public" name="eichi_compliments" />
         <marker scope="Public" name="eichi_dickus" />
@@ -631,6 +667,7 @@
         <marker scope="Public" name="idol_contests" />
         <marker scope="Public" name="idol_iono" />
         <marker scope="Public" name="ignatz_relate" />
+        <marker scope="Public" name="ini_personality" />
         <marker scope="Public" name="jack-n-jill" />
         <marker scope="Public" name="jason_bday" />
         <marker scope="Public" name="jill_smonk" />
@@ -741,6 +778,7 @@
         <marker scope="Public" name="mary_swim" />
         <marker scope="Public" name="may_summer_dance" />
         <marker scope="Public" name="meg_reshiram" />
+        <marker scope="Public" name="megu_cabbage" />
         <marker scope="Public" name="megu_golems" />
         <marker scope="Public" name="megumin_kyurem" />
         <marker scope="Public" name="megumin_reshiram" />
@@ -779,6 +817,10 @@
         <marker scope="Public" name="N_reunion_1b" />
         <marker scope="Public" name="N_reunion_1c" />
         <marker scope="Public" name="N_solidarity" />
+        <marker scope="Public" name="nade_partnerpref" />
+        <marker scope="Public" name="Nade_World1_response" />
+        <marker scope="Public" name="Nade_World2_response" />
+        <marker scope="Public" name="Nade_World3_response" />
         <marker scope="Public" name="nagamimi_dragons" />
         <marker scope="Public" name="nagamimi_fashion" />
         <marker scope="Public" name="nagatoro-cheat" />
@@ -833,6 +875,9 @@
         <marker scope="Public" name="penny_why_compliment" />
         <marker scope="Public" name="penny_why_game" />
         <marker scope="Public" name="penny_yes_everyone" />
+        <marker scope="Public" name="perona_fly" />
+        <marker scope="Public" name="perona_ghosts" />
+        <marker scope="Public" name="perona_yeet" />
         <marker scope="Public" name="pit_angel" />
         <marker scope="Public" name="pit_old_testament" />
         <marker scope="Public" name="pit_smashbros" />
@@ -855,7 +900,10 @@
         <marker scope="Public" name="Queenie-response-1" />
         <marker scope="Public" name="relic_hunting" />
         <marker scope="Public" name="revy_costume" />
+        <marker scope="Public" name="revy_fof" />
         <marker scope="Public" name="revy_fof_bellyrub" />
+        <marker scope="Public" name="revy_fof_cofagrigus" />
+        <marker scope="Public" name="revy_fof_euthanize" />
         <marker scope="Public" name="revy_fof_scary" />
         <marker scope="Public" name="revy_gloves" />
         <marker scope="Public" name="revy_guns_nice" />
@@ -871,8 +919,10 @@
         <marker scope="Public" name="revy_music_roxie" />
         <marker scope="Public" name="revy_poach" />
         <marker scope="Public" name="revy_wrap" />
+        <marker scope="Public" name="rin_colour" />
         <marker scope="Public" name="rita_biology" />
         <marker scope="Public" name="roll_data" />
+        <marker scope="Public" name="roll_oven" />
         <marker scope="Public" name="rosa_actor" />
         <marker scope="Public" name="rosa_and_n" />
         <marker scope="Public" name="rosa_gymleader" />
@@ -892,9 +942,12 @@
         <marker scope="Public" name="rouge_jewel" />
         <marker scope="Public" name="rouge_musical" />
         <marker scope="Public" name="rouge_stone" />
+        <marker scope="Public" name="sage_arrests" />
+        <marker scope="Public" name="sage_arrests_intro" />
         <marker scope="Public" name="saki_badluck" />
         <marker scope="Public" name="Samus_joke_explain" />
         <marker scope="Public" name="saria_n" />
+        <marker scope="Public" name="saria_strip1" />
         <marker scope="Public" name="scar_explained" />
         <marker scope="Public" name="scar_story_1" />
         <marker scope="Public" name="scar_story_2" />
@@ -909,6 +962,7 @@
         <marker scope="Public" name="scm_angry" />
         <marker scope="Public" name="scm_retort" />
         <marker scope="Public" name="SecretWeapon" />
+        <marker scope="Public" name="serena_cards" />
         <marker scope="Public" name="serena_naked" />
         <marker scope="Public" name="sherlock_hilbert" />
         <marker scope="Public" name="sickburn" />
@@ -937,6 +991,7 @@
         <marker scope="Public" name="spywarning" />
         <marker scope="Public" name="steve_eighties" />
         <marker scope="Public" name="steve_hairdo" />
+        <marker scope="Public" name="steve_nuzzle" />
         <marker scope="Public" name="steve_redfog" />
         <marker scope="Public" name="steve_ultraspace" />
         <marker scope="Public" name="stocking_gothorita" />
@@ -951,6 +1006,7 @@
         <marker scope="Public" name="tea_trapcards" />
         <marker scope="Public" name="this-means-war" />
         <marker scope="Public" name="tomoko_callsexy_1" />
+        <marker scope="Public" name="travel-flings" />
         <marker scope="Public" name="truth-ideals" />
         <marker scope="Public" name="truthideals_ideals" />
         <marker scope="Public" name="truthideals_response" />
@@ -988,6 +1044,11 @@
         <marker scope="Public" name="unova_vanillish" />
         <marker scope="Public" name="unova_villagebridge" />
         <marker scope="Public" name="unova_virbank" />
+        <marker scope="Public" name="vinyl_artists" />
+        <marker scope="Public" name="Vinyl_ass" />
+        <marker scope="Public" name="vinyl_dancer" />
+        <marker scope="Public" name="vinyl_lenora" />
+        <marker scope="Public" name="vinyl_money" />
         <marker scope="Public" name="wario_brain" />
         <marker scope="Public" name="wario_brain_alt" />
         <marker scope="Public" name="wario_sickened" />
@@ -1009,6 +1070,7 @@
         <marker scope="Public" name="yusuke_fly" />
         <marker scope="Public" name="yusuke_hike" />
         <marker scope="Public" name="yusuke_subway" />
+        <marker scope="Public" name="yuzuke_resp" />
         <marker scope="Public" name="zoe_intro" />
     </markers>
 </metadata>
