@@ -129,7 +129,38 @@ function randomizeTitleCandy () {
 function placeTitleCandy (index, candy) {
     let scale = candy.scale ? candy.scale : 1.0;
     let base = "opponents/" + (candy.base ? candy.base : candy.uid) + "/";
+    let $img = $titleCandy[index];
 
-    $titleCandy[index].attr("src", base + candy.src);
-    $titleCandy[index].css("transform", "scale(" + scale + ") " + candyTransform[index]);
+    $img
+        .attr("src",   base + candy.src)
+        // .attr("title", candy.uid)
+        .css("pointer-events", "auto")
+        .prop("draggable", false)
+        .off("dragstart").on("dragstart", e=>e.preventDefault())
+        .css("transform", `scale(${scale}) ${candyTransform[index]}`);
+    
+    // Grab the global array of opponents, default to empty array to prevent crash
+    const allOpps = window.loadedOpponents || [];
+
+    // Find the one whose id matches candy.uid
+    const opp = allOpps.find(i => i.id === candy.uid || i.uid === candy.uid);
+
+    let titleText;
+    if (opp) {
+    // firstname + lastname
+    const fullName = opp.last
+        ? `${opp.first} ${opp.last}`
+        : opp.first;
+    // If metaLabel is just the same as first or fullName, just show fullName
+    // ...otherwise show "MetaLabel (Full Name)"
+    titleText = (opp.metaLabel === opp.first || opp.metaLabel === fullName)
+        ? fullName
+        : `${opp.metaLabel} (${fullName})`;
+    } else {
+    // Fallback for if the label couldn't be found somehow,
+    // e.g. if a character has candy images but isn't loaded
+        titleText = candy.uid;
+    }
+    // Set the hover tooltip
+    $img.attr("title", titleText);
 }
