@@ -266,33 +266,61 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="0-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/0-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_santa/3-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_santa/012hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hug0" src="reskins/jura_santa/hug0.png" x="31" y="52" />
+            <sprite id="hug2" src="reskins/jura_santa/hug2.png" x="17" y="742" />
+            <sprite id="hug1" src="reskins/jura_santa/hug1.png" x="18" y="1211" />
+            <sprite id="hugsleeves" src="reskins/jura_santa/hugsleeves.png" x="6" y="450" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" />
+                <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
                 <keyframe time="0.3" x="10" />
                 <keyframe time="0.4" x="0" />
             </directive>
             <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" rotation="-305" />
+                <keyframe time="0" x="24" y="364" rotation="-305" />
                 <keyframe time="0.1" rotation="-302" />
                 <keyframe time="0.3" rotation="-307" />
                 <keyframe time="0.4" rotation="-305" />
             </directive>
             <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" />
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
                 <keyframe time="0.1" x="2" />
                 <keyframe time="0.3" x="12" />
                 <keyframe time="0.4" x="8" />
             </directive>
             <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" />
+                <keyframe time="0" x="-2" y="140" rotation="2" />
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hug0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="31" y="52" />
+                <keyframe time="0.1" x="21" />
+                <keyframe time="0.3" x="41" />
+                <keyframe time="0.4" x="31" />
+            </directive>
+            <directive type="animation" id="hug2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="17" y="742" />
+                <keyframe time="0.1" x="7" />
+                <keyframe time="0.3" x="27" />
+                <keyframe time="0.4" x="17" />
+            </directive>
+            <directive type="animation" id="hug1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="18" y="1211" />
+                <keyframe time="0.1" x="8" />
+                <keyframe time="0.3" x="28" />
+                <keyframe time="0.4" x="18" />
+            </directive>
+            <directive type="animation" id="hugsleeves" ease="linear" interpolation="linear">
+                <keyframe time="0" x="6" y="450" />
+                <keyframe time="0.1" x="-4" />
+                <keyframe time="0.3" x="16" />
+                <keyframe time="0.4" x="6" />
             </directive>
         </pose>
         <pose id="0-treasure_scope">
@@ -439,36 +467,6 @@
             <sprite id="talking" src="reskins/jura_santa/1-talking+.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
         </pose>
-        <pose id="1-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/1-hug.png" x="0" y="0" />
-            <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
-            <sprite id="012hugarms" z="2" src="reskins/jura_santa/012hugarms.png" x="8" y="331" scalex="0.91" />
-            <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
-            <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" />
-                <keyframe time="0.1" x="-10" />
-                <keyframe time="0.3" x="10" />
-                <keyframe time="0.4" x="0" />
-            </directive>
-            <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" rotation="-305" />
-                <keyframe time="0.1" rotation="-302" />
-                <keyframe time="0.3" rotation="-307" />
-                <keyframe time="0.4" rotation="-305" />
-            </directive>
-            <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" />
-                <keyframe time="0.1" x="2" />
-                <keyframe time="0.3" x="12" />
-                <keyframe time="0.4" x="8" />
-            </directive>
-            <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" />
-                <keyframe time="0.1" x="-12" />
-                <keyframe time="0.3" x="8" />
-                <keyframe time="0.4" x="-2" />
-            </directive>
-        </pose>
         <pose id="2-angry">
             <sprite id="surprised" src="reskins/jura_santa/2-surprised.png" x="0" y="0" />
             <sprite id="shocked" src="reskins/jura_santa/angry.png" x="0" y="174" rotation="1" />
@@ -601,36 +599,6 @@
         <pose id="2-talking+">
             <sprite id="talking" src="reskins/jura_santa/2-talking+.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="315" y="0" />
-        </pose>
-        <pose id="2-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/2-hug.png" x="0" y="0" />
-            <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
-            <sprite id="012hugarms" z="2" src="reskins/jura_santa/012hugarms.png" x="8" y="331" scalex="0.91" />
-            <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
-            <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="0" />
-                <keyframe time="0.1" x="-10" />
-                <keyframe time="0.3" x="10" />
-                <keyframe time="0.4" x="0" />
-            </directive>
-            <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" y="364" rotation="-305" />
-                <keyframe time="0.1" rotation="-302" />
-                <keyframe time="0.3" rotation="-307" />
-                <keyframe time="0.4" rotation="-305" />
-            </directive>
-            <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" y="331" scalex="0.91" />
-                <keyframe time="0.1" x="2" />
-                <keyframe time="0.3" x="12" />
-                <keyframe time="0.4" x="8" />
-            </directive>
-            <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" y="140" rotation="2" />
-                <keyframe time="0.1" x="-12" />
-                <keyframe time="0.3" x="8" />
-                <keyframe time="0.4" x="-2" />
-            </directive>
         </pose>
         <pose id="3-angry">
             <sprite id="surprised" src="reskins/jura_santa/3-surprised.png" x="0" y="0" />
@@ -1267,33 +1235,47 @@
             <sprite id="btalking" z="1" src="reskins/jura_santa/btalking+.png" x="309" y="0" />
         </pose>
         <pose id="5-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/5-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_santa/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_santa/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hair5" src="reskins/jura_santa/hair5.png" x="5" y="277" rotation="0" />
+            <sprite id="thong5" src="reskins/jura_santa/thong5.png" x="16" y="614" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" />
+                <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
                 <keyframe time="0.3" x="10" />
                 <keyframe time="0.4" x="0" />
             </directive>
             <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" rotation="-305" />
+                <keyframe time="0" x="24" y="364" rotation="-305" />
                 <keyframe time="0.1" rotation="-302" />
                 <keyframe time="0.3" rotation="-307" />
                 <keyframe time="0.4" rotation="-305" />
             </directive>
             <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" />
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
                 <keyframe time="0.1" x="2" />
                 <keyframe time="0.3" x="12" />
                 <keyframe time="0.4" x="8" />
             </directive>
             <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" />
+                <keyframe time="0" x="-2" y="140" rotation="2" />
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hair5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="5" y="277" rotation="0" />
+                <keyframe time="0.1" x="-5" />
+                <keyframe time="0.3" x="15" />
+                <keyframe time="0.4" x="5" />
+            </directive>
+            <directive type="animation" id="thong5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="16" y="614" />
+                <keyframe time="0.1" x="6" />
+                <keyframe time="0.3" x="26" />
+                <keyframe time="0.4" x="16" />
             </directive>
         </pose>
         <pose id="5-vaincamera">
@@ -1605,25 +1587,25 @@
             <sprite id="012hugarms" z="2" src="reskins/jura_santa/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" />
+                <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
                 <keyframe time="0.3" x="10" />
                 <keyframe time="0.4" x="0" />
             </directive>
             <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" rotation="-305" />
+                <keyframe time="0" x="24" y="364" rotation="-305" />
                 <keyframe time="0.1" rotation="-302" />
                 <keyframe time="0.3" rotation="-307" />
                 <keyframe time="0.4" rotation="-305" />
             </directive>
             <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" />
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
                 <keyframe time="0.1" x="2" />
                 <keyframe time="0.3" x="12" />
                 <keyframe time="0.4" x="8" />
             </directive>
             <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" />
+                <keyframe time="0" x="-2" y="140" rotation="2" />
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
@@ -1823,11 +1805,12 @@
             <sprite id="silentthinking" src="reskins/jura_santa/silentthinking.png" x="1" y="843" rotation="-1" />
         </pose>
         <pose id="7-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/7-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_santa/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_santa/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
             <sprite id="bstand" z="-1" src="reskins/jura_santa/bstand.png" x="278" y="0" />
+            <sprite id="fluid7" src="reskins/jura_santa/fluid7.png" x="15" y="657" rotation="-1" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -1851,6 +1834,12 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="fluid7" ease="linear" interpolation="linear">
+                <keyframe time="0" x="15" y="657" rotation="-1" />
+                <keyframe time="0.1" x="5" />
+                <keyframe time="0.3" x="25" />
+                <keyframe time="0.4" x="15" />
             </directive>
         </pose>
         <pose id="8-angry">
@@ -2113,39 +2102,155 @@
             <sprite id="silentthinking" src="reskins/jura_santa/silentthinking.png" x="1" y="860" rotation="-1" />
         </pose>
         <pose id="8-toblerone">
-            <sprite id="hug" src="reskins/jura_santa/8-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_santa/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_santa/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
             <sprite id="bstand" z="-1" src="reskins/jura_santa/bstand.png" x="278" y="0" />
+            <sprite id="fluid8" src="reskins/jura_santa/fluid8.png" x="15" y="648" rotation="0" />
+            <sprite id="bootright" src="reskins/jura_santa/bootright.png" x="-87" y="1146" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_santa/bootleft.png" x="124" y="1148" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" />
+                <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
                 <keyframe time="0.3" x="10" />
                 <keyframe time="0.4" x="0" />
             </directive>
             <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
-                <keyframe time="0" x="24" rotation="-305" />
+                <keyframe time="0" x="24" y="364" rotation="-305" />
                 <keyframe time="0.1" rotation="-302" />
                 <keyframe time="0.3" rotation="-307" />
                 <keyframe time="0.4" rotation="-305" />
             </directive>
             <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
-                <keyframe time="0" x="8" />
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
                 <keyframe time="0.1" x="2" />
                 <keyframe time="0.3" x="12" />
                 <keyframe time="0.4" x="8" />
             </directive>
             <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-2" />
+                <keyframe time="0" x="-2" y="140" rotation="2" />
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="fluid8" ease="linear" interpolation="linear">
+                <keyframe time="0" x="15" y="648" rotation="0" />
+                <keyframe time="0.1" x="5" />
+                <keyframe time="0.3" x="25" />
+                <keyframe time="0.4" x="15" />
+            </directive>
+            <directive type="animation" id="bootright" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-87" y="1146" rotation="-3" />
+                <keyframe time="0.1" x="-97" />
+                <keyframe time="0.3" x="-77" />
+                <keyframe time="0.4" x="-87" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="linear" interpolation="linear">
+                <keyframe time="0" x="124" y="1148" />
+                <keyframe time="0.1" x="114" />
+                <keyframe time="0.3" x="134" />
+                <keyframe time="0.4" x="124" />
             </directive>
         </pose>
         <pose id="1-stripshocked">
             <sprite id="strip" src="reskins/jura_santa/1-strip.png" x="0" y="0" />
             <sprite id="shocked" src="reskins/jura_santa/shocked.png" x="1" y="177" rotation="-3" />
+        </pose>
+        <pose id="1-toblerone">
+            <sprite id="hug" src="reskins/jura_santa/3-hug.png" x="0" y="0" />
+            <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
+            <sprite id="012hugarms" z="2" src="reskins/jura_santa/012hugarms.png" x="8" y="331" scalex="0.91" />
+            <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hug2" src="reskins/jura_santa/hug2.png" x="17" y="742" />
+            <sprite id="hug1" src="reskins/jura_santa/hug1.png" x="18" y="1211" />
+            <sprite id="hugsleeves" src="reskins/jura_santa/hugsleeves.png" x="6" y="450" />
+            <directive type="animation" id="hug" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.1" x="-10" />
+                <keyframe time="0.3" x="10" />
+                <keyframe time="0.4" x="0" />
+            </directive>
+            <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
+                <keyframe time="0" x="24" y="364" rotation="-305" />
+                <keyframe time="0.1" rotation="-302" />
+                <keyframe time="0.3" rotation="-307" />
+                <keyframe time="0.4" rotation="-305" />
+            </directive>
+            <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
+                <keyframe time="0.1" x="2" />
+                <keyframe time="0.3" x="12" />
+                <keyframe time="0.4" x="8" />
+            </directive>
+            <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-2" y="140" rotation="2" />
+                <keyframe time="0.1" x="-12" />
+                <keyframe time="0.3" x="8" />
+                <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hug2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="17" y="742" />
+                <keyframe time="0.1" x="7" />
+                <keyframe time="0.3" x="27" />
+                <keyframe time="0.4" x="17" />
+            </directive>
+            <directive type="animation" id="hug1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="18" y="1211" />
+                <keyframe time="0.1" x="8" />
+                <keyframe time="0.3" x="28" />
+                <keyframe time="0.4" x="18" />
+            </directive>
+            <directive type="animation" id="hugsleeves" ease="linear" interpolation="linear">
+                <keyframe time="0" x="6" y="450" />
+                <keyframe time="0.1" x="-4" />
+                <keyframe time="0.3" x="16" />
+                <keyframe time="0.4" x="6" />
+            </directive>
+        </pose>
+        <pose id="2-toblerone">
+            <sprite id="hug" src="reskins/jura_santa/3-hug.png" x="0" y="0" />
+            <sprite id="toblerone" z="1" src="reskins/jura_santa/ex-toblerone.png" x="24" y="364" rotation="-305" />
+            <sprite id="012hugarms" z="2" src="reskins/jura_santa/012hugarms.png" x="8" y="331" scalex="0.91" />
+            <sprite id="toblerone1" src="reskins/jura_santa/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hug2" src="reskins/jura_santa/hug2.png" x="17" y="742" />
+            <sprite id="hugsleeves" src="reskins/jura_santa/hugsleeves.png" x="6" y="450" />
+            <directive type="animation" id="hug" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.1" x="-10" />
+                <keyframe time="0.3" x="10" />
+                <keyframe time="0.4" x="0" />
+            </directive>
+            <directive type="animation" id="toblerone" ease="linear" interpolation="linear">
+                <keyframe time="0" x="24" y="364" rotation="-305" />
+                <keyframe time="0.1" rotation="-302" />
+                <keyframe time="0.3" rotation="-307" />
+                <keyframe time="0.4" rotation="-305" />
+            </directive>
+            <directive type="animation" id="012hugarms" ease="linear" interpolation="linear">
+                <keyframe time="0" x="8" y="331" scalex="0.91" />
+                <keyframe time="0.1" x="2" />
+                <keyframe time="0.3" x="12" />
+                <keyframe time="0.4" x="8" />
+            </directive>
+            <directive type="animation" id="toblerone1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-2" y="140" rotation="2" />
+                <keyframe time="0.1" x="-12" />
+                <keyframe time="0.3" x="8" />
+                <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hug2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="17" y="742" />
+                <keyframe time="0.1" x="7" />
+                <keyframe time="0.3" x="27" />
+                <keyframe time="0.4" x="17" />
+            </directive>
+            <directive type="animation" id="hugsleeves" ease="linear" interpolation="linear">
+                <keyframe time="0" x="6" y="450" />
+                <keyframe time="0.1" x="-4" />
+                <keyframe time="0.3" x="16" />
+                <keyframe time="0.4" x="6" />
+            </directive>
         </pose>
     </poses>
 

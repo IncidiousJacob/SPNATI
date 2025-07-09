@@ -439,10 +439,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="1-toblerone">
-            <sprite id="hug" src="reskins/jura_luxury_night/1-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_luxury_night/4-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_luxury_night/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_luxury_night/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hug1" src="reskins/jura_luxury_night/hug1.png" x="17" y="1270" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -466,6 +467,12 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hug1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="17" y="1270" />
+                <keyframe time="0.1" x="7" />
+                <keyframe time="0.3" x="27" />
+                <keyframe time="0.4" x="17" />
             </directive>
         </pose>
         <pose id="2-bstripped">
@@ -983,10 +990,12 @@
             <sprite id="btalking" z="1" src="reskins/jura_luxury_night/btalking+.png" x="309" y="0" />
         </pose>
         <pose id="5-toblerone">
-            <sprite id="hug" src="reskins/jura_luxury_night/5-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_luxury_night/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_luxury_night/toblerone.png" x="-2" y="140" rotation="2" />
+            <sprite id="hair5" src="reskins/jura_luxury_night/hair5.png" x="5" y="277" />
+            <sprite id="thong5" src="reskins/jura_luxury_night/thong5.png" x="13" y="606" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -1010,6 +1019,18 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="hair5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="5" y="277" />
+                <keyframe time="0.1" x="-5" />
+                <keyframe time="0.3" x="15" />
+                <keyframe time="0.4" x="5" />
+            </directive>
+            <directive type="animation" id="thong5" ease="linear" interpolation="linear">
+                <keyframe time="0" x="13" y="606" />
+                <keyframe time="0.1" x="3" />
+                <keyframe time="0.3" x="23" />
+                <keyframe time="0.4" x="13" />
             </directive>
         </pose>
         <pose id="5-vaincamera">
@@ -1539,11 +1560,12 @@
             <sprite id="silentthinking" src="reskins/jura_luxury_night/silentthinking.png" x="1" y="843" rotation="-1" />
         </pose>
         <pose id="7-toblerone">
-            <sprite id="hug" src="reskins/jura_luxury_night/7-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_luxury_night/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_luxury_night/toblerone.png" x="-2" y="140" rotation="2" />
             <sprite id="bstand" z="-1" src="reskins/jura_luxury_night/bstand.png" x="278" y="0" />
+            <sprite id="fluid7" src="reskins/jura_luxury_night/fluid7.png" x="15" y="657" rotation="-1" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -1567,6 +1589,12 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="fluid7" ease="linear" interpolation="linear">
+                <keyframe time="0" x="15" y="657" rotation="-1" />
+                <keyframe time="0.1" x="5" />
+                <keyframe time="0.3" x="25" />
+                <keyframe time="0.4" x="15" />
             </directive>
         </pose>
         <pose id="8-angry">
@@ -1767,7 +1795,7 @@
                 <keyframe time="3.66" alpha="0" />
             </directive>
             <directive type="animation" id="bootright" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-123" y="1148" alpha="100" />
+                <keyframe time="0" x="-123" y="1148" alpha="100" rotation="0" />
                 <keyframe time="1" alpha="100" />
                 <keyframe time="3.66" alpha="0" />
             </directive>
@@ -1828,11 +1856,14 @@
             <sprite id="silentthinking" src="reskins/jura_luxury_night/silentthinking.png" x="1" y="860" rotation="-1" />
         </pose>
         <pose id="8-toblerone">
-            <sprite id="hug" src="reskins/jura_luxury_night/8-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_luxury_night/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_luxury_night/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_luxury_night/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_luxury_night/toblerone.png" x="-2" y="140" rotation="2" />
             <sprite id="bstand" z="-1" src="reskins/jura_luxury_night/bstand.png" x="278" y="0" />
+            <sprite id="fluid8" src="reskins/jura_luxury_night/fluid8.png" x="15" y="648" />
+            <sprite id="bootright" src="reskins/jura_luxury_night/bootright.png" x="-87" y="1146" rotation="-3" />
+            <sprite id="bootleft" src="reskins/jura_luxury_night/bootleft.png" x="124" y="1148" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -1856,6 +1887,24 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
+            </directive>
+            <directive type="animation" id="fluid8" ease="linear" interpolation="linear">
+                <keyframe time="0" x="15" y="648" />
+                <keyframe time="0.1" x="5" />
+                <keyframe time="0.3" x="25" />
+                <keyframe time="0.4" x="15" />
+            </directive>
+            <directive type="animation" id="bootright" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-87" y="1146" rotation="-3" />
+                <keyframe time="0.1" x="-97" />
+                <keyframe time="0.3" x="-77" />
+                <keyframe time="0.4" x="-87" />
+            </directive>
+            <directive type="animation" id="bootleft" ease="linear" interpolation="linear">
+                <keyframe time="0" x="124" y="1148" />
+                <keyframe time="0.1" x="114" />
+                <keyframe time="0.3" x="134" />
+                <keyframe time="0.4" x="124" />
             </directive>
         </pose>
         <pose id="1-stripshocked">
