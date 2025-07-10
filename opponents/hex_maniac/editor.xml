@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+    <owner>hex_maniac</owner>
+    <height>5'3 / 161 cm</height>
+    <age>late 20s</age>
+    <pronunciation>hɛks ˈmeɪniˌæk</pronunciation>
+    <othernotes>Targeting note: &lt;br&gt;When targeting specifically about her body, you should also add a filter for either the chubby or skinny tag, this is due to her being planned to have a skinny alt by the time sponsorship starts.&lt;br&gt;&lt;br&gt;Character stuff:&lt;br&gt;Hex’s name is unknown and is planned to remain unknown as she is supposed to represent the entire trainer class. The in lore reason is she doesn’t want the game following her back to kalos and has a slight bit of paranoia about it.&lt;br&gt;Hex has a stutter, this can come and go especially if flustered or when infodumping respectively. The cause of this is an incident in training Haunter where he licked Hex. Rather than cause hex to shudder until she dies, she was left with a stutter.&lt;br&gt;Hex feels most comfortable when surrounded by the occult rather than when surrounded by normal people. Sometimes she can even use her sense of comfort to tell someone is supernatural.&lt;br&gt;Hex lives in Laverre City in Kalos along with her older sister who is a fairy tale girl.(and as such will not be in game for obvious reasons)&lt;br&gt;Occupation wise, Hex has two, the first is selling Moomoo Milk, it is not her breast milk. The second is as a consultant for ghosts and ghost type pokemon. Though she considers the second her main job, it’s more of a hobby which goes with her other hobby of exploring abandoned and theoretically haunted buildings.&lt;br&gt;&lt;br&gt;Haunter&lt;br&gt;	Haunter is Hex’s partner pokemon. He’s not her First Partner/starter pokemon, that would be a drifloon that ran away after she got too heavy. Haunter is mischievous but also protective. He will pull pranks, give hex privacy(while also pulling a prank by not showing up to continue taking her clothes), but will end it if anything dangerous happens to protect hex. (IE: explosions, bullets being shot everywhere.) Only to start again once the coast is clear.&lt;br&gt;Moves: Hex, Mean look, Scary Face, Curse. &lt;br&gt;Nature: Impish, Gender: Male&lt;br&gt;&lt;br&gt;Gimmicks&lt;br&gt;	Ghost Yapping: Hex has lines for every ghost type pokemon. This targets tags, specific characters, etc. However, if you are targeted by this you do not have to respond to the target as it’s her yapping. There is a marker that all of them have if you look, This you can use to have them react to the walls of text.&lt;br&gt;	Lactation: Chubby hex lactates, Specifically when the Milky marker is said. &lt;br&gt;</othernotes>
+    <noteworthy>
+        <case name="Haunter Introduction" id="67" priority="Noteworthy" min="0" max="0">
+            <description>Hex introduces her partner pokemon Haunter after Haunter spooks her.</description>
+        </case>
+        <case name="Hex Maniac Introduction" id="68" priority="FYI" min="0" max="0">
+            <description>Hex introduces herself and why she's not revealing her name.</description>
+        </case>
+        <case name="HaunterGone" id="78" priority="Noteworthy" min="4" max="4">
+            <description>Haunter is no longer taking care of Hex's clothes.</description>
+        </case>
+        <case name="Haunter Messed With a hand" id="12" priority="FYI" min="0" max="2">
+            <description>Haunter messed with someone's hand, maybe it was yours? specifically respond to the "HaunterMessedWithAHand" marker</description>
+        </case>
+        <case name="Haunter Advice" id="6" priority="Noteworthy" min="0" max="2">
+            <description>Hex is asking haunter which cards to swap or not swap.</description>
+        </case>
+        <case name="Hex Milk" id="93" priority="Noteworthy" min="7" max="7">
+            <description>Hex has begun to lactate, when this happens a marker named "Milky" is set to 1 and this only happens when she's thick.</description>
+        </case>
+        <case name="Ghost question" id="159" priority="Prompt" min="0" max="8">
+            <description>Hex asks if anyone has any stories or experience with ghosts.</description>
+        </case>
+    </noteworthy>
+    <reviewed>true</reviewed>
+    <responses>
+        <response id="44" opponent="chihiro" opponentId="2" />
+        <response id="45" opponent="wikipe-tan" opponentId="576" />
+        <response id="46" opponent="yuelia" opponentId="1" />
+        <response id="47" opponent="yuelia" opponentId="6" />
+        <response id="48" opponent="bernadetta" opponentId="4" />
+        <response id="49" opponent="giygas" opponentId="209" />
+        <response id="50" opponent="polly" opponentId="38" />
+        <response id="51" opponent="brock" opponentId="2" />
+        <response id="52" opponent="brock" opponentId="1" />
+        <response id="0" opponent="brock" opponentId="165" />
+        <response id="53" opponent="tick" opponentId="3" />
+        <response id="54" opponent="tick" opponentId="4" />
+        <response id="55" opponent="bobobo" opponentId="1" />
+        <response id="56" opponent="yuzuki" opponentId="96" />
+        <response id="57" opponent="dreamcatcher" opponentId="11" />
+        <response id="59" opponent="ayano" opponentId="84" />
+        <response id="60" opponent="spooky" opponentId="60" />
+        <response id="61" opponent="amalia" opponentId="1" />
+        <response id="62" opponent="aqua_konosuba" opponentId="16" />
+        <response id="63" opponent="penny_polendina" opponentId="35" />
+        <response id="64" opponent="anna" opponentId="32" />
+        <response id="65" opponent="fluttershy" opponentId="20" />
+        <response id="82" opponent="streaming-chan" opponentId="5" />
+        <response id="0" opponent="streaming-chan" opponentId="6" />
+        <response id="91" opponent="saki_zls" opponentId="1" />
+        <response id="0" opponent="jura" opponentId="3" />
+        <response id="161" opponent="erufuda" opponentId="4" />
+        <response id="162" opponent="erufuda" opponentId="16" />
+        <response id="163" opponent="erufuda" opponentId="153" />
+        <response id="164" opponent="erufuda" opponentId="119" />
+        <response id="165" opponent="erufuda" opponentId="5" />
+        <response id="166" opponent="erufuda" opponentId="152" />
+        <response id="167" opponent="erufuda" opponentId="76" />
+        <response id="168" opponent="spooky" opponentId="2" />
+        <response id="169" opponent="spooky" opponentId="67" />
+        <response id="181" opponent="aimee" opponentId="2" />
+        <response id="182" opponent="aimee" opponentId="1" />
+        <response id="183" opponent="aimee" opponentId="3" />
+        <response id="184" opponent="aimee" opponentId="6" />
+        <response id="0" opponent="aimee" opponentId="9" />
+        <response id="0" opponent="aimee" opponentId="4" />
+        <response id="0" opponent="bulma" opponentId="37" />
+        <response id="185" opponent="cats" opponentId="2" />
+        <response id="186" opponent="wasp" opponentId="108" />
+        <response id="0" opponent="wasp" opponentId="110" />
+        <response id="0" opponent="wasp" opponentId="139" />
+        <response id="187" opponent="9s" opponentId="8" />
+        <response id="188" opponent="adora" opponentId="71" />
+        <response id="189" opponent="ae86" opponentId="1" />
+        <response id="190" opponent="ae86" opponentId="4" />
+        <response id="191" opponent="amy" opponentId="259" />
+        <response id="0" opponent="aoi_asahina" opponentId="10" />
+        <response id="0" opponent="aoi_asahina" opponentId="39" />
+        <response id="192" opponent="aqua_kh" opponentId="67" />
+        <response id="0" opponent="sly_cooper" opponentId="3" />
+        <response id="193" opponent="shantae" opponentId="10" />
+        <response id="194" opponent="shimakaze" opponentId="1" />
+        <response id="200" opponent="samus_aran" opponentId="1" />
+        <response id="201" opponent="anatoly" opponentId="15" />
+        <response id="202" opponent="polly" opponentId="39" />
+        <response id="0" opponent="polly" opponentId="7" />
+        <response id="552" opponent="mia" opponentId="1" />
+        <response id="553" opponent="mia" opponentId="34" />
+        <response id="555" opponent="arle" opponentId="241" />
+        <response id="556" opponent="arle" opponentId="557" />
+        <response id="558" opponent="serena" opponentId="62" />
+        <response id="0" opponent="lyralei" opponentId="1114" />
+        <response id="654" opponent="meia" opponentId="9" />
+        <response id="655" opponent="chazz" opponentId="22" />
+        <response id="656" opponent="chazz" opponentId="9" />
+    </responses>
+    <notes>
+        <note id="3">It does infact translate to people who spend lots of time with ghosts, or atleast it translates to hex getting better ai in october.</note>
+        <note id="92">buncha masturbation noises</note>
+        <note id="93">Hex has begun to lactate, should be targeted via seeing if she's said the "Milky" marker rather than if she's saying it.</note>
+        <note id="158">buncha masturbation noises
+Makes her make masturbation noises if no other case is there, ie if someone's stripping accesories, she's got other more important stuff to care about.</note>
+        <note id="198">Translation for french:  Je veux que ma tête soit coincée là-dedans... = I want my head sandwiched right in there...</note>
+        <note id="205">Intention is for aaravi to not give Hex to Hex. Conversation could continue to setting up a "play date"?</note>
+    </notes>
+    <labels>
+        <label id="1" label="Sunny" folder="Background stuff" sort="2" />
+        <label id="2" label="Night" folder="Background stuff" sort="2" />
+        <label id="3" label="October" folder="Seasonal" sort="2" />
+        <label id="4" label="Halloween" folder="Seasonal" sort="0" />
+        <label id="8" label="Milk offer" folder="" sort="0" />
+        <label id="6" label="cheating with haunter" folder="" sort="0" />
+        <label id="9" label="Milk offer" folder="" sort="0" />
+        <label id="10" label="Milk offer" folder="" sort="0" />
+        <label id="11" label="Milk offer" folder="" sort="0" />
+        <label id="12" label="Did haunter mess with someone's hand?" folder="" sort="0" />
+        <label id="13" label="standard" folder="" sort="0" />
+        <label id="14" label="Haunter cheating resolution" folder="" sort="0" />
+        <label id="15" label="cheating with haunter no swap" folder="" sort="0" />
+        <label id="16" label="Generic" folder="Ghost yapping&gt;Froslass" sort="4" />
+        <label id="17" label="Generic" folder="Ghost yapping&gt;Gengar" sort="4" />
+        <label id="18" label="Generic" folder="Ghost yapping&gt;Oricorio" sort="4" />
+        <label id="201" label="" folder="Targets" sort="14" />
+        <label id="20" label="Generic" folder="Ghost yapping&gt;Arceus" sort="7" />
+        <label id="21" label="Generic" folder="Ghost yapping&gt;Dragapult" sort="8" />
+        <label id="22" label="Generic" folder="Ghost yapping&gt;Gimmighoul" sort="9" />
+        <label id="23" label="Ceruledge" color="6" folder="Ghost yapping&gt;!Unsorted" sort="10" />
+        <label id="24" label="Generic" folder="Ghost yapping&gt;Trevenant" sort="11" />
+        <label id="25" label="Generic" folder="Ghost yapping&gt;Runerigus" sort="12" />
+        <label id="26" label="Generic" folder="Ghost yapping&gt;Flutter Mane" sort="13" />
+        <label id="27" label="Generic" folder="Ghost yapping&gt;Shedinja" sort="5" />
+        <label id="28" label="Region Of Origin" folder="Ghost yapping&gt;Rotom" sort="14" />
+        <label id="29" label="Generic" folder="Ghost yapping&gt;Hisuian Zorua" sort="15" />
+        <label id="30" label="Generic" folder="Ghost yapping&gt;Basculegion" sort="16" />
+        <label id="31" label="Generic" folder="Ghost yapping&gt;Aegislash" sort="17" />
+        <label id="32" label="" folder="Ghost yapping&gt;Annihilape" sort="18" />
+        <label id="33" label="card cheat" folder="" sort="0" />
+        <label id="34" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="2" />
+        <label id="35" label="Generic" folder="Ghost yapping&gt;Cryogonal" sort="2" />
+        <label id="36" label="" folder="Dev password" sort="0" />
+        <label id="37" label="Generic" folder="Ghost yapping&gt;Gastly" sort="2" />
+        <label id="38" label="Generic" folder="Ghost yapping&gt;Haunter" sort="3" />
+        <label id="39" label="Pandemic" folder="Targets&gt;Yuzuki" sort="0" />
+        <label id="40" label="" folder="Targets" sort="10" />
+        <label id="41" label="Thanks" folder="Ghost yapping" sort="6" />
+        <label id="42" label="" folder="Targets" sort="38" />
+        <label id="43" label="really a ghost" folder="Targets&gt;Yuzuki" sort="2" />
+        <label id="67" label="Haunter Intro" folder="" sort="0" />
+        <label id="69" label="should not play." folder="" sort="0" />
+        <label id="71" label="Stick" folder="" sort="0" />
+        <label id="72" label="Thick" folder="" sort="0" />
+        <label id="73" label="Stick" folder="" sort="0" />
+        <label id="74" label="Thick" folder="" sort="0" />
+        <label id="75" label="Stick" folder="" sort="0" />
+        <label id="76" label="Stick" folder="" sort="0" />
+        <label id="77" label="Stick" folder="" sort="0" />
+        <label id="79" label="HaunterGoneResulution" folder="" sort="0" />
+        <label id="61" label="" folder="Targets" sort="4" />
+        <label id="59" label="" folder="Targets" sort="6" />
+        <label id="80" label="" folder="Targets" sort="5" />
+        <label id="64" label="" folder="Targets" sort="9" />
+        <label id="63" label="" folder="Targets" sort="8" />
+        <label id="81" label="" folder="Targets&gt;Spooky" sort="0" />
+        <label id="82" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="83" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="84" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="85" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="86" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="87" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="88" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="89" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="90" label="" folder="Response&gt;General&gt;Stream" sort="0" />
+        <label id="94" label="Did haunter mess with someone's hand?" folder="" sort="0" />
+        <label id="95" label="ByeByeHaunter" folder="" sort="0" />
+        <label id="96" label="" folder="AuraCam" sort="2" />
+        <label id="97" label="" folder="AuraCam" sort="0" />
+        <label id="98" label="" folder="AuraCam" sort="3" />
+        <label id="99" label="Generic" folder="Ghost yapping&gt;Drifloon" sort="4" />
+        <label id="100" label="Generic" folder="Ghost yapping&gt;Drifblim" sort="4" />
+        <label id="101" label="Generic" folder="Ghost yapping&gt;Pecharunt" sort="4" />
+        <label id="102" label="Generic" folder="Ghost yapping&gt;Mimikyu" sort="4" />
+        <label id="103" label="Generic" folder="Ghost yapping&gt;Misdreavus" sort="4" />
+        <label id="104" label="Generic" folder="Ghost yapping&gt;Mismagius" sort="4" />
+        <label id="105" label="Generic" folder="Ghost yapping&gt;Galarian Corsola" sort="4" />
+        <label id="106" label="Generic" folder="Ghost yapping&gt;Cursola" sort="4" />
+        <label id="107" label="Generic" folder="Ghost yapping&gt;Shuppet" sort="4" />
+        <label id="108" label="Generic" folder="Ghost yapping&gt;Banette" sort="4" />
+        <label id="109" label="Generic" folder="Ghost yapping&gt;Duskull" sort="4" />
+        <label id="110" label="Generic" folder="Ghost yapping&gt;Dusclops" sort="4" />
+        <label id="111" label="Generic" folder="Ghost yapping&gt;Dusknoir" sort="4" />
+        <label id="112" label="Generic" folder="Ghost yapping&gt;Yamask" sort="4" />
+        <label id="113" label="Generic" folder="Ghost yapping&gt;Cofagrigus" sort="4" />
+        <label id="114" label="Generic" folder="Ghost yapping&gt;Sinistea" sort="4" />
+        <label id="115" label="Generic" folder="Ghost yapping&gt;Polteageist" sort="4" />
+        <label id="116" label="Generic" folder="Ghost yapping&gt;Greavard" sort="4" />
+        <label id="117" label="Generic" folder="Ghost yapping&gt;Houndstone" sort="4" />
+        <label id="118" label="Generic" folder="Ghost yapping&gt;Phantump" sort="4" />
+        <label id="119" label="Generic" folder="Ghost yapping&gt;Gholdengo" sort="4" />
+        <label id="120" label="Generic" folder="Ghost yapping&gt;Honedge" sort="4" />
+        <label id="121" label="Generic" folder="Ghost yapping&gt;Doublade" sort="4" />
+        <label id="122" label="Generic" folder="Ghost yapping&gt;Dreepy" sort="4" />
+        <label id="207" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="2" />
+        <label id="124" label="Giratina" color="1" folder="Ghost yapping&gt;!Unwritten" sort="7" />
+        <label id="125" label="Lunala" color="1" folder="Ghost yapping&gt;!Unwritten" sort="8" />
+        <label id="126" label="Necrozma" color="1" folder="Ghost yapping&gt;!NotGhost" sort="0" />
+        <label id="127" label="Marshadow" color="1" folder="Ghost yapping&gt;!Unwritten" sort="9" />
+        <label id="128" label="Generic" folder="Ghost yapping&gt;Blacephalon" sort="10" />
+        <label id="129" label="Spectrier" color="1" folder="Ghost yapping&gt;!Unwritten" sort="11" />
+        <label id="130" label="Hoopa" color="1" folder="Ghost yapping&gt;!Unwritten" sort="12" />
+        <label id="131" label="Litwick" color="6" folder="Ghost yapping&gt;!Unsorted" sort="13" />
+        <label id="132" label="Lampent" color="6" folder="Ghost yapping&gt;!Unsorted" sort="14" />
+        <label id="133" label="Chandelure" color="6" folder="Ghost yapping&gt;!Unsorted" sort="15" />
+        <label id="134" label="Generic" folder="Ghost yapping&gt;Alolan Marowak" sort="16" />
+        <label id="135" label="Region Of Origin" folder="Ghost yapping&gt;Hisuian Typhlosion" sort="17" />
+        <label id="136" label="Skeledirge" color="1" folder="Ghost yapping&gt;!Unwritten" sort="18" />
+        <label id="137" label="Sinistcha" color="1" folder="Ghost yapping&gt;!Unwritten" sort="19" />
+        <label id="138" label="Pumpkaboo" color="1" folder="Ghost yapping&gt;!Unwritten" sort="20" />
+        <label id="139" label="Gourgeist" color="1" folder="Ghost yapping&gt;!Unwritten" sort="21" />
+        <label id="140" label="Dhelmise" color="6" folder="Ghost yapping&gt;!Unsorted" sort="22" />
+        <label id="141" label="Decidueye" color="6" folder="Ghost yapping&gt;!Unsorted" sort="23" />
+        <label id="142" label="Generic" folder="Ghost yapping&gt;Bramblin" sort="24" />
+        <label id="143" label="Generic" folder="Ghost yapping&gt;Brambleghast" sort="25" />
+        <label id="144" label="Poltchageist" color="1" folder="Ghost yapping&gt;!Unwritten" sort="26" />
+        <label id="145" label="Sandygast" color="1" folder="Ghost yapping&gt;!Unwritten" sort="27" />
+        <label id="146" label="Palossand" color="1" folder="Ghost yapping&gt;!Unwritten" sort="28" />
+        <label id="147" label="Generic" folder="Ghost yapping&gt;Galarian Yamask" sort="29" />
+        <label id="148" label="Golett" color="6" folder="Ghost yapping&gt;!Unsorted" sort="30" />
+        <label id="149" label="Golurk" color="1" folder="Ghost yapping&gt;!Unwritten" sort="31" />
+        <label id="150" label="Generic" folder="Ghost yapping&gt;Hisuian Zoroark" sort="32" />
+        <label id="151" label="Frillish" color="6" folder="Ghost yapping&gt;!Unsorted" sort="33" />
+        <label id="152" label="Jellicent" color="6" folder="Ghost yapping&gt;!Unsorted" sort="34" />
+        <label id="153" label="" folder="Ghost yapping" sort="0" />
+        <label id="155" label="Introduction" folder="" sort="0" />
+        <label id="156" label="" folder="ai controls" sort="0" />
+        <label id="157" label="" folder="ai controls" sort="0" />
+        <label id="159" label="GhostQ" folder="Prompts" sort="0" />
+        <label id="160" label="" folder="Background stuff" sort="0" />
+        <label id="169" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="0" />
+        <label id="170" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="2" />
+        <label id="171" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="3" />
+        <label id="172" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="4" />
+        <label id="173" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="5" />
+        <label id="164" label="" folder="Targets&gt;Erufuda" sort="0" />
+        <label id="167" label="" folder="Targets&gt;Erufuda" sort="3" />
+        <label id="163" label="" folder="Targets&gt;Erufuda" sort="2" />
+        <label id="174" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="6" />
+        <label id="175" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="7" />
+        <label id="176" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="8" />
+        <label id="177" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="9" />
+        <label id="178" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="10" />
+        <label id="179" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="11" />
+        <label id="180" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="12" />
+        <label id="45" label="" folder="Targets" sort="22" />
+        <label id="188" label="" folder="Targets" sort="23" />
+        <label id="161" label="" folder="Targets" sort="24" />
+        <label id="182" label="" folder="Targets" sort="25" />
+        <label id="195" label="" folder="Targets" sort="13" />
+        <label id="191" label="" folder="Targets" sort="36" />
+        <label id="183" label="" folder="Targets" sort="37" />
+        <label id="56" label="" folder="Targets&gt;Yuzuki" sort="3" />
+        <label id="66" label="" folder="Targets&gt;Yuzuki" sort="4" />
+        <label id="181" label="" folder="Targets" sort="34" />
+        <label id="50" label="" folder="Targets" sort="32" />
+        <label id="196" label="" folder="Targets" sort="33" />
+        <label id="197" label="" folder="Targets" sort="40" />
+        <label id="199" label="Default" folder="Ghost yapping&gt;Voltorb" sort="35" />
+        <label id="203" label="" folder="Targets&gt;Aaravi" sort="0" />
+        <label id="204" label="" folder="Targets&gt;Aaravi" sort="2" />
+        <label id="205" label="" folder="Targets&gt;Aaravi" sort="3" />
+        <label id="206" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="0" />
+        <label id="208" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="3" />
+        <label id="209" label="" folder="Ghost yapping&gt;Shedinja&gt;Filter" sort="0" />
+        <label id="210" label="" folder="Ghost yapping&gt;Shedinja&gt;Filter" sort="2" />
+        <label id="211" label="Generic" folder="Ghost yapping&gt;Spiritomb" sort="4" />
+        <label id="212" label="" folder="Ghost yapping&gt;Spiritomb&gt;Filter" sort="0" />
+        <label id="213" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="2" />
+        <label id="214" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="3" />
+        <label id="123" label="Generic" folder="Ghost yapping&gt;Drakloak" sort="4" />
+        <label id="19" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="0" />
+        <label id="215" label="Generic" folder="Ghost yapping&gt;Sableye" sort="4" />
+        <label id="216" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="2" />
+        <label id="217" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="3" />
+        <label id="218" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="4" />
+        <label id="219" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="5" />
+        <label id="220" label="" folder="Ghost yapping&gt;Sableye&gt;Filter" sort="0" />
+        <label id="221" label="" folder="Ghost yapping&gt;Sableye&gt;Filter" sort="2" />
+        <label id="222" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="0" />
+        <label id="223" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="2" />
+        <label id="224" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="3" />
+        <label id="225" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="4" />
+        <label id="226" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="5" />
+        <label id="227" label="" folder="Ghost yapping&gt;Aegislash&gt;Target" sort="6" />
+        <label id="228" label="" folder="Ghost yapping&gt;Aegislash&gt;Filters" sort="0" />
+        <label id="229" label="" folder="Ghost yapping&gt;Aegislash&gt;Filters" sort="2" />
+        <label id="230" label="" folder="Ghost yapping&gt;Aegislash&gt;Filters" sort="3" />
+        <label id="231" label="" folder="Ghost yapping&gt;Aegislash&gt;Filters" sort="4" />
+        <label id="232" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="0" />
+        <label id="233" label="" folder="Ghost yapping&gt;Doublade&gt;Filter" sort="0" />
+        <label id="234" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="2" />
+        <label id="235" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="3" />
+        <label id="236" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="4" />
+        <label id="237" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="0" />
+        <label id="238" label="" folder="Ghost yapping&gt;Doublade&gt;Filter" sort="2" />
+        <label id="239" label="" folder="Ghost yapping&gt;Doublade&gt;Filter" sort="3" />
+        <label id="240" label="" folder="Ghost yapping&gt;Doublade&gt;Filter" sort="4" />
+        <label id="241" label="" folder="Ghost yapping&gt;Doublade&gt;Target" sort="5" />
+        <label id="242" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="0" />
+        <label id="243" label="" folder="Ghost yapping&gt;Honedge&gt;Targer" sort="0" />
+        <label id="244" label="" folder="Ghost yapping&gt;Honedge&gt;Targer" sort="2" />
+        <label id="245" label="" folder="Ghost yapping&gt;Honedge&gt;Targer" sort="3" />
+        <label id="246" label="" folder="Ghost yapping&gt;Honedge&gt;Targer" sort="4" />
+        <label id="247" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="2" />
+        <label id="248" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="3" />
+        <label id="249" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="4" />
+        <label id="250" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
+        <label id="251" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="2" />
+        <label id="252" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="3" />
+        <label id="253" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="4" />
+        <label id="254" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
+        <label id="255" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="2" />
+        <label id="256" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="3" />
+        <label id="257" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="5" />
+        <label id="258" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="4" />
+        <label id="259" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="5" />
+        <label id="260" label="Region Of Origin" folder="Ghost yapping&gt;Annihilape" sort="3" />
+        <label id="261" label="Region Of Origin" folder="Ghost yapping&gt;Aegislash" sort="3" />
+        <label id="262" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="263" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="2" />
+        <label id="264" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="3" />
+        <label id="265" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="4" />
+        <label id="266" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="5" />
+        <label id="267" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="0" />
+        <label id="268" label="Region Of Origin" folder="Ghost yapping&gt;Banette" sort="3" />
+        <label id="269" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="2" />
+        <label id="270" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="3" />
+        <label id="271" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="4" />
+        <label id="272" label="Region Of Origin" folder="Ghost yapping&gt;Cofagrigus" sort="0" />
+        <label id="273" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="274" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="0" />
+        <label id="275" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="2" />
+        <label id="276" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="3" />
+        <label id="277" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="4" />
+        <label id="278" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="2" />
+        <label id="279" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="3" />
+        <label id="280" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="4" />
+        <label id="281" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="5" />
+        <label id="282" label="Region of Origin" folder="Ghost yapping&gt;Cryogonal" sort="0" />
+        <label id="283" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="284" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="0" />
+        <label id="285" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="2" />
+        <label id="286" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="3" />
+        <label id="287" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="4" />
+        <label id="288" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="5" />
+        <label id="289" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="2" />
+        <label id="290" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="3" />
+        <label id="291" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="4" />
+        <label id="292" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="5" />
+        <label id="293" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="6" />
+        <label id="294" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="7" />
+        <label id="295" label="Region Of Origin" folder="Ghost yapping&gt;Cursola" sort="0" />
+        <label id="296" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="0" />
+        <label id="297" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="0" />
+        <label id="298" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="2" />
+        <label id="299" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="3" />
+        <label id="300" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="4" />
+        <label id="301" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="2" />
+        <label id="302" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="3" />
+        <label id="303" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="4" />
+        <label id="304" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="5" />
+        <label id="305" label="Region Of Origin" folder="Ghost yapping&gt;Doublade" sort="3" />
+        <label id="306" label="Region Of Origin" folder="Ghost yapping&gt;Dragapult" sort="0" />
+        <label id="307" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="0" />
+        <label id="308" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="0" />
+        <label id="309" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="2" />
+        <label id="310" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="2" />
+        <label id="311" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="3" />
+        <label id="312" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="3" />
+        <label id="313" label="Region Of Origin" folder="Ghost yapping&gt;Drakloak" sort="0" />
+        <label id="314" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="0" />
+        <label id="315" label="" folder="Ghost yapping&gt;Drakloak&gt;Targets" sort="0" />
+        <label id="316" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="2" />
+        <label id="317" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="3" />
+        <label id="318" label="" folder="Ghost yapping&gt;Drakloak&gt;Targets" sort="2" />
+        <label id="319" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="6" />
+        <label id="320" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="7" />
+        <label id="321" label="Region Of Origin" folder="Ghost yapping&gt;Dreepy" sort="0" />
+        <label id="322" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="0" />
+        <label id="323" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="0" />
+        <label id="324" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="2" />
+        <label id="325" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="2" />
+        <label id="326" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="3" />
+        <label id="327" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="3" />
+        <label id="328" label="Region Of Origin" folder="Ghost yapping&gt;Drifblim" sort="0" />
+        <label id="329" label="" folder="Ghost yapping&gt;Drifblim&gt;Filter" sort="0" />
+        <label id="330" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="0" />
+        <label id="331" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="2" />
+        <label id="332" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="3" />
+        <label id="333" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="4" />
+        <label id="334" label="" folder="Ghost yapping&gt;Spiritomb&gt;Filter" sort="2" />
+        <label id="335" label="" folder="Ghost yapping&gt;Drifblim&gt;Filter" sort="2" />
+        <label id="336" label="Region Of Origin" folder="Ghost yapping&gt;Drifloon" sort="0" />
+        <label id="337" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="0" />
+        <label id="338" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="2" />
+        <label id="339" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="3" />
+        <label id="340" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="4" />
+        <label id="341" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="0" />
+        <label id="342" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="2" />
+        <label id="343" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="3" />
+        <label id="344" label="Region Of Origin" folder="Ghost yapping&gt;Dusclops" sort="0" />
+        <label id="345" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="0" />
+        <label id="346" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="0" />
+        <label id="347" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="0" />
+        <label id="348" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="2" />
+        <label id="349" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="0" />
+        <label id="350" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="2" />
+        <label id="351" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="6" />
+        <label id="352" label="Region Of Origin" folder="Ghost yapping&gt;Dusknoir" sort="0" />
+        <label id="353" label="" folder="Ghost yapping&gt;Dusknoir&gt;Filters" sort="0" />
+        <label id="354" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="0" />
+        <label id="355" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="2" />
+        <label id="356" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="3" />
+        <label id="357" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="4" />
+        <label id="358" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="5" />
+        <label id="359" label="" folder="Ghost yapping&gt;Dusknoir&gt;Filters" sort="2" />
+        <label id="360" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="4" />
+        <label id="361" label="Region Of Origin" folder="Ghost yapping&gt;Duskull" sort="0" />
+        <label id="362" label="" folder="Ghost yapping&gt;Duskull&gt;Filter" sort="0" />
+        <label id="363" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="0" />
+        <label id="364" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="2" />
+        <label id="365" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="3" />
+        <label id="366" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="4" />
+        <label id="367" label="" folder="Ghost yapping&gt;Duskull&gt;Filter" sort="2" />
+        <label id="368" label="Region Of Origin" folder="Ghost yapping&gt;Flutter Mane" sort="0" />
+        <label id="369" label="" folder="Ghost yapping&gt;Flutter Mane&gt;Filter" sort="0" />
+        <label id="370" label="" folder="Ghost yapping&gt;Flutter Mane&gt;Target" sort="0" />
+        <label id="371" label="" folder="Ghost yapping&gt;Flutter Mane&gt;Filter" sort="2" />
+        <label id="372" label="" folder="Ghost yapping&gt;Flutter Mane&gt;Target" sort="2" />
+        <label id="373" label="Region Of Origin" folder="Ghost yapping&gt;Froslass" sort="0" />
+        <label id="374" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="0" />
+        <label id="375" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="0" />
+        <label id="376" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="0" />
+        <label id="377" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="2" />
+        <label id="378" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="3" />
+        <label id="379" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="4" />
+        <label id="380" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="2" />
+        <label id="381" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="3" />
+        <label id="382" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="4" />
+        <label id="383" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="5" />
+        <label id="384" label="" folder="Ghost yapping&gt;Froslass&gt;Filter" sort="6" />
+        <label id="385" label="Region Of Origin" folder="Ghost yapping&gt;Galarian Corsola" sort="0" />
+        <label id="386" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Filter" sort="0" />
+        <label id="387" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Target" sort="0" />
+        <label id="388" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Filter" sort="2" />
+        <label id="389" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Filter" sort="3" />
+        <label id="390" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Filter" sort="4" />
+        <label id="391" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Target" sort="2" />
+        <label id="392" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Target" sort="3" />
+        <label id="393" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Target" sort="4" />
+        <label id="394" label="" folder="Ghost yapping&gt;Galarian Corsola&gt;Target" sort="5" />
+        <label id="395" label="Region Of Origin" folder="Ghost yapping&gt;Gastly" sort="0" />
+        <label id="396" label="" folder="Ghost yapping&gt;Gastly&gt;Filter" sort="0" />
+        <label id="397" label="" folder="Ghost yapping&gt;Gastly&gt;Targets" sort="0" />
+        <label id="398" label="" folder="Ghost yapping&gt;Gastly&gt;Targets" sort="2" />
+        <label id="399" label="" folder="Ghost yapping&gt;Gastly&gt;Targets" sort="3" />
+        <label id="400" label="" folder="Ghost yapping&gt;Gastly&gt;Targets" sort="4" />
+        <label id="401" label="" folder="Ghost yapping&gt;Gastly&gt;Filter" sort="2" />
+        <label id="402" label="Region Of Origin" folder="Ghost yapping&gt;Gengar" sort="0" />
+        <label id="403" label="Region Of Origin" folder="Ghost yapping&gt;Gholdengo" sort="0" />
+        <label id="404" label="Region Of Origin" folder="Ghost yapping&gt;Gimmighoul" sort="0" />
+        <label id="405" label="Region Of Origin" folder="Ghost yapping&gt;Greavard" sort="0" />
+        <label id="406" label="Region Of Origin" folder="Ghost yapping&gt;Haunter" sort="0" />
+        <label id="407" label="Region Of Origin" folder="Ghost yapping&gt;Honedge" sort="3" />
+        <label id="408" label="Region Of Origin" folder="Ghost yapping&gt;Houndstone" sort="0" />
+        <label id="409" label="Region Of Origin" folder="Ghost yapping&gt;Mimikyu" sort="0" />
+        <label id="410" label="" folder="Ghost yapping&gt;Misdreavus&gt;Targets" sort="0" />
+        <label id="411" label="" folder="Ghost yapping&gt;Mismagius&gt;Filters" sort="0" />
+        <label id="412" label="Region Of Origin" folder="Ghost yapping&gt;Oricorio" sort="0" />
+        <label id="413" label="Region Of Origin" folder="Ghost yapping&gt;Pecharunt" sort="0" />
+        <label id="414" label="Region Of Origin" folder="Ghost yapping&gt;Phantump" sort="0" />
+        <label id="415" label="Region Of Origin" folder="Ghost yapping&gt;Polteageist" sort="0" />
+        <label id="416" label="Generic" folder="Ghost yapping&gt;Rotom" sort="4" />
+        <label id="417" label="Region Of Origin" folder="Ghost yapping&gt;Sableye" sort="3" />
+        <label id="418" label="Region Of Origin" folder="Ghost yapping&gt;Shedinja" sort="3" />
+        <label id="419" label="Region Of Origin" folder="Ghost yapping&gt;Shuppet" sort="0" />
+        <label id="420" label="Region Of Origin" folder="Ghost yapping&gt;Sinistea" sort="0" />
+        <label id="421" label="Region Of Origin" folder="Ghost yapping&gt;Spiritomb" sort="3" />
+        <label id="422" label="Region Of Origin" folder="Ghost yapping&gt;Yamask" sort="0" />
+        <label id="423" label="" folder="Ghost yapping&gt;Gengar&gt;Targets" sort="0" />
+        <label id="424" label="" folder="Ghost yapping&gt;Gengar&gt;Filter" sort="0" />
+        <label id="425" label="" folder="Ghost yapping&gt;Gholdengo&gt;Filter" sort="0" />
+        <label id="426" label="" folder="Ghost yapping&gt;Gholdengo&gt;Targets" sort="0" />
+        <label id="427" label="" folder="Ghost yapping&gt;Gimmighoul&gt;Fliter" sort="0" />
+        <label id="428" label="" folder="Ghost yapping&gt;Gimmighoul&gt;Targets" sort="0" />
+        <label id="429" label="" folder="Ghost yapping&gt;Greavard&gt;Filter" sort="0" />
+        <label id="430" label="" folder="Ghost yapping&gt;Greavard&gt;Targets" sort="0" />
+        <label id="431" label="" folder="Ghost yapping&gt;Haunter" sort="0" />
+        <label id="432" label="" folder="Ghost yapping&gt;Haunter&gt;Targets" sort="0" />
+        <label id="433" label="" folder="Ghost yapping&gt;Haunter&gt;Filter" sort="0" />
+        <label id="434" label="" folder="Ghost yapping&gt;Houndstone&gt;Targets" sort="0" />
+        <label id="435" label="" folder="Ghost yapping&gt;Houndstone&gt;Filters" sort="0" />
+        <label id="436" label="" folder="Ghost yapping&gt;Mimikyu&gt;Filters" sort="0" />
+        <label id="437" label="" folder="Ghost yapping&gt;Mimikyu&gt;Targets" sort="0" />
+        <label id="438" label="Region Of Origin" folder="Ghost yapping&gt;Misdreavus" sort="2" />
+        <label id="439" label="" folder="Ghost yapping&gt;Misdreavus&gt;Filters" sort="0" />
+        <label id="440" label="Region Of Origin" folder="Ghost yapping&gt;Mismagius" sort="2" />
+        <label id="441" label="" folder="Ghost yapping&gt;Mismagius&gt;Targets" sort="0" />
+        <label id="442" label="" folder="Ghost yapping&gt;Oricorio&gt;Filters" sort="0" />
+        <label id="443" label="" folder="Ghost yapping&gt;Oricorio&gt;Targets" sort="0" />
+        <label id="444" label="" folder="Ghost yapping&gt;Pecharunt&gt;Filters" sort="0" />
+        <label id="445" label="" folder="Ghost yapping&gt;Pecharunt&gt;Targets" sort="0" />
+        <label id="446" label="" folder="Ghost yapping&gt;Phantump&gt;Targets" sort="0" />
+        <label id="447" label="" folder="Ghost yapping&gt;Phantump&gt;Filters" sort="0" />
+        <label id="448" label="" folder="Ghost yapping&gt;Polteageist&gt;Filters" sort="0" />
+        <label id="449" label="" folder="Ghost yapping&gt;Polteageist&gt;Targets" sort="0" />
+        <label id="450" label="" folder="Ghost yapping&gt;Rotom&gt;Targets" sort="0" />
+        <label id="451" label="" folder="Ghost yapping&gt;Rotom&gt;Filters" sort="0" />
+        <label id="452" label="" folder="Ghost yapping&gt;Yamask&gt;Targets" sort="0" />
+        <label id="453" label="" folder="Ghost yapping&gt;Yamask&gt;Filter" sort="0" />
+        <label id="454" label="" folder="Ghost yapping&gt;Sinistea&gt;Filters" sort="0" />
+        <label id="455" label="" folder="Ghost yapping&gt;Sinistea&gt;Targets" sort="0" />
+        <label id="456" label="" folder="Ghost yapping&gt;Shuppet&gt;Filters" sort="0" />
+        <label id="457" label="" folder="Ghost yapping&gt;Shuppet&gt;Targets" sort="0" />
+        <label id="458" label="" folder="Ghost yapping&gt;Gengar&gt;Filter" sort="2" />
+        <label id="459" label="" folder="Ghost yapping&gt;Gengar&gt;Filter" sort="3" />
+        <label id="460" label="" folder="Ghost yapping&gt;Gengar&gt;Targets" sort="2" />
+        <label id="461" label="" folder="Ghost yapping&gt;Gengar&gt;Targets" sort="3" />
+        <label id="462" label="" folder="Ghost yapping&gt;Gholdengo&gt;Filter" sort="2" />
+        <label id="464" label="" folder="Ghost yapping&gt;Yamask&gt;Filter" sort="2" />
+        <label id="465" label="" folder="Ghost yapping&gt;Yamask&gt;Filter" sort="3" />
+        <label id="466" label="" folder="Ghost yapping&gt;Yamask&gt;Targets" sort="2" />
+        <label id="467" label="" folder="Ghost yapping&gt;Yamask&gt;Targets" sort="3" />
+        <label id="468" label="" folder="Ghost yapping&gt;Yamask&gt;Targets" sort="4" />
+        <label id="469" label="" folder="Ghost yapping&gt;Sinistea&gt;Targets" sort="2" />
+        <label id="470" label="" folder="Ghost yapping&gt;Sinistea&gt;Filters" sort="2" />
+        <label id="471" label="" folder="Ghost yapping&gt;Sinistea&gt;Filters" sort="3" />
+        <label id="472" label="" folder="Ghost yapping&gt;Polteageist&gt;Targets" sort="2" />
+        <label id="473" label="" folder="Ghost yapping&gt;Polteageist&gt;Filters" sort="2" />
+        <label id="474" label="" folder="Ghost yapping&gt;Polteageist&gt;Filters" sort="3" />
+        <label id="475" label="" folder="Ghost yapping&gt;Polteageist&gt;Filters" sort="4" />
+        <label id="476" label="" folder="Ghost yapping&gt;Sinistea&gt;Filters" sort="4" />
+        <label id="477" label="" folder="Ghost yapping&gt;Shuppet&gt;Targets" sort="2" />
+        <label id="478" label="" folder="Ghost yapping&gt;Shuppet&gt;Targets" sort="3" />
+        <label id="479" label="" folder="Ghost yapping&gt;Shuppet&gt;Targets" sort="4" />
+        <label id="480" label="" folder="Ghost yapping&gt;Shuppet&gt;Targets" sort="5" />
+        <label id="481" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="6" />
+        <label id="482" label="" folder="Ghost yapping&gt;Rotom&gt;Filters" sort="2" />
+        <label id="483" label="" folder="Ghost yapping&gt;Rotom&gt;Filters" sort="3" />
+        <label id="484" label="" folder="Ghost yapping&gt;Rotom&gt;Targets" sort="2" />
+        <label id="485" label="" folder="Ghost yapping&gt;Rotom&gt;Targets" sort="3" />
+        <label id="486" label="" folder="Ghost yapping&gt;Phantump&gt;Filters" sort="2" />
+        <label id="487" label="" folder="Ghost yapping&gt;Phantump&gt;Filters" sort="3" />
+        <label id="488" label="" folder="Ghost yapping&gt;Phantump&gt;Targets" sort="2" />
+        <label id="489" label="" folder="Ghost yapping&gt;Phantump&gt;Targets" sort="3" />
+        <label id="490" label="" folder="Ghost yapping&gt;Pecharunt&gt;Targets" sort="0" />
+        <label id="491" label="" folder="Ghost yapping&gt;Pecharunt&gt;Filters" sort="2" />
+        <label id="492" label="" folder="Ghost yapping&gt;Oricorio&gt;Targets" sort="2" />
+        <label id="493" label="" folder="Ghost yapping&gt;Oricorio&gt;Targets" sort="3" />
+        <label id="494" label="" folder="Ghost yapping&gt;Oricorio&gt;Targets" sort="4" />
+        <label id="495" label="" folder="Ghost yapping&gt;Oricorio&gt;Filters" sort="2" />
+        <label id="496" label="" folder="Ghost yapping&gt;Oricorio&gt;Filters" sort="3" />
+        <label id="497" label="" folder="Ghost yapping&gt;Oricorio&gt;Filters" sort="4" />
+        <label id="498" label="" folder="Ghost yapping&gt;Mismagius&gt;Targets" sort="2" />
+        <label id="499" label="" folder="Ghost yapping&gt;Mismagius&gt;Filters" sort="2" />
+        <label id="500" label="" folder="Ghost yapping&gt;Mismagius&gt;Filters" sort="3" />
+        <label id="501" label="" folder="Ghost yapping&gt;Mismagius&gt;Targets" sort="3" />
+        <label id="502" label="" folder="Ghost yapping&gt;Misdreavus&gt;Targets" sort="2" />
+        <label id="503" label="" folder="Ghost yapping&gt;Misdreavus&gt;Targets" sort="3" />
+        <label id="504" label="" folder="Ghost yapping&gt;Misdreavus&gt;Filters" sort="2" />
+        <label id="505" label="" folder="Ghost yapping&gt;Misdreavus&gt;Filters" sort="3" />
+        <label id="506" label="" folder="Ghost yapping&gt;Mimikyu&gt;Targets" sort="2" />
+        <label id="507" label="" folder="Ghost yapping&gt;Mimikyu&gt;Filters" sort="2" />
+        <label id="508" label="" folder="Ghost yapping&gt;Mimikyu&gt;Filters" sort="3" />
+        <label id="509" label="" folder="Ghost yapping&gt;Mimikyu&gt;Targets" sort="3" />
+        <label id="510" label="" folder="Ghost yapping&gt;Mimikyu&gt;Targets" sort="4" />
+        <label id="511" label="" folder="Ghost yapping&gt;Houndstone&gt;Targets" sort="2" />
+        <label id="512" label="" folder="Ghost yapping&gt;Houndstone&gt;Targets" sort="3" />
+        <label id="513" label="" folder="Ghost yapping&gt;Houndstone&gt;Filters" sort="2" />
+        <label id="514" label="" folder="Ghost yapping&gt;Houndstone&gt;Filters" sort="3" />
+        <label id="515" label="" folder="Ghost yapping&gt;Greavard&gt;Targets" sort="2" />
+        <label id="516" label="" folder="Ghost yapping&gt;Greavard&gt;Targets" sort="3" />
+        <label id="517" label="" folder="Ghost yapping&gt;Greavard&gt;Filter" sort="2" />
+        <label id="518" label="" folder="Ghost yapping&gt;Greavard&gt;Filter" sort="3" />
+        <label id="519" label="" folder="Ghost yapping&gt;Haunter&gt;Targets" sort="2" />
+        <label id="520" label="" folder="Ghost yapping&gt;Haunter&gt;Targets" sort="3" />
+        <label id="521" label="" folder="Ghost yapping&gt;Haunter&gt;Filter" sort="2" />
+        <label id="522" label="" folder="Ghost yapping&gt;Haunter&gt;Filter" sort="3" />
+        <label id="523" label="" folder="Ghost yapping&gt;Haunter&gt;Filter" sort="4" />
+        <label id="524" label="" folder="Ghost yapping&gt;Gimmighoul&gt;Fliter" sort="2" />
+        <label id="525" label="" folder="Ghost yapping&gt;Gholdengo&gt;Filter" sort="3" />
+        <label id="526" label="" folder="Filter" sort="0" />
+        <label id="528" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="6" />
+        <label id="529" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="7" />
+        <label id="189" label="" folder="Targets" sort="0" />
+        <label id="530" label="" folder="Targets&gt;Pokemon&gt;Cynthia" sort="0" />
+        <label id="531" label="" folder="Targets&gt;Pokemon&gt;Cynthia" sort="0" />
+        <label id="532" label="" folder="Targets&gt;Pokemon&gt;Caitlin" sort="0" />
+        <label id="533" label="" folder="Targets&gt;Pokemon&gt;Caitlin" sort="0" />
+        <label id="534" label="" folder="Targets&gt;Pokemon&gt;Rosa" sort="0" />
+        <label id="535" label="" folder="Targets&gt;Pokemon&gt;Elesa" sort="0" />
+        <label id="536" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="0" />
+        <label id="537" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="2" />
+        <label id="538" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="2" />
+        <label id="539" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="3" />
+        <label id="540" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="4" />
+        <label id="541" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="5" />
+        <label id="542" label="" folder="Targets&gt;Pokemon&gt;Rosa" sort="2" />
+        <label id="184" label="" folder="Targets" sort="15" />
+        <label id="52" label="" folder="Targets" sort="16" />
+        <label id="55" label="" folder="Targets" sort="17" />
+        <label id="46" label="" folder="Targets&gt;Yuelia" sort="2" />
+        <label id="154" label="" folder="Targets&gt;Yuelia" sort="3" />
+        <label id="62" label="" folder="Targets" sort="18" />
+        <label id="162" label="" folder="Targets&gt;Erufuda" sort="4" />
+        <label id="193" label="" folder="Targets" sort="20" />
+        <label id="194" label="" folder="Targets" sort="19" />
+        <label id="165" label="" folder="Targets&gt;Erufuda" sort="5" />
+        <label id="192" label="" folder="Targets" sort="21" />
+        <label id="91" label="" folder="Targets" sort="27" />
+        <label id="200" label="" folder="Targets" sort="26" />
+        <label id="168" label="" folder="Targets&gt;Spooky" sort="3" />
+        <label id="51" label="" folder="Targets" sort="28" />
+        <label id="187" label="" folder="Targets" sort="29" />
+        <label id="543" label="" folder="Targets" sort="30" />
+        <label id="202" label="" folder="Targets" sort="35" />
+        <label id="544" label="" folder="Targets" sort="31" />
+        <label id="545" label="" folder="Targets" sort="39" />
+        <label id="44" label="" folder="Targets" sort="41" />
+        <label id="186" label="" folder="Targets" sort="42" />
+        <label id="190" label="" folder="Targets" sort="44" />
+        <label id="54" label="" folder="Targets" sort="45" />
+        <label id="185" label="" folder="Targets" sort="43" />
+        <label id="48" label="" folder="Targets" sort="46" />
+        <label id="166" label="" folder="Targets&gt;Erufuda" sort="6" />
+        <label id="546" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="6" />
+        <label id="547" label="" folder="Targets&gt;Pokemon&gt;Grunts" sort="7" />
+        <label id="47" label="" folder="Targets&gt;Yuelia" sort="0" />
+        <label id="548" label="" folder="Targets" sort="2" />
+        <label id="549" label="" folder="Ghost yapping&gt;Froslass&gt;Target" sort="0" />
+        <label id="550" label="" folder="Ghost yapping&gt;Gimmighoul&gt;Targets" sort="0" />
+        <label id="551" label="" folder="Ghost yapping&gt;Gholdengo&gt;Targets" sort="0" />
+        <label id="554" label="" folder="Ghost yapping&gt;Drakloak&gt;Targets" sort="0" />
+        <label id="559" label="Region Of Origin" folder="Ghost yapping&gt;Trevenant" sort="0" />
+        <label id="560" label="" folder="Ghost yapping&gt;Trevenant&gt;Targets" sort="0" />
+        <label id="561" label="" folder="Ghost yapping&gt;Trevenant&gt;Filters" sort="0" />
+        <label id="562" label="" folder="Ghost yapping&gt;Phantump&gt;Filters" sort="0" />
+        <label id="563" label="" folder="Ghost yapping&gt;Trevenant&gt;Filters" sort="0" />
+        <label id="564" label="" folder="Ghost yapping&gt;Trevenant&gt;Filters" sort="0" />
+        <label id="565" label="" folder="Ghost yapping&gt;Trevenant&gt;Filters" sort="0" />
+        <label id="566" label="" folder="Ghost yapping&gt;Trevenant&gt;Targets" sort="0" />
+        <label id="567" label="" folder="Ghost yapping&gt;Trevenant&gt;Targets" sort="0" />
+        <label id="568" label="" folder="Ghost yapping&gt;Trevenant&gt;Targets" sort="0" />
+        <label id="569" label="Region Of Origin" folder="Ghost yapping&gt;Alolan Marowak" sort="0" />
+        <label id="570" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Targets" sort="0" />
+        <label id="571" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
+        <label id="572" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Targets" sort="0" />
+        <label id="573" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Targets" sort="0" />
+        <label id="574" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
+        <label id="575" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
+        <label id="576" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
+        <label id="577" label="Generic" folder="Ghost yapping&gt;Hisuian Typhlosion" sort="0" />
+        <label id="578" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Filters" sort="0" />
+        <label id="579" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Targets" sort="0" />
+        <label id="580" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Filters" sort="0" />
+        <label id="581" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Filters" sort="0" />
+        <label id="582" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Targets" sort="0" />
+        <label id="583" label="" folder="Ghost yapping&gt;Hisuian Typhlosion&gt;Targets" sort="0" />
+        <label id="584" label="Region Of Origin" folder="Ghost yapping&gt;Galarian Yamask" sort="0" />
+        <label id="585" label="Region Of Origin" folder="Ghost yapping&gt;Runerigus" sort="0" />
+        <label id="586" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Filters" sort="0" />
+        <label id="587" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Targets" sort="0" />
+        <label id="588" label="" folder="Ghost yapping&gt;Runerigus&gt;Targets" sort="0" />
+        <label id="589" label="" folder="Ghost yapping&gt;Runerigus&gt;Filters" sort="0" />
+        <label id="590" label="" folder="Ghost yapping&gt;Runerigus&gt;Filters" sort="0" />
+        <label id="591" label="" folder="Ghost yapping&gt;Runerigus&gt;Filters" sort="0" />
+        <label id="592" label="" folder="Ghost yapping&gt;Runerigus&gt;Filters" sort="0" />
+        <label id="593" label="" folder="Ghost yapping&gt;Runerigus&gt;Targets" sort="0" />
+        <label id="594" label="" folder="Ghost yapping&gt;Runerigus&gt;Targets" sort="0" />
+        <label id="595" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Filters" sort="0" />
+        <label id="596" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Filters" sort="0" />
+        <label id="597" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Filters" sort="0" />
+        <label id="598" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Targets" sort="0" />
+        <label id="599" label="" folder="Ghost yapping&gt;Galarian Yamask&gt;Targets" sort="0" />
+        <label id="600" label="Region Of Origin" folder="Ghost yapping&gt;Hisuian Zoroark" sort="0" />
+        <label id="601" label="Region Of Origin" folder="Ghost yapping&gt;Hisuian Zorua" sort="0" />
+        <label id="602" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Targets" sort="0" />
+        <label id="603" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Filters" sort="0" />
+        <label id="604" label="" folder="Ghost yapping&gt;Hisuian Zorua&gt;Targets" sort="0" />
+        <label id="605" label="" folder="Ghost yapping&gt;Hisuian Zorua&gt;Filters" sort="0" />
+        <label id="606" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Filters" sort="0" />
+        <label id="607" label="" folder="Ghost yapping&gt;Hisuian Zorua&gt;Filters" sort="0" />
+        <label id="608" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Filters" sort="0" />
+        <label id="609" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="0" />
+        <label id="610" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
+        <label id="611" label="Region Of Origin" folder="Ghost yapping&gt;Arceus" sort="0" />
+        <label id="612" label="" folder="Ghost yapping&gt;Arceus&gt;Targets" sort="0" />
+        <label id="613" label="" folder="Ghost yapping&gt;Arceus&gt;Filters" sort="0" />
+        <label id="614" label="" folder="Ghost yapping&gt;Arceus&gt;Filters" sort="0" />
+        <label id="615" label="Region Of Origin" folder="Ghost yapping&gt;Voltorb" sort="0" />
+        <label id="616" label="Region Of Origin" folder="Ghost yapping&gt;Basculegion" sort="0" />
+        <label id="617" label="" folder="Ghost yapping&gt;Basculegion&gt;Targets" sort="0" />
+        <label id="618" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
+        <label id="619" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
+        <label id="620" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
+        <label id="621" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
+        <label id="622" label="Region Of Origin" folder="Ghost yapping&gt;Blacephalon" sort="0" />
+        <label id="623" label="" folder="Ghost yapping&gt;Blacephalon&gt;Filter" sort="0" />
+        <label id="624" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="625" label="" folder="Ghost yapping&gt;Blacephalon&gt;Filter" sort="0" />
+        <label id="626" label="" folder="Ghost yapping&gt;Blacephalon&gt;Filter" sort="0" />
+        <label id="627" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="628" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="629" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="630" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="631" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="632" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="633" label="" folder="Targets" sort="0" />
+        <label id="634" label="Mean Look Caitlin" color="1" folder="" sort="0" />
+        <label id="635" label="Region Of Origin" folder="Ghost yapping&gt;Brambleghast" sort="0" />
+        <label id="636" label="Region Of Origin" folder="Ghost yapping&gt;Bramblin" sort="0" />
+        <label id="637" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
+        <label id="638" label="" folder="Ghost yapping&gt;Brambleghast&gt;Targets" sort="0" />
+        <label id="639" label="" folder="Ghost yapping&gt;Brambleghast&gt;Filters" sort="0" />
+        <label id="640" label="" folder="Ghost yapping&gt;Bramblin&gt;Filters" sort="0" />
+        <label id="641" label="" folder="Ghost yapping&gt;Bramblin&gt;Targets" sort="0" />
+        <label id="642" label="" folder="Ghost yapping&gt;Bramblin&gt;Targets" sort="0" />
+        <label id="643" label="" folder="Ghost yapping&gt;Brambleghast&gt;Targets" sort="0" />
+        <label id="644" label="Ghost Frequency" folder="Ghost yapping&gt;ZZ-NotPokemon" sort="0" />
+        <label id="645" label="" folder="Specific clothes" sort="0" />
+        <label id="646" label="" folder="Specific clothes" sort="0" />
+        <label id="647" label="" folder="Specific clothes" sort="0" />
+        <label id="648" label="" folder="Specific clothes" sort="0" />
+        <label id="649" label="FILL IN DUMBASS" color="1" folder="" sort="0" />
+        <label id="650" label="FILL IN DUMBASS" color="1" folder="" sort="0" />
+        <label id="654" label="" folder="Targets" sort="0" />
+        <label id="553" label="" folder="Targets" sort="0" />
+        <label id="555" label="" folder="Targets" sort="0" />
+        <label id="657" label="" folder="Targets" sort="0" />
+        <label id="658" label="" folder="Targets&gt;Revy" sort="0" />
+        <label id="659" label="" folder="Targets&gt;Filters" sort="0" />
+        <label id="660" label="" folder="Targets" sort="0" />
+        <label id="661" label="" folder="Targets" sort="0" />
+        <label id="662" label="" folder="Targets" sort="0" />
+        <label id="663" label="" folder="Targets" sort="0" />
+    </labels>
+    <prefixes>
+        <prefix>Haunter</prefix>
+        <prefix>Placeholder</prefix>
+        <prefix>z</prefix>
+    </prefixes>
+    <nextId>663</nextId>
+    <markers>
+        <marker scope="Public" name="9s_Nippleless" />
+        <marker scope="Public" name="9S_Nippleless" />
+        <marker scope="Public" name="Aaravi_HexTakeHex" />
+        <marker scope="Public" name="Aaravi_WrongHexBadhand" />
+        <marker scope="Public" name="Aaravi_WrongHexBadhandOhWait" />
+        <marker scope="Public" name="AE86_CarGone" />
+        <marker scope="Public" name="AE86_StandardReaction" />
+        <marker scope="Public" name="AE86AquaAndMagmaGrunts_UniformRecognize" />
+        <marker scope="Public" name="alonepick" />
+        <marker scope="Public" name="Amalia_Grow2" />
+        <marker scope="Public" name="Amalia-Grow2" />
+        <marker scope="Public" name="Anatoly_Illiterate" />
+        <marker scope="Public" name="Anna_siblings" />
+        <marker scope="Public" name="Aqua_BanLuckMagic" />
+        <marker scope="Public" name="AquaAndMagmaGrunts_Uniformrecognize" />
+        <marker scope="Public" name="AquaGrunt_UniformRecognize" />
+        <marker scope="Public" name="AquaGrunts_UniformRecognize" />
+        <marker scope="Public" name="AquaKH_WhyKeyblade" />
+        <marker scope="Public" name="Arle_FlashingWarning" />
+        <marker scope="Public" name="Arle_PetAnswer" />
+        <marker scope="Public" name="Arle_StripFlashHorny" />
+        <marker scope="Public" name="AuraCam" />
+        <marker scope="Public" name="Ayano_Scars" />
+        <marker scope="Public" name="BackHurtQuestion" />
+        <marker scope="Public" name="Bernie_AreYouOkay" />
+        <marker scope="Public" name="Bernie_blankie" />
+        <marker scope="Public" name="Bobobo_shockedsilence" />
+        <marker scope="Public" name="Brock_HaunterProtect1" />
+        <marker scope="Public" name="Brock_HaunterProtect2" />
+        <marker scope="Public" name="Butt_posing">Hex has a butt pose active</marker>
+        <marker scope="Public" name="Caitlin_Real" />
+        <marker scope="Public" name="carng" />
+        <marker scope="Public" name="Cats_Vanish" />
+        <marker scope="Public" name="CelebSeemsFamiliar" />
+        <marker scope="Public" name="Chazz_PokerDeck" />
+        <marker scope="Public" name="Chihiro_RunFromGame" />
+        <marker scope="Public" name="Cynthia_THECynthia" />
+        <marker scope="Public" name="Dreamcatcher_SpicyFood" />
+        <marker scope="Public" name="Elesa_Recognized" />
+        <marker scope="Public" name="Erufuda_BellyReveal" />
+        <marker scope="Public" name="Erufuda_FavoriteFood" />
+        <marker scope="Public" name="Erufuda_GonnaSplit" />
+        <marker scope="Public" name="Erufuda_HolidayWeight" />
+        <marker scope="Public" name="Erufuda_SplitPants" />
+        <marker scope="Public" name="Erufuda_SuckIn" />
+        <marker scope="Public" name="Erufuda_SuckInFail" />
+        <marker scope="Public" name="Fnaf_Rumors1" />
+        <marker scope="Public" name="FutanariDifferenceBetweenPenisAndPussy" />
+        <marker scope="Public" name="Galatea_LivingStatue" />
+        <marker scope="Public" name="GhostQ" />
+        <marker scope="Public" name="Giygas_transformation" />
+        <marker scope="Public" name="Gloria_News" />
+        <marker scope="Public" name="Grunt_UniformRecognize" />
+        <marker scope="Public" name="Halloween" />
+        <marker scope="Public" name="hauntcheat" />
+        <marker scope="Public" name="Haunter">Is Haunter Here?</marker>
+        <marker scope="Public" name="Haunter_cheat" />
+        <marker scope="Private" name="Haunter_cheat1" />
+        <marker scope="Private" name="Haunter_cheat2" />
+        <marker scope="Private" name="Haunter_cheat3" />
+        <marker scope="Private" name="Haunter_cheat4" />
+        <marker scope="Private" name="Haunter_cheat5" />
+        <marker scope="Private" name="Haunter_cheat6" />
+        <marker scope="Public" name="Haunter_Intro" />
+        <marker scope="Public" name="HaunterCam" />
+        <marker scope="Public" name="Hauntercheat" />
+        <marker scope="Public" name="HaunterGone" />
+        <marker scope="Public" name="HaunterGoneResolution" />
+        <marker scope="Public" name="HaunterMessedWithAHand" />
+        <marker scope="Public" name="Hex_Maniac_Introduction" />
+        <marker scope="Public" name="HexLikesGrepa" />
+        <marker scope="Public" name="howExpensiveYourClothes" />
+        <marker scope="Public" name="HowFutaGender" />
+        <marker scope="Public" name="HowFutaUrethra" />
+        <marker scope="Public" name="HowFutaWork" />
+        <marker scope="Public" name="Human_Nude" />
+        <marker scope="Public" name="JJBA_MeanLook" />
+        <marker scope="Public" name="LargePPpride" />
+        <marker scope="Public" name="LumioseMention" />
+        <marker scope="Public" name="Mae_PixieEyes" />
+        <marker scope="Public" name="MagmaGrunt_UniformRecognize" />
+        <marker scope="Public" name="MagmaGrunts_UniformRecognize" />
+        <marker scope="Public" name="Meia_UnfitForPilot" />
+        <marker scope="Public" name="Mia_ParentResponse" />
+        <marker scope="Public" name="Milky">Hex is Lactating</marker>
+        <marker scope="Public" name="Momo_Yaoyorictionary" />
+        <marker scope="Public" name="MoomooEffect" />
+        <marker scope="Public" name="No_Sunscreen" />
+        <marker scope="Public" name="October" />
+        <marker scope="Public" name="Penny_animaltalk" />
+        <marker scope="Public" name="pickedalone" />
+        <marker scope="Public" name="Polly_Fakeout" />
+        <marker scope="Public" name="Polly_MovedOn" />
+        <marker scope="Public" name="PriceComplaint" />
+        <marker scope="Public" name="Revy_HaunterNoLikeGuns" />
+        <marker scope="Public" name="Rosa_UnovanMovie" />
+        <marker scope="Public" name="Rose_Gymbadges" />
+        <marker scope="Public" name="Roxie_ThoseArentPainted" />
+        <marker scope="Public" name="Saki_CanIAskPostReveal" />
+        <marker scope="Public" name="Schezo_SwordMage" />
+        <marker scope="Public" name="Serena_RedNails" />
+        <marker scope="Public" name="Shantae_Monkae" />
+        <marker scope="Public" name="Shimakaze_AreYaOkay" />
+        <marker scope="Public" name="Size_expectation" />
+        <marker scope="Public" name="Size_expectation_fufiled" />
+        <marker scope="Public" name="SpeakingKalosian" />
+        <marker scope="Public" name="Special_bra" />
+        <marker scope="Public" name="Spooky_Arachne" />
+        <marker scope="Public" name="Spooky_CanZombiesConsent" />
+        <marker scope="Public" name="Spooky_GhostsSuckToo" />
+        <marker scope="Public" name="Spooky_Gorgons" />
+        <marker scope="Public" name="Spooky_HexWantsToGo" />
+        <marker scope="Public" name="Spooky_HumansHairy" />
+        <marker scope="Public" name="Spooky_HypnoFetish" />
+        <marker scope="Public" name="Spooky_MummyRehydration" />
+        <marker scope="Public" name="Spooky_Skeletons" />
+        <marker scope="Public" name="Spooky_Slimes" />
+        <marker scope="Public" name="Spooky_ToothBrushing" />
+        <marker scope="Public" name="Spooky_WerewolfWhy" />
+        <marker scope="Public" name="Spooky_WhyUndieHoles" />
+        <marker scope="Public" name="Spooky_ZombieSelfControl" />
+        <marker scope="Public" name="Stream_Bar" />
+        <marker scope="Public" name="Sweetheart_FrontBra" />
+        <marker scope="Public" name="Talked_7Marowak">Alolan Marrowak</marker>
+        <marker scope="Public" name="Talked_8Corsola">Galarian Corsola</marker>
+        <marker scope="Public" name="Talked_8Typhlosion">Hisuian Typhlosion</marker>
+        <marker scope="Public" name="Talked_8Yamask">Galarian Yamask</marker>
+        <marker scope="Public" name="Talked_8Zoroark">Hisuian Zoroark</marker>
+        <marker scope="Public" name="Talked_8Zorua">Hisuian Zorua</marker>
+        <marker scope="Public" name="Talked_Aegislash" />
+        <marker scope="Public" name="Talked_Annihilape" />
+        <marker scope="Public" name="Talked_Arceus" />
+        <marker scope="Public" name="Talked_Banette" />
+        <marker scope="Public" name="Talked_Basculegion" />
+        <marker scope="Public" name="Talked_Blacephalon" />
+        <marker scope="Public" name="Talked_Brambleghast" />
+        <marker scope="Public" name="Talked_Bramblin" />
+        <marker scope="Public" name="Talked_Ceruledge" />
+        <marker scope="Public" name="Talked_Chandelure" />
+        <marker scope="Public" name="Talked_Cofagrigus" />
+        <marker scope="Public" name="Talked_Cryagonal" />
+        <marker scope="Public" name="Talked_Cryogonal" />
+        <marker scope="Public" name="Talked_Cursola" />
+        <marker scope="Public" name="Talked_Decidueye" />
+        <marker scope="Public" name="Talked_Dhelmise" />
+        <marker scope="Public" name="Talked_Doublade" />
+        <marker scope="Public" name="Talked_Dragapult" />
+        <marker scope="Public" name="Talked_Drakloak" />
+        <marker scope="Public" name="Talked_Dreepy" />
+        <marker scope="Public" name="Talked_Drifblim" />
+        <marker scope="Public" name="Talked_Drifloon" />
+        <marker scope="Public" name="Talked_Dusclops" />
+        <marker scope="Public" name="Talked_Dusknoir" />
+        <marker scope="Public" name="Talked_Duskull" />
+        <marker scope="Public" name="Talked_Flutter_Mane" />
+        <marker scope="Public" name="Talked_Frillish" />
+        <marker scope="Public" name="Talked_Froslass" />
+        <marker scope="Public" name="Talked_Gastly" />
+        <marker scope="Public" name="Talked_Gengar" />
+        <marker scope="Public" name="Talked_Gholdengo" />
+        <marker scope="Public" name="Talked_Ghosts">Tracks how many ghost she's talked about, resets all talked to 0 when it reaches 70</marker>
+        <marker scope="Public" name="Talked_Gimmighoul" />
+        <marker scope="Public" name="Talked_Giratina" />
+        <marker scope="Public" name="Talked_Golett" />
+        <marker scope="Public" name="Talked_Golurk" />
+        <marker scope="Public" name="Talked_Gourgeist" />
+        <marker scope="Public" name="Talked_Greavard" />
+        <marker scope="Public" name="Talked_Haunter" />
+        <marker scope="Public" name="Talked_Honedge" />
+        <marker scope="Public" name="Talked_Hoopa" />
+        <marker scope="Public" name="Talked_Houndstone" />
+        <marker scope="Public" name="Talked_Jellicent" />
+        <marker scope="Public" name="Talked_Lampent" />
+        <marker scope="Public" name="Talked_Litwick" />
+        <marker scope="Public" name="Talked_Lunala" />
+        <marker scope="Public" name="Talked_Marshadow" />
+        <marker scope="Public" name="Talked_Mimikyu" />
+        <marker scope="Public" name="Talked_Misdreavus" />
+        <marker scope="Public" name="Talked_Mismagius" />
+        <marker scope="Public" name="Talked_Necrozma" />
+        <marker scope="Public" name="Talked_Oricorio" />
+        <marker scope="Public" name="Talked_Palossand" />
+        <marker scope="Public" name="Talked_Pecharunt" />
+        <marker scope="Public" name="Talked_Phantump" />
+        <marker scope="Public" name="Talked_Poltchageist" />
+        <marker scope="Public" name="Talked_Polteageist" />
+        <marker scope="Public" name="Talked_Pumpkaboo" />
+        <marker scope="Public" name="Talked_Rotom" />
+        <marker scope="Public" name="Talked_Runerigus" />
+        <marker scope="Public" name="Talked_Sableye" />
+        <marker scope="Public" name="Talked_Sandygast" />
+        <marker scope="Public" name="Talked_Shedinja" />
+        <marker scope="Public" name="Talked_Shuppet" />
+        <marker scope="Public" name="Talked_Silvally" />
+        <marker scope="Public" name="Talked_Sinistcha" />
+        <marker scope="Public" name="Talked_Sinistea" />
+        <marker scope="Public" name="Talked_Skeledirge" />
+        <marker scope="Public" name="Talked_Spectrier" />
+        <marker scope="Public" name="Talked_Spiritomb" />
+        <marker scope="Public" name="Talked_Trevenant" />
+        <marker scope="Public" name="Talked_Voltorb" />
+        <marker scope="Public" name="Talked_Yamask" />
+        <marker scope="Private" name="Talking_Ghosts" />
+        <marker scope="Public" name="Tick_BodyStrip" />
+        <marker scope="Public" name="Tick_HaunterProtect1" />
+        <marker scope="Public" name="Velvet_HairDensity" />
+        <marker scope="Public" name="Velvet_KinkNoAnswer" />
+        <marker scope="Public" name="Velvet_KinkYesAnswer" />
+        <marker scope="Public" name="Velvet_WhyBirdsFly" />
+        <marker scope="Public" name="Wasp_ShrinkJustForPlayer" />
+        <marker scope="Public" name="WhyAreAllTheseFamousPeoplePlayingStripPoker" />
+        <marker scope="Public" name="WhyImHere" />
+        <marker scope="Public" name="Wikipetan_MagicalTransformation" />
+        <marker scope="Public" name="Yes_Sunscreen" />
+        <marker scope="Public" name="Yuelia_notButterfly" />
+        <marker scope="Public" name="Yuelia_notVivillon" />
+        <marker scope="Public" name="Yuelia_Vivillon" />
+        <marker scope="Public" name="Yuzuki_HexResponse" />
+        <marker scope="Public" name="Yuzuki_MayBeAGhoul" />
+        <marker scope="Public" name="Yuzuki_MeanLook" />
+        <marker scope="Public" name="Yuzuki_NoIDontKnowWhat" />
+    </markers>
+</metadata>
