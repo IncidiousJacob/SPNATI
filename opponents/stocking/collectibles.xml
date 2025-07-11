@@ -1,2 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="stockings_stockings" status="online" img="opponents/stocking/4-stripped-.png" thumbnail="opponents/stocking/Collectibles/stockingsstockings_thumnbail.png">
+        <title>Stocking's Stockings</title>
+        <subtitle>Stocking Anarchy's Striped Stockings</subtitle>
+        <text>"I always charge rich creeps and weirdos for my sweaty, used stockings... But you can keep them for free. You can't turn them into swords! That's angel-only shit. But I heard they might make you better at coding."</text>
+        <unlock>Win a game against Stocking.</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/stocking/Collectibles/stockingsstockings_thumnbail.png" name="striped stockings" generic="socks" position="legs" type="extra" plural="true" />
+    </collectible>
+    <collectible id="honekoneko" status="online" img="opponents/stocking/Collectibles/honekoneko_full.png" thumbnail="opponents/stocking/Collectibles/honekoneko_thumbnail.png">
+        <title>Honekoneko Plushie</title>
+        <subtitle>It means Bone Kitten</subtitle>
+        <text>This is why she doesn't have it. You have it. She doesn't know you have it. And it's not like you can tell her about it, either.
+
+She better doesn't find out you have it.</text>
+        <unlock>See Stocking crushing on another character.</unlock>
+        <hide-details>true</hide-details>
+    </collectible>
+    <collectible id="stocking_flower" status="online" img="opponents/stocking/Collectibles/flower.png" thumbnail="opponents/stocking/Collectibles/flower.png">
+        <title>Beach Flower Thingy</title>
+        <subtitle>I think it's a hibiscus?</subtitle>
+        <text>Stocking is not fond of the beach nor how the coarse and rough sand gets everywhere. But if putting a flower on her head and a bikini gets guys to buy her drinks and ice cream just to watch her licking, that's a pretty sweet deal for her.
+
+What's a "Hawaii"?</text>
+        <unlock>Beat Stocking in her Summer outfit and three other characters in Summer outfits during the Summer event in a Summer background. 
+
+Then do it again with other three different characters.</unlock>
+        <hide-details>true</hide-details>
+        <counter>6</counter>
+        <costume>true</costume>
+    </collectible>
+</collectibles>
