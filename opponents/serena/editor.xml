@@ -263,6 +263,10 @@
         <response id="590" opponent="schezo" opponentId="862" />
         <response id="713" opponent="schezo" opponentId="946" />
         <response id="714" opponent="schezo" opponentId="962" />
+        <response id="715" opponent="hilbert" opponentId="647" />
+        <response id="716" opponent="witch_puyopuyo" opponentId="190" />
+        <response id="717" opponent="witch_puyopuyo" opponentId="191" />
+        <response id="718" opponent="hex_maniac" opponentId="677" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -273,6 +277,7 @@
         <note id="69">A female character is about to remove a clothing item with the type "minor" early in the game</note>
         <note id="701">Starts at Must Strip Winning Stage 0</note>
         <note id="702">Starts at Must Strip Winning Stage 0</note>
+        <note id="416">I might as well s-sit down now and get used to the idea of e-exciting myself in f-front of my new friends. NEEDS NEW POSE.</note>
     </notes>
     <labels>
         <label id="178" label="" folder="Fennekin Serena" sort="0" />
@@ -291,7 +296,7 @@
         <label id="212" label="" folder="Background Cases&gt;Bedroom" sort="5" />
         <label id="213" label="" folder="Background Cases&gt;Bedroom" sort="6" />
         <label id="214" label="" folder="Background Cases&gt;Bedroom" sort="7" />
-        <label id="215" label="" folder="Background Cases&gt;Bedroom" sort="8" />
+        <label id="215" label="" folder="Background Cases&gt;Bedroom" sort="0" />
         <label id="248" label="" color="15" folder="Stage 0" sort="4" />
         <label id="249" label="" color="15" folder="Stage 0" sort="16" />
         <label id="250" label="" color="15" folder="" sort="0" />
@@ -469,7 +474,7 @@
         <label id="413" label="" folder="Fennekin Serena" sort="0" />
         <label id="414" label="" folder="Fennekin Serena" sort="0" />
         <label id="415" label="" folder="Fennekin Serena" sort="0" />
-        <label id="416" label="" folder="Fennekin Serena" sort="0" />
+        <label id="416" label="" color="3" folder="Fennekin Serena" sort="0" />
         <label id="417" label="" folder="Fennekin Serena" sort="0" />
         <label id="418" label="" folder="Fennekin Serena" sort="0" />
         <label id="419" label="" folder="Fennekin Serena" sort="0" />
@@ -754,9 +759,16 @@
         <label id="712" label="" folder="Background Cases&gt;Showers" sort="0" />
         <label id="713" label="" color="15" folder="Stage 4" sort="0" />
         <label id="714" label="" color="2" folder="Stage 4" sort="0" />
+        <label id="715" label="" color="2" folder="" sort="0" />
+        <label id="716" label="" color="2" folder="" sort="0" />
+        <label id="717" label="" folder="Stage 0" sort="0" />
+        <label id="718" label="" color="2" folder="Stage 0" sort="0" />
+        <label id="719" label="" folder="Day or Date Cases" sort="0" />
+        <label id="720" label="" folder="Day or Date Cases" sort="0" />
     </labels>
-    <nextId>714</nextId>
+    <nextId>720</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="0strip_losing" />
         <marker scope="Public" name="0strip_winning" />
         <marker scope="Public" name="1strip_winning" />
@@ -810,6 +822,7 @@
         <marker scope="Public" name="pokemon_day" />
         <marker scope="Public" name="schezo_serena_wilds1" />
         <marker scope="Public" name="see_her_naked">Serena is losing, and thinks everyone is picking on her just to see her naked</marker>
+        <marker scope="Public" name="selected_kalos_question" />
         <marker scope="Public" name="serena_aoiasahina_1">First response to Aoi Asahina</marker>
         <marker scope="Public" name="serena_aoiasahina_1_1">Second response to Aoi A's first target</marker>
         <marker scope="Public" name="serena_aoiasahina_1_2">Third response to Aoi A's first target</marker>
@@ -886,6 +899,7 @@
         <marker scope="Public" name="serena_cadence_SerenaMustStrip2" />
         <marker scope="Public" name="serena_cadence_toenailcompare1" />
         <marker scope="Public" name="serena_cadence_toenailcompare31">Resposne to Cadence's "can't penguin's webbed feet"</marker>
+        <marker scope="Public" name="serena_cards" />
         <marker scope="Public" name="serena_carmine_" />
         <marker scope="Public" name="serena_carmine_31" />
         <marker scope="Public" name="serena_carmine_32" />
@@ -950,6 +964,8 @@
         <marker scope="Public" name="serena_gloria_12" />
         <marker scope="Public" name="serena_gloria_firstloss1" />
         <marker scope="Public" name="serena_heisenberg_01" />
+        <marker scope="Public" name="serena_hex_familiar1" />
+        <marker scope="Public" name="serena_hilbert_seehernaked" />
         <marker scope="Public" name="serena_hina_nice71" />
         <marker scope="Public" name="serena_hina_nice72" />
         <marker scope="Public" name="serena_hina_trio7">Responding to Chiaki's "thanks, I woudln't be this body + without you," from Serena's "your tits are great."</marker>
@@ -1086,6 +1102,8 @@
         <marker scope="Public" name="serena_schezo_lumiose2f" />
         <marker scope="Public" name="serena_schezo_magic1" />
         <marker scope="Public" name="serena_suctioncup_b" />
+        <marker scope="Public" name="serena_witch_flash1" />
+        <marker scope="Public" name="serena_witch_hairwiff1" />
         <marker scope="Public" name="serena_yuzuki_first_skin" />
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
         <marker scope="Public" name="serve_others" />
