@@ -131,6 +131,8 @@
         <response id="921" opponent="jim" opponentId="10" />
         <response id="922" opponent="carmine" opponentId="52" />
         <response id="925" opponent="rosie" opponentId="23" />
+        <response id="999" opponent="carmine" opponentId="53" />
+        <response id="0" opponent="carmine" opponentId="51" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -148,8 +150,6 @@
         <note id="628">"teaching" is what i anticipate... or she could lie to throw him off </note>
         <note id="632">hehehehuho innuendo</note>
         <note id="680">double entendre of her being soft vs him being hard, heh heh</note>
-        <note id="923">vaguely going with him knowing about the duel academies from GX and assuming shes one of those alumni</note>
-        <note id="924">vaguely going with him knowing about the duel academies from GX and assuming shes one of those alumni</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Backgrounds" sort="0" />
@@ -1070,7 +1070,7 @@
         <label id="919" label="" folder="Targets&gt;Jim" sort="0" />
         <label id="920" label="" folder="Targets" sort="0" />
         <label id="921" label="" folder="Prompt Responses" sort="0" />
-        <label id="922" label="" folder="Targets" sort="0" />
+        <label id="922" label="" folder="Targets&gt;Carmine" sort="0" />
         <label id="923" label="" folder="Targets&gt;Carmine" sort="0" />
         <label id="924" label="" folder="Targets&gt;Carmine" sort="0" />
         <label id="925" label="" folder="Targets&gt;Rosie" sort="0" />
@@ -1080,13 +1080,80 @@
         <label id="929" label="" folder="Filters" sort="0" />
         <label id="930" label="[1] duel runner -&gt; stylin" color="1" folder="Targets" sort="0" />
         <label id="931" label="[1] monsters -&gt; game characters" color="1" folder="Targets" sort="0" />
+        <label id="932" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="933" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="934" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="935" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="936" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="937" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="938" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="939" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="940" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="941" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="942" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="943" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="944" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="945" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="946" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="947" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="948" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="949" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="950" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="951" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="952" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="953" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="954" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="955" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="956" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="957" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="958" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="959" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="960" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="961" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="962" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="963" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="964" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="965" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="966" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="967" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="968" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="969" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="970" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="971" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="972" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="973" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="974" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="975" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="976" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="977" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="978" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="979" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="980" label="carmine_heavyFF_1" folder="Targets&gt;Carmine" sort="0" />
+        <label id="981" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="982" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="983" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="984" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="985" label="carmine_heavyFF_2 (godiva 0)" folder="Targets&gt;Carmine" sort="0" />
+        <label id="986" label="carmine_heavyFF_2 (godiva 1)" folder="Targets&gt;Carmine" sort="0" />
+        <label id="987" label="carmine_heavyFF_1" folder="Targets&gt;Carmine" sort="0" />
+        <label id="988" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="989" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="990" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="991" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="992" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="993" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="994" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="995" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="996" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="997" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="998" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="999" label="" folder="Targets&gt;Carmine" sort="0" />
     </labels>
     <prefixes>
         <prefix>x_</prefix>
     </prefixes>
-    <nextId>931</nextId>
+    <nextId>999</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_L_Cycles_resp" />
         <marker scope="Public" name="aoi_returns_swim" />
         <marker scope="Public" name="Aoi_Wingman_YN3" />
@@ -1097,7 +1164,35 @@
         <marker scope="Public" name="aura_camera" />
         <marker scope="Public" name="Bobobo_TheVoiceOfHair" />
         <marker scope="Public" name="boobenvy_notsmart" />
+        <marker scope="Public" name="carmine_butt" />
+        <marker scope="Public" name="carmine_ff_1" />
+        <marker scope="Public" name="carmine_ff_2" />
+        <marker scope="Public" name="carmine_ff_3" />
+        <marker scope="Public" name="carmine_ff_4" />
+        <marker scope="Public" name="carmine_ff_5" />
+        <marker scope="Public" name="carmine_ff_6" />
+        <marker scope="Public" name="carmine_finished" />
+        <marker scope="Public" name="carmine_heavyFF_1" />
+        <marker scope="Public" name="carmine_heavyFF_2" />
+        <marker scope="Public" name="carmine_heavyFF_2rg" />
+        <marker scope="Public" name="carmine_heavyFF_3" />
+        <marker scope="Public" name="carmine_must_FF" />
+        <marker scope="Public" name="carmine_mutalLoss" />
+        <marker scope="Public" name="carmine_mutalLossB" />
+        <marker scope="Public" name="carmine_self_mustFF" />
+        <marker scope="Public" name="carmine_self_startFF" />
+        <marker scope="Public" name="carmine_selfFF_1" />
+        <marker scope="Public" name="carmine_selfFF_2" />
+        <marker scope="Public" name="carmine_selfFF_3" />
+        <marker scope="Public" name="carmine_selfFF_4" />
+        <marker scope="Public" name="carmine_selfFF_5" />
+        <marker scope="Public" name="carmine_selfFFHeavy_1" />
+        <marker scope="Public" name="carmine_selfFFHeavy_2" />
+        <marker scope="Public" name="carmine_selfFFHeavy_3" />
         <marker scope="Public" name="carmine_spike" />
+        <marker scope="Public" name="carmine_spike2" />
+        <marker scope="Public" name="carmine_start_FF" />
+        <marker scope="Public" name="carmine_won" />
         <marker scope="Public" name="chazz_false_duel" />
         <marker scope="Public" name="chubby_and_PP" />
         <marker scope="Public" name="clear_mind_boost" />
@@ -1320,8 +1415,48 @@
         <marker scope="Public" name="yusei_assist_yuno_stripped_5" />
         <marker scope="Public" name="yusei_assist_yuno_stripping_5" />
         <marker scope="Public" name="yusei_birthday" />
+        <marker scope="Public" name="yusei_carmine_self0a" />
+        <marker scope="Public" name="yusei_carmine_self0b" />
+        <marker scope="Public" name="yusei_carmine_self0c" />
+        <marker scope="Public" name="yusei_carmine_self1a" />
+        <marker scope="Public" name="yusei_carmine_self1b" />
+        <marker scope="Public" name="yusei_carmine_self1c" />
+        <marker scope="Public" name="yusei_carmine_self2a" />
+        <marker scope="Public" name="yusei_carmine_self2b" />
+        <marker scope="Public" name="yusei_carmine_self2c" />
+        <marker scope="Public" name="yusei_carmine_self3a" />
+        <marker scope="Public" name="yusei_carmine_self3b" />
+        <marker scope="Public" name="yusei_carmine_self3c" />
+        <marker scope="Public" name="yusei_carmine_self4a" />
+        <marker scope="Public" name="yusei_carmine_self4b" />
+        <marker scope="Public" name="yusei_carmine_self4c" />
+        <marker scope="Public" name="yusei_carmine_self5a" />
+        <marker scope="Public" name="yusei_carmine_self5b" />
+        <marker scope="Public" name="yusei_carmine_self5c" />
+        <marker scope="Public" name="yusei_carmine_self6a" />
+        <marker scope="Public" name="yusei_carmine_self6b" />
+        <marker scope="Public" name="yusei_carmine_self6c" />
+        <marker scope="Public" name="yusei_carmine_self7a" />
+        <marker scope="Public" name="yusei_carmine_self7b" />
+        <marker scope="Public" name="yusei_carmine_self7c" />
         <marker scope="Public" name="yusei_carmine_strip0a" />
         <marker scope="Public" name="yusei_carmine_strip0b" />
+        <marker scope="Public" name="yusei_carmine_strip0c" />
+        <marker scope="Public" name="yusei_carmine_strip1a" />
+        <marker scope="Public" name="yusei_carmine_strip1b" />
+        <marker scope="Public" name="yusei_carmine_strip1c" />
+        <marker scope="Public" name="yusei_carmine_strip2a" />
+        <marker scope="Public" name="yusei_carmine_strip2b" />
+        <marker scope="Public" name="yusei_carmine_strip2c" />
+        <marker scope="Public" name="yusei_carmine_strip3a" />
+        <marker scope="Public" name="yusei_carmine_strip3b" />
+        <marker scope="Public" name="yusei_carmine_strip3c" />
+        <marker scope="Public" name="yusei_carmine_strip4a" />
+        <marker scope="Public" name="yusei_carmine_strip4b" />
+        <marker scope="Public" name="yusei_carmine_strip4c" />
+        <marker scope="Public" name="yusei_carmine_strip5a" />
+        <marker scope="Public" name="yusei_carmine_strip5b" />
+        <marker scope="Public" name="yusei_carmine_strip5c" />
         <marker scope="Public" name="yusei_chiaki_strip0a" />
         <marker scope="Public" name="yusei_chiaki_strip1a" />
         <marker scope="Public" name="yusei_chica_strip0a" />
