@@ -3,7 +3,7 @@
     <owner>vinyl</owner>
     <height>5'10"</height>
     <age>21</age>
-    <pronunciation />
+    <pronunciation>Vye-nil</pronunciation>
     <othernotes>Vinyl lives in the future in a city called New Amsterdam, where various gangs fight to go "All City" by covering every burough with their gang's graffiti and competing in skating competitions with rollerblades, skateboards, BMX bicycles and jetpacks. Spoilers ahead for the plot of Bomb Rush Cyberfunk.&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt;After an unfortunate accident that happens to her friend Red, Vinyl poses as a spy for the gang "FUTURISM" working for a leader named "DJ Cyber." In truth, she is working with DJ Cyber to recover Red's memory and bring down the gangster that tried to kill him, a rival known as Faux who is attempting to get all gangsters in the city killed with his connections to the city's police force.&lt;br&gt;--------------------------------------------------------------------------------&lt;br&gt;Spoilers over. Vinyl in-game doesn't have a lot of dialogue, has no facial animations in-game, and BRC has few cutscenes, so her personality is largely an extrapolation from the mannerisms she shows in her dialogue and her few voice lines. I decided to write her serious side as a facade she maintains when on important business, and give her a more loose and easy-going tone when she's having fun.</othernotes>
     <noteworthy>
         <case name="Icebreaker - Music" id="18" priority="Prompt" min="0" max="3">
@@ -172,6 +172,24 @@
         <marker scope="Public" name="ChihiroButtFlirt" />
         <marker scope="Public" name="ChihiroFlirt" />
         <marker scope="Public" name="CocoShaved" />
+        <marker scope="Public" name="CrewBRC1" />
+        <marker scope="Public" name="CrewBRC2" />
+        <marker scope="Public" name="CrewBRC3" />
+        <marker scope="Public" name="CrewDevilTheory1" />
+        <marker scope="Public" name="CrewDevilTheory2" />
+        <marker scope="Public" name="CrewDevilTheory3" />
+        <marker scope="Public" name="CrewDOTEXE1" />
+        <marker scope="Public" name="CrewDOTEXE2" />
+        <marker scope="Public" name="CrewDOTEXE3" />
+        <marker scope="Public" name="CrewEclipse1" />
+        <marker scope="Public" name="CrewEclipse2" />
+        <marker scope="Public" name="CrewEclipse3" />
+        <marker scope="Public" name="CrewFranks1" />
+        <marker scope="Public" name="CrewFranks2" />
+        <marker scope="Public" name="CrewFranks3" />
+        <marker scope="Public" name="CrewFUTURISM1" />
+        <marker scope="Public" name="CrewFUTURISM2" />
+        <marker scope="Public" name="CrewFUTURISM3" />
         <marker scope="Public" name="DashSkateDate" />
         <marker scope="Public" name="EichiKink1" />
         <marker scope="Public" name="ElphabaButtDimples" />
@@ -330,9 +348,13 @@
         <marker scope="Public" name="NatsukiStroopwafels" />
         <marker scope="Public" name="NatsukiTompouce" />
         <marker scope="Public" name="NayruBrainHack" />
+        <marker scope="Public" name="NudeBel2" />
+        <marker scope="Public" name="NudeDJCyber2" />
         <marker scope="Public" name="NudeMalePlayer" />
         <marker scope="Public" name="NudePlayer" />
         <marker scope="Public" name="NudePlayerFemale" />
+        <marker scope="Public" name="NudeRed2" />
+        <marker scope="Public" name="NudeTryce2" />
         <marker scope="Public" name="OchakoAntigravity" />
         <marker scope="Public" name="OrendiHair" />
         <marker scope="Public" name="PantyBraless" />
@@ -340,6 +362,8 @@
         <marker scope="Public" name="PantyOrgy" />
         <marker scope="Public" name="PhantomThieves" />
         <marker scope="Public" name="PinkVsBlueHair" />
+        <marker scope="Public" name="PlayerThrowGame" />
+        <marker scope="Public" name="PlayerThrowReward" />
         <marker scope="Public" name="PriscillaDiss" />
         <marker scope="Public" name="PriscillaStreetwear" />
         <marker scope="Public" name="PromptBlueHair" />
@@ -414,18 +438,33 @@
         <marker scope="Public" name="SariaMagic" />
         <marker scope="Public" name="SariaPhone" />
         <marker scope="Public" name="SariaWoods" />
+        <marker scope="Public" name="SelfAnal1" />
+        <marker scope="Public" name="SelfAnal2" />
+        <marker scope="Public" name="SelfAnal3" />
         <marker scope="Public" name="SelfBelBreasts" />
         <marker scope="Public" name="SelfContests" />
         <marker scope="Public" name="SelfContests1" />
         <marker scope="Public" name="SelfContests2" />
         <marker scope="Public" name="SelfContests3" />
+        <marker scope="Public" name="SelfCrime1" />
+        <marker scope="Public" name="SelfCrime2" />
+        <marker scope="Public" name="SelfCrime3" />
+        <marker scope="Public" name="SelfFood1" />
+        <marker scope="Public" name="SelfFood2" />
+        <marker scope="Public" name="SelfFood3" />
         <marker scope="Public" name="SelfMoney1" />
         <marker scope="Public" name="SelfMoney2" />
         <marker scope="Public" name="SelfMoney3" />
+        <marker scope="Public" name="SelfMusic1" />
+        <marker scope="Public" name="SelfMusic2" />
+        <marker scope="Public" name="SelfMusic3" />
         <marker scope="Public" name="SelfPolice" />
         <marker scope="Public" name="SelfPolice1" />
         <marker scope="Public" name="SelfPolice2" />
         <marker scope="Public" name="SelfPolice3" />
+        <marker scope="Public" name="SelfSkyhigh1" />
+        <marker scope="Public" name="SelfSkyhigh2" />
+        <marker scope="Public" name="SelfSkyhigh3" />
         <marker scope="Public" name="ShantaeBlueballs" />
         <marker scope="Public" name="ShantaeClothes" />
         <marker scope="Public" name="SShimmerNose" />
@@ -587,6 +626,7 @@
         <marker scope="Public" name="YuseiPhoneNumber" />
         <marker scope="Public" name="YuseiSkateBattle" />
         <marker scope="Public" name="YuseiStylin" />
+        <marker scope="Public" name="YuseiTournaments" />
         <marker scope="Public" name="YuseiTournaments." />
         <marker scope="Public" name="YuseiVersusMonsters" />
         <marker scope="Public" name="YuzukiAnswer" />
@@ -624,16 +664,7 @@
         </recipe>
     </recipes>
     <pendingLines>
-        <line>(generic) If graffiti wasn't such a big felony where I'm from, I wouldn't even be considered a criminal...</line>
-        <line>(generic) Some crimes are only fun &lt;i&gt;because they're illegal&lt;/i&gt;... as long as no one gets hurt.</line>
-        <line>(generic) So, a bunch of hot young people find an excuse to get naked for each other? My kind of sport.</line>
-        <line>(generic) It's been a while since I took the time to unwind with a nice TV show, maybe a fluffy romance.</line>
-        <line>(Strip Self Anal 1) So... what's everyone's thoughts on taking it from behind? Sometimes it just hits right...</line>
-        <line>(Strip Self Anal 2) I actually prefer anal &lt;i&gt;sometimes&lt;/i&gt;, lying down like I'm at a spa...</line>
-        <line>(Strip Self Anal 3) What do you think, ~player~. Have I got the butt for some back-action?</line>
-        <line>(Strip Self Crime 1) I talk big about being a criminal and all, but I don't just hate society, really!</line>
-        <line>(Strip Self Crime 2) Graffiti and all that is just a way to stick it to corrupt cops. I don't hurt anyone...</line>
-        <line>(Strip Self Crime 3) Laws have no right to exist just to kick good people down! We need civil disobedience.</line>
         <line>(generic, late-game) Never let a good booty go to waste, I say. Anyone with me there?</line>
+        <line>(Masturbating, Anaconda, Male) Does your "anaconda" want these buns? [Maybe scratch this line] </line>
     </pendingLines>
 </metadata>
