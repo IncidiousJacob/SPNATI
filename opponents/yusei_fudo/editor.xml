@@ -133,6 +133,8 @@
         <response id="925" opponent="rosie" opponentId="23" />
         <response id="999" opponent="carmine" opponentId="53" />
         <response id="0" opponent="carmine" opponentId="51" />
+        <response id="1000" opponent="aoi_inuyama" opponentId="128" />
+        <response id="1001" opponent="aoi_inuyama" opponentId="127" />
     </responses>
     <notes>
         <note id="166">I'm anticipating that she will go over the top about being the first to lose or something</note>
@@ -1148,15 +1150,24 @@
         <label id="997" label="" folder="Targets&gt;Carmine" sort="0" />
         <label id="998" label="" folder="Targets&gt;Carmine" sort="0" />
         <label id="999" label="" folder="Targets&gt;Carmine" sort="0" />
+        <label id="1000" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
+        <label id="1001" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
+        <label id="1002" label="" folder="Hidden&gt;AI Settings" sort="0" />
+        <label id="1003" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
+        <label id="1004" label="" folder="Situations" sort="0" />
+        <label id="1005" label="" folder="Targets&gt;Aoi Yurucamp" sort="0" />
     </labels>
     <prefixes>
         <prefix>x_</prefix>
     </prefixes>
-    <nextId>999</nextId>
+    <nextId>1005</nextId>
     <markers>
         <marker scope="Public" name="aoi_L_Cycles_resp" />
         <marker scope="Public" name="aoi_returns_swim" />
+        <marker scope="Public" name="aoi_take_your_soul" />
         <marker scope="Public" name="Aoi_Wingman_YN3" />
+        <marker scope="Public" name="aoi_yusei_self0a" />
+        <marker scope="Public" name="aoi_yusei_self1a" />
         <marker scope="Public" name="aoiYC_startForfeit" />
         <marker scope="Public" name="aoiYC_startForfeit_later" />
         <marker scope="Public" name="arueshalae_favFeature" />
@@ -1178,6 +1189,7 @@
         <marker scope="Public" name="carmine_heavyFF_3" />
         <marker scope="Public" name="carmine_must_FF" />
         <marker scope="Public" name="carmine_mutalLoss" />
+        <marker scope="Public" name="carmine_mutalLossA" />
         <marker scope="Public" name="carmine_mutalLossB" />
         <marker scope="Public" name="carmine_self_mustFF" />
         <marker scope="Public" name="carmine_self_startFF" />
@@ -1410,6 +1422,7 @@
         <marker scope="Public" name="yusei_aoiYC_strip0a" />
         <marker scope="Public" name="yusei_aoiYC_strip1a" />
         <marker scope="Public" name="yusei_aoiYC_strip1b" />
+        <marker scope="Public" name="yusei_aoiYC_strip1c" />
         <marker scope="Public" name="yusei_assist_yuno_mustStrip_5" />
         <marker scope="Public" name="yusei_assist_yuno_offer_5" />
         <marker scope="Public" name="yusei_assist_yuno_stripped_5" />
