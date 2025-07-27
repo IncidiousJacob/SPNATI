@@ -108,6 +108,10 @@
         <response id="617" opponent="mari_setogaya" opponentId="3499" />
         <response id="657" opponent="yuno_uno" opponentId="167" />
         <response id="675" opponent="yuno_uno" opponentId="775" />
+        <response id="699" opponent="hex_maniac" opponentId="159" />
+        <response id="700" opponent="hex_maniac" opponentId="12" />
+        <response id="706" opponent="gwen" opponentId="1" />
+        <response id="710" opponent="aqua_kh" opponentId="67" />
     </responses>
     <notes>
         <note id="1">At the start of the very first round (and ONLY the very first round, regardless of the result), Cadence wrongfully assumes she's playing the Club Penguin minigame "Card Jitsu" and exchanges one of her higher-value cards. This is the line as she's "playing" the card.</note>
@@ -234,6 +238,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="681">This is literally the plot for Club Penguin's "Star Wars Takeover" party in 2013. I'm not making it up.</note>
         <note id="688">My best bet on being able to follow an answer up is if the three males are mentioned. Their status as prisoners is optional, I can work with it either way.</note>
         <note id="697">Playing a game with all musicians will prompt a response from Cadence.</note>
+        <note id="698">When the player selects an opponent with the tag "idol", Cadence will gush about her 2013 J-Pop phase.</note>
     </notes>
     <labels>
         <label id="3" label="(Self: Full House, Threes &amp; Twos)" folder="" sort="0" />
@@ -859,9 +864,22 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="695" label="Stage 1" folder="Responses&gt;Jura" sort="0" />
         <label id="696" label="Fallback" folder="!Generic&gt;Extra" sort="0" />
         <label id="697" label="All Singers/Musicians" folder="" sort="0" />
+        <label id="698" label="Japanese Idol" folder="" sort="0" />
+        <label id="702" label="" folder="Responses&gt;Meia" sort="0" />
+        <label id="703" label="Stage 0" folder="Responses&gt;Monika" sort="0" />
+        <label id="704" label="" folder="Responses&gt;Kamina" sort="0" />
+        <label id="503" label="" folder="Responses&gt;AoiAsahina" sort="0" />
+        <label id="705" label="" folder="Responses&gt;Kamina" sort="0" />
+        <label id="706" label="" folder="Responses&gt;Spider-Woman" sort="0" />
+        <label id="707" label="" folder="Responses&gt;SunsetShimmer" sort="0" />
+        <label id="708" label="" folder="Responses&gt;SunsetShimmer" sort="0" />
+        <label id="709" label="Gloria" folder="" sort="0" />
+        <label id="711" label="" folder="Responses&gt;Roxy" sort="0" />
+        <label id="712" label="" folder="Responses&gt;Vanessa" sort="0" />
     </labels>
-    <nextId>697</nextId>
+    <nextId>712</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
@@ -875,6 +893,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToMiko0A" />
         <marker scope="Public" name="Banter_CadenceToMiko0B" />
         <marker scope="Public" name="Banter_CadenceToMiko0C" />
+        <marker scope="Public" name="Banter_CadenceToMonika0A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0C" />
@@ -884,6 +903,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToNadeshiko2A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko2B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko2C" />
+        <marker scope="Public" name="Banter_CadenceToRoxy0A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya0A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya0B" />
         <marker scope="Public" name="Banter_CadenceToSetogaya0C" />
@@ -906,6 +926,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToSetogaya5C_Alt" />
         <marker scope="Public" name="Banter_CadenceToSetogaya6A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya6B" />
+        <marker scope="Public" name="Banter_CadenceToVanessa0A" />
         <marker scope="Public" name="Banter_CadenceToYuno0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0A" />
         <marker scope="Public" name="Banter_ChiakiToCadence0B" />
@@ -945,7 +966,9 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_NadeshikoToCadence1A" />
         <marker scope="Public" name="Banter_NadeshikoToCadence1B" />
         <marker scope="Public" name="Banter_NadeshikoToCadence1C" />
+        <marker scope="Public" name="Banter_RoxyToCadence0A" />
         <marker scope="Public" name="Banter_SariaToCadence0A" />
+        <marker scope="Public" name="Banter_SariaToCadence0B" />
         <marker scope="Public" name="Banter_SariaToCadence1A" />
         <marker scope="Public" name="Banter_SariaToCadence1B" />
         <marker scope="Public" name="Banter_SchezoToCadence0A" />
@@ -970,12 +993,16 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_SetogayaToCadence5B" />
         <marker scope="Public" name="Banter_SunsetToCadence0A" />
         <marker scope="Public" name="Banter_SunsetToCadence1A" />
+        <marker scope="Public" name="Banter_SunsetToCadence2A" />
+        <marker scope="Public" name="Banter_SunsetToCadence2AClub" />
+        <marker scope="Public" name="Banter_VanessaToCadence0A" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0A" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0B" />
         <marker scope="Public" name="Banter_WaterHinaToCadence0C" />
         <marker scope="Public" name="Banter_WaterHinaToCadence3A" />
         <marker scope="Public" name="Banter_WaterHinaToCadence3B" />
         <marker scope="Public" name="Banter_WitchToCadence0A" />
+        <marker scope="Public" name="Banter_WitchToCadence0B" />
         <marker scope="Public" name="Banter_YunoToCadence0A" />
         <marker scope="Public" name="Banter_YuzukiToCadence0A" />
         <marker scope="Public" name="Banter_YuzukiToCadence0B" />
@@ -1075,6 +1102,8 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_FluttershyPoker">When Fluttershy asks the players if they play poker often, Cadence will bring up that she actually doesn't have much poker experience.</marker>
         <marker scope="Public" name="Responses_FutabaJuke" />
         <marker scope="Public" name="Responses_FutabaJukebox">When Futaba asks the table for song recommendations, Cadence will recommend The Penguin Band, an in-universe music group and Cadence's canon inspiration for pursuing a music career herself.</marker>
+        <marker scope="Public" name="Responses_HexManiacGhosts" />
+        <marker scope="Public" name="Responses_HexManiacMilky" />
         <marker scope="Public" name="Responses_HinaSwimA" />
         <marker scope="Public" name="Responses_HinaSwimB" />
         <marker scope="Public" name="Responses_IbukiInstrument" />
@@ -1134,8 +1163,15 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="SannyTessFrom2" />
         <marker scope="Public" name="SawBraFirst" />
         <marker scope="Public" name="ScarfSiblingsEnd" />
+        <marker scope="Public" name="SeesArtist" />
+        <marker scope="Public" name="SeesDancer" />
+        <marker scope="Public" name="SeesGhost" />
+        <marker scope="Public" name="SeesIdol" />
+        <marker scope="Public" name="SeesMusician" />
         <marker scope="Public" name="SeesNinja">If a Ninja is selected after Cadence, she'll excitedly ask the new arrival if they know a 'ninja' character from her home series.</marker>
+        <marker scope="Public" name="SeesPerformer" />
         <marker scope="Public" name="SeesPirate">If a Traditional Pirate is selected after Cadence, she'll excitedly ask the new arrival if they know a 'traditional pirate' character from her home series.</marker>
+        <marker scope="Public" name="SeesSinger" />
         <marker scope="Public" name="SeesSpy" />
         <marker scope="Public" name="Selfie">Cadence has a tendency to take selfies to pass the time when other opponents are taking off accessories.</marker>
         <marker scope="Public" name="SelfiePrompts_Yuno" />
