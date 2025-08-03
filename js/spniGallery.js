@@ -110,9 +110,13 @@ function Collectible(xmlElem, player) {
     this.text = unescapeHTML(xmlElem.children('text').html());
     this.detailsHidden = xmlElem.children('hide-details').text() === 'true';
     this.hidden = xmlElem.children('hidden').text() === 'true';
-    this.hideExceptions = xmlElem.children('hidden-exception').map(function() {
-        return { type: $(this).attr('type'), name: $(this).attr('name') };
-    }).get();
+    this.hideExceptions = [];
+    if (xmlElem.children('hidden-exceptions').length > 0) {
+        for (attr of xmlElem.children('hidden-exceptions')[0].attributes) {
+            this.hideExceptions.push({ type: attr.name, name: attr.value });
+        }
+    }
+
     this.counter = parseInt(xmlElem.children('counter').text(), 10) || undefined;
     if (this.counter <= 0) this.counter = undefined;
     
