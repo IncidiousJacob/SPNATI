@@ -259,7 +259,7 @@ TitleClothingSelectionIcon.prototype.visible = function () {
     }
 
     if (this.clothing.collectible) {
-        return !this.clothing.collectible.hidden;
+        return !this.clothing.collectible.isHidden();
     }
 
     return false;
