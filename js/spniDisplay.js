@@ -1658,7 +1658,7 @@ OpponentSelectionCard.prototype.updateHighlight = function () {
         }
     } else {
         if (this.opponent.highlightStatus) {
-            this.mainElem.dataset.highlight = this.opponent.highlistStatus;
+            this.mainElem.dataset.highlight = this.opponent.highlightStatus;
         } else {
             delete this.mainElem.dataset.highlight;
         }
