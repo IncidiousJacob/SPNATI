@@ -160,15 +160,15 @@ Targetable traits:
         <label id="40" label="" folder="Undead" sort="0" />
         <label id="41" label="" folder="Undead" sort="0" />
         <label id="42" label="Undead Revealed" color="5" folder="Undead" sort="2" />
-        <label id="43" label="" color="5" folder="Prompts" sort="0" />
+        <label id="43" label="" color="5" folder="Prompts" sort="6" />
         <label id="44" label="" folder="Prompts" sort="0" />
         <label id="45" label="" color="5" folder="Prompts" sort="2" />
         <label id="46" label="" folder="Prompts" sort="0" />
-        <label id="33" label="" color="11" folder="" sort="0" />
-        <label id="51" label="" color="11" folder="" sort="0" />
-        <label id="52" label="" color="11" folder="" sort="0" />
-        <label id="53" label="" color="11" folder="" sort="0" />
-        <label id="22" label="" color="11" folder="" sort="0" />
+        <label id="33" label="" color="11" folder="Prompts" sort="5" />
+        <label id="51" label="" color="11" folder="Prompts" sort="0" />
+        <label id="52" label="" color="11" folder="Prompts" sort="2" />
+        <label id="53" label="" color="11" folder="Prompts" sort="4" />
+        <label id="22" label="" color="11" folder="Prompts" sort="3" />
         <label id="54" label="" folder="Jean" sort="0" />
         <label id="55" label="" color="1" folder="Nadeshiko" sort="0" />
         <label id="56" label="" folder="Schezo" sort="0" />
@@ -176,216 +176,301 @@ Targetable traits:
         <label id="58" label="" folder="Yuzuki" sort="0" />
         <label id="59" label="" color="1" folder="Meia" sort="0" />
         <label id="60" label="" color="1" folder="Jura" sort="0" />
-        <label id="62" label="" folder="Backgrounds" sort="0" />
+        <label id="62" label="" folder="Backgrounds" sort="10" />
         <label id="63" label="" folder="Backgrounds" sort="0" />
-        <label id="64" label="" folder="Backgrounds" sort="0" />
-        <label id="65" label="" folder="Backgrounds" sort="0" />
-        <label id="66" label="" folder="Backgrounds" sort="0" />
-        <label id="67" label="" folder="Backgrounds" sort="0" />
-        <label id="68" label="" folder="Backgrounds" sort="0" />
-        <label id="69" label="" folder="Backgrounds" sort="0" />
-        <label id="70" label="" folder="Backgrounds" sort="0" />
-        <label id="71" label="" folder="Backgrounds" sort="0" />
-        <label id="72" label="" folder="Backgrounds" sort="0" />
-        <label id="73" label="" folder="Backgrounds" sort="0" />
+        <label id="64" label="" folder="Backgrounds" sort="11" />
+        <label id="65" label="" folder="Backgrounds" sort="2" />
+        <label id="66" label="" folder="Backgrounds" sort="8" />
+        <label id="67" label="" folder="Backgrounds" sort="12" />
+        <label id="68" label="" folder="Backgrounds" sort="4" />
+        <label id="69" label="" folder="Backgrounds" sort="5" />
+        <label id="70" label="" folder="Backgrounds" sort="6" />
+        <label id="71" label="" folder="Backgrounds" sort="3" />
+        <label id="72" label="" folder="Backgrounds" sort="9" />
+        <label id="73" label="" folder="Backgrounds" sort="7" />
         <label id="74" label="" color="1" folder="Lady Aqua" sort="0" />
         <label id="75" label="" color="1" folder="Chiaki" sort="0" />
         <label id="76" label="" color="1" folder="Momo" sort="0" />
         <label id="77" label="" color="1" folder="Sanny &amp; Tess" sort="0" />
         <label id="78" label="" color="1" folder="Tifa" sort="0" />
         <label id="79" label="" color="1" folder="Spooky" sort="0" />
-        <label id="80" label="" color="12" folder="Responses" sort="0" />
+        <label id="80" label="" color="12" folder="Responses" sort="19" />
         <label id="81" label="" color="1" folder="Nico Robin" sort="0" />
         <label id="84" label="" folder="Yuelia" sort="0" />
-        <label id="83" label="" folder="Yuelia" sort="0" />
-        <label id="85" label="" folder="Yuelia" sort="0" />
-        <label id="86" label="" folder="Hex Maniac" sort="0" />
-        <label id="87" label="" folder="Hex Maniac" sort="0" />
-        <label id="88" label="" folder="Hex Maniac" sort="0" />
-        <label id="89" label="" folder="Hex Maniac" sort="0" />
-        <label id="90" label="" folder="Hex Maniac" sort="0" />
-        <label id="91" label="" folder="Hex Maniac" sort="0" />
-        <label id="92" label="" folder="Hex Maniac" sort="0" />
-        <label id="93" label="" folder="Hex Maniac" sort="0" />
-        <label id="94" label="" folder="Hex Maniac" sort="0" />
-        <label id="95" label="" folder="Hex Maniac" sort="0" />
-        <label id="96" label="" folder="Hex Maniac" sort="0" />
-        <label id="97" label="" folder="Hex Maniac" sort="0" />
-        <label id="98" label="" folder="Hex Maniac" sort="0" />
-        <label id="99" label="" folder="Hex Maniac" sort="0" />
-        <label id="100" label="" folder="Hex Maniac" sort="0" />
-        <label id="101" label="" folder="Hex Maniac" sort="0" />
-        <label id="102" label="" folder="Hex Maniac" sort="0" />
-        <label id="103" label="" folder="Hex Maniac" sort="0" />
-        <label id="104" label="" folder="Hex Maniac" sort="0" />
+        <label id="83" label="" folder="Yuelia" sort="2" />
+        <label id="85" label="" folder="Yuelia" sort="3" />
+        <label id="86" label="" folder="Hex Maniac" sort="28" />
+        <label id="87" label="" folder="Hex Maniac" sort="22" />
+        <label id="88" label="" folder="Hex Maniac" sort="24" />
+        <label id="89" label="" folder="Hex Maniac" sort="23" />
+        <label id="90" label="" folder="Hex Maniac" sort="26" />
+        <label id="91" label="" folder="Hex Maniac" sort="25" />
+        <label id="92" label="" folder="Hex Maniac" sort="29" />
+        <label id="93" label="" folder="Hex Maniac" sort="34" />
+        <label id="94" label="" folder="Hex Maniac" sort="33" />
+        <label id="95" label="" folder="Hex Maniac" sort="32" />
+        <label id="96" label="" folder="Hex Maniac" sort="31" />
+        <label id="97" label="" folder="Hex Maniac" sort="30" />
+        <label id="98" label="" folder="Hex Maniac" sort="41" />
+        <label id="99" label="" folder="Hex Maniac" sort="40" />
+        <label id="100" label="" folder="Hex Maniac" sort="39" />
+        <label id="101" label="" folder="Hex Maniac" sort="38" />
+        <label id="102" label="" folder="Hex Maniac" sort="37" />
+        <label id="103" label="" folder="Hex Maniac" sort="36" />
+        <label id="104" label="" folder="Hex Maniac" sort="35" />
         <label id="105" label="" folder="Hex Maniac" sort="0" />
-        <label id="106" label="" folder="Hex Maniac" sort="0" />
-        <label id="107" label="" folder="Hex Maniac" sort="0" />
-        <label id="108" label="" folder="Hex Maniac" sort="0" />
-        <label id="109" label="" folder="Hex Maniac" sort="0" />
-        <label id="110" label="" folder="Hex Maniac" sort="0" />
-        <label id="111" label="" folder="Hex Maniac" sort="0" />
-        <label id="112" label="" folder="Hex Maniac" sort="0" />
-        <label id="113" label="" folder="Hex Maniac" sort="0" />
-        <label id="114" label="" folder="Hex Maniac" sort="0" />
-        <label id="115" label="" folder="Hex Maniac" sort="0" />
-        <label id="116" label="" folder="Hex Maniac" sort="0" />
-        <label id="117" label="" folder="Hex Maniac" sort="0" />
-        <label id="118" label="" folder="Hex Maniac" sort="0" />
-        <label id="119" label="" folder="Hex Maniac" sort="0" />
-        <label id="120" label="" folder="Hex Maniac" sort="0" />
-        <label id="121" label="" folder="Hex Maniac" sort="0" />
-        <label id="122" label="" folder="Hex Maniac" sort="0" />
-        <label id="123" label="" folder="Hex Maniac" sort="0" />
-        <label id="124" label="" folder="Hex Maniac" sort="0" />
-        <label id="125" label="" folder="Hex Maniac" sort="0" />
-        <label id="126" label="" folder="Hex Maniac" sort="0" />
-        <label id="127" label="" folder="Hex Maniac" sort="0" />
-        <label id="128" label="" folder="Hex Maniac" sort="0" />
-        <label id="129" label="" folder="Hex Maniac" sort="0" />
-        <label id="130" label="" color="12" folder="Responses" sort="0" />
+        <label id="106" label="" folder="Hex Maniac" sort="2" />
+        <label id="107" label="" folder="Hex Maniac" sort="7" />
+        <label id="108" label="" folder="Hex Maniac" sort="6" />
+        <label id="109" label="" folder="Hex Maniac" sort="5" />
+        <label id="110" label="" folder="Hex Maniac" sort="4" />
+        <label id="111" label="" folder="Hex Maniac" sort="3" />
+        <label id="112" label="" folder="Hex Maniac" sort="8" />
+        <label id="113" label="" folder="Hex Maniac" sort="9" />
+        <label id="114" label="" folder="Hex Maniac" sort="10" />
+        <label id="115" label="" folder="Hex Maniac" sort="11" />
+        <label id="116" label="" folder="Hex Maniac" sort="12" />
+        <label id="117" label="" folder="Hex Maniac" sort="13" />
+        <label id="118" label="" folder="Hex Maniac" sort="14" />
+        <label id="119" label="" folder="Hex Maniac" sort="15" />
+        <label id="120" label="" folder="Hex Maniac" sort="16" />
+        <label id="121" label="" folder="Hex Maniac" sort="17" />
+        <label id="122" label="" folder="Hex Maniac" sort="18" />
+        <label id="123" label="" folder="Hex Maniac" sort="19" />
+        <label id="124" label="" folder="Hex Maniac" sort="20" />
+        <label id="125" label="" folder="Hex Maniac" sort="21" />
+        <label id="126" label="" folder="Hex Maniac" sort="27" />
+        <label id="127" label="" folder="Hex Maniac" sort="44" />
+        <label id="128" label="" folder="Hex Maniac" sort="43" />
+        <label id="129" label="" folder="Hex Maniac" sort="42" />
+        <label id="130" label="" color="12" folder="Responses" sort="24" />
         <label id="131" label="" color="12" folder="Responses" sort="0" />
-        <label id="132" label="" color="12" folder="Responses" sort="0" />
-        <label id="133" label="" color="12" folder="Responses" sort="0" />
+        <label id="132" label="" color="12" folder="Responses" sort="25" />
+        <label id="133" label="" color="12" folder="Responses" sort="26" />
         <label id="135" label="" folder="Konosuba" sort="0" />
-        <label id="136" label="" folder="Konosuba" sort="0" />
-        <label id="137" label="" folder="Konosuba" sort="0" />
-        <label id="138" label="" folder="Konosuba" sort="0" />
-        <label id="139" label="" folder="Konosuba" sort="0" />
-        <label id="61" label="" folder="Konosuba" sort="0" />
-        <label id="140" label="" folder="Konosuba" sort="0" />
-        <label id="141" label="" folder="Konosuba" sort="0" />
-        <label id="142" label="" folder="Konosuba" sort="0" />
-        <label id="143" label="" folder="Konosuba" sort="0" />
-        <label id="145" label="" color="12" folder="Responses" sort="0" />
-        <label id="146" label="" color="12" folder="Responses" sort="0" />
-        <label id="147" label="" color="12" folder="Responses" sort="0" />
-        <label id="148" label="" color="9" folder="Responses" sort="0" />
-        <label id="149" label="" folder="Gwen (Spider-Woman)" sort="0" />
-        <label id="150" label="" color="12" folder="Responses" sort="0" />
-        <label id="151" label="" color="9" folder="Responses" sort="0" />
-        <label id="152" label="" color="12" folder="Responses" sort="0" />
-        <label id="153" label="" color="12" folder="Responses" sort="0" />
-        <label id="154" label="" color="9" folder="Responses" sort="0" />
-        <label id="155" label="" color="12" folder="Responses" sort="0" />
-        <label id="156" label="" color="12" folder="Responses" sort="0" />
+        <label id="136" label="" folder="Konosuba" sort="2" />
+        <label id="137" label="" folder="Konosuba" sort="8" />
+        <label id="138" label="" folder="Konosuba" sort="7" />
+        <label id="139" label="" folder="Konosuba" sort="5" />
+        <label id="61" label="" folder="Konosuba" sort="6" />
+        <label id="140" label="" folder="Konosuba" sort="10" />
+        <label id="141" label="" folder="Konosuba" sort="9" />
+        <label id="142" label="" folder="Konosuba" sort="4" />
+        <label id="143" label="" folder="Konosuba" sort="3" />
+        <label id="145" label="" color="12" folder="Responses" sort="27" />
+        <label id="146" label="" color="12" folder="Responses" sort="28" />
+        <label id="147" label="" color="12" folder="Responses" sort="29" />
+        <label id="148" label="" color="9" folder="Responses" sort="30" />
+        <label id="149" label="" color="12" folder="Responses" sort="61" />
+        <label id="150" label="" color="12" folder="Responses" sort="31" />
+        <label id="151" label="" color="9" folder="Responses" sort="32" />
+        <label id="152" label="" color="12" folder="Responses" sort="33" />
+        <label id="153" label="" color="12" folder="Responses" sort="34" />
+        <label id="154" label="" color="9" folder="Responses" sort="35" />
+        <label id="155" label="" color="12" folder="Responses" sort="36" />
+        <label id="156" label="" color="12" folder="Responses" sort="37" />
         <label id="157" label="" folder="Arash" sort="0" />
-        <label id="158" label="" color="12" folder="Responses" sort="0" />
-        <label id="159" label="" color="12" folder="Responses" sort="0" />
-        <label id="160" label="" color="9" folder="Responses" sort="0" />
-        <label id="161" label="" color="9" folder="Responses" sort="0" />
-        <label id="162" label="" color="12" folder="Responses" sort="0" />
-        <label id="163" label="" color="12" folder="Responses" sort="0" />
-        <label id="164" label="" color="12" folder="Responses" sort="0" />
+        <label id="158" label="" color="12" folder="Responses" sort="6" />
+        <label id="159" label="" color="12" folder="Responses" sort="38" />
+        <label id="160" label="" color="9" folder="Responses" sort="39" />
+        <label id="161" label="" color="9" folder="Responses" sort="40" />
+        <label id="162" label="" color="12" folder="Responses" sort="41" />
+        <label id="163" label="" color="12" folder="Responses" sort="62" />
+        <label id="164" label="" color="12" folder="Responses" sort="65" />
         <label id="165" label="" color="1" folder="Polly" sort="0" />
         <label id="166" label="" color="9" folder="Responses" sort="0" />
-        <label id="168" label="" color="9" folder="Responses" sort="0" />
-        <label id="169" label="" color="9" folder="Responses" sort="0" />
-        <label id="170" label="" color="9" folder="Responses" sort="0" />
-        <label id="174" label="" color="9" folder="Responses" sort="0" />
-        <label id="175" label="" color="12" folder="Responses" sort="0" />
-        <label id="176" label="" color="12" folder="Responses" sort="0" />
-        <label id="177" label="" color="9" folder="Responses" sort="0" />
-        <label id="178" label="" color="9" folder="Responses" sort="0" />
-        <label id="179" label="" color="12" folder="Responses" sort="0" />
-        <label id="180" label="" color="9" folder="Responses" sort="0" />
-        <label id="181" label="" color="12" folder="Responses" sort="0" />
+        <label id="168" label="" color="9" folder="Responses" sort="11" />
+        <label id="169" label="" color="9" folder="Responses" sort="12" />
+        <label id="170" label="" color="9" folder="Responses" sort="42" />
+        <label id="174" label="" color="9" folder="Responses" sort="43" />
+        <label id="175" label="" color="12" folder="Responses" sort="7" />
+        <label id="176" label="" color="12" folder="Responses" sort="8" />
+        <label id="177" label="" color="9" folder="Responses" sort="44" />
+        <label id="178" label="" color="9" folder="Responses" sort="45" />
+        <label id="179" label="" color="12" folder="Responses" sort="46" />
+        <label id="180" label="" color="9" folder="Responses" sort="47" />
+        <label id="181" label="" color="12" folder="Responses" sort="48" />
         <label id="182" label="" folder="Brock" sort="0" />
-        <label id="183" label="" folder="Brock" sort="0" />
-        <label id="184" label="" color="9" folder="Responses" sort="0" />
-        <label id="185" label="" color="9" folder="Responses" sort="0" />
-        <label id="186" label="" color="9" folder="Responses" sort="0" />
-        <label id="187" label="" color="12" folder="Responses" sort="0" />
-        <label id="188" label="" color="12" folder="Responses" sort="0" />
-        <label id="189" label="" color="9" folder="Responses" sort="0" />
-        <label id="190" label="" color="1" folder="Jean" sort="0" />
-        <label id="191" label="" color="1" folder="Lady Aqua" sort="0" />
-        <label id="192" label="" color="1" folder="Lady Aqua" sort="0" />
-        <label id="193" label="" color="1" folder="Lady Aqua" sort="0" />
-        <label id="194" label="" color="1" folder="Lady Aqua" sort="0" />
-        <label id="195" label="" color="1" folder="Nadeshiko" sort="0" />
-        <label id="196" label="" color="1" folder="Meia" sort="0" />
-        <label id="197" label="" color="1" folder="Meia" sort="0" />
-        <label id="198" label="" color="1" folder="Jura" sort="0" />
-        <label id="199" label="" color="1" folder="Jura" sort="0" />
-        <label id="200" label="" color="1" folder="Jean" sort="0" />
-        <label id="201" label="" color="1" folder="Schezo" sort="0" />
+        <label id="183" label="" folder="Brock" sort="2" />
+        <label id="184" label="" color="9" folder="Responses" sort="49" />
+        <label id="185" label="" color="9" folder="Responses" sort="50" />
+        <label id="186" label="" color="9" folder="Responses" sort="51" />
+        <label id="187" label="" color="12" folder="Responses" sort="52" />
+        <label id="188" label="" color="12" folder="Responses" sort="53" />
+        <label id="189" label="" color="9" folder="Responses" sort="5" />
+        <label id="190" label="" color="1" folder="Jean" sort="2" />
+        <label id="191" label="" color="1" folder="Lady Aqua" sort="2" />
+        <label id="192" label="" color="1" folder="Lady Aqua" sort="3" />
+        <label id="193" label="" color="1" folder="Lady Aqua" sort="4" />
+        <label id="194" label="" color="1" folder="Lady Aqua" sort="5" />
+        <label id="195" label="" color="1" folder="Nadeshiko" sort="2" />
+        <label id="196" label="" color="1" folder="Meia" sort="2" />
+        <label id="197" label="" color="1" folder="Meia" sort="3" />
+        <label id="198" label="" color="1" folder="Jura" sort="2" />
+        <label id="199" label="" color="1" folder="Jura" sort="3" />
+        <label id="200" label="" color="1" folder="Jean" sort="3" />
+        <label id="201" label="" color="1" folder="Schezo" sort="3" />
         <label id="202" label="" color="1" folder="Yuzuki" sort="0" />
-        <label id="203" label="" folder="Yuzuki" sort="0" />
-        <label id="204" label="" folder="Yuzuki" sort="0" />
-        <label id="205" label="" folder="Yuzuki" sort="0" />
-        <label id="206" label="" folder="Yuzuki" sort="0" />
+        <label id="203" label="" folder="Yuzuki" sort="22" />
+        <label id="204" label="" folder="Yuzuki" sort="23" />
+        <label id="205" label="" folder="Yuzuki" sort="28" />
+        <label id="206" label="" folder="Yuzuki" sort="34" />
         <label id="207" label="" folder="Yuzuki" sort="0" />
-        <label id="208" label="" folder="Yuzuki" sort="0" />
-        <label id="209" label="" folder="Yuzuki" sort="0" />
-        <label id="210" label="" folder="Yuzuki" sort="0" />
-        <label id="211" label="" folder="Yuzuki" sort="0" />
-        <label id="212" label="" folder="Yuzuki" sort="0" />
-        <label id="213" label="" folder="Yuzuki" sort="0" />
-        <label id="214" label="" folder="Yuzuki" sort="0" />
-        <label id="215" label="" folder="Yuzuki" sort="0" />
-        <label id="216" label="" folder="Yuzuki" sort="0" />
-        <label id="217" label="" folder="Yuzuki" sort="0" />
-        <label id="218" label="" folder="Yuzuki" sort="0" />
-        <label id="219" label="" folder="Yuzuki" sort="0" />
-        <label id="220" label="" folder="Yuzuki" sort="0" />
-        <label id="221" label="" folder="Yuzuki" sort="0" />
-        <label id="222" label="" folder="Yuzuki" sort="0" />
-        <label id="223" label="" folder="Yuzuki" sort="0" />
-        <label id="224" label="(early timer)" folder="Yuzuki" sort="0" />
-        <label id="225" label="(middle timer)" folder="Yuzuki" sort="0" />
-        <label id="226" label="(late timer)" folder="Yuzuki" sort="0" />
-        <label id="227" label="(heavy)" folder="Yuzuki" sort="0" />
-        <label id="228" label="(finished)" folder="Yuzuki" sort="0" />
-        <label id="229" label="" folder="Yuzuki" sort="0" />
-        <label id="230" label="" folder="Yuzuki" sort="0" />
-        <label id="231" label="" folder="Yuzuki" sort="0" />
-        <label id="232" label="" folder="Yuzuki" sort="0" />
-        <label id="233" label="" folder="Yuzuki" sort="0" />
-        <label id="234" label="" folder="Yuzuki" sort="0" />
-        <label id="235" label="" folder="Yuzuki" sort="0" />
-        <label id="236" label="" folder="Yuzuki" sort="0" />
-        <label id="237" label="" folder="Yuzuki" sort="0" />
-        <label id="238" label="" folder="Yuzuki" sort="0" />
-        <label id="239" label="" folder="Yuzuki" sort="0" />
-        <label id="240" label="" folder="Yuzuki" sort="0" />
-        <label id="241" label="" folder="Yuzuki" sort="0" />
-        <label id="242" label="" folder="Yuzuki" sort="0" />
-        <label id="243" label="" folder="Yuzuki" sort="0" />
-        <label id="244" label="" folder="Yuzuki" sort="0" />
-        <label id="245" label="" folder="Yuzuki" sort="0" />
-        <label id="246" label="" folder="Yuzuki" sort="0" />
-        <label id="247" label="" folder="Yuzuki" sort="0" />
-        <label id="248" label="" folder="Yuzuki" sort="0" />
-        <label id="249" label="" folder="Yuzuki" sort="0" />
-        <label id="250" label="" folder="Yuzuki" sort="0" />
+        <label id="208" label="" folder="Yuzuki" sort="29" />
+        <label id="209" label="" folder="Yuzuki" sort="35" />
+        <label id="210" label="" folder="Yuzuki" sort="24" />
+        <label id="211" label="" folder="Yuzuki" sort="30" />
+        <label id="212" label="" folder="Yuzuki" sort="36" />
+        <label id="213" label="" folder="Yuzuki" sort="25" />
+        <label id="214" label="" folder="Yuzuki" sort="31" />
+        <label id="215" label="" folder="Yuzuki" sort="37" />
+        <label id="216" label="" folder="Yuzuki" sort="26" />
+        <label id="217" label="" folder="Yuzuki" sort="32" />
+        <label id="218" label="" folder="Yuzuki" sort="38" />
+        <label id="219" label="" folder="Yuzuki" sort="27" />
+        <label id="220" label="" folder="Yuzuki" sort="33" />
+        <label id="221" label="" folder="Yuzuki" sort="39" />
+        <label id="222" label="" folder="Yuzuki" sort="40" />
+        <label id="223" label="" folder="Yuzuki" sort="41" />
+        <label id="224" label="(early timer)" folder="Yuzuki" sort="42" />
+        <label id="225" label="(middle timer)" folder="Yuzuki" sort="43" />
+        <label id="226" label="(late timer)" folder="Yuzuki" sort="44" />
+        <label id="227" label="(heavy)" folder="Yuzuki" sort="45" />
+        <label id="228" label="(finished)" folder="Yuzuki" sort="46" />
+        <label id="229" label="" folder="Yuzuki" sort="8" />
+        <label id="230" label="" folder="Yuzuki" sort="15" />
+        <label id="231" label="" folder="Yuzuki" sort="2" />
+        <label id="232" label="" folder="Yuzuki" sort="9" />
+        <label id="233" label="" folder="Yuzuki" sort="16" />
+        <label id="234" label="" folder="Yuzuki" sort="3" />
+        <label id="235" label="" folder="Yuzuki" sort="10" />
+        <label id="236" label="" folder="Yuzuki" sort="17" />
+        <label id="237" label="" folder="Yuzuki" sort="4" />
+        <label id="238" label="" folder="Yuzuki" sort="11" />
+        <label id="239" label="" folder="Yuzuki" sort="18" />
+        <label id="240" label="" folder="Yuzuki" sort="5" />
+        <label id="241" label="" folder="Yuzuki" sort="12" />
+        <label id="242" label="" folder="Yuzuki" sort="19" />
+        <label id="243" label="" folder="Yuzuki" sort="6" />
+        <label id="244" label="" folder="Yuzuki" sort="13" />
+        <label id="245" label="" folder="Yuzuki" sort="20" />
+        <label id="246" label="" folder="Yuzuki" sort="7" />
+        <label id="247" label="" folder="Yuzuki" sort="14" />
+        <label id="248" label="" folder="Yuzuki" sort="21" />
+        <label id="249" label="" folder="Yuzuki" sort="47" />
+        <label id="250" label="" folder="Yuzuki" sort="48" />
         <label id="251" label="(start phase 38-35)" folder="" sort="0" />
         <label id="252" label="(middle phase 28-18)" folder="" sort="0" />
         <label id="254" label="(late phase 17-5)" folder="" sort="0" />
         <label id="255" label="(early phase 34-29)" folder="" sort="0" />
-        <label id="256" label="" folder="Yuzuki" sort="0" />
-        <label id="257" label="" folder="Yuzuki" sort="0" />
-        <label id="258" label="" folder="Yuzuki" sort="0" />
-        <label id="259" label="" folder="Yuzuki" sort="0" />
-        <label id="260" label="" folder="Yuzuki" sort="0" />
-        <label id="261" label="" folder="Yuzuki" sort="0" />
-        <label id="262" label="" folder="Yuzuki" sort="0" />
-        <label id="263" label="" folder="Yuzuki" sort="0" />
-        <label id="264" label="" folder="Yuzuki" sort="0" />
-        <label id="265" label="" folder="Yuzuki" sort="0" />
-        <label id="266" label="" folder="Yuzuki" sort="0" />
-        <label id="267" label="" folder="Yuzuki" sort="0" />
-        <label id="268" label="" folder="Yuzuki" sort="0" />
-        <label id="269" label="" folder="Yuzuki" sort="0" />
-        <label id="270" label="" color="1" folder="Schezo" sort="0" />
+        <label id="256" label="" folder="Yuzuki" sort="49" />
+        <label id="257" label="" folder="Yuzuki" sort="50" />
+        <label id="258" label="" folder="Yuzuki" sort="51" />
+        <label id="259" label="" folder="Yuzuki" sort="52" />
+        <label id="260" label="" folder="Yuzuki" sort="53" />
+        <label id="261" label="" folder="Yuzuki" sort="54" />
+        <label id="262" label="" folder="Yuzuki" sort="55" />
+        <label id="263" label="" folder="Yuzuki" sort="56" />
+        <label id="264" label="" folder="Yuzuki" sort="57" />
+        <label id="265" label="" folder="Yuzuki" sort="58" />
+        <label id="266" label="" folder="Yuzuki" sort="59" />
+        <label id="267" label="" folder="Yuzuki" sort="60" />
+        <label id="268" label="" folder="Yuzuki" sort="61" />
+        <label id="269" label="" folder="Yuzuki" sort="62" />
+        <label id="270" label="" color="1" folder="Schezo" sort="2" />
+        <label id="271" label="" folder="z Filters" sort="34" />
+        <label id="272" label="" folder="z Filters" sort="2" />
+        <label id="273" label="" folder="z Filters" sort="22" />
+        <label id="274" label="" folder="Konosuba" sort="11" />
+        <label id="275" label="" folder="Konosuba" sort="13" />
+        <label id="276" label="" folder="Konosuba" sort="12" />
+        <label id="277" label="" folder="Konosuba" sort="23" />
+        <label id="278" label="" folder="Konosuba" sort="21" />
+        <label id="279" label="" folder="Konosuba" sort="22" />
+        <label id="280" label="" folder="Konosuba" sort="20" />
+        <label id="281" label="" folder="Konosuba" sort="25" />
+        <label id="282" label="" folder="Konosuba" sort="24" />
+        <label id="283" label="" folder="Konosuba" sort="19" />
+        <label id="284" label="" folder="Konosuba" sort="18" />
+        <label id="285" label="" folder="Konosuba" sort="16" />
+        <label id="286" label="" folder="Konosuba" sort="17" />
+        <label id="287" label="" folder="Konosuba" sort="15" />
+        <label id="288" label="" folder="Konosuba" sort="14" />
+        <label id="289" label="" folder="Konosuba" sort="29" />
+        <label id="290" label="" folder="Konosuba" sort="28" />
+        <label id="291" label="" folder="Konosuba" sort="27" />
+        <label id="292" label="" folder="Konosuba" sort="26" />
+        <label id="293" label="" folder="z Filters" sort="10" />
+        <label id="294" label="" folder="z Filters" sort="8" />
+        <label id="295" label="" folder="Accessories" sort="0" />
+        <label id="296" label="" folder="Accessories" sort="2" />
+        <label id="297" label="" folder="Accessories" sort="3" />
+        <label id="298" label="" folder="Accessories" sort="4" />
+        <label id="299" label="" folder="Accessories" sort="6" />
+        <label id="300" label="" folder="Accessories" sort="8" />
+        <label id="301" label="" folder="Accessories" sort="7" />
+        <label id="302" label="" folder="Accessories" sort="5" />
+        <label id="303" label="" folder="Accessories" sort="9" />
+        <label id="304" label="" folder="Accessories" sort="10" />
+        <label id="305" label="" folder="Accessories" sort="11" />
+        <label id="306" label="" folder="Accessories" sort="12" />
+        <label id="21" label="" color="12" folder="Responses" sort="55" />
+        <label id="307" label="" folder="Accessories" sort="15" />
+        <label id="308" label="" folder="Accessories" sort="16" />
+        <label id="309" label="" folder="Accessories" sort="13" />
+        <label id="310" label="" folder="Accessories" sort="14" />
+        <label id="6" label="" color="12" folder="Responses" sort="56" />
+        <label id="16" label="" color="12" folder="Responses" sort="57" />
+        <label id="15" label="" color="9" folder="Responses" sort="58" />
+        <label id="24" label="" color="9" folder="Responses" sort="59" />
+        <label id="4" label="" color="12" folder="Responses" sort="60" />
+        <label id="311" label="" folder="z Filters" sort="26" />
+        <label id="312" label="" folder="z Filters" sort="28" />
+        <label id="313" label="" folder="z Filters" sort="30" />
+        <label id="28" label="" color="12" folder="Responses" sort="63" />
+        <label id="11" label="" color="12" folder="Responses" sort="64" />
+        <label id="314" label="" folder="z Filters" sort="32" />
+        <label id="315" label="" folder="z Filters" sort="38" />
+        <label id="144" label="" folder="Responses" sort="66" />
+        <label id="316" label="" folder="z Filters" sort="40" />
+        <label id="317" label="" folder="Backgrounds" sort="13" />
+        <label id="318" label="" folder="Backgrounds" sort="15" />
+        <label id="319" label="" folder="Backgrounds" sort="14" />
+        <label id="320" label="" folder="z Filters" sort="12" />
+        <label id="321" label="" folder="z Filters" sort="14" />
+        <label id="322" label="" folder="z Filters" sort="16" />
+        <label id="323" label="" folder="Konosuba" sort="0" />
+        <label id="324" label="" folder="Konosuba" sort="30" />
+        <label id="325" label="" folder="Konosuba" sort="31" />
+        <label id="326" label="" folder="Konosuba" sort="32" />
+        <label id="327" label="" folder="Konosuba" sort="0" />
+        <label id="328" label="" folder="Konosuba" sort="33" />
+        <label id="329" label="" folder="Konosuba" sort="34" />
+        <label id="330" label="" folder="Konosuba" sort="35" />
+        <label id="331" label="" folder="z Filters" sort="18" />
+        <label id="332" label="" folder="z Filters" sort="36" />
+        <label id="333" label="" color="5" folder="z Filters" sort="20" />
+        <label id="334" label="" color="5" folder="z Filters" sort="24" />
+        <label id="335" label="" color="5" folder="z Filters" sort="6" />
+        <label id="336" label="" folder="z Filters" sort="4" />
+        <label id="337" label="" color="9" folder="Responses" sort="54" />
+        <label id="338" label="" folder="z Filters" sort="42" />
+        <label id="339" label="" folder="z Filters" sort="46" />
+        <label id="340" label="" folder="z Filters" sort="48" />
+        <label id="341" label="" folder="z Filters" sort="50" />
+        <label id="342" label="" folder="z Filters" sort="52" />
+        <label id="343" label="" folder="z Filters" sort="44" />
     </labels>
-    <nextId>270</nextId>
+    <nextId>343</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
         <marker scope="Public" name="adventurers_cards">Adventurer's cards detail an adventurers class, stats, and skills. Wiz wonders what another adventurer's card looks like!</marker>
         <marker scope="Public" name="aella_adventures" />
+        <marker scope="Public" name="almost_naked">"They showed up practically naked! How can they wear something like that so casually?!"</marker>
+        <marker scope="Public" name="aqua_wiz_start" />
         <marker scope="Public" name="arash_seasons" />
+        <marker scope="Public" name="arash_servant" />
         <marker scope="Public" name="arash_temperature" />
         <marker scope="Public" name="arle_adapt" />
         <marker scope="Public" name="arle_isekai" />
@@ -396,6 +481,11 @@ Targetable traits:
         <marker scope="Public" name="cagliostro_facade" />
         <marker scope="Public" name="fighting_words">When an opponent is losing badly and Wiz is doing well, she feels confident enough to try provoking them.</marker>
         <marker scope="Public" name="fluttershy_turtle_trivia" />
+        <marker scope="Public" name="formal_f1" />
+        <marker scope="Public" name="formal_f2" />
+        <marker scope="Public" name="formal_f3" />
+        <marker scope="Public" name="formal_m1" />
+        <marker scope="Public" name="formal_m2" />
         <marker scope="Public" name="ghost_guidance">Wiz asks the ghost if they need guidance to the afterlife. It's part of her job and role as a lich.</marker>
         <marker scope="Public" name="ghost_meeting">Wiz is surprised to meet a ghost at The Inventory, especially one that looks so human. In her world, ghosts are just floating shapes with hollow eyes.</marker>
         <marker scope="Public" name="hex_maniac_ColorOfRoyalty_resp_60" />
@@ -467,7 +557,7 @@ Targetable traits:
         <marker scope="Public" name="nagisa_beach" />
         <marker scope="Public" name="nagisa_boat" />
         <marker scope="Public" name="neptune_goddess" />
-        <marker scope="Public" name="on_bracelets_f1">For all "on_" markers, Wiz comments on various accessories she also sells at her store.</marker>
+        <marker scope="Public" name="on_bracelets_f1">For all "on_" markers, Wiz comments on various accessories she also sells at her store. More below.</marker>
         <marker scope="Public" name="on_bracelets_f2" />
         <marker scope="Public" name="on_bracelets_m1" />
         <marker scope="Public" name="on_bracelets_m2" />
@@ -504,9 +594,14 @@ Targetable traits:
         <marker scope="Public" name="selection_yunyun_megumin" />
         <marker scope="Public" name="shamiko_mission" />
         <marker scope="Public" name="shamiko_witch" />
+        <marker scope="Public" name="start_aqua" />
+        <marker scope="Public" name="start_darkness" />
+        <marker scope="Public" name="start_kazuma" />
         <marker scope="Public" name="start_kazuma_megumin_yunyun" />
         <marker scope="Public" name="start_konosuba_group" />
+        <marker scope="Public" name="start_megumin" />
         <marker scope="Public" name="start_megumin_yunyun" />
+        <marker scope="Public" name="start_yunyun" />
         <marker scope="Public" name="undead_group">Wiz is shocked that so many undead are all gathered together!</marker>
         <marker scope="Public" name="undead_meeting">Wiz is excited to meet another undead at The Inventory!</marker>
         <marker scope="Public" name="undead_reveal">"WHAT?! You were undead the whole time!" Wiz thought she was alone and the only undead, but apparently not.</marker>
@@ -516,6 +611,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jura_a01" />
         <marker scope="Public" name="wiz_lady_aqua_a01" />
+        <marker scope="Public" name="wiz_lady_aqua_a21" />
         <marker scope="Public" name="wiz_meia_a01" />
         <marker scope="Public" name="wiz_momo_a01" />
         <marker scope="Public" name="wiz_nadeshiko_a01" />
@@ -543,6 +639,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_yuzuki_a43" />
         <marker scope="Public" name="wiz_yuzuki_a51" />
         <marker scope="Public" name="wiz_yuzuki_a52" />
+        <marker scope="Public" name="wiz_yuzuki_a53" />
         <marker scope="Public" name="wiz_yuzuki_a61" />
         <marker scope="Public" name="wiz_yuzuki_a62" />
         <marker scope="Public" name="wiz_yuzuki_a71a" />
@@ -554,6 +651,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_yuzuki_a72a" />
         <marker scope="Public" name="wiz_yuzuki_a72b" />
         <marker scope="Public" name="wiz_yuzuki_a73" />
+        <marker scope="Public" name="you_meanies">"These other characters are being so mean! Are the insults really necessary?"</marker>
         <marker scope="Public" name="yusei_wiz_a01" />
         <marker scope="Public" name="yuzuki_wiz_a01" />
         <marker scope="Public" name="yuzuki_wiz_a02" />
