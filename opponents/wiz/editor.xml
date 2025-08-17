@@ -122,6 +122,8 @@ Targetable traits:
         <response id="196" opponent="meia" opponentId="2296" />
         <response id="198" opponent="jura" opponentId="2187" />
         <response id="270" opponent="schezo" opponentId="974" />
+        <response id="398" opponent="schezo" opponentId="977" />
+        <response id="399" opponent="schezo" opponentId="978" />
     </responses>
     <notes>
         <note id="30">This info is incorrect. It's ghosts she can command. Need to write different follow-up for undead.</note>
@@ -130,6 +132,8 @@ Targetable traits:
         <note id="190">If thses responses are too different from one another I can change one of them, just let me know. Or I can add an a and b to the markers to differentiate them.</note>
         <note id="191">There are two versions depending on their distance. Same marker though.</note>
         <note id="192">There are two versions depending on their distance. Same marker though.</note>
+        <note id="398">I'm fine with continuing with his question. There's just not enough time in one response.</note>
+        <note id="399">If you'd prefer I only write one response for each line, that's fine. And same to you: don't feel obligated to respond with two versions if you'd prefer not to.</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="9" />
@@ -309,7 +313,7 @@ Targetable traits:
         <label id="198" label="" color="1" folder="Jura" sort="2" />
         <label id="199" label="" color="1" folder="Jura" sort="3" />
         <label id="200" label="" color="1" folder="Jean" sort="3" />
-        <label id="201" label="" color="1" folder="Schezo" sort="3" />
+        <label id="201" label="" folder="Schezo" sort="3" />
         <label id="202" label="" color="1" folder="Yuzuki" sort="0" />
         <label id="203" label="" folder="Yuzuki" sort="22" />
         <label id="204" label="" folder="Yuzuki" sort="23" />
@@ -377,7 +381,7 @@ Targetable traits:
         <label id="267" label="" folder="Yuzuki" sort="60" />
         <label id="268" label="" folder="Yuzuki" sort="61" />
         <label id="269" label="" folder="Yuzuki" sort="62" />
-        <label id="270" label="" color="1" folder="Schezo" sort="2" />
+        <label id="270" label="" folder="Schezo" sort="2" />
         <label id="271" label="" folder="z Filters" sort="34" />
         <label id="272" label="" folder="z Filters" sort="2" />
         <label id="273" label="" folder="z Filters" sort="22" />
@@ -514,8 +518,11 @@ Targetable traits:
         <label id="395" label="" folder="Lady Aqua" sort="54" />
         <label id="396" label="" folder="Lady Aqua" sort="51" />
         <label id="397" label="" folder="Lady Aqua" sort="55" />
+        <label id="398" label="" color="1" folder="Schezo" sort="0" />
+        <label id="399" label="" color="1" folder="Schezo" sort="0" />
+        <label id="400" label="" folder="z Filters" sort="0" />
     </labels>
-    <nextId>397</nextId>
+    <nextId>400</nextId>
     <markers>
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
         <marker scope="Public" name="adventurers_cards">Adventurer's cards detail an adventurers class, stats, and skills. Wiz wonders what another adventurer's card looks like!</marker>
@@ -655,6 +662,7 @@ Targetable traits:
         <marker scope="Public" name="ringo_name" />
         <marker scope="Public" name="schezo_wiz_a01" />
         <marker scope="Public" name="schezo_wiz_a02" />
+        <marker scope="Public" name="schezo_wiz_a03" />
         <marker scope="Public" name="selection_darkness" />
         <marker scope="Public" name="selection_kazuko" />
         <marker scope="Public" name="selection_kazuko_lady_aqua" />
@@ -723,6 +731,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_polly_a02" />
         <marker scope="Public" name="wiz_sanny_tess_a01" />
         <marker scope="Public" name="wiz_schezo_a01" />
+        <marker scope="Public" name="wiz_schezo_a02" />
         <marker scope="Public" name="wiz_spooky_a01" />
         <marker scope="Public" name="wiz_tifa_a01" />
         <marker scope="Public" name="wiz_yuzuki_a01" />
