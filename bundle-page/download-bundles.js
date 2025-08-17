@@ -5,6 +5,7 @@ var SPECIAL_CASE_NAMES = {
     "9s": "9S",
     "ae86": "AE86",
     "alice_mgq": "Alice (MGQ)",
+    "angela_tom": "Angela",
     "aqua_kh": "Aqua (KH)",
     "aqua_konosuba": "Aqua (KonoSuba)",
     "cats": "CATS",
