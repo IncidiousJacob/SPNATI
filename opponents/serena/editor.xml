@@ -269,6 +269,8 @@
         <response id="718" opponent="hex_maniac" opponentId="677" />
         <response id="722" opponent="hex_maniac" opponentId="791" />
         <response id="723" opponent="schezo" opponentId="973" />
+        <response id="768" opponent="schezo" opponentId="976" />
+        <response id="769" opponent="witch_puyopuyo" opponentId="202" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -762,14 +764,14 @@
         <label id="713" label="" color="15" folder="Stage 4" sort="0" />
         <label id="714" label="" color="15" folder="Stage 4" sort="0" />
         <label id="715" label="" color="15" folder="" sort="0" />
-        <label id="716" label="" color="2" folder="" sort="0" />
-        <label id="717" label="" folder="Stage 0" sort="0" />
+        <label id="716" label="" color="15" folder="2 Stripping" sort="0" />
+        <label id="717" label="" color="15" folder="Stage 0" sort="0" />
         <label id="718" label="" color="15" folder="Stage 0" sort="0" />
         <label id="719" label="" folder="Day or Date Cases" sort="0" />
         <label id="720" label="" folder="Day or Date Cases" sort="0" />
         <label id="721" label="" color="15" folder="Stage 0" sort="0" />
         <label id="722" label="" color="15" folder="Stage 1" sort="0" />
-        <label id="723" label="" color="2" folder="Stage 4" sort="0" />
+        <label id="723" label="" color="15" folder="Stage 4" sort="0" />
         <label id="724" label="" color="15" folder="Stage 0" sort="0" />
         <label id="725" label="" color="15" folder="Stage 1" sort="0" />
         <label id="726" label="" color="15" folder="Stage 2" sort="0" />
@@ -813,9 +815,13 @@
         <label id="765" label="" color="2" folder="" sort="0" />
         <label id="766" label="" color="2" folder="" sort="0" />
         <label id="767" label="" folder="Fennekin Serena" sort="0" />
+        <label id="768" label="" color="15" folder="Stage 5" sort="0" />
+        <label id="769" label="" color="15" folder="3 After Stripping" sort="0" />
+        <label id="770" label="" color="9" folder="" sort="0" />
     </labels>
-    <nextId>767</nextId>
+    <nextId>770</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="0strip_losing" />
         <marker scope="Public" name="0strip_winning" />
         <marker scope="Public" name="1strip_winning" />
@@ -832,6 +838,7 @@
         <marker scope="Public" name="6strip_winning" />
         <marker scope="Public" name="bad_poker">Serena asks a question that reveals she's not very good at Poker</marker>
         <marker scope="Public" name="birthday" />
+        <marker scope="Public" name="birthday_nextime" />
         <marker scope="Public" name="bottomless_picture" />
         <marker scope="Public" name="catch_golbat" />
         <marker scope="Public" name="elite_four" />
@@ -1052,6 +1059,7 @@
         <marker scope="Public" name="serena_gloria_01" />
         <marker scope="Public" name="serena_gloria_12" />
         <marker scope="Public" name="serena_gloria_firstloss1" />
+        <marker scope="Public" name="serena_hairwhiff" />
         <marker scope="Public" name="serena_heisenberg_01" />
         <marker scope="Public" name="serena_hex_familiar1" />
         <marker scope="Public" name="serena_hex_familiar2" />
@@ -1195,8 +1203,10 @@
         <marker scope="Public" name="serena_schezo_lumiose2f" />
         <marker scope="Public" name="serena_schezo_magic1" />
         <marker scope="Public" name="serena_schezo_magic2" />
+        <marker scope="Public" name="serena_schezo_magic3" />
         <marker scope="Public" name="serena_suctioncup_b" />
         <marker scope="Public" name="serena_witch_flash1" />
+        <marker scope="Public" name="serena_witch_hairwhiff3" />
         <marker scope="Public" name="serena_witch_hairwiff1" />
         <marker scope="Public" name="serena_yuzuki_first_skin" />
         <marker scope="Public" name="serena_yuzuki_fisrt_time" />
