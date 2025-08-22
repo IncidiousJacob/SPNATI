@@ -1187,14 +1187,24 @@ function mergeObjects(a, b){
     return a;
 }
 
-function shuffleArray (array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = getRandomNumber(0, i);
-        var tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
+/* Fisher-Yates shuffling algorithm.  At step i, elements 0 through i
+ * - 1 of the shuffled array have already been selected, while
+ * elements i through length - 1 have not.  We select an element
+ * uniformly randomly from the unselected ones.  It becomes element i,
+ * and whatever element was stored at index i gets tossed into the set
+ * of unselected elements.
+ */
+Object.defineProperty(Array.prototype, 'shuffle', {
+    value: function shuffle() {
+        for (let i = 0; i < this.length - 1; i++) {
+            const j = getRandomNumber(i, this.length);
+            const tmp = this[i];
+            this[i] = this[j];
+            this[j] = tmp;
+        }
+        return this;
     }
-}
+});
 
 /************************************************************
  * Changes the first letter in a string to upper case.

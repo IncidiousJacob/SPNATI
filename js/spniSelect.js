@@ -1345,7 +1345,7 @@ function loadDefaultFillSuggestions () {
 
     if (forcedPrefills.length > 0) {
         /* select forced prefill characters from events and birthdays */
-        shuffleArray(forcedPrefills);
+        forcedPrefills.shuffle();
         forcedPrefills.sort(sortOpponentsByField("-hasBirthdayToday"));
         for (let i = 0; i < 4 && i < forcedPrefills.length; i++) {
             fillPlayers.push(forcedPrefills[i]);
@@ -1767,7 +1767,7 @@ function updateSelectionVisuals () {
         });
 
         /* Shuffle the suggestions before stable sorting them, to add variety. */
-        shuffleArray(suggested_opponents);
+        suggested_opponents.shuffle();
         console.log("array length" + suggested_opponents.length);
 
         /* Sort opponents, capping each selected character's contribution
