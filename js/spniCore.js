@@ -201,6 +201,7 @@ function initialSetup () {
         selectTitleCandy();
         setupTitleClothing();
         finishStartupLoading();
+        changeAutoAdvance(0);
 
         if (!EPILOGUES_ENABLED && !COLLECTIBLES_ENABLED) {
             $('.title-gallery-edge').css('visibility', 'hidden');
@@ -252,6 +253,7 @@ function initialSetup () {
     });
 
     $('[data-toggle="tooltip"]').tooltip({ delay: { show: 200 } });
+
 }
 
 function loadVersionInfo () {
