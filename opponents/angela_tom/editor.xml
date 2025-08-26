@@ -53,7 +53,6 @@
     <responses>
         <response id="1" opponent="nagisa" opponentId="164" />
         <response id="2" opponent="yuri" opponentId="1" />
-        <response id="3" opponent="meia" opponentId="3" />
         <response id="6" opponent="rainbow_mika" opponentId="1" />
         <response id="7" opponent="bernadetta" opponentId="1" />
         <response id="8" opponent="jessie" opponentId="22" />
@@ -75,8 +74,6 @@
         <response id="27" opponent="jura" opponentId="1" />
         <response id="28" opponent="jura" opponentId="33" />
         <response id="29" opponent="jura" opponentId="14" />
-        <response id="30" opponent="jura" opponentId="1960" />
-        <response id="31" opponent="jura" opponentId="1903" />
         <response id="32" opponent="jura" opponentId="945" />
         <response id="33" opponent="zeke_pandoria" opponentId="172" />
         <response id="34" opponent="zeke_pandoria" opponentId="1" />
@@ -213,6 +210,7 @@
         <note id="293">I'm just repeating the "female" lines for this one right now.</note>
         <note id="294">I'm just repeating the "female" lines for this one right now.</note>
         <note id="295">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="313">Only happens when an initally-crossdressing female character (presently, Lucina or Mulan) gets topless.</note>
     </notes>
     <labels>
         <label id="137" label="For his alternate outfit" folder="" sort="0" />
@@ -334,7 +332,7 @@
         <label id="307" label="" folder="Getting distracted" sort="0" />
         <label id="308" label="" folder="Getting distracted" sort="0" />
     </labels>
-    <nextId>312</nextId>
+    <nextId>313</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
@@ -373,12 +371,16 @@
         <marker scope="Public" name="Hex_SorryForFreakout">Angela apologizes to Hex Maniac for freaking out about Haunter.</marker>
         <marker scope="Public" name="Introductions">Angela introduces herself, bragging about her skills and defeating the Dragon Lord.</marker>
         <marker scope="Public" name="ISleepInPanties">Angela mentions sleeping only in panties - and in the presence of her adventuring companions! Scandalous!</marker>
+        <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
+        <marker scope="Public" name="Jura_Strip0" />
         <marker scope="Private" name="JustShowedBoobs">Only active for the first round after Angela shows off her breasts (regardless of why).</marker>
         <marker scope="Public" name="LookedAtMasturbation">Angela couldn't resist the temptation to look at a man masturbating when she was trying to focus. So much for focus!</marker>
         <marker scope="Public" name="Lux_LuminaMention">Angela suggests summoning Lumina after one of Lux's light puns.</marker>
         <marker scope="Public" name="Lux_LuminaPun">Angela actually does summon Lumina after one of Lux's light puns.</marker>
         <marker scope="Public" name="Marinette_NormalGirlClass">Angela wonders if Marinette has changed to the "Normal Girl" class.</marker>
         <marker scope="Private" name="MarthWasLucina">Angela has discovered that "Marth" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Meia_Response0">Informs Meia that she's from Altena in Fa'Diel, not Earth, and that she dresses how she wants.</marker>
+        <marker scope="Public" name="Meia_Strip0" />
         <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
         <marker scope="Public" name="OffensiveSpellCaster">Angela mentions that she's good at casting offensive elemental magic.</marker>
         <marker scope="Private" name="PingWasMulan">Angela has discovered that "Ping" was, in fact, a woman.</marker>
@@ -392,5 +394,8 @@
         <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
         <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
         <marker scope="Public" name="WorldSavingHeroes">Angela mentions having companions who went adventuring with her (she'll never say specifically who her companions were though.)</marker>
+        <marker scope="Public" name="Yuno_Response0a">Angela wonders how someone knew about the early breast reveal that she may or may not do.</marker>
+        <marker scope="Public" name="Yuno_Response0b">Angela tells Yuno that she's not doing her "gimmick" today. (In some niche scenarios, she might anyway.)</marker>
+        <marker scope="Public" name="Yuno_Response0c">Angela wonders how someone knew about the early breast reveal... that she's right about to do.</marker>
     </markers>
 </metadata>
