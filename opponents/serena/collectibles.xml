@@ -1,16 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="bottomless_pic" img="opponents/serena/Butt pic.png" thumbnail="opponents/serena/Butt pic.png">
+    <collectible id="bottomless_pic" status="online" img="opponents/serena/Butt pic.png" thumbnail="opponents/serena/Butt pic.png">
         <title>Bottomless Picture</title>
         <subtitle>She teased you about it, and delivered</subtitle>
         <text>She teased you about it earlier, so she delivered!</text>
         <unlock>Play with her a few times and she will tease you about taking off her panties first. Then win!</unlock>
-        <hidden>true</hidden>
     </collectible>
-    <collectible id="fennekin_ears" status="offline" img="opponents/serena/Fennekin Ears.png" thumbnail="opponents/serena/Fennekin Ears.png">
+    <collectible id="fennekin_ears" status="online" img="opponents/serena/Fennekin Ears.png" thumbnail="opponents/serena/Fennekin Ears.png">
         <title>Serena's Fennekin Ears</title>
         <subtitle>Hot air doesn't billow from them.</subtitle>
         <text>The Fennekin ears from Seren's Fennekin Cosplay outfit. When she handed them to you, she assured you they would not burn you. Yes, they are flully.</text>
         <unlock>Win against Serena while she's wearing her Fenneking outfit.</unlock>
+        <wearable>true</wearable>
+        <clothing img="/tools/assets/FennekinEarCol.png" name="Fennekin Ears" generic="hair decoration" position="head" type="extra" plural="true" />
+    </collectible>
+    <collectible id="SerenaSunGlasses" status="online" img="opponents/serena/shades.png" thumbnail="opponents/serena/shades.png">
+        <title>Serena's Sun Glasses</title>
+        <subtitle>Simple. yet stylish.</subtitle>
+        <text>You can wear them to curb her shinning countenance!</text>
+        <unlock>Win a game against Serena in her default costume.</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/serena/SerenaGlassesCol.png" name="Serena's Sun Glasses" generic="glasses" position="head" type="extra" plural="true" />
+    </collectible>
+    <collectible id="FennekinBooty" status="online" img="opponents/reskins/serena_fennekin/FBootyCol.png" thumbnail="opponents/reskins/serena_fennekin/FBootyCol.png">
+        <title>Serena's Fennekin Booty</title>
+        <subtitle>Just don't spread it around the internet.</subtitle>
+        <text>She gathered a fair amount of courage to share this with you. You are one lucky individual!</text>
+        <unlock>Play a game with Serena in her Fennekin outfit and have her lose before you win or lose.</unlock>
     </collectible>
 </collectibles>
