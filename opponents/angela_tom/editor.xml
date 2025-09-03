@@ -49,7 +49,7 @@
             <description>Angela is freaking out because Tharuja shrunk both Jessie and Jura's breasts.</description>
         </case>
         <case name="A Smashing Dream" id="328" priority="Noteworthy" min="0" max="8">
-            <description>Angela recalls a dream where she and Duran (or was it Duran?) fought another character, only she was in the body of another princess. It was a Smashing good time! The Ultimate dream! (Check SSBU's Spirit #1,411!)</description>
+            <description>Angela recalls a dream where she and Duran fought another character while in the bodies of other people (she's referring to Super Smash Bros. Ultimate's spirit battle #1,411, where she was represented by Zelda and Duran by Roy.)</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -239,6 +239,7 @@
         <note id="329">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy. At time of adding this, Zelda is not on the SPNatI roster, but this is future-proofing in case she is ever re-added.</note>
         <note id="330">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy. At time of adding this, Zelda is not on the SPNatI roster, but this is future-proofing in case she is ever re-added.</note>
         <note id="331">As in "Final Fantasy Brave Exvius"</note>
+        <note id="342">I know this will typically not be called with the game configured as it currently is, but better safe than sorry.</note>
     </notes>
     <labels>
         <label id="137" label="For his alternate outfit" folder="" sort="0" />
@@ -359,9 +360,14 @@
         <label id="306" label="" folder="Getting distracted" sort="0" />
         <label id="307" label="" folder="Getting distracted" sort="0" />
         <label id="308" label="" folder="Getting distracted" sort="0" />
+        <label id="340" label="Staring at men (not human)" folder="" sort="0" />
+        <label id="341" label="Staring at human (not after Tharja hex)" folder="" sort="0" />
+        <label id="343" label="" folder="Getting distracted" sort="0" />
+        <label id="344" label="" folder="Getting distracted" sort="0" />
     </labels>
-    <nextId>339</nextId>
+    <nextId>344</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
         <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
@@ -426,6 +432,7 @@
         <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
         <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
         <marker scope="Public" name="WorldSavingHeroes">Angela mentions having companions who went adventuring with her (she'll never say specifically who her companions were though.)</marker>
+        <marker scope="Public" name="Yuno_NoGimmickToday">Angela tells Yuno that she isn't doing her "gimmick" today.</marker>
         <marker scope="Public" name="Yuno_Response0a">Angela wonders how someone knew about the early breast reveal that she may or may not do.</marker>
         <marker scope="Public" name="Yuno_Response0b">Angela tells Yuno that she's not doing her "gimmick" today. (In some niche scenarios, she might anyway.)</marker>
         <marker scope="Public" name="Yuno_Response0c">Angela wonders how someone knew about the early breast reveal... that she's right about to do.</marker>
