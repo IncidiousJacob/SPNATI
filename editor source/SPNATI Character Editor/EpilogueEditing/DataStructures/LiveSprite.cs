@@ -493,7 +493,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 				{
 					if (!string.IsNullOrEmpty(initialFrame.Src))
 					{
-						sprite.Src = Scene.FixPath(initialFrame.Src, (Data as LiveSceneSegment).Character);
+						sprite.Src = Scene.FixPath(initialFrame.Src, ReferenceCharacter ?? (Data as LiveSceneSegment).Character);
 					}
 					if (initialFrame.X.HasValue)
 					{

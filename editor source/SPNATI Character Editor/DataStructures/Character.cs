@@ -647,6 +647,101 @@ namespace SPNATI_Character_Editor
 			}
 		}
 
+		delegate string SrcConverter(string src, string folderName);
+
+		private void ConvertCustomPoseSrcs(SrcConverter converter, Pose pose)
+		{
+			// dumb and also bad
+			
+			Dictionary<string, string> spriteFolders = new Dictionary<string, string>(); // this is so stupid
+			foreach (Sprite sp in pose.Sprites)
+			{
+				string folder = sp.Character ?? FolderName;
+				spriteFolders[sp.Id] = folder;
+				sp.Src = converter(sp.Src, folder);
+			}
+
+			foreach (Directive dir in pose.Directives)
+			{
+				foreach (Keyframe keyf in dir.Keyframes)
+				{
+					if (!string.IsNullOrEmpty(keyf.Src))
+					{
+						keyf.Src = converter(keyf.Src, spriteFolders.TryGetValue(dir.Id, out string folder) ? folder : FolderName);
+					}
+				}
+			}
+		}
+
+		private static string SerializeSpriteSrc(string src, string folderName)
+		{
+			if (folderName == null)
+			{
+				throw new ArgumentNullException(nameof(folderName));
+			}
+
+			folderName += "/";
+			if (!src.StartsWith(folderName))
+			{
+				return src;
+			}
+
+			src = src.Substring(folderName.Length);
+
+			// dumber and also worse (I mean REALLY bad, I hate it)
+			foreach (Character c in CharacterDatabase.Characters)
+			{
+				if (src.StartsWith(c.FolderName + "/"))
+				{
+					return "../" + src;
+				}
+			}
+
+			return src;
+		}
+		
+		private static string DeserializeSpriteSrc(string src, string folderName)
+		{
+			if (folderName == null)
+			{
+				throw new ArgumentNullException();
+			}
+
+			folderName += "/";
+			if (!src.StartsWith(folderName))
+			{
+				return folderName + src;
+			}
+
+			return src;
+		}
+
+		public void SerializeCustomPoses()
+		{
+			foreach (Pose pose in Poses)
+			{
+				ConvertCustomPoseSrcs(SerializeSpriteSrc, pose);
+			}
+		}
+
+		public void DeserializeCustomPoses()
+		{
+			DeserializeCustomPoses(false);
+		}
+
+		private void DeserializeCustomPoses(bool recurOnAfterDeserialize)
+		{
+			foreach (Pose pose in Poses)
+			{
+				if (recurOnAfterDeserialize)
+				{
+					pose.OnAfterDeserialize();
+				}
+
+				ConvertCustomPoseSrcs(DeserializeSpriteSrc, pose);
+			}
+		}
+
 		public virtual void OnBeforeSerialize()
 		{
 			Behavior.Serializing = true;
@@ -671,48 +766,7 @@ namespace SPNATI_Character_Editor
 				ending.OnBeforeSerialize();
 			}
 
-			// dumb and also bad
-			foreach (Pose pose in Poses)
-			{
-				foreach (Sprite sp in pose.Sprites)
-				{
-					if (sp.Src.Contains(FolderName + "/"))
-					{
-						sp.Src = sp.Src.Substring(FolderName.Length + 1);
-
-						// dumber and also worse (I mean REALLY bad, I hate it)
-						foreach (Character c in CharacterDatabase.Characters)
-						{
-							if (sp.Src.StartsWith(c.FolderName + "/"))
-							{
-								sp.Src = "../" + sp.Src;
-								break;
-							}
-						}
-					}
-				}
-
-				foreach (Directive dir in pose.Directives)
-				{
-					foreach (Keyframe keyf in dir.Keyframes)
-					{
-						if (!String.IsNullOrEmpty(keyf.Src) && keyf.Src.Contains(FolderName + "/"))
-						{
-							keyf.Src = keyf.Src.Substring(FolderName.Length + 1);
-
-							// dumber and also worse (I mean REALLY bad, I hate it)
-							foreach (Character c in CharacterDatabase.Characters)
-							{
-								if (keyf.Src.StartsWith(c.FolderName + "/"))
-								{
-									keyf.Src = "../" + keyf.Src;
-									break;
-								}
-							}
-						}
-					}
-				}
-			}
+			SerializeCustomPoses();
 
 			Behavior.Serializing = false;
 		}
@@ -733,30 +787,7 @@ namespace SPNATI_Character_Editor
 				ending.OnAfterDeserialize();
 			}
 			Poses.Sort();
-			foreach (Pose pose in Poses)
-			{
-				pose.OnAfterDeserialize();
-
-				// dumb and also bad
-				foreach (Sprite sp in pose.Sprites)
-				{
-					if (!sp.Src.Contains(FolderName + "/"))
-					{
-						sp.Src = FolderName + "/" + sp.Src;
-					}
-				}
-
-				foreach (Directive dir in pose.Directives)
-				{
-					foreach (Keyframe keyf in dir.Keyframes)
-					{
-						if (!String.IsNullOrEmpty(keyf.Src) && !keyf.Src.Contains(FolderName + "/"))
-						{
-							keyf.Src = FolderName + "/" + keyf.Src;
-						}
-					}
-				}
-			}
+			DeserializeCustomPoses(true);
 
 			PoseLibrary = new PoseMap(this);
 		}
