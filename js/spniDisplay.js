@@ -183,6 +183,7 @@ function PoseSprite(id, src, onload, pose, args) {
     this.pose = pose;
     this.id = id;
     this.player = args.player;
+    this.character = args.character;
     this.src = src;
     this.x = args.x || 0;
     this.y = args.y || 0;
@@ -219,7 +220,7 @@ function PoseSprite(id, src, onload, pose, args) {
         
         onload(this);
     }.bind(this);
-    this.img.src = this.prevSrc = getActualSpriteSrc(this.src, this.pose.player);
+    this.img.src = this.prevSrc = getActualSpriteSrc(this.src, this.character);
     
     this.pivot.appendChild(this.img);
     
@@ -240,6 +241,7 @@ function getActualSpriteSrc (src, player, stage) {
     if (!src) return undefined;
     var folder = '';
     if (stage === undefined) stage = player.stage;
+    if (stage === undefined) stage = 0;  // Fallback for unloaded player
     if (!src.startsWith('opponents/')) {
         if (!src.startsWith(player.id + '/') && !src.startsWith("reskins/")) {
             folder = player.folders ? player.getByStage(player.folders, stage) : player.folder;
@@ -290,7 +292,7 @@ PoseSprite.prototype.draw = function() {
     }
     $(this.vehicle).css(properties);
 
-    var newSrc = getActualSpriteSrc(this.src, this.pose.player);
+    var newSrc = getActualSpriteSrc(this.src, this.character);
     if (this.prevSrc !== newSrc) {
         /* Recompute image height/width only _after_ images have loaded. */
         this.img.onload = function () {
@@ -619,6 +621,15 @@ function parseSpriteDefinition ($xml, player) {
     targetObj.delay = parseFloat(targetObj.delay) * 1000 || 0;
     
     targetObj.player = player;
+    if (targetObj.character) {
+        // Search active opponents first to minimize performance cost
+        let character = players.find(p => p && p.id == targetObj.character);
+        if (!character) character = loadedOpponents.find(p => p && p.id == targetObj.character);
+        if (!character) character = player;
+        targetObj.character = character;
+    } else {
+        targetObj.character = player;
+    }
     
     return targetObj;
 }
@@ -769,12 +780,13 @@ PoseDefinition.prototype.getUsedImages = function(stage) {
     var imageSet = {};
     
     this.sprites.forEach(function (sprite) {
-        imageSet[getActualSpriteSrc(sprite.src, this.player, stage)] = true;
+        imageSet[getActualSpriteSrc(sprite.src, sprite.character, stage)] = true;
     }, this);
     this.animations.forEach(function (animation) {
+        sprite = this.sprites.find(sprite => sprite.id == animation.id);
         animation.keyframes.forEach(function (keyframe) {
             if (keyframe.src) {
-                imageSet[getActualSpriteSrc(keyframe.src, this.player, stage)] = true;
+                imageSet[getActualSpriteSrc(keyframe.src, sprite.character, stage)] = true;
             }
         }, this);
     }, this);
