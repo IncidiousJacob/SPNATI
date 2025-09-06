@@ -113,6 +113,13 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			set { Set(value); }
 		}
 
+		[RecordSelect(DisplayName = "Character", GroupOrder = 18, Key = "character", Description = "Other character to use images from", RecordType = typeof(Character), AllowCreate = false)]
+		public Character ReferenceCharacter
+		{
+			get { return Get<Character>(); }
+			set { Set(value); }
+		}
+
 		[Float(DisplayName = "Pivot X", Key = "pivotx", GroupOrder = 20, Description = "X value of rotation/scale point of origin as a percentage of the sprite's physical size.", Minimum = -1000, Maximum = 1000, Increment = 0.1f)]
 		public float PivotX
 		{

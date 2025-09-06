@@ -24,6 +24,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			Id = "New Sprite";
 			PivotX = 0.5f;
 			PivotY = 0.5f;
+			ReferenceCharacter = null;
 			LiveKeyframe startFrame = CreateKeyframe(0);
 			startFrame.X = 0;
 			startFrame.Y = 0;
@@ -38,6 +39,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			Marker = sprite.Marker;
 			Length = 1;
 			Id = sprite.Id;
+			ReferenceCharacter = CharacterDatabase.Get(sprite.Character);
 			Z = sprite.Z;
 			Start = time;
 			if (!string.IsNullOrEmpty(sprite.Delay))
@@ -466,6 +468,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 				Id = Id,
 				DirectiveType = "sprite",
 				Delay = Start.ToString(CultureInfo.InvariantCulture),
+				Character = ReferenceCharacter?.FolderName,
 			};
 			if (WidthOverride.HasValue)
 			{

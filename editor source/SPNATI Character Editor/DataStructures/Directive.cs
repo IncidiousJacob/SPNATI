@@ -42,6 +42,10 @@ namespace SPNATI_Character_Editor
 		[XmlAttribute("height")]
 		public string Height;
 
+		[Text(DisplayName = "Character", GroupOrder = 0, Key = "character", Description = "Other character to use images from")]
+		[XmlAttribute("character")]
+		public string Character;
+
 		#region Textbox properties
 		[ComboBox(DisplayName = "Arrow", Key = "arrow", GroupOrder = 30, Description = "Speech bubble arrow direction", Options = new string[] { "down", "up", "left", "right" })]
 		[XmlAttribute("arrow")]
