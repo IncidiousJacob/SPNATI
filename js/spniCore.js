@@ -120,6 +120,9 @@ $characterDebugModal = $("#character-debug-modal");
 
 /* Screen State */
 $previousScreen = null;
+var supportedLanguages = ['es', 'ja']; // List of supported language codes
+var userLanguage = 'en'; // Default language
+var localizationData = {}; // Will hold loaded translations
 
 /**********************************************************************
  *****              Overarching Game Flow Functions               *****
@@ -150,10 +153,98 @@ function fuzzyTimeAgo(ts) {
     return string;
 }
 
+/**********************************************************************
+ * Localization Functions
+ **********************************************************************/
+/**
+ * Detects the user's preferred language.
+ * Tries to get it from localStorage first, then navigator languages.
+ * Falls back to 'en' if no supported language is found.
+ */
+function detectUserLanguage() {
+    // Check if language is stored in localStorage (user preference)
+    var storedLang = localStorage.getItem('spnati_language');
+    if (storedLang && supportedLanguages.includes(storedLang)) {
+        return storedLang;
+    }
+
+    // Try to get language from browser
+    var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+    for (var i = 0; i < browserLangs.length; i++) {
+        var lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
+        if (supportedLanguages.includes(lang)) {
+            return lang;
+        }
+    }
+
+    // Default to English
+    return 'en';
+}
+
+/**
+ * Loads the localization XML file for a given language.
+ * @param {string} lang - The language code (e.g., 'es', 'ja').
+ * @returns {Promise<void>}
+ */
+function loadLanguageFile(lang) {
+    if (lang === 'en') {
+        // No need to load a file for English, it's the default in HTML
+        return Promise.resolve();
+    }
+    return fetchXML('languages/' + lang + '.xml').then(function ($xml) {
+        var strings = {};
+        $xml.find('string').each(function () {
+            var key = $(this).attr('key');
+            var value = $(this).text();
+            if (key) {
+                strings[key] = value;
+            }
+        });
+        localizationData[lang] = strings;
+        console.log('Loaded localization for', lang);
+    }).catch(function (err) {
+        console.error('Failed to load language file for', lang, err);
+        // Don't reject, just leave localizationData[lang] empty or undefined
+        // This will cause fallback to English
+    });
+}
+
+/**
+ * Applies loaded localization strings to elements with the data-i18n attribute.
+ * Only updates elements if a translation is available for the current language.
+ */
+function applyLocalization() {
+    $('[data-i18n]').each(function () {
+        var key = $(this).data('i18n');
+        var translation = localizationData[userLanguage] && localizationData[userLanguage][key];
+        if (translation !== undefined) {
+            // Update text content for buttons, links, spans, etc.
+            // For input elements, update the value attribute.
+            if (this.tagName.toLowerCase() === 'input' || this.tagName.toLowerCase() === 'textarea') {
+                $(this).val(translation);
+            } else {
+                $(this).text(translation);
+            }
+        }
+        // If no translation, the default text in the HTML is kept.
+    });
+}
+
+
 /************************************************************
  * Loads the initial content of the game.
  ************************************************************/
 function initialSetup () {
+    /* Detect user language early */
+    userLanguage = detectUserLanguage();
+    console.log('Detected language:', userLanguage);
+
+    /* Load the corresponding language file */
+    loadLanguageFile(userLanguage).then(function() {
+        // Apply localization after the file is loaded (or immediately if English/default)
+        applyLocalization();
+    });
+
     /* start by creating the human player object */
     players[HUMAN_PLAYER] = humanPlayer = new Player('human'); //createNewPlayer("human", "", "", "", eGender.MALE, eSize.MEDIUM, eIntelligence.AVERAGE, 20, undefined, [], null);
     humanPlayer.slot = HUMAN_PLAYER;
