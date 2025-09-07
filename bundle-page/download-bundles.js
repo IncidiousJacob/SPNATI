@@ -25,6 +25,7 @@ var SPECIAL_CASE_NAMES = {
     "penny_polendina": "Penny (RWBY)",
     "pokemon_fisher": "Fisher",
     "pot_of_greed": "Pot of Greed",
+    "raine_sage": "Raine",
     "ringo_ando": "Ringo",
     "rogue_x-men": "Rogue (X-Men)",
     "saki_zls": "Saki (ZLS)",
