@@ -15,6 +15,12 @@
         <case name="Horn Freakout" id="42" priority="FYI" min="0" max="9">
             <description>While someone removes fake horns, Vine Staff freaks out for a reason that is unknown. This is the line directly after that.</description>
         </case>
+        <case name="Angelic Calling" id="36" priority="Prompt" min="0" max="5">
+            <description>(Feel free to read notes for help). A generic "calling" line, that can be nice to respond to.</description>
+        </case>
+        <case name="Gear Names" id="90" priority="Prompt" min="0" max="7">
+            <description>(MAKE SURE TO REMOVE EXCESS VARIABLES) A small question about names from her.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -73,6 +79,14 @@
         <response id="68" opponent="brock" opponentId="2" />
         <response id="70" opponent="brock" opponentId="165" />
         <response id="72" opponent="jin" opponentId="20" />
+        <response id="79" opponent="adrien" opponentId="489" />
+        <response id="81" opponent="marinette" opponentId="438" />
+        <response id="83" opponent="ms.fortune" opponentId="24" />
+        <response id="84" opponent="shamiko" opponentId="37" />
+        <response id="86" opponent="samus_aran" opponentId="1" />
+        <response id="87" opponent="sweetheart" opponentId="43" />
+        <response id="88" opponent="wikipe-tan" opponentId="576" />
+        <response id="89" opponent="wikipe-tan" opponentId="562" />
     </responses>
     <notes>
         <note id="20">If you want to respond to the first question, let me know and I'll slap a marker on it. </note>
@@ -93,6 +107,8 @@
         <note id="54">I feel the need to clarify that she isn't afraid of losing her breasts, but rather the idea of how Tharja's magic would react with her arm.</note>
         <note id="56">I feel the need to clarify that she isn't afraid of losing her breasts, but rather the idea of how Tharja's magic would react with her arm.</note>
         <note id="55">I feel the need to clarify that she isn't afraid of losing her breasts, but rather the idea of how Tharja's magic would react with her arm.</note>
+        <note id="90">I mean, you can use this as a gear prompt? I've added a marker here anyways.</note>
+        <note id="91">A small hint to something to use in persistent games. Mostly invitation for banter.</note>
     </notes>
     <labels>
         <label id="5" label="" folder="Girl Talk" sort="0" />
@@ -109,13 +125,21 @@
         <label id="24" label="" folder="CriticalDarling" sort="0" />
         <label id="25" label="" folder="CriticalDarling" sort="0" />
         <label id="44" label="(Failsafe)" folder="" sort="0" />
+        <label id="73" label="(Failsafe)" folder="" sort="0" />
+        <label id="74" label="(Failsafe)" folder="" sort="0" />
+        <label id="75" label="(Failsafe)" folder="" sort="0" />
+        <label id="76" label="(Failsafe)" folder="" sort="0" />
+        <label id="77" label="(Failsafe)" folder="" sort="0" />
+        <label id="78" label="(Failsafe)" folder="" sort="0" />
     </labels>
-    <nextId>72</nextId>
+    <nextId>91</nextId>
     <markers>
-        <marker scope="Public" name="" />
-        <marker scope="Public" name="ArmLocksUp" />
         <marker scope="Public" name="BADWORD">Vine Staff swears! Yes, she can do this.</marker>
+        <marker scope="Public" name="ArmbandOff" />
+        <marker scope="Public" name="ArmLocksUp">A relatively generic line for my own headcanon as to something her arm does to make it feel actually cursed: it locks up!</marker>
+        <marker scope="Public" name="BoobJobIdea">A small marker to help set up an idea for future banter. From the name alone, I hope you can guess the end result. Only occurs if she's seen Tharja shrink another girl's breasts.</marker>
         <marker scope="Public" name="CallingSense">Calling, you hear the calling. Let me go gravity what's on my shoulder, little by little I feel a bit better. &lt; "Calling", Takeharu Ishimoto</marker>
+        <marker scope="Public" name="CatNoirTransform" />
         <marker scope="Public" name="CDAwfulPun1">Start of a truly terrible pun chain, with Critical Darling as the victim</marker>
         <marker scope="Public" name="CDAwfulPun2" />
         <marker scope="Public" name="CDAwfulPun3" />
@@ -124,6 +148,7 @@
         <marker scope="Public" name="CDCasualConver3" />
         <marker scope="Public" name="CoolHerself" />
         <marker scope="Public" name="GirlTalk1">A small start to a conversation. Mostly lore relating to Vine Staff, and the male dominance of her home series</marker>
+        <marker scope="Public" name="GearPrompt" />
         <marker scope="Public" name="GirlTalk2" />
         <marker scope="Public" name="GirlTalk3" />
         <marker scope="Public" name="GirlTalk4">The end of the conversation... for now</marker>
@@ -138,16 +163,17 @@
         <marker scope="Public" name="IntroHeal">An introduction where she introduces herself as a healer</marker>
         <marker scope="Public" name="IntroWait">An introduction where she introduces herself as a waitress</marker>
         <marker scope="Public" name="KeepItDown" />
+        <marker scope="Public" name="LadybugTransform" />
         <marker scope="Public" name="NotThatHard" />
         <marker scope="Public" name="ObiSlip">The one (1) strip shakeup I'm allowing</marker>
         <marker scope="Public" name="PhyrhaRocketRescue" />
         <marker scope="Public" name="PlayerNicknameUncomfy">Anti-Incest mechanic. Putting it in here because somebody is probably gonna try it.</marker>
-        <marker scope="Public" name="React" />
         <marker scope="Public" name="ReactJessieJuraTharja" />
         <marker scope="Public" name="ReactJessieTharja" />
         <marker scope="Public" name="ReactJuraJessieTharja" />
         <marker scope="Public" name="ReactJuraTharja" />
         <marker scope="Public" name="SaidUno">Mostly for fun! Since I play with Yuno a fair bit, I notice he commonly repeats his line about not saying Uno before going down to your last clothing item.</marker>
+        <marker scope="Public" name="ShamikoCrisis" />
         <marker scope="Public" name="ShoeTarget" />
         <marker scope="Public" name="Whining" />
         <marker scope="Public" name="YueBadPun">A truly awful pun, with Yuelia as the victim</marker>
