@@ -120,9 +120,9 @@ $characterDebugModal = $("#character-debug-modal");
 
 /* Screen State */
 $previousScreen = null;
-var supportedLanguages = ['es', 'ja']; // List of supported language codes
-var userLanguage = 'en'; // Default language
-var localizationData = {}; // Will hold loaded translations
+const supportedLanguages = ['es', 'ja']; // List of supported language codes
+let userLanguage = 'en'; // Default language
+const localizationData = {}; // Will hold loaded translations
 
 /**********************************************************************
  *****              Overarching Game Flow Functions               *****
@@ -163,15 +163,15 @@ function fuzzyTimeAgo(ts) {
  */
 function detectUserLanguage() {
     // Check if language is stored in localStorage (user preference)
-    var storedLang = localStorage.getItem('spnati_language');
+    const storedLang = localStorage.getItem('spnati_language');
     if (storedLang && supportedLanguages.includes(storedLang)) {
         return storedLang;
     }
 
     // Try to get language from browser
-    var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
-    for (var i = 0; i < browserLangs.length; i++) {
-        var lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
+    const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+    for (let i = 0; i < browserLangs.length; i++) {
+        let lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
         if (supportedLanguages.includes(lang)) {
             return lang;
         }
@@ -192,10 +192,10 @@ function loadLanguageFile(lang) {
         return Promise.resolve();
     }
     return fetchXML('languages/' + lang + '.xml').then(function ($xml) {
-        var strings = {};
+        const strings = {};
         $xml.find('string').each(function () {
-            var key = $(this).attr('key');
-            var value = $(this).text();
+            const key = $(this).attr('key');
+            const value = $(this).text();
             if (key) {
                 strings[key] = value;
             }
