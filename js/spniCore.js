@@ -218,18 +218,7 @@ function applyLocalization() {
         const key = $(this).data('i18n');
         const translation = localizationData[userLanguage] && localizationData[userLanguage][key];
         if (translation !== undefined) {
-            // Update text content for buttons, links, spans, etc.
-            // For input elements, update the value attribute.
-            if (this.tagName.toLowerCase() === 'input' || this.tagName.toLowerCase() === 'textarea') {
-                // Prefer placeholder if present
-                if ($(this).is('[placeholder]')) {
-                    $(this).attr('placeholder', translation);
-                } else {
-                    $(this).val(translation);
-                }
-            } else {
-                $(this).text(translation);
-            }
+            $(this).text(translation);
         }
         // If no translation, the default text in the HTML is kept.
     });
