@@ -163,7 +163,7 @@ function fuzzyTimeAgo(ts) {
  */
 function detectUserLanguage() {
     // Check if language is stored in localStorage (user preference)
-    const storedLang = localStorage.getItem('spnati_language');
+    const storedLang = localStorage.getItem('SPNatI.language');
     if (storedLang && supportedLanguages.includes(storedLang)) {
         return storedLang;
     }
@@ -215,18 +215,32 @@ function loadLanguageFile(lang) {
  */
 function applyLocalization() {
     $('[data-i18n]').each(function () {
-        var key = $(this).data('i18n');
-        var translation = localizationData[userLanguage] && localizationData[userLanguage][key];
+        const key = $(this).data('i18n');
+        const translation = localizationData[userLanguage] && localizationData[userLanguage][key];
         if (translation !== undefined) {
             // Update text content for buttons, links, spans, etc.
             // For input elements, update the value attribute.
             if (this.tagName.toLowerCase() === 'input' || this.tagName.toLowerCase() === 'textarea') {
-                $(this).val(translation);
+                // Prefer placeholder if present
+                if ($(this).is('[placeholder]')) {
+                    $(this).attr('placeholder', translation);
+                } else {
+                    $(this).val(translation);
+                }
             } else {
                 $(this).text(translation);
             }
         }
         // If no translation, the default text in the HTML is kept.
+    });
+
+    // Handle attributes like placeholder, title, etc. with data-i18n-*
+    $('[data-i18n-placeholder]').each(function () {
+        const key = $(this).data('i18n-placeholder');
+        const translation = localizationData[userLanguage] && localizationData[userLanguage][key];
+        if (translation !== undefined) {
+            $(this).attr('placeholder', translation);
+        }
     });
 }
 
