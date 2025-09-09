@@ -6,11 +6,8 @@
     <pronunciation>hɛks ˈmeɪniˌæk</pronunciation>
     <othernotes>Targeting note: &lt;br&gt;When targeting specifically about her body, you should also add a filter for either the chubby or skinny tag, this is due to her being planned to have a skinny alt by the time sponsorship starts.&lt;br&gt;&lt;br&gt;Character stuff:&lt;br&gt;Hex’s name is unknown and is planned to remain unknown as she is supposed to represent the entire trainer class. The in lore reason is she doesn’t want the game following her back to kalos and has a slight bit of paranoia about it.&lt;br&gt;Hex has a stutter, this can come and go especially if flustered or when infodumping respectively. The cause of this is an incident in training Haunter where he licked Hex. Rather than cause hex to shudder until she dies, she was left with a stutter.&lt;br&gt;Hex feels most comfortable when surrounded by the occult rather than when surrounded by normal people. Sometimes she can even use her sense of comfort to tell someone is supernatural.&lt;br&gt;Hex lives in Laverre City in Kalos along with her older sister who is a fairy tale girl.(and as such will not be in game for obvious reasons)&lt;br&gt;Occupation wise, Hex has two, the first is selling Moomoo Milk, it is not her breast milk. The second is as a consultant for ghosts and ghost type pokemon. Though she considers the second her main job, it’s more of a hobby which goes with her other hobby of exploring abandoned and theoretically haunted buildings.&lt;br&gt;&lt;br&gt;Haunter&lt;br&gt;	Haunter is Hex’s partner pokemon. He’s not her First Partner/starter pokemon, that would be a drifloon that ran away after she got too heavy. Haunter is mischievous but also protective. He will pull pranks, give hex privacy(while also pulling a prank by not showing up to continue taking her clothes), but will end it if anything dangerous happens to protect hex. (IE: explosions, bullets being shot everywhere.) Only to start again once the coast is clear.&lt;br&gt;Moves: Hex, Mean look, Scary Face, Curse. &lt;br&gt;Nature: Impish, Gender: Male&lt;br&gt;&lt;br&gt;Gimmicks&lt;br&gt;	Ghost Yapping: Hex has lines for every ghost type pokemon. This targets tags, specific characters, etc. However, if you are targeted by this you do not have to respond to the target as it’s her yapping. There is a marker that all of them have if you look, This you can use to have them react to the walls of text.&lt;br&gt;	Lactation: Chubby hex lactates, Specifically when the Milky marker is said. &lt;br&gt;</othernotes>
     <noteworthy>
-        <case name="Haunter Introduction" id="67" priority="Noteworthy" min="0" max="0">
+        <case name="Haunter Introduction" id="67" priority="MustTarget" min="0" max="0">
             <description>Hex introduces her partner pokemon Haunter after Haunter spooks her.</description>
-        </case>
-        <case name="Hex Maniac Introduction" id="68" priority="FYI" min="0" max="0">
-            <description>Hex introduces herself and why she's not revealing her name.</description>
         </case>
         <case name="HaunterGone" id="78" priority="Noteworthy" min="4" max="4">
             <description>Haunter is no longer taking care of Hex's clothes.</description>
@@ -26,6 +23,9 @@
         </case>
         <case name="Ghost question" id="159" priority="Prompt" min="0" max="8">
             <description>Hex asks if anyone has any stories or experience with ghosts.</description>
+        </case>
+        <case name="Hex Maniac Introduction" id="155" priority="FYI" min="0" max="0">
+            <description>Hex introduces herself and why she's not revealing her name.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -132,6 +132,8 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
 Makes her make masturbation noises if no other case is there, ie if someone's stripping accesories, she's got other more important stuff to care about.</note>
         <note id="666">buncha masturbation noises
 Makes her make masturbation noises if no other case is there, ie if someone's stripping accesories, she's got other more important stuff to care about.</note>
+        <note id="829">Unfortunately she's already been put into defensive mood so even if she heard exorcise, she'd assume her ears were playing tricks on her.
+After the art update this will be negative stripping</note>
     </notes>
     <labels>
         <label id="1" label="Sunny" folder="Background stuff" sort="2" />
@@ -151,22 +153,22 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="17" label="Generic" folder="Ghost yapping&gt;Gengar" sort="0" />
         <label id="18" label="Generic" folder="Ghost yapping&gt;Oricorio" sort="0" />
         <label id="201" label="" folder="Targets" sort="14" />
-        <label id="20" label="Generic" folder="Ghost yapping&gt;Arceus" sort="7" />
-        <label id="21" label="Generic" folder="Ghost yapping&gt;Dragapult" sort="8" />
+        <label id="20" label="Generic" folder="Ghost yapping&gt;Arceus" sort="0" />
+        <label id="21" label="Generic" folder="Ghost yapping&gt;Dragapult" sort="0" />
         <label id="22" label="Generic" folder="Ghost yapping&gt;Gimmighoul" sort="0" />
-        <label id="23" label="Ceruledge" color="6" folder="Ghost yapping&gt;!Unsorted" sort="10" />
+        <label id="23" label="Ceruledge" folder="Ghost yapping&gt;zzFinalFormat" sort="10" />
         <label id="24" label="Generic" folder="Ghost yapping&gt;Trevenant" sort="0" />
         <label id="25" label="Generic" folder="Ghost yapping&gt;Runerigus" sort="0" />
         <label id="26" label="Generic" folder="Ghost yapping&gt;Flutter Mane" sort="0" />
         <label id="27" label="Generic" folder="Ghost yapping&gt;Shedinja" sort="0" />
         <label id="28" label="Rotom" folder="Ghost yapping&gt;zzFinalFormat" sort="14" />
         <label id="29" label="Generic" folder="Ghost yapping&gt;Hisuian Zorua" sort="0" />
-        <label id="30" label="Generic" folder="Ghost yapping&gt;Basculegion" sort="16" />
+        <label id="30" label="Generic" folder="Ghost yapping&gt;Basculegion" sort="0" />
         <label id="31" label="Generic" folder="Ghost yapping&gt;Aegislash" sort="0" />
-        <label id="32" label="" folder="Ghost yapping&gt;Annihilape" sort="18" />
+        <label id="32" label="" folder="Ghost yapping&gt;Annihilape" sort="0" />
         <label id="33" label="card cheat" folder="" sort="0" />
         <label id="34" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="0" />
-        <label id="35" label="Generic" folder="Ghost yapping&gt;Cryogonal" sort="2" />
+        <label id="35" label="Generic" folder="Ghost yapping&gt;Cryogonal" sort="0" />
         <label id="36" label="" folder="Dev password" sort="0" />
         <label id="37" label="Generic" folder="Ghost yapping&gt;Gastly" sort="0" />
         <label id="38" label="Generic" folder="Ghost yapping&gt;Haunter" sort="0" />
@@ -175,7 +177,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="41" label="!Thanks" folder="Ghost yapping" sort="6" />
         <label id="42" label="" folder="Banter&gt;Schezo" sort="38" />
         <label id="43" label="really a ghost" folder="Targets&gt;Yuzuki" sort="2" />
-        <label id="67" label="Haunter Intro" folder="" sort="0" />
+        <label id="67" label="Prompt" folder="Prompts&gt;Haunter Intro" sort="0" />
         <label id="69" label="should not play." folder="" sort="0" />
         <label id="71" label="Stick" folder="" sort="0" />
         <label id="72" label="Thick" folder="" sort="0" />
@@ -206,20 +208,20 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="97" label="" folder="AuraCam" sort="0" />
         <label id="98" label="" folder="AuraCam" sort="3" />
         <label id="99" label="Generic" folder="Ghost yapping&gt;Drifloon" sort="0" />
-        <label id="100" label="Generic" folder="Ghost yapping&gt;Drifblim" sort="4" />
+        <label id="100" label="Generic" folder="Ghost yapping&gt;Drifblim" sort="0" />
         <label id="101" label="Generic" folder="Ghost yapping&gt;Pecharunt" sort="0" />
         <label id="102" label="Generic" folder="Ghost yapping&gt;Mimikyu" sort="0" />
         <label id="103" label="Generic" folder="Ghost yapping&gt;Misdreavus" sort="0" />
         <label id="104" label="Generic" folder="Ghost yapping&gt;Mismagius" sort="0" />
         <label id="105" label="Generic" folder="Ghost yapping&gt;Galarian Corsola" sort="0" />
-        <label id="106" label="Generic" folder="Ghost yapping&gt;Cursola" sort="4" />
+        <label id="106" label="Generic" folder="Ghost yapping&gt;Cursola" sort="0" />
         <label id="107" label="Generic" folder="Ghost yapping&gt;Shuppet" sort="0" />
-        <label id="108" label="Generic" folder="Ghost yapping&gt;Banette" sort="4" />
-        <label id="109" label="Generic" folder="Ghost yapping&gt;Duskull" sort="4" />
-        <label id="110" label="Generic" folder="Ghost yapping&gt;Dusclops" sort="4" />
-        <label id="111" label="Generic" folder="Ghost yapping&gt;Dusknoir" sort="4" />
+        <label id="108" label="Generic" folder="Ghost yapping&gt;Banette" sort="0" />
+        <label id="109" label="Generic" folder="Ghost yapping&gt;Duskull" sort="0" />
+        <label id="110" label="Generic" folder="Ghost yapping&gt;Dusclops" sort="0" />
+        <label id="111" label="Generic" folder="Ghost yapping&gt;Dusknoir" sort="0" />
         <label id="112" label="Generic" folder="Ghost yapping&gt;Yamask" sort="0" />
-        <label id="113" label="Generic" folder="Ghost yapping&gt;Cofagrigus" sort="4" />
+        <label id="113" label="Generic" folder="Ghost yapping&gt;Cofagrigus" sort="0" />
         <label id="114" label="Generic" folder="Ghost yapping&gt;Sinistea" sort="0" />
         <label id="115" label="Generic" folder="Ghost yapping&gt;Polteageist" sort="0" />
         <label id="116" label="Generic" folder="Ghost yapping&gt;Greavard" sort="0" />
@@ -228,42 +230,42 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="119" label="Generic" folder="Ghost yapping&gt;Gholdengo" sort="0" />
         <label id="120" label="Generic" folder="Ghost yapping&gt;Honedge" sort="0" />
         <label id="121" label="Generic" folder="Ghost yapping&gt;Doublade" sort="4" />
-        <label id="122" label="Generic" folder="Ghost yapping&gt;Dreepy" sort="4" />
+        <label id="122" label="Generic" folder="Ghost yapping&gt;Dreepy" sort="0" />
         <label id="207" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="0" />
-        <label id="124" label="Giratina" color="1" folder="Ghost yapping&gt;!Unwritten" sort="7" />
-        <label id="125" label="Lunala" color="1" folder="Ghost yapping&gt;!Unwritten" sort="8" />
+        <label id="124" label="Giratina" folder="Ghost yapping&gt;zzFinalFormat" sort="7" />
+        <label id="125" label="Lunala" folder="Ghost yapping&gt;zzFinalFormat" sort="8" />
         <label id="126" label="Necrozma" color="1" folder="Ghost yapping&gt;!NotGhost" sort="0" />
-        <label id="127" label="Marshadow" color="1" folder="Ghost yapping&gt;!Unwritten" sort="9" />
-        <label id="128" label="Generic" folder="Ghost yapping&gt;Blacephalon" sort="10" />
-        <label id="129" label="Spectrier" color="1" folder="Ghost yapping&gt;!Unwritten" sort="11" />
-        <label id="130" label="Hoopa" color="1" folder="Ghost yapping&gt;!Unwritten" sort="12" />
-        <label id="131" label="Litwick" color="6" folder="Ghost yapping&gt;!Unsorted" sort="13" />
-        <label id="132" label="Lampent" color="6" folder="Ghost yapping&gt;!Unsorted" sort="14" />
-        <label id="133" label="Chandelure" color="6" folder="Ghost yapping&gt;!Unsorted" sort="15" />
+        <label id="127" label="Marshadow" folder="Ghost yapping&gt;zzFinalFormat" sort="9" />
+        <label id="128" label="Generic" folder="Ghost yapping&gt;Blacephalon" sort="0" />
+        <label id="129" label="Spectrier" folder="Ghost yapping&gt;zzFinalFormat" sort="11" />
+        <label id="130" label="Hoopa" folder="Ghost yapping&gt;zzFinalFormat" sort="12" />
+        <label id="131" label="Litwick" folder="Ghost yapping&gt;zzFinalFormat" sort="13" />
+        <label id="132" label="Lampent" folder="Ghost yapping&gt;zzFinalFormat" sort="14" />
+        <label id="133" label="Chandelure" folder="Ghost yapping&gt;zzFinalFormat" sort="15" />
         <label id="134" label="Generic" folder="Ghost yapping&gt;Alolan Marowak" sort="0" />
         <label id="135" label="Hisuian Typhlosion" folder="Ghost yapping&gt;zzFinalFormat" sort="17" />
-        <label id="136" label="Skeledirge" color="1" folder="Ghost yapping&gt;!Unwritten" sort="18" />
-        <label id="137" label="Sinistcha" color="1" folder="Ghost yapping&gt;!Unwritten" sort="19" />
-        <label id="138" label="Pumpkaboo" color="1" folder="Ghost yapping&gt;!Unwritten" sort="20" />
-        <label id="139" label="Gourgeist" color="1" folder="Ghost yapping&gt;!Unwritten" sort="21" />
-        <label id="140" label="Dhelmise" color="6" folder="Ghost yapping&gt;!Unsorted" sort="22" />
-        <label id="141" label="Decidueye" color="6" folder="Ghost yapping&gt;!Unsorted" sort="23" />
-        <label id="142" label="Generic" folder="Ghost yapping&gt;Bramblin" sort="24" />
-        <label id="143" label="Generic" folder="Ghost yapping&gt;Brambleghast" sort="25" />
-        <label id="144" label="Poltchageist" color="1" folder="Ghost yapping&gt;!Unwritten" sort="26" />
-        <label id="145" label="Sandygast" color="1" folder="Ghost yapping&gt;!Unwritten" sort="27" />
-        <label id="146" label="Palossand" color="1" folder="Ghost yapping&gt;!Unwritten" sort="28" />
+        <label id="136" label="Skeledirge" folder="Ghost yapping&gt;zzFinalFormat" sort="18" />
+        <label id="137" label="Sinistcha" folder="Ghost yapping&gt;zzFinalFormat" sort="19" />
+        <label id="138" label="Pumpkaboo" folder="Ghost yapping&gt;zzFinalFormat" sort="20" />
+        <label id="139" label="Gourgeist" folder="Ghost yapping&gt;zzFinalFormat" sort="21" />
+        <label id="140" label="Dhelmise" folder="Ghost yapping&gt;zzFinalFormat" sort="22" />
+        <label id="141" label="Decidueye" folder="Ghost yapping&gt;zzFinalFormat" sort="23" />
+        <label id="142" label="Generic" folder="Ghost yapping&gt;Bramblin" sort="0" />
+        <label id="143" label="Generic" folder="Ghost yapping&gt;Brambleghast" sort="0" />
+        <label id="144" label="Poltchageist" folder="Ghost yapping&gt;zzFinalFormat" sort="26" />
+        <label id="145" label="Sandygast" folder="Ghost yapping&gt;zzFinalFormat" sort="27" />
+        <label id="146" label="Palossand" folder="Ghost yapping&gt;zzFinalFormat" sort="28" />
         <label id="147" label="Generic" folder="Ghost yapping&gt;Galarian Yamask" sort="0" />
-        <label id="148" label="Golett" color="6" folder="Ghost yapping&gt;!Unsorted" sort="30" />
-        <label id="149" label="Golurk" color="1" folder="Ghost yapping&gt;!Unwritten" sort="31" />
+        <label id="148" label="Golett" folder="Ghost yapping&gt;zzFinalFormat" sort="30" />
+        <label id="149" label="Golurk" folder="Ghost yapping&gt;zzFinalFormat" sort="31" />
         <label id="150" label="Generic" folder="Ghost yapping&gt;Hisuian Zoroark" sort="0" />
-        <label id="151" label="Frillish" color="6" folder="Ghost yapping&gt;!Unsorted" sort="33" />
-        <label id="152" label="Jellicent" color="6" folder="Ghost yapping&gt;!Unsorted" sort="34" />
+        <label id="151" label="Frillish" folder="Ghost yapping&gt;zzFinalFormat" sort="33" />
+        <label id="152" label="Jellicent" folder="Ghost yapping&gt;zzFinalFormat" sort="34" />
         <label id="153" label="" folder="Ghost yapping" sort="0" />
         <label id="155" label="Introduction" folder="" sort="0" />
         <label id="156" label="" folder="ai controls" sort="0" />
         <label id="157" label="" folder="ai controls" sort="0" />
-        <label id="159" label="GhostQ" folder="Prompts" sort="0" />
+        <label id="159" label="Prompt" folder="Prompts&gt;GhostQ" sort="0" />
         <label id="160" label="" folder="Background stuff" sort="0" />
         <label id="169" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="0" />
         <label id="170" label="" folder="Targets&gt;Spooky&gt;MonsterDating" sort="2" />
@@ -284,7 +286,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="188" label="" folder="Targets" sort="23" />
         <label id="161" label="" folder="Targets" sort="24" />
         <label id="182" label="" folder="Targets" sort="25" />
-        <label id="195" label="" folder="Targets" sort="13" />
+        <label id="195" label="" folder="Targets&gt;Rose" sort="13" />
         <label id="191" label="" folder="Targets" sort="36" />
         <label id="183" label="" folder="Targets" sort="37" />
         <label id="56" label="" folder="Targets&gt;Yuzuki" sort="3" />
@@ -305,7 +307,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="212" label="" folder="Ghost yapping&gt;Spiritomb&gt;Filter" sort="0" />
         <label id="213" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="0" />
         <label id="214" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="0" />
-        <label id="123" label="Generic" folder="Ghost yapping&gt;Drakloak" sort="4" />
+        <label id="123" label="Generic" folder="Ghost yapping&gt;Drakloak" sort="0" />
         <label id="19" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="0" />
         <label id="215" label="Generic" folder="Ghost yapping&gt;Sableye" sort="0" />
         <label id="216" label="" folder="Ghost yapping&gt;Sableye&gt;Target" sort="0" />
@@ -343,38 +345,38 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="248" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="0" />
         <label id="249" label="" folder="Ghost yapping&gt;Honedge&gt;Filter" sort="0" />
         <label id="250" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
-        <label id="251" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="2" />
-        <label id="252" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="3" />
-        <label id="253" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="4" />
+        <label id="251" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
+        <label id="252" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
+        <label id="253" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
         <label id="254" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
-        <label id="255" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="2" />
-        <label id="256" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="3" />
-        <label id="257" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="5" />
-        <label id="258" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="4" />
-        <label id="259" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="5" />
-        <label id="260" label="Region Of Origin" folder="Ghost yapping&gt;Annihilape" sort="3" />
+        <label id="255" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
+        <label id="256" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
+        <label id="257" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
+        <label id="258" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
+        <label id="259" label="" folder="Ghost yapping&gt;Annihilape&gt;Filters" sort="0" />
+        <label id="260" label="Annihilape" folder="Ghost yapping&gt;zzFinalFormat" sort="3" />
         <label id="261" label="Aegislash" folder="Ghost yapping&gt;zzFinalFormat" sort="3" />
         <label id="262" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
-        <label id="263" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="2" />
-        <label id="264" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="3" />
-        <label id="265" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="4" />
-        <label id="266" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="5" />
+        <label id="263" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="264" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="265" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="266" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
         <label id="267" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="0" />
-        <label id="268" label="Region Of Origin" folder="Ghost yapping&gt;Banette" sort="3" />
-        <label id="269" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="2" />
-        <label id="270" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="3" />
-        <label id="271" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="4" />
-        <label id="272" label="Region Of Origin" folder="Ghost yapping&gt;Cofagrigus" sort="0" />
+        <label id="268" label="Banette" folder="Ghost yapping&gt;zzFinalFormat" sort="3" />
+        <label id="269" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="0" />
+        <label id="270" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="0" />
+        <label id="271" label="" folder="Ghost yapping&gt;Banette&gt;Filters" sort="0" />
+        <label id="272" label="Cofagrigus" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="273" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
         <label id="274" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="0" />
-        <label id="275" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="2" />
-        <label id="276" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="3" />
-        <label id="277" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="4" />
-        <label id="278" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="2" />
-        <label id="279" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="3" />
-        <label id="280" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="4" />
-        <label id="281" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="5" />
-        <label id="282" label="Region of Origin" folder="Ghost yapping&gt;Cryogonal" sort="0" />
+        <label id="275" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="276" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="277" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="278" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="0" />
+        <label id="279" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="0" />
+        <label id="280" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Targets" sort="0" />
+        <label id="281" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="282" label="Cryogonal" folder="Ghost yapping&gt;!NotGhost" sort="0" />
         <label id="283" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
         <label id="284" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="0" />
         <label id="285" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="2" />
@@ -382,12 +384,12 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="287" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="4" />
         <label id="288" label="" folder="Ghost yapping&gt;Cryogonal&gt;Filters" sort="5" />
         <label id="289" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="2" />
-        <label id="290" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="3" />
-        <label id="291" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="4" />
-        <label id="292" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="5" />
-        <label id="293" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="6" />
-        <label id="294" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="7" />
-        <label id="295" label="Region Of Origin" folder="Ghost yapping&gt;Cursola" sort="0" />
+        <label id="290" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="291" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="292" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="293" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="294" label="" folder="Ghost yapping&gt;Cryogonal&gt;Targets" sort="0" />
+        <label id="295" label="Cursola" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="296" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="0" />
         <label id="297" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="0" />
         <label id="298" label="" folder="Ghost yapping&gt;Cursola&gt;Filter" sort="2" />
@@ -397,37 +399,37 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="302" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="3" />
         <label id="303" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="4" />
         <label id="304" label="" folder="Ghost yapping&gt;Cursola&gt;Target" sort="5" />
-        <label id="305" label="Region Of Origin" folder="Ghost yapping&gt;Doublade" sort="3" />
-        <label id="306" label="Region Of Origin" folder="Ghost yapping&gt;Dragapult" sort="0" />
+        <label id="305" label="Doublade" folder="Ghost yapping&gt;zzFinalFormat" sort="3" />
+        <label id="306" label="Dragapult" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="307" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="0" />
         <label id="308" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="0" />
         <label id="309" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="2" />
         <label id="310" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="2" />
         <label id="311" label="" folder="Ghost yapping&gt;Dragapult&gt;Filter" sort="3" />
         <label id="312" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="3" />
-        <label id="313" label="Region Of Origin" folder="Ghost yapping&gt;Drakloak" sort="0" />
+        <label id="313" label="Drakloak" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="314" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="0" />
         <label id="315" label="" folder="Ghost yapping&gt;Drakloak&gt;Targets" sort="0" />
         <label id="316" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="2" />
         <label id="317" label="" folder="Ghost yapping&gt;Drakloak&gt;Filter" sort="3" />
         <label id="318" label="" folder="Ghost yapping&gt;Drakloak&gt;Targets" sort="2" />
-        <label id="319" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="6" />
-        <label id="320" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="7" />
-        <label id="321" label="Region Of Origin" folder="Ghost yapping&gt;Dreepy" sort="0" />
+        <label id="319" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="320" label="" folder="Ghost yapping&gt;Banette&gt;Targets" sort="0" />
+        <label id="321" label="Dreepy" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="322" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="0" />
         <label id="323" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="0" />
         <label id="324" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="2" />
         <label id="325" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="2" />
         <label id="326" label="" folder="Ghost yapping&gt;Dreepy&gt;Filter" sort="3" />
         <label id="327" label="" folder="Ghost yapping&gt;Dreepy&gt;Targets" sort="3" />
-        <label id="328" label="Region Of Origin" folder="Ghost yapping&gt;Drifblim" sort="0" />
+        <label id="328" label="Drifblim" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="329" label="" folder="Ghost yapping&gt;Drifblim&gt;Filter" sort="0" />
         <label id="330" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="0" />
-        <label id="331" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="2" />
-        <label id="332" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="3" />
+        <label id="331" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="0" />
+        <label id="332" label="" folder="Ghost yapping&gt;Drifblim&gt;Target" sort="0" />
         <label id="333" label="" folder="Ghost yapping&gt;Spiritomb&gt;Target" sort="0" />
         <label id="334" label="" folder="Ghost yapping&gt;Spiritomb&gt;Filter" sort="0" />
-        <label id="335" label="" folder="Ghost yapping&gt;Drifblim&gt;Filter" sort="2" />
+        <label id="335" label="" folder="Ghost yapping&gt;Drifblim&gt;Filter" sort="0" />
         <label id="336" label="Drifloon" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="337" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="0" />
         <label id="338" label="" folder="Ghost yapping&gt;Drifloon&gt;Filter" sort="0" />
@@ -436,15 +438,15 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="341" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="0" />
         <label id="342" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="0" />
         <label id="343" label="" folder="Ghost yapping&gt;Drifloon&gt;Target" sort="0" />
-        <label id="344" label="Region Of Origin" folder="Ghost yapping&gt;Dusclops" sort="0" />
+        <label id="344" label="Dusclops" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="345" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="0" />
         <label id="346" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="0" />
         <label id="347" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="0" />
         <label id="348" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="2" />
         <label id="349" label="" folder="Ghost yapping&gt;Dusclops&gt;Target" sort="0" />
         <label id="350" label="" folder="Ghost yapping&gt;Dusclops&gt;Filter" sort="2" />
-        <label id="351" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="6" />
-        <label id="352" label="Region Of Origin" folder="Ghost yapping&gt;Dusknoir" sort="0" />
+        <label id="351" label="" folder="Ghost yapping&gt;Cofagrigus&gt;Filters" sort="0" />
+        <label id="352" label="Dusknoir" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="353" label="" folder="Ghost yapping&gt;Dusknoir&gt;Filters" sort="0" />
         <label id="354" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="0" />
         <label id="355" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="2" />
@@ -453,7 +455,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="358" label="" folder="Ghost yapping&gt;Shedinja&gt;Target" sort="0" />
         <label id="359" label="" folder="Ghost yapping&gt;Dusknoir&gt;Filters" sort="2" />
         <label id="360" label="" folder="Ghost yapping&gt;Dusknoir&gt;Target" sort="4" />
-        <label id="361" label="Region Of Origin" folder="Ghost yapping&gt;Duskull" sort="0" />
+        <label id="361" label="Duskull" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="362" label="" folder="Ghost yapping&gt;Duskull&gt;Filter" sort="0" />
         <label id="363" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="0" />
         <label id="364" label="" folder="Ghost yapping&gt;Duskull&gt;Target" sort="2" />
@@ -618,8 +620,8 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="524" label="" folder="Ghost yapping&gt;Gimmighoul&gt;Fliter" sort="0" />
         <label id="525" label="" folder="Ghost yapping&gt;Gholdengo&gt;Filter" sort="0" />
         <label id="526" label="" folder="Filter" sort="0" />
-        <label id="528" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="6" />
-        <label id="529" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="7" />
+        <label id="528" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
+        <label id="529" label="" folder="Ghost yapping&gt;Annihilape&gt;Targets" sort="0" />
         <label id="189" label="" folder="Targets" sort="0" />
         <label id="530" label="" folder="Targets&gt;Pokemon&gt;Cynthia" sort="0" />
         <label id="531" label="" folder="Targets&gt;Pokemon&gt;Cynthia" sort="0" />
@@ -719,19 +721,19 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="606" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Filters" sort="0" />
         <label id="607" label="" folder="Ghost yapping&gt;Hisuian Zorua&gt;Filters" sort="0" />
         <label id="608" label="" folder="Ghost yapping&gt;Hisuian Zoroark&gt;Filters" sort="0" />
-        <label id="609" label="" folder="Ghost yapping&gt;Dragapult&gt;Targets" sort="0" />
+        <label id="609" label="Dragapult" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="610" label="" folder="Ghost yapping&gt;Alolan Marowak&gt;Filters" sort="0" />
-        <label id="611" label="Region Of Origin" folder="Ghost yapping&gt;Arceus" sort="0" />
+        <label id="611" label="Arceus" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="612" label="" folder="Ghost yapping&gt;Arceus&gt;Targets" sort="0" />
         <label id="613" label="" folder="Ghost yapping&gt;Arceus&gt;Filters" sort="0" />
         <label id="614" label="" folder="Ghost yapping&gt;Arceus&gt;Filters" sort="0" />
-        <label id="616" label="Region Of Origin" folder="Ghost yapping&gt;Basculegion" sort="0" />
+        <label id="616" label="Basculegion" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="617" label="" folder="Ghost yapping&gt;Basculegion&gt;Targets" sort="0" />
         <label id="618" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
         <label id="619" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
         <label id="620" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
         <label id="621" label="" folder="Ghost yapping&gt;Basculegion&gt;Filters" sort="0" />
-        <label id="622" label="Region Of Origin" folder="Ghost yapping&gt;Blacephalon" sort="0" />
+        <label id="622" label="Blacephalon" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="623" label="" folder="Ghost yapping&gt;Blacephalon&gt;Filter" sort="0" />
         <label id="624" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
         <label id="625" label="" folder="Ghost yapping&gt;Blacephalon&gt;Filter" sort="0" />
@@ -744,8 +746,8 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="632" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
         <label id="633" label="" folder="Targets" sort="0" />
         <label id="634" label="Mean Look Caitlin" color="1" folder="" sort="0" />
-        <label id="635" label="Region Of Origin" folder="Ghost yapping&gt;Brambleghast" sort="0" />
-        <label id="636" label="Region Of Origin" folder="Ghost yapping&gt;Bramblin" sort="0" />
+        <label id="635" label="Brambleghast" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
+        <label id="636" label="Bramblin" folder="Ghost yapping&gt;zzFinalFormat" sort="0" />
         <label id="637" label="" folder="Ghost yapping&gt;Blacephalon&gt;Targets" sort="0" />
         <label id="638" label="" folder="Ghost yapping&gt;Brambleghast&gt;Targets" sort="0" />
         <label id="639" label="" folder="Ghost yapping&gt;Brambleghast&gt;Filters" sort="0" />
@@ -760,7 +762,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="648" label="" folder="Specific clothes" sort="0" />
         <label id="649" label="FILL IN DUMBASS" color="1" folder="" sort="0" />
         <label id="650" label="FILL IN DUMBASS" color="1" folder="" sort="0" />
-        <label id="654" label="" folder="Targets" sort="0" />
+        <label id="654" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="553" label="" folder="Targets" sort="0" />
         <label id="555" label="" folder="Targets" sort="0" />
         <label id="657" label="" folder="Targets" sort="0" />
@@ -777,7 +779,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="674" label="" folder="Ghost yapping&gt;Rotom&gt;Targets" sort="0" />
         <label id="675" label="" folder="Targets" sort="0" />
         <label id="655" label="" folder="Targets" sort="0" />
-        <label id="672" label="" folder="Targets" sort="0" />
+        <label id="672" label="" folder="Targets&gt;Vinyl" sort="0" />
         <label id="676" label="" folder="Targets&gt;Wiz" sort="0" />
         <label id="677" label="" folder="Banter&gt;Pokemon&gt;Serena" sort="0" />
         <label id="678" label="" folder="Banter&gt;Velvet" sort="0" />
@@ -882,23 +884,160 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="778" label="" folder="Banter&gt;Meia" sort="0" />
         <label id="784" label="Drifloon" folder="Ghost yapping" sort="0" />
         <label id="785" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
-        <label id="786" label="" folder="Banter&gt;Carmine" sort="0" />
-        <label id="779" label="" folder="Targets" sort="0" />
-        <label id="782" label="" folder="Targets" sort="0" />
-        <label id="781" label="" folder="Targets" sort="0" />
-        <label id="780" label="" folder="Targets" sort="0" />
+        <label id="786" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="779" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="782" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="781" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="780" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="787" label="" folder="Filter" sort="0" />
         <label id="788" label="" folder="Filter" sort="0" />
         <label id="789" label="" folder="Filter" sort="0" />
         <label id="790" label="" folder="Banter&gt;Pokemon&gt;Serena" sort="0" />
         <label id="791" label="" folder="Banter&gt;Pokemon&gt;Serena" sort="0" />
+        <label id="792" label="" folder="Dev password" sort="0" />
+        <label id="793" label="Someone said to shut up" folder="" sort="0" />
+        <label id="615" label="Voltorb" folder="Ghost yapping&gt;!NotGhost" sort="0" />
+        <label id="794" label="" folder="Filter" sort="0" />
+        <label id="795" label="" folder="Filter" sort="0" />
+        <label id="796" label="" folder="Filter" sort="0" />
+        <label id="797" label="" folder="Banter&gt;PeanutGallery" sort="0" />
+        <label id="798" label="NotAnnoying" folder="Ghost yapping" sort="0" />
+        <label id="799" label="Parody" folder="Targets&gt;Yuno" sort="0" />
+        <label id="800" label="" folder="Targets" sort="0" />
+        <label id="801" label="" folder="Banter&gt;Cadence" sort="0" />
+        <label id="802" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="803" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="804" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="805" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="806" label="" folder="Banter&gt;Rosie" sort="0" />
+        <label id="807" label="" folder="Banter&gt;Schezo" sort="0" />
+        <label id="808" label="" folder="Banter&gt;Pokemon&gt;Serena" sort="0" />
+        <label id="809" label="" folder="Banter&gt;Momo" sort="0" />
+        <label id="810" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
+        <label id="811" label="" folder="Prompts&gt;Haunter Intro&gt;Answers" sort="0" />
+        <label id="812" label="" folder="Banter&gt;Witch" sort="0" />
+        <label id="813" label="" folder="Targets&gt;Vinyl" sort="0" />
+        <label id="814" label="" folder="Prompts&gt;Haunter Intro&gt;Answers" sort="0" />
+        <label id="815" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
+        <label id="816" label="" folder="Ghost yapping&gt;Responses" sort="0" />
+        <label id="817" label="" folder="Ghost yapping&gt;Responses" sort="0" />
+        <label id="818" label="" folder="Semi-Banter&gt;Vinyl" sort="0" />
+        <label id="819" label="" folder="Ghost yapping&gt;Responses" sort="0" />
+        <label id="820" label="" folder="Ghost yapping&gt;Responses" sort="0" />
+        <label id="821" label="" folder="Ghost yapping&gt;Responses" sort="0" />
+        <label id="822" label="" folder="Banter&gt;Schezo" sort="0" />
+        <label id="823" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="824" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="825" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="826" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="827" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="828" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="829" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="830" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="831" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
+        <label id="832" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="833" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="834" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="835" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="836" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="837" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="838" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="839" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="840" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="841" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="842" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="671" label="" folder="Banter&gt;Stocking" sort="0" />
+        <label id="843" label="" folder="Banter&gt;Stocking" sort="0" />
+        <label id="844" label="" folder="Banter&gt;Stocking" sort="0" />
+        <label id="845" label="" folder="Banter&gt;Stocking" sort="0" />
+        <label id="846" label="" folder="Banter&gt;Stocking" sort="0" />
+        <label id="847" label="" folder="Prompts&gt;Haunter Intro&gt;Answers" sort="0" />
+        <label id="848" label="" folder="Targets&gt;Monika" sort="0" />
+        <label id="849" label="" folder="Targets&gt;Monika" sort="0" />
+        <label id="850" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
+        <label id="851" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="852" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="853" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="854" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="855" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
+        <label id="856" label="Please Feedback" folder="" sort="0" />
+        <label id="857" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="858" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="859" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="860" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="861" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="862" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="863" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="864" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="865" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="866" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="867" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="868" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="869" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="870" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="871" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="872" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="873" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="874" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="875" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="876" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="877" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="878" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="879" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="880" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="881" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="882" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="883" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="884" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="885" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="886" label="" folder="Banter&gt;Pokemon&gt;Carmine" sort="0" />
+        <label id="887" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="888" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="889" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="890" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="891" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="892" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="893" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="894" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="895" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="896" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="897" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="898" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="899" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="900" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="901" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="902" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="903" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="904" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="905" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="906" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="907" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="908" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="909" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="910" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="911" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="912" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="913" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="914" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="915" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="916" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="917" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="918" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="919" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="920" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="921" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="922" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="923" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="924" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="925" label="" folder="Banter&gt;Simon" sort="0" />
+        <label id="926" label="" folder="Meanlook" sort="0" />
     </labels>
     <prefixes>
         <prefix>Haunter</prefix>
         <prefix>Placeholder</prefix>
         <prefix>z</prefix>
     </prefixes>
-    <nextId>791</nextId>
+    <nextId>926</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9s_Nippleless" />
@@ -932,17 +1071,54 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Brock_HaunterProtect1" />
         <marker scope="Public" name="Brock_HaunterProtect2" />
         <marker scope="Public" name="Butt_posing">Hex has a butt pose active</marker>
+        <marker scope="Public" name="Cadence_Extinct_001" />
         <marker scope="Public" name="Caitlin_Real" />
         <marker scope="Public" name="Carmine_" />
+        <marker scope="Public" name="Carmine_FreeHaunter_21" />
+        <marker scope="Public" name="Carmine_FreeHaunter_22" />
+        <marker scope="Public" name="Carmine_FreeHaunter_23" />
+        <marker scope="Public" name="Carmine_HighStrung_01" />
+        <marker scope="Public" name="Carmine_HighStrung_11" />
+        <marker scope="Public" name="Carmine_HighStrung_12" />
+        <marker scope="Public" name="Carmine_HighStrung_13" />
+        <marker scope="Public" name="Carmine_HisuiInKitakami_31" />
+        <marker scope="Public" name="Carmine_HisuiInKitakami_41" />
+        <marker scope="Public" name="Carmine_HisuiInKitakami_42" />
+        <marker scope="Public" name="Carmine_HisuiInKitakami_43" />
+        <marker scope="Public" name="Carmine_Job_31" />
+        <marker scope="Public" name="Carmine_Job_32" />
+        <marker scope="Public" name="Carmine_Job_33" />
+        <marker scope="Public" name="Carmine_LoyalThree_51" />
+        <marker scope="Public" name="Carmine_LoyalThree_52" />
+        <marker scope="Public" name="Carmine_LoyalThree_53" />
+        <marker scope="Public" name="Carmine_MochiMayhem_11" />
+        <marker scope="Public" name="Carmine_MochiMayhem_12" />
+        <marker scope="Public" name="Carmine_MochiMayhem_13" />
+        <marker scope="Public" name="Carmine_MochiMayhem_14" />
+        <marker scope="Public" name="Carmine_NoInterest_21" />
+        <marker scope="Public" name="Carmine_NoInterest_22" />
+        <marker scope="Public" name="Carmine_NoInterest_23" />
         <marker scope="Public" name="Carmine_PecharuntSighting_01" />
         <marker scope="Public" name="Carmine_PecharuntSighting_02" />
+        <marker scope="Public" name="Carmine_Poltchageist_31" />
+        <marker scope="Public" name="Carmine_Poltchageist_32" />
+        <marker scope="Public" name="Carmine_Poltchageist_33" />
+        <marker scope="Public" name="Carmine_SomethingAboutSex_51" />
+        <marker scope="Public" name="Carmine_SomethingAboutSex_52" />
+        <marker scope="Public" name="Carmine_SomethingAboutSex_53" />
         <marker scope="Public" name="Carmine_VibeCheck_01" />
+        <marker scope="Public" name="Carmine_VibeCheck_02" />
+        <marker scope="Public" name="Carmine_VibeCheck_03" />
+        <marker scope="Public" name="Carmine_WhyImHere_41" />
+        <marker scope="Public" name="Carmine_WhyImHere_42" />
+        <marker scope="Public" name="Carmine_WhyImHere_43" />
         <marker scope="Public" name="carng" />
         <marker scope="Public" name="Cats_Vanish" />
         <marker scope="Public" name="CelebSeemsFamiliar" />
         <marker scope="Public" name="Chazz_PokerDeck" />
         <marker scope="Public" name="Chihiro_RunFromGame" />
         <marker scope="Public" name="Cynthia_THECynthia" />
+        <marker scope="Public" name="DefaultDress" />
         <marker scope="Public" name="Dreamcatcher_SpicyFood" />
         <marker scope="Public" name="Elesa_Recognized" />
         <marker scope="Public" name="Erufuda_BellyReveal" />
@@ -952,12 +1128,14 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Erufuda_SplitPants" />
         <marker scope="Public" name="Erufuda_SuckIn" />
         <marker scope="Public" name="Erufuda_SuckInFail" />
+        <marker scope="Public" name="Fatenotonside" />
         <marker scope="Public" name="Fnaf_Rumors1" />
         <marker scope="Public" name="ForgotHeadband" />
         <marker scope="Public" name="FreeTheNipple" />
         <marker scope="Public" name="FutanariDifferenceBetweenPenisAndPussy" />
         <marker scope="Public" name="Galatea_LivingStatue" />
         <marker scope="Public" name="GhostQ" />
+        <marker scope="Public" name="GhostYappingCalmsDown" />
         <marker scope="Public" name="Giygas_transformation" />
         <marker scope="Public" name="Gloria_News" />
         <marker scope="Public" name="Gloria_News_01" />
@@ -973,6 +1151,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Private" name="Haunter_cheat5" />
         <marker scope="Private" name="Haunter_cheat6" />
         <marker scope="Public" name="Haunter_Intro" />
+        <marker scope="Public" name="Haunter_Meanlook_Bucktooth" />
         <marker scope="Public" name="HaunterCam" />
         <marker scope="Public" name="Hauntercheat" />
         <marker scope="Public" name="HaunterGone" />
@@ -990,13 +1169,22 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="HowFutaWork" />
         <marker scope="Public" name="Human_Nude" />
         <marker scope="Public" name="JJBA_MeanLook" />
-        <marker scope="Public" name="Jura" />
         <marker scope="Public" name="Jura_4thN5thRib" />
+        <marker scope="Public" name="Jura_4thN5thRib_Apologies" />
+        <marker scope="Public" name="Jura_Babies2" />
         <marker scope="Public" name="Jura_Babyless" />
+        <marker scope="Public" name="Jura_Bodyshaming_51" />
+        <marker scope="Public" name="Jura_Bodyshaming_52" />
         <marker scope="Public" name="Jura_DoAliensExist_01" />
+        <marker scope="Public" name="Jura_DoAliensExist_02" />
         <marker scope="Public" name="Jura_Ghost_01" />
+        <marker scope="Public" name="Jura_Ghost_Sight" />
+        <marker scope="Public" name="Jura_Hair_11" />
+        <marker scope="Public" name="Jura_Haunter_02" />
         <marker scope="Public" name="Jura_Possession_01" />
         <marker scope="Public" name="Jura_Tarot_01" />
+        <marker scope="Public" name="Jura_Tarot_11" />
+        <marker scope="Public" name="Jura_Tarot_12" />
         <marker scope="Public" name="LargePPpride" />
         <marker scope="Public" name="LumioseMention" />
         <marker scope="Public" name="Mae_PixieEyes" />
@@ -1004,20 +1192,35 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Magma_Terrorists_01" />
         <marker scope="Public" name="MagmaGrunt_UniformRecognize" />
         <marker scope="Public" name="MagmaGrunts_UniformRecognize" />
+        <marker scope="Public" name="Meia_Bodyshaming_41" />
+        <marker scope="Public" name="Meia_Bodyshaming_42" />
+        <marker scope="Public" name="Meia_GhostConnection_41" />
+        <marker scope="Public" name="Meia_GhostConnection_42" />
         <marker scope="Public" name="Meia_KalosSightseeing" />
+        <marker scope="Public" name="Meia_Levitation_Nausea" />
+        <marker scope="Public" name="Meia_LovesRocks" />
         <marker scope="Public" name="Meia_Men_Info" />
+        <marker scope="Public" name="Meia_Prophetic_Visions" />
         <marker scope="Public" name="Meia_Pyoro_01" />
+        <marker scope="Public" name="Meia_Pyoro_02" />
+        <marker scope="Public" name="Meia_Recruitment" />
         <marker scope="Public" name="Meia_UnderControl_01" />
+        <marker scope="Public" name="Meia_UnderControl_02" />
         <marker scope="Public" name="Meia_UnfitForPilot" />
         <marker scope="Public" name="Mia_ParentResponse" />
         <marker scope="Public" name="Milky">Hex is Lactating</marker>
         <marker scope="Public" name="Momo_CreateDead_001" />
+        <marker scope="Public" name="Momo_CreateDead_002" />
+        <marker scope="Public" name="Momo_CreateDead_02" />
         <marker scope="Public" name="Momo_Yaoyorictionary" />
+        <marker scope="Public" name="Monika_SomethingsWrongICanFeelIt" />
         <marker scope="Public" name="MoomooEffect" />
         <marker scope="Public" name="No_Sunscreen" />
+        <marker scope="Public" name="NoYap" />
         <marker scope="Public" name="October" />
         <marker scope="Public" name="Penny_animaltalk" />
         <marker scope="Public" name="pickedalone" />
+        <marker scope="Public" name="PleaseFeedback" />
         <marker scope="Public" name="Polly_Fakeout" />
         <marker scope="Public" name="Polly_Intangibility_01" />
         <marker scope="Public" name="Polly_MovedOn" />
@@ -1026,19 +1229,65 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Rosa_UnovanMovie" />
         <marker scope="Public" name="Rose_Gymbadges" />
         <marker scope="Public" name="Rosie_FossilPokemon_01" />
+        <marker scope="Public" name="Rosie_FossilPokemon_02" />
         <marker scope="Public" name="Roxie_ThoseArentPainted" />
         <marker scope="Public" name="Saki_CanIAskPostReveal" />
         <marker scope="Public" name="Saki_JustLikeMeFRFR_01" />
         <marker scope="Public" name="sannytess_01" />
+        <marker scope="Public" name="Schezo_Aegislash_Response" />
         <marker scope="Public" name="Schezo_SwordMage" />
         <marker scope="Public" name="Schezo_SwordMage_01" />
+        <marker scope="Public" name="Schezo_SwordMage_02" />
+        <marker scope="Public" name="Schezo_SwordMage_03" />
+        <marker scope="Public" name="serena_Calem_10" />
         <marker scope="Public" name="Serena_Familiar" />
         <marker scope="Public" name="Serena_Familiar_00" />
         <marker scope="Public" name="serena_Familiar_02" />
         <marker scope="Public" name="serena_Familiar_03" />
         <marker scope="Public" name="Serena_RedNails" />
         <marker scope="Public" name="Shantae_Monkae" />
+        <marker scope="Public" name="Shezo_Blacephalon_Noscar" />
+        <marker scope="Public" name="Shezo_Blacephalon_Scar" />
         <marker scope="Public" name="Shimakaze_AreYaOkay" />
+        <marker scope="Public" name="simon__resp_50" />
+        <marker scope="Public" name="simon__resp_51" />
+        <marker scope="Public" name="simon__resp_52" />
+        <marker scope="Public" name="simon_boota_10" />
+        <marker scope="Public" name="simon_boota_11" />
+        <marker scope="Public" name="simon_boota_12" />
+        <marker scope="Public" name="simon_chestdisplay_40" />
+        <marker scope="Public" name="simon_chestdisplay_41" />
+        <marker scope="Public" name="simon_chestdisplay_42" />
+        <marker scope="Public" name="simon_Cleavage_00" />
+        <marker scope="Public" name="simon_Cleavage_01" />
+        <marker scope="Public" name="simon_Cleavage_02" />
+        <marker scope="Public" name="simon_golurkrealization_60" />
+        <marker scope="Public" name="simon_golurkrealization_61" />
+        <marker scope="Public" name="simon_golurkrealization_62" />
+        <marker scope="Public" name="simon_hexBra_resp_40" />
+        <marker scope="Public" name="simon_hexBra_resp_41" />
+        <marker scope="Public" name="simon_hexBra_resp_42" />
+        <marker scope="Public" name="simon_hexHaunter_resp_10" />
+        <marker scope="Public" name="simon_hexHaunter_resp_11" />
+        <marker scope="Public" name="simon_hexHaunter_resp_12" />
+        <marker scope="Public" name="simon_hexHexy_resp_30" />
+        <marker scope="Public" name="simon_hexHexy_resp_31" />
+        <marker scope="Public" name="simon_hexHexy_resp_32" />
+        <marker scope="Public" name="simon_hexIntro_resp_00" />
+        <marker scope="Public" name="simon_hexIntro_resp_01" />
+        <marker scope="Public" name="simon_hexIntro_resp_02" />
+        <marker scope="Public" name="simon_hexTeam_resp_20" />
+        <marker scope="Public" name="simon_hexTeam_resp_21" />
+        <marker scope="Public" name="simon_hexTeam_resp_22" />
+        <marker scope="Public" name="simon_highenergy_20" />
+        <marker scope="Public" name="simon_highenergy_21" />
+        <marker scope="Public" name="simon_highenergy_22" />
+        <marker scope="Public" name="simon_mechpilot_30" />
+        <marker scope="Public" name="simon_mechpilot_31" />
+        <marker scope="Public" name="simon_mechpilot_32" />
+        <marker scope="Public" name="simon_offswitch_50" />
+        <marker scope="Public" name="simon_offswitch_51" />
+        <marker scope="Public" name="simon_offswitch_52" />
         <marker scope="Public" name="Size_expectation" />
         <marker scope="Public" name="Size_expectation_fufiled" />
         <marker scope="Public" name="SpeakingKalosian" />
@@ -1152,11 +1401,20 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Velvet_KinkYesAnswer" />
         <marker scope="Public" name="Velvet_TheArmThing00" />
         <marker scope="Public" name="Velvet_WhyBirdsFly" />
+        <marker scope="Public" name="Vinyl_Ghost_Frequency" />
+        <marker scope="Public" name="Vinyl_Gimmighoul_Pokephilia" />
+        <marker scope="Public" name="Vinyl_Haunter_Long_Time" />
+        <marker scope="Public" name="Vinyl_HaunterIsClearlyCheating" />
+        <marker scope="Public" name="Vinyl_Rotom_Regret" />
+        <marker scope="Public" name="Vinyl_Shoes_Resp" />
         <marker scope="Public" name="Wasp_ShrinkJustForPlayer" />
         <marker scope="Public" name="WhyAreAllTheseFamousPeoplePlayingStripPoker" />
         <marker scope="Public" name="WhyImHere" />
         <marker scope="Public" name="Wikipetan_MagicalTransformation" />
+        <marker scope="Public" name="Witch_Graveyard_Visit" />
+        <marker scope="Public" name="Witch_HaunterTraining" />
         <marker scope="Public" name="Witch_Potion_01" />
+        <marker scope="Public" name="Witch_Potion_02" />
         <marker scope="Public" name="wiz_ColorOfRoyalty_60" />
         <marker scope="Public" name="wiz_ColorOfRoyalty_61" />
         <marker scope="Public" name="wiz_ColorOfRoyalty_62" />
@@ -1200,6 +1458,8 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Yuelia_notButterfly" />
         <marker scope="Public" name="Yuelia_notVivillon" />
         <marker scope="Public" name="Yuelia_Vivillon" />
+        <marker scope="Public" name="Yuno_Parody" />
+        <marker scope="Public" name="Yusei_Signer" />
         <marker scope="Public" name="Yusei_Tattoo_01" />
         <marker scope="Public" name="yuzuki__50" />
         <marker scope="Public" name="yuzuki__51" />
@@ -1210,6 +1470,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="yuzuki_hexCommons_resp_50" />
         <marker scope="Public" name="yuzuki_hexCommons_resp_51" />
         <marker scope="Public" name="yuzuki_hexCommons_resp_52" />
+        <marker scope="Public" name="Yuzuki_hexCommons_resp_53" />
         <marker scope="Public" name="yuzuki_hexCuteness_resp_40" />
         <marker scope="Public" name="yuzuki_hexCuteness_resp_41" />
         <marker scope="Public" name="yuzuki_hexCuteness_resp_42" />
@@ -1243,4 +1504,26 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="yuzuki_Touching_42" />
         <marker scope="Public" name="ZekePandoria_WhatIsABlade_01" />
     </markers>
+    <pendingLines>
+        <line>Target topic event 2025</line>
+        <line>Monika</line>
+        <line>Alright, so current topics for hex towards monika is</line>
+        <line>Something's wrong, I can feel it. Which might be something for hand any, possibly also get haunter in on feeling somethings wrong.</line>
+        <line>Then she'll say in banter that it's likely due to her doing something awful "in another life."</line>
+        <line>Then depending on how banter goes either continue down that path or deflect towards piano. Maybe get to talk about lavender town syndrome if that's the case</line>
+        <line>books</line>
+        <line>-</line>
+        <line>There's something about you...</line>
+        <line>You've... You've done something awful in a past life... Some sort of inexcusable act...</line>
+        <line>-----------------</line>
+        <line>Meia</line>
+        <line>What would happen if pyoro was possessed by a rotom</line>
+        <line>Touch on meia's supernaturality</line>
+        <line>Meia is an only child, hex is not</line>
+        <line>training methods.</line>
+        <line>-----------------</line>
+        <line>SolarFlare</line>
+        <line>Ask about Zombies</line>
+        <line>Ask about how she's enjoying being humanish so far.</line>
+    </pendingLines>
 </metadata>
