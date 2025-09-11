@@ -189,7 +189,7 @@ const MAGNET_TAGS = [
     "fire_emblem",
 
     "pokemon",
-	
+
     "genshin_impact",
 
     "danganronpa",
@@ -205,9 +205,12 @@ const MAGNET_TAGS = [
     "ace_attorney",
     "clannad",
     "dragon_ball",
+    "katawa_shoujo",
+    "legend_of_zelda",
     "little_witch_academia",
     "monster_prom",
     "one_piece",
+    "tales_of",
     "touhou_project",
     "xenoblade_chronicles",
 
@@ -216,25 +219,24 @@ const MAGNET_TAGS = [
     "golden_sun",
     "huniepop",
     "jjba",
-    "katawa_shoujo",
     "kid_icarus",
     "kill_la_kill",
     "league_of_legends",
-    "legend_of_zelda",
     "lobotomy_corporation",
     "marvel",
     "mega_man",
     "miraculous",
+    "my_hero_academia",
     "hyperdimension_neptunia",
     "omori",
     "overwatch_franchise",
     "panty_and_stocking",
     "puyo_puyo",
     "sonic_franchise",
-    "tales_of",
     "teen_titans_franchise",
     "va-11_hall-a",
     "vandread",
+    "yuru_camp",
 ];
 
 const EVENT_COSTUME_PREFIXES = {
