@@ -171,7 +171,7 @@ function detectUserLanguage() {
     // Try to get language from browser
     const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
     for (let i = 0; i < browserLangs.length; i++) {
-        let lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
+        const lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
         if (supportedLanguages.includes(lang)) {
             return lang;
         }
@@ -187,10 +187,6 @@ function detectUserLanguage() {
  * @returns {Promise<void>}
  */
 function loadLanguageFile(lang) {
-    if (lang === 'en') {
-        // No need to load a file for English, it's the default in HTML
-        return Promise.resolve();
-    }
     return fetchXML('languages/' + lang + '.xml').then(function ($xml) {
         const strings = {};
         $xml.find('string').each(function () {
@@ -249,11 +245,10 @@ function initialSetup () {
     userLanguage = detectUserLanguage();
     console.log('Detected language:', userLanguage);
 
-    /* Load the corresponding language file */
-    loadLanguageFile(userLanguage).then(function() {
-        // Apply localization after the file is loaded (or immediately if English/default)
-        applyLocalization();
-    });
+    if (userLanguage !== 'en') { // No need to load a file for English, it's the default in HTML
+        /* Load the corresponding language file and apply it */
+        loadLanguageFile(userLanguage).then(applyLocalization);
+    }
 
     /* start by creating the human player object */
     players[HUMAN_PLAYER] = humanPlayer = new Player('human'); //createNewPlayer("human", "", "", "", eGender.MALE, eSize.MEDIUM, eIntelligence.AVERAGE, 20, undefined, [], null);
