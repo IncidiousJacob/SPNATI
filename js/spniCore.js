@@ -209,26 +209,33 @@ function loadLanguageFile(lang) {
     });
 }
 
+function l10n(key, fallback) {
+    return localizationData[userLanguage] && localizationData[userLanguage][key] || fallback;
+}
+
 /**
- * Applies loaded localization strings to elements with the data-i18n attribute.
+ * Applies loaded localization strings to elements with data-i10n[-*] attributes.
  * Only updates elements if a translation is available for the current language.
  */
 function applyLocalization() {
-    $('[data-i18n]').each(function () {
-        const key = $(this).data('i18n');
-        const translation = localizationData[userLanguage] && localizationData[userLanguage][key];
-        if (translation !== undefined) {
-            $(this).text(translation);
-        }
-        // If no translation, the default text in the HTML is kept.
-    });
+    const i18nAttr = ['', 'alt', 'title', 'placeholder'];  // '' represents the text content of an element
+    const h = (attr) => attr !== '' ? '-' + attr : attr;
+    const selector = i18nAttr.map(attr => `[data-l10n${h(attr)}]`).join(',');
 
-    // Handle attributes like placeholder, title, etc. with data-i18n-*
-    $('[data-i18n-placeholder]').each(function () {
-        const key = $(this).data('i18n-placeholder');
-        const translation = localizationData[userLanguage] && localizationData[userLanguage][key];
-        if (translation !== undefined) {
-            $(this).attr('placeholder', translation);
+    $(selector).each(function () {
+        for (attr of i18nAttr) {
+            const key = $(this).data('l10n' + h(attr));
+            if (key) {
+                const translation = l10n(key);
+                if (translation !== undefined) {
+                    if (attr !== '') {
+                        $(this).attr(attr, translation);
+                    } else {
+                        $(this).text(translation);
+                    }
+                }
+                // If no translation, the default text in the HTML is kept.
+            }
         }
     });
 }
