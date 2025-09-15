@@ -335,11 +335,11 @@
             </directive>
         </pose>
         <pose id="MButt">
-            <sprite id="MButt" src="reskins/serena_fennekin/MButt.png" x="0" y="900" scalex="1" />
-            <sprite id="MButtHand" src="serena/MButtHand.png" x="-103" y="1005" scalex="0.85" scaley="0.85" pivotx="17%" pivoty="94%" rotation="1" />
+            <sprite id="MButt" src="reskins/serena_fennekin/MButt.png" x="0" y="925" scalex="1" />
+            <sprite id="MButtHand" src="serena/MButtHand.png" x="-103" y="1030" scalex="0.85" scaley="0.85" pivotx="17%" pivoty="94%" rotation="1" />
             <directive type="animation" id="MButt" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="900" />
-                <keyframe time="0.5" x="0" y="900" />
+                <keyframe time="0" x="0" y="925" />
+                <keyframe time="0.5" x="0" y="925" />
             </directive>
             <directive type="animation" id="MButt" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/serena_fennekin/MButt.png" />
@@ -350,9 +350,9 @@
                 <keyframe time="0.5" scalex="1" />
             </directive>
             <directive type="animation" id="MButtHand" loop="true" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-103" y="1005" scaley="0.85" rotation="1" />
-                <keyframe time="0.25" x="-103" y="1006" scaley="0.8" rotation="-1" />
-                <keyframe time="0.5" x="-103" y="1005" scaley="0.85" rotation="1" />
+                <keyframe time="0" x="-103" y="1030" scaley="0.85" rotation="1" />
+                <keyframe time="0.25" x="-103" y="1030" scaley="0.8" rotation="-1" />
+                <keyframe time="0.5" x="-103" y="1030" scaley="0.85" rotation="1" />
             </directive>
             <directive type="animation" id="MButtHand" loop="true" ease="linear" interpolation="none">
                 <keyframe time="0" src="serena/MButtHand.png" />
@@ -591,7 +591,7 @@
             </directive>
             <directive type="animation" id="forearm" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/serena_fennekin/forearm.png" />
-                <keyframe time="12" src="serena/forearm.png" />
+                <keyframe time="12" src="reskins/serena_fennekin/forearm.png" />
             </directive>
             <directive type="animation" id="cutehand" ease="linear" interpolation="linear">
                 <keyframe time="0" x="9" y="1014" rotation="-8" />
@@ -902,7 +902,7 @@
                 <keyframe time="6.25" rotation="10" />
                 <keyframe time="6.5" rotation="37" />
                 <keyframe time="12" rotation="37" />
-                <keyframe time="12.5" rotation="12" />
+                <keyframe time="12.69" rotation="12" />
                 <keyframe time="13.5" rotation="12" />
                 <keyframe time="13.62" rotation="14" />
                 <keyframe time="14" rotation="12" />
@@ -1325,10 +1325,10 @@
             </directive>
             <directive type="animation" id="forearm" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/serena_fennekin/forearm.png" />
-                <keyframe time="12.62" src="serena/forearm.png" />
-                <keyframe time="13" src="serena/forearm.png" />
-                <keyframe time="13.5" src="serena/forearm.png" />
-                <keyframe time="13.62" src="serena/forearm.png" />
+                <keyframe time="12.62" src="reskins/serena_fennekin/forearm.png" />
+                <keyframe time="13" src="reskins/serena_fennekin/forearm.png" />
+                <keyframe time="13.5" src="reskins/serena_fennekin/forearm.png" />
+                <keyframe time="13.62" src="reskins/serena_fennekin/forearm.png" />
             </directive>
             <directive type="animation" id="O2thigh" ease="linear" interpolation="linear">
                 <keyframe time="0" x="-67" y="990" rotation="0" />
