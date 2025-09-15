@@ -120,6 +120,9 @@ $characterDebugModal = $("#character-debug-modal");
 
 /* Screen State */
 $previousScreen = null;
+const supportedLanguages = ['es', 'ja']; // List of supported language codes
+let userLanguage = 'en'; // Default language
+const localizationData = {}; // Will hold loaded translations
 
 /**********************************************************************
  *****              Overarching Game Flow Functions               *****
@@ -150,10 +153,103 @@ function fuzzyTimeAgo(ts) {
     return string;
 }
 
+/**********************************************************************
+ * Localization Functions
+ **********************************************************************/
+/**
+ * Detects the user's preferred language.
+ * Tries to get it from localStorage first, then navigator languages.
+ * Falls back to 'en' if no supported language is found.
+ */
+function detectUserLanguage() {
+    // Check if language is stored in localStorage (user preference)
+    const storedLang = localStorage.getItem('SPNatI.language');
+    if (storedLang && supportedLanguages.includes(storedLang)) {
+        return storedLang;
+    }
+
+    // Try to get language from browser
+    const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+    for (let i = 0; i < browserLangs.length; i++) {
+        const lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
+        if (supportedLanguages.includes(lang)) {
+            return lang;
+        }
+    }
+
+    // Default to English
+    return 'en';
+}
+
+/**
+ * Loads the localization XML file for a given language.
+ * @param {string} lang - The language code (e.g., 'es', 'ja').
+ * @returns {Promise<void>}
+ */
+function loadLanguageFile(lang) {
+    return fetchXML('languages/' + lang + '.xml').then(function ($xml) {
+        const strings = {};
+        $xml.find('string').each(function () {
+            const key = $(this).attr('key');
+            const value = $(this).text();
+            if (key) {
+                strings[key] = value;
+            }
+        });
+        localizationData[lang] = strings;
+        console.log('Loaded localization for', lang);
+    }).catch(function (err) {
+        console.error('Failed to load language file for', lang, err);
+        // Don't reject, just leave localizationData[lang] empty or undefined
+        // This will cause fallback to English
+    });
+}
+
+function l10n(key, fallback) {
+    return localizationData[userLanguage] && localizationData[userLanguage][key] || fallback;
+}
+
+/**
+ * Applies loaded localization strings to elements with data-i10n[-*] attributes.
+ * Only updates elements if a translation is available for the current language.
+ */
+function applyLocalization() {
+    const i18nAttr = ['', 'alt', 'title', 'placeholder'];  // '' represents the text content of an element
+    const h = (attr) => attr !== '' ? '-' + attr : attr;
+    const selector = i18nAttr.map(attr => `[data-l10n${h(attr)}]`).join(',');
+
+    $(selector).each(function () {
+        for (attr of i18nAttr) {
+            const key = $(this).data('l10n' + h(attr));
+            if (key) {
+                const translation = l10n(key);
+                if (translation !== undefined) {
+                    if (attr !== '') {
+                        $(this).attr(attr, translation);
+                    } else {
+                        $(this).text(translation);
+                    }
+                }
+                // If no translation, the default text in the HTML is kept.
+            }
+        }
+    });
+}
+
+
 /************************************************************
  * Loads the initial content of the game.
  ************************************************************/
 function initialSetup () {
+    /* Detect user language early */
+    userLanguage = detectUserLanguage();
+    console.log('Detected language:', userLanguage);
+
+    if (userLanguage !== 'en') { // No need to load a file for English, it's the default in HTML
+        /* Load the corresponding language file and apply it */
+        loadLanguageFile(userLanguage).then(applyLocalization);
+    }
+
     /* start by creating the human player object */
     players[HUMAN_PLAYER] = humanPlayer = new Player('human'); //createNewPlayer("human", "", "", "", eGender.MALE, eSize.MEDIUM, eIntelligence.AVERAGE, 20, undefined, [], null);
     humanPlayer.slot = HUMAN_PLAYER;
