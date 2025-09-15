@@ -101,7 +101,7 @@
 
                 <!-- Player Name -->
                 <div id="title-name-block">
-                    <div class="title-label">Who are you?</div>
+                    <div class="title-label" data-l10n="who-are-you">Who are you?</div>
                     <input type="text" class='bordered' id='player-name-field' onKeyDown="if (arguments[0].key == 'Enter') validateTitleScreen();"/>
                 </div>
 
@@ -141,7 +141,7 @@
 
                 <!-- Player Wardrobe -->
                 <div id='title-wardrobe-block'>
-                    <div class='title-label'>What are you wearing?</div>
+                    <div class='title-label' data-l10n="what-are-you-wearing">What are you wearing?</div>
                     <div id='title-warning-label'>Select 0 to 8 articles. Wear whatever you want.</div>
                     <div id='title-clothing-container'></div>
                 </div>
@@ -224,7 +224,7 @@
                 <span class="substitute-version">Unknown Version</span><br>
                 <span class="substitute-version-time"></span>
             </button>
-            <button class="title-help-button bordered smooth-button red banner-flair" onclick="showHelpModal()">
+            <button class="title-help-button bordered smooth-button red banner-flair" onclick="showHelpModal()" data-l10n="help-button">
                 Help &amp; FAQ
             </button>
 
@@ -490,28 +490,28 @@
                 <div class="bordered left opponent-area">
                     <select id="main-costume-select-1" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-1" class="bordered name-label">Opponent 1</div>
-                    <button id="select-prefill-button-1" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-1" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-1" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(1)">Select Opponent</button>
                 </div>
                 <div class="bordered halfLeft opponent-area">
                     <select id="main-costume-select-2" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-2" class="bordered name-label">Opponent 2</div>
-                    <button id="select-prefill-button-2" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-2" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-2" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(2)">Select Opponent</button>
                 </div>
                 <div class="bordered halfRight opponent-area">
                     <select id="main-costume-select-3" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-3" class="bordered name-label">Opponent 3</div>
-                    <button id="select-prefill-button-3" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-3" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-3" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(3)">Select Opponent</button>
                 </div>
                 <div class="bordered right opponent-area">
                     <select id="main-costume-select-4" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-4" class="bordered name-label">Opponent 4</div>
-                    <button id="select-prefill-button-4" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-4" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-4" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(4)">Select Opponent</button>
                 </div>
@@ -522,19 +522,19 @@
                     <!-- Select Buttons -->
                     <button id='select-main-back-button'
                         class='bordered main-select-button select-back-button smooth-button red'
-                        onclick="backSelectScreen()">
+                        onclick="backSelectScreen()" data-l10n="back-button">
                         Back
                     </button>
                     <button id='select-group-testing-button' class='bordered main-select-button smooth-button green'
-                        onclick="toggleIndividualSelectView()">
+                        onclick="toggleIndividualSelectView()" data-l10n="select-group-testing-button">
                         Testing Roster
                     </button>
                     <button id='select-group-button' class='bordered main-select-button smooth-button green'
-                        onclick="showPresetTables()">
+                        onclick="showPresetTables()" data-l10n="select-group-button">
                         Preset Tables
                     </button>
                     <button id='select-help-button' class='bordered main-select-button smooth-button green'
-                        onclick="showHelpModal()">
+                        onclick="showHelpModal()" data-l10n="help-button">
                         Help &amp; FAQ
                     </button>
 
@@ -544,7 +544,7 @@
 
                     <!-- Advance Button -->
                     <button id='main-select-button' class='bordered smooth-button red' onclick="advanceSelectScreen()"
-                        disabled="disabled">
+                        disabled="disabled" data-l10n="main-select-button">
                         Start
                     </button>
 
@@ -552,17 +552,20 @@
                     <div class="select-random-container">
                         <button id='select-random-female-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomFillButton('female', function chooseFemale(player) {return player.gender.toLowerCase() === 'female';})">
+                                onclick="clickedRandomFillButton('female', function chooseFemale(player) {return player.gender.toLowerCase() === 'female';})"
+                                data-l10n="select-random-female-button">
                             Random Females
                         </button>
                         <button id='select-random-male-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomFillButton('male', function chooseMale(player) {return player.gender.toLowerCase() === 'male';})">
+                                onclick="clickedRandomFillButton('male', function chooseMale(player) {return player.gender.toLowerCase() === 'male';})"
+                                data-l10n="select-random-male-button">
                             Random Males
                         </button>
                         <button id='select-random-group-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomGroupButton()">
+                                onclick="clickedRandomGroupButton()"
+                                data-l10n="select-random-group-button">
                             Random Table
                         </button>
                         <button id='select-random-button'
@@ -574,7 +577,8 @@
                     </div>
 
                     <button id='select-remove-all-button' class='bordered main-select-button smooth-button red'
-                        onclick="clickedRemoveAllButton(true)">
+                        onclick="clickedRemoveAllButton(true)"
+                        data-l10n="select-remove-all-button">
                         Remove All
                     </button>
 
@@ -599,7 +603,7 @@
         <div class="screen">
             <div class="bordered selection-options-row">
                 <button type="button" class="bordered smooth-button red select-back-btn"
-                    onclick="backFromIndividualSelect()">Back</button>
+                    onclick="backFromIndividualSelect()" data-l10n="back-button">Back</button>
                 <div id="gender-sort-column" class="column-component">
                     <div class="gender-component">
                         <nav>
@@ -617,32 +621,31 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu sort-dropdown-options">
-                            <li><a href="#" data-value="featured">Featured</a></li>
-                            <li><a href="#" data-value="communityRank">Community Ranked</a></li>
-                            <li><a href="#" data-value="-lastUpdated">Recently Updated</a></li>
-                            <li><a href="#" data-value="newest">Newest</a></li>
-                            <li><a href="#" data-value="oldest">Oldest</a></li>
-                            <li><a href="#" data-value="-layers">Most Layers</a></li>
-                            <li><a href="#" data-value="layers">Fewest Layers</a></li>
-                            <li><a href="#" data-value="-uniqueLineCount">Unique Line Count</a></li>
-                            <li><a href="#" data-value="normalizedSelectLabel">Name (A-Z)</a></li>
-                            <li><a href="#" data-value="-normalizedSelectLabel">Name (Z-A)</a></li>
-                            <li><a href="#" data-value="normalizedSource selectLabel">Source (A-Z)</a></li>
-                            <li><a href="#" data-value="-normalizedSource -selectLabel">Source (Z-A)</a></li>
-                            <li><a href="#" data-value="target">Talked to by selected</a></li>
+                            <li><a href="#" data-value="featured" data-l10n="featured">Featured</a></li>
+                            <li><a href="#" data-value="communityRank" data-l10n="communityRank">Community Ranked</a></li>
+                            <li><a href="#" data-value="-lastUpdated" data-l10n="lastUpdated">Recently Updated</a></li>
+                            <li><a href="#" data-value="newest" data-l10n="newest">Newest</a></li>
+                            <li><a href="#" data-value="oldest" data-l10n="oldest">Oldest</a></li>
+                            <li><a href="#" data-value="-layers" data-l10n="most-layers">Most Layers</a></li>
+                            <li><a href="#" data-value="layers" data-l10n="fewest-layers">Fewest Layers</a></li>
+                            <li><a href="#" data-value="-uniqueLineCount" data-l10n="uniqueLineCount">Unique Line Count</a></li>
+                            <li><a href="#" data-value="normalizedSelectLabel" data-l10n="name-a-z">Name (A-Z)</a></li>
+                            <li><a href="#" data-value="-normalizedSelectLabel" data-l10n="name-z-a">Name (Z-A)</a></li>
+                            <li><a href="#" data-value="normalizedSource selectLabel" data-l10n="source-a-z">Source (A-Z)</a></li>
+                            <li><a href="#" data-value="-normalizedSource -selectLabel" data-l10n="source-z-a">Source (Z-A)</a></li>
+                            <li><a href="#" data-value="target" data-l10n="talked-to-by-selected">Talked to by selected</a></li>
                         </ul>
                     </div>
                 </div>
                 <div id="name-creator-column" class="column-component">
                     <div class="option-component creator-component">
-                        <label for="search-creator">Search Creator:</label>
+                        <label for="search-creator" data-l10n="search-creator">Search Creator:</label>
                         <input list='creatorList' type="search" id="search-creator"
-                            class='bordered wide-textbox sort-filter-field' placeholder="Search by Creator" />
+                            class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-creator" placeholder="Search by Creator" />
                     </div>
                     <div class="option-component name-component">
-                        <label for="search-name">Search Name: </label>
-                        <input type="search" id="search-name" class='bordered wide-textbox sort-filter-field'
-                            placeholder="Name" />
+                        <label for="search-name" data-l10n="search-name">Search Name: </label>
+                        <input type="search" id="search-name" class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-name" placeholder="Name" />
                     </div>
                 </div>
                 <div id="source-tag-column" class="column-component">
@@ -652,9 +655,9 @@
                             class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-source" placeholder="Search by Source" />
                     </div>
                     <div class="option-component tag-component">
-                        <label for="search-tag">Search Tag: </label>
+                        <label for="search-tag" data-l10n="search-tag">Search Tag: </label>
                         <input list='tagList' type="email" id="search-tag"
-                            class='bordered wide-textbox sort-filter-field' placeholder="Search by Tag" multiple />
+                            class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-tag" placeholder="Search by Tag" multiple />
                     </div>
                 </div>
             </div>
@@ -694,7 +697,7 @@
                         </div>
                         <div class="opponent-options-row">
                             <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
-                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags">Character Tags</button>
+                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags" data-l10n="show-tags-button">Character Tags</button>
                         </div>
                         <div class="bordered opponent-details-field opponent-details-name">
                             <div class="opponent-details-value opponent-full-name"></div>
@@ -1410,14 +1413,14 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content" style="height: 100%;">
                             <div class="modal-header">
-                                <h4 class="modal-title text-center">Select an article of clothing to remove</h4>
+                                <h4 class="modal-title text-center" data-l10n="select-clothing-to-remove">Select an article of clothing to remove</h4>
                             </div>
                             <div class="modal-body">
                                 <div id="stripping-clothing-area" class="strip-selector-container"></div>
                             </div>
                             <div class="modal-footer">
                                 <button id="stripping-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="closeStrippingModal()">Select</button>
+                                    data-dismiss="modal" onclick="closeStrippingModal()" data-l10n="select-button">Select</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -1842,8 +1845,8 @@
                                 <div class="bug-report-out-explanation">
                                     To submit your feedback, just hit 'Send', below.
                                 </div>
-                                <div class="bug-report-out-explanation">
-                                    Keep in mind that feedback sent to us is publically viewable!
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-publicly-viewable">
+                                    Keep in mind that feedback sent to us is publicly viewable!
                                 </div>
                             </div>
                         </div>
@@ -2237,7 +2240,7 @@
                                         <p>If you want to cheat, download and play the offline version of SPNATI and
                                             change settings in <code>config.xml</code>, such as debug mode.</p>
                                         <p>Also, please do not use the bug reporter to role-play with the characters.
-                                            Again, you will be muted, and the reports are publically readable. You will
+                                            Again, you will be muted, and the reports are publicly readable. You will
                                             be mocked.</p>
                                     </div>
                                 </div>
@@ -2603,7 +2606,7 @@
                                             licensing (from contributors to the project), and "outbound" licensing (from the project back to contributors and users).
                                         </p>
                                         <p>
-                                            SPNATI also operates by this rule: by submitting contributions to SPNATI, you implicitly agree to make your contributions publically available to us
+                                            SPNATI also operates by this rule: by submitting contributions to SPNATI, you implicitly agree to make your contributions publicly available to us
                                             under the MIT License, posted above.
                                         </p>
                                     </div>
@@ -3515,7 +3518,7 @@
             </button>
             <button class="bordered table-feedback-report-button game-ui"  onclick="showFeedbackReportModal()" tabindex="5">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                <div>Feedback</div>
+                <div data-l10n="feedback-envelope">Feedback</div>
             </button>			
 
             <!-- Game Table -->
@@ -3727,40 +3730,40 @@
                             class="glyphicon glyphicon-th-list" aria-hidden="true"></span></button>
                     <ul class="dropdown-menu">
                         <li><button id="game-faq-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showHelpModal()" tabindex="1">
+                                onclick="showHelpModal()" tabindex="1" data-l10n="help-button">
                                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
                                 <span class="game-menu-label">Help and FAQ</span>
                             </button></li>
                         <li><button id="game-feedback-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showFeedbackReportModal()" tabindex="1">
+                                onclick="showFeedbackReportModal()" tabindex="1" data-l10n="game-feedback-button">
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                                 <span class="game-menu-label">Character Feedback</span>
                             </button></li>
                         <li><button id="game-log-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showLogModal()" tabindex="1">
+                                onclick="showLogModal()" tabindex="1" data-l10n="game-log-button">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                                 <span class="game-menu-label">Dialogue Log</span>
                             </button></li>
                         <li><button id="game-home-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showRestartModal()" tabindex="1">
+                                onclick="showRestartModal()" tabindex="1" data-l10n="game-home-button">
                                 <!-- doEpilogueModal -->
                                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                                 <span class="game-menu-label">Return to Title</span>
                             </button>
                         <li>
                         <li><button id="hard-refresh-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="updateAllGameVisuals()" tabindex="1">
+                                onclick="updateAllGameVisuals()" tabindex="1" data-l10n="hard-refresh-button">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
                                 <span class="game-menu-label">Refresh Game Visuals</span>
                             </button>
                         <li>						
                         <li><button id="game-settings-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showOptionsModal()" tabindex="1">
+                                onclick="showOptionsModal()" tabindex="1" data-l10n="game-settings-button">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                                 <span class="game-menu-label">Options</span>
                             </button></li>
                         <li><button id="game-fullscreen-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="toggleFullscreen()" tabindex="1">
+                                onclick="toggleFullscreen()" tabindex="1" data-l10n="game-fullscreen-button">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                                 <span class="game-menu-label">Toggle full screen mode</span>
                             </button></li>
