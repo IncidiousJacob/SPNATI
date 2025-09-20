@@ -544,7 +544,7 @@
 
                     <!-- Advance Button -->
                     <button id='main-select-button' class='bordered smooth-button red' onclick="advanceSelectScreen()"
-                        disabled="disabled" data-l10n="main-select-button">
+                        disabled="disabled" data-l10n="start-button">
                         Start
                     </button>
 
@@ -1125,21 +1125,20 @@
         <div id="collectible-gallery-screen" class="screen">
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button epilogues-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToEpiloguesScreen()">Epilogues</button>
+                    onclick="goToEpiloguesScreen()" data-l10n="epilogues-button">Epilogues</button>
                 <button class="bordered gallery-switch-button deck-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCardsScreen()">Card Decks</button>
+                    onclick="goToCardsScreen()" data-l10n="card-decks-button">Card Decks</button>
                 <select id="collectible-character-filter" class="gallery-character-filter"
                     onchange="changeCharacterFilter(true)">
-                    <option value="" disabled selected>Filter by Character...</option>
-                    <option value="">(no filter)</option>
-                    <option value="__locked">(only locked)</option>
-                    <option value="__unlocked">(only unlocked)</option>                    
-                    <option value="__general">The Inventory</option>
+                    <option value="" disabled selected data-l10n="filter-by-character">Filter by Character...</option>
+                    <option value="" data-l10n="no-filter">(no filter)</option>
+                    <option value="__locked" data-l10n="only-locked">(only locked)</option>
+                    <option value="__unlocked" data-l10n="only-unlocked">(only unlocked)</option>                    
+                    <option value="__general" data-l10n="the-inventory-filter">The Inventory</option>
                 </select>
             </div>
-            <label style="color:black; background-color:white; padding:4px; border:double">The Collectibles feature is now in open beta testing. Please report any issues with specific collectibles via the character’s bug report function.</label>
             <div class="gallery-pane gallery-list-pane bordered" id="collectibles-list-pane"></div>
             <div class="gallery-pane bordered" id="collectibles-text-pane">
                 <h3 class="pane-content text-center" id="collectible-title"></h3>
@@ -1147,10 +1146,10 @@
                         id="collectible-subtitle"></small></h3>
                 <hr />
                 <div class="pane-content text-center collectible-character-container">
-                    From: <i id="collectible-character"></i>
+                    <div data-l10n="collectible-from">From:</div> <i id="collectible-character"></i>
                 </div>
                 <div class="pane-content collectible-unlock-container">
-                    <div class="text-center">To Unlock:</div>
+                    <div class="text-center" data-l10n="unlock-hint">To Unlock:</div>
                     <div class="text-center">
                         <span id="collectible-unlock"></span>
                         <span id="collectible-progress-text"></span>
@@ -1164,7 +1163,7 @@
                 </div>
                 <hr />
                 <div class="pane-content collectible-text-container">
-                    <h4 class="text-center">Description:</h4>
+                    <h4 class="text-center" data-l10n="collectible-description">Description:</h4>
                     <div id="collectible-text"></div>
                 </div>
             </div>
@@ -1199,9 +1198,9 @@
         <div id="deck-gallery-screen" class="screen" hidden>
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button collectibles-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCollectiblesScreen()">Collectibles</button>
+                    onclick="goToCollectiblesScreen()" data-l10n="collectibles-button">Collectibles</button>
             </div>
             <div class="gallery-pane gallery-list-pane bordered" id="deck-list-pane"></div>
             <div class="gallery-pane bordered" id="deck-customizer-pane">
@@ -1209,13 +1208,13 @@
                 <h3 class="deck-content deck-subtitle-container text-center" id="deck-subtitle"></h3>
                 <div class="deck-content text-center" id="deck-credits"></div>
                 <div class="deck-content text-center deck-text-container">
-                    <h3>Description:</h3>
+                    <h3 data-l10n="collectible-description">Description:</h3>
                     <div id="deck-description"></div>
-                    <h3 id="deck-status-alert">(You haven't unlocked this deck yet.)</h3>
+                    <h3 id="deck-status-alert" data-l10n="card-deck-not-unlocked">(You haven't unlocked this deck yet.)</h3>
                 </div>
                 <div class="deck-content text-center deck-activator-container">
-                    <button id="deck-activate-btn" class="deck-activation-btn bordered smooth-button green">Enable All Cards</button>
-                    <button id="deck-deactivate-btn" class="deck-activation-btn bordered smooth-button red">Disable All Cards</button>
+                    <button id="deck-activate-btn" class="deck-activation-btn bordered smooth-button green" data-l10n="card-deck-enable-all-cards">Enable All Cards</button>
+                    <button id="deck-deactivate-btn" class="deck-activation-btn bordered smooth-button red" data-l10n="card-deck-disable-all-cards">Disable All Cards</button>
                 </div>
                 <div class="deck-content deck-cards-container"></div>
             </div>
@@ -1224,15 +1223,15 @@
         <div id="epilogue-gallery-screen" class="screen" hidden>
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button collectibles-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCollectiblesScreen()">Collectibles</button>
+                    onclick="goToCollectiblesScreen()" data-l10n="collectibles-button">Collectibles</button>
                 <select id="epilogue-character-filter" class="gallery-character-filter"
                     onchange="changeCharacterFilter(false)">
-                    <option value="" disabled selected>Filter by Character...</option>
-                    <option value="">(no filter)</option>
-                    <option value="__locked">(only locked)</option>
-                    <option value="__unlocked">(only unlocked)</option>
+                    <option value="" disabled selected data-l10n="filter-by-character">Filter by Character...</option>
+                    <option value="" data-l10n="no-filter">(no filter)</option>
+                    <option value="__locked" data-l10n="only-locked">(only locked)</option>
+                    <option value="__unlocked" data-l10n="only-unlocked">(only unlocked)</option>
                 </select>
             </div>
             <div id="gallery-gender-block">
@@ -1269,18 +1268,18 @@
             </div>
             <div id="gallery-controls-block">
                 <button id="gallery-prev-page-button" class="bordered main-select-button smooth-button blue"
-                    onclick="galleryPrevPage()" disabled>Prev</button>
+                    onclick="galleryPrevPage()" disabled data-l10n="epilogue-previous">Prev</button>
                 <button id="gallery-next-page-button" class="bordered main-select-button smooth-button blue"
-                    onclick="galleryNextPage()">Next</button>
+                    onclick="galleryNextPage()" data-l10n="epilogue-next">Next</button>
                 <button id="gallery-start-ending-button" class="bordered main-select-button smooth-button green"
-                    onclick="doEpilogueFromGallery()" disabled>Start</button>
+                    onclick="doEpilogueFromGallery()" disabled data-l10n="start-button">Start</button>
             </div>
             <div id="gallery-selected-ending-block">
                 <div id="selected-ending-preview"></div>
                 <label id="selected-ending-title"></label>
-                <label>Character: <span id="selected-ending-character"></span></label>
-                <label>For: <span id="selected-ending-gender"></span></label>
-                <label id="selected-ending-hint-container">To Unlock: <span id="selected-ending-hint"></span></label>
+                <label><div data-l10n="epilogue-character">Character:</div> <span id="selected-ending-character"></span></label>
+                <label><div data-l10n="epilogue-for-gender">For:</div> <span id="selected-ending-gender"></span></label>
+                <label id="selected-ending-hint-container"><div data-l10n="unlock-hint">To Unlock:</div> <span id="selected-ending-hint"></span></label>
             </div>
         </div>
     </div>
