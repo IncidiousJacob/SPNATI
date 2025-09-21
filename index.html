@@ -608,9 +608,9 @@
                     <div class="gender-component">
                         <nav>
                             <ul class="pagination" data-option="search-gender">
-                                <li class="active"><a href="#" data-value="1">All</a></li>
-                                <li><a href="#" data-value="2">Male</a></li>
-                                <li><a href="#" data-value="3">Female</a></li>
+                                <li class="active"><a href="#" data-value="1"><span data-l10n="gender-all">All</span></a></li>
+                                <li><a href="#" data-value="2"><span data-l10n="gender-male">Male</span></a></li>
+                                <li><a href="#" data-value="3"><span data-l10n="gender-female">Female</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -705,46 +705,46 @@
                         </div>
                         <div
                             class="bordered left-cap extra-details-row opponent-details-field opponent-epilogues-field">
-                            <div class="opponent-details-label left-cap">Epilogues</div>
+                            <div class="opponent-details-label left-cap" data-l10n="epilogues-button">Epilogues</div>
                             <button type="button"
                                 class="smooth-button blue opponent-nav-button opponent-details-value opponent-epilogues"
                                 data-target="epilogues"></button>
                         </div>
                         <div
                             class="bordered left-cap extra-details-row opponent-details-field opponent-collectibles-field">
-                            <div class="opponent-details-label left-cap">Collectibles</div>
+                            <div class="opponent-details-label left-cap" data-l10n="collectibles-button">Collectibles</div>
                             <button type="button"
                                 class="smooth-button blue opponent-nav-button opponent-details-value opponent-collectibles"
                                 data-target="collectibles"></button>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-writers-field">
-                            <div class="opponent-details-label left-cap">Writer(s)</div>
+                            <div class="opponent-details-label left-cap" data-l10n="writers">Writer(s)</div>
                             <div class="opponent-details-value opponent-writer"></div>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-artists-field">
-                            <div class="opponent-details-label left-cap">Artist(s)</div>
+                            <div class="opponent-details-label left-cap" data-l10n="artists">Artist(s)</div>
                             <div class="opponent-details-value opponent-artist"></div>
                         </div>
                         <div class="extra-details-row opponent-options-row">
                             <div class="bordered left-cap opponent-details-field opponent-linecount-field">
-                                <div class="opponent-details-label left-cap">Unique Lines</div>
+                                <div class="opponent-details-label left-cap" data-l10n="unique-lines">Unique Lines</div>
                                 <div class="opponent-details-value opponent-linecount"></div>
                             </div>
                             <div class="bordered left-cap opponent-details-field opponent-posecount-field">
-                                <div class="opponent-details-label left-cap">Poses</div>
+                                <div class="opponent-details-label left-cap" data-l10n="poses">Poses</div>
                                 <div class="opponent-details-value opponent-posecount"></div>
                             </div>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-lastupdate-field">
-                            <div class="opponent-details-label left-cap">Last update</div>
+                            <div class="opponent-details-label left-cap" data-l10n="last-update">Last update</div>
                             <div class="opponent-details-value opponent-lastupdate"></div>
 			</div>
                             <div class="bordered left-cap extra-details-row opponent-details-field opponent-added-field">
-                                <div class="opponent-details-label left-cap">Added</div>
+                                <div class="opponent-details-label left-cap" data-l10n="date-added">Added</div>
                                 <div class="opponent-details-value opponent-added"></div>
 			</div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-birthday-field">
-                            <div class="opponent-details-label left-cap">Birthday</div>
+                            <div class="opponent-details-label left-cap" data-l10n="birthday">Birthday</div>
                             <div class="opponent-details-value opponent-birthday"></div>
                         </div>
                         <div class="bordered opponent-details-field extra-details-row opponent-details-description">
@@ -1379,17 +1379,17 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title text-center">Are you sure you want to return to the title screen?
+                                <h4 class="modal-title text-center"><span data-l10n="return-to-title-confirmation">Are you sure you want to return to the title screen?</span>
                                 </h4>
                             </div>
                             <div class="modal-body">
                                 <div class="modal-body-container">
                                     <div class="modal-footer-button-row">
                                         <button class="bordered smooth-button modal-button" data-dismiss="modal"
-                                            onclick="restartGame()">Yes</button>
+                                            onclick="restartGame()" data-l10n="yes-button">Yes</button>
                                         <button class="bordered smooth-button green modal-button" data-dismiss="modal"
-                                            onclick="showFeedbackReportModal($restartModal)">Feedback?</button>
-                                        <button class="bordered smooth-button modal-button" data-dismiss="modal">No</button>
+                                            onclick="showFeedbackReportModal($restartModal)" data-l10n="feedback-question-mark">Feedback?</button>
+                                        <button class="bordered smooth-button modal-button" data-dismiss="modal" data-l10n="no-button">No</button>
                                     </div>
                                 </div>
                             </div>
@@ -1450,7 +1450,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="settings-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="saveSettings()">Close</button>
+                                    data-dismiss="modal" onclick="saveSettings()" data-l10n="close-button">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -3859,7 +3859,7 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title text-center">The game is now over...</h3>
+                                <h3 class="modal-title text-center"><span data-l10n="game-is-over">The game is now over...</span></h3>
                                 <h5 id="epilogue-header-text" class="modal-title text-center"></h5>
                                 <hr>
                                 <h5 id="epilogue-header-tip" class="modal-title text-center"></h5>
@@ -3875,13 +3875,13 @@
                             <div class="modal-footer modal-footer-button-row">
                                 <button id="epilogue-modal-accept-button"
                                     class="bordered smooth-button modal-button epilogue-modal-button"
-                                    onclick="doEpilogue()">Choose</button>
+                                    onclick="doEpilogue()" data-l10n="choose-button">Choose</button>
                                 <button id="epilogue-modal-feedback-button"
                                     class="bordered smooth-button green modal-button epilogue-modal-button"
-                                    onclick="showFeedbackReportModal($epilogueSelectionModal)">Feedback?</button>
+                                    onclick="showFeedbackReportModal($epilogueSelectionModal)" data-l10n="feedback-question-mark">Feedback?</button>
                                 <button id="epilogue-modal-restart-button"
                                     class="bordered smooth-button modal-button epilogue-modal-button"
-                                    onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
+                                    onclick="showRestartModal()" data-dismiss="modal" data-l10n="restart-question-mark">Restart?</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
