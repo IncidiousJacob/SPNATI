@@ -1146,7 +1146,7 @@
                         id="collectible-subtitle"></small></h3>
                 <hr />
                 <div class="pane-content text-center collectible-character-container">
-                    <div data-l10n="collectible-from">From:</div> <i id="collectible-character"></i>
+                    <span data-l10n="collectible-from">From:</span> <i id="collectible-character"></i>
                 </div>
                 <div class="pane-content collectible-unlock-container">
                     <div class="text-center" data-l10n="unlock-hint">To Unlock:</div>
@@ -1277,9 +1277,9 @@
             <div id="gallery-selected-ending-block">
                 <div id="selected-ending-preview"></div>
                 <label id="selected-ending-title"></label>
-                <label><div data-l10n="epilogue-character">Character:</div> <span id="selected-ending-character"></span></label>
-                <label><div data-l10n="epilogue-for-gender">For:</div> <span id="selected-ending-gender"></span></label>
-                <label id="selected-ending-hint-container"><div data-l10n="unlock-hint">To Unlock:</div> <span id="selected-ending-hint"></span></label>
+                <label><span data-l10n="epilogue-character">Character:</span> <span id="selected-ending-character"></span></label>
+                <label><span data-l10n="epilogue-for-gender">For:</span> <span id="selected-ending-gender"></span></label>
+                <label id="selected-ending-hint-container"><span data-l10n="unlock-hint">To Unlock:</span> <span id="selected-ending-hint"></span></label>
             </div>
         </div>
     </div>
@@ -1736,17 +1736,17 @@
                     <!-- Start of Modal Content -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title text-center"><b>Submit an Issue Report</b></h3>
+                            <h3 class="modal-title text-center"><b><span data-l10n="bug-report-window-title">Submit an Issue Report</span></b></h3>
                         </div>
                         <div class="modal-body">
                             <div class="bug-report-form">
                                 <form>
                                     <div class="form-group">
-                                        <label for="bug-report-type">Issue Type</label>
+                                        <label for="bug-report-type" data-l10n="bug-report-type">Issue Type</label>
                                         <select class="form-control" id="bug-report-type"></select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="bug-report-desc">Issue Description (required):</label>
+                                        <label for="bug-report-desc" data-l10n="bug-report-description">Issue Description (required):</label>
                                         <textarea class="form-control" id="bug-report-desc" rows="5"
                                             cols="80"></textarea>
                                     </div>
@@ -1754,28 +1754,28 @@
                             </div>
                             <div class="bug-report-out-wrapper">
                                 <label>
-                                    Issue Report Data
+                                    <span data-l10n="bug-report-data">Issue Report Data</span>
                                     <span id="bug-report-copy-btn" class="glyphicon glyphicon-scissors"
                                         data-toggle="tooltip" data-placement="right" title="Copy Report Text"></span>
                                 </label>
                                 <textarea rows="4" cols="80" readonly id="bug-report-output"></textarea>
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-dont-include-data">
                                     Please, don't include the report data in the description!
                                 </div>
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-click-send">
                                     To submit a bug report, just hit 'Send', below.
                                 </div>
                                 <div class="bug-report-out-explanation">
-                                    To submit an issue report <em>manually</em>:
+                                    <span data-l10n="bug-report-manually">To submit an issue report <em>manually</em>:</span>
                                     <ol>
-                                        <li>Copy the Issue Report Data above into a text-sharing service such as <a
+                                        <li><span data-l10n="bug-report-manually-step-1">Copy the Issue Report Data above into a text-sharing service such as <a
                                                 target="_blank" href="https://pastebin.com/">Pastebin</a> or <a
-                                                target="_blank" href="https://gist.github.com">Gist</a>.</li>
-                                        <li>Submit your issue report (with the Data above!) to the developers on our
+                                                target="_blank" href="https://gist.github.com">Gist</a>.</span></li>
+                                        <li><span data-l10n="bug-report-manually-step-2">Submit your issue report (with the Data above!) to the developers on our
                                             subreddit, <a target="_blank" href="https://www.reddit.com/r/spnati">/r/spnati</a> or
                                             through our <a
                                                 target="_blank" href="https://reddit.com/r/spnati/comments/98k7s4/reminder_95_percent_of_the_discussion_about_this/">Discord
-                                                server</a>.</li>
+                                                server</a>.</span></li>
                                     </ol>
                                     <div data-l10n="bug-report-publicly-viewable">Keep in mind that bug reports sent to us are publicly viewable!</div>
                                 </div>
@@ -1784,9 +1784,9 @@
                         <div class="modal-footer">
                             <div id="bug-report-status"></div>
                             <button id="bug-report-modal-send-button" class="bordered smooth-button modal-button"
-                                onclick="sendBugReport()" disabled>Send</button>
+                                onclick="sendBugReport()" disabled data-l10n="send-button">Send</button>
                             <button id="bug-report-modal-button" class="bordered smooth-button modal-button"
-                                onclick="closeBugReportModal()">Close</button>
+                                onclick="closeBugReportModal()" data-l10n="close-button">Close</button>
                         </div>
                     </div>
                     <!-- End of Modal Content -->
@@ -1804,44 +1804,44 @@
                     <!-- Start of Modal Content -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title text-center"><b>Submit Character Feedback</b></h3>
+                            <h3 class="modal-title text-center"><b><span data-l10n="feedback-window-title">Submit Character Feedback</span></b></h3>
                         </div>
                         <!-- Yes, we reuse the bug-report-form etc. classes here. That's intentional. -->
                         <div class="modal-body">
                             <div class="bug-report-form">
                                 <p>
-                                    Voice your thoughts on a character here.
+                                    <span data-l10n="feedback-voice-your-thoughts">Voice your thoughts on a character here.</span>
                                 </p>
                                 <p>
-                                    Please remember that behind every character, there are human creators hard at work.
+                                    <span data-l10n="feedback-be-nice">Please remember that behind every character, there are human creators hard at work.
                                     <br>
-                                    Be nice!
+                                    Be nice!</span>
                                     <br>
                                 </p>
                                 <p>
-                                    Also, if you would like to report a specific problem with a character, please send a
-                                    <i>bug</i> report instead.
+                                    <span data-l10n="feedback-or-bug-report">Also, if you would like to report a specific problem with a character, please send a
+                                    <em>bug</em> report instead.</span>
                                 </p>
                                 <form>
                                     <div class="form-group">
-                                        <label for="feedback-report-character">Feedback For:</label>
+                                        <label for="feedback-report-character" data-l10n="feedback-for">Feedback For:</label>
                                         <select class="form-control" id="feedback-report-character"></select>
                                     </div>
                                     <div class="feedback-message-container">
-                                        <h3>Message from <span class="feedback-character-name"></span>'s creator(s):
+                                        <h3><span data-l10n="feedback-message-from-creator">Message from <span class="feedback-character-name"></span>'s creator(s):</span>
                                         </h3>
                                         <p class="feedback-message"></p>
                                     </div>
                                     <h3 id="feedback-disabled-warning" style="display:none">Feedback is disabled for this character. Their creator(s) may not be able to see your comments.</h3>
                                     <div class="form-group">
-                                        <label for="feedback-report-desc">Feedback (required):</label>
+                                        <label for="feedback-report-desc" data-l10n="feedback-required">Feedback (required):</label>
                                         <textarea class="form-control" id="feedback-report-desc" rows="5"
                                             cols="80"></textarea>
                                     </div>
                                 </form>
                             </div>
                             <div class="bug-report-out-wrapper">
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="feedback-click-send">
                                     To submit your feedback, just hit 'Send', below.
                                 </div>
                                 <div class="bug-report-out-explanation" data-l10n="bug-report-publicly-viewable">
@@ -1852,9 +1852,9 @@
                         <div class="modal-footer">
                             <div id="feedback-report-status"></div>
                             <button id="feedback-report-modal-send-button" class="bordered smooth-button modal-button"
-                                onclick="sendFeedbackReport()" disabled>Send</button>
+                                onclick="sendFeedbackReport()" disabled data-l10n="send-button">Send</button>
                             <button id="feedback-report-modal-button" class="bordered smooth-button modal-button"
-                                onclick="closeFeedbackReportModal()">Close</button>
+                                onclick="closeFeedbackReportModal()" data-l10n="close-button">Close</button>
                         </div>
                     </div>
                     <!-- End of Modal Content -->
@@ -3729,42 +3729,42 @@
                             class="glyphicon glyphicon-th-list" aria-hidden="true"></span></button>
                     <ul class="dropdown-menu">
                         <li><button id="game-faq-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showHelpModal()" tabindex="1" data-l10n="help-button">
+                                onclick="showHelpModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-                                <span class="game-menu-label">Help and FAQ</span>
+                                <span class="game-menu-label" data-l10n="help-button">Help & FAQ</span>
                             </button></li>
                         <li><button id="game-feedback-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showFeedbackReportModal()" tabindex="1" data-l10n="game-feedback-button">
+                                onclick="showFeedbackReportModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                <span class="game-menu-label">Character Feedback</span>
+                                <span class="game-menu-label" data-l10n="game-feedback-button">Character Feedback</span>
                             </button></li>
                         <li><button id="game-log-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showLogModal()" tabindex="1" data-l10n="game-log-button">
+                                onclick="showLogModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                <span class="game-menu-label">Dialogue Log</span>
+                                <span class="game-menu-label" data-l10n="game-log-button">Dialogue Log</span>
                             </button></li>
                         <li><button id="game-home-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showRestartModal()" tabindex="1" data-l10n="game-home-button">
+                                onclick="showRestartModal()" tabindex="1">
                                 <!-- doEpilogueModal -->
                                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                                <span class="game-menu-label">Return to Title</span>
+                                <span class="game-menu-label" data-l10n="game-home-button">Return to Title</span>
                             </button>
                         <li>
                         <li><button id="hard-refresh-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="updateAllGameVisuals()" tabindex="1" data-l10n="hard-refresh-button">
+                                onclick="updateAllGameVisuals()" tabindex="1">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-                                <span class="game-menu-label">Refresh Game Visuals</span>
+                                <span class="game-menu-label" data-l10n="hard-refresh-button">Refresh Game Visuals</span>
                             </button>
                         <li>						
                         <li><button id="game-settings-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="showOptionsModal()" tabindex="1" data-l10n="game-settings-button">
+                                onclick="showOptionsModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                                <span class="game-menu-label">Options</span>
+                                <span class="game-menu-label" data-l10n="game-settings-button">Options</span>
                             </button></li>
                         <li><button id="game-fullscreen-button" class="dropdown-button-item bordered smooth-button red"
-                                onclick="toggleFullscreen()" tabindex="1" data-l10n="game-fullscreen-button">
+                                onclick="toggleFullscreen()" tabindex="1">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                                <span class="game-menu-label">Toggle full screen mode</span>
+                                <span class="game-menu-label" data-l10n="game-fullscreen-button">Toggle full screen mode</span>
                             </button></li>
                     </ul>
                 </div>
