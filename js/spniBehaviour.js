@@ -913,6 +913,7 @@ function State($xml_or_state, parentCase) {
     this.id = $xml.attr('dev-id') || null;
     this.image = $xml.attr('img');
     this.direction = $xml.attr('direction') || 'down';
+    this.style = $xml.attr('style') || 'arrow';
     this.location = $xml.attr('location') || '';
     this.z_index = parseInt($xml.attr('z-index'), 10) || undefined;
     this.dialogue_layering = $xml.attr('dialogue-layer');
