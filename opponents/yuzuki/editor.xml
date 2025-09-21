@@ -185,6 +185,14 @@
         <response id="935" opponent="chihiro" opponentId="2" />
         <response id="936" opponent="yuno_uno" opponentId="775" />
         <response id="937" opponent="sakura" opponentId="2" />
+        <response id="949" opponent="yuno_uno" opponentId="1303" />
+        <response id="950" opponent="yuno_uno" opponentId="1318" />
+        <response id="951" opponent="yuno_uno" opponentId="1324" />
+        <response id="952" opponent="yuno_uno" opponentId="1313" />
+        <response id="953" opponent="yuno_uno" opponentId="1319" />
+        <response id="954" opponent="yuno_uno" opponentId="1325" />
+        <response id="955" opponent="yuno_uno" opponentId="1315" />
+        <response id="956" opponent="yae_miko" opponentId="425" />
     </responses>
     <notes>
         <note id="142">("Because I'm about to take my mask off, too...")</note>
@@ -1131,8 +1139,30 @@
         <label id="935" label="" folder="Targets" sort="0" />
         <label id="936" label="" folder="Targets" sort="0" />
         <label id="937" label="" folder="Targets" sort="0" />
+        <label id="938" label="" folder="Player Names" sort="0" />
+        <label id="939" label="" folder="Player Names" sort="0" />
+        <label id="940" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="941" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="942" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="943" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="944" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="945" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="946" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="947" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="948" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="949" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="950" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="952" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="954" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="951" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="953" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="955" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="956" label="" folder="Targets&gt;Yae Miko" sort="0" />
     </labels>
-    <nextId>937</nextId>
+    <posePreviewMarkers>
+        <posePreviewMarker>forfeit_mode==cat</posePreviewMarker>
+    </posePreviewMarkers>
+    <nextId>956</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="30k_yen_underwear" />
@@ -1205,9 +1235,11 @@
         <marker scope="Public" name="dunban_dunbanPoetry_10" />
         <marker scope="Public" name="dunban_dunbanPoetry_11" />
         <marker scope="Public" name="dunban_dunbanPoetry_12" />
+        <marker scope="Private" name="epilogue_setting_male" />
         <marker scope="Public" name="fem_bedroom" />
         <marker scope="Public" name="fem_bedroom_like_hers" />
         <marker scope="Public" name="fitness_routinesResp" />
+        <marker scope="Public" name="forfeit_mode" />
         <marker scope="Public" name="gwen_spiderwoman" />
         <marker scope="Public" name="gwen_spiderwoman2" />
         <marker scope="Public" name="Haunter_Intro" />
@@ -1469,6 +1501,22 @@
         <marker scope="Public" name="yumeko_imaginationResp" />
         <marker scope="Public" name="yumeko_newgame" />
         <marker scope="Public" name="yuno_prompt_earworm_songs" />
+        <marker scope="Public" name="yuno_self0a" />
+        <marker scope="Public" name="yuno_self0b" />
+        <marker scope="Public" name="yuno_self0c" />
+        <marker scope="Public" name="yuno_self1a" />
+        <marker scope="Public" name="yuno_self1b" />
+        <marker scope="Public" name="yuno_self1c" />
+        <marker scope="Public" name="yuno_self3a" />
+        <marker scope="Public" name="yuno_strip0a" />
+        <marker scope="Public" name="yuno_strip0b" />
+        <marker scope="Public" name="yuno_strip0c" />
+        <marker scope="Public" name="yuno_strip1a" />
+        <marker scope="Public" name="yuno_strip1b" />
+        <marker scope="Public" name="yuno_strip1c" />
+        <marker scope="Public" name="yuno_strip2a" />
+        <marker scope="Public" name="yuno_strip2b" />
+        <marker scope="Public" name="yuno_strip2c" />
         <marker scope="Public" name="yusei_self_strip4a" />
         <marker scope="Public" name="yusei_self_strip4b" />
         <marker scope="Public" name="yusei_self_strip4c" />
@@ -1735,6 +1783,11 @@
         <marker scope="Public" name="yuzuki_saria_self2a" />
         <marker scope="Public" name="yuzuki_saria_self2b" />
         <marker scope="Public" name="yuzuki_saria_self2c" />
+        <marker scope="Public" name="yuzuki_self0a" />
+        <marker scope="Public" name="yuzuki_self0b" />
+        <marker scope="Public" name="yuzuki_self1b" />
+        <marker scope="Public" name="yuzuki_self2a" />
+        <marker scope="Public" name="yuzuki_self2b" />
         <marker scope="Public" name="yuzuki_tifa_drinkRequest" />
         <marker scope="Public" name="yuzuki_tifa_drinkTaken" />
         <marker scope="Public" name="yuzuki_tifa_strip0a" />
@@ -1802,6 +1855,7 @@
         <marker scope="Public" name="yuzuki_yaemiko_strip0a" />
         <marker scope="Public" name="yuzuki_yaemiko_strip0b" />
         <marker scope="Public" name="yuzuki_yaemiko_strip0c" />
+        <marker scope="Public" name="yuzuki_yaemiko_youkai1" />
         <marker scope="Public" name="YuzukiRietveld" />
         <marker scope="Public" name="zombie_comment" />
     </markers>
