@@ -129,6 +129,7 @@ Targetable traits:
         <response id="427" opponent="jean" opponentId="603" />
         <response id="430" opponent="schezo" opponentId="997" />
         <response id="431" opponent="schezo" opponentId="996" />
+        <response id="432" opponent="priscilla" opponentId="243" />
     </responses>
     <notes>
         <note id="30">This info is incorrect. It's ghosts she can command. Need to write different follow-up for undead.</note>
@@ -136,6 +137,8 @@ Targetable traits:
         <note id="190">If thses responses are too different from one another I can change one of them, just let me know. Or I can add an a and b to the markers to differentiate them.</note>
         <note id="191">There are two versions depending on their distance. Same marker though.</note>
         <note id="192">There are two versions depending on their distance. Same marker though.</note>
+        <note id="434">You did prefer doing pigeons, right? That was the impression I got, so…</note>
+        <note id="435">You did prefer doing pigeons, right? That was the impression I got, so…</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="9" />
@@ -545,7 +548,7 @@ Targetable traits:
         <label id="420" label="" folder="P.Large" sort="0" />
         <label id="421" label="" folder="Lady Aqua" sort="0" />
         <label id="422" label="" folder="Yuzuki" sort="0" />
-        <label id="423" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="423" label="" folder="Priscilla" sort="0" />
         <label id="424" label="(set heavy state early)" folder="" sort="0" />
         <label id="425" label="" folder="Yuzuki" sort="0" />
         <label id="426" label="" color="1" folder="Jean" sort="0" />
@@ -554,8 +557,12 @@ Targetable traits:
         <label id="429" label="" color="1" folder="Meia" sort="0" />
         <label id="430" label="" color="1" folder="Schezo" sort="0" />
         <label id="431" label="" color="1" folder="Schezo" sort="0" />
+        <label id="432" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="433" label="" folder="Jean" sort="0" />
+        <label id="434" label="" color="1" folder="Natsuki" sort="0" />
+        <label id="435" label="" color="1" folder="Juno" sort="0" />
     </labels>
-    <nextId>431</nextId>
+    <nextId>435</nextId>
     <markers>
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
         <marker scope="Public" name="adventurers_cards">Adventurer's cards detail an adventurers class, stats, and skills. Wiz wonders what another adventurer's card looks like!</marker>
@@ -699,6 +706,7 @@ Targetable traits:
         <marker scope="Public" name="on_rings_m2">"   "   "</marker>
         <marker scope="Public" name="petra_combat" />
         <marker scope="Public" name="priscilla_wiz_a11" />
+        <marker scope="Public" name="priscilla_wiz_a12" />
         <marker scope="Public" name="ringo_name" />
         <marker scope="Public" name="schezo_wiz_a01" />
         <marker scope="Public" name="schezo_wiz_a02" />
@@ -738,6 +746,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_chiaki_a01" />
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jean_a02" />
+        <marker scope="Public" name="wiz_juno_a01" />
         <marker scope="Public" name="wiz_jura_a01" />
         <marker scope="Public" name="wiz_lady_aqua_a01" />
         <marker scope="Public" name="wiz_lady_aqua_a02" />
@@ -769,6 +778,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_meia_a02" />
         <marker scope="Public" name="wiz_momo_a01" />
         <marker scope="Public" name="wiz_nadeshiko_a01" />
+        <marker scope="Public" name="wiz_natsuki_a01" />
         <marker scope="Public" name="wiz_nico_robin_a01" />
         <marker scope="Public" name="wiz_polly_a01" />
         <marker scope="Public" name="wiz_polly_a02" />
