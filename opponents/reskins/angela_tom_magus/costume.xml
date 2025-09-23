@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>angela_tom_magus</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="5">armor</tag>
+        <tag from="0" to="3">cape</tag>
+        <tag from="0" to="3">choker</tag>
+        <tag from="0" to="4">high_heels</tag>
+        <tag remove="true">leotard</tag>
+        <tag remove="true">no_bra</tag>
+        <tag from="0" to="4">thigh_highs</tag>
+    </tags>
+    <layers>6</layers>
+    <folder>opponents/reskins/angela_tom_magus/</folder>
+    <wardrobe>
+        <clothing name="briefs" generic="" position="lower" type="major" plural="true" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="breastplate" generic="armor" position="upper" type="major" plural="true" />
+        <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
+        <clothing name="cape" generic="cape" position="upper" type="minor" />
+        <clothing name="gloves" generic="gloves" position="hands" type="minor" plural="true" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="hat" generic="hat" position="head" type="extra" />
+    </wardrobe>
+
+    <poses>
+        <pose id="awkward_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-11" y="71" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-4" y="43" scalex="1" scaley="1" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-9" y="141" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/awkward.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="465" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/awkward.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="613" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_awkward.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_awkward.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_awkward.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_awkward.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="415" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="415" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="416" rotation="0" />
+            <sprite id="front_hands" z="7" src="angela_tom/BodyPieces/Hands/front_awkward.png" x="0" y="0" />
+            <sprite id="back_hands" z="6" src="angela_tom/BodyPieces/Hands/back_awkward.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-4" y="123" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_awkward.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_awkward.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="8" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="76" y="461" pivotx="-4%" pivoty="13%" rotation="11" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="331" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="325" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="334" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="338" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="347" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-90" y="647" rotation="-2" />
+        </pose>
+        <pose id="boobflirt_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="24" y="106" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="29" y="171" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/boobflirt.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="24" y="487" rotation="5" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/boobflirt.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="8" y="636" scalex="1" scaley="1" rotation="5" />
+            <sprite id="b2_head" marker="blushLevel&lt;=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_boobflirt.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_boobflirt.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_boobflirt.png" x="0" y="0" />
+            <sprite id="boobs" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="26" y="441" scalex="1" scaley="1" rotation="5" />
+            <sprite id="front_hands" z="22" src="angela_tom/BodyPieces/Hands/front_boobflirt2.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="34" y="148" alpha="100" rotation="-3" />
+            <sprite id="legs" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_boobflirt.png" x="0" y="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-77" y="663" rotation="-2" />
+            <directive type="animation" id="boobs" ease="linear" interpolation="linear">
+                <keyframe time="0" x="26" rotation="5" />
+                <keyframe time="0.12" x="26" rotation="5" />
+                <keyframe time="0.88" x="26" rotation="5" />
+                <keyframe time="1.62" x="26" rotation="5" />
+            </directive>
+            <directive type="animation" id="boobs" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/ClothingPieces/AngelaBoobs.png" y="441" scalex="1" scaley="1" />
+                <keyframe time="0.12" src="angela_tom/ClothingPieces/AngelaBoobs.png" y="437" scalex="1.05" scaley="0.95" />
+                <keyframe time="0.75" y="441" scalex="1" scaley="1" />
+                <keyframe time="0.88" src="angela_tom/ClothingPieces/AngelaBoobs.png" y="437" scalex="1.05" scaley="0.95" />
+                <keyframe time="1.5" y="441" scalex="1" scaley="1" />
+                <keyframe time="1.62" src="angela_tom/ClothingPieces/AngelaBoobs.png" y="437" scalex="1.05" scaley="0.95" />
+            </directive>
+            <directive type="animation" id="front_hands" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Hands/front_boobflirt2.png" />
+                <keyframe time="0.12" src="angela_tom/BodyPieces/Hands/front_boobflirt.png" />
+                <keyframe time="0.75" src="angela_tom/BodyPieces/Hands/front_boobflirt2.png" />
+                <keyframe time="0.88" src="angela_tom/BodyPieces/Hands/front_boobflirt.png" />
+                <keyframe time="1.5" src="angela_tom/BodyPieces/Hands/front_boobflirt2.png" />
+                <keyframe time="1.62" src="angela_tom/BodyPieces/Hands/front_boobflirt.png" />
+            </directive>
+        </pose>
+        <pose id="bored_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="28" y="97" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="34" y="62" scalex="1" scaley="1" rotation="-1" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="36" y="164" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/bored.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="22" y="487" rotation="6" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/bored.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="7" y="632" scalex="1" scaley="1" rotation="6" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_bored.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_bored.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_bored.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_bored.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="25" y="437" scalex="1" scaley="1" rotation="6" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="25" y="437" scalex="1" scaley="1" rotation="6" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="22" y="438" rotation="6" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="23" src="angela_tom/BodyPieces/Hands/front_bored.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_bored.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="36" y="144" rotation="-1" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_bored.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_bored.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="148" y="469" pivotx="-4%" pivoty="13%" rotation="-9" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="30" y="353" rotation="6" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="37" y="347" rotation="6" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="20" y="354" rotation="3" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="36" y="360" rotation="6" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="36" y="368" rotation="6" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-80" y="656" rotation="6" />
+        </pose>
+        <pose id="bratty_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="14" y="76" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="45" y="44" scalex="1" scaley="1" rotation="14" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="7" y="133" rotation="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/bratty.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="461" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/bratty.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="608" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_bratty.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_bratty.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_bratty.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_bratty.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="411" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="411" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="411" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="23" src="angela_tom/BodyPieces/Hands/front_bratty.png" x="0" y="0" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="22" src="angela_tom/BodyPieces/Hands/back_bratty.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_bratty.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_bratty.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="23" y="122" alpha="100" rotation="14" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_bratty.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_bratty.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="20" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="82" y="425" pivotx="-4%" pivoty="13%" rotation="14" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="326" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="320" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="329" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="333" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="342" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="640" rotation="0" />
+        </pose>
+        <pose id="calm_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="44" y="78" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="48" y="42" scalex="1" scaley="1" rotation="-2" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="47" y="145" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="4" src="angela_tom/BodyPieces/Hands/back_calm.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="4" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_calm.png" x="0" y="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/calm.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="34" y="468" rotation="7" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/calm.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="12" y="612" scalex="1" scaley="1" rotation="7" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_calm.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_calm.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_calm.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_calm.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="38" y="416" scalex="1" scaley="1" rotation="7" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="38" y="416" scalex="1" scaley="1" rotation="7" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="35" y="417" rotation="7" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="22" src="angela_tom/BodyPieces/Hands/front_calm.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_calm.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="52" y="124" alpha="100" rotation="-2" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_calm.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_calm.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="6" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="120" y="461" pivotx="-4%" pivoty="13%" rotation="24" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="43" y="334" rotation="7" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="51" y="330" rotation="7" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="31" y="334" rotation="2" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="52" y="339" rotation="7" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="50" y="349" rotation="7" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-75" y="634" rotation="6" />
+        </pose>
+        <pose id="cast_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-65" y="132" rotation="18" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-12" y="109" scalex="1" scaley="1" rotation="12" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-94" y="198" rotation="14" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/cast.png" x="-50" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-55" y="528" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/cast.png" x="-50" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-55" y="672" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Head/b1_cast.png" x="-50" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="24" src="reskins/angela_tom_magus/BodyPieces/Head/b2_cast.png" x="-50" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="24" src="reskins/angela_tom_magus/BodyPieces/Head/b3_cast.png" x="-50" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="24" src="reskins/angela_tom_magus/BodyPieces/Head/b4_cast.png" x="-50" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-55" y="478" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-55" y="478" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-55" y="479" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="25" src="angela_tom/BodyPieces/Hands/front_cast.png" x="-50" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="25" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_cast.png" x="-50" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-31" y="186" alpha="100" rotation="12" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_cast.png" x="-50" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_cast.png" x="-50" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="118" y="501" pivotx="-4%" pivoty="13%" rotation="-49" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-55" y="392" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-55" y="387" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-56" y="393" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-55" y="399" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-54" y="407" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-145" y="701" rotation="7" />
+            <sprite id="elem_lumina" marker="CastElemental=lumina" src="angela_tom/elem_lumina.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+            <sprite id="elem_shade" marker="CastElemental=shade" src="angela_tom/elem_shade.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+            <sprite id="elem_sylphid" marker="CastElemental=sylphid" src="angela_tom/elem_sylphid.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+            <sprite id="elem_gnome" marker="CastElemental=gnome" src="angela_tom/elem_gnome.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+            <sprite id="elem_undine" marker="CastElemental=undine" src="angela_tom/elem_undine.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+            <sprite id="elem_salamando" marker="CastElemental=salamando" src="angela_tom/elem_salamando.png" x="328" y="265" scalex="3.49" scaley="3.31" rotation="-8" />
+        </pose>
+        <pose id="cheer_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="67" y="107" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="73" y="74" scalex="1" scaley="1" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="68" y="171" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/cheer.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="45" y="494" rotation="9" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="17" y="639" scalex="1" scaley="1" rotation="9" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_cheer.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_cheer.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_cheer.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="50" y="445" scalex="1" scaley="1" rotation="9" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="50" y="445" scalex="1" scaley="1" rotation="9" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="45" y="445" rotation="9" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_cheer.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_cheer.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="73" y="154" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_cheer.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_cheer.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="145" y="488" pivotx="-4%" pivoty="13%" rotation="8" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="57" y="362" rotation="9" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="68" y="358" rotation="9" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="43" y="362" rotation="3" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="68" y="369" rotation="9" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="66" y="377" rotation="9" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-70" y="659" rotation="8" />
+        </pose>
+        <pose id="confident_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="29" y="79" rotation="-21" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-27" y="53" scalex="1" scaley="1" rotation="-19" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="83" y="141" rotation="-19" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/confident.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="23" y="467" rotation="5" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="7" y="612" scalex="1" scaley="1" rotation="5" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_confident.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_confident.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_confident.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="25" y="417" scalex="1" scaley="1" rotation="5" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="25" y="417" scalex="1" scaley="1" rotation="5" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="22" y="418" rotation="5" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_confident.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_confident.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="3" y="129" alpha="100" rotation="-18" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_confident.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_confident.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="152" y="463" pivotx="-4%" pivoty="13%" rotation="-8" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="31" y="332" rotation="5" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="37" y="327" rotation="5" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="22" y="333" rotation="2" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="36" y="338" rotation="5" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="36" y="347" rotation="5" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-81" y="637" rotation="8" />
+        </pose>
+        <pose id="embarrassed_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-11" y="89" />
+            <sprite id="hat" marker="cl_Hat=0" z="25" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-5" y="54" scalex="1" scaley="1" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-9" y="152" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/embarrassed.png" x="0" y="0" />
+            <sprite id="boobshadow" z="23" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="477" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/embarrassed.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="625" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" z="24" src="reskins/angela_tom_magus/BodyPieces/Head/b1_embarrassed.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="23" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="23" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="428" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_embarrassed.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_embarrassed.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-5" y="135" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_embarrassed.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_embarrassed.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="23" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="172" y="383" pivotx="-4%" pivoty="13%" rotation="-107" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="343" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="338" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="344" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="350" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="359" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="657" rotation="0" />
+            <sprite id="forearms" z="22" src="reskins/angela_tom_magus/BodyPieces/Main/forearms_embarrassed.png" x="0" y="0" />
+            <sprite id="cord" marker="cl_Cape=0" z="26" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCord.png" x="58" y="343" />
+        </pose>
+        <pose id="fight_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-11" y="89" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-5" y="55" scalex="1" scaley="1" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-9" y="152" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="4" src="angela_tom/BodyPieces/Hands/back_fight.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="4" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_fight.png" x="0" y="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/fight.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="479" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/fight.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="627" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_fight.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_fight.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_fight.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_fight.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="430" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="22" src="angela_tom/BodyPieces/Hands/front_fight.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_fight.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-5" y="136" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_fight.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_fight.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="9" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="122" y="470" pivotx="-4%" pivoty="13%" rotation="-13" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-3" y="345" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-4" y="340" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-4" y="346" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="352" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-3" y="360" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="659" rotation="2" />
+        </pose>
+        <pose id="flirty_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-1" y="99" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="5" y="66" scalex="1" scaley="1" rotation="-9" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="23" y="160" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/flirty.png" x="0" y="1" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="26" y="488" rotation="5" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/flirty.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="7" y="634" scalex="1" scaley="1" rotation="5" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_flirty.png" x="0" y="1" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_flirty.png" x="0" y="1" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_flirty.png" x="0" y="1" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_flirty.png" x="0" y="1" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="26" y="438" scalex="1" scaley="1" rotation="5" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="26" y="438" scalex="1" scaley="1" rotation="5" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="23" y="438" rotation="5" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_flirty.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_flirty.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="21" y="147" alpha="100" rotation="-9" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_flirty.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_flirty.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="156" y="467" pivotx="-4%" pivoty="13%" rotation="-24" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="31" y="354" rotation="5" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="37" y="349" rotation="5" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="22" y="354" rotation="2" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="36" y="361" rotation="5" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="36" y="369" rotation="5" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-77" y="662" rotation="-1" />
+        </pose>
+        <pose id="frustrated_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-44" y="91" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-42" y="57" scalex="1" scaley="1" rotation="-10" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-26" y="151" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/shrug.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="477" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/shrug.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="624" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_frustrated.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_frustrated.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_frustrated.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_frustrated.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="428" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_shrug.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_shrug.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-25" y="137" alpha="100" rotation="-11" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_shrug.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_shrug.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="84" y="461" pivotx="-4%" pivoty="13%" rotation="3" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="344" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="338" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="345" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="351" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="358" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-91" y="657" rotation="0" />
+        </pose>
+        <pose id="happy_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-42" y="102" rotation="10" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-7" y="69" scalex="1" scaley="1" rotation="10" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-37" y="173" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/happy.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-30" y="489" rotation="-4" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-16" y="634" scalex="1" scaley="1" rotation="-4" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_happy.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_happy.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_happy.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-31" y="439" scalex="1" scaley="1" rotation="-4" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-31" y="439" scalex="1" scaley="1" rotation="-4" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-29" y="440" rotation="-4" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_happy.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_happy.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-23" y="149" alpha="100" rotation="12" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_happy.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_happy.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="15" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="57" y="473" pivotx="-4%" pivoty="13%" rotation="-2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-35" y="354" rotation="-4" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-40" y="349" rotation="-4" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-30" y="356" rotation="-2" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-43" y="362" rotation="-4" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-39" y="369" rotation="-4" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-102" y="672" rotation="-2" />
+        </pose>
+        <pose id="laugh_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-12" y="71" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-6" y="37" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-8" y="136" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/laugh.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="462" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/laugh.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="608" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_laugh.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_laugh.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_laugh.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_laugh.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Leotard=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Leotard=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="411" scalex="1.01" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_laugh.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-5" y="118" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_laugh.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_laugh.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="15" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="98" y="456" pivotx="-4%" pivoty="13%" rotation="-2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="326" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="320" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="329" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="333" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="342" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-91" y="642" rotation="-1" />
+            <directive type="animation" id="ponytail" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-12" />
+                <keyframe time="0.75" x="-12" />
+            </directive>
+            <directive type="animation" id="ponytail" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Ponytail/ponytail.png" y="71" />
+                <keyframe time="0.12" y="81" />
+                <keyframe time="0.25" y="71" />
+                <keyframe time="0.38" y="81" />
+                <keyframe time="0.5" y="71" />
+                <keyframe time="0.62" y="81" />
+                <keyframe time="0.75" src="angela_tom/BodyPieces/Ponytail/ponytail.png" y="71" />
+            </directive>
+            <directive type="animation" id="hat" marker="cl_Hat=0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-6" rotation="0" />
+                <keyframe time="0.12" rotation="0" />
+                <keyframe time="0.62" rotation="0" />
+                <keyframe time="0.75" rotation="0" />
+            </directive>
+            <directive type="animation" id="hat" marker="cl_Hat=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" y="37" />
+                <keyframe time="0.12" y="47" />
+                <keyframe time="0.25" y="37" />
+                <keyframe time="0.38" y="47" />
+                <keyframe time="0.5" y="37" />
+                <keyframe time="0.62" y="47" />
+                <keyframe time="0.75" y="37" />
+            </directive>
+            <directive type="animation" id="hair" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-8" />
+                <keyframe time="0.75" x="-8" />
+            </directive>
+            <directive type="animation" id="hair" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Hair/hair.png" y="136" />
+                <keyframe time="0.12" y="146" />
+                <keyframe time="0.25" y="136" />
+                <keyframe time="0.38" y="146" />
+                <keyframe time="0.5" y="136" />
+                <keyframe time="0.62" y="146" />
+                <keyframe time="0.75" src="angela_tom/BodyPieces/Hair/hair.png" y="136" />
+            </directive>
+            <directive type="animation" id="b1_head" marker="blushLevel=0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.75" x="0" />
+            </directive>
+            <directive type="animation" id="b1_head" marker="blushLevel=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b1_laugh.png" y="0" />
+                <keyframe time="0.12" y="10" />
+                <keyframe time="0.25" y="0" />
+                <keyframe time="0.38" y="10" />
+                <keyframe time="0.5" y="0" />
+                <keyframe time="0.62" y="10" />
+                <keyframe time="0.75" y="0" />
+            </directive>
+            <directive type="animation" id="b2_head" marker="blushLevel=1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.75" x="0" />
+            </directive>
+            <directive type="animation" id="b2_head" marker="blushLevel=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b2_laugh.png" y="0" />
+                <keyframe time="0.12" y="10" />
+                <keyframe time="0.25" y="0" />
+                <keyframe time="0.38" y="10" />
+                <keyframe time="0.5" y="0" />
+                <keyframe time="0.62" y="10" />
+                <keyframe time="0.75" y="0" />
+            </directive>
+            <directive type="animation" id="b3_head" marker="blushLevel=2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.75" x="0" />
+            </directive>
+            <directive type="animation" id="b3_head" marker="blushLevel=2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b3_laugh.png" y="0" />
+                <keyframe time="0.12" y="10" />
+                <keyframe time="0.25" y="0" />
+                <keyframe time="0.38" y="10" />
+                <keyframe time="0.5" y="0" />
+                <keyframe time="0.62" y="10" />
+                <keyframe time="0.75" y="0" />
+            </directive>
+            <directive type="animation" id="b4_head" marker="blushLevel=3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.75" x="0" />
+            </directive>
+            <directive type="animation" id="b4_head" marker="blushLevel=3" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b4_laugh.png" y="0" />
+                <keyframe time="0.12" y="10" />
+                <keyframe time="0.25" y="0" />
+                <keyframe time="0.38" y="10" />
+                <keyframe time="0.5" y="0" />
+                <keyframe time="0.62" y="10" />
+                <keyframe time="0.75" y="0" />
+            </directive>
+            <directive type="animation" id="front_hands" marker="cl_Gloves=1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.75" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="front_hands" marker="cl_Gloves=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Hands/front_laugh.png" />
+                <keyframe time="0.12" src="angela_tom/BodyPieces/Hands/front_laugh2.png" />
+                <keyframe time="0.25" src="angela_tom/BodyPieces/Hands/front_laugh.png" />
+                <keyframe time="0.38" src="angela_tom/BodyPieces/Hands/front_laugh2.png" />
+                <keyframe time="0.5" src="angela_tom/BodyPieces/Hands/front_laugh.png" />
+                <keyframe time="0.62" src="angela_tom/BodyPieces/Hands/front_laugh2.png" />
+                <keyframe time="0.75" src="angela_tom/BodyPieces/Hands/front_laugh.png" />
+            </directive>
+            <directive type="animation" id="front_glove" marker="cl_Gloves=0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.75" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="front_glove" marker="cl_Gloves=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh.png" />
+                <keyframe time="0.12" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh2.png" />
+                <keyframe time="0.25" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh.png" />
+                <keyframe time="0.38" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh2.png" />
+                <keyframe time="0.5" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh.png" />
+                <keyframe time="0.62" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh2.png" />
+                <keyframe time="0.75" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_laugh.png" />
+            </directive>
+            <directive type="animation" id="bangs" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-5" y="118" />
+                <keyframe time="0.12" y="128" />
+                <keyframe time="0.25" y="118" />
+                <keyframe time="0.38" y="128" />
+                <keyframe time="0.5" y="118" />
+                <keyframe time="0.62" y="128" />
+                <keyframe time="0.75" y="118" />
+            </directive>
+        </pose>
+        <pose id="protectboobs_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="17" y="101" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="20" y="67" scalex="1" scaley="1" rotation="-5" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="31" y="157" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/protectboobs.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="24" y="488" rotation="5" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/protectboobs.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="7" y="635" scalex="1" scaley="1" rotation="5" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_protectboobs.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_protectboobs.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_protectboobs.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_protectboobs.png" x="0" y="0" />
+            <sprite id="boobs" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="25" y="438" scalex="1" scaley="1" rotation="5" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="23" y="439" rotation="5" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="25" src="angela_tom/BodyPieces/Hands/front_protectboobs.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_protectboobs.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="29" y="147" alpha="100" rotation="-5" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_protectboobs.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_protectboobs.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="115" y="470" pivotx="-4%" pivoty="13%" rotation="20" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="30" y="354" rotation="5" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="36" y="349" rotation="5" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="22" y="355" rotation="2" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="36" y="361" rotation="5" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="35" y="369" rotation="5" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-80" y="660" rotation="6" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/back_protectboobs.png" x="0" y="0" />
+        </pose>
+        <pose id="shrug_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-44" y="91" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-42" y="57" scalex="1" scaley="1" rotation="-10" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-26" y="151" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/shrug.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="477" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/shrug.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="624" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_shrug.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_shrug.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_shrug.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_shrug.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="428" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_shrug.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_shrug.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-25" y="137" alpha="100" rotation="-11" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_shrug.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_shrug.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="84" y="461" pivotx="-4%" pivoty="13%" rotation="3" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="344" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="338" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="345" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="351" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="358" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-91" y="657" rotation="0" />
+        </pose>
+        <pose id="stareforward_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-5" y="95" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-6" y="69" scalex="1" scaley="1" rotation="-5" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-2" y="166" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="4" src="angela_tom/BodyPieces/Hands/back_stareleft.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="4" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_stareleft.png" x="0" y="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/stareleft.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="6" y="493" rotation="2" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/stareleft.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="0" y="638" scalex="1" scaley="1" rotation="2" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_stareforward.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_stareforward.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_stareforward.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_stareforward.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="7" y="443" scalex="1" scaley="1" rotation="2" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="7" y="443" scalex="1" scaley="1" rotation="2" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="6" y="444" rotation="2" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_stareleft.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_stareleft.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="3" y="149" alpha="100" rotation="-5" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_stareleft.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_stareleft.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="9" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="105" y="455" pivotx="-4%" pivoty="13%" rotation="2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="10" y="357" rotation="2" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="12" y="352" rotation="2" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="6" y="359" rotation="1" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="11" y="363" rotation="2" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="12" y="371" rotation="2" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-87" y="669" rotation="3" />
+        </pose>
+        <pose id="stareleft_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-5" y="95" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-6" y="69" scalex="1" scaley="1" rotation="-5" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-2" y="166" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="4" src="angela_tom/BodyPieces/Hands/back_stareleft.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="4" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_stareleft.png" x="0" y="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/stareleft.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="6" y="493" rotation="2" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/stareleft.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="0" y="638" scalex="1" scaley="1" rotation="2" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_stareleft.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_stareleft.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_stareleft.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_stareleft.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="7" y="443" scalex="1" scaley="1" rotation="2" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="7" y="443" scalex="1" scaley="1" rotation="2" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="6" y="444" rotation="2" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_stareleft.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_stareleft.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="3" y="149" alpha="100" rotation="-5" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_stareleft.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_stareleft.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="9" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="105" y="455" pivotx="-4%" pivoty="13%" rotation="2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="10" y="357" rotation="2" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="12" y="352" rotation="2" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="6" y="359" rotation="1" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="11" y="363" rotation="2" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="12" y="371" rotation="2" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-87" y="669" rotation="3" />
+        </pose>
+        <pose id="stareright_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-21" y="95" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-11" y="69" scalex="1" scaley="1" rotation="3" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-18" y="166" />
+            <sprite id="back_hands" marker="cl_Gloves=1" z="4" src="angela_tom/BodyPieces/Hands/back_stareright.png" x="0" y="0" />
+            <sprite id="back_glove" marker="cl_Gloves=0" z="4" src="reskins/angela_tom_magus/BodyPieces/Hands/back_glove_stareright.png" x="0" y="0" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/stareright.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-17" y="492" rotation="-1" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/stareright.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-10" y="639" scalex="1" scaley="1" rotation="-1" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_stareright.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_stareright.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_stareright.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_stareright.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-17" y="443" scalex="1" scaley="1" rotation="-1" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-17" y="443" scalex="1" scaley="1" rotation="-1" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-16" y="444" rotation="-1" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_stareright.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_stareright.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-16" y="149" alpha="100" rotation="3" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_stareright.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_stareright.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="9" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="80" y="451" pivotx="-4%" pivoty="13%" rotation="2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-17" y="358" rotation="-1" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-19" y="353" rotation="-1" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-16" y="359" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-21" y="364" rotation="-1" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-18" y="373" rotation="-1" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-97" y="673" rotation="1" />
+        </pose>
+        <pose id="angry_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-11" y="71" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-4" y="38" scalex="1" scaley="1" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-9" y="134" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/angry.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="460" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/angry.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="608" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_angry.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_angry.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_angry.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_angry.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="411" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="22" src="angela_tom/BodyPieces/Hands/front_angry.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_angry.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-4" y="116" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_angry.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_angry.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="118" y="461" pivotx="-4%" pivoty="13%" rotation="-2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="326" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="320" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="329" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="333" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="342" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="640" rotation="0" />
+        </pose>
+        <pose id="surprised_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-11" y="71" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-5" y="38" rotation="0" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-9" y="135" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/surprised2.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="461" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/surprised2.png" x="0" y="672" alpha="100" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="608" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_surprised.png" x="0" y="17" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_surprised.png" x="0" y="17" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_surprised.png" x="0" y="17" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_surprised.png" x="0" y="17" />
+            <sprite id="boobs" marker="cl_Leotard=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Leotard=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="410" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="411" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_surprised.png" x="0" y="17" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_surprised.png" x="0" y="17" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-4" y="116" alpha="100" rotation="0" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised2.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised2.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="18" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="83" y="461" pivotx="-4%" pivoty="13%" rotation="6" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="326" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="320" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="329" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="333" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="342" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="640" rotation="0" />
+            <directive type="animation" id="ponytail" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Ponytail/ponytail.png" y="71" />
+                <keyframe time="0.25" y="14" />
+                <keyframe time="0.5" y="71" />
+                <keyframe time="0.75" y="14" />
+                <keyframe time="1" y="71" />
+            </directive>
+            <directive type="animation" id="hat" marker="cl_Hat=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" y="38" />
+                <keyframe time="0.25" y="-19" />
+                <keyframe time="0.5" y="38" />
+                <keyframe time="0.75" y="-19" />
+                <keyframe time="1" y="38" />
+            </directive>
+            <directive type="animation" id="hair" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Hair/hair.png" y="135" />
+                <keyframe time="0.25" y="78" />
+                <keyframe time="0.5" y="135" />
+                <keyframe time="0.75" y="78" />
+                <keyframe time="1" y="135" />
+            </directive>
+            <directive type="animation" id="body" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Main/surprised2.png" y="0" />
+                <keyframe time="0.25" src="reskins/angela_tom_magus/BodyPieces/Main/surprised.png" y="-40" />
+                <keyframe time="0.5" src="reskins/angela_tom_magus/BodyPieces/Main/surprised2.png" y="0" />
+                <keyframe time="0.75" src="reskins/angela_tom_magus/BodyPieces/Main/surprised.png" y="-40" />
+                <keyframe time="1" src="reskins/angela_tom_magus/BodyPieces/Main/surprised2.png" y="0" />
+            </directive>
+            <directive type="animation" id="boobshadow" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" y="461" />
+                <keyframe time="0.25" y="404" />
+                <keyframe time="0.5" y="461" />
+                <keyframe time="0.75" y="404" />
+                <keyframe time="1" y="461" />
+            </directive>
+            <directive type="animation" id="postForfeit" marker="blushLevel=3" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/PostForfeit/surprised2.png" y="672" />
+                <keyframe time="0.25" src="angela_tom/BodyPieces/PostForfeit/surprised.png" y="605" />
+                <keyframe time="0.5" src="angela_tom/BodyPieces/PostForfeit/surprised2.png" y="672" />
+                <keyframe time="0.75" src="angela_tom/BodyPieces/PostForfeit/surprised.png" y="605" />
+                <keyframe time="1" src="angela_tom/BodyPieces/PostForfeit/surprised2.png" y="672" />
+            </directive>
+            <directive type="animation" id="briefs" marker="cl_Briefs=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" y="608" />
+                <keyframe time="0.25" y="551" />
+                <keyframe time="0.5" y="608" />
+                <keyframe time="0.75" y="551" />
+                <keyframe time="1" y="608" />
+            </directive>
+            <directive type="animation" id="b1_head" marker="blushLevel=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b1_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="b2_head" marker="blushLevel=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b2_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="b3_head" marker="blushLevel=2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b3_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="b4_head" marker="blushLevel=3" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Head/b4_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="boobs" marker="cl_Leotard=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/ClothingPieces/AngelaBoobs.png" y="410" />
+                <keyframe time="0.25" y="353" />
+                <keyframe time="0.5" y="410" />
+                <keyframe time="0.75" y="353" />
+                <keyframe time="1" y="410" />
+            </directive>
+            <directive type="animation" id="boobs2" marker="cl_Leotard=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/ClothingPieces/AngelaBoobs2.png" y="410" />
+                <keyframe time="0.25" y="353" />
+                <keyframe time="0.5" y="410" />
+                <keyframe time="0.75" y="353" />
+                <keyframe time="1" y="410" />
+            </directive>
+            <directive type="animation" id="bustier" marker="cl_Bustier=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" y="411" />
+                <keyframe time="0.25" y="354" />
+                <keyframe time="0.5" y="411" />
+                <keyframe time="0.75" y="354" />
+                <keyframe time="1" y="411" />
+            </directive>
+            <directive type="animation" id="front_hands" marker="cl_Gloves=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="angela_tom/BodyPieces/Hands/front_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="front_glove" marker="cl_Gloves=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_surprised.png" y="17" />
+                <keyframe time="0.25" y="-40" />
+                <keyframe time="0.5" y="17" />
+                <keyframe time="0.75" y="-40" />
+                <keyframe time="1" y="17" />
+            </directive>
+            <directive type="animation" id="bangs" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" y="116" />
+                <keyframe time="0.25" y="59" />
+                <keyframe time="0.5" y="116" />
+                <keyframe time="0.75" y="59" />
+                <keyframe time="1" y="116" />
+            </directive>
+            <directive type="animation" id="legs" marker="cl_Boots=1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised2.png" y="0" />
+                <keyframe time="0.25" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised.png" y="-57" />
+                <keyframe time="0.5" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised2.png" y="0" />
+                <keyframe time="0.75" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised.png" y="-57" />
+                <keyframe time="1" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_surprised2.png" y="0" />
+            </directive>
+            <directive type="animation" id="boots" marker="cl_Boots=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised2.png" y="0" />
+                <keyframe time="0.25" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised.png" y="-57" />
+                <keyframe time="0.5" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised2.png" y="0" />
+                <keyframe time="0.75" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised.png" y="-57" />
+                <keyframe time="1" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_surprised2.png" y="0" />
+            </directive>
+            <directive type="animation" id="armband" marker="cl_Gloves=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" y="461" />
+                <keyframe time="0.25" y="404" />
+                <keyframe time="0.5" y="461" />
+                <keyframe time="0.75" y="404" />
+                <keyframe time="1" y="461" />
+            </directive>
+            <directive type="animation" id="cape_top" marker="cl_Cape=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" y="326" />
+                <keyframe time="0.25" y="269" />
+                <keyframe time="0.5" y="326" />
+                <keyframe time="0.75" y="269" />
+                <keyframe time="1" y="326" />
+            </directive>
+            <directive type="animation" id="cape_collar" marker="cl_Cape=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" y="320" />
+                <keyframe time="0.25" y="263" />
+                <keyframe time="0.5" y="320" />
+                <keyframe time="0.75" y="263" />
+                <keyframe time="1" y="320" />
+            </directive>
+            <directive type="animation" id="cape" marker="cl_Cape=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" y="329" />
+                <keyframe time="0.25" y="272" />
+                <keyframe time="0.5" y="329" />
+                <keyframe time="0.75" y="272" />
+                <keyframe time="1" y="329" />
+            </directive>
+            <directive type="animation" id="choker" marker="cl_Cape=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" y="333" />
+                <keyframe time="0.25" y="276" />
+                <keyframe time="0.56" y="333" />
+                <keyframe time="0.75" y="276" />
+                <keyframe time="1" y="333" />
+            </directive>
+            <directive type="animation" id="necklaces" marker="cl_Cape=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" y="342" />
+                <keyframe time="0.25" y="285" />
+                <keyframe time="0.5" y="342" />
+                <keyframe time="0.75" y="285" />
+                <keyframe time="1" y="342" />
+            </directive>
+            <directive type="animation" id="AngelaMChain" marker="cl_Briefs=0" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" y="640" />
+                <keyframe time="0.25" y="583" />
+                <keyframe time="0.5" y="640" />
+                <keyframe time="0.75" y="583" />
+                <keyframe time="1" y="640" />
+            </directive>
+        </pose>
+        <pose id="suspicious_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="26" y="96" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="58" y="66" scalex="1" scaley="1" rotation="18" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="19" y="158" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/thinking.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="479" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/thinking.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="627" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_suspicious.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_suspicious.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_suspicious.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_suspicious.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-7" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-7" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-6" y="430" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_thinking.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_thinking.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="30" y="142" alpha="100" rotation="18" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_thinking.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_thinking.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="18" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="94" y="468" pivotx="-4%" pivoty="13%" rotation="-2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="345" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-4" y="340" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-5" y="347" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-4" y="351" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="360" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="659" rotation="0" />
+        </pose>
+        <pose id="thinking_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="26" y="96" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="58" y="66" scalex="1" scaley="1" rotation="18" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="19" y="158" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/thinking.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="479" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/thinking.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="627" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_thinking.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_thinking.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_thinking.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_thinking.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-7" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-7" y="429" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-6" y="430" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_thinking.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_thinking.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="30" y="142" alpha="100" rotation="18" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_thinking.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_thinking.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="18" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="94" y="468" pivotx="-4%" pivoty="13%" rotation="-2" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="345" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-4" y="340" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-5" y="347" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-4" y="351" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="360" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-92" y="659" rotation="0" />
+        </pose>
+        <pose id="what_custom">
+            <sprite id="ponytail" src="angela_tom/BodyPieces/Ponytail/ponytail.png" x="-22" y="89" />
+            <sprite id="hat" marker="cl_Hat=0" z="24" src="reskins/angela_tom_magus/ClothingPieces/AngelaMHat.png" x="-19" y="57" scalex="1" scaley="1" rotation="-4" />
+            <sprite id="hair" z="2" src="angela_tom/BodyPieces/Hair/hair.png" x="-15" y="153" />
+            <sprite id="body" z="9" src="reskins/angela_tom_magus/BodyPieces/Main/what.png" x="0" y="0" />
+            <sprite id="boobshadow" z="10" src="angela_tom/ClothingPieces/AngelaBoobsShad.png" x="-5" y="477" rotation="0" />
+            <sprite id="postForfeit" marker="blushLevel=3" z="10" src="angela_tom/BodyPieces/PostForfeit/what.png" x="0" y="672" />
+            <sprite id="briefs" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBriefs.png" x="-5" y="624" scalex="1" scaley="1" rotation="0" />
+            <sprite id="b1_head" marker="blushLevel=0" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b1_what.png" x="0" y="0" />
+            <sprite id="b2_head" marker="blushLevel=1" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b2_what.png" x="0" y="0" />
+            <sprite id="b3_head" marker="blushLevel=2" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b3_what.png" x="0" y="0" />
+            <sprite id="b4_head" marker="blushLevel=3" z="23" src="reskins/angela_tom_magus/BodyPieces/Head/b4_what.png" x="0" y="0" />
+            <sprite id="boobs" marker="cl_Bustier=0" z="20" src="angela_tom/ClothingPieces/AngelaBoobs.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="boobs2" marker="cl_Bustier=1" z="20" src="angela_tom/ClothingPieces/AngelaBoobs2.png" x="-5" y="427" scalex="1" scaley="1" rotation="0" />
+            <sprite id="bustier" marker="cl_Bustier=0" z="21" src="reskins/angela_tom_magus/ClothingPieces/AngelaMBustier.png" x="-5" y="428" rotation="0" />
+            <sprite id="front_hands" marker="cl_Gloves=1" z="24" src="angela_tom/BodyPieces/Hands/front_what.png" x="0" y="0" />
+            <sprite id="front_glove" marker="cl_Gloves=0" z="24" src="reskins/angela_tom_magus/BodyPieces/Hands/front_glove_what.png" x="0" y="0" />
+            <sprite id="bangs" z="25" src="reskins/angela_tom_magus/ClothingPieces/Bangs.png" x="-11" y="136" alpha="100" rotation="-4" />
+            <sprite id="legs" marker="cl_Boots=1" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/NoBoots_what.png" x="0" y="0" />
+            <sprite id="boots" marker="cl_Boots=0" z="8" src="reskins/angela_tom_magus/BodyPieces/Legs/Boots_what.png" x="0" y="0" />
+            <sprite id="armband" marker="cl_Gloves=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMArmband.png" x="84" y="461" pivotx="-4%" pivoty="13%" rotation="3" />
+            <sprite id="cape_top" marker="cl_Cape=0" z="22" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeTop.png" x="-4" y="344" rotation="0" />
+            <sprite id="cape_collar" marker="cl_Cape=0" z="4" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCapeCollar.png" x="-5" y="338" rotation="0" />
+            <sprite id="cape" marker="cl_Cape=0" z="3" src="reskins/angela_tom_magus/ClothingPieces/AngelaMCape.png" x="-6" y="345" rotation="0" />
+            <sprite id="choker" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChoker.png" x="-5" y="351" rotation="0" />
+            <sprite id="necklaces" marker="cl_Cape=0" z="10" src="reskins/angela_tom_magus/ClothingPieces/AngelaMNecklaces.png" x="-4" y="358" rotation="0" />
+            <sprite id="AngelaMChain" marker="cl_Briefs=0" z="11" src="reskins/angela_tom_magus/ClothingPieces/AngelaMChain.png" x="-91" y="657" rotation="0" />
+        </pose>
+    </poses>
+
+</costume>
