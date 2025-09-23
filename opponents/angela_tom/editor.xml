@@ -389,9 +389,20 @@
         <label id="359" label="Clears &quot;WomanNotPing&quot;" folder="" sort="0" />
         <label id="361" label="Remove scarf (alternate)" folder="" sort="0" />
         <label id="362" label="Remove boots (alternate)" folder="" sort="0" />
+        <label id="363" label="Remove cape (Magus)" folder="" sort="0" />
+        <label id="364" label="Remove hat (Magus, first round)" folder="" sort="0" />
+        <label id="365" label="Removed hat (Magus, first round)" folder="" sort="0" />
+        <label id="366" label="Set intelligence (Magus)" folder="" sort="0" />
+        <label id="367" label="Removed gloves (Magus)" folder="" sort="0" />
+        <label id="368" label="Doesn't run shuffling script (Magus)" folder="" sort="0" />
+        <label id="369" label="Removed cape (Magus)" folder="" sort="0" />
+        <label id="370" label="Removing boots (Magus)" folder="" sort="0" />
+        <label id="371" label="Remove breastplate (Magus)" folder="" sort="0" />
+        <label id="372" label="Removed breastplate (Magus)" folder="" sort="0" />
     </labels>
-    <nextId>362</nextId>
+    <nextId>373</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
         <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
@@ -399,6 +410,7 @@
         <marker scope="Public" name="Amy_Awakening">Amy has awakened. Could it be dark magic?!</marker>
         <marker scope="Public" name="Amy_NotASpell">Shade doesn't think what happened to Amy was dark magic. So what WAS it?!</marker>
         <marker scope="Public" name="AngelaEarlyBoobs">Angela has revealed her breasts before removing her boots.</marker>
+        <marker scope="Public" name="ApologiesForNoEarlyBoobs">Angela apologizes for not removing her top early in her Magus outfit.</marker>
         <marker scope="Public" name="Aqua_Cheating1">Angela suspects Aqua might be cheating.</marker>
         <marker scope="Public" name="Aqua_Cheating2">Angela asks Undine to confirm that Aqua is cheating.</marker>
         <marker scope="Public" name="Aqua_Cheating3">Angela asks Salamando to undo Aqua's cheating.</marker>
@@ -417,6 +429,9 @@
         <marker scope="Public" name="Caulifla_ClassChange2">Angela remarks that Caulifla's "class change" only changed her hair to blonde.</marker>
         <marker scope="Public" name="Caulifla_ClassChange3">Angela thinks a color swap is a lame class change. Hey, wait, isn't that how it worked in the SNES version of her game?</marker>
         <marker scope="Private" name="cl_Boots">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Briefs">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Bustier">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Cape">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Cups">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Gloves">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Hat">Used for Pose Maker</marker>
@@ -437,12 +452,16 @@
         <marker scope="Public" name="LookedAtMasturbation">Angela couldn't resist the temptation to look at a man masturbating when she was trying to focus. So much for focus!</marker>
         <marker scope="Public" name="Lux_LuminaMention">Angela suggests summoning Lumina after one of Lux's light puns.</marker>
         <marker scope="Public" name="Lux_LuminaPun">Angela actually does summon Lumina after one of Lux's light puns.</marker>
+        <marker scope="Public" name="MagusBragGoodHand">In the first round, Angela will brag about her Magus costume. This is the marker for when she has better than a pair.</marker>
+        <marker scope="Public" name="MagusBragNotGoodHand">In the first round, Angela will brag about her Magus costume. This is the marker for when she does not have better than a pair.</marker>
+        <marker scope="Public" name="MagusIntroduction">(Once only) Angela introduces her Magus outfit.</marker>
         <marker scope="Public" name="Marinette_NormalGirlClass">Angela wonders if Marinette has changed to the "Normal Girl" class.</marker>
         <marker scope="Private" name="MarthWasLucina">Angela has discovered that "Marth" was, in fact, a woman.</marker>
         <marker scope="Public" name="Meia_Response0">Informs Meia that she's from Altena in Fa'Diel, not Earth, and that she dresses how she wants.</marker>
         <marker scope="Public" name="Meia_Strip0">Angela asks Meia about her origins. She doesn't know what a spaceship is, so she substitutes "airship".</marker>
         <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
         <marker scope="Public" name="NoPetRabite">Following from PetRabite, Angela considers that Rabites probably wouldn't make good pets.</marker>
+        <marker scope="Public" name="NotShowingBoobs">In her Magus costume, Angela won't show off her breasts early.</marker>
         <marker scope="Public" name="OffensiveSpellCaster">Angela mentions that she's good at casting offensive elemental magic.</marker>
         <marker scope="Public" name="PetMonsterThoughts">Angela asks a Pokemon character about their "pet monsters".</marker>
         <marker scope="Public" name="PetRabite">Following from PetMonsterThoughts, Angela considers having a pet Rabite.</marker>
@@ -474,5 +493,6 @@
         <marker scope="Public" name="Yuno_Response0a">Angela wonders how someone knew about the early breast reveal that she may or may not do.</marker>
         <marker scope="Public" name="Yuno_Response0b">Angela tells Yuno that she's not doing her "gimmick" today. (In some niche scenarios, she might anyway.)</marker>
         <marker scope="Public" name="Yuno_Response0c">Angela wonders how someone knew about the early breast reveal... that she's right about to do.</marker>
+        <marker scope="Public" name="Yuno_Response0d">Angela tells Yuno she's not doing her "gimmick" while in her Magus outfit.</marker>
     </markers>
 </metadata>
