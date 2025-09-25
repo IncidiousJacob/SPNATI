@@ -227,6 +227,8 @@
         <response id="347" opponent="raine_sage" opponentId="2" />
         <response id="348" opponent="raine_sage" opponentId="1" />
         <response id="349" opponent="selphy" opponentId="3" />
+        <response id="376" opponent="arash" opponentId="145" />
+        <response id="377" opponent="arash" opponentId="164" />
     </responses>
     <notes>
         <note id="84">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
@@ -399,10 +401,11 @@
         <label id="370" label="Removing boots (Magus)" folder="" sort="0" />
         <label id="371" label="Remove breastplate (Magus)" folder="" sort="0" />
         <label id="372" label="Removed breastplate (Magus)" folder="" sort="0" />
+        <label id="374" label="Lucina + Bottomless Man" folder="Mulan reveal" sort="0" />
+        <label id="375" label="Mulan + Bottomless man" folder="Lucina reveal" sort="0" />
     </labels>
-    <nextId>373</nextId>
+    <nextId>377</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
         <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
@@ -418,6 +421,9 @@
         <marker scope="Public" name="Aqua_Hmm">Angela considers Aqua's claims of divinity.</marker>
         <marker scope="Public" name="Aqua_UndineTest">Angela asks Undine if Aqua is really a goddess.</marker>
         <marker scope="Public" name="Arash_RieszHawkeyeCouple">Angela tells Arash that two of her friends, Riesz and Hawkeye, are "a couple" but don't know it.</marker>
+        <marker scope="Public" name="Arash_SillyExcuse">Angela tells Arash of a time she tried to get help from a korropokur by telling a ridiculous lie.</marker>
+        <marker scope="Public" name="Arash_TemperatureResponse">Angela says she likes mild heat, but that her castle is only warm because of her mother's magic.</marker>
+        <marker scope="Public" name="Arash_YoungResponse">Angela tells Arash that she does, in fact, know someone who looks younger than she really is.</marker>
         <marker scope="Private" name="blushLevel">Used for Pose Maker</marker>
         <marker scope="Public" name="BoobClub">Counts how many women she's inducted into the "Boob Club".</marker>
         <marker scope="Public" name="BoobClubMeeting">After having already mentioned the "Boob Club", Angela pretends to host a meeting once all women are topless.</marker>
@@ -446,6 +452,7 @@
         <marker scope="Private" name="IntelligencePenalty">Tracks when her intelligence is altered</marker>
         <marker scope="Public" name="Introductions">Angela introduces herself, bragging about her skills and defeating the Dragon Lord.</marker>
         <marker scope="Public" name="ISleepInPanties">Angela mentions sleeping only in panties - and in the presence of her adventuring companions! Scandalous!</marker>
+        <marker scope="Public" name="Jura_MagusResponse0">Angela asks about Mejare, and comments that she noticed Jura staring at her.</marker>
         <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
         <marker scope="Public" name="Jura_Strip0">Angela asks Jura about Barnette</marker>
         <marker scope="Private" name="JustShowedBoobs">Only active for the first round after Angela shows off her breasts (regardless of why).</marker>
@@ -457,6 +464,7 @@
         <marker scope="Public" name="MagusIntroduction">(Once only) Angela introduces her Magus outfit.</marker>
         <marker scope="Public" name="Marinette_NormalGirlClass">Angela wonders if Marinette has changed to the "Normal Girl" class.</marker>
         <marker scope="Private" name="MarthWasLucina">Angela has discovered that "Marth" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Meia_MagusResponse0">As a Magus, Angela tells Meia that she's not from Earth, and that her Magus outfit makes her more powerful.</marker>
         <marker scope="Public" name="Meia_Response0">Informs Meia that she's from Altena in Fa'Diel, not Earth, and that she dresses how she wants.</marker>
         <marker scope="Public" name="Meia_Strip0">Angela asks Meia about her origins. She doesn't know what a spaceship is, so she substitutes "airship".</marker>
         <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
