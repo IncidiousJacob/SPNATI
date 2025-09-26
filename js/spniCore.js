@@ -169,7 +169,7 @@ function detectUserLanguage() {
     }
 
     // Try to get language from browser
-    const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+    const browserLangs = [navigator.language] || navigator.languages;
     for (let i = 0; i < browserLangs.length; i++) {
         const lang = browserLangs[i].split('-')[0]; // Get primary language code (e.g., 'es' from 'es-ES')
         if (supportedLanguages.includes(lang)) {
