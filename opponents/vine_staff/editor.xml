@@ -21,6 +21,24 @@
         <case name="Gear Names" id="90" priority="Prompt" min="0" max="7">
             <description>(MAKE SURE TO REMOVE EXCESS VARIABLES) A small question about names from her.</description>
         </case>
+        <case name="No Childhood" id="140" priority="Prompt" min="0" max="7">
+            <description>Fun fact, Inphernals spawn at 10! Thus meaning Vine Staff has no childhood. Your character might find this strange.</description>
+        </case>
+        <case name="Gear Summoning" id="141" priority="MustTarget" min="0" max="9">
+            <description>Viney summons her gear!</description>
+        </case>
+        <case name="Gear Summoning (Alt)" id="143" priority="MustTarget" min="0" max="9">
+            <description>An alternative to Viney summoning her gear. This one is for when "threats" are at the table.</description>
+        </case>
+        <case name="Girl Talk" id="16" priority="Noteworthy" min="0" max="3">
+            <description>The beginning of a small chain you can find in her file. Let me know if you want specific diverges from this line.</description>
+        </case>
+        <case name="Gear Desummoning" id="142" priority="Noteworthy" min="0" max="9">
+            <description>Viney desummons her gear! Less required than the gear summoning case, but still important.</description>
+        </case>
+        <case name="Gear Desummoning (Alt)" id="144" priority="Noteworthy" min="0" max="9">
+            <description>An alternative to Vine desummoning her gear. This one is for when "threats"are at the table.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -90,12 +108,14 @@
         <response id="92" opponent="kora" opponentId="32" />
         <response id="94" opponent="kumatora" opponentId="191" />
         <response id="97" opponent="hatsune_miku" opponentId="614" />
+        <response id="131" opponent="anatoly" opponentId="15" />
+        <response id="139" opponent="angela_tom" opponentId="346" />
     </responses>
     <notes>
         <note id="20">If you want to respond to the first question, let me know and I'll slap a marker on it. </note>
         <note id="21">Apologies for making you the bad pun sacrifice.</note>
         <note id="16">A small throughline so she has something to do that makes her more interesting. Mostly about how the basegame doesn't have many female characters, and she takes the oppotunity to try and bond via femininity. I'd be happy to make a split for specific responses.</note>
-        <note id="26">Generic introduction. Multiple markers in case one of her two is more interesting.</note>
+        <note id="26">Generic introduction. Multiple markers in case one of her two is more interesting. EXTRA PLAYTEST NOTES: Funny enough, she is near-guaranteed to introduce herself despite claiming she nearly forgot. I'm keeping it that way.</note>
         <note id="33">Incest-proofing</note>
         <note id="34">Incest-proofing</note>
         <note id="35">I don't plan on adding an entire different dialogue set, as I don't want to reward players for doing named incest. This is just to make sure it feels like she remembers.</note>
@@ -124,6 +144,21 @@
         <note id="113">There hasn't been an answer as to what the horns are made of. Most people say keratin, but for the sake of canon compliance, she hasn't answered.</note>
         <note id="115">Mostly inspired by the opponent selected line.</note>
         <note id="116">This also buffs her intelligence! She has a slight competitive streak.</note>
+        <note id="128">Another method of buffing intelligence, if somebody is way too in the lead. The line is meant to sound dismissive, but Vine's competitive side isn't gonna let it slide.</note>
+        <note id="129">Vagueing about Biografts. It's been stated there are 0 sentient biografts though one is possible to occur. This is slightly headcanoned to be Blackrock (Biograft manufacturer) having stated it isn't possible.</note>
+        <note id="130">Since the world of Phighting is significantly more violent, big chuuni delusions are probably dangerous to have and make you an easy target if you can't put your money where your mouth is.</note>
+        <note id="131">She'd probably be willing to help him learn, though if she'd be any good is a different question.</note>
+        <note id="133">I think it'd be fun, considering Monika's calmer personality, for the jumpscare to essentially be patched out.</note>
+        <note id="137">Pretty much a summary of her in-game abilities. Inphernals are spawned with an inherent understanding on how to use their gears, so needless to say it'd require me HCing a bunch but she can totally keep going. Also pre-warning you, if Yuno's next line is "can I touch your gear" Vine will think Yuno is hitting on her. Gears are extremely important in her culture and to allow another to hold your gear is a great sign of trust. As such, in this context it'd be seen as flirting.</note>
+        <note id="138">Nice save bestie. To explain, she probably doesn't have an equivalent story to the kuchisake-onna, but she sees Yuzuki stare at her and figurers commenting on the scar is offensive. So she backtracks. Poorly, but hopefully well enough.</note>
+        <note id="140">This is a true canon fact btw. And before anyone says "WAIT THAT MEANS SHE'S 13" no. Sh'es 23. They're spawned with all the knowledge they need for their age.</note>
+        <note id="145">I'm probably gonna drop the collectible update seperate to the alternate gear update. I don't want to keep people waiting too long.</note>
+        <note id="141">Also to note, if your character asks to touch it, she'll think they're hitting on her. Gears are extremely important in her culture and to allow another to hold your gear is a great sign of trust. As such, in this context it'd be seen as flirting.</note>
+        <note id="143">Also to note, if your character asks to touch it, she'll think they're hitting on her. Gears are extremely important in her culture and to allow another to hold your gear is a great sign of trust. As such, in this context it'd be seen as flirting.</note>
+        <note id="146">She puts away her gear before masturbating.</note>
+        <note id="147">For context: Firebrand, one of the Swords, incinerated a whole ass city in Lost Temple. Nobody knows why. (Out of universe, the most common theory is that he did it shortly after his grandchild had their wing and eye torn out. Thus, the theory is that a Lost Temple denizen did it, and Firebrand incinerated the city the assailant came from)</note>
+        <note id="167">"...Is that I can take off my obi without anything slipping! You see- WAH!"</note>
+        <note id="168">Subtle jab at Subspace, who's gear could be described as a "bioweapon"</note>
     </notes>
     <labels>
         <label id="5" label="" folder="Girl Talk" sort="0" />
@@ -164,14 +199,67 @@
         <label id="115" label="" folder="Sunset" sort="0" />
         <label id="116" label="" folder="Sunset" sort="0" />
         <label id="117" label="" folder="Sunset" sort="0" />
+        <label id="14" label="" folder="CriticalDarling" sort="0" />
+        <label id="123" label="" folder="Angela" sort="0" />
+        <label id="124" label="" folder="Angela" sort="0" />
+        <label id="50" label="" folder="Revy" sort="0" />
+        <label id="60" label="" folder="Schezo" sort="0" />
+        <label id="47" label="" folder="Amalia" sort="0" />
+        <label id="31" label="" folder="Angela" sort="0" />
+        <label id="30" label="" folder="Angela" sort="0" />
+        <label id="52" label="" folder="Erufuda" sort="0" />
+        <label id="97" label="" folder="Miku" sort="0" />
+        <label id="94" label="" folder="Kumatora" sort="0" />
+        <label id="132" label="" folder="Monika" sort="0" />
+        <label id="134" label="" folder="Monika" sort="0" />
+        <label id="120" label="" folder="Vanessa" sort="0" />
+        <label id="135" label="" folder="Flutter" sort="0" />
+        <label id="63" label="" folder="Aoi" sort="0" />
+        <label id="136" label="" folder="Yuno" sort="0" />
+        <label id="137" label="" folder="Yuno" sort="0" />
+        <label id="141" label="Summoning Gear" folder="Gear Switching" sort="0" />
+        <label id="142" label="Desummoning Gear" folder="Gear Switching" sort="0" />
+        <label id="143" label="Summoning Gear w/meanies at the table" folder="Gear Switching" sort="0" />
+        <label id="144" label="Desummoning Gear w/meanies at the table" folder="Gear Switching" sort="0" />
+        <label id="149" label="" folder="Meia" sort="0" />
+        <label id="109" label="" folder="Dunban" sort="0" />
+        <label id="150" label="Gear Talk. She should summon it shortly after" folder="" sort="0" />
+        <label id="151" label="Gear On!" folder="" sort="0" />
+        <label id="152" label="" folder="Gear Switching" sort="0" />
+        <label id="146" label="" folder="Gear Switching" sort="0" />
+        <label id="153" label="" folder="Gear Switching" sort="0" />
+        <label id="154" label="" folder="Gear Switching" sort="0" />
+        <label id="155" label="" folder="Gear Switching" sort="0" />
+        <label id="156" label="Gear Testing - On" folder="Gear Testing" sort="0" />
+        <label id="157" label="Gear Testing - Off" folder="Gear Testing" sort="0" />
+        <label id="158" label="Gear Testing - Off &gt; On" folder="" sort="0" />
+        <label id="159" label="Gear Testing - On &gt; Off" folder="" sort="0" />
+        <label id="160" label="Gear Testing - Off &gt; On" folder="Gear Testing" sort="0" />
+        <label id="161" label="Gear Testing - On &gt; Off" folder="Gear Testing" sort="0" />
+        <label id="162" label="" folder="Gear Testing" sort="0" />
+        <label id="163" label="" folder="Gear Testing" sort="0" />
+        <label id="164" label="Desummoning Gear (Alt)" folder="Gear Switching" sort="0" />
+        <label id="165" label="" folder="Jura" sort="0" />
+        <label id="166" label="" folder="Jura" sort="0" />
+        <label id="167" label="" folder="Jura" sort="0" />
+        <label id="168" label="" folder="Meia" sort="0" />
+        <label id="169" label="" folder="Meia" sort="0" />
+        <label id="170" label="" folder="Meia + Jura" sort="0" />
+        <label id="26" label="Introducing herself" folder="" sort="0" />
     </labels>
-    <nextId>117</nextId>
+    <nextId>170</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="1v1Challenge">She accepts Sunset's challenge, and starts playing better.</marker>
+        <marker scope="Public" name="AnatolyIlliterate" />
+        <marker scope="Public" name="AnatomyTalk" />
         <marker scope="Public" name="ArmbandOff" />
         <marker scope="Public" name="ArmLocksUp">A relatively generic line for my own headcanon as to something her arm does to make it feel actually cursed: it locks up!</marker>
+        <marker scope="Public" name="BadPersonPrompt" />
         <marker scope="Public" name="BADWORD">Vinestaff swears! Yes, she can do this.</marker>
         <marker scope="Public" name="BoobJobIdea">A small marker to help set up an idea for future banter. From the name alone, I hope you can guess the end result. Only occurs if she's seen Tharja shrink another girl's breasts.</marker>
+        <marker scope="Public" name="BuffApply" />
+        <marker scope="Public" name="BuffWarning" />
         <marker scope="Public" name="CallingSense">Calling, you hear the calling. Let me go gravity what's on my shoulder, little by little I feel a bit better. &lt; "Calling", Takeharu Ishimoto</marker>
         <marker scope="Public" name="CameraCreep" />
         <marker scope="Public" name="CameraCute" />
@@ -182,13 +270,23 @@
         <marker scope="Public" name="CDCasualConver1">Start of a generic conversation, with Critical Darling as the target</marker>
         <marker scope="Public" name="CDCasualConver2" />
         <marker scope="Public" name="CDCasualConver3" />
+        <marker scope="Public" name="ChuuniPrompt" />
         <marker scope="Public" name="CoolHerself" />
         <marker scope="Public" name="DunbanVinestaffStrip0a" />
         <marker scope="Public" name="DunbanVinestaffStrip1a" />
         <marker scope="Public" name="DunbanVinestaffStrip1b" />
         <marker scope="Public" name="EarTarget" />
         <marker scope="Public" name="FakeHornTarget" />
+        <marker scope="Public" name="FarmerPrompt" />
+        <marker scope="Public" name="Gear">The marker that she uses as a variable to determine if her gear is out or not</marker>
+        <marker scope="Public" name="GearDesummon">Note to self: Any time this marker is used, also set gear to 0</marker>
+        <marker scope="Public" name="GearDesummonNeg" />
+        <marker scope="Public" name="GearDesummonPreMast" />
+        <marker scope="Public" name="GearHeightComment" />
         <marker scope="Public" name="GearPrompt" />
+        <marker scope="Public" name="GearSummon">Note to self: Any time this marker is used, also set gear to 1</marker>
+        <marker scope="Public" name="GearSummonNeg" />
+        <marker scope="Public" name="GearTalk" />
         <marker scope="Public" name="GirlTalk1">A small start to a conversation. Mostly lore relating to Vinestaff, and the male dominance of her home series</marker>
         <marker scope="Public" name="GirlTalk2" />
         <marker scope="Public" name="GirlTalk3" />
@@ -202,12 +300,19 @@
         <marker scope="Public" name="HornFreakOut2" />
         <marker scope="Public" name="HornFreakOutResult">Of course, this is overly dramatic to others.</marker>
         <marker scope="Public" name="HornFreakOutResult2" />
+        <marker scope="Public" name="InphernalChildhoodTalk" />
+        <marker scope="Public" name="InphernalTalk" />
+        <marker scope="Public" name="InphernoTalk" />
         <marker scope="Public" name="IntroHeal">An introduction where she introduces herself as a healer</marker>
         <marker scope="Public" name="IntroWait">An introduction where she introduces herself as a waitress</marker>
         <marker scope="Public" name="JuraVinestaffStrip0a" />
+        <marker scope="Public" name="JuraVinestaffStrip0b" />
         <marker scope="Public" name="KeepItDown" />
         <marker scope="Public" name="LadybugTransform" />
         <marker scope="Public" name="MagicRequest" />
+        <marker scope="Public" name="MedicPrompt" />
+        <marker scope="Public" name="MonikaPicked" />
+        <marker scope="Public" name="MonikaVinestaffStrip0a" />
         <marker scope="Public" name="NotThatHard" />
         <marker scope="Public" name="ObiSlip">The one (1) strip shakeup I'm allowing</marker>
         <marker scope="Public" name="Phinisher" />
@@ -219,14 +324,22 @@
         <marker scope="Public" name="ReactJessieTharja" />
         <marker scope="Public" name="ReactJuraJessieTharja" />
         <marker scope="Public" name="ReactJuraTharja" />
+        <marker scope="Public" name="RobotPrompt" />
         <marker scope="Public" name="SaidUno">Mostly for fun! Since I play with Yuno a fair bit, I notice he commonly repeats his line about not saying Uno before going down to your last clothing item.</marker>
         <marker scope="Public" name="SelectTalk" />
         <marker scope="Public" name="SexEdCrashCourse" />
         <marker scope="Public" name="SexEdCrashCourseFail" />
         <marker scope="Public" name="ShamikoCrisis" />
         <marker scope="Public" name="ShoeTarget" />
+        <marker scope="Public" name="SpawndayExplained" />
         <marker scope="Public" name="SunsetVinestaffStrip0a" />
+        <marker scope="Public" name="SwordsExplain" />
+        <marker scope="Public" name="TalkDelin" />
+        <marker scope="Public" name="TalkDelinAlt" />
+        <marker scope="Public" name="TalkStudent" />
+        <marker scope="Public" name="VanessaVinestaffStrip0a" />
         <marker scope="Public" name="VinestaffAdventureTarget" />
+        <marker scope="Public" name="VinestaffBigBoobsTarget" />
         <marker scope="Public" name="VinestaffCadenceStrip0a" />
         <marker scope="Public" name="VinestaffDunbanStrip0a" />
         <marker scope="Public" name="VinestaffDunbanStrip0b" />
@@ -234,16 +347,38 @@
         <marker scope="Public" name="VinestaffDunbanStrip1b" />
         <marker scope="Public" name="VinestaffHornTag" />
         <marker scope="Public" name="VinestaffJapanClothTarget" />
+        <marker scope="Public" name="VinestaffJapanClothTargetAlt" />
         <marker scope="Public" name="VinestaffJura" />
         <marker scope="Public" name="VinestaffJuraStrip0a" />
+        <marker scope="Public" name="VinestaffJuraStrip0b" />
+        <marker scope="Public" name="VinestaffJuraStrip3a" />
+        <marker scope="Public" name="VinestaffMaskTarget" />
         <marker scope="Public" name="VinestaffMeiaJuraStrip0a" />
+        <marker scope="Public" name="VinestaffMeiaJuraStrip0b" />
         <marker scope="Public" name="VinestaffMeiaStrip0a" />
+        <marker scope="Public" name="VinestaffMeiaStrip0b" />
+        <marker scope="Public" name="VinestaffMeiaStrip2a" />
         <marker scope="Public" name="VinestaffSummerTarget" />
         <marker scope="Public" name="VinestaffTristana0a" />
         <marker scope="Public" name="VinestaffTristina0a" />
         <marker scope="Public" name="VinestaffWitchStrip0a" />
+        <marker scope="Public" name="VinestaffYunoStrip0a" />
+        <marker scope="Public" name="VinestaffYunoStrip1a" />
         <marker scope="Public" name="Whining" />
         <marker scope="Public" name="YueBadPun">A truly awful pun, with Yuelia as the victim</marker>
         <marker scope="Public" name="YuzukiWrongAnswer">Girlie pop is DEAD dead (If she couldn't easily fight off Yuzuki)</marker>
+        <marker scope="Public" name="YuzukiWrongAnswerFollowup" />
     </markers>
+    <recipes>
+        <recipe key="44f6dcbe-238b-469a-9901-2573547fb72e">
+            <cases>
+                <id>127</id>
+            </cases>
+        </recipe>
+        <recipe key="cc28d236-6b17-48ce-a010-48a75ded118c">
+            <cases>
+                <id>148</id>
+            </cases>
+        </recipe>
+    </recipes>
 </metadata>
