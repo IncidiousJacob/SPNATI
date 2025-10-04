@@ -19,7 +19,7 @@
             <description>(Feel free to read notes for help). A generic "calling" line, that can be nice to respond to.</description>
         </case>
         <case name="Gear Names" id="90" priority="Prompt" min="0" max="7">
-            <description>(MAKE SURE TO REMOVE EXCESS VARIABLES) A small question about names from her.</description>
+            <description>A small question about names from her.</description>
         </case>
         <case name="No Childhood" id="140" priority="Prompt" min="0" max="7">
             <description>Fun fact, Inphernals spawn at 10! Thus meaning Vine Staff has no childhood. Your character might find this strange.</description>
@@ -112,6 +112,11 @@
         <response id="139" opponent="angela_tom" opponentId="346" />
         <response id="176" opponent="cagliostro" opponentId="2" />
         <response id="179" opponent="magma_grunt" opponentId="95" />
+        <response id="182" opponent="charlie" opponentId="72" />
+        <response id="183" opponent="cadence" opponentId="168" />
+        <response id="185" opponent="neptune" opponentId="38" />
+        <response id="186" opponent="neptune" opponentId="1" />
+        <response id="187" opponent="rosa" opponentId="40" />
     </responses>
     <notes>
         <note id="20">If you want to respond to the first question, let me know and I'll slap a marker on it. </note>
@@ -165,6 +170,9 @@
         <note id="173">Lovedoves are a canon thing in Phighting and have been collected for their feather patterns. Them being poached is specifically my own headcanon, but I feel it'd be decently common.</note>
         <note id="174">https://x.com/Lore_beit/status/1903734391186022443 &lt;Technically a reference to my personal favourite non-canon joke. The rules are lax during the event so it should work.</note>
         <note id="175">In recent designs, Shuriken (her brother)'s horns are naturally pink, but he dyes them green.</note>
+        <note id="183">Fun fact: Roblox as a platform released 2006! Also, this is slightly a jab at the concept of "retro roblox" being considered 2018 and before.</note>
+        <note id="184">This is true in Phighting! Supports generally have weakened buffs when applied to other supports, most likely to prevent a team of them being OP.</note>
+        <note id="187">Also buffs her intelligence due to her competitive streak.</note>
     </notes>
     <labels>
         <label id="5" label="" folder="Girl Talk" sort="0" />
@@ -258,8 +266,12 @@
         <label id="177" label="" folder="Cagliostro" sort="0" />
         <label id="178" label="" folder="Yuna (Final Fantasy)" sort="0" />
         <label id="180" label="" folder="Nagisa" sort="0" />
+        <label id="181" label="" folder="Trifle" sort="0" />
+        <label id="183" label="" folder="Cadence" sort="0" />
+        <label id="182" label="" folder="Charlie" sort="0" />
+        <label id="187" label="" folder="Rosa" sort="0" />
     </labels>
-    <nextId>180</nextId>
+    <nextId>187</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1v1Challenge">She accepts Sunset's challenge, and starts playing better.</marker>
@@ -305,6 +317,7 @@
         <marker scope="Public" name="GirlTalk4">The end of the conversation... for now</marker>
         <marker scope="Public" name="GirlTalk5">Starting back up post-nut</marker>
         <marker scope="Public" name="GirlTalk6" />
+        <marker scope="Public" name="GirlTalk7" />
         <marker scope="Public" name="GloriaVinestaffStrip0a" />
         <marker scope="Public" name="HappySpawnday">Spawndays are just what Inphernals call birthdays, since they're spawned as opposed to born. Happy Spawnday, Vine!</marker>
         <marker scope="Public" name="HeavyMastStart" />
@@ -325,6 +338,8 @@
         <marker scope="Public" name="MedicPrompt" />
         <marker scope="Public" name="MonikaPicked" />
         <marker scope="Public" name="MonikaVinestaffStrip0a" />
+        <marker scope="Public" name="nepFindInvResponse" />
+        <marker scope="Public" name="nepShowerBathResponse" />
         <marker scope="Public" name="NotThatHard" />
         <marker scope="Public" name="ObiSlip">The one (1) strip shakeup I'm allowing</marker>
         <marker scope="Public" name="Phinisher" />
@@ -337,6 +352,7 @@
         <marker scope="Public" name="ReactJuraJessieTharja" />
         <marker scope="Public" name="ReactJuraTharja" />
         <marker scope="Public" name="RobotPrompt" />
+        <marker scope="Public" name="rosaIncentiveRecieved" />
         <marker scope="Public" name="SaidUno">Mostly for fun! Since I play with Yuno a fair bit, I notice he commonly repeats his line about not saying Uno before going down to your last clothing item.</marker>
         <marker scope="Public" name="SelectTalk" />
         <marker scope="Public" name="SexEdCrashCourse" />
