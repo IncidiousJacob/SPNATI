@@ -137,6 +137,7 @@ Targetable traits:
         <response id="572" opponent="jura" opponentId="2740" />
         <response id="573" opponent="jura" opponentId="2741" />
         <response id="574" opponent="jura" opponentId="2761" />
+        <response id="576" opponent="priscilla" opponentId="295" />
     </responses>
     <notes>
         <note id="30">This info is incorrect. It's ghosts she can command. Need to write different follow-up for undead.</note>
@@ -319,7 +320,7 @@ Targetable traits:
         <label id="192" label="" folder="Lady Aqua" sort="3" />
         <label id="193" label="" folder="Lady Aqua" sort="4" />
         <label id="194" label="" folder="Lady Aqua" sort="5" />
-        <label id="195" label="" color="1" folder="Nadeshiko" sort="2" />
+        <label id="195" label="" color="1" folder="Nadeshiko" sort="0" />
         <label id="196" label="" folder="Meia" sort="2" />
         <label id="197" label="" folder="Meia" sort="3" />
         <label id="198" label="" folder="Jura" sort="2" />
@@ -564,7 +565,7 @@ Targetable traits:
         <label id="429" label="" color="1" folder="Meia" sort="0" />
         <label id="430" label="" color="1" folder="Schezo" sort="0" />
         <label id="431" label="" color="1" folder="Schezo" sort="0" />
-        <label id="432" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="432" label="" folder="Priscilla" sort="0" />
         <label id="433" label="" folder="Jean" sort="0" />
         <label id="434" label="" color="1" folder="Natsuki" sort="0" />
         <label id="435" label="" color="1" folder="Juno" sort="0" />
@@ -708,8 +709,58 @@ Targetable traits:
         <label id="573" label="" color="1" folder="Jura" sort="0" />
         <label id="574" label="" color="1" folder="Jura" sort="0" />
         <label id="575" label="" color="1" folder="Cadence" sort="0" />
+        <label id="576" label="" folder="Priscilla" sort="0" />
+        <label id="577" label="" folder="Rosie" sort="0" />
+        <label id="578" label="" folder="Rosie" sort="0" />
+        <label id="579" label="" folder="Rosie" sort="0" />
+        <label id="580" label="" folder="Rosie" sort="0" />
+        <label id="581" label="" folder="Rosie" sort="0" />
+        <label id="582" label="" folder="Rosie" sort="0" />
+        <label id="583" label="" folder="Rosie" sort="0" />
+        <label id="584" label="" folder="Rosie" sort="0" />
+        <label id="585" label="" folder="Rosie" sort="0" />
+        <label id="586" label="" folder="Rosie" sort="0" />
+        <label id="587" label="" folder="Rosie" sort="0" />
+        <label id="588" label="" folder="Rosie" sort="0" />
+        <label id="589" label="" folder="Rosie" sort="0" />
+        <label id="590" label="" folder="Rosie" sort="0" />
+        <label id="591" label="" folder="Rosie" sort="0" />
+        <label id="592" label="" folder="Rosie" sort="0" />
+        <label id="593" label="" folder="Rosie" sort="0" />
+        <label id="594" label="" folder="Rosie" sort="0" />
+        <label id="595" label="" folder="Rosie" sort="0" />
+        <label id="596" label="" folder="Rosie" sort="0" />
+        <label id="597" label="" folder="Rosie" sort="0" />
+        <label id="598" label="" folder="Rosie" sort="0" />
+        <label id="599" label="" folder="Rosie" sort="0" />
+        <label id="600" label="" folder="Rosie" sort="0" />
+        <label id="601" label="" folder="Rosie" sort="0" />
+        <label id="602" label="" folder="Rosie" sort="0" />
+        <label id="603" label="" folder="Rosie" sort="0" />
+        <label id="604" label="" folder="Rosie" sort="0" />
+        <label id="605" label="" folder="Rosie" sort="0" />
+        <label id="606" label="" folder="Rosie" sort="0" />
+        <label id="607" label="" folder="Rosie" sort="0" />
+        <label id="608" label="" folder="Rosie" sort="0" />
+        <label id="609" label="" folder="Rosie" sort="0" />
+        <label id="610" label="" folder="Rosie" sort="0" />
+        <label id="611" label="" folder="Rosie" sort="0" />
+        <label id="612" label="" folder="Rosie" sort="0" />
+        <label id="613" label="" folder="Rosie" sort="0" />
+        <label id="614" label="" folder="Rosie" sort="0" />
+        <label id="615" label="" folder="Rosie" sort="0" />
+        <label id="616" label="" folder="Rosie" sort="0" />
+        <label id="617" label="" folder="Rosie" sort="0" />
+        <label id="618" label="" folder="Rosie" sort="0" />
+        <label id="619" label="" folder="Rosie" sort="0" />
+        <label id="620" label="" folder="Rosie" sort="0" />
+        <label id="621" label="" folder="Rosie" sort="0" />
+        <label id="622" label="" folder="Rosie" sort="0" />
+        <label id="623" label="" folder="Rosie" sort="0" />
+        <label id="624" label="" folder="Rosie" sort="0" />
+        <label id="625" label="" folder="Rosie" sort="0" />
     </labels>
-    <nextId>575</nextId>
+    <nextId>625</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
@@ -860,7 +911,95 @@ Targetable traits:
         <marker scope="Public" name="petra_combat" />
         <marker scope="Public" name="priscilla_wiz_a11" />
         <marker scope="Public" name="priscilla_wiz_a12" />
+        <marker scope="Public" name="priscilla_wiz_a13" />
         <marker scope="Public" name="ringo_name" />
+        <marker scope="Public" name="rosie_adventures_30" />
+        <marker scope="Public" name="Rosie_adventures_30" />
+        <marker scope="Public" name="rosie_adventures_31" />
+        <marker scope="Public" name="Rosie_adventures_31" />
+        <marker scope="Public" name="rosie_adventures_32" />
+        <marker scope="Public" name="Rosie_adventures_32" />
+        <marker scope="Public" name="rosie_archaeologist_00" />
+        <marker scope="Public" name="Rosie_archaeologist_00" />
+        <marker scope="Public" name="rosie_archaeologist_01" />
+        <marker scope="Public" name="Rosie_archaeologist_01" />
+        <marker scope="Public" name="rosie_archaeologist_02" />
+        <marker scope="Public" name="Rosie_archaeologist_02" />
+        <marker scope="Public" name="rosie_Back_home_resp_30" />
+        <marker scope="Public" name="Rosie_Back_home_resp_30" />
+        <marker scope="Public" name="rosie_Back_home_resp_31" />
+        <marker scope="Public" name="Rosie_Back_home_resp_31" />
+        <marker scope="Public" name="rosie_Back_home_resp_32" />
+        <marker scope="Public" name="Rosie_Back_home_resp_32" />
+        <marker scope="Public" name="rosie_cute_60" />
+        <marker scope="Public" name="Rosie_cute_60" />
+        <marker scope="Public" name="rosie_cute_61" />
+        <marker scope="Public" name="Rosie_cute_61" />
+        <marker scope="Public" name="rosie_cute_62" />
+        <marker scope="Public" name="Rosie_cute_62" />
+        <marker scope="Public" name="rosie_Ghost_resp_20" />
+        <marker scope="Public" name="Rosie_Ghost_resp_20" />
+        <marker scope="Public" name="rosie_Ghost_resp_21" />
+        <marker scope="Public" name="Rosie_Ghost_resp_21" />
+        <marker scope="Public" name="rosie_Ghost_resp_22" />
+        <marker scope="Public" name="Rosie_Ghost_resp_22" />
+        <marker scope="Public" name="rosie_Ghost_resp_22_alt" />
+        <marker scope="Public" name="Rosie_Ghost_resp_22_alt" />
+        <marker scope="Public" name="rosie_Jealousy_resp_00" />
+        <marker scope="Public" name="Rosie_Jealousy_resp_00" />
+        <marker scope="Public" name="rosie_Jealousy_resp_01" />
+        <marker scope="Public" name="Rosie_Jealousy_resp_01" />
+        <marker scope="Public" name="rosie_Jealousy_resp_02" />
+        <marker scope="Public" name="Rosie_Jealousy_resp_02" />
+        <marker scope="Public" name="rosie_Just_Socks_resp_60" />
+        <marker scope="Public" name="Rosie_Just_Socks_resp_60" />
+        <marker scope="Public" name="rosie_Just_Socks_resp_61" />
+        <marker scope="Public" name="Rosie_Just_Socks_resp_61" />
+        <marker scope="Public" name="rosie_Just_Socks_resp_62" />
+        <marker scope="Public" name="Rosie_Just_Socks_resp_62" />
+        <marker scope="Public" name="rosie_MagicLich_resp_10" />
+        <marker scope="Public" name="Rosie_MagicLich_resp_10" />
+        <marker scope="Public" name="rosie_MagicLich_resp_11" />
+        <marker scope="Public" name="Rosie_MagicLich_resp_11" />
+        <marker scope="Public" name="rosie_MagicLich_resp_12" />
+        <marker scope="Public" name="Rosie_MagicLich_resp_12" />
+        <marker scope="Public" name="rosie_misunderstanding_10" />
+        <marker scope="Public" name="Rosie_misunderstanding_10" />
+        <marker scope="Public" name="rosie_misunderstanding_11" />
+        <marker scope="Public" name="Rosie_misunderstanding_11" />
+        <marker scope="Public" name="rosie_misunderstanding_12" />
+        <marker scope="Public" name="Rosie_misunderstanding_12" />
+        <marker scope="Public" name="rosie_pink_50" />
+        <marker scope="Public" name="Rosie_pink_50" />
+        <marker scope="Public" name="rosie_pink_51" />
+        <marker scope="Public" name="Rosie_pink_51" />
+        <marker scope="Public" name="rosie_pink_52" />
+        <marker scope="Public" name="Rosie_pink_52" />
+        <marker scope="Public" name="rosie_Teasing_part_2_resp_50" />
+        <marker scope="Public" name="Rosie_Teasing_part_2_resp_50" />
+        <marker scope="Public" name="rosie_Teasing_part_2_resp_51" />
+        <marker scope="Public" name="Rosie_Teasing_part_2_resp_51" />
+        <marker scope="Public" name="rosie_Teasing_part_2_resp_52" />
+        <marker scope="Public" name="Rosie_Teasing_part_2_resp_52" />
+        <marker scope="Public" name="rosie_Teasing_resp_40" />
+        <marker scope="Public" name="Rosie_Teasing_resp_40" />
+        <marker scope="Public" name="rosie_Teasing_resp_41" />
+        <marker scope="Public" name="Rosie_Teasing_resp_41" />
+        <marker scope="Public" name="rosie_Teasing_resp_42" />
+        <marker scope="Public" name="Rosie_Teasing_resp_42" />
+        <marker scope="Public" name="rosie_vivosaurs_20" />
+        <marker scope="Public" name="Rosie_vivosaurs_20" />
+        <marker scope="Public" name="rosie_vivosaurs_21" />
+        <marker scope="Public" name="Rosie_vivosaurs_21" />
+        <marker scope="Public" name="rosie_vivosaurs_22" />
+        <marker scope="Public" name="Rosie_vivosaurs_22" />
+        <marker scope="Public" name="rosie_winner" />
+        <marker scope="Public" name="rosie_winning_40" />
+        <marker scope="Public" name="Rosie_winning_40" />
+        <marker scope="Public" name="rosie_winning_41" />
+        <marker scope="Public" name="Rosie_winning_41" />
+        <marker scope="Public" name="rosie_winning_42" />
+        <marker scope="Public" name="Rosie_winning_42" />
         <marker scope="Public" name="saria_adventure_00" />
         <marker scope="Public" name="saria_adventure_01" />
         <marker scope="Public" name="saria_adventure_02" />
@@ -1032,6 +1171,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_lady_aqua_a33b" />
         <marker scope="Public" name="wiz_lady_aqua_a41a" />
         <marker scope="Public" name="wiz_lady_aqua_a41b" />
+        <marker scope="Public" name="wiz_lady_aqua_a42" />
         <marker scope="Public" name="wiz_lady_aqua_a42a" />
         <marker scope="Public" name="wiz_lady_aqua_a42b" />
         <marker scope="Public" name="wiz_lady_aqua_a43a" />
@@ -1050,6 +1190,10 @@ Targetable traits:
         <marker scope="Public" name="wiz_nico_robin_a01" />
         <marker scope="Public" name="wiz_polly_a01" />
         <marker scope="Public" name="wiz_polly_a02" />
+        <marker scope="Public" name="wiz_rosie_a71" />
+        <marker scope="Public" name="wiz_rosie_a72" />
+        <marker scope="Public" name="wiz_rosie_a83" />
+        <marker scope="Public" name="wiz_rosie_lost" />
         <marker scope="Public" name="wiz_sanny_tess_a01" />
         <marker scope="Public" name="wiz_saria_a81" />
         <marker scope="Public" name="wiz_saria_a82" />
