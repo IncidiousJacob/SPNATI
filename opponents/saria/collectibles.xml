@@ -1,2 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="sarias_corset" status="online" img="opponents/saria/s-corset.png" thumbnail="opponents/saria/s-corset.png">
+        <title>Kokiri Corset</title>
+        <text>While Saria sometimes uses a kidney belt, this is intended for more genre-saavy purposes.</text>
+        <unlock>Win a game against Saria.</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/saria/s-corset.png" name="Kokiri Corset" generic="" position="upper" type="minor" />
+    </collectible>
+    <collectible id="saris_ocarina" status="online" img="opponents/saria/s-ocarina.png" thumbnail="opponents/saria/s-ocarina.png">
+        <title>Fairy Ocarina</title>
+        <text>Despite the complex arrangement of holes, you're &lt;i&gt;fairy&lt;/i&gt; confident she only plays five notes.</text>
+        <unlock>Have Saria play five different songs over the course of a game.</unlock>
+        <counter>10</counter>
+    </collectible>
+    <collectible id="saria_cebe" status="online" img="opponents/saria/cebeglow.png" thumbnail="opponents/saria/cebeglow.png">
+        <title>Cebe, Saria's Fairy</title>
+        <text>You get the feeling that Cebe's just trying to give Saria some space... but he can help you find weakpoints elsewhere!</text>
+        <unlock>Have Saria complete a set of masturbation dialogue with a male character.</unlock>
+    </collectible>
+</collectibles>
