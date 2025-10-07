@@ -39,6 +39,13 @@
         <response id="350" opponent="saria" opponentId="1354" />
         <response id="387" opponent="saria" opponentId="1375" />
         <response id="390" opponent="tifa" opponentId="171" />
+        <response id="391" opponent="saria" opponentId="1400" />
+        <response id="392" opponent="schezo" opponentId="90" />
+        <response id="393" opponent="schezo" opponentId="63" />
+        <response id="394" opponent="schezo" opponentId="27" />
+        <response id="395" opponent="schezo" opponentId="315" />
+        <response id="396" opponent="schezo" opponentId="591" />
+        <response id="402" opponent="schezo" opponentId="54" />
     </responses>
     <labels>
         <label id="1" label="" folder="Kamina" sort="0" />
@@ -429,6 +436,18 @@
         <label id="388" label="" folder="Targets&gt;Saria&gt;Self Forfeit" sort="0" />
         <label id="389" label="" folder="Targets&gt;Saria&gt;Self Forfeit" sort="0" />
         <label id="390" label="" folder="Targets" sort="0" />
+        <label id="391" label="Saria holding boota" folder="Targets&gt;Saria&gt;Hand Lines" sort="0" />
+        <label id="396" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="394" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="392" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="393" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="395" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="397" label="" folder="Targets&gt;Schezo" sort="0" />
+        <label id="398" label="" folder="Boota Generics" sort="0" />
+        <label id="399" label="" folder="Boota Generics" sort="0" />
+        <label id="400" label="" folder="Boota Generics" sort="0" />
+        <label id="401" label="" folder="Boota Generics" sort="0" />
+        <label id="402" label="" folder="Targets&gt;Schezo" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:xyz_</prefix>
@@ -437,7 +456,7 @@
         <posePreviewMarker>boota==1</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>390</nextId>
+    <nextId>402</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009_Retro_A" />
@@ -450,9 +469,15 @@
         <marker scope="Public" name="beach_reaction" />
         <marker scope="Public" name="bobobo_strip0a" />
         <marker scope="Public" name="boota">If 1, Boota is Enabled. If 0, Boota is disabled.</marker>
+        <marker scope="Public" name="boota_choosingMyCards" />
         <marker scope="Public" name="boota_dirt" />
         <marker scope="Public" name="boota_everywhere" />
         <marker scope="Public" name="boota_if_i_get_hungry" />
+        <marker scope="Public" name="boota_judgment" />
+        <marker scope="Public" name="boota_messedUp" />
+        <marker scope="Public" name="boota_notGood" />
+        <marker scope="Public" name="boota_pickedCards" />
+        <marker scope="Public" name="boota_pickMyHand" />
         <marker scope="Public" name="cadence_strip0a" />
         <marker scope="Public" name="carmine_glasses_challenge" />
         <marker scope="Public" name="Carmine_SpikeTheMonkey" />
@@ -608,6 +633,7 @@
         <marker scope="Public" name="reply_sariaFFseekI" />
         <marker scope="Public" name="reply_sariaFFseekS" />
         <marker scope="Public" name="roll_PWM_crotch" />
+        <marker scope="Public" name="saria_bootaBootaB" />
         <marker scope="Public" name="saria_bootaS_Resp" />
         <marker scope="Public" name="saria_FF_butt1" />
         <marker scope="Public" name="saria_FF_butt2" />
@@ -664,6 +690,12 @@
         <marker scope="Public" name="saria_ugS_Resp" />
         <marker scope="Public" name="sayori_strip0a" />
         <marker scope="Public" name="sayori_strip1a" />
+        <marker scope="Public" name="schezo_ageGuess" />
+        <marker scope="Public" name="schezo_armed_Q" />
+        <marker scope="Public" name="schezo_creeper" />
+        <marker scope="Public" name="schezo_fateQ" />
+        <marker scope="Public" name="schezo_nameQ" />
+        <marker scope="Public" name="schezo_NUTDEALER" />
         <marker scope="Public" name="signed_up_for" />
         <marker scope="Public" name="simon_can_go_again" />
         <marker scope="Public" name="simon_cantswim" />
