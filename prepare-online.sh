@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-mkdir -p .public/opponents .public/img .public/js
+mkdir -p .public/opponents .public/img .public/js .public/languages
 cp -r css fonts player index.html version-info.xml backgrounds.xml events.xml cards.xml .public
 
 npm ci
@@ -21,6 +21,8 @@ cp opponents/listing.xml .public/opponents
 cp opponents/general_collectibles.xml .public/opponents
 cp opponents/candy.xml .public/opponents
 cp opponents/tag_dictionary.xml .public/opponents
+
+cp languages/??.xml .public/languages
 
 # Copy online background images and set initial background to display during
 # loading.

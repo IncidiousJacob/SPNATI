@@ -101,7 +101,7 @@
 
                 <!-- Player Name -->
                 <div id="title-name-block">
-                    <div class="title-label">Who are you?</div>
+                    <div class="title-label" data-l10n="who-are-you">Who are you?</div>
                     <input type="text" class='bordered' id='player-name-field' onKeyDown="if (arguments[0].key == 'Enter') validateTitleScreen();"/>
                 </div>
 
@@ -141,7 +141,7 @@
 
                 <!-- Player Wardrobe -->
                 <div id='title-wardrobe-block'>
-                    <div class='title-label'>What are you wearing?</div>
+                    <div class='title-label' data-l10n="what-are-you-wearing">What are you wearing?</div>
                     <div id='title-warning-label'>Select 0 to 8 articles. Wear whatever you want.</div>
                     <div id='title-clothing-container'></div>
                 </div>
@@ -224,7 +224,7 @@
                 <span class="substitute-version">Unknown Version</span><br>
                 <span class="substitute-version-time"></span>
             </button>
-            <button class="title-help-button bordered smooth-button red banner-flair" onclick="showHelpModal()">
+            <button class="title-help-button bordered smooth-button red banner-flair" onclick="showHelpModal()" data-l10n="help-button">
                 Help &amp; FAQ
             </button>
 
@@ -490,28 +490,28 @@
                 <div class="bordered left opponent-area">
                     <select id="main-costume-select-1" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-1" class="bordered name-label">Opponent 1</div>
-                    <button id="select-prefill-button-1" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-1" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-1" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(1)">Select Opponent</button>
                 </div>
                 <div class="bordered halfLeft opponent-area">
                     <select id="main-costume-select-2" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-2" class="bordered name-label">Opponent 2</div>
-                    <button id="select-prefill-button-2" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-2" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-2" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(2)">Select Opponent</button>
                 </div>
                 <div class="bordered halfRight opponent-area">
                     <select id="main-costume-select-3" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-3" class="bordered name-label">Opponent 3</div>
-                    <button id="select-prefill-button-3" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-3" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-3" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(3)">Select Opponent</button>
                 </div>
                 <div class="bordered right opponent-area">
                     <select id="main-costume-select-4" class="bordered alt-costume-dropdown"></select>
                     <div id="select-name-label-4" class="bordered name-label">Opponent 4</div>
-                    <button id="select-prefill-button-4" class="bordered smooth-button blue prefill-select-button" style="display: none;">Select Suggested</button>
+                    <button id="select-prefill-button-4" class="bordered smooth-button blue prefill-select-button" style="display: none;" data-l10n="select-suggested">Select Suggested</button>
                     <button id="select-slot-button-4" class="bordered smooth-button green select-slot-button"
                         onclick="selectOpponentSlot(4)">Select Opponent</button>
                 </div>
@@ -522,19 +522,19 @@
                     <!-- Select Buttons -->
                     <button id='select-main-back-button'
                         class='bordered main-select-button select-back-button smooth-button red'
-                        onclick="backSelectScreen()">
+                        onclick="backSelectScreen()" data-l10n="back-button">
                         Back
                     </button>
                     <button id='select-group-testing-button' class='bordered main-select-button smooth-button green'
-                        onclick="toggleIndividualSelectView()">
+                        onclick="toggleIndividualSelectView()" data-l10n="select-group-testing-button">
                         Testing Roster
                     </button>
                     <button id='select-group-button' class='bordered main-select-button smooth-button green'
-                        onclick="showPresetTables()">
+                        onclick="showPresetTables()" data-l10n="select-group-button">
                         Preset Tables
                     </button>
                     <button id='select-help-button' class='bordered main-select-button smooth-button green'
-                        onclick="showHelpModal()">
+                        onclick="showHelpModal()" data-l10n="help-button">
                         Help &amp; FAQ
                     </button>
 
@@ -544,7 +544,7 @@
 
                     <!-- Advance Button -->
                     <button id='main-select-button' class='bordered smooth-button red' onclick="advanceSelectScreen()"
-                        disabled="disabled">
+                        disabled="disabled" data-l10n="start-button">
                         Start
                     </button>
 
@@ -552,17 +552,20 @@
                     <div class="select-random-container">
                         <button id='select-random-female-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomFillButton('female', function chooseFemale(player) {return player.gender.toLowerCase() === 'female';})">
+                                onclick="clickedRandomFillButton('female', function chooseFemale(player) {return player.gender.toLowerCase() === 'female';})"
+                                data-l10n="select-random-female-button">
                             Random Females
                         </button>
                         <button id='select-random-male-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomFillButton('male', function chooseMale(player) {return player.gender.toLowerCase() === 'male';})">
+                                onclick="clickedRandomFillButton('male', function chooseMale(player) {return player.gender.toLowerCase() === 'male';})"
+                                data-l10n="select-random-male-button">
                             Random Males
                         </button>
                         <button id='select-random-group-button'
                                 class='bordered select-quadrant-button smooth-button blue'
-                                onclick="clickedRandomGroupButton()">
+                                onclick="clickedRandomGroupButton()"
+                                data-l10n="select-random-group-button">
                             Random Table
                         </button>
                         <button id='select-random-button'
@@ -574,7 +577,8 @@
                     </div>
 
                     <button id='select-remove-all-button' class='bordered main-select-button smooth-button red'
-                        onclick="clickedRemoveAllButton(true)">
+                        onclick="clickedRemoveAllButton(true)"
+                        data-l10n="select-remove-all-button">
                         Remove All
                     </button>
 
@@ -599,14 +603,14 @@
         <div class="screen">
             <div class="bordered selection-options-row">
                 <button type="button" class="bordered smooth-button red select-back-btn"
-                    onclick="backFromIndividualSelect()">Back</button>
+                    onclick="backFromIndividualSelect()" data-l10n="back-button">Back</button>
                 <div id="gender-sort-column" class="column-component">
                     <div class="gender-component">
                         <nav>
                             <ul class="pagination" data-option="search-gender">
-                                <li class="active"><a href="#" data-value="1">All</a></li>
-                                <li><a href="#" data-value="2">Male</a></li>
-                                <li><a href="#" data-value="3">Female</a></li>
+                                <li class="active"><a href="#" data-value="1"><span data-l10n="all">All</span></a></li>
+                                <li><a href="#" data-value="2"><span data-l10n="gender-male">Male</span></a></li>
+                                <li><a href="#" data-value="3"><span data-l10n="gender-female">Female</span></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -617,32 +621,31 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu sort-dropdown-options">
-                            <li><a href="#" data-value="featured">Featured</a></li>
-                            <li><a href="#" data-value="communityRank">Community Ranked</a></li>
-                            <li><a href="#" data-value="-lastUpdated">Recently Updated</a></li>
-                            <li><a href="#" data-value="newest">Newest</a></li>
-                            <li><a href="#" data-value="oldest">Oldest</a></li>
-                            <li><a href="#" data-value="-layers">Most Layers</a></li>
-                            <li><a href="#" data-value="layers">Fewest Layers</a></li>
-                            <li><a href="#" data-value="-uniqueLineCount">Unique Line Count</a></li>
-                            <li><a href="#" data-value="normalizedSelectLabel">Name (A-Z)</a></li>
-                            <li><a href="#" data-value="-normalizedSelectLabel">Name (Z-A)</a></li>
-                            <li><a href="#" data-value="normalizedSource selectLabel">Source (A-Z)</a></li>
-                            <li><a href="#" data-value="-normalizedSource -selectLabel">Source (Z-A)</a></li>
-                            <li><a href="#" data-value="target">Talked to by selected</a></li>
+                            <li><a href="#" data-value="featured" data-l10n="featured">Featured</a></li>
+                            <li><a href="#" data-value="communityRank" data-l10n="communityRank">Community Ranked</a></li>
+                            <li><a href="#" data-value="-lastUpdated" data-l10n="lastUpdated">Recently Updated</a></li>
+                            <li><a href="#" data-value="newest" data-l10n="newest">Newest</a></li>
+                            <li><a href="#" data-value="oldest" data-l10n="oldest">Oldest</a></li>
+                            <li><a href="#" data-value="-layers" data-l10n="most-layers">Most Layers</a></li>
+                            <li><a href="#" data-value="layers" data-l10n="fewest-layers">Fewest Layers</a></li>
+                            <li><a href="#" data-value="-uniqueLineCount" data-l10n="uniqueLineCount">Unique Line Count</a></li>
+                            <li><a href="#" data-value="normalizedSelectLabel" data-l10n="name-a-z">Name (A-Z)</a></li>
+                            <li><a href="#" data-value="-normalizedSelectLabel" data-l10n="name-z-a">Name (Z-A)</a></li>
+                            <li><a href="#" data-value="normalizedSource selectLabel" data-l10n="source-a-z">Source (A-Z)</a></li>
+                            <li><a href="#" data-value="-normalizedSource -selectLabel" data-l10n="source-z-a">Source (Z-A)</a></li>
+                            <li><a href="#" data-value="target" data-l10n="talked-to-by-selected">Talked to by selected</a></li>
                         </ul>
                     </div>
                 </div>
                 <div id="name-creator-column" class="column-component">
                     <div class="option-component creator-component">
-                        <label for="search-creator">Search Creator:</label>
+                        <label for="search-creator" data-l10n="search-creator">Search Creator:</label>
                         <input list='creatorList' type="search" id="search-creator"
-                            class='bordered wide-textbox sort-filter-field' placeholder="Search by Creator" />
+                            class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-creator" placeholder="Search by Creator" />
                     </div>
                     <div class="option-component name-component">
-                        <label for="search-name">Search Name: </label>
-                        <input type="search" id="search-name" class='bordered wide-textbox sort-filter-field'
-                            placeholder="Name" />
+                        <label for="search-name" data-l10n="search-name">Search Name: </label>
+                        <input type="search" id="search-name" class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-name" placeholder="Name" />
                     </div>
                 </div>
                 <div id="source-tag-column" class="column-component">
@@ -652,9 +655,9 @@
                             class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-source" placeholder="Search by Source" />
                     </div>
                     <div class="option-component tag-component">
-                        <label for="search-tag">Search Tag: </label>
+                        <label for="search-tag" data-l10n="search-tag">Search Tag: </label>
                         <input list='tagList' type="email" id="search-tag"
-                            class='bordered wide-textbox sort-filter-field' placeholder="Search by Tag" multiple />
+                            class='bordered wide-textbox sort-filter-field' data-l10n-placeholder="search-by-tag" placeholder="Search by Tag" multiple />
                     </div>
                 </div>
             </div>
@@ -694,7 +697,7 @@
                         </div>
                         <div class="opponent-options-row">
                             <button type="button" class="bordered smooth-button blue show-more-button">Show </button>
-                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags">Character Tags</button>
+                            <button type="button" class="bordered smooth-button blue opponent-nav-button show-tags-button" data-target="tags" data-l10n="show-tags-button">Character Tags</button>
                         </div>
                         <div class="bordered opponent-details-field opponent-details-name">
                             <div class="opponent-details-value opponent-full-name"></div>
@@ -702,46 +705,46 @@
                         </div>
                         <div
                             class="bordered left-cap extra-details-row opponent-details-field opponent-epilogues-field">
-                            <div class="opponent-details-label left-cap">Epilogues</div>
+                            <div class="opponent-details-label left-cap" data-l10n="epilogues-button">Epilogues</div>
                             <button type="button"
                                 class="smooth-button blue opponent-nav-button opponent-details-value opponent-epilogues"
                                 data-target="epilogues"></button>
                         </div>
                         <div
                             class="bordered left-cap extra-details-row opponent-details-field opponent-collectibles-field">
-                            <div class="opponent-details-label left-cap">Collectibles</div>
+                            <div class="opponent-details-label left-cap" data-l10n="collectibles-button">Collectibles</div>
                             <button type="button"
                                 class="smooth-button blue opponent-nav-button opponent-details-value opponent-collectibles"
                                 data-target="collectibles"></button>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-writers-field">
-                            <div class="opponent-details-label left-cap">Writer(s)</div>
+                            <div class="opponent-details-label left-cap" data-l10n="writers">Writer(s)</div>
                             <div class="opponent-details-value opponent-writer"></div>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-artists-field">
-                            <div class="opponent-details-label left-cap">Artist(s)</div>
+                            <div class="opponent-details-label left-cap" data-l10n="artists">Artist(s)</div>
                             <div class="opponent-details-value opponent-artist"></div>
                         </div>
                         <div class="extra-details-row opponent-options-row">
                             <div class="bordered left-cap opponent-details-field opponent-linecount-field">
-                                <div class="opponent-details-label left-cap">Unique Lines</div>
+                                <div class="opponent-details-label left-cap" data-l10n="unique-lines">Unique Lines</div>
                                 <div class="opponent-details-value opponent-linecount"></div>
                             </div>
                             <div class="bordered left-cap opponent-details-field opponent-posecount-field">
-                                <div class="opponent-details-label left-cap">Poses</div>
+                                <div class="opponent-details-label left-cap" data-l10n="poses">Poses</div>
                                 <div class="opponent-details-value opponent-posecount"></div>
                             </div>
                         </div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-lastupdate-field">
-                            <div class="opponent-details-label left-cap">Last update</div>
+                            <div class="opponent-details-label left-cap" data-l10n="last-update">Last update</div>
                             <div class="opponent-details-value opponent-lastupdate"></div>
 			</div>
                             <div class="bordered left-cap extra-details-row opponent-details-field opponent-added-field">
-                                <div class="opponent-details-label left-cap">Added</div>
+                                <div class="opponent-details-label left-cap" data-l10n="date-added">Added</div>
                                 <div class="opponent-details-value opponent-added"></div>
 			</div>
                         <div class="bordered left-cap extra-details-row opponent-details-field opponent-birthday-field">
-                            <div class="opponent-details-label left-cap">Birthday</div>
+                            <div class="opponent-details-label left-cap" data-l10n="birthday">Birthday</div>
                             <div class="opponent-details-value opponent-birthday"></div>
                         </div>
                         <div class="bordered opponent-details-field extra-details-row opponent-details-description">
@@ -1122,21 +1125,20 @@
         <div id="collectible-gallery-screen" class="screen">
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button epilogues-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToEpiloguesScreen()">Epilogues</button>
+                    onclick="goToEpiloguesScreen()" data-l10n="epilogues-button">Epilogues</button>
                 <button class="bordered gallery-switch-button deck-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCardsScreen()">Card Decks</button>
+                    onclick="goToCardsScreen()" data-l10n="card-decks-button">Card Decks</button>
                 <select id="collectible-character-filter" class="gallery-character-filter"
                     onchange="changeCharacterFilter(true)">
-                    <option value="" disabled selected>Filter by Character...</option>
-                    <option value="">(no filter)</option>
-                    <option value="__locked">(only locked)</option>
-                    <option value="__unlocked">(only unlocked)</option>                    
-                    <option value="__general">The Inventory</option>
+                    <option value="" disabled selected data-l10n="filter-by-character">Filter by Character...</option>
+                    <option value="" data-l10n="no-filter">(no filter)</option>
+                    <option value="__locked" data-l10n="only-locked">(only locked)</option>
+                    <option value="__unlocked" data-l10n="only-unlocked">(only unlocked)</option>                    
+                    <option value="__general" data-l10n="the-inventory-filter">The Inventory</option>
                 </select>
             </div>
-            <label style="color:black; background-color:white; padding:4px; border:double">The Collectibles feature is now in open beta testing. Please report any issues with specific collectibles via the character’s bug report function.</label>
             <div class="gallery-pane gallery-list-pane bordered" id="collectibles-list-pane"></div>
             <div class="gallery-pane bordered" id="collectibles-text-pane">
                 <h3 class="pane-content text-center" id="collectible-title"></h3>
@@ -1144,10 +1146,10 @@
                         id="collectible-subtitle"></small></h3>
                 <hr />
                 <div class="pane-content text-center collectible-character-container">
-                    From: <i id="collectible-character"></i>
+                    <span data-l10n="collectible-from">From:</span> <i id="collectible-character"></i>
                 </div>
                 <div class="pane-content collectible-unlock-container">
-                    <div class="text-center">To Unlock:</div>
+                    <div class="text-center" data-l10n="unlock-hint">To Unlock:</div>
                     <div class="text-center">
                         <span id="collectible-unlock"></span>
                         <span id="collectible-progress-text"></span>
@@ -1161,7 +1163,7 @@
                 </div>
                 <hr />
                 <div class="pane-content collectible-text-container">
-                    <h4 class="text-center">Description:</h4>
+                    <h4 class="text-center" data-l10n="collectible-description">Description:</h4>
                     <div id="collectible-text"></div>
                 </div>
             </div>
@@ -1196,9 +1198,9 @@
         <div id="deck-gallery-screen" class="screen" hidden>
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button collectibles-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCollectiblesScreen()">Collectibles</button>
+                    onclick="goToCollectiblesScreen()" data-l10n="collectibles-button">Collectibles</button>
             </div>
             <div class="gallery-pane gallery-list-pane bordered" id="deck-list-pane"></div>
             <div class="gallery-pane bordered" id="deck-customizer-pane">
@@ -1206,13 +1208,13 @@
                 <h3 class="deck-content deck-subtitle-container text-center" id="deck-subtitle"></h3>
                 <div class="deck-content text-center" id="deck-credits"></div>
                 <div class="deck-content text-center deck-text-container">
-                    <h3>Description:</h3>
+                    <h3 data-l10n="collectible-description">Description:</h3>
                     <div id="deck-description"></div>
-                    <h3 id="deck-status-alert">(You haven't unlocked this deck yet.)</h3>
+                    <h3 id="deck-status-alert" data-l10n="card-deck-not-unlocked">(You haven't unlocked this deck yet.)</h3>
                 </div>
                 <div class="deck-content text-center deck-activator-container">
-                    <button id="deck-activate-btn" class="deck-activation-btn bordered smooth-button green">Enable All Cards</button>
-                    <button id="deck-deactivate-btn" class="deck-activation-btn bordered smooth-button red">Disable All Cards</button>
+                    <button id="deck-activate-btn" class="deck-activation-btn bordered smooth-button green" data-l10n="card-deck-enable-all-cards">Enable All Cards</button>
+                    <button id="deck-deactivate-btn" class="deck-activation-btn bordered smooth-button red" data-l10n="card-deck-disable-all-cards">Disable All Cards</button>
                 </div>
                 <div class="deck-content deck-cards-container"></div>
             </div>
@@ -1221,15 +1223,15 @@
         <div id="epilogue-gallery-screen" class="screen" hidden>
             <div class="gallery-select-block">
                 <button class="bordered gallery-back-button gallery-select-button smooth-button red"
-                    onclick="backGalleryScreen()">Back</button>
+                    onclick="backGalleryScreen()" data-l10n="back-button">Back</button>
                 <button class="bordered gallery-switch-button collectibles-switch-button gallery-select-button smooth-button blue"
-                    onclick="goToCollectiblesScreen()">Collectibles</button>
+                    onclick="goToCollectiblesScreen()" data-l10n="collectibles-button">Collectibles</button>
                 <select id="epilogue-character-filter" class="gallery-character-filter"
                     onchange="changeCharacterFilter(false)">
-                    <option value="" disabled selected>Filter by Character...</option>
-                    <option value="">(no filter)</option>
-                    <option value="__locked">(only locked)</option>
-                    <option value="__unlocked">(only unlocked)</option>
+                    <option value="" disabled selected data-l10n="filter-by-character">Filter by Character...</option>
+                    <option value="" data-l10n="no-filter">(no filter)</option>
+                    <option value="__locked" data-l10n="only-locked">(only locked)</option>
+                    <option value="__unlocked" data-l10n="only-unlocked">(only unlocked)</option>
                 </select>
             </div>
             <div id="gallery-gender-block">
@@ -1266,18 +1268,18 @@
             </div>
             <div id="gallery-controls-block">
                 <button id="gallery-prev-page-button" class="bordered main-select-button smooth-button blue"
-                    onclick="galleryPrevPage()" disabled>Prev</button>
+                    onclick="galleryPrevPage()" disabled data-l10n="epilogue-previous">Prev</button>
                 <button id="gallery-next-page-button" class="bordered main-select-button smooth-button blue"
-                    onclick="galleryNextPage()">Next</button>
+                    onclick="galleryNextPage()" data-l10n="epilogue-next">Next</button>
                 <button id="gallery-start-ending-button" class="bordered main-select-button smooth-button green"
-                    onclick="doEpilogueFromGallery()" disabled>Start</button>
+                    onclick="doEpilogueFromGallery()" disabled data-l10n="start-button">Start</button>
             </div>
             <div id="gallery-selected-ending-block">
                 <div id="selected-ending-preview"></div>
                 <label id="selected-ending-title"></label>
-                <label>Character: <span id="selected-ending-character"></span></label>
-                <label>For: <span id="selected-ending-gender"></span></label>
-                <label id="selected-ending-hint-container">To Unlock: <span id="selected-ending-hint"></span></label>
+                <label><span data-l10n="epilogue-character">Character:</span> <span id="selected-ending-character"></span></label>
+                <label><span data-l10n="epilogue-for-gender">For:</span> <span id="selected-ending-gender"></span></label>
+                <label id="selected-ending-hint-container"><span data-l10n="unlock-hint">To Unlock:</span> <span id="selected-ending-hint"></span></label>
             </div>
         </div>
     </div>
@@ -1377,17 +1379,17 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title text-center">Are you sure you want to return to the title screen?
+                                <h4 class="modal-title text-center"><span data-l10n="return-to-title-confirmation">Are you sure you want to return to the title screen?</span>
                                 </h4>
                             </div>
                             <div class="modal-body">
                                 <div class="modal-body-container">
                                     <div class="modal-footer-button-row">
                                         <button class="bordered smooth-button modal-button" data-dismiss="modal"
-                                            onclick="restartGame()">Yes</button>
+                                            onclick="restartGame()" data-l10n="yes-button">Yes</button>
                                         <button class="bordered smooth-button green modal-button" data-dismiss="modal"
-                                            onclick="showFeedbackReportModal($restartModal)">Feedback?</button>
-                                        <button class="bordered smooth-button modal-button" data-dismiss="modal">No</button>
+                                            onclick="showFeedbackReportModal($restartModal)" data-l10n="feedback-question-mark">Feedback?</button>
+                                        <button class="bordered smooth-button modal-button" data-dismiss="modal" data-l10n="no-button">No</button>
                                     </div>
                                 </div>
                             </div>
@@ -1410,14 +1412,14 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content" style="height: 100%;">
                             <div class="modal-header">
-                                <h4 class="modal-title text-center">Select an article of clothing to remove</h4>
+                                <h4 class="modal-title text-center" data-l10n="select-clothing-to-remove">Select an article of clothing to remove</h4>
                             </div>
                             <div class="modal-body">
                                 <div id="stripping-clothing-area" class="strip-selector-container"></div>
                             </div>
                             <div class="modal-footer">
                                 <button id="stripping-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="closeStrippingModal()">Select</button>
+                                    data-dismiss="modal" onclick="closeStrippingModal()" data-l10n="select-button">Select</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -1448,7 +1450,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="settings-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="saveSettings()">Close</button>
+                                    data-dismiss="modal" onclick="saveSettings()" data-l10n="close-button">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -1527,7 +1529,7 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title text-center"><b>Options</b></h3>
+                                <h3 class="modal-title text-center"><b><span data-l10n="options">Options</span></b></h3>
                             </div>
                             <div class="modal-body">
                                 <div class="modal-body-container options-container" style="width:100%">
@@ -1549,13 +1551,13 @@
                                         <!-- Auto Fade -->
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Auto Table Fade</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-auto-table-fade">Auto Table Fade</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="auto-fade">
-                                                        <li><a href="#" data-value="true">Enabled</a></li>
-                                                        <li><a href="#" data-value="false">Disabled</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1564,13 +1566,13 @@
                                         <!-- Card Suggest -->
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Card Suggest</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-card-suggest">Card Suggest</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="card-suggest">
-                                                        <li><a href="#" data-value="true">Enabled</a></li>
-                                                        <li><a href="#" data-value="false">Disabled</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1579,13 +1581,13 @@
                                         <!-- Explain Hands -->
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Explain all Hands after Reveal</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-explain-all-hands">Explain all Hands after Reveal</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="explain-hands">
-                                                        <li><a href="#" data-value="true">Enabled</a></li>
-                                                        <li><a href="#" data-value="false">Disabled</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1594,16 +1596,16 @@
                                         <!-- AI Turn Time -->
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">AI Turn Time</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-ai-turn-time">AI Turn Time</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="ai-turn-time">
-                                                        <li><a href="#" data-value="0">Very Fast</a></li>
-                                                        <li><a href="#" data-value="400">Fast</a></li>
-                                                        <li><a href="#" data-value="800">Normal</a></li>
-                                                        <li><a href="#" data-value="1200">Slow</a></li>
-                                                        <li><a href="#" data-value="1600">Very Slow</a></li>
+                                                        <li><a href="#" data-value="0" data-l10n="settings-speed-very-fast">Very Fast</a></li>
+                                                        <li><a href="#" data-value="400" data-l10n="settings-speed-fast">Fast</a></li>
+                                                        <li><a href="#" data-value="800" data-l10n="settings-speed-normal">Normal</a></li>
+                                                        <li><a href="#" data-value="1200" data-l10n="settings-speed-slow">Slow</a></li>
+                                                        <li><a href="#" data-value="1600" data-l10n="settings-speed-very-slow">Very Slow</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1612,15 +1614,15 @@
                                         <!-- Deal Animation -->
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Deal Animation</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-deal-animation">Deal Animation</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="deal-speed">
-                                                        <li><a href="#" data-value="0">Disabled</a></li>
-                                                        <li><a href="#" data-value="200">Fast</a></li>
-                                                        <li><a href="#" data-value="500">Normal</a></li>
-                                                        <li><a href="#" data-value="1000">Slow</a></li>
+                                                        <li><a href="#" data-value="0" data-l10n="setting-disabled">Disabled</a></li>
+                                                        <li><a href="#" data-value="200" data-l10n="settings-speed-fast">Fast</a></li>
+                                                        <li><a href="#" data-value="500" data-l10n="settings-speed-normal">Normal</a></li>
+                                                        <li><a href="#" data-value="1000" data-l10n="settings-speed-slow">Slow</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1628,14 +1630,14 @@
 
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Minimal UI</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-minimal-ui">Minimal UI</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="minimal-ui">
-                                                        <li class="active"><a href="#" data-value="false">Disabled</a>
+                                                        <li class="active"><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a>
                                                         </li>
-                                                        <li><a href="#" data-value="true">Enabled</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1643,7 +1645,7 @@
 
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">UI Text Weight</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-ui-text-weight">UI Text Weight</h4>
                                             </td>
                                             <td class="text-option-container">
                                                 <span class="text-option-sample">Example Text</span>
@@ -1654,7 +1656,7 @@
 
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">UI Text Width</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-ui-text-width">UI Text Width</h4>
                                             </td>
                                             <td class="text-option-container">
                                                 <span class="text-option-label" class="text-width-label">100</span>
@@ -1664,13 +1666,13 @@
 
                                         <tr class="ui-theme-select-container" style="display: none;">
                                             <td>
-                                                <h4 class="modal-title modal-left">UI Theme</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-ui-theme">UI Theme</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="ui-theme">
-                                                        <li><a href="#" data-value="default">Light Mode</a></li>
-                                                        <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
+                                                        <li><a href="#" data-value="default" data-l10n="settings-ui-light-mode">Light Mode</a></li>
+                                                        <li><a href="#" data-value="dark-mode" data-l10n="settings-ui-dark-mode">Dark Mode</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1679,13 +1681,13 @@
 
                                         <tr>
                                             <td>
-                                                <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-visual-finishing-effect">Visual Finishing Effect</h4>
                                             </td>
                                             <td>
                                                 <nav>
                                                     <ul class="pagination" data-option="player-finishing-effect">
-                                                        <li><a href="#" data-value="true">Enabled</a></li>
-                                                        <li><a href="#" data-value="false">Disabled</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </nav>
                                             </td>
@@ -1693,11 +1695,11 @@
                                         <!-- Player Masturbation Timer -->
                                         <tr>
                                             <td style="width:25%">
-                                                <h4 class="modal-title modal-left">How long do you... last?</h4>
+                                                <h4 class="modal-title modal-left" data-l10n="settings-masturbation-timer">How long do you... last?</h4>
                                             </td>
                                             <td>
                                                 <input type="number" min="1"
-                                                    data-option="player-masturbation-timer">&nbsp;Phases
+                                                    data-option="player-masturbation-timer">&nbsp;<span data-l10n="settings-masturbation-phases">Phases</span>
                                             </td>
                                         </tr>
 
@@ -1715,7 +1717,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="options-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="saveOptions()">Close</button>
+                                    data-dismiss="modal" onclick="saveOptions()" data-l10n="close-button">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -1734,17 +1736,17 @@
                     <!-- Start of Modal Content -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title text-center"><b>Submit an Issue Report</b></h3>
+                            <h3 class="modal-title text-center"><b><span data-l10n="bug-report-window-title">Submit an Issue Report</span></b></h3>
                         </div>
                         <div class="modal-body">
                             <div class="bug-report-form">
                                 <form>
                                     <div class="form-group">
-                                        <label for="bug-report-type">Issue Type</label>
+                                        <label for="bug-report-type" data-l10n="bug-report-type">Issue Type</label>
                                         <select class="form-control" id="bug-report-type"></select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="bug-report-desc">Issue Description (required):</label>
+                                        <label for="bug-report-desc" data-l10n="bug-report-description">Issue Description (required):</label>
                                         <textarea class="form-control" id="bug-report-desc" rows="5"
                                             cols="80"></textarea>
                                     </div>
@@ -1752,28 +1754,28 @@
                             </div>
                             <div class="bug-report-out-wrapper">
                                 <label>
-                                    Issue Report Data
+                                    <span data-l10n="bug-report-data">Issue Report Data</span>
                                     <span id="bug-report-copy-btn" class="glyphicon glyphicon-scissors"
                                         data-toggle="tooltip" data-placement="right" title="Copy Report Text"></span>
                                 </label>
                                 <textarea rows="4" cols="80" readonly id="bug-report-output"></textarea>
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-dont-include-data">
                                     Please, don't include the report data in the description!
                                 </div>
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-click-send">
                                     To submit a bug report, just hit 'Send', below.
                                 </div>
                                 <div class="bug-report-out-explanation">
-                                    To submit an issue report <em>manually</em>:
+                                    <span data-l10n="bug-report-manually">To submit an issue report <em>manually</em>:</span>
                                     <ol>
-                                        <li>Copy the Issue Report Data above into a text-sharing service such as <a
+                                        <li><span data-l10n="bug-report-manually-step-1">Copy the Issue Report Data above into a text-sharing service such as <a
                                                 target="_blank" href="https://pastebin.com/">Pastebin</a> or <a
-                                                target="_blank" href="https://gist.github.com">Gist</a>.</li>
-                                        <li>Submit your issue report (with the Data above!) to the developers on our
+                                                target="_blank" href="https://gist.github.com">Gist</a>.</span></li>
+                                        <li><span data-l10n="bug-report-manually-step-2">Submit your issue report (with the Data above!) to the developers on our
                                             subreddit, <a target="_blank" href="https://www.reddit.com/r/spnati">/r/spnati</a> or
                                             through our <a
                                                 target="_blank" href="https://reddit.com/r/spnati/comments/98k7s4/reminder_95_percent_of_the_discussion_about_this/">Discord
-                                                server</a>.</li>
+                                                server</a>.</span></li>
                                     </ol>
                                     <div data-l10n="bug-report-publicly-viewable">Keep in mind that bug reports sent to us are publicly viewable!</div>
                                 </div>
@@ -1782,9 +1784,9 @@
                         <div class="modal-footer">
                             <div id="bug-report-status"></div>
                             <button id="bug-report-modal-send-button" class="bordered smooth-button modal-button"
-                                onclick="sendBugReport()" disabled>Send</button>
+                                onclick="sendBugReport()" disabled data-l10n="send-button">Send</button>
                             <button id="bug-report-modal-button" class="bordered smooth-button modal-button"
-                                onclick="closeBugReportModal()">Close</button>
+                                onclick="closeBugReportModal()" data-l10n="close-button">Close</button>
                         </div>
                     </div>
                     <!-- End of Modal Content -->
@@ -1802,57 +1804,57 @@
                     <!-- Start of Modal Content -->
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title text-center"><b>Submit Character Feedback</b></h3>
+                            <h3 class="modal-title text-center"><b><span data-l10n="feedback-window-title">Submit Character Feedback</span></b></h3>
                         </div>
                         <!-- Yes, we reuse the bug-report-form etc. classes here. That's intentional. -->
                         <div class="modal-body">
                             <div class="bug-report-form">
                                 <p>
-                                    Voice your thoughts on a character here.
+                                    <span data-l10n="feedback-voice-your-thoughts">Voice your thoughts on a character here.</span>
                                 </p>
                                 <p>
-                                    Please remember that behind every character, there are human creators hard at work.
+                                    <span data-l10n="feedback-be-nice">Please remember that behind every character, there are human creators hard at work.
                                     <br>
-                                    Be nice!
+                                    Be nice!</span>
                                     <br>
                                 </p>
                                 <p>
-                                    Also, if you would like to report a specific problem with a character, please send a
-                                    <i>bug</i> report instead.
+                                    <span data-l10n="feedback-or-bug-report">Also, if you would like to report a specific problem with a character, please send a
+                                    <em>bug</em> report instead.</span>
                                 </p>
                                 <form>
                                     <div class="form-group">
-                                        <label for="feedback-report-character">Feedback For:</label>
+                                        <label for="feedback-report-character" data-l10n="feedback-for">Feedback For:</label>
                                         <select class="form-control" id="feedback-report-character"></select>
                                     </div>
                                     <div class="feedback-message-container">
-                                        <h3>Message from <span class="feedback-character-name"></span>'s creator(s):
+                                        <h3><span data-l10n="feedback-message-from-creator">Message from <span class="feedback-character-name"></span>'s creator(s):</span>
                                         </h3>
                                         <p class="feedback-message"></p>
                                     </div>
                                     <h3 id="feedback-disabled-warning" style="display:none">Feedback is disabled for this character. Their creator(s) may not be able to see your comments.</h3>
                                     <div class="form-group">
-                                        <label for="feedback-report-desc">Feedback (required):</label>
+                                        <label for="feedback-report-desc" data-l10n="feedback-required">Feedback (required):</label>
                                         <textarea class="form-control" id="feedback-report-desc" rows="5"
                                             cols="80"></textarea>
                                     </div>
                                 </form>
                             </div>
                             <div class="bug-report-out-wrapper">
-                                <div class="bug-report-out-explanation">
+                                <div class="bug-report-out-explanation" data-l10n="feedback-click-send">
                                     To submit your feedback, just hit 'Send', below.
                                 </div>
-                                <div class="bug-report-out-explanation">
-                                    Keep in mind that feedback sent to us is publically viewable!
+                                <div class="bug-report-out-explanation" data-l10n="bug-report-publicly-viewable">
+                                    Keep in mind that feedback sent to us is publicly viewable!
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <div id="feedback-report-status"></div>
                             <button id="feedback-report-modal-send-button" class="bordered smooth-button modal-button"
-                                onclick="sendFeedbackReport()" disabled>Send</button>
+                                onclick="sendFeedbackReport()" disabled data-l10n="send-button">Send</button>
                             <button id="feedback-report-modal-button" class="bordered smooth-button modal-button"
-                                onclick="closeFeedbackReportModal()">Close</button>
+                                onclick="closeFeedbackReportModal()" data-l10n="close-button">Close</button>
                         </div>
                     </div>
                     <!-- End of Modal Content -->
@@ -1940,10 +1942,10 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title text-center"><b id="calendar-header"><p>Events in <span id="calendar-header-year"></span></p></b></h3>
+                                <h3 class="modal-title text-center"><b id="calendar-header"><p><span data-l10n="events-calendar-title">Events in</span> <span id="calendar-header-year"></span></p></b></h3>
                             </div>
                             <div class="modal-body">
-                                <div id="event_summary">During an event the default background changes, and some characters receive unique costumes and dialogue relating to the special occasion. An 'Extension' of an event means that the content of the event is still available, but is no longer highlighted.</div>
+                                <div id="event_summary" data-l10n="event-summary">During an event, the default background changes, and some characters receive unique costumes and dialogue relating to the special occasion. An 'Extension' of an event means that the content of the event is still available, but is no longer highlighted.</div>
                                 <hr>
                                 <div id="eventList"></div>
                             </div>
@@ -2237,7 +2239,7 @@
                                         <p>If you want to cheat, download and play the offline version of SPNATI and
                                             change settings in <code>config.xml</code>, such as debug mode.</p>
                                         <p>Also, please do not use the bug reporter to role-play with the characters.
-                                            Again, you will be muted, and the reports are publically readable. You will
+                                            Again, you will be muted, and the reports are publicly readable. You will
                                             be mocked.</p>
                                     </div>
                                 </div>
@@ -2603,7 +2605,7 @@
                                             licensing (from contributors to the project), and "outbound" licensing (from the project back to contributors and users).
                                         </p>
                                         <p>
-                                            SPNATI also operates by this rule: by submitting contributions to SPNATI, you implicitly agree to make your contributions publically available to us
+                                            SPNATI also operates by this rule: by submitting contributions to SPNATI, you implicitly agree to make your contributions publicly available to us
                                             under the MIT License, posted above.
                                         </p>
                                     </div>
@@ -2663,14 +2665,14 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header" style="padding-bottom: 0;">
-                                <h4 class="modal-title text-center">Discord</h4>
-                                <p class="text-center">Join the official SPNatI servers to talk about your favorite characters, or to help create your own!</p>
-								<p class="text-center">By joining these servers, you are confirming that you are over the age of 18.</p>
+                                <h4 class="modal-title text-center"><span data-l10n="discord">Discord</span></h4>
+                                <p class="text-center"><span data-l10n="discord-summary">Join the official SPNatI servers to talk about your favorite characters, or to help create your own!</span></p>
+								<p class="text-center"><span data-l10n="discord-eighteen-plus">By joining these servers, you are confirming that you are over the age of 18.</span></p>
                             </div>
                             <div class="modal-body">
                                 <div class="modal-body-container">
                                     <div class="discord-row">
-                                        <div class="discord-desc" style="width:50%;">
+                                        <div class="discord-desc" style="width:50%;" data-l10n="discord-community-server">
                                             The Community Server is the place to go for chit-chat and general discussion about the game. If you just want to hang out and talk about the game and see work-in-progress content, join this server!  
                                         </div>
                                         <a href="https://discord.gg/6PYyTz3gYG" class="bordered discord-link" target="_blank">
@@ -2678,8 +2680,8 @@
                                         </a>
                                     </div>
                                     <div class="discord-row">
-                                        <div class="discord-desc" style="width:50%;">
-                                            The official Development Server is where characters each have their own channels for feedback, bug reports, and other technical discussion. If you want to make a character, you'll want to join this server.
+                                        <div class="discord-desc" style="width:50%;" data-l10n="discord-development-server">
+                                            The official Development Server is where characters each have their own channels for feedback, bug reports, and other technical discussion. If you want to make a character or see how they get made, you'll want to join this server.
                                         </div>
                                         <a href="https://discord.gg/rCqSXpr" class="bordered discord-link" target="_blank">
                                             <img class="img-responsive" style="margin-left: auto;margin-right: 5rem;" src="https://discord.com/api/guilds/390355199623036931/widget.png?style=banner2" alt="SPNatI Development">
@@ -2689,7 +2691,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="discord-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal">Close</button>
+                                    data-dismiss="modal" data-l10n="close-button">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -2948,13 +2950,13 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title text-center"><b>Settings</b></h3>
+                                <h3 class="modal-title text-center"><b><span data-l10n="settings">Settings</span></b></h3>
                                 <nav aria-label="Page navigation" class="text-center">
                                     <ul class="pagination">
-                                        <li class="settings-page-select active" data-page="game-settings"><a href="#" data-select-page="game-settings">Game Settings</a></li>
-                                        <li class="settings-page-select" data-page="roster-settings"><a href="#" data-select-page="roster-settings">Character Settings</a>
+                                        <li class="settings-page-select active" data-page="game-settings"><a href="#" data-select-page="game-settings" data-l10n="game-settings">Game Settings</a></li>
+                                        <li class="settings-page-select" data-page="roster-settings"><a href="#" data-select-page="roster-settings" data-l10n="roster-settings">Character Settings</a>
                                         </li>
-                                        <li class="settings-page-select" data-page="privacy-settings"><a href="#" data-select-page="privacy-settings">Privacy Settings</a>
+                                        <li class="settings-page-select" data-page="privacy-settings"><a href="#" data-select-page="privacy-settings" data-l10n="privacy-settings">Privacy Settings</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -2980,14 +2982,14 @@
                                             <!-- Short Game Mode -->
                                             <tr class="game-length-option">
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Game Length</h4>
-                                                    <h5 class="modal-left">How long should the game last? Until all players but one lose or until just the first person loses?</h5>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-game-length">Game Length</h4>
+                                                    <h5 class="modal-left" data-l10n="settings-game-length-description">How long should the game last? Until all players but one lose or until just the first person loses?</h5>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="short-game">
-                                                            <li class="active"><a href="#" data-value="false">One Winner</a></li>
-                                                            <li><a href="#" data-value="true">One Loser (Experimental)</a></li>
+                                                            <li class="active"><a href="#" data-value="false" data-l10n="settings-game-length-one-winner">One Winner</a></li>
+                                                            <li><a href="#" data-value="true"data-l10n="settings-game-length-one-loser">One Loser (Experimental)</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -2996,13 +2998,13 @@
                                             <!-- Auto Fade -->
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Auto Table Fade</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-auto-table-fade">Auto Table Fade</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="auto-fade">
-                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
-                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                            <li class="active"><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                            <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3011,13 +3013,13 @@
                                             <!-- Card Suggest -->
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Card Suggest</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-card-suggest">Card Suggest</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="card-suggest">
-                                                            <li><a href="#" data-value="true">Enabled</a></li>
-                                                            <li class="active"><a href="#" data-value="false">Disabled</a></li>
+                                                            <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                            <li class="active"><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3026,13 +3028,13 @@
                                             <!-- Explain Hands -->
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Explain all Hands after Reveal</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-explain-all-hands">Explain all Hands after Reveal</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="explain-hands">
-                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
-                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                            <li class="active"><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                            <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3041,16 +3043,16 @@
                                             <!-- AI Turn Time -->
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">AI Turn Time</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-ai-turn-time">AI Turn Time</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="ai-turn-time">
-                                                            <li><a href="#" data-value="0">Very Fast</a></li>
-                                                            <li><a href="#" data-value="400">Fast</a></li>
-                                                            <li class="active"><a href="#" data-value="800">Normal</a></li>
-                                                            <li><a href="#" data-value="1200">Slow</a></li>
-                                                            <li><a href="#" data-value="1600">Very Slow</a></li>
+                                                            <li><a href="#" data-value="0" data-l10n="settings-speed-very-fast">Very Fast</a></li>
+                                                            <li><a href="#" data-value="400" data-l10n="settings-speed-fast">Fast</a></li>
+                                                            <li class="active"><a href="#" data-value="800" data-l10n="settings-speed-normal">Normal</a></li>
+                                                            <li><a href="#" data-value="1200" data-l10n="settings-speed-slow">Slow</a></li>
+                                                            <li><a href="#" data-value="1600" data-l10n="settings-speed-very-slow">Very Slow</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3059,15 +3061,15 @@
                                             <!-- Deal Animation -->
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Deal Animation</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-deal-animation">Deal Animation</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="deal-speed">
-                                                            <li><a href="#" data-value="0">Disabled</a></li>
-                                                            <li class="active"><a href="#" data-value="200">Fast</a></li>
-                                                            <li><a href="#" data-value="500">Normal</a></li>
-                                                            <li><a href="#" data-value="1000">Slow</a></li>
+                                                            <li><a href="#" data-value="0" data-l10n="setting-disabled">Disabled</a></li>
+                                                            <li class="active"><a href="#" data-value="200" data-l10n="settings-speed-fast">Fast</a></li>
+                                                            <li><a href="#" data-value="500" data-l10n="settings-speed-normal">Normal</a></li>
+                                                            <li><a href="#" data-value="1000" data-l10n="settings-speed-slow">Slow</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3075,14 +3077,14 @@
 
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Minimal UI</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-minimal-ui">Minimal UI</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="minimal-ui">
-                                                            <li class=""><a href="#" data-value="false">Disabled</a>
+                                                            <li class=""><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a>
                                                             </li>
-                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
+                                                            <li class="active"><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3090,7 +3092,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">UI Text Weight</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-ui-text-weight">UI Text Weight</h4>
                                                 </td>
                                                 <td class="text-option-container">
                                                     <span class="text-option-sample">Example Text</span>
@@ -3101,7 +3103,7 @@
 
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">UI Text Width</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-ui-text-width">UI Text Width</h4>
                                                 </td>
                                                 <td class="text-option-container">
                                                     <span class="text-option-label text-width-label">100</span>
@@ -3111,13 +3113,13 @@
 
                                             <tr class="ui-theme-select-container">
                                                 <td>
-                                                    <h4 class="modal-title modal-left">UI Theme</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-ui-theme">UI Theme</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="ui-theme">
-                                                            <li class="active"><a href="#" data-value="default">Light Mode</a></li>
-                                                            <li><a href="#" data-value="dark-mode">Dark Mode</a></li>
+                                                            <li class="active"><a href="#" data-value="default" data-l10n="settings-ui-light-mode">Light Mode</a></li>
+                                                            <li><a href="#" data-value="dark-mode" data-l10n="settings-ui-dark-mode">Dark Mode</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3126,13 +3128,13 @@
 
                                             <tr>
                                                 <td>
-                                                    <h4 class="modal-title modal-left">Visual Finishing Effect</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-visual-finishing-effect">Visual Finishing Effect</h4>
                                                 </td>
                                                 <td>
                                                     <nav>
                                                         <ul class="pagination" data-option="player-finishing-effect">
-                                                            <li class="active"><a href="#" data-value="true">Enabled</a></li>
-                                                            <li><a href="#" data-value="false">Disabled</a></li>
+                                                            <li class="active"><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                            <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                         </ul>
                                                     </nav>
                                                 </td>
@@ -3140,10 +3142,10 @@
                                             <!-- Player Masturbation Timer -->
                                             <tr>
                                                 <td style="width:25%">
-                                                    <h4 class="modal-title modal-left">How long do you... last?</h4>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-masturbation-timer">How long do you... last?</h4>
                                                 </td>
                                                 <td>
-                                                    <input type="number" min="1" data-option="player-masturbation-timer">&nbsp;Phases
+                                                    <input type="number" min="1" data-option="player-masturbation-timer">&nbsp;<span data-l10n="settings-masturbation-phases">Phases</span>
                                                 </td>
                                             </tr>
 
@@ -3160,139 +3162,139 @@
                                     </div>
 
                                     <div class="settings-page container-fluid" data-page="roster-settings" style="display:none">
-                                        <h3 class="modal-title text-center extra-characters-options" hidden><b>Costumes</b></h3>
+                                        <h3 class="modal-title text-center extra-characters-options" hidden><b><span data-l10n="settings-costumes">Costumes</span></b></h3>
 
                                         <table class="extra-settings-group extra-characters-options" hidden>
                                             <tr>
                                                 <td class="setting-toggle">
                                                     <ul class="pagination" id="hl-evergreen-alts-option" data-option="hl-evergreen-alts">
-                                                        <li><a href="#" data-value="all">All</a></li>
-                                                        <li><a href="#" data-value="evergreen">No events</a></li>
-                                                        <li class="active"><a href="#" data-value="off">Disabled</a></li>
+                                                        <li><a href="#" data-value="all" data-l10n="all">All</a></li>
+                                                        <li><a href="#" data-value="evergreen" data-l10n="settings-costumes-no-events">No events</a></li>
+                                                        <li class="active"><a href="#" data-value="off" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">Randomize costumes on selection screen</h4>
-                                                    <h5 class="modal-left">When an event isn't active, randomly select an available costume<br />for each character.</h5>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-costumes-randomize">Randomize costumes on selection screen</h4>
+                                                    <h5 class="modal-left" data-l10n="settings-costumes-description">When an event isn't active, randomly select an available costume<br />for each character.</h5>
                                                 </td>
                                             </tr>
                                         </table>
 
-                                        <h3 class="modal-title text-center extra-characters-options" hidden><b>Extra Characters</b></h3>
+                                        <h3 class="modal-title text-center extra-characters-options" hidden><b><span data-l10n="settings-extra-characters">Extra Characters</span></b></h3>
 
                                         <table class="extra-settings-group extra-characters-options" hidden>
                                             <tr class="offline-option">
                                                 <td class="setting-toggle">
                                                     <ul class="pagination character-status-toggle" id="show-offline" data-status="offline">
-                                                        <li><a href="#" data-value="true">Show</a></li>
-                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="settings-show">Show</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="settings-hide">Hide</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">🕸️ Legacy Characters</h4>
-                                                    <h5 class="modal-left">These characters no longer meet the standards of the main game,<br />but are still fully playable.</h5>
+                                                    <h4 class="modal-title modal-left">🕸️ <span data-l10n="settings-legacy-characters">Legacy Characters</span></h4>
+                                                    <h5 class="modal-left" data-l10n="settings-legacy-description">These characters no longer meet the standards of the main game,<br />but are still fully playable.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr class="incomplete-option">
                                                 <td class="setting-toggle">
                                                     <ul class="pagination character-status-toggle" id="show-incomplete" data-status="incomplete">
-                                                        <li><a href="#" data-value="true">Show</a></li>
-                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="settings-show">Show</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="settings-hide">Hide</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">🔧 Incomplete Characters</h4>
-                                                    <h5 class="modal-left">These characters never completed the process to be added<br />to the main game, so they may be of lower quality.<br />On spnati.net, these are restricted to the Testing Roster.</h5>
+                                                    <h4 class="modal-title modal-left">🔧 <span data-l10n="settings-incomplete-characters">Incomplete Characters</span></h4>
+                                                    <h5 class="modal-left" data-l10n="settings-incomplete-characters-description">These characters never completed the process to be added<br />to the main game, so they may be of lower quality.<br />On spnati.net, these are restricted to the Testing Roster.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr class="event-option">
                                                 <td class="setting-toggle">
                                                     <ul class="pagination character-status-toggle" id="show-event" data-status="event">
-                                                        <li><a href="#" data-value="true">Show</a></li>
-                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="settings-show">Show</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="settings-hide">Hide</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">🃏 April Fool's Day Characters</h4>
-                                                    <h5 class="modal-left">These are joke characters only available in the main game<br />during the week of April Fool's Day.</h5>
+                                                    <h4 class="modal-title modal-left">🃏 <span data-l10n="settings-april-fools-characters">April Fool's Day Characters</span></h4>
+                                                    <h5 class="modal-left" data-l10n="settings-april-fools-characters-description">These are joke characters only available in the main game<br />during the week of April Fool's Day.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr class="duplicate-option">
                                                 <td class="setting-toggle">
                                                     <ul class="pagination character-status-toggle" id="show-duplicate" data-status="duplicate">
-                                                        <li><a href="#" data-value="true">Show</a></li>
-                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="settings-show">Show</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="settings-hide">Hide</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">👥 Duplicate Characters</h4>
-                                                    <h5 class="modal-left">These are usually older versions of characters that have been replaced.</h5>
+                                                    <h4 class="modal-title modal-left">👥 <span data-l10n="settings-duplicate-characters">Duplicate Characters</span></h4>
+                                                    <h5 class="modal-left" data-l10n="settings-duplicate-characters-description">These are usually older versions of characters that have been replaced.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr class="broken-option">
                                                 <td class="setting-toggle">
                                                     <ul class="pagination character-status-toggle" id="show-broken" data-status="broken">
-                                                        <li><a href="#" data-value="true">Show</a></li>
-                                                        <li><a href="#" data-value="false">Hide</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="settings-show">Show</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="settings-hide">Hide</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">❌ Broken Characters</h4>
-                                                    <h5 class="modal-left">These characters have large amounts of placeholder images or dialogue.</h5>
+                                                    <h4 class="modal-title modal-left">❌ <span data-l10n="settings-broken-characters">Broken Characters</span></h4>
+                                                    <h5 class="modal-left" data-l10n="settings-broken-characters-description">These characters have large amounts of placeholder images or dialogue.</h5>
                                                 </td>
                                             </tr>
                                         </table>
                                     </div>
 
                                     <div class="settings-page container-fluid" data-page="privacy-settings" style="display:none">
-                                        <h3 class="modal-title text-center"><b>Privacy Settings</b></h3>
+                                        <h3 class="modal-title text-center"><b><span data-l10n="privacy-settings">Privacy Settings</span></b></h3>
 
                                         <table class="extra-settings-group">
                                             <tr>
                                                 <td class="setting-toggle">
                                                     <ul class="pagination tracking-status-toggle" id="tracking-basic" data-tracking-option="basic">
-                                                        <li><a href="#" data-value="true">Enable</a></li>
-                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">Basic Game Statistics</h4>
-                                                    <h5 class="modal-left">Send basic information about the characters you play against, how each game ends, UI settings, and selected backgrounds.</h5>
-                                                    <h5 class="modal-left">We use this information to identify popular characters and backgrounds, and to tweak character difficulty.</h5>
-                                                    <h5 class="modal-left">Disabling this will disable all data collection.</h5>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-basic-game-stats">Basic Game Statistics</h4>
+                                                    <h5 class="modal-left" data-l10n="settings-basic-game-stats-1">Send basic information about the characters you play against, how each game ends, UI settings, and selected backgrounds.</h5>
+                                                    <h5 class="modal-left" data-l10n="settings-basic-game-stats-2">We use this information to identify popular characters and backgrounds, and to tweak character difficulty.</h5>
+                                                    <h5 class="modal-left" data-l10n="settings-basic-game-stats-3">Disabling this will disable all data collection.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="setting-toggle">
                                                     <ul class="pagination tracking-status-toggle" id="tracking-persistent" data-tracking-option="persistent">
-                                                        <li><a href="#" data-value="true">Enable</a></li>
-                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">Unlocked Item Reporting</h4>
-                                                    <h5 class="modal-left">Send information indicating what collectibles and epilogues you've unlocked, plus a randomly-generated ID connecting together the games you play during this session.</h5>
-                                                    <h5 class="modal-left">We use this information to analyze how players approach the game and what they look for when playing.</h5>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-unlocked-item-reporting">Unlocked Item Reporting</h4>
+                                                    <h5 class="modal-left" data-l10n="settings-unlocked-item-reporting-1">Send information indicating what collectibles and epilogues you've unlocked, plus a randomly-generated ID connecting together the games you play during this session.</h5>
+                                                    <h5 class="modal-left" data-l10n="settings-unlocked-item-reporting-2">We use this information to analyze how players approach the game and what they look for when playing.</h5>
                                                 </td>
                                             </tr>
 
                                             <tr>
                                                 <td class="setting-toggle">
                                                     <ul class="pagination tracking-status-toggle" id="tracking-demographics" data-tracking-option="demographics">
-                                                        <li><a href="#" data-value="true">Enable</a></li>
-                                                        <li><a href="#" data-value="false">Disable</a></li>
+                                                        <li><a href="#" data-value="true" data-l10n="setting-enabled">Enabled</a></li>
+                                                        <li><a href="#" data-value="false" data-l10n="setting-disabled">Disabled</a></li>
                                                     </ul>
                                                 </td>
                                                 <td class="setting-description">
-                                                    <h4 class="modal-title modal-left">Anonymous Demographics Reporting</h4>
-                                                    <h5 class="modal-left">Send information about the player tags you apply (including selected gender and size) and the clothing you choose to wear in-game.</h5>
-                                                    <h5 class="modal-left">This does <em>not</em> include any information that directly identifies you or your location.</h5>
-                                                    <h5 class="modal-left">We use this information to generally analyze what audiences play this game, as well as what characters are popular with particular audiences.</h5>
+                                                    <h4 class="modal-title modal-left" data-l10n="settings-anonymous-demographics">Anonymous Demographics Reporting</h4>
+                                                    <h5 class="modal-left" data-l10n="settings-anonymous-demographics-1">Send information about the player tags you apply (including selected gender and size) and the clothing you choose to wear in-game.</h5>
+                                                    <h5 class="modal-left" data-l10n="settings-anonymous-demographics-2">This does <em>not</em> include any information that directly identifies you or your location.</h5>
+                                                    <h5 class="modal-left" data-l10n="settings-anonymous-demographics-3">We use this information to generally analyze what audiences play this game, as well as what characters are popular with particular audiences.</h5>
                                                 </td>
                                             </tr>
                                         </table>
@@ -3301,7 +3303,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button id="options-modal-button" class="bordered smooth-button modal-button"
-                                    data-dismiss="modal" onclick="saveOptions(); saveSettings()">Close</button>
+                                    data-dismiss="modal" onclick="saveOptions(); saveSettings()" data-l10n="close-button">Close</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
@@ -3515,7 +3517,7 @@
             </button>
             <button class="bordered table-feedback-report-button game-ui"  onclick="showFeedbackReportModal()" tabindex="5">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                <div>Feedback</div>
+                <div data-l10n="feedback-envelope">Feedback</div>
             </button>			
 
             <!-- Game Table -->
@@ -3729,40 +3731,40 @@
                         <li><button id="game-faq-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showHelpModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-                                <span class="game-menu-label">Help and FAQ</span>
+                                <span class="game-menu-label" data-l10n="help-button">Help & FAQ</span>
                             </button></li>
                         <li><button id="game-feedback-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showFeedbackReportModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                <span class="game-menu-label">Character Feedback</span>
+                                <span class="game-menu-label" data-l10n="game-feedback-button">Character Feedback</span>
                             </button></li>
                         <li><button id="game-log-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showLogModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                                <span class="game-menu-label">Dialogue Log</span>
+                                <span class="game-menu-label" data-l10n="game-log-button">Dialogue Log</span>
                             </button></li>
                         <li><button id="game-home-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showRestartModal()" tabindex="1">
                                 <!-- doEpilogueModal -->
                                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                                <span class="game-menu-label">Return to Title</span>
+                                <span class="game-menu-label" data-l10n="game-home-button">Return to Title</span>
                             </button>
                         <li>
                         <li><button id="hard-refresh-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="updateAllGameVisuals()" tabindex="1">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-                                <span class="game-menu-label">Refresh Game Visuals</span>
+                                <span class="game-menu-label" data-l10n="hard-refresh-button">Refresh Game Visuals</span>
                             </button>
                         <li>						
                         <li><button id="game-settings-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="showOptionsModal()" tabindex="1">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                                <span class="game-menu-label">Options</span>
+                                <span class="game-menu-label" data-l10n="options">Options</span>
                             </button></li>
                         <li><button id="game-fullscreen-button" class="dropdown-button-item bordered smooth-button red"
                                 onclick="toggleFullscreen()" tabindex="1">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                                <span class="game-menu-label">Toggle full screen mode</span>
+                                <span class="game-menu-label" data-l10n="game-fullscreen-button">Toggle full screen mode</span>
                             </button></li>
                     </ul>
                 </div>
@@ -3857,7 +3859,7 @@
                         <!-- Start of Modal Content -->
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h3 class="modal-title text-center">The game is now over...</h3>
+                                <h3 class="modal-title text-center"><span data-l10n="game-is-over">The game is now over...</span></h3>
                                 <h5 id="epilogue-header-text" class="modal-title text-center"></h5>
                                 <hr>
                                 <h5 id="epilogue-header-tip" class="modal-title text-center"></h5>
@@ -3873,13 +3875,13 @@
                             <div class="modal-footer modal-footer-button-row">
                                 <button id="epilogue-modal-accept-button"
                                     class="bordered smooth-button modal-button epilogue-modal-button"
-                                    onclick="doEpilogue()">Choose</button>
+                                    onclick="doEpilogue()" data-l10n="choose-button">Choose</button>
                                 <button id="epilogue-modal-feedback-button"
                                     class="bordered smooth-button green modal-button epilogue-modal-button"
-                                    onclick="showFeedbackReportModal($epilogueSelectionModal)">Feedback?</button>
+                                    onclick="showFeedbackReportModal($epilogueSelectionModal)" data-l10n="feedback-question-mark">Feedback?</button>
                                 <button id="epilogue-modal-restart-button"
                                     class="bordered smooth-button modal-button epilogue-modal-button"
-                                    onclick="showRestartModal()" data-dismiss="modal">Restart?</button>
+                                    onclick="showRestartModal()" data-dismiss="modal" data-l10n="restart-question-mark">Restart?</button>
                             </div>
                         </div>
                         <!-- End of Modal Content -->
