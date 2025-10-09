@@ -120,7 +120,7 @@ $characterDebugModal = $("#character-debug-modal");
 
 /* Screen State */
 $previousScreen = null;
-const supportedLanguages = ['es', 'ja']; // List of supported language codes
+const supportedLanguages = ['es']; // List of supported language codes
 let userLanguage = 'en'; // Default language
 const localizationData = {}; // Will hold loaded translations
 
