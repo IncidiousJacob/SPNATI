@@ -257,6 +257,7 @@
         <note id="115">"WomanNotPing" will be set back to 1 almost immediately if there's another woman at the table.</note>
         <note id="359">It can be set by the player coming to the table as a woman, leaving, and then returning as a man. If it's legitimate, it will be set again almost instantly.</note>
         <note id="360">Because restarting a game can have weird effects here.</note>
+        <note id="382">"Needlettuce" is the term for lettuce used in other Mana games. It's not used in Trials of Mana, specifically, but the concept of vegetables halfway named for other things is common enough in the franchise.</note>
     </notes>
     <labels>
         <label id="137" label="For his alternate outfit" folder="" sort="0" />
@@ -407,7 +408,7 @@
         <label id="379" label="Lucina + Topless man" folder="Mulan reveal" sort="0" />
         <label id="380" label="Remove hat (Magus)" folder="" sort="0" />
     </labels>
-    <nextId>380</nextId>
+    <nextId>382</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
@@ -450,11 +451,14 @@
         <marker scope="Private" name="cl_Train">Used for Pose Maker</marker>
         <marker scope="Public" name="FFBraveExvius">Angela notes that a Final Fantasy character looks familiar, with the word "Exvius" running through her mind.</marker>
         <marker scope="Public" name="GuessWhat">Encourages a male player to look her way before she unexpectedly removes her top.</marker>
+        <marker scope="Public" name="Hex_GhostShip">Angela recalls an incident with a cursed ghost ship.</marker>
         <marker scope="Public" name="Hex_SmiteHaunter">It's a ghost! And totally not just a Pokemon!</marker>
         <marker scope="Public" name="Hex_SorryForFreakout">Angela apologizes to Hex Maniac for freaking out about Haunter.</marker>
         <marker scope="Private" name="IntelligencePenalty">Tracks when her intelligence is altered</marker>
         <marker scope="Public" name="Introductions">Angela introduces herself, bragging about her skills and defeating the Dragon Lord.</marker>
         <marker scope="Public" name="ISleepInPanties">Angela mentions sleeping only in panties - and in the presence of her adventuring companions! Scandalous!</marker>
+        <marker scope="Public" name="Jenetta_Beastfolk">Angela compares Jenetta to Ferolian bestmen, a humanoid cat named Niccolo, and a creature called a "Rabite".</marker>
+        <marker scope="Public" name="Jenetta_NeedlettuceBra">Angela thinks Jenetta's bra looks like "Needlettuce" (she really just means "lettuce").</marker>
         <marker scope="Public" name="Jura_MagusResponse0">Angela asks about Mejare, and comments that she noticed Jura staring at her.</marker>
         <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
         <marker scope="Public" name="Jura_Strip0">Angela asks Jura about Barnette</marker>
