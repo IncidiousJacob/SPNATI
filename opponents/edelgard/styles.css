@@ -1,0 +1,24 @@
+.dialogue .FlameEmperor[data-character="edelgard"] {
+  /*Represents the voice changer in the Flame Emperor's mask.*/
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.dialogue .Edelgard[data-character="edelgard"] {
+  /*Signifies that Edelgard is speaking when she and Altina share a speech bubble.*/
+  color: Red;
+}
+
+.dialogue .Altina[data-character="edelgard"] {
+  /*Signifies that Altina is speaking when she and Edelgard share a speech bubble.*/
+  color: Purple;
+}
+
+.dialogue .HegemonHusk[data-character="edelgard"] {
+  /*Represents the distorted voice of the Hegemon Husk.*/
+  color: Black;
+  text-shadow: 1px 1px 5px Red;
+  font-weight: 700;
+  font-style: italic;
+  font-variant: small-caps;
+}
