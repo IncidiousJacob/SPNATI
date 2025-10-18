@@ -193,6 +193,13 @@
         <response id="954" opponent="yuno_uno" opponentId="1325" />
         <response id="955" opponent="yuno_uno" opponentId="1315" />
         <response id="956" opponent="yae_miko" opponentId="425" />
+        <response id="988" opponent="vine_staff" opponentId="141" />
+        <response id="989" opponent="vine_staff" opponentId="32" />
+        <response id="990" opponent="vine_staff" opponentId="143" />
+        <response id="991" opponent="edelgard" opponentId="23" />
+        <response id="992" opponent="edelgard" opponentId="164" />
+        <response id="993" opponent="edelgard" opponentId="620" />
+        <response id="994" opponent="wikipe-tan" opponentId="576" />
     </responses>
     <notes>
         <note id="142">("Because I'm about to take my mask off, too...")</note>
@@ -1056,7 +1063,7 @@
         <label id="853" label="" folder="Targets&gt;Hex Maniac" sort="2" />
         <label id="854" label="" folder="Targets&gt;Hex Maniac" sort="41" />
         <label id="855" label="" folder="Targets&gt;Hex Maniac" sort="40" />
-        <label id="856" label="government [0]" color="1" folder="Targets" sort="213" />
+        <label id="856" label="government [0]" color="3" folder="Targets" sort="213" />
         <label id="857" label="" folder="Targets" sort="5" />
         <label id="858" label="" folder="Targets" sort="230" />
         <label id="859" label="" folder="Conditional Lines" sort="19" />
@@ -1131,38 +1138,75 @@
         <label id="927" label="" folder="Targets" sort="224" />
         <label id="928" label="" folder="Targets" sort="38" />
         <label id="929" label="" folder="Costumes&gt;Office" sort="0" />
-        <label id="930" label="office" folder="Background Reacts" sort="0" />
-        <label id="931" label="office" folder="Background Reacts" sort="0" />
-        <label id="932" label="office window" folder="Background Reacts" sort="0" />
-        <label id="933" label="office" folder="Background Reacts" sort="0" />
-        <label id="934" label="" folder="Targets" sort="0" />
-        <label id="935" label="" folder="Targets" sort="0" />
-        <label id="936" label="" folder="Targets" sort="0" />
-        <label id="937" label="" folder="Targets" sort="0" />
-        <label id="938" label="" folder="Player Names" sort="0" />
-        <label id="939" label="" folder="Player Names" sort="0" />
-        <label id="940" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="941" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="942" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="943" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="944" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="945" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="946" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="947" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="948" label="" folder="Targets&gt;Yuno" sort="0" />
+        <label id="930" label="office" folder="Background Reacts" sort="4" />
+        <label id="931" label="office" folder="Background Reacts" sort="5" />
+        <label id="932" label="office window" folder="Background Reacts" sort="6" />
+        <label id="933" label="office" folder="Background Reacts" sort="7" />
+        <label id="934" label="" folder="Targets" sort="218" />
+        <label id="935" label="" folder="Targets" sort="217" />
+        <label id="936" label="" folder="Targets" sort="220" />
+        <label id="937" label="" folder="Targets" sort="141" />
+        <label id="938" label="" folder="Player Names" sort="18" />
+        <label id="939" label="" folder="Player Names" sort="19" />
+        <label id="940" label="" folder="Targets&gt;Yuno" sort="8" />
+        <label id="941" label="" folder="Targets&gt;Yuno" sort="9" />
+        <label id="942" label="" folder="Targets&gt;Yuno" sort="10" />
+        <label id="943" label="" folder="Targets&gt;Yuno" sort="11" />
+        <label id="944" label="" folder="Targets&gt;Yuno" sort="14" />
+        <label id="945" label="" folder="Targets&gt;Yuno" sort="12" />
+        <label id="946" label="" folder="Targets&gt;Yuno" sort="15" />
+        <label id="947" label="" folder="Targets&gt;Yuno" sort="13" />
+        <label id="948" label="" folder="Targets&gt;Yuno" sort="16" />
         <label id="949" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="950" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="952" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="954" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="951" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="953" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="955" label="" folder="Targets&gt;Yuno" sort="0" />
-        <label id="956" label="" folder="Targets&gt;Yae Miko" sort="0" />
+        <label id="950" label="" folder="Targets&gt;Yuno" sort="4" />
+        <label id="952" label="" folder="Targets&gt;Yuno" sort="2" />
+        <label id="954" label="" folder="Targets&gt;Yuno" sort="7" />
+        <label id="951" label="" folder="Targets&gt;Yuno" sort="6" />
+        <label id="953" label="" folder="Targets&gt;Yuno" sort="5" />
+        <label id="955" label="" folder="Targets&gt;Yuno" sort="3" />
+        <label id="956" label="" folder="Targets&gt;Yae Miko" sort="2" />
+        <label id="957" label="Test" folder="Forfeit Specials&gt;Cat" sort="0" />
+        <label id="958" label="Cat mode start" folder="Forfeit Specials&gt;Cat" sort="2" />
+        <label id="959" label="Toy mode start" folder="Forfeit Specials&gt;Toy" sort="2" />
+        <label id="960" label="CatToy mode start" folder="Forfeit Specials&gt;CatToy" sort="0" />
+        <label id="961" label="Cat mode start" folder="Forfeit Specials&gt;Cat" sort="0" />
+        <label id="962" label="" folder="Forfeit Specials&gt;Cat" sort="3" />
+        <label id="963" label="Toy mode start" folder="Forfeit Specials&gt;Toy" sort="0" />
+        <label id="964" label="" folder="Hidden" sort="3" />
+        <label id="965" label="" folder="Player Names" sort="20" />
+        <label id="967" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="966" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="969" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="968" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="985" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="970" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="971" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="972" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="973" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="975" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="974" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="976" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="977" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="978" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="979" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="980" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="982" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="983" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="984" label="" folder="Costumes&gt;Halloween" sort="0" />
+        <label id="986" label="" folder="Targets&gt;Vine Staff" sort="0" />
+        <label id="987" label="" folder="Targets&gt;Vine Staff" sort="0" />
+        <label id="989" label="" folder="Targets&gt;Vine Staff" sort="0" />
+        <label id="990" label="" folder="Targets&gt;Vine Staff" sort="0" />
+        <label id="991" label="" folder="Targets&gt;Edelgard" sort="0" />
+        <label id="992" label="" folder="Targets&gt;Edelgard" sort="0" />
+        <label id="993" label="" folder="Targets&gt;Edelgard" sort="0" />
+        <label id="994" label="" folder="Targets" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>forfeit_mode==cat</posePreviewMarker>
+        <posePreviewMarker>yumeko_stage==0</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>956</nextId>
+    <nextId>994</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="30k_yen_underwear" />
@@ -1203,6 +1247,7 @@
         <marker scope="Public" name="caulifla_saiyan1" />
         <marker scope="Public" name="caulifla_saiyan2" />
         <marker scope="Public" name="cd_collectible_shirt_removed" />
+        <marker scope="Public" name="click1" />
         <marker scope="Public" name="collectible_momo_panties_revealed" />
         <marker scope="Public" name="counting_in_english" />
         <marker scope="Public" name="covid" />
@@ -1235,11 +1280,16 @@
         <marker scope="Public" name="dunban_dunbanPoetry_10" />
         <marker scope="Public" name="dunban_dunbanPoetry_11" />
         <marker scope="Public" name="dunban_dunbanPoetry_12" />
+        <marker scope="Public" name="edelgard_cannedCoffee" />
+        <marker scope="Public" name="edelgard_democracy" />
+        <marker scope="Public" name="edelgard_scars" />
         <marker scope="Private" name="epilogue_setting_male" />
         <marker scope="Public" name="fem_bedroom" />
         <marker scope="Public" name="fem_bedroom_like_hers" />
         <marker scope="Public" name="fitness_routinesResp" />
+        <marker scope="Public" name="forfeit_cat_enabled" />
         <marker scope="Public" name="forfeit_mode" />
+        <marker scope="Public" name="forfeit_toy_enabled" />
         <marker scope="Public" name="gwen_spiderwoman" />
         <marker scope="Public" name="gwen_spiderwoman2" />
         <marker scope="Public" name="Haunter_Intro" />
@@ -1289,6 +1339,15 @@
         <marker scope="Public" name="hilbert_enragement2" />
         <marker scope="Public" name="hutao_ghost" />
         <marker scope="Public" name="hutao_ghost_b" />
+        <marker scope="Public" name="hween_bloodless" />
+        <marker scope="Public" name="hween_boobCheck" />
+        <marker scope="Public" name="hween_booty" />
+        <marker scope="Public" name="hween_distraction" />
+        <marker scope="Public" name="hween_needle" />
+        <marker scope="Public" name="hween_noharm" />
+        <marker scope="Public" name="hween_prettyNurse" />
+        <marker scope="Public" name="hween_trained" />
+        <marker scope="Public" name="hween_tryhard" />
         <marker scope="Public" name="introducing_self" />
         <marker scope="Public" name="jim_conkA" />
         <marker scope="Public" name="jim_conkB" />
@@ -1411,8 +1470,13 @@
         <marker scope="Public" name="setogaya_clothingLanguage" />
         <marker scope="Public" name="she_shaved" />
         <marker scope="Public" name="skip_layers" />
+        <marker scope="Public" name="sleep_loose" />
+        <marker scope="Public" name="sleep_lounge" />
         <marker scope="Public" name="sleepwear_robe_opened" />
         <marker scope="Public" name="SpikeTheMonkey" />
+        <marker scope="Public" name="summer_lemonade" />
+        <marker scope="Public" name="sumr_holiday" />
+        <marker scope="Public" name="sumr_looknice" />
         <marker scope="Public" name="teacher_assistant" />
         <marker scope="Public" name="theflash_finished" />
         <marker scope="Public" name="theflash_impulseCola" />
@@ -1422,10 +1486,17 @@
         <marker scope="Public" name="toph_hair_down" />
         <marker scope="Public" name="undead_comment1" />
         <marker scope="Public" name="undead_comment2" />
+        <marker scope="Public" name="vday_endofyear" />
+        <marker scope="Public" name="vday_entire_world" />
         <marker scope="Public" name="Velvet_BirdsResp" />
         <marker scope="Public" name="Velvet_FreedomResp" />
         <marker scope="Public" name="velvet_mateResp" />
         <marker scope="Public" name="Velvet_PersonalityResp" />
+        <marker scope="Public" name="vine_biSlip_relatable" />
+        <marker scope="Public" name="vinestaff_gearSummon_threat" />
+        <marker scope="Public" name="vinestaff_rage1" />
+        <marker scope="Public" name="vinestaff_rage2" />
+        <marker scope="Public" name="vinestaff_summonGear" />
         <marker scope="Public" name="vinyl_musicPrompt" />
         <marker scope="Public" name="vinyl_pussy_selfie" />
         <marker scope="Public" name="vinylAnswer_followUp" />
@@ -1496,10 +1567,12 @@
         <marker scope="Public" name="yumeko__resp_51" />
         <marker scope="Public" name="yumeko__resp_52" />
         <marker scope="Public" name="yumeko_aqua_catmode" />
+        <marker scope="Public" name="yumeko_costume" />
         <marker scope="Public" name="yumeko_hjugging_toph" />
         <marker scope="Public" name="yumeko_hugging_toph" />
         <marker scope="Public" name="yumeko_imaginationResp" />
         <marker scope="Public" name="yumeko_newgame" />
+        <marker scope="Public" name="yumeko_stage" />
         <marker scope="Public" name="yuno_prompt_earworm_songs" />
         <marker scope="Public" name="yuno_self0a" />
         <marker scope="Public" name="yuno_self0b" />
