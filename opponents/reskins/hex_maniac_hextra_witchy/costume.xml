@@ -36,17 +36,17 @@
             </directive>
         </pose>
         <pose id="1-stripping">
-            <sprite id="Neutral" src="reskins/hex_maniac_hextra_witchy/1-Neutral.png" x="0" y="0" />
+            <sprite id="Neutral" src="reskins/hex_maniac_hextra_witchy/1-Stripping.png" x="0" y="0" />
             <sprite id="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/HaunterNeutral.png" x="0" y="300" alpha="100" />
             <sprite id="Haunter-hand2" parent="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/Haunter-hand2.png" x="68" y="494" rotation="0" />
             <sprite id="Haunter-hand2(copy)" parent="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/Haunter-hand2.png" x="447" y="497" scalex="-1" rotation="0" />
             <directive type="animation" id="Neutral" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/hex_maniac_hextra_witchy/1-Neutral.png" />
-                <keyframe time="3.85" src="reskins/hex_maniac_hextra_witchy/2-Neutral.png" />
+                <keyframe time="0" src="reskins/hex_maniac_hextra_witchy/1-Stripping.png" />
+                <keyframe time="4" src="reskins/hex_maniac_hextra_witchy/2-Awkward.png" />
             </directive>
             <directive type="animation" id="HeSpellsPlaceholder" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="300" alpha="100" />
-                <keyframe time="3.85" x="0" y="300" alpha="100" />
+                <keyframe time="3.85" x="0" y="300" alpha="80" />
                 <keyframe time="4.95" y="-300" alpha="0" />
             </directive>
             <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="linear">
@@ -273,17 +273,17 @@
             </directive>
         </pose>
         <pose id="1-stripping_Neg">
-            <sprite id="Neutral" src="reskins/hex_maniac_hextra_witchy/1-Sad.png" x="0" y="0" />
+            <sprite id="Neutral" src="reskins/hex_maniac_hextra_witchy/1-Stripping_Neg.png" x="0" y="0" />
             <sprite id="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/HaunterNeutral.png" x="0" y="300" alpha="100" />
             <sprite id="Haunter-hand2" parent="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/Haunter-hand2.png" x="68" y="494" rotation="0" />
             <sprite id="Haunter-hand2(copy)" parent="HeSpellsPlaceholder" src="reskins/hex_maniac_hextra_witchy/Haunter-hand2.png" x="447" y="497" scalex="-1" rotation="0" />
             <directive type="animation" id="Neutral" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/hex_maniac_hextra_witchy/1-Sad.png" />
-                <keyframe time="3.85" src="reskins/hex_maniac_hextra_witchy/2-Sad.png" />
+                <keyframe time="0" src="reskins/hex_maniac_hextra_witchy/1-Stripping_Neg.png" />
+                <keyframe time="4" src="reskins/hex_maniac_hextra_witchy/2-Sad.png" />
             </directive>
             <directive type="animation" id="HeSpellsPlaceholder" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="300" alpha="100" />
-                <keyframe time="3.85" x="0" y="300" alpha="100" />
+                <keyframe time="3.85" x="0" y="300" alpha="80" />
                 <keyframe time="4.95" y="-300" alpha="0" />
             </directive>
             <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="linear">
