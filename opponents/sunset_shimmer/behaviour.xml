@@ -1127,7 +1127,7 @@
         </trigger>
 
         <trigger id="must_strip_losing">
-            <case stage="4-6" addCharacterTags="aggressive">
+            <case stage="4-6" addCharacterTags="aggressive,mean">
                 <condition count="0" status="not_exposed" />
                 <state img="#-furious.png" marker="AngerIssues">Oh, {b}come on!{!reset}</state>
                 <state img="#-furious.png" marker="AngerIssues">Seriously?</state>
