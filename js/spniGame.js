@@ -80,14 +80,13 @@ gameDisplays = [
  **********************************************************************/
 
 /* pseudo constants */
-var GAME_DELAY = 800;
-var CARD_SUGGEST = false;
-var PLAYER_FINISHING_EFFECT = true;
-var EXPLAIN_ALL_HANDS = true;
-var AUTO_FADE = true;
-var MINIMAL_UI = true;
-var DEBUG = false;
-var SHORT_GAME_MODE = false;
+let GAME_DELAY = 800;
+let CARD_SUGGEST = false;
+let PLAYER_FINISHING_EFFECT = true;
+let EXPLAIN_ALL_HANDS = true;
+let AUTO_FADE = true;
+let MINIMAL_UI = true;
+let SHORT_GAME_MODE = false;
 const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
 
 /* game state
@@ -97,11 +96,11 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
  * Fourth element: whether the cards are revealed (used in rollback).
  */
-var eGamePhase = {
+const eGamePhase = Object.freeze({
     GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
     DEAL:      [ "Deal", startDealPhase, true, false ],
     AITURN:    [ "Next", continueDealPhase, true, false ],
-    EXCHANGE:  [ undefined, completeExchangePhase, true, false ],
+    EXCHANGE:  [ undefined, completeExchangePhase, true, null ],
     REVEAL:    [ "Reveal", completeRevealPhase, true, true ],
     PRESTRIP:  [ "Continue", completeContinuePhase, false, true ],
     STRIP:     [ "Strip", completeStripPhase, false, true ],
@@ -110,7 +109,7 @@ var eGamePhase = {
     GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
     END_FORFEIT: [ undefined ], // Specially handled; not a real phase. nextGamePhase will never be set to this.
                                 // tickForfeitTimers() will always return true in this situation.
-};
+});
 
 let gamePhase = null;
 let nextGamePhase = null;
@@ -208,6 +207,12 @@ function updateGameVisual (player) {
     }
 }
 
+function updateGameVisuals () {
+    for (var i = 1; i < players.length; i++) {
+        updateGameVisual(i);
+    }
+}
+
 /************************************************************
  * Updates all of the main visuals on the main game screen.
  ************************************************************/
@@ -217,8 +222,8 @@ function updateAllGameVisuals () {
         // This incorrectly sets the player clothing area display to block, but that's corrected by displayHumanPlayerClothing
         $gamePlayerAreas[i].toggle(!!players[i] && !(players[i].out && !players[i].hand)
                                    && !(gameOver && players.every(p => p.hand == null)));
-        if (i > 0) updateGameVisual(i);
     }
+    updateGameVisuals();
     updateHumanPlayerMasturbationVisual();
     displayHumanPlayerClothing();
     displayAllHands(gamePhase[3]);
@@ -337,7 +342,7 @@ function advanceTurn () {
             /* update their speech and skip their turn */
             players[currentTurn].singleBehaviourUpdate(players[currentTurn].forfeit[1] == CAN_SPEAK ?
                                                  addTriggers(players[currentTurn].forfeit[0], ANY_HAND) :
-                                                 players[currentTurn].forfeit[0]);
+                                                       players[currentTurn].forfeit[0]);
 
             timeoutID = window.setTimeout(advanceTurn, GAME_DELAY);
             return;
@@ -348,8 +353,8 @@ function advanceTurn () {
     if (currentTurn == 0) {
         /* Reprocess reactions. */
         updateAllVolatileBehaviours();
-        
         commitAllBehaviourUpdates();
+        updateGameVisuals();
 
         /* human player's turn */
         if (humanPlayer.out) {
@@ -926,10 +931,8 @@ function showRestartModal () {
  * from a rolled-back state.
  ************************************************************/
 function RollbackPoint (logPlayers) {
-    this.playerData = [];
-    
-    players.forEach(function (p) {
-        var data = {};
+    this.playerData = players.map(function (p) {
+        const data = {};
         
         data.slot = p.slot;
         data.stage = p.stage;
@@ -945,6 +948,7 @@ function RollbackPoint (logPlayers) {
         }
         
         if (p.chosenState) data.chosenState = new State(p.chosenState);
+        data.keepPose = p.keepPose;
 
         if (p.hand) data.hand = p.hand.clone(); else data.hand = p.hand;
 
@@ -958,8 +962,8 @@ function RollbackPoint (logPlayers) {
             data.clothingRemovalStatus = p.clothing.map(c => c.removed);
         }
 
-        this.playerData.push(data);
-    }.bind(this));
+        return data;;
+    });
     
     /* Record data for bug reporting purposes. */
     this.currentRound = currentRound;
@@ -1009,6 +1013,7 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.ticksInStage = p.ticksInStage;
         loadPlayer.markers = p.markers;
         loadPlayer.chosenState = p.chosenState;
+        loadPlayer.keepPose = p.keepPose;
         loadPlayer.timer = p.timer;
         loadPlayer.forfeit = p.forfeit;
         loadPlayer.out = p.out;
@@ -1078,8 +1083,9 @@ function exitRollback() {
      * returning to a FORFEIT phase, a character that's just started
      * masturbating will have been in the stage after the
      * start_masturbating case when the return rollback point was
-     * created. */
-    transcriptHistory.findLast(e => e instanceof RollbackPoint).load();
+     * created.
+     (Should no longer be needed)
+    transcriptHistory.findLast(e => e instanceof RollbackPoint).load(); */
     updateAllGameVisuals();
     returnRollbackPoint.load();
     returnRollbackPoint = null;

@@ -921,6 +921,16 @@ OpponentDisplay.prototype.drawPose = function (pose) {
         if (pose.loaded) {
             pose.draw();
         } else {
+            /* keepPose means to avoid updating the pose if
+             * it's identical to the one alreay displayed, and
+             * otherwise to fast forward any animation to the end, not
+             * replay it from the start. Used when clearing the
+             * dialogue bubbles when someone is cumming or a character
+             * lacks a tie case. */
+            if (pose.player.keepPose) {
+                if (pose.id == this.pose.id) return;
+                pose.lastUpdateTS = performance.now() - pose.duration();
+            }
             this.queuedPose = pose;
             pose.onLoadComplete = () => this.drawPose(pose);
             return;

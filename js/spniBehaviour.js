@@ -2718,6 +2718,7 @@ Opponent.prototype.updateChosenState = function (state) {
 
     this.chosenState = state;
     this.stateCommitted = false;
+    this.keepPose = false;
     this.chosenState.selectImage(this.stage);
 }
 
@@ -2773,6 +2774,8 @@ Opponent.prototype.updateBehaviour = function(triggers, opp) {
         this.updateChosenState(state);
         this.lastUpdateTriggers = triggers;
         return triggers;
+    } else {
+        this.keepPose = true;
     }
     return null;
 }
@@ -2797,6 +2800,7 @@ Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
         saveSingleTranscriptEntry(this.slot);
         this.evaluateHiddenCases(evaluatedTrigger, opp, true);
     }
+    updateGameVisual(this.slot);
 }
 
 /************************************************************
@@ -2851,9 +2855,6 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     this.applyState(this.chosenState, this.currentTarget);
     
     this.stateCommitted = true;
-    if (this.countLayers() == 0 || this.clothing.at(-1 - this.stage).type != "skip") {
-        updateGameVisual(this.slot);
-    }
 }
 
 /************************************************************
@@ -2938,6 +2939,7 @@ function updateAllBehaviours (target, target_tags, other_tags) {
             players[i].evaluateHiddenCases(postProcessingTriggers[i], null, true);
         }
     }
+    if (target_tags !== PLAYER_STRIPPED) updateGameVisuals(); // TODO: This special-casing could be better
 }
 
 /************************************************************

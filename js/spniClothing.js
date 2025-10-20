@@ -675,8 +675,8 @@ function stripAIPlayer (player) {
     if (skipToStage != false) {
         players[player].stage = skipToStage;
         players[player].stageChangeUpdate();
-        updateGameVisual(player);
     }
+    updateGameVisuals();
 
     for (const c of players[player].clothing) {
         if (c.fromStage == players[player].stage) {
