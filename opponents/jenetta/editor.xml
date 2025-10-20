@@ -13,6 +13,12 @@
     <responses>
         <response id="148" opponent="vine_staff" opponentId="141" />
         <response id="149" opponent="vine_staff" opponentId="143" />
+        <response id="153" opponent="roll_caskett" opponentId="37" />
+        <response id="158" opponent="fluttershy" opponentId="165" />
+        <response id="159" opponent="yuzuki" opponentId="96" />
+        <response id="160" opponent="kora" opponentId="38" />
+        <response id="162" opponent="brock" opponentId="1" />
+        <response id="163" opponent="brock" opponentId="2" />
     </responses>
     <notes>
         <note id="1">This case was hidden due to no longer making sense after the line it was responding to was deleted. If you're rewriting this character, feel free to delete it.</note>
@@ -68,6 +74,7 @@
         <note id="122">Please add a marker to your character's line!</note>
         <note id="134">"This pose is kinda bad!" If I ever save up enough TCNatI points or become noteworthy enough that getting me to write for you is special I'll probably throw up a bounty.</note>
         <note id="138">The costume "Hunting Hound" has not been implemented yet, I will work on it once Jenetta has returned to testing.</note>
+        <note id="161">SPOILERS&lt;br&gt;In Etrian Odyssey 1, it's revealed via the 5th stratum that the games are actually post-apocalypse. Said stratum is "Lost Shinjuku"</note>
     </notes>
     <labels>
         <label id="8" label="" folder="Clover" sort="0" />
@@ -206,9 +213,18 @@
         <label id="145" label="Proverb + Prompts" folder="Prompt" sort="0" />
         <label id="146" label="" folder="General Market stuff" sort="0" />
         <label id="147" label="" folder="Prompt" sort="0" />
+        <label id="150" label="" folder="Kamina" sort="0" />
+        <label id="151" label="" folder="Kamina" sort="0" />
+        <label id="152" label="" folder="Simon" sort="0" />
+        <label id="154" label="" folder="Angela" sort="0" />
+        <label id="155" label="" folder="Hunting Hound" sort="0" />
+        <label id="156" label="" folder="Hunting Hound" sort="0" />
+        <label id="157" label="" folder="Hunting Hound" sort="0" />
+        <label id="161" label="" folder="Backgrounds" sort="0" />
     </labels>
-    <nextId>149</nextId>
+    <nextId>163</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="9SJenettaStrip0a" />
         <marker scope="Public" name="9SJenettaStrip0b" />
         <marker scope="Public" name="9SJenettaStrip1c" />
@@ -223,6 +239,7 @@
         <marker scope="Public" name="badTalkSisterBig" />
         <marker scope="Public" name="badTalkSisterLittle" />
         <marker scope="Public" name="badTalkTavern" />
+        <marker scope="Public" name="badTalkTavernSister" />
         <marker scope="Public" name="BlakeJenettaStrip0a" />
         <marker scope="Public" name="BlakeJenettaStrip4a" />
         <marker scope="Public" name="BlakeJenettaStrip4b" />
@@ -235,10 +252,13 @@
         <marker scope="Public" name="eyes">Jenetta talks about how her eyes are always closed</marker>
         <marker scope="Public" name="FlorinaJenettaStrip1a" />
         <marker scope="Public" name="FlorinaJenettaStrip4aLyn" />
+        <marker scope="Public" name="FoodTalk" />
         <marker scope="Public" name="goodTalkSisterBig" />
         <marker scope="Public" name="goodTalkSisterLittle" />
+        <marker scope="Public" name="GuildTalk" />
         <marker scope="Public" name="hard" />
         <marker scope="Public" name="hardhu" />
+        <marker scope="Public" name="JenettaAngelaLettuce" />
         <marker scope="Public" name="JenettaChiakiStrip0a" />
         <marker scope="Public" name="JenettaChiakiStrip0b" />
         <marker scope="Public" name="JenettaChiakiStrip1c" />
@@ -248,6 +268,8 @@
         <marker scope="Public" name="JenettaElizabethStrip7c" />
         <marker scope="Public" name="JenettaJuraStrip0a" />
         <marker scope="Public" name="JenettaJuraStrip1a" />
+        <marker scope="Public" name="JenettaKaminaStrip0a" />
+        <marker scope="Public" name="JenettaKaminaStrip0b" />
         <marker scope="Public" name="JenettaKiraStrip0a" />
         <marker scope="Public" name="JenettaMarinetteStrip0b" />
         <marker scope="Public" name="JenettaMarinetteStrip1b" />
@@ -260,6 +282,7 @@
         <marker scope="Public" name="JenettaMisatoStrip4c" />
         <marker scope="Public" name="JenettaRinkahStrip0a" />
         <marker scope="Public" name="JenettaRyujiStrip0a" />
+        <marker scope="Public" name="JenettaSimonStrip0a" />
         <marker scope="Public" name="jinsorry" />
         <marker scope="Public" name="JoeyJenettaStrip4b" />
         <marker scope="Public" name="JoeyJenettaStrip5c" />
@@ -309,5 +332,6 @@
         <marker scope="Public" name="therian" />
         <marker scope="Public" name="therian2" />
         <marker scope="Public" name="ThreadTalk" />
+        <marker scope="Public" name="VanishTalk" />
     </markers>
 </metadata>
