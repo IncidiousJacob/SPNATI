@@ -12,6 +12,9 @@
         <case name="Simon's Goggles 2" id="14" priority="Noteworthy" min="2" max="2">
             <description>Simon's Spiral Energy makes his glasses (formerly goggles) turn into even COOLER shades.</description>
         </case>
+        <case name="Boota's Goodbye" id="439" priority="FYI" min="6" max="6">
+            <description>Simon shoos Boota (his pigmole buddy) away whenever he's down to his underwear strip. Look at him, he's all scrunched up.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -55,6 +58,7 @@
         <response id="0" opponent="jenetta" opponentId="137" />
         <response id="431" opponent="selphy" opponentId="4" />
         <response id="433" opponent="dunban" opponentId="2" />
+        <response id="434" opponent="meia" opponentId="2891" />
     </responses>
     <labels>
         <label id="1" label="" folder="Kamina" sort="0" />
@@ -209,7 +213,7 @@
         <label id="152" label="" folder="Filtered" sort="0" />
         <label id="153" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="154" label="" folder="Targets&gt;Nadeshiko" sort="0" />
-        <label id="155" label="" folder="Kamina" sort="0" />
+        <label id="155" label="speak (1,2 / 2,3 / 4,3)" folder="Kamina" sort="0" />
         <label id="156" label="" folder="Conditional" sort="0" />
         <label id="157" label="" folder="Targets" sort="0" />
         <label id="158" label="" folder="Targets" sort="0" />
@@ -474,7 +478,7 @@
         <label id="418" label="" folder="Targets&gt;Yusei" sort="0" />
         <label id="420" label="" folder="Targets&gt;Yusei" sort="0" />
         <label id="422" label="" folder="Kamina" sort="0" />
-        <label id="423" label="" folder="Kamina" sort="0" />
+        <label id="423" label="silent" folder="Kamina" sort="0" />
         <label id="424" label="" folder="Conditional" sort="0" />
         <label id="425" label="" folder="Kamina" sort="0" />
         <label id="426" label="" folder="Kamina" sort="0" />
@@ -484,6 +488,13 @@
         <label id="430" label="" folder="Prompt Responses" sort="0" />
         <label id="431" label="" folder="Targets" sort="0" />
         <label id="432" label="" folder="Targets" sort="0" />
+        <label id="434" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="435" label="" folder="Kamina" sort="0" />
+        <label id="436" label="" folder="Kamina" sort="0" />
+        <label id="437" label="speak (2,3)" folder="Kamina" sort="0" />
+        <label id="438" label="speak (4,3)" folder="Kamina" sort="0" />
+        <label id="421" label="" folder="Targets&gt;Yusei" sort="0" />
+        <label id="440" label="" folder="Targets" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:xyz_</prefix>
@@ -492,7 +503,7 @@
         <posePreviewMarker>boota==1</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>433</nextId>
+    <nextId>440</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009_Retro_A" />
@@ -514,6 +525,7 @@
         <marker scope="Public" name="boota_notGood" />
         <marker scope="Public" name="boota_pickedCards" />
         <marker scope="Public" name="boota_pickMyHand" />
+        <marker scope="Public" name="boota_winEmAll" />
         <marker scope="Public" name="cadence_strip0a" />
         <marker scope="Public" name="carmine_glasses_challenge" />
         <marker scope="Public" name="Carmine_SpikeTheMonkey" />
@@ -757,6 +769,7 @@
         <marker scope="Public" name="simon_meia_self2a" />
         <marker scope="Public" name="simon_meia_self5a" />
         <marker scope="Public" name="simon_meia_self5b" />
+        <marker scope="Public" name="simon_meia_self6a" />
         <marker scope="Public" name="simon_meia_strip0a" />
         <marker scope="Public" name="simon_meia_strip0a_soakingWet" />
         <marker scope="Public" name="simon_meia_strip0b" />
