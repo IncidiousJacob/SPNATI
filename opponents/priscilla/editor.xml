@@ -19,6 +19,7 @@
     <notes>
         <note id="212">I'm not entirely sure if Priscilla knows Al is from Japan? But I thought it would be fun if she entertained the idea of recruiting a knight from another dimension, unaware that she has one already.</note>
         <note id="213">At first I had written a set of interactions regarding Bowsette and Priscilla meeting... But then I realized it'd be far more organic to have them meet and play offscreen at least once, and carry some bad blood from it. As well as allowing me to discuss elements from each other's worlds without having to go through all the song of dance of introducing them first.</note>
+        <note id="333">This line has two variations: this one, when Priscilla is ahead of Ameri, and another one when Ameri is ahead instead. They have the same marker, but different operators.</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Background&gt;Lake" sort="2" />
@@ -139,7 +140,7 @@
         <label id="120" label="" folder="Filters&gt;Gloomy" sort="0" />
         <label id="121" label="" folder="Filters&gt;Gloomy" sort="2" />
         <label id="122" label="" folder="Filters&gt;Gloomy" sort="3" />
-        <label id="123" label="" folder="Filters&gt;Mean" sort="0" />
+        <label id="123" label="" folder="Filters&gt;Mean" sort="2" />
         <label id="124" label="" folder="Filters&gt;Foul_mouthed" sort="3" />
         <label id="125" label="" folder="Hand=Any banter" sort="2" />
         <label id="126" label="" folder="Filters&gt;enf" sort="4" />
@@ -233,7 +234,7 @@
         <label id="223" label="" folder="Responses" sort="24" />
         <label id="224" label="" folder="Intercourse_forfeit" sort="0" />
         <label id="225" label="" folder="Filters&gt;Royalty" sort="10" />
-        <label id="226" label="" folder="Filters&gt;Robot" sort="0" />
+        <label id="226" label="" folder="Filters&gt;Robot" sort="2" />
         <label id="227" label="" folder="Responses" sort="43" />
         <label id="228" label="" folder="Responses" sort="44" />
         <label id="229" label="" folder="Responses" sort="45" />
@@ -256,7 +257,7 @@
         <label id="246" label="" folder="Background&gt;Mansion" sort="0" />
         <label id="247" label="" folder="Opponent Lost Targets" sort="17" />
         <label id="248" label="" folder="Opponent Stripped Targets" sort="3" />
-        <label id="249" label="" folder="Filters&gt;Deity" sort="0" />
+        <label id="249" label="" folder="Filters&gt;Deity" sort="6" />
         <label id="250" label="" folder="Filters&gt;Deity" sort="0" />
         <label id="251" label="" folder="Opponent Stripped Targets" sort="14" />
         <label id="252" label="" folder="Filters&gt;Royalty" sort="0" />
@@ -338,17 +339,48 @@
         <label id="327" label="" folder="Filters&gt;Deity" sort="3" />
         <label id="328" label="" folder="Filters&gt;Deity" sort="4" />
         <label id="329" label="" folder="Filters&gt;Deity" sort="5" />
-        <label id="330" label="" folder="Filters&gt;Deity" sort="6" />
+        <label id="330" label="Deity is masturbating" folder="Filters&gt;Deity" sort="6" />
         <label id="331" label="" folder="Filters&gt;Deity" sort="7" />
+        <label id="332" label="" folder="Opponent Stripping Targets" sort="15" />
+        <label id="333" label="" folder="Opponent Stripping Targets" sort="16" />
+        <label id="334" label="" folder="Responses" sort="26" />
+        <label id="335" label="" folder="Opponent Stripping Targets" sort="17" />
+        <label id="336" label="" folder="Opponent Stripping Targets" sort="18" />
+        <label id="337" label="" folder="Responses" sort="0" />
+        <label id="338" label="" folder="Hand=Any banter" sort="6" />
+        <label id="339" label="" folder="Hand=Any banter" sort="7" />
+        <label id="340" label="" folder="Hand=Any banter" sort="8" />
+        <label id="341" label="" folder="Hand=Any banter" sort="9" />
+        <label id="342" label="" folder="Opponent Stripping Targets" sort="19" />
+        <label id="343" label="" folder="Filters&gt;Deity" sort="8" />
+        <label id="344" label="" folder="Hand=Any banter" sort="10" />
+        <label id="345" label="" folder="Opponent Lost Targets" sort="0" />
+        <label id="346" label="" folder="Opponent Lost Targets" sort="27" />
+        <label id="347" label="" folder="Filters&gt;Formal_attire" sort="5" />
+        <label id="348" label="" folder="Filters&gt;Formal_attire" sort="6" />
+        <label id="349" label="" folder="Filters&gt;Witch" sort="7" />
+        <label id="350" label="" folder="Filters&gt;Witch" sort="8" />
+        <label id="351" label="" folder="Filters&gt;Twink" sort="40" />
+        <label id="352" label="" folder="Filters&gt;Ghost" sort="3" />
+        <label id="353" label="" folder="Filters&gt;Ghost" sort="4" />
+        <label id="354" label="" folder="Filters&gt;Ghost" sort="5" />
+        <label id="355" label="" folder="Filters&gt;Ghost" sort="6" />
+        <label id="356" label="" folder="Filters&gt;Royalty" sort="12" />
+        <label id="357" label="" folder="Filters&gt;Gloomy" sort="4" />
+        <label id="358" label="" folder="Filters&gt;Insane" sort="0" />
+        <label id="359" label="" folder="Filters&gt;Coder" sort="0" />
+        <label id="360" label="" folder="Filters&gt;Coder" sort="2" />
     </labels>
-    <nextId>331</nextId>
+    <nextId>360</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="accessory1" />
         <marker scope="Public" name="aggressive1" />
         <marker scope="Public" name="aggressive2" />
         <marker scope="Public" name="ameri_ears" />
+        <marker scope="Public" name="ameri_ears_2" />
         <marker scope="Public" name="ameri_pres" />
+        <marker scope="Public" name="ameri_pres_2" />
         <marker scope="Public" name="arrived_first" />
         <marker scope="Public" name="binah_feather1_resp" />
         <marker scope="Public" name="bowsette_start" />
@@ -377,6 +409,12 @@
         <marker scope="Public" name="darkness_notWorthy2_resp" />
         <marker scope="Public" name="darkness_notWorthy3_resp" />
         <marker scope="Public" name="deity1" />
+        <marker scope="Public" name="edelgard_confidence" />
+        <marker scope="Public" name="edelgard_diversity" />
+        <marker scope="Public" name="edelgard_LinguaFranca" />
+        <marker scope="Public" name="edelgard_rivals" />
+        <marker scope="Public" name="edelgard_sketchbook" />
+        <marker scope="Public" name="edelgard_solitude" />
         <marker scope="Public" name="emi_defeated_a" />
         <marker scope="Public" name="emi_defeated_b" />
         <marker scope="Public" name="emi_last1" />
@@ -480,7 +518,9 @@
         <marker scope="Public" name="vinyl_streetwear" />
         <marker scope="Public" name="weapon_generic" />
         <marker scope="Public" name="witch1_filter" />
+        <marker scope="Public" name="wiz_a01_resp" />
         <marker scope="Public" name="wiz_shop" />
+        <marker scope="Public" name="wiz_shop_2" />
         <marker scope="Public" name="wiz_undead" />
         <marker scope="Public" name="wiz_undead_2" />
         <marker scope="Public" name="wiz_undead_3" />
