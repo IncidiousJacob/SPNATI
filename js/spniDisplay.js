@@ -1051,7 +1051,7 @@ OpponentDisplay.prototype.updateImage = function(player, image) {
          */
         this.clearPose();
     } else if (image instanceof PoseDefinition) {
-        const pose = new Pose(image, this, () => { this.drawPose(pose) });
+        const pose = new Pose(image, this /*, () => { this.drawPose(pose) }*/);
         this.drawPose(pose);
     } else {
         this.drawPose(image);
