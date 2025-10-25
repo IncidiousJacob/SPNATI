@@ -150,6 +150,10 @@ Targetable traits:
         <note id="434">You did prefer doing pigeons, right? That was the impression I got, so…</note>
         <note id="435">You did prefer doing pigeons, right? That was the impression I got, so…</note>
         <note id="59">Reminder: punchline will be next line as we discussed: after shaking hands, can't separate or remove gloves for 24 hours.</note>
+        <note id="737">In any line where it appears, it's entirely up to you whether Priscilla hears any {small} text or not.</note>
+        <note id="738">"Class" here is referring to the class on her Adventurer's Card: arch wizard, crusader, thief, etc. Priscilla may or may not have such distinctions in her world.</note>
+        <note id="739">In any line where it appears, it's entirely up to you whether Priscilla hears any {small} text or not.</note>
+        <note id="740">Switched previous pose to "confused" to use "sad" here instead. Probably doesn't matter for your responses.</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="9" />
@@ -711,7 +715,7 @@ Targetable traits:
         <label id="572" label="" color="1" folder="Jura" sort="5" />
         <label id="573" label="" color="1" folder="Jura" sort="6" />
         <label id="574" label="" color="1" folder="Jura" sort="3" />
-        <label id="575" label="" color="1" folder="Cadence" sort="0" />
+        <label id="575" label="" folder="Cadence" sort="0" />
         <label id="576" label="" folder="Priscilla" sort="3" />
         <label id="577" label="" folder="Rosie" sort="0" />
         <label id="578" label="" folder="Rosie" sort="44" />
@@ -813,8 +817,8 @@ Targetable traits:
         <label id="674" label="" folder="Serena" sort="46" />
         <label id="675" label="" folder="Serena" sort="47" />
         <label id="676" label="" folder="Serena" sort="48" />
-        <label id="677" label="" color="1" folder="Priscilla" sort="0" />
-        <label id="678" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="677" label="" folder="Priscilla" sort="0" />
+        <label id="678" label="" folder="Priscilla" sort="0" />
         <label id="679" label="" folder="Monika" sort="0" />
         <label id="680" label="" folder="Monika" sort="0" />
         <label id="681" label="" folder="Monika" sort="0" />
@@ -873,8 +877,12 @@ Targetable traits:
         <label id="734" label="" folder="Monika" sort="0" />
         <label id="735" label="" folder="Monika" sort="0" />
         <label id="736" label="" folder="Monika" sort="0" />
+        <label id="737" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="738" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="739" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="740" label="" color="1" folder="Cadence" sort="0" />
     </labels>
-    <nextId>736</nextId>
+    <nextId>740</nextId>
     <markers>
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
         <marker scope="Public" name="adventurers_cards">Adventurer's cards detail an adventurers class, stats, and skills. Wiz wonders what another adventurer's card looks like!</marker>
@@ -1081,6 +1089,7 @@ Targetable traits:
         <marker scope="Public" name="priscilla_wiz_a12" />
         <marker scope="Public" name="priscilla_wiz_a13" />
         <marker scope="Public" name="priscilla_wiz_a21" />
+        <marker scope="Public" name="priscilla_wiz_a22" />
         <marker scope="Public" name="ringo_name" />
         <marker scope="Public" name="rosie_adventures_30" />
         <marker scope="Public" name="Rosie_adventures_30" />
@@ -1361,6 +1370,7 @@ Targetable traits:
         <marker scope="Public" name="vanessa_wiz_a72" />
         <marker scope="Public" name="vanessa_wiz_a83" />
         <marker scope="Public" name="wiz_cadence_a01" />
+        <marker scope="Public" name="wiz_cadence_a02" />
         <marker scope="Public" name="wiz_chiaki_a01" />
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jean_a02" />
@@ -1408,6 +1418,8 @@ Targetable traits:
         <marker scope="Public" name="wiz_polly_a01" />
         <marker scope="Public" name="wiz_polly_a02" />
         <marker scope="Public" name="wiz_priscilla_a01" />
+        <marker scope="Public" name="wiz_priscilla_a02" />
+        <marker scope="Public" name="wiz_priscilla_a11" />
         <marker scope="Public" name="wiz_rosie_a71" />
         <marker scope="Public" name="wiz_rosie_a72" />
         <marker scope="Public" name="wiz_rosie_a83" />
