@@ -1,0 +1,12 @@
+.dialogue-bubble[data-character="vine_staff"][data-dialogue-styles~="ramble"]{
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 38%,
+        transparent 99%
+      ); /* For WebKit browsers */
+      mask-image: linear-gradient(
+        to bottom,
+        black 38%,
+        transparent 99%
+      ); /* Standard property */
+}
