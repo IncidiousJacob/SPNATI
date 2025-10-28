@@ -2,9 +2,18 @@
 <collectibles>
     <collectible id="simon_shades" status="online" img="opponents/simon/extra/star_glasses.png" thumbnail="opponents/simon/extra/star_glasses.png">
         <title>Star Glasses</title>
+        <subtitle>Who the hell do you think he is?!</subtitle>
         <text>In a moment of intense focus and determination, with spiral power growing without limit, Simon surprasses both the bro he once looked up to and the man who gave his life for team Super Galaxy Dai-Gurren.</text>
         <unlock>Evolve beyond the person you were a minute before, and defeat Simon the Digger!</unlock>
         <wearable>true</wearable>
         <clothing img="opponents/simon/extra/star_glasses.png" name="shades" generic="glasses" position="head" type="extra" plural="true" />
+    </collectible>
+    <collectible id="simon_boota" status="online" img="opponents/simon/extra/boota_yoko.png,opponents/nadeshiko/3-x_holding_boota.png,opponents/saria/3-z_boota.png,opponents/vanessa/Extra/6-z_boota.png,opponents/yusei_fudo/posemaker/3-zz_boota.png" thumbnail="opponents/simon/boota/boota_stanced.png">
+        <title>Boota</title>
+        <subtitle>"Boota, behave yourself!"</subtitle>
+        <text>His main role is comic relief. In the anime, he briefly evolves to ward off the Anti-Spiral (or was it all a dream?). He dives into Yoko Littner's boobs on a regular basis as it is described as his 'favorite place'.</text>
+        <unlock>See Boota visit the spaces of other characters! (Play Simon with characters he talks to a lot to see them trigger.)</unlock>
+        <hide-details>true</hide-details>
+        <counter>3</counter>
     </collectible>
 </collectibles>
