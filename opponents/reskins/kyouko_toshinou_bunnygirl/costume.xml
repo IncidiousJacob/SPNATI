@@ -836,6 +836,13 @@
             <sprite id="curious" src="reskins/kyouko_toshinou_bunnygirl/8-curious.png" x="0" y="0" />
             <sprite id="face" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/8-licky.png" x="5" y="801" clipbottom="8" />
         </pose>
+        <pose id="9-_tr_excited_disappointed">
+            <sprite id="summer" src="reskins/kyouko_toshinou_bunnygirl/9-excited.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_bunnygirl/9-excited.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_bunnygirl/9-disappointed.png" />
+            </directive>
+        </pose>
         <pose id="9-_tr_horny_horrified">
             <sprite id="horny" src="reskins/kyouko_toshinou_bunnygirl/9-horny.png" x="0" y="0" />
             <directive type="animation" id="horny" ease="linear" interpolation="none">
@@ -847,7 +854,7 @@
             <sprite id="kyouko" src="reskins/kyouko_toshinou_bunnygirl/9-portrait.png" x="0" y="0" alpha="100" />
             <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
             <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
-            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_bunnygirl/7-aura.png" x="0" y="0" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_bunnygirl/9-aura.png" x="0" y="0" alpha="0" />
             <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
@@ -881,16 +888,12 @@
             </directive>
         </pose>
         <pose id="9-dunno">
-            <sprite id="shrug" src="reskins/kyouko_toshinou_bunnygirl/9-shrug.png" x="0" y="0" />
-            <sprite id="face" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/7-dunno.png" x="17" y="248" />
-        </pose>
-        <pose id="9-fright">
-            <sprite id="base" src="reskins/kyouko_toshinou_bunnygirl/9-calm.png" x="0" y="0" />
-            <sprite id="face" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/7-fright.png" x="-6" y="234" />
+            <sprite id="base" src="reskins/kyouko_toshinou_bunnygirl/9-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/9-dunno.png" x="15" y="806" />
         </pose>
         <pose id="9-licky">
             <sprite id="curious" src="reskins/kyouko_toshinou_bunnygirl/9-curious.png" x="0" y="0" />
-            <sprite id="face" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/7-licky.png" x="8" y="258" clipbottom="8" />
+            <sprite id="licky" src="reskins/kyouko_toshinou_bunnygirl/posemaker/faces/8-licky.png" x="5" y="801" />
         </pose>
         <pose id="9-stretch">
             <sprite id="stretch-a" src="reskins/kyouko_toshinou_bunnygirl/9-stretch-a.png" x="0" y="0" />
@@ -909,10 +912,10 @@
             </directive>
         </pose>
         <pose id="9-bowtie">
-            <sprite id="bowtie-a" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-a.png" x="0" y="0" />
+            <sprite id="bowtie-a" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-a.png" x="38" y="0" />
             <directive type="animation" id="bowtie-a" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-a.png" />
-                <keyframe time="1.5" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-b.png" />
+                <keyframe time="0" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-a.png" x="38" y="0" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_bunnygirl/9-bowtie-b.png" x="13" y="0" />
             </directive>
         </pose>
         <pose id="4-licky">
@@ -1097,7 +1100,6 @@
         </set>
         <set id="sexypose">
             <pose stage="2-7" img="#-sexypose.png" />
-            <pose stage="9" img="#-sexypose.png" />
         </set>
         <set id="shrug">
             <pose stage="0-9" img="#-shrug.png" />

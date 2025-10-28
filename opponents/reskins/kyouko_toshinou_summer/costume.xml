@@ -39,7 +39,6 @@
                 <keyframe time="3" src="reskins/kyouko_toshinou_summer/posemaker/yui_tsukkomi.png" />
             </directive>
         </pose>
-        <pose id="__placeholder" />
         <pose id="_tr_calm_wink">
             <sprite id="summer" src="reskins/kyouko_toshinou_summer/#-calm.png" x="0" y="0" />
             <directive type="animation" id="summer" ease="linear" interpolation="none">
@@ -792,6 +791,13 @@
             <sprite id="curious" src="reskins/kyouko_toshinou_summer/8-curious.png" x="0" y="0" />
             <sprite id="licky" src="reskins/kyouko_toshinou_summer/posemaker/faces/8-licky.png" x="5" y="801" />
         </pose>
+        <pose id="9-_tr_excited_disappointed">
+            <sprite id="summer" src="reskins/kyouko_toshinou_summer/9-excited.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_summer/9-excited.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_summer/9-disappointed.png" />
+            </directive>
+        </pose>
         <pose id="9-_tr_horny_horrified">
             <sprite id="horny" src="reskins/kyouko_toshinou_summer/9-horny.png" x="0" y="0" />
             <directive type="animation" id="horny" ease="linear" interpolation="none">
@@ -803,7 +809,7 @@
             <sprite id="kyouko" src="reskins/kyouko_toshinou_summer/9-portrait.png" x="0" y="0" alpha="100" />
             <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
             <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
-            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_summer/7-aura.png" x="0" y="0" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_summer/9-aura.png" x="0" y="0" alpha="0" />
             <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" alpha="100" />
                 <keyframe time="1" alpha="100" />
@@ -838,18 +844,11 @@
         </pose>
         <pose id="9-dunno">
             <sprite id="base" src="reskins/kyouko_toshinou_summer/9-shrug.png" x="0" y="0" />
-            <sprite id="face" src="reskins/kyouko_toshinou_summer/posemaker/faces/7-dunno.png" x="17" y="248" />
+            <sprite id="face" src="reskins/kyouko_toshinou_summer/posemaker/faces/9-dunno.png" x="15" y="806" />
         </pose>
         <pose id="9-licky">
             <sprite id="curious" src="reskins/kyouko_toshinou_summer/9-curious.png" x="0" y="0" />
-            <sprite id="face" src="reskins/kyouko_toshinou_summer/posemaker/faces/7-licky.png" x="8" y="258" />
-        </pose>
-        <pose id="9-stretch">
-            <sprite id="stretch-a" src="reskins/kyouko_toshinou_summer/9-stretch-a.png" x="0" y="0" />
-            <directive type="animation" id="stretch-a" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/kyouko_toshinou_summer/9-stretch-a.png" />
-                <keyframe time="3" src="reskins/kyouko_toshinou_summer/9-stretch-b.png" />
-            </directive>
+            <sprite id="licky" src="reskins/kyouko_toshinou_summer/posemaker/faces/8-licky.png" x="5" y="801" />
         </pose>
         <pose id="name-pride">
             <sprite id="pride" src="reskins/kyouko_toshinou_summer/#-pride.png" x="0" y="0" />
@@ -956,6 +955,13 @@
                 <keyframe time="0" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
                 <keyframe time="0.5" alpha="0" />
                 <keyframe time="1.5" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="9-stretch">
+            <sprite id="stretch-a" src="reskins/kyouko_toshinou_summer/9-stretch-a.png" x="0" y="0" />
+            <directive type="animation" id="stretch-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_summer/9-stretch-a.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_summer/9-stretch-b.png" />
             </directive>
         </pose>
     </poses>
@@ -1101,7 +1107,7 @@
         <set id="butt">
             <pose stage="7" img="#-butt.png" />
             <pose stage="9" img="#-butt.png" />
-            <pose stage="6" img="custom:__placeholder" />
+            <pose stage="6" img="custom:_blank" />
         </set>
         <set id="calm">
             <pose stage="0-9" img="#-calm.png" />
@@ -1325,11 +1331,10 @@
         </set>
         <set id="rip-shrug">
             <pose stage="7" img="#-rip-shrug.png" />
-            <pose stage="6" img="custom:__placeholder" />
+            <pose stage="6" img="custom:_blank" />
         </set>
         <set id="sexypose">
             <pose stage="2-7" img="#-sexypose.png" />
-            <pose stage="9" img="#-sexypose.png" />
             <pose stage="5" img="#-sexypose-alt.png" priority="100">
                 <tests>
                     <test expr="~self.marker.Z_AltStrippingOrder~" value="1" />

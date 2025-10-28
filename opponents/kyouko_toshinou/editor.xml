@@ -1422,7 +1422,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1420" label="Request joint pose (Nadeshiko slot)" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="16" />
         <label id="1421" label="Acknowledge joint pose request (Nadeshiko slot)" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="14" />
         <label id="1422" label="Joint pose (Nadeshiko slot)" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="12" />
-        <label id="1423" label="" folder="Collectible&gt;Movie Tickets" sort="0" />
+        <label id="1423" label="" folder="Collectible&gt;Picnic Blanket" sort="0" />
         <label id="1424" label="Switching sides" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="18" />
         <label id="1425" label="" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="23" />
         <label id="1426" label="" folder="Hairstyle" sort="4" />
@@ -1431,7 +1431,42 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1429" label="" folder="Hairstyle" sort="14" />
         <label id="1430" label="" folder="Hairstyle" sort="2" />
         <label id="1431" label="" folder="Hairstyle" sort="8" />
-        <label id="1432" label="Ribbon fallback" folder="" sort="0" />
+        <label id="1432" label="Ribbon fallback" folder="Costume&gt;Club Uniform" sort="0" />
+        <label id="1433" label="Remove tandem giver" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="0" />
+        <label id="1434" label="Remove tandem" folder="Targets&gt;Nadeshiko&gt;Dual forfeit" sort="0" />
+        <label id="1435" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1436" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1437" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1438" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1439" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1440" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1441" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1442" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1443" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1444" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1445" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1446" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1447" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1448" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1449" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1450" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1451" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1452" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1453" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1454" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1455" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1456" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1457" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1458" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1459" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1460" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1461" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1462" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1463" label="Ribbon removal" folder="Costume&gt;Club Uniform" sort="0" />
+        <label id="1464" label="" folder="Targets&gt;Shamiko" sort="0" />
+        <label id="1465" label="Noncompetitive hand" folder="Game state" sort="0" />
+        <label id="1466" label="Repeat ties" folder="" sort="0" />
+        <label id="1467" label="" folder="Targets&gt;Bowsette" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1440,7 +1475,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1432</nextId>
+    <nextId>1467</nextId>
     <markers>
         <marker scope="Private" name="B_">Background-related markers</marker>
         <marker scope="Public" name="B_DarkTricks">Dark backgrounds</marker>
@@ -1552,6 +1587,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="F_EatKyouko">They're gonna eat... her?</marker>
         <marker scope="Public" name="F_Exhibitionist_TooExcited">Even she's not that excited.</marker>
         <marker scope="Public" name="F_Formal_TakeOff" />
+        <marker scope="Public" name="F_LargeHairy" />
         <marker scope="Public" name="F_MaidUniform" />
         <marker scope="Public" name="F_NoBra" />
         <marker scope="Public" name="F_PubePeek" />
@@ -1586,6 +1622,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="S_TopBetter" />
         <marker scope="Public" name="S_Uniform">Self Stripping 2 - Explain the uniform (Club Uniform)</marker>
         <marker scope="Public" name="S_YuiRunningClothes" />
+        <marker scope="Public" name="Shamiko_Kyouko_..." />
         <marker scope="Public" name="SlyCooper_PantsOffA">Sly Cooper Stripping 0</marker>
         <marker scope="Private" name="T_">Character targets</marker>
         <marker scope="Public" name="T_Amalia_Cheating">Amalia First hand stage 5</marker>
@@ -1910,23 +1947,52 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="T_Setogaya_Wings" />
         <marker scope="Public" name="T_Setogaya_WingSensitivity" />
         <marker scope="Public" name="T_Shamiko_BadGuy" />
+        <marker scope="Public" name="T_Shamiko_BadStrategy1" />
+        <marker scope="Public" name="T_Shamiko_BadStrategy2" />
+        <marker scope="Public" name="T_Shamiko_BadStrategy3" />
         <marker scope="Public" name="T_Shamiko_Confidence1" />
         <marker scope="Public" name="T_Shamiko_Confidence2" />
         <marker scope="Public" name="T_Shamiko_Confidence3" />
         <marker scope="Public" name="T_Shamiko_Demon" />
+        <marker scope="Public" name="T_Shamiko_DemonOutfit1" />
+        <marker scope="Public" name="T_Shamiko_DemonOutfit2" />
+        <marker scope="Public" name="T_Shamiko_DemonOutfit3" />
+        <marker scope="Public" name="T_Shamiko_DemonQueen1" />
+        <marker scope="Public" name="T_Shamiko_DemonQueen2" />
+        <marker scope="Public" name="T_Shamiko_DemonQueen3" />
         <marker scope="Public" name="T_Shamiko_Fremesis1" />
         <marker scope="Public" name="T_Shamiko_Fremesis2" />
         <marker scope="Public" name="T_Shamiko_Fremesis3" />
+        <marker scope="Public" name="T_Shamiko_HalfNaked" />
+        <marker scope="Public" name="T_Shamiko_Lewd1" />
+        <marker scope="Public" name="T_Shamiko_Lewd2" />
+        <marker scope="Public" name="T_Shamiko_Lewd3" />
+        <marker scope="Public" name="T_Shamiko_LosingIsFun1" />
+        <marker scope="Public" name="T_Shamiko_LosingIsFun2" />
+        <marker scope="Public" name="T_Shamiko_LosingIsFun3" />
+        <marker scope="Public" name="T_Shamiko_Misleading1" />
+        <marker scope="Public" name="T_Shamiko_Misleading2" />
+        <marker scope="Public" name="T_Shamiko_Misleading3" />
+        <marker scope="Public" name="T_Shamiko_Misleading4" />
         <marker scope="Public" name="T_Shamiko_Nemesis" />
         <marker scope="Public" name="T_Shamiko_Poker1" />
         <marker scope="Public" name="T_Shamiko_Poker2" />
         <marker scope="Public" name="T_Shamiko_Poker3" />
+        <marker scope="Public" name="T_Shamiko_RivalLove1" />
+        <marker scope="Public" name="T_Shamiko_RivalLove2" />
+        <marker scope="Public" name="T_Shamiko_RivalLove3" />
+        <marker scope="Public" name="T_Shamiko_RivalLove4" />
         <marker scope="Public" name="T_Shamiko_Rivalry1" />
         <marker scope="Public" name="T_Shamiko_Rivalry2" />
         <marker scope="Public" name="T_Shamiko_Rivalry3" />
+        <marker scope="Public" name="T_Shamiko_Rivalry4" />
         <marker scope="Public" name="T_Shamiko_Spontaneous1" />
         <marker scope="Public" name="T_Shamiko_Spontaneous2" />
         <marker scope="Public" name="T_Shamiko_Spontaneous3" />
+        <marker scope="Public" name="T_Shamiko_Transform1" />
+        <marker scope="Public" name="T_Shamiko_Transform2" />
+        <marker scope="Public" name="T_Shamiko_Transform3" />
+        <marker scope="Public" name="T_Shamiko_Transform4" />
         <marker scope="Public" name="T_SolarFlare_TomatoPlant" />
         <marker scope="Public" name="T_SolarFlare_ZombieApocalypse" />
         <marker scope="Public" name="T_Stocking_Slaughter" />
