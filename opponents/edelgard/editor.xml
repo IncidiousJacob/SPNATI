@@ -7,7 +7,7 @@
     <othernotes />
     <noteworthy>
         <case name="Chess, Anyone?" id="222" priority="Prompt" min="0" max="3">
-            <description>Edelgard enjoys chess and wants to know if any of the other (non-FE3H) characters at the table plays.</description>
+            <description>Edelgard enjoys chess and wants to know if any of the other (non-FE3H) characters at the table play.</description>
         </case>
         <case name="Tea or Coffee?" id="620" priority="Prompt" min="0" max="3">
             <description>Edelgard wants to know whether the others prefer tea or coffee.</description>
@@ -163,6 +163,7 @@
         <response id="963" opponent="jura" opponentId="2799" />
         <response id="964" opponent="meia" opponentId="2912" />
         <response id="965" opponent="meia" opponentId="2913" />
+        <response id="967" opponent="ms.fortune" opponentId="24" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -794,10 +795,12 @@
         <label id="963" label="" folder="Target - Character&gt;Jura" sort="0" />
         <label id="964" label="" folder="Target - Character&gt;Meia" sort="0" />
         <label id="966" label="" folder="Target - Character&gt;Sucrose" sort="0" />
+        <label id="965" label="" folder="Target - Character&gt;Meia" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>966</nextId>
+    <nextId>972</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
         <marker scope="Public" name="academy_phase" />
         <marker scope="Public" name="AdmiringFlowers" />
@@ -884,12 +887,16 @@
         <marker scope="Public" name="deity_GameStart" />
         <marker scope="Public" name="deity_LostHand" />
         <marker scope="Public" name="Destiny" />
+        <marker scope="Public" name="edelgard_ClimaxCompetition" />
         <marker scope="Public" name="Enbarr" />
         <marker scope="Public" name="ExhibitionistRevealedLargeChest" />
         <marker scope="Public" name="ExoticEyes_StrippingMajor" />
         <marker scope="Public" name="fe3h_WhatHappensAtTheInventory" />
         <marker scope="Public" name="florina_Fled" />
         <marker scope="Public" name="Formalities" />
+        <marker scope="Public" name="fortune_LostHead" />
+        <marker scope="Public" name="fortune_LostHead_0" />
+        <marker scope="Public" name="fortune_LostHead_1" />
         <marker scope="Public" name="FoundRhythm" />
         <marker scope="Public" name="futanari_Apology" />
         <marker scope="Public" name="futanari_Revealed" />
@@ -931,6 +938,7 @@
         <marker scope="Public" name="Impressions_Ferdinand" />
         <marker scope="Public" name="Impressions_Hubert" />
         <marker scope="Public" name="jura_WhyEdelgardIsHere" />
+        <marker scope="Public" name="komi_AfterGrad" />
         <marker scope="Public" name="komi_Quiet" />
         <marker scope="Public" name="LastTwo" />
         <marker scope="Public" name="leonie_Selected" />
@@ -971,6 +979,10 @@
         <marker scope="Public" name="ringo_School_2" />
         <marker scope="Public" name="Rivals" />
         <marker scope="Public" name="royalty_LostHand" />
+        <marker scope="Public" name="sakura_LostHead" />
+        <marker scope="Public" name="sakura_LostHead_0" />
+        <marker scope="Public" name="sakura_LostHead_1" />
+        <marker scope="Public" name="sakura_LostHead1" />
         <marker scope="Public" name="SawPokemon" />
         <marker scope="Public" name="ScarsRevealed" />
         <marker scope="Public" name="ScarsRevealed_a" />
