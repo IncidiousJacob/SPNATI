@@ -210,6 +210,11 @@
         <pose id="dissapoint">
             <sprite id="dissapoint" src="reskins/serena_fennekin/7-dissapoint.png" x="0" y="0" />
         </pose>
+        <pose id="earlyDress-remove">
+            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-11" y="215" />
+            <sprite id="coverfeet" src="reskins/serena_fennekin/5-coverfeet.png" x="0" y="0" />
+            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
+        </pose>
         <pose id="embar">
             <sprite id="embar" src="reskins/serena_fennekin/7-embar.png" x="0" y="0" />
         </pose>
@@ -224,6 +229,17 @@
         </pose>
         <pose id="fingers">
             <sprite id="fingers" src="reskins/serena_fennekin/7-fingers.png" x="0" y="0" />
+        </pose>
+        <pose id="fischldress">
+            <sprite id="O2hair" src="reskins/serena_pajama/O2hair.png" x="-8" y="170" pivotx="51%" pivoty="51%" />
+            <sprite id="fischldress" src="serena/fischldress.png" x="0" y="0" />
+        </pose>
+        <pose id="fischldresscard">
+            <sprite id="O2hair" src="reskins/serena_pajama/O2hair.png" x="6" y="168" />
+            <sprite id="fischldress" src="serena/fischldress.png" x="0" y="0" scalex="-1" />
+            <sprite id="card" src="serena/card.png" x="157" y="273" rotation="-15" />
+            <sprite id="card(copy)" src="serena/card.png" x="162" y="270" rotation="-5" />
+            <sprite id="card(copy)(copy)" src="serena/card.png" x="165" y="273" rotation="3" />
         </pose>
         <pose id="fistpump">
             <sprite id="fistpump" src="reskins/serena_fennekin/7-fistpump.png" x="0" y="0" />
@@ -245,6 +261,11 @@
         </pose>
         <pose id="hairflip">
             <sprite id="hairflip" src="reskins/serena_fennekin/7-hairflip.png" x="0" y="0" />
+        </pose>
+        <pose id="lateDress-remove">
+            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-9" y="216" />
+            <sprite id="coverfeet" src="serena/7-coverfeet.png" x="0" y="0" />
+            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
         </pose>
         <pose id="M1">
             <sprite id="m1" src="reskins/serena_fennekin/m1.png" x="-46" y="0" scaley="1" />
@@ -338,7 +359,7 @@
             </directive>
         </pose>
         <pose id="M4">
-            <sprite id="M4" src="serena/M4.png" x="0" y="0" />
+            <sprite id="M4" src="reskins/serena_fennekin/M4.png" x="0" y="0" />
             <sprite id="O2pussy" src="serena/O2pussy.png" x="-6" y="1184" scalex="0.36" pivotx="49%" pivoty="68%" />
             <sprite id="forearm" src="reskins/serena_fennekin/forearm.png" x="87" y="1069" scalex="-0.94" scaley="0.94" pivotx="85%" pivoty="9%" rotation="92" clipright="10" cliptop="24" clipradius="12" />
             <sprite id="cutehand" src="serena/cutehand.png" x="12" y="1134" scalex="0.9" scaley="0.9" pivotx="82%" pivoty="14%" rotation="8" />
@@ -477,11 +498,15 @@
         <pose id="megaring">
             <sprite id="megaring" src="reskins/serena_fennekin/7-megaring.png" x="0" y="0" />
         </pose>
+        <pose id="midDress-remove">
+            <sprite id="coverfeet" src="reskins/serena_fennekin/6-coverfeet.png" x="0" y="0" />
+            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
+        </pose>
         <pose id="nervous">
             <sprite id="nervous" src="reskins/serena_fennekin/7-nervous.png" x="0" y="0" />
         </pose>
-        <pose id="yay">
-            <sprite id="yay" src="reskins/serena_fennekin/7-yay.png" x="0" y="0" />
+        <pose id="boota">
+            <sprite id="boota" src="reskins/serena_fennekin/7-boota.png" x="0" y="0" />
         </pose>
         <pose id="ohwell">
             <sprite id="ohwell" src="reskins/serena_fennekin/7-ohwell.png" x="0" y="0" />
@@ -2055,35 +2080,27 @@
         <pose id="stop">
             <sprite id="stop" src="reskins/serena_fennekin/7-stop.png" x="0" y="0" />
         </pose>
+        <pose id="stopani2">
+            <sprite id="stop" src="reskins/serena_fennekin/7-stop.png" x="0" y="0" />
+            <directive type="animation" id="stop" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="3" x="0" y="0" />
+                <keyframe time="8" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="stop" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/serena_fennekin/7-stop.png" />
+                <keyframe time="3" src="reskins/serena_fennekin/7-nervous.png" />
+                <keyframe time="8" src="reskins/serena_fennekin/7-embar.png" />
+            </directive>
+        </pose>
         <pose id="SwimReturn">
             <sprite id="peace" src="reskins/serena_fennekin/7-peace.png" x="0" y="0" />
         </pose>
         <pose id="thinking">
             <sprite id="thinking" src="reskins/serena_fennekin/7-thinking.png" x="0" y="0" />
         </pose>
-        <pose id="lateDress-remove">
-            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-9" y="216" />
-            <sprite id="coverfeet" src="serena/7-coverfeet.png" x="0" y="0" />
-            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
-        </pose>
-        <pose id="earlyDress-remove">
-            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-11" y="215" />
-            <sprite id="coverfeet" src="reskins/serena_fennekin/5-coverfeet.png" x="0" y="0" />
-            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
-        </pose>
-        <pose id="midDress-remove">
-            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-13" y="217" />
-            <sprite id="coverfeet" src="reskins/serena_fennekin/6-coverfeet.png" x="0" y="0" />
-            <sprite id="dress-remove" src="serena/dress-remove.png" x="6" y="715" />
-        </pose>
-        <pose id="fischldresscard">
-            <sprite id="fischldress" src="serena/fischldress.png" x="0" y="0" scalex="-1" />
-            <sprite id="card" src="serena/card.png" x="157" y="273" rotation="-15" />
-            <sprite id="card(copy)" src="serena/card.png" x="162" y="270" rotation="-5" />
-            <sprite id="card(copy)(copy)" src="serena/card.png" x="165" y="273" rotation="3" />
-        </pose>
-        <pose id="fischldress">
-            <sprite id="fischldress" src="serena/fischldress.png" x="0" y="0" />
+        <pose id="yay">
+            <sprite id="yay" src="reskins/serena_fennekin/7-yay.png" x="0" y="0" />
         </pose>
     </poses>
 
