@@ -234,6 +234,10 @@
         <response id="387" opponent="edelgard" opponentId="189" />
         <response id="388" opponent="edelgard" opponentId="955" />
         <response id="389" opponent="edelgard" opponentId="615" />
+        <response id="412" opponent="mari_setogaya" opponentId="180" />
+        <response id="414" opponent="leonie" opponentId="53" />
+        <response id="415" opponent="kaz" opponentId="95" />
+        <response id="416" opponent="sucrose" opponentId="133" />
     </responses>
     <notes>
         <note id="84">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
@@ -365,7 +369,7 @@
         <label id="232" label="Removed cups early, but not first" folder="" sort="0" />
         <label id="85" label="Rouge the thief" folder="Targeted&gt;Rouge" sort="0" />
         <label id="233" label="First boobs revealed" folder="" sort="0" />
-        <label id="234" label="Removed cups at normal time" folder="" sort="0" />
+        <label id="234" label="Removed cups at normal time (more than one man)" folder="" sort="0" />
         <label id="235" label="Resets elemental" folder="Variable setting" sort="0" />
         <label id="245" label="(failsafe)" folder="" sort="0" />
         <label id="250" label="About to flash (last) (&quot;What a shame&quot; line)" folder="" sort="0" />
@@ -503,8 +507,10 @@
         <label id="409" label="" folder="Targeted&gt;Amy" sort="0" />
         <label id="381" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
         <label id="410" label="" folder="Targeted&gt;Jenetta" sort="0" />
+        <label id="411" label="Removed cups at normal time (one man)" folder="" sort="0" />
+        <label id="415" label="" folder="Targeted&gt;Kaz" sort="0" />
     </labels>
-    <nextId>410</nextId>
+    <nextId>416</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
@@ -568,6 +574,7 @@
         <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
         <marker scope="Public" name="Jura_Strip0">Angela asks Jura about Barnette</marker>
         <marker scope="Private" name="JustShowedBoobs">Only active for the first round after Angela shows off her breasts (regardless of why).</marker>
+        <marker scope="Public" name="Kaz_TravelOptions">Angela tells Kaz about how she's swum on a turtle, flown on a dragon, and been shot out of a cannon.</marker>
         <marker scope="Public" name="LookedAtMasturbation">Angela couldn't resist the temptation to look at a man masturbating when she was trying to focus. So much for focus!</marker>
         <marker scope="Public" name="Lux_LuminaMention">Angela suggests summoning Lumina after one of Lux's light puns.</marker>
         <marker scope="Public" name="Lux_LuminaPun">Angela actually does summon Lumina after one of Lux's light puns.</marker>
@@ -622,6 +629,7 @@
         <marker scope="Public" name="Wasp_IsAFaerie">Angela thinks Wasp is a faerie, and asks if she'll get dragged on another adventure.</marker>
         <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
         <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
+        <marker scope="Public" name="Witch_DontKnowWhatYoureDoing">Angela suggests that Witch doesn't know what she's doing with her magic when the latter casts the wrong spell.</marker>
         <marker scope="Private" name="WomanNotPing">Set when Angela recognizes that another player at the table is a woman (she doesn't recognize "Ping" as a woman)</marker>
         <marker scope="Public" name="WorldSavingHeroes">Angela mentions having companions who went adventuring with her (she'll never say specifically who her companions were though.)</marker>
         <marker scope="Public" name="Yuno_NoGimmickToday">Angela tells Yuno that she isn't doing her "gimmick" today.</marker>
