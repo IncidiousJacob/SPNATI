@@ -282,6 +282,10 @@
         <response id="1152" opponent="nadeshiko" opponentId="1297" />
         <response id="1177" opponent="edelgard" opponentId="47" />
         <response id="1178" opponent="edelgard" opponentId="23" />
+        <response id="1452" opponent="may" opponentId="671" />
+        <response id="1453" opponent="edelgard" opponentId="985" />
+        <response id="1454" opponent="meia" opponentId="2914" />
+        <response id="1455" opponent="jura" opponentId="2801" />
     </responses>
     <notes>
         <note id="39">A male character has just removed that small item first round</note>
@@ -456,7 +460,7 @@
         <label id="379" label="" color="15" folder="Stage 7" sort="0" />
         <label id="380" label="" color="2" folder="" sort="0" />
         <label id="381" label="" color="15" folder="Stage 0" sort="0" />
-        <label id="382" label="" color="2" folder="" sort="0" />
+        <label id="382" label="" color="2" folder="1 Must Strip" sort="0" />
         <label id="383" label="" color="2" folder="Stage 0" sort="0" />
         <label id="384" label="" color="2" folder="Stage 5" sort="0" />
         <label id="385" label="" color="2" folder="Stage 5" sort="0" />
@@ -1501,8 +1505,12 @@
         <label id="1448" label="" color="15" folder="3 After Stripping" sort="0" />
         <label id="1449" label="" color="15" folder="3 After Stripping" sort="0" />
         <label id="1450" label="" color="15" folder="3 After Stripping" sort="0" />
+        <label id="1451" label="" color="2" folder="1 Must Strip" sort="0" />
+        <label id="1452" label="" color="15" folder="Stage 3" sort="0" />
+        <label id="1454" label="" color="2" folder="Stage 0" sort="0" />
+        <label id="1455" label="" color="2" folder="Stage 0" sort="0" />
     </labels>
-    <nextId>1450</nextId>
+    <nextId>1455</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="0strip_losing" />
@@ -1629,6 +1637,7 @@
         <marker scope="Public" name="gloria_serenaYourStory_resp_00" />
         <marker scope="Public" name="gloria_serenaYourStory_resp_01" />
         <marker scope="Public" name="gloria_serenaYourStory_resp_02" />
+        <marker scope="Public" name="good_whiff" />
         <marker scope="Public" name="hex_haunterIntro" />
         <marker scope="Public" name="HowItsPlayed" />
         <marker scope="Public" name="jean_beauty_00" />
@@ -1956,6 +1965,7 @@
         <marker scope="Public" name="serena_darkness_scream3">Response to Darkness's "ok no worries," reponse to Serena's "thanks for the offer, but you dont' have to"</marker>
         <marker scope="Public" name="serena_darkness_sword2">Response to Darkness's "Ok with sword, best with taking punishment" target</marker>
         <marker scope="Public" name="serena_darkness_sword3">Response to Darkness's "I'm sturdy, I'd like to see someone try to hurt me."</marker>
+        <marker scope="Public" name="serena_edelgard_longHair" />
         <marker scope="Public" name="serena_fischl_01" />
         <marker scope="Public" name="serena_fischl_12" />
         <marker scope="Public" name="serena_gloria_01" />
@@ -1987,6 +1997,7 @@
         <marker scope="Public" name="serena_jura_41sol" />
         <marker scope="Public" name="serena_jura_51" />
         <marker scope="Public" name="serena_jura_m1">First response to Jura's m stage target</marker>
+        <marker scope="Public" name="serena_jura_sleepover01" />
         <marker scope="Public" name="serena_leon_71" />
         <marker scope="Public" name="serena_leon_72" />
         <marker scope="Public" name="serena_leon_finished1" />
@@ -2089,6 +2100,7 @@
         <marker scope="Public" name="serena_may_awkward01" />
         <marker scope="Public" name="serena_may_lastlong01">Responding to May's "cute ones don't last long" comment when losing</marker>
         <marker scope="Public" name="serena_may_selected">Responding to May on the selected screen</marker>
+        <marker scope="Public" name="serena_may_toenail_compare31" />
         <marker scope="Public" name="serena_megumin_biggestmonster">First response to Megumin asking about the biggest monster Serena has killed</marker>
         <marker scope="Public" name="serena_megumin_bothnobra_7">Target towards Megumin not wearing a bra when Serena doesn't have hers</marker>
         <marker scope="Public" name="serena_megumin_expsenpai1">Frist response to Megumin's target about teaching about explosions</marker>
@@ -2107,6 +2119,7 @@
         <marker scope="Public" name="serena_meia_s1">First response to Meia's strip stage target</marker>
         <marker scope="Public" name="serena_meia_s12">Seconrd response to Meia's first target</marker>
         <marker scope="Public" name="serena_meia_s13">Third response (i think) to Meia's "tell me about kalos" target</marker>
+        <marker scope="Public" name="serena_meia_sleepover01" />
         <marker scope="Public" name="serena_monika_01" />
         <marker scope="Public" name="serena_nade_camping1" />
         <marker scope="Public" name="serena_nade_camping2" />
@@ -2169,6 +2182,7 @@
         <marker scope="Public" name="serena_schezo_magic1" />
         <marker scope="Public" name="serena_schezo_magic2" />
         <marker scope="Public" name="serena_schezo_magic3" />
+        <marker scope="Public" name="serena_schezo_target_01" />
         <marker scope="Public" name="serena_suctioncup_b" />
         <marker scope="Public" name="serena_velvet_01" />
         <marker scope="Public" name="serena_velvet_12" />
