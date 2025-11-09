@@ -389,24 +389,6 @@
                 <keyframe time="1" rotation="8" />
             </directive>
         </pose>
-        <pose id="M5">
-            <sprite id="M5" src="reskins/serena_fennekin/M5.png" x="0" y="0" />
-            <sprite id="hand" src="serena/hand.png" x="9" y="1161" scalex="1" scaley="1" pivotx="75%" pivoty="17%" rotation="8" />
-            <sprite id="M5leg" src="serena/M5leg.png" x="43" y="1105" scalex="1" />
-            <directive type="animation" id="hand" ease="linear" interpolation="linear">
-                <keyframe time="0" x="9" y="1161" scalex="1" scaley="1" />
-                <keyframe time="0.5" x="9" y="1161" scalex="1" scaley="1" />
-            </directive>
-            <directive type="animation" id="hand" ease="linear" interpolation="none">
-                <keyframe time="0" src="serena/hand.png" />
-                <keyframe time="0.5" src="serena/hand.png" />
-            </directive>
-            <directive type="animation" id="hand" loop="true" ease="linear" interpolation="linear">
-                <keyframe time="0" rotation="8" />
-                <keyframe time="0.25" rotation="-7" />
-                <keyframe time="0.5" rotation="8" />
-            </directive>
-        </pose>
         <pose id="M6">
             <sprite id="drip" src="serena/drip.png" x="-11" y="1085" />
             <sprite id="knees" src="reskins/serena_fennekin/knees.png" x="0" y="0" />
@@ -2101,6 +2083,27 @@
         </pose>
         <pose id="yay">
             <sprite id="yay" src="reskins/serena_fennekin/7-yay.png" x="0" y="0" />
+        </pose>
+        <pose id="M5">
+            <sprite id="M5" src="reskins/serena_fennekin/M5.png" x="0" y="0" />
+            <sprite id="hand" src="serena/hand.png" x="11" y="1134" scalex="1" scaley="1" pivotx="75%" pivoty="17%" rotation="-3" />
+            <sprite id="M5leg" src="serena/M5leg.png" x="44" y="1092" rotation="0" />
+            <sprite id="O2leg" src="serena/O2leg.png" x="40" y="1002" scalex="-0.85" scaley="0.87" pivotx="87%" pivoty="7%" rotation="414" clipbottom="8" clipradius="28" />
+            <directive type="animation" id="hand" ease="linear" interpolation="linear">
+                <keyframe time="0" x="11" y="1134" scalex="1" scaley="1" />
+                <keyframe time="0.25" x="11" y="1134" scalex="1" scaley="1" />
+                <keyframe time="0.5" x="11" y="1134" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="hand" ease="linear" interpolation="none">
+                <keyframe time="0" src="serena/hand.png" />
+                <keyframe time="0.25" src="serena/hand.png" />
+                <keyframe time="0.5" src="serena/hand.png" />
+            </directive>
+            <directive type="animation" id="hand" loop="true" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="-3" />
+                <keyframe time="0.25" rotation="-14" />
+                <keyframe time="0.5" rotation="-3" />
+            </directive>
         </pose>
     </poses>
 
