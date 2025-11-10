@@ -168,6 +168,11 @@
         <response id="985" opponent="serena" opponentId="633" />
         <response id="995" opponent="aqua_kh" opponentId="1325" />
         <response id="997" opponent="aqua_kh" opponentId="51" />
+        <response id="1000" opponent="schezo" opponentId="315" />
+        <response id="1004" opponent="barbara" opponentId="17" />
+        <response id="0" opponent="petra" opponentId="248" />
+        <response id="1005" opponent="cagliostro" opponentId="2" />
+        <response id="1006" opponent="cagliostro" opponentId="1" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -180,6 +185,7 @@
         <note id="637">Edelgard's intellegence is set to Bad after she loses her romper, but after three hands she will bounce back and her intellegence will be set to Good. This case accounts for other events which alter Edelgard's intellegence, delaying the change if they are currently active. This version of the case is for when the deity buff is active changing Edelgard's intellegence to Best rather than Good. </note>
         <note id="715">\</note>
         <note id="760">Miracle Beans are an item in Fire Emblem: Three Houses which boost a character's Luck stat when consumed.</note>
+        <note id="331">Disabled because it places Academy Edelgard at too definite a point FE3H's in the timeline. Will be reimplemented for her War Outfit.</note>
     </notes>
     <labels>
         <label id="19" label="Stripped romper (0 Fódlans)" folder="Strip Romper" sort="0" />
@@ -819,8 +825,12 @@
         <label id="998" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
         <label id="995" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
         <label id="999" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
+        <label id="1000" label="" folder="Target - Character&gt;Schezo" sort="0" />
+        <label id="1001" label="" folder="Target - Character&gt;Serena" sort="0" />
+        <label id="1002" label="" folder="Target - Character&gt;Serena" sort="0" />
+        <label id="1003" label="" color="5" folder="Target - Character&gt;Caulifla" sort="0" />
     </labels>
-    <nextId>999</nextId>
+    <nextId>1006</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
@@ -859,6 +869,7 @@
         <marker scope="Public" name="ayano_PlayingInnocent" />
         <marker scope="Public" name="Balthus_0" />
         <marker scope="Public" name="Balthus_1" />
+        <marker scope="Public" name="barbara_DailyPrayer" />
         <marker scope="Public" name="beatrix_MajorSurgery" />
         <marker scope="Public" name="bernadetta_academy_look" />
         <marker scope="Public" name="bernadetta_bernie_breasts" />
@@ -911,6 +922,9 @@
         <marker scope="Public" name="BraFree" />
         <marker scope="Public" name="BrutishAxes" />
         <marker scope="Public" name="C" />
+        <marker scope="Public" name="cagliostro_BodyChange_a" />
+        <marker scope="Public" name="cagliostro_BodyChange_b" />
+        <marker scope="Public" name="cagliostro_Narcissus" />
         <marker scope="Public" name="CanRelax" />
         <marker scope="Public" name="catria_ButtAware" />
         <marker scope="Public" name="catria_ShowingButt" />
@@ -1141,6 +1155,8 @@
         <marker scope="Public" name="HotForTeacher" />
         <marker scope="Public" name="Hubert_0" />
         <marker scope="Public" name="Hubert_1" />
+        <marker scope="Public" name="HubertIntroduced" />
+        <marker scope="Public" name="HubertMentioned" />
         <marker scope="Public" name="HubertsSpies" />
         <marker scope="Public" name="ibuki_DevilDuel" />
         <marker scope="Public" name="ibuki_FireMagic" />
@@ -1234,6 +1250,7 @@
         <marker scope="Public" name="ScarsRevealed_a" />
         <marker scope="Public" name="ScarsRevealed_b" />
         <marker scope="Public" name="ScarsRevealed_c" />
+        <marker scope="Public" name="schezo_Fate" />
         <marker scope="Public" name="self_BraFree" />
         <marker scope="Public" name="self_not_rhea" />
         <marker scope="Public" name="self_useless_gods" />
@@ -1241,6 +1258,7 @@
         <marker scope="Public" name="SelfAwareness" />
         <marker scope="Public" name="serena_LongHair_a" />
         <marker scope="Public" name="serena_LongHair_b" />
+        <marker scope="Public" name="serena_LongHair_b2" />
         <marker scope="Public" name="shamiko_Nickname" />
         <marker scope="Public" name="ShowNoWeakness" />
         <marker scope="Public" name="Sketchbook" />
