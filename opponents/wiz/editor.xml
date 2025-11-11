@@ -141,6 +141,7 @@ Targetable traits:
         <response id="626" opponent="meia" opponentId="2887" />
         <response id="627" opponent="jura" opponentId="2775" />
         <response id="678" opponent="priscilla" opponentId="315" />
+        <response id="892" opponent="priscilla" opponentId="363" />
     </responses>
     <notes>
         <note id="30">This info is incorrect. It's ghosts she can command. Need to write different follow-up for undead.</note>
@@ -150,9 +151,7 @@ Targetable traits:
         <note id="434">You did prefer doing pigeons, right? That was the impression I got, so…</note>
         <note id="435">You did prefer doing pigeons, right? That was the impression I got, so…</note>
         <note id="59">Reminder: punchline will be next line as we discussed: after shaking hands, can't separate or remove gloves for 24 hours.</note>
-        <note id="737">In any line where it appears, it's entirely up to you whether Priscilla hears any {small} text or not.</note>
         <note id="738">"Class" here is referring to the class on her Adventurer's Card: arch wizard, crusader, thief, etc. Priscilla may or may not have such distinctions in her world.</note>
-        <note id="739">In any line where it appears, it's entirely up to you whether Priscilla hears any {small} text or not.</note>
         <note id="740">Switched previous pose to "confused" to use "sad" here instead. Probably doesn't matter for your responses.</note>
     </notes>
     <labels>
@@ -877,9 +876,9 @@ Targetable traits:
         <label id="734" label="" folder="Monika" sort="0" />
         <label id="735" label="" folder="Monika" sort="0" />
         <label id="736" label="" folder="Monika" sort="0" />
-        <label id="737" label="" color="1" folder="Priscilla" sort="0" />
-        <label id="738" label="" color="1" folder="Priscilla" sort="0" />
-        <label id="739" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="737" label="" folder="Priscilla" sort="0" />
+        <label id="738" label="" folder="Priscilla" sort="0" />
+        <label id="739" label="" folder="Priscilla" sort="0" />
         <label id="740" label="" color="1" folder="Cadence" sort="0" />
         <label id="741" label="" folder="Simon" sort="0" />
         <label id="742" label="" folder="Simon" sort="0" />
@@ -980,8 +979,63 @@ Targetable traits:
         <label id="837" label="" folder="Simon" sort="0" />
         <label id="838" label="" folder="Simon" sort="0" />
         <label id="839" label="" folder="Simon" sort="0" />
+        <label id="840" label="" folder="Fischl" sort="0" />
+        <label id="841" label="" folder="Fischl" sort="0" />
+        <label id="842" label="" folder="Fischl" sort="0" />
+        <label id="843" label="" folder="Fischl" sort="0" />
+        <label id="844" label="" folder="Fischl" sort="0" />
+        <label id="845" label="" folder="Fischl" sort="0" />
+        <label id="846" label="" folder="Fischl" sort="0" />
+        <label id="847" label="" folder="Fischl" sort="0" />
+        <label id="848" label="" folder="Fischl" sort="0" />
+        <label id="849" label="" folder="Fischl" sort="0" />
+        <label id="850" label="" folder="Fischl" sort="0" />
+        <label id="851" label="" folder="Fischl" sort="0" />
+        <label id="852" label="" folder="Fischl" sort="0" />
+        <label id="853" label="" folder="Fischl" sort="0" />
+        <label id="854" label="" folder="Fischl" sort="0" />
+        <label id="855" label="" folder="Fischl" sort="0" />
+        <label id="856" label="" color="6" folder="Fischl" sort="0" />
+        <label id="857" label="" folder="Fischl" sort="0" />
+        <label id="858" label="" folder="Fischl" sort="0" />
+        <label id="859" label="" folder="Fischl" sort="0" />
+        <label id="860" label="" folder="Fischl" sort="0" />
+        <label id="861" label="" folder="Fischl" sort="0" />
+        <label id="862" label="" folder="Fischl" sort="0" />
+        <label id="863" label="" folder="Fischl" sort="0" />
+        <label id="864" label="" folder="Fischl" sort="0" />
+        <label id="865" label="" folder="Fischl" sort="0" />
+        <label id="866" label="" folder="Fischl" sort="0" />
+        <label id="867" label="" folder="Fischl" sort="0" />
+        <label id="868" label="" folder="Fischl" sort="0" />
+        <label id="869" label="" folder="Fischl" sort="0" />
+        <label id="870" label="" folder="Fischl" sort="0" />
+        <label id="871" label="" folder="Fischl" sort="0" />
+        <label id="872" label="" folder="Fischl" sort="0" />
+        <label id="873" label="" folder="Fischl" sort="0" />
+        <label id="874" label="" folder="Fischl" sort="0" />
+        <label id="875" label="" folder="Fischl" sort="0" />
+        <label id="876" label="" folder="Fischl" sort="0" />
+        <label id="877" label="" folder="Fischl" sort="0" />
+        <label id="878" label="" folder="Fischl" sort="0" />
+        <label id="879" label="" folder="Fischl" sort="0" />
+        <label id="880" label="" folder="Fischl" sort="0" />
+        <label id="881" label="" folder="Fischl" sort="0" />
+        <label id="882" label="" folder="Fischl" sort="0" />
+        <label id="883" label="" folder="Fischl" sort="0" />
+        <label id="884" label="" folder="Fischl" sort="0" />
+        <label id="885" label="" folder="Fischl" sort="0" />
+        <label id="886" label="" folder="Fischl" sort="0" />
+        <label id="887" label="" folder="Fischl" sort="0" />
+        <label id="888" label="" folder="Fischl" sort="0" />
+        <label id="889" label="" folder="Fischl" sort="0" />
+        <label id="890" label="" folder="Fischl" sort="0" />
+        <label id="891" label="" folder="Fischl" sort="0" />
+        <label id="892" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="893" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="894" label="" color="1" folder="Priscilla" sort="0" />
     </labels>
-    <nextId>839</nextId>
+    <nextId>894</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
@@ -999,6 +1053,49 @@ Targetable traits:
         <marker scope="Public" name="brock_kaboom_2" />
         <marker scope="Public" name="cagliostro_facade" />
         <marker scope="Public" name="fighting_words">When an opponent is losing badly and Wiz is doing well, she feels confident enough to try provoking them.</marker>
+        <marker scope="Public" name="fischl_adventure_resp_00" />
+        <marker scope="Public" name="fischl_adventure_resp_01" />
+        <marker scope="Public" name="fischl_adventure_resp_02" />
+        <marker scope="Public" name="fischl_books_resp_10" />
+        <marker scope="Public" name="fischl_books_resp_11" />
+        <marker scope="Public" name="fischl_books_resp_12" />
+        <marker scope="Public" name="fischl_commitment_50" />
+        <marker scope="Public" name="fischl_commitment_51" />
+        <marker scope="Public" name="fischl_commitment_52" />
+        <marker scope="Public" name="fischl_court_mage_resp_20" />
+        <marker scope="Public" name="fischl_court_mage_resp_21" />
+        <marker scope="Public" name="fischl_court_mage_resp_22" />
+        <marker scope="Public" name="fischl_dating_activities_resp_50" />
+        <marker scope="Public" name="fischl_dating_activities_resp_51" />
+        <marker scope="Public" name="fischl_dating_activities_resp_52" />
+        <marker scope="Public" name="fischl_investigator_10" />
+        <marker scope="Public" name="fischl_investigator_11" />
+        <marker scope="Public" name="fischl_investigator_12" />
+        <marker scope="Public" name="fischl_meeting_people_resp_30" />
+        <marker scope="Public" name="fischl_meeting_people_resp_31" />
+        <marker scope="Public" name="fischl_meeting_people_resp_32" />
+        <marker scope="Public" name="fischl_oz_30" />
+        <marker scope="Public" name="fischl_oz_31" />
+        <marker scope="Public" name="fischl_oz_32" />
+        <marker scope="Public" name="fischl_reading_40" />
+        <marker scope="Public" name="fischl_reading_41" />
+        <marker scope="Public" name="fischl_reading_42" />
+        <marker scope="Public" name="fischl_relationships_resp_40" />
+        <marker scope="Public" name="fischl_relationships_resp_41" />
+        <marker scope="Public" name="fischl_relationships_resp_42" />
+        <marker scope="Public" name="fischl_royalty_00" />
+        <marker scope="Public" name="fischl_royalty_01" />
+        <marker scope="Public" name="fischl_royalty_02" />
+        <marker scope="Public" name="fischl_sex_preferences_resp_60" />
+        <marker scope="Public" name="fischl_sex_preferences_resp_61" />
+        <marker scope="Public" name="fischl_sex_preferences_resp_62" />
+        <marker scope="Public" name="fischl_vision_20" />
+        <marker scope="Public" name="fischl_vision_21" />
+        <marker scope="Public" name="fischl_vision_22" />
+        <marker scope="Public" name="fischl_winner" />
+        <marker scope="Public" name="fischl_wiz_a71" />
+        <marker scope="Public" name="fischl_wiz_a72" />
+        <marker scope="Public" name="fischl_wiz_a83" />
         <marker scope="Public" name="fluttershy_turtle_trivia" />
         <marker scope="Public" name="formal_f1">For "formal_" markers, Wiz is impressed with the beautiful clothing someone is wearing.</marker>
         <marker scope="Public" name="formal_f2" />
@@ -1190,6 +1287,7 @@ Targetable traits:
         <marker scope="Public" name="priscilla_wiz_a13" />
         <marker scope="Public" name="priscilla_wiz_a21" />
         <marker scope="Public" name="priscilla_wiz_a22" />
+        <marker scope="Public" name="priscilla_wiz_a23" />
         <marker scope="Public" name="ringo_name" />
         <marker scope="Public" name="rosie_adventures_30" />
         <marker scope="Public" name="Rosie_adventures_30" />
@@ -1532,6 +1630,13 @@ Targetable traits:
         <marker scope="Public" name="wiz_cadence_a01" />
         <marker scope="Public" name="wiz_cadence_a02" />
         <marker scope="Public" name="wiz_chiaki_a01" />
+        <marker scope="Public" name="wiz_finished" />
+        <marker scope="Public" name="wiz_fischl_a61" />
+        <marker scope="Public" name="wiz_fischl_a62" />
+        <marker scope="Public" name="wiz_fischl_a73" />
+        <marker scope="Public" name="wiz_fischl_lost_a" />
+        <marker scope="Public" name="wiz_fischl_lost_b" />
+        <marker scope="Public" name="wiz_fischl_lost_first" />
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jean_a02" />
         <marker scope="Public" name="wiz_juno_a01" />
@@ -1579,7 +1684,9 @@ Targetable traits:
         <marker scope="Public" name="wiz_polly_a02" />
         <marker scope="Public" name="wiz_priscilla_a01" />
         <marker scope="Public" name="wiz_priscilla_a02" />
+        <marker scope="Public" name="wiz_priscilla_a03" />
         <marker scope="Public" name="wiz_priscilla_a11" />
+        <marker scope="Public" name="wiz_priscilla_a12" />
         <marker scope="Public" name="wiz_rosie_a71" />
         <marker scope="Public" name="wiz_rosie_a72" />
         <marker scope="Public" name="wiz_rosie_a83" />
@@ -1663,6 +1770,7 @@ Targetable traits:
         <marker scope="Public" name="wiz_vanessa_a82" />
         <marker scope="Public" name="wiz_vanessa_a93" />
         <marker scope="Public" name="wiz_vanessa_lost" />
+        <marker scope="Public" name="wiz_winner_fischl" />
         <marker scope="Public" name="wiz_winner_monika" />
         <marker scope="Public" name="wiz_winner_simon_a" />
         <marker scope="Public" name="wiz_winner_simon_b" />
