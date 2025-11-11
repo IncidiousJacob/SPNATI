@@ -30,6 +30,9 @@
         <case name="Birthday rememberance" id="1042" priority="Noteworthy" min="8" max="8">
             <description>Hex maniac remembered that it's her birthday. Unfortunately she already lost.</description>
         </case>
+        <case name="Snowy Butthole" id="1099" priority="Noteworthy" min="2" max="2">
+            <description>In her Hex-tra Snowy outfit, Hex Maniac accidently flashes her butthole while removing her socks.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -237,6 +240,22 @@
         <response id="0" opponent="vriska" opponentId="1" />
         <response id="0" opponent="vriska" opponentId="5" />
         <response id="0" opponent="chell_wheatley" opponentId="69" />
+        <response id="0" opponent="schezo" opponentId="12" />
+        <response id="0" opponent="schezo" opponentId="27" />
+        <response id="0" opponent="schezo" opponentId="90" />
+        <response id="0" opponent="9s" opponentId="9" />
+        <response id="0" opponent="9s" opponentId="11" />
+        <response id="0" opponent="connie" opponentId="58" />
+        <response id="0" opponent="connie" opponentId="104" />
+        <response id="0" opponent="connie" opponentId="60" />
+        <response id="0" opponent="connie" opponentId="85" />
+        <response id="0" opponent="connie" opponentId="62" />
+        <response id="0" opponent="connie" opponentId="98" />
+        <response id="0" opponent="leon" opponentId="1164" />
+        <response id="0" opponent="leon" opponentId="428" />
+        <response id="0" opponent="bowsette" opponentId="9" />
+        <response id="0" opponent="florina" opponentId="5" />
+        <response id="0" opponent="florina" opponentId="6" />
     </responses>
     <notes>
         <note id="3">It does infact translate to people who spend lots of time with ghosts, or atleast it translates to hex getting better ai in october.</note>
@@ -257,6 +276,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <note id="995">The other markers are from Vinyl's money prompt. She gives the same answer.</note>
         <note id="951">this wasn't targeted.. whops</note>
         <note id="1032">plan is to ask about the skimpiness of jura's outfit. citing the inner sideboob, extremely high thigh cut without a hint of underwear beneath. Barnette's exposed hips, and if meia is there wonder if hers is what counts as modest fashion in the future.</note>
+        <note id="1092">Realized only after a bit that jura is talking about candy, so hex isn't going to notice at all unless told</note>
     </notes>
     <labels>
         <label id="1" label="Sunny" folder="Background stuff" sort="2" />
@@ -298,7 +318,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="39" label="Pandemic" folder="Targets&gt;Yuzuki" sort="0" />
         <label id="40" label="" folder="Targets" sort="10" />
         <label id="41" label="!Thanks" folder="Ghost yapping" sort="6" />
-        <label id="42" label="" folder="Banter&gt;Schezo" sort="38" />
+        <label id="42" label="" folder="Banter&gt;PuyoPuyo&gt;Schezo" sort="38" />
         <label id="43" label="really a ghost" folder="Targets&gt;Yuzuki" sort="2" />
         <label id="67" label="Prompt" folder="Prompts&gt;Haunter Intro" sort="0" />
         <label id="69" label="should not play." color="1" folder="BreaksCEifViewed" sort="0" />
@@ -1033,7 +1053,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="804" label="" folder="Banter&gt;Meia" sort="0" />
         <label id="805" label="" folder="Banter&gt;Meia" sort="0" />
         <label id="806" label="" folder="Banter&gt;Rosie" sort="0" />
-        <label id="807" label="" folder="Banter&gt;Schezo" sort="0" />
+        <label id="807" label="" folder="Banter&gt;PuyoPuyo&gt;Schezo" sort="0" />
         <label id="808" label="" folder="Banter&gt;Pokemon&gt;Serena" sort="0" />
         <label id="809" label="" folder="Banter&gt;Momo" sort="0" />
         <label id="810" label="" folder="Prompts&gt;GhostQ&gt;Answers" sort="0" />
@@ -1048,7 +1068,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="819" label="" folder="Ghost yapping&gt;Responses" sort="0" />
         <label id="820" label="" folder="Ghost yapping&gt;Responses" sort="0" />
         <label id="821" label="" folder="Ghost yapping&gt;Responses" sort="0" />
-        <label id="822" label="" folder="Banter&gt;Schezo" sort="0" />
+        <label id="822" label="" folder="Banter&gt;PuyoPuyo&gt;Schezo" sort="0" />
         <label id="823" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="824" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="825" label="" folder="Targets&gt;Meia" sort="0" />
@@ -1312,13 +1332,27 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="1086" label="" folder="Banter&gt;Nadeshiko" sort="0" />
         <label id="1089" label="" folder="Targets&gt;FE&gt;Edelgard" sort="0" />
         <label id="1090" label="" folder="Targets&gt;FE&gt;Edelgard" sort="0" />
+        <label id="1091" label="" folder="Banter&gt;PuyoPuyo&gt;Schezo" sort="0" />
+        <label id="1092" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="1093" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="1094" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="1095" label="" folder="Snowy" sort="0" />
+        <label id="1096" label="" folder="Snowy" sort="0" />
+        <label id="1097" label="" folder="Snowy" sort="0" />
+        <label id="1098" label="" folder="Snowy" sort="0" />
+        <label id="1099" label="" folder="Snowy" sort="0" />
+        <label id="1100" label="" folder="Snowy" sort="0" />
+        <label id="1101" label="" folder="Snowy" sort="0" />
+        <label id="1102" label="" folder="Snowy" sort="0" />
+        <label id="1103" label="" folder="Snowy" sort="0" />
+        <label id="1104" label="" folder="Snowy" sort="0" />
     </labels>
     <prefixes>
         <prefix>Haunter</prefix>
         <prefix>Placeholder</prefix>
         <prefix>z</prefix>
     </prefixes>
-    <nextId>1090</nextId>
+    <nextId>1104</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9s_Nippleless" />
@@ -1495,8 +1529,9 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Jura_Tarot_01" />
         <marker scope="Public" name="Jura_Tarot_11" />
         <marker scope="Public" name="Jura_Tarot_12" />
+        <marker scope="Public" name="Jura_Witchy_51" />
         <marker scope="Public" name="LargePPpride" />
-        <marker scope="Public" name="Laverre Clock" />
+        <marker scope="Public" name="LaverreClock" />
         <marker scope="Public" name="LibraryResearch" />
         <marker scope="Public" name="LumioseMention" />
         <marker scope="Public" name="Lyralei_dildosplinters" />
@@ -1526,6 +1561,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Meia_UnderControl_01" />
         <marker scope="Public" name="Meia_UnderControl_02" />
         <marker scope="Public" name="Meia_UnfitForPilot" />
+        <marker scope="Public" name="Meia_Witchy_41" />
         <marker scope="Public" name="Mia_ParentResponse" />
         <marker scope="Public" name="Milky">Hex is Lactating</marker>
         <marker scope="Public" name="Momo_CreateDead_001" />
@@ -1678,7 +1714,6 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Stocking_HexDoesntAppreciateHerHyperfixationBeingMocked" />
         <marker scope="Public" name="Stocking_Hexgirlwho" />
         <marker scope="Public" name="Stocking_OtherOutfits" />
-        <marker scope="Public" name="Strange Light" />
         <marker scope="Public" name="StrangeLights" />
         <marker scope="Public" name="Stream_Bar" />
         <marker scope="Public" name="Sweetheart_FrontBra" />
