@@ -272,6 +272,16 @@
         <response id="997" opponent="wiz" opponentId="399" />
         <response id="1019" opponent="simon" opponentId="13" />
         <response id="1020" opponent="simon" opponentId="14" />
+        <response id="1053" opponent="jenetta" opponentId="137" />
+        <response id="1062" opponent="edelgard" opponentId="222" />
+        <response id="1063" opponent="edelgard" opponentId="620" />
+        <response id="1064" opponent="edelgard" opponentId="486" />
+        <response id="1065" opponent="edelgard" opponentId="489" />
+        <response id="1066" opponent="edelgard" opponentId="615" />
+        <response id="1067" opponent="edelgard" opponentId="562" />
+        <response id="1068" opponent="edelgard" opponentId="23" />
+        <response id="1071" opponent="edelgard" opponentId="47" />
+        <response id="1074" opponent="edelgard" opponentId="958" />
     </responses>
     <notes>
         <note id="685">Devs of Kagamine Rin, if you're seeing this, Rin has an Arle cosplay module in Project Diva, named "Apprentice Magician".</note>
@@ -286,6 +296,10 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <note id="1024">A failsafe, just in case.</note>
         <note id="1025">A failsafe, just in case.</note>
         <note id="1031">This line is reserved for a special pose</note>
+        <note id="1053">Golden Apples give you a free level up in the Madou Monogatari and spinoff games they appear in. Think Rare Candy from Pokemon.
+
+Dragon Meat comes in three varities, but they're the healing item that restores your HP and MP.</note>
+        <note id="1061">Madou Monogatari has a key item that enabled the Compass in-game. You don't start the game with the compass, so expect to get more lost within the first few minutes of the game.</note>
     </notes>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -1251,11 +1265,23 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <label id="1050" label="" folder="Targets" sort="0" />
         <label id="1051" label="" folder="Filtered" sort="0" />
         <label id="1052" label="" folder="Filtered" sort="0" />
+        <label id="1053" label="Delicacies" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1054" label="High Traffic" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1055" label="Friends? In here?" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1056" label="Clothing Repair" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1057" label="Tenori Zoh" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1058" label="" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1059" label="" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1060" label="" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1061" label="Cartography" folder="Targets&gt;Jenetta" sort="0" />
+        <label id="1064" label="" folder="Targets" sort="0" />
+        <label id="1071" label="" folder="Targets" sort="0" />
+        <label id="1072" label="" folder="Targets" sort="0" />
+        <label id="1073" label="" folder="Targets" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>1052</nextId>
+    <nextId>1074</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="2009mayberetro" />
         <marker scope="Public" name="about_madou" />
         <marker scope="Public" name="about_magicaljewels" />
@@ -1272,9 +1298,11 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <marker scope="Public" name="aboutdarksword1_sus" />
         <marker scope="Public" name="aboutdarksword1A" />
         <marker scope="Public" name="aboutdarksword1C" />
+        <marker scope="Public" name="AloofNotALoner" />
         <marker scope="Public" name="alre_adventures1" />
         <marker scope="Public" name="angela_onetotalk" />
         <marker scope="Public" name="angela_peepingpunishment" />
+        <marker scope="Public" name="AnnoyingRivals" />
         <marker scope="Public" name="aoi_abouthopespeak1" />
         <marker scope="Public" name="aoi_abouthopespeak2" />
         <marker scope="Public" name="aoi_abouthopespeak3" />
@@ -1415,6 +1443,18 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <marker scope="Public" name="hina_swim_responseA" />
         <marker scope="Public" name="hina_swim_responseB" />
         <marker scope="Public" name="introduction" />
+        <marker scope="Public" name="jenetta_cartography" />
+        <marker scope="Public" name="jenetta_cartography_compass" />
+        <marker scope="Public" name="jenetta_cartography_mystery" />
+        <marker scope="Public" name="jenetta_delicacies_answer" />
+        <marker scope="Public" name="jenetta_delicacies_apple" />
+        <marker scope="Public" name="jenetta_delicacies_dragon" />
+        <marker scope="Public" name="jenetta_location" />
+        <marker scope="Public" name="jenetta_motive" />
+        <marker scope="Public" name="jenetta_motive_aloof" />
+        <marker scope="Public" name="jenetta_motive_odd" />
+        <marker scope="Public" name="jenetta_pets" />
+        <marker scope="Public" name="jenetta_sewing" />
         <marker scope="Public" name="jinx_key">This isn't a dialogue marker. It's for a mechanic that nerfs Schezo against Arle.</marker>
         <marker scope="Public" name="jura_sword_response1" />
         <marker scope="Public" name="jura_sword_response2" />
@@ -1467,10 +1507,12 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <marker scope="Public" name="natasha_sword2" />
         <marker scope="Public" name="nickname" />
         <marker scope="Public" name="noarlenoringo">Schezo's "sass about the Puyo heroines" coupon.</marker>
+        <marker scope="Public" name="NotACoffeePerson" />
         <marker scope="Public" name="notacreeper">Whomever it is, it's not Schezo.</marker>
         <marker scope="Public" name="nudity_responseA" />
         <marker scope="Public" name="nudity_responseB" />
         <marker scope="Public" name="nuisance_puyo" />
+        <marker scope="Public" name="NutHandWHAT" />
         <marker scope="Public" name="othermages" />
         <marker scope="Public" name="othermages_sus" />
         <marker scope="Public" name="past_schezo" />
@@ -1532,6 +1574,7 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <marker scope="Public" name="schezo_" />
         <marker scope="Public" name="schezo__darkness_ironicName3" />
         <marker scope="Public" name="schezo_adventures" />
+        <marker scope="Public" name="schezo_aloofnotaloner" />
         <marker scope="Public" name="schezo_aoi_cosplayer1" />
         <marker scope="Public" name="schezo_aoi_cosplayer1a" />
         <marker scope="Public" name="schezo_aoi_cosplayer2" />
@@ -1944,6 +1987,7 @@ Kudos if you knew what he's talking about before you peeped here!</note>
         <marker scope="Public" name="schezo_zoe_himbo1" />
         <marker scope="Public" name="schezogotflashed" />
         <marker scope="Public" name="SchezoGotFlashed" />
+        <marker scope="Public" name="SchezoHasStandards" />
         <marker scope="Public" name="screamyourname" />
         <marker scope="Public" name="seal_the_deal">Schezo takes Kazuma's bet.</marker>
         <marker scope="Public" name="serena_schezo_0" />
