@@ -21,5 +21,825 @@
         <clothing name="necklace" generic="jewelry" position="neck" type="extra" />
     </wardrobe>
 
+    <poses>
+        <pose id="8-climax">
+            <sprite id="climax 1" src="reskins/vine_staff_wig_staff/8-climax_1.png" x="0" y="0" />
+            <sprite id="climax 1 glow" src="reskins/vine_staff_wig_staff/8-climax_1glow.png" x="0" y="0" alpha="0" />
+            <sprite id="climax flower" delay="0.65" src="vine_staff/8-climax_flower.png" x="-36" y="1078" scaley="0" alpha="0" />
+            <directive type="animation" id="climax 1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/8-climax_1.png" />
+                <keyframe time="0.65" src="reskins/vine_staff_wig_staff/8-climax_2.png" />
+            </directive>
+            <directive type="animation" id="climax 1 glow" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="0" />
+                <keyframe time="0.2" alpha="100" />
+                <keyframe time="0.65" alpha="100" />
+                <keyframe time="0.8" alpha="0" />
+            </directive>
+            <directive type="animation" id="climax 1 glow" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/8-climax_1glow.png" />
+                <keyframe time="0.65" src="reskins/vine_staff_wig_staff/8-climax_2glow.png" />
+            </directive>
+            <directive type="animation" id="climax flower" delay="0.65" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-36" y="1078" scaley="0" alpha="0" />
+                <keyframe time="0.23" x="-50" y="993" scaley="0.5" alpha="100" />
+                <keyframe time="0.6" x="-50" y="993" scaley="0.5" />
+                <keyframe time="1.35" scaley="0" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="0-geardesummon-">
+            <sprite id="desummon1-" z="1" src="reskins/vine_staff_wig_staff/0-desummon1-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon1-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/0-desummon1-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/0-desummon2-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="0-geardesummon+">
+            <sprite id="desummon1-" z="1" src="reskins/vine_staff_wig_staff/0-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon1-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/0-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/0-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="0-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/0-summon1-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/0-summon1-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/0-summon2-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="0-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/0-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/0-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/0-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="1-geardesummon-">
+            <sprite id="desummon1-" z="1" src="reskins/vine_staff_wig_staff/1-desummon1-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon1-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/1-desummon1-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/1-desummon2-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="1-geardesummon+">
+            <sprite id="desummon1-" z="1" src="reskins/vine_staff_wig_staff/1-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon1-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/1-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/1-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="1-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/1-summon1-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/1-summon1-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/1-summon2-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="1-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/1-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/1-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/1-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="2-geardesummon-">
+            <sprite id="desummon2-" z="1" src="reskins/vine_staff_wig_staff/2-desummon2-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon2-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/2-desummon2-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/2-desummon2-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="2-geardesummon+">
+            <sprite id="desummon2-" z="1" src="reskins/vine_staff_wig_staff/2-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon2-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/2-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/2-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="2-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/2-summon2-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/2-summon2-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/2-summon2-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="2-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/2-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/2-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/2-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="3-geardesummon-">
+            <sprite id="desummon3-" z="1" src="reskins/vine_staff_wig_staff/3-desummon3-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon3-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/3-desummon3-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/3-desummon3-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="3-geardesummon+">
+            <sprite id="desummon3-" z="1" src="reskins/vine_staff_wig_staff/3-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon3-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/3-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/3-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="3-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/3-summon3-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/3-summon3-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/3-summon3-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="3-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/3-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/3-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/3-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="4-geardesummon-">
+            <sprite id="desummon4-" z="1" src="reskins/vine_staff_wig_staff/4-desummon4-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon4-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/4-desummon4-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/4-desummon4-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="4-geardesummon+">
+            <sprite id="desummon4-" z="1" src="reskins/vine_staff_wig_staff/4-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon4-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/4-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/4-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="4-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/4-summon4-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/4-summon4-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/4-summon4-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="4-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/4-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/4-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/4-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="5-geardesummon-">
+            <sprite id="desummon5-" z="1" src="reskins/vine_staff_wig_staff/5-desummon5-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon5-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/5-desummon5-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/5-desummon5-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="5-geardesummon+">
+            <sprite id="desummon5-" z="1" src="reskins/vine_staff_wig_staff/5-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon5-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/5-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/5-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="5-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/5-summon5-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/5-summon5-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/5-summon5-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="5-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/5-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/5-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/5-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="6-geardesummon-">
+            <sprite id="desummon6-" z="1" src="reskins/vine_staff_wig_staff/6-desummon6-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon6-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/6-desummon6-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/6-desummon6-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="6-geardesummon+">
+            <sprite id="desummon6-" z="1" src="reskins/vine_staff_wig_staff/6-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon6-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/6-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/6-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="6-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/6-summon6-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/6-summon6-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/6-summon6-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="6-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/6-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/6-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/6-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="7-geardesummon-">
+            <sprite id="desummon7-" z="1" src="reskins/vine_staff_wig_staff/7-desummon7-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon7-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/7-desummon7-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/7-desummon7-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="7-geardesummon+">
+            <sprite id="desummon7-" z="1" src="reskins/vine_staff_wig_staff/7-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon7-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/7-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/7-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="7-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/7-summon7-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/7-summon7-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/7-summon7-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="7-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/7-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/7-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/7-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="9-geardesummon-">
+            <sprite id="desummon9-" z="1" src="reskins/vine_staff_wig_staff/9-desummon9-.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon9-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/9-desummon9-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/9-desummon9-.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="9-geardesummon+">
+            <sprite id="desummon9-" z="1" src="reskins/vine_staff_wig_staff/9-desummon1+.png" x="0" y="0" />
+            <sprite id="Vine's Staff" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="245" y="343" alpha="100" rotation="-163" />
+            <sprite id="Gear Summoning Spark" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+            <directive type="animation" id="desummon9-" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/9-desummon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/9-desummon2+.png" />
+            </directive>
+            <directive type="animation" id="Vine's Staff" ease="linear" interpolation="linear">
+                <keyframe time="0" x="245" y="343" alpha="100" rotation="-163" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="552" scaley="0" alpha="0" rotation="0" />
+                <keyframe time="1" scaley="3.48" alpha="100" rotation="13" />
+                <keyframe time="1.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.5" scalex="2" />
+            </directive>
+        </pose>
+        <pose id="9-gearsummon-">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/9-summon9-.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/9-summon9-.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/9-summon9-.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+        <pose id="9-gearsummon+">
+            <sprite id="summon1+" src="reskins/vine_staff_wig_staff/9-summon1+.png" x="0" y="0" />
+            <sprite id="Gear Summoning Spark" z="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="302" y="552" pivotx="48%" pivoty="48%" alpha="0" rotation="0" />
+            <sprite id="Vine's Staff" delay="1" z="2" src="reskins/vine_staff_wig_staff/With Staff/Vine's Staff.png" x="371" y="142" />
+            <sprite id="Gear Summoning Spark1" delay="1" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+            <directive type="animation" id="summon1+" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/9-summon1+.png" />
+                <keyframe time="1" src="reskins/vine_staff_wig_staff/9-summon2+.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="linear">
+                <keyframe time="0" x="302" y="552" alpha="0" rotation="0" />
+                <keyframe time="1" alpha="100" rotation="360" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/vine_staff_wig_staff/With Staff/Gear Summoning Spark.png" />
+                <keyframe time="1" src="blank.png" />
+            </directive>
+            <directive type="animation" id="Gear Summoning Spark1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="350" y="324" scalex="1" scaley="1" alpha="100" rotation="0" />
+                <keyframe time="0.25" scalex="5" scaley="5" alpha="0" rotation="360" />
+            </directive>
+        </pose>
+
+    </poses>
 
 </costume>
