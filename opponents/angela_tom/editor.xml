@@ -174,7 +174,6 @@
         <response id="256" opponent="amalia" opponentId="1" />
         <response id="260" opponent="mari_setogaya" opponentId="22" />
         <response id="261" opponent="sakura" opponentId="2" />
-        <response id="262" opponent="marinette" opponentId="1363" />
         <response id="263" opponent="jin" opponentId="20" />
         <response id="264" opponent="dawn" opponentId="133" />
         <response id="266" opponent="dawn" opponentId="120" />
@@ -186,7 +185,6 @@
         <response id="272" opponent="wasp" opponentId="108" />
         <response id="0" opponent="wasp" opponentId="110" />
         <response id="273" opponent="yuelia" opponentId="1" />
-        <response id="274" opponent="marinette" opponentId="1361" />
         <response id="275" opponent="marinette" opponentId="438" />
         <response id="276" opponent="adrien" opponentId="489" />
         <response id="277" opponent="gwen" opponentId="1" />
@@ -238,6 +236,8 @@
         <response id="414" opponent="leonie" opponentId="53" />
         <response id="415" opponent="kaz" opponentId="95" />
         <response id="416" opponent="sucrose" opponentId="133" />
+        <response id="418" opponent="nico_robin" opponentId="306" />
+        <response id="419" opponent="critical_darling" opponentId="1" />
     </responses>
     <notes>
         <note id="84">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
@@ -265,9 +265,9 @@
         <note id="354">Has to be "Other Angela" because she sets a nickname in a hidden case.</note>
         <note id="115">"WomanNotPing" will be set back to 1 almost immediately if there's another woman at the table.</note>
         <note id="359">It can be set by the player coming to the table as a woman, leaving, and then returning as a man. If it's legitimate, it will be set again almost instantly.</note>
-        <note id="360">Because restarting a game can have weird effects here.</note>
         <note id="382">"Needlettuce" is the term for lettuce used in other Mana games. It's not used in Trials of Mana, specifically, but the concept of vegetables halfway named for other things is common enough in the franchise.</note>
         <note id="386">She's imitating Dudbears, a species found in the Mana series (they're not in Trials though). In essence, she's saying "What? I'm not a human, I'm a Dudbear! I'm insulted!"</note>
+        <note id="419">She's referring to one of her villains, the Crimson Wizard.</note>
     </notes>
     <labels>
         <label id="137" label="For his alternate outfit" folder="" sort="0" />
@@ -509,8 +509,12 @@
         <label id="410" label="" folder="Targeted&gt;Jenetta" sort="0" />
         <label id="411" label="Removed cups at normal time (one man)" folder="" sort="0" />
         <label id="415" label="" folder="Targeted&gt;Kaz" sort="0" />
+        <label id="417" label="Removed boots" folder="" sort="0" />
+        <label id="418" label="" folder="Targeted&gt;Nico Robin" sort="0" />
+        <label id="416" label="" folder="Targeted&gt;Sucrose" sort="0" />
+        <label id="419" label="" folder="Targeted&gt;Critical Darling" sort="0" />
     </labels>
-    <nextId>416</nextId>
+    <nextId>419</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
@@ -552,6 +556,7 @@
         <marker scope="Private" name="cl_Panties">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Scarf">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Train">Used for Pose Maker</marker>
+        <marker scope="Public" name="CriticalDarling_DontSellYourSoul">Angela tells Critical Darling that it's not worth selling your soul. She'd know - that's what the Crimson Wizard did!</marker>
         <marker scope="Public" name="Edelgard_AloneTime">Angela gives her thoughts on total solitude.</marker>
         <marker scope="Public" name="Edelgard_DudbearTalk">Angela talks in Dudbear to tease Edelgard when she wonders why everyone speaks the same language.</marker>
         <marker scope="Public" name="Edelgard_LightenUp">Edelgard says exactly the wrong thing in front of Angela. Overbearing mother? Applying too much pressure? No way, Edelgard. Lighten up!</marker>
@@ -560,6 +565,7 @@
         <marker scope="Public" name="Edelgard_Royalty">Angela acknowledges that Edelgard asks an interesting question about royalty, and indicates that she might have faced a lot of pressure as a child being her kingdom's princess.</marker>
         <marker scope="Public" name="Edelgard_Spies">Edelgard says spies are watching. Angela wonders about their motivations.</marker>
         <marker scope="Public" name="FFBraveExvius">Angela notes that a Final Fantasy character looks familiar, with the word "Exvius" running through her mind. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Public" name="FourOfAKindPrincesses">Do four princesses beat four Jacks?</marker>
         <marker scope="Public" name="GeneralTease">When Angela gives any general tease aimed at a male character (not a unique line or a target for stripping), this will take the value of the character she's targeting. Only applies to the current line.</marker>
         <marker scope="Public" name="GuessWhat">Encourages a male player to look her way before she unexpectedly removes her top. (Will take a value equal to the ID of the character she's targeting.)</marker>
         <marker scope="Public" name="Hex_GhostShip">Angela recalls an incident with a cursed ghost ship.</marker>
@@ -592,6 +598,7 @@
         <marker scope="Public" name="MentionedKevin">At some point in conversation, Angela has mentioned her friend, a half-beastman martial artist named Kevin.</marker>
         <marker scope="Public" name="MentionedRiesz">At some point in conversation, Angela has mentioned her friend, an amazon princess named Riesz. (Pronounced like "Reece".)</marker>
         <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
+        <marker scope="Public" name="NicoRobin_AboutFaDiel">Angela tells Nico Robin a few things about Fa'Diel.</marker>
         <marker scope="Public" name="NoPetRabite">Following from PetRabite, Angela considers that Rabites probably wouldn't make good pets.</marker>
         <marker scope="Public" name="NotShowingBoobs">In her Magus costume, Angela won't show off her breasts early.</marker>
         <marker scope="Public" name="OffensiveSpellCaster">Angela mentions that she's good at casting offensive elemental magic. (When there is another magic user present, she may address them. In that case, this will take the value of the ID of the other magic user.)</marker>
@@ -599,6 +606,7 @@
         <marker scope="Public" name="PetRabite">Following from PetMonsterThoughts, Angela considers having a pet Rabite.</marker>
         <marker scope="Private" name="PingWasMulan">Angela has discovered that "Ping" was, in fact, a woman.</marker>
         <marker scope="Public" name="Pyrrha_RocketSave">Pyrrha has saved Brock from his wild rocket.</marker>
+        <marker scope="Public" name="RenamedPlayerWeirdo">Angela decided she didn't like the name the player gave. What a Weirdo!</marker>
         <marker scope="Public" name="Rosie_AdventuresResponse">Angela tells Rosie that her red leotard is her favorite outfit (alternate costumes will get different lines)</marker>
         <marker scope="Public" name="Rosie_SixElements">Angela tells Rosie that she can cast fire spells, as well as a bunch of other attack spells too.</marker>
         <marker scope="Public" name="Ryuko_ChangingClass">Angela mistakes Ryuko's transformation for a class change.</marker>
@@ -630,6 +638,7 @@
         <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
         <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
         <marker scope="Public" name="Witch_DontKnowWhatYoureDoing">Angela suggests that Witch doesn't know what she's doing with her magic when the latter casts the wrong spell.</marker>
+        <marker scope="Public" name="WitchTable">Angela feels the energy of witches at the table. Kinda like in Altena!</marker>
         <marker scope="Private" name="WomanNotPing">Set when Angela recognizes that another player at the table is a woman (she doesn't recognize "Ping" as a woman)</marker>
         <marker scope="Public" name="WorldSavingHeroes">Angela mentions having companions who went adventuring with her (she'll never say specifically who her companions were though.)</marker>
         <marker scope="Public" name="Yuno_NoGimmickToday">Angela tells Yuno that she isn't doing her "gimmick" today.</marker>
