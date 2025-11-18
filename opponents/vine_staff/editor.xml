@@ -181,6 +181,8 @@
 3. Toph wouldn't do that to a stranger </note>
         <note id="201">New lore shit. The arm isn't ACTUALLY cursed, but what it is is regarded differently from faction to faction. Thieves' Den calls it a curse, though. So update to the locking up thing: she's placebo-ing herself.</note>
         <note id="285">Gear-switching variant.</note>
+        <note id="326">"Why doesn't she recognise Scythe as a name"? Scythe in the lore uses the fake name "Rifle". While she's called Scythe in-game, I imagine this is a game feature and not emblematic of the lore.</note>
+        <note id="327">I mean, you can use this as a gear prompt? I've added a marker here anyways.</note>
     </notes>
     <labels>
         <label id="5" label="" folder="Girl Talk" sort="0" />
@@ -209,9 +211,9 @@
         <label id="99" label="" folder="Jura" sort="4" />
         <label id="93" label="" folder="Dunban" sort="0" />
         <label id="100" label="" folder="Dunban" sort="2" />
-        <label id="101" label="" folder="Jura" sort="0" />
+        <label id="101" label="" folder="Jura" sort="2" />
         <label id="102" label="" folder="Meia" sort="2" />
-        <label id="103" label="Meia + Jura" folder="Meia + Jura" sort="0" />
+        <label id="103" label="Meia + Jura" folder="Meia + Jura" sort="2" />
         <label id="104" label="Meia + Jura" folder="Meia + Jura" sort="0" />
         <label id="107" label="" folder="Dunban" sort="4" />
         <label id="108" label="" folder="Dunban" sort="3" />
@@ -407,8 +409,12 @@
         <label id="323" label="" folder="Meia" sort="5" />
         <label id="324" label="" folder="Jura" sort="6" />
         <label id="325" label="Meia + Jura" folder="Meia + Jura" sort="3" />
+        <label id="326" label="Phighter Names" folder="" sort="0" />
+        <label id="194" label="" folder="Background" sort="3" />
+        <label id="327" label="Name Prompt" folder="" sort="0" />
+        <label id="90" label="Name Prompt (Excludes Player)" folder="" sort="0" />
     </labels>
-    <nextId>325</nextId>
+    <nextId>327</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1v1Challenge">She accepts Sunset's challenge, and starts playing better.</marker>
@@ -438,6 +444,7 @@
         <marker scope="Public" name="DunbanVinestaffMustMast" />
         <marker scope="Public" name="DunbanVinestaffStartMast" />
         <marker scope="Public" name="DunbanVinestaffStrip0a" />
+        <marker scope="Public" name="DunbanVinestaffStrip0b" />
         <marker scope="Public" name="DunbanVinestaffStrip1a" />
         <marker scope="Public" name="DunbanVinestaffStrip1b" />
         <marker scope="Public" name="DunbanVinestaffStrip1c" />
@@ -495,6 +502,9 @@
         <marker scope="Public" name="KeepItDown" />
         <marker scope="Public" name="LadybugTransform" />
         <marker scope="Public" name="LibraryBookRecs" />
+        <marker scope="Public" name="LockedIn" />
+        <marker scope="Public" name="LockedOut" />
+        <marker scope="Public" name="LockingIn" />
         <marker scope="Public" name="MagicRequest" />
         <marker scope="Public" name="MedicPrompt" />
         <marker scope="Public" name="MonikaPicked" />
@@ -506,6 +516,7 @@
         <marker scope="Public" name="Phinisher" />
         <marker scope="Public" name="PhyrhaRocketRescue" />
         <marker scope="Public" name="PlayerNicknameUncomfy">Anti-Incest mechanic. Putting it in here because somebody is probably gonna try it.</marker>
+        <marker scope="Public" name="PlayerPhighterName" />
         <marker scope="Public" name="PlaygroundSky" />
         <marker scope="Public" name="React" />
         <marker scope="Public" name="ReactJessieJuraTharja" />
