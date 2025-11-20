@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>nadeshiko_sleepy_camper</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag>bottomless_first</tag>
+        <tag>no_bra</tag>
+        <tag remove="true">pantyhose</tag>
+        <tag>sleepover_skin</tag>
+        <tag>sleepwear</tag>
+        <tag from="0" to="1">sweater</tag>
+    </tags>
+    <layers>5</layers>
+    <folder>opponents/reskins/nadeshiko_sleepy_camper/</folder>
+    <wardrobe>
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="undershirt" generic="shirt" position="upper" type="important" />
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="shorts" generic="shorts" position="lower" type="major" plural="true" />
+        <clothing name="" generic="" position="" type="skip" />
+        <clothing name="sweater" generic="sweater" position="upper" type="major" />
+        <clothing name="slippers" generic="shoes" position="feet" type="minor" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-aura">
+            <sprite id="relaxed" src="reskins/nadeshiko_sleepy_camper/0-relaxed.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="nadeshiko/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="nadeshiko/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/nadeshiko_sleepy_camper/0-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="relaxed" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="nadeshiko/../meia/auracamera.png" />
+                <keyframe time="1" src="nadeshiko/../meia/auracamera.png" />
+                <keyframe time="1.38" src="nadeshiko/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="0-stripping-neg">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping-neg.png" x="0" y="0" />
+            <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripped-neg-eyebrows.png" x="0" y="0" />
+        </pose>
+        <pose id="0-stripping-neu">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping-neu.png" x="0" y="0" />
+            <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripped-neu-eyebrows.png" x="0" y="0" />
+        </pose>
+        <pose id="0-stripping-pos">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripped-pos-eyebrows.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripped-neg">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
+            <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripped-neg_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg_eyebrows.png" x="-6" y="2" />
+            <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripped-neu">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
+            <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neu.png" x="0" y="0" />
+            <sprite id="stripped-neg_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neu_eyebrows.png" x="-4" y="-6" />
+            <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripped-pos">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
+            <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripped-neg_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-pos_eyebrows.png" x="-4" y="4" />
+            <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripping-neg">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping.png" x="0" y="0" />
+            <sprite id="stripping-front-pos_face" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping-neg.png" x="0" y="0" />
+            <sprite id="stripping-pos_eyebrows" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping-neg_eyebrows.png" x="51" y="0" />
+        </pose>
+        <pose id="1-stripping-neu">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping.png" x="0" y="0" />
+            <sprite id="stripping-front-pos_face" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping-neu.png" x="0" y="0" />
+            <sprite id="stripping-pos_eyebrows" z="3" src="nadeshiko/pose maker/1-stripping-neu_eyebrows.png" x="12" y="8" />
+        </pose>
+        <pose id="1-stripping-pos">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping.png" x="0" y="0" />
+            <sprite id="stripping-front-pos_face" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-pos_eyebrows" z="3" src="nadeshiko/pose maker/1-stripping-pos_eyebrows.png" x="12" y="8" />
+        </pose>
+        <pose id="3-stripped-neg">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped.png" x="0" y="0" />
+            <sprite id="stripping-front-pos_face" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripping-pos_eyebrows" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripped-pos">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped.png" x="0" y="0" />
+            <sprite id="stripping-front-pos_face" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripping-pos_eyebrows" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripped-pos-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripping-neg">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping.png" x="0" y="0" />
+            <sprite id="stripping-pos" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping-neg.png" x="0" y="0" />
+            <sprite id="stripping-pos-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripping-pos">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping.png" x="0" y="0" />
+            <sprite id="stripping-pos" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-pos-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/3-stripping-pos-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="5-stripped-neg">
+            <sprite id="stripped" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripped-neg-arm-back" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-neg-arm-back.png" x="0" y="0" />
+            <sprite id="stripped-neg-arm" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-neg-arm.png" x="2" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="5" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="5-stripped-pos">
+            <sprite id="stripped" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripped-neg-arm" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-pos-arm.png" x="2" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="5" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripped-pos-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="5-stripping-neg">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping.png" x="0" y="0" />
+            <sprite id="stripping-pos" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping-neg.png" x="0" y="0" />
+            <sprite id="stripping-pos-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping-neg-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="5_panty_strippingpng" src="reskins/nadeshiko_sleepy_camper/pose maker/5_panty_strippingpng.png" x="0" y="0" />
+        </pose>
+        <pose id="5-stripping-pos">
+            <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping.png" x="0" y="0" />
+            <sprite id="stripping-pos" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-pos-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/5-stripping-pos-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="5_panty_strippingpng" src="reskins/nadeshiko_sleepy_camper/pose maker/5_panty_strippingpng.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripped-lewd">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped.png" x="0" y="0" />
+            <sprite id="stripped-arms1" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-arms1.png" x="0" y="0" />
+            <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neu.png" x="0" y="0" />
+            <sprite id="stripped-hair" z="-2" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-hair.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="nadeshiko_stripped_panties_and_legs" src="reskins/nadeshiko_sleepy_camper/attachments/nadeshiko_stripped_panties_and_legs.png" x="-25" y="1240" />
+            <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neu-eyebrows.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripped-neg">
+            <sprite id="stripped" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped.png" x="0" y="0" />
+            <sprite id="stripped-arms1" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-arms3.png" x="0" y="0" alpha="100" />
+            <sprite id="stripped-neu" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripped-hair" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-hair.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="nadeshiko_stripped_panties_and_legs" z="1" src="reskins/nadeshiko_sleepy_camper/attachments/nadeshiko_stripped_panties_and_legs.png" x="-25" y="1240" />
+            <sprite id="stripped-front-hair-neu" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neg-eyebrows.png" x="0" y="0" />
+            <sprite id="stripped-arms2" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-arms2.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripped-pos">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped.png" x="0" y="0" />
+            <sprite id="stripped-arms1" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-arms1.png" x="0" y="0" />
+            <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripped-hair" z="-2" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-hair.png" x="0" y="0" scalex="1" scaley="1" />
+            <sprite id="nadeshiko_stripped_panties_and_legs" src="reskins/nadeshiko_sleepy_camper/attachments/nadeshiko_stripped_panties_and_legs.png" x="-25" y="1240" />
+            <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-pos-eyebrows.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripping-neg">
+            <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neg.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neg-eyebrows-headband.png" x="0" y="0" />
+            <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
+                <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+                <keyframe time="1.05" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+            </directive>
+            <directive type="animation" id="stripping-1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg-eyebrows-headband" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="6-stripping-pos">
+            <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos-eyebrows-headband.png" x="0" y="0" />
+            <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
+                <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+                <keyframe time="1.05" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+            </directive>
+            <directive type="animation" id="stripping-1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg-eyebrows-headband" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="8-dualff-kyouko-must-masturbate">
+            <sprite id="kyouko-shouldered" marker="Kyouko_Hairstyle==shouldered" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-b_must-masturbate.png" x="-8" y="0" />
+            <sprite id="kyouko-cursed" marker="Kyouko_Hairstyle==cursed" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-a_must-masturbate.png" x="-8" y="0" />
+            <sprite id="kyouko-normal" marker="Kyouko_Hairstyle==normal" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-c_must-masturbate.png" x="-8" y="0" />
+            <sprite id="kyouko-ribbon" marker="Kyouko_Ribbon==1" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-b_must-masturbate.png" x="-8" y="0" />
+            <sprite id="kyouko-finished" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-finished_must-masturbate.png" x="-8" y="0" />
+            <sprite id="nadeshiko" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/nadeshiko_must-masturbate.png" x="0" y="0" />
+            <sprite id="nadeshiko back hair_must-masturbate" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/nadeshiko back hair_must-masturbate.png" x="0" y="0" />
+        </pose>
+        <pose id="9-finishing">
+            <sprite id="ForfeitChair" src="reskins/nadeshiko_sleepy_camper/pose maker/ForfeitChair.png" x="0" y="0" />
+            <sprite id="hair-finishing" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/hair-finishing.png" x="-19" y="3" />
+            <sprite id="finishing" z="1" src="reskins/nadeshiko_sleepy_camper/9-finishing.png" x="-3" y="5" />
+            <sprite id="rightarm-finishing" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/rightarm-finishing.png" x="-99" y="837" rotation="0" />
+            <sprite id="leftarm-finishing" z="3" src="reskins/nadeshiko_sleepy_camper/pose maker/leftarm-finishing.png" x="39" y="917" rotation="2" />
+            <sprite id="rightthigh-finishing" z="4" src="reskins/nadeshiko_sleepy_camper/pose maker/rightthigh-finishing.png" x="-101" y="845" rotation="0" />
+            <sprite id="leftthigh-finishing" z="6" src="reskins/nadeshiko_sleepy_camper/pose maker/leftthigh-finishing.png" x="57" y="828" rotation="0" />
+            <sprite id="rightfoot-finishing" parent="rightthigh-finishing" z="5" src="reskins/nadeshiko_sleepy_camper/pose maker/rightfoot-finishing.png" x="-42" y="-2" rotation="0" />
+            <sprite id="leftfoot-finishing" parent="leftthigh-finishing" z="7" src="reskins/nadeshiko_sleepy_camper/pose maker/leftfoot-finishing.png" x="57" y="-4" rotation="0" />
+            <sprite id="cum-finishing" delay="2.5" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-19" y="1100" scaley="-0.6" alpha="100" />
+            <sprite id="cum-finishing(copy)1" delay="3" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-19" y="1100" scaley="-0.6" alpha="100" />
+            <sprite id="cum-finishing(copy)1(copy)" delay="3.62" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-19" y="1100" scaley="-0.6" alpha="100" />
+            <sprite id="cum-finishing(copy)" delay="2.75" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-13" y="1100" scaley="-0.6" alpha="100" />
+            <sprite id="cum-finishing(copy)(copy)" delay="3.25" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-13" y="1100" scaley="-0.6" alpha="100" />
+            <sprite id="cum-finishing(copy)(copy)(copy)" delay="4.25" z="8" src="reskins/nadeshiko_sleepy_camper/pose maker/cum-finishing.png" x="-13" y="1100" scaley="-0.6" alpha="100" />
+            <directive type="animation" id="hair-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-19" y="3" />
+                <keyframe time="1" y="0" />
+                <keyframe time="1.5" y="3" />
+                <keyframe time="2" y="0" />
+                <keyframe time="2.5" y="3" />
+                <keyframe time="2.75" y="0" />
+                <keyframe time="3" y="3" />
+                <keyframe time="3.25" y="0" />
+                <keyframe time="3.38" y="3" />
+                <keyframe time="3.5" y="0" />
+                <keyframe time="3.62" y="3" />
+                <keyframe time="3.75" y="0" />
+                <keyframe time="4" y="3" />
+                <keyframe time="4.25" y="0" />
+                <keyframe time="5.25" y="3" />
+                <keyframe time="5.62" y="0" />
+                <keyframe time="5.88" y="3" />
+            </directive>
+            <directive type="animation" id="finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-3" y="5" />
+                <keyframe time="1" y="1" />
+                <keyframe time="1.5" y="5" />
+                <keyframe time="2" y="1" />
+                <keyframe time="2.5" y="5" />
+                <keyframe time="2.75" y="1" />
+                <keyframe time="3" y="5" />
+                <keyframe time="3.25" y="1" />
+                <keyframe time="3.38" y="5" />
+                <keyframe time="3.5" y="1" />
+                <keyframe time="3.62" y="5" />
+                <keyframe time="3.75" y="1" />
+                <keyframe time="4" y="5" />
+                <keyframe time="4.25" y="1" />
+                <keyframe time="5.25" y="5" />
+                <keyframe time="5.62" y="1" />
+                <keyframe time="5.88" y="5" />
+            </directive>
+            <directive type="animation" id="rightarm-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-99" y="837" rotation="0" />
+                <keyframe time="1" y="835" rotation="-5" />
+                <keyframe time="2" y="837" rotation="0" />
+                <keyframe time="2.5" y="835" rotation="-5" />
+                <keyframe time="2.75" y="837" rotation="0" />
+                <keyframe time="3" y="835" rotation="-5" />
+                <keyframe time="3.25" y="837" rotation="0" />
+                <keyframe time="3.38" y="835" rotation="-5" />
+                <keyframe time="3.5" y="837" rotation="0" />
+                <keyframe time="3.62" y="835" rotation="-5" />
+                <keyframe time="3.75" y="837" rotation="0" />
+                <keyframe time="4" y="835" rotation="-5" />
+                <keyframe time="4.25" y="837" rotation="0" />
+                <keyframe time="5.25" y="835" rotation="-5" />
+                <keyframe time="5.62" y="837" rotation="0" />
+                <keyframe time="5.88" y="835" rotation="-5" />
+            </directive>
+            <directive type="animation" id="leftarm-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="39" y="917" rotation="2" />
+                <keyframe time="0.25" y="938" rotation="-5" />
+                <keyframe time="0.5" y="933" rotation="0" />
+                <keyframe time="0.75" x="41" y="922" rotation="1" />
+                <keyframe time="1" x="41" y="929" rotation="-2" />
+                <keyframe time="1.25" x="41" y="920" rotation="0" />
+                <keyframe time="1.5" x="39" y="943" rotation="-1" />
+                <keyframe time="1.75" x="41" y="922" rotation="1" />
+                <keyframe time="2" x="41" y="937" rotation="-2" />
+                <keyframe time="2.12" x="42" y="918" rotation="3" />
+                <keyframe time="2.25" x="42" y="936" rotation="-1" />
+                <keyframe time="2.38" x="39" y="920" rotation="3" />
+                <keyframe time="2.5" x="39" y="936" rotation="1" />
+                <keyframe time="2.62" x="43" y="946" rotation="0" />
+                <keyframe time="2.75" x="43" y="928" rotation="4" />
+                <keyframe time="2.88" x="43" y="950" rotation="-1" />
+                <keyframe time="3" x="39" y="916" rotation="3" />
+                <keyframe time="3.12" x="41" y="938" rotation="-1" />
+                <keyframe time="3.25" x="41" y="913" rotation="4" />
+                <keyframe time="3.38" x="41" y="938" rotation="-1" />
+                <keyframe time="3.5" x="41" y="913" rotation="4" />
+                <keyframe time="3.62" x="41" y="938" rotation="-1" />
+                <keyframe time="3.75" x="41" y="913" rotation="4" />
+                <keyframe time="4" x="41" y="938" rotation="-1" />
+                <keyframe time="4.25" x="41" y="913" rotation="4" />
+                <keyframe time="5.25" x="41" y="938" rotation="-1" />
+                <keyframe time="5.62" x="41" y="913" rotation="4" />
+                <keyframe time="5.88" x="41" y="913" rotation="4" />
+            </directive>
+            <directive type="animation" id="rightthigh-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-101" y="845" rotation="0" />
+                <keyframe time="1" x="-103" y="844" rotation="-1" />
+                <keyframe time="1.5" x="-101" y="845" rotation="0" />
+                <keyframe time="2" x="-109" y="846" rotation="-3" />
+                <keyframe time="2.5" x="-101" y="845" rotation="0" />
+                <keyframe time="2.75" x="-109" y="846" rotation="-3" />
+                <keyframe time="3" x="-101" y="845" rotation="0" />
+                <keyframe time="3.25" x="-103" y="844" rotation="-1" />
+                <keyframe time="3.38" x="-101" y="845" rotation="0" />
+                <keyframe time="3.5" x="-109" y="846" rotation="-3" />
+                <keyframe time="3.62" x="-101" y="845" rotation="0" />
+                <keyframe time="3.75" x="-109" y="846" rotation="-3" />
+                <keyframe time="4" x="-101" y="845" rotation="0" />
+                <keyframe time="4.25" x="-109" y="846" rotation="-3" />
+                <keyframe time="5.25" x="-101" y="845" rotation="0" />
+                <keyframe time="5.62" x="-109" y="846" rotation="-3" />
+                <keyframe time="5.88" x="-101" y="845" rotation="0" />
+            </directive>
+            <directive type="animation" id="leftthigh-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="57" y="828" rotation="0" />
+                <keyframe time="1" x="57" y="827" rotation="1" />
+                <keyframe time="1.5" x="57" y="828" rotation="0" />
+                <keyframe time="2" x="63" y="828" rotation="4" />
+                <keyframe time="2.5" x="57" y="828" rotation="0" />
+                <keyframe time="2.75" x="63" y="828" rotation="4" />
+                <keyframe time="3" x="57" y="827" rotation="1" />
+                <keyframe time="3.25" x="57" y="827" rotation="1" />
+                <keyframe time="3.38" x="57" y="827" rotation="1" />
+                <keyframe time="3.5" x="63" y="828" rotation="4" />
+                <keyframe time="3.62" x="57" y="827" rotation="1" />
+                <keyframe time="3.75" x="63" y="828" rotation="4" />
+                <keyframe time="4" x="57" y="827" rotation="1" />
+                <keyframe time="4.25" x="63" y="828" rotation="4" />
+                <keyframe time="5.25" x="57" y="827" rotation="1" />
+                <keyframe time="5.62" x="63" y="828" rotation="4" />
+                <keyframe time="5.88" x="57" y="827" rotation="1" />
+            </directive>
+            <directive type="animation" id="rightfoot-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-42" y="-2" rotation="0" />
+                <keyframe time="1" x="-46" y="-1" rotation="2" />
+                <keyframe time="1.5" x="-42" y="-2" rotation="0" />
+                <keyframe time="2" x="-48" y="-1" rotation="3" />
+                <keyframe time="2.5" x="-42" y="-2" rotation="0" />
+                <keyframe time="2.75" x="-48" y="-1" rotation="3" />
+                <keyframe time="3" x="-42" y="-2" rotation="0" />
+                <keyframe time="3.25" x="-46" y="-1" rotation="2" />
+                <keyframe time="3.38" x="-42" y="-2" rotation="0" />
+                <keyframe time="3.5" x="-48" y="-1" rotation="3" />
+                <keyframe time="3.62" x="-42" y="-2" rotation="0" />
+                <keyframe time="3.75" x="-48" y="-1" rotation="3" />
+                <keyframe time="4" x="-42" y="-2" rotation="0" />
+                <keyframe time="4.25" x="-48" y="-1" rotation="3" />
+                <keyframe time="5.25" x="-42" y="-2" rotation="0" />
+                <keyframe time="5.62" x="-48" y="-1" rotation="3" />
+                <keyframe time="5.88" x="-42" y="-2" rotation="0" />
+            </directive>
+            <directive type="animation" id="leftfoot-finishing" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="57" y="-4" rotation="0" />
+                <keyframe time="1" x="59" y="-4" rotation="-1" />
+                <keyframe time="1.5" x="57" y="-4" rotation="0" />
+                <keyframe time="2" x="64" y="-4" rotation="-2" />
+                <keyframe time="2.5" x="57" y="-4" rotation="0" />
+                <keyframe time="2.75" x="64" y="-4" rotation="-2" />
+                <keyframe time="3" x="57" y="-4" rotation="0" />
+                <keyframe time="3.25" x="59" y="-4" rotation="-1" />
+                <keyframe time="3.38" x="57" y="-4" rotation="0" />
+                <keyframe time="3.5" x="64" y="-4" rotation="-2" />
+                <keyframe time="3.62" x="57" y="-4" rotation="0" />
+                <keyframe time="3.75" x="64" y="-4" rotation="-2" />
+                <keyframe time="4" x="57" y="-4" rotation="0" />
+                <keyframe time="4.25" x="64" y="-4" rotation="-2" />
+                <keyframe time="5.25" x="57" y="-4" rotation="0" />
+                <keyframe time="5.62" x="64" y="-4" rotation="-2" />
+                <keyframe time="5.88" x="57" y="-4" rotation="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing" delay="2.5" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-19" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing(copy)1" delay="3" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-19" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing(copy)1(copy)" delay="3.62" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-19" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing(copy)" delay="2.75" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-13" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing(copy)(copy)" delay="3.25" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-13" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+            <directive type="animation" id="cum-finishing(copy)(copy)(copy)" delay="4.25" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-13" y="1100" scaley="-0.6" alpha="100" />
+                <keyframe time="0.1199999" y="1140" scaley="1" />
+                <keyframe time="0.25" y="1165" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="8-stripped-neg">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-neu">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-pos">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="8-starting-pos-1">
+            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
+            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos1.png" x="0" y="0" />
+        </pose>
+        <pose id="8-starting-pos-2">
+            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
+            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos2.png" x="0" y="0" />
+        </pose>
+    </poses>
+
+</costume>
