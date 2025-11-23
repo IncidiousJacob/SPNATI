@@ -15,6 +15,9 @@
         <case name="Boota's Goodbye" id="439" priority="FYI" min="6" max="6">
             <description>Simon shoos Boota (his pigmole buddy) away whenever he's down to his underwear strip. Look at him, he's all scrunched up.</description>
         </case>
+        <case name="Spiral Power Demonstration" id="797" priority="FYI" min="3" max="4">
+            <description>Simon makes an idle demonstration of Spiral Power by instantly conjuring a drill in his hand.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -69,7 +72,27 @@
         <response id="757" opponent="rose" opponentId="53" />
         <response id="758" opponent="rose" opponentId="143" />
         <response id="794" opponent="trixie" opponentId="1" />
+        <response id="802" opponent="dunban" opponentId="399" />
+        <response id="804" opponent="dunban" opponentId="337" />
+        <response id="805" opponent="dunban" opponentId="605" />
+        <response id="806" opponent="bobobo" opponentId="93" />
+        <response id="807" opponent="bobobo" opponentId="1" />
+        <response id="0" opponent="jim" opponentId="8" />
+        <response id="0" opponent="jim" opponentId="7" />
+        <response id="0" opponent="jim" opponentId="9" />
+        <response id="808" opponent="jim" opponentId="11" />
+        <response id="0" opponent="jim" opponentId="6" />
+        <response id="809" opponent="adrien" opponentId="489" />
+        <response id="810" opponent="adrien" opponentId="488" />
+        <response id="811" opponent="takatoshi" opponentId="17" />
+        <response id="812" opponent="takatoshi" opponentId="16" />
+        <response id="813" opponent="yusuke" opponentId="212" />
+        <response id="814" opponent="yusuke" opponentId="211" />
     </responses>
+    <notes>
+        <note id="820">do you want a variant based on if Hibiki has been mentioned before?</note>
+        <note id="821">power scaling /jk</note>
+    </notes>
     <labels>
         <label id="1" label="" folder="Kamina" sort="0" />
         <label id="2" label="" folder="Kamina" sort="0" />
@@ -234,7 +257,7 @@
         <label id="163" label="" folder="Targets" sort="0" />
         <label id="164" label="" folder="Prompt Responses" sort="0" />
         <label id="165" label="" folder="Prompt Responses" sort="0" />
-        <label id="166" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="166" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="167" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="168" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="169" label="" folder="Targets&gt;Jura" sort="0" />
@@ -293,8 +316,8 @@
         <label id="223" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="222" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="224" label="" folder="Targets&gt;Meia" sort="0" />
-        <label id="225" label="" color="4" folder="Targets&gt;Meia" sort="0" />
-        <label id="226" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="225" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="226" label="" folder="Targets&gt;Meia" sort="0" />
         <label id="227" label="" folder="Targets&gt;Vanessa" sort="0" />
         <label id="228" label="" folder="Targets&gt;Vanessa" sort="0" />
         <label id="229" label="" folder="Targets&gt;Vanessa" sort="0" />
@@ -804,7 +827,7 @@
         <label id="735" label="" folder="Targets&gt;Natsuki" sort="0" />
         <label id="736" label="am_i_doing_anything_for_ya" folder="" sort="0" />
         <label id="737" label="avert_your_eyes_boota" folder="" sort="0" />
-        <label id="738" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="738" label="" color="4" folder="Targets&gt;Jura" sort="0" />
         <label id="739" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="740" label="" folder="Targets&gt;Jura" sort="0" />
         <label id="741" label="" folder="Prompt Responses" sort="0" />
@@ -862,6 +885,34 @@
         <label id="794" label="" folder="Targets" sort="0" />
         <label id="795" label="Nia is cool with it (tag based nia filter)" color="3" folder="Targets&gt;TTGL&gt;Nia" sort="0" />
         <label id="796" label="" folder="Targets" sort="0" />
+        <label id="797" label="Spiral Power demonstration" folder="" sort="0" />
+        <label id="798" label="" folder="Filtered" sort="0" />
+        <label id="799" label="" folder="Targets" sort="0" />
+        <label id="800" label="" folder="Targets" sort="0" />
+        <label id="801" label="" folder="Targets" sort="0" />
+        <label id="802" label="" folder="Targets" sort="0" />
+        <label id="803" label="" folder="Targets" sort="0" />
+        <label id="804" label="" folder="Targets" sort="0" />
+        <label id="806" label="" folder="Targets" sort="0" />
+        <label id="807" label="" folder="Targets" sort="0" />
+        <label id="808" label="" folder="Prompt Responses" sort="0" />
+        <label id="809" label="" folder="Targets" sort="0" />
+        <label id="810" label="" folder="Targets&gt;Situation Responses (Other)" sort="0" />
+        <label id="811" label="" folder="Prompt Responses" sort="0" />
+        <label id="812" label="" folder="Prompt Responses" sort="0" />
+        <label id="813" label="" folder="Prompt Responses" sort="0" />
+        <label id="814" label="" folder="Targets&gt;Situation Responses (Other)" sort="0" />
+        <label id="815" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="816" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="817" label="" folder="Targets&gt;Meia" sort="0" />
+        <label id="818" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="819" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="820" label="" color="4" folder="Targets&gt;Meia" sort="0" />
+        <label id="821" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="822" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="823" label="" folder="Targets&gt;Jura" sort="0" />
+        <label id="824" label="" color="4" folder="Targets&gt;Jura" sort="0" />
+        <label id="825" label="5 - Nia not present" color="4" folder="Targets&gt;Jura" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:xyz_</prefix>
@@ -870,11 +921,13 @@
         <posePreviewMarker>boota==1</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>796</nextId>
+    <nextId>825</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009_Retro_A" />
         <marker scope="Public" name="2009_Retro_B" />
+        <marker scope="Public" name="adrien_fire" />
+        <marker scope="Public" name="adrien_plagg" />
         <marker scope="Public" name="akko_antispiral" />
         <marker scope="Public" name="am_i_doing_anything_for_ya" />
         <marker scope="Public" name="am_i_doing_anything_for_yaam_i_doing_anything_for_ya" />
@@ -903,6 +956,8 @@
         <marker scope="Public" name="carmine_squirter" />
         <marker scope="Public" name="dai_gurren_spirit" />
         <marker scope="Public" name="dirt_in_hair" />
+        <marker scope="Public" name="dunban_bionis_view_1" />
+        <marker scope="Public" name="dunban_bionis_view_2" />
         <marker scope="Public" name="filter_bisexual_lagannRide" />
         <marker scope="Public" name="first_out" />
         <marker scope="Public" name="glassesTransform" />
@@ -977,6 +1032,7 @@
         <marker scope="Public" name="jenetta_catTalk" />
         <marker scope="Public" name="jenetta_MotiveTalk" />
         <marker scope="Public" name="jenetta_strip0a" />
+        <marker scope="Public" name="jim_journeyResp" />
         <marker scope="Public" name="juno_aliens_40" />
         <marker scope="Public" name="juno_aliens_41" />
         <marker scope="Public" name="juno_aliens_42" />
@@ -1069,8 +1125,13 @@
         <marker scope="Public" name="leon_zombiesEh_00" />
         <marker scope="Public" name="leon_zombiesEh_01" />
         <marker scope="Public" name="leon_zombiesEh_02" />
+        <marker scope="Public" name="lobster" />
         <marker scope="Public" name="lump_of_sediment" />
         <marker scope="Public" name="make_things_fair" />
+        <marker scope="Public" name="MariDunban_boxers_strip" />
+        <marker scope="Public" name="miko_stripped6" />
+        <marker scope="Public" name="miko_stripped6_B" />
+        <marker scope="Public" name="MikoLosing6_stripped" />
         <marker scope="Public" name="momo_meia_5b_react" />
         <marker scope="Public" name="monika_strip0a" />
         <marker scope="Public" name="Nade_Butt" />
@@ -1304,24 +1365,36 @@
         <marker scope="Public" name="simon_jura_self0b" />
         <marker scope="Public" name="simon_jura_self1a" />
         <marker scope="Public" name="simon_jura_self1b" />
+        <marker scope="Public" name="simon_jura_self1c" />
         <marker scope="Public" name="simon_jura_self2a" />
+        <marker scope="Public" name="simon_jura_self3a" />
+        <marker scope="Public" name="simon_jura_self3b" />
+        <marker scope="Public" name="simon_jura_self5a" />
         <marker scope="Public" name="simon_jura_strip0a" />
         <marker scope="Public" name="simon_jura_strip0b" />
+        <marker scope="Public" name="simon_jura_strip0c" />
+        <marker scope="Public" name="simon_jura_strip1a" />
         <marker scope="Public" name="simon_kamina_onlyTrigger" />
         <marker scope="Public" name="simon_kaz_self0a" />
         <marker scope="Public" name="simon_leg_numb" />
         <marker scope="Public" name="simon_meia_self0a" />
         <marker scope="Public" name="simon_meia_self0b" />
+        <marker scope="Public" name="simon_meia_self0c" />
         <marker scope="Public" name="simon_meia_self2a" />
+        <marker scope="Public" name="simon_meia_self2b" />
         <marker scope="Public" name="simon_meia_self5a" />
         <marker scope="Public" name="simon_meia_self5b" />
+        <marker scope="Public" name="simon_meia_self5c" />
         <marker scope="Public" name="simon_meia_self6a" />
+        <marker scope="Public" name="simon_meia_self6b" />
         <marker scope="Public" name="simon_meia_strip0a" />
         <marker scope="Public" name="simon_meia_strip0a_soakingWet" />
         <marker scope="Public" name="simon_meia_strip0b" />
         <marker scope="Public" name="simon_meia_strip0b_soakingWet" />
         <marker scope="Public" name="simon_meia_strip0c" />
         <marker scope="Public" name="simon_meia_strip0c_soakingWet" />
+        <marker scope="Public" name="simon_meia_strip1a" />
+        <marker scope="Public" name="simon_meia_strip2a" />
         <marker scope="Public" name="simon_momo_self0a" />
         <marker scope="Public" name="simon_momo_self0b" />
         <marker scope="Public" name="simon_momo_self0c" />
@@ -1467,6 +1540,7 @@
         <marker scope="Public" name="simonWiz_selfStartMast" />
         <marker scope="Public" name="solarFlare_strip0a" />
         <marker scope="Public" name="solarFlare_strip0b" />
+        <marker scope="Public" name="spiral_power" />
         <marker scope="Public" name="stocking_strip0a" />
         <marker scope="Public" name="sucrose_beastmen_resp_30" />
         <marker scope="Public" name="sucrose_beastmen_resp_31" />
@@ -1510,6 +1584,10 @@
         <marker scope="Public" name="sucrose_warmingup_40" />
         <marker scope="Public" name="sucrose_warmingup_41" />
         <marker scope="Public" name="sucrose_warmingup_42" />
+        <marker scope="Public" name="takatoshi_CloningBluesA" />
+        <marker scope="Public" name="takatoshi_CloningBluesB" />
+        <marker scope="Public" name="takatoshi_lovePromptA" />
+        <marker scope="Public" name="takatoshi_lovePromptB" />
         <marker scope="Public" name="tifa_accidentalFlashA" />
         <marker scope="Public" name="tifa_accidentalFlashB" />
         <marker scope="Public" name="treasure_scope" />
@@ -1642,6 +1720,7 @@
         <marker scope="Public" name="yusei_strip4a" />
         <marker scope="Public" name="yusei_strip4b" />
         <marker scope="Public" name="yusei_strip4c" />
+        <marker scope="Public" name="yusuke_broke" />
         <marker scope="Public" name="yuzuki_mouth2" />
     </markers>
 </metadata>
