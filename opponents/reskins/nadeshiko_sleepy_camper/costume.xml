@@ -204,10 +204,10 @@
                 <keyframe time="0.1" scalex="1" scaley="1" />
             </directive>
         </pose>
-        <pose id="6-stripping-pos">
+        <pose id="6-stripping-lewd">
             <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
-            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos.png" x="0" y="0" />
-            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neu.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neu-eyebrows.png" x="47" y="-1" />
             <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
                 <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
@@ -472,6 +472,31 @@
         <pose id="8-starting-pos-2">
             <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
             <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos2.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripping-pos">
+            <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos-eyebrows-headband.png" x="0" y="0" />
+            <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
+                <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+                <keyframe time="1.05" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+            </directive>
+            <directive type="animation" id="stripping-1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg-eyebrows-headband" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
         </pose>
     </poses>
 
