@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <metadata>
     <owner>edelgard</owner>
-    <height>158cm (≈ 5'2")</height>
-    <age>18</age>
+    <height>158 cm (Academy/War), 168 cm (Hopes)</height>
+    <age>18 (Academy), 23 (War), 20 (Hopes)</age>
     <pronunciation>AID-el-GARD (von hur-ESS-velg)</pronunciation>
-    <othernotes />
+    <othernotes>Edelgard is intended to have costumes depicting her in three different time periods across at least two timelines. The time periods and the costumes associated with them are as follows.&lt;br&gt;&lt;br&gt;Academy Phase (Academy Uniform): Depicts an 18 year old Edelgard during late Part I of Fire Emblem: Three Houses (sometime between 12/16 and 2/22 on the in-game calendar). Strongly implies a timeline where Byleth teaches the Black Eagles, but not to the point that other FE3H characters would be compelled to contradict her if they came from a different timeline.&lt;br&gt;&lt;br&gt;War Phase (War Outfit *coming soon*): Depicts an 23 year old Edelgard during Part II of Fire Emblem: Three Houses. Explicitly from the Crimson Flower route, sometime after Chapter 14, with all of the Golden Deer surviving.&lt;br&gt;&lt;br&gt;Three Hopes (Hopes Outfit *still in planning*]): Depicts a 20 year-old Edelgard sometime during Part II of Fire Emblem Warriors: Three Hopes. Either explicity from the Scarlet Blaze route, or route agnostic between Scarlet Blaze and Golden Wildfire.&lt;br&gt;&lt;br&gt;Both the War Phase and Three Hopes versions of Edelgard have ascended the throne are no longer students. &lt;br&gt;&lt;br&gt;Although Edelgard clarifies that formalities aren't necessary after her first strip, if you want your character to address her formally, or otherwise discuss her status, you should note that the proper title and style differ between the Academy and War/Hopes versions of the character.&lt;br&gt;&lt;br&gt;In the Academy Phase Edelgard is properly: Her Highness, Princess Edelgard.&lt;br&gt;&lt;br&gt;The War Phase/Hopes versions are properly: Her Majesty, Emperor Edelgard. (Note, that is "EMPEROR", she is never refered to as "empress" in canon, and if your character does so I will assume you want her to correct them).&lt;br&gt;&lt;br&gt;"Lady Edelgard" is proper adress for any version.&lt;br&gt;&lt;br&gt;When Edelgard is selected or changes costumes she will set a marker: "AcademyPhase", "WarPhase", or "ThreeHopes". For the sake of simplicity and future-proofing it's recommended to use these instead of costume checks for lines that should apply to every costume from a given time-period.</othernotes>
     <noteworthy>
         <case name="Chess, Anyone?" id="222" priority="Prompt" min="0" max="3">
             <description>Edelgard enjoys chess and wants to know if any of the other (non-FE3H) characters at the table plays.</description>
@@ -55,10 +55,10 @@
             <description>Edelgard opens up a bit about how lonely her life can be. (Immediately follows the situation "Self Awareness")</description>
         </case>
         <case name="Revealing Scars" id="37" priority="Noteworthy" min="3" max="3">
-            <description>Edelgard gives a warning as she strips her romper (Each line has its own marker as well as the shared marker "Revealing Scars", immediately precedes situation "Scars Revealed")</description>
+            <description>Edelgard gives a warning as she prepares to reveal her scars. *This happens at different stages depending on her costume* (Each line has its own marker as well as the shared marker "Revealing Scars", immediately precedes situation "Scars Revealed")</description>
         </case>
         <case name="Scars Revealed" id="23" priority="MustTarget" min="4" max="4">
-            <description>Edelgard has removed her romper revealing the scars on her torso. (Immediately follows situation "Revealing Scars")</description>
+            <description>Edelgard has revealed the scars on her torso. *This happens at different stages depending on her costume* (Immediately follows situation "Revealing Scars")</description>
         </case>
         <case name="Hot for Teacher" id="47" priority="MustTarget" min="10" max="10">
             <description>Edelgard screamed "my teacher" when she climaxed.</description>
@@ -86,6 +86,9 @@
         </case>
         <case name="Enbarr" id="959" priority="Noteworthy" min="6" max="8">
             <description>Edelgard offers to give the table a tour of the Imperial capital, if she has time.</description>
+        </case>
+        <case name="Cheater Beater" id="1016" priority="Noteworthy" min="0" max="8">
+            <description>Edelgard admonishes a character with the "Cheater (Cards)" tag for thinking they could best her through underhanded means.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -176,6 +179,13 @@
         <response id="1010" opponent="nami" opponentId="53" />
         <response id="1011" opponent="estelle" opponentId="42" />
         <response id="1012" opponent="arle" opponentId="241" />
+        <response id="1017" opponent="jura" opponentId="2811" />
+        <response id="1018" opponent="noelle" opponentId="40" />
+        <response id="1020" opponent="vine_staff" opponentId="42" />
+        <response id="1056" opponent="nadeshiko" opponentId="132" />
+        <response id="1057" opponent="fina" opponentId="132" />
+        <response id="1058" opponent="nadeshiko" opponentId="19" />
+        <response id="1059" opponent="nadeshiko" opponentId="92" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -202,7 +212,7 @@
         <label id="28" label="Claude" folder="Impressions" sort="2" />
         <label id="100" label="Academy Bernadetta (War/Hopes)" folder="Target - Character&gt;Bernadetta&gt;Default" sort="0" />
         <label id="102" label="War Bernadetta (Hopes)" folder="Target - Character&gt;Bernadetta&gt;War Outfit" sort="0" />
-        <label id="101" label="War Bernadetta (Academy)" folder="Target - Character&gt;Bernadetta&gt;War Outfit" sort="2" />
+        <label id="1030" label="" folder="Academy Phase" sort="0" />
         <label id="103" label="FE3H Character + Flame Emperor Edelgard" folder="Flame Emperor" sort="0" />
         <label id="99" label="War Bernadetta + Academy/Hopes Edelgard" folder="" sort="0" />
         <label id="33" label="0 Cards" folder="" sort="34" />
@@ -360,9 +370,9 @@
         <label id="269" label="" folder="" sort="0" />
         <label id="576" label="Good - Ferdinand" folder="Classmates" sort="0" />
         <label id="272" label="Academy Petra + War/Hopes Edelgard" folder="Target - Character&gt;Petra" sort="0" />
-        <label id="273" label="War Petra + Academy Edelgard" folder="Target - Character&gt;Petra&gt;War Outfit" sort="2" />
+        <label id="273" label="" folder="Academy Phase" sort="2" />
         <label id="274" label="War Petra + Hopes Edelgard" folder="Target - Character&gt;Petra&gt;War Outfit" sort="0" />
-        <label id="275" label="" folder="Target - Character&gt;Lysithea" sort="0" />
+        <label id="1028" label="Academy Hilda" folder="War Phase" sort="0" />
         <label id="277" label="" folder="" sort="0" />
         <label id="278" label="Callout Case" color="1" folder="&gt;Sexuality Reveal" sort="0" />
         <label id="279" label="Removing Accessory (Male)" color="14" folder="Placeholder" sort="0" />
@@ -431,12 +441,12 @@
         <label id="192" label="Edison and Tesla (Academy)" color="5" folder="Target - Character&gt;Arash" sort="3" />
         <label id="193" label="Edison and Tesla (War/Hopes)" color="5" folder="Target - Character&gt;Arash" sort="0" />
         <label id="39" label="Serenity" color="5" folder="Target - Character&gt;Arash" sort="0" />
-        <label id="98" label="" folder="Target - Character&gt;Bernadetta" sort="3" />
-        <label id="111" label="" folder="Target - Character&gt;Galatea" sort="0" />
+        <label id="1027" label="Academy Petra" folder="War Phase" sort="0" />
+        <label id="275" label="" folder="Academy Phase" sort="0" />
         <label id="109" label="" folder="Target - Character&gt;Lysithea" sort="0" />
-        <label id="108" label="" folder="Target - Character&gt;Palutena" sort="0" />
-        <label id="110" label="" folder="Target - Character&gt;Petra" sort="3" />
-        <label id="356" label="" folder="Target - Character&gt;Bernadetta" sort="4" />
+        <label id="1029" label="" folder="Academy Phase" sort="0" />
+        <label id="1023" label="War Bernadetta" folder="War Phase" sort="0" />
+        <label id="101" label="" folder="Academy Phase" sort="0" />
         <label id="2" label="" folder="Target - Character&gt;Misty" sort="0" />
         <label id="325" label="" folder="Target - Character&gt;Yuelia" sort="0" />
         <label id="124" label="" folder="Target - Tag&gt;Deity" sort="0" />
@@ -787,9 +797,9 @@
         <label id="931" label="" folder="Male|Futa" sort="0" />
         <label id="933" label="" folder="Male|Futa" sort="0" />
         <label id="942" label="" folder="Target - Character&gt;Binah" sort="0" />
-        <label id="947" label="" folder="Target - Character&gt;Hilda" sort="0" />
+        <label id="947" label="" folder="Academy Phase" sort="0" />
         <label id="948" label="" folder="Target - Character&gt;Hilda" sort="0" />
-        <label id="949" label="" folder="Target - Character&gt;Ignatz" sort="0" />
+        <label id="1026" label="War Outfit" folder="War Phase" sort="0" />
         <label id="871" label="" folder="Target - Character&gt;zzMultiple&gt;Cynthia &amp; Hilda" sort="0" />
         <label id="950" label="" folder="Target - Character&gt;Rosa" sort="0" />
         <label id="951" label="" folder="Target - Character&gt;Critical Darling" sort="4" />
@@ -802,7 +812,7 @@
         <label id="957" label="Poker with Hubert" color="1" folder="" sort="0" />
         <label id="958" label="Rivals" color="1" folder="" sort="0" />
         <label id="959" label="Enbarr" color="1" folder="" sort="0" />
-        <label id="962" label="" folder="Target - Character&gt;Leonie" sort="0" />
+        <label id="98" label="" folder="Academy Phase" sort="0" />
         <label id="960" label="" folder="Target - Character&gt;Velvet" sort="3" />
         <label id="961" label="" folder="Target - Character&gt;Velvet" sort="4" />
         <label id="963" label="" folder="Target - Character&gt;Jura" sort="0" />
@@ -832,11 +842,43 @@
         <label id="1001" label="" folder="Target - Character&gt;Serena" sort="0" />
         <label id="1002" label="" folder="Target - Character&gt;Serena" sort="0" />
         <label id="1003" label="" color="5" folder="Target - Character&gt;Caulifla" sort="0" />
+        <label id="1016" label="" folder="Target - Tag&gt;Cheater (Cards)" sort="0" />
+        <label id="1022" label="" folder="War Phase" sort="0" />
+        <label id="1031" label="Academy Leonie" folder="War Phase" sort="0" />
+        <label id="1024" label="Academy Bernadetta" folder="War Phase" sort="0" />
+        <label id="1025" label="" folder="War Phase" sort="0" />
+        <label id="1019" label="" folder="War Phase" sort="0" />
+        <label id="1032" label="" folder="War Phase" sort="0" />
+        <label id="1033" label="Initialize Academy Phase" folder="Technical" sort="0" />
+        <label id="1034" label="Initialize War Phase" folder="Technical" sort="0" />
+        <label id="1035" label="Initialize Three Hopes" folder="Technical" sort="0" />
+        <label id="1036" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
+        <label id="1037" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
+        <label id="1038" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
+        <label id="1039" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Bernadetta" sort="0" />
+        <label id="1040" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Bernadetta" sort="0" />
+        <label id="1041" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Bernadetta" sort="0" />
+        <label id="1042" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Leonie" sort="0" />
+        <label id="1043" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Leonie" sort="0" />
+        <label id="1044" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Leonie" sort="0" />
+        <label id="1045" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Petra" sort="0" />
+        <label id="1046" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Petra" sort="0" />
+        <label id="1047" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Petra" sort="0" />
+        <label id="1048" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Petra" sort="0" />
+        <label id="1049" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Lysithea" sort="0" />
+        <label id="1050" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Lysithea" sort="0" />
+        <label id="1051" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Lysithea" sort="0" />
+        <label id="1052" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Ignatz" sort="0" />
+        <label id="1053" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Ignatz" sort="0" />
+        <label id="1054" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Ignatz" sort="0" />
+        <label id="1055" label="Fallback" folder="Technical&gt;3H Character Selected" sort="0" />
     </labels>
-    <nextId>1015</nextId>
+    <nextId>1059</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
         <marker scope="Public" name="academy_phase" />
+        <marker scope="Public" name="AcademyPhase" />
         <marker scope="Public" name="AdmiringFlowers" />
         <marker scope="Public" name="admitted_fantasy_female" />
         <marker scope="Public" name="admitted_fantasy_male" />
@@ -908,11 +950,19 @@
         <marker scope="Public" name="bernadetta_popularity" />
         <marker scope="Public" name="bernadetta_Popularity" />
         <marker scope="Public" name="bernadetta_Selected" />
+        <marker scope="Public" name="bernadetta_Selected_War" />
         <marker scope="Public" name="bernadetta_Stripping_0" />
         <marker scope="Public" name="bernadetta_taller" />
         <marker scope="Public" name="bernadetta_two_parts" />
         <marker scope="Public" name="bernadetta_TwoParts" />
+        <marker scope="Public" name="bernadetta_War_Selected" />
+        <marker scope="Public" name="bernadetta_War_Selected_War" />
         <marker scope="Public" name="bernadetta_warOutfit_Selected" />
+        <marker scope="Public" name="bernadetta_WarOutfit_Selected" />
+        <marker scope="Public" name="bernadetta_warOutfit_Selected_War" />
+        <marker scope="Public" name="bernadetta_WarOutfit_Selected_War" />
+        <marker scope="Public" name="bernadetta_WarPhase_Selected" />
+        <marker scope="Public" name="bernadetta_WarPhase_Selected_War" />
         <marker scope="Public" name="bernadetta_why_here" />
         <marker scope="Public" name="bernadetta_WhyHere_a" />
         <marker scope="Public" name="bernadetta_WhyHere_b" />
@@ -934,6 +984,7 @@
         <marker scope="Public" name="caulifla_strike_a_pose" />
         <marker scope="Public" name="caulifla_StrikeAPose" />
         <marker scope="Public" name="caulifla_SuperSaiyanTransformation" />
+        <marker scope="Public" name="CheaterLost" />
         <marker scope="Public" name="Chess" />
         <marker scope="Public" name="chihiro_GenderReveal" />
         <marker scope="Public" name="chihiro_UltimateProgrammer" />
@@ -954,6 +1005,7 @@
         <marker scope="Public" name="cynthia_ProminentFigures_a" />
         <marker scope="Public" name="cynthia_ProminentFigures_b" />
         <marker scope="Public" name="cynthia_ProminentFigures_c" />
+        <marker scope="Public" name="darkness_Commander" />
         <marker scope="Public" name="darkness_MastTalkRoyalty" />
         <marker scope="Public" name="dawn_StrangeCreatures" />
         <marker scope="Public" name="deity_AllDeitiesLost" />
@@ -1112,7 +1164,11 @@
         <marker scope="Public" name="estelle_Books" />
         <marker scope="Public" name="ExhibitionistRevealedLargeChest" />
         <marker scope="Public" name="ExoticEyes_StrippingMajor" />
+        <marker scope="Public" name="FE3H_AcademyPhase" />
+        <marker scope="Public" name="FE3H_ThreeHopes" />
+        <marker scope="Public" name="FE3H_WarPhase" />
         <marker scope="Public" name="fe3h_WhatHappensAtTheInventory" />
+        <marker scope="Public" name="fina_Lonely" />
         <marker scope="Public" name="florina_Fled" />
         <marker scope="Public" name="Formalities" />
         <marker scope="Public" name="fortune_LostHead_0" />
@@ -1160,6 +1216,9 @@
         <marker scope="Public" name="hilda_RevealHigh" />
         <marker scope="Public" name="hilda_RevealWin" />
         <marker scope="Public" name="hilda_Selected" />
+        <marker scope="Public" name="hilda_Selected_War" />
+        <marker scope="Public" name="hilda_warOutfit_Selected" />
+        <marker scope="Public" name="hilda_warOutfit_Selected_War" />
         <marker scope="Public" name="HotForTeacher" />
         <marker scope="Public" name="Hubert_0" />
         <marker scope="Public" name="Hubert_1" />
@@ -1180,8 +1239,11 @@
         <marker scope="Public" name="Impressions_Ferdinand" />
         <marker scope="Public" name="impressions_hubert" />
         <marker scope="Public" name="Impressions_Hubert" />
+        <marker scope="Public" name="jura_" />
+        <marker scope="Public" name="jura_ChurchIsolationism" />
         <marker scope="Public" name="jura_EarthReligion" />
         <marker scope="Public" name="jura_PrincessFantasies" />
+        <marker scope="Public" name="jura_PrincessFantasies_2" />
         <marker scope="Public" name="jura_WhyEdelgardIsHere" />
         <marker scope="Public" name="komi_AfterGrad" />
         <marker scope="Public" name="komi_Quiet" />
@@ -1189,6 +1251,9 @@
         <marker scope="Public" name="kyoko_NudeAppearance" />
         <marker scope="Public" name="LastTwo" />
         <marker scope="Public" name="leonie_Selected" />
+        <marker scope="Public" name="leonie_Selected_War" />
+        <marker scope="Public" name="leonie_warOutfit_Selected" />
+        <marker scope="Public" name="leonie_WarPhase_Selected" />
         <marker scope="Public" name="LinguaFranca" />
         <marker scope="Public" name="LoneEagle" />
         <marker scope="Public" name="LostInThought" />
@@ -1198,6 +1263,7 @@
         <marker scope="Public" name="lux_LightPunOverload" />
         <marker scope="Public" name="lysithea_Cheering" />
         <marker scope="Public" name="lysithea_Selected" />
+        <marker scope="Public" name="lysithea_Selected_War" />
         <marker scope="Public" name="lysithea_sister" />
         <marker scope="Public" name="lysithea_StrategyGames" />
         <marker scope="Public" name="magic_LostHand" />
@@ -1209,6 +1275,7 @@
         <marker scope="Public" name="megumin_biggest_monster" />
         <marker scope="Public" name="megumin_BiggestMonster" />
         <marker scope="Public" name="meia_EdelgardsFaith" />
+        <marker scope="Public" name="meia_EdelgardsFaith_2" />
         <marker scope="Public" name="meia_FemalePartner" />
         <marker scope="Public" name="meia_jura_gossip" />
         <marker scope="Public" name="meia_WhyEdelgardIsHere" />
@@ -1221,8 +1288,17 @@
         <marker scope="Public" name="mercy_its_not_a_school_day" />
         <marker scope="Public" name="miko_true_desires" />
         <marker scope="Public" name="miko_TrueDesires" />
+        <marker scope="Public" name="mitama_princess" />
         <marker scope="Public" name="MotherHen" />
+        <marker scope="Public" name="nadeshiko_Cook" />
+        <marker scope="Public" name="nadeshiko_Lonely" />
         <marker scope="Public" name="nami_Dreams" />
+        <marker scope="Public" name="noel_Insecurity" />
+        <marker scope="Public" name="noel_Insecurity_a" />
+        <marker scope="Public" name="noel_Insecurity_b" />
+        <marker scope="Public" name="noel_Insecurity_c" />
+        <marker scope="Public" name="noelle_Insecurity_a" />
+        <marker scope="Public" name="noelle_Insecurity_b" />
         <marker scope="Public" name="not_rhea" />
         <marker scope="Public" name="opponent_had_no_visible_scars_on_start" />
         <marker scope="Public" name="opponent_hidden_scars" />
@@ -1233,6 +1309,7 @@
         <marker scope="Public" name="petra_Glasses" />
         <marker scope="Public" name="petra_Grandfather" />
         <marker scope="Public" name="petra_Selected" />
+        <marker scope="Public" name="petra_Selected_War" />
         <marker scope="Public" name="petra_Studies" />
         <marker scope="Public" name="petra_warOutfit_Selected" />
         <marker scope="Public" name="PhantomThieves_0" />
@@ -1241,6 +1318,7 @@
         <marker scope="Public" name="plush_hunt" />
         <marker scope="Public" name="PokerWithHubert" />
         <marker scope="Public" name="pretty_eyes" />
+        <marker scope="Public" name="priscilla_Confidence" />
         <marker scope="Public" name="priscilla_Royalty1" />
         <marker scope="Public" name="Rats" />
         <marker scope="Public" name="RevealingScars" />
@@ -1273,6 +1351,7 @@
         <marker scope="Public" name="self_useless_gods" />
         <marker scope="Public" name="self_what_happens_at_the_inventory" />
         <marker scope="Public" name="SelfAwareness" />
+        <marker scope="Public" name="serena_LongHair_3" />
         <marker scope="Public" name="serena_LongHair_a" />
         <marker scope="Public" name="serena_LongHair_a_1" />
         <marker scope="Public" name="serena_LongHair_a2" />
@@ -1295,6 +1374,7 @@
         <marker scope="Public" name="tharja_breast_enhancement" />
         <marker scope="Public" name="tharja_BreastEnhancement" />
         <marker scope="Public" name="tharja_shrank_jessie" />
+        <marker scope="Public" name="ThreeHopes" />
         <marker scope="Public" name="toph_LieDetector" />
         <marker scope="Public" name="Traditions" />
         <marker scope="Public" name="TripleAqua" />
@@ -1308,6 +1388,8 @@
         <marker scope="Public" name="velvet_Mate" />
         <marker scope="Public" name="velvet_Personality" />
         <marker scope="Public" name="villain_fighter_LostHand" />
+        <marker scope="Public" name="vineStaff_HornFreakout" />
+        <marker scope="Public" name="WarPhase" />
         <marker scope="Public" name="weapon_safety" />
         <marker scope="Public" name="WeaponSafety" />
         <marker scope="Public" name="what_would_claude_say" />
