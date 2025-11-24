@@ -76,6 +76,32 @@
             <sprite id="stripped-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripping-pos.png" x="0" y="0" />
             <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripped-pos-eyebrows.png" x="0" y="0" />
         </pose>
+        <pose id="10-bashful">
+            <sprite id="bashful" src="reskins/nadeshiko_sleepy_camper/10-bashful.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-pouring">
+            <sprite id="pouring" src="reskins/nadeshiko_sleepy_camper/10-pouring.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="TableCupNoodles(copy)" z="1" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+        </pose>
+        <pose id="10-come on">
+            <sprite id="come on" src="reskins/nadeshiko_sleepy_camper/10-come on.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-eating A">
+            <sprite id="eating A" src="reskins/nadeshiko_sleepy_camper/10-eating A.png" x="0" y="0" />
+            <sprite id="Table" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+        </pose>
+        <pose id="10-eating B">
+            <sprite id="eating B" src="reskins/nadeshiko_sleepy_camper/10-eating B.png" x="0" y="0" />
+            <sprite id="Table" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+        </pose>
         <pose id="1-stripped-neg">
             <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
             <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg.png" x="0" y="0" />
@@ -179,6 +205,31 @@
             <sprite id="nadeshiko_stripped_panties_and_legs" src="reskins/nadeshiko_sleepy_camper/attachments/nadeshiko_stripped_panties_and_legs.png" x="-25" y="1240" />
             <sprite id="stripped-front-hair-neu" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-pos-eyebrows.png" x="0" y="0" />
         </pose>
+        <pose id="6-stripping-lewd">
+            <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neu.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neu-eyebrows.png" x="47" y="-1" />
+            <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
+                <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+                <keyframe time="1.05" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
+            </directive>
+            <directive type="animation" id="stripping-1" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="stripping-neg-eyebrows-headband" delay="1" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" scaley="1" />
+                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
+                <keyframe time="0.1" scalex="1" scaley="1" />
+            </directive>
+        </pose>
         <pose id="6-stripping-neg">
             <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
             <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neg.png" x="0" y="0" />
@@ -204,10 +255,10 @@
                 <keyframe time="0.1" scalex="1" scaley="1" />
             </directive>
         </pose>
-        <pose id="6-stripping-lewd">
+        <pose id="6-stripping-pos">
             <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
-            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-neu.png" x="0" y="0" />
-            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripped-neu-eyebrows.png" x="47" y="-1" />
+            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos.png" x="0" y="0" />
+            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos-eyebrows-headband.png" x="0" y="0" />
             <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
                 <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
@@ -237,6 +288,32 @@
             <sprite id="kyouko-finished" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/kyouko-finished_must-masturbate.png" x="-8" y="0" />
             <sprite id="nadeshiko" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/nadeshiko_must-masturbate.png" x="0" y="0" />
             <sprite id="nadeshiko back hair_must-masturbate" z="-1" src="reskins/nadeshiko_sleepy_camper/pose maker/kyouko/nadeshiko back hair_must-masturbate.png" x="0" y="0" />
+        </pose>
+        <pose id="8-starting-pos">
+            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
+            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos1.png" x="0" y="0" />
+        </pose>
+        <pose id="8-starting-pos2">
+            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
+            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos2.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-neg">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-neu">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu-eyebrows-headband.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-pos">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos.png" x="0" y="0" />
+            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos-eyebrows-headband.png" x="0" y="0" />
         </pose>
         <pose id="9-finishing">
             <sprite id="ForfeitChair" src="reskins/nadeshiko_sleepy_camper/pose maker/ForfeitChair.png" x="0" y="0" />
@@ -447,56 +524,95 @@
                 <keyframe time="0.25" y="1165" alpha="0" />
             </directive>
         </pose>
-        <pose id="8-stripped-neg">
-            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
-            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
-            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg.png" x="0" y="0" />
-            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+        <pose id="10-scared">
+            <sprite id="scared" src="reskins/nadeshiko_sleepy_camper/10-scared.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
-        <pose id="8-stripped-neu">
-            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
-            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
-            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu.png" x="0" y="0" />
-            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu-eyebrows-headband.png" x="0" y="0" />
+        <pose id="10-crud">
+            <sprite id="crud" src="reskins/nadeshiko_sleepy_camper/10-crud.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
-        <pose id="8-stripped-pos">
-            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
-            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
-            <sprite id="stripped-neg" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos.png" x="0" y="0" />
-            <sprite id="stripped-neg-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-pos-eyebrows-headband.png" x="0" y="0" />
+        <pose id="10-ecstatic">
+            <sprite id="ecstatic" src="reskins/nadeshiko_sleepy_camper/10-ecstatic.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
-        <pose id="8-starting-pos-1">
-            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
-            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos1.png" x="0" y="0" />
+        <pose id="10-excited">
+            <sprite id="excited" src="reskins/nadeshiko_sleepy_camper/10-excited.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
-        <pose id="8-starting-pos-2">
-            <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
-            <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos2.png" x="0" y="0" />
+        <pose id="10-happy">
+            <sprite id="happy" src="reskins/nadeshiko_sleepy_camper/10-happy.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
-        <pose id="6-stripping-pos">
-            <sprite id="stripping-1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" x="0" y="0" />
-            <sprite id="stripping-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos.png" x="0" y="0" />
-            <sprite id="stripping-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-pos-eyebrows-headband.png" x="0" y="0" />
-            <directive type="animation" id="stripping-1" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-1.png" />
-                <keyframe time="1" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
-                <keyframe time="1.05" src="reskins/nadeshiko_sleepy_camper/pose maker/6-stripping-2.png" />
-            </directive>
-            <directive type="animation" id="stripping-1" delay="1" ease="linear" interpolation="linear">
-                <keyframe time="0" scalex="1" scaley="1" />
-                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
-                <keyframe time="0.1" scalex="1" scaley="1" />
-            </directive>
-            <directive type="animation" id="stripping-neg" delay="1" ease="linear" interpolation="linear">
-                <keyframe time="0" scalex="1" scaley="1" />
-                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
-                <keyframe time="0.1" scalex="1" scaley="1" />
-            </directive>
-            <directive type="animation" id="stripping-neg-eyebrows-headband" delay="1" ease="linear" interpolation="linear">
-                <keyframe time="0" scalex="1" scaley="1" />
-                <keyframe time="0.04999995" scalex="0.99" scaley="1.02" />
-                <keyframe time="0.1" scalex="1" scaley="1" />
-            </directive>
+        <pose id="10-lewd">
+            <sprite id="lewd" src="reskins/nadeshiko_sleepy_camper/10-lewd.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-naughty">
+            <sprite id="naughty" src="reskins/nadeshiko_sleepy_camper/10-naughty.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-nervous">
+            <sprite id="nervous" src="reskins/nadeshiko_sleepy_camper/10-nervous.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-oh no">
+            <sprite id="oh no" src="reskins/nadeshiko_sleepy_camper/10-oh no.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-panicked">
+            <sprite id="panicked" src="reskins/nadeshiko_sleepy_camper/10-panicked.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-relaxed">
+            <sprite id="relaxed" src="reskins/nadeshiko_sleepy_camper/10-relaxed.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-wow">
+            <sprite id="wow" src="reskins/nadeshiko_sleepy_camper/10-wow.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-thinking">
+            <sprite id="thinking" src="reskins/nadeshiko_sleepy_camper/10-thinking.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-unamused">
+            <sprite id="unamused" src="reskins/nadeshiko_sleepy_camper/10-unamused.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
+        </pose>
+        <pose id="10-calm">
+            <sprite id="calm" src="reskins/nadeshiko_sleepy_camper/10-calm.png" x="0" y="0" />
+            <sprite id="TableCupNoodles" marker="Noodles==b" z="2" src="nadeshiko/pose maker/TableCupNoodles.png" x="0" y="0" />
+            <sprite id="Table" marker="Camping_Table==b" z="1" src="nadeshiko/pose maker/Table.png" x="0" y="0" />
+            <sprite id="TableCookingPot" marker="Camping_Table==b" z="3" src="nadeshiko/pose maker/TableCookingPot.png" x="0" y="0" />
         </pose>
     </poses>
 
