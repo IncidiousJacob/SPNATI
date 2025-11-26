@@ -1,2 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="vanessa_earrings" status="online" img="opponents/vanessa/vanessa_earrings.png" thumbnail="opponents/vanessa/vanessa_earrings.png">
+        <title>Vanessa Earrings</title>
+        <subtitle>Oh, what's this?</subtitle>
+        <text>These seem to have dropped after vanessa teleported away.</text>
+        <unlock>Win a game against vanessa</unlock>
+        <wearable>true</wearable>
+        <clothing img="opponents/vanessa/vanessa_earrings.png" name="earrings" generic="jewelry" position="head" type="extra" plural="true" />
+    </collectible>
+</collectibles>
