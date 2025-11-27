@@ -483,9 +483,9 @@
         </dates>
 
         <!-- NO FEATURED BACKGROUND -->
-		
+
         <!-- Highlight the summer costumes but don't separate them into partitions or sort them, and disable the special prefill-->
-		<costumes partition="0" sort="0" prefill="default">summer</costumes>
+        <costumes partition="0" sort="0" prefill="default">summer</costumes>
     </event>
     <event id="valentines">
         <name>Valentine's Day</name>
@@ -1003,10 +1003,10 @@
             <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-excited.png" />
             <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-shocked.png" />
             <candy uid="tharja" base="reskins/normal_girl_tharja" src="0-cocky.png" />
-	    <candy uid="jura" base="reskins/jura_santa" src="0-laughing.png"/>
-	    <candy uid="jura" base="reskins/jura_santa" src="0-treasurescope.png"/>
-	    <candy uid="jura" base="reskins/jura_santa" src="2-smug.png"/>
-	    <candy uid="jura" base="reskins/jura_santa" src="4-proud.png"/>
+            <candy uid="jura" base="reskins/jura_santa" src="0-laughing.png"/>
+            <candy uid="jura" base="reskins/jura_santa" src="0-treasurescope.png"/>
+            <candy uid="jura" base="reskins/jura_santa" src="2-smug.png"/>
+            <candy uid="jura" base="reskins/jura_santa" src="4-proud.png"/>
 
         </candy-catalog>
     </event>
@@ -1022,10 +1022,11 @@
         <background>feminine bedroom</background>
 
         <!-- Put all costumes into the same group, but place new costumes higher -->
+        <character highlight="sleepover" partition="1" sort="2">nadeshiko</character>
         <character highlight="sleepover" partition="1" sort="2">serena</character>
 
         <costumes highlight="sleepover" partition="1" sort="1">sleepover</costumes>
-		
+
         <character highlight="sleepover">caitlin</character>
 
         <candy-catalog>
