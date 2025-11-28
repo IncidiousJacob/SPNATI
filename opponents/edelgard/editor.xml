@@ -40,7 +40,7 @@
             <description>Edelgard wonders whether the others believe a person can choose their own destiny.</description>
         </case>
         <case name="Heresies" id="553" priority="Noteworthy" min="6" max="8">
-            <description>Edelgard mentions that she could be branded a heretic for coming to the Inventory.</description>
+            <description>*Academy Phase Only* Edelgard mentions that she could be branded a heretic for coming to the Inventory.</description>
         </case>
         <case name="Solitude" id="562" priority="Prompt" min="6" max="8">
             <description>Edelgard wonders if others ever wish they could be be completely alone.</description>
@@ -49,19 +49,19 @@
             <description>Edelgard turns around to present an angle which obscures her scars.</description>
         </case>
         <case name="Self Awareness" id="262" priority="Noteworthy" min="4" max="4">
-            <description>Edelgard is resigned to being seen as distant and arrogant. (Immediately precedes the situation "Lone Eagle")</description>
+            <description>*Academy Uniform Only (subject to change)* Edelgard is resigned to being seen as distant and arrogant. (Immediately precedes the situation "Lone Eagle")</description>
         </case>
         <case name="Lone Eagle" id="378" priority="Noteworthy" min="5" max="5">
-            <description>Edelgard opens up a bit about how lonely her life can be. (Immediately follows the situation "Self Awareness")</description>
+            <description>*Academy Uniform Only (subject to change)* Edelgard opens up a bit about how lonely her life can be. (Immediately follows the situation "Self Awareness")</description>
         </case>
         <case name="Revealing Scars" id="37" priority="Noteworthy" min="3" max="3">
-            <description>Edelgard gives a warning as she prepares to reveal her scars. *This happens at different stages depending on her costume* (Each line has its own marker as well as the shared marker "Revealing Scars", immediately precedes situation "Scars Revealed")</description>
+            <description>Edelgard gives a warning as she prepares to reveal her scars. *This case covers her Academy Uniform only, for other costumes look under their respective folders.*</description>
         </case>
         <case name="Scars Revealed" id="23" priority="MustTarget" min="4" max="4">
-            <description>Edelgard has revealed the scars on her torso. *This happens at different stages depending on her costume* (Immediately follows situation "Revealing Scars")</description>
+            <description>Edelgard has revealed the scars on her torso.  *This case covers her Academy Uniform only, for other costumes look under their respective folders.* (Immediately follows situation "Revealing Scars")</description>
         </case>
         <case name="Hot for Teacher" id="47" priority="MustTarget" min="10" max="10">
-            <description>Edelgard screamed "my teacher" when she climaxed.</description>
+            <description>*Not Three Hopes* Edelgard screamed "my teacher" when she climaxed.</description>
         </case>
         <case name="Special Weapons" id="678" priority="Prompt" min="4" max="10">
             <description>Edelgard asks a character stripping their weapon about if their world has any "sacred" or "holy" weapons. (Immediately precedes the situation "Heroes' Relics")</description>
@@ -73,10 +73,10 @@
             <description>Edelgard asks the table about any interesting books they've read.</description>
         </case>
         <case name="Impressions" id="213" priority="Noteworthy" min="6" max="6">
-            <description>Edelgard does a goofy impression of another FE3H character, contrasting her previously serious demeanor. (This case only exists for the callout, see the "Impressions" folder for the actual cases)</description>
+            <description>*Academy Uniform Only (subject to change)* Edelgard does a goofy impression of another FE3H character, contrasting her previously serious demeanor. (This case only exists for the callout, see the "Impressions" folder for the actual cases)</description>
         </case>
         <case name="Mother Hen" id="955" priority="FYI" min="6" max="8">
-            <description>Edelgard complains of a classmate comparing her to an overbearing mother.</description>
+            <description>Edelgard complains of a friend comparing her to an overbearing mother.</description>
         </case>
         <case name="Marvelous Diversity" id="954" priority="FYI" min="6" max="8">
             <description>Edelgard marvels at how such a diverse group of people gather at the Inventory.</description>
@@ -89,6 +89,15 @@
         </case>
         <case name="Cheater Beater" id="1016" priority="Noteworthy" min="0" max="8">
             <description>Edelgard admonishes a character with the "Cheater (Cards)" tag for thinking they could best her through underhanded means.</description>
+        </case>
+        <case name="Fake Crown" id="1089" priority="Noteworthy" min="3" max="3">
+            <description>*Not Academy Phase* When Edelgard strips her crown in the pesence of potential thieves she will mention that it's a replica of no real worth.  *This case covers her War Outfit only, for other costumes look under their respective folders.*</description>
+        </case>
+        <case name="Letting Her Hair Down" id="1092" priority="FYI" min="4" max="4">
+            <description>*War Phase Only* After removing her War Phase crown, Edelgard's buns come undone, revealing that she still has long hair.  *This case covers her War Outfit only, for other costumes look under their respective folders.*</description>
+        </case>
+        <case name="Fake Boobs" id="1102" priority="Noteworthy" min="5" max="5">
+            <description>*War Outfit Only (subject to change)* Edelgard's armor made her boobs look bigger. She is very embarassed about being called on this, implying she was intentionally making herself bigger.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -186,6 +195,7 @@
         <response id="1057" opponent="fina" opponentId="132" />
         <response id="1058" opponent="nadeshiko" opponentId="19" />
         <response id="1059" opponent="nadeshiko" opponentId="92" />
+        <response id="1060" opponent="samus_aran" opponentId="1" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -212,7 +222,7 @@
         <label id="28" label="Claude" folder="Impressions" sort="2" />
         <label id="100" label="Academy Bernadetta (War/Hopes)" folder="Target - Character&gt;Bernadetta&gt;Default" sort="0" />
         <label id="102" label="War Bernadetta (Hopes)" folder="Target - Character&gt;Bernadetta&gt;War Outfit" sort="0" />
-        <label id="1030" label="" folder="Academy Phase" sort="0" />
+        <label id="1030" label="" folder="Academy Phase" sort="3" />
         <label id="103" label="FE3H Character + Flame Emperor Edelgard" folder="Flame Emperor" sort="0" />
         <label id="99" label="War Bernadetta + Academy/Hopes Edelgard" folder="" sort="0" />
         <label id="33" label="0 Cards" folder="" sort="34" />
@@ -249,7 +259,7 @@
         <label id="72" label="" folder="Player Name" sort="3" />
         <label id="73" label="No Lysithea" folder="Lysithea's Sister" sort="0" />
         <label id="74" label="" folder="Target - Character&gt;Lysithea" sort="2" />
-        <label id="78" label="" folder="Target - Character&gt;Bernadetta&gt;Helping Bernadetta" sort="2" />
+        <label id="78" label="" folder="Helping Bernadetta" sort="2" />
         <label id="79" label="" folder="Target - Character&gt;Bernadetta&gt;Helping Bernadetta" sort="7" />
         <label id="80" label="" folder="Player Name" sort="0" />
         <label id="81" label="" folder="Player Name" sort="0" />
@@ -300,7 +310,7 @@
         <label id="112" label="Birthright" folder="Target - Tag&gt;Royal" sort="2" />
         <label id="96" label="" folder="Target - Tag&gt;Bow" sort="62" />
         <label id="97" label="White Hair" folder="Target - Tag&gt;White Hair" sort="5" />
-        <label id="75" label="Lingua Franca" color="1" folder="" sort="18" />
+        <label id="75" label="Lingua Franca" color="1" folder="Prompts" sort="18" />
         <label id="599" label="# Opponents = 4" folder="Technical" sort="0" />
         <label id="579" label="Okay - Dorothea" folder="Classmates" sort="0" />
         <label id="145" label="" folder="" sort="10" />
@@ -310,7 +320,7 @@
         <label id="574" label="Bad - Hubert" folder="Classmates" sort="0" />
         <label id="155" label="" folder="" sort="16" />
         <label id="159" label="" folder="" sort="18" />
-        <label id="164" label="Govenance" color="1" folder="" sort="30" />
+        <label id="164" label="Govenance" color="1" folder="Prompts" sort="30" />
         <label id="165" label="" folder="General" sort="4" />
         <label id="166" label="" folder="General" sort="2" />
         <label id="168" label="" folder="Background" sort="0" />
@@ -335,9 +345,9 @@
         <label id="187" label="" folder="Opponent Tags&gt;Opposing Scarred" sort="0" />
         <label id="188" label="" folder="Background" sort="10" />
         <label id="158" label="" color="5" folder="Target - Character&gt;zzMultiple&gt;Hilda &amp; Kora" sort="3" />
-        <label id="189" label="Under Surveillance" color="1" folder="" sort="8" />
+        <label id="189" label="Under Surveillance" color="1" folder="Prompts" sort="8" />
         <label id="194" label="" folder="Common Names" sort="14" />
-        <label id="197" label="Opposing Smash Bros Alternative" folder="Target - Character&gt;Palutena" sort="2" />
+        <label id="197" label="Opposing Smash Bros Alternative" folder="Targeted" sort="2" />
         <label id="198" label="" folder="&gt;Phantom Thieves" sort="2" />
         <label id="199" label="" folder="Opposing Phantom Thieves" sort="0" />
         <label id="200" label="" folder="Opposing Black Eagles" sort="0" />
@@ -347,25 +357,25 @@
         <label id="205" label="" folder="Background" sort="12" />
         <label id="600" label="# Opponents = 3" folder="Technical" sort="0" />
         <label id="206" label="" folder="Background" sort="13" />
-        <label id="212" label="" folder="Target - Character&gt;Bernadetta&gt;Helping Bernadetta" sort="8" />
+        <label id="212" label="" folder="Helping Bernadetta" sort="8" />
         <label id="213" label="Impressions" color="1" folder="Impressions" sort="8" />
         <label id="219" label="Callout Case" color="1" folder="" sort="0" />
         <label id="220" label="Conflict Helping Bernadetta and Scars Anxiety" folder="" sort="20" />
         <label id="221" label="" folder="Opposing Smart" sort="0" />
-        <label id="222" label="Chess Players" color="1" folder="" sort="34" />
+        <label id="222" label="Chess Players" color="1" folder="Prompts" sort="34" />
         <label id="246" label="" folder="&gt;Academy Phase&gt;Academy Uniform&gt;Bra Free" sort="0" />
         <label id="247" label="" folder="&gt;Academy Phase&gt;Academy Uniform&gt;Bra Free" sort="0" />
         <label id="248" label="" folder="&gt;Academy Phase&gt;Academy Uniform&gt;Bra Free" sort="0" />
         <label id="249" label="" folder="&gt;Bra Free" sort="0" />
         <label id="251" label="" folder="&gt;Bra Free" sort="0" />
         <label id="252" label="Callout Case" color="1" folder="&gt;Bra Free" sort="0" />
-        <label id="40" label="" color="5" folder="Target - Character&gt;Aloy" sort="0" />
+        <label id="40" label="" color="5" folder="Responses" sort="10" />
         <label id="577" label="Good - Caspar" folder="Classmates" sort="0" />
         <label id="578" label="Good - Dorothea" folder="Classmates" sort="0" />
         <label id="259" label="" folder="" sort="0" />
         <label id="583" label="Creation Story (0 FE3H))" color="5" folder="Target - Character&gt;Cynthia" sort="4" />
         <label id="584" label="Creation Story (1+ FE3H))" color="5" folder="Target - Character&gt;Cynthia" sort="2" />
-        <label id="582" label="Impactful History" color="5" folder="Target - Character&gt;Cynthia" sort="10" />
+        <label id="582" label="Impactful History" color="5" folder="Responses&gt;Cynthia" sort="10" />
         <label id="575" label="Okay - Ferdinand" folder="Classmates" sort="0" />
         <label id="269" label="" folder="" sort="0" />
         <label id="576" label="Good - Ferdinand" folder="Classmates" sort="0" />
@@ -426,98 +436,98 @@
         <label id="347" label="" folder="&gt;War Phase&gt;Common" sort="0" />
         <label id="47" label="Hot for Teacher" color="1" folder="" sort="10" />
         <label id="276" label="What Brought Him?" color="1" folder="" sort="4" />
-        <label id="23" label="Scars Revealed" color="1" folder="" sort="3" />
+        <label id="23" label="Scars Revealed" color="1" folder="Academy Phase&gt;Academy Uniform" sort="3" />
         <label id="349" label="Pets Question (Hopes)" color="5" folder="Target - Character&gt;Fluttershy" sort="0" />
-        <label id="210" label="Florina Fled" color="5" folder="Target - Character&gt;zzMultiple&gt;Bernadetta &amp; Florina" sort="2" />
-        <label id="271" label="Bernadetta not Present" color="5" folder="Target - Character&gt;Florina&gt;Fled" sort="4" />
-        <label id="353" label="Stripping 0" color="3" folder="Target - Character&gt;Bernadetta&gt;Default" sort="2" />
-        <label id="354" label="" folder="Target - Character&gt;Bernadetta&gt;Frosty Shut-In" sort="0" />
-        <label id="211" label="Flower Power" color="5" folder="Target - Character&gt;Amalia" sort="4" />
-        <label id="355" label="Beat Amalia" color="3" folder="Target - Character&gt;Amalia" sort="2" />
-        <label id="191" label="Flowers" color="5" folder="Target - Character&gt;Arash" sort="3" />
-        <label id="1" label="Blackout" color="5" folder="Target - Character&gt;Arash" sort="5" />
-        <label id="190" label="Can't Sleep" color="5" folder="Target - Character&gt;Arash" sort="4" />
+        <label id="210" label="Florina Fled" color="5" folder="Responses" sort="2" />
+        <label id="271" label="Bernadetta not Present" color="5" folder="Responses" sort="4" />
+        <label id="353" label="Stripping 0" color="3" folder="Responses&gt;Bernadetta&gt;Default" sort="2" />
+        <label id="354" label="" folder="Responses&gt;Bernadetta&gt;Frosty Shut-In" sort="0" />
+        <label id="211" label="Flower Power" color="5" folder="Responses" sort="4" />
+        <label id="355" label="Beat Amalia" color="3" folder="Targeted&gt;Amalia" sort="2" />
+        <label id="191" label="Flowers" color="5" folder="Responses&gt;Arash" sort="3" />
+        <label id="1" label="Blackout" color="5" folder="Responses&gt;Arash" sort="5" />
+        <label id="190" label="Can't Sleep" color="5" folder="Responses&gt;Arash" sort="4" />
         <label id="181" label="Names" color="5" folder="Target - Character&gt;Arash" sort="0" />
-        <label id="192" label="Edison and Tesla (Academy)" color="5" folder="Target - Character&gt;Arash" sort="3" />
+        <label id="192" label="Edison and Tesla (Academy)" color="5" folder="Academy Phase&gt;Academy Uniform&gt;Responses" sort="3" />
         <label id="193" label="Edison and Tesla (War/Hopes)" color="5" folder="Target - Character&gt;Arash" sort="0" />
         <label id="39" label="Serenity" color="5" folder="Target - Character&gt;Arash" sort="0" />
-        <label id="1027" label="Academy Petra" folder="War Phase" sort="0" />
-        <label id="275" label="" folder="Academy Phase" sort="0" />
+        <label id="1027" label="Academy Petra" folder="War Phase" sort="6" />
+        <label id="275" label="" folder="Academy Phase" sort="6" />
         <label id="109" label="" folder="Target - Character&gt;Lysithea" sort="0" />
-        <label id="1029" label="" folder="Academy Phase" sort="0" />
-        <label id="1023" label="War Bernadetta" folder="War Phase" sort="0" />
-        <label id="101" label="" folder="Academy Phase" sort="0" />
+        <label id="1029" label="" folder="Academy Phase" sort="5" />
+        <label id="1023" label="War Bernadetta" folder="War Phase" sort="2" />
+        <label id="101" label="" folder="Academy Phase" sort="2" />
         <label id="2" label="" folder="Target - Character&gt;Misty" sort="0" />
         <label id="325" label="" folder="Target - Character&gt;Yuelia" sort="0" />
-        <label id="124" label="" folder="Target - Tag&gt;Deity" sort="0" />
-        <label id="4" label="" folder="Target - Character&gt;Hilda" sort="4" />
+        <label id="124" label="" folder="Filtered&gt;Deity" sort="0" />
+        <label id="4" label="" folder="Responses&gt;Hilda" sort="4" />
         <label id="16" label="Favored Bedroom Role (0-4)" color="5" folder="Target - Character&gt;Mercy" sort="0" />
-        <label id="305" label="" folder="Target - Character&gt;Hilda" sort="10" />
-        <label id="7" label="" folder="Target - Character&gt;Hilda" sort="6" />
-        <label id="357" label="" folder="Target - Character&gt;Bernadetta" sort="6" />
+        <label id="305" label="" folder="Responses&gt;Hilda" sort="10" />
+        <label id="7" label="" folder="Responses&gt;Hilda" sort="6" />
+        <label id="357" label="" folder="Targeted&gt;Bernadetta" sort="6" />
         <label id="358" label="Favorite Pokemon" color="5" folder="Target - Character&gt;May" sort="0" />
-        <label id="146" label="" folder="Target - Character&gt;zzMultiple&gt;Hilda &amp; Toph" sort="0" />
-        <label id="10" label="" folder="Target - Character&gt;Hilda" sort="2" />
-        <label id="38" label="" folder="Target - Character&gt;Shamiko" sort="0" />
+        <label id="146" label="" folder="Responses&gt;Hilda" sort="0" />
+        <label id="10" label="" folder="Responses&gt;Hilda" sort="2" />
+        <label id="38" label="" folder="Responses" sort="5" />
         <label id="214" label="(axe preference mentioned)" folder="Target - Character&gt;Schezo" sort="0" />
         <label id="254" label="" folder="Target - Character&gt;Ribbon" sort="0" />
-        <label id="215" label="History Gossip" color="5" folder="Target - Character&gt;Cynthia" sort="6" />
-        <label id="92" label="Prominent Figures" color="5" folder="Target - Character&gt;Cynthia" sort="12" />
-        <label id="90" label="Opponent Sent Out Pokemon" folder="Target - Character&gt;zzMultiple&gt;Cynthia | Hex Maniac" sort="0" />
-        <label id="217" label="" folder="Target - Character&gt;Supernova" sort="0" />
-        <label id="359" label="" folder="Target - Character&gt;Bernadetta" sort="5" />
+        <label id="215" label="History Gossip" color="5" folder="Responses&gt;Cynthia" sort="6" />
+        <label id="92" label="Prominent Figures" color="5" folder="Responses&gt;Cynthia" sort="12" />
+        <label id="90" label="Opponent Sent Out Pokemon" folder="Responses" sort="28" />
+        <label id="217" label="" folder="Responses" sort="11" />
+        <label id="359" label="" folder="Targeted&gt;Bernadetta" sort="5" />
         <label id="17" label="Favored Bedroom Role (5-7)" color="5" folder="Target - Character&gt;Mercy" sort="0" />
-        <label id="253" label="" folder="Target - Character&gt;Miko" sort="0" />
-        <label id="360" label="Major Surgery" color="5" folder="Target - Character&gt;Beatrix" sort="0" />
-        <label id="328" label="" color="5" folder="Target - Character&gt;Critical Darling" sort="2" />
-        <label id="361" label="" folder="Target - Character&gt;Lysithea" sort="2" />
-        <label id="216" label="" folder="Target - Character&gt;Windranger" sort="0" />
-        <label id="167" label="" folder="Target - Character&gt;Ayano" sort="0" />
+        <label id="253" label="" folder="Responses" sort="16" />
+        <label id="360" label="Major Surgery" color="5" folder="Responses" sort="22" />
+        <label id="328" label="" color="5" folder="Responses&gt;Critical Darling" sort="2" />
+        <label id="361" label="" folder="Responses" sort="2" />
+        <label id="216" label="" folder="Responses" sort="30" />
+        <label id="167" label="" folder="Academy Phase&gt;Responses" sort="0" />
         <label id="243" label="" folder="Target - Character&gt;Shamiko&gt;War Phase" sort="0" />
         <label id="244" label="" folder="Target - Character&gt;Shamiko&gt;Hopes" sort="0" />
-        <label id="196" label="" folder="Target - Tag&gt;Smash Bros" sort="0" />
-        <label id="9" label="" folder="Target - Character&gt;Hilda" sort="8" />
-        <label id="362" label="" folder="Target - Character&gt;zzMultiple&gt;Jessie &amp; Tharja" sort="0" />
+        <label id="196" label="" folder="Filtered" sort="0" />
+        <label id="9" label="" folder="Responses" sort="8" />
+        <label id="362" label="" folder="Responses" sort="4" />
         <label id="327" label="" folder="Target - Character&gt;Cynthia" sort="8" />
         <label id="363" label="" folder="&gt;War Phase" sort="0" />
         <label id="156" label="" folder="Target - Character&gt;zzMultiple&gt;Bernadetta &amp; Hilda" sort="0" />
         <label id="364" label="" folder="Target - Character&gt;Aimee" sort="0" />
-        <label id="365" label="" folder="Target - Character&gt;zzMultiple&gt;Bernadetta &amp; Neptune" sort="2" />
-        <label id="366" label="" folder="Target - Character&gt;Bernadetta" sort="7" />
+        <label id="365" label="" folder="Responses&gt;Bernadetta" sort="2" />
+        <label id="366" label="" folder="Targeted&gt;Bernadetta" sort="7" />
         <label id="208" label="Who Needs Water?" color="5" folder="Target - Character&gt;Magma Grunt" sort="0" />
         <label id="323" label="" folder="Target - Character&gt;Sayaka" sort="0" />
-        <label id="13" label="Two Parts?" color="5" folder="Target - Character&gt;Bernadetta" sort="10" />
-        <label id="14" label="Bernie Butt (5-10)" color="5" folder="Target - Character&gt;Bernadetta&gt;Default" sort="11" />
+        <label id="13" label="Two Parts?" color="5" folder="Targeted&gt;Bernadetta" sort="10" />
+        <label id="14" label="Bernie Butt (5-10)" color="5" folder="Responses&gt;Bernadetta&gt;Default" sort="11" />
         <label id="334" label="" folder="Target - Character&gt;Aimee" sort="2" />
         <label id="330" label="" color="5" folder="Target - Character&gt;Caulifla" sort="0" />
-        <label id="94" label="Aware of the Butt" color="5" folder="Target - Character&gt;Catria" sort="2" />
+        <label id="94" label="Aware of the Butt" color="5" folder="Responses&gt;Catria" sort="2" />
         <label id="367" label="" folder="Target - Character&gt;Hilda" sort="12" />
         <label id="331" label="" color="5" folder="Target - Character&gt;Caulifla" sort="3" />
         <label id="209" label="" folder="Target - Character&gt;Spider-Woman" sort="3" />
         <label id="332" label="" folder="Target - Character&gt;Caulifla" sort="2" />
         <label id="368" label="" folder="Target - Character&gt;zzMultiple&gt;Jessie &amp; Tharja" sort="2" />
-        <label id="15" label="Bernie Breasts (5-10)" color="5" folder="Target - Character&gt;Bernadetta" sort="12" />
+        <label id="15" label="Bernie Breasts (5-10)" color="5" folder="Targeted&gt;Bernadetta" sort="12" />
         <label id="207" label="" folder="Target - Character&gt;zzMultiple&gt;Jessie &amp; Tharja" sort="3" />
         <label id="324" label="" folder="Target - Character&gt;Sayaka" sort="2" />
         <label id="141" label="" folder="Target - Tag&gt;Deity" sort="2" />
         <label id="44" label="Light Pun Overload" color="5" folder="Target - Character&gt;Lux" sort="0" />
         <label id="369" label="" folder="Target - Character&gt;Hilda" sort="14" />
-        <label id="148" label="" folder="Target - Character&gt;Toph" sort="0" />
+        <label id="148" label="" folder="Academy Phase&gt;Target" sort="0" />
         <label id="147" label="" folder="Target - Character&gt;zzMultiple&gt;Hilda &amp; Toph" sort="16" />
-        <label id="234" label="Bernie Wrap (0-2)" color="5" folder="Target - Character&gt;Bernadetta" sort="14" />
-        <label id="242" label="Bernie Wrap (5-8)" color="5" folder="Target - Character&gt;Bernadetta" sort="16" />
+        <label id="234" label="Bernie Wrap (0-2)" color="5" folder="Targeted&gt;Bernadetta" sort="14" />
+        <label id="242" label="Bernie Wrap (5-8)" color="5" folder="Targeted&gt;Bernadetta" sort="16" />
         <label id="241" label="Bernie Wrap (1-4)" color="5" folder="Target - Character&gt;Bernadetta" sort="15" />
-        <label id="12" label="Bernie Wrap (9-10)" color="5" folder="Target - Character&gt;Bernadetta" sort="13" />
+        <label id="12" label="Bernie Wrap (9-10)" color="5" folder="Targeted&gt;Bernadetta" sort="13" />
         <label id="337" label="" folder="Target - Character&gt;Hilda" sort="20" />
         <label id="11" label="" folder="Target - Character&gt;Hilda" sort="18" />
         <label id="6" label="" folder="Target - Character&gt;Hilda" sort="22" />
         <label id="370" label="" folder="" sort="0" />
         <label id="568" label="Okay - Linhardt" folder="Classmates" sort="0" />
-        <label id="195" label="" folder="Target - Tag&gt;Scarred" sort="0" />
+        <label id="195" label="" folder="Academy Phase&gt;Academy Uniform" sort="4" />
         <label id="569" label="Okay - Bernadetta" folder="Classmates" sort="0" />
         <label id="375" label="" folder="" sort="0" />
         <label id="567" label="Good - Linhardt" folder="Classmates" sort="0" />
-        <label id="378" label="Lone Eagle" color="1" folder="" sort="12" />
+        <label id="378" label="Lone Eagle" color="1" folder="Academy Phase&gt;Academy Uniform" sort="12" />
         <label id="380" label="" folder="" sort="0" />
         <label id="617" label="" folder="Target - Character&gt;Velvet" sort="0" />
         <label id="384" label="Weapon (Not Axe)" folder="" sort="63" />
@@ -529,9 +539,9 @@
         <label id="634" label="Helped Bernadetta (Deity Buff)" folder="Technical" sort="0" />
         <label id="394" label="" folder="" sort="0" />
         <label id="663" label="" folder="Technical" sort="0" />
-        <label id="665" label="" folder="Target - Character&gt;Megumin" sort="0" />
-        <label id="662" label="Personas" color="5" folder="Target - Character&gt;Spider-Woman" sort="0" />
-        <label id="585" label="Showing Butt" color="5" folder="Target - Character&gt;Catria" sort="0" />
+        <label id="665" label="" folder="Responses" sort="26" />
+        <label id="662" label="Personas" color="5" folder="Responses" sort="12" />
+        <label id="585" label="Showing Butt" color="5" folder="Responses&gt;Catria" sort="0" />
         <label id="838" label="" folder="Target - Character&gt;Hilda" sort="9" />
         <label id="404" label="" folder="" sort="0" />
         <label id="408" label="" folder="Target - Tag&gt;Exhibitionist" sort="87" />
@@ -539,25 +549,25 @@
         <label id="921" label="" folder="Female|Futa" sort="0" />
         <label id="924" label="" folder="Female|Futa" sort="0" />
         <label id="895" label="" folder="Technical" sort="0" />
-        <label id="596" label="A Better Angle" color="1" folder="" sort="0" />
+        <label id="596" label="A Better Angle" color="1" folder="Prompts" sort="0" />
         <label id="95" label="" folder="Target - Tag&gt;Magic" sort="93" />
         <label id="414" label="&gt; Three of a Kind (War/Hopes)" folder="" sort="0" />
         <label id="415" label="&gt; Flush" folder="" sort="0" />
-        <label id="149" label="" folder="Target - Tag&gt;zzMultiple&gt;Fighter &amp; Hero" sort="97" />
-        <label id="150" label="Villain + Fighter" folder="Target - Tag&gt;zzMultiple&gt;Fighter &amp; Villain" sort="98" />
+        <label id="149" label="" folder="Academy Phase&gt;Filtered" sort="97" />
+        <label id="150" label="Villain + Fighter" folder="Academy Phase&gt;Filtered" sort="98" />
         <label id="418" label="" folder="" sort="0" />
         <label id="630" label="Beat Amalia (Deity Buff)" folder="Technical" sort="0" />
         <label id="629" label="Beat Amalia (Deity Buff)" folder="Technical" sort="0" />
         <label id="632" label="Helped Bernadetta (Deity Buff)" folder="Technical" sort="0" />
         <label id="631" label="Helped Bernadetta (Reset Intelligence)" folder="Technical" sort="0" />
         <label id="628" label="Beat Amalia (Deity Buff)" folder="Technical" sort="0" />
-        <label id="620" label="Tea or Coffee" color="1" folder="" sort="0" />
+        <label id="620" label="Tea or Coffee" color="1" folder="Prompts" sort="8" />
         <label id="621" label="Bounceback Intelligence Set" folder="Technical" sort="0" />
         <label id="622" label="Deity Buff" folder="Technical" sort="0" />
         <label id="623" label="Deity Buff" folder="Technical" sort="0" />
-        <label id="619" label="" folder="Target - Character&gt;Aqua (KonoSuba)" sort="0" />
+        <label id="619" label="" folder="Responses" sort="31" />
         <label id="627" label="Beat Amalia (Deity Buff)" color="3" folder="Target - Character&gt;Amalia" sort="0" />
-        <label id="616" label="Philosophy (Freedom)" color="5" folder="Target - Character&gt;Velvet" sort="2" />
+        <label id="616" label="Philosophy (Freedom)" color="5" folder="Responses&gt;Velvet" sort="2" />
         <label id="626" label="Beat Amalia (Reset Intelligence)" folder="Technical" sort="0" />
         <label id="618" label="Weapon (Axe)" folder="" sort="0" />
         <label id="923" label="" folder="Female|Futa" sort="0" />
@@ -571,9 +581,9 @@
         <label id="657" label="Virginity and Crushes" folder="" sort="0" />
         <label id="656" label="Virginity" color="1" folder="" sort="0" />
         <label id="759" label="Cocky" folder="" sort="0" />
-        <label id="450" label="Bernie Breasts (0-1)" color="5" folder="Target - Character&gt;Bernadetta" sort="4" />
-        <label id="451" label="Bernie Breasts (2-4)" color="5" folder="Target - Character&gt;Bernadetta" sort="5" />
-        <label id="452" label="Bernie Butt (0-4)" color="5" folder="Target - Character&gt;Bernadetta&gt;Default" sort="6" />
+        <label id="450" label="Bernie Breasts (0-1)" color="5" folder="Targeted&gt;Bernadetta" sort="4" />
+        <label id="451" label="Bernie Breasts (2-4)" color="5" folder="Targeted&gt;Bernadetta" sort="5" />
+        <label id="452" label="Bernie Butt (0-4)" color="5" folder="Responses&gt;Bernadetta&gt;Default" sort="6" />
         <label id="453" label="Callout Case" color="1" folder="&gt;Phantom Thieves" sort="0" />
         <label id="454" label="Callout Case" color="1" folder="&gt;Common Names" sort="0" />
         <label id="456" label="" folder="Target - Character&gt;Schezo" sort="0" />
@@ -582,7 +592,7 @@
         <label id="459" label="Weapon" folder="" sort="0" />
         <label id="460" label="" folder="" sort="0" />
         <label id="461" label="" folder="" sort="0" />
-        <label id="647" label="Crests Mentioned (All AI Opponents from FE3H)" folder="" sort="0" />
+        <label id="647" label="Crests Mentioned (All AI Opponents from FE3H)" folder="Academy Phase&gt;Academy Uniform" sort="10" />
         <label id="465" label="" folder="" sort="0" />
         <label id="466" label="" folder="" sort="0" />
         <label id="468" label="" color="1" folder="" sort="0" />
@@ -598,10 +608,10 @@
         <label id="564" label="Dummy" folder="" sort="0" />
         <label id="484" label="Crests Mentioned" color="1" folder="" sort="0" />
         <label id="485" label="Lysithea's Sister (5+ rounds)(2-5 AI opp not fe_three_houses)" folder="Target - Character&gt;Lysithea" sort="0" />
-        <label id="486" label="Crestology 101" color="1" folder="" sort="57" />
+        <label id="486" label="Crestology 101" color="1" folder="Academy Phase&gt;Academy Uniform" sort="57" />
         <label id="487" label="Crest Problems 1 (2-5 AI opp not fe_three_houses) (said crestology_101)" color="1" folder="" sort="0" />
         <label id="488" label="Crest Problems 2 (2-5 AI opp not fe_three_houses) (said crest_problems_1)" color="1" folder="" sort="0" />
-        <label id="489" label="Crest Problems" color="1" folder="" sort="2" />
+        <label id="489" label="Crest Problems" color="1" folder="Academy Phase" sort="2" />
         <label id="490" label="Crest Problems Interrupted 2 (2-5 AI opp not fe_three_houses) (said crest_problems_1)" color="1" folder="" sort="0" />
         <label id="492" label="" folder="" sort="0" />
         <label id="493" label="" folder="" sort="0" />
@@ -615,7 +625,7 @@
         <label id="509" label="" folder="" sort="0" />
         <label id="513" label="" folder="" sort="0" />
         <label id="514" label="Soaking" color="1" folder="" sort="0" />
-        <label id="515" label="Major Surgery" color="5" folder="Target - Character&gt;Beatrix" sort="2" />
+        <label id="515" label="Major Surgery" color="5" folder="Responses" sort="2" />
         <label id="516" label="Bad - Dorothea" folder="Classmates" sort="0" />
         <label id="517" label="Good - Bernadetta" folder="Classmates" sort="0" />
         <label id="518" label="Okay - Petra" folder="Classmates" sort="0" />
@@ -625,29 +635,29 @@
         <label id="649" label="" folder="Target - Tag&gt;Black Eagles" sort="2" />
         <label id="531" label="" folder="" sort="0" />
         <label id="648" label="Skill Building Games" color="1" folder="" sort="0" />
-        <label id="673" label="" folder="Target - Character&gt;Darkness" sort="0" />
-        <label id="543" label="" folder="Target - Tag&gt;Futanari" sort="0" />
+        <label id="673" label="" folder="Responses&gt;Darkness" sort="0" />
+        <label id="543" label="Futanari" folder="Filtered" sort="2" />
         <label id="547" label="" folder="" sort="0" />
         <label id="548" label="" folder="" sort="0" />
-        <label id="553" label="Heresies" color="1" folder="" sort="0" />
+        <label id="553" label="Heresies" color="1" folder="Academy Phase" sort="22" />
         <label id="554" label="Bad - Caspar" folder="Classmates" sort="0" />
         <label id="555" label="" folder="Target - Character&gt;Lucina" sort="0" />
-        <label id="556" label="Meeting Yourself" color="5" folder="Target - Character&gt;Lucina" sort="0" />
+        <label id="556" label="Meeting Yourself" color="5" folder="Responses" sort="24" />
         <label id="559" label="Bad - Ferdinand" folder="Classmates" sort="0" />
         <label id="560" label="Caspar 1" folder="&gt;Classmates" sort="0" />
         <label id="561" label="Okay - Caspar" folder="Classmates" sort="0" />
-        <label id="562" label="Solitude" color="1" folder="" sort="0" />
+        <label id="562" label="Solitude" color="1" folder="Prompts" sort="6" />
         <label id="563" label="Solitude and Loneliness" color="1" folder="" sort="0" />
         <label id="587" label="Determined" folder="" sort="0" />
         <label id="594" label="Titles" color="1" folder="" sort="0" />
         <label id="608" label="First Hand" folder="" sort="0" />
-        <label id="611" label="School Uniform Question (Pt. 1)" color="5" folder="Target - Character&gt;Ringo" sort="2" />
+        <label id="611" label="School Uniform Question (Pt. 1)" color="5" folder="Academy Phase&gt;Responses" sort="2" />
         <label id="612" label="School Uniform Question (Pt. 2)" color="1" folder="Target - Character&gt;Ringo" sort="2" />
-        <label id="613" label="Nobility Question" color="5" folder="Target - Character&gt;Ringo" sort="3" />
+        <label id="613" label="Nobility Question" color="5" folder="War Phase&gt;Responses" sort="3" />
         <label id="614" label="Equal Opportunity Fantasizer" color="1" folder="" sort="0" />
         <label id="522" label="Fantasi" folder="" sort="0" />
         <label id="521" label="A Princess's Fantasies" color="1" folder="" sort="0" />
-        <label id="615" label="Destiny" color="1" folder="" sort="0" />
+        <label id="615" label="Destiny" color="1" folder="Prompts" sort="2" />
         <label id="635" label="Beat Amalia (Deity Buff + Bounceback)" folder="Technical" sort="0" />
         <label id="636" label="Helped Bernadetta (Deity Buff + Bounceback)" folder="Technical" sort="0" />
         <label id="637" label="Deity Buff + Bounceback" folder="Technical" sort="0" />
@@ -662,11 +672,11 @@
         <label id="658" label="Crushes" folder="" sort="0" />
         <label id="659" label="Intimidation (Not Armory)" color="5" folder="" sort="0" />
         <label id="660" label="Intimidation (Armory)" color="5" folder="" sort="0" />
-        <label id="661" label="Personas" color="5" folder="Target - Character&gt;Spider-Woman" sort="2" />
-        <label id="670" label="" folder="Target - Character&gt;Komi-san" sort="0" />
+        <label id="661" label="Personas" color="5" folder="Responses" sort="2" />
+        <label id="670" label="" folder="Responses" sort="27" />
         <label id="678" label="Special Weapons" color="1" folder="" sort="0" />
         <label id="679" label="Heroes Relics" color="1" folder="" sort="0" />
-        <label id="680" label="Good Books" color="1" folder="" sort="0" />
+        <label id="680" label="Good Books" color="1" folder="Prompts" sort="11" />
         <label id="681" label="Cocky" folder="" sort="0" />
         <label id="682" label="Reserved" folder="" sort="0" />
         <label id="683" label="Warming" folder="" sort="0" />
@@ -676,7 +686,7 @@
         <label id="687" label="Friendly" folder="" sort="0" />
         <label id="688" label="Anxious" folder="" sort="0" />
         <label id="689" label="Open" folder="" sort="0" />
-        <label id="690" label="" folder="Target - Character&gt;Bernadetta" sort="5" />
+        <label id="690" label="" folder="Targeted&gt;Bernadetta" sort="5" />
         <label id="691" label="Depressed" folder="" sort="0" />
         <label id="692" label="Dorky" folder="" sort="0" />
         <label id="693" label="Awkward" folder="" sort="0" />
@@ -702,7 +712,7 @@
         <label id="714" label="Awkward" folder="" sort="0" />
         <label id="715" label="Book Recommendations" color="5" folder="Target - Character&gt;Yuri" sort="0" />
         <label id="716" label="Hubert" color="1" folder="" sort="0" />
-        <label id="717" label="Sketchbook" color="1" folder="" sort="0" />
+        <label id="717" label="Sketchbook" color="1" folder="Prompts" sort="9" />
         <label id="718" label="Cocky" folder="" sort="0" />
         <label id="467" label="Anxious" folder="" sort="0" />
         <label id="719" label="Friendly" folder="" sort="0" />
@@ -735,8 +745,8 @@
         <label id="750" label="Scars - Honest Opinion" color="1" folder="" sort="0" />
         <label id="751" label="Coasting (Hilda)" folder="" sort="0" />
         <label id="752" label="Dorothea" color="1" folder="" sort="0" />
-        <label id="753" label="Formalities" color="1" folder="" sort="0" />
-        <label id="754" label="Black and White" color="1" folder="" sort="0" />
+        <label id="753" label="Formalities" color="1" folder="Academy Phase" sort="39" />
+        <label id="754" label="Black and White" color="1" folder="Prompts" sort="10" />
         <label id="755" label="Traditions (Multi-Royals)" color="1" folder="Target - Tag&gt;Royal" sort="0" />
         <label id="756" label="Leading the Black Eagles" color="1" folder="" sort="0" />
         <label id="757" label="Cherished Halls" color="1" folder="" sort="0" />
@@ -745,14 +755,14 @@
         <label id="763" label="Anxious" folder="" sort="0" />
         <label id="764" label="Reset ForcedFollowup" folder="" sort="0" />
         <label id="765" label="Show Off" folder="" sort="0" />
-        <label id="814" label="" folder="Target - Character&gt;Petra" sort="4" />
+        <label id="814" label="" folder="Target - Character&gt;Petra" sort="0" />
         <label id="767" label="Lingerie" folder="" sort="0" />
         <label id="768" label="Reserved" folder="" sort="0" />
         <label id="769" label="Friendly" folder="" sort="0" />
         <label id="770" label="Cocky" folder="" sort="0" />
         <label id="771" label="Anxious" folder="" sort="0" />
         <label id="772" label="Open" folder="" sort="0" />
-        <label id="813" label="" folder="Target - Character&gt;Petra" sort="3" />
+        <label id="813" label="" folder="Target - Character&gt;Petra" sort="0" />
         <label id="774" label="Determined" folder="" sort="0" />
         <label id="775" label="Show Off (Modest)" folder="" sort="0" />
         <label id="776" label="Show Off (Immodest)" folder="" sort="0" />
@@ -762,10 +772,10 @@
         <label id="780" label="Set Tone" folder="" sort="0" />
         <label id="781" label="Set Tone" folder="" sort="0" />
         <label id="782" label="Set Tone" folder="" sort="0" />
-        <label id="783" label="" folder="Target - Character&gt;Asuna" sort="0" />
-        <label id="784" label="Crests Mentioned" color="1" folder="" sort="0" />
-        <label id="830" label="" folder="Target - Character&gt;Critical Darling" sort="3" />
-        <label id="815" label="" folder="Target - Character&gt;Petra" sort="5" />
+        <label id="783" label="" folder="Responses" sort="32" />
+        <label id="784" label="Crests Mentioned" color="1" folder="Academy Phase&gt;Academy Uniform" sort="11" />
+        <label id="830" label="" folder="Responses&gt;Critical Darling" sort="3" />
+        <label id="815" label="" folder="Target - Character&gt;Petra" sort="0" />
         <label id="818" label="" color="5" folder="Target - Character&gt;zzMultiple&gt;Ms. Fortune|Sakura" sort="0" />
         <label id="816" label="" color="5" folder="Target - Character&gt;Ms. Fortune" sort="0" />
         <label id="817" label="" color="5" folder="Target - Character&gt;Ms. Fortune" sort="0" />
@@ -779,13 +789,13 @@
         <label id="826" label="" color="5" folder="Target - Character&gt;Sakura" sort="2" />
         <label id="827" label="" folder="Target - Character&gt;Ms. Fortune" sort="4" />
         <label id="828" label="" folder="Target - Character&gt;Sakura" sort="4" />
-        <label id="829" label="" folder="Target - Character&gt;Critical Darling" sort="0" />
-        <label id="831" label="" folder="Target - Character&gt;Yae Miko" sort="0" />
-        <label id="832" label="" folder="Target - Character&gt;Velvet" sort="3" />
+        <label id="829" label="" folder="Responses&gt;Critical Darling" sort="0" />
+        <label id="831" label="" folder="Academy Phase&gt;Response" sort="0" />
+        <label id="832" label="" folder="Targeted&gt;Velvet" sort="3" />
         <label id="833" label="" folder="Target - Character&gt;zzMultiple&gt;Lysithea &amp; Velvet" sort="0" />
-        <label id="834" label="" folder="Target - Character&gt;Velvet" sort="4" />
+        <label id="834" label="" folder="Targeted&gt;Velvet" sort="4" />
         <label id="835" label="" folder="Background" sort="0" />
-        <label id="836" label="" folder="Target - Character&gt;Velvet" sort="0" />
+        <label id="836" label="" folder="Responses&gt;Velvet" sort="0" />
         <label id="422" label="" folder="Male|Futa" sort="0" />
         <label id="920" label="" folder="Female|Futa" sort="0" />
         <label id="428" label="" folder="Male|Futa" sort="0" />
@@ -796,35 +806,35 @@
         <label id="930" label="" folder="Male|Futa" sort="0" />
         <label id="931" label="" folder="Male|Futa" sort="0" />
         <label id="933" label="" folder="Male|Futa" sort="0" />
-        <label id="942" label="" folder="Target - Character&gt;Binah" sort="0" />
-        <label id="947" label="" folder="Academy Phase" sort="0" />
+        <label id="942" label="" folder="Responses" sort="38" />
+        <label id="947" label="" folder="Academy Phase" sort="8" />
         <label id="948" label="" folder="Target - Character&gt;Hilda" sort="0" />
         <label id="1026" label="War Outfit" folder="War Phase" sort="0" />
-        <label id="871" label="" folder="Target - Character&gt;zzMultiple&gt;Cynthia &amp; Hilda" sort="0" />
+        <label id="871" label="" folder="Targeted" sort="4" />
         <label id="950" label="" folder="Target - Character&gt;Rosa" sort="0" />
         <label id="951" label="" folder="Target - Character&gt;Critical Darling" sort="4" />
-        <label id="37" label="Revealing Scars" color="1" folder="" sort="0" />
-        <label id="262" label="Self Awareness" color="1" folder="" sort="0" />
+        <label id="37" label="Revealing Scars" color="1" folder="Academy Phase&gt;Academy Uniform" sort="14" />
+        <label id="262" label="Self Awareness" color="1" folder="Academy Phase&gt;Academy Uniform" sort="12" />
         <label id="749" label="First Hand" folder="" sort="0" />
-        <label id="954" label="Marvelous Diversity" color="1" folder="" sort="0" />
-        <label id="955" label="Mother Hen" color="1" folder="" sort="0" />
-        <label id="956" label="Traditions" color="1" folder="Target - Tag&gt;Royal" sort="0" />
-        <label id="957" label="Poker with Hubert" color="1" folder="" sort="0" />
-        <label id="958" label="Rivals" color="1" folder="" sort="0" />
-        <label id="959" label="Enbarr" color="1" folder="" sort="0" />
-        <label id="98" label="" folder="Academy Phase" sort="0" />
-        <label id="960" label="" folder="Target - Character&gt;Velvet" sort="3" />
-        <label id="961" label="" folder="Target - Character&gt;Velvet" sort="4" />
-        <label id="963" label="" folder="Target - Character&gt;Jura" sort="0" />
-        <label id="964" label="" folder="Target - Character&gt;Meia" sort="0" />
-        <label id="980" label="" folder="Target - Character&gt;Kyoko" sort="0" />
-        <label id="981" label="" folder="Target - Character&gt;Komi-san" sort="2" />
-        <label id="982" label="" folder="Target - Character&gt;Kyoko" sort="2" />
+        <label id="954" label="Marvelous Diversity" color="1" folder="Prompts" sort="12" />
+        <label id="955" label="Mother Hen (Academy)" color="1" folder="Academy Phase" sort="23" />
+        <label id="956" label="Traditions" color="1" folder="Filtered" sort="3" />
+        <label id="957" label="Poker with Hubert" color="1" folder="Prompts" sort="13" />
+        <label id="958" label="Rivals" color="1" folder="Academy Phase" sort="24" />
+        <label id="959" label="Enbarr" color="1" folder="Prompts" sort="14" />
+        <label id="98" label="" folder="Academy Phase" sort="7" />
+        <label id="960" label="" folder="Responses&gt;Velvet" sort="3" />
+        <label id="961" label="" folder="Responses&gt;Velvet" sort="4" />
+        <label id="963" label="" folder="Academy Phase" sort="26" />
+        <label id="964" label="" folder="Academy Phase" sort="27" />
+        <label id="980" label="" folder="Responses" sort="39" />
+        <label id="981" label="" folder="Academy Phase&gt;Responses" sort="2" />
+        <label id="982" label="" folder="Responses" sort="2" />
         <label id="983" label="" folder="Target - Character&gt;Kyoko" sort="3" />
         <label id="984" label="" folder="Target - Character&gt;Kyoko" sort="4" />
-        <label id="985" label="" folder="Target - Character&gt;Serena" sort="0" />
-        <label id="986" label="" folder="Target - Character&gt;zzMultiple&gt;Aqua (Kingdom Hearts) &amp; Aqua (KonoSuba)" sort="0" />
-        <label id="987" label="" folder="Target - Character&gt;zzMultiple&gt;Aqua (Kingdom Hearts) &amp; Aqua (KonoSuba) &amp; Team Aqua Grunt" sort="0" />
+        <label id="985" label="" folder="Academy Phase" sort="31" />
+        <label id="986" label="" folder="Targeted" sort="2" />
+        <label id="987" label="" folder="Targeted" sort="3" />
         <label id="976" label="" folder="Target - Character&gt;Petra" sort="6" />
         <label id="977" label="" folder="Target - Character&gt;Petra" sort="7" />
         <label id="988" label="" folder="Target - Character&gt;Chihiro" sort="0" />
@@ -834,24 +844,24 @@
         <label id="992" label="" folder="Technical&gt;Killer Axe Unlock" sort="0" />
         <label id="993" label="" folder="Technical&gt;Killer Axe Unlock" sort="0" />
         <label id="994" label="" folder="Technical&gt;Killer Axe Unlock" sort="3" />
-        <label id="997" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
-        <label id="998" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
-        <label id="995" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
-        <label id="999" label="" folder="Target - Character&gt;Aqua (Kingdom Hearts)" sort="0" />
-        <label id="1000" label="" folder="Target - Character&gt;Schezo" sort="0" />
-        <label id="1001" label="" folder="Target - Character&gt;Serena" sort="0" />
-        <label id="1002" label="" folder="Target - Character&gt;Serena" sort="0" />
-        <label id="1003" label="" color="5" folder="Target - Character&gt;Caulifla" sort="0" />
+        <label id="997" label="" folder="Responses&gt;Aqua (Kingdom Hearts)" sort="2" />
+        <label id="998" label="" folder="Responses&gt;Aqua (Kingdom Hearts)" sort="3" />
+        <label id="267" label="" folder="Academy Phase&gt;Academy Uniform" sort="6" />
+        <label id="999" label="" folder="Responses&gt;Aqua (Kingdom Hearts)" sort="0" />
+        <label id="1000" label="" folder="Responses" sort="34" />
+        <label id="1001" label="" folder="Academy Phase&gt;Responses" sort="5" />
+        <label id="1002" label="" folder="Academy Phase" sort="32" />
+        <label id="1003" label="" color="5" folder="Target - Character&gt;Caulifla" sort="2" />
         <label id="1016" label="" folder="Target - Tag&gt;Cheater (Cards)" sort="0" />
-        <label id="1022" label="" folder="War Phase" sort="0" />
-        <label id="1031" label="Academy Leonie" folder="War Phase" sort="0" />
-        <label id="1024" label="Academy Bernadetta" folder="War Phase" sort="0" />
-        <label id="1025" label="" folder="War Phase" sort="0" />
+        <label id="1022" label="" folder="War Phase" sort="7" />
+        <label id="1031" label="Academy Leonie" folder="War Phase" sort="4" />
+        <label id="1024" label="Academy Bernadetta" folder="War Phase" sort="3" />
+        <label id="1025" label="" folder="War Phase" sort="5" />
         <label id="1019" label="" folder="War Phase" sort="0" />
-        <label id="1032" label="" folder="War Phase" sort="0" />
-        <label id="1033" label="Initialize Academy Phase" folder="Technical" sort="0" />
-        <label id="1034" label="Initialize War Phase" folder="Technical" sort="0" />
-        <label id="1035" label="Initialize Three Hopes" folder="Technical" sort="0" />
+        <label id="1032" label="" folder="War Phase" sort="8" />
+        <label id="1033" label="Initialize Academy Phase" folder="Technical" sort="2" />
+        <label id="1034" label="Initialize War Phase" folder="Technical" sort="3" />
+        <label id="1035" label="Initialize Three Hopes" folder="Technical" sort="4" />
         <label id="1036" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
         <label id="1037" label="Academy Phase" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
         <label id="1038" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Hilda" sort="0" />
@@ -872,25 +882,120 @@
         <label id="1053" label="War Phase" folder="Technical&gt;3H Character Selected&gt;Ignatz" sort="0" />
         <label id="1054" label="Three Hopes" folder="Technical&gt;3H Character Selected&gt;Ignatz" sort="0" />
         <label id="1055" label="Fallback" folder="Technical&gt;3H Character Selected" sort="0" />
+        <label id="142" label="" folder="Academy Phase" sort="0" />
+        <label id="1061" label="" folder="Academy Phase" sort="9" />
+        <label id="1062" label="" folder="War Phase" sort="0" />
+        <label id="1063" label="" folder="War Phase" sort="0" />
+        <label id="1064" label="" folder="War Phase" sort="0" />
+        <label id="1065" label="" folder="War Phase" sort="10" />
+        <label id="790" label="" folder="Academy Phase" sort="11" />
+        <label id="1021" label="" folder="War Phase" sort="9" />
+        <label id="792" label="" folder="Academy Phase" sort="12" />
+        <label id="791" label="" folder="Academy Phase&gt;Academy Uniform" sort="0" />
+        <label id="1067" label="" folder="War Phase" sort="11" />
+        <label id="796" label="" folder="Academy Phase" sort="13" />
+        <label id="798" label="" folder="Academy Phase" sort="14" />
+        <label id="1068" label="" folder="War Phase" sort="12" />
+        <label id="1069" label="Books" color="5" folder="War Phase&gt;Responses" sort="2" />
+        <label id="1070" label="" folder="Academy Phase" sort="19" />
+        <label id="1057" label="" folder="Academy Phase" sort="20" />
+        <label id="1071" label="" folder="War Phase" sort="0" />
+        <label id="1072" label="" folder="Academy Phase" sort="15" />
+        <label id="605" label="" folder="Academy Phase" sort="16" />
+        <label id="1056" label="" folder="Academy Phase" sort="18" />
+        <label id="1073" label="Mother Hen (War)" color="1" folder="War Phase" sort="14" />
+        <label id="1074" label="" folder="Academy Phase&gt;Responses&gt;Darkness" sort="29" />
+        <label id="1075" label="" folder="War Phase" sort="15" />
+        <label id="1076" label="" folder="Academy Phase" sort="33" />
+        <label id="1077" label="" folder="War Phase" sort="16" />
+        <label id="1007" label="" folder="Academy Phase" sort="25" />
+        <label id="1009" label="" folder="Academy Phase" sort="28" />
+        <label id="1078" label="" folder="War Phase&gt;War Outfit" sort="0" />
+        <label id="265" label="" folder="Academy Phase&gt;Academy Uniform" sort="16" />
+        <label id="1079" label="" folder="War Phase&gt;War Outfit" sort="11" />
+        <label id="607" label="" folder="Academy Phase" sort="35" />
+        <label id="261" label="" folder="Academy Phase&gt;Academy Uniform" sort="9" />
+        <label id="1080" label="" folder="Academy Phase&gt;Responses&gt;Jura" sort="2" />
+        <label id="260" label="" folder="Academy Phase&gt;Academy Uniform" sort="13" />
+        <label id="1081" label="" folder="War Phase&gt;War Outfit" sort="9" />
+        <label id="1082" label="" folder="War Phase&gt;War Outfit" sort="7" />
+        <label id="1083" label="" folder="War Phase&gt;War Outfit" sort="8" />
+        <label id="1008" label="" folder="Academy Phase&gt;Responses&gt;Jura" sort="0" />
+        <label id="1084" label="" folder="Academy Phase&gt;Responses" sort="3" />
+        <label id="1085" label="" folder="War Phase&gt;War Outfit&gt;Responses" sort="0" />
+        <label id="1086" label="Formalities" color="1" folder="War Phase&gt;War Outfit" sort="23" />
+        <label id="1017" label="" folder="Academy Phase" sort="37" />
+        <label id="1087" label="" folder="Academy Phase" sort="38" />
+        <label id="376" label="" folder="Academy Phase" sort="40" />
+        <label id="1088" label="" folder="War Phase&gt;War Outfit" sort="17" />
+        <label id="1089" label="Fake Crown" color="1" folder="War Phase&gt;Filtered" sort="0" />
+        <label id="1090" label="" folder="War Phase&gt;War Outfit" sort="10" />
+        <label id="1091" label="Fake Crown" color="1" folder="War Phase&gt;War Outfit" sort="0" />
+        <label id="1092" label="Hair Down" color="1" folder="War Phase&gt;War Outfit" sort="24" />
+        <label id="668" label="" folder="Academy Phase&gt;Academy Uniform" sort="23" />
+        <label id="1093" label="" folder="Academy Phase&gt;Academy Uniform" sort="22" />
+        <label id="1094" label="" folder="Academy Phase" sort="30" />
+        <label id="785" label="" folder="Academy Phase&gt;Academy Uniform" sort="5" />
+        <label id="1095" label="" folder="War Phase&gt;War Outfit" sort="2" />
+        <label id="869" label="" folder="Academy Phase&gt;Academy Uniform" sort="7" />
+        <label id="250" label="" folder="Academy Phase" sort="34" />
+        <label id="264" label="" folder="Academy Phase&gt;Academy Uniform" sort="3" />
+        <label id="25" label="" folder="Academy Phase&gt;Academy Uniform" sort="8" />
+        <label id="672" label="" folder="Academy Phase&gt;Academy Uniform" sort="18" />
+        <label id="1096" label="" folder="Academy Phase&gt;Academy Uniform" sort="17" />
+        <label id="263" label="" folder="Academy Phase&gt;Academy Uniform" sort="15" />
+        <label id="1097" label="" folder="War Phase&gt;War Outfit" sort="3" />
+        <label id="1098" label="" folder="War Phase&gt;War Outfit" sort="12" />
+        <label id="1099" label="" folder="War Phase&gt;War Outfit" sort="18" />
+        <label id="1100" label="" folder="War Phase&gt;War Outfit" sort="4" />
+        <label id="1101" label="" folder="War Phase&gt;War Outfit" sort="13" />
+        <label id="1102" label="" folder="War Phase&gt;War Outfit" sort="19" />
+        <label id="1103" label="" folder="War Phase&gt;War Outfit" sort="5" />
+        <label id="1104" label="" folder="War Phase&gt;War Outfit" sort="14" />
+        <label id="1105" label="" folder="War Phase&gt;War Outfit" sort="20" />
+        <label id="1106" label="RevealingScars" color="1" folder="War Phase&gt;War Outfit" sort="15" />
+        <label id="1107" label="" folder="War Phase&gt;War Outfit" sort="21" />
+        <label id="1108" label="" folder="War Phase&gt;War Outfit" sort="22" />
+        <label id="1109" label="Edison and Tesla (War)" color="5" folder="War Phase&gt;Responses" sort="0" />
+        <label id="1110" label="" folder="Responses" sort="8" />
+        <label id="968" label="" folder="Responses" sort="0" />
+        <label id="972" label="" folder="Responses" sort="2" />
+        <label id="1004" label="" folder="Responses" sort="6" />
+        <label id="1010" label="" folder="Responses" sort="9" />
+        <label id="966" label="" folder="Responses" sort="13" />
+        <label id="1059" label="" folder="Responses" sort="20" />
+        <label id="975" label="" folder="Responses" sort="33" />
+        <label id="1111" label="" folder="Responses" sort="35" />
+        <label id="1112" label="" folder="Responses" sort="36" />
+        <label id="1012" label="" folder="Responses" sort="37" />
+        <label id="1113" label="" folder="Responses" sort="14" />
+        <label id="1114" label="" color="1" folder="War Phase&gt;War Outfit" sort="16" />
+        <label id="1115" label="" folder="Academy Phase" sort="41" />
+        <label id="593" label="" folder="War Phase" sort="19" />
+        <label id="1116" label="Bernadetta not Present (Academy)" color="5" folder="Academy Phase&gt;Responses" sort="7" />
+        <label id="1117" label="Nobility Question" color="5" folder="Academy Phase&gt;Responses" sort="6" />
+        <label id="967" label="" folder="Responses" sort="43" />
+        <label id="969" label="" folder="Responses" sort="44" />
+        <label id="1118" label="" folder="Responses" sort="45" />
+        <label id="1119" label="" folder="Responses" sort="46" />
+        <label id="1120" label="" folder="Responses" sort="47" />
+        <label id="1121" label="" folder="Responses" sort="48" />
+        <label id="1122" label="" folder="Academy Phase&gt;Filtered" sort="0" />
+        <label id="1123" label="" folder="Academy Phase&gt;Academy Uniform" sort="24" />
+        <label id="566" label="" folder="Academy Phase" sort="44" />
+        <label id="651" label="" folder="Academy Phase" sort="46" />
+        <label id="1126" label="Rivals" color="1" folder="Academy Phase" sort="0" />
+        <label id="1127" label="" folder="Academy Phase&gt;Responses&gt;Darkness" sort="49" />
     </labels>
-    <nextId>1059</nextId>
+    <nextId>1127</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
-        <marker scope="Public" name="academy_phase" />
         <marker scope="Public" name="AcademyPhase" />
         <marker scope="Public" name="AdmiringFlowers" />
-        <marker scope="Public" name="admitted_fantasy_female" />
-        <marker scope="Public" name="admitted_fantasy_male" />
         <marker scope="Public" name="aloy_HistoryPrompt" />
         <marker scope="Public" name="AlwaysCalm" />
         <marker scope="Public" name="amalia_AmaliaCheated" />
-        <marker scope="Public" name="amalia_cheated" />
-        <marker scope="Public" name="amalia_defeated" />
         <marker scope="Public" name="amalia_Victory" />
-        <marker scope="Public" name="aquaKH_Heresies2" />
-        <marker scope="Public" name="aquaKH_Reply_Heresies_2" />
-        <marker scope="Public" name="aquaKH_Reply_Heresies2" />
         <marker scope="Public" name="aquaKH_Reply_Strip2a" />
         <marker scope="Public" name="aquaKH_Socializing" />
         <marker scope="Public" name="aquaKH_strip5a" />
@@ -898,44 +1003,31 @@
         <marker scope="Public" name="aquaKS_setogaya_Prejudice" />
         <marker scope="Public" name="arash_Blackout" />
         <marker scope="Public" name="arash_CantSleep" />
-        <marker scope="Public" name="arash_edison_and_tesla" />
         <marker scope="Public" name="arash_EdisonAndTesla" />
         <marker scope="Public" name="arash_EdisonAndTesla_a" />
         <marker scope="Public" name="arash_EdisonAndTesla_b" />
-        <marker scope="Public" name="arash_EdisonAndTesla_c" />
-        <marker scope="Public" name="arash_flowers" />
         <marker scope="Public" name="arash_Flowers" />
         <marker scope="Public" name="arle_Pets" />
         <marker scope="Public" name="asuna_Daughter" />
         <marker scope="Public" name="asuna_DaughterMentioned" />
-        <marker scope="Public" name="axe_preference" />
         <marker scope="Public" name="AxePreference" />
-        <marker scope="Public" name="axes" />
         <marker scope="Public" name="ayano_PlayingInnocent" />
         <marker scope="Public" name="Balthus_0" />
         <marker scope="Public" name="Balthus_1" />
         <marker scope="Public" name="barbara_DailyPrayer" />
         <marker scope="Public" name="beatrix_MajorSurgery" />
-        <marker scope="Public" name="bernadetta_academy_look" />
-        <marker scope="Public" name="bernadetta_bernie_breasts" />
-        <marker scope="Public" name="bernadetta_bernie_butt" />
-        <marker scope="Public" name="bernadetta_bernie_wrap" />
         <marker scope="Public" name="bernadetta_BernieBreasts_2" />
         <marker scope="Public" name="bernadetta_BernieBreasts_a" />
-        <marker scope="Public" name="bernadetta_BernieBrests" />
         <marker scope="Public" name="bernadetta_BernieBrests_b" />
         <marker scope="Public" name="bernadetta_BernieButt_a" />
         <marker scope="Public" name="bernadetta_BernieButt_b" />
         <marker scope="Public" name="bernadetta_BernieWrap_a" />
         <marker scope="Public" name="bernadetta_BernieWrap_b" />
         <marker scope="Public" name="bernadetta_BernieWrap_c" />
-        <marker scope="Public" name="bernadetta_deep_breaths" />
         <marker scope="Public" name="bernadetta_DeepBreaths" />
-        <marker scope="Public" name="bernadetta_default_stripping_0" />
         <marker scope="Public" name="bernadetta_Deselected" />
         <marker scope="Public" name="bernadetta_DropCards" />
         <marker scope="Public" name="bernadetta_FlorinaFled" />
-        <marker scope="Public" name="bernadetta_frosty_shut-in_stripping_0" />
         <marker scope="Public" name="bernadetta_frostyShut-In_Stripping_0" />
         <marker scope="Public" name="bernadetta_Helped" />
         <marker scope="Public" name="bernadetta_Helped_Eliminated" />
@@ -943,27 +1035,12 @@
         <marker scope="Public" name="bernadetta_Helped_OtherLost" />
         <marker scope="Public" name="bernadetta_Helping" />
         <marker scope="Public" name="bernadetta_Helping_Failed" />
-        <marker scope="Public" name="bernadetta_her_thing" />
         <marker scope="Public" name="bernadetta_LastStanding" />
-        <marker scope="Public" name="bernadetta_nda" />
-        <marker scope="Public" name="bernadetta_older" />
-        <marker scope="Public" name="bernadetta_popularity" />
         <marker scope="Public" name="bernadetta_Popularity" />
         <marker scope="Public" name="bernadetta_Selected" />
-        <marker scope="Public" name="bernadetta_Selected_War" />
         <marker scope="Public" name="bernadetta_Stripping_0" />
-        <marker scope="Public" name="bernadetta_taller" />
-        <marker scope="Public" name="bernadetta_two_parts" />
         <marker scope="Public" name="bernadetta_TwoParts" />
-        <marker scope="Public" name="bernadetta_War_Selected" />
-        <marker scope="Public" name="bernadetta_War_Selected_War" />
-        <marker scope="Public" name="bernadetta_warOutfit_Selected" />
-        <marker scope="Public" name="bernadetta_WarOutfit_Selected" />
-        <marker scope="Public" name="bernadetta_warOutfit_Selected_War" />
-        <marker scope="Public" name="bernadetta_WarOutfit_Selected_War" />
         <marker scope="Public" name="bernadetta_WarPhase_Selected" />
-        <marker scope="Public" name="bernadetta_WarPhase_Selected_War" />
-        <marker scope="Public" name="bernadetta_why_here" />
         <marker scope="Public" name="bernadetta_WhyHere_a" />
         <marker scope="Public" name="bernadetta_WhyHere_b" />
         <marker scope="Public" name="bernadetta_WhyHere_c" />
@@ -974,14 +1051,12 @@
         <marker scope="Public" name="bow_LostHand" />
         <marker scope="Public" name="BraFree" />
         <marker scope="Public" name="BrutishAxes" />
-        <marker scope="Public" name="C" />
         <marker scope="Public" name="cagliostro_BodyChange_a" />
         <marker scope="Public" name="cagliostro_BodyChange_b" />
         <marker scope="Public" name="cagliostro_Narcissus" />
         <marker scope="Public" name="CanRelax" />
         <marker scope="Public" name="catria_ButtAware" />
         <marker scope="Public" name="catria_ShowingButt" />
-        <marker scope="Public" name="caulifla_strike_a_pose" />
         <marker scope="Public" name="caulifla_StrikeAPose" />
         <marker scope="Public" name="caulifla_SuperSaiyanTransformation" />
         <marker scope="Public" name="CheaterLost" />
@@ -991,7 +1066,6 @@
         <marker scope="Public" name="cleric_LostHand" />
         <marker scope="Public" name="ClimaxCompetition" />
         <marker scope="Public" name="ConsecutiveWins" />
-        <marker scope="Public" name="crest_problems" />
         <marker scope="Public" name="Crestology101" />
         <marker scope="Public" name="CrestProblems" />
         <marker scope="Public" name="CrestProblems_a" />
@@ -1006,6 +1080,7 @@
         <marker scope="Public" name="cynthia_ProminentFigures_b" />
         <marker scope="Public" name="cynthia_ProminentFigures_c" />
         <marker scope="Public" name="darkness_Commander" />
+        <marker scope="Public" name="darkness_Commander2" />
         <marker scope="Public" name="darkness_MastTalkRoyalty" />
         <marker scope="Public" name="dawn_StrangeCreatures" />
         <marker scope="Public" name="deity_AllDeitiesLost" />
@@ -1164,6 +1239,8 @@
         <marker scope="Public" name="estelle_Books" />
         <marker scope="Public" name="ExhibitionistRevealedLargeChest" />
         <marker scope="Public" name="ExoticEyes_StrippingMajor" />
+        <marker scope="Public" name="FakeBoobs" />
+        <marker scope="Public" name="FakeCrown" />
         <marker scope="Public" name="FE3H_AcademyPhase" />
         <marker scope="Public" name="FE3H_ThreeHopes" />
         <marker scope="Public" name="FE3H_WarPhase" />
@@ -1171,6 +1248,7 @@
         <marker scope="Public" name="fina_Lonely" />
         <marker scope="Public" name="florina_Fled" />
         <marker scope="Public" name="Formalities" />
+        <marker scope="Public" name="Formalities_War" />
         <marker scope="Public" name="fortune_LostHead_0" />
         <marker scope="Public" name="fortune_LostHead_1" />
         <marker scope="Public" name="FoundRhythm" />
@@ -1184,6 +1262,7 @@
         <marker scope="Public" name="Governance" />
         <marker scope="Public" name="gwen_Personas" />
         <marker scope="Public" name="gwen_SecretIdentity" />
+        <marker scope="Public" name="HairDown" />
         <marker scope="Public" name="headphones" />
         <marker scope="Public" name="headphones_MysteryAccessory" />
         <marker scope="Public" name="helped_bernadetta" />
@@ -1244,6 +1323,7 @@
         <marker scope="Public" name="jura_EarthReligion" />
         <marker scope="Public" name="jura_PrincessFantasies" />
         <marker scope="Public" name="jura_PrincessFantasies_2" />
+        <marker scope="Public" name="jura_PrincessFantasies_3" />
         <marker scope="Public" name="jura_WhyEdelgardIsHere" />
         <marker scope="Public" name="komi_AfterGrad" />
         <marker scope="Public" name="komi_Quiet" />
@@ -1278,6 +1358,7 @@
         <marker scope="Public" name="meia_EdelgardsFaith_2" />
         <marker scope="Public" name="meia_FemalePartner" />
         <marker scope="Public" name="meia_jura_gossip" />
+        <marker scope="Public" name="meia_jura_gossip2" />
         <marker scope="Public" name="meia_WhyEdelgardIsHere" />
         <marker scope="Public" name="MensUnderwear_0" />
         <marker scope="Public" name="MensUnderwear_1" />
@@ -1289,6 +1370,8 @@
         <marker scope="Public" name="miko_true_desires" />
         <marker scope="Public" name="miko_TrueDesires" />
         <marker scope="Public" name="mitama_princess" />
+        <marker scope="Public" name="mitama_Princess" />
+        <marker scope="Public" name="mitama_Status" />
         <marker scope="Public" name="MotherHen" />
         <marker scope="Public" name="nadeshiko_Cook" />
         <marker scope="Public" name="nadeshiko_Lonely" />
@@ -1302,6 +1385,7 @@
         <marker scope="Public" name="not_rhea" />
         <marker scope="Public" name="opponent_had_no_visible_scars_on_start" />
         <marker scope="Public" name="opponent_hidden_scars" />
+        <marker scope="Public" name="opponent_HiddenScars" />
         <marker scope="Public" name="opponent_NoScarsOnStart" />
         <marker scope="Public" name="palutena_Selected" />
         <marker scope="Public" name="parsing_murder" />
@@ -1334,7 +1418,11 @@
         <marker scope="Public" name="Rivals" />
         <marker scope="Public" name="rosa_SchoolUniformFilter_b" />
         <marker scope="Public" name="rosie_Leadership" />
+        <marker scope="Public" name="rosie_Leadership_War" />
         <marker scope="Public" name="rosie_RedCape" />
+        <marker scope="Public" name="rosie_RedCape_War" />
+        <marker scope="Public" name="rosie_RedCape2" />
+        <marker scope="Public" name="rosie_warOutfit_RedCape" />
         <marker scope="Public" name="royalty_LostHand" />
         <marker scope="Public" name="sakura_Headless" />
         <marker scope="Public" name="sakura_Headless_1" />
@@ -1343,6 +1431,7 @@
         <marker scope="Public" name="SawPokemon" />
         <marker scope="Public" name="ScarsRevealed" />
         <marker scope="Public" name="ScarsRevealed_a" />
+        <marker scope="Public" name="ScarsRevealed_Academy" />
         <marker scope="Public" name="ScarsRevealed_b" />
         <marker scope="Public" name="ScarsRevealed_c" />
         <marker scope="Public" name="schezo_Fate" />
@@ -1364,6 +1453,38 @@
         <marker scope="Public" name="SmashDeJaVu" />
         <marker scope="Public" name="Solitude" />
         <marker scope="Public" name="SpecialWeapons" />
+        <marker scope="Public" name="Strip_1_1" />
+        <marker scope="Public" name="Strip_1_3_War" />
+        <marker scope="Public" name="Strip0" />
+        <marker scope="Public" name="Strip0_1" />
+        <marker scope="Public" name="Strip0_1_warOutfit" />
+        <marker scope="Public" name="Strip0_2" />
+        <marker scope="Public" name="Strip0_3" />
+        <marker scope="Public" name="Strip1_1" />
+        <marker scope="Public" name="Strip1_2" />
+        <marker scope="Public" name="Strip1_2_War" />
+        <marker scope="Public" name="Strip1_2_warOutfit" />
+        <marker scope="Public" name="Strip1_3" />
+        <marker scope="Public" name="Strip2_1" />
+        <marker scope="Public" name="Strip2_2" />
+        <marker scope="Public" name="Strip2_3" />
+        <marker scope="Public" name="Strip3_1" />
+        <marker scope="Public" name="Strip3_2" />
+        <marker scope="Public" name="Strip3_2_warOutfit" />
+        <marker scope="Public" name="Strip3_3" />
+        <marker scope="Public" name="Strip4_1" />
+        <marker scope="Public" name="Strip4_2" />
+        <marker scope="Public" name="Strip4_3" />
+        <marker scope="Public" name="Strip5_1" />
+        <marker scope="Public" name="Strip5_2" />
+        <marker scope="Public" name="Strip6_1" />
+        <marker scope="Public" name="Strip6_2" />
+        <marker scope="Public" name="Strip6_3" />
+        <marker scope="Public" name="Strip6-3" />
+        <marker scope="Public" name="Strip7_1" />
+        <marker scope="Public" name="Strip7_2" />
+        <marker scope="Public" name="Strip7_3" />
+        <marker scope="Public" name="Strip7-3" />
         <marker scope="Public" name="StrippedInFrontOfOthers" />
         <marker scope="Public" name="sucrose_Introductions" />
         <marker scope="Public" name="Sun" />
@@ -1389,7 +1510,45 @@
         <marker scope="Public" name="velvet_Personality" />
         <marker scope="Public" name="villain_fighter_LostHand" />
         <marker scope="Public" name="vineStaff_HornFreakout" />
+        <marker scope="Public" name="warOutfit_arash_EdisonAndTesla_a" />
+        <marker scope="Public" name="warOutfit_arash_EdisonAndTesla_b" />
+        <marker scope="Public" name="warOutfit_arash_EdisonAndTesla_c" />
+        <marker scope="Public" name="warOutfit_Cold_Strip0_1" />
+        <marker scope="Public" name="warOutfit_rosie_RedCape" />
+        <marker scope="Public" name="warOutfit_Strip_1_3" />
+        <marker scope="Public" name="warOutfit_Strip0" />
+        <marker scope="Public" name="warOutfit_Strip0_1" />
+        <marker scope="Public" name="warOutfit_Strip0_2" />
+        <marker scope="Public" name="warOutfit_Strip1_1" />
+        <marker scope="Public" name="warOutfit_Strip1_2" />
+        <marker scope="Public" name="warOutfit_Strip1_3" />
+        <marker scope="Public" name="warOutfit_Strip2_1" />
+        <marker scope="Public" name="warOutfit_Strip2_2" />
+        <marker scope="Public" name="warOutfit_Strip2_3" />
+        <marker scope="Public" name="warOutfit_Strip3_1" />
+        <marker scope="Public" name="warOutfit_Strip3_2" />
+        <marker scope="Public" name="warOutfit_Strip4_1" />
+        <marker scope="Public" name="warOutfit_Strip4_2" />
+        <marker scope="Public" name="warOutfit_Strip5_1" />
+        <marker scope="Public" name="warOutfit_Strip5_2" />
+        <marker scope="Public" name="warOutfit_Strip5_3" />
+        <marker scope="Public" name="warOutfit_Strip6_2" />
+        <marker scope="Public" name="warOutfit_Strip7" />
+        <marker scope="Public" name="warOutfit_StripCape" />
         <marker scope="Public" name="WarPhase" />
+        <marker scope="Public" name="warPhase_arash_EdisonAndTesla_a" />
+        <marker scope="Public" name="warPhase_arash_EdisonAndTesla_c" />
+        <marker scope="Public" name="WarPhase_bernadetta_Selected" />
+        <marker scope="Public" name="WarPhase_bernadetta_WarPhase_Selected" />
+        <marker scope="Public" name="WarPhase_darkness_Commander" />
+        <marker scope="Public" name="WarPhase_hilda_WarPhase_Selected" />
+        <marker scope="Public" name="WarPhase_leonie_Selected" />
+        <marker scope="Public" name="WarPhase_lysithea_Selected" />
+        <marker scope="Public" name="WarPhase_petra_Selected" />
+        <marker scope="Public" name="warPhase_ringo_Royalty" />
+        <marker scope="Public" name="warPhase_rosie_Leadership" />
+        <marker scope="Public" name="WarPhase_rosie_Leadership" />
+        <marker scope="Public" name="warPhase_Strip1_2" />
         <marker scope="Public" name="weapon_safety" />
         <marker scope="Public" name="WeaponSafety" />
         <marker scope="Public" name="what_would_claude_say" />
