@@ -1,23 +1,112 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<debug>true</debug>
-	<default-fill>default</default-fill>
-	<epilogues>true</epilogues>
-	<epilogues-unlocked>false</epilogues-unlocked>
-	<collectibles>true</collectibles>
-	<collectibles-unlocked>false</collectibles-unlocked>
-	<epilogue_badges>false</epilogue_badges>
-	<custom-cards>true</custom-cards>
-	<default-card-deck>default</default-card-deck>
-	<alternate-costumes>true</alternate-costumes>
-	<alternate-costume-sets>all</alternate-costume-sets>
-	<costume_badges>false</costume_badges>
-	<default-background>inventory</default-background>
-	<resort>false</resort>
-	<include-status>testing</include-status>
-	<include-status>offline</include-status>
-	<include-status>incomplete</include-status>
-	<include-status>event</include-status>
-	<include-status>duplicate</include-status>
-	<include-status>broken</include-status>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <!--
+        Enables or disables debug mode.
+        While in-game, pressing Q will show debug mode options (if enabled).
+    -->
+    <debug>false</debug>
+
+    <!--
+        Default (startup) table fill mode.
+        Valid options include "none", "default", and any highlight or status attribute
+        value in listing.xml, so for example:
+         - "none"
+         - "new"
+         - "testing"
+         - "offline"
+         - "incomplete"
+    -->
+    <default-fill>default</default-fill>
+
+    <!-- Set to false to disable epilogue functionality. -->
+    <epilogues>true</epilogues>
+
+    <!-- Set to true to force all epilogues to appear as unlocked. -->
+    <epilogues-unlocked>false</epilogues-unlocked>
+
+    <!-- Set to false to disable collectible functionality. -->
+    <collectibles>true</collectibles>
+
+    <!-- Set to true to force all collectibles to appear as unlocked. -->
+    <collectibles-unlocked>false</collectibles-unlocked>
+
+    <!-- Set to true to enable user customization of card decks.  -->
+    <custom-cards>true</custom-cards>
+
+    <!--
+        The ID of the default selected card deck.
+        This still has an effect even if <custom-cards> is set to false; in
+        this case, the configured default card deck will always be applied,
+        though the user will not be able to configure it.
+    -->
+    <default-card-deck>default</default-card-deck>
+
+    <!-- Set to false to disable alternate costume functionality.  -->
+    <alternate-costumes>true</alternate-costumes>
+	
+    <!-- Set to true to make all characters selectable for the short game mode.  -->
+    <short-game-unlocked>false</short-game-unlocked>
+
+    <!-- 
+        Set to the ID of an event to manually enable it.
+        Multiple <event> elements can be added to enable multiple
+        overlapping events at the same time.
+
+        Setting `override="true"` for any events listed here will
+        disable other manually-activated and scheduled events.
+
+        (Multiple events can have marked as overriding; in that
+        case, the overriding events will overlap with each other,
+        and other events will be disabled.)
+    -->
+    <!-- <event>summer</event> -->
+
+    <!--
+        Each <alternate-costume-sets> element specifies one costume set
+        to enable in-game.
+
+        Specifying 'all' in any alternate costume set option will
+        enable all costume sets.
+    -->
+    <alternate-costume-sets>all</alternate-costume-sets>
+
+    <!--
+        Sets a single alternate costume set as the default.
+        Other alternate costumes may still also be selectable,
+        depending on the <alternate-costume-sets> options.
+    -->
+ <!-- <default-costume-set>valentines</default-costume-set> -->
+ <!-- <default-costume-set>april_fools</default-costume-set> -->
+ <!-- <default-costume-set>easter</default-costume-set> -->
+ <!-- <default-costume-set>summer</default-costume-set>  -->
+ <!-- <default-costume-set>halloween</default-costume-set>  -->
+ <!-- <default-costume-set>xmas</default-costume-set> -->
+
+    <!-- Set the default background option. -->
+    <default-background>inventory</default-background>
+
+    <!--
+        To enable Resort Mode, set this option to a "key" (identifier) for this resort.
+        This key should be unique to this resort.
+
+        To disable Resort Mode, either comment out the tag or set its value to
+        'false'.
+
+        Note that if you enable this option, you'll probably want to
+        change the text for the re-sort dialog box in listing.xml.
+        (Ctrl+F and search for "resort-modal")
+    -->
+    <resort>false</resort>
+
+    <!--
+        Show these opponent status groups in the main roster.
+        (Opponents with no defined "status" in listing.xml are always shown.)
+    -->
+    <include-status>testing</include-status>
+    <include-status>offline</include-status>
+    <include-status>incomplete</include-status>
+    <include-status>event</include-status>
+    <include-status>duplicate</include-status>
+    <include-status>broken</include-status>
 </config>
