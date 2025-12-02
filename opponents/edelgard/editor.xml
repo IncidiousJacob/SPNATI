@@ -4,7 +4,7 @@
     <height>158 cm (Academy/War), 168 cm (Hopes)</height>
     <age>18 (Academy), 23 (War), 20 (Hopes)</age>
     <pronunciation>AID-el-GARD (von hur-ESS-velg)</pronunciation>
-    <othernotes>Edelgard is intended to have costumes depicting her in three different time periods across at least two timelines. The time periods and the costumes associated with them are as follows.&lt;br&gt;&lt;br&gt;Academy Phase (Academy Uniform): Depicts an 18 year old Edelgard during late Part I of Fire Emblem: Three Houses (sometime between 12/16 and 2/22 on the in-game calendar). Strongly implies a timeline where Byleth teaches the Black Eagles, but not to the point that other FE3H characters would be compelled to contradict her if they came from a different timeline.&lt;br&gt;&lt;br&gt;War Phase (War Outfit *coming soon*): Depicts an 23 year old Edelgard during Part II of Fire Emblem: Three Houses. Explicitly from the Crimson Flower route, sometime after Chapter 14, with all of the Golden Deer surviving.&lt;br&gt;&lt;br&gt;Three Hopes (Hopes Outfit *still in planning*]): Depicts a 20 year-old Edelgard sometime during Part II of Fire Emblem Warriors: Three Hopes. Either explicity from the Scarlet Blaze route, or route agnostic between Scarlet Blaze and Golden Wildfire.&lt;br&gt;&lt;br&gt;Both the War Phase and Three Hopes versions of Edelgard have ascended the throne are no longer students. &lt;br&gt;&lt;br&gt;Although Edelgard clarifies that formalities aren't necessary after her first strip, if you want your character to address her formally, or otherwise discuss her status, you should note that the proper title and style differ between the Academy and War/Hopes versions of the character.&lt;br&gt;&lt;br&gt;In the Academy Phase Edelgard is properly: Her Highness, Princess Edelgard.&lt;br&gt;&lt;br&gt;The War Phase/Hopes versions are properly: Her Majesty, Emperor Edelgard. (Note, that is "EMPEROR", she is never refered to as "empress" in canon, and if your character does so I will assume you want her to correct them).&lt;br&gt;&lt;br&gt;"Lady Edelgard" is proper adress for any version.&lt;br&gt;&lt;br&gt;When Edelgard is selected or changes costumes she will set a marker: "AcademyPhase", "WarPhase", or "ThreeHopes". For the sake of simplicity and future-proofing it's recommended to use these instead of costume checks for lines that should apply to every costume from a given time-period.</othernotes>
+    <othernotes>Edelgard is intended to have costumes depicting her in three different time periods across at least two timelines. The time periods and the costumes associated with them are as follows.&lt;br&gt;&lt;br&gt;Academy Phase (Academy Uniform): Depicts an 18 year old Edelgard during late Part I of Fire Emblem: Three Houses (sometime between 12/16 and 2/22 on the in-game calendar). Strongly implies a timeline where Byleth teaches the Black Eagles, but not to the point that other FE3H characters would be compelled to contradict her if they came from a different timeline.&lt;br&gt;&lt;br&gt;War Phase (War Outfit): Depicts an 23 year old Edelgard during Part II of Fire Emblem: Three Houses. Explicitly from the Crimson Flower route, sometime after Chapter 14, with all of the Golden Deer surviving.&lt;br&gt;&lt;br&gt;Three Hopes (Hopes Outfit *still in planning*]): Depicts a 20 year-old Edelgard sometime during Part II of Fire Emblem Warriors: Three Hopes. Either explicity from the Scarlet Blaze route, or route agnostic between Scarlet Blaze and Golden Wildfire.&lt;br&gt;&lt;br&gt;Both the War Phase and Three Hopes versions of Edelgard have ascended the throne are no longer students. &lt;br&gt;&lt;br&gt;Although Edelgard clarifies that formalities aren't necessary after her first strip, if you want your character to address her formally, or otherwise discuss her status, you should note that the proper title and style differ between the Academy and War/Hopes versions of the character.&lt;br&gt;&lt;br&gt;In the Academy Phase Edelgard is properly: Her Highness, Princess Edelgard.&lt;br&gt;&lt;br&gt;The War Phase/Hopes versions are properly: Her Majesty, Emperor Edelgard. (Note, that is "EMPEROR", she is never refered to as "empress" in canon, and if your character does so I will assume you want her to correct them).&lt;br&gt;&lt;br&gt;"Lady Edelgard" is proper adress for any version.&lt;br&gt;&lt;br&gt;When Edelgard is selected or changes costumes she will set a marker: "AcademyPhase", "WarPhase", or "ThreeHopes". For the sake of simplicity and future-proofing it's recommended to use these instead of costume checks for lines that should apply to every costume from a given time-period.</othernotes>
     <noteworthy>
         <case name="Chess, Anyone?" id="222" priority="Prompt" min="0" max="3">
             <description>Edelgard enjoys chess and wants to know if any of the other (non-FE3H) characters at the table plays.</description>
@@ -196,6 +196,9 @@
         <response id="1058" opponent="nadeshiko" opponentId="19" />
         <response id="1059" opponent="nadeshiko" opponentId="92" />
         <response id="1060" opponent="samus_aran" opponentId="1" />
+        <response id="1183" opponent="jenetta" opponentId="213" />
+        <response id="1187" opponent="megumin" opponentId="869" />
+        <response id="1191" opponent="darkness" opponentId="1768" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -448,7 +451,7 @@
         <label id="1" label="Blackout" color="5" folder="Responses&gt;Arash" sort="5" />
         <label id="190" label="Can't Sleep" color="5" folder="Responses&gt;Arash" sort="4" />
         <label id="181" label="Names" color="5" folder="Target - Character&gt;Arash" sort="0" />
-        <label id="192" label="Edison and Tesla (Academy)" color="5" folder="Academy Phase&gt;Academy Uniform&gt;Responses" sort="3" />
+        <label id="192" label="Edison and Tesla (Academy)" color="5" folder="Responses&gt;Arash&gt;Academy Phase" sort="3" />
         <label id="193" label="Edison and Tesla (War/Hopes)" color="5" folder="Target - Character&gt;Arash" sort="0" />
         <label id="39" label="Serenity" color="5" folder="Target - Character&gt;Arash" sort="0" />
         <label id="1027" label="Academy Petra" folder="War Phase" sort="6" />
@@ -635,7 +638,7 @@
         <label id="649" label="" folder="Target - Tag&gt;Black Eagles" sort="2" />
         <label id="531" label="" folder="" sort="0" />
         <label id="648" label="Skill Building Games" color="1" folder="" sort="0" />
-        <label id="673" label="" folder="Responses&gt;Darkness" sort="0" />
+        <label id="673" label="" folder="Responses&gt;Darkness" sort="2" />
         <label id="543" label="Futanari" folder="Filtered" sort="2" />
         <label id="547" label="" folder="" sort="0" />
         <label id="548" label="" folder="" sort="0" />
@@ -653,7 +656,7 @@
         <label id="608" label="First Hand" folder="" sort="0" />
         <label id="611" label="School Uniform Question (Pt. 1)" color="5" folder="Academy Phase&gt;Responses" sort="2" />
         <label id="612" label="School Uniform Question (Pt. 2)" color="1" folder="Target - Character&gt;Ringo" sort="2" />
-        <label id="613" label="Nobility Question" color="5" folder="War Phase&gt;Responses" sort="3" />
+        <label id="613" label="(WP) Nobility Question" color="5" folder="Responses" sort="3" />
         <label id="614" label="Equal Opportunity Fantasizer" color="1" folder="" sort="0" />
         <label id="522" label="Fantasi" folder="" sort="0" />
         <label id="521" label="A Princess's Fantasies" color="1" folder="" sort="0" />
@@ -896,7 +899,7 @@
         <label id="796" label="" folder="Academy Phase" sort="13" />
         <label id="798" label="" folder="Academy Phase" sort="14" />
         <label id="1068" label="" folder="War Phase" sort="12" />
-        <label id="1069" label="Books" color="5" folder="War Phase&gt;Responses" sort="2" />
+        <label id="1069" label="(WP) Books" color="5" folder="Responses" sort="2" />
         <label id="1070" label="" folder="Academy Phase" sort="19" />
         <label id="1057" label="" folder="Academy Phase" sort="20" />
         <label id="1071" label="" folder="War Phase" sort="0" />
@@ -904,8 +907,8 @@
         <label id="605" label="" folder="Academy Phase" sort="16" />
         <label id="1056" label="" folder="Academy Phase" sort="18" />
         <label id="1073" label="Mother Hen (War)" color="1" folder="War Phase" sort="14" />
-        <label id="1074" label="" folder="Academy Phase&gt;Responses&gt;Darkness" sort="29" />
-        <label id="1075" label="" folder="War Phase" sort="15" />
+        <label id="1074" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="29" />
+        <label id="1075" label="" folder="Responses&gt;Darkness&gt;War Phase" sort="15" />
         <label id="1076" label="" folder="Academy Phase" sort="33" />
         <label id="1077" label="" folder="War Phase" sort="16" />
         <label id="1007" label="" folder="Academy Phase" sort="25" />
@@ -922,13 +925,13 @@
         <label id="1083" label="" folder="War Phase&gt;War Outfit" sort="8" />
         <label id="1008" label="" folder="Academy Phase&gt;Responses&gt;Jura" sort="0" />
         <label id="1084" label="" folder="Academy Phase&gt;Responses" sort="3" />
-        <label id="1085" label="" folder="War Phase&gt;War Outfit&gt;Responses" sort="0" />
+        <label id="1085" label="War Outfit" folder="Responses" sort="0" />
         <label id="1086" label="Formalities" color="1" folder="War Phase&gt;War Outfit" sort="23" />
         <label id="1017" label="" folder="Academy Phase" sort="37" />
         <label id="1087" label="" folder="Academy Phase" sort="38" />
         <label id="376" label="" folder="Academy Phase" sort="40" />
         <label id="1088" label="" folder="War Phase&gt;War Outfit" sort="17" />
-        <label id="1089" label="Fake Crown" color="1" folder="War Phase&gt;Filtered" sort="0" />
+        <label id="1089" label="Fake Crown" color="1" folder="Filtered" sort="0" />
         <label id="1090" label="" folder="War Phase&gt;War Outfit" sort="10" />
         <label id="1091" label="Fake Crown" color="1" folder="War Phase&gt;War Outfit" sort="0" />
         <label id="1092" label="Hair Down" color="1" folder="War Phase&gt;War Outfit" sort="24" />
@@ -956,7 +959,7 @@
         <label id="1106" label="RevealingScars" color="1" folder="War Phase&gt;War Outfit" sort="15" />
         <label id="1107" label="" folder="War Phase&gt;War Outfit" sort="21" />
         <label id="1108" label="" folder="War Phase&gt;War Outfit" sort="22" />
-        <label id="1109" label="Edison and Tesla (War)" color="5" folder="War Phase&gt;Responses" sort="0" />
+        <label id="1109" label="(WP) Edison and Tesla " color="5" folder="Responses" sort="0" />
         <label id="1110" label="" folder="Responses" sort="8" />
         <label id="968" label="" folder="Responses" sort="0" />
         <label id="972" label="" folder="Responses" sort="2" />
@@ -985,7 +988,7 @@
         <label id="566" label="" folder="Academy Phase" sort="44" />
         <label id="651" label="" folder="Academy Phase" sort="46" />
         <label id="1126" label="Rivals" color="1" folder="Academy Phase" sort="0" />
-        <label id="1127" label="" folder="Academy Phase&gt;Responses&gt;Darkness" sort="49" />
+        <label id="1127" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="49" />
         <label id="1128" label="" folder="Targeted&gt;Kokichi" sort="0" />
         <label id="1129" label="" folder="Targeted&gt;Kokichi" sort="2" />
         <label id="1130" label="" folder="Targeted&gt;Kokichi" sort="3" />
@@ -1002,49 +1005,60 @@
         <label id="1141" label="" folder="Targeted&gt;Jenetta" sort="5" />
         <label id="1142" label="" folder="Targeted&gt;Jenetta" sort="6" />
         <label id="1143" label="" folder="Targeted&gt;Jenetta" sort="9" />
-        <label id="1144" label="" folder="Academy Phase&gt;Targeted&gt;Jenetta" sort="10" />
+        <label id="1144" label="" folder="Targeted&gt;Jenetta&gt;Academy Phase" sort="10" />
         <label id="1145" label="" folder="Targeted&gt;Jenetta" sort="11" />
         <label id="1146" label="" folder="Targeted&gt;Jenetta" sort="12" />
         <label id="1147" label="" folder="Targeted&gt;Jenetta" sort="13" />
         <label id="1148" label="" folder="Targeted&gt;Jenetta" sort="14" />
         <label id="1149" label="" folder="Targeted&gt;Jenetta" sort="16" />
-        <label id="1150" label="" folder="Academy Phase&gt;Targeted&gt;Jenetta" sort="17" />
+        <label id="1150" label="" folder="Targeted&gt;Jenetta&gt;Academy Phase" sort="17" />
         <label id="1151" label="" folder="Targeted&gt;Jenetta" sort="18" />
         <label id="1152" label="" folder="Targeted&gt;Jenetta" sort="19" />
         <label id="1153" label="" folder="Targeted&gt;Jenetta" sort="20" />
         <label id="1154" label="" folder="Targeted&gt;Jenetta" sort="21" />
-        <label id="1155" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="8" />
-        <label id="1156" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="9" />
-        <label id="1158" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1159" label="" folder="War Phase&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1160" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="2" />
-        <label id="1161" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="3" />
-        <label id="1162" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="4" />
-        <label id="1163" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="5" />
-        <label id="1164" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="6" />
-        <label id="1165" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="7" />
-        <label id="1166" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="10" />
-        <label id="1167" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="11" />
-        <label id="1168" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="12" />
-        <label id="1169" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="13" />
-        <label id="1170" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="14" />
-        <label id="1171" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="15" />
-        <label id="1172" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="16" />
-        <label id="1173" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1174" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1175" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1176" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1177" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1178" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1179" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1180" label="" folder="Academy Phase&gt;Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
-        <label id="1181" label="" folder="War Phase&gt;Targeted&gt;Jenetta" sort="0" />
-        <label id="1182" label="" folder="War Phase&gt;Targeted&gt;Jenetta" sort="0" />
+        <label id="1155" label="" folder="Responses&gt;Jenetta" sort="8" />
+        <label id="1156" label="" folder="Responses&gt;Jenetta" sort="9" />
+        <label id="1158" label="" folder="Academy Uniform&gt;Responses&gt;Jenetta" sort="0" />
+        <label id="1159" label="" folder="Responses&gt;Jenetta&gt;War Phase" sort="0" />
+        <label id="1160" label="" folder="Academy Uniform&gt;Responses&gt;Jenetta" sort="2" />
+        <label id="1161" label="" folder="Academy Uniform&gt;Responses&gt;Jenetta" sort="3" />
+        <label id="1162" label="" folder="Responses&gt;Jenetta" sort="4" />
+        <label id="1163" label="" folder="Responses&gt;Jenetta" sort="5" />
+        <label id="1164" label="" folder="Responses&gt;Jenetta" sort="6" />
+        <label id="1165" label="" folder="Responses&gt;Jenetta" sort="7" />
+        <label id="1166" label="" folder="Responses&gt;Jenetta" sort="10" />
+        <label id="1167" label="" folder="Responses&gt;Jenetta" sort="11" />
+        <label id="1168" label="" folder="Responses&gt;Jenetta" sort="12" />
+        <label id="1169" label="" folder="Responses&gt;Jenetta" sort="13" />
+        <label id="1170" label="" folder="Responses&gt;Jenetta" sort="14" />
+        <label id="1171" label="" folder="Responses&gt;Jenetta" sort="15" />
+        <label id="1172" label="" folder="Responses&gt;Jenetta" sort="16" />
+        <label id="1173" label="" folder="Responses&gt;Jenetta" sort="17" />
+        <label id="1174" label="" folder="Responses&gt;Jenetta" sort="18" />
+        <label id="1175" label="" folder="Responses&gt;Jenetta" sort="19" />
+        <label id="1176" label="" folder="Responses&gt;Jenetta" sort="20" />
+        <label id="1177" label="" folder="Responses&gt;Jenetta" sort="21" />
+        <label id="1178" label="" folder="Responses&gt;Jenetta" sort="22" />
+        <label id="1179" label="" folder="Responses&gt;Jenetta" sort="23" />
+        <label id="1180" label="" folder="Responses&gt;Jenetta" sort="24" />
+        <label id="1181" label="War Phase" folder="Targeted&gt;Jenetta" sort="0" />
+        <label id="1182" label="War Phase" folder="Targeted&gt;Jenetta" sort="2" />
+        <label id="1183" label="" folder="Responses&gt;Jenetta&gt;War Phase" sort="2" />
+        <label id="1184" label="" folder="Targeted&gt;Priscilla" sort="0" />
+        <label id="1185" label="" folder="Responses&gt;Priscilla" sort="2" />
+        <label id="1186" label="" folder="Responses&gt;Priscilla" sort="3" />
+        <label id="973" label="" folder="Responses&gt;Priscilla" sort="0" />
+        <label id="1188" label="" folder="Targeted&gt;Darkness" sort="0" />
+        <label id="1189" label="" folder="Responses&gt;Darkness&gt;War Phase" sort="0" />
+        <label id="1190" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="0" />
+        <label id="1191" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="0" />
+        <label id="1192" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="0" />
     </labels>
-    <nextId>1182</nextId>
+    <nextId>1192</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
+        <marker scope="Public" name="academy_phase" />
         <marker scope="Public" name="AcademyPhase" />
         <marker scope="Public" name="AdmiringFlowers" />
         <marker scope="Public" name="aloy_HistoryPrompt" />
@@ -1058,6 +1072,7 @@
         <marker scope="Public" name="aquaKS_setogaya_Prejudice" />
         <marker scope="Public" name="arash_Blackout" />
         <marker scope="Public" name="arash_CantSleep" />
+        <marker scope="Public" name="arash_edison_and_tesla" />
         <marker scope="Public" name="arash_EdisonAndTesla" />
         <marker scope="Public" name="arash_EdisonAndTesla_a" />
         <marker scope="Public" name="arash_EdisonAndTesla_b" />
@@ -1136,7 +1151,10 @@
         <marker scope="Public" name="cynthia_ProminentFigures_c" />
         <marker scope="Public" name="darkness_Commander" />
         <marker scope="Public" name="darkness_Commander2" />
+        <marker scope="Public" name="darkness_Commander3" />
         <marker scope="Public" name="darkness_MastTalkRoyalty" />
+        <marker scope="Public" name="darkness_Nobility_1" />
+        <marker scope="Public" name="darkness_PunishmentAsk1" />
         <marker scope="Public" name="dawn_StrangeCreatures" />
         <marker scope="Public" name="deity_AllDeitiesLost" />
         <marker scope="Public" name="deity_GameStart" />
@@ -1457,6 +1475,8 @@
         <marker scope="Public" name="may_favorite_pokemon" />
         <marker scope="Public" name="megumin_biggest_monster" />
         <marker scope="Public" name="megumin_BiggestMonster" />
+        <marker scope="Public" name="megumin_DressTips_1" />
+        <marker scope="Public" name="megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="meia_EdelgardsFaith" />
         <marker scope="Public" name="meia_EdelgardsFaith_2" />
         <marker scope="Public" name="meia_FemalePartner" />
@@ -1506,6 +1526,8 @@
         <marker scope="Public" name="PokerWithHubert" />
         <marker scope="Public" name="pretty_eyes" />
         <marker scope="Public" name="priscilla_Confidence" />
+        <marker scope="Public" name="priscilla_Confidence_2" />
+        <marker scope="Public" name="priscilla_noblePride_1" />
         <marker scope="Public" name="priscilla_Royalty1" />
         <marker scope="Public" name="Rats" />
         <marker scope="Public" name="RevealingScars" />
@@ -1644,12 +1666,18 @@
         <marker scope="Public" name="WarPhase_bernadetta_Selected" />
         <marker scope="Public" name="WarPhase_bernadetta_WarPhase_Selected" />
         <marker scope="Public" name="WarPhase_darkness_Commander" />
+        <marker scope="Public" name="WarPhase_darkness_Commander2" />
+        <marker scope="Public" name="WarPhase_darkness_PunishmentAsk1" />
         <marker scope="Public" name="WarPhase_hilda_WarPhase_Selected" />
         <marker scope="Public" name="WarPhase_jenetta_SelfStrip0_1" />
+        <marker scope="Public" name="WarPhase_jenetta_SelfStrip0_2" />
         <marker scope="Public" name="WarPhase_leonie_Selected" />
         <marker scope="Public" name="WarPhase_lysithea_Selected" />
+        <marker scope="Public" name="WarPhase_megumin_DressTips_1" />
+        <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="WarPhase_petra_Selected" />
         <marker scope="Public" name="warPhase_ringo_Royalty" />
+        <marker scope="Public" name="WarPhase_ringo_Royalty" />
         <marker scope="Public" name="warPhase_rosie_Leadership" />
         <marker scope="Public" name="WarPhase_rosie_Leadership" />
         <marker scope="Public" name="warPhase_Strip1_2" />
