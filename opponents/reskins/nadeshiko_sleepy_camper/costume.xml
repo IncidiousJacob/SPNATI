@@ -195,18 +195,20 @@
         <pose id="1-stripped-neg">
             <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
             <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg.png" x="0" y="0" />
-            <sprite id="stripped-neg_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg_eyebrows.png" x="-6" y="2" />
-            <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/0-stripped-neg-eyebrows.png" x="12" y="-2" />
+            <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="stripped-neg_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg_eyebrows.png" x="-7" y="0" />
         </pose>
         <pose id="1-stripped-neu">
             <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
             <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neu.png" x="0" y="0" />
             <sprite id="stripped-neg-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neu-eyebrows-headband.png" x="0" y="0" rotation="-0.25" />
+            <sprite id="stripped-neu_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neu_eyebrows.png" x="-5" y="-8" />
         </pose>
         <pose id="1-stripped-pos">
             <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped.png" x="0" y="0" />
             <sprite id="stripped-neg" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-pos.png" x="0" y="0" />
-            <sprite id="stripped-pos-eyebrows-headband" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-neg-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="stripped-pos-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-pos-eyebrows-headband.png" x="0" y="0" />
+            <sprite id="stripped-pos_eyebrows" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripped-pos_eyebrows.png" x="-6" y="0" />
         </pose>
         <pose id="1-stripping-neg">
             <sprite id="stripping" src="reskins/nadeshiko_sleepy_camper/pose maker/1-stripping.png" x="0" y="0" />
@@ -384,6 +386,12 @@
         <pose id="8-starting-pos2">
             <sprite id="starting" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting.png" x="0" y="0" />
             <sprite id="starting-pos1" src="reskins/nadeshiko_sleepy_camper/pose maker/9-starting-pos2.png" x="0" y="0" />
+        </pose>
+        <pose id="8-stripped-lewd">
+            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
+            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
+            <sprite id="stripped-neu" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu.png" x="0" y="0" />
+            <sprite id="stripped-neu-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu-eyebrows-headband.png" x="0" y="0" />
         </pose>
         <pose id="8-stripped-neg">
             <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
@@ -605,12 +613,6 @@
                 <keyframe time="0.1199999" y="1140" scaley="1" />
                 <keyframe time="0.25" y="1165" alpha="0" />
             </directive>
-        </pose>
-        <pose id="8-stripped-lewd">
-            <sprite id="stripped" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped.png" x="0" y="0" />
-            <sprite id="stripping" z="2" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripping.png" x="0" y="0" />
-            <sprite id="stripped-neu" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu.png" x="0" y="0" />
-            <sprite id="stripped-neu-eyebrows-headband" z="1" src="reskins/nadeshiko_sleepy_camper/pose maker/8-stripped-neu-eyebrows-headband.png" x="0" y="0" />
         </pose>
     </poses>
 
