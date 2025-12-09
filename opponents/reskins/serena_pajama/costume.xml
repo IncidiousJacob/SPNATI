@@ -2110,6 +2110,30 @@
                 <keyframe time="0.5" rotation="-3" />
             </directive>
         </pose>
+        <pose id="mikanDress">
+            <sprite id="O2hair" src="reskins/serena_fennekin/O2hair.png" x="-13" y="178" />
+            <sprite id="mikanDress" src="serena/mikanDress.png" x="0" y="0" />
+        </pose>
+        <pose id="mikanMidDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_pajama/6-coverfeet.png" x="0" y="0" />
+            <sprite id="mikandress-remove" src="serena/mikandress-remove.png" x="22" y="618" />
+        </pose>
+        <pose id="mikanLateDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_fennekin/7-coverfeet.png" x="0" y="0" />
+            <sprite id="mikandress-remove" src="serena/mikandress-remove.png" x="22" y="618" />
+        </pose>
+        <pose id="mikanEarlyDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_pajama/5-coverfeet.png" x="0" y="0" />
+            <sprite id="mikandress-remove" src="serena/mikandress-remove.png" x="22" y="618" />
+        </pose>
+        <pose id="buttpanties">
+            <sprite id="butt" src="serena/7-butt2.png" x="0" y="0" />
+            <sprite id="buttundies" src="reskins/serena_pajama/buttundies.png" x="6" y="767" />
+        </pose>
+        <pose id="Conditioner">
+            <sprite id="pokeball" src="reskins/serena_pajama/0-pokeball.png" x="0" y="0" />
+            <sprite id="conditioner" src="serena/conditioner.png" x="-161" y="162" />
+        </pose>
     </poses>
 
 </costume>
