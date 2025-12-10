@@ -711,17 +711,10 @@
                 <condition role="other" character="cammy_white" />
                 <state img="#-calm.png">In my guild mildly hurting our friends during brawls is pretty normal.</state>
             </case>
-            <case stage="0-7">
-                <alternative priority="308">
-                    <condition role="opp" character="lucy" />
-                    <condition role="other" character="revy" stage="7" timeInStage="0" sayingMarker="stance" />
-                    <condition role="other" character="meia" stage="5" saidMarker="revyfight" sayingMarker="stance" />
-                </alternative>
-                <alternative id="149">
-                    <condition count="0" notSaidMarker="killing" />
-                    <condition role="other" character="revy" sayingMarker="killing" />
-                    <condition role="other" character="megumin" sayingMarker="megumin_mass_murder" />
-                </alternative>
+            <case stage="0-7" priority="308">
+                <condition role="opp" character="lucy" />
+                <condition role="other" character="revy" stage="7" timeInStage="0" sayingMarker="stance" />
+                <condition role="other" character="meia" stage="5" saidMarker="revyfight" sayingMarker="stance" />
                 <state img="#-embarrassed.png">I-I've never done that! Actually...my lack of experience with boys is a running joke at the guild.</state>
             </case>
             <case stage="7" id="509" priority="252">
@@ -835,7 +828,6 @@
                 <state img="#-happy.png">That reminds me of my guildmate Juvia. We started off in rival guilds at war with each other, but now we're friends.</state>
             </case>
             <case stage="0-7" id="642">
-                <condition count="0" notSaidMarker="killing" />
                 <condition role="other" character="revy" sayingMarker="killing" />
                 <condition role="other" character="megumin" sayingMarker="megumin_mass_murder" />
                 <state img="#-smug.png">Thousands? You know your most impressive skill might be exaggeration, Megumin.</state>
