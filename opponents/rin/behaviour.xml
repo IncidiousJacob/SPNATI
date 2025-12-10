@@ -2083,7 +2083,6 @@
                 <state img="#-DPAmused.png">I know... We gotta see the "problem" in his pants!</state>
             </case>
             <case stage="0-6" id="113">
-                <condition count="0" notSaidMarker="killing" />
                 <condition role="other" character="revy" sayingMarker="killing" />
                 <condition role="other" character="megumin" sayingMarker="megumin_mass_murder" />
                 <state img="#-lucid.png">...I painted some demons once... The one's that sometimes dwell inside of me when I usually "destroy" myself...</state>
@@ -2754,10 +2753,9 @@
                 <state img="#-curious.png">Mess around with paints? Well, I do that kind of thing all the time Sei, why do you ask?</state>
             </case>
             <case stage="0-5" priority="16">
-                <condition count="1" gender="male" status="lost_all" />
-                <condition count="0" notSaidMarker="1st-nude" />
-                <condition count="0" status="alive" />
-                <condition count="0" status="finished" />
+                <condition count="1" gender="female" status="lost_all" />
+                <condition role="self" notSaidMarker="1st-nude" />
+                <condition count="0" status="not_alive" />
                 <state img="#-confused.png" marker="1st-nude">...Oh? She's still in?...</state>
                 <state img="#-confused.png" marker="1st-nude">...It's not over for her yet?</state>
                 <state img="#-confused.png" marker="1st-nude">Wait, why is she still in?</state>
@@ -2766,9 +2764,8 @@
             </case>
             <case stage="0-5" priority="16">
                 <condition count="1" gender="male" status="lost_all" />
-                <condition count="0" notSaidMarker="1st-nude" />
-                <condition count="0" status="masturbating" />
-                <condition count="0" status="finished" />
+                <condition role="self" notSaidMarker="1st-nude" />
+                <condition count="0" status="not_alive" />
                 <state img="#-confused.png" marker="1st-nude">...Oh? He's still in?...</state>
                 <state img="#-confused.png" marker="1st-nude">...It's not over for him yet?</state>
                 <state img="#-confused.png" marker="1st-nude">Wait, why is he still in?</state>
@@ -2777,7 +2774,7 @@
             </case>
             <case stage="6">
                 <condition role="self" timeInStage="0" notSaidMarker="1st-nude" />
-                <condition count="3" status="not_lost_all" />
+                <condition count="0" role="opp" status="lost_all" />
                 <state img="#-surprised.png" marker="1st-nude">...Oh? I'm still in?... I don't even have anything left to strip.</state>
                 <state img="#-surprised.png" marker="1st-nude">...It's not over for me yet? What's even left for me?</state>
                 <state img="#-surprised.png" marker="1st-nude">Wait, why am &lt;i&gt;I&lt;/i&gt; still in? Do I have to strip my dignity too?</state>
@@ -9713,7 +9710,7 @@
                 <state img="#-DPAmused.png" marker="butter_fairy">I love small winged things... They're my &lt;i&gt;fae-&lt;/i&gt;vorite.</state>
             </case>
             <case stage="0-8">
-                <condition count="0" notSaidMarker="gloom_gloom" />
+                <condition role="self" notSaidMarker="gloom_gloom" />
                 <condition filter="gloomy" role="target" />
                 <state img="#-doubt.png" marker="gloom_gloom">...Are you okay, ~name~?</state>
                 <state img="#-lucid.png" marker="gloom_gloom">...I know what it's like to be gloomy.</state>
@@ -9740,7 +9737,7 @@
                 <state img="#-lucid.png" marker="mad_house">I... probably shouldn't even try to understand you. It's for the better...</state>
             </case>
             <case stage="0-8">
-                <condition count="0" notSaidMarker="im_mr_lonely" />
+                <condition role="self" notSaidMarker="im_mr_lonely" />
                 <condition filter="lonely" role="target" />
                 <state img="#-doubt.png" marker="im_mr_lonely">...Are you okay, ~name~?</state>
                 <state img="#-lucid.png" marker="im_mr_lonely">...I know what it's like to be lonely sometimes.</state>
