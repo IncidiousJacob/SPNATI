@@ -34,7 +34,22 @@
             <description>In her Hex-tra Snowy outfit, Hex Maniac accidently flashes her butthole while removing her socks.</description>
         </case>
         <case name="GhostYap" id="1110" priority="Noteworthy" min="0" max="8">
-            <description>Hex Maniac rambles about ghosts, different ghosts depending on who is at the table. Including tags, If you respond to any i'll be sure to make it target the responding character3</description>
+            <description>Hex Maniac rambles about ghosts, different ghosts depending on who is at the table. Including tags, If you respond to any i'll be sure to make it target the responding character, but know that it's intended to be difficult to sit through.</description>
+        </case>
+        <case name="Mortality question" id="1119" priority="Prompt" min="0" max="8">
+            <description>Has your character grappled with (im)mortality?</description>
+        </case>
+        <case name="Fairytale question" id="1120" priority="Prompt" min="0" max="8">
+            <description>favorite folk/fairy tale? Also pokemon changelings?</description>
+        </case>
+        <case name="Sleep Schedule question" id="1121" priority="Prompt" min="0" max="8">
+            <description>Hex wonders if people are diurnal(awake at day) or nocturnal(awake at night)</description>
+        </case>
+        <case name="Language question" id="1124" priority="Prompt" min="0" max="8">
+            <description>Hex wonders if the others also speak multiple languages.</description>
+        </case>
+        <case name="How to talk question" id="1123" priority="Prompt" min="0" max="8">
+            <description>Hex wonders how you properly talk to people, and proceeds to showcase her rambling.</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -1458,13 +1473,24 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <label id="1111" label="" folder="Snowy" sort="0" />
         <label id="1112" label="" folder="Banter&gt;Jura" sort="0" />
         <label id="1113" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="1114" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1115" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1116" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1117" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1118" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1119" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1120" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1121" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1122" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1123" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
+        <label id="1124" label="" folder="Sponsor&gt;WibblyWarble" sort="0" />
     </labels>
     <prefixes>
         <prefix>Haunter</prefix>
         <prefix>Placeholder</prefix>
         <prefix>z</prefix>
     </prefixes>
-    <nextId>1113</nextId>
+    <nextId>1124</nextId>
     <markers>
         <marker scope="Public" name="9s_Nippleless" />
         <marker scope="Public" name="Aaravi_Bluetoldyaso" />
@@ -1573,6 +1599,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Erufuda_SplitPants" />
         <marker scope="Public" name="Erufuda_SuckIn" />
         <marker scope="Public" name="Erufuda_SuckInFail" />
+        <marker scope="Public" name="Fairytale_Q" />
         <marker scope="Public" name="Fatenotonside" />
         <marker scope="Public" name="Fnaf_Rumors1" />
         <marker scope="Public" name="ForgotHeadband" />
@@ -1613,6 +1640,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="HowFutaGender" />
         <marker scope="Public" name="HowFutaUrethra" />
         <marker scope="Public" name="HowFutaWork" />
+        <marker scope="Public" name="HowToTalk_Q" />
         <marker scope="Public" name="Human_Nude" />
         <marker scope="Public" name="JJBA_MeanLook" />
         <marker scope="Public" name="Jura_4thN5thRib" />
@@ -1644,6 +1672,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Jura_Tarot_11" />
         <marker scope="Public" name="Jura_Tarot_12" />
         <marker scope="Public" name="Jura_Witchy_51" />
+        <marker scope="Public" name="Language_Q" />
         <marker scope="Public" name="LargePPpride" />
         <marker scope="Public" name="LaverreClock" />
         <marker scope="Public" name="LibraryResearch" />
@@ -1685,6 +1714,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Momo_Yaoyorictionary" />
         <marker scope="Public" name="Monika_SomethingsWrongICanFeelIt" />
         <marker scope="Public" name="MoomooEffect" />
+        <marker scope="Public" name="Mortality-Q" />
         <marker scope="Public" name="MyFriendMalamar" />
         <marker scope="Public" name="nadeshiko__70" />
         <marker scope="Public" name="nadeshiko__71" />
@@ -1807,6 +1837,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="SisterNearNameLeak" />
         <marker scope="Public" name="Size_expectation" />
         <marker scope="Public" name="Size_expectation_fufiled" />
+        <marker scope="Public" name="Sleep_Schedule_Q" />
         <marker scope="Public" name="SluttyCostumes" />
         <marker scope="Public" name="SpeakingKalosian" />
         <marker scope="Public" name="Special_bra" />
@@ -1929,6 +1960,7 @@ Makes her make masturbation noises if no other case is there, ie if someone's st
         <marker scope="Public" name="Vinyl_Rotom_Regret" />
         <marker scope="Public" name="Vinyl_Shoes_Resp" />
         <marker scope="Public" name="Wasp_ShrinkJustForPlayer" />
+        <marker scope="Public" name="WhatWeDoInTheSpotlight" />
         <marker scope="Public" name="WhyAreAllTheseFamousPeoplePlayingStripPoker" />
         <marker scope="Public" name="WhyImHere" />
         <marker scope="Public" name="Wikipetan_MagicalTransformation" />
