@@ -65,7 +65,19 @@
     </poses>
 
     <pose-sets>
-        <set id="Aroused Directional">
+        <set id="Amused">
+            <pose stage="0-10" img="#-Amused.png" />
+        </set>
+        <set id="Angry">
+            <pose stage="0-10" img="#-Angry.png" />
+        </set>
+        <set id="Annoyed">
+            <pose stage="0-10" img="#-Annoyed.png" />
+        </set>
+        <set id="Anxious">
+            <pose stage="0-10" img="#-Anxious.png" />
+        </set>
+        <set id="Aroused">
             <pose stage="0-10" img="#-Aroused - Right.png" priority="1">
                 <tests>
                     <test expr="~target.position~" value="right" />
@@ -78,7 +90,7 @@
             </pose>
             <pose stage="0-10" img="#-Aroused - Right.png" />
         </set>
-        <set id="Awkward Directional">
+        <set id="Awkward">
             <pose stage="0-10" img="#-Awkward - Right.png" priority="1">
                 <tests>
                     <test expr="~target.position~" value="right" />
@@ -91,8 +103,108 @@
             </pose>
             <pose stage="0-10" img="#-Awkward - Right.png" />
         </set>
-        <set id="Strip Variable">
-            <pose stage="0-7" img="#-Strip - Negative.png">
+        <set id="Butt">
+            <pose stage="8" img="#-Butt.png" />
+        </set>
+        <set id="Confident">
+            <pose stage="0-10" img="#-Confident.png" />
+        </set>
+        <set id="Curious">
+            <pose stage="0-10" img="#-Curious.png" />
+        </set>
+        <set id="Dazzled">
+            <pose stage="0" img="#-Happy.png" />
+        </set>
+        <set id="Explaining">
+            <pose stage="0-10" img="#-Explaining.png" />
+        </set>
+        <set id="Finishing">
+            <pose stage="9" img="#-Finishing.png" />
+        </set>
+        <set id="Flustered">
+            <pose stage="0-10" img="#-Flustered.png" />
+        </set>
+        <set id="Frustrated">
+            <pose stage="0-10" img="#-Frustrated.png" />
+        </set>
+        <set id="Happy">
+            <pose stage="0-10" img="#-Happy.png" />
+        </set>
+        <set id="Heavy Masturbation 1">
+            <pose stage="9" img="#-Heavy Masturbation 1.png" />
+        </set>
+        <set id="Heavy Masturbation 2">
+            <pose stage="9" img="#-Heavy Masturbation 2.png" />
+        </set>
+        <set id="Heavy Masturbation 3">
+            <pose stage="9" img="#-Heavy Masturbation 3.png" />
+        </set>
+        <set id="Heavy Masturbation 4">
+            <pose stage="9" img="#-Heavy Masturbation 4.png" />
+        </set>
+        <set id="Heavy Masturbation 5">
+            <pose stage="9" img="#-Heavy Masturbation 5.png" />
+        </set>
+        <set id="Impassioned - Negative">
+            <pose stage="0-8" img="#-Impassioned - Negative.png" />
+        </set>
+        <set id="Impassioned - Positive">
+            <pose stage="0-8" img="#-Impassioned - Positive.png" />
+        </set>
+        <set id="Impression - Claude">
+            <pose stage="6" img="#-Impression - Claude.png" />
+        </set>
+        <set id="Impression - Dimitri">
+            <pose stage="6" img="#-Impression - Dimitri.png" />
+        </set>
+        <set id="Impression - Ferdinand">
+            <pose stage="6" img="#-Impression - Ferdinand.png" />
+        </set>
+        <set id="Impression - Hubert">
+            <pose stage="6" img="#-Impression - Hubert.png" />
+        </set>
+        <set id="Lecturing">
+            <pose stage="0-10" img="#-Lecturing.png" />
+        </set>
+        <set id="Neutral">
+            <pose stage="0-10" img="#-Neutral.png" />
+        </set>
+        <set id="Mat">
+            <pose stage="10" img="#-Self-Conscious - Right.png" />
+        </set>
+        <set id="Sad">
+            <pose stage="0-8" img="#-Sad.png" />
+        </set>
+        <set id="Self-Conscious">
+            <pose stage="0-10" img="#-Self-Conscious - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Self-Conscious - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0" img="#-Self-Conscious - Right.png" />
+        </set>
+        <set id="Serious">
+            <pose stage="0-10" img="#-Serious.png" />
+        </set>
+        <set id="Shocked">
+            <pose stage="0-10" img="#-Shocked.png" />
+        </set>
+        <set id="Smug">
+            <pose stage="0-9" img="#-Smug.png" />
+        </set>
+        <set id="Strip - Negative">
+            <pose stage="0-7" img="#-Strip - Negative.png" />
+        </set>
+        <set id="Strip - Positive">
+            <pose stage="0-7" img="#-Strip - Positive.png" />
+        </set>
+        <set id="Strip - Variable">
+            <pose stage="0-7" img="#-Strip - Negative.png" priority="1">
                 <tests>
                     <test expr="~self.revplace~" cmp="&lt;" value="3" />
                 </tests>
@@ -103,18 +215,14 @@
                 </tests>
             </pose>
         </set>
-        <set id="Self Conscious Directional">
-            <pose stage="0-10" img="#-Self-Conscious - Right.png" priority="1">
-                <tests>
-                    <test expr="~target.position~" value="right" />
-                </tests>
-            </pose>
-            <pose stage="0-10" img="#-Self-Conscious - Left.png" priority="1">
-                <tests>
-                    <test expr="~target.position~" value="left" />
-                </tests>
-            </pose>
-            <pose stage="0-10" img="#-Self-Conscious - Right.png" />
+        <set id="Surprised">
+            <pose stage="0-10" img="#-Surprised.png" />
+        </set>
+        <set id="Thinking">
+            <pose stage="0-10" img="#-Thinking.png" />
+        </set>
+        <set id="Trauma">
+            <pose stage="0-10" img="#-Trauma.png" />
         </set>
     </pose-sets>
 </costume>

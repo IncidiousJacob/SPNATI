@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>edelgard_snowfall_future</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag>choker</tag>
+        <tag>christmas_skin</tag>
+        <tag>fake_horns</tag>
+        <tag remove="true">pantyhose</tag>
+        <tag remove="true">school_uniform</tag>
+        <tag>thigh_highs</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/edelgard_snowfall_future/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="bra" generic="bra" position="upper" type="important" />
+        <clothing name="dress" generic="dress" position="both" type="major" />
+        <clothing name="socks" generic="socks" position="legs" type="minor" plural="true" />
+        <clothing name="sleeves" generic="sleeves" position="arms" type="minor" plural="true" />
+        <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
+        <clothing name="gloves" generic="gloves" position="hands" type="extra" plural="true" />
+        <clothing name="cape" generic="cape" position="other" type="extra" />
+    </wardrobe>
+
+
+    <pose-sets>
+        <set id="Amused">
+            <pose stage="0-10" img="#-Amused.png" />
+            <pose stage="5-10" img="#-Amused.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Amused - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Angry">
+            <pose stage="0-10" img="#-Angry.png" />
+            <pose stage="5-10" img="#-Angry - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Angry - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Annoyed">
+            <pose stage="0-10" img="#-Annoyed.png" />
+            <pose stage="5-10" img="#-Annoyed.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Annoyed - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Anxious">
+            <pose stage="0-10" img="#-Anxious.png" />
+            <pose stage="5-10" img="#-Anxious.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Anxious - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Aroused">
+            <pose stage="0-4" img="#-Aroused - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0-4" img="#-Aroused - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Aroused - Right.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Aroused - Left.png" priority="2">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Aroused - Right - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Aroused - Left - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-4" img="#-Aroused - Right.png" />
+            <pose stage="5-10" img="#-Aroused - Right.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Aroused - Right - Alt.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Awkward">
+            <pose stage="0-4" img="#-Awkward - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0-4" img="#-Awkward - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Awkward - Right.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Awkward - Left.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Awkward - Right - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Awkward - Left - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-4" img="#-Awkward - Right.png" />
+            <pose stage="5-10" img="#-Awkward - Right.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Awkward - Right - Alt.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Butt">
+            <pose stage="8" img="#-Butt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="8" img="#-Butt - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Confident">
+            <pose stage="0-4" img="#-Confident.png" />
+            <pose stage="5-10" img="#-Confident.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Confident - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Curious">
+            <pose stage="0-4" img="#-Curious.png" />
+            <pose stage="5-10" img="#-Curious.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Curious - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Dazzled">
+            <pose stage="0" img="#-Dazzled.png" />
+        </set>
+        <set id="Explaining">
+            <pose stage="0-4" img="#-Explaining.png" />
+            <pose stage="5-10" img="#-Explaining.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Explaining - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Finishing">
+            <pose stage="9" img="#-Finishing.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Finishing - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Flustered">
+            <pose stage="0-4" img="#-Flustered.png" />
+            <pose stage="5-10" img="#-Flustered.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-9" img="#-Flustered - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+            <pose stage="10" img="#-Flustered - Alt B.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~edelgard.marker.snowfallFuture_GotMat~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="10" img="#-Flustered - Alt.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~edelgard.marker.snowfallFuture_GotMat~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Frustrated">
+            <pose stage="0-4" img="#-Frustrated.png" />
+            <pose stage="5-10" img="#-Frustrated.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Frustrated - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Happy">
+            <pose stage="0-4" img="#-Happy.png" />
+            <pose stage="5-10" img="#-Happy.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Happy - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Heavy Masturbation 1">
+            <pose stage="9" img="#-Heavy Masturbation 1.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Heavy Masturbation 1 - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Heavy Masturbation 2">
+            <pose stage="9" img="#-Heavy Masturbation 2.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Heavy Masturbation 2 - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Heavy Masturbation 3">
+            <pose stage="9" img="#-Heavy Masturbation 3.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Heavy Masturbation 3 - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Heavy Masturbation 4">
+            <pose stage="9" img="#-Heavy Masturbation 4.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Heavy Masturbation 4 - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Heavy Masturbation 5">
+            <pose stage="9" img="#-Heavy Masturbation 5.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="9" img="#-Heavy Masturbation 5 - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impassioned - Negative">
+            <pose stage="0-4" img="#-Impassioned - Negative.png" />
+            <pose stage="5-10" img="#-Impassioned - Negative.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Impassioned - Negative - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impassioned - Positive">
+            <pose stage="0-4" img="#-Impassioned - Positive.png" />
+            <pose stage="5-10" img="#-Impassioned - Positive.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Impassioned - Positive - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Lecturing">
+            <pose stage="0-4" img="#-Lecturing.png" />
+            <pose stage="5-10" img="#-Lecturing.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Lecturing - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Mat">
+            <pose stage="10" img="#-Self-Conscious - Alt B.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_GotMat~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="10" img="#-Mat - Alt.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_GotMat~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Neutral">
+            <pose stage="0-4" img="#-Neutral.png" />
+            <pose stage="5-10" img="#-Neutral.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Neutral - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impression - Claude">
+            <pose stage="6" img="#-Impression - Claude.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="6" img="#-Impression - Claude - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Sad">
+            <pose stage="0-4" img="#-Sad.png" />
+            <pose stage="5-10" img="#-Sad.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Sad - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Self-Conscious">
+            <pose stage="0-4" img="#-Self-Conscious - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-4" img="#-Self-Conscious - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Self-Conscious - Right.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Self-Conscious - Left.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Self-Conscious - Right - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="target.positon" value="right" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Self-Conscious - Left - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0" img="#-Self-Conscious - Right.png" />
+            <pose stage="0" img="#-Self-Conscious - Right.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="0" img="#-Self-Conscious - Right.png">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Serious">
+            <pose stage="0-4" img="#-Serious.png" />
+            <pose stage="5-10" img="#-Serious.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Serious - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Shocked">
+            <pose stage="0-4" img="#-Shocked.png" />
+            <pose stage="5-10" img="#-Shocked.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Shocked - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Smug">
+            <pose stage="0-4" img="#-Smug.png" />
+            <pose stage="5-10" img="#-Smug.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Smug - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Strip - Negative">
+            <pose stage="0-3" img="#-Strip - Negative.png" />
+            <pose stage="4-7" img="#-Strip - Negative.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Negative - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Strip - Positive">
+            <pose stage="0-3" img="#-Strip - Positive.png" />
+            <pose stage="4-7" img="#-Strip - Positive.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Positive - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Strip - Variable">
+            <pose stage="0-3" img="#-Strip - Negative.png" priority="1">
+                <tests>
+                    <test expr="~self.revplace~" cmp="&lt;" value="3" />
+                </tests>
+            </pose>
+            <pose stage="0-3" img="#-Strip - Positive.png" priority="1">
+                <tests>
+                    <test expr="~self.revplace~" cmp="&gt;=" value="3" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Positive.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~self.revplace~" cmp="&gt;=" value="3" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Negative.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                    <test expr="~self.revplace~" cmp="&lt;" value="3" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Positive - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~self.revplace~" cmp="&gt;=" value="3" />
+                </tests>
+            </pose>
+            <pose stage="4-7" img="#-Strip - Negative - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                    <test expr="~self.revplace~" cmp="&lt;" value="3" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Surprised">
+            <pose stage="0-4" img="#-Surprised.png" />
+            <pose stage="5-10" img="#-Surprised.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Surprised - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Thinking">
+            <pose stage="0-4" img="#-Thinking.png" />
+            <pose stage="5-10" img="#-Thinking.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Thinking - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Trauma">
+            <pose stage="0-4" img="#-Trauma.png" />
+            <pose stage="5-10" img="#-Trauma.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="5-10" img="#-Trauma - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impression - Dimitri">
+            <pose stage="6" img="#-Impression - Dimitri.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="6" img="#-Impression - Dimitri - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impression - Ferdinand">
+            <pose stage="6" img="#-Impression - Ferdinand.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="6" img="#-Impression - Ferdinand - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Impression - Hubert">
+            <pose stage="6" img="#-Impression - Hubert.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="0" />
+                </tests>
+            </pose>
+            <pose stage="6" img="#-Impression - Hubert - Alt.png" priority="1">
+                <tests>
+                    <test expr="~edelgard.marker.snowfallFuture_AltStrip~" value="1" />
+                </tests>
+            </pose>
+        </set>
+    </pose-sets>
+</costume>
