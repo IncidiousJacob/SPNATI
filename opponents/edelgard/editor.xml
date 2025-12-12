@@ -1210,7 +1210,7 @@
         <label id="979" label="" folder="Responses&gt;Chihiro" sort="0" />
         <label id="1020" label="" folder="Responses&gt;Vine Staff" sort="0" />
         <label id="1288" label="" folder="Targeted&gt;Human" sort="0" />
-        <label id="1006" label="" folder="Responses&gt;Cagliostro" sort="0" />
+        <label id="1006" label="" folder="Responses&gt;Cagliostro" sort="3" />
         <label id="1289" label="" folder="Technical" sort="10" />
         <label id="1290" label="" folder="Technical" sort="11" />
         <label id="1291" label="" folder="Generic&gt;Academy Phase&gt;Snowfall Future" sort="41" />
@@ -1218,11 +1218,29 @@
         <label id="443" label="" folder="Generic&gt;Academy Phase" sort="12" />
         <label id="1125" label="" folder="Generic&gt;War Phase" sort="9" />
         <label id="1124" label="" folder="Filtered&gt;FE3H&gt;War Phase" sort="0" />
+        <label id="1293" label="" folder="Generic&gt;Academy Phase&gt;Snowfall Future" sort="43" />
+        <label id="1294" label="" folder="Targeted&gt;Simon" sort="4" />
+        <label id="1295" label="" folder="Targeted&gt;Simon" sort="2" />
+        <label id="1296" label="Simon Said..." folder="Technical" sort="6" />
+        <label id="1297" label="" folder="Targeted&gt;Dunban" sort="0" />
+        <label id="1298" label="" color="9" folder="Responses&gt;Darkness" sort="5" />
+        <label id="1299" label="" color="9" folder="Targeted&gt;Darkness" sort="3" />
+        <label id="1300" label="" color="9" folder="Resonses&gt;Darkness&gt;Academy Phase" sort="0" />
+        <label id="1301" label="" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
+        <label id="1302" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
+        <label id="1303" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="5" />
+        <label id="1304" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="6" />
+        <label id="1305" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
+        <label id="1306" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
+        <label id="1307" label="" color="9" folder="Responses&gt;Darkness&gt;War Phase" sort="0" />
+        <label id="1308" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
+        <label id="1309" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
+        <label id="1310" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase&gt;Snowfall Future" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-</prefix>
     </prefixes>
-    <nextId>1292</nextId>
+    <nextId>1310</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
@@ -1329,11 +1347,16 @@
         <marker scope="Public" name="darkness_Commander2" />
         <marker scope="Public" name="darkness_Commander3" />
         <marker scope="Public" name="darkness_Domination_Hand" />
+        <marker scope="Public" name="darkness_DominationPractice_Hand" />
+        <marker scope="Public" name="darkness_edelgard_PervFantasy1_Hand" />
         <marker scope="Public" name="darkness_MastTalkRoyalty" />
         <marker scope="Public" name="darkness_Nobility_1" />
         <marker scope="Public" name="darkness_Nobility_2" />
+        <marker scope="Public" name="darkness_Nobility_3" />
         <marker scope="Public" name="darkness_PunishmentAsk1" />
         <marker scope="Public" name="darkness_PunishmentAsk2" />
+        <marker scope="Public" name="darkness_PunishmentAsk3" />
+        <marker scope="Public" name="darknessWarPhase_darkness_PunishmentAsk3" />
         <marker scope="Public" name="dawn_StrangeCreatures" />
         <marker scope="Public" name="deity_AllDeitiesLost" />
         <marker scope="Public" name="deity_GameStart" />
@@ -1657,8 +1680,11 @@
         <marker scope="Public" name="megumin_BiggestMonster" />
         <marker scope="Public" name="megumin_DressTips_1" />
         <marker scope="Public" name="megumin_DressTips_2" />
+        <marker scope="Public" name="megumin_DressTips_3" />
+        <marker scope="Public" name="megumin_Education1" />
         <marker scope="Public" name="megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="megumin_ExplosiveAssistance_2" />
+        <marker scope="Public" name="megumin_ExplosiveAssistance_3" />
         <marker scope="Public" name="meia_EdelgardsFaith" />
         <marker scope="Public" name="meia_EdelgardsFaith_2" />
         <marker scope="Public" name="meia_FemalePartner" />
@@ -1759,6 +1785,9 @@
         <marker scope="Public" name="serena_LongHair_b3" />
         <marker scope="Public" name="shamiko_Nickname" />
         <marker scope="Public" name="ShowNoWeakness" />
+        <marker scope="Public" name="simon_Digger" />
+        <marker scope="Public" name="simon_DiggerIntro" />
+        <marker scope="Public" name="simon_Rat" />
         <marker scope="Public" name="Sketchbook" />
         <marker scope="Public" name="smash_deja_vu" />
         <marker scope="Public" name="SmashDeJaVu" />
@@ -1771,6 +1800,7 @@
         <marker scope="Public" name="snowfallFuture_GotMat" />
         <marker scope="Public" name="snowfallFuture_jenetta_SelfStrip0_1" />
         <marker scope="Public" name="snowfallFuture_megumin_DressTips_2" />
+        <marker scope="Public" name="snowfallFuture_megumin_DressTips_3" />
         <marker scope="Public" name="snowfallFuture_rosie_RedCape" />
         <marker scope="Public" name="Solitude" />
         <marker scope="Public" name="SpecialWeapons" />
@@ -1882,8 +1912,11 @@
         <marker scope="Public" name="WarPhase_lysithea_Selected" />
         <marker scope="Public" name="WarPhase_megumin_DressTips_1" />
         <marker scope="Public" name="WarPhase_megumin_DressTips_2" />
+        <marker scope="Public" name="WarPhase_megumin_DressTips_3" />
+        <marker scope="Public" name="WarPhase_megumin_Education1" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_2" />
+        <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_3" />
         <marker scope="Public" name="WarPhase_petra_Selected" />
         <marker scope="Public" name="warPhase_ringo_Royalty" />
         <marker scope="Public" name="WarPhase_ringo_Royalty" />
