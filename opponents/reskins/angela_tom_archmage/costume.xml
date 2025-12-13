@@ -324,10 +324,10 @@
             <sprite id="coat_back_left" marker="cl_Coat=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatB.png" x="120" y="605" scalex="-1" rotation="0" />
             <sprite id="coat_tassel_right" marker="cl_Coat=0" z="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatT.png" x="-257" y="1043" pivoty="0%" rotation="0" />
             <sprite id="coat_tassel_left" marker="cl_Coat=0" z="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatT.png" x="245" y="1043" scalex="-1" pivoty="0%" rotation="0" />
-            <sprite id="boot_right" marker="cl_Boots=0" z="9" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scaley="1.2" rotation="-2" />
-            <sprite id="boot_right_jump" marker="cl_Boots=0" z="7" src="m/blank.png" x="-45" y="1202" scaley="1.2" rotation="-2" />
-            <sprite id="boot_left" marker="cl_Boots=0" z="9" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" scalex="-1" scaley="1.2" rotation="2" />
-            <sprite id="boot_left_jump" marker="cl_Boots=0" z="7" src="m/blank.png" x="-45" y="1202" scalex="-1" scaley="1.2" rotation="-2" />
+            <sprite id="boot_right" marker="cl_Boots=0" z="9" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scaley="1.2" alpha="100" rotation="-2" />
+            <sprite id="boot_right_jump" marker="cl_Boots=0" z="7" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scaley="1.2" alpha="0" rotation="-2" />
+            <sprite id="boot_left" marker="cl_Boots=0" z="9" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" scalex="-1" scaley="1.2" alpha="100" rotation="2" />
+            <sprite id="boot_left_jump" marker="cl_Boots=0" z="7" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scalex="-1" scaley="1.2" alpha="0" rotation="-2" />
             <sprite id="boot_right_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="-48" y="1160" scaley="1.2" rotation="-2" />
             <sprite id="boot_left_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="33" y="1160" scalex="-1" scaley="1.2" rotation="2" />
             <sprite id="coat_ribbon_right" marker="cl_Coat=0" z="3" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatR.png" x="-74" y="427" />
@@ -658,11 +658,11 @@
                 <keyframe time="1.38" rotation="0" />
             </directive>
             <directive type="animation" id="boot_right" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.25" src="m/blank.png" x="-71" y="809" rotation="2" />
-                <keyframe time="0.5" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.75" src="m/blank.png" x="-71" y="809" rotation="2" />
-                <keyframe time="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" rotation="-2" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" alpha="100" rotation="-2" />
+                <keyframe time="0.25" x="-71" y="809" alpha="0" rotation="2" />
+                <keyframe time="0.5" x="-45" y="1202" alpha="100" rotation="-2" />
+                <keyframe time="0.75" x="-71" y="809" alpha="0" rotation="2" />
+                <keyframe time="1" x="-45" y="1202" alpha="100" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_right" marker="cl_Boots=0" ease="linear" interpolation="linear">
                 <keyframe time="0" scaley="1.2" />
@@ -670,11 +670,11 @@
                 <keyframe time="1" scaley="1.2" />
             </directive>
             <directive type="animation" id="boot_right_jump" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="m/blank.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.25" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-71" y="809" rotation="2" />
-                <keyframe time="0.5" src="m/blank.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.75" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-71" y="809" rotation="2" />
-                <keyframe time="1" src="m/blank.png" x="-45" y="1202" rotation="-2" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" alpha="0" rotation="-2" />
+                <keyframe time="0.25" x="-71" y="809" alpha="100" rotation="2" />
+                <keyframe time="0.5" x="-45" y="1202" alpha="0" rotation="-2" />
+                <keyframe time="0.75" x="-71" y="809" alpha="100" rotation="2" />
+                <keyframe time="1" x="-45" y="1202" alpha="0" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_right_jump" marker="cl_Boots=0" ease="linear" interpolation="linear">
                 <keyframe time="0" scaley="1.2" />
@@ -682,11 +682,11 @@
                 <keyframe time="1" scaley="1.2" />
             </directive>
             <directive type="animation" id="boot_left" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" rotation="2" />
-                <keyframe time="0.25" src="m/blank.png" x="-71" y="809" rotation="2" />
-                <keyframe time="0.5" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" rotation="2" />
-                <keyframe time="0.75" src="m/blank.png" x="-71" y="809" rotation="2" />
-                <keyframe time="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" rotation="2" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" alpha="100" rotation="2" />
+                <keyframe time="0.25" x="-71" y="809" alpha="0" rotation="2" />
+                <keyframe time="0.5" x="30" y="1202" alpha="100" rotation="2" />
+                <keyframe time="0.75" x="-71" y="809" alpha="0" rotation="2" />
+                <keyframe time="1" x="30" y="1202" alpha="100" rotation="2" />
             </directive>
             <directive type="animation" id="boot_left" marker="cl_Boots=0" ease="linear" interpolation="linear">
                 <keyframe time="0" scalex="-1" scaley="1.2" />
@@ -694,11 +694,11 @@
                 <keyframe time="1" scalex="-1" scaley="1.2" />
             </directive>
             <directive type="animation" id="boot_left_jump" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="m/blank.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.25" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="59" y="809" rotation="-2" />
-                <keyframe time="0.5" src="m/blank.png" x="-45" y="1202" rotation="-2" />
-                <keyframe time="0.75" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="59" y="809" rotation="-2" />
-                <keyframe time="1" src="m/blank.png" x="-45" y="1202" rotation="-2" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" alpha="0" rotation="-2" />
+                <keyframe time="0.25" x="59" y="809" alpha="100" rotation="-2" />
+                <keyframe time="0.5" x="-45" y="1202" alpha="0" rotation="-2" />
+                <keyframe time="0.75" x="59" y="809" alpha="100" rotation="-2" />
+                <keyframe time="1" x="-45" y="1202" alpha="0" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_left_jump" marker="cl_Boots=0" ease="linear" interpolation="linear">
                 <keyframe time="0" scalex="-1" scaley="1.2" />
