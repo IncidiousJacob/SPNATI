@@ -61,6 +61,11 @@
                 <keyframe time="2" alpha="80" />
             </directive>
         </pose>
+        <pose id="Amused">
+            <sprite id="Amused" src="reskins/edelgard_war_outfit/0-Amused.png" x="0" y="0" />
+            <sprite id="Amused Base" src="reskins/edelgard_war_outfit/Custom/Base/Amused.png" x="0" y="0" />
+            <sprite id="Left - Bare_Amused" src="reskins/edelgard_war_outfit/Custom/Forearms/Left - Bare_Amused.png" x="65" y="370" />
+        </pose>
     </poses>
 
     <pose-sets>
@@ -185,7 +190,7 @@
                     <test expr="~target.position~" value="right" />
                 </tests>
             </pose>
-            <pose stage="0" img="#-Self-Conscious - Right.png" />
+            <pose stage="0-10" img="#-Self-Conscious - Right.png" />
         </set>
         <set id="Serious">
             <pose stage="0-10" img="#-Serious.png" />

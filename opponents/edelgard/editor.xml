@@ -207,6 +207,9 @@
         <response id="1183" opponent="jenetta" opponentId="213" />
         <response id="1187" opponent="megumin" opponentId="869" />
         <response id="1191" opponent="darkness" opponentId="1768" />
+        <response id="1311" opponent="darkness" opponentId="1769" />
+        <response id="1312" opponent="darkness" opponentId="1852" />
+        <response id="1315" opponent="megumin" opponentId="902" />
     </responses>
     <notes>
         <note id="196">A reference to Edelgard's cameo on the Garreg Mach Monastery stage in Super Smash Bros. Ultimate. Palutena has a unique case since Edelgard initially mistakes her for Rhea.</note>
@@ -220,6 +223,7 @@
         <note id="715">\</note>
         <note id="760">Miracle Beans are an item in Fire Emblem: Three Houses which boost a character's Luck stat when consumed.</note>
         <note id="331">Disabled because it places Academy Edelgard at too definite a point FE3H's in the timeline. Will be reimplemented for her War Outfit.</note>
+        <note id="1314">Warlock and Dancer are both unit classes in Fire Emblem: Three Houses. Warlocks are specialists in black magic (all offensive spells that are not dark or light magic). Dancer is a support unit which can give allies an extra turn and can also cast magic.</note>
     </notes>
     <labels>
         <label id="19" label="Stripped romper (0 Fódlans)" folder="Strip Romper" sort="0" />
@@ -1223,24 +1227,30 @@
         <label id="1295" label="" folder="Targeted&gt;Simon" sort="2" />
         <label id="1296" label="Simon Said..." folder="Technical" sort="6" />
         <label id="1297" label="" folder="Targeted&gt;Dunban" sort="0" />
-        <label id="1298" label="" color="9" folder="Responses&gt;Darkness" sort="5" />
-        <label id="1299" label="" color="9" folder="Targeted&gt;Darkness" sort="3" />
-        <label id="1300" label="" color="9" folder="Resonses&gt;Darkness&gt;Academy Phase" sort="0" />
+        <label id="1298" label="" folder="Responses&gt;Darkness" sort="5" />
+        <label id="1299" label="" folder="Targeted&gt;Darkness" sort="3" />
+        <label id="1300" label="" folder="Responses&gt;Darkness&gt;Academy Phase" sort="0" />
         <label id="1301" label="" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
-        <label id="1302" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
-        <label id="1303" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="5" />
-        <label id="1304" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="6" />
-        <label id="1305" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
-        <label id="1306" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
-        <label id="1307" label="" color="9" folder="Responses&gt;Darkness&gt;War Phase" sort="0" />
-        <label id="1308" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
-        <label id="1309" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
-        <label id="1310" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1302" label="" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
+        <label id="1303" label="" folder="Responses&gt;Megumin&gt;War Phase" sort="5" />
+        <label id="1304" label="" folder="Responses&gt;Megumin&gt;Academy Phase" sort="6" />
+        <label id="1305" label="" folder="Responses&gt;Darkness" sort="0" />
+        <label id="1306" label="" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
+        <label id="1307" label="" folder="Responses&gt;Darkness&gt;War Phase" sort="0" />
+        <label id="1308" label="" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
+        <label id="1309" label="" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
+        <label id="1310" label="" folder="Responses&gt;Megumin&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1311" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
+        <label id="1312" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
+        <label id="1313" label="" color="9" folder="Targeted&gt;Darkness" sort="0" />
+        <label id="1314" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase" sort="0" />
+        <label id="1316" label="" color="9" folder="Responses&gt;Megumin" sort="0" />
+        <label id="1315" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-</prefix>
     </prefixes>
-    <nextId>1310</nextId>
+    <nextId>1316</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
@@ -1349,6 +1359,7 @@
         <marker scope="Public" name="darkness_Domination_Hand" />
         <marker scope="Public" name="darkness_DominationPractice_Hand" />
         <marker scope="Public" name="darkness_edelgard_PervFantasy1_Hand" />
+        <marker scope="Public" name="darkness_friend1" />
         <marker scope="Public" name="darkness_MastTalkRoyalty" />
         <marker scope="Public" name="darkness_Nobility_1" />
         <marker scope="Public" name="darkness_Nobility_2" />
@@ -1356,6 +1367,8 @@
         <marker scope="Public" name="darkness_PunishmentAsk1" />
         <marker scope="Public" name="darkness_PunishmentAsk2" />
         <marker scope="Public" name="darkness_PunishmentAsk3" />
+        <marker scope="Public" name="darkness_RareBreed_1" />
+        <marker scope="Public" name="darkness_TakeAHit1" />
         <marker scope="Public" name="darknessWarPhase_darkness_PunishmentAsk3" />
         <marker scope="Public" name="dawn_StrangeCreatures" />
         <marker scope="Public" name="deity_AllDeitiesLost" />
@@ -1682,9 +1695,11 @@
         <marker scope="Public" name="megumin_DressTips_2" />
         <marker scope="Public" name="megumin_DressTips_3" />
         <marker scope="Public" name="megumin_Education1" />
+        <marker scope="Public" name="megumin_Education2" />
         <marker scope="Public" name="megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="megumin_ExplosiveAssistance_2" />
         <marker scope="Public" name="megumin_ExplosiveAssistance_3" />
+        <marker scope="Public" name="megumin_home1" />
         <marker scope="Public" name="meia_EdelgardsFaith" />
         <marker scope="Public" name="meia_EdelgardsFaith_2" />
         <marker scope="Public" name="meia_FemalePartner" />
@@ -1904,6 +1919,7 @@
         <marker scope="Public" name="WarPhase_darkness_Commander3" />
         <marker scope="Public" name="WarPhase_darkness_PunishmentAsk1" />
         <marker scope="Public" name="WarPhase_darkness_PunishmentAsk2" />
+        <marker scope="Public" name="WarPhase_darkness_PunishmentAsk3" />
         <marker scope="Public" name="WarPhase_hilda_Derdriu_1" />
         <marker scope="Public" name="WarPhase_hilda_WarPhase_Selected" />
         <marker scope="Public" name="WarPhase_jenetta_SelfStrip0_1" />
@@ -1914,6 +1930,7 @@
         <marker scope="Public" name="WarPhase_megumin_DressTips_2" />
         <marker scope="Public" name="WarPhase_megumin_DressTips_3" />
         <marker scope="Public" name="WarPhase_megumin_Education1" />
+        <marker scope="Public" name="WarPhase_megumin_Education2" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_2" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_3" />
