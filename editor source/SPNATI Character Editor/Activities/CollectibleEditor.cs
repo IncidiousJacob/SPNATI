@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Xml;
 
 namespace SPNATI_Character_Editor.Activities
 {
@@ -42,6 +43,12 @@ namespace SPNATI_Character_Editor.Activities
 			lstCollectibles.LargeImageList.ColorDepth = ColorDepth.Depth32Bit;
 			lstCollectibles.LargeImageList.Images.Add("???", Properties.Resources.Achievement);
 			table.Context = new CollectibleContext(_character, CharacterContext.Collectible);
+
+			txtHiddenExceptionEvent.TextChanged += HiddenException_TextChanged;
+			txtHiddenExceptionCostumeSet.TextChanged += HiddenException_TextChanged;
+			txtHiddenExceptionCostume.TextChanged += HiddenException_TextChanged;
+
+			hiddenExceptionsGroupBox.Visible = false; // Hide this box by default for cleanliness sake
 		}
 
 		protected override void OnActivate()
@@ -179,6 +186,94 @@ namespace SPNATI_Character_Editor.Activities
 			}
 		}
 
+		private void ApplyHiddenExceptionsVisibility(Collectible collectible) // Show the GroupBox
+		{
+			bool show = collectible != null && collectible.Hidden;
+			hiddenExceptionsGroupBox.Visible = show;
+		}
+
+		private bool _loadingHiddenExceptionsUI;
+
+		private void HiddenException_TextChanged(object sender, EventArgs e)
+		{
+			if (_loadingHiddenExceptionsUI) return;
+
+			var collectible = _selectedItem?.Tag as Collectible;
+			if (collectible == null) return;
+
+			SaveHiddenExceptionsFromUI(collectible);
+		}
+
+		private void SaveHiddenExceptionsFromUI(Collectible collectible)
+		{
+			string eve = txtHiddenExceptionEvent.Text?.Trim(); // Can't call it event, not calling it HEvent
+			string set = txtHiddenExceptionCostumeSet.Text?.Trim(); // Trim to remove whitespace because people will mess this up. Hi Nmasp
+			string costume = txtHiddenExceptionCostume.Text?.Trim();
+
+			bool any = !string.IsNullOrEmpty(eve) || !string.IsNullOrEmpty(set) || !string.IsNullOrEmpty(costume);
+
+			if (collectible.ExtraXml == null)
+				collectible.ExtraXml = new List<XmlElement>();
+
+			var elem = FindHiddenExceptionsElement(collectible);
+
+			if (!any)
+			{
+				// No data, so remove the element entirely
+				if (elem != null)
+					collectible.ExtraXml.Remove(elem);
+				return;
+			}
+
+			// Create the hidden exception element if it doesn't exist
+			if (elem == null)
+			{
+				var doc = new XmlDocument();
+				elem = doc.CreateElement("hidden-exceptions");
+				collectible.ExtraXml.Add(elem);
+			}
+
+			// Update attributes
+			SetOrClearAttribute(elem, "event", eve);
+			SetOrClearAttribute(elem, "costume-set", set);
+			SetOrClearAttribute(elem, "costume", costume);
+		}
+		private XmlElement FindHiddenExceptionsElement(Collectible collectible) // This grab the actual hidden-exceptions element
+		{
+			if (collectible?.ExtraXml == null) return null;
+			return collectible.ExtraXml.FirstOrDefault(x => x != null && x.Name == "hidden-exceptions");
+		}
+
+		private void SetOrClearAttribute(XmlElement elem, string name, string value)
+		{
+			if (string.IsNullOrEmpty(value))
+				elem.RemoveAttribute(name);
+			else
+				elem.SetAttribute(name, value);
+		}
+
+		private void LoadHiddenExceptionsUI(Collectible collectible)
+		{
+			_loadingHiddenExceptionsUI = true;
+			try
+			{
+				txtHiddenExceptionEvent.Text = "";
+				txtHiddenExceptionCostumeSet.Text = "";
+				txtHiddenExceptionCostume.Text = "";
+
+				var elem = FindHiddenExceptionsElement(collectible);
+				if (elem == null) return;
+
+				txtHiddenExceptionEvent.Text = elem.GetAttribute("event");
+				txtHiddenExceptionCostumeSet.Text = elem.GetAttribute("costume-set");
+				txtHiddenExceptionCostume.Text = elem.GetAttribute("costume");
+			}
+			finally
+			{
+				_loadingHiddenExceptionsUI = false;
+			}
+		}
+
 		private void lstCollectibles_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			if (_selectedItem != null)
@@ -198,6 +293,9 @@ namespace SPNATI_Character_Editor.Activities
 			Collectible collectible = item.Tag as Collectible;
 			collectible.Character = _character;
 			table.Data = collectible;
+
+			ApplyHiddenExceptionsVisibility(collectible); // Open the GroupBox with the hidden exceptions text boxes
+			LoadHiddenExceptionsUI(collectible); // Load the text boxes and proliferate
 
 			lstImages.Items.Clear();
 
@@ -293,6 +391,11 @@ namespace SPNATI_Character_Editor.Activities
             {
 				ToggleClothingVisibility();
 				ToggleCostumeVisibility();
+			}
+			else if (e.PropertyName == "Hidden")
+			{
+				Collectible collectible = _selectedItem.Tag as Collectible;
+				ApplyHiddenExceptionsVisibility(collectible);
 			}
 		}
 

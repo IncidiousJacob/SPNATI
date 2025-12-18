@@ -2033,7 +2033,7 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     var cards = this.opponent.collectibles.map(function (collectible) {
         if (
             (collectible.status && !includedOpponentStatuses[collectible.status]) ||
-            (collectible.hidden && !collectible.isUnlocked())
+            (collectible.isHidden() && !collectible.isUnlocked())
         ) {
             return null;
         } else {
@@ -2397,7 +2397,7 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
             var counts = opponent.collectibles.reduce(function (acc, collectible) {
                 if (
                     (collectible.status && !includedOpponentStatuses[collectible.status]) ||
-                    (collectible.hidden && !collectible.isUnlocked())
+                    (collectible.isHidden() && !collectible.isUnlocked())
                 ) {
                     return acc;
                 }
