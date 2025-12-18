@@ -110,6 +110,13 @@ function Collectible(xmlElem, player) {
     this.text = unescapeHTML(xmlElem.children('text').html());
     this.detailsHidden = xmlElem.children('hide-details').text() === 'true';
     this.hidden = xmlElem.children('hidden').text() === 'true';
+    this.hideExceptions = [];
+    if (xmlElem.children('hidden-exceptions').length > 0) {
+        for (attr of xmlElem.children('hidden-exceptions')[0].attributes) {
+            this.hideExceptions.push({ type: attr.name, name: attr.value });
+        }
+    }
+
     this.counter = parseInt(xmlElem.children('counter').text(), 10) || undefined;
     if (this.counter <= 0) this.counter = undefined;
     
@@ -219,7 +226,7 @@ Collectible.prototype.display = function () {
         offlineIndicator = "[Offline] ";
     }
     
-    if ((!this.detailsHidden && !this.hidden) || this.isUnlocked()) {
+    if ((!this.detailsHidden && !this.isHidden()) || this.isUnlocked()) {
         $collectibleTitle.html(offlineIndicator + this.title);
         $collectibleSubtitle.html(this.subtitle).show();
     } else {
@@ -308,12 +315,26 @@ function collectibleNextImage() {
 }
 
 
+Collectible.prototype.isHidden = function () {
+    return this.hidden &&
+        !this.hideExceptions.some(function(ex) {
+            switch (ex.type) {
+            case 'event':
+                return activeGameEvents.some(ev => ev.id === ex.name);
+            case 'costume-set':
+                return alternateCostumeSets['all'] || alternateCostumeSets[ex.name];
+            case 'costume':
+                return this.player && this.player.getAvailableCostumes().some(c => c.folder === "opponents/reskins/" + ex.name + "/");
+            }
+        }.bind(this));
+}
+
 Collectible.prototype.listElement = function () {
     if (this.status && !includedOpponentStatuses[this.status]) {
         return null;
     }
     
-    if (this.hidden && !this.isUnlocked()) {
+    if (this.isHidden() && !this.isUnlocked()) {
         return null;
     }
     
