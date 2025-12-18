@@ -324,9 +324,9 @@ Collectible.prototype.isHidden = function () {
             case 'costume-set':
                 return alternateCostumeSets['all'] || alternateCostumeSets[ex.name];
             case 'costume':
-                return this.player && this.player.getAvailableCostumes().some(c => c.folder = "opponents/reskins/" + ex.name + "/");
+                return this.player && this.player.getAvailableCostumes().some(c => c.folder === "opponents/reskins/" + ex.name + "/");
             }
-        });
+        }.bind(this));
 }
 
 Collectible.prototype.listElement = function () {
