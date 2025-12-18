@@ -35,14 +35,34 @@ namespace SPNATI_Character_Editor.DataStructures
 			set { Set(value); }
 		}
 
-		[FileSelect(DisplayName = "Image", Description = "Image when viewing the collectible", GroupOrder = 40)]
+		// Should only be accessed by the serializer/deserializer.
+		// Always returns null on get so that the serializer ignores it.
 		[DefaultValue("")]
 		[XmlAttribute("img")]
-		public string Image
+		public string LegacyImage
 		{
-			get { return Get<string>(); }
-			set { Set(value); }
+			get { return null; }
+			set {
+				if (Images == null)
+				{
+					Images = new List<CollectibleImage>();
+				}
+
+				int nAdded = 0;
+				foreach (string img in value.Split(','))
+				{
+					if (!Images.Exists(v => v.Path == img))
+					{
+						Images.Insert(nAdded, new CollectibleImage(img));
+						nAdded += 1;
+					}
+				}
+
+			}
 		}
+
+		[XmlElement("picture")]
+		public List<CollectibleImage> Images;
 
 		[FileSelect(DisplayName = "Thumbnail", Description = "Image when viewing the collectible", GroupOrder = 20)]
 		[DefaultValue("")]
@@ -69,7 +89,7 @@ namespace SPNATI_Character_Editor.DataStructures
 		{
 			get { return Get<string>(); }
 			set { Set(value); }
-		}
+		} 
 
 		[Text(DisplayName = "Text", Description = "Text to display when viewing the collectible", GroupOrder = 50, Multiline = true, RowHeight = 135)]
 		[DefaultValue("")]
@@ -384,6 +404,39 @@ namespace SPNATI_Character_Editor.DataStructures
 		public int CompareTo(IRecord other)
 		{
 			return Name.CompareTo(other.Name);
+		}
+	}
+
+	public class CollectibleImage : BindableObject
+	{
+		public CollectibleImage()
+		{
+			this.Path = "";
+		}
+
+		public CollectibleImage(string path)
+		{
+			this.Path = path;
+		}
+
+		[XmlText]
+		[DefaultValue("")]
+		public string Path
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
+		public override string ToString()
+		{
+			if (!string.IsNullOrEmpty(Path))
+			{
+				return Path;
+			}
+			else
+			{
+				return "<no image set>";
+			}
 		}
 	}
 }

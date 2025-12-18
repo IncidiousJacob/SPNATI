@@ -41,6 +41,7 @@ namespace SPNATI_Character_Editor.Providers
 			Collectible collectible = new Collectible();
 			collectible.Key = key;
 			collectible.Title = key;
+			collectible.Images = new List<CollectibleImage>();
 			if (_character != null)
 			{
 				_character.Collectibles.Add(collectible);
