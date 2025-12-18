@@ -940,7 +940,7 @@
         <label id="1083" label="" folder="Generic&gt;War Phase&gt;War Outfit" sort="8" />
         <label id="1008" label="" folder="Responses&gt;Jura&gt;Academy Phase" sort="3" />
         <label id="1084" label="" folder="Responses&gt;Rosie&gt;Academy Phase&gt;Academy Uniform" sort="3" />
-        <label id="1085" label="War Outfit" folder="Responses&gt;Rosie&gt;War Phase" sort="2" />
+        <label id="1085" label="War Outfit" folder="Responses&gt;Rosie&gt;War Phase" sort="0" />
         <label id="1086" label="Formalities" color="1" folder="Generic&gt;War Phase&gt;War Outfit" sort="14" />
         <label id="1017" label="" folder="Responses&gt;Jura&gt;Academy Phase" sort="37" />
         <label id="1087" label="" folder="Responses&gt;Serena&gt;Academy Phase" sort="38" />
@@ -1261,14 +1261,26 @@
         <label id="1327" label="" color="9" folder="Responses&gt;Megumin" sort="0" />
         <label id="1328" label="" color="9" folder="Responses&gt;Megumin&gt;Academy Phase&gt;Academy Uniform" sort="0" />
         <label id="1329" label="" color="9" folder="Responses&gt;Megumin&gt;War Phase" sort="0" />
-        <label id="1330" label="" color="9" folder="" sort="0" />
+        <label id="1330" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
         <label id="1331" label="" color="9" folder="Responses&gt;Darkness&gt;Academy Phase&gt;Academy Uniform" sort="0" />
         <label id="1332" label="" color="9" folder="Responses&gt;Darkness" sort="0" />
+        <label id="1333" label="" folder="Responses&gt;Rosie&gt;War Phase" sort="0" />
+        <label id="1334" label="" folder="Responses&gt;Rosie" sort="0" />
+        <label id="1335" label="" folder="Responses&gt;Rosie" sort="0" />
+        <label id="1336" label="" folder="Responses&gt;Meia&gt;War Phase" sort="0" />
+        <label id="1337" label="" folder="Responses&gt;Meia&gt;War Phase" sort="0" />
+        <label id="1338" label="" folder="Responses&gt;Meia&gt;War Phase" sort="0" />
+        <label id="1339" label="" folder="Responses&gt;Meia&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1340" label="" folder="Responses&gt;Jura&gt;WarPhase" sort="0" />
+        <label id="1341" label="" folder="Responses&gt;Jura&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1342" label="" folder="Responses&gt;Jura&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1343" label="" folder="Responses&gt;Meia&gt;Academy Phase&gt;Snowfall Future" sort="0" />
+        <label id="1344" label="" folder="Responses&gt;Jura&gt;WarPhase" sort="0" />
     </labels>
     <prefixes>
         <prefix>#-</prefix>
     </prefixes>
-    <nextId>1332</nextId>
+    <nextId>1344</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="ABetterAngle" />
@@ -1806,11 +1818,14 @@
         <marker scope="Public" name="ringo_School_2" />
         <marker scope="Public" name="Rivals" />
         <marker scope="Public" name="rosa_SchoolUniformFilter_b" />
+        <marker scope="Public" name="rosie_Claude" />
+        <marker scope="Public" name="rosie_Emperor" />
         <marker scope="Public" name="rosie_Leadership" />
         <marker scope="Public" name="rosie_Leadership_War" />
         <marker scope="Public" name="rosie_RedCape" />
         <marker scope="Public" name="rosie_RedCape_War" />
         <marker scope="Public" name="rosie_RedCape2" />
+        <marker scope="Public" name="rosie_Time" />
         <marker scope="Public" name="rosie_warOutfit_RedCape" />
         <marker scope="Public" name="royalty_LostHand" />
         <marker scope="Public" name="sakura_Headless" />
@@ -1854,8 +1869,12 @@
         <marker scope="Public" name="snowfallFuture_Gifts_2" />
         <marker scope="Public" name="snowfallFuture_GotMat" />
         <marker scope="Public" name="snowfallFuture_jenetta_SelfStrip0_1" />
+        <marker scope="Public" name="snowfallFuture_jura_ChurchPermission" />
+        <marker scope="Public" name="snowfallFuture_jura_Monk" />
         <marker scope="Public" name="snowfallFuture_megumin_DressTips_2" />
         <marker scope="Public" name="snowfallFuture_megumin_DressTips_3" />
+        <marker scope="Public" name="snowfallFuture_meia_Christmas" />
+        <marker scope="Public" name="snowfallFuture_meia_EdelgardsPresence" />
         <marker scope="Public" name="snowfallFuture_rosie_RedCape" />
         <marker scope="Public" name="Solitude" />
         <marker scope="Public" name="SpecialWeapons" />
@@ -1964,6 +1983,8 @@
         <marker scope="Public" name="WarPhase_hilda_WarPhase_Selected" />
         <marker scope="Public" name="WarPhase_jenetta_SelfStrip0_1" />
         <marker scope="Public" name="WarPhase_jenetta_SelfStrip0_2" />
+        <marker scope="Public" name="WarPhase_jura_Emperor" />
+        <marker scope="Public" name="WarPhase_jura_WarPath1" />
         <marker scope="Public" name="WarPhase_leonie_Selected" />
         <marker scope="Public" name="WarPhase_lysithea_Selected" />
         <marker scope="Public" name="WarPhase_megumin_DressTips_1" />
@@ -1975,6 +1996,11 @@
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_1" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_2" />
         <marker scope="Public" name="WarPhase_megumin_ExplosiveAssistance_3" />
+        <marker scope="Public" name="WarPhase_meia_Empress1" />
+        <marker scope="Public" name="WarPhase_meia_Expans" />
+        <marker scope="Public" name="WarPhase_meia_Expansion" />
+        <marker scope="Public" name="WarPhase_meia_Expansion1" />
+        <marker scope="Public" name="WarPhase_meia_MotiveForWar1" />
         <marker scope="Public" name="WarPhase_petra_Selected" />
         <marker scope="Public" name="warPhase_ringo_Royalty" />
         <marker scope="Public" name="WarPhase_ringo_Royalty" />
