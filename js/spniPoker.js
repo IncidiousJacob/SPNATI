@@ -118,29 +118,15 @@ Hand.prototype.clone = function() {
  ************************************************************/
 
 function Deck() {
-    var cards = [];
+    const cards = [];
 
-    for (var i = 0; i < 4; i++) {
-        for (var j = 2; j <= 14; j++) {
+    for (let i = 0; i < 4; i++) {
+        for (let j = 2; j <= 14; j++) {
             cards.push(new Card(i, j));
         }
     }
 
-    /* Fisher-Yates shuffling algorithm.  At step i, cards 0 through i -
-     * 1 of the shuffled deck have already been selected, while cards i
-     * through cards.length - 1 have not.  We select a card uniformly
-     * randomly from the unselected cards.  It becomes card i, and
-     * whatever card was stored at index i gets tossed into the set of
-     * unselected cards.
-     */
-    this.shuffle = function() {
-        for (var i = 0; i < cards.length - 1; i++) {
-            swapIndex = getRandomNumber(i, cards.length);
-            var c = cards[i];
-            cards[i] = cards[swapIndex];
-            cards[swapIndex] = c;
-        }
-    }
+    this.shuffle = () => cards.shuffle();
 
     /* The maximum number of cards we deal in a round is 50.  This
      * happens when there are five active players and they all exchange
@@ -152,12 +138,12 @@ function Deck() {
     }
 
     this.rigFor = function(player) {
-        var rigSuit = getRandomNumber(0, 4);
-        for (var n = 0; n < CARDS_PER_HAND; n++) {
-            var i = cards.length - 1 - (player * CARDS_PER_HAND + n);
-            for (var j = 0; j < cards.length; j++) {
+        const rigSuit = getRandomNumber(0, 4);
+        for (let n = 0; n < CARDS_PER_HAND; n++) {
+            const i = cards.length - 1 - (player * CARDS_PER_HAND + n);
+            for (let j = 0; j < cards.length; j++) {
                 if (cards[j].suit == rigSuit && cards[j].rank == 14 - n && i != j) {
-                    var c = cards[i]; cards[i] = cards[j]; cards[j] = c;
+                    const c = cards[i]; cards[i] = cards[j]; cards[j] = c;
                 }
             }
         }

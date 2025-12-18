@@ -571,7 +571,7 @@
 
         <trigger id="bad_hand">
             <case stage="0-7">
-                <condition count="0" notSaidMarker="sausage_fest" />
+                <condition role="self" notSaidMarker="sausage_fest" />
                 <condition count="5" gender="male" />
                 <state img="#-angry.png" marker="sausage_fest">I don't just gotta do this without Alexis, I gotta do it with a bunch of guys as well?!</state>
                 <state img="#-angry.png" marker="sausage_fest">Hey, where's all the girls? I gotta play Strip Poker, and I don't even get to look at any boobies?</state>
@@ -700,7 +700,6 @@
                 <state img="#-shocked.png">How the crap can one woman destroy a planet all on her own?</state>
             </case>
             <case stage="0-7" id="53">
-                <condition count="0" notSaidMarker="killing" />
                 <condition role="other" character="revy" sayingMarker="killing" />
                 <condition role="other" character="megumin" sayingMarker="megumin_mass_murder" />
                 <state img="#-confident.png" marker="revy_hurricane">If they think you're bad, wait until they get a taste of my Ojama Delta Hurricane. The last thing they'll see is a bunch of mutants flexing their butts.</state>
@@ -1512,7 +1511,7 @@
                 <state img="#-thinking.png">I didn't even know they made card games other than Duel Monsters...  No matter! I'll still win anyways.</state>
             </case>
             <case stage="0">
-                <condition count="0" notSaidMarker="blue_disk" />
+                <condition role="self" notSaidMarker="blue_disk" />
                 <state img="#-smug.png" marker="blue_disk">Wondering why my Duel Disk is blue? I got this in the hidden 4th season that never aired in America.</state>
                 <state img="#-smug.png" marker="blue_disk">I got this swanky blue disk in the unaired 4th season, available now on Crunchyroll.</state>
                 <state img="#-smug.png" marker="blue_disk">You thought my Duel Disk was supposed to be silver, right? Clearly you've never watched the fourth season that you couldn't watch because it never aired in America.</state>
@@ -2845,7 +2844,7 @@
             </case>
             <case stage="0-9">
                 <condition filter="blonde" role="target" stage="0" />
-                <condition count="0" notSaidMarker="alexis" />
+                <condition role="self" notSaidMarker="alexis" />
                 <test expr="~target.tag.long_hair~" value="true" />
                 <state img="#-horny.png" marker="alexis">Who's this lovely lady? Blonde, long hair, totally after my own heart.</state>
                 <state img="#-horny.png" marker="alexis">Hey, ~name~, you look a lot like the cutest girl I know, Alexis Rhodes.</state>

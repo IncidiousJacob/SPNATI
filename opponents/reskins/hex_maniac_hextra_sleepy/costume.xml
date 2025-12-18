@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>hex_maniac_hextra_sleepy</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="3" to="3">assisted_strip</tag>
+        <tag from="0" to="2">choker</tag>
+        <tag remove="true">lingerie</tag>
+        <tag>sleepover_skin</tag>
+        <tag>sleepwear</tag>
+        <tag remove="true">sweater</tag>
+    </tags>
+    <layers>6</layers>
+    <folder>opponents/reskins/hex_maniac_hextra_sleepy/</folder>
+    <folder stage="5">opponents/hex_maniac/</folder>
+    <wardrobe>
+        <clothing name="underwear" generic="underwear" position="lower" type="important" />
+        <clothing name="tanktop" generic="shirt" position="upper" type="major" />
+        <clothing name="pants" generic="pants" position="lower" type="major" plural="true" />
+        <clothing name="choker" generic="collar" position="neck" type="extra" />
+        <clothing name="hoodie" generic="" position="upper" type="major" />
+        <clothing name="eye mask" generic="mask" position="head" type="extra" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/0-Stripping.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scaley="1" />
+                <keyframe time="0.2" scaley="1" />
+                <keyframe time="0.32" scaley="0.98" />
+                <keyframe time="0.39" scaley="1.02" />
+                <keyframe time="0.51" scaley="0.99" />
+                <keyframe time="0.58" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/0-Stripping.png" />
+                <keyframe time="0.39" src="reskins/hex_maniac_hextra_sleepy/0-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="0-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/0-Stripping_Neg.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scaley="1" />
+                <keyframe time="0.12" scaley="0.98" />
+                <keyframe time="0.19" scaley="1.02" />
+                <keyframe time="0.31" scaley="0.99" />
+                <keyframe time="0.38" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/0-Stripping_Neg.png" />
+                <keyframe time="0.19" src="reskins/hex_maniac_hextra_sleepy/0-Stripping2_Neg.png" />
+            </directive>
+        </pose>
+        <pose id="1-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/1-Stripping.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scaley="1" />
+                <keyframe time="0.2" scaley="1" />
+                <keyframe time="0.32" scaley="1.02" />
+                <keyframe time="0.44" scaley="0.98" />
+                <keyframe time="0.53" scaley="1.01" />
+                <keyframe time="0.68" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/1-Stripping.png" />
+                <keyframe time="0.39" src="reskins/hex_maniac_hextra_sleepy/1-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="1-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/1-Stripping_Neg.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" scaley="1" />
+                <keyframe time="0.12" scaley="1.02" />
+                <keyframe time="0.24" scaley="0.98" />
+                <keyframe time="0.33" scaley="1.01" />
+                <keyframe time="0.48" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/1-Stripping_Neg.png" />
+                <keyframe time="0.19" src="reskins/hex_maniac_hextra_sleepy/1-Stripping2_Neg.png" />
+            </directive>
+        </pose>
+        <pose id="2-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/2-Stripping.png" x="0" y="0" />
+            <sprite id="HaunterNeutral" src="reskins/hex_maniac_hextra_sleepy/HaunterNeutral.png" x="0" y="800" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="Haunter-hand2" parent="HaunterNeutral" src="reskins/hex_maniac_hextra_sleepy/Haunter-hand2.png" x="60" y="522" />
+            <sprite id="Haunter-hand2(copy)" parent="HaunterNeutral" src="reskins/hex_maniac_hextra_sleepy/Haunter-hand2.png" x="500" y="522" scalex="-1" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/2-Stripping.png" />
+                <keyframe time="0.75" src="reskins/hex_maniac_hextra_sleepy/3-Concern.png" />
+                <keyframe time="1.08" src="reskins/hex_maniac_hextra_sleepy/3-Neutral.png" />
+            </directive>
+            <directive type="animation" id="HaunterNeutral" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="800" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.56" alpha="100" />
+                <keyframe time="0.75" y="0" scalex="0.75" scaley="0.75" />
+                <keyframe time="1" y="-400" scalex="1" scaley="1" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="2-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_sleepy/2-Stripping_Neg.png" x="0" y="0" />
+            <sprite id="HaunterNeutral" delay="0.3" src="reskins/hex_maniac_hextra_sleepy/HaunterNeutral.png" x="0" y="800" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="Haunter-hand2" parent="HaunterNeutral" src="reskins/hex_maniac_hextra_sleepy/Haunter-hand2.png" x="60" y="522" />
+            <sprite id="Haunter-hand2(copy)" parent="HaunterNeutral" src="reskins/hex_maniac_hextra_sleepy/Haunter-hand2.png" x="500" y="522" scalex="-1" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/2-Stripping_Neg.png" />
+                <keyframe time="1.05" src="reskins/hex_maniac_hextra_sleepy/3-Concern.png" />
+                <keyframe time="1.48" src="reskins/hex_maniac_hextra_sleepy/3-Squinty-euh.png" />
+            </directive>
+            <directive type="animation" id="HaunterNeutral" delay="0.3" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="800" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.56" alpha="100" />
+                <keyframe time="0.7499999" y="0" scalex="0.75" scaley="0.75" />
+                <keyframe time="0.9999999" y="-400" scalex="1" scaley="1" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="3-stripping">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_sleepy/3-Stripping.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/3-Stripping.png" />
+                <keyframe time="0.5" src="reskins/hex_maniac_hextra_sleepy/3-Stripping2.png" />
+                <keyframe time="0.65" src="reskins/hex_maniac_hextra_sleepy/3-Stripping 3.png" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="spline">
+                <keyframe time="0" scaley="1" />
+                <keyframe time="0.38" scaley="1.02" />
+                <keyframe time="0.65" scaley="0.8" />
+                <keyframe time="0.95" scaley="1.02" />
+                <keyframe time="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="4-stripping">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_sleepy/4-Stripping.png" x="0" y="0" scaley="1" />
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.54" x="0" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="spline">
+                <keyframe time="0" y="0" scaley="1" />
+                <keyframe time="0.38" y="0" scaley="1" />
+                <keyframe time="0.54" y="66" scaley="0.9" />
+                <keyframe time="0.62" y="-66" scaley="1.1" />
+                <keyframe time="0.69" y="0" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/4-Stripping.png" />
+                <keyframe time="0.62" src="reskins/hex_maniac_hextra_sleepy/4-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="4-stripping_Neg">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_sleepy/4-Stripping_Neg.png" x="0" y="0" scaley="1" />
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" />
+                <keyframe time="0.54" x="0" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="spline">
+                <keyframe time="0" y="0" scaley="1" />
+                <keyframe time="0.38" y="0" scaley="1" />
+                <keyframe time="0.54" y="66" scaley="0.9" />
+                <keyframe time="0.62" y="-66" scaley="1.1" />
+                <keyframe time="0.69" y="0" scaley="1" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/4-Stripping_Neg.png" />
+                <keyframe time="0.62" src="reskins/hex_maniac_hextra_sleepy/4-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="3-stripping_Neg">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_sleepy/3-Stripping.png" x="0" y="0" scaley="1" pivoty="98%" />
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_sleepy/3-Stripping.png" />
+                <keyframe time="0.5" src="reskins/hex_maniac_hextra_sleepy/3-Stripping2.png" />
+                <keyframe time="0.65" src="reskins/hex_maniac_hextra_sleepy/3-Stripping 3.png" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="spline">
+                <keyframe time="0" scaley="1" />
+                <keyframe time="0.38" scaley="1.02" />
+                <keyframe time="0.65" scaley="0.8" />
+                <keyframe time="0.95" scaley="1.02" />
+                <keyframe time="1" scaley="1" />
+            </directive>
+        </pose>
+        <pose id="3-postStrip">
+            <sprite id="Concern" z="2" src="reskins/hex_maniac_hextra_sleepy/3-Concern.png" x="0" y="0" />
+        </pose>
+        <pose id="3-postStrip_Pos">
+            <sprite id="Concern" z="2" src="reskins/hex_maniac_hextra_sleepy/3-Awkward.png" x="0" y="0" />
+        </pose>
+        <pose id="Concern2">
+            <sprite id="Squinty-euh" src="reskins/hex_maniac_hextra_sleepy/#-Squinty-euh.png" x="0" y="0" />
+            <sprite id="Neutral" src="reskins/hex_maniac_hextra_sleepy/#-Neutral.png" x="14" y="20" alpha="100" rotation="3.8" cliptop="295" clipbottom="1051" />
+        </pose>
+    </poses>
+
+</costume>

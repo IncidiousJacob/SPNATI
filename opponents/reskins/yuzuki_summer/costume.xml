@@ -3,23 +3,22 @@
     <id>yuzuki_summer</id>
     <tags>
         <tag>alternative_skin</tag>
+        <tag remove="true">hair_bun</tag>
         <tag remove="true">high_heels</tag>
         <tag from="0" to="2">jewelry</tag>
         <tag remove="true">long_hair</tag>
         <tag>medium_hair</tag>
         <tag remove="true">nipple_slip</tag>
-        <tag>no_bra</tag>
-        <tag>no_underwear</tag>
         <tag remove="true">pantyhose</tag>
+        <tag>ponytail</tag>
         <tag remove="true">pubic_hair</tag>
         <tag>scantily-clad</tag>
         <tag>scarred</tag>
         <tag>shaved</tag>
         <tag>summer_skin</tag>
         <tag remove="true">sweater</tag>
-        <tag>swimwear</tag>
+        <tag from="0" to="5">swimwear</tag>
         <tag from="0" to="5">thong</tag>
-        <tag>topknot</tag>
     </tags>
     <layers>5</layers>
     <folder>opponents/reskins/yuzuki_summer/</folder>
@@ -37,7 +36,7 @@
             <sprite id="gentle" src="reskins/yuzuki_summer/0-shy.png" x="0" y="0" />
             <sprite id="caution" src="yuzuki/temp/0-chibi_warning.png" x="0" y="-409" scalex="0.6" scaley="0.6" />
         </pose>
-        <pose id="0-aura" z-index="5">
+        <pose id="0-aura">
             <sprite id="embarrassed" src="reskins/yuzuki_summer/0-calm.png" x="0" y="0" alpha="100" />
             <sprite id="auracamera" delay="0.5" z="1" src="yuzuki/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
             <sprite id="cameraflash" delay="2.12" src="yuzuki/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
@@ -184,6 +183,10 @@
                 <keyframe time="0" alpha="0" />
                 <keyframe time="2.62" alpha="100" />
             </directive>
+        </pose>
+        <pose id="8-__gameover_WIZ_shavedYuzuki">
+            <sprite id="zz_wiz_gameend" src="yuzuki/extra/8-zz_wiz_gameend.png" x="0" y="0" />
+            <sprite id="zz_wiz_gameend_alt" z="3" src="yuzuki/extra/8-zz_wiz_gameend_alt.png" x="-120" y="657" />
         </pose>
     </poses>
 

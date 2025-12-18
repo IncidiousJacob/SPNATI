@@ -945,7 +945,20 @@ OpponentDisplay.prototype.drawPose = function (pose) {
         }
 
         if (typeof(this.pose) === 'string') {
-            executeRemove(this.clearSimplePose.bind(this));
+            // On Gecko we delay to prevent flicker (see above)
+            // Guard so we don't hide after switching back to string
+            if (navigator.userAgent.search(/Gecko\/\S+/i) >= 0) {
+                const self = this;
+                executeRemove(function () {
+                    // Only hide the <img> if we're STILL on a custom pose at execution time
+                    if (self.pose instanceof Pose) {
+                        self.clearSimplePose();
+                    }
+                });
+            } else {
+                // Non-Gecko: hide immediately
+                this.clearSimplePose();
+            }
         } else if (this.pose instanceof Pose) {
             var prevPose = this.pose;
             this.cleanupCustomPose();
@@ -1658,7 +1671,7 @@ OpponentSelectionCard.prototype.updateHighlight = function () {
         }
     } else {
         if (this.opponent.highlightStatus) {
-            this.mainElem.dataset.highlight = this.opponent.highlistStatus;
+            this.mainElem.dataset.highlight = this.opponent.highlightStatus;
         } else {
             delete this.mainElem.dataset.highlight;
         }

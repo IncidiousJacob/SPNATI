@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>edelgard_war_outfit</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="4">armor</tag>
+        <tag>breasts_larger_clothed</tag>
+        <tag from="0" to="3">crown</tag>
+        <tag from="0" to="3">fake_horns</tag>
+        <tag from="0" to="3">hair_bun</tag>
+        <tag from="5" to="7">lingerie</tag>
+        <tag remove="true">lonely</tag>
+        <tag from="4" to="10">long_hair</tag>
+        <tag from="0" to="4">medium_breasts</tag>
+        <tag remove="true">princess</tag>
+        <tag from="7" to="10">scarred</tag>
+        <tag remove="true">school_uniform</tag>
+        <tag from="0" to="3">short_hair</tag>
+        <tag from="5" to="10">small_breasts</tag>
+        <tag remove="true">student</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/edelgard_war_outfit/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="corset" generic="bra" position="upper" type="important" />
+        <clothing name="tights" generic="leggings" position="lower" type="major" plural="true" />
+        <clothing name="dress" generic="dress" position="both" type="major" />
+        <clothing name="crown" generic="" position="head" type="extra" />
+        <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
+        <clothing name="gauntlets" generic="gloves" position="hands" type="extra" plural="true" />
+        <clothing name="cape" generic="cape" position="other" type="extra" />
+    </wardrobe>
+
+    <poses>
+        <pose id="Crest of Seiros">
+            <sprite id="Strip - Positive" src="reskins/edelgard_war_outfit/0-Lecturing.png" x="0" y="0" />
+            <sprite id="Crest of Seiros Red" src="edelgard/PoseMaker/Crest of Seiros Red.png" x="-137" y="550" scalex="0" scaley="0" alpha="90" />
+            <sprite id="Crest of Seiros White" src="edelgard/PoseMaker/Crest of Seiros White.png" x="-137" y="550" scalex="0" scaley="0" />
+            <sprite id="Crest of Seiros White1" src="edelgard/PoseMaker/Crest of Seiros White.png" x="-137" y="550" scalex="0" scaley="0" alpha="80" />
+            <directive type="animation" id="Crest of Seiros Red" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-137" y="550" scalex="0" scaley="0" alpha="90" />
+                <keyframe time="0.75" y="450" scalex="1" scaley="1" />
+                <keyframe time="2" alpha="90" />
+            </directive>
+            <directive type="animation" id="Crest of Seiros White" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-137" y="550" scalex="0" scaley="0" />
+                <keyframe time="0.75" y="450" scalex="1" scaley="1" />
+                <keyframe time="1.25" scalex="1.5" scaley="1.5" />
+            </directive>
+            <directive type="animation" id="Crest of Seiros White" delay="0.75" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Crest of Seiros White1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-137" y="550" scalex="0" scaley="0" />
+                <keyframe time="0.75" x="-137" y="450" scalex="1" scaley="1" />
+            </directive>
+            <directive type="animation" id="Crest of Seiros White1" loop="true" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="80" />
+                <keyframe time="1.5" alpha="100" />
+                <keyframe time="2" alpha="80" />
+            </directive>
+        </pose>
+        <pose id="Amused">
+            <sprite id="Amused" src="reskins/edelgard_war_outfit/0-Amused.png" x="0" y="0" />
+            <sprite id="Amused Base" src="reskins/edelgard_war_outfit/Custom/Base/Amused.png" x="0" y="0" />
+            <sprite id="Left - Bare_Amused" src="reskins/edelgard_war_outfit/Custom/Forearms/Left - Bare_Amused.png" x="65" y="370" />
+        </pose>
+    </poses>
+
+    <pose-sets>
+        <set id="Amused">
+            <pose stage="0-10" img="#-Amused.png" />
+        </set>
+        <set id="Angry">
+            <pose stage="0-10" img="#-Angry.png" />
+        </set>
+        <set id="Annoyed">
+            <pose stage="0-10" img="#-Annoyed.png" />
+        </set>
+        <set id="Anxious">
+            <pose stage="0-10" img="#-Anxious.png" />
+        </set>
+        <set id="Aroused">
+            <pose stage="0-10" img="#-Aroused - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Aroused - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Aroused - Right.png" />
+        </set>
+        <set id="Awkward">
+            <pose stage="0-10" img="#-Awkward - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Awkward - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Awkward - Right.png" />
+        </set>
+        <set id="Butt">
+            <pose stage="8" img="#-Butt.png" />
+        </set>
+        <set id="Confident">
+            <pose stage="0-10" img="#-Confident.png" />
+        </set>
+        <set id="Curious">
+            <pose stage="0-10" img="#-Curious.png" />
+        </set>
+        <set id="Dazzled">
+            <pose stage="0" img="#-Happy.png" />
+        </set>
+        <set id="Explaining">
+            <pose stage="0-10" img="#-Explaining.png" />
+        </set>
+        <set id="Finishing">
+            <pose stage="9" img="#-Finishing.png" />
+        </set>
+        <set id="Flustered">
+            <pose stage="0-10" img="#-Flustered.png" />
+        </set>
+        <set id="Frustrated">
+            <pose stage="0-10" img="#-Frustrated.png" />
+        </set>
+        <set id="Happy">
+            <pose stage="0-10" img="#-Happy.png" />
+        </set>
+        <set id="Heavy Masturbation 1">
+            <pose stage="9" img="#-Heavy Masturbation 1.png" />
+        </set>
+        <set id="Heavy Masturbation 2">
+            <pose stage="9" img="#-Heavy Masturbation 2.png" />
+        </set>
+        <set id="Heavy Masturbation 3">
+            <pose stage="9" img="#-Heavy Masturbation 3.png" />
+        </set>
+        <set id="Heavy Masturbation 4">
+            <pose stage="9" img="#-Heavy Masturbation 4.png" />
+        </set>
+        <set id="Heavy Masturbation 5">
+            <pose stage="9" img="#-Heavy Masturbation 5.png" />
+        </set>
+        <set id="Impassioned - Negative">
+            <pose stage="0-8" img="#-Impassioned - Negative.png" />
+        </set>
+        <set id="Impassioned - Positive">
+            <pose stage="0-8" img="#-Impassioned - Positive.png" />
+        </set>
+        <set id="Impression - Claude">
+            <pose stage="6" img="#-Impression - Claude.png" />
+        </set>
+        <set id="Impression - Dimitri">
+            <pose stage="6" img="#-Impression - Dimitri.png" />
+        </set>
+        <set id="Impression - Ferdinand">
+            <pose stage="6" img="#-Impression - Ferdinand.png" />
+        </set>
+        <set id="Impression - Hubert">
+            <pose stage="6" img="#-Impression - Hubert.png" />
+        </set>
+        <set id="Lecturing">
+            <pose stage="0-10" img="#-Lecturing.png" />
+        </set>
+        <set id="Neutral">
+            <pose stage="0-10" img="#-Neutral.png" />
+        </set>
+        <set id="Mat">
+            <pose stage="10" img="#-Self-Conscious - Right.png" />
+        </set>
+        <set id="Sad">
+            <pose stage="0-8" img="#-Sad.png" />
+        </set>
+        <set id="Self-Conscious">
+            <pose stage="0-10" img="#-Self-Conscious - Left.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="left" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Self-Conscious - Right.png" priority="1">
+                <tests>
+                    <test expr="~target.position~" value="right" />
+                </tests>
+            </pose>
+            <pose stage="0-10" img="#-Self-Conscious - Right.png" />
+        </set>
+        <set id="Serious">
+            <pose stage="0-10" img="#-Serious.png" />
+        </set>
+        <set id="Shocked">
+            <pose stage="0-10" img="#-Shocked.png" />
+        </set>
+        <set id="Smug">
+            <pose stage="0-9" img="#-Smug.png" />
+        </set>
+        <set id="Strip - Negative">
+            <pose stage="0-7" img="#-Strip - Negative.png" />
+        </set>
+        <set id="Strip - Positive">
+            <pose stage="0-7" img="#-Strip - Positive.png" />
+        </set>
+        <set id="Strip - Variable">
+            <pose stage="0-7" img="#-Strip - Negative.png" priority="1">
+                <tests>
+                    <test expr="~self.revplace~" cmp="&lt;" value="3" />
+                </tests>
+            </pose>
+            <pose stage="0-7" img="#-Strip - Positive.png">
+                <tests>
+                    <test expr="~self.revplace~" cmp="&gt;=" value="3" />
+                </tests>
+            </pose>
+        </set>
+        <set id="Surprised">
+            <pose stage="0-10" img="#-Surprised.png" />
+        </set>
+        <set id="Thinking">
+            <pose stage="0-10" img="#-Thinking.png" />
+        </set>
+        <set id="Trauma">
+            <pose stage="0-10" img="#-Trauma.png" />
+        </set>
+    </pose-sets>
+</costume>

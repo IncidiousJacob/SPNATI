@@ -246,18 +246,21 @@
         <time>night</time>
         <privacy>public</privacy>
     </background>
-
-    <background id="mansion">
-        <name>Mansion</name>
-        <src>img/backgrounds/mansion.png</src>
-        <author>Anymouse-68</author>
+    
+    <background id="cyber lounge">
+        <name>Cyber Lounge</name>
+        <term>Lounge</term>
+        <preposition>at</preposition>
+        <src>img/backgrounds/cyber_lounge.png</src>
+        <src repeat="false">img/backgrounds/cyber_lounge_chairs.png</src>
+        <author>MyMainAccIsANord</author>
         <location>indoors</location>
         <surface>floor</surface>
-        <category>home</category>
         <time>night</time>
+        <category>bar</category>
         <privacy>private</privacy>
-	<moon>full</moon>
-    </background>
+        <filter>brightness(0.88) saturate(1.05) hue-rotate(-8deg)</filter>        
+    </background>    
 
     <background id="haunted forest">
         <name>Haunted Forest</name>
@@ -283,6 +286,18 @@
         <surface>ground</surface>
         <privacy>public</privacy>
         <time>night</time>
+    </background>
+    
+    <background id="mansion">
+        <name>Mansion</name>
+        <src>img/backgrounds/mansion.png</src>
+        <author>Anymouse-68</author>
+        <location>indoors</location>
+        <surface>floor</surface>
+        <category>home</category>
+        <time>night</time>
+        <privacy>private</privacy>
+	<moon>full</moon>
     </background>
 
     <background id="roof">

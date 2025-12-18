@@ -1,0 +1,29 @@
+.dialogue .haunter[data-character="hex_maniac"] {
+  /*Haunter talking*/
+  color: #CA0CDA;
+  text-shadow: 0 0 2px Purple;
+}
+
+.dialogue .Whisper[data-character="hex_maniac"] {
+  /*Whispering*/
+  font-size: 65%;
+  color: #3A3A3A;
+}
+
+.dialogue .TL[data-character="hex_maniac"] {
+  /*Translation*/
+  display: none;
+}
+
+.dialogue-bubble[data-character="hex_maniac"][data-dialogue-styles~="ramble"]{
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 38%,
+        transparent 99%
+      ); /* For WebKit browsers */
+      mask-image: linear-gradient(
+        to bottom,
+        black 38%,
+        transparent 99%
+      ); /* Standard property */
+}

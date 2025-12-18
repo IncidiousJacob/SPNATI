@@ -18,4 +18,17 @@
         <wearable>true</wearable>
         <clothing img="opponents/yuzuki/temp/yuzuki_panties.png" name="panties" generic="underwear" position="lower" type="important" plural="true" />
     </collectible>
+    <collectible id="yuzuki_halloween" status="online" img="opponents/yuzuki/extra/halloweenicon.png" thumbnail="opponents/yuzuki/extra/halloweenicon.png">
+        <title>Yuzuki Nurse Outfit</title>
+        <text>Yuzuki made her debut in Halloween 2024. Now, please enjoy her Halloween nurse outfit year-round!</text>
+        <unlock>Finish a game with Yuzuki in her Halloween outfit.</unlock>
+        <hidden>true</hidden>
+        <hide-details>true</hide-details>
+        <costume>true</costume>
+        <costume-folder>opponents/reskins/yuzuki_halloween/</costume-folder>
+    </collectible>
+    <collectible id="yuzuki_forfeitgallery" status="unlisted">
+        <title>Yuzuki Forfeit Gallery</title>
+        <unlock>Have Yuzuki lose before both Yumeko and Momo. To increase your odds, put Yumeko on Yuzuki's left, and Momo on Yuzuki's right.</unlock>
+    </collectible>
 </collectibles>

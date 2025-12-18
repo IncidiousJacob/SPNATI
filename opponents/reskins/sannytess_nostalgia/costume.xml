@@ -17,7 +17,7 @@
         <clothing name="pasties" generic="wrappings" position="upper" type="important" plural="true" />
         <clothing name="bra" generic="bra" position="upper" type="major" />
         <clothing name="shirt" generic="shirt" position="upper" type="minor" />
-        <clothing name="skirt" generic="skirt" position="lower" type="important" />
+        <clothing name="skirt" generic="skirt" position="lower" type="major" />
         <clothing name="stockings" generic="socks" position="legs" type="minor" plural="true" />
         <clothing name="shoes" generic="shoes" position="feet" type="minor" plural="true" />
     </wardrobe>
@@ -94,13 +94,15 @@
         <pose id="huh">
             <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-huh.png" x="-159" y="0" />
             <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-huh.png" x="117" y="0" />
-            <directive type="animation" id="s-horni" loop="true" ease="smooth" interpolation="linear">
+            <directive type="animation" id="s-horni" loop="true" ease="linear" interpolation="linear">
                 <keyframe time="0" x="-159" y="0" />
+                <keyframe time="0.5" x="-159" y="0" />
                 <keyframe time="1" x="-159" y="0" />
             </directive>
-            <directive type="animation" id="s-horni" delay="0.5" loop="true" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/sannytess_nostalgia/#-s-huh2.png" />
-                <keyframe time="0.5" src="reskins/sannytess_nostalgia/#-s-huh.png" />
+            <directive type="animation" id="s-horni" loop="true" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/sannytess_nostalgia/#-s-huh.png" />
+                <keyframe time="0.5" src="reskins/sannytess_nostalgia/#-s-huh2.png" />
+                <keyframe time="1" src="reskins/sannytess_nostalgia/#-s-huh.png" />
             </directive>
         </pose>
         <pose id="nervous+smug">
@@ -142,6 +144,42 @@
         <pose id="smug+embarassing">
             <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-smug.png" x="-159" y="0" />
             <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-embarrassing.png" x="211" y="0" />
+        </pose>
+        <pose id="edufuta+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-edufuta.png" x="-110" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-nervous.png" x="202" y="0" />
+        </pose>
+        <pose id="embarassed">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-embarrassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-embarrassed.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassing">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-embarrassing.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-embarrassing.png" x="173" y="0" />
+        </pose>
+        <pose id="happy2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-happy2.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-happy2.png" x="193" y="0" />
+        </pose>
+        <pose id="happy+happy2">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-happy.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-happy2.png" x="193" y="0" />
+        </pose>
+        <pose id="happy2+happy">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-happy2.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-happy.png" x="193" y="0" />
+        </pose>
+        <pose id="nervous+shocked">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-nervous.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-shocked.png" x="117" y="0" />
+        </pose>
+        <pose id="relax+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-relax.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-nervous.png" x="186" y="0" />
+        </pose>
+        <pose id="embarassed+nervous">
+            <sprite id="s-horni" z="1" src="reskins/sannytess_nostalgia/#-s-embarrassed.png" x="-159" y="0" />
+            <sprite id="t-horni" src="reskins/sannytess_nostalgia/#-t-nervous.png" x="186" y="0" />
         </pose>
     </poses>
 

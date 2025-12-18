@@ -191,7 +191,13 @@ Object.defineProperty(Player.prototype, 'hasBirthdayToday', {
     get: function() {
         if ('birthday' in this) {
             const now = new Date();
-            return (this.birthday.month == now.getMonth() + 1 && this.birthday.day == now.getDate());
+            return (this.birthday.month == now.getMonth() + 1
+                    && (this.birthday.day == now.getDate()
+                        /* Special case for Feb 29 - if it's the 28th,
+                         * check if 24h from now is March, i.e. it's
+                         * not a leap year */
+                        || (this.birthday.day == 29 && now.getDate() == 28
+                            && new Date(now.getTime() + 86_400_000).getMonth() == 2)));
         }
         return false;
     },

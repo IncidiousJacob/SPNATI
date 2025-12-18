@@ -1,21 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1535250840000</lastupdate>
-    <enabled>true</enabled>
+    <lastupdate>1764555281570</lastupdate>
     <first>Jenetta</first>
     <last />
     <label>Jenetta</label>
     <pic>0-intro.png</pic>
     <gender>female</gender>
-    <height>5'7"</height>
     <from>Etrian Odyssey</from>
-    <writer>Doorling</writer>
-    <artist>Doorling(Model), BlueKoin(Posing)</artist>
+    <writer>Doorling (Original), Cinnayanny (Rework)</writer>
+    <artist>Doorling (Original), BlueKoin (Posing), Cinnayanny (Rework)</artist>
     <description>An Innkeeper from the city of Iorys, as well as a slightly experienced hunter. She's not exactly 'experienced' in this area, though.</description>
     <layers>7</layers>
-    <has_collectibles>false</has_collectibles>
-    <lines>576</lines>
-    <poses>119</poses>
-    <has_ending>false</has_ending>
-    <release>what number character this was in release order if it has been released</release>
+    <default-costume-name>Iorys Inkeeper</default-costume-name>
+    <alternates>
+        <costume folder="opponents/reskins/jenetta_hunting_hound/" status="unlisted" layers="5">Hunting Hound</costume>
+    </alternates>
+    <lines>848</lines>
+    <poses>149</poses>
 </opponent>

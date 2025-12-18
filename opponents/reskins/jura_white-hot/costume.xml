@@ -188,13 +188,13 @@
         <pose id="0-looking-open">
             <sprite id="talking" src="reskins/jura_white-hot/0-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="323" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="323" rotation="-7" />
             <sprite id="mouthopen" src="reskins/jura_white-hot/mouthopen.png" x="2" y="246" />
         </pose>
         <pose id="0-looking-open_fear">
             <sprite id="talking" src="reskins/jura_white-hot/0-disgusted.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="324" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="324" rotation="-7" />
         </pose>
         <pose id="0-selected">
             <sprite id="vain" src="reskins/jura_white-hot/0-vain.png" x="0" y="0" />
@@ -272,10 +272,12 @@
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="0-toblerone">
-            <sprite id="hug" src="reskins/jura_white-hot/0-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_white-hot/4-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_white-hot/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_white-hot/012hugarms.png" x="8" y="331" scalex="0.91" />
-            <sprite id="toblerone1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="toblerone1" z="1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="hug0" src="reskins/jura_white-hot/hug0.png" x="0" y="105" />
+            <sprite id="hug1" src="reskins/jura_white-hot/hug1.png" x="19" y="1287" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -299,6 +301,18 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-1" />
+            </directive>
+            <directive type="animation" id="hug0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="105" />
+                <keyframe time="0.1" x="-10" />
+                <keyframe time="0.3" x="10" />
+                <keyframe time="0.4" x="0" />
+            </directive>
+            <directive type="animation" id="hug1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="19" y="1287" />
+                <keyframe time="0.1" x="9" />
+                <keyframe time="0.3" x="29" />
+                <keyframe time="0.4" x="19" />
             </directive>
         </pose>
         <pose id="0-treasure_scope">
@@ -393,12 +407,12 @@
             <sprite id="talking" src="reskins/jura_white-hot/1-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_white-hot/mouthopen.png" x="2" y="246" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="323" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="323" rotation="-7" />
         </pose>
         <pose id="1-looking-open_fear">
             <sprite id="talking" src="reskins/jura_white-hot/1-disgusted.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="324" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="324" rotation="-7" />
         </pose>
         <pose id="1-shocked">
             <sprite id="surprised" src="reskins/jura_white-hot/1-surprised.png" x="0" y="0" />
@@ -423,6 +437,10 @@
         <pose id="1-strippedb">
             <sprite id="strip" src="reskins/jura_white-hot/1-stripped.png" x="0" y="0" />
         </pose>
+        <pose id="1-stripshocked">
+            <sprite id="strip" src="reskins/jura_white-hot/1-strip.png" x="0" y="0" />
+            <sprite id="defensive012" src="reskins/jura_white-hot/defensive012.png" x="-6" y="156" rotation="-5" />
+        </pose>
         <pose id="1-suspicious">
             <sprite id="proud" src="reskins/jura_white-hot/1-proud.png" x="0" y="0" />
             <sprite id="suspicious" src="reskins/jura_white-hot/suspicious012.png" x="0" y="153" rotation="1" />
@@ -445,10 +463,12 @@
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="1-toblerone">
-            <sprite id="hug" src="reskins/jura_white-hot/1-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_white-hot/4-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_white-hot/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_white-hot/012hugarms.png" x="8" y="331" scalex="0.91" />
-            <sprite id="toblerone1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="toblerone1" z="1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="hug0" src="reskins/jura_white-hot/hug0.png" x="0" y="105" />
+            <sprite id="hug1" src="reskins/jura_white-hot/hug1.png" x="19" y="1287" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -472,6 +492,18 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-1" />
+            </directive>
+            <directive type="animation" id="hug0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="105" />
+                <keyframe time="0.1" x="-10" />
+                <keyframe time="0.3" x="10" />
+                <keyframe time="0.4" x="0" />
+            </directive>
+            <directive type="animation" id="hug1" ease="linear" interpolation="linear">
+                <keyframe time="0" x="19" y="1287" />
+                <keyframe time="0.1" x="9" />
+                <keyframe time="0.3" x="29" />
+                <keyframe time="0.4" x="19" />
             </directive>
         </pose>
         <pose id="2-angry">
@@ -554,12 +586,12 @@
             <sprite id="talking" src="reskins/jura_white-hot/2-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_white-hot/mouthopen.png" x="2" y="246" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="323" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="323" rotation="-7" />
         </pose>
         <pose id="2-looking-open_fear">
             <sprite id="talking" src="reskins/jura_white-hot/2-disgusted.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="324" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="324" rotation="-7" />
         </pose>
         <pose id="2-shocked">
             <sprite id="surprised" src="reskins/jura_white-hot/2-surprised.png" x="0" y="0" />
@@ -607,10 +639,11 @@
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/btalking+.png" x="315" y="0" />
         </pose>
         <pose id="2-toblerone">
-            <sprite id="hug" src="reskins/jura_white-hot/2-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_white-hot/4-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_white-hot/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_white-hot/012hugarms.png" x="8" y="331" scalex="0.91" />
-            <sprite id="toblerone1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="toblerone1" z="1" src="reskins/jura_white-hot/toblerone012.png" x="-1" y="151" rotation="2" />
+            <sprite id="hug0" src="reskins/jura_white-hot/hug0.png" x="0" y="105" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -634,6 +667,12 @@
                 <keyframe time="0.1" x="-12" />
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-1" />
+            </directive>
+            <directive type="animation" id="hug0" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="105" />
+                <keyframe time="0.1" x="-10" />
+                <keyframe time="0.3" x="10" />
+                <keyframe time="0.4" x="0" />
             </directive>
         </pose>
         <pose id="3-bstripped">
@@ -716,12 +755,12 @@
             <sprite id="talking" src="reskins/jura_white-hot/4-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_white-hot/mouthopen.png" x="2" y="246" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="323" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="323" rotation="-7" />
         </pose>
         <pose id="4-looking-open_fear">
             <sprite id="talking" src="reskins/jura_white-hot/4-disgusted.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="324" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="324" rotation="-7" />
         </pose>
         <pose id="4-shocked">
             <sprite id="surprised" src="reskins/jura_white-hot/4-surprised.png" x="0" y="0" />
@@ -1006,12 +1045,12 @@
             <sprite id="talking" src="reskins/jura_white-hot/6-looking-.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
             <sprite id="mouthopen" src="reskins/jura_white-hot/mouthopen.png" x="2" y="246" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="323" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="323" rotation="-7" />
         </pose>
         <pose id="6-looking-open_fear">
             <sprite id="talking" src="reskins/jura_white-hot/6-disgusted.png" x="0" y="0" />
             <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="302" y="0" />
-            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="302" y="324" rotation="-7" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="303" y="324" rotation="-7" />
         </pose>
         <pose id="6-nagatoro">
             <sprite id="nagatoro" src="reskins/jura_white-hot/6-sexyb.png" x="0" y="0" />
@@ -1363,11 +1402,12 @@
             <sprite id="silentthinking" src="reskins/jura_white-hot/silentthinking.png" x="1" y="843" rotation="-1" />
         </pose>
         <pose id="7-toblerone">
-            <sprite id="hug" src="reskins/jura_white-hot/7-hug.png" x="0" y="0" />
+            <sprite id="hug" src="reskins/jura_white-hot/6-hug.png" x="0" y="0" />
             <sprite id="toblerone" z="1" src="reskins/jura_white-hot/ex-toblerone.png" x="24" y="364" rotation="-305" />
             <sprite id="012hugarms" z="2" src="reskins/jura_white-hot/345678hugarms.png" x="8" y="331" scalex="0.91" />
             <sprite id="toblerone1" src="reskins/jura_white-hot/toblerone.png" x="-2" y="140" rotation="2" />
             <sprite id="bstand" z="-1" src="reskins/jura_white-hot/bstand.png" x="278" y="0" />
+            <sprite id="fluid7" src="reskins/jura_white-hot/fluid7.png" x="15" y="657" rotation="-1" />
             <directive type="animation" id="hug" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" />
                 <keyframe time="0.1" x="-10" />
@@ -1392,13 +1432,20 @@
                 <keyframe time="0.3" x="8" />
                 <keyframe time="0.4" x="-2" />
             </directive>
+            <directive type="animation" id="fluid7" ease="linear" interpolation="linear">
+                <keyframe time="0" x="15" y="657" rotation="-1" />
+                <keyframe time="0.1" x="5" />
+                <keyframe time="0.3" x="25" />
+                <keyframe time="0.4" x="15" />
+            </directive>
         </pose>
         <pose id="8-blank">
             <sprite id="meiasmilemouth" src="reskins/jura_white-hot/meiasmilemouth.png" x="0" y="0" alpha="0" />
         </pose>
-        <pose id="1-stripshocked">
-            <sprite id="strip" src="reskins/jura_white-hot/1-strip.png" x="0" y="0" />
-            <sprite id="defensive012" src="reskins/jura_white-hot/defensive012.png" x="-6" y="156" rotation="-5" />
+        <pose id="0-strip-b_open">
+            <sprite id="talking" src="reskins/jura_white-hot/0-strip-.png" x="0" y="0" />
+            <sprite id="btalking" z="1" src="reskins/jura_white-hot/blooking-.png" x="315" y="0" />
+            <sprite id="bmouthopen" z="1" src="reskins/jura_white-hot/bmouthopen.png" x="316" y="324" rotation="-3" />
         </pose>
     </poses>
 

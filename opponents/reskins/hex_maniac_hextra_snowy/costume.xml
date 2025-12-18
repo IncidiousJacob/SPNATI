@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>hex_maniac_hextra_snowy</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="0">assisted_strip</tag>
+        <tag remove="true">big_butt</tag>
+        <tag>boob_envy</tag>
+        <tag>bottomless_first</tag>
+        <tag>christmas_skin</tag>
+        <tag remove="true">chubby</tag>
+        <tag remove="true">curvy</tag>
+        <tag remove="true">huge_breasts</tag>
+        <tag from="0" to="4">japanese_clothing</tag>
+        <tag remove="true">large_breasts</tag>
+        <tag remove="true">lingerie</tag>
+        <tag>no_bra</tag>
+        <tag>no_underwear</tag>
+        <tag>skinny</tag>
+        <tag>small_breasts</tag>
+        <tag remove="true">sweater</tag>
+    </tags>
+    <layers>6</layers>
+    <folder>opponents/reskins/hex_maniac_hextra_snowy/</folder>
+    <wardrobe>
+        <clothing name="juban" generic="shirt" position="upper" type="major" />
+        <clothing name="furisode" generic="dress" position="both" type="major" />
+        <clothing name="earings" generic="jewelry" position="head" type="extra" />
+        <clothing name="socks" generic="socks" position="feet" type="minor" />
+        <clothing name="obi" generic="belt" position="waist" type="extra" plural="true" />
+        <clothing name="sandals" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="1-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/1-Stripping.png" x="0" y="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/1-Stripping.png" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/1-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="2-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/2-Stripping.png" x="0" y="0" pivotx="48%" pivoty="96%" rotation="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="spline">
+                <keyframe time="0" rotation="0" />
+                <keyframe time="1" rotation="1" />
+                <keyframe time="2" rotation="0" />
+            </directive>
+        </pose>
+        <pose id="3-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/3-Stripping.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripping">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/4-Stripping.png" x="0" y="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/4-Stripping.png" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/4-Stripping2.png" />
+            </directive>
+        </pose>
+        <pose id="5-stripping">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_snowy/5-Stripping2.png" x="0" y="0" />
+        </pose>
+        <pose id="1-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/1-Stripping_Neg.png" x="0" y="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/1-Stripping_Neg.png" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/1-Stripping2_Neg.png" />
+            </directive>
+        </pose>
+        <pose id="2-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/2-Stripping_Neg.png" x="0" y="0" pivotx="48%" pivoty="96%" rotation="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="spline">
+                <keyframe time="0" rotation="0" />
+                <keyframe time="1" rotation="1" />
+                <keyframe time="2" rotation="0" />
+            </directive>
+        </pose>
+        <pose id="3-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/3-Stripping_Neg.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripping_Neg">
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/4-Stripping_Neg.png" x="0" y="0" />
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/4-Stripping_Neg.png" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/4-Stripping2_Neg.png" />
+            </directive>
+        </pose>
+        <pose id="5-stripping_Neg">
+            <sprite id="Stripping2" src="reskins/hex_maniac_hextra_snowy/5-Stripping2_Neg.png" x="0" y="0" />
+        </pose>
+        <pose id="0-stripping" z-index="1">
+            <sprite id="HaunterNeutral" z="-1" src="hex_maniac/HaunterNeutral.png" x="14" y="-20" alpha="100" rotation="6" />
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/0-Stripping.png" x="-90" alpha="100" />
+            <sprite id="Stripping2" z="1" src="reskins/hex_maniac_hextra_snowy/0-Stripping2.png" x="0" y="0" alpha="0" />
+            <sprite id="Haunter-hand2" src="hex_maniac/Haunter-hand2.png" x="-394" y="476" alpha="0" />
+            <sprite id="Haunter-hand2(copy)" src="hex_maniac/Haunter-hand2.png" x="-394" y="476" scalex="-1" alpha="0" />
+            <directive type="animation" id="HaunterNeutral" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/HaunterNeutral.png" x="14" y="-20" rotation="6" />
+                <keyframe time="1" x="-87" y="-15" rotation="-6" />
+                <keyframe time="2" y="-15" />
+            </directive>
+            <directive type="animation" id="HaunterNeutral" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" y="-15" />
+                <keyframe time="2" y="-5000" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/0-Stripping.png" alpha="100" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/0-Stripping.png" alpha="0" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/0-Stripping2.png" x="0" alpha="0" />
+                <keyframe time="1" x="81" alpha="100" />
+                <keyframe time="2" src="reskins/hex_maniac_hextra_snowy/1-Neutral.png" x="40" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-394" y="476" />
+                <keyframe time="2" y="476" />
+                <keyframe time="4" y="-5000" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/Haunter-hand2.png" alpha="0" />
+                <keyframe time="1" alpha="0" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-394" y="476" scalex="-1" />
+                <keyframe time="2" x="182" y="482" />
+                <keyframe time="4" x="-2" y="-5000" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/Haunter-hand2.png" alpha="0" />
+                <keyframe time="2" alpha="100" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="0" />
+            </directive>
+        </pose>
+        <pose id="0-stripping_Neg" z-index="1">
+            <sprite id="HaunterNeutral" z="-1" src="hex_maniac/HaunterNeutral.png" x="14" y="-20" alpha="100" rotation="6" />
+            <sprite id="Stripping" src="reskins/hex_maniac_hextra_snowy/0-Stripping_Neg.png" x="-90" alpha="100" />
+            <sprite id="Stripping2" z="1" src="reskins/hex_maniac_hextra_snowy/0-Stripping2_Neg.png" x="0" y="0" alpha="0" />
+            <sprite id="Haunter-hand2" src="hex_maniac/Haunter-hand2.png" x="-394" y="476" alpha="0" />
+            <sprite id="Haunter-hand2(copy)" src="hex_maniac/Haunter-hand2.png" x="-394" y="476" scalex="-1" alpha="0" />
+            <directive type="animation" id="HaunterNeutral" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/HaunterNeutral.png" x="14" y="-20" rotation="6" />
+                <keyframe time="1" x="-87" y="-15" rotation="-6" />
+                <keyframe time="2" y="-15" />
+            </directive>
+            <directive type="animation" id="HaunterNeutral" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" y="-15" />
+                <keyframe time="2" y="-5000" />
+            </directive>
+            <directive type="animation" id="Stripping" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/0-Stripping_Neg.png" alpha="100" />
+                <keyframe time="1" src="reskins/hex_maniac_hextra_snowy/0-Stripping_Neg.png" alpha="0" />
+            </directive>
+            <directive type="animation" id="Stripping2" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/hex_maniac_hextra_snowy/0-Stripping2_Neg.png" x="0" alpha="0" />
+                <keyframe time="1" x="81" alpha="100" />
+                <keyframe time="2" src="reskins/hex_maniac_hextra_snowy/1-Sad.png" x="40" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-394" y="476" />
+                <keyframe time="2" y="476" />
+                <keyframe time="4" y="-5000" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/Haunter-hand2.png" alpha="0" />
+                <keyframe time="1" alpha="0" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="4" alpha="100" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-394" y="476" scalex="-1" />
+                <keyframe time="2" x="182" y="482" />
+                <keyframe time="4" x="-2" y="-5000" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" ease="linear" interpolation="none">
+                <keyframe time="0" src="hex_maniac/Haunter-hand2.png" alpha="0" />
+                <keyframe time="2" alpha="100" />
+            </directive>
+            <directive type="animation" id="Haunter-hand2(copy)" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" rotation="0" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>

@@ -3,6 +3,11 @@
   color: Black;
 }
 
+.dark-mode .dialogue .yusei[data-character="yusei_fudo"] {
+  /*This is an example style.*/
+  color: White;
+}
+
 .dialogue .nadeshiko[data-character="yusei_fudo"] {
   /**/
   color: #C68A9E;
@@ -23,4 +28,10 @@
 
 .dialogue .seto[data-character="yusei_fudo"] {
   color: #FF8080;
+}
+
+.dialogue-bubble[data-character="foobar"] hr {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }

@@ -189,7 +189,7 @@ const MAGNET_TAGS = [
     "fire_emblem",
 
     "pokemon",
-	
+
     "genshin_impact",
 
     "danganronpa",
@@ -205,9 +205,12 @@ const MAGNET_TAGS = [
     "ace_attorney",
     "clannad",
     "dragon_ball",
+    "katawa_shoujo",
+    "legend_of_zelda",
     "little_witch_academia",
     "monster_prom",
     "one_piece",
+    "tales_of",
     "touhou_project",
     "xenoblade_chronicles",
 
@@ -216,25 +219,24 @@ const MAGNET_TAGS = [
     "golden_sun",
     "huniepop",
     "jjba",
-    "katawa_shoujo",
     "kid_icarus",
     "kill_la_kill",
     "league_of_legends",
-    "legend_of_zelda",
     "lobotomy_corporation",
     "marvel",
     "mega_man",
     "miraculous",
+    "my_hero_academia",
     "hyperdimension_neptunia",
     "omori",
     "overwatch_franchise",
     "panty_and_stocking",
     "puyo_puyo",
     "sonic_franchise",
-    "tales_of",
     "teen_titans_franchise",
     "va-11_hall-a",
     "vandread",
+    "yuru_camp",
 ];
 
 const EVENT_COSTUME_PREFIXES = {
@@ -1345,7 +1347,7 @@ function loadDefaultFillSuggestions () {
 
     if (forcedPrefills.length > 0) {
         /* select forced prefill characters from events and birthdays */
-        shuffleArray(forcedPrefills);
+        forcedPrefills.shuffle();
         forcedPrefills.sort(sortOpponentsByField("-hasBirthdayToday"));
         for (let i = 0; i < 4 && i < forcedPrefills.length; i++) {
             fillPlayers.push(forcedPrefills[i]);
@@ -1767,7 +1769,7 @@ function updateSelectionVisuals () {
         });
 
         /* Shuffle the suggestions before stable sorting them, to add variety. */
-        shuffleArray(suggested_opponents);
+        suggested_opponents.shuffle();
         console.log("array length" + suggested_opponents.length);
 
         /* Sort opponents, capping each selected character's contribution

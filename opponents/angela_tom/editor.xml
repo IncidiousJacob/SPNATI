@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+    <owner>angela_tom</owner>
+    <height />
+    <age />
+    <pronunciation />
+    <othernotes>Lot of notes in this one, but good to read if you are a character developer wanting to target Angela with dialogue.&lt;br&gt;&lt;br&gt;When playing against both a male and female player, if the other female player reveals her breasts, Angela will typically reveal her breasts the next time she loses a round (assuming, of course, she hasn't already), though she'll pretend that she's removing whatever she'd otherwise remove at that point. She won't do this if there are no men present, and it's not applicable if there are no other women. In a general sense, other characters should already acknowledge this without any further work, but if you want to give more specific reactions, read futher.&lt;br&gt;&lt;br&gt;Please do NOT assume Angela's clothing status based solely on her stage! You can check her status (ie. "Chest visible") or the "AngelaEarlyBoobs" marker to be sure of which track she's on, and when she's stripping you can check which item she's removing. For example, if you want to have someone comment on Angela removing her gloves, it could be the transition from stage 2 to 3 as the metadata implies, or it could be the transition from stage 3 to 4 if she did the early chest reveal. The system will always report that she is removing her gloves either way.&lt;br&gt;&lt;br&gt;Also: the system will report that she's removing the next article she would normally reveal in the "Stripping" phase when she is about to reveal her chest early - this is intentional behavior, and fits with Angela's actions and dialogue. So check for the "AboutToShowBoobs" marker, if for some reason you want a character to react just before she does the early reveal (for example, if your character is psychic, or just wants to react to Angela's fishy behavior). In the "After stripping" phase, the system will accurately report which item was removed.&lt;br&gt;&lt;br&gt;Some characters get special treatment in regards to this gimmick:&lt;br&gt;&lt;br&gt;* She believes Lucina and Mulan are male until they reveal themselves to be women (she gets quite annoyed if she gets topless early, only to find out they're the only "men" in the game!)&lt;br&gt;* Similarly, she believes that Chihiro is female before he's naked. However, when Chihiro becomes topless, he runs off, so Chihiro cannot trigger the early reveal.&lt;br&gt;* Since Pandoria strips alongside him, if Zeke is topless she'll reveal herself (almost) no matter who else is playing.&lt;br&gt;* If Angela witnesses Tharja shrinking another woman's breasts, she'll chicken out so as not to incur Tharja's wrath.&lt;br&gt;* She's doing this to tease the men. If she realizes that all men at the table are gay before doing the early breast reveal, she won't do it. She will usually pick up on this around the time another woman gets topless.&lt;br&gt;* I mention Sanny and Tess only to pre-empt people asking about them: she automatically treats them as female for the sake of this gimmick, and I did not include any checks to change this.&lt;br&gt;&lt;br&gt;She isn't terribly concerned with showing her breasts, though the lack of an early flash if there are no other topless women indicates that she might not be quite as comfortable with it as she pretends. She is a bit more concerned about showing more than her breasts. Keep in mind: though she's not opposed to stealing glances at the men, and despite her flirty behavior, she's playing to win, not to strip without a fight, and definitely not to have sex with the other players. (Maybe if Duran was playing...)&lt;br&gt;&lt;br&gt;When targeting Angela, some of her cases are marked with "SWITCH CASE TYPE TO 'OPPONENT STRIPPING/STRIPPED'". After writing the line, please find it under "Removing Accessory (female)" or "Removed Accessory (female)" and switch its case type as suggested. For reference: The first problem is that these are multi-stage situations, but the character editor naively assumes that she's removing an accessory because that's what her first stage has her do. The second problem is that, well, she's not actually removing an accessory when these cases are relevant!&lt;br&gt;&lt;br&gt;As for her dialogue, some artistic license was taken. She talks about her adventure as something that took place in the past, but at the end of her game, mana disappears from her world, so she should not be able to cast magic. This is ignored for this game, as she summons elementals and talks about magic as though it is a thing she is still capable of casting. She mentions Dragonsmaw and being possessed by a faerie*, indicating she was the main character for her "run" through the game. She goes on to mention all of her possible companions when applicable, Duran in particular, but never indicates which ones accompanied her on her journey.&lt;br&gt;&lt;br&gt;(Should other Trials of Mana characters be introduced later, it is fair for them to talk as though they were the main character when Angela is not present, but if she is, then either it should be established that they're from alternate timelines, or one of the two should stop talking as though they're the main character and defer to the other.)&lt;br&gt;&lt;br&gt;In future versions, her Omen Book collectible will unlock her Magus outfit, but that hasn't been made yet. The Omen Book collectible is not yet enabled for online play for this very reason.&lt;br&gt;&lt;br&gt;Oh, and for those wondering: though elves exist in "Trials of Mana", Angela is not one. Humans with pointy ears just seem to exist in the World of Mana series (for example, Primm of Secret of Mana has them too).&lt;br&gt;&lt;br&gt;* - In Trials of Mana, the word is always spelled "faerie". Angela's dialogue follows suit.</othernotes>
+    <noteworthy>
+        <case name="Angela's Early Boobs" id="52" priority="Noteworthy" min="1" max="5">
+            <description>Angela, after pretending she was going to remove something else, pulls down the cups of her leotard. (WHEN YOU MAKE THIS CALLOUT, SWITCH THE RESPONSE'S CASE TYPE TO "OPPONENT STRIPPED")</description>
+        </case>
+        <case name="Protecting the Goods" id="135" priority="FYI" min="0" max="10">
+            <description>Angela is freaking out because Tharja shrunk Jessie's breasts.</description>
+        </case>
+        <case name="Drawing Focus Away" id="159" priority="Prompt" min="0" max="4">
+            <description>Angela asks a topless shy character if she wants to draw some focus away from wandering eyes (because she's about to reveal her breasts.) (WHEN YOU MAKE THIS CALLOUT, SWITCH THE RESPONSE'S CASE TYPE TO "OPPONENT STRIPPING")</description>
+        </case>
+        <case name="Elemental Anti-Cheat" id="241" priority="Noteworthy" min="0" max="7">
+            <description>After losing a round, Angela asks Salamando to try to remove Aqua's Blessing spell</description>
+        </case>
+        <case name="Elemental Cheat Detection" id="242" priority="Noteworthy" min="0" max="0">
+            <description>Angela asks Undine if Aqua cast a spell; Undine confirms it.</description>
+        </case>
+        <case name="Elemental Anti-Cheat 2" id="243" priority="Noteworthy" min="0" max="7">
+            <description>After someone else loses a round, Angela asks Salamando to try to remove Aqua's Blessing spell</description>
+        </case>
+        <case name="Aqua's Spell Sucks" id="244" priority="FYI" min="0" max="8">
+            <description>Angela sees that Aqua's "Blessing" spell isn't what it was cracked up to be.</description>
+        </case>
+        <case name="Lumina joins Lux" id="239" priority="FYI" min="0" max="10">
+            <description>Angela summons Lumina, who joins in on Lux's light puns.</description>
+        </case>
+        <case name="Sleeps in panties" id="205" priority="FYI" min="7" max="7">
+            <description>Angela points out that she sleeps wearing only a pair of panties (which, in the Super Famicom version of her game, was actually true!), so she's not too worried about losing her leotard.</description>
+        </case>
+        <case name="Angela's Early Boobs 2" id="158" priority="Noteworthy" min="1" max="5">
+            <description>A variation of "Angela's Early Boobs". With a shy topless girl present, Angela claims she's about to remove one item, but instead pulls down the cups of her leotard. (WHEN YOU MAKE THIS CALLOUT, SWITCH THE RESPONSE'S CASE TYPE TO "OPPONENT STRIPPED")</description>
+        </case>
+        <case name="Demonic Possession" id="249" priority="Prompt" min="0" max="10">
+            <description>Angela wonders if people are just going to leave Nayru possessed by Veran.</description>
+        </case>
+        <case name="Protecting the Goods 2" id="311" priority="FYI" min="0" max="10">
+            <description>Angela is freaking out because Tharja shrunk Jura's breasts.</description>
+        </case>
+        <case name="Protecting the Goods 3" id="312" priority="FYI" min="0" max="10">
+            <description>Angela is freaking out because Tharuja shrunk both Jessie and Jura's breasts.</description>
+        </case>
+        <case name="A Smashing Dream" id="328" priority="Noteworthy" min="0" max="8">
+            <description>Angela recalls a dream where she and Duran fought another character while in the bodies of other people (she's referring to Super Smash Bros. Ultimate's spirit battle #1,411, where she was represented by Zelda and Duran by Roy.)</description>
+        </case>
+        <case name="Pocket Monsters" id="345" priority="Prompt" min="0" max="10">
+            <description>Angela asks a Pokemon character (except Hex Maniac, handled elsewhere) about their "pet monsters".</description>
+        </case>
+        <case name="Monsters, Selphy!" id="346" priority="Noteworthy" min="0" max="10">
+            <description>Angela attempts to distract Selphy from her book by yelling that monsters are coming. Other characters, especially panicky ones, but NOT Selphy, may want to react to this.</description>
+        </case>
+        <case name="Meeting of the Boob Club" id="352" priority="Noteworthy" min="1" max="8">
+            <description>Angela pretends to call a meeting of the "Boob Club", and encourages a non-gay man (or "Marth", or "Ping") to gawk.</description>
+        </case>
+    </noteworthy>
+    <reviewed>true</reviewed>
+    <responses>
+        <response id="1" opponent="nagisa" opponentId="164" />
+        <response id="2" opponent="yuri" opponentId="1" />
+        <response id="6" opponent="rainbow_mika" opponentId="1" />
+        <response id="7" opponent="bernadetta" opponentId="1" />
+        <response id="8" opponent="jessie" opponentId="22" />
+        <response id="9" opponent="rouge" opponentId="5" />
+        <response id="10" opponent="yshtola" opponentId="169" />
+        <response id="11" opponent="cammy_white" opponentId="7" />
+        <response id="13" opponent="aimee" opponentId="4" />
+        <response id="24" opponent="shantae" opponentId="7" />
+        <response id="0" opponent="lady-luck" opponentId="24" />
+        <response id="0" opponent="lady-luck" opponentId="25" />
+        <response id="0" opponent="lady-luck" opponentId="26" />
+        <response id="0" opponent="lady-luck" opponentId="23" />
+        <response id="0" opponent="nephenee" opponentId="13" />
+        <response id="0" opponent="nephenee" opponentId="24" />
+        <response id="0" opponent="nephenee" opponentId="25" />
+        <response id="0" opponent="nephenee" opponentId="12" />
+        <response id="25" opponent="jura" opponentId="952" />
+        <response id="26" opponent="jura" opponentId="2" />
+        <response id="27" opponent="jura" opponentId="1" />
+        <response id="28" opponent="jura" opponentId="33" />
+        <response id="29" opponent="jura" opponentId="14" />
+        <response id="32" opponent="jura" opponentId="945" />
+        <response id="33" opponent="zeke_pandoria" opponentId="172" />
+        <response id="34" opponent="zeke_pandoria" opponentId="1" />
+        <response id="35" opponent="zeke_pandoria" opponentId="2" />
+        <response id="36" opponent="may" opponentId="5" />
+        <response id="40" opponent="dust" opponentId="58" />
+        <response id="42" opponent="hatsune_miku" opponentId="649" />
+        <response id="43" opponent="chara_dreemurr" opponentId="2663" />
+        <response id="44" opponent="komi-san" opponentId="22" />
+        <response id="45" opponent="bowsette" opponentId="9" />
+        <response id="46" opponent="meia" opponentId="900" />
+        <response id="47" opponent="hatsune_miku" opponentId="197" />
+        <response id="48" opponent="saki_zls" opponentId="3" />
+        <response id="50" opponent="tifa" opponentId="171" />
+        <response id="51" opponent="kumatora" opponentId="208" />
+        <response id="53" opponent="joey" opponentId="28" />
+        <response id="54" opponent="tharja" opponentId="11" />
+        <response id="55" opponent="arash" opponentId="150" />
+        <response id="56" opponent="lyralei" opponentId="1605" />
+        <response id="57" opponent="nayru" opponentId="1" />
+        <response id="58" opponent="jessie" opponentId="21" />
+        <response id="59" opponent="spooky" opponentId="1" />
+        <response id="60" opponent="cammy_white" opponentId="6" />
+        <response id="61" opponent="cammy_white" opponentId="8" />
+        <response id="62" opponent="cammy_white" opponentId="3" />
+        <response id="64" opponent="cammy_white" opponentId="2" />
+        <response id="65" opponent="cammy_white" opponentId="1" />
+        <response id="66" opponent="cammy_white" opponentId="5" />
+        <response id="67" opponent="mari_setogaya" opponentId="408" />
+        <response id="68" opponent="arash" opponentId="3" />
+        <response id="69" opponent="larachel" opponentId="5" />
+        <response id="70" opponent="sayaka" opponentId="28" />
+        <response id="71" opponent="sayaka" opponentId="29" />
+        <response id="72" opponent="saki_zls" opponentId="2" />
+        <response id="73" opponent="saki_zls" opponentId="1" />
+        <response id="74" opponent="schezo" opponentId="90" />
+        <response id="75" opponent="akko" opponentId="30" />
+        <response id="76" opponent="akko" opponentId="31" />
+        <response id="77" opponent="akko" opponentId="32" />
+        <response id="78" opponent="akko" opponentId="33" />
+        <response id="79" opponent="akko" opponentId="34" />
+        <response id="80" opponent="akko" opponentId="36" />
+        <response id="81" opponent="akko" opponentId="29" />
+        <response id="82" opponent="supernova" opponentId="240" />
+        <response id="83" opponent="aoi_asahina" opponentId="225" />
+        <response id="85" opponent="rouge" opponentId="10" />
+        <response id="86" opponent="navi" opponentId="1" />
+        <response id="87" opponent="jim" opponentId="11" />
+        <response id="88" opponent="twisted_fate" opponentId="350" />
+        <response id="89" opponent="nami" opponentId="623" />
+        <response id="90" opponent="aella" opponentId="269" />
+        <response id="91" opponent="amy" opponentId="259" />
+        <response id="92" opponent="chun-li" opponentId="1" />
+        <response id="93" opponent="arash" opponentId="170" />
+        <response id="94" opponent="akko" opponentId="35" />
+        <response id="95" opponent="rainbow_mika" opponentId="9" />
+        <response id="96" opponent="rainbow_mika" opponentId="5" />
+        <response id="97" opponent="rainbow_mika" opponentId="6" />
+        <response id="98" opponent="ringo_ando" opponentId="307" />
+        <response id="99" opponent="lux" opponentId="55" />
+        <response id="100" opponent="mulan" opponentId="32" />
+        <response id="103" opponent="lucina" opponentId="1" />
+        <response id="115" opponent="chihiro" opponentId="1" />
+        <response id="117" opponent="chihiro" opponentId="2" />
+        <response id="119" opponent="brock" opponentId="1" />
+        <response id="120" opponent="brock" opponentId="2" />
+        <response id="121" opponent="brock" opponentId="165" />
+        <response id="143" opponent="ms.fortune" opponentId="24" />
+        <response id="144" opponent="ms.fortune" opponentId="65" />
+        <response id="145" opponent="ms.fortune" opponentId="51" />
+        <response id="146" opponent="ms.fortune" opponentId="68" />
+        <response id="147" opponent="misty_hgss" opponentId="3" />
+        <response id="148" opponent="yuelia" opponentId="6" />
+        <response id="149" opponent="tea_gardner" opponentId="87" />
+        <response id="150" opponent="meia" opponentId="1119" />
+        <response id="151" opponent="meia" opponentId="1121" />
+        <response id="152" opponent="meia" opponentId="9" />
+        <response id="153" opponent="misty_hgss" opponentId="2" />
+        <response id="154" opponent="neptune" opponentId="29" />
+        <response id="155" opponent="yuzuki" opponentId="96" />
+        <response id="156" opponent="schezo" opponentId="131" />
+        <response id="157" opponent="florina" opponentId="4" />
+        <response id="160" opponent="supernova" opponentId="281" />
+        <response id="240" opponent="aqua_konosuba" opponentId="16" />
+        <response id="247" opponent="moon" opponentId="50" />
+        <response id="248" opponent="moon" opponentId="51" />
+        <response id="254" opponent="polly" opponentId="38" />
+        <response id="255" opponent="polly" opponentId="39" />
+        <response id="256" opponent="amalia" opponentId="1" />
+        <response id="260" opponent="mari_setogaya" opponentId="22" />
+        <response id="261" opponent="sakura" opponentId="2" />
+        <response id="263" opponent="jin" opponentId="20" />
+        <response id="264" opponent="dawn" opponentId="133" />
+        <response id="266" opponent="dawn" opponentId="120" />
+        <response id="267" opponent="shimakaze" opponentId="2" />
+        <response id="0" opponent="shamiko" opponentId="37" />
+        <response id="268" opponent="caulifla" opponentId="2" />
+        <response id="270" opponent="spooky" opponentId="2" />
+        <response id="271" opponent="wasp" opponentId="139" />
+        <response id="272" opponent="wasp" opponentId="108" />
+        <response id="0" opponent="wasp" opponentId="110" />
+        <response id="273" opponent="yuelia" opponentId="1" />
+        <response id="275" opponent="marinette" opponentId="438" />
+        <response id="276" opponent="adrien" opponentId="489" />
+        <response id="277" opponent="gwen" opponentId="1" />
+        <response id="278" opponent="sakura" opponentId="3" />
+        <response id="279" opponent="sweetheart" opponentId="43" />
+        <response id="280" opponent="yuno_uno" opponentId="775" />
+        <response id="281" opponent="shantae" opponentId="10" />
+        <response id="282" opponent="emi" opponentId="2" />
+        <response id="283" opponent="lyralei" opponentId="690" />
+        <response id="284" opponent="lyralei" opponentId="1578" />
+        <response id="285" opponent="lyralei" opponentId="1574" />
+        <response id="0" opponent="lyralei" opponentId="1575" />
+        <response id="0" opponent="lyralei" opponentId="1576" />
+        <response id="0" opponent="lyralei" opponentId="1577" />
+        <response id="286" opponent="fina" opponentId="107" />
+        <response id="309" opponent="anatoly" opponentId="1" />
+        <response id="314" opponent="samus_aran" opponentId="1" />
+        <response id="315" opponent="florina" opponentId="5" />
+        <response id="316" opponent="florina" opponentId="6" />
+        <response id="317" opponent="mari_setogaya" opponentId="1" />
+        <response id="318" opponent="twisted_fate" opponentId="254" />
+        <response id="320" opponent="mari_setogaya" opponentId="2" />
+        <response id="321" opponent="mari_setogaya" opponentId="35" />
+        <response id="0" opponent="zeke_pandoria" opponentId="34" />
+        <response id="322" opponent="mari_setogaya" opponentId="21" />
+        <response id="323" opponent="mari_setogaya" opponentId="55" />
+        <response id="324" opponent="mari_setogaya" opponentId="56" />
+        <response id="325" opponent="misato" opponentId="14" />
+        <response id="326" opponent="megumin" opponentId="224" />
+        <response id="327" opponent="meia" opponentId="5" />
+        <response id="332" opponent="emi" opponentId="29" />
+        <response id="333" opponent="nami" opponentId="15" />
+        <response id="335" opponent="lyralei" opponentId="1633" />
+        <response id="337" opponent="amalia" opponentId="2" />
+        <response id="338" opponent="rouge" opponentId="7" />
+        <response id="339" opponent="fina" opponentId="132" />
+        <response id="347" opponent="raine_sage" opponentId="2" />
+        <response id="348" opponent="raine_sage" opponentId="1" />
+        <response id="349" opponent="selphy" opponentId="3" />
+        <response id="376" opponent="arash" opponentId="145" />
+        <response id="377" opponent="arash" opponentId="164" />
+        <response id="384" opponent="edelgard" opponentId="753" />
+        <response id="385" opponent="edelgard" opponentId="562" />
+        <response id="386" opponent="edelgard" opponentId="75" />
+        <response id="387" opponent="edelgard" opponentId="189" />
+        <response id="388" opponent="edelgard" opponentId="955" />
+        <response id="389" opponent="edelgard" opponentId="615" />
+        <response id="412" opponent="mari_setogaya" opponentId="180" />
+        <response id="414" opponent="leonie" opponentId="53" />
+        <response id="415" opponent="kaz" opponentId="95" />
+        <response id="416" opponent="sucrose" opponentId="133" />
+        <response id="418" opponent="nico_robin" opponentId="306" />
+        <response id="419" opponent="critical_darling" opponentId="1" />
+    </responses>
+    <notes>
+        <note id="84">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
+        <note id="83">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
+        <note id="246">The "don'" from Gnome is not a mistake.</note>
+        <note id="253">Because of his plot event in Visions of Mana, that's why! (This is just a silly reference; Angela shouldn't know about that.)</note>
+        <note id="269">Are you taking potshots at the SNES version of your own game, Angela?</note>
+        <note id="287">She usually will prefer the "Boob club" lines over these, so these are just here for those situations where she won't talk about the "Boob club" (for example, she's intimidated by Tharja).</note>
+        <note id="288">She usually will prefer the "Boob club" lines over these, so these are just here for those situations where she won't talk about the "Boob club" (for example, she's intimidated by Tharja).</note>
+        <note id="289">She usually will prefer the "Boob club" lines over these, so these are just here for those situations where she won't talk about the "Boob club" (for example, she's intimidated by Tharja).</note>
+        <note id="290">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="291">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="292">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="293">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="294">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="295">I'm just repeating the "female" lines for this one right now.</note>
+        <note id="313">Only happens when an initally-crossdressing female character (presently, Lucina or Mulan) gets topless.</note>
+        <note id="328">In Super Smash Bros. Ultimate, there is a spirit battle for Duran and Angela, where Angela is represented by Zelda and Duran is represented by Roy.</note>
+        <note id="329">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy. At time of adding this, Zelda is not on the SPNatI roster, but this is future-proofing in case she is ever re-added.</note>
+        <note id="330">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy. At time of adding this, Zelda is not on the SPNatI roster, but this is future-proofing in case she is ever re-added.</note>
+        <note id="331">As in "Final Fantasy Brave Exvius", in which all Trials of Mana heroes (Angela included) make cameo appearances.</note>
+        <note id="342">I know this will typically not be called with the game configured as it currently is, but better safe than sorry.</note>
+        <note id="352">This case is just something generic to target with simpler conditions. Dialogue preserved from the normal case so people know what they're responding to.</note>
+        <note id="353">Has to be "Quiet Angela" because she sets a nickname in a hidden case.</note>
+        <note id="354">Has to be "Other Angela" because she sets a nickname in a hidden case.</note>
+        <note id="115">"WomanNotPing" will be set back to 1 almost immediately if there's another woman at the table.</note>
+        <note id="359">It can be set by the player coming to the table as a woman, leaving, and then returning as a man. If it's legitimate, it will be set again almost instantly.</note>
+        <note id="382">"Needlettuce" is the term for lettuce used in other Mana games. It's not used in Trials of Mana, specifically, but the concept of vegetables halfway named for other things is common enough in the franchise.</note>
+        <note id="386">She's imitating Dudbears, a species found in the Mana series (they're not in Trials though). In essence, she's saying "What? I'm not a human, I'm a Dudbear! I'm insulted!"</note>
+        <note id="419">She's referring to one of her villains, the Crimson Wizard.</note>
+    </notes>
+    <labels>
+        <label id="137" label="For his alternate outfit" folder="" sort="0" />
+        <label id="138" label="For his alternate outfit" folder="" sort="0" />
+        <label id="139" label="For his alternate outfit" folder="" sort="0" />
+        <label id="140" label="For his alternate outfit" folder="" sort="0" />
+        <label id="162" label="Setting scripts" folder="" sort="0" />
+        <label id="163" label="Player is bottomless" folder="" sort="0" />
+        <label id="164" label="Player is topless" folder="" sort="0" />
+        <label id="165" label="Player named Duran" folder="" sort="0" />
+        <label id="166" label="Exactly one man" folder="" sort="0" />
+        <label id="167" label="More than one man" folder="" sort="0" />
+        <label id="168" label="All women" folder="" sort="0" />
+        <label id="169" label="Counts men (deprecated)" folder="" sort="0" />
+        <label id="170" label="Adds Mulan to men count (deprecated)" folder="" sort="0" />
+        <label id="124" label="Boob Club Meeting conditions" folder="" sort="0" />
+        <label id="171" label="Runs shuffling script" folder="" sort="0" />
+        <label id="172" label="No early flashing - crazy mage" folder="" sort="0" />
+        <label id="159" label="About to flash (shy girl)" folder="" sort="0" />
+        <label id="173" label="About to flash" folder="" sort="0" />
+        <label id="174" label="Remove hat (normal)" folder="" sort="0" />
+        <label id="175" label="Remove hat (alternate)" folder="" sort="0" />
+        <label id="176" label="Remove scarf (normal)" folder="" sort="0" />
+        <label id="177" label="(failsafe)" folder="" sort="0" />
+        <label id="178" label="(failsafe)" folder="" sort="0" />
+        <label id="179" label="(failsafe)" folder="" sort="0" />
+        <label id="180" label="(failsafe)" folder="" sort="0" />
+        <label id="181" label="Remove gloves" folder="" sort="0" />
+        <label id="182" label="Remove train" folder="" sort="0" />
+        <label id="183" label="Remove boots (normal)" folder="" sort="0" />
+        <label id="184" label="First boobs (no men)" folder="" sort="0" />
+        <label id="185" label="Not first boobs (no men)" folder="" sort="0" />
+        <label id="186" label="Not first boobs (with men)" folder="" sort="0" />
+        <label id="187" label="First one nude" folder="" sort="0" />
+        <label id="188" label="Removed hat (normal)" folder="" sort="0" />
+        <label id="189" label="Set hat tag" folder="" sort="0" />
+        <label id="158" label="Flash (shy girl)" folder="" sort="0" />
+        <label id="118" label="Flash (after &quot;Guess what?&quot;)" folder="" sort="0" />
+        <label id="52" label="Flash" folder="" sort="0" />
+        <label id="190" label="Switches tags" folder="" sort="0" />
+        <label id="191" label="(failsafe)" folder="" sort="0" />
+        <label id="192" label="Removed hat (alt)" folder="" sort="0" />
+        <label id="193" label="Removes hat tag" folder="" sort="0" />
+        <label id="194" label="Removed scarf" folder="" sort="0" />
+        <label id="195" label="Removed gloves" folder="" sort="0" />
+        <label id="196" label="Removed train (with men)" folder="" sort="0" />
+        <label id="197" label="Removed train (no men)" folder="" sort="0" />
+        <label id="198" label="Set heels tag" folder="" sort="0" />
+        <label id="199" label="Removed boots" folder="" sort="0" />
+        <label id="200" label="Removed cups (with men)" folder="" sort="0" />
+        <label id="201" label="Removed cups (first, no men)" folder="" sort="0" />
+        <label id="202" label="Removed cups (not first, no men)" folder="" sort="0" />
+        <label id="203" label="Removes heels tag" folder="" sort="0" />
+        <label id="204" label="Removed leotard (no men)" folder="" sort="0" />
+        <label id="205" label="Removed leotard (with men)" folder="" sort="0" />
+        <label id="206" label="Naked (no men)" folder="" sort="0" />
+        <label id="207" label="Naked (with men)" folder="" sort="0" />
+        <label id="208" label="Treats Mulan as male" folder="" sort="0" />
+        <label id="209" label="With men" folder="" sort="0" />
+        <label id="210" label="No men" folder="" sort="0" />
+        <label id="211" label="With gay men" folder="" sort="0" />
+        <label id="57" label="React to Veran" folder="" sort="0" />
+        <label id="212" label="React to Ryuko transformation" folder="" sort="0" />
+        <label id="107" label="Lucina + Other Man" folder="Mulan reveal" sort="0" />
+        <label id="114" label="Lucina (no other men)" folder="Mulan reveal" sort="0" />
+        <label id="100" label="Basic reaction" folder="Mulan reveal" sort="0" />
+        <label id="106" label="Sets tag for Mulan reveal" folder="Mulan reveal" sort="0" />
+        <label id="109" label="Got topless for Ping + Marth" folder="Mulan reveal" sort="0" />
+        <label id="101" label="Got topless for Ping" folder="Mulan reveal" sort="0" />
+        <label id="102" label="Got topless, more men" folder="Mulan reveal" sort="0" />
+        <label id="122" label="Round 1" folder="Boob club" sort="0" />
+        <label id="123" label="Round 2" folder="Boob club" sort="0" />
+        <label id="213" label="Round 4" folder="Boob club" sort="0" />
+        <label id="214" label="Round 3" folder="Boob club" sort="0" />
+        <label id="215" label="Late entry" folder="Boob club" sort="0" />
+        <label id="112" label="Mulan + Other man" folder="Lucina reveal" sort="0" />
+        <label id="113" label="Mulan (no other men)" folder="Lucina reveal" sort="0" />
+        <label id="103" label="Basic reaction" folder="Lucina reveal" sort="0" />
+        <label id="110" label="Sets tag for Lucina reveal" folder="Lucina reveal" sort="0" />
+        <label id="111" label="Got topless for Ping and Marth" folder="Lucina reveal" sort="0" />
+        <label id="105" label="Got topless for Marth" folder="Lucina reveal" sort="0" />
+        <label id="104" label="Got topless, more men" folder="Lucina reveal" sort="0" />
+        <label id="216" label="Round 1" folder="Boob club, Pandoria edition" sort="0" />
+        <label id="217" label="Round 2" folder="Boob club, Pandoria edition" sort="0" />
+        <label id="218" label="Round 4" folder="Boob club, Pandoria edition" sort="0" />
+        <label id="219" label="Round 3" folder="Boob club, Pandoria edition" sort="0" />
+        <label id="220" label="Tandem, man present" folder="" sort="0" />
+        <label id="221" label="Not tandem, man present" folder="" sort="0" />
+        <label id="222" label="No men present" folder="" sort="0" />
+        <label id="223" label="No men, but disguised women" folder="" sort="0" />
+        <label id="224" label="Man won" folder="" sort="0" />
+        <label id="225" label="Flashes after victory" folder="" sort="0" />
+        <label id="226" label="No men" folder="" sort="0" />
+        <label id="227" label="Woman won" folder="" sort="0" />
+        <label id="228" label="Omen Book!" folder="" sort="0" />
+        <label id="229" label="Removed cups as first item" folder="" sort="0" />
+        <label id="230" label="Removed cups for gay men only" folder="" sort="0" />
+        <label id="231" label="Showing off for the guys" folder="" sort="0" />
+        <label id="232" label="Removed cups early, but not first" folder="" sort="0" />
+        <label id="85" label="Rouge the thief" folder="Targeted&gt;Rouge" sort="0" />
+        <label id="233" label="First boobs revealed" folder="" sort="0" />
+        <label id="234" label="Removed cups at normal time (more than one man)" folder="" sort="0" />
+        <label id="235" label="Resets elemental" folder="Variable setting" sort="0" />
+        <label id="245" label="(failsafe)" folder="" sort="0" />
+        <label id="250" label="About to flash (last) (&quot;What a shame&quot; line)" folder="" sort="0" />
+        <label id="251" label="Flash (last)" folder="" sort="0" />
+        <label id="258" label="" folder="Boob club, not-Amalia edition" sort="0" />
+        <label id="259" label="" folder="Boob club, not-Amalia edition" sort="0" />
+        <label id="297" label="" folder="Getting distracted" sort="0" />
+        <label id="298" label="" folder="Getting distracted" sort="0" />
+        <label id="299" label="" folder="Getting distracted" sort="0" />
+        <label id="300" label="" folder="Getting distracted" sort="0" />
+        <label id="301" label="" folder="Getting distracted" sort="0" />
+        <label id="302" label="" folder="Getting distracted" sort="0" />
+        <label id="303" label="" folder="Getting distracted" sort="0" />
+        <label id="304" label="" folder="Getting distracted" sort="0" />
+        <label id="305" label="" folder="Getting distracted" sort="0" />
+        <label id="306" label="" folder="Getting distracted" sort="0" />
+        <label id="307" label="" folder="Getting distracted" sort="0" />
+        <label id="308" label="" folder="Getting distracted" sort="0" />
+        <label id="340" label="Staring at men (not human)" folder="" sort="0" />
+        <label id="341" label="Staring at human (not after Tharja hex)" folder="" sort="0" />
+        <label id="343" label="" folder="Getting distracted" sort="0" />
+        <label id="344" label="" folder="Getting distracted" sort="0" />
+        <label id="350" label="Boob Club Meeting" folder="" sort="0" />
+        <label id="351" label="Boob Club Meeting" folder="" sort="0" />
+        <label id="352" label="Boob Club Meeting Anchor" folder="" sort="0" />
+        <label id="355" label="" folder="Variable setting" sort="0" />
+        <label id="356" label="" folder="Variable setting" sort="0" />
+        <label id="357" label="" folder="Variable setting" sort="0" />
+        <label id="358" label="&quot;What a shame&quot; conditions" folder="" sort="0" />
+        <label id="359" label="Clears &quot;WomanNotPing&quot;" folder="" sort="0" />
+        <label id="361" label="Remove scarf (alternate)" folder="" sort="0" />
+        <label id="362" label="Remove boots (alternate)" folder="" sort="0" />
+        <label id="363" label="Remove cape (Magus)" folder="" sort="0" />
+        <label id="364" label="Remove hat (Magus, first round after getting a good hand)" folder="" sort="0" />
+        <label id="365" label="Removed hat (Magus, first round)" folder="" sort="0" />
+        <label id="366" label="Set intelligence (Magus)" folder="" sort="0" />
+        <label id="367" label="Removed gloves (Magus)" folder="" sort="0" />
+        <label id="368" label="Doesn't run shuffling script (Magus)" folder="" sort="0" />
+        <label id="369" label="Removed cape (Magus)" folder="" sort="0" />
+        <label id="370" label="Removing boots (Magus)" folder="" sort="0" />
+        <label id="371" label="Remove breastplate (Magus)" folder="" sort="0" />
+        <label id="372" label="Removed breastplate (Magus)" folder="" sort="0" />
+        <label id="374" label="Lucina + Bottomless Man" folder="Mulan reveal" sort="0" />
+        <label id="375" label="Mulan + Bottomless man" folder="Lucina reveal" sort="0" />
+        <label id="378" label="Mulan + Topless man" folder="Lucina reveal" sort="0" />
+        <label id="379" label="Lucina + Topless man" folder="Mulan reveal" sort="0" />
+        <label id="380" label="Remove hat (Magus)" folder="" sort="0" />
+        <label id="383" label="Resets &quot;GeneralTease&quot;" folder="Variable setting" sort="0" />
+        <label id="390" label="" folder="Targeted&gt;Siren Sara" sort="0" />
+        <label id="391" label="" folder="Targeted&gt;Yeulia" sort="0" />
+        <label id="330" label="" folder="Targeted&gt;Zelda" sort="0" />
+        <label id="387" label="" folder="Targeted&gt;Edelgard" sort="0" />
+        <label id="386" label="" folder="Targeted&gt;Edelgard" sort="0" />
+        <label id="64" label="" folder="Targeted&gt;Cammy" sort="0" />
+        <label id="389" label="" folder="Targeted&gt;Edelgard" sort="0" />
+        <label id="87" label="" folder="Targeted&gt;Raynor" sort="0" />
+        <label id="309" label="" folder="Targeted&gt;Anatoly" sort="0" />
+        <label id="127" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="335" label="" folder="Targeted&gt;Lyralei" sort="0" />
+        <label id="242" label="" folder="Targeted&gt;Aqua (Konosuba)" sort="0" />
+        <label id="392" label="" folder="Targeted&gt;Aqua (Konosuba)" sort="0" />
+        <label id="393" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="394" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="395" label="" folder="Targeted&gt;Rosie Richmond" sort="0" />
+        <label id="329" label="" folder="Targeted&gt;Zelda" sort="0" />
+        <label id="396" label="" folder="Targeted&gt;Hilbert" sort="0" />
+        <label id="397" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="156" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="284" label="" folder="Targeted&gt;Lyralei" sort="0" />
+        <label id="398" label="" folder="Targeted&gt;Lyralei" sort="0" />
+        <label id="92" label="" folder="Targeted&gt;Chun Li" sort="0" />
+        <label id="285" label="" folder="Targeted&gt;Fate" sort="0" />
+        <label id="154" label="" folder="Targeted&gt;Bernadetta" sort="0" />
+        <label id="36" label="" folder="Targeted&gt;May" sort="0" />
+        <label id="38" label="" folder="Targeted&gt;May" sort="0" />
+        <label id="43" label="" folder="Targeted&gt;Chara" sort="0" />
+        <label id="37" label="" folder="Targeted&gt;May" sort="0" />
+        <label id="10" label="" folder="Targeted&gt;Y'shtola" sort="0" />
+        <label id="74" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="67" label="" folder="Targeted&gt;Mari Setogaya" sort="0" />
+        <label id="327" label="" folder="Targeted&gt;Meia" sort="0" />
+        <label id="296" label="" folder="Targeted&gt;Y'shtola" sort="0" />
+        <label id="26" label="" folder="Targeted&gt;Jura" sort="0" />
+        <label id="399" label="" folder="Targeted&gt;Edelgard" sort="0" />
+        <label id="385" label="" folder="Targeted&gt;Edelgard" sort="0" />
+        <label id="27" label="" folder="Targeted&gt;Jura" sort="0" />
+        <label id="9" label="" folder="Targeted&gt;Rouge" sort="0" />
+        <label id="72" label="" folder="Targeted&gt;Saki" sort="0" />
+        <label id="152" label="" folder="Targeted&gt;Meia" sort="0" />
+        <label id="28" label="" folder="Targeted&gt;Jura" sort="0" />
+        <label id="82" label="" folder="Targeted&gt;Supernova" sort="0" />
+        <label id="400" label="" folder="Targeted&gt;Yuri" sort="0" />
+        <label id="24" label="" folder="Targeted&gt;Shantae" sort="0" />
+        <label id="373" label="" folder="Targeted&gt;Lux" sort="0" />
+        <label id="99" label="" folder="Targeted&gt;Lux" sort="0" />
+        <label id="348" label="" folder="Targeted&gt;Raine" sort="0" />
+        <label id="347" label="" folder="Targeted&gt;Raine" sort="0" />
+        <label id="264" label="" folder="Targeted&gt;Cynthia" sort="0" />
+        <label id="265" label="" folder="Targeted&gt;Dawn" sort="0" />
+        <label id="90" label="" folder="Targeted&gt;Aella" sort="0" />
+        <label id="257" label="" folder="Targeted&gt;Amalia" sort="0" />
+        <label id="256" label="" folder="Targeted&gt;Amalia" sort="0" />
+        <label id="377" label="" folder="Targeted&gt;Arash" sort="0" />
+        <label id="93" label="" folder="Targeted&gt;Arash" sort="0" />
+        <label id="55" label="" folder="Targeted&gt;Arash" sort="0" />
+        <label id="376" label="" folder="Targeted&gt;Arash" sort="0" />
+        <label id="249" label="" folder="Targeted&gt;Nayru" sort="0" />
+        <label id="339" label="" folder="Targeted&gt;Fina" sort="0" />
+        <label id="125" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="133" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="126" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="58" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="130" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="131" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="129" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="128" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="401" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="402" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="403" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="404" label="" folder="Targeted&gt;Schezo" sort="0" />
+        <label id="405" label="" folder="Targeted&gt;Tharja" sort="0" />
+        <label id="406" label="" folder="Targeted&gt;Tharja" sort="0" />
+        <label id="407" label="" folder="Targeted&gt;Lux" sort="0" />
+        <label id="88" label="" folder="Targeted&gt;Fate" sort="0" />
+        <label id="51" label="" folder="Targeted&gt;Kumatora" sort="0" />
+        <label id="326" label="" folder="Targeted&gt;Megumin" sort="0" />
+        <label id="89" label="" folder="Targeted&gt;Nami" sort="0" />
+        <label id="160" label="" folder="Targeted&gt;Supernova" sort="0" />
+        <label id="132" label="" folder="Targeted&gt;Jessie" sort="0" />
+        <label id="40" label="" folder="Targeted&gt;Dust" sort="0" />
+        <label id="1" label="" folder="Targeted&gt;Nagisa" sort="0" />
+        <label id="408" label="" folder="Targeted&gt;Amalia" sort="0" />
+        <label id="135" label="" folder="Targeted&gt;Tharja" sort="0" />
+        <label id="338" label="" folder="Targeted&gt;Rouge" sort="0" />
+        <label id="409" label="" folder="Targeted&gt;Amy" sort="0" />
+        <label id="381" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="410" label="" folder="Targeted&gt;Jenetta" sort="0" />
+        <label id="411" label="Removed cups at normal time (one man)" folder="" sort="0" />
+        <label id="415" label="" folder="Targeted&gt;Kaz" sort="0" />
+        <label id="417" label="Removed boots" folder="" sort="0" />
+        <label id="418" label="" folder="Targeted&gt;Nico Robin" sort="0" />
+        <label id="416" label="" folder="Targeted&gt;Sucrose" sort="0" />
+        <label id="419" label="" folder="Targeted&gt;Critical Darling" sort="0" />
+        <label id="420" label="" folder="Targeted&gt;Akko" sort="0" />
+        <label id="421" label="Runs shuffling script (Archmage)" folder="" sort="0" />
+        <label id="422" label="Setting scripts (Archmage)" folder="" sort="0" />
+        <label id="423" label="Flashes after victory (Archmage)" folder="" sort="0" />
+        <label id="424" label="Remove hat (Archmage)" folder="" sort="0" />
+        <label id="425" label="Remove coat (Archmage)" folder="" sort="0" />
+        <label id="426" label="About to flash (Archmage)" folder="" sort="0" />
+        <label id="427" label="Flash (Archmage)" folder="" sort="0" />
+        <label id="428" label="Flash (last, Archmage)" folder="" sort="0" />
+        <label id="429" label="About to flash (last) (&quot;What a shame&quot; line, Archmage)" folder="" sort="0" />
+        <label id="430" label="Remove collar (Archmage)" folder="" sort="0" />
+        <label id="431" label="Remove gloves (Archmage)" folder="" sort="0" />
+        <label id="432" label="Remove boots (Archmage)" folder="" sort="0" />
+        <label id="433" label="Remove stockings (Archmage)" folder="" sort="0" />
+        <label id="434" label="Remove boots (Archmage)" folder="" sort="0" />
+        <label id="435" label="Remove boots (Archmage)" folder="" sort="0" />
+        <label id="436" label="Remove stockings (Archmage)" folder="" sort="0" />
+        <label id="437" label="Remove leotard (Archmage, normal)" folder="" sort="0" />
+        <label id="438" label="Removed coat (Archmage)" folder="" sort="0" />
+        <label id="439" label="Removed collar (Archmage)" folder="" sort="0" />
+        <label id="440" label="Removed gloves (Archmage)" folder="" sort="0" />
+        <label id="441" label="Removed boots (Archmage)" folder="" sort="0" />
+        <label id="442" label="Removed stockings (Archmage)" folder="" sort="0" />
+        <label id="443" label="Removed leotard (Archmage)" folder="" sort="0" />
+        <label id="444" label="Removed leotard (Archmage, no men)" folder="" sort="0" />
+        <label id="445" label="Removed cups (Archmage, with men)" folder="" sort="0" />
+        <label id="446" label="" folder="Targeted&gt;Lux" sort="0" />
+        <label id="447" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="448" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="449" label="Switches tags (Archmage)" folder="" sort="0" />
+    </labels>
+    <nextId>449</nextId>
+    <markers>
+        <marker scope="Public" name="" />
+        <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
+        <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
+        <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
+        <marker scope="Public" name="Amalia_BoobClubRevoked">Angela can't come up with anything to do about Amalia covering herself with plants, so she revokes Amalia's membership into the "Boob Club".</marker>
+        <marker scope="Public" name="Amy_Awakening">Amy has awakened. Could it be dark magic?!</marker>
+        <marker scope="Public" name="Amy_NotASpell">Shade doesn't think what happened to Amy was dark magic. So what WAS it?!</marker>
+        <marker scope="Public" name="AngelaEarlyBoobs">Angela has revealed her breasts before removing her boots.</marker>
+        <marker scope="Public" name="ApologiesForNoEarlyBoobs">Angela apologizes for not removing her top early in her Magus outfit.</marker>
+        <marker scope="Public" name="Aqua_Cheating1">Angela suspects Aqua might be cheating.</marker>
+        <marker scope="Public" name="Aqua_Cheating2">Angela asks Undine to confirm that Aqua is cheating.</marker>
+        <marker scope="Public" name="Aqua_Cheating3">Angela asks Salamando to undo Aqua's cheating.</marker>
+        <marker scope="Public" name="Aqua_CheatingSucks">Aqua lost her first hand after casting Blessing. Angela writes it off as a spell that "sucks".</marker>
+        <marker scope="Public" name="Aqua_Hmm">Angela considers Aqua's claims of divinity.</marker>
+        <marker scope="Public" name="Aqua_UndineTest">Angela asks Undine if Aqua is really a goddess.</marker>
+        <marker scope="Public" name="Arash_RieszHawkeyeCouple">Angela tells Arash that two of her friends, Riesz and Hawkeye, are "a couple" but don't know it.</marker>
+        <marker scope="Public" name="Arash_SillyExcuse">Angela tells Arash of a time she tried to get help from a korropokur by telling a ridiculous lie.</marker>
+        <marker scope="Public" name="Arash_TemperatureResponse">Angela says she likes mild heat, but that her castle is only warm because of her mother's magic.</marker>
+        <marker scope="Public" name="Arash_YoungResponse">Angela tells Arash that she does, in fact, know someone who looks younger than she really is.</marker>
+        <marker scope="Public" name="BirthdayWishes">Angela wishes another player a happy birthday. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Private" name="blushLevel">Used for Pose Maker</marker>
+        <marker scope="Public" name="BoobClub">Counts how many women she's inducted into the "Boob Club".</marker>
+        <marker scope="Public" name="BoobClubMeeting">After having already mentioned the "Boob Club", Angela pretends to host a meeting once all women are topless. (Will take a value equal to the ID of a man at the table, who she mentions in the line.)</marker>
+        <marker scope="Public" name="Cammy_JuriRippedLeotard">Juri rips what remains of Cammy's leotard. Angela does not approve.</marker>
+        <marker scope="Public" name="Cammy_LeotardFromAltena">Angela feels pity for Cammy over her ripped leotard, and offers to get a new leotard from Altena.</marker>
+        <marker scope="Public" name="Cammy_LeotardNeverRipped">After Cammy's leotard rips, Angela considers that she's never had that problem. Maybe it's magic?</marker>
+        <marker scope="Public" name="CastElemental">When she calls on an elemental's power, indicates which elemental it is. Only active when she's in a "cast" pose.</marker>
+        <marker scope="Public" name="Caulifla_ClassChange">Angela mistakes Caulifla's Saiyan mode for a class change.</marker>
+        <marker scope="Public" name="Caulifla_ClassChange2">Angela remarks that Caulifla's "class change" only changed her hair to blonde.</marker>
+        <marker scope="Public" name="Caulifla_ClassChange3">Angela thinks a color swap is a lame class change. Hey, wait, isn't that how it worked in the SNES version of her game?</marker>
+        <marker scope="Private" name="cl_Boots">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Briefs">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Bustier">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Cape">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Coat">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Collar">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Cups">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Gloves">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Hat">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Leotard">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Panties">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Scarf">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Stockings">Used for Pose Maker</marker>
+        <marker scope="Private" name="cl_Train">Used for Pose Maker</marker>
+        <marker scope="Public" name="CriticalDarling_DontSellYourSoul">Angela tells Critical Darling that it's not worth selling your soul. She'd know - that's what the Crimson Wizard did!</marker>
+        <marker scope="Public" name="Edelgard_AloneTime">Angela gives her thoughts on total solitude.</marker>
+        <marker scope="Public" name="Edelgard_DudbearTalk">Angela talks in Dudbear to tease Edelgard when she wonders why everyone speaks the same language.</marker>
+        <marker scope="Public" name="Edelgard_LightenUp">Edelgard says exactly the wrong thing in front of Angela. Overbearing mother? Applying too much pressure? No way, Edelgard. Lighten up!</marker>
+        <marker scope="Public" name="Edelgard_NoFormalities">Angela agrees with Edelgard saying she wants no special treatment.</marker>
+        <marker scope="Public" name="Edelgard_OnePercentHope">In response to Edelgard asking about fate, Angela quotes the fortune tellers of her world, but then muses about the fact that fate gives chosen ones a pass anyway.</marker>
+        <marker scope="Public" name="Edelgard_Royalty">Angela acknowledges that Edelgard asks an interesting question about royalty, and indicates that she might have faced a lot of pressure as a child being her kingdom's princess.</marker>
+        <marker scope="Public" name="Edelgard_Spies">Edelgard says spies are watching. Angela wonders about their motivations.</marker>
+        <marker scope="Public" name="FFBraveExvius">Angela notes that a Final Fantasy character looks familiar, with the word "Exvius" running through her mind. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Public" name="FourOfAKindPrincesses">Do four princesses beat four Jacks?</marker>
+        <marker scope="Public" name="GeneralTease">When Angela gives any general tease aimed at a male character (not a unique line or a target for stripping), this will take the value of the character she's targeting. Only applies to the current line.</marker>
+        <marker scope="Public" name="GuessWhat">Encourages a male player to look her way before she unexpectedly removes her top. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Public" name="Hex_GhostShip">Angela recalls an incident with a cursed ghost ship.</marker>
+        <marker scope="Public" name="Hex_SmiteHaunter">It's a ghost! And totally not just a Pokemon!</marker>
+        <marker scope="Public" name="Hex_SorryForFreakout">Angela apologizes to Hex Maniac for freaking out about Haunter.</marker>
+        <marker scope="Private" name="IntelligencePenalty">Tracks when her intelligence is altered</marker>
+        <marker scope="Public" name="Introductions">Angela introduces herself, bragging about her skills and defeating the Dragon Lord.</marker>
+        <marker scope="Public" name="ISleepInPanties">Angela mentions sleeping only in panties - and in the presence of her adventuring companions! Scandalous!</marker>
+        <marker scope="Public" name="Jenetta_Beastfolk">Angela compares Jenetta to Ferolian bestmen, a humanoid cat named Niccolo, and a creature called a "Rabite".</marker>
+        <marker scope="Public" name="Jenetta_NeedlettuceBra">Angela thinks Jenetta's bra looks like "Needlettuce" (she really just means "lettuce").</marker>
+        <marker scope="Public" name="Jura_MagusResponse0">Angela asks about Mejare, and comments that she noticed Jura staring at her.</marker>
+        <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
+        <marker scope="Public" name="Jura_Strip0">Angela asks Jura about Barnette</marker>
+        <marker scope="Private" name="JustShowedBoobs">Only active for the first round after Angela shows off her breasts (regardless of why).</marker>
+        <marker scope="Public" name="Kaz_TravelOptions">Angela tells Kaz about how she's swum on a turtle, flown on a dragon, and been shot out of a cannon.</marker>
+        <marker scope="Public" name="LookedAtMasturbation">Angela couldn't resist the temptation to look at a man masturbating when she was trying to focus. So much for focus!</marker>
+        <marker scope="Public" name="Lux_LuminaMention">Angela suggests summoning Lumina after one of Lux's light puns.</marker>
+        <marker scope="Public" name="Lux_LuminaPun">Angela actually does summon Lumina after one of Lux's light puns.</marker>
+        <marker scope="Public" name="MagusBragGoodHand">In the first round, Angela will brag about her Magus costume. This is the marker for when she has better than a pair.</marker>
+        <marker scope="Public" name="MagusBragNotGoodHand">In the first round, Angela will brag about her Magus costume. This is the marker for when she does not have better than a pair.</marker>
+        <marker scope="Public" name="MagusIntroduction">(Once only) Angela introduces her Magus outfit.</marker>
+        <marker scope="Public" name="Marinette_NormalGirlClass">Angela wonders if Marinette has changed to the "Normal Girl" class.</marker>
+        <marker scope="Private" name="MarthWasLucina">Angela has discovered that "Marth" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Meia_MagusResponse0">As a Magus, Angela tells Meia that she's not from Earth, and that her Magus outfit makes her more powerful.</marker>
+        <marker scope="Public" name="Meia_Response0">Informs Meia that she's from Altena in Fa'Diel, not Earth, and that she dresses how she wants.</marker>
+        <marker scope="Public" name="Meia_Strip0">Angela asks Meia about her origins. She doesn't know what a spaceship is, so she substitutes "airship".</marker>
+        <marker scope="Public" name="MentionedCharlotte">At some point in conversation, Angela has mentioned her friend, a small half-elven cleric named Charlotte.</marker>
+        <marker scope="Public" name="MentionedDuran">At some point in conversation, Angela has mentioned her friend (and crush), the swordsman Duran.</marker>
+        <marker scope="Public" name="MentionedHawkeye">At some point in conversation, Angela has mentioned her friend, the noble thief Hawkeye.</marker>
+        <marker scope="Public" name="MentionedKevin">At some point in conversation, Angela has mentioned her friend, a half-beastman martial artist named Kevin.</marker>
+        <marker scope="Public" name="MentionedRiesz">At some point in conversation, Angela has mentioned her friend, an amazon princess named Riesz. (Pronounced like "Reece".)</marker>
+        <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
+        <marker scope="Public" name="NicoRobin_AboutFaDiel">Angela tells Nico Robin a few things about Fa'Diel.</marker>
+        <marker scope="Public" name="NoPetRabite">Following from PetRabite, Angela considers that Rabites probably wouldn't make good pets.</marker>
+        <marker scope="Public" name="NotShowingBoobs">In her Magus costume, Angela won't show off her breasts early.</marker>
+        <marker scope="Public" name="OffensiveSpellCaster">Angela mentions that she's good at casting offensive elemental magic. (When there is another magic user present, she may address them. In that case, this will take the value of the ID of the other magic user.)</marker>
+        <marker scope="Public" name="PetMonsterThoughts">Angela asks a Pokemon character about their "pet monsters".</marker>
+        <marker scope="Public" name="PetRabite">Following from PetMonsterThoughts, Angela considers having a pet Rabite.</marker>
+        <marker scope="Private" name="PingWasMulan">Angela has discovered that "Ping" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Pyrrha_RocketSave">Pyrrha has saved Brock from his wild rocket.</marker>
+        <marker scope="Public" name="RenamedPlayerWeirdo">Angela decided she didn't like the name the player gave. What a Weirdo!</marker>
+        <marker scope="Public" name="Rosie_AdventuresResponse">Angela tells Rosie that her red leotard is her favorite outfit (alternate costumes will get different lines)</marker>
+        <marker scope="Public" name="Rosie_SixElements">Angela tells Rosie that she can cast fire spells, as well as a bunch of other attack spells too.</marker>
+        <marker scope="Public" name="Ryuko_ChangingClass">Angela mistakes Ryuko's transformation for a class change.</marker>
+        <marker scope="Public" name="Ryuko_MagusHypocrisy">Angela suddenly realizes that she joked about Ryuko's underwear "class" when she came in her extremely skimpy Magus outfit.</marker>
+        <marker scope="Public" name="Ryuko_UnderwearClass">Angela wonders aloud what sort of class change would put someone in nothing but a set of underwear.</marker>
+        <marker scope="Private" name="SayBoobClubMeeting">Triggers her "Boob club meeting" response (don't target this marker; target the regular one.)</marker>
+        <marker scope="Private" name="SayWhatAShame">Triggers her "What a shame" response (don't target this marker; target the regular one.)</marker>
+        <marker scope="Public" name="Schezo_ADemonstration">Angela teases Schezo by asking if he'll give a demonstration of the outfit he sleeps in.</marker>
+        <marker scope="Public" name="Schezo_PeepingOnPurpose">Angela gets suspicious that Schezo might have peeped on women without them knowing.</marker>
+        <marker scope="Public" name="Schezo_SleepInBoxers">Angela teases Schezo by asking if he sleeps in his boxers.</marker>
+        <marker scope="Public" name="Schezo_SleepingNude">Angela teases Schezo by asking if he sleeps naked.</marker>
+        <marker scope="Private" name="Schezo_SleepResponse">General marker for Angela's responses to Schezo talking about her sleeping in panties. Don't target this one; target one of the others.</marker>
+        <marker scope="Public" name="Selphy_OhNoMonsters">Angela tries to get Selphy to look up from her book. </marker>
+        <marker scope="Public" name="ShyToplessGirl">If Angela is about to reveal her breasts early, she'll mention to a topless girl with the "shy" tag that she'll take some attention away. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Public" name="SmashBrosSpirit">Angela mentions a very smashing dream she once had. (Will take a value equal to the ID of the character she's targeting, except in the case of Zelda, who she will ALWAYS mention when present.)</marker>
+        <marker scope="Public" name="SomeoneFromTheCastle">Angela lets on that her prowess with magic is a new thing... and that she doesn't want anyone from Altena to know she's here.</marker>
+        <marker scope="Private" name="StareDirection">Used for pose determination</marker>
+        <marker scope="Public" name="SummonedGnome">At some point in conversation, Angela has summoned the Elemental of Earth, Gnome. Yes, the element is called Earth, but she's not FROM Earth!</marker>
+        <marker scope="Public" name="SummonedLumina">At some point in conversation, Angela has summoned the Elemental of Light, Lumina. Heyo!</marker>
+        <marker scope="Public" name="SummonedSalamando">At some point in conversation, Angela has summoned the Elemental of Fire, Salamando. Graaahh!</marker>
+        <marker scope="Public" name="SummonedShade">At some point in conversation, Angela has summoned the Elemental of Darkness, Shade. He's a little creepy, but he's good, I promise!</marker>
+        <marker scope="Public" name="SummonedSylphid">At some point in conversation, Angela has summoned the Elemental of Wind, Sylphid. Prepare to get blown away!</marker>
+        <marker scope="Public" name="SummonedUndine">At some point in conversation, Angela has summoned the Elemental of Water, Undine. Try not to cry.</marker>
+        <marker scope="Public" name="Tharja_ShrinkReaction">Counts how many times Tharja has reduced the breast size of another woman. This causes Angela not to do some of her more teasy behaviors.</marker>
+        <marker scope="Public" name="ThwackThreat">Angela threatens to "thwack" anyone who asks why she's not using her staff to forfeit.</marker>
+        <marker scope="Public" name="Tifa_LostBra">Angela tells Tifa it's okay if she puts her bra back on after she accidentally takes it off, then wonders why she doesn't.</marker>
+        <marker scope="Public" name="ToplessIsntNaked">Angela remarks that being topless (which she doesn't seem to mind much) isn't the same thing as being naked (which she's a bit more shy about.)</marker>
+        <marker scope="Private" name="ToplessWomanNotChihiro">Tracks whether there is a topless woman at the table other than Chihiro (used for some dialogue cases)</marker>
+        <marker scope="Public" name="Wasp_IsAFaerie">Angela thinks Wasp is a faerie, and asks if she'll get dragged on another adventure.</marker>
+        <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
+        <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
+        <marker scope="Public" name="Witch_DontKnowWhatYoureDoing">Angela suggests that Witch doesn't know what she's doing with her magic when the latter casts the wrong spell.</marker>
+        <marker scope="Public" name="WitchTable">Angela feels the energy of witches at the table. Kinda like in Altena!</marker>
+        <marker scope="Private" name="WomanNotPing">Set when Angela recognizes that another player at the table is a woman (she doesn't recognize "Ping" as a woman)</marker>
+        <marker scope="Public" name="WorldSavingHeroes">Angela mentions having companions who went adventuring with her (she'll never say specifically who her companions were though.)</marker>
+        <marker scope="Public" name="Yuno_NoGimmickToday">Angela tells Yuno that she isn't doing her "gimmick" today.</marker>
+        <marker scope="Public" name="Yuno_Response0a">Angela wonders how someone knew about the early breast reveal that she may or may not do.</marker>
+        <marker scope="Public" name="Yuno_Response0b">Angela tells Yuno that she's not doing her "gimmick" today. (In some niche scenarios, she might anyway.)</marker>
+        <marker scope="Public" name="Yuno_Response0c">Angela wonders how someone knew about the early breast reveal... that she's right about to do.</marker>
+        <marker scope="Public" name="Yuno_Response0d">Angela tells Yuno she's not doing her "gimmick" while in her Magus outfit.</marker>
+    </markers>
+</metadata>

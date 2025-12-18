@@ -689,6 +689,8 @@
         <response id="2256" opponent="jean" opponentId="325" />
         <response id="2263" opponent="zeke_pandoria" opponentId="1" />
         <response id="2274" opponent="jean" opponentId="469" />
+        <response id="2308" opponent="natasha" opponentId="13" />
+        <response id="2309" opponent="tifa" opponentId="171" />
     </responses>
     <notes>
         <note id="401">This is a special version of this line for Fluttershy to react to, but it uses the regular marker to allow for replied from anyone.
@@ -721,6 +723,14 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <note id="1792">Nagisa is taking a photo with Mahiru.</note>
         <note id="551">I figure Nagisa is trying to distract herself here by going on talking. I think this is more interesting that focusing on her clothes or her embarrassment. Plus even she might be willing to display a rat skull if it meant good luck in this situation!</note>
         <note id="2261">It's a humorous misunderstanding.</note>
+        <note id="2292">[If the Nagisa is wearing her Waitress Uniform and the player has unlocked it for year-round use, she has a chance to wear different underwear between stages 4-6. However, it's still possible to replay her in her default underwear.]</note>
+        <note id="2301">[One random possibility is this elegant green and blue set designed by Nomelet.]</note>
+        <note id="2302">[Another random possibility is this mismatched cherry set by Arndress.]</note>
+        <note id="2290">[If Fluttershy is present and both Fluttershy and Nagisa are both in their default outfits, they'll have a conversation about their identical underwear. Therefore, give Nagisa her default underwear.]</note>
+        <note id="2299">[Another random possibility is this cute mismatched set by Horsecat.]</note>
+        <note id="2300">[And there's a rare chance of seeing this lacy white set by Nord!]</note>
+        <note id="2291">[If the player has won against Nagisa once and unlocked her Panties collectible, she has a chance to wear different underwear between stages 4-6. However, it's still possible to replay her in her default underwear.]</note>
+        <note id="2298">[One random possibility is this striped blue set designed by Fence.]</note>
     </notes>
     <labels>
         <label id="1" label="" folder="Waitress" sort="30" />
@@ -1835,7 +1845,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="1184" label="" folder="Saki Y to left" sort="0" />
         <label id="1185" label="" folder="Saki Y to right" sort="2" />
         <label id="141" label="" folder="Anna to left" sort="2" />
-        <label id="89" label="" folder="Anna to left" sort="0" />
+        <label id="89" label="" folder="Brock to left" sort="2" />
         <label id="1186" label="" folder="Saki Y to right" sort="0" />
         <label id="1187" label="" folder="Saki Y to right" sort="3" />
         <label id="1188" label="" folder="Estelle to right" sort="2" />
@@ -1892,7 +1902,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="1238" label="" folder="Estelle to left" sort="2" />
         <label id="1239" label="" folder="Estelle to left" sort="3" />
         <label id="1240" label="" folder="Meia to right" sort="51" />
-        <label id="1241" label="" folder="Nadeshiko to right" sort="2" />
+        <label id="1241" label="" folder="Nadeshiko to left" sort="2" />
         <label id="1242" label="" folder="Nadeshiko to right" sort="6" />
         <label id="1243" label="" folder="Nadeshiko to right" sort="0" />
         <label id="1244" label="" folder="Magma Grunt to right" sort="2" />
@@ -1956,7 +1966,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="1302" label="" folder="Aella to left" sort="2" />
         <label id="1303" label="" folder="Xander to left" sort="0" />
         <label id="166" label="" folder="Yusuke to left" sort="3" />
-        <label id="1304" label="" folder="Jessie to left" sort="10" />
+        <label id="1304" label="nagisa_jessie_been_in_any_movies" folder="Jessie to left" sort="10" />
         <label id="232" label="" folder="Hilda to left" sort="0" />
         <label id="1305" label="" folder="Korra to left" sort="0" />
         <label id="6" label="" folder="Jura to left" sort="2" />
@@ -2911,32 +2921,82 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <label id="2256" label="" folder="Jean to left" sort="0" />
         <label id="2257" label="princesses indoors" folder="" sort="0" />
         <label id="2258" label="haunted forest" folder="" sort="0" />
-        <label id="2259" label="" folder="Tifa to right" sort="0" />
+        <label id="2259" label="" folder="Tifa to right" sort="2" />
         <label id="2260" label="" folder="Tifa to right" sort="0" />
-        <label id="2261" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
+        <label id="2261" label="" folder="Zeke &amp; Pandoria to right" sort="2" />
         <label id="2262" label="" folder="Zeke &amp; Pandoria to right" sort="0" />
         <label id="2263" label="" folder="Zeke &amp; Pandoria to left" sort="0" />
-        <label id="2264" label="" folder="Waitress" sort="0" />
-        <label id="2265" label="" folder="Waitress" sort="0" />
-        <label id="2266" label="" folder="Waitress" sort="0" />
-        <label id="2267" label="" folder="Waitress" sort="0" />
-        <label id="2268" label="" folder="Waitress" sort="0" />
-        <label id="2269" label="" folder="Waitress" sort="0" />
-        <label id="2270" label="" folder="Waitress" sort="0" />
-        <label id="2271" label="" folder="a short game / Waitress" sort="0" />
+        <label id="2264" label="" folder="Waitress" sort="19" />
+        <label id="2265" label="" folder="Waitress" sort="20" />
+        <label id="2266" label="" folder="Waitress" sort="7" />
+        <label id="2267" label="" folder="Waitress" sort="37" />
+        <label id="2268" label="" folder="Waitress" sort="38" />
+        <label id="2269" label="" folder="Waitress" sort="26" />
+        <label id="2270" label="" folder="Waitress" sort="27" />
+        <label id="2271" label="" folder="a short game / Waitress" sort="3" />
         <label id="2272" label="" folder="a short game / Waitress" sort="0" />
-        <label id="2273" label="" folder="a short game / Waitress" sort="0" />
-        <label id="2274" label="" folder="Jean to left" sort="0" />
+        <label id="2273" label="" folder="a short game / Waitress" sort="2" />
+        <label id="2274" label="" folder="Jean to left" sort="2" />
         <label id="2275" label="male player" folder="" sort="0" />
         <label id="2276" label="" folder="Sanako to left or right" sort="0" />
         <label id="2277" label="" folder="Hermione to left or rght" sort="0" />
+        <label id="2278" label="" folder="Toru Hagakure to left or right" sort="0" />
+        <label id="2279" label="feminine bedroom" folder="" sort="0" />
+        <label id="2281" label="sunglasses" folder="" sort="0" />
+        <label id="2282" label="belt and chubby" folder="" sort="0" />
+        <label id="2283" label="beach" folder="CONVERSATION STARTERS" sort="21" />
+        <label id="2284" label="" folder="Mr Raynor to right" sort="51" />
+        <label id="2285" label="" folder="Mr Raynor to left or right" sort="0" />
+        <label id="2286" label="" folder="Waitress" sort="0" />
+        <label id="2287" label="" folder="Jason to left" sort="0" />
+        <label id="2288" label="" folder="Nugi-chan to left" sort="4" />
+        <label id="2289" label="weapon" folder="" sort="0" />
+        <label id="178" label="" folder="Bowsette to left or right" sort="0" />
+        <label id="2290" label="Nagisa + Fluttershy = default underwear" color="6" folder="" sort="0" />
+        <label id="2291" label="Default Uniform worn + Nagisa's Panties collectible unlocked = random underwear 1" color="6" folder="" sort="0" />
+        <label id="2292" label="Waitress Uniform worn + Waitress Uniform collectible unlocked = random underwear 1" color="6" folder="" sort="0" />
+        <label id="2293" label="set underwear to blue_belle" color="6" folder="" sort="0" />
+        <label id="2294" label="set underwear to default" color="6" folder="" sort="0" />
+        <label id="2295" label="set underwear to white_lace" color="6" folder="" sort="0" />
+        <label id="2296" label="set underwear to mismatched" color="6" folder="" sort="0" />
+        <label id="2297" label="fallback: no underwear set = default underwear" color="6" folder="" sort="0" />
+        <label id="2298" label="Default Uniform worn + Nagisa's Panties collectible unlocked = random underwear 2" color="6" folder="" sort="0" />
+        <label id="2299" label="Default Uniform worn + Nagisa's Panties collectible unlocked = random underwear 3" color="6" folder="" sort="0" />
+        <label id="2300" label="Default Uniform worn + Nagisa's Panties collectible unlocked = random underwear 4" color="6" folder="" sort="0" />
+        <label id="2301" label="Waitress Uniform worn + Waitress Uniform collectible unlocked = random underwear 2" color="6" folder="" sort="0" />
+        <label id="2302" label="Waitress Uniform worn + Waitress Uniform collectible unlocked = random underwear 3" color="6" folder="" sort="0" />
+        <label id="2303" label="" folder="Hermione Classic to left" sort="0" />
+        <label id="2304" label="" folder="Zone-tan to left or right" sort="0" />
+        <label id="2305" label="" folder="Nadeshiko to left" sort="0" />
+        <label id="2306" label="hat" folder="" sort="0" />
+        <label id="2307" label="" folder="Serena to left or right" sort="0" />
+        <label id="2308" label="" folder="Natasha to left or right" sort="0" />
+        <label id="140" label="" folder="Saki N to left" sort="0" />
+        <label id="2309" label="" folder="Tifa to left" sort="0" />
+        <label id="2310" label="" folder="Amy to right" sort="0" />
+        <label id="2311" label="" folder="Amy to right" sort="0" />
+        <label id="2312" label="" folder="Amy to right" sort="0" />
+        <label id="2313" label="" folder="Amy to right" sort="0" />
+        <label id="2314" label="" folder="Amy to right" sort="0" />
+        <label id="2315" label="" folder="Amy to right" sort="0" />
+        <label id="2316" label="" folder="Amy to right" sort="0" />
+        <label id="2317" label="" folder="Amy to right" sort="0" />
+        <label id="2318" label="" folder="Amy to right" sort="0" />
+        <label id="2319" label="" folder="Amy to right" sort="0" />
+        <label id="2320" label="" folder="Amy to right" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue</prefix>
         <prefix>collectible</prefix>
         <prefix>x-</prefix>
+        <prefix>y_stripping</prefix>
+        <prefix>y_melancholy</prefix>
+        <prefix>z_stripping_1</prefix>
     </prefixes>
-    <nextId>2277</nextId>
+    <posePreviewMarkers>
+        <posePreviewMarker>nagisa_underwear_default</posePreviewMarker>
+    </posePreviewMarkers>
+    <nextId>2320</nextId>
     <markers>
         <marker scope="Public" name="nagisa_9s_n9_91" />
         <marker scope="Public" name="nagisa_9s_n9_n1" />
@@ -3003,6 +3063,17 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_amy_butt_solidarity" />
         <marker scope="Public" name="nagisa_amy_doggy_misunderstanding" />
         <marker scope="Public" name="nagisa_amy_dont_go_apeshit" />
+        <marker scope="Public" name="nagisa_amy_na_n01" />
+        <marker scope="Public" name="nagisa_amy_na_n02" />
+        <marker scope="Public" name="nagisa_amy_na_n03" />
+        <marker scope="Public" name="nagisa_amy_na_n04" />
+        <marker scope="Public" name="nagisa_amy_na_n05" />
+        <marker scope="Public" name="nagisa_amy_na_n06" />
+        <marker scope="Public" name="nagisa_amy_na_n07" />
+        <marker scope="Public" name="nagisa_amy_na_n08" />
+        <marker scope="Public" name="nagisa_amy_na_n09" />
+        <marker scope="Public" name="nagisa_amy_na_n10" />
+        <marker scope="Public" name="nagisa_amy_na_n11" />
         <marker scope="Public" name="nagisa_amy_planar_form" />
         <marker scope="Public" name="nagisa_amy_rose_shopping" />
         <marker scope="Public" name="nagisa_amy_shirt" />
@@ -3164,6 +3235,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_barbara_wwjd" />
         <marker scope="Public" name="nagisa_basil_flowerask" />
         <marker scope="Public" name="nagisa_bathhouse_with_mom" />
+        <marker scope="Public" name="nagisa_beach_drink" />
         <marker scope="Public" name="nagisa_beach_hiding_place" />
         <marker scope="Public" name="nagisa_beach_not_swimmer" />
         <marker scope="Public" name="nagisa_beach_sand_in_shoes" />
@@ -3178,6 +3250,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_beatrix_surgeries" />
         <marker scope="Public" name="nagisa_beatrix_varelsi_threat" />
         <marker scope="Public" name="nagisa_bedroom_break" />
+        <marker scope="Public" name="nagisa_bedroom_cleaning" />
         <marker scope="Public" name="nagisa_bedroom_sleepover" />
         <marker scope="Public" name="nagisa_bella_goth_ish_knee_oobatay" />
         <marker scope="Public" name="nagisa_bernadetta_meia_military_command" />
@@ -3950,18 +4023,9 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_komi-san_deselected" />
         <marker scope="Public" name="nagisa_komi-san_nk_k1" />
         <marker scope="Public" name="nagisa_komi-san_nk_n1" />
-        <marker scope="Public" name="nagisa_korra_allowed_to_look" />
         <marker scope="Public" name="nagisa_korra_armbands" />
         <marker scope="Public" name="nagisa_korra_armbands_thanks" />
-        <marker scope="Public" name="nagisa_korra_cant_believe" />
-        <marker scope="Public" name="nagisa_korra_cant_stop_looking" />
-        <marker scope="Public" name="nagisa_korra_dont_need_to_look_again" />
-        <marker scope="Public" name="nagisa_korra_eyes_covered" />
-        <marker scope="Public" name="nagisa_korra_not_staring" />
-        <marker scope="Public" name="nagisa_korra_okinawa" />
-        <marker scope="Public" name="nagisa_korra_so_big" />
         <marker scope="Public" name="nagisa_korra_what_is_the_avatar" />
-        <marker scope="Public" name="nagisa_korra_wow" />
         <marker scope="Public" name="nagisa_kumatora_classroom" />
         <marker scope="Public" name="nagisa_kumatora_favorite_foods" />
         <marker scope="Public" name="nagisa_kumatora_first_name" />
@@ -4256,6 +4320,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_may_scar" />
         <marker scope="Public" name="nagisa_may_summer_dance" />
         <marker scope="Public" name="nagisa_meanie">Nagisa calls out a meanie.</marker>
+        <marker scope="Public" name="nagisa_megamix_done" />
         <marker scope="Public" name="nagisa_megumin_selected_response" />
         <marker scope="Public" name="nagisa_mei_count_your_glasses" />
         <marker scope="Public" name="nagisa_mei_dont_freeze_me" />
@@ -4538,6 +4603,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_mysterious_scar">Nagisa's father claims that she has a mysterious scar on her butt.</marker>
         <marker scope="Public" name="nagisa_nadeshiiko_selected_uniform" />
         <marker scope="Public" name="nagisa_nadeshiko_any_tips" />
+        <marker scope="Public" name="nagisa_nadeshiko_camping_tips_start" />
         <marker scope="Public" name="nagisa_nadeshiko_dango" />
         <marker scope="Public" name="nagisa_nadeshiko_dango_comeback" />
         <marker scope="Public" name="nagisa_nadeshiko_dango_too_cute" />
@@ -4561,6 +4627,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_nami_dream_drama_club" />
         <marker scope="Public" name="nagisa_nami_splash_panties" />
         <marker scope="Public" name="nagisa_nanoko-chan_virgin" />
+        <marker scope="Public" name="nagisa_natasha_play_the_classics" />
         <marker scope="Public" name="nagisa_natsuki_1st_nude2" />
         <marker scope="Public" name="nagisa_natsuki_bathroom" />
         <marker scope="Public" name="nagisa_natsuki_butt" />
@@ -4882,6 +4949,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_pit_touching" />
         <marker scope="Public" name="nagisa_pit_wing_boy" />
         <marker scope="Public" name="nagisa_play">Nagisa sets this marker when she announces that she's going to recite a play for her forfeit.</marker>
+        <marker scope="Public" name="nagisa_play_tragic_fantasy" />
         <marker scope="Public" name="nagisa_played_tomoyo_after">Nagisa claims to have played the Tomoyo After game.</marker>
         <marker scope="Public" name="nagisa_playing_with_boys">In the first round, Nagisa can announce that she didn't realize that boys would be playing too.</marker>
         <marker scope="Public" name="nagisa_please_be_nice_to_me" />
@@ -5201,6 +5269,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_senko_sn_n1" />
         <marker scope="Public" name="nagisa_senko_sn_n21" />
         <marker scope="Public" name="nagisa_serena_bad_poker" />
+        <marker scope="Public" name="nagisa_serena_s03" />
         <marker scope="Public" name="nagisa_sex_toilet_deselected" />
         <marker scope="Public" name="nagisa_sex_toilet_selected" />
         <marker scope="Public" name="nagisa_shaggy_frighten" />
@@ -5262,6 +5331,8 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_tifa_is_the_winner" />
         <marker scope="Public" name="nagisa_tifa_nt_n01" />
         <marker scope="Public" name="nagisa_tifa_nt_t01" />
+        <marker scope="Public" name="nagisa_tifa_tn_t08" />
+        <marker scope="Public" name="nagisa_tifa_tn_t08a" />
         <marker scope="Public" name="nagisa_tifa_win">Nagisa thinks Tifa will "win" even if she loses (because of her bust).</marker>
         <marker scope="Public" name="nagisa_tiki_bar_school_trip" />
         <marker scope="Public" name="nagisa_tina_cowgirl" />
@@ -5274,6 +5345,7 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_tomoko_unique" />
         <marker scope="Public" name="nagisa_toru_2p" />
         <marker scope="Public" name="nagisa_toru_selected" />
+        <marker scope="Public" name="nagisa_toru_t15" />
         <marker scope="Public" name="nagisa_tracer_disappear" />
         <marker scope="Public" name="nagisa_tracer_rewind_time" />
         <marker scope="Public" name="nagisa_trainer_chest_support" />
@@ -5287,7 +5359,11 @@ Intentionally doesn't require Fluttershy's nagisa_great_to_hear marker from the 
         <marker scope="Public" name="nagisa_twisted_fate_bilge_water" />
         <marker scope="Public" name="nagisa_twisted_fate_time_for_what" />
         <marker scope="Public" name="nagisa_uhura_orbs_of_light" />
+        <marker scope="Public" name="nagisa_underwear_blue_belle">Nagisa is wearing her blue belle underwear: striped in her default outfit and teal and flowery in her waitress uniform</marker>
+        <marker scope="Public" name="nagisa_underwear_default">Nagisa is wearing her default underwear: pink in her default outfit and purple/white in her waitress uniform</marker>
+        <marker scope="Public" name="nagisa_underwear_mismatched">Nagisa is wearing her mismatched underwear: dango family style in her default outfit and pink/white cherry bow in her waitress uniform</marker>
         <marker scope="Public" name="nagisa_underwear_party">Zoey and Nagisa entertain the idea of having an underwear party instead.</marker>
+        <marker scope="Public" name="nagisa_underwear_white_lace">Nagisa is wearing her white lace underwear: default uniform only</marker>
         <marker scope="Public" name="nagisa_urashima" />
         <marker scope="Public" name="nagisa_uravity_brave" />
         <marker scope="Public" name="nagisa_uravity_helmet">Nagisa observes that it would be difficult to play cards while wearing a helmet.</marker>

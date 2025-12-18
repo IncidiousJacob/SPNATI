@@ -10,7 +10,6 @@
         <tag from="5" to="6">lingerie</tag>
         <tag>medium_breasts</tag>
         <tag remove="true">messy_hair</tag>
-        <tag>military</tag>
         <tag from="5" to="6">pubic_hair_peek</tag>
         <tag remove="true">school_uniform</tag>
         <tag remove="true">short</tag>
@@ -18,15 +17,17 @@
         <tag from="0" to="3">spats</tag>
         <tag remove="true">student</tag>
     </tags>
+    <layers>7</layers>
     <folder>opponents/reskins/bernadetta_war_outfit/</folder>
     <wardrobe>
         <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
         <clothing name="bra" generic="bra" position="upper" type="important" />
         <clothing name="dress" generic="dress" position="both" type="major" plural="true" />
-        <clothing name="spats" generic="shorts" position="lower" type="minor" />
+        <clothing name="spats" generic="shorts" position="lower" type="minor" plural="true" />
         <clothing name="boots" generic="shoes" position="feet" type="minor" plural="true" />
         <clothing name="gloves" generic="gloves" position="hands" type="extra" plural="true" />
         <clothing name="cape" generic="cape" position="upper" type="minor" />
     </wardrobe>
+
 
 </costume>

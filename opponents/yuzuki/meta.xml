@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1751230089843</lastupdate>
+    <lastupdate>1766007037873</lastupdate>
     <first>Yuzuki</first>
     <last>Yasuda</last>
     <label>Yuzuki Yasuda</label>
@@ -10,18 +10,20 @@
     <writer>MyMainAccIsANord</writer>
     <artist>MyMainAccIsANord, Nomelet (outfits)</artist>
     <birthday month="10" day="29" />
-    <description>A Kuchisake-onna, or 'Slit-Mouthed Woman', is a vengeful spirit that will ask you if her face looks beautiful -- and attack you if you respond wrong when her mouth is revealed. Ashamed of that side of herself, Yuzuki is here to find a date.</description>
-    <epilogue status="unlisted" gender="any" hint="Finish a game where Yuzuki lost completely.">Warm Night With The Slit-Mouth Woman!?</epilogue>
+    <description>A Kuchisake-onna, or 'Slit-Mouthed Woman', is a vengeful spirit that will ask you if she looks beautiful -- and attack if you respond wrong when she reveals her mouth to you. Ashamed of that side of herself, Yuzuki is here to find a date.</description>
+    <epilogue status="unlisted" gender="any" img="epilogue/title_card.png" hint="Finish a game where Yuzuki lost completely.">Warm Night With The Slit-Mouth Woman!?</epilogue>
     <layers>6</layers>
     <default-costume-name>Casual Kuchisake-onna</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/yuzuki_valentine/" img="0-zz_portrait.png" set="valentines" status="online">Ai no Yūrei</costume>
         <costume folder="opponents/reskins/yuzuki_office/" img="0-zz_portrait.png" status="online">Office Onryō</costume>
+        <costume folder="opponents/reskins/yuzuki_valentine/" img="0-zz_portrait.png" set="valentines" status="online">Ai no Yūrei</costume>
         <costume folder="opponents/reskins/yuzuki_summer/" img="0-zz_portrait.png" set="summer" status="online" layers="5">Yasumi Yōkai</costume>
         <costume folder="opponents/reskins/yuzuki_sleepover/" img="0-zz_portrait.png" set="sleepover" status="online" layers="4">Sleepover Spirit</costume>
+        <costume folder="opponents/reskins/yuzuki_halloween/" img="0-zz_portrait.png" set="halloween" status="online" collectible="yuzuki_halloween">Byōin Bakemono</costume>
+        <costume folder="opponents/reskins/yuzuki_winter/" img="0-zz_portrait.png" set="xmas" status="online">Winter Wraith</costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <short-game-enabled>untested</short-game-enabled>
-    <lines>1534</lines>
-    <poses>239</poses>
+    <lines>1795</lines>
+    <poses>265</poses>
 </opponent>

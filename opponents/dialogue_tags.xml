@@ -544,7 +544,7 @@
     <defaultImage>interested</defaultImage>
     <defaultText>An opponent is removing the last piece of clothing covering their crotch. For NPCs, this is a clothing element on the "lower" location, with the "important" type.</defaultText>
   </trigger>
-  <trigger tag="opponent_crotch_is_visible" start="0" end="10" optional="true" label="Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their chest" group="8" order="6" color="4" safeLabel="Bottom (Opponent)">
+  <trigger tag="opponent_crotch_is_visible" start="0" end="10" optional="true" label="Visible (Crotch, Opponent)" relatedGroup="8" hasTarget="true" description="An opponent of either gender has revealed their crotch" group="8" order="6" color="4" safeLabel="Bottom (Opponent)">
     <vars>
       <string>name</string>
       <string>clothing</string>

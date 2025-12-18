@@ -2515,11 +2515,11 @@ Case.prototype.checkConditions = function (self, opp, postDialogue) {
     })) {
         return false; // failed filter count
     }
-    var bindingCombinations = getAllBindingCombinations(Object.entries(counterMatches));
-    shuffleArray(bindingCombinations);
+    const bindingCombinations = getAllBindingCombinations(Object.entries(counterMatches));
+    bindingCombinations.shuffle();
     /* In the trivial case with no condition variables, we get a single binding combination of {}.
        And with no tests, this.tests.every() trivially returns true. */
-    for (var i = 0; i < bindingCombinations.length; i++) {
+    for (let i = 0; i < bindingCombinations.length; i++) {
         addExtraNumberedBindings(bindingCombinations[i], Object.entries(counterMatches));
         if (this.tests.every(function(test) {
             return test.evaluate(self, opp, bindingCombinations[i]);
@@ -3026,7 +3026,7 @@ function addExtraNumberedBindings (bindings, variableMatches) {
     variableMatches.forEach(function(pair) {
         var variable = pair[0], matches = pair[1];
         var otherMatches = matches.filter(function(match) { return match != bindings[variable]; });
-        shuffleArray(otherMatches);
+        otherMatches.shuffle();
         otherMatches.forEach(function(match, i) {
             bindings[variable + (i + 2)] = match;
         });
