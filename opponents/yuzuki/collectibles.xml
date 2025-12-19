@@ -1,31 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="yuzuki_bra" status="online" img="opponents/yuzuki/temp/yuzuki_bra.png,opponents/yuzuki/3-z_1_strip.png" thumbnail="opponents/yuzuki/temp/yuzuki_bra.png">
+    <collectible id="yuzuki_bra" status="online" thumbnail="opponents/yuzuki/temp/yuzuki_bra.png">
         <title>Yuzuki's Bra</title>
         <text>Yuzuki's faithful bra. Don't you think it looks useful?</text>
         <unlock>Play against Yuzuki Yasuda until she takes off her bra (and her mask).</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/yuzuki/temp/yuzuki_bra.png</picture>
+        <picture>opponents/yuzuki/3-z_1_strip.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/yuzuki/temp/yuzuki_bra.png" name="bra" generic="bra" position="upper" type="important" />
     </collectible>
-    <collectible id="yuzuki_panties" status="online" img="opponents/yuzuki/temp/yuzuki_panties.png,opponents/yuzuki/extra/5-zz_buttpose_special.png" thumbnail="opponents/yuzuki/temp/yuzuki_panties.png">
+    <collectible id="yuzuki_panties" status="online" thumbnail="opponents/yuzuki/temp/yuzuki_panties.png">
         <title>Yuzuki's Panties</title>
         <text>Yuzuki's underwear. Do you think they're pretty?</text>
         <unlock>Finish a game where Yuzuki lost and masturbated to completion.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/yuzuki/temp/yuzuki_panties.png</picture>
+        <picture>opponents/yuzuki/extra/5-zz_buttpose_special.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/yuzuki/temp/yuzuki_panties.png" name="panties" generic="underwear" position="lower" type="important" plural="true" />
     </collectible>
-    <collectible id="yuzuki_halloween" status="online" img="opponents/yuzuki/extra/halloweenicon.png" thumbnail="opponents/yuzuki/extra/halloweenicon.png">
+    <collectible id="yuzuki_halloween" status="online" thumbnail="opponents/yuzuki/extra/halloweenicon.png">
         <title>Yuzuki Nurse Outfit</title>
         <text>Yuzuki made her debut in Halloween 2024. Now, please enjoy her Halloween nurse outfit year-round!</text>
         <unlock>Finish a game with Yuzuki in her Halloween outfit.</unlock>
         <hidden>true</hidden>
-        <hide-details>true</hide-details>
+        <picture>opponents/yuzuki/extra/halloweenicon.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/2-aroused.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/3-horny.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/4-lifting.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/5-z_2_strip.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/7-butt.png</picture>
+        <picture>opponents/reskins/yuzuki_halloween/8-mast_finished.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/yuzuki_halloween/</costume-folder>
+        <hidden-exceptions costume="yuzuki_halloween" event="halloween" costume-set="halloween" />
     </collectible>
     <collectible id="yuzuki_forfeitgallery" status="unlisted">
         <title>Yuzuki Forfeit Gallery</title>
