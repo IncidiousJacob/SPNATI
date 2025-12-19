@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <costume>
     <id>serena_pajama</id>
-    <label>Serena</label>
     <tags>
         <tag>alternative_skin</tag>
         <tag remove="true">hat</tag>
@@ -2128,6 +2127,10 @@
         <pose id="Conditioner">
             <sprite id="pokeball" src="reskins/serena_pajama/0-pokeball.png" x="0" y="0" />
             <sprite id="conditioner" src="serena/conditioner.png" x="-161" y="162" />
+        </pose>
+        <pose id="poutSquirtPuddle">
+            <sprite id="pout" src="reskins/serena_pajama/9-pout.png" x="0" y="0" />
+            <sprite id="puddle" src="serena/puddle.png" x="0" y="1285" scalex="1.9" />
         </pose>
     </poses>
 
