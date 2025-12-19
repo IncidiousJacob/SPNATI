@@ -330,12 +330,11 @@
             <sprite id="boot_right_jump" marker="cl_Boots=0" z="7" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scaley="1.2" alpha="0" rotation="-2" />
             <sprite id="boot_left" marker="cl_Boots=0" z="9" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="30" y="1202" scalex="-1" scaley="1.2" alpha="100" rotation="2" />
             <sprite id="boot_left_jump" marker="cl_Boots=0" z="7" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" scalex="-1" scaley="1.2" alpha="0" rotation="-2" />
-            <sprite id="boot_right_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="-48" y="1160" scaley="1.2" rotation="-2" />
-            <sprite id="boot_left_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="33" y="1160" scalex="-1" scaley="1.2" rotation="2" />
+            <sprite id="boot_right_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="-48" y="1160" scaley="1.2" alpha="100" rotation="-2" />
+            <sprite id="boot_left_back" marker="cl_Boots=0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" x="33" y="1160" scalex="-1" scaley="1.2" alpha="100" rotation="2" />
             <sprite id="coat_ribbon_right" marker="cl_Coat=0" z="3" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatR.png" x="-74" y="427" />
             <sprite id="coat_ribbon_left" marker="cl_Coat=0" z="3" src="reskins/angela_tom_archmage/ClothingPieces/AngelaACoatR.png" x="63" y="476" scalex="-1" />
-            <sprite id="feet" marker="cl_Stockings=1" delay="0.25" z="1" src="angela_tom/BodyPieces/Main/noheels_surprised.png" x="0" y="-17" />
-            <sprite id="feet_stockings" marker="cl_Stockings=0" delay="0.25" z="1" src="reskins/angela_tom_archmage/BodyPieces/Legs/feet_surprised.png" x="0" y="-17" />
+            <sprite id="feet_stockings" marker="cl_Stockings=0" delay="0.25" z="1" src="reskins/angela_tom_archmage/BodyPieces/Legs/feet_surprised.png" x="0" y="-40" alpha="100" />
             <directive type="animation" id="ponytail" ease="linear" interpolation="none">
                 <keyframe time="0" src="angela_tom/BodyPieces/Ponytail/ponytail.png" y="71" />
                 <keyframe time="0.25" y="14" />
@@ -673,9 +672,9 @@
             </directive>
             <directive type="animation" id="boot_right_jump" marker="cl_Boots=0" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" alpha="0" rotation="-2" />
-                <keyframe time="0.25" x="-71" y="809" alpha="100" rotation="2" />
+                <keyframe time="0.25" x="-71" y="781" alpha="100" rotation="2" />
                 <keyframe time="0.5" x="-45" y="1202" alpha="0" rotation="-2" />
-                <keyframe time="0.75" x="-71" y="809" alpha="100" rotation="2" />
+                <keyframe time="0.75" x="-71" y="781" alpha="100" rotation="2" />
                 <keyframe time="1" x="-45" y="1202" alpha="0" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_right_jump" marker="cl_Boots=0" ease="linear" interpolation="linear">
@@ -697,9 +696,9 @@
             </directive>
             <directive type="animation" id="boot_left_jump" marker="cl_Boots=0" ease="linear" interpolation="none">
                 <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootFront.png" x="-45" y="1202" alpha="0" rotation="-2" />
-                <keyframe time="0.25" x="59" y="809" alpha="100" rotation="-2" />
+                <keyframe time="0.25" x="59" y="781" alpha="100" rotation="-2" />
                 <keyframe time="0.5" x="-45" y="1202" alpha="0" rotation="-2" />
-                <keyframe time="0.75" x="59" y="809" alpha="100" rotation="-2" />
+                <keyframe time="0.75" x="59" y="781" alpha="100" rotation="-2" />
                 <keyframe time="1" x="-45" y="1202" alpha="0" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_left_jump" marker="cl_Boots=0" ease="linear" interpolation="linear">
@@ -713,11 +712,11 @@
                 <keyframe time="1" x="-48" y="1160" scaley="1.2" rotation="-2" />
             </directive>
             <directive type="animation" id="boot_right_back" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
-                <keyframe time="0.25" src="m/blank.png" />
-                <keyframe time="0.5" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
-                <keyframe time="0.75" src="m/blank.png" />
-                <keyframe time="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" alpha="100" />
+                <keyframe time="0.25" alpha="0" />
+                <keyframe time="0.5" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+                <keyframe time="1" alpha="100" />
             </directive>
             <directive type="animation" id="boot_left_back" marker="cl_Boots=0" ease="linear" interpolation="linear">
                 <keyframe time="0" x="33" y="1160" scalex="-1" scaley="1.2" rotation="2" />
@@ -725,31 +724,17 @@
                 <keyframe time="1" x="33" y="1160" scalex="-1" scaley="1.2" rotation="2" />
             </directive>
             <directive type="animation" id="boot_left_back" marker="cl_Boots=0" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
-                <keyframe time="0.25" src="m/blank.png" />
-                <keyframe time="0.5" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
-                <keyframe time="0.75" src="m/blank.png" />
-                <keyframe time="1" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" />
-            </directive>
-            <directive type="animation" id="feet" marker="cl_Stockings=1" delay="0.25" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="-17" />
-                <keyframe time="0.5" x="0" y="-17" />
-            </directive>
-            <directive type="animation" id="feet" marker="cl_Stockings=1" delay="0.25" ease="linear" interpolation="none">
-                <keyframe time="0" src="angela_tom/BodyPieces/Main/noheels_surprised.png" />
-                <keyframe time="0.25" src="m/blank.png" />
-                <keyframe time="0.5" src="angela_tom/BodyPieces/Main/noheels_surprised.png" />
-                <keyframe time="0.75" src="m/blank.png" />
-            </directive>
-            <directive type="animation" id="feet_stockings" marker="cl_Stockings=0" delay="0.25" ease="linear" interpolation="linear">
-                <keyframe time="0" x="0" y="-17" />
-                <keyframe time="0.5" x="0" y="-17" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/ClothingPieces/AngelaABootBack.png" alpha="100" />
+                <keyframe time="0.25" alpha="0" />
+                <keyframe time="0.5" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+                <keyframe time="1" alpha="100" />
             </directive>
             <directive type="animation" id="feet_stockings" marker="cl_Stockings=0" delay="0.25" ease="linear" interpolation="none">
-                <keyframe time="0" src="reskins/angela_tom_archmage/BodyPieces/Legs/feet_surprised.png" />
-                <keyframe time="0.25" src="m/blank.png" />
-                <keyframe time="0.5" src="reskins/angela_tom_archmage/BodyPieces/Legs/feet_surprised.png" />
-                <keyframe time="0.75" src="m/blank.png" />
+                <keyframe time="0" src="reskins/angela_tom_archmage/BodyPieces/Legs/feet_surprised.png" alpha="100" />
+                <keyframe time="0.25" alpha="0" />
+                <keyframe time="0.5" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
             </directive>
         </pose>
         <pose id="suspicious_custom">
