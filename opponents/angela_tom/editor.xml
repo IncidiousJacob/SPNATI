@@ -329,8 +329,8 @@
         <label id="209" label="With men" folder="" sort="0" />
         <label id="210" label="No men" folder="" sort="0" />
         <label id="211" label="With gay men" folder="" sort="0" />
-        <label id="57" label="React to Veran" folder="" sort="0" />
-        <label id="212" label="React to Ryuko transformation" folder="" sort="0" />
+        <label id="57" label="React to Veran" folder="Banter&gt;Nayru" sort="0" />
+        <label id="212" label="" folder="Banter&gt;Ryuko" sort="0" />
         <label id="107" label="Lucina + Other Man" folder="Mulan reveal" sort="0" />
         <label id="114" label="Lucina (no other men)" folder="Mulan reveal" sort="0" />
         <label id="100" label="Basic reaction" folder="Mulan reveal" sort="0" />
@@ -543,10 +543,43 @@
         <label id="447" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
         <label id="448" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
         <label id="449" label="Switches tags (Archmage)" folder="" sort="0" />
+        <label id="450" label="" folder="Banter&gt;Yuno" sort="0" />
+        <label id="451" label="" folder="Banter&gt;Yuno" sort="0" />
+        <label id="452" label="" folder="Banter&gt;Yuno" sort="0" />
+        <label id="453" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="454" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="455" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="456" label="" folder="Banter&gt;Yuno" sort="0" />
+        <label id="457" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="458" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="459" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="460" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="461" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="462" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="463" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="464" label="" folder="Banter&gt;Moon" sort="0" />
+        <label id="465" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="241" label="" folder="Banter&gt;Aqua (Konosuba)" sort="0" />
+        <label id="466" label="" folder="Banter&gt;Edelgard" sort="0" />
+        <label id="467" label="" folder="Banter&gt;Fate" sort="0" />
+        <label id="468" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="469" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="470" label="" folder="Banter&gt;Rosie Richmond" sort="0" />
+        <label id="471" label="" folder="Banter&gt;Meia" sort="0" />
+        <label id="472" label="" folder="Banter&gt;Jura" sort="0" />
+        <label id="473" label="" folder="Banter&gt;Moon" sort="0" />
+        <label id="474" label="" folder="Banter&gt;Sheena" sort="0" />
+        <label id="475" label="" folder="Banter&gt;Sheena" sort="0" />
+        <label id="476" label="" folder="Banter&gt;Sheena" sort="0" />
+        <label id="477" label="" folder="Banter&gt;Sheena" sort="0" />
+        <label id="478" label="" folder="Banter&gt;Sheena" sort="0" />
+        <label id="244" label="" folder="Banter&gt;Aqua (Konosuba)" sort="0" />
+        <label id="266" label="" folder="Banter&gt;Dawn" sort="0" />
+        <label id="479" label="" folder="Banter&gt;Megumin" sort="0" />
+        <label id="480" label="" folder="Banter&gt;Darkness" sort="0" />
     </labels>
-    <nextId>449</nextId>
+    <nextId>480</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
         <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
@@ -591,6 +624,7 @@
         <marker scope="Private" name="cl_Stockings">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Train">Used for Pose Maker</marker>
         <marker scope="Public" name="CriticalDarling_DontSellYourSoul">Angela tells Critical Darling that it's not worth selling your soul. She'd know - that's what the Crimson Wizard did!</marker>
+        <marker scope="Public" name="Darkness_FrontlineFighter">Angela suggests that Darkness looks like a frontline fighter.</marker>
         <marker scope="Public" name="Edelgard_AloneTime">Angela gives her thoughts on total solitude.</marker>
         <marker scope="Public" name="Edelgard_DudbearTalk">Angela talks in Dudbear to tease Edelgard when she wonders why everyone speaks the same language.</marker>
         <marker scope="Public" name="Edelgard_LightenUp">Edelgard says exactly the wrong thing in front of Angela. Overbearing mother? Applying too much pressure? No way, Edelgard. Lighten up!</marker>
@@ -610,7 +644,9 @@
         <marker scope="Public" name="ISleepInPanties">Angela mentions sleeping only in panties - and in the presence of her adventuring companions! Scandalous!</marker>
         <marker scope="Public" name="Jenetta_Beastfolk">Angela compares Jenetta to Ferolian bestmen, a humanoid cat named Niccolo, and a creature called a "Rabite".</marker>
         <marker scope="Public" name="Jenetta_NeedlettuceBra">Angela thinks Jenetta's bra looks like "Needlettuce" (she really just means "lettuce").</marker>
+        <marker scope="Public" name="Jura_ArchmageResponse">After a compliment on her outfit, Angela asks about Jura's tailor.</marker>
         <marker scope="Public" name="Jura_MagusResponse0">Angela asks about Mejare, and comments that she noticed Jura staring at her.</marker>
+        <marker scope="Public" name="Jura_NotFromEarth">Angela is a little confused by Jura suggesting she's from some place called "Earth".</marker>
         <marker scope="Public" name="Jura_Response0">Angela wonders aloud what Jura means by something she had planned... to which she sometimes provides her own answer.</marker>
         <marker scope="Public" name="Jura_Strip0">Angela asks Jura about Barnette</marker>
         <marker scope="Private" name="JustShowedBoobs">Only active for the first round after Angela shows off her breasts (regardless of why).</marker>
@@ -623,6 +659,8 @@
         <marker scope="Public" name="MagusIntroduction">(Once only) Angela introduces her Magus outfit.</marker>
         <marker scope="Public" name="Marinette_NormalGirlClass">Angela wonders if Marinette has changed to the "Normal Girl" class.</marker>
         <marker scope="Private" name="MarthWasLucina">Angela has discovered that "Marth" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Megumin_LotsOfSpells">Angela suggests that Megumin must, of course, know lots of spells. No way would she only know one, right?</marker>
+        <marker scope="Public" name="Meia_ArchmageResponse0">After Meia suggests that women from Mejare like to show off their bodies with their outfits, Angela wonders why she's covering her whole body.</marker>
         <marker scope="Public" name="Meia_MagusResponse0">As a Magus, Angela tells Meia that she's not from Earth, and that her Magus outfit makes her more powerful.</marker>
         <marker scope="Public" name="Meia_Response0">Informs Meia that she's from Altena in Fa'Diel, not Earth, and that she dresses how she wants.</marker>
         <marker scope="Public" name="Meia_Strip0">Angela asks Meia about her origins. She doesn't know what a spaceship is, so she substitutes "airship".</marker>
@@ -642,7 +680,9 @@
         <marker scope="Public" name="Pyrrha_RocketSave">Pyrrha has saved Brock from his wild rocket.</marker>
         <marker scope="Public" name="RenamedPlayerWeirdo">Angela decided she didn't like the name the player gave. What a Weirdo!</marker>
         <marker scope="Public" name="Rosie_AdventuresResponse">Angela tells Rosie that her red leotard is her favorite outfit (alternate costumes will get different lines)</marker>
+        <marker scope="Public" name="Rosie_Quests_Response">Rosie has asked Angela about the quests she's gone on. Her response involves a lot of giant monsters.</marker>
         <marker scope="Public" name="Rosie_SixElements">Angela tells Rosie that she can cast fire spells, as well as a bunch of other attack spells too.</marker>
+        <marker scope="Public" name="Rosie_Targeted_Quests">Angela asks Rosie what sort of quests she's been on. The phrasing is a little different if Rosie already asked Angela.</marker>
         <marker scope="Public" name="Ryuko_ChangingClass">Angela mistakes Ryuko's transformation for a class change.</marker>
         <marker scope="Public" name="Ryuko_MagusHypocrisy">Angela suddenly realizes that she joked about Ryuko's underwear "class" when she came in her extremely skimpy Magus outfit.</marker>
         <marker scope="Public" name="Ryuko_UnderwearClass">Angela wonders aloud what sort of class change would put someone in nothing but a set of underwear.</marker>
