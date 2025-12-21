@@ -315,7 +315,7 @@
         <label id="241" label="" color="4" folder="" sort="0" />
         <label id="242" label="" color="4" folder="" sort="0" />
         <label id="243" label="" color="4" folder="" sort="0" />
-        <label id="510" label="" color="4" folder="" sort="0" />
+        <label id="608" label="" color="4" folder="" sort="0" />
         <label id="307" label="" color="4" folder="" sort="0" />
         <label id="251" label="" color="4" folder="" sort="0" />
         <label id="252" label="" color="4" folder="" sort="0" />
@@ -380,7 +380,6 @@
         <label id="415" label="" folder="Barbara" sort="0" />
         <label id="416" label="" folder="Barbara" sort="0" />
         <label id="505" label="" color="4" folder="" sort="0" />
-        <label id="509" label="" color="4" folder="" sort="0" />
         <label id="456" label="" color="4" folder="" sort="0" />
         <label id="570" label="" color="4" folder="" sort="0" />
         <label id="438" label="" folder="Dev names" sort="0" />
@@ -399,7 +398,7 @@
         <label id="445" label="" color="3" folder="" sort="0" />
         <label id="561" label="" color="4" folder="" sort="0" />
         <label id="508" label="" color="4" folder="" sort="0" />
-        <label id="512" label="" color="4" folder="" sort="0" />
+        <label id="609" label="" color="4" folder="" sort="0" />
         <label id="600" label="" color="4" folder="" sort="0" />
         <label id="521" label="" color="4" folder="" sort="0" />
         <label id="520" label="" color="4" folder="" sort="0" />
@@ -466,12 +465,14 @@
         <label id="598" label="" color="4" folder="" sort="0" />
         <label id="599" label="" color="4" folder="" sort="0" />
         <label id="601" label="" color="4" folder="" sort="0" />
-        <label id="602" label="" color="4" folder="Masquerade characters" sort="0" />
-        <label id="603" label="" color="4" folder="" sort="0" />
+        <label id="602" label="" folder="Masquerade characters" sort="0" />
+        <label id="606" label="" color="4" folder="Masquerade characters" sort="0" />
         <label id="604" label="" folder="Dev names" sort="0" />
+        <label id="605" label="" color="4" folder="" sort="0" />
+        <label id="607" label="" color="4" folder="" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>604</nextId>
+    <nextId>609</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoi_inuyama_knight" />
@@ -575,12 +576,14 @@
         <marker scope="Public" name="darkness_humiliation2" />
         <marker scope="Public" name="darkness_humiliation3" />
         <marker scope="Public" name="darkness_knightOrigin" />
+        <marker scope="Public" name="darkness_knightOrigin2" />
         <marker scope="Public" name="darkness_resp_combatSkills1" />
         <marker scope="Public" name="darkness_resp_combatSkills2" />
         <marker scope="Public" name="darkness_resp_combatSkills3" />
         <marker scope="Public" name="darkness_resp_knight1" />
         <marker scope="Public" name="darkness_resp_knight2" />
         <marker scope="Public" name="darkness_resp_knight3" />
+        <marker scope="Public" name="darkness_resp_politicalMarriage1" />
         <marker scope="Public" name="ema_investigating" />
         <marker scope="Public" name="ema_scienceAlchemy" />
         <marker scope="Public" name="fischl_favoniusAid" />
@@ -757,6 +760,7 @@
         <marker scope="Public" name="mitama_shrineWork" />
         <marker scope="Public" name="mitama_shrineWork2" />
         <marker scope="Public" name="mitama_shrineWork3" />
+        <marker scope="Public" name="mitama_warDetails" />
         <marker scope="Public" name="momo_heroism" />
         <marker scope="Public" name="momo_heroism2" />
         <marker scope="Public" name="monika_leadership" />
@@ -914,10 +918,63 @@
         <marker scope="Public" name="vanessa_War_resp_21" />
         <marker scope="Public" name="vanessa_War_resp_22" />
         <marker scope="Public" name="wikipetan_maid" />
+        <marker scope="Public" name="wiz_ambitions_resp_40" />
+        <marker scope="Public" name="wiz_ambitions_resp_41" />
+        <marker scope="Public" name="wiz_ambitions_resp_42" />
+        <marker scope="Public" name="wiz_attractive_resp_50" />
+        <marker scope="Public" name="wiz_attractive_resp_51" />
+        <marker scope="Public" name="wiz_attractive_resp_52" />
+        <marker scope="Public" name="wiz_attractive_traits_50" />
+        <marker scope="Public" name="wiz_attractive_traits_51" />
+        <marker scope="Public" name="wiz_attractive_traits_52" />
+        <marker scope="Public" name="wiz_axel_tension_60" />
+        <marker scope="Public" name="wiz_axel_tension_61" />
+        <marker scope="Public" name="wiz_axel_tension_62" />
+        <marker scope="Public" name="wiz_duties_resp_20" />
+        <marker scope="Public" name="wiz_duties_resp_21" />
+        <marker scope="Public" name="wiz_duties_resp_22" />
+        <marker scope="Public" name="wiz_experience_resp_60" />
+        <marker scope="Public" name="wiz_experience_resp_61" />
+        <marker scope="Public" name="wiz_experience_resp_62" />
+        <marker scope="Public" name="wiz_family_resp_20" />
+        <marker scope="Public" name="wiz_family_resp_21" />
+        <marker scope="Public" name="wiz_family_resp_22" />
+        <marker scope="Public" name="wiz_heroic_figures_10" />
+        <marker scope="Public" name="wiz_heroic_figures_11" />
+        <marker scope="Public" name="wiz_heroic_figures_12" />
+        <marker scope="Public" name="wiz_heroicFigures" />
+        <marker scope="Public" name="wiz_knighthood_resp_10" />
+        <marker scope="Public" name="wiz_knighthood_resp_11" />
+        <marker scope="Public" name="wiz_knighthood_resp_12" />
+        <marker scope="Public" name="wiz_love_choice_30" />
+        <marker scope="Public" name="wiz_love_choice_31" />
+        <marker scope="Public" name="wiz_love_choice_32" />
+        <marker scope="Public" name="wiz_love_gesture_40" />
+        <marker scope="Public" name="wiz_love_gesture_41" />
+        <marker scope="Public" name="wiz_love_gesture_42" />
+        <marker scope="Public" name="wiz_lunch_resp_40" />
+        <marker scope="Public" name="wiz_lunch_resp_41" />
+        <marker scope="Public" name="wiz_lunch_resp_42" />
+        <marker scope="Public" name="wiz_mondstadt_resp_30" />
+        <marker scope="Public" name="wiz_mondstadt_resp_31" />
+        <marker scope="Public" name="wiz_mondstadt_resp_32" />
+        <marker scope="Public" name="wiz_past_resp_30" />
+        <marker scope="Public" name="wiz_past_resp_31" />
+        <marker scope="Public" name="wiz_past_resp_32" />
+        <marker scope="Public" name="wiz_product_type_00" />
+        <marker scope="Public" name="wiz_product_type_01" />
+        <marker scope="Public" name="wiz_product_type_02" />
         <marker scope="Public" name="wiz_productType" />
         <marker scope="Public" name="wiz_productType2" />
         <marker scope="Public" name="wiz_productType3" />
         <marker scope="Public" name="wiz_resp_noble" />
+        <marker scope="Public" name="wiz_resp_noble2" />
+        <marker scope="Public" name="wiz_threats_20" />
+        <marker scope="Public" name="wiz_threats_21" />
+        <marker scope="Public" name="wiz_threats_22" />
+        <marker scope="Public" name="wiz_uniform_resp_00" />
+        <marker scope="Public" name="wiz_uniform_resp_01" />
+        <marker scope="Public" name="wiz_uniform_resp_02" />
         <marker scope="Public" name="yae_miko_sakoku" />
         <marker scope="Public" name="yshtola_animalTraits" />
         <marker scope="Public" name="yshtola_animalTraits2" />
