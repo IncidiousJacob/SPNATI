@@ -1,0 +1,1173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>kyouko_toshinou_winter</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag>christmas_skin</tag>
+        <tag from="6" to="6">hair_covering_breasts</tag>
+        <tag from="9" to="9">hair_covering_breasts</tag>
+        <tag remove="true">school_uniform</tag>
+        <tag from="0" to="5">thigh_highs</tag>
+    </tags>
+    <layers>7</layers>
+    <folder>opponents/reskins/kyouko_toshinou_winter/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="thigh-highs" generic="socks" position="feet" type="minor" plural="true" />
+        <clothing name="bra" generic="bra" position="upper" type="important" />
+        <clothing name="shirt" generic="shirt" position="upper" type="major" />
+        <clothing name="shorts" generic="shorts" position="lower" type="major" plural="true" />
+        <clothing name="jacket" generic="jacket" position="upper" type="minor" />
+        <clothing name="gloves and boots" generic="shoes" position="feet" type="minor" plural="true">
+            <stripping name="gloves" generic="gloves" position="hands" type="important" plural="true" />
+        </clothing>
+    </wardrobe>
+
+    <poses>
+        <pose id="0-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/0-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="0-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/0-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="0-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/0-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/0-stripping-a.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/0-stripping-b.png" />
+            </directive>
+        </pose>
+        <pose id="0-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/0-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="0-treasurescope">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/0-myself.png" x="0" y="0" alpha="100" />
+            <sprite id="scoped" z="-1" src="reskins/kyouko_toshinou_winter/0-scoped.png" x="0" y="0" alpha="100" />
+            <sprite id="Rouge_TreasureScope_Lens" z="1" src="kyouko_toshinou/../rouge/Rouge_TreasureScope_Lens.png" x="450" y="337" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="scoped" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="2.5" alpha="100" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="450" y="337" alpha="0" />
+                <keyframe time="1" x="250" alpha="0" />
+                <keyframe time="2" x="0" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="1-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/1-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="1-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/1-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="1-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/1-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/1-stripping-a.png" />
+                <keyframe time="0.75" src="reskins/kyouko_toshinou_winter/1-stripping-b.png" />
+            </directive>
+        </pose>
+        <pose id="1-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/1-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/1-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="2-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/2-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="2-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/2-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="2-stripped">
+            <sprite id="grin" src="reskins/kyouko_toshinou_winter/2-stripped-a.png" />
+        </pose>
+        <pose id="2-stripped-nagatoro">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/2-stripped-b.png" x="0" y="0" />
+            <sprite id="chadkyouko" z="-1" src="kyouko_toshinou/posemaker/chadkyouko.png" x="185" y="74" scalex="0.95" scaley="0.95" alpha="0" />
+            <sprite id="boot-side" z="-2" src="reskins/kyouko_toshinou_winter/posemaker/boot-side.png" x="183" y="1050" scalex="-1" />
+            <sprite id="boot-front" z="-1" src="reskins/kyouko_toshinou_winter/posemaker/boot-front.png" x="145" y="1040" scalex="-1" />
+            <directive type="animation" id="chadkyouko" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="0.95" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/2-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/2-stripping-a.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/2-stripping-b.png" />
+            </directive>
+        </pose>
+        <pose id="2-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/2-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/1-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="3-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/3-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="3-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/3-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="3-stripped">
+            <sprite id="stripped-a" src="reskins/kyouko_toshinou_winter/3-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripped-enthusiastic">
+            <sprite id="stripped-b" src="reskins/kyouko_toshinou_winter/3-stripped-b.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripped-silly">
+            <sprite id="stripped-c" src="reskins/kyouko_toshinou_winter/3-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripped">
+            <sprite id="grin" src="reskins/kyouko_toshinou_winter/4-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/4-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/4-stripping-a.png" />
+                <keyframe time="1" src="reskins/kyouko_toshinou_winter/4-stripping-b.png" />
+                <keyframe time="2.5" src="reskins/kyouko_toshinou_winter/4-stripping-c.png" />
+            </directive>
+        </pose>
+        <pose id="5-stripped">
+            <sprite id="sprite" src="reskins/kyouko_toshinou_winter/5-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="6-stripping">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/6-stripping-a.png" x="0" y="0" />
+            <sprite id="panties" delay="1" src="reskins/kyouko_toshinou_winter/posemaker/panties-deepsea.png" x="-6" y="762" scalex="1.1" scaley="1" skewy="-8" rotation="3" />
+            <sprite id="floor-panties" delay="2.06" z="-1" src="reskins/kyouko_toshinou_winter/posemaker/floor-panties-deepsea.png" x="1" y="1309" rotation="4" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/6-stripping-a.png" />
+                <keyframe time="1" src="reskins/kyouko_toshinou_winter/6-stripping-b.png" />
+            </directive>
+            <directive type="animation" id="panties" delay="1" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-6" scalex="1.1" scaley="1" skewy="-8" rotation="3" />
+                <keyframe time="0.62" x="-5" scalex="1.1" />
+                <keyframe time="0.8099999" scalex="1.1" />
+                <keyframe time="0.88" scalex="1.1" />
+                <keyframe time="1" x="-3" scalex="1.1" skewy="-3" />
+            </directive>
+            <directive type="animation" id="panties" delay="1" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="762" />
+                <keyframe time="1" y="1307" />
+            </directive>
+            <directive type="animation" id="panties" delay="2" ease="smooth" interpolation="none">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.05999994" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="5-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/5-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/5-stripping-a.png" x="0" y="0" />
+                <keyframe time="1" src="reskins/kyouko_toshinou_winter/5-stripping-b.png" />
+                <keyframe time="2.25" src="reskins/kyouko_toshinou_winter/5-stripping-c.png" x="0" y="0" />
+            </directive>
+        </pose>
+        <pose id="6-stripped-horny">
+            <sprite id="stripped-a" src="reskins/kyouko_toshinou_winter/6-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="8-finishing">
+            <sprite id="body" src="reskins/kyouko_toshinou_winter/8-finishing.png" x="0" y="0" pivoty="85%" />
+            <sprite id="pubes" z="3" src="reskins/kyouko_toshinou_winter/posemaker/anim/finishing-pubes.png" x="0" y="0" pivoty="85%" />
+            <sprite id="hair" z="-2" src="kyouko_toshinou/posemaker/anim/finishing-hair.png" x="27" y="754" />
+            <sprite id="rightforearm" z="4" src="kyouko_toshinou/posemaker/anim/finishing-rightforearm.png" x="-53" y="1066" pivotx="11%" pivoty="10%" rotation="0" />
+            <sprite id="rightarm" z="-1" src="kyouko_toshinou/posemaker/anim/finishing-rightarm.png" x="-68" y="949" pivotx="75%" pivoty="12%" rotation="1" />
+            <sprite id="leftarm" z="-2" src="kyouko_toshinou/posemaker/anim/finishing-leftarm.png" x="87" y="954" pivotx="59%" pivoty="12%" rotation="0" />
+            <sprite id="leftforearm" z="-1" src="kyouko_toshinou/posemaker/anim/finishing-leftforearm.png" x="152" y="1125" pivotx="65%" pivoty="82%" rotation="0" />
+            <sprite id="rightthigh" z="1" src="kyouko_toshinou/posemaker/anim/finishing-rightthigh.png" x="-124" y="1101" pivotx="74%" pivoty="72%" rotation="0" />
+            <sprite id="rightcalf" z="4" src="kyouko_toshinou/posemaker/anim/finishing-rightcalf.png" x="-82" y="1100" pivotx="8%" pivoty="10%" rotation="0" />
+            <sprite id="leftthigh" z="2" src="kyouko_toshinou/posemaker/anim/finishing-leftthigh.png" x="143" y="1167" pivotx="13%" pivoty="90%" rotation="0" />
+            <sprite id="leftcalf" z="5" src="kyouko_toshinou/posemaker/anim/finishing-leftcalf.png" x="98" y="1172" pivotx="91%" pivoty="16%" rotation="0" />
+            <sprite id="drips1" parent="body" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="275" y="1226" scalex="0" scaley="0" pivotx="11%" pivoty="35%" alpha="50" rotation="119" />
+            <sprite id="drips1a" parent="drips1" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="14" y="-10" scalex="0.9" scaley="1" skewy="4" pivotx="11%" pivoty="35%" rotation="-3" />
+            <sprite id="drips2" parent="body" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="278" y="1223" scalex="0" scaley="0" pivotx="11%" pivoty="35%" alpha="50" rotation="68" />
+            <sprite id="drips2a" parent="drips2" delay="2.5" src="kyouko_toshinou/posemaker/waterline.png" x="14" y="-10" scalex="0.9" scaley="1" skewy="4" pivotx="11%" pivoty="35%" alpha="100" rotation="-3" />
+            <sprite id="pull" z="3" src="kyouko_toshinou/posemaker/waterline.png" x="100" y="1179" scalex="0.03" scaley="0.04" skewy="0" pivotx="13%" pivoty="85%" alpha="0" rotation="253" />
+            <sprite id="shadow" z="-10" src="kyouko_toshinou/posemaker/shadow.png" x="0" y="1233" scalex="2.23" />
+            <directive type="animation" id="body" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.5" y="-4" />
+                <keyframe time="1" y="0" />
+                <keyframe time="1.5" y="-4" />
+                <keyframe time="2" y="0" />
+                <keyframe time="2.5" y="-4" />
+                <keyframe time="3" y="0" />
+                <keyframe time="3.38" y="-4" />
+                <keyframe time="3.62" y="0" />
+                <keyframe time="3.88" y="-5" />
+                <keyframe time="4.25" y="0" />
+                <keyframe time="4.62" y="-5" />
+                <keyframe time="5" y="0" />
+                <keyframe time="5.5" y="-6" />
+                <keyframe time="6" y="0" />
+                <keyframe time="6.5" y="-6" />
+                <keyframe time="7" y="0" />
+            </directive>
+            <directive type="animation" id="pubes" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="0.5" y="-4" />
+                <keyframe time="1" y="0" />
+                <keyframe time="1.5" y="-4" />
+                <keyframe time="2" y="0" />
+                <keyframe time="2.5" y="-4" />
+                <keyframe time="3" y="0" />
+                <keyframe time="3.38" y="-4" />
+                <keyframe time="3.62" y="0" />
+                <keyframe time="3.88" y="-5" />
+                <keyframe time="4.25" y="0" />
+                <keyframe time="4.62" y="-5" />
+                <keyframe time="5" y="0" />
+                <keyframe time="5.5" y="-6" />
+                <keyframe time="6" y="0" />
+                <keyframe time="6.5" y="-6" />
+                <keyframe time="7" y="0" />
+            </directive>
+            <directive type="animation" id="hair" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="27" y="754" />
+                <keyframe time="0.5" y="750" />
+                <keyframe time="1" y="754" />
+                <keyframe time="1.5" y="750" />
+                <keyframe time="2" y="754" />
+                <keyframe time="2.5" y="750" />
+                <keyframe time="3" y="754" />
+                <keyframe time="3.38" y="750" />
+                <keyframe time="3.62" y="754" />
+                <keyframe time="3.88" y="749" />
+                <keyframe time="4.25" y="754" />
+                <keyframe time="4.62" y="749" />
+                <keyframe time="5" y="754" />
+                <keyframe time="5.5" y="748" />
+                <keyframe time="6" y="754" />
+                <keyframe time="6.5" y="748" />
+                <keyframe time="7" y="754" />
+            </directive>
+            <directive type="animation" id="rightforearm" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-53" y="1066" rotation="0" />
+                <keyframe time="0.25" rotation="2" />
+                <keyframe time="0.5" x="-48" y="1065" rotation="-1" />
+                <keyframe time="0.75" rotation="3" />
+                <keyframe time="1" x="-47" y="1071" rotation="-1" />
+                <keyframe time="1.25" rotation="3" />
+                <keyframe time="1.5" y="1066" rotation="-1" />
+                <keyframe time="1.75" x="-51" y="1066" rotation="2" />
+                <keyframe time="2" y="1069" rotation="-2" />
+                <keyframe time="2.19" rotation="2" />
+                <keyframe time="2.38" rotation="-2" />
+                <keyframe time="2.5" x="-50" y="1068" />
+                <keyframe time="2.56" rotation="2" />
+                <keyframe time="2.75" rotation="-1" />
+                <keyframe time="3" y="1070" rotation="2" />
+                <keyframe time="3.25" rotation="-2" />
+                <keyframe time="3.37" y="1066" rotation="2" />
+                <keyframe time="3.5" rotation="-2" />
+                <keyframe time="3.62" y="1071" rotation="2" />
+                <keyframe time="3.75" rotation="-2" />
+                <keyframe time="3.88" y="1065" rotation="2" />
+                <keyframe time="4" rotation="-2" />
+                <keyframe time="4.12" rotation="2" />
+                <keyframe time="4.25" y="1069" />
+                <keyframe time="4.38" rotation="-2" />
+                <keyframe time="4.62" x="-51" y="1064" rotation="2" />
+                <keyframe time="5" y="1070" rotation="-2" />
+                <keyframe time="5.5" y="1064" rotation="3" />
+                <keyframe time="6" x="-50" y="1071" rotation="-1" />
+                <keyframe time="6.5" x="-50" y="1066" rotation="2" />
+                <keyframe time="7" x="-60" y="1064" rotation="-11" />
+            </directive>
+            <directive type="animation" id="rightarm" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-68" y="949" rotation="1" />
+                <keyframe time="0.5" y="945" rotation="-1" />
+                <keyframe time="1" y="949" rotation="-2" />
+                <keyframe time="1.5" y="945" />
+                <keyframe time="1.75" rotation="0" />
+                <keyframe time="2" y="949" />
+                <keyframe time="2.5" y="945" rotation="-1" />
+                <keyframe time="3" y="949" />
+                <keyframe time="3.38" y="945" />
+                <keyframe time="3.62" y="949" />
+                <keyframe time="3.88" y="944" />
+                <keyframe time="4.25" y="949" />
+                <keyframe time="4.62" y="944" rotation="0" />
+                <keyframe time="5" y="949" />
+                <keyframe time="5.5" y="943" />
+                <keyframe time="6" y="949" rotation="-1" />
+                <keyframe time="6.5" y="943" rotation="-1" />
+                <keyframe time="7" y="949" rotation="4" />
+            </directive>
+            <directive type="animation" id="leftarm" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="87" y="954" rotation="0" />
+                <keyframe time="0.5" y="950" rotation="-1" />
+                <keyframe time="1" y="954" rotation="0" />
+                <keyframe time="1.5" y="950" rotation="-1" />
+                <keyframe time="2" y="954" rotation="0" />
+                <keyframe time="2.5" y="950" rotation="-1" />
+                <keyframe time="3" y="954" rotation="0" />
+                <keyframe time="3.38" y="950" rotation="-1" />
+                <keyframe time="3.62" y="954" rotation="0" />
+                <keyframe time="3.88" y="949" rotation="-1" />
+                <keyframe time="4.25" y="954" rotation="0" />
+                <keyframe time="4.62" y="949" rotation="-1" />
+                <keyframe time="5" y="954" rotation="0" />
+                <keyframe time="5.5" y="948" rotation="-1" />
+                <keyframe time="6" y="954" rotation="0" />
+                <keyframe time="6.5" y="948" rotation="-1" />
+                <keyframe time="7" y="954" rotation="0" />
+            </directive>
+            <directive type="animation" id="leftforearm" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="152" y="1125" rotation="0" />
+                <keyframe time="0.5" rotation="2" />
+                <keyframe time="1" rotation="0" />
+                <keyframe time="1.5" rotation="2" />
+                <keyframe time="2" rotation="0" />
+                <keyframe time="2.5" rotation="2" />
+                <keyframe time="3" rotation="0" />
+                <keyframe time="3.38" rotation="2" />
+                <keyframe time="3.62" rotation="0" />
+                <keyframe time="3.88" rotation="2" />
+                <keyframe time="4.25" rotation="0" />
+                <keyframe time="4.62" rotation="2" />
+                <keyframe time="5" rotation="0" />
+                <keyframe time="5.5" rotation="2" />
+                <keyframe time="6" rotation="0" />
+                <keyframe time="6.5" rotation="2" />
+                <keyframe time="7" rotation="0" />
+            </directive>
+            <directive type="animation" id="rightthigh" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-124" y="1101" rotation="0" />
+                <keyframe time="1" rotation="-2" />
+                <keyframe time="2" rotation="-5" />
+                <keyframe time="2.5" rotation="-9" />
+                <keyframe time="3.25" rotation="2" />
+                <keyframe time="3.88" rotation="-7" />
+                <keyframe time="4.25" rotation="-1" />
+                <keyframe time="4.62" rotation="-9" />
+                <keyframe time="5.5" rotation="-2" />
+                <keyframe time="7" y="1101" rotation="0" />
+            </directive>
+            <directive type="animation" id="rightcalf" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="-82" y="1100" rotation="0" />
+                <keyframe time="1" x="-86" y="1102" rotation="-1" />
+                <keyframe time="2" x="-92" y="1110" rotation="-3" />
+                <keyframe time="2.5" x="-95" y="1123" rotation="-5" />
+                <keyframe time="3.25" x="-79" y="1097" rotation="1" />
+                <keyframe time="3.88" x="-92" y="1118" rotation="-4" />
+                <keyframe time="4.25" x="-88" y="1103" rotation="-1" />
+                <keyframe time="4.62" x="-96" y="1122" rotation="-5" />
+                <keyframe time="5.5" x="-86" y="1105" rotation="-2" />
+                <keyframe time="7" x="-82" y="1100" rotation="0" />
+            </directive>
+            <directive type="animation" id="leftthigh" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="143" y="1167" rotation="0" />
+                <keyframe time="1" rotation="1" />
+                <keyframe time="2" rotation="4" />
+                <keyframe time="2.5" rotation="8" />
+                <keyframe time="3.25" rotation="-2" />
+                <keyframe time="3.88" x="142" y="1164" rotation="7" />
+                <keyframe time="4.25" rotation="2" />
+                <keyframe time="4.62" x="141" y="1163" rotation="9" />
+                <keyframe time="5.5" rotation="4" />
+                <keyframe time="7" y="1167" rotation="0" />
+            </directive>
+            <directive type="animation" id="leftcalf" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="98" y="1172" rotation="0" />
+                <keyframe time="1" x="96" y="1173" rotation="1" />
+                <keyframe time="2" x="99" y="1181" rotation="3" />
+                <keyframe time="2.5" x="104" y="1197" rotation="6" />
+                <keyframe time="3.25" x="90" y="1161" rotation="-2" />
+                <keyframe time="3.88" x="102" y="1189" rotation="5" />
+                <keyframe time="4.25" x="96" y="1176" rotation="1" />
+                <keyframe time="4.62" x="104" y="1195" rotation="5" />
+                <keyframe time="5.5" x="99" y="1182" rotation="2" />
+                <keyframe time="7" x="93" y="1169" rotation="0" />
+            </directive>
+            <directive type="animation" id="drips1" delay="2.5" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="275" y="1226" scalex="0" scaley="0" alpha="50" rotation="119" />
+                <keyframe time="3.5" x="275" y="1226" scalex="0.1" scaley="0.1" />
+            </directive>
+            <directive type="animation" id="drips2" delay="2.5" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="278" y="1223" scalex="0" scaley="0" alpha="50" rotation="68" />
+                <keyframe time="3.5" x="278" y="1223" scalex="0.12" scaley="-0.1" />
+            </directive>
+            <directive type="animation" id="pull" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="100" y="1179" scalex="0.03" scaley="0.04" skewy="0" rotation="253" />
+                <keyframe time="6.5" x="102" y="1177" scalex="0.03" scaley="0.04" skewy="0" rotation="253" />
+                <keyframe time="6.75" x="102" y="1183" rotation="295" />
+                <keyframe time="7" x="99" y="1186" scalex="0.17" scaley="0.35" skewy="-18" rotation="321" />
+            </directive>
+            <directive type="animation" id="pull" ease="smooth" interpolation="none">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="6.5" alpha="55" />
+                <keyframe time="7" alpha="55" />
+            </directive>
+        </pose>
+        <pose id="3-stripping-horny">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" />
+                <keyframe time="0.75" src="reskins/kyouko_toshinou_winter/3-stripping-b.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/3-stripping-c.png" />
+            </directive>
+        </pose>
+        <pose id="3-stripping-name">
+            <sprite id="kyouko" delay="1" z="-2" src="kyouko_toshinou/posemaker/kyouko.png" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" x="0" y="0" />
+            <sprite id="stripping-d" src="reskins/kyouko_toshinou_winter/3-stripping-d.png" x="8" y="249" alpha="100" />
+            <directive type="animation" id="kyouko" delay="1" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" />
+                <keyframe time="0.62" src="reskins/kyouko_toshinou_winter/3-stripping-b.png" />
+                <keyframe time="1" src="reskins/kyouko_toshinou_winter/3-stripping-c.png" />
+                <keyframe time="1.38" src="reskins/kyouko_toshinou_winter/4-pride.png" />
+            </directive>
+            <directive type="animation" id="stripping-d" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-d.png" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="3-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/3-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/1-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="4-aura">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/4-photo.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_winter/6-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1.38" src="kyouko_toshinou/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/6-aura.png" />
+                <keyframe time="2.62" src="kyouko_toshinou/6-aura.png" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="4-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/4-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="4-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/4-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="4-stripped-grin">
+            <sprite id="grin" src="reskins/kyouko_toshinou_winter/4-stripped-a.png" x="0" y="0" />
+        </pose>
+        <pose id="4-stripped-offguard">
+            <sprite id="stripped-a" src="reskins/kyouko_toshinou_winter/4-stripped-b.png" x="0" y="0" />
+        </pose>
+        <pose id="4-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/4-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/1-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="5-aura">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/5-photo.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_winter/6-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1.38" src="kyouko_toshinou/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/6-aura.png" />
+                <keyframe time="2.62" src="kyouko_toshinou/6-aura.png" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="5-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/5-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/5-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="5-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/5-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="5-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/5-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/6-licky.png" x="8" y="258" clipbottom="8" />
+        </pose>
+        <pose id="5-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/5-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/6-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="6-aura">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/6-portrait.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_winter/6-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1.38" src="kyouko_toshinou/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/6-aura.png" />
+                <keyframe time="2.62" src="kyouko_toshinou/6-aura.png" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="6-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/6-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/5-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="6-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/6-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/0-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="6-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/6-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/5-licky.png" x="8" y="258" clipbottom="8" />
+        </pose>
+        <pose id="7-stripped">
+            <sprite id="kyoukospin" src="reskins/kyouko_toshinou_winter/7-twirl-front.png" x="63" scalex="1" pivoty="96%" />
+            <sprite id="floor-panties" z="-1" src="reskins/kyouko_toshinou_winter/posemaker/floor-panties-deepsea.png" x="1" y="1309" rotation="4" />
+            <directive type="animation" id="kyoukospin" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/7-twirl-front.png" x="63" />
+                <keyframe time="0.5" src="reskins/kyouko_toshinou_winter/7-twirl-back.png" x="63" />
+                <keyframe time="1.12" src="reskins/kyouko_toshinou_winter/7-twirl-front.png" x="68" />
+                <keyframe time="1.62" src="reskins/kyouko_toshinou_winter/7-flirt.png" x="-62" />
+            </directive>
+            <directive type="animation" id="kyoukospin" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.25" scalex="1" />
+                <keyframe time="0.38" scalex="0.95" />
+                <keyframe time="0.5" scalex="0.8" />
+                <keyframe time="0.62" scalex="0.95" />
+                <keyframe time="0.75" scalex="1" />
+                <keyframe time="0.88" scalex="1" />
+                <keyframe time="1" scalex="0.95" />
+                <keyframe time="1.12" scalex="0.8" />
+                <keyframe time="1.25" scalex="0.95" />
+                <keyframe time="1.38" scalex="1" />
+            </directive>
+        </pose>
+        <pose id="6-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/6-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/6-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="7-aura">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/7-photo.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_winter/7-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1.38" src="kyouko_toshinou/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="7-dunno">
+            <sprite id="shrug" src="reskins/kyouko_toshinou_winter/7-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/7-dunno.png" x="17" y="248" />
+        </pose>
+        <pose id="7-fright">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/7-calm.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/7-fright.png" x="-6" y="234" />
+        </pose>
+        <pose id="7-push-hair">
+            <sprite id="pushhair-a" src="reskins/kyouko_toshinou_winter/7-pushhair-a.png" x="0" y="0" />
+            <directive type="animation" id="pushhair-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/7-pushhair-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_winter/7-pushhair-b.png" />
+            </directive>
+        </pose>
+        <pose id="7-suspicious">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/7-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/7-suspicious.png" x="8" y="240" clipbottom="8" />
+        </pose>
+        <pose id="8-dunno">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/8-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/8-dunno.png" x="15" y="807" />
+        </pose>
+        <pose id="8-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/8-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/8-licky.png" x="5" y="801" clipbottom="8" />
+        </pose>
+        <pose id="9-_tr_excited_disappointed">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/9-excited.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/9-excited.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/9-disappointed.png" />
+            </directive>
+        </pose>
+        <pose id="9-_tr_horny_horrified">
+            <sprite id="horny" src="reskins/kyouko_toshinou_winter/9-horny.png" x="0" y="0" />
+            <directive type="animation" id="horny" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/9-horny.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/9-horrified.png" />
+            </directive>
+        </pose>
+        <pose id="9-fixhair">
+            <sprite id="fixhair-a" src="reskins/kyouko_toshinou_winter/9-socks-a.png" x="0" y="100" />
+            <directive type="animation" id="fixhair-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/9-socks-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_winter/9-socks-b.png" />
+            </directive>
+        </pose>
+        <pose id="9-stretch">
+            <sprite id="stretch-a" src="reskins/kyouko_toshinou_winter/9-stretch-a.png" x="0" y="0" />
+            <directive type="animation" id="stretch-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/9-stretch-a.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/9-stretch-b.png" />
+            </directive>
+        </pose>
+        <pose id="name-pride">
+            <sprite id="pride" src="reskins/kyouko_toshinou_winter/#-pride.png" x="0" y="0" />
+            <sprite id="kyouko" z="-2" src="kyouko_toshinou/posemaker/kyouko.png" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+            <directive type="animation" id="kyouko" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="185" y="74" scalex="0.95" scaley="1.9" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="9-aura">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/9-photo.png" x="0" y="0" alpha="100" />
+            <sprite id="auracamera" z="1" src="kyouko_toshinou/../meia/auracamera.png" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+            <sprite id="cameraflash" delay="1.25" src="kyouko_toshinou/../meia/cameraflash.png" x="-10" y="418" scalex="0.1" scaley="0.1" alpha="0" />
+            <sprite id="aura" delay="1.38" src="reskins/kyouko_toshinou_winter/9-aura.png" x="0" y="0" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1" alpha="100" />
+                <keyframe time="1.38" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-64" y="600" scalex="2.5" scaley="2.5" alpha="0" />
+                <keyframe time="1" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="1.38" x="-64" y="317" scalex="2.5" scaley="2.5" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="auracamera" ease="linear" interpolation="none">
+                <keyframe time="0" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1" src="kyouko_toshinou/../meia/auracamera.png" />
+                <keyframe time="1.38" src="kyouko_toshinou/../meia/auracamera.png" />
+            </directive>
+            <directive type="animation" id="cameraflash" delay="1.25" ease="ease-out-cubic" interpolation="linear">
+                <keyframe time="0" scalex="0.1" scaley="0.1" alpha="0" />
+                <keyframe time="0.13" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="0.75" scalex="8" scaley="8" alpha="100" />
+                <keyframe time="2.75" alpha="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2.62" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/9-aura.png" />
+                <keyframe time="2.62" src="kyouko_toshinou/9-aura.png" />
+            </directive>
+            <directive type="animation" id="aura" delay="1.38" ease="ease-in-out-cubic" interpolation="linear">
+                <keyframe time="0" alpha="0" />
+                <keyframe time="2.62" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="9-dunno">
+            <sprite id="base" src="reskins/kyouko_toshinou_winter/9-shrug.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/9-dunno.png" x="15" y="806" />
+        </pose>
+        <pose id="7-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/7-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/7-licky.png" x="8" y="258" clipbottom="8" />
+        </pose>
+        <pose id="9-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/9-curious.png" x="0" y="0" />
+            <sprite id="licky" src="reskins/kyouko_toshinou_winter/posemaker/faces/8-licky.png" x="5" y="801" />
+        </pose>
+        <pose id="__copy_yuno">
+            <sprite id="kyouko" src="reskins/kyouko_toshinou_winter/#-excited.png" x="0" y="0" />
+            <sprite id="yui" delay="1" z="-3" src="reskins/kyouko_toshinou_winter/posemaker/yui_chad.png" x="0" y="-21" alpha="0" />
+            <directive type="animation" id="kyouko" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-excited.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/#-curious.png" />
+            </directive>
+            <directive type="animation" id="yui" delay="1" ease="smooth" interpolation="linear">
+                <keyframe time="0" x="0" y="-21" alpha="0" />
+                <keyframe time="1" x="0" alpha="0" />
+                <keyframe time="2" alpha="25" />
+                <keyframe time="3" x="200" alpha="50" />
+            </directive>
+            <directive type="animation" id="yui" delay="1" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/posemaker/yui_chad.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/posemaker/yui_tsukkomi.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_calm_wink">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-calm.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-calm.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-myself.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_confused_mistaken">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-confused.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-confused.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-mistaken.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_curious_troll">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-curious.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-curious.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-trolling.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_excited_calm">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-excited.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-excited.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-calm.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_excited_disappointed">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-excited.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-excited.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-disappointed.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_horny_letsgo">
+            <sprite id="horny-summer" src="reskins/kyouko_toshinou_winter/#-horny.png" x="0" y="0" />
+            <directive type="animation" id="horny-summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-horny.png" x="0" y="0" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-letsgo.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_horrifed_calm">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-horrified.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-horrified.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-calm.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_horrifed_grin">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-horrified.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-horrified.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-grin.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_myself_confused">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-myself.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-myself.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-confused.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_offguard_horrified">
+            <sprite id="offguard" src="reskins/kyouko_toshinou_winter/#-offguard.png" x="0" y="0" />
+            <directive type="animation" id="offguard" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-offguard.png" />
+                <keyframe time="2.5" src="reskins/kyouko_toshinou_winter/#-horrified.png" />
+            </directive>
+        </pose>
+        <pose id="_tr_pride_letsgo">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/#-pride.png" x="0" y="0" />
+            <directive type="animation" id="summer" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/#-pride.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/#-letsgo.png" />
+            </directive>
+        </pose>
+        <pose id="1-stripping-calm">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/1-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/1-stripping-a.png" />
+                <keyframe time="0.75" src="reskins/kyouko_toshinou_winter/1-stripping-b.png" />
+            </directive>
+        </pose>
+        <pose id="0-stripping-pride">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/0-stripping-a.png" x="0" y="0" />
+            <sprite id="stripping-c" src="reskins/kyouko_toshinou_winter/0-stripping-c.png" x="14" y="249" alpha="100" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/0-stripping-a.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/0-stripping-b.png" />
+                <keyframe time="3" src="reskins/kyouko_toshinou_winter/0-stripping-pride.png" />
+            </directive>
+            <directive type="animation" id="stripping-c" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/0-stripping-c.png" alpha="100" />
+                <keyframe time="3" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="4-licky">
+            <sprite id="curious" src="reskins/kyouko_toshinou_winter/4-curious.png" x="0" y="0" />
+            <sprite id="face" src="reskins/kyouko_toshinou_winter/posemaker/faces/6-licky.png" x="8" y="258" clipbottom="8" />
+        </pose>
+        <pose id="1-stripped-happy">
+            <sprite id="winter" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" x="0" y="0" />
+            <directive type="animation" id="winter" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_winter/1-stripped-b.png" />
+            </directive>
+        </pose>
+        <pose id="1-stripped-coy">
+            <sprite id="winter" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" x="0" y="0" />
+            <sprite id="stripped-c" delay="2" src="reskins/kyouko_toshinou_winter/1-stripped-c.png" x="11" y="324" />
+            <directive type="animation" id="winter" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_winter/1-stripped-b.png" />
+            </directive>
+        </pose>
+        <pose id="1-stripped">
+            <sprite id="winter" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" x="0" y="0" />
+            <sprite id="stripped-c" delay="2" src="reskins/kyouko_toshinou_winter/1-stripped-c.png" x="11" y="324" />
+            <directive type="animation" id="winter" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/1-stripped-a.png" />
+                <keyframe time="2" src="reskins/kyouko_toshinou_winter/1-stripped-b.png" />
+            </directive>
+        </pose>
+        <pose id="2-stripped-grin">
+            <sprite id="grin" src="reskins/kyouko_toshinou_winter/2-stripped-a.png" />
+        </pose>
+        <pose id="2-stripped-think">
+            <sprite id="summer" src="reskins/kyouko_toshinou_winter/2-stripped-b.png" x="0" y="0" />
+        </pose>
+        <pose id="3-stripping">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" />
+                <keyframe time="1.75" src="reskins/kyouko_toshinou_winter/3-stripping-b.png" />
+                <keyframe time="2.5" src="reskins/kyouko_toshinou_winter/3-stripping-c.png" />
+            </directive>
+        </pose>
+        <pose id="3-stripping-calm">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" x="0" y="0" />
+            <sprite id="stripping-d" src="reskins/kyouko_toshinou_winter/3-stripping-d.png" x="8" y="249" alpha="100" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-a.png" />
+                <keyframe time="0.75" src="reskins/kyouko_toshinou_winter/3-stripping-b.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/3-stripping-c.png" />
+            </directive>
+            <directive type="animation" id="stripping-d" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/3-stripping-d.png" alpha="100" />
+                <keyframe time="0.75" alpha="0" />
+            </directive>
+        </pose>
+        <pose id="6-stripped-playful">
+            <sprite id="stripped-a" src="reskins/kyouko_toshinou_winter/6-stripped-b.png" x="0" y="0" />
+        </pose>
+        <pose id="2-stripping-ask">
+            <sprite id="stripping-a" src="reskins/kyouko_toshinou_winter/2-stripping-a.png" x="0" y="0" />
+            <directive type="animation" id="stripping-a" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/kyouko_toshinou_winter/2-stripping-a.png" />
+                <keyframe time="1.5" src="reskins/kyouko_toshinou_winter/2-stripping-b.png" />
+            </directive>
+        </pose>
+    </poses>
+
+    <pose-sets>
+        <set id="_s_copy_yuno">
+            <pose stage="0-2" img="custom:__copy_yuno" />
+        </set>
+        <set id="_tr_calm_wink">
+            <pose stage="0-6" img="custom:_tr_calm_wink" />
+        </set>
+        <set id="_tr_confused_mistaken">
+            <pose stage="0-7" img="custom:_tr_confused_mistaken" />
+        </set>
+        <set id="_tr_curious_troll">
+            <pose stage="0-7" img="custom:_tr_curious_troll" />
+        </set>
+        <set id="_tr_excited_calm">
+            <pose stage="0-6" img="custom:_tr_excited_calm" />
+        </set>
+        <set id="_tr_excited_disappointed">
+            <pose stage="0-7" img="custom:_tr_excited_disappointed" />
+            <pose stage="8-9" img="custom:#-_tr_excited_disappointed" priority="100" />
+        </set>
+        <set id="_tr_horny_horrified">
+            <pose stage="9" img="custom:#-_tr_horny_horrified" />
+        </set>
+        <set id="_tr_horny_letsgo">
+            <pose stage="0-7" img="custom:_tr_horny_letsgo" />
+        </set>
+        <set id="_tr_horrified_calm">
+            <pose stage="0-7" img="custom:_tr_horrifed_calm" />
+        </set>
+        <set id="_tr_horrified_grin">
+            <pose stage="0-1" img="custom:_tr_horrifed_grin" />
+        </set>
+        <set id="_tr_horrified_rip-playful">
+            <pose stage="7" img="custom:#-_tr_horrifed_rip-playful" />
+        </set>
+        <set id="_tr_myself_confused">
+            <pose stage="0-6" img="custom:_tr_myself_confused" />
+        </set>
+        <set id="_tr_offguard_horrified">
+            <pose stage="0-6" img="custom:_tr_offguard_horrified" />
+        </set>
+        <set id="_tr_pride_letsgo">
+            <pose stage="0-7" img="custom:_tr_pride_letsgo" />
+        </set>
+        <set id="announce">
+            <pose stage="0-9" img="#-announce.png" />
+        </set>
+        <set id="annoyed">
+            <pose stage="0-9" img="#-annoyed.png" />
+        </set>
+        <set id="blankstare">
+            <pose stage="0-9" img="#-blankstare.png" />
+        </set>
+        <set id="blush">
+            <pose stage="0-9" img="#-blush.png" />
+        </set>
+        <set id="boobs">
+            <pose stage="0-9" img="#-boobs.png" />
+        </set>
+        <set id="butt">
+            <pose stage="6-7" img="#-butt.png" />
+            <pose stage="9" img="#-butt.png" />
+        </set>
+        <set id="calm">
+            <pose stage="0-9" img="#-calm.png" />
+        </set>
+        <set id="casual">
+            <pose stage="0-9" img="#-casual.png" />
+        </set>
+        <set id="confused">
+            <pose stage="0-9" img="#-confused.png" />
+        </set>
+        <set id="curious">
+            <pose stage="0-9" img="#-curious.png" />
+        </set>
+        <set id="derp">
+            <pose stage="0-9" img="#-derp.png" />
+        </set>
+        <set id="disappointed">
+            <pose stage="0-9" img="#-disappointed.png" />
+        </set>
+        <set id="excited">
+            <pose stage="0-9" img="#-excited.png" />
+        </set>
+        <set id="excitenoribbon">
+            <pose stage="7" img="#-excitenoribbon.png" />
+        </set>
+        <set id="expectant">
+            <pose stage="0-9" img="#-expectant.png" />
+        </set>
+        <set id="finished">
+            <pose stage="9" img="#-finished.png" />
+        </set>
+        <set id="fixhair">
+            <pose stage="9" img="#-fixhair.png" />
+        </set>
+        <set id="flirt">
+            <pose stage="0-9" img="#-flirt.png" />
+        </set>
+        <set id="greed">
+            <pose stage="0-9" img="#-greed.png" />
+        </set>
+        <set id="grin">
+            <pose stage="0-9" img="#-grin.png" />
+        </set>
+        <set id="heavy-dual">
+            <pose stage="8" img="#-heavy-dual.png" />
+        </set>
+        <set id="heavy-focus">
+            <pose stage="8" img="#-heavy-focus.png" />
+        </set>
+        <set id="heavy-soft">
+            <pose stage="8" img="#-heavy-soft.png" />
+        </set>
+        <set id="hello">
+            <pose stage="0" img="#-hello.png" />
+        </set>
+        <set id="horny">
+            <pose stage="0-9" img="#-horny.png" />
+        </set>
+        <set id="hornythoughts">
+            <pose stage="0-9" img="#-hornythoughts.png" />
+        </set>
+        <set id="horrified">
+            <pose stage="0-9" img="#-horrified.png" />
+        </set>
+        <set id="hyped">
+            <pose stage="0-9" img="#-hyped.png" />
+        </set>
+        <set id="letsgo">
+            <pose stage="0-9" img="#-letsgo.png" />
+        </set>
+        <set id="mast-dual">
+            <pose stage="8" img="#-mast-dual.png" />
+        </set>
+        <set id="mast-look">
+            <pose stage="8" img="#-mast-look.png" />
+        </set>
+        <set id="mast-single">
+            <pose stage="8" img="#-mast-single.png" />
+        </set>
+        <set id="mast-start">
+            <pose stage="7" img="#-mast-start.png" />
+        </set>
+        <set id="mast-tweak">
+            <pose stage="8" img="#-mast-tweak.png" />
+        </set>
+        <set id="mistaken">
+            <pose stage="0-9" img="#-mistaken.png" />
+        </set>
+        <set id="myself">
+            <pose stage="0-9" img="#-myself.png" />
+        </set>
+        <set id="name-pride">
+            <pose stage="0-7" img="custom:name-pride" />
+        </set>
+        <set id="offguard">
+            <pose stage="0-9" img="#-offguard.png" />
+        </set>
+        <set id="playful">
+            <pose stage="0-9" img="#-playful.png" />
+        </set>
+        <set id="pleased">
+            <pose stage="0-9" img="#-pleased.png" />
+        </set>
+        <set id="pride">
+            <pose stage="0-9" img="#-pride.png" />
+        </set>
+        <set id="rip-playful">
+            <pose stage="7" img="#-rip-playful.png" />
+        </set>
+        <set id="rip-shrug">
+            <pose stage="6-7" img="#-rip-shrug.png" />
+        </set>
+        <set id="sexypose">
+            <pose stage="3-7" img="#-sexypose.png" />
+        </set>
+        <set id="shrug">
+            <pose stage="0-9" img="#-shrug.png" />
+        </set>
+        <set id="teasing">
+            <pose stage="0-9" img="#-teasing.png" />
+        </set>
+        <set id="trolling">
+            <pose stage="0-9" img="#-trolling.png" />
+        </set>
+        <set id="unfixed-flirt">
+            <pose stage="9" img="#-unfixed-flirt.png" />
+        </set>
+        <set id="unfixed-grin">
+            <pose stage="9" img="#-unfixed-grin.png" />
+        </set>
+    </pose-sets>
+</costume>

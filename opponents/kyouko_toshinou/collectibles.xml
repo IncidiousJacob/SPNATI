@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="kyouko_toshinou_ribbon" status="online" img="opponents/kyouko_toshinou/collectibles/presentribbon.png" thumbnail="opponents/kyouko_toshinou/collectibles/ribbon.png">
+    <collectible id="kyouko_toshinou_ribbon" status="online" thumbnail="opponents/kyouko_toshinou/collectibles/ribbon.png">
         <title>Kyouko's Ribbon</title>
         <subtitle>One of a kind?</subtitle>
         <text>The way she kept talking about how special it was to her and that she never takes it off, you totally knew she would take it off.&lt;br&gt;
@@ -8,10 +8,11 @@
 ...Or so you tell yourself.</text>
         <unlock>Play a game with Kyouko where she loses.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/kyouko_toshinou/collectibles/presentribbon.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/kyouko_toshinou/collectibles/ribbon.png" name="ribbon" generic="ribbon" position="head" type="extra" />
     </collectible>
-    <collectible id="kyouko_toshinou_kigurumi" status="online" img="opponents/kyouko_toshinou/collectibles/kappa-mannequin.png" thumbnail="opponents/kyouko_toshinou/collectibles/kappa.png">
+    <collectible id="kyouko_toshinou_kigurumi" status="online" thumbnail="opponents/kyouko_toshinou/collectibles/kappa.png">
         <title>Kappa Onesie</title>
         <subtitle>Now you match!</subtitle>
         <text>Kyouko handed this to you after you had to go without any pajamas of your own. It looks bizarre, but it's comfortable and sort of cute somehow.
@@ -20,37 +21,42 @@ You might be able to convince her to bring her pajamas again, too!</text>
         <unlock>Go to a pajama party with Kyouko without wearing any pajamas yourself. If you really shock her, she might be willing to hook you up...</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/kyouko_toshinou/collectibles/kappa-mannequin.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/kyouko_toshinou_sexy_tomato/</costume-folder>
         <wearable>true</wearable>
         <clothing img="opponents/kyouko_toshinou/collectibles/kappa-wearable.png" name="onesie" generic="" position="both" type="major" />
-        <hidden-exception type="costume-set" name="sleepover" />
+        <hidden-exceptions costume-set="sleepover" />
     </collectible>
-    <collectible id="kyouko_toshinou_rootbeer" status="online" img="opponents/kyouko_toshinou/collectibles/beachphoto-1.png,opponents/kyouko_toshinou/collectibles/beachphoto-2.png" thumbnail="opponents/kyouko_toshinou/collectibles/masochistcider.png">
+    <collectible id="kyouko_toshinou_rootbeer" status="online" thumbnail="opponents/kyouko_toshinou/collectibles/masochistcider.png">
         <title>Masochist Cider</title>
         <subtitle>For the masochist in you</subtitle>
         <text>Kyouko handed you a can of "Masochist Cider" root beer to help you beat the heat.&lt;br /&gt;&lt;br /&gt;"Isn't this so much more fun than putting our clothes back on?"</text>
         <unlock>Take Kyouko to the beach and get naked with her.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/kyouko_toshinou/collectibles/beachphoto-1.png</picture>
+        <picture>opponents/kyouko_toshinou/collectibles/beachphoto-2.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/kyouko_toshinou_summer/</costume-folder>
-        <hidden-exception type="event" name="summer" />
-        <hidden-exception type="event" name="summer_2" />
+        <hidden-exceptions costume-set="summer" />
     </collectible>
     <collectible id="kyouko_toshinou_rumraisin" status="unlisted">
         <title>Rum Raisin</title>
         <text>Kyouko shared some of her favorite ice cream with you. They normally only make this stuff in winter, but Kyouko stashes it so she can eat it year round.</text>
         <unlock>Make friends with Kyouko, then play with her somewhere cold and somewhere cozy.</unlock>
+        <hidden>true</hidden>
         <hide-details>true</hide-details>
         <counter>2</counter>
-        <hidden-exception type="event" name="xmas" />
+        <picture>&lt;no image set&gt;</picture>
+        <hidden-exceptions costume-set="xmas" />
     </collectible>
-    <collectible id="kyouko_toshinou_blanket" status="online" img="opponents/kyouko_toshinou/collectibles/hungryonmain.png" thumbnail="opponents/kyouko_toshinou/collectibles/picnicblanket.png">
+    <collectible id="kyouko_toshinou_blanket" status="online" thumbnail="opponents/kyouko_toshinou/collectibles/picnicblanket.png">
         <title>Picnic Blanket</title>
         <subtitle>Perfect for having a meal, and having a "meal"</subtitle>
         <text>You wouldn't believe how many empty cups of noodles will fit on this thing, and still have some space for two really hungry girls.</text>
         <unlock>Watch Kyouko and Nadeshiko masturbate together. (They need to be next to each other, and Kyouko can't be wearing a seasonal costume)</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/kyouko_toshinou/collectibles/hungryonmain.png</picture>
     </collectible>
 </collectibles>
