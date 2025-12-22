@@ -45,8 +45,11 @@
             this.cmdExpandPortrait = new Desktop.Skinning.SkinnedIcon();
             this.lblLayers = new Desktop.Skinning.SkinnedLabel();
             this.valLayers = new Desktop.Skinning.SkinnedNumericUpDown();
-            this.gridLabels = new SPNATI_Character_Editor.Controls.StageSpecificGrid();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.txtDescription = new Desktop.Skinning.SkinnedTextBox();
+            this.label24 = new Desktop.Skinning.SkinnedLabel();
+            this.gridLabels = new SPNATI_Character_Editor.Controls.StageSpecificGrid();
+            this.characterFolderDialog1 = new SPNATI_Character_Editor.Controls.CharacterFolderDialog();
             ((System.ComponentModel.ISupportInitialize)(this.valLayers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -268,8 +271,8 @@
             this.lblLayers.Size = new System.Drawing.Size(41, 13);
             this.lblLayers.TabIndex = 15;
             this.lblLayers.Text = "Layers:";
-            this.lblLayers.Visible = false;
             this.toolTip1.SetToolTip(this.lblLayers, "Number of layers shown on the selection screen.");
+            this.lblLayers.Visible = false;
             // 
             // valLayers
             // 
@@ -297,6 +300,32 @@
             0});
             this.valLayers.Visible = false;
             // 
+            // txtDescription
+            // 
+            this.txtDescription.BackColor = System.Drawing.Color.White;
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.txtDescription.ForeColor = System.Drawing.Color.Black;
+            this.txtDescription.Location = new System.Drawing.Point(109, 297);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(433, 90);
+            this.txtDescription.TabIndex = 106;
+            this.toolTip1.SetToolTip(this.txtDescription, "A description of the character which will be displayed on the character select sc" +
+        "reen.");
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label24.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.label24.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
+            this.label24.Location = new System.Drawing.Point(3, 300);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(63, 13);
+            this.label24.TabIndex = 107;
+            this.label24.Text = "Description:";
+            // 
             // gridLabels
             // 
             this.gridLabels.Label = "Display Name";
@@ -309,6 +338,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.label24);
             this.Controls.Add(this.valLayers);
             this.Controls.Add(this.lblLayers);
             this.Controls.Add(this.cmdExpandPortrait);
@@ -354,5 +385,8 @@
         private Desktop.Skinning.SkinnedLabel lblLayers;
         private Desktop.Skinning.SkinnedNumericUpDown valLayers;
         private System.Windows.Forms.ToolTip toolTip1;
+        private Desktop.Skinning.SkinnedTextBox txtDescription;
+        private Desktop.Skinning.SkinnedLabel label24;
+        private Controls.CharacterFolderDialog characterFolderDialog1;
     }
 }

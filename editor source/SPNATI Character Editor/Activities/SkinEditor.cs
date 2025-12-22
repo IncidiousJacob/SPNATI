@@ -91,6 +91,7 @@ namespace SPNATI_Character_Editor.Activities
 				txtName.Text = link.Name;
 				cboStatus.Text = link.Status;
 				cboEvent.Text = link.Set;
+				txtDescription.Text = link.Description;
 				string gender = link.Gender ?? _costume.Character.Gender;
 				cboGender.SelectedItem = gender;
 				valLayers.Value = link.LayersNonSkip != 0 ? Math.Max(valLayers.Minimum, Math.Min(link.LayersNonSkip, valLayers.Maximum)) : Math.Max(valLayers.Minimum, Math.Min(_costume.Character.Metadata.Layers, valLayers.Maximum));
@@ -122,6 +123,11 @@ namespace SPNATI_Character_Editor.Activities
 			}
 
 			gridLabels.Set(_costume.Labels);
+
+			if (_costume.Description != null)
+			{
+				txtDescription.Text = _costume.Description.Replace("<br>", Environment.NewLine);
+			}
 
 			PopulatePortraitDropdown();
 			if (_costume.Link?.PreviewImage != null)
@@ -194,6 +200,12 @@ namespace SPNATI_Character_Editor.Activities
 					set = null;
 				}
 
+				string description = txtDescription.Text;
+				if (string.IsNullOrEmpty(description) || description == "")
+				{
+					description = null;
+				}
+
 				string gender = cboGender.SelectedItem?.ToString();
 
 				string label = _costume.Labels.Count > 0 ? _costume.Labels[0].Value : null;
@@ -202,7 +214,8 @@ namespace SPNATI_Character_Editor.Activities
 				if (txtName.Text != _costume.Link.Name || status != _costume.Link.Status || set != _costume.Link.Set || _costume.Link.IsDirty
 					|| gender != _costume.Link.Gender || label != _costume.Link.Label 
 					|| _costume.Link.LayersNonSkip == 0 && layers != _costume.Layers
-					|| layers != _costume.Link.LayersNonSkip)
+					|| layers != _costume.Link.LayersNonSkip
+					|| description != _costume.Description )
 				{
 					_linkDataChanged = true;
 				}
@@ -214,6 +227,7 @@ namespace SPNATI_Character_Editor.Activities
 					_costume.Link.Status = status;
 					_costume.Link.Set = set;
 					_costume.Link.Label = label;
+					_costume.Link.Description = description;
 					_costume.Link.LayersNonSkip = layers == _costume.Layers ? 0 : layers;
 
 					if (gender != _costume.Character.Gender)

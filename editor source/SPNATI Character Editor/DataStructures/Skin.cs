@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
+using Desktop.DataStructures;
 
 namespace SPNATI_Character_Editor
 {
@@ -23,7 +24,7 @@ namespace SPNATI_Character_Editor
 	/// <summary>
 	/// Alternate skin data stored in costume.xml
 	/// </summary>
-	public class Costume : IRecord, ISkin, IHookSerialization
+	public class Costume : BindableObject, IRecord, ISkin, IHookSerialization
 	{
 		public Costume()
 		{
@@ -37,6 +38,13 @@ namespace SPNATI_Character_Editor
 
 		[XmlElement("label")]
 		public List<StageSpecificValue> Labels { get; set; }
+
+		[XmlElement("description")]
+		public string Description
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
 
 		[XmlArray("tags")]
 		[XmlArrayItem("tag")]
@@ -473,6 +481,9 @@ namespace SPNATI_Character_Editor
 
 		[XmlAttribute("label")]
 		public string Label;
+
+		[XmlAttribute("description")]
+		public string Description;
 
 		[XmlAttribute("layers")]
 		[DefaultValue(0)]
