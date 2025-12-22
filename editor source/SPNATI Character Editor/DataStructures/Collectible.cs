@@ -193,7 +193,12 @@ namespace SPNATI_Character_Editor.DataStructures
 		{
 			get
 			{
-				return Get<Costume>();
+				var c = Get<Costume>();
+				if (c == null && !string.IsNullOrEmpty(costumeFolder))
+				{
+					c = CharacterDatabase.GetSkin(costumeFolder);
+				}
+				return c;
 			}
 			set
 			{
