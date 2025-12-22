@@ -301,6 +301,12 @@ namespace SPNATI_Character_Editor.Activities
 
 			if (collectible != null)
 			{
+				if (collectible.Images == null)
+					collectible.Images = new List<CollectibleImage>();
+
+				// Removing empty picture elements
+				collectible.Images.RemoveAll(img => img == null || string.IsNullOrWhiteSpace(img.Path) || img.Path == "<no image set>");
+
 				if (collectible.Images.Count > 0)
 				{
 					foreach (CollectibleImage img in collectible.Images)
@@ -514,7 +520,8 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void lstImages_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			txtImagePath.Text = (lstImages.SelectedItem as CollectibleImage)?.Path;
+			// txtImagePath.Text = (lstImages.SelectedItem as CollectibleImage)?.Path;
+			txtImagePath.Text = lstImages.SelectedItem.ToString();
 			UpdatePreview();
 		}
 
@@ -566,13 +573,20 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void txtImagePath_TextChanged(object sender, EventArgs e)
 		{
+			Collectible collectible = _selectedItem?.Tag as Collectible;
 			CollectibleImage selectedImage = lstImages.SelectedItem as CollectibleImage;
-			if (selectedImage == null)
+			if (selectedImage == null || collectible == null)
 			{
 				return;
 			}
 
-			selectedImage.Path = txtImagePath.Text;
+			string text = (txtImagePath.Text ?? "").Trim();
+			if (text == "<no image set>" || text == "&lt;no image set&gt;")
+			{
+				text = "";
+			}
+
+			selectedImage.Path = text;
 			UpdatePreview();
 		}
 

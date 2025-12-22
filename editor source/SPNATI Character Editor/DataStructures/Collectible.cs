@@ -429,7 +429,17 @@ namespace SPNATI_Character_Editor.DataStructures
 		public string Path
 		{
 			get { return Get<string>(); }
-			set { Set(value); }
+			set {
+				string v = (value ?? "").Trim();
+
+				// Prevent UI label from becoming a file path
+				if (v == "<no image set>" || v == "&lt;no image set&gt;")
+				{
+					v = "";
+				}
+
+				Set(v);
+			}
 		}
 
 		public override string ToString()
