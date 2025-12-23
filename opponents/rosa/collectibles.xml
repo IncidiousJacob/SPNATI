@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="TM_11" img="opponents/rosa/fire technical machine.png" thumbnail="opponents/rosa/fire technical machine.png">
+    <collectible id="TM_11" thumbnail="opponents/rosa/fire technical machine.png">
         <title>TM 11 Sunny Day</title>
         <subtitle>It has infinite uses. Ain't that great?</subtitle>
         <text>A peculiar disc that can teach certain Pokémon the move Sunny Day. Rosa gave it to you after the game, saying that it is a custom among Gym Leaders to give a present after they lose. Since you are not a Pokémon, you can't use it, but at least it's pretty.
@@ -9,43 +9,57 @@
         <unlock>Win a game against Rosa.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/rosa/fire technical machine.png</picture>
     </collectible>
-    <collectible id="collectible_princess" img="opponents/rosa/9-collect.png" thumbnail="opponents/rosa/8-collect.png">
+    <collectible id="collectible_princess" thumbnail="opponents/rosa/8-collect.png">
         <title>Princess Rosa Picture</title>
         <subtitle>Outfit inspired by Rosa's outfit in the movie ''Mystery Doors of the Magical Land.''</subtitle>
         <text>The joint power of hair buns and drills is extremely taxing on the soul. Only a few chosen can harness such a combination without instantly falling into madness. Luckily, Rosa can, which is pretty nice, cuz she looks cute imo. You can admire this look all you want thanks to this handy photograph, given for beating Rosa alongside other members of the Pokémon franchise.</text>
         <unlock>Win a game against Rosa and three other Pokémon characters. (Or finish a game with her valentines event costume.)</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/rosa/9-collect.png</picture>
+        <picture>opponents/reskins/rosa_princess/5-Happy.png</picture>
+        <picture>opponents/reskins/rosa_princess/9-butt.png</picture>
+        <picture>opponents/reskins/rosa_princess/8-heavy.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/rosa_princess/</costume-folder>
     </collectible>
-    <collectible id="collectible_scientist" img="opponents/rosa/7-collect.png" thumbnail="opponents/rosa/6-collect.png">
+    <collectible id="collectible_scientist" thumbnail="opponents/rosa/6-collect.png">
         <title>Scientist Rosa Picture</title>
         <subtitle>Outfit inspired by Rosa's scientist outfit from Pokéstar Studios.</subtitle>
         <text>"The time machine malfunctioned again? Dang, that's the fifth time this month. At least, it seems that the only things that vanish are my clothes... so let's just call it a happy little incident." You can admire this look all you want thanks to this handy photograph you got for beating Rosa with a handicap.</text>
         <unlock>Win a game against Rosa while starting with five layers or fewer. (Or finish a game with her halloween event costume.)</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/rosa/7-collect.png</picture>
+        <picture>opponents/reskins/rosa_scientist/6-stripping.png</picture>
+        <picture>opponents/reskins/rosa_scientist/7-butt.png</picture>
+        <picture>opponents/reskins/rosa_scientist/8-heavy.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/rosa_scientist/</costume-folder>
     </collectible>
-    <collectible id="collectible_rosa_summer" img="opponents/rosa/summerCollectible_Alt.png" thumbnail="opponents/rosa/summer_collect.png">
+    <collectible id="collectible_rosa_summer" thumbnail="opponents/rosa/summer_collect.png">
         <title>Summer Rosa Picture</title>
         <subtitle>Outfit inspired by fanart by @aliceyawnin</subtitle>
         <text>The illustrated swimsuit magazines Rosa had in mind would never expose quite as much skin as this, but all the same you can admire Rosa's subtle tan all you like, thanks to this picture you were given for checking out other characters and their swimwear.</text>
         <unlock>Win a game against Rosa and at least 2 other characters that are (or rather, were) wearing swimwear. (Or finish a game with her summer event costume.)</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/rosa/summerCollectible_Alt.png</picture>
+        <picture>opponents/reskins/rosa_summer/6-confident.png</picture>
+        <picture>opponents/reskins/rosa_summer/7-butt.png</picture>
+        <picture>opponents/reskins/rosa_summer/8-heavy.png</picture>
         <costume>true</costume>
         <costume-folder>opponents/reskins/rosa_summer/</costume-folder>
     </collectible>
-    <collectible id="rosa_hat" img="opponents/rosa/7-hatOnly.png" thumbnail="opponents/rosa/0-hatCollectible.png">
+    <collectible id="rosa_hat" thumbnail="opponents/rosa/0-hatCollectible.png">
         <title>Rosa's Hat</title>
         <subtitle>Trendy Unovan Fashion</subtitle>
         <text>This pink and white visor is one of the most prominent parts of Rosa's outfit, and you have a copy of it! Any fan of hers would be keen to have one, after all. As a reward for helping Magma Grunt meet the movie star, you can now wear Rosa's hat for yourself.</text>
         <unlock>Finish a game against Rosa and the Team Magma Grunt where they both lose.</unlock>
         <counter>1</counter>
+        <picture>opponents/rosa/7-hatOnly.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/rosa/0-hatCollectible.png" name="hat" generic="hat" position="head" type="extra" />
     </collectible>

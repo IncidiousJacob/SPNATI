@@ -12,12 +12,26 @@
         <case name="screaming (female)" id="34" priority="Noteworthy" min="0" max="5">
             <description>Same as the male one. Only one of these should happen in a given game. If both happen in the same game, then I fucked something up.</description>
         </case>
+        <case name="intentions" id="151" priority="Prompt" min="0" max="8">
+            <description>Kokichi's asking a futa who just stripped about their intentions for keeping it hidden.</description>
+        </case>
+        <case name="do robots have dicks" id="165" priority="Prompt" min="0" max="0">
+            <description>He's asking a robot character if robots have dicks.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="27" opponent="jasmine" opponentId="1" />
         <response id="29" opponent="jason" opponentId="26" />
         <response id="30" opponent="miko" opponentId="6" />
         <response id="31" opponent="nami" opponentId="10" />
+        <response id="152" opponent="perona" opponentId="119" />
+        <response id="157" opponent="orendi" opponentId="173" />
+        <response id="158" opponent="darkness" opponentId="884" />
+        <response id="159" opponent="tick" opponentId="1" />
+        <response id="160" opponent="hatsune_miku" opponentId="649" />
+        <response id="161" opponent="futaba" opponentId="55" />
+        <response id="162" opponent="dreamcatcher" opponentId="17" />
+        <response id="164" opponent="rin" opponentId="168" />
     </responses>
     <notes>
         <note id="32">This case was hidden due to no longer making sense after changes were made to the targeted character. If you're rewriting this character, feel free to delete it.</note>
@@ -156,9 +170,24 @@
         <label id="145" label="" folder="Names" sort="0" />
         <label id="146" label="" folder="Names" sort="0" />
         <label id="147" label="" folder="Targets" sort="0" />
+        <label id="148" label="" folder="Targets" sort="0" />
+        <label id="149" label="" folder="Targets" sort="0" />
+        <label id="150" label="" folder="Targets" sort="0" />
+        <label id="154" label="" folder="Targets" sort="0" />
+        <label id="155" label="" folder="Targets" sort="0" />
+        <label id="156" label="" folder="Targets" sort="0" />
+        <label id="157" label="" folder="Targets" sort="0" />
+        <label id="159" label="" folder="Targets" sort="0" />
+        <label id="158" label="" folder="Targets" sort="0" />
+        <label id="160" label="" folder="Targets" sort="0" />
+        <label id="163" label="" folder="targets" sort="0" />
+        <label id="161" label="" folder="Targets" sort="0" />
+        <label id="164" label="" folder="Targets" sort="0" />
+        <label id="167" label="" folder="Targets" sort="0" />
     </labels>
-    <nextId>147</nextId>
+    <nextId>167</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="acces" />
         <marker scope="Public" name="af_strip" />
         <marker scope="Public" name="all_dangan" />
@@ -217,6 +246,7 @@
         <marker scope="Public" name="collarbone_simp" />
         <marker scope="Public" name="collect_react" />
         <marker scope="Public" name="crushed" />
+        <marker scope="Public" name="darknesAgainRespond" />
         <marker scope="Public" name="debug" />
         <marker scope="Public" name="deselect" />
         <marker scope="Public" name="design" />
@@ -225,6 +255,10 @@
         <marker scope="Public" name="die_hero2" />
         <marker scope="Public" name="dignity" />
         <marker scope="Public" name="dress_code" />
+        <marker scope="Public" name="edel_reply1" />
+        <marker scope="Public" name="edel_reply2" />
+        <marker scope="Public" name="edel_reply3" />
+        <marker scope="Public" name="edelgard_response1" />
         <marker scope="Public" name="expected" />
         <marker scope="Public" name="expensive" />
         <marker scope="Public" name="eyes_burn" />
@@ -237,6 +271,9 @@
         <marker scope="Public" name="freddie_gremlin" />
         <marker scope="Public" name="freddie_midnight" />
         <marker scope="Public" name="fuck_bees" />
+        <marker scope="Public" name="funnyWordRespond" />
+        <marker scope="Public" name="futa_surprise" />
+        <marker scope="Public" name="futabaSongSuggest" />
         <marker scope="Public" name="games" />
         <marker scope="Public" name="get_hot" />
         <marker scope="Public" name="good_complain" />
@@ -259,6 +296,7 @@
         <marker scope="Public" name="happy_pride" />
         <marker scope="Public" name="harder" />
         <marker scope="Public" name="heathens" />
+        <marker scope="Public" name="helicopter" />
         <marker scope="Public" name="hex_purple" />
         <marker scope="Public" name="icky" />
         <marker scope="Public" name="Intro" />
@@ -267,6 +305,7 @@
         <marker scope="Public" name="jurareply" />
         <marker scope="Public" name="just_a_lie" />
         <marker scope="Public" name="kinkshame" />
+        <marker scope="Public" name="kinkShaming" />
         <marker scope="Public" name="kiri_bday_res" />
         <marker scope="Public" name="kiri_bday_resp" />
         <marker scope="Public" name="kokichi_loss" />
@@ -293,7 +332,9 @@
         <marker scope="Public" name="meiareply" />
         <marker scope="Public" name="messing" />
         <marker scope="Public" name="messing_lost" />
+        <marker scope="Public" name="mikuClothesRespond" />
         <marker scope="Public" name="miss_scarf" />
+        <marker scope="Public" name="nadeRespond" />
         <marker scope="Public" name="name" />
         <marker scope="Public" name="name_Ouma" />
         <marker scope="Public" name="name_shuichi" />
@@ -315,6 +356,8 @@
         <marker scope="Public" name="okay_reshuffle" />
         <marker scope="Public" name="one_helper" />
         <marker scope="Public" name="pathetic" />
+        <marker scope="Public" name="peronaLeaveReact" />
+        <marker scope="Public" name="peronaLeaveReactMad" />
         <marker scope="Public" name="player_scarf1" />
         <marker scope="Public" name="player_scarf2" />
         <marker scope="Public" name="player_scarf3" />
@@ -322,6 +365,7 @@
         <marker scope="Public" name="poor_fee2" />
         <marker scope="Public" name="poor_feet1" />
         <marker scope="Public" name="poor_feet2" />
+        <marker scope="Public" name="pornRespond" />
         <marker scope="Public" name="potato" />
         <marker scope="Public" name="prisc_sayso" />
         <marker scope="Public" name="prisc_ult" />
@@ -335,6 +379,7 @@
         <marker scope="Public" name="revyreply" />
         <marker scope="Public" name="revyreply1" />
         <marker scope="Public" name="revyreply2" />
+        <marker scope="Public" name="robotDick" />
         <marker scope="Public" name="scarf_unlock" />
         <marker scope="Public" name="scarfy" />
         <marker scope="Public" name="sche" />
@@ -481,8 +526,10 @@
         <marker scope="Public" name="t_stream1" />
         <marker scope="Public" name="t_suction1" />
         <marker scope="Public" name="t_suction2" />
+        <marker scope="Public" name="tastyGock" />
         <marker scope="Public" name="tease_inside" />
         <marker scope="Public" name="throne_leader" />
+        <marker scope="Public" name="tickArmRespond" />
         <marker scope="Public" name="trendy" />
         <marker scope="Public" name="trying_times" />
         <marker scope="Public" name="tucking" />

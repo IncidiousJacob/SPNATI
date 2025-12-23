@@ -93,6 +93,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <note id="1150">Currently assuming it's animal themed</note>
         <note id="1258">I'd like to make a joke about "adult" games or something like that. Preferably in the after stripping phase because I have a pose for it</note>
         <note id="1275">I don't like that I have to filter to Easter skins for this</note>
+        <note id="1488">Maybe I'll add an alt order where she takes these off last. This already wasn't the originally planned order and I'm late enough as is (it is the 20th at this time of writing). (For techincal reasons involving her final stages she can't never take them off, nor put them back on)</note>
     </notes>
     <labels>
         <label id="2" label="Imitating Yuno" color="5" folder="Targets&gt;Yuno Uno" sort="0" />
@@ -1178,8 +1179,8 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1169" label="Human won" folder="Collectible&gt;Kigurumi" sort="4" />
         <label id="1170" label="" folder="Costume&gt;Santa Suit" sort="0" />
         <label id="1171" label="Mittens" folder="Costume&gt;Santa Suit" sort="15" />
-        <label id="1172" label="Mittens" folder="Costume&gt;Santa Suit" sort="9" />
-        <label id="1173" label="" folder="Costume&gt;Santa Suit" sort="3" />
+        <label id="1172" label="Gloves" folder="Costume" sort="9" />
+        <label id="1173" label="Winter costumes" folder="" sort="3" />
         <label id="1174" label="" folder="Costume&gt;Santa Suit" sort="4" />
         <label id="1175" label="Boots" folder="Costume&gt;Santa Suit" sort="10" />
         <label id="1176" label="Boots" folder="Costume&gt;Santa Suit" sort="20" />
@@ -1468,6 +1469,31 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <label id="1466" label="Repeat ties" folder="" sort="0" />
         <label id="1467" label="" folder="Targets&gt;Bowsette" sort="0" />
         <label id="1468" label="Check evergreen" folder="Costume" sort="20" />
+        <label id="1469" label="" folder="Costume&gt;Santa Suit" sort="0" />
+        <label id="1470" label="Jacket" folder="Costume&gt;Santa Suit" sort="0" />
+        <label id="1471" label="Boots" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1472" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1473" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1474" label="Jacket" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1475" label="Jacket" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1476" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1477" label="Shorts" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1478" label="Shorts" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1479" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1480" label="Shorts" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1481" label="Shirt" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1482" label="Shirt" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1483" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1484" label="Bra" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1485" label="Bra (Ringo)" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1486" label="Bra (Ringo)" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1487" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1488" label="Thigh-highs" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1489" label="Thigh-highs" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1490" label="" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1491" label="Panties" folder="Costume&gt;Snow Party Coat" sort="0" />
+        <label id="1492" label="Bad" folder="AI Level&gt;Snow Party Coat" sort="0" />
+        <label id="1493" label="Good" folder="AI Level&gt;Snow Party Coat" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:#-_</prefix>
@@ -1476,7 +1502,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
     <onlyCustomPoses>true</onlyCustomPoses>
     <disallowTargetingPrivateMarkers>true</disallowTargetingPrivateMarkers>
     <validateMarkerScope>true</validateMarkerScope>
-    <nextId>1468</nextId>
+    <nextId>1493</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Private" name="B_">Background-related markers</marker>
@@ -1586,6 +1612,7 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="F_Artist_CreationDestination">What they do with their creations.</marker>
         <marker scope="Public" name="F_Camera_SexyPhoto">Kyouko pulls a "sexy" pose if someone brings a camera.</marker>
         <marker scope="Public" name="F_Chef_MakeSomething">Hungry on main</marker>
+        <marker scope="Public" name="F_ChillyNips" />
         <marker scope="Public" name="F_EatKyouko">They're gonna eat... her?</marker>
         <marker scope="Public" name="F_Exhibitionist_TooExcited">Even she's not that excited.</marker>
         <marker scope="Public" name="F_Formal_TakeOff" />
@@ -1611,20 +1638,22 @@ Yes, there are two markers for this. Feel free to target whichever you like.</no
         <marker scope="Public" name="S_AhoShirt" />
         <marker scope="Public" name="S_AnimalPajamas">Self Stripping 1 (Spirit Animal)</marker>
         <marker scope="Public" name="S_BirthdayUniform">Self Must Strip - First to get "in uniform" on her birthday</marker>
+        <marker scope="Public" name="S_BraPantiesThighHighs" />
         <marker scope="Public" name="S_FullTomato">Self Stripped - Both her bra and panties—tomato themed—are visible. (Club Uniform)</marker>
         <marker scope="Public" name="S_GodivaHair">Early in first topless stage - the barely visible nipples</marker>
         <marker scope="Public" name="S_MensSwimsuitChallenge" />
         <marker scope="Public" name="S_MscFollowUp" />
         <marker scope="Public" name="S_NoRibbonOrSidetails">First hand on stage 7 - Kyouko took away her ribbon and sidetails at the same time, making a pretty jarring change of appearance. (Club Uniform)</marker>
+        <marker scope="Public" name="S_Red" />
         <marker scope="Public" name="S_RibbonOff">Self Stripping 6 - Taking the ribbon off (Club Uniform)</marker>
         <marker scope="Public" name="S_RibbonStays">Self Stripping - Kyouko plans to keep her ribbon.</marker>
+        <marker scope="Public" name="S_SocksUpShorts" />
         <marker scope="Public" name="S_Sweater4" />
         <marker scope="Public" name="S_TalismanInEyes" />
         <marker scope="Public" name="S_TomatoesRevealed">Self Stripped - The tomato pattern on her underwear is visible. (Club Uniform)</marker>
         <marker scope="Public" name="S_TopBetter" />
         <marker scope="Public" name="S_Uniform">Self Stripping 2 - Explain the uniform (Club Uniform)</marker>
         <marker scope="Public" name="S_YuiRunningClothes" />
-        <marker scope="Public" name="Shamiko_Kyouko_..." />
         <marker scope="Public" name="SlyCooper_PantsOffA">Sly Cooper Stripping 0</marker>
         <marker scope="Private" name="T_">Character targets</marker>
         <marker scope="Public" name="T_Amalia_Cheating">Amalia First hand stage 5</marker>

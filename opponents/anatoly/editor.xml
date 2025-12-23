@@ -4,7 +4,7 @@
     <height>5'5"</height>
     <age>25</age>
     <pronunciation>Ann-uh-toe-lee</pronunciation>
-    <othernotes />
+    <othernotes>Anatoly is here in search of a boyfriend, although his heart belongs to his childhood friend, Gregor.&lt;br&gt;He is very attracted to men who are:&lt;br&gt;- Fat/chubbier&lt;br&gt;- Hairy&lt;br&gt;- Large</othernotes>
     <noteworthy>
         <case name="Paska's Introduction" id="1" priority="FYI" min="0" max="0">
             <description>Anatoly has a pet squirrel on his shoulder! Note - She'll leave if he loses his pants.</description>
@@ -98,6 +98,17 @@
         <response id="259" opponent="eichi" opponentId="778" />
         <response id="260" opponent="nagatoro" opponentId="1175" />
         <response id="261" opponent="nagatoro" opponentId="1176" />
+        <response id="302" opponent="yuno_uno" opponentId="616" />
+        <response id="304" opponent="yuno_uno" opponentId="615" />
+        <response id="314" opponent="dwight" opponentId="199" />
+        <response id="315" opponent="dwight" opponentId="200" />
+        <response id="316" opponent="dwight" opponentId="202" />
+        <response id="317" opponent="dwight" opponentId="203" />
+        <response id="318" opponent="dwight" opponentId="204" />
+        <response id="319" opponent="dwight" opponentId="205" />
+        <response id="320" opponent="dwight" opponentId="206" />
+        <response id="321" opponent="dwight" opponentId="207" />
+        <response id="322" opponent="dwight" opponentId="198" />
     </responses>
     <notes>
         <note id="6">Translations: 
@@ -111,7 +122,10 @@
         <note id="202">competitive aspect wont last long since he'll get scared  but hes probably gonna stay a little jealous</note>
         <note id="205">Тупа сука. Мені набридло, що чоловіки впадають на такі безглузді вчинки. - Dumb bitch. I'm sick of men falling for such ridiclous acts.</note>
         <note id="221">hes rlly attracted to him and bad at speaking so hes doing a shitty job trying to connect . love wins...</note>
-        <note id="264">Д-День святого Валентина - H-Happy Valentine's Day</note>
+        <note id="264">З Днем святого Валентина - Happy Valentine's Day</note>
+        <note id="302">дивак - Means "weirdo", or "queer fish" . Not intentional but keeping cuz thats really funny to me</note>
+        <note id="304">Im sure its obvious he is lying LOL Anatoly is awkward and both 1 wants to impress yuno 2 find an excuse to speak to him bcuz he is cute</note>
+        <note id="309">красунчик - handsome/hunk</note>
     </notes>
     <labels>
         <label id="2" label="Karin" folder="" sort="0" />
@@ -162,8 +176,8 @@
         <label id="59" label="" folder="Character Targets" sort="0" />
         <label id="60" label="" folder="Character Targets" sort="0" />
         <label id="61" label="" folder="Character Targets" sort="0" />
-        <label id="62" label="" folder="Character Targets" sort="0" />
-        <label id="63" label="" folder="Character Targets" sort="0" />
+        <label id="62" label="" folder="Yuno" sort="0" />
+        <label id="63" label="" folder="Yuno" sort="0" />
         <label id="64" label="" folder="Character Replies" sort="0" />
         <label id="65" label="" folder="Character Replies" sort="0" />
         <label id="66" label="" folder="Character Replies" sort="0" />
@@ -328,10 +342,24 @@
         <label id="296" label="" folder="Character Targets" sort="0" />
         <label id="297" label="" folder="Character Targets" sort="0" />
         <label id="298" label="" folder="Character Targets" sort="0" />
+        <label id="300" label="" folder="Character Targets" sort="0" />
+        <label id="301" label="" folder="Character Targets" sort="0" />
+        <label id="305" label="" folder="Yuno" sort="0" />
+        <label id="306" label="" folder="Yuno" sort="0" />
+        <label id="307" label="" folder="Yuno" sort="0" />
+        <label id="183" label="" folder="Yuno" sort="0" />
+        <label id="304" label="" folder="Yuno" sort="0" />
+        <label id="302" label="" folder="Yuno" sort="0" />
+        <label id="303" label="" folder="Yuno" sort="0" />
+        <label id="308" label="" folder="Yuno" sort="0" />
+        <label id="309" label="" folder="Yuno" sort="0" />
+        <label id="310" label="" folder="Yuno" sort="0" />
+        <label id="311" label="" folder="Yuno" sort="0" />
+        <label id="312" label="" folder="Yuno" sort="0" />
+        <label id="313" label="" folder="Yuno" sort="0" />
     </labels>
-    <nextId>298</nextId>
+    <nextId>322</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="9" />
         <marker scope="Public" name="ahri_idle" />
         <marker scope="Public" name="ahri_ms1a" />
@@ -392,8 +420,17 @@
         <marker scope="Public" name="dwight_ms1" />
         <marker scope="Public" name="dwight_ms1a" />
         <marker scope="Public" name="dwight_s1" />
+        <marker scope="Public" name="dwightreply_as0" />
+        <marker scope="Public" name="dwightreply_as1" />
+        <marker scope="Public" name="dwightreply_as2" />
         <marker scope="Public" name="dwightreply_ms0" />
+        <marker scope="Public" name="dwightreply_ms1" />
+        <marker scope="Public" name="dwightreply_ms2" />
+        <marker scope="Public" name="dwightreply_ms3" />
         <marker scope="Public" name="dwightreply_s0" />
+        <marker scope="Public" name="dwightreply_s1" />
+        <marker scope="Public" name="dwightreply_s2" />
+        <marker scope="Public" name="dwightreply_s3" />
         <marker scope="Public" name="eichi_as1" />
         <marker scope="Public" name="eichi_as2" />
         <marker scope="Public" name="eichi_ms1a" />
@@ -526,6 +563,12 @@
         <marker scope="Public" name="revyreply_ms1a" />
         <marker scope="Public" name="revyreply_ms2a" />
         <marker scope="Public" name="rosereply_ms1a" />
+        <marker scope="Public" name="sara_asreply4" />
+        <marker scope="Public" name="sara_forfeitreply" />
+        <marker scope="Public" name="sara_msreply3" />
+        <marker scope="Public" name="sara_msreply4" />
+        <marker scope="Public" name="sara_msreply5" />
+        <marker scope="Public" name="sara_msreply6" />
         <marker scope="Public" name="sly_" />
         <marker scope="Public" name="sly_as1a" />
         <marker scope="Public" name="sly_as2a" />
@@ -559,9 +602,30 @@
         <marker scope="Public" name="womenshirt" />
         <marker scope="Public" name="yuna_ms1a" />
         <marker scope="Public" name="yuna_ms2a" />
+        <marker scope="Public" name="yuno_as2a" />
+        <marker scope="Public" name="yuno_as5a" />
+        <marker scope="Public" name="yuno_as6a" />
+        <marker scope="Public" name="yuno_as6b" />
+        <marker scope="Public" name="yuno_COCK" />
+        <marker scope="Public" name="yuno_DICK" />
         <marker scope="Public" name="yuno_fantasy" />
+        <marker scope="Public" name="yuno_fantasya" />
+        <marker scope="Public" name="yuno_fantasyb" />
+        <marker scope="Public" name="yuno_forfeit" />
+        <marker scope="Public" name="yuno_forfeita" />
+        <marker scope="Public" name="yuno_forfeitb" />
+        <marker scope="Public" name="yuno_forfeitc" />
+        <marker scope="Public" name="yuno_forfeitd" />
+        <marker scope="Public" name="yuno_forfeite" />
+        <marker scope="Public" name="yuno_forfeitinvite" />
         <marker scope="Public" name="yuno_ms1a" />
         <marker scope="Public" name="yuno_ms2a" />
+        <marker scope="Public" name="yuno_ms2b" />
+        <marker scope="Public" name="yuno_ms4a" />
+        <marker scope="Public" name="yuno_s1a" />
+        <marker scope="Public" name="yuno_s2a" />
+        <marker scope="Public" name="yuno_s4a" />
+        <marker scope="Public" name="yuno_s5" />
         <marker scope="Public" name="yunoreply_ms1a" />
         <marker scope="Public" name="yunoreply_ms2a" />
     </markers>

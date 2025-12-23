@@ -5,9 +5,40 @@
         <subtitle>60% cotton, 40% polyester, 100% pure aegyo. </subtitle>
         <text>Taken straight out of Spooky High (or Jesse Cox's store) this grimacing hoodie will let all of your friends know how quirky and creative you are!
 
-Despite appearances, it manages to fit suitably on all bodies, from slim guys to chubby gals. How? Eldritch magic. Probably. Dunno.</text>
+ Despite appearances, it manages to fit suitably on all bodies, from slim guys to chubby gals. How? Eldritch magic. Probably. Dunno.</text>
         <unlock>Finish a game with Zoe where she loses.</unlock>
         <wearable>true</wearable>
-        <clothing name="zip-up hoodie" generic="sweater" position="upper" type="minor" img="opponents/zoe/Zoe_Hoodie.png" />
+        <clothing img="opponents/zoe/Zoe_Hoodie.png" name="zip-up hoodie" generic="sweater" position="upper" type="minor" />
+    </collectible>
+    <collectible id="zoe_cult_robe" status="online" img="opponents/zoe/resources/Robe.png" thumbnail="opponents/zoe/resources/Robe_Thumbnail.png">
+        <title>Cult of Zoe's Robe</title>
+        <subtitle>Just the right amount of comfortable and mysterious!</subtitle>
+        <text>Despite the intricate design and several accessories, the robe itself is sewn in such a way that it all fits as one single piece. It's perfect to hide how many clothes you're wearing underneath... 
+
+Or if you're wearing nothing at all! Nothing at all!</text>
+        <unlock>Finish a game with Zoe where she wins.
+</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/zoe/resources/Robe_Thumbnail.png" name="cultist robe" generic="robe" position="both" type="major" />
+    </collectible>
+    <collectible id="zoe_cult_mask" status="online" img="opponents/zoe/resources/Mask.png" thumbnail="opponents/zoe/resources/Mask_Thumbnail.png">
+        <title>Cult of Zoe's Mask</title>
+        <subtitle>The mask stays on at all times. At. All. Times.</subtitle>
+        <text>This extremely rare mask shows your devotion to the Cult of Zoe, worshipping the goddess of creativity, fandom and hype.
+
+It also doubles as Shipping Goggles, allowing you to see all sparks of potential ships everywhere.</text>
+        <unlock>Finish a game with Zoe where she wins.</unlock>
+        <hide-details>true</hide-details>
+        <wearable>true</wearable>
+        <clothing img="opponents/zoe/resources/Mask.png" name="cultist mask" generic="mask" position="head" type="extra" />
+    </collectible>
+    <collectible id="zoe_secret_note" status="online" img="opponents/zoe/resources/Tips and Tricks.png" thumbnail="opponents/zoe/resources/Secret Note.png">
+        <title>Zoe's Secret Note</title>
+        <subtitle>What does it say? You might wanna examine it closer...</subtitle>
+        <text>"Hey! Thanks for letting me win that game. It seems like my cult has already invited you to be a part of them, huh? They can be a bit cringe sometimes, but they mean well. Maybe you can help them improve their ways! ,You can have some of the cool secrets I've learned at the Inventory, I'm sure they'll be of help!" - Zoe</text>
+        <unlock>Finish a game with Zoe where she wins.
+</unlock>
+        <hidden>true</hidden>
     </collectible>
 </collectibles>
