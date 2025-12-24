@@ -282,6 +282,9 @@
         <response id="1068" opponent="edelgard" opponentId="23" />
         <response id="1071" opponent="edelgard" opponentId="47" />
         <response id="1074" opponent="edelgard" opponentId="958" />
+        <response id="1079" opponent="purah" opponentId="37" />
+        <response id="1081" opponent="wiz" opponentId="430" />
+        <response id="1082" opponent="wiz" opponentId="431" />
     </responses>
     <notes>
         <note id="685">Devs of Kagamine Rin, if you're seeing this, Rin has an Arle cosplay module in Project Diva, named "Apprentice Magician".</note>
@@ -300,6 +303,7 @@ Kudos if you knew what he's talking about before you peeped here!</note>
 
 Dragon Meat comes in three varities, but they're the healing item that restores your HP and MP.</note>
         <note id="1061">Madou Monogatari has a key item that enabled the Compass in-game. You don't start the game with the compass, so expect to get more lost within the first few minutes of the game.</note>
+        <note id="1081">im so sorry lmao</note>
     </notes>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -830,7 +834,7 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="580" label="Psychics" folder="Targets&gt;Yusei" sort="9" />
         <label id="579" label="Dark Signers" folder="Targets&gt;Yusei" sort="8" />
         <label id="581" label="" folder="Targets" sort="118" />
-        <label id="582" label="" folder="Targets" sort="77" />
+        <label id="582" label="" folder="Targets&gt;Wiz" sort="77" />
         <label id="583" label="" folder="Targets" sort="0" />
         <label id="584" label="" color="1" folder="Targets" sort="120" />
         <label id="585" label="" color="1" folder="Targets" sort="40" />
@@ -1190,11 +1194,11 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="971" label="" folder="Targets" sort="0" />
         <label id="972" label="" folder="Targets" sort="0" />
         <label id="973" label="" folder="Targets" sort="0" />
-        <label id="974" label="" folder="Targets" sort="0" />
+        <label id="974" label="" folder="Targets&gt;Wiz" sort="0" />
         <label id="975" label="" folder="Targets" sort="0" />
         <label id="976" label="" folder="Targets" sort="0" />
-        <label id="977" label="" folder="Targets" sort="0" />
-        <label id="978" label="" folder="Targets" sort="0" />
+        <label id="977" label="" folder="Targets&gt;Wiz" sort="0" />
+        <label id="978" label="" folder="Targets&gt;Wiz" sort="0" />
         <label id="979" label="There's a Bath" folder="BG Reaction" sort="0" />
         <label id="980" label="" folder="BG Reaction" sort="0" />
         <label id="981" label="" folder="Targets" sort="0" />
@@ -1211,8 +1215,8 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="988" label="" folder="Targets" sort="0" />
         <label id="994" label="Boob Club " folder="Targets" sort="0" />
         <label id="995" label="" color="1" folder="Targets" sort="0" />
-        <label id="996" label="" folder="Targets" sort="0" />
-        <label id="997" label="" color="1" folder="" sort="0" />
+        <label id="996" label="" folder="Targets&gt;Wiz" sort="0" />
+        <label id="1082" label="" color="6" folder="Targets&gt;Wiz" sort="0" />
         <label id="998" label="Gonna get..." folder="Targets&gt;Angela" sort="0" />
         <label id="999" label="Post-Flash Reactions" folder="Targets&gt;Angela" sort="0" />
         <label id="1000" label="Post-Flash Reactions" folder="Targets&gt;Angela" sort="0" />
@@ -1278,10 +1282,18 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="1071" label="" folder="Targets" sort="0" />
         <label id="1072" label="" folder="Targets" sort="0" />
         <label id="1073" label="" folder="Targets" sort="0" />
+        <label id="1075" label="" folder="Valentine's Alt" sort="0" />
+        <label id="1076" label="" folder="Valentine's Alt" sort="0" />
+        <label id="1077" label="" folder="Valentine's Alt" sort="0" />
+        <label id="1078" label="" folder="Valentine's Alt" sort="0" />
+        <label id="1079" label="" folder="Targets" sort="0" />
+        <label id="1081" label="" color="1" folder="Targets&gt;Wiz" sort="0" />
+        <label id="997" label="" folder="Targets&gt;Wiz" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>1074</nextId>
+    <nextId>1082</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="2009mayberetro" />
         <marker scope="Public" name="about_madou" />
         <marker scope="Public" name="about_magicaljewels" />
@@ -1840,6 +1852,7 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="schezo_not_jinxed" />
         <marker scope="Public" name="schezo_notsummer" />
         <marker scope="Public" name="schezo_otherswords" />
+        <marker scope="Public" name="schezo_purah01" />
         <marker scope="Public" name="schezo_r01" />
         <marker scope="Public" name="schezo_reset_AI" />
         <marker scope="Public" name="schezo_ringo_icebreaker" />
@@ -1950,8 +1963,11 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="schezo_wiz_lich2" />
         <marker scope="Public" name="schezo_wiz_lich3" />
         <marker scope="Public" name="schezo_wiz_lichcontinued1" />
+        <marker scope="Public" name="schezo_wiz_lichcontinued2" />
         <marker scope="Public" name="schezo_wiz_sword1" />
         <marker scope="Public" name="schezo_wiz_sword2" />
+        <marker scope="Public" name="schezo_wiz_sword3" />
+        <marker scope="Public" name="schezo_wiz_sword3_sus" />
         <marker scope="Public" name="schezo_yusei_akiza1" />
         <marker scope="Public" name="schezo_yusei_bike1" />
         <marker scope="Public" name="schezo_yusei_bike2" />
