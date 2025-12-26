@@ -1889,6 +1889,7 @@ OpponentDetailsDisplay.prototype.handleCostumeChange = function () {
     var costumeDesc = this.costumeSelector.children(':selected').data('costumeDescriptor');
     this.opponent.selectAlternateCostume(costumeDesc);
     this.simpleImage.attr('src', this.opponent.selection_image);
+    this.descriptionLabel.html(this.opponent.selectDescription || this.opponent.description || '');
 }
 
 OpponentDetailsDisplay.prototype.clear = function () {
@@ -2333,7 +2334,7 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
         this.addedLabelField.removeClass('has-added-date');
     }
 
-    this.descriptionLabel.html(opponent.description);
+    this.descriptionLabel.html(opponent.selectDescription || opponent.metaDescription || opponent.description || '');
 
     this.simpleImage.one('load', this.rescaleSimplePose.bind(this, opponent.scale));
     this.simpleImage.attr('src', opponent.selection_image).show();

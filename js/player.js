@@ -590,7 +590,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     this.source = $metaXml.children('from').text();
     this.artist = $metaXml.children('artist').text();
     this.writer = $metaXml.children('writer').text();
-    this.description = fixupDialogue($metaXml.children('description').html());
+    this.description = this.selectDescription = this.metaDescription = fixupDialogue($metaXml.children('description').html());
     this.has_collectibles = $metaXml.children('has_collectibles').text() === 'true';
     this.collectibles = null;
     this.shortGameTested = $metaXml.children('short-game-enabled').text() === 'true';
@@ -752,13 +752,27 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     if (!ALT_COSTUMES_ENABLED) return;
 
     $metaXml.find('>alternates>costume').each(function (i, elem) {
+        const $elem = $(elem);
+
         const set = $(elem).attr('set');
         const status = $(elem).attr('status') || 'online';
         if (!includedOpponentStatuses[status]) return;
+        
+        const nameFromElem = ($elem.children('costume-name').text() || '').trim();
+        const descFromElem = ($elem.children('costume-description').text() || '').trim();   
+        
+        // Legacy fallback: only the direct text inside <costume> (ignores child elements)
+        const legacyName = $elem.contents()
+            .filter(function () { return this.nodeType === 3; }) // 3 = TEXT_NODE
+            .text()
+            .trim();
+        
+        const name = nameFromElem || legacyName;
+        const description = descFromElem || '';
 
         const costume_descriptor = {
             'folder': $(elem).attr('folder'),
-            'name': $(elem).text(),
+            'name': name,
             'image': $(elem).attr('img'),
             'gender': $(elem).attr('gender') || this.metaGender,
             'label': $(elem).attr('label') || this.metaLabel,
@@ -766,6 +780,7 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
             'status': status,
             'unlocked_by': $(elem).attr('collectible'),
             'layers': parseInt($(elem).attr('layers'), 10) || this.metaLayers,
+            'description': description,
         };
 
         this.alternate_costumes.push(costume_descriptor);
@@ -1099,13 +1114,15 @@ Opponent.prototype.selectAlternateCostume = function (costumeDesc) {
         this.selection_image = this.base_folder + this.image;
         this.selectLabel = this.metaLabel;
         this.selectGender = this.metaGender;
-        this.selectLayers = this.metaLayers;
+        this.selectLayers = this.metaLayers;       
+        this.selectDescription = this.metaDescription;
     } else {
         this.selected_costume = costumeDesc.folder;
         this.selection_image = costumeDesc.folder + costumeDesc.image;
         this.selectLabel = costumeDesc.label;
         this.selectGender = costumeDesc.gender;
         this.selectLayers = costumeDesc.layers;
+        this.selectDescription = costumeDesc.description;
     }
 
     /* For sorting purposes. 
