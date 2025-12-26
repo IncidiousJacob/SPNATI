@@ -46,11 +46,16 @@
             this.lblLayers = new Desktop.Skinning.SkinnedLabel();
             this.valLayers = new Desktop.Skinning.SkinnedNumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.txtCostumeOtherNotes = new Desktop.Skinning.SkinnedTextBox();
+            this.skinnedGroupBox5 = new Desktop.Skinning.SkinnedGroupBox();
+            this.skinnedGroupBox1 = new Desktop.Skinning.SkinnedGroupBox();
+            this.skinnedLabel3 = new Desktop.Skinning.SkinnedLabel();
             this.txtDescription = new Desktop.Skinning.SkinnedTextBox();
-            this.label24 = new Desktop.Skinning.SkinnedLabel();
             this.gridLabels = new SPNATI_Character_Editor.Controls.StageSpecificGrid();
             this.characterFolderDialog1 = new SPNATI_Character_Editor.Controls.CharacterFolderDialog();
             ((System.ComponentModel.ISupportInitialize)(this.valLayers)).BeginInit();
+            this.skinnedGroupBox5.SuspendLayout();
+            this.skinnedGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -300,31 +305,76 @@
             0});
             this.valLayers.Visible = false;
             // 
+            // txtCostumeOtherNotes
+            // 
+            this.txtCostumeOtherNotes.AcceptsReturn = true;
+            this.txtCostumeOtherNotes.BackColor = System.Drawing.Color.White;
+            this.txtCostumeOtherNotes.ForeColor = System.Drawing.Color.Black;
+            this.txtCostumeOtherNotes.Location = new System.Drawing.Point(98, 28);
+            this.txtCostumeOtherNotes.MaxLength = 1048575;
+            this.txtCostumeOtherNotes.Multiline = true;
+            this.txtCostumeOtherNotes.Name = "txtCostumeOtherNotes";
+            this.txtCostumeOtherNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtCostumeOtherNotes.Size = new System.Drawing.Size(432, 232);
+            this.txtCostumeOtherNotes.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.txtCostumeOtherNotes, "This information is only seen in this editor, and could be used for taking notes," +
+        " giving tips to other writers wanting to target your character, etc.");
+            // 
+            // skinnedGroupBox5
+            // 
+            this.skinnedGroupBox5.BackColor = System.Drawing.Color.White;
+            this.skinnedGroupBox5.Controls.Add(this.txtCostumeOtherNotes);
+            this.skinnedGroupBox5.Highlight = Desktop.Skinning.SkinnedHighlight.Heading;
+            this.skinnedGroupBox5.Image = null;
+            this.skinnedGroupBox5.Location = new System.Drawing.Point(6, 410);
+            this.skinnedGroupBox5.Name = "skinnedGroupBox5";
+            this.skinnedGroupBox5.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.skinnedGroupBox5.ShowIndicatorBar = false;
+            this.skinnedGroupBox5.Size = new System.Drawing.Size(536, 266);
+            this.skinnedGroupBox5.TabIndex = 114;
+            this.skinnedGroupBox5.TabStop = false;
+            this.skinnedGroupBox5.Text = "Other Notes";
+            // 
+            // skinnedGroupBox1
+            // 
+            this.skinnedGroupBox1.BackColor = System.Drawing.Color.White;
+            this.skinnedGroupBox1.Controls.Add(this.skinnedLabel3);
+            this.skinnedGroupBox1.Controls.Add(this.txtDescription);
+            this.skinnedGroupBox1.Highlight = Desktop.Skinning.SkinnedHighlight.Heading;
+            this.skinnedGroupBox1.Image = null;
+            this.skinnedGroupBox1.Location = new System.Drawing.Point(6, 297);
+            this.skinnedGroupBox1.Name = "skinnedGroupBox1";
+            this.skinnedGroupBox1.PanelType = Desktop.Skinning.SkinnedBackgroundType.Surface;
+            this.skinnedGroupBox1.ShowIndicatorBar = false;
+            this.skinnedGroupBox1.Size = new System.Drawing.Size(536, 107);
+            this.skinnedGroupBox1.TabIndex = 115;
+            this.skinnedGroupBox1.TabStop = false;
+            // 
+            // skinnedLabel3
+            // 
+            this.skinnedLabel3.AutoSize = true;
+            this.skinnedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.skinnedLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.skinnedLabel3.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
+            this.skinnedLabel3.Level = Desktop.Skinning.SkinnedLabelLevel.Normal;
+            this.skinnedLabel3.Location = new System.Drawing.Point(6, 7);
+            this.skinnedLabel3.Name = "skinnedLabel3";
+            this.skinnedLabel3.Size = new System.Drawing.Size(63, 13);
+            this.skinnedLabel3.TabIndex = 110;
+            this.skinnedLabel3.Text = "Description:";
+            // 
             // txtDescription
             // 
             this.txtDescription.BackColor = System.Drawing.Color.White;
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtDescription.ForeColor = System.Drawing.Color.Black;
-            this.txtDescription.Location = new System.Drawing.Point(109, 297);
+            this.txtDescription.Location = new System.Drawing.Point(94, 7);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(433, 90);
-            this.txtDescription.TabIndex = 106;
+            this.txtDescription.Size = new System.Drawing.Size(436, 90);
+            this.txtDescription.TabIndex = 109;
             this.toolTip1.SetToolTip(this.txtDescription, "A description of the character which will be displayed on the character select sc" +
-        "reen.");
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Highlight = Desktop.Skinning.SkinnedHighlight.Normal;
-            this.label24.Level = Desktop.Skinning.SkinnedLabelLevel.Label;
-            this.label24.Location = new System.Drawing.Point(3, 300);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(63, 13);
-            this.label24.TabIndex = 107;
-            this.label24.Text = "Description:";
+        "reen. Overrides the default defined in their metadata.");
             // 
             // gridLabels
             // 
@@ -338,8 +388,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.skinnedGroupBox1);
+            this.Controls.Add(this.skinnedGroupBox5);
             this.Controls.Add(this.valLayers);
             this.Controls.Add(this.lblLayers);
             this.Controls.Add(this.cmdExpandPortrait);
@@ -358,8 +408,12 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Name = "SkinEditor";
-            this.Size = new System.Drawing.Size(611, 538);
+            this.Size = new System.Drawing.Size(552, 684);
             ((System.ComponentModel.ISupportInitialize)(this.valLayers)).EndInit();
+            this.skinnedGroupBox5.ResumeLayout(false);
+            this.skinnedGroupBox5.PerformLayout();
+            this.skinnedGroupBox1.ResumeLayout(false);
+            this.skinnedGroupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,8 +439,11 @@
         private Desktop.Skinning.SkinnedLabel lblLayers;
         private Desktop.Skinning.SkinnedNumericUpDown valLayers;
         private System.Windows.Forms.ToolTip toolTip1;
-        private Desktop.Skinning.SkinnedTextBox txtDescription;
-        private Desktop.Skinning.SkinnedLabel label24;
         private Controls.CharacterFolderDialog characterFolderDialog1;
+        private Desktop.Skinning.SkinnedTextBox txtCostumeOtherNotes;
+        private Desktop.Skinning.SkinnedGroupBox skinnedGroupBox5;
+        private Desktop.Skinning.SkinnedGroupBox skinnedGroupBox1;
+        private Desktop.Skinning.SkinnedLabel skinnedLabel3;
+        private Desktop.Skinning.SkinnedTextBox txtDescription;
     }
 }

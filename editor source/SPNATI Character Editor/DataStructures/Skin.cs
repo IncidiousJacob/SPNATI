@@ -95,6 +95,13 @@ namespace SPNATI_Character_Editor
 		[XmlArrayItem("set")]
 		public List<PoseSet> PoseSets = new List<PoseSet>();
 
+		[XmlElement("othernotes")]
+		public string CostumeOtherNotes
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
 		[XmlIgnore]
 		public PoseMap PoseLibrary { get; set; }
 
@@ -113,7 +120,7 @@ namespace SPNATI_Character_Editor
 			{
 				if (Link != null)
 				{
-					return Link.Name;
+					return Link.CostumeName;
 				}
 				if (Labels.Count > 0) { return Labels[0].Value; }
 				return Id;
@@ -470,8 +477,27 @@ namespace SPNATI_Character_Editor
 		[XmlAttribute("set")]
 		public string Set;
 
+		[XmlElement("costume-name")]
+		public string CostumeName { get; set; }
+
+		[XmlElement("costume-description")]
+		public string CostumeDescription { get; set; }
+
+		// Legacy elements 
 		[XmlText]
-		public string Name;
+		public string LegacyNameText
+		{
+			get { return null; }   // Prevents serialization
+			set
+			{
+				if (string.IsNullOrWhiteSpace(value)) return;
+
+				// Only use legacy text if the new element isn't present
+				if (string.IsNullOrWhiteSpace(CostumeName))
+					CostumeName = value.Trim();
+			}
+		}
+		public bool ShouldSerializeLegacyNameText() => false;
 
 		[XmlAttribute("status")]
 		public string Status;
@@ -481,9 +507,6 @@ namespace SPNATI_Character_Editor
 
 		[XmlAttribute("label")]
 		public string Label;
-
-		[XmlAttribute("description")]
-		public string Description;
 
 		[XmlAttribute("layers")]
 		[DefaultValue(0)]
@@ -497,6 +520,22 @@ namespace SPNATI_Character_Editor
 		public Costume Costume { get; set; }
 
 		public bool IsDirty;
+
+		[XmlIgnore]
+		public string Name
+		{
+			get
+			{
+				if (!string.IsNullOrWhiteSpace(CostumeName)) return CostumeName.Trim();
+				if (!string.IsNullOrWhiteSpace(LegacyNameText)) return LegacyNameText.Trim();
+				return "";
+			}
+			set
+			{
+				CostumeName = value;
+				LegacyNameText = null; // prevent accidental re-saving as text
+			}
+		}
 
 		public override string ToString()
 		{
