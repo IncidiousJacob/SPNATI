@@ -46,6 +46,21 @@ namespace SPNATI_Character_Editor
 			set { Set(value); }
 		}
 
+		[XmlElement("penis")]
+		public string Penis
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
+		[XmlElement("breasts")]
+		public string Breasts
+		{
+			get { return Get<string>(); }
+			set { Set(value); }
+		}
+
+
 		[XmlArray("tags")]
 		[XmlArrayItem("tag")]
 		public List<CharacterTag> Tags
@@ -334,7 +349,12 @@ namespace SPNATI_Character_Editor
 
 		public string Gender
 		{
-			get { return Character.Gender; }
+			get
+			{
+				if (Link != null && !string.IsNullOrWhiteSpace(Link.Gender))
+					return Link.Gender;
+				return Character.Gender;
+			}
 		}
 
 		public List<CharacterTag> GetTags()

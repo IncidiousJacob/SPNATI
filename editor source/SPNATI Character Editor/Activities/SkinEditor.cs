@@ -26,6 +26,12 @@ namespace SPNATI_Character_Editor.Activities
 			cboStatus.Items.Add("unlisted");
 			cboGender.Items.AddRange(new string[] { "female", "male" });
 			cboEvent.Items.AddRange(new string[] { "", "none", "valentines", "april_fools", "easter", "summer", "halloween", "xmas", "sleepover" });
+
+			cboSize.Items.AddRange(new string[] { "small", "medium", "large" });
+			cboFutanariPenisSize.Items.AddRange(new string[] { "", "small", "medium", "large" });
+
+			cboGender.SelectedIndexChanged += cboGender_SelectedIndexChanged;
+			cmdExpandFutanariSize.Click += cmdExpandFutanariSize_Click;
 		}
 
 		public override string Caption
@@ -69,6 +75,66 @@ namespace SPNATI_Character_Editor.Activities
 			_fullyClothedStage = stage;
 		}
 
+		private void cboGender_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			string gender = cboGender.SelectedItem?.ToString();
+
+			bool isMale = gender == "male";
+
+			lblSize.Text = isMale ? "Penis:" : "Breasts:";
+
+			// Only allow futa options on female
+			cmdExpandFutanariSize.Visible = !isMale;
+
+			if (isMale)
+			{
+				// hide and clear futa controls
+				lblFutanariPenisSize.Visible = false;
+				cboFutanariPenisSize.Visible = false;
+				cboFutanariPenisSize.SelectedIndex = 0; // ""
+			}
+			else
+			{
+				// keep futa hidden until user expands
+				lblFutanariPenisSize.Visible = false;
+				cboFutanariPenisSize.Visible = false;
+			}
+		}
+
+		private string GetBaseMalePenisSize()
+		{
+			// Mirrors MetadataEditor logic
+			return string.IsNullOrEmpty(_costume.Character.LegacySize)
+				? _costume.Character.Penis
+				: _costume.Character.LegacySize;
+		}
+
+		private string GetBaseFemaleBreastSize()
+		{
+			// Mirrors MetadataEditor logic
+			return string.IsNullOrEmpty(_costume.Character.LegacySize)
+				? _costume.Character.Breasts
+				: _costume.Character.LegacySize;
+		}
+
+		private string GetBaseFutaPenisSize()
+		{
+			// Base futa size is just the character penis size (if any)
+			return _costume.Character.Penis;
+		}
+
+
+		private void cmdExpandFutanariSize_Click(object sender, EventArgs e)
+		{
+			// only meaningful for female
+			if (cboGender.SelectedItem?.ToString() == "male")
+				return;
+
+			lblFutanariPenisSize.Visible = true;
+			cboFutanariPenisSize.Visible = true;
+		}
+
+
 		private void LinkCharacter()
 		{
 			Character character = RecordLookup.DoLookup(typeof(Character), "", false, _costume) as Character;
@@ -94,6 +160,39 @@ namespace SPNATI_Character_Editor.Activities
 				txtDescription.Text = link.CostumeDescription;
 				string gender = link.Gender ?? _costume.Character.Gender;
 				cboGender.SelectedItem = gender;
+				cboGender_SelectedIndexChanged(null, EventArgs.Empty);
+
+				if (gender == "male")
+				{
+					string basePenis = GetBaseMalePenisSize();
+					string effectivePenis = string.IsNullOrEmpty(_costume.Penis) ? basePenis : _costume.Penis;
+
+					cboSize.SelectedItem = effectivePenis;
+					cboFutanariPenisSize.SelectedIndex = 0; // ""
+				}
+				else
+				{
+					string baseBreasts = GetBaseFemaleBreastSize();
+					string effectiveBreasts = string.IsNullOrEmpty(_costume.Breasts) ? baseBreasts : _costume.Breasts;
+
+					cboSize.SelectedItem = effectiveBreasts;
+
+					// Futa: show it if either the costume overrides it OR the base character has it
+					string baseFuta = GetBaseFutaPenisSize();
+					string effectiveFuta = !string.IsNullOrEmpty(_costume.Penis) ? _costume.Penis : baseFuta;
+
+					if (!string.IsNullOrEmpty(effectiveFuta))
+					{
+						lblFutanariPenisSize.Visible = true;
+						cboFutanariPenisSize.Visible = true;
+						cboFutanariPenisSize.SelectedItem = effectiveFuta;
+					}
+					else
+					{
+						cboFutanariPenisSize.SelectedIndex = 0; // ""
+					}
+				}
+
 				valLayers.Value = link.LayersNonSkip != 0 ? Math.Max(valLayers.Minimum, Math.Min(link.LayersNonSkip, valLayers.Maximum)) : Math.Max(valLayers.Minimum, Math.Min(_costume.Character.Metadata.Layers, valLayers.Maximum));
 			}
 
@@ -227,7 +326,40 @@ namespace SPNATI_Character_Editor.Activities
 					description = null;
 				}
 
-				string gender = cboGender.SelectedItem?.ToString();
+				string gender = cboGender.SelectedItem?.ToString() ?? _costume.Character.Gender;
+
+				string selectedBreasts = cboSize.SelectedItem?.ToString() ?? "";
+				string selectedFutaPenis = cboFutanariPenisSize.SelectedItem?.ToString() ?? "";
+
+				if (gender == "male")
+				{
+					string selected = cboSize.SelectedItem?.ToString() ?? "";
+					string basePenis = GetBaseMalePenisSize();
+
+					_costume.Penis = (string.IsNullOrEmpty(selected) || selected == basePenis) ? null : selected;
+					_costume.Breasts = null;
+				}
+				else
+				{
+					// Breasts (female/futa)
+					string baseBreasts = GetBaseFemaleBreastSize();
+					_costume.Breasts = (string.IsNullOrEmpty(selectedBreasts) || selectedBreasts == baseBreasts) ? null : selectedBreasts;
+
+					// Penis (futa only)
+					string baseFutaPenis = GetBaseFutaPenisSize(); // probably _costume.Character.Penis
+					bool futaEffective = !string.IsNullOrEmpty(selectedFutaPenis) || !string.IsNullOrEmpty(baseFutaPenis);
+
+					if (futaEffective)
+					{
+						// Only write an override if different from base
+						_costume.Penis = (string.IsNullOrEmpty(selectedFutaPenis) || selectedFutaPenis == baseFutaPenis) ? null : selectedFutaPenis;
+					}
+					else
+					{
+						// Not futa: ensure no penis override is written
+						_costume.Penis = null;
+					}
+				}
 
 				string label = _costume.Labels.Count > 0 ? _costume.Labels[0].Value : null;
 				int layers = (int)valLayers.Value;
@@ -294,6 +426,7 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void cmdExpandPortrait_Click(object sender, EventArgs e)
 		{
+			cmdExpandPortrait.Visible = false;
 			lblLayers.Visible = true;
 			valLayers.Visible = true;
 		}
