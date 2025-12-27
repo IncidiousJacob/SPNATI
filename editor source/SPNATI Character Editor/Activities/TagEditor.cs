@@ -38,7 +38,18 @@ namespace SPNATI_Character_Editor.Activities
 
 		protected override void OnActivate()
 		{
-			if (_pendingWardrobeChange)
+			if (_initialized)
+			{
+				string g = _character.Gender;
+				bool isFuta = IsFutaSkin(_character, g);
+
+				if (_lastGender != g || _lastIsFuta != isFuta)
+				{
+					RebuildGroupList();
+					PopulateData();
+				}
+			}
+			else if (_pendingWardrobeChange)
 			{
 				PopulateData();
 			}
@@ -67,26 +78,89 @@ namespace SPNATI_Character_Editor.Activities
 				_bindings.Add(tag.Value);
 			}
 
-			//Fill the tag group
-			string gender = _character.Gender;
-			foreach (TagGroup group in dictionary.Groups)
-			{
-				if (group.Hidden)
-				{
-					continue;
-				}
-
-				if (string.IsNullOrEmpty(group.Gender) || group.Gender == gender)
-				{
-					toc.Items.Add(group);
-				}
-			}
-			
+			RebuildGroupList();
 			PopulateData();
 			if (toc.Items.Count > 0)
 			{
 				toc.SelectedIndex = 0;
 			}
+		}
+
+		// Rebuild the tag groups if the last gender changes
+
+		private string _lastGender;
+		private bool _lastIsFuta;
+
+		private void RebuildGroupList()
+		{
+			TagDictionary dictionary = TagDatabase.Dictionary;
+
+			string gender = _character.Gender;
+			bool isFuta = IsFutaSkin(_character, gender);
+			_lastGender = gender;
+			_lastIsFuta = isFuta;
+
+			// Remember current selection
+			string selectedLabel = (toc.SelectedItem as TagGroup)?.Label;
+
+			toc.Items.Clear();
+
+			foreach (TagGroup group in dictionary.Groups)
+			{
+				if (group.Hidden) continue;
+
+				if (string.IsNullOrEmpty(group.Gender))
+				{
+					toc.Items.Add(group);
+					continue;
+				}
+
+				if (group.Gender == "female" && gender != "male")
+				{
+					toc.Items.Add(group);
+					continue;
+				}
+
+				if (group.Gender == "male" && (gender == "male" || isFuta))
+				{
+					toc.Items.Add(group);
+					continue;
+				}
+			}
+
+			// Restore selection if possible
+			if (!string.IsNullOrEmpty(selectedLabel))
+			{
+				for (int i = 0; i < toc.Items.Count; i++)
+				{
+					if ((toc.Items[i] as TagGroup)?.Label == selectedLabel)
+					{
+						toc.SelectedIndex = i;
+						break;
+					}
+				}
+			}
+		}
+		private bool IsFutaSkin(ISkin skin, string gender)
+		{
+			if (gender == "male") return false;
+
+			// Character futa = has a penis size defined
+			if (skin is Character ch)
+			{
+				return !string.IsNullOrWhiteSpace(ch.Penis) && !string.IsNullOrWhiteSpace(ch.Breasts);
+			}
+
+			// Costume futa = use costume override if present, else inherit from character
+			if (skin is Costume co)
+			{
+				string penis = !string.IsNullOrWhiteSpace(co.Penis) ? co.Penis : co.Character.Penis;
+				string breasts = !string.IsNullOrWhiteSpace(co.Breasts) ? co.Breasts : co.Character.Breasts;
+
+				return !string.IsNullOrWhiteSpace(penis) && !string.IsNullOrWhiteSpace(breasts);
+			}
+
+			return false;
 		}
 
 		private void PopulateData()
