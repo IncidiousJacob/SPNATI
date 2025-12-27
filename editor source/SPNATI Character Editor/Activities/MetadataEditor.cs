@@ -169,7 +169,11 @@ namespace SPNATI_Character_Editor.Activities
 			_character.Stamina = (int)valRounds.Value;
 			_character.Gender = cboGender.SelectedItem.ToString();
 			string titleGender = cboTitleGender.SelectedItem?.ToString();
-			if (!string.IsNullOrEmpty(titleGender))
+			if (string.IsNullOrEmpty(titleGender))
+			{
+				_character.Metadata.Gender = _character.Gender;
+			}
+			else
 			{
 				_character.Metadata.Gender = titleGender;
 			}

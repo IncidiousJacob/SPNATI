@@ -520,8 +520,7 @@ namespace SPNATI_Character_Editor.Activities
 
 		private void lstImages_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			// txtImagePath.Text = (lstImages.SelectedItem as CollectibleImage)?.Path;
-			txtImagePath.Text = lstImages.SelectedItem.ToString();
+			txtImagePath.Text = (lstImages.SelectedItem as CollectibleImage)?.Path ?? "";
 			UpdatePreview();
 		}
 
