@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1765739662504</lastupdate>
+    <lastupdate>1767031774504</lastupdate>
     <enabled>true</enabled>
     <first>Wii Fit Trainer</first>
     <last />
@@ -15,10 +15,12 @@
     <layers>4</layers>
     <default-costume-name>Yoga Warrior</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/wiifitfemale_tropical_trainer/" img="0-StretchBack.png" set="summer" label="Trainer">Tropical Trainer</costume>
+        <costume folder="opponents/reskins/wiifitfemale_tropical_trainer/" img="0-StretchBack.png" set="summer" label="Trainer">
+            <costume-name>Tropical Trainer</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <short-game-enabled>true</short-game-enabled>
-    <lines>2210</lines>
+    <lines>2340</lines>
     <poses>138</poses>
 </opponent>
