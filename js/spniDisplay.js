@@ -2043,16 +2043,17 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
     }.bind(this)).filter(Boolean);
     
     // If every collectible is hidden/secret, the game still shows available 0/0, so this handles that
-    if (cards.length === 0 && this.opponent.collectibles.length > 0) {
-        let allHiddenOrSecret = this.opponent.collectibles.every(function (c) {
-            let statusHidden = (c.status === 'hidden');
-            let flaggedHidden = (c.hidden && !c.isUnlocked());
-            return statusHidden || flaggedHidden;
-        });
+    const collectibles = this.opponent.collectibles;
 
-        let allInvisibleByFilter = this.opponent.collectibles.every(function (c) {
-            return (c.status && !includedOpponentStatuses[c.status]) || (c.hidden && !c.isUnlocked());
-        });
+    if (cards.length === 0 && collectibles.length > 0) {
+        const { allHiddenOrSecret, allInvisibleByFilter } = collectibles.reduce((acc, c) => { // reduce to a single output value
+            const lockedHidden = c.hidden && !c.isUnlocked();
+
+            acc.allHiddenOrSecret &&= (c.status === 'hidden') || lockedHidden;
+            acc.allInvisibleByFilter &&= ((c.status && !includedOpponentStatuses[c.status]) || lockedHidden);
+
+            return acc;
+        }, { allHiddenOrSecret: true, allInvisibleByFilter: true });
 
         if (allHiddenOrSecret && allInvisibleByFilter) {
             cards = [ this.createHiddenCollectiblesInfoCard() ];
