@@ -9,6 +9,15 @@
         <case name="Fitness routines" id="123" priority="Prompt" min="0" max="0">
             <description>Trainer asks everyone at the table what their fitness routine is.</description>
         </case>
+        <case name="Wii Fit Trainer's butt" id="243" priority="Noteworthy" min="3" max="3">
+            <description>After removing her panties, Wii Fit Trainer turns around and shows off her butt.</description>
+        </case>
+        <case name="Going bottomless first" id="244" priority="Noteworthy" min="2" max="2">
+            <description>Wii Fit Trainer takes off her panties first instead of her sports bra. She wants to show off her fit rear and trimmed pubic region before taking her sweaty sports bra off.</description>
+        </case>
+        <case name="Going topless" id="245" priority="Noteworthy" min="3" max="3">
+            <description>Wii Fit Trainer takes her sweaty sports bra off. Finally showing off her breasts.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="1" opponent="chun-li" opponentId="8" />
@@ -217,6 +226,24 @@
         <response id="226" opponent="mari_setogaya" opponentId="21" />
         <response id="227" opponent="sakura" opponentId="4" />
         <response id="228" opponent="marinette" opponentId="1363" />
+        <response id="229" opponent="miko" opponentId="7" />
+        <response id="230" opponent="toph" opponentId="2" />
+        <response id="231" opponent="vriska" opponentId="22" />
+        <response id="232" opponent="dwight" opponentId="10" />
+        <response id="233" opponent="sannytess" opponentId="55" />
+        <response id="234" opponent="joey" opponentId="28" />
+        <response id="235" opponent="ae86" opponentId="6" />
+        <response id="236" opponent="momo" opponentId="1056" />
+        <response id="237" opponent="rouge" opponentId="10" />
+        <response id="238" opponent="9s" opponentId="9" />
+        <response id="246" opponent="emi" opponentId="57" />
+        <response id="247" opponent="anatoly" opponentId="3" />
+        <response id="248" opponent="shantae" opponentId="81" />
+        <response id="249" opponent="mercy" opponentId="168" />
+        <response id="250" opponent="edelgard" opponentId="959" />
+        <response id="251" opponent="darkness" opponentId="259" />
+        <response id="252" opponent="simon" opponentId="797" />
+        <response id="253" opponent="tea_gardner" opponentId="25" />
     </responses>
     <labels>
         <label id="131" label="Butt" folder="" sort="0" />
@@ -225,9 +252,14 @@
         <label id="145" label="Wii Balance Board" color="2" folder="" sort="0" />
         <label id="146" label="Sweaty Sports Bra" color="2" folder="" sort="0" />
         <label id="147" label="Wii Nunchuk" color="2" folder="" sort="0" />
+        <label id="239" label="Sun Salutation" folder="" sort="0" />
+        <label id="240" label="Swimsuit (2+ Swimsuit opponents)" folder="" sort="0" />
+        <label id="241" label="" folder="Collectible Game Logic" sort="0" />
+        <label id="242" label="" folder="Summer Costume" sort="0" />
     </labels>
-    <nextId>228</nextId>
+    <nextId>253</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="18" />
         <marker scope="Public" name="20" />
         <marker scope="Public" name="24" />
@@ -280,6 +312,8 @@
         <marker scope="Public" name="sock_forfeit">This marker is for the sock forfeit. If a male human player was wearing socks then during the forfeit Trainer will prompt the player to finish in the sock.</marker>
         <marker scope="Public" name="sock_forfeit_setup">This marker is needed to trigger the sock forfeit dialogue.</marker>
         <marker scope="Public" name="sucrose_lingerie" />
+        <marker scope="Public" name="swimsuitCounter" />
+        <marker scope="Public" name="swimsuitCounterPerCharacter" />
         <marker scope="Public" name="Switch" />
         <marker scope="Public" name="trainer_mei_too_cold" />
         <marker scope="Public" name="trainer_moon_pokemart" />
@@ -294,6 +328,7 @@
         <marker scope="Public" name="volleyball" />
         <marker scope="Public" name="vriska_swimsuit_exposed" />
         <marker scope="Public" name="water" />
+        <marker scope="Public" name="WiiBooty" />
         <marker scope="Public" name="work" />
         <marker scope="Public" name="zonealso" />
     </markers>
