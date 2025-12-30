@@ -57,6 +57,15 @@
         <case name="Mii Player" id="266" priority="Noteworthy" min="0" max="0">
             <description>If the player sets their name as "Mii", Wii Fit Trainer will acknowledge they are a Mii character.</description>
         </case>
+        <case name="Group shower" id="271" priority="Noteworthy" min="0" max="0">
+            <description>When playing with the shower room background, Wii Fit Trainer will comment on and acknowledge taking a group shower with her opponents during the course of the game.</description>
+        </case>
+        <case name="Skinny dipping in pool" id="272" priority="Noteworthy" min="0" max="0">
+            <description>When playing with the poolside background, Wii Fit Trainer will comment on and acknowledge skinny dipping with her opponents during the course of the game.</description>
+        </case>
+        <case name="Dirty alley" id="273" priority="Noteworthy" min="0" max="0">
+            <description>When playing with the alley background, Wii Fit Trainer will comment on and acknowledge how filthy and nasty of a location it is for a strip poker game.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="1" opponent="chun-li" opponentId="8" />
@@ -283,6 +292,10 @@
         <response id="251" opponent="darkness" opponentId="259" />
         <response id="252" opponent="simon" opponentId="797" />
         <response id="253" opponent="tea_gardner" opponentId="25" />
+        <response id="267" opponent="amalia" opponentId="1" />
+        <response id="268" opponent="kyou" opponentId="115" />
+        <response id="269" opponent="cagliostro" opponentId="1" />
+        <response id="270" opponent="vriska" opponentId="25" />
     </responses>
     <labels>
         <label id="131" label="Butt" folder="" sort="0" />
@@ -296,7 +309,7 @@
         <label id="241" label="" folder="Collectible Game Logic" sort="0" />
         <label id="242" label="" folder="Summer Costume" sort="0" />
     </labels>
-    <nextId>266</nextId>
+    <nextId>273</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="18" />
