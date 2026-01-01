@@ -5,6 +5,14 @@
     <age />
     <pronunciation>Dole-Chay</pronunciation>
     <othernotes />
+    <noteworthy>
+        <case name=" Cover up" id="70" priority="Noteworthy" min="7" max="7">
+            <description>Dolce hides behind her hat after removing her bra. </description>
+        </case>
+        <case name="Cover up 2 " id="71" priority="FYI" min="8" max="8">
+            <description>Dolce is still hiding behind her hat, even when out of layers. (If you want to follow up your previous line)</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="4" opponent="nonon" opponentId="779" />
         <response id="5" opponent="nonon" opponentId="226" />
@@ -94,10 +102,13 @@
         <label id="65" label="" folder="Yuzuki" sort="0" />
         <label id="66" label="" folder="Edelgard" sort="0" />
         <label id="67" label="" folder="Edelgard" sort="0" />
+        <label id="68" label="" folder="Tifa" sort="0" />
+        <label id="69" label="" folder="Purah" sort="0" />
     </labels>
-    <nextId>67</nextId>
+    <nextId>71</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="BanetteRef" />
         <marker scope="Public" name="Crocodile_Tears" />
         <marker scope="Public" name="Crocodile_Tears_Fail" />
         <marker scope="Public" name="Dolce_Aqua_Faith" />
@@ -124,6 +135,7 @@
         <marker scope="Public" name="Gotcha" />
         <marker scope="Public" name="PollyAnotherA" />
         <marker scope="Public" name="PollyAnotherB" />
+        <marker scope="Public" name="PurahAlchemyA" />
         <marker scope="Public" name="RollZeppelinsA" />
         <marker scope="Public" name="RoseHandmadeA" />
         <marker scope="Public" name="SelphyRecognizeA" />
@@ -132,6 +144,7 @@
         <marker scope="Public" name="Sofia_Recognize2" />
         <marker scope="Public" name="SpikeThatMonkey" />
         <marker scope="Public" name="TandemHide" />
+        <marker scope="Public" name="TifaCityClothesA" />
         <marker scope="Public" name="VelvetClothesA" />
         <marker scope="Public" name="Worn Down Clothing" />
         <marker scope="Public" name="YuzukiPrettyFinal" />
