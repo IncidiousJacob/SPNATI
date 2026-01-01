@@ -1,30 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="schezo_staff" status="online" img="opponents/schezo/collectible staff.png" thumbnail="opponents/schezo/collectible staff thumb.png">
+    <collectible id="schezo_staff" status="online" thumbnail="opponents/schezo/collectible staff thumb.png">
         <title>Schezo's Staff</title>
         <subtitle>An old staff he used during his magic school days.</subtitle>
         <text>A silver staff Schezo once used back when he was in magic school. He has no use for it now that he has the Dark Sword, so he handed it off to you.</text>
         <unlock>Win against Schezo.</unlock>
+        <picture>opponents/schezo/collectible staff.png</picture>
     </collectible>
-    <collectible id="schezo_boxers" status="online" img="opponents/schezo/collectible undies.png" thumbnail="opponents/schezo/collectible undies thumb.png">
+    <collectible id="schezo_boxers" status="online" thumbnail="opponents/schezo/collectible undies thumb.png">
         <title>Schezo's Boxers</title>
         <subtitle>Supposedly the Boxers of Darkness.</subtitle>
         <text>Schezo's boxers, in the same blue as his bandana. You didn't steal them from him, did you?</text>
         <unlock>Have Schezo lose before Arle does. (Winning is not required.)</unlock>
+        <picture>opponents/schezo/collectible undies.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/schezo/collectible undies wear.png" name="Schezo's Boxers" generic="underwear" position="lower" type="important" plural="true" />
     </collectible>
-    <collectible id="tenori_zoh_plush" status="online" img="opponents/schezo/collectible plush photo.png" thumbnail="opponents/schezo/collectible plush thumb.png">
+    <collectible id="tenori_zoh_plush" status="online" thumbnail="opponents/schezo/collectible plush thumb.png">
         <title>Tenori Zoh Plushie</title>
         <subtitle>Fits right on your palmtop! (Maybe)</subtitle>
         <text>A plush in the likeness of Schezo's pet and partner. Who knew Schezo was a bit of a softie? Hang on, the camera seems to have a picture sticking out of it...</text>
         <unlock>Defeat Schezo in a sudden death showdown.</unlock>
+        <picture>opponents/schezo/collectible plush photo.png</picture>
     </collectible>
-    <collectible id="magical_dictionary" status="online" img="opponents/schezo/collectible dictionary.png" thumbnail="opponents/schezo/collectible dictionary thumb.png">
+    <collectible id="magical_dictionary" status="online" thumbnail="opponents/schezo/collectible dictionary thumb.png">
         <title>Magical Dictionary</title>
         <subtitle>Does nothing to fix Schezo's vocab issues.</subtitle>
         <text>A handy dictionary filled with runes that help you translate the more obscure spells. Schezo must have "borrowed" it from some library.</text>
         <unlock>Listen to Schezo struggle with his bad habit for a long enough time.</unlock>
         <counter>10</counter>
+        <picture>opponents/schezo/collectible dictionary.png</picture>
     </collectible>
 </collectibles>

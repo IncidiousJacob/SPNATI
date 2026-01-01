@@ -1,4 +1,14 @@
 .dialogue .chi[data-character="schezo"] {
-  /*This is an example style.*/
+  /*Chiaki color coded dialogue*/
   color: #D764A3;
+}
+
+.dialogue .lem[data-character="schezo"] {
+  /*Lemres color colored dialogue*/
+  color: #2E700E;
+}
+
+.dialogue .small[data-character="schezo"] {
+  /*Small text in case he trails off...*/
+  font-size: 75%;
 }
