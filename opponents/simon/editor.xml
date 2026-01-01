@@ -93,6 +93,9 @@
         <response id="920" opponent="caulifla" opponentId="2" />
         <response id="921" opponent="ms.fortune" opponentId="24" />
         <response id="922" opponent="aqua_kh" opponentId="67" />
+        <response id="925" opponent="witch_puyopuyo" opponentId="33" />
+        <response id="934" opponent="edelgard" opponentId="1295" />
+        <response id="935" opponent="edelgard" opponentId="1294" />
     </responses>
     <notes>
         <note id="820">do you want a variant based on if Hibiki has been mentioned before?</note>
@@ -960,7 +963,7 @@
         <label id="864" label="nats forfeit heavy 1" folder="Targets&gt;Natsuki" sort="67" />
         <label id="865" label="nats forfeit heavy 2" folder="Targets&gt;Natsuki" sort="68" />
         <label id="866" label="nats forfeit heavy 3" folder="Targets&gt;Natsuki" sort="69" />
-        <label id="867" label="nats forfeit heavy 4" folder="Targets&gt;Natsuki" sort="70" />
+        <label id="867" label="nats forfeit heavy 4 f player" folder="Targets&gt;Natsuki" sort="70" />
         <label id="868" label="nats forfeit heavy 5" folder="Targets&gt;Natsuki" sort="71" />
         <label id="869" label="nats forfeit heavy 6" folder="Targets&gt;Natsuki" sort="72" />
         <label id="870" label="nats forfeit finished" folder="Targets&gt;Natsuki" sort="73" />
@@ -1018,6 +1021,49 @@
         <label id="922" label="" folder="Targets&gt;Situation Responses (Other)" sort="0" />
         <label id="923" label="" folder="Targets&gt;Situation Responses (Other)" sort="0" />
         <label id="805" label="" folder="Targets" sort="0" />
+        <label id="924" label="nats forfeit heavy 4 m player" folder="Targets&gt;Natsuki" sort="0" />
+        <label id="925" label="" folder="Targets" sort="0" />
+        <label id="926" label="" folder="Hidden" sort="0" />
+        <label id="927" label="" folder="Boota Generics" sort="0" />
+        <label id="928" label="" folder="Filtered&gt;Occupation" sort="0" />
+        <label id="929" label="" folder="Filtered&gt;Species" sort="0" />
+        <label id="930" label="" folder="Filtered&gt;Gimmick" sort="0" />
+        <label id="931" label="" folder="Targets" sort="0" />
+        <label id="932" label="dreadlocks" folder="Filtered&gt;Hair" sort="0" />
+        <label id="933" label="" folder="Filtered&gt;Occupation" sort="0" />
+        <label id="934" label="" folder="Targets" sort="0" />
+        <label id="935" label="" folder="Targets" sort="0" />
+        <label id="936" label="" folder="Filtered&gt;Species" sort="0" />
+        <label id="937" label="" folder="Filtered&gt;Species" sort="0" />
+        <label id="938" label="" folder="Filtered&gt;Futanari" sort="0" />
+        <label id="939" label="" folder="Filtered&gt;Clothing" sort="0" />
+        <label id="940" label="" folder="Filtered&gt;Clothing" sort="0" />
+        <label id="941" label="" folder="Clothing" sort="0" />
+        <label id="942" label="" folder="Filtered&gt;Forfeit" sort="0" />
+        <label id="943" label="" folder="Filtered&gt;Forfeit" sort="0" />
+        <label id="944" label="" folder="Filtered&gt;Outfits" sort="0" />
+        <label id="945" label="" folder="Filtered&gt;Personality" sort="0" />
+        <label id="946" label="" folder="Filtered&gt;Personality" sort="0" />
+        <label id="947" label="" folder="Filtered" sort="0" />
+        <label id="948" label="" folder="Filtered" sort="0" />
+        <label id="949" label="" folder="Kamina" sort="0" />
+        <label id="950" label="" folder="Hidden" sort="0" />
+        <label id="951" label="selected_first" folder="Filtered" sort="0" />
+        <label id="952" label="selected_last" folder="Filtered" sort="0" />
+        <label id="953" label="" folder="Filtered" sort="0" />
+        <label id="954" label="" folder="Filtered" sort="0" />
+        <label id="955" label="" folder="Filtered" sort="0" />
+        <label id="956" label="" folder="Filtered&gt;Species" sort="0" />
+        <label id="957" label="" folder="Filtered&gt;Species" sort="0" />
+        <label id="958" label="" folder="Filtered&gt;Body Tag" sort="0" />
+        <label id="959" label="" folder="Filtered&gt;Occupation" sort="0" />
+        <label id="960" label="" folder="Targets" sort="0" />
+        <label id="961" label="" folder="Targets" sort="0" />
+        <label id="962" label="" folder="Targets" sort="0" />
+        <label id="963" label="open-ended questions" folder="Questions For Others" sort="0" />
+        <label id="964" label="Dirty Talk (Early)" folder="" sort="0" />
+        <label id="965" label="Dirty Talk (Middle)" folder="" sort="0" />
+        <label id="966" label="Dirty Talk (Late)" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>custom:xyz_</prefix>
@@ -1026,7 +1072,7 @@
         <posePreviewMarker>boota==1</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>923</nextId>
+    <nextId>966</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009_Retro_A" />
@@ -1045,9 +1091,11 @@
         <marker scope="Public" name="beach_reaction" />
         <marker scope="Public" name="bobobo_strip0a" />
         <marker scope="Public" name="boota">If 1, Boota is Enabled. If 0, Boota is disabled.</marker>
+        <marker scope="Public" name="boota_animalHusbandry" />
         <marker scope="Public" name="boota_choosingMyCards" />
         <marker scope="Public" name="boota_dirt" />
         <marker scope="Public" name="boota_everywhere" />
+        <marker scope="Public" name="boota_goodFriend" />
         <marker scope="Public" name="boota_if_i_get_hungry" />
         <marker scope="Public" name="boota_judgment" />
         <marker scope="Public" name="boota_messedUp" />
@@ -1056,19 +1104,49 @@
         <marker scope="Public" name="boota_pickMyHand" />
         <marker scope="Public" name="boota_seeMistake" />
         <marker scope="Public" name="boota_winEmAll" />
+        <marker scope="Public" name="bootaRNG" />
         <marker scope="Public" name="cadence_strip0a" />
         <marker scope="Public" name="carmine_glasses_challenge" />
         <marker scope="Public" name="Carmine_SpikeTheMonkey" />
         <marker scope="Public" name="carmine_squirter" />
         <marker scope="Public" name="caulifla_SS" />
+        <marker scope="Public" name="companion_selected" />
         <marker scope="Public" name="cyberLounge_reaction" />
         <marker scope="Public" name="dai_gurren_spirit" />
+        <marker scope="Public" name="deity_Lost" />
+        <marker scope="Public" name="deity_lostExposed" />
         <marker scope="Public" name="dirt_in_hair" />
         <marker scope="Public" name="dunban_bionis_view_1" />
         <marker scope="Public" name="dunban_bionis_view_2" />
+        <marker scope="Public" name="edelgard_diggerResp" />
+        <marker scope="Public" name="edelgard_RatResp" />
+        <marker scope="Public" name="ff_adaptable" />
+        <marker scope="Public" name="ff_cutLoose" />
+        <marker scope="Public" name="ff_easyPart" />
+        <marker scope="Public" name="ff_fewMoreStrokes" />
+        <marker scope="Public" name="ff_fuckKnows" />
+        <marker scope="Public" name="ff_fuckSlowDown" />
+        <marker scope="Public" name="ff_having" />
+        <marker scope="Public" name="ff_havingCompany" />
+        <marker scope="Public" name="ff_noHelpingIt" />
+        <marker scope="Public" name="ff_oneHand" />
+        <marker scope="Public" name="ff_tooDamnGood" />
+        <marker scope="Public" name="ff_tryThisOne" />
         <marker scope="Public" name="filter_bisexual_lagannRide" />
+        <marker scope="Public" name="filter_bondageForfeit" />
+        <marker scope="Public" name="filter_coveredErectNipples" />
+        <marker scope="Public" name="filter_crotch_pasty" />
+        <marker scope="Public" name="filter_crown" />
+        <marker scope="Public" name="filter_nipple_pasties" />
+        <marker scope="Public" name="filter_witchMean" />
+        <marker scope="Public" name="filtered_bioParent" />
+        <marker scope="Public" name="filtered_maid_uniform" />
+        <marker scope="Public" name="filtered_sarcasticF" />
+        <marker scope="Public" name="filtered_sarcasticM" />
         <marker scope="Public" name="first_out" />
         <marker scope="Public" name="Fortune_Strip_2C" />
+        <marker scope="Public" name="futamast_SansVagina1" />
+        <marker scope="Public" name="ghost_selected" />
         <marker scope="Public" name="glassesTransform" />
         <marker scope="Public" name="glassesTransform2" />
         <marker scope="Public" name="grovel_and_beg" />
@@ -1186,6 +1264,7 @@
         <marker scope="Public" name="juno_zeroG_62" />
         <marker scope="Public" name="jura_babies" />
         <marker scope="Public" name="jura_babies2" />
+        <marker scope="Public" name="kamina_deselected" />
         <marker scope="Public" name="kamina_GroupBants" />
         <marker scope="Public" name="kamina_kinda_like_simon" />
         <marker scope="Public" name="kamina_SoloBants" />
@@ -1210,6 +1289,7 @@
         <marker scope="Public" name="kaz_strip0a" />
         <marker scope="Public" name="kaz_strip0b" />
         <marker scope="Public" name="lagann_head_on" />
+        <marker scope="Public" name="last_male_selected" />
         <marker scope="Public" name="lead_hand" />
         <marker scope="Public" name="leon_agent_10" />
         <marker scope="Public" name="leon_agent_11" />
@@ -1387,7 +1467,13 @@
         <marker scope="Public" name="NudityIssue2B" />
         <marker scope="Public" name="one_spin_at_a_time" />
         <marker scope="Public" name="orgasm_nia" />
+        <marker scope="Public" name="pandy_onlyGirl" />
         <marker scope="Public" name="priscilla_sword" />
+        <marker scope="Public" name="question_ConnectedWorlds" />
+        <marker scope="Public" name="question_MoreToKnow" />
+        <marker scope="Public" name="question_noConceptOfPoker" />
+        <marker scope="Public" name="question_SpnatiCost" />
+        <marker scope="Public" name="question_takeItEasy" />
         <marker scope="Public" name="reply_saria_bang1" />
         <marker scope="Public" name="reply_saria_bang2" />
         <marker scope="Public" name="reply_saria_kamina1" />
@@ -1417,6 +1503,7 @@
         <marker scope="Public" name="roll_PWM_crotch" />
         <marker scope="Public" name="rose_butt" />
         <marker scope="Public" name="rose_flashing_2" />
+        <marker scope="Public" name="royalty_selected" />
         <marker scope="Public" name="saria_bootaBootaB" />
         <marker scope="Public" name="saria_bootaS_Resp" />
         <marker scope="Public" name="saria_FF_butt1" />
@@ -1480,6 +1567,13 @@
         <marker scope="Public" name="schezo_fateQ" />
         <marker scope="Public" name="schezo_nameQ" />
         <marker scope="Public" name="schezo_NUTDEALER" />
+        <marker scope="Public" name="selected" />
+        <marker scope="Public" name="selected_against_anthro" />
+        <marker scope="Public" name="selected_against_ghosts" />
+        <marker scope="Public" name="selected_against_nonhumanMonsters" />
+        <marker scope="Public" name="selected_daiGurren" />
+        <marker scope="Public" name="selected_first" />
+        <marker scope="Public" name="selected_last" />
         <marker scope="Public" name="selphy_erotica" />
         <marker scope="Public" name="selphy_erotica2" />
         <marker scope="Public" name="serena_adventure_30" />
@@ -1530,6 +1624,7 @@
         <marker scope="Public" name="serena_workOut_resp_11" />
         <marker scope="Public" name="serena_workOut_resp_12" />
         <marker scope="Public" name="serenaBoota" />
+        <marker scope="Public" name="shy_deselected" />
         <marker scope="Public" name="shy_mustFF" />
         <marker scope="Public" name="signed_up_for" />
         <marker scope="Public" name="simon_boota_22" />
@@ -1821,7 +1916,10 @@
         <marker scope="Public" name="we_brawlers_speech" />
         <marker scope="Public" name="what_im_going_to_do" />
         <marker scope="Public" name="whats_the_fuss" />
+        <marker scope="Public" name="wiifitfemale_selfCrotchVisResp" />
+        <marker scope="Public" name="wiifitfemale_selfForfeitStartResp" />
         <marker scope="Public" name="wikipe_cbt2" />
+        <marker scope="Public" name="witch_failedluckspell" />
         <marker scope="Public" name="wiz_finished_A" />
         <marker scope="Public" name="wiz_finished_B" />
         <marker scope="Public" name="wiz_mast_early1" />
@@ -1863,6 +1961,7 @@
         <marker scope="Public" name="wiz_winner_early" />
         <marker scope="Public" name="wiz_winner_late" />
         <marker scope="Public" name="yaemiko_strip0a" />
+        <marker scope="Public" name="yuna_selected" />
         <marker scope="Public" name="yuri_strip0a" />
         <marker scope="Public" name="yuri_strip1a" />
         <marker scope="Public" name="yusei_cyberLounge" />
@@ -1898,5 +1997,15 @@
         <marker scope="Public" name="yusei_strip4c" />
         <marker scope="Public" name="yusuke_broke" />
         <marker scope="Public" name="yuzuki_mouth2" />
+        <marker scope="Public" name="zeke_pandoria__20" />
+        <marker scope="Public" name="zeke_pandoria__21" />
+        <marker scope="Public" name="zeke_pandoria__22" />
+        <marker scope="Public" name="zeke_pandoria_anime_girl_feelings_52" />
+        <marker scope="Public" name="zeke_pandoria_pandyOrigins_10" />
+        <marker scope="Public" name="zeke_pandoria_pandyOrigins_11" />
+        <marker scope="Public" name="zeke_pandoria_pandyOrigins_12" />
+        <marker scope="Public" name="zeke_pandoria_turtersAndBoota_30" />
+        <marker scope="Public" name="zeke_pandoria_turtersAndBoota_31" />
+        <marker scope="Public" name="zeke_pandoria_turtersAndBoota_32" />
     </markers>
 </metadata>
