@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1748796447576</lastupdate>
-    <enabled>false</enabled>
+    <lastupdate>1767319279652</lastupdate>
     <first>Caitlin</first>
     <last />
     <label>Caitlin</label>
@@ -14,10 +13,12 @@
     <scale>123.3</scale>
     <layers>6</layers>
     <alternates>
-        <costume folder="opponents/reskins/caitlin_midnight_ball/" img="0-Smug.png" set="halloween" label="Caitlin">Midnight Ball</costume>
+        <costume folder="opponents/reskins/caitlin_midnight_ball/" img="0-Smug.png" set="halloween" label="Caitlin">
+            <costume-name>Midnight Ball</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2298</lines>
+    <lines>2304</lines>
     <poses>238</poses>
     <z-index>-10</z-index>
 </opponent>
