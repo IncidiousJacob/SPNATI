@@ -1,37 +1,5 @@
 ## Simon Sponsorships
 
-### Cinayanny
-
-60 new lines that play in each removing/removed category (Can be generic or filtered):
-
-Removing Accessory Male 0/5
-
-Removed Accessory Male 0/5
-- Hey, don't get all pissy just because you lost. [filtered_sarcasticF=1]
-
-Removing Accessory Female 0/5
-
-Removed Accessory Female 0/5
-- Don't be such a crybaby about it, okay? [filtered_sarcasticF=1]
-
-Removing Minor Male 0/5
-
-Removed Minor Male 0/5
-
-Removing Minor Female 0/5
-
-Removed Minor Female 0/5
-
-Removing Major Male 0/5
-
-Removed Major Male 0/5
-
-Removing Major Female 0/5
-
-Removed Major Female 2/5
-- They're covered up by that little material... Why's this even hotter than just getting to see the real thing? [filter_nipple_pasties]
-- How's that thing even sticking down there?! [filter_crotch_pasty]
-
 ### nyehtonyeh (Spooktacle)
 
 5 new select lines (that aren't "Just who the hell do you think I am?"
@@ -81,20 +49,20 @@ Removed Major Female 2/5
 - {small}Fuck, fuck, okay, slow down...{!reset} Not yet! [ff_fuckSlowDown]
 - Feels too damn good to stop now! [ff_tooDamnGood]
 
-- 
+- Can't stop thinking about tits and ass right now... Wait a minute, that's the whole idea, isn't it...? [ff_titsAndAss]
 
 5 more generic after-finished lines
-- 
-- 
-- 
-- 
-- 
+- I really do feel like I could go again. But... no. Don't want to hurt myself. [after_goAgainPossible]
+- The guys in Dai-Gurren would never believe the kind of ladies you find here. Don't think they'd believe me if I said I've seen them naked, either. Come to think of it, there's a lot more ladies than dudes around here, right? [after_ladiesInSpnati]
+- Feels good to get a good fap out of your system! [after_goodFap]
+- Glad I could be here.
+- Don't worry about me. Focus on the others, alright?
 
 4 filtered hand lines (i.e. hand quality lines that target a tag)
-- 
-- 
-- 
-- 
+- Is something wrong with the deck? No... is someone playing dirty with these cards? [handany_filterCheaterCards]
+- What's wrong, ~cheater~? You seem surprised things aren't going your way! [handany_filterCheaterCardsFail]
+- Make up your mind, already. Do you want to win or not, ~tsundere~? [handany_filterTsunLeftOfMe]
+- I'm not great at barking out orders, even though I'm meant to be the supreme commander. You can relax, ~military~. [handany_filterMilitaryLeftOfMe]
                                                                                                             
 ### MisterSolitaire
 
@@ -121,27 +89,68 @@ Currently targets 33 tags. Bring that up to an even 50 tags targeted.
 
 Flawless
 
+### Nmasp
+
+Flawless
+
 ### FragileCocktail
 
 15 more lines about giant fighting robots/mechs. Suggestion; target Takatoshi.
--
--
--
--
--
 
--
--
--
--
--
+Opponent Lost
+- You pilot a gunmen too, right? Or do you call it something different in your world as well? [filter_mechPilotMustStrip = 1]
+- Glad to know there's other people out there who <i>also</i> love to fight in their own giant robots. Right? [filter_mechPilotMustStrip = 2]
+- Dai-Gurren could always use more information about other gunmen types... or so Leeron says.  How about yours, ~target~? [filter_mechPilotMustStrip = 3]
+Opponent Stripping
+- Hey, wanna have a little fight after this? We can go somewhere empty for it. My Gurren Lagann versus your... whatever you call it! [filter_mechPilotStripping = 1]
+- I wonder if Lagann could combine with <i>your</i> gunmen. Wonder what we'd have to call it? See, "Gurren Lagann" is because my Lagann combines with Gurren. [filter_mechPilotStripping = 2]
+- How do you customise yours, then? For Gurren Lagann, we managed to snag a foe's helmet right from his gunmen's face, and take it for our own! [filter_mechPilotStripping = 3]
+Opponent Stripped
+- We can work out the details later. But think about it, okay? I'm so excited to meet someone who <i>gets it</i> when it comes to fighting big. [filter_mechPilotStripped = 1]
+- We can talk about this later, if you want. I wanna see what your gunmen-- robot, mech, whatever. I wanna see what it can do! [filter_mechPilotStripped = 2]
+- Maybe we could catch up on this later. Always happy to meet someone new who know's how to fight in a gunmen! [filter_mechPilotStripped = 3]
+Takatoshi
+- A man like you should stand proud with something like that. As tall and proud as your <i>No. 12!</i> [takatoshi_dick]
+- If your <i>No. 12</i> Sentinel stands as tall and proud as you are now... man, you've got it all. [takatoshi_dick]
+- You get hungry on the job too, huh? Nia usually makes me a small lunch whenever I have to go on missions in Gurren Lagann. [takatoshi_YakisobaPan]
+- I get the hunger pangs too, Takatoshi, whenever I'm in Lagann. Though, I've learned to not try and eat one of Nia's meals in the middle of a battle. [takatoshi_YakisobaPan]
+- I pilot the one-and-only Gurren Lagann! No clue what generation it is, but that doesn't matter! [takatoshi_sentinel12]
+- Huh. I've never had to be naked to enter Lagann, or pilot it. One time I had to do it by necessity, though. [takatoshi_nakedPilot]
 
--
--
--
--
--
 
 ### Kablo/Karbol
 
 - Upon my third playthrough with him, I found a line where a "Hey" was mispelled as "h ey". This completely and utterly ruined my experience with him in that game and I simply cannot stand for a character entering the main roster with such an oversight. It was literally unplayable. Please, fix this as soon as posible.
+
+
+### Cinayanny
+
+60 new lines that play in each removing/removed category (Can be generic or filtered):
+
+Removing Accessory Male 0/5
+
+Removed Accessory Male 0/5
+- Hey, don't get all pissy just because you lost. [filtered_sarcasticF=1]
+
+Removing Accessory Female 0/5
+
+Removed Accessory Female 0/5
+- Don't be such a crybaby about it, okay? [filtered_sarcasticF=1]
+
+Removing Minor Male 0/5
+
+Removed Minor Male 0/5
+
+Removing Minor Female 0/5
+
+Removed Minor Female 0/5
+
+Removing Major Male 0/5
+
+Removed Major Male 0/5
+
+Removing Major Female 0/5
+
+Removed Major Female 2/5
+- They're covered up by that little material... Why's this even hotter than just getting to see the real thing? [filter_nipple_pasties]
+- How's that thing even sticking down there?! [filter_crotch_pasty]
