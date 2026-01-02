@@ -1,14 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="zeke_turters" status="online" img="opponents/zeke_pandoria/extras/turters.png" thumbnail="opponents/zeke_pandoria/extras/turters.png">
+    <collectible id="zeke_turters" status="online" thumbnail="opponents/zeke_pandoria/extras/turters.png">
         <title>Turters</title>
         <subtitle>Handling a man's turtle!</subtitle>
         <text>The beloved pet and mascot of Zeke and Pandoria. A turtle-like animal that has a habit of wandering around while Zeke is being flamboyant. Look after him, okay?</text>
         <unlock>Play a full game with Zeke and Pandoria from Xenoblade Chronicles 2.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/zeke_pandoria/extras/turters.png</picture>
     </collectible>
-    <collectible id="zeke_love_manual" img="opponents/zeke_pandoria/6-z_both_hug.png" thumbnail="opponents/zeke_pandoria/extras/love_guide.png">
+    <collectible id="zeke_love_manual" thumbnail="opponents/zeke_pandoria/extras/love_guide.png">
         <title>Tantalese Love Letter</title>
         <subtitle>Instructions for finding their special interactions...</subtitle>
         <text>Zeke and Pandoria have a few different ways of 'forfeiting' the game.&lt;br&gt;
@@ -21,14 +22,16 @@
         <unlock>Zeke and Pandoria have some neat forfeit variations. Win a game against them to get this hint collectible.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/zeke_pandoria/6-z_both_hug.png</picture>
     </collectible>
-    <collectible id="zeke_eyepatch" img="opponents/zeke_pandoria/5-zeke_unleashing_power.png" thumbnail="opponents/zeke_pandoria/extras/collectible_eyepatch.png">
+    <collectible id="zeke_eyepatch" thumbnail="opponents/zeke_pandoria/extras/collectible_eyepatch.png">
         <title>Zeke's Eyepatch</title>
         <subtitle>Holds phenomenal power and looks cool!</subtitle>
         <text>Zeke is the rare kind of chuunibyou who actually has the strength and power to back up his delusions. It's a lucky thing that he's on the side of good.</text>
         <unlock>See Zeke and Pandoria lose in `Eye of Shining Justice' mode. To enable this mode, play with your name set to "King Me", "Queen Me" or "Logos". Or play with them against Giygas during the April Fool's day event.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/zeke_pandoria/5-zeke_unleashing_power.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/zeke_pandoria/extras/collectible_eyepatch.png" name="eyepatch" generic="mask" position="head" type="extra" />
     </collectible>

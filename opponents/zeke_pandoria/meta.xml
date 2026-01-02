@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1751677586442</lastupdate>
+    <lastupdate>1767331473360</lastupdate>
     <first>Zeke</first>
     <last>von Genbu</last>
     <label>Zeke and Pandoria</label>
@@ -13,13 +13,17 @@
     <layers>6</layers>
     <default-costume-name>Thunderbolt Zeke</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/zeke_pandoria_summer/" img="0-select.png" set="summer" status="online" layers="4">Surfinator's Beach Date</costume>
-        <costume folder="opponents/reskins/zeke_pandoria_xmas/" img="0-select.png" set="xmas" status="online">Santanator's Holiday Help</costume>
+        <costume folder="opponents/reskins/zeke_pandoria_summer/" img="0-select.png" set="summer" status="online" layers="4">
+            <costume-name>Surfinator's Beach Date</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/zeke_pandoria_xmas/" img="0-select.png" set="xmas" status="online">
+            <costume-name>Santanator's Holiday Help</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <short-game-enabled>true</short-game-enabled>
-    <lines>2000</lines>
-    <poses>342</poses>
+    <lines>2049</lines>
+    <poses>345</poses>
     <z-index>-5</z-index>
     <font-size>small</font-size>
 </opponent>
