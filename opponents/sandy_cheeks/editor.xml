@@ -5,6 +5,17 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Sandy Cheeks" id="90" priority="FYI" min="0" max="0">
+            <description>Sandy Cheeks is an anthropomorphic female squirrel in an astronaut suit. Your character may find this noteworthy in and of itself.</description>
+        </case>
+        <case name="Sandy's Bikini" id="91" priority="Noteworthy" min="1" max="1">
+            <description>Sandy has just removed her spacesuit, leaving her in nothing but a bikini. This is her first time showing off her furry body and big bushy tail.</description>
+        </case>
+        <case name="Sandy's Cheeks (Butt Reveal)" id="92" priority="Noteworthy" min="3" max="3">
+            <description>Sandy has just removed her bikini bottoms and is now nude. She has lighter colored fur around her genital areas. While taking her bottoms off she shows her bare butt.</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="1" opponent="maki" opponentId="20" />
         <response id="2" opponent="ae86" opponentId="6" />
@@ -69,7 +80,6 @@
         <response id="69" opponent="weiss_schnee" opponentId="58" />
         <response id="70" opponent="streaming-chan" opponentId="8" />
         <response id="71" opponent="lyralei" opponentId="402" />
-        <response id="72" opponent="raven" opponentId="8" />
         <response id="73" opponent="meia" opponentId="4" />
         <response id="74" opponent="meia" opponentId="1" />
         <response id="75" opponent="nami" opponentId="624" />
@@ -88,12 +98,15 @@
         <response id="88" opponent="aoba" opponentId="170" />
         <response id="89" opponent="nami" opponentId="11" />
     </responses>
-    <nextId>89</nextId>
+    <labels>
+        <label id="93" label="" folder="Butt Pose" sort="0" />
+    </labels>
+    <nextId>93</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="been_to_rodeo" />
         <marker scope="Public" name="been_to_texas" />
         <marker scope="Public" name="bulls_and_worms" />
+        <marker scope="Public" name="cheeks" />
         <marker scope="Public" name="gambler" />
         <marker scope="Public" name="in_the_nude" />
     </markers>
