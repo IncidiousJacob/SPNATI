@@ -5,6 +5,20 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Sandy Cheeks" id="90" priority="FYI" min="0" max="0">
+            <description>Sandy Cheeks is an anthropomorphic female squirrel in an astronaut suit. Your character may find this noteworthy in and of itself.</description>
+        </case>
+        <case name="Sandy's Bikini" id="91" priority="Noteworthy" min="1" max="1">
+            <description>Sandy has just removed her spacesuit, leaving her in nothing but a bikini. This is her first time showing off her furry body and big bushy tail.</description>
+        </case>
+        <case name="Sandy's Cheeks (Butt Reveal)" id="92" priority="Noteworthy" min="3" max="3">
+            <description>Sandy has just removed her bikini bottoms and is now nude. She has lighter colored fur around her genital areas. While taking her bottoms off she shows her bare butt.</description>
+        </case>
+        <case name="Sandy's Vibrator" id="94" priority="FYI" min="3" max="3">
+            <description>When Sandy starts masturbating, she brings out her vibrator. She invented this vibrator by herself in her treedome.</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="1" opponent="maki" opponentId="20" />
         <response id="2" opponent="ae86" opponentId="6" />
@@ -69,7 +83,6 @@
         <response id="69" opponent="weiss_schnee" opponentId="58" />
         <response id="70" opponent="streaming-chan" opponentId="8" />
         <response id="71" opponent="lyralei" opponentId="402" />
-        <response id="72" opponent="raven" opponentId="8" />
         <response id="73" opponent="meia" opponentId="4" />
         <response id="74" opponent="meia" opponentId="1" />
         <response id="75" opponent="nami" opponentId="624" />
@@ -87,15 +100,41 @@
         <response id="87" opponent="megumin" opponentId="221" />
         <response id="88" opponent="aoba" opponentId="170" />
         <response id="89" opponent="nami" opponentId="11" />
+        <response id="95" opponent="may" opponentId="5" />
+        <response id="96" opponent="takatoshi" opponentId="162" />
+        <response id="97" opponent="hex_maniac" opponentId="67" />
+        <response id="98" opponent="juri" opponentId="3" />
+        <response id="99" opponent="fluttershy" opponentId="421" />
+        <response id="100" opponent="glamrock_chica" opponentId="26" />
+        <response id="101" opponent="vinyl" opponentId="88" />
+        <response id="102" opponent="meia" opponentId="3" />
+        <response id="103" opponent="rose" opponentId="143" />
+        <response id="104" opponent="rinkah" opponentId="1" />
+        <response id="105" opponent="lyralei" opponentId="1462" />
+        <response id="106" opponent="rouge" opponentId="9" />
+        <response id="107" opponent="wasp" opponentId="139" />
+        <response id="108" opponent="tea_gardner" opponentId="87" />
+        <response id="109" opponent="nagatoro" opponentId="2" />
+        <response id="110" opponent="vriska" opponentId="26" />
+        <response id="111" opponent="9s" opponentId="8" />
+        <response id="112" opponent="erufuda" opponentId="4" />
+        <response id="113" opponent="galatea" opponentId="51" />
     </responses>
-    <nextId>89</nextId>
+    <labels>
+        <label id="93" label="" folder="Butt Pose" sort="0" />
+    </labels>
+    <nextId>113</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="been_to_rodeo" />
         <marker scope="Public" name="been_to_texas" />
         <marker scope="Public" name="bulls_and_worms" />
+        <marker scope="Public" name="cheeks" />
         <marker scope="Public" name="gambler" />
         <marker scope="Public" name="in_the_nude" />
+        <marker scope="Public" name="Living_Like_Larry" />
+        <marker scope="Public" name="ripped_pants" />
+        <marker scope="Public" name="sandy_hex_bush_reveal" />
+        <marker scope="Public" name="sandy_vibrator_gadget" />
     </markers>
     <recipes>
         <recipe key="5fee06f1-d467-44e0-a256-1d46c2d934a5">
