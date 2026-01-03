@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1765135314631</lastupdate>
+    <lastupdate>1767462887887</lastupdate>
     <first>Mitama</first>
     <last />
     <label>Mitama</label>
@@ -13,10 +13,14 @@
     <description>A young woman who was raised in a shrine. She is an avid poet, with a preference for haiku, and also greatly enjoys taking naps. </description>
     <layers>7</layers>
     <alternates>
-        <costume folder="opponents/reskins/mitama_aestival_haijin/" img="0-sarcastic.png" set="summer" status="online" label="Mitama" layers="6">Aestival Haijin</costume>
-        <costume folder="opponents/reskins/mitama_bewitching_wordsmith/" img="0-portrait.png" set="halloween" status="online" label="Mitama">Bewitching Wordsmith</costume>
+        <costume folder="opponents/reskins/mitama_aestival_haijin/" img="0-sarcastic.png" set="summer" status="online" label="Mitama" layers="6">
+            <costume-name>Aestival Haijin</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mitama_bewitching_wordsmith/" img="0-portrait.png" set="halloween" status="online" label="Mitama">
+            <costume-name>Bewitching Wordsmith</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2770</lines>
+    <lines>2774</lines>
     <poses>194</poses>
 </opponent>
