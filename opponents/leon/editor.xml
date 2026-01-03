@@ -10,7 +10,19 @@
             <description>Hu Tao is in her forfeit and Leon wants to be in her. And so he throws. </description>
         </case>
         <case name="Leon/Rouge Dual Forfeit" id="1164" priority="Noteworthy" min="7" max="7">
-            <description>Description about what's interesting happening with the character (i.e. why should others target this?)</description>
+            <description>Leon and Rouge are about to have sex. In the process of the forfeit, Rogue initates anal. This forfeit only happens if Rouge has finished first.</description>
+        </case>
+        <case name="Leon/Nonon Dual Forfeit" id="1416" priority="Noteworthy" min="7" max="7">
+            <description>Leon and Nonon are about to have sex. How does your character feel about the pairing, given their sniping at each other so far? This forfeit can occur in Leon's must masturbate (Self) or Female Must Masturbate case for Nonon.</description>
+        </case>
+        <case name="Leon/Yae Dual Forfeit" id="1682" priority="Noteworthy" min="7" max="7">
+            <description>Leon and Yae are about to have have sex. It's a very cute, flirty event and the two get a little lost in it. This forfeit can occur in Leon's must masturbate (Self) or Female Must Masturbate case for Yae.</description>
+        </case>
+        <case name="Leon/Hu Tao Dual Forfeit" id="1536" priority="Noteworthy" min="7" max="7">
+            <description>Leon and Hu Tao are about to have sex. There's been a lot of longing and build up for the two of them; instant chemistry.</description>
+        </case>
+        <case name="Leon/Momo Dual Forfeit" id="1747" priority="Noteworthy" min="9" max="9">
+            <description>Momo is about to ride Leon's face. This requires Leon to have finished completely.</description>
         </case>
     </noteworthy>
     <responses>
@@ -583,6 +595,7 @@
         <response id="1687" opponent="yuzuki" opponentId="149" />
         <response id="1726" opponent="tifa" opponentId="185" />
         <response id="1745" opponent="serena" opponentId="918" />
+        <response id="1749" opponent="momo" opponentId="1240" />
     </responses>
     <notes>
         <note id="48">Grants the DbD tag. </note>
@@ -1773,8 +1786,30 @@
         <label id="1742" label="" folder="Vanessa" sort="0" />
         <label id="1743" label="" folder="Vanessa" sort="0" />
         <label id="1744" label="" folder="Vanessa" sort="0" />
+        <label id="1746" label="Momo FF Trigger" color="5" folder="" sort="0" />
+        <label id="1747" label="Must" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1748" label="Start" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1749" label="Forfeit" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1750" label="Heavy Forfeit" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1751" label="Heavy Forfeit" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1752" label="Finishing" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1753" label="Finished" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1754" label="After Finished 1" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1755" label="After Finished 2" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1756" label="After Finished 3" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1757" label="After Finished 4" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1758" label="After Finished 5" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1759" label="Start - Yae Watches" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1760" label="Saw Momo" folder="Yae Dual Triggers" sort="0" />
+        <label id="1761" label="" color="4" folder="" sort="0" />
+        <label id="1762" label="" color="4" folder="" sort="0" />
+        <label id="1763" label="After Finished 1b" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1764" label="After Finished 2b" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1765" label="After Finished 3b" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1766" label="After Finished 4b" color="1" folder="Momo Dual Forfeit" sort="0" />
+        <label id="1767" label="After Finished 5b" color="1" folder="Momo Dual Forfeit" sort="0" />
     </labels>
-    <nextId>1745</nextId>
+    <nextId>1767</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="_dual_finishing" />
@@ -2137,7 +2172,30 @@
         <marker scope="Public" name="fischl_ff7" />
         <marker scope="Public" name="fischl_ff8" />
         <marker scope="Public" name="fischl_ff9" />
+        <marker scope="Public" name="fischl_jerking_resp_70" />
+        <marker scope="Public" name="fischl_jerking_resp_71" />
+        <marker scope="Public" name="fischl_muscles_resp_40" />
+        <marker scope="Public" name="fischl_muscles_resp_41" />
+        <marker scope="Public" name="fischl_muscles_resp_42" />
+        <marker scope="Public" name="fischl_naked_resp_60" />
+        <marker scope="Public" name="fischl_naked_resp_61" />
+        <marker scope="Public" name="fischl_naked_resp_62" />
+        <marker scope="Public" name="fischl_saving_people_resp_50" />
+        <marker scope="Public" name="fischl_saving_people_resp_51" />
+        <marker scope="Public" name="fischl_saving_people_resp_52" />
+        <marker scope="Public" name="fischl_scientists_resp_20" />
+        <marker scope="Public" name="fischl_scientists_resp_21" />
+        <marker scope="Public" name="fischl_scientists_resp_22" />
         <marker scope="Public" name="fischl_self_ff" />
+        <marker scope="Public" name="fischl_succumb_resp_00" />
+        <marker scope="Public" name="fischl_succumb_resp_01" />
+        <marker scope="Public" name="fischl_succumb_resp_02" />
+        <marker scope="Public" name="fischl_weapons_resp_30" />
+        <marker scope="Public" name="fischl_weapons_resp_31" />
+        <marker scope="Public" name="fischl_weapons_resp_32" />
+        <marker scope="Public" name="fischl_work_experience_resp_10" />
+        <marker scope="Public" name="fischl_work_experience_resp_11" />
+        <marker scope="Public" name="fischl_work_experience_resp_12" />
         <marker scope="Public" name="fischl01" />
         <marker scope="Public" name="fischl02" />
         <marker scope="Public" name="fischl41" />
@@ -2475,6 +2533,19 @@
         <marker scope="Public" name="leon_levpost4" />
         <marker scope="Public" name="leon_levpost5" />
         <marker scope="Public" name="leon_missions" />
+        <marker scope="Public" name="leon_momo_dualAfter1" />
+        <marker scope="Public" name="leon_momo_dualAfter1b" />
+        <marker scope="Public" name="leon_momo_dualAfter2" />
+        <marker scope="Public" name="leon_momo_dualAfter2b" />
+        <marker scope="Public" name="leon_momo_dualAfter3" />
+        <marker scope="Public" name="leon_momo_dualAfter3b" />
+        <marker scope="Public" name="leon_momo_dualAfter4" />
+        <marker scope="Public" name="leon_momo_dualAfter4b" />
+        <marker scope="Public" name="leon_momo_dualAfter5" />
+        <marker scope="Public" name="leon_momo_dualAfter5b" />
+        <marker scope="Public" name="leon_momo_dualFinished" />
+        <marker scope="Public" name="leon_momo_dualMust" />
+        <marker scope="Public" name="leon_momo_dualStart" />
         <marker scope="Public" name="leon_momo01" />
         <marker scope="Public" name="leon_momo02" />
         <marker scope="Public" name="leon_momo03" />
@@ -2910,7 +2981,9 @@
         <marker scope="Public" name="momo_after2" />
         <marker scope="Public" name="momo_after3" />
         <marker scope="Public" name="momo_after4" />
+        <marker scope="Public" name="momo_dual_finishing" />
         <marker scope="Public" name="momo_finish" />
+        <marker scope="Public" name="momo_forfeitOngoing" />
         <marker scope="Public" name="momo_leon_post2" />
         <marker scope="Public" name="momo_leon_post3" />
         <marker scope="Public" name="momo_leon_post4" />
@@ -3123,6 +3196,7 @@
         <marker scope="Public" name="petra02" />
         <marker scope="Public" name="petra03" />
         <marker scope="Public" name="pre_yae_ff_hutao" />
+        <marker scope="Public" name="pre_yae_ff_momo" />
         <marker scope="Public" name="pre_yae_ff_nonon" />
         <marker scope="Public" name="pre_yae_ff_rouge" />
         <marker scope="Public" name="pyretic_passion_leon" />
@@ -3697,6 +3771,7 @@
         <marker scope="Public" name="yae_roll_spice" />
         <marker scope="Public" name="yae_transform" />
         <marker scope="Public" name="yae_watched_hutao" />
+        <marker scope="Public" name="yae_watched_leonMomo" />
         <marker scope="Public" name="yae_watched_nonon" />
         <marker scope="Public" name="yae_watched_rouge" />
         <marker scope="Public" name="yae_workchat" />
