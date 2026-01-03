@@ -34,7 +34,7 @@ var SPECIAL_CASE_NAMES = {
     "scm": "Suction Cup Man",
     "tea_gardner": "Téa",
     "toru_hagakure": "Toru",
-    "uravity": "Ochako", // nmasp, wtf?
+    "uravity": "Ochako",
     "wiifitfemale": "Wii Fit Trainer",
     "witch_puyopuyo": "Witch",
     "yshtola": "Y'shtola",
@@ -42,6 +42,7 @@ var SPECIAL_CASE_NAMES = {
     "yuno_uno": "Yuno",
     "yusei_fudo": "Yusei",
     "zeke_pandoria": "Zeke and Pandoria",
+    "zelda_eow": "Zelda (EoW)",
 
     // disambiguation
     "alice": "Alice Liddell",
@@ -52,6 +53,7 @@ var SPECIAL_CASE_NAMES = {
     "penny": "Penny (Stardew Valley)",
     "roll": "Roll Light",
     "saki": "Saki Yoshida",
+    "zelda": "Zelda (TP)",
 
     // classic opponents
     "amy_rose_classic": "Amy Rose",
