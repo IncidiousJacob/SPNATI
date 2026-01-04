@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1766210927803</lastupdate>
+    <lastupdate>1767480970277</lastupdate>
     <first>Angela</first>
     <last />
     <label>Angela</label>
@@ -13,10 +13,20 @@
     <layers>8</layers>
     <default-costume-name>Magician</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/angela_tom_magus/" img="0-calm.png" status="online" layers="6" collectible="angelatom_omenbook">Magus</costume>
-        <costume folder="opponents/reskins/angela_tom_archmage/" img="0-calm.png" set="xmas" status="online">Archmage</costume>
+        <costume folder="opponents/reskins/angela_tom_magus/" img="0-calm.png" status="online" layers="6" collectible="angelatom_omenbook">
+            <costume-name>Magus</costume-name>
+            <costume-description>The princess of Altena, Angela was never much good with magic until her hand was forced. Lonely for most of her life, she's become quite an attention seeker since.
+
+After reaching level 38 in her Mysticist class, Angela took an Omen Book to a Manastone to access this class. Beware: Angela's already-high intelligence is even higher than usual now! (But she's not wearing as much, so at least you'll have to win fewer times.)</costume-description>
+        </costume>
+        <costume folder="opponents/reskins/angela_tom_archmage/" img="0-calm.png" set="xmas" status="online">
+            <costume-name>Archmage</costume-name>
+            <costume-description>The princess of Altena, Angela was never much good with magic until her hand was forced. Lonely for most of her life, she's become quite an attention seeker since.
+
+After reaching level 38 in her Sorceress class, Angela took an Esotera Book to a Manastone to access this class. It allows her to conserve MP while casting her spells and gives her access to the powerful Glitter Dust spell. And it looks quite festive, to boot!</costume-description>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>1060</lines>
+    <lines>1062</lines>
     <poses>316</poses>
 </opponent>
