@@ -30,6 +30,9 @@
         <case name="Should I Really…?" id="1271" priority="FYI" min="4" max="4">
             <description>In her default outfit, Wiz delays showing her breasts by going bottomless first.</description>
         </case>
+        <case name="Items for Sale!" id="1282" priority="Prompt" min="0" max="9">
+            <description>Wiz offers all sorts of items to players based on their tags. Check the Sales Offers folder for ones that may apply to your character, and the notes tab for a bit more information. And if you want some sort of follow-up to your response, leave a note or let me know!</description>
+        </case>
         <case name="Check Wiz's Markers!" id="335" priority="FYI" min="0" max="7">
             <description>All of Wiz's markers that aren't used for banter have descriptions. Try looking through them if you're looking for more to respond to. They won't all be appropriate for that, but there are some that may be interesting to some characters.</description>
         </case>
@@ -208,6 +211,26 @@
         <note id="1125">Not part of banter. Only plays when banter between them does not occur.</note>
         <note id="1176">Used for player banter to identify purely natural environments, no manmade structures. Could be used elsewhere in the future.</note>
         <note id="1178">@Hue: You can safely ignore this line. It's not part of banter. * * * * * * * Player banter always plays when the conditions are fulfilled, but will have problems with characters Wiz banters with that don't start at stage 0. This is to prevent player banter when those characters are present. It also prevents player banter when any additional Konosuba character is present, regardless of banter between them existing.</note>
+        <note id="1273">She sells all sorts of potions, from health and mana potions to ones to attract monsters and more!</note>
+        <note id="1276">The bracelet cannot be removed by anyone until a week passes unless the wearer thanks someone of the opposite gender 100 times. It's designed to help couples resolve arguments.</note>
+        <note id="1274">These are just as she described: low mana recovery and they slowly turn your skin purple. What a wonderful color!</note>
+        <note id="1275">Maybe the towel could also be used as an alternative to shaving, but Wiz doesn't really consider that possibility.</note>
+        <note id="1277">Wiz! That might be rude, you know! Don't assume someone has a height complex. (But maybe they don't and it actually would interest them.) And what happens to their clothes when they drink this anyway, Wiz?</note>
+        <note id="1278">The box was not opened at any point. Who knows what's inside!</note>
+        <note id="1279">A month, Wiz? Really? Would anyone actually use that? They might not even get away before they collapse…</note>
+        <note id="1280">That just sounds expensive, right? It works, but costs close to 10x the amount one can expect to receive for killing a Giant Toad.</note>
+        <note id="1282">Wiz is feeling a little desperate for customers right now. It's hard to make sales when you sell stuff no one wants.</note>
+        <note id="1281">Well… do you? Probably not, right?</note>
+        <note id="1283">Wiz sells some magical sex toys (for all genders!) to select in-the-know customers. Don't worry, it's discreet.</note>
+        <note id="1285">It's the classic clothing-dissolving potion! Don't use it on the bed, though, or you might find yourself needing new bedsheets, too.</note>
+        <note id="1286">A solution to a small chest?! But wait, it makes the muscles bigger. But won't that actually make boobs smaller by comparison?</note>
+        <note id="1287">Magic accessories are still accessories after all. They still have aesthetic merits.</note>
+        <note id="1288">It does just what it says. How long does it last? Who knows.</note>
+        <note id="1289">It does just what it says. How long does it last? Who knows.</note>
+        <note id="1290">It actually works! It kills any small plants whether they're weeds or not.</note>
+        <note id="1291">It makes hair grow quickly. But does it work if they don't have hair, Wiz? Does it only grow the hair on the head? Is anyone brave enough to find out the answers?</note>
+        <note id="1292">It's about a 20% chance to explode when you turn it on. …That's so dangerous, Wiz!</note>
+        <note id="1293">There's no joke here. They're just contraceptive pills and condoms. Even fantasy worlds have safe sex practices!</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="0" />
@@ -1458,8 +1481,30 @@
         <label id="1269" label="Vampire 2" color="5" folder="Undead" sort="0" />
         <label id="1270" label="Vampire 1" color="5" folder="Undead" sort="0" />
         <label id="1272" label="" folder="Undead" sort="0" />
+        <label id="1273" label="Adventurer" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1274" label="Magic" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1275" label="Long Hair" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1276" label="Police" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1277" label="Short/Shortstack" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1278" label="Creepy" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1279" label="Magic" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1280" label="Adventurer" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1281" label="Medic" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1282" label="Adventurer" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1283" label="Sex Worker" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1284" label="" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1285" label="Taken" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1286" label="Boob Envy" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1287" label="Dancer" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1288" label="Knight" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1289" label="Japanese" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1290" label="Farmer" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1291" label="Bald" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1292" label="Archaeologist" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1293" label="Tandem M/F" folder="z Filters&gt;Sales Offers" sort="0" />
+        <label id="1294" label="" folder="z Filters&gt;Sales Offers" sort="0" />
     </labels>
-    <nextId>1272</nextId>
+    <nextId>1294</nextId>
     <markers>
         <marker scope="Public" name="adventure_stories">Wiz wants to hear about anyone's adventures, even if they aren't an adventurer.</marker>
         <marker scope="Public" name="adventurers_cards">Adventurer's cards detail an adventurers class, stats, and skills. Wiz wonders what another adventurer's card looks like!</marker>
