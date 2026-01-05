@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1764528301756</lastupdate>
+    <lastupdate>1767652815573</lastupdate>
     <first>Teo</first>
     <last>Minh</last>
     <label>Juno</label>
@@ -15,10 +15,14 @@
     <layers>7</layers>
     <default-costume-name>EVA Suit</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/juno_goono/" img="0-affirmative.png" set="halloween" status="unlisted">Goo-no</costume>
-        <costume folder="opponents/reskins/juno_starspawn/" img="0-calm.png" set="halloween" status="unlisted">Goo-no</costume>
+        <costume folder="opponents/reskins/juno_goono/" img="0-affirmative.png" set="halloween" status="unlisted">
+            <costume-name>Goo-no</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/juno_starspawn/" img="0-calm.png" set="halloween" status="unlisted">
+            <costume-name>Goo-no</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2372</lines>
+    <lines>2374</lines>
     <poses>327</poses>
 </opponent>
