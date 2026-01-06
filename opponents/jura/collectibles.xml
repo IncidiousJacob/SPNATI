@@ -1,36 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="camera" status="online" img="opponents/jura/camera.png" thumbnail="opponents/jura/camera.png">
+    <collectible id="camera" status="online" thumbnail="opponents/jura/camera.png">
         <title>Video Camera</title>
         <subtitle>A portable handheld video camera.  Also takes pictures.</subtitle>
         <text>"Didn't Jura look absolutely &lt;i&gt;stunning?&lt;/i&gt;  There are whole drives full of my sexy glamor shots!  I wish Barnette didn't have to do it all herself..."</text>
         <unlock>Win a game against Jura.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/camera.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/jura/camera.png" name="Camera" generic="" position="held" type="extra" />
     </collectible>
-    <collectible id="regcard" status="online" img="opponents/jura/pilotID.png" thumbnail="opponents/jura/regcard.png">
+    <collectible id="regcard" status="online" thumbnail="opponents/jura/regcard.png">
         <title>Pilot ID</title>
         <subtitle>For scanning delivery orders through the Regisystem.</subtitle>
         <text>ジュラ・ベーシル・エルデン&lt;br&gt;Jura Basil Elden&lt;br&gt;Rank: Pilot&lt;br&gt;Age: 20&lt;br&gt;Blood Type: AB&lt;br&gt;Birthday: August 31st&lt;br&gt;Height: 174 cm&lt;br&gt;Weight: 53 kg&lt;br&gt;B-W-H: 93-60-91 cm&lt;br&gt;Voice: Yuu Asakawa&lt;br&gt;&lt;br&gt;Pilots a special scarlet Dread fighter, as well as the crab-like "Red Claw" Vandread mech, known for its shielding capabilities.  Her Dread has been modified by their Paksis core, so it no longer fits in the platforms for standard orders.  Jura was already a senior pilot when Barnette joined and started working in Reg; they first met when Barnette critiqued her loadout.</text>
         <unlock>Guide Jura's Preset Table through some Growing Pains.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/pilotID.png</picture>
     </collectible>
-    <collectible id="bregcard" status="online" img="opponents/jura/bpilotID.png" thumbnail="opponents/jura/bregcard.png">
+    <collectible id="bregcard" status="online" thumbnail="opponents/jura/bregcard.png">
         <title>Pilot ID (Barnette)</title>
         <subtitle>For scanning, and fulfilling, delivery orders through the Regisystem.</subtitle>
         <text>バーネット・オランジェロ&lt;br&gt;Barnette Orangello&lt;br&gt;Rank: Pilot/Regisystem Manager&lt;br&gt;Age: 19&lt;br&gt;Blood Type: A&lt;br&gt;Birthday: October 4th&lt;br&gt;Height: 163 cm&lt;br&gt;Weight: 49 kg&lt;br&gt;B-W-H: 87-58-89 cm&lt;br&gt;Voice: Michiko Neya&lt;br&gt;&lt;br&gt;Pilots a standard pink Dread. Unlike Meia and Jura, her Dread was not transformed by the Paksis Pragma, and thus cannot combine with a Vanguard.  Prefers aggressive bombardment loadouts and even tried to order a kamikaze set on one occasion.  Now serves as Chief and Weapons Shop Owner of the Regisystem, piloting its armored delivery ship and managing orders, munitions, and security.</text>
         <unlock>Give Barnette a promotion---and a new outfit.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/bpilotID.png</picture>
     </collectible>
-    <collectible id="photo" status="online" img="opponents/jura/photo.png" thumbnail="opponents/jura/photofinish.png">
+    <collectible id="photo" status="online" thumbnail="opponents/jura/photofinish.png">
         <title>Photo Finish</title>
         <subtitle>Elegance transcends dimensions.</subtitle>
         <text>"&lt;i&gt;Come on,&lt;/i&gt; take another one!  Jura can keep going for &lt;i&gt;hours...&lt;/i&gt;"</text>
         <unlock>Jura will never refuse a second angle.  Bring a camera and get one.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/photo.png</picture>
     </collectible>
-    <collectible id="kiss" status="online" img="opponents/jura/kisses.png" thumbnail="opponents/jura/kiss.png">
+    <collectible id="kiss" status="online" thumbnail="opponents/jura/kiss.png">
         <title>Jura's Kisses</title>
         <subtitle>The greatest gift Jura can give, according to Jura.</subtitle>
         <text>"Mmmm&lt;i&gt;wah!&lt;/i&gt;"&lt;br&gt;&lt;br&gt;
@@ -40,43 +44,52 @@ You feel her lipstick smear and her breasts squish.  She's wrapped her naked bod
 "Mwah!  Mwah!  &lt;i&gt;Mwah!&lt;/i&gt;  I'm thanking you properly.  You taught Jura so much!  I'll---&lt;i&gt;mwahmnn---&lt;/i&gt;have to come back one day..."</text>
         <unlock>Make Jura lose as a male.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/kisses.png</picture>
     </collectible>
-    <collectible id="cz75" status="online" img="opponents/jura/cz75.png" thumbnail="opponents/jura/cz75.png">
+    <collectible id="cz75" status="online" thumbnail="opponents/jura/cz75.png">
         <title>CZ 75</title>
         <subtitle>"We're not going to &lt;i&gt;Moscow.&lt;/i&gt;  It's &lt;i&gt;Czechoslovakia!&lt;/i&gt;  It's like going into Wisconsin."</subtitle>
         <text>Type: Semiautomatic&lt;br&gt;Manufacturer: ČZUB&lt;br&gt;Designed: 1975&lt;br&gt;Cartridge: 9x19 mm Parabellum&lt;br&gt;Walnut Grip&lt;br&gt;Original "Short-Rail" Model&lt;br&gt;&lt;br&gt;Of the many 20th-century antiques in Barnette's collection, the CZ 75 handgun is her favorite, and her sidearm of choice.  Also among its fans is Chicago gunshop owner Irene "Rally" Vincent of &lt;i&gt;Gunsmith Cats,&lt;/i&gt; another character voiced by Michiko Neya.  No surprise: Takeshi Mori directed both series.</text>
         <unlock>Make Jura lose as a female.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/cz75.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/jura/cz75.png" name="pistol" generic="weapon" position="held" type="extra" />
     </collectible>
-    <collectible id="mac-10" status="online" img="opponents/jura/mac-10.png" thumbnail="opponents/jura/mac-10.png">
+    <collectible id="mac-10" status="online" thumbnail="opponents/jura/mac-10.png">
         <title>MAC-10</title>
         <subtitle>"Fit only for combat in a phone booth."</subtitle>
         <text>Type: Machine pistol/Submachine gun&lt;br&gt;Manufacturer: Military Armament Corporation&lt;br&gt;Designed: 1964&lt;br&gt;Cartridge: .45 ACP, 9x19 mm Parabellum&lt;br&gt;Telescoping Bolt&lt;br&gt;Blowback-operated&lt;br&gt;&lt;br&gt;Once banned in the 20th century, this compact antique found its way to Mejare in Barnette's collection.  The "M10" was famous for its two-stage suppressor, giving you ample peace and quiet to take in the Christmas cheer.  Barnette, meanwhile, would fire missiles from it if she could.</text>
         <unlock>Play a game with Santa Jura.</unlock>
+        <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/mac-10.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/jura/mac-10.png" name="SMG" generic="weapon" position="held" type="extra" />
+        <hidden-exceptions costume="jura_santa" />
     </collectible>
-    <collectible id="s&amp;w29" status="online" img="opponents/jura/s&amp;w29.png" thumbnail="opponents/jura/s&amp;w29.png">
+    <collectible id="s&amp;w29" status="online" thumbnail="opponents/jura/s&amp;w29.png">
         <title>Smith &amp; Wesson Model 29</title>
         <subtitle>"'Do I feel lucky?'  Well, do ya, perv?"</subtitle>
         <text>Type: Revolver&lt;br&gt;Manufacturer: Smith &amp; Wesson&lt;br&gt;Designed: 1955&lt;br&gt;Cartridge: .44 Magnum&lt;br&gt;Six-shot, Double-action&lt;br&gt;4-inch Barrel&lt;br&gt;&lt;br&gt;Once known as "the most powerful handgun in the world," the Model 29 introduced the .44 Magnum cartridge and was intended for hunters of large, dangerous game---perhaps even the &lt;i&gt;most&lt;/i&gt; dangerous game.  Also known for its "open, adjustable rear"---much like its owner.</text>
         <unlock>Play a game with Jura: White-Hot.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/s&amp;w29.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/jura/s&amp;w29.png" name="revolver" generic="weapon" position="held" type="extra" />
+        <hidden-exceptions costume="jura_white-hot" />
     </collectible>
-    <collectible id="colt_commando_xm177" status="online" img="opponents/jura/coltcommandoxm177.png" thumbnail="opponents/jura/coltcommandoxm177.png">
+    <collectible id="colt_commando_xm177" status="online" thumbnail="opponents/jura/coltcommandoxm177.png">
         <title>Colt Commando XM177</title>
         <subtitle>"This is how real combat's supposed to be!"</subtitle>
         <text>Type: Select-fire&lt;br&gt;Manufacturer: Colt Defense&lt;br&gt;Designed: 1966&lt;br&gt;Cartridge: .223 Remington&lt;br&gt;Unique Flash/Sound Suppressor&lt;br&gt;AKA the Model 610&lt;br&gt;&lt;br&gt;When Barnette expects to encounter some close-quarters combat, she's all too happy to bust out the big stuff.  The Colt Commando XM177 is one among a family of assault rifles based on the M16, in turn adapted from the AR-15.  Contemporary jungle-warfare reliability issues are less of a concern in outer space---and if all else fails, she brought extras.</text>
         <unlock>Play a game with Jura: Luxury Night.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/jura/coltcommandoxm177.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/jura/coltcommandoxm177.png" name="rifle" generic="weapon" position="held" type="extra" />
+        <hidden-exceptions costume="jura_luxury_night" />
     </collectible>
 </collectibles>

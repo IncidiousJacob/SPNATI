@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="aloha_shirt" img="opponents/revy/aloha.png" thumbnail="opponents/revy/aloha.png">
+    <collectible id="aloha_shirt" thumbnail="opponents/revy/aloha.png">
         <title>Aloha Shirt</title>
         <subtitle>Made in Thailand.</subtitle>
         <text>"Come to Roanapur sometime if life's getting too cozy.  But I better see you wearing this thing."</text>
         <unlock>Win a game against Revy.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/revy/aloha.png</picture>
+        <wearable>true</wearable>
+        <clothing img="opponents/revy/aloha.png" name="Aloha Shirt" generic="shirt" position="upper" type="major" />
     </collectible>
 </collectibles>
