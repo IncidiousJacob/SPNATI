@@ -1,77 +1,89 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="aura_camera" status="online" img="opponents/meia/auracamera.png" thumbnail="opponents/meia/auracamera.png">
+    <collectible id="aura_camera" status="online" thumbnail="opponents/meia/auracamera.png">
         <title>Aura Camera</title>
         <subtitle>"Can't you tell just by looking?"</subtitle>
         <text>A futuristic camera made by Parfet Balblair, Chief Engineer on the Nirvana.  Given to their young nurse Paiway as a toy with which she can "Pai-check" racy situations.&lt;br&gt;&lt;br&gt;In addition to regular photos, it can reveal the "emotional wavelengths" given off by the subject.  Their ship's Paksis Pragma fusion core feeds off of these to produce energy.  Perhaps the same is true of all living things.</text>
         <unlock>Win a game against Meia.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/auracamera.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/meia/auracamera.png" name="Aura Camera" generic="" position="held" type="extra" />
     </collectible>
-    <collectible id="suit" status="online" img="opponents/meia/suitbutt.png" thumbnail="opponents/meia/suit.png">
+    <collectible id="suit" status="online" thumbnail="opponents/meia/suit.png">
         <title>Flightsuit</title>
         <subtitle>Comfortable, practical, and very flattering.</subtitle>
         <text>Standard-issue among all Magno's Family pilots---pilfered from Mejare imperials.  As Chief Pilot, Meia wears armor, so her suit lacks the shoulder pads.  Too bad you don't get the bust boost.&lt;br&gt;&lt;br&gt;It feels like a second skin, both tight and flexible---maybe even durable.  There's extra give around the chest and hips.&lt;br&gt;&lt;br&gt;You get the impression Mejare has spent a lot of time on its craftsmanship.</text>
         <unlock>Take Meia to a place she likes.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/suitbutt.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/meia/suit.png" name="flightsuit" generic="bodysuit" position="both" type="major" />
     </collectible>
-    <collectible id="regcard" status="online" img="opponents/meia/pilotID.png" thumbnail="opponents/meia/regcard.png">
+    <collectible id="regcard" status="online" thumbnail="opponents/meia/regcard.png">
         <title>Pilot ID</title>
         <subtitle>For scanning weapons delivery orders through the Regisystem.</subtitle>
         <text>メイア・ギズボーン&lt;br&gt;Meia Gisborn&lt;br&gt;Rank: Chief Pilot&lt;br&gt;Age: 20&lt;br&gt;Blood Type: B&lt;br&gt;Birthday: June 10th&lt;br&gt;Height: 169 cm&lt;br&gt;Weight: 51 kg&lt;br&gt;B-W-H: 78-61-88 cm&lt;br&gt;Voice: Fumiko Orikasa&lt;br&gt;&lt;br&gt;Pilots a special silver Dread fighter, as well as the eagle-like "White Wing" Vandread mech, known for its acceleration and ramming speed.  Her Dread has been modified by their Paksis core, so it no longer fits in the platforms for standard orders.  According to the captain, Meia mastered the Dreads' controls faster than anyone she'd ever seen.</text>
         <unlock>Guide Meia's Preset Table through the Milky Way.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/pilotID.png</picture>
     </collectible>
-    <collectible id="photo" status="online" img="opponents/meia/photo.png" thumbnail="opponents/meia/photofinish.png">
+    <collectible id="photo" status="online" thumbnail="opponents/meia/photofinish.png">
         <title>Photo Finish</title>
         <subtitle>A memory beyond time and space.</subtitle>
         <text>"I'll never be able to come back here.  So...you can take some photos if you'd like."</text>
         <unlock>Bring a camera, and give Meia some exposure when she's most exposed.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/photo.png</picture>
     </collectible>
-    <collectible id="handshake" status="online" img="opponents/meia/handshake.png" thumbnail="opponents/meia/hand.png">
+    <collectible id="handshake" status="online" thumbnail="opponents/meia/hand.png">
         <title>Handshake</title>
         <subtitle>A postgame farewell.</subtitle>
         <text>"I'm glad that I met you."</text>
         <unlock>Make Meia lose as a male.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/handshake.png</picture>
     </collectible>
-    <collectible id="laser_ring" status="online" img="opponents/meia/laser-ring1.png" thumbnail="opponents/meia/laser-ring1.png">
+    <collectible id="laser_ring" status="online" thumbnail="opponents/meia/laser-ring1.png">
         <title>Laser Ring</title>
         <subtitle>The finger-wielded weapon of Mejare.</subtitle>
         <text>"My whole life changed the day I was given one of these.  I hope you'll feel the same way."</text>
         <unlock>Make Meia lose as a female.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/laser-ring1.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/meia/laser-ring1.png" name="laser ring" generic="jewelry" position="hands" type="extra" />
     </collectible>
-    <collectible id="music_box" status="online" img="opponents/meia/musicboxopen.png" thumbnail="opponents/meia/musicbox.png">
+    <collectible id="music_box" status="online" thumbnail="opponents/meia/musicbox.png">
         <title>Music Box</title>
         <subtitle>Somedays It's a Wonderful World.</subtitle>
         <text>A gift Meia received from her parents.  When opened, plays a song from Earth, the planet of their ancestors.&lt;br&gt;Clockwise from top right: Meia's Fama; Meia, age 6; Meia's Oma, now restored.  Behind the photo is a mirror.</text>
         <unlock>Play a game with Cupid Meia.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/musicboxopen.png</picture>
+        <hidden-exceptions costume="meia_cupid" />
     </collectible>
-    <collectible id="soilsample" status="online" img="opponents/meia/mejare.png" thumbnail="opponents/meia/soilsample.png">
+    <collectible id="soilsample" status="online" thumbnail="opponents/meia/soilsample.png">
         <title>Soil Sample A6</title>
         <subtitle>"We may not live to see this planet become a lush green land."</subtitle>
         <text>Mejare remains unterraformed.  As the daughter of two leads on the project, Meia is one of the few who's lived on its scorched surface, helping her Oma grow crops and collect soil samples for her Fama to analyze.  The rest reside in orbit, where she was eventually forced to return.</text>
         <unlock>Play a game with Meia: Soaking Wet.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/mejare.png</picture>
+        <hidden-exceptions costume="meia_soaking_wet" />
     </collectible>
-    <collectible id="coffee" status="online" img="opponents/meia/coffeesip.JPG" thumbnail="opponents/meia/coffee.png">
+    <collectible id="coffee" status="online" thumbnail="opponents/meia/coffee.png">
         <title>Coffee</title>
         <subtitle>There's always more work to do.</subtitle>
         <text>Available from the mess hall's dispenser, and a much more productive choice than liquor, especially when you can't sleep anyway.&lt;br&gt;Contains no sugar, cream, or milk, much like Meia.</text>
         <unlock>Play a game with Meia: Sleep Chemise.</unlock>
         <hidden>true</hidden>
         <hide-details>true</hide-details>
+        <picture>opponents/meia/coffeesip.JPG</picture>
         <wearable>true</wearable>
         <clothing img="opponents/meia/coffee.png" name="coffee" generic="" position="held" type="extra" />
+        <hidden-exceptions costume="meia_sleep_chemise" />
     </collectible>
 </collectibles>

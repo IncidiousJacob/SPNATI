@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1766010841438</lastupdate>
+    <lastupdate>1767730014969</lastupdate>
     <enabled>true</enabled>
     <first>Meia</first>
     <last>Gisborn</last>
@@ -19,12 +19,18 @@
     <layers>5</layers>
     <default-costume-name>Pilot Suit</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/meia_cupid/" img="0-start.png" set="valentines" status="online">Cupid Meia</costume>
-        <costume folder="opponents/reskins/meia_soaking_wet/" img="0-start.png" set="summer" status="online" layers="3">Soaking Wet</costume>
-        <costume folder="opponents/reskins/meia_sleep_chemise/" img="0-start.png" set="sleepover" status="online" layers="3">Sleep Chemise</costume>
+        <costume folder="opponents/reskins/meia_cupid/" img="0-start.png" set="valentines" status="online">
+            <costume-name>Cupid Meia</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/meia_soaking_wet/" img="0-start.png" set="summer" status="online" layers="3">
+            <costume-name>Soaking Wet</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/meia_sleep_chemise/" img="0-start.png" set="sleepover" status="online" layers="3">
+            <costume-name>Sleep Chemise</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>28530</lines>
+    <lines>28542</lines>
     <poses>680</poses>
     <z-index>1</z-index>
 </opponent>
