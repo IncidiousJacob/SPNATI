@@ -1964,24 +1964,6 @@ function poseNameMatches(nameA, nameB) {
     return normalizeImageName(nameA) === normalizeImageName(nameB);
 }
 
-/************************************************************
- * Given a string containing a number or two numbers 
- * separated by a dash, returns an array with the same number 
- * twice, or the first and second number as the case may be
- ************************************************************/
-function Interval (str) {
-    if (str === undefined) {
-        this.min = this.max = null; return;
-    } else if (typeof str === "number") {
-        this.min = this.max = str; return;
-    }
-    var m = str.match(/^\s*(-?\d+)?\s*-\s*(-?\d+)?\s*$/);
-    if (m) {
-        this.min = m[1] ? parseInt(m[1]) : null;
-        this.max = m[2] ? parseInt(m[2]) : null;
-    } else if (str.match(/^\s*(\d+)\s*$/)) {
-        var val = parseInt(str);
-        this.min = this.max = val;
 /**
  * Represents an inclusive interval between two integers.
  * 
