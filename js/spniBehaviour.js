@@ -1982,15 +1982,100 @@ function Interval (str) {
     } else if (str.match(/^\s*(\d+)\s*$/)) {
         var val = parseInt(str);
         this.min = this.max = val;
+/**
+ * Represents an inclusive interval between two integers.
+ * 
+ * When called as `new Interval(string)`, parses an interval as two integers separated by a dash.
+ * (Note that bare negative numbers will be parsed as intervals without a minimum: `new Interval("-3")` is the same as `new Interval(null, 3)`!)
+ * 
+ * When called with one argument as `new Interval(number)`, creates an interval with both min and max set to the number.
+ * 
+ * When called with two arguments `new Interval(min, max)`, creates an interval with the specified min and max.
+ * 
+ * In the latter two cases, `Infinity` will be treated the same as `null`.
+ * 
+ * Examples:
+ * ```
+ * var any = new Interval() // or new Interval(null, null). Represents (-Inf, Inf).
+ * var only_five = new Interval(5); // or new Interval(5, 5). Represents [5, 5].
+ * var at_most_five = new Interval(null, 5); // Represents (-Inf, 5].
+ * var at_least_five = new Interval(5, null); // Represents [5, Inf).
+ * ```
+ * 
+ * @param {number | string | null} [start] 
+ * @param {number | null} [end]
+ */
+function Interval (start, end) {
+    this.min = this.max = NaN;
+
+    if (end === undefined) {
+        if (typeof start === "string") {
+            let m = start.match(/^\s*(-?\d+)?\s*-\s*(-?\d+)?\s*$/);
+            if (m) {
+                this.min = m[1] ? parseInt(m[1]) : null;
+                this.max = m[2] ? parseInt(m[2]) : null;
+            } else if (start.match(/^\s*(\d+)\s*$/)) {
+                this.min = this.max = parseInt(start, 10);
+            }
+        } else if (typeof start === "number") {
+            this.min = this.max = (Number.isFinite(start) ? start : null);
+        } else {
+            this.min = this.max = null;
+        }
     } else {
         this.min = this.max = NaN;
+        this.min = (typeof start === "number" && Number.isFinite(start)) ? start : null;
+        this.max = (typeof end === "number" && Number.isFinite(end)) ? end : null;
     }
 }
 
+/**
+ * The lower bound of this Interval.
+ * If this.min is null, this returns -Infinity.
+ * @returns {number}
+ */
+Interval.prototype.start = function() {
+    return this.min ?? -Infinity;
+};
+
+/**
+ * The upper bound of this Interval.
+ * If this.max is null, this returns Infinity.
+ * @returns {number}
+ */
+Interval.prototype.end = function() {
+    return this.max ?? Infinity;
+};
+
+/**
+ * Test whether this Interval contains the given number.
+ * @param {number} number 
+ * @returns {boolean}
+ */
 Interval.prototype.contains = function (number) {
     return (this.min === null || this.min <= number)
         && (this.max === null || number <= this.max);
+    return (this.start() <= number) && (number <= this.end());
 };
+
+/**
+ * Test whether this Interval intersects another.
+ * @param {Interval} other 
+ * @returns {boolean}
+ */
+}
+
+/**
+ * Returns a new Interval with both ends shifted by the given offset.
+ * @param {number} offset 
+ * @returns {Interval}
+ */
+Interval.prototype.shift = function (offset) {
+    return new Interval(
+        (this.min !== null) ? this.min + offset : null,
+        (this.max !== null) ? this.max + offset : null,
+    );
+}
 
 Interval.prototype.isValid = function() {
     return !isNaN(this.min) && !isNaN(this.max);
