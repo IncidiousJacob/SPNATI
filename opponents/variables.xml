@@ -96,6 +96,7 @@
     <function name="size" description="Expands to small, medium, or large based on the character's chest or penis size." example="small" />
     <function name="slot" description="Expands to 1, 2, 3, or 4 based on the target's position on screen, where 1 is leftmost and 4 is rightmost." example="2" />
     <function name="tag" description="Expands to 'true' or 'false' depending on if the target has this tag." example="true" />
+    <function name="futuretag" description="Expands to 'true' or 'false' depending on if the target has this tag in X stages from their current one. Accepts a single int e.g. '1', or a range e.g. '1-5'." example="true" />
     <function name="place" description="Expands to the character's current place (1-5) based on layers remaining." example="2" />
     <function name="revplace" description="Expands to the character's current place in reverse order (1-5) based on layers remaining, so 1 means in last place." example="2" />
     <function name="lead" description="Expands to the number of remaining layers this character has over 2nd place when in the leader, or a negative number difference from the leader if not in first." 
