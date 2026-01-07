@@ -341,12 +341,43 @@ Player.prototype.removeTag = function(tag) {
     }
 }
 
-Player.prototype.hasTag = function(tag) {
-    if (tag && tag[0] == "!") {
-        return !this.hasTag(tag.substring(1));
+/**
+ * Check whether this player has the given tag.
+ * 
+ * By default (when called with only a tag) this checks against this player's current tag list.
+ * Alternatively, an interval can be passed as a second parameter to check if the tag is present for a specific range of stages.
+ * 
+ * Prepending `"!"` to a tag will invert the check.
+ * 
+ * @param {string} tag 
+ * @param {Interval | number | string} [stages] 
+ * @returns {boolean}
+ */
+Player.prototype.hasTag = function(tag, stages) {
+    tag = (tag ?? "").trim();
+    if (!tag) return false;
+    if (tag[0] == "!") return !this.hasTag(tag.substring(1), stages);
+
+    tag = canonicalizeTag(tag);
+
+    if (stages !== undefined && Array.isArray(this.originalTags)) {
+        if (typeof stages === "number" || typeof stages === "string") {
+            stages = new Interval(stages);
+        }
+
+        if (stages instanceof Interval) {
+            /* TODO: originalTags doesn't contain implied tags */
+            return this.originalTags.some((t) => {
+                if (!t || t.tag !== tag) return false;
+                return new Interval(
+                    (t.from === undefined || t.from === null || t.from === '') ? -Infinity : Number(t.from),
+                    (t.to === undefined || t.to === null || t.to === '') ? Infinity : Number(t.to)
+                ).intersects(stages);
+            });
+        }
     }
 
-    return tag && this.tags && this.tags.indexOf(canonicalizeTag(tag)) >= 0;
+    return this.tags && this.tags.indexOf(tag) >= 0;
 };
 
 Player.prototype.hasTags = function(tagAdv) {
