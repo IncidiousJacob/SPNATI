@@ -2063,6 +2063,8 @@ Interval.prototype.contains = function (number) {
  * @param {Interval} other 
  * @returns {boolean}
  */
+Interval.prototype.intersects = function (other) {
+    return other && (other.start() <= this.end()) && (this.start() <= other.end());
 }
 
 /**
