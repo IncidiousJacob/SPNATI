@@ -2053,8 +2053,6 @@ Interval.prototype.end = function() {
  * @returns {boolean}
  */
 Interval.prototype.contains = function (number) {
-    return (this.min === null || this.min <= number)
-        && (this.max === null || number <= this.max);
     return (this.start() <= number) && (number <= this.end());
 };
 
