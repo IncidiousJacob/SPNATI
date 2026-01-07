@@ -1363,6 +1363,32 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         }
     case 'tag':
         return player.hasTag(split_fn[1]) ? 'true' : 'false';
+    case 'futuretag': {
+        const tagId = split_fn[1];
+        
+        if (!tagId) return 'futuretag';
+
+        const interval = new Interval(args || "1");
+        
+        if (Number.isNaN(interval.min) || Number.isNaN(interval.max)) return 'false';
+        
+        const nowStage = Number(player.stage) || 0; // Current stage of that player
+        
+        let min = (interval.min === null && interval.max === null) ? 1 : (interval.min ?? interval.max);
+        let max = (interval.max ?? interval.min);
+
+        if (min > max) [min, max] = [max, min];
+        
+        // Clamp these so it won't look backwards
+        min = Math.max(0, min);
+        max = Math.max(0, max);
+        
+        for (let i = min; i <= max; i++) {
+            if (hasTagAtStage(player, tagId, nowStage + i)) return 'true';
+        }
+        
+        return 'false';
+    }
     case 'costume':
         if (!player.alt_costume) return 'default';
         return player.alt_costume.id;
@@ -1512,6 +1538,25 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         return expandNicknames(self, player);
     }
 }
+
+function hasTagAtStage(player, tagId, stage) {
+    // Check stage-ranged tags if we can see them
+    if (Array.isArray(player.originalTags)) {
+        return player.originalTags.some(t => {
+            if (!t || t.tag !== tagId) return false;
+
+            // Missing from/to means it is active for all stages
+            const from = (t.from === undefined || t.from === null || t.from === '') ? -Infinity : Number(t.from);
+            const to   = (t.to   === undefined || t.to   === null || t.to   === '') ?  Infinity : Number(t.to);
+
+            return stage >= from && stage <= to;
+        });
+    }
+
+    // No stage-aware info available, fall back to current-stage tag list
+    return typeof player.hasTag === 'function' ? player.hasTag(tagId) : false;
+}
+
 
 function expandCustomDeckVariable(split_fn, tolerance, args) {
     args = (args || "").split("|");
@@ -1927,6 +1972,8 @@ function poseNameMatches(nameA, nameB) {
 function Interval (str) {
     if (str === undefined) {
         this.min = this.max = null; return;
+    } else if (typeof str === "number") {
+        this.min = this.max = str; return;
     }
     var m = str.match(/^\s*(-?\d+)?\s*-\s*(-?\d+)?\s*$/);
     if (m) {
