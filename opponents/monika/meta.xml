@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1766733632048</lastupdate>
+    <lastupdate>1767940152737</lastupdate>
     <enabled>true</enabled>
     <first>Monika</first>
     <last />
@@ -15,13 +15,21 @@
     <layers>8</layers>
     <default-costume-name>School Uniform</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/monika_love_bug/" img="0-writing-tip.png" set="valentines" status="online" label="Monika">Love Bug</costume>
-        <costume folder="opponents/reskins/monika_stirring_mermaid/" img="0-writing-tip.png" set="summer" status="online" label="Monika">Stirring Mermaid</costume>
-        <costume folder="opponents/reskins/monika_summer_dress/" set="summer" status="unlisted" label="Monika" layers="4">Monika (Summer Dress)</costume>
-        <costume folder="opponents/reskins/monika_halloween/" img="0-writing-tip.png" set="halloween" status="online">Fallen Angel</costume>
+        <costume folder="opponents/reskins/monika_love_bug/" img="0-writing-tip.png" set="valentines" status="online" label="Monika">
+            <costume-name>Love Bug</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/monika_stirring_mermaid/" img="0-writing-tip.png" set="summer" status="online" label="Monika">
+            <costume-name>Stirring Mermaid</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/monika_summer_dress/" set="summer" status="unlisted" label="Monika" layers="4">
+            <costume-name>Monika (Summer Dress)</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/monika_halloween/" img="0-writing-tip.png" set="halloween" status="online">
+            <costume-name>Fallen Angel</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>4391</lines>
+    <lines>4430</lines>
     <poses>238</poses>
     <has_ending>false</has_ending>
 </opponent>

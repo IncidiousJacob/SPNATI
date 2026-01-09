@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="poem" img="opponents/monika/poem-1.png" thumbnail="opponents/monika/poem-1.png">
+    <collectible id="poem" thumbnail="opponents/monika/poem-1.png">
         <title>&lt;i&gt;The Depths&lt;/i&gt;</title>
         <subtitle>A poem written in Monika's impeccably neat handwriting.</subtitle>
         <text>
@@ -22,12 +22,14 @@
             &lt;/i&gt;&lt;/div&gt;
         </text>
         <unlock>Win a game against Monika.</unlock>
+        <picture>opponents/monika/poem-1.png</picture>
     </collectible>
-    <collectible id="ddlc_blazer" status="online" img="opponents/monika/blazer.png" thumbnail="opponents/monika/blazer.png">
+    <collectible id="ddlc_blazer" status="online" thumbnail="opponents/monika/blazer.png">
         <title>Blazer (DDLC)</title>
         <subtitle>Restored from the recycle bin</subtitle>
         <text>Part of the uniform of the high school attended by the cast of Doki Doki Literature Club!</text>
         <unlock>Win a game playing with Monika and at least 2 other characters in school uniforms.</unlock>
+        <picture>opponents/monika/blazer.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/monika/blazer.png" name="blazer" generic="jacket" position="upper" type="minor" />
     </collectible>
