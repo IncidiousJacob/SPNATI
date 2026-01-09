@@ -41,6 +41,12 @@
         <response id="81" opponent="purah" opponentId="100" />
         <response id="82" opponent="purah" opponentId="112" />
         <response id="83" opponent="purah" opponentId="113" />
+        <response id="85" opponent="carmine" opponentId="332" />
+        <response id="86" opponent="sofia" opponentId="183" />
+        <response id="95" opponent="roll_caskett" opponentId="226" />
+        <response id="104" opponent="purah" opponentId="115" />
+        <response id="105" opponent="purah" opponentId="116" />
+        <response id="111" opponent="adora" opponentId="71" />
     </responses>
     <labels>
         <label id="1" label="" folder="Rare Hands" sort="0" />
@@ -121,8 +127,34 @@
         <label id="82" label="" folder="Purah" sort="0" />
         <label id="83" label="" folder="Purah" sort="0" />
         <label id="84" label="" folder="Purah" sort="0" />
+        <label id="87" label="" folder="Sofia" sort="0" />
+        <label id="88" label="" folder="Sofia" sort="0" />
+        <label id="86" label="" folder="Sofia" sort="0" />
+        <label id="89" label="" folder="Sofia" sort="0" />
+        <label id="90" label="" folder="Selphy" sort="0" />
+        <label id="91" label="" folder="Selphy" sort="0" />
+        <label id="92" label="" folder="Selphy" sort="0" />
+        <label id="93" label="" folder="Selphy" sort="0" />
+        <label id="94" label="" folder="Selphy" sort="0" />
+        <label id="95" label="" folder="Roll" sort="0" />
+        <label id="96" label="" folder="Roll" sort="0" />
+        <label id="97" label="" folder="Roll" sort="0" />
+        <label id="98" label="" folder="Roll" sort="0" />
+        <label id="99" label="" folder="Roll" sort="0" />
+        <label id="100" label="" folder="Roll" sort="0" />
+        <label id="101" label="" folder="Carmine" sort="0" />
+        <label id="102" label="" folder="Carmine" sort="0" />
+        <label id="103" label="" folder="Carmine" sort="0" />
+        <label id="105" label="" folder="Purah" sort="0" />
+        <label id="104" label="" folder="Purah" sort="0" />
+        <label id="106" label="" folder="Purah" sort="0" />
+        <label id="107" label="" folder="Zelda (EoW)" sort="0" />
+        <label id="108" label="" folder="Zelda (EoW)" sort="0" />
+        <label id="109" label="" folder="Zelda (EoW)" sort="0" />
+        <label id="110" label="" folder="Zelda (EoW)" sort="0" />
+        <label id="111" label="" folder="Adora" sort="0" />
     </labels>
-    <nextId>84</nextId>
+    <nextId>111</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="BanetteRef" />
@@ -135,6 +167,9 @@
         <marker scope="Public" name="Dolce_Caitlin_Pajamas1" />
         <marker scope="Public" name="Dolce_Carmine_Intro1" />
         <marker scope="Public" name="Dolce_Carmine_Intro2" />
+        <marker scope="Public" name="Dolce_Carmine_Intro3A" />
+        <marker scope="Public" name="Dolce_Carmine_Intro3B" />
+        <marker scope="Public" name="Dolce_Carmine_Intro3C" />
         <marker scope="Public" name="Dolce_Doki_Sense" />
         <marker scope="Public" name="Dolce_Doki_Sense_Plural" />
         <marker scope="Public" name="Dolce_Doki_Sense_Solo" />
@@ -143,34 +178,55 @@
         <marker scope="Public" name="Dolce_Nadeshiko_Haunted1" />
         <marker scope="Public" name="Dolce_Nadeshiko_Haunted2" />
         <marker scope="Public" name="Dolce_Reimu_Spouse1" />
+        <marker scope="Public" name="Dolce_s0_1R" />
         <marker scope="Public" name="Dolce_Sofia_Intro" />
         <marker scope="Public" name="Dolce_Sofia_TownDiss" />
         <marker scope="Public" name="Dolce_Sofia_TownDiss1" />
         <marker scope="Public" name="Dolce_Sofia_TownDiss2" />
+        <marker scope="Public" name="Dolce_Sofia_TownDiss3" />
         <marker scope="Public" name="Dolce_Tao_SpiritsA" />
         <marker scope="Public" name="Dolce_Tao_SpiritsB" />
         <marker scope="Public" name="Dolce_Unhygienic" />
         <marker scope="Public" name="Dolce_Vanessa_Clothes" />
+        <marker scope="Public" name="DolceAdoraTransform" />
         <marker scope="Public" name="DolceHaunterReact" />
         <marker scope="Public" name="DolceRockGift" />
         <marker scope="Public" name="DolceRockMundane" />
         <marker scope="Public" name="expendable_clothes" />
         <marker scope="Public" name="Friends" />
         <marker scope="Public" name="Gotcha" />
+        <marker scope="Public" name="natsuki_dolce01R" />
+        <marker scope="Public" name="natsuki_dolce11R" />
+        <marker scope="Public" name="natsuki_dolce21R" />
+        <marker scope="Public" name="natsuki_dolce31R" />
         <marker scope="Public" name="Pet_Trade" />
         <marker scope="Public" name="PollyAnotherA" />
         <marker scope="Public" name="PollyAnotherB" />
         <marker scope="Public" name="purah_dolce01R" />
         <marker scope="Public" name="purah_dolce02R" />
+        <marker scope="Public" name="purah_dolce03R" />
         <marker scope="Public" name="purah_dolce11R" />
+        <marker scope="Public" name="purah_dolce12R" />
         <marker scope="Public" name="PurahAlchemyA" />
         <marker scope="Public" name="PurahAlchemyAR" />
+        <marker scope="Public" name="RollEmpireA" />
+        <marker scope="Public" name="RollEmpireB" />
+        <marker scope="Public" name="RollFamilyA" />
+        <marker scope="Public" name="RollFamilyB" />
         <marker scope="Public" name="RollZeppelinsA" />
+        <marker scope="Public" name="RollZeppelinsB" />
         <marker scope="Public" name="RoseHandmadeA" />
+        <marker scope="Public" name="SelphyArthurA" />
+        <marker scope="Public" name="SelphyArthurB" />
+        <marker scope="Public" name="SelphyDapperCapperA" />
         <marker scope="Public" name="SelphyRecognizeA" />
+        <marker scope="Public" name="SelphyRecognizeB" />
         <marker scope="Public" name="SimonGimmickA" />
+        <marker scope="Public" name="Sofia_Garbage1" />
         <marker scope="Public" name="Sofia_Recognize" />
         <marker scope="Public" name="Sofia_Recognize2" />
+        <marker scope="Public" name="Sofia_ReverseLogic" />
+        <marker scope="Public" name="Sofia_ReverseLogic1" />
         <marker scope="Public" name="SpikeThatMonkey" />
         <marker scope="Public" name="Sucrose_D_01R" />
         <marker scope="Public" name="sucrose_D_11R" />
@@ -186,6 +242,10 @@
         <marker scope="Public" name="YuzukiPrettyResponse" />
         <marker scope="Public" name="YuzukiPrettySetup" />
         <marker scope="Public" name="ZekeDateA" />
+        <marker scope="Public" name="ZeldaPlayer1" />
+        <marker scope="Public" name="ZeldaQuest1" />
+        <marker scope="Public" name="ZeldaQuest2" />
+        <marker scope="Public" name="ZeldaWand1" />
         <marker scope="Public" name="ZoeExoticA" />
     </markers>
 </metadata>
