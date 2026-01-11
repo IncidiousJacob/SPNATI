@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1766527861477</lastupdate>
+    <lastupdate>1768095699067</lastupdate>
     <first>Edelgard</first>
     <last>von Hresvelg</last>
     <label>Edelgard</label>
@@ -14,12 +14,16 @@
     <layers>8</layers>
     <default-costume-name>Academy Uniform</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/edelgard_war_outfit/" img="0-Neutral.png" status="online">War Outfit</costume>
-        <costume folder="opponents/reskins/edelgard_snowfall_future/" img="0-Neutral.png" set="xmas" status="online">Snowfall Future</costume>
+        <costume folder="opponents/reskins/edelgard_war_outfit/" img="0-Neutral.png" status="online">
+            <costume-name>War Outfit</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/edelgard_snowfall_future/" img="0-Neutral.png" set="xmas" status="online">
+            <costume-name>Snowfall Future</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <short-game-enabled>untested</short-game-enabled>
-    <lines>1443</lines>
+    <lines>1454</lines>
     <poses>288</poses>
     <z-index>-1</z-index>
 </opponent>
