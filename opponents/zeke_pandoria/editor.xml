@@ -217,6 +217,10 @@
         <response id="1226" opponent="meia" opponentId="2467" />
         <response id="1293" opponent="simon" opponentId="13" />
         <response id="0" opponent="simon" opponentId="439" />
+        <response id="1336" opponent="dolce" opponentId="47" />
+        <response id="1341" opponent="vine_staff" opponentId="141" />
+        <response id="1342" opponent="vine_staff" opponentId="143" />
+        <response id="1343" opponent="vine_staff" opponentId="90" />
     </responses>
     <notes>
         <note id="10">If you want to ask Pandoria / Pandy questions, you could draw attention to the fact that some of her body parts are lightbulbs, such as a lightbulb in her head.. and her tail. Her specific race is known as a "Blade".</note>
@@ -261,6 +265,8 @@
         <note id="963">you don't need to write a unique response to this variation. if you do, you can make use of SayingText.</note>
         <note id="973">the second version of this line sets the marker to equal the value "innuendo" in case you wanted to respond to it specifically using the sayingMarker feature of comparing the value it is setting. ask me if you need advice on what this means exactly</note>
         <note id="995">I imagine darkness would be like "do you know anybody like that? please tell me you do" because of her 'preferences' for a husband lmao</note>
+        <note id="1337">this case locks in the intercouse forfeit so that it is continued for the rest of their forfeit</note>
+        <note id="1338">he identifies her hair things as cat ears</note>
     </notes>
     <labels>
         <label id="5" label="Pandoria Reminder" folder="" sort="0" />
@@ -430,7 +436,7 @@
         <label id="169" label="" folder="Filtered" sort="8" />
         <label id="170" label="" folder="Filtered" sort="7" />
         <label id="171" label="" folder="Filtered" sort="6" />
-        <label id="172" label="Start Heavy Stage (Kissing Insertion)" color="2" folder="Sex&gt;Kissing" sort="5" />
+        <label id="172" label="Start Heavy Stage (Callout)" color="13" folder="Sex" sort="5" />
         <label id="173" label="" folder="Filtered" sort="4" />
         <label id="174" label="(self chest visible)" folder="" sort="0" />
         <label id="175" label="" folder="Backgrounds" sort="4" />
@@ -1227,7 +1233,7 @@
         <label id="975" label="" folder="Responses" sort="0" />
         <label id="976" label="" folder="Responses" sort="82" />
         <label id="977" label="" folder="Responses" sort="83" />
-        <label id="978" label="" color="1" folder="Targets&gt;Schezo" sort="4" />
+        <label id="978" label="" color="15" folder="Targets&gt;Schezo" sort="4" />
         <label id="979" label="" folder="Targets&gt;Adora" sort="19" />
         <label id="980" label="" folder="Targets&gt;Adora" sort="20" />
         <label id="981" label="" folder="Responses" sort="118" />
@@ -1585,23 +1591,40 @@
         <label id="1332" label="" folder="Targets&gt;Simon" sort="0" />
         <label id="1333" label="" folder="Targets&gt;Simon" sort="0" />
         <label id="1334" label="" color="2" folder="Targets&gt;Simon" sort="0" />
+        <label id="1335" label="" folder="Hidden Logic" sort="0" />
+        <label id="1336" label="" folder="Targets" sort="0" />
+        <label id="1337" label="Start Heavy Stage (Kissing)" color="2" folder="Sex&gt;Kissing" sort="0" />
+        <label id="1338" label="" folder="Targets" sort="0" />
+        <label id="1339" label="" folder="Hidden Logic" sort="0" />
+        <label id="1340" label="" folder="Xmas" sort="0" />
+        <label id="1341" label="" folder="Targets" sort="0" />
+        <label id="1342" label="" folder="Targets" sort="0" />
+        <label id="1343" label="" folder="Targets" sort="0" />
+        <label id="1344" label="1 branch A" folder="Responses" sort="0" />
+        <label id="1345" label="1 branch B" folder="Responses" sort="0" />
+        <label id="1346" label="1 branch C" folder="Responses" sort="0" />
+        <label id="1347" label="" color="15" folder="Targets&gt;Schezo" sort="0" />
+        <label id="1348" label="" color="15" folder="Targets&gt;Schezo" sort="0" />
+        <label id="1349" label="" color="15" folder="Targets&gt;Schezo" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>penis==h</posePreviewMarker>
         <posePreviewMarker>EyeOfShiningJustice=0</posePreviewMarker>
     </posePreviewMarkers>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>1334</nextId>
+    <nextId>1349</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AellaAdventures" />
         <marker scope="Public" name="allowsex">If set to 1, Zeke and Pandoria *can* (but are not guaranteed to) have sex for their forfeit.</marker>
         <marker scope="Public" name="allowsex_lockin" />
+        <marker scope="Public" name="ameri_strip0a" />
         <marker scope="Public" name="aqua_zp_strip3b" />
         <marker scope="Public" name="arle_adaptquestion" />
         <marker scope="Public" name="arle_carbuncle" />
         <marker scope="Public" name="arle_carbuncle_pokemon" />
         <marker scope="Public" name="arle_round0" />
+        <marker scope="Public" name="arueshalae_hereticDemon" />
         <marker scope="Public" name="badhand_eye_of_shining_justice" />
         <marker scope="Public" name="beatrix_crystalShard1" />
         <marker scope="Public" name="beatrix_crystalShard1b" />
@@ -1616,6 +1639,7 @@
         <marker scope="Public" name="conked_out" />
         <marker scope="Public" name="darkness_finished" />
         <marker scope="Public" name="darkness_rejectedStrip" />
+        <marker scope="Public" name="dolce_dateAResp" />
         <marker scope="Public" name="dontUseRegularForfeitStateOperation" />
         <marker scope="Public" name="dunban_arm_reveal" />
         <marker scope="Public" name="dunban_DualForfeit_END" />
@@ -1936,6 +1960,9 @@
         <marker scope="Public" name="tiki_bar_we_are_broke" />
         <marker scope="Public" name="tojiko_intro" />
         <marker scope="Public" name="toph_bracelet_pandyresp" />
+        <marker scope="Public" name="vine_GearSummonNegResp" />
+        <marker scope="Public" name="vinestaff_GearSummonResp" />
+        <marker scope="Public" name="vinestaff_NamePrompt" />
         <marker scope="Public" name="wheres_turters" />
         <marker scope="Public" name="wheres_turters2" />
         <marker scope="Public" name="yae_default_1c" />
@@ -2239,6 +2266,7 @@
         <marker scope="Public" name="zekepandy_zoe_moragBrighidtResp" />
         <marker scope="Public" name="zekepandy_zoe_moragPresentResp" />
         <marker scope="Public" name="zekepandy_zoe_moragResp" />
+        <marker scope="Public" name="zekeStage" />
         <marker scope="Public" name="zk_sanako_self1a" />
         <marker scope="Public" name="zk_sanako_self1b" />
         <marker scope="Public" name="zk_sanako_self1c" />
@@ -2521,7 +2549,11 @@
         <marker scope="Public" name="zp_sanako_self2a_default" />
         <marker scope="Public" name="zp_sanako_self2b_default" />
         <marker scope="Public" name="zp_sanako_self2c_default" />
+        <marker scope="Public" name="zp_schezo_coreCystal_1" />
         <marker scope="Public" name="zp_schezo_powersExplained1" />
+        <marker scope="Public" name="zp_schezo_powersExplained2" />
+        <marker scope="Public" name="zp_schezo_powersExplained3" />
+        <marker scope="Public" name="zp_schezo_powersExplained3_sus" />
         <marker scope="Public" name="zp_sofia_intro1" />
         <marker scope="Public" name="zp_sofia_intro2" />
         <marker scope="Public" name="zp_sofia_intro3" />

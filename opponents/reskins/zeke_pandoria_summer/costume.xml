@@ -1290,8 +1290,8 @@
             <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_calm" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-43" y="-139" rotation="-403" />
         </pose>
         <pose id="8-zz_hotspring">
-            <sprite id="zeke_hotspring" z="3" src="reskins/zeke_pandoria_summer/extras/zeke_hotspring.png" x="-68" y="190" scalex="0.5" scaley="0.5" />
-            <sprite id="pandoria_hotspring" z="4" src="reskins/zeke_pandoria_summer/extras/pandoria_hotspring.png" x="59" y="260" scalex="0.5" scaley="0.5" />
+            <sprite id="zeke_hotspring" z="3" src="reskins/zeke_pandoria_summer/extras/zeke_hotspring.png" x="-68" y="190" scalex="0.7" scaley="0.7" />
+            <sprite id="pandoria_hotspring" z="4" src="reskins/zeke_pandoria_summer/extras/pandoria_hotspring.png" x="77" y="284" scalex="0.7" scaley="0.7" />
         </pose>
         <pose id="8-zz_unleash_eosj">
             <sprite id="zeke_unleashing_power" z="3" src="reskins/zeke_pandoria_summer/6-zeke_unleashing_power.png" x="-153" y="-15" scalex="0.98" />
@@ -1568,6 +1568,206 @@
             <sprite id="z_insertionD_11" z="5" src="reskins/zeke_pandoria_summer/insertion/8-z_insertionD_4.png" x="0" y="0" />
             <sprite id="pandoria_tail_laughing" z="2" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_tail_laughing.png" x="11" y="617" pivotx="41%" pivoty="87%" rotation="-131" />
             <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_laughing" z="1" src="reskins/zeke_pandoria_summer/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="94" y="-109" scalex="0.86" scaley="0.9" rotation="27" />
+        </pose>
+        <pose id="xyz_sword_demonstrate">
+            <sprite id="zeke_z_swordDemonstrate" z="3" src="reskins/zeke_pandoria_summer/#-zeke_smug.png" x="-53" y="-15" />
+            <sprite id="zeke_sword" delay="0.2" z="2" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" cliptop="1400" />
+            <sprite id="zeke_sword_summonfx" delay="0.2" z="6" src="zeke_pandoria/extras/zeke_sword_summonfx.png" x="-224" y="-137" scalex="1" alpha="0" rotation="211" />
+            <sprite id="zeke_grab_fingers" delay="1.75" z="6" src="zeke_pandoria/extras/zeke_grab_fingers.png" x="-223" y="110" rotation="15" />
+            <sprite id="pandoria_dynamic" src="reskins/zeke_pandoria_summer/pandoria/#-pandoria_smug.png" x="237" y="-30" scalex="0.95" scaley="0.95" />
+            <sprite id="zeke_z_swordBehindBack_fistBare" delay="1.75" z="1" src="zeke_pandoria/extras/zeke_z_swordBehindBack_fistBare.png" x="-240" y="111" />
+            <sprite id="pandoria_tail_annoyed" z="-1" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" scalex="1" pivotx="70%" pivoty="19%" rotation="-5" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_annoyed" z="3" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-3" y="-176" />
+            <sprite id="eosj_flame" marker="EyeOfShiningJustice==1" z="11" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" pivotx="34%" pivoty="72%" />
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/#-zeke_smug.png" x="-53" />
+                <keyframe time="0.15" src="reskins/zeke_pandoria_summer/#-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.25" src="reskins/zeke_pandoria_summer/#-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.75" src="reskins/zeke_pandoria_summer/#-zeke_z_swordBehindBack.png" x="-116" />
+            </directive>
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="linear">
+                <keyframe time="0" y="-15" />
+                <keyframe time="0.15" y="-15" />
+                <keyframe time="1.25" y="-15" />
+                <keyframe time="1.75" y="-15" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" />
+                <keyframe time="1.42" rotation="212" />
+                <keyframe time="1.55" x="-207" y="-668" rotation="90" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" cliptop="1400" />
+                <keyframe time="1" cliptop="0" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-224" y="-137" alpha="0" rotation="211" />
+                <keyframe time="0.1" alpha="0" />
+                <keyframe time="0.25" alpha="50" />
+                <keyframe time="0.3" alpha="100" />
+                <keyframe time="0.9800001" x="-1003" y="1073" alpha="100" />
+                <keyframe time="1.05" x="-1052" y="1140" alpha="0" rotation="211" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" loop="true" ease="linear" interpolation="none" clamp="mirror">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.1" scalex="-1" />
+                <keyframe time="0.2" scalex="-1" />
+            </directive>
+            <directive type="animation" id="pandoria_dynamic" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/pandoria/#-pandoria_smug.png" x="237" y="-30" />
+                <keyframe time="0.2" src="reskins/zeke_pandoria_summer/pandoria/#-pandoria_dynamic.png" x="352" y="-30" />
+                <keyframe time="1.85" src="reskins/zeke_pandoria_summer/pandoria/#-pandoria_calm.png" x="338" y="-30" />
+            </directive>
+            <directive type="animation" id="pandoria_tail_annoyed" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" />
+                <keyframe time="0.2" x="237" />
+                <keyframe time="1.85" x="264" />
+            </directive>
+            <directive type="animation" id="eosj_flame" marker="EyeOfShiningJustice==1" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" />
+                <keyframe time="0.15" x="2" y="43" />
+                <keyframe time="1.75" x="4" y="39" />
+            </directive>
+        </pose>
+        <pose id="6-xyz_sword_demonstrate">
+            <sprite id="zeke_z_swordDemonstrate" z="3" src="reskins/zeke_pandoria_summer/6-zeke_smug.png" x="-53" y="-15" />
+            <sprite id="zeke_sword" delay="0.2" z="2" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" cliptop="1400" />
+            <sprite id="zeke_sword_summonfx" delay="0.2" z="6" src="zeke_pandoria/extras/zeke_sword_summonfx.png" x="-224" y="-137" scalex="1" alpha="0" rotation="211" />
+            <sprite id="zeke_grab_fingers" delay="1.75" z="6" src="zeke_pandoria/extras/zeke_grab_fingers.png" x="-223" y="110" rotation="15" />
+            <sprite id="pandoria_dynamic" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_smug.png" x="237" y="-30" scalex="0.95" scaley="0.95" />
+            <sprite id="zeke_z_swordBehindBack_fistGloved" marker="zekeStage==0" delay="1.75" z="1" src="zeke_pandoria/extras/zeke_z_swordBehindBack_fistGloved.png" x="-240" y="111" />
+            <sprite id="zeke_z_swordBehindBack_fistBare" marker="zekeStage&gt;0" delay="1.75" z="1" src="zeke_pandoria/extras/zeke_z_swordBehindBack_fistBare.png" x="-240" y="111" />
+            <sprite id="pandoria_tail_annoyed" z="-1" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" scalex="1" pivotx="70%" pivoty="19%" rotation="-5" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_annoyed" z="3" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-3" y="-176" />
+            <sprite id="zeke_penis_flaccid" marker="penis==s" z="9" src="zeke_pandoria/extras/zeke_penis_flaccid.png" x="-67" y="555" pivoty="40%" />
+            <sprite id="zeke_penis_erect" marker="penis==h" z="9" src="zeke_pandoria/extras/zeke_penis_erect.png" x="-67" y="555" pivoty="40%" />
+            <sprite id="eosj_flame" marker="EyeOfShiningJustice==1" z="11" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" pivotx="34%" pivoty="72%" />
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/6-zeke_smug.png" x="-53" />
+                <keyframe time="0.15" src="reskins/zeke_pandoria_summer/6-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.25" src="reskins/zeke_pandoria_summer/6-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.75" src="reskins/zeke_pandoria_summer/6-zeke_z_swordBehindBack.png" x="-116" />
+            </directive>
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="linear">
+                <keyframe time="0" y="-15" />
+                <keyframe time="0.15" y="-15" />
+                <keyframe time="1.25" y="-15" />
+                <keyframe time="1.75" y="-15" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" />
+                <keyframe time="1.42" rotation="212" />
+                <keyframe time="1.55" x="-207" y="-668" rotation="90" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" cliptop="1400" />
+                <keyframe time="1" cliptop="0" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-224" y="-137" alpha="0" rotation="211" />
+                <keyframe time="0.1" alpha="0" />
+                <keyframe time="0.25" alpha="50" />
+                <keyframe time="0.3" alpha="100" />
+                <keyframe time="0.9800001" x="-1003" y="1073" alpha="100" />
+                <keyframe time="1.05" x="-1052" y="1140" alpha="0" rotation="211" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" loop="true" ease="linear" interpolation="none" clamp="mirror">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.1" scalex="-1" />
+                <keyframe time="0.2" scalex="-1" />
+            </directive>
+            <directive type="animation" id="pandoria_dynamic" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_smug.png" x="237" y="-30" />
+                <keyframe time="0.2" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_dynamic.png" x="352" y="-30" />
+                <keyframe time="1.85" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_calm.png" x="338" y="-30" />
+            </directive>
+            <directive type="animation" id="pandoria_tail_annoyed" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" />
+                <keyframe time="0.2" x="237" />
+                <keyframe time="1.85" x="264" />
+            </directive>
+            <directive type="animation" id="zeke_penis_flaccid" marker="penis==s" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_penis_flaccid.png" x="-67" y="555" />
+                <keyframe time="0.15" x="-44" y="553" />
+                <keyframe time="1.75" x="-75" y="551" />
+            </directive>
+            <directive type="animation" id="zeke_penis_erect" marker="penis==h" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_penis_erect.png" x="-67" y="555" />
+                <keyframe time="0.15" x="-44" y="553" />
+                <keyframe time="1.75" x="-75" y="551" />
+            </directive>
+            <directive type="animation" id="eosj_flame" marker="EyeOfShiningJustice==1" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" />
+                <keyframe time="0.15" x="2" y="43" />
+                <keyframe time="1.75" x="4" y="39" />
+            </directive>
+        </pose>
+        <pose id="8-xyz_sword_demonstrate">
+            <sprite id="zeke_z_swordDemonstrate" z="3" src="reskins/zeke_pandoria_summer/6-zeke_smug.png" x="-53" y="-15" />
+            <sprite id="zeke_sword" delay="0.2" z="2" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" cliptop="1400" />
+            <sprite id="zeke_sword_summonfx" delay="0.2" z="6" src="zeke_pandoria/extras/zeke_sword_summonfx.png" x="-224" y="-137" scalex="1" alpha="0" rotation="211" />
+            <sprite id="zeke_grab_fingers" delay="1.75" z="6" src="zeke_pandoria/extras/zeke_grab_fingers.png" x="-223" y="110" rotation="15" />
+            <sprite id="pandoria_dynamic" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_smug.png" x="237" y="-30" scalex="0.95" scaley="0.95" />
+            <sprite id="zeke_z_swordBehindBack_fistGloved" marker="zekeStage==0" delay="1.75" z="1" src="zeke_pandoria/extras/zeke_z_swordBehindBack_fistGloved.png" x="-240" y="111" />
+            <sprite id="zeke_z_swordBehindBack_fistBare" marker="zekeStage&gt;0" delay="1.75" z="1" src="zeke_pandoria/extras/zeke_z_swordBehindBack_fistBare.png" x="-240" y="111" />
+            <sprite id="pandoria_tail_annoyed" z="-1" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" scalex="1" pivotx="70%" pivoty="19%" rotation="-5" />
+            <sprite id="pandoria_lb_tail_end" parent="pandoria_tail_annoyed" z="3" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_lb_tail_end.png" x="-3" y="-176" />
+            <sprite id="zeke_penis_flaccid" z="9" src="zeke_pandoria/extras/zeke_penis_flaccid.png" x="-67" y="555" pivoty="40%" />
+            <sprite id="eosj_flame" marker="EyeOfShiningJustice==1" z="11" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" pivotx="34%" pivoty="72%" />
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/6-zeke_smug.png" x="-53" />
+                <keyframe time="0.15" src="reskins/zeke_pandoria_summer/6-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.25" src="reskins/zeke_pandoria_summer/6-zeke_z_swordDemonstrate.png" x="-116" />
+                <keyframe time="1.75" src="reskins/zeke_pandoria_summer/6-zeke_z_swordBehindBack.png" x="-116" />
+            </directive>
+            <directive type="animation" id="zeke_z_swordDemonstrate" ease="linear" interpolation="linear">
+                <keyframe time="0" y="-15" />
+                <keyframe time="0.15" y="-15" />
+                <keyframe time="1.25" y="-15" />
+                <keyframe time="1.75" y="-15" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_sword.png" x="-589" y="-337" rotation="212" />
+                <keyframe time="1.42" rotation="212" />
+                <keyframe time="1.55" x="-207" y="-668" rotation="90" />
+            </directive>
+            <directive type="animation" id="zeke_sword" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" cliptop="1400" />
+                <keyframe time="1" cliptop="0" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-224" y="-137" alpha="0" rotation="211" />
+                <keyframe time="0.1" alpha="0" />
+                <keyframe time="0.25" alpha="50" />
+                <keyframe time="0.3" alpha="100" />
+                <keyframe time="0.9800001" x="-1003" y="1073" alpha="100" />
+                <keyframe time="1.05" x="-1052" y="1140" alpha="0" rotation="211" />
+            </directive>
+            <directive type="animation" id="zeke_sword_summonfx" delay="0.2" loop="true" ease="linear" interpolation="none" clamp="mirror">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="0.1" scalex="-1" />
+                <keyframe time="0.2" scalex="-1" />
+            </directive>
+            <directive type="animation" id="pandoria_dynamic" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_smug.png" x="237" y="-30" />
+                <keyframe time="0.2" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_dynamic.png" x="352" y="-30" />
+                <keyframe time="1.85" src="reskins/zeke_pandoria_summer/pandoria/6-pandoria_calm.png" x="338" y="-30" />
+            </directive>
+            <directive type="animation" id="pandoria_tail_annoyed" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/pandoria/pandoria_tail/pandoria_tail_annoyed.png" x="162" y="650" />
+                <keyframe time="0.2" x="237" />
+                <keyframe time="1.85" x="264" />
+            </directive>
+            <directive type="animation" id="zeke_penis_flaccid" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/zeke_penis_flaccid.png" x="-67" y="555" />
+                <keyframe time="0.15" x="-44" y="553" />
+                <keyframe time="1.75" x="-75" y="551" />
+            </directive>
+            <directive type="animation" id="eosj_flame" marker="EyeOfShiningJustice==1" ease="linear" interpolation="none">
+                <keyframe time="0" src="zeke_pandoria/extras/eosj_flame.png" x="-39" y="50" />
+                <keyframe time="0.15" x="2" y="43" />
+                <keyframe time="1.75" x="4" y="39" />
+            </directive>
         </pose>
     </poses>
 
