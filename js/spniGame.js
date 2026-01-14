@@ -96,7 +96,7 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
  * Fourth element: whether the cards are revealed (used in rollback).
  */
-const eGamePhase = Object.freeze({
+const eGamePhase = {
     GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
     DEAL:      [ "Deal", startDealPhase, true, false ],
     AITURN:    [ "Next", continueDealPhase, true, false ],
@@ -109,7 +109,7 @@ const eGamePhase = Object.freeze({
     GAME_OVER: [ "Ending?", function() { actualMainButtonState = false; doEpilogueModal(); }, undefined, false ],
     END_FORFEIT: [ undefined ], // Specially handled; not a real phase. nextGamePhase will never be set to this.
                                 // tickForfeitTimers() will always return true in this situation.
-});
+};
 
 let gamePhase = null;
 let nextGamePhase = null;
