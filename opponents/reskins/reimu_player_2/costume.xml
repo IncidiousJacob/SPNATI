@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>reimu_player_2</id>
+    <tags>
+        <tag>alternative_skin</tag>
+    </tags>
+    <othernotes>She's blue</othernotes>
+    <layers>7</layers>
+    <folder>opponents/reskins/reimu_player_2/</folder>
+    <wardrobe>
+        <clothing name="bloomers" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="sarashi" generic="wrappings" position="upper" type="important" />
+        <clothing name="sleeves" generic="sleeves" position="arms" type="minor" plural="true" />
+        <clothing name="skirt" generic="skirt" position="lower" type="major" />
+        <clothing name="shirt" generic="shirt" position="upper" type="major" />
+        <clothing name="socks" generic="socks" position="feet" type="minor" plural="true" />
+        <clothing name="shoes" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="zz_blank" />
+        <pose id="zz_fn_return">
+            <sprite id="blunt" src="reskins/reimu_player_2/#-blunt.png" x="0" y="-50" alpha="0" />
+            <directive type="animation" id="blunt" ease="ease-out" interpolation="linear">
+                <keyframe time="0" x="0" y="-50" alpha="0" />
+                <keyframe time="1.5" x="0" y="-50" alpha="0" />
+                <keyframe time="2" x="0" y="0" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="zz_fn_start">
+            <sprite id="confident" src="reskins/reimu_player_2/#-extermination.png" x="0" y="0" alpha="100" />
+            <directive type="animation" id="confident" ease="ease-in" interpolation="linear">
+                <keyframe time="0" x="0" y="0" alpha="100" />
+                <keyframe time="1.5" x="0" y="0" alpha="100" />
+                <keyframe time="2" y="-50" alpha="0" />
+            </directive>
+        </pose>
+    </poses>
+
+</costume>
