@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1749947350350</lastupdate>
+    <lastupdate>1768434182423</lastupdate>
     <first>Reimu</first>
     <last>Hakurei</last>
     <label>Reimu</label>
@@ -9,9 +9,17 @@
     <from>Touhou Project</from>
     <writer>Mister Solitaire</writer>
     <artist>Mister Solitaire</artist>
+    <birthday month="8" day="15" />
     <description>Reimu Hakurei is the shrine maiden of Hakurei Shrine. She resolves incidents that threaten the peace of Gensokyo, land of illusions, and protects the barrier that separates it from the outside world. Mostly, though, she just likes lazing about and drinking sake.</description>
     <layers>7</layers>
+    <default-costume-name>Shrine Maiden of Paradise</default-costume-name>
+    <alternates>
+        <costume folder="opponents/reskins/reimu_player_2/" img="0-select.png" status="online">
+            <costume-name>Player 2</costume-name>
+            <costume-description>Reimu Hakurei, the shrine maiden of Hakurei Shrine in Gensokyo. This is her color palette when she’s player 2 in a multiplayer game. There’s no difference besides the outfit, however. She’s still the same lazy sake-lover and incident resolver.</costume-description>
+        </costume>
+    </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2245</lines>
-    <poses>256</poses>
+    <lines>2286</lines>
+    <poses>269</poses>
 </opponent>
