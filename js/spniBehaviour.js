@@ -2847,12 +2847,21 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     if (!this.chosenState) return;
     if (this.stateCommitted) return;
 
+    this.currentState = this.chosenState;
+
     /* Use rawDialogue so that variables don't affect repeat count.  */
-    this.repeatLog[this.chosenState.hash] = this.getRepeatCount() + 1;
+    this.repeatLog[this.currentState.hash] = this.getRepeatCount() + 1;
+    this.currentState.expandDialogue(this, this.currentTarget);
 
-    this.chosenState.expandDialogue(this, this.currentTarget);
-
-    this.applyState(this.chosenState, this.currentTarget);
+    this.applyState(this.currentState, this.currentTarget);
+    /* Now that we have committed a new state, we can sync poseStage
+     * without fear that a screen refresh will try to draw a pose
+     * using a stage that doesn't match the stage that was current
+     * when the previos state was chosen.  Don't update poseStage if
+     * it's greater than stage, as is the case when skipping
+     * stages. stripAIPlayer will take care of that after the
+     * transcript entry has been recorded. */
+    if (this.poseStage < this.stage) this.poseStage = this.stage;
     
     this.stateCommitted = true;
 }

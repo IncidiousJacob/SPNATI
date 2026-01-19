@@ -667,11 +667,18 @@ function stripAIPlayer (player) {
     players[player].ticksInStage = 0;
     players[player].stageChangeUpdate();
 
+    let skipToStage = players[player].findNextRealStage();
+    if (skipToStage != false) {
+        /* Set poseStage to the next stage before calling
+         * updateAllBehaviours() so it will be recorded in the
+         * transcript and therefore the pose displayed correctly when
+         * rolling back. */
+        players[player].poseStage = skipToStage;
+    }
     /* update behaviour */
     dialogueTrigger.push(OPPONENT_STRIPPED);
     updateAllBehaviours(player, PLAYER_STRIPPED, [dialogueTrigger]);
 
-    let skipToStage = players[player].findNextRealStage();
     if (skipToStage != false) {
         players[player].stage = skipToStage;
         players[player].stageChangeUpdate();

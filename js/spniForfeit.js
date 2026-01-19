@@ -118,6 +118,8 @@ function startMasturbation (player) {
         updateDebugState(showDebug);
     }
 
+    players[player].ticksInStage = 0;
+
     /* Set timer before playing dialogue, so that forfeitTimer conditions work properly. */
     players[player].timer = players[player].stamina;
 
@@ -128,11 +130,22 @@ function startMasturbation (player) {
         [[players[player].getForfeitTrigger("start_masturbating"), OPPONENT_START_MASTURBATING]]
     );
 
+    /* Note: It's a bit of a problem and an exception that the stage
+       is incremented after the dialogue update (and thus
+       start_masturbating happens at the end of the naked stage rather
+       than at the start of the masturbating stage, because the
+       character's current stage then doesn't match the dialogue on
+       the screen, complicating rollback and bug reports, but we can't
+       easily change this. */
+    players[player].stage++;
+    players[player].timeInStage = -1;
+    players[player].stageChangeUpdate();
+
     if (player == HUMAN_PLAYER) {
         updateHumanPlayerMasturbationVisual();
         displayHumanPlayerClothing();
     }
-    
+
     /* allow progression */
     endRound();
 }
@@ -152,14 +165,6 @@ function justFinishedPlayer () {
 function tickForfeitTimers () {
     console.log("Ticking forfeit timers...");
 
-    if (recentLoser >= 0 && players[recentLoser].out
-        && players[recentLoser].stage == players[recentLoser].clothing.length) {
-        players[recentLoser].stage++;
-        players[recentLoser].timeInStage = 0;
-        players[recentLoser].ticksInStage = 0;
-        players[recentLoser].stageChangeUpdate();
-    }
-   
     const finishedPlayer = justFinishedPlayer();
     if (finishedPlayer >= 0) {
         finishMasturbation(finishedPlayer);
