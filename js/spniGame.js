@@ -1092,17 +1092,20 @@ function exitRollback() {
      * created.
      (Should no longer be needed)
     transcriptHistory.findLast(e => e instanceof RollbackPoint).load(); */
-    updateAllGameVisuals();
     returnRollbackPoint.load();
     returnRollbackPoint = null;
     currentRollbackIndex = undefined;
     $('.transcript-step-button').hide();
+    updateAllGameVisuals();
     allowProgression();
     $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
     if (nextGamePhase == eGamePhase.EXCHANGE) {
         humanPlayer.hand.tradeIns.forEach(function(v, i) {
             $cardCells[HUMAN_PLAYER][i].toggleClass('tradein', v);
         });
+    }
+    if (AUTO_FADE && nextGamePhase[2] !== undefined) {
+        forceTableVisibility(nextGamePhase[2] && players.some(p => p.hand));
     }
 }
 
