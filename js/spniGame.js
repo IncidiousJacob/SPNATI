@@ -338,7 +338,7 @@ function advanceTurn () {
         }
 
         /* check to see if they are still in the game */
-        if (players[currentTurn].out && currentTurn > 0) {
+        if (currentTurn > 0 && players[currentTurn].out) {
             /* update their speech and skip their turn */
             players[currentTurn].singleBehaviourUpdate(players[currentTurn].forfeit[1] == CAN_SPEAK ?
                                                  addTriggers(players[currentTurn].forfeit[0], ANY_HAND) :
