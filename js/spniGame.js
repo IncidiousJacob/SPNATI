@@ -447,8 +447,8 @@ function checkDealLock () {
 function continueDealPhase () {
     /* hide the dialogue bubbles */
     players.forEach(function (p) {
-        if (p.currentState) {
-            p.currentState.dialogue = '';
+        if (p.chosenState) {
+            p.chosenState.dialogue = '';
             p.keepPose = true;
             updateGameVisual(p.slot);
         }
@@ -552,8 +552,8 @@ function completeRevealPhase () {
     if (recentTied !== null) {
         /* inform the player */
         players.forEach(function (p) {
-            if (p.currentState) {
-                p.currentState.dialogue = '';
+            if (p.chosenState) {
+                p.chosenState.dialogue = '';
                 p.keepPose = true;
                 updateGameVisual(p.slot);
             }
@@ -952,7 +952,7 @@ function RollbackPoint (logPlayers) {
             data.markers[marker] = p.markers[marker];
         }
         
-        if (p.currentState) data.currentState = new State(p.currentState);
+        if (p.chosenState) data.chosenState = new State(p.chosenState);
         data.keepPose = p.keepPose;
 
         if (p.hand) data.hand = p.hand.clone(); else data.hand = p.hand;
@@ -988,7 +988,7 @@ function RollbackPoint (logPlayers) {
             
             this.logEntries.push([
                 players[p].label,
-                players[p].currentState ? players[p].currentState.dialogue : ''
+                players[p].chosenState ? players[p].chosenState.dialogue : ''
             ]);
         }.bind(this));
     }
@@ -1018,7 +1018,7 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.timeInStage = p.timeInStage;
         loadPlayer.ticksInStage = p.ticksInStage;
         loadPlayer.markers = p.markers;
-        loadPlayer.currentState = p.currentState;
+        loadPlayer.chosenState = p.chosenState;
         loadPlayer.keepPose = p.keepPose;
         loadPlayer.timer = p.timer;
         loadPlayer.forfeit = p.forfeit;
