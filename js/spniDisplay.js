@@ -37,11 +37,11 @@ PoseSet.prototype.selectEntry = function (self) {
         return this.curEntry;
     }
 
-    var chosenState = self.chosenState;
+    var currentState = self.currentState;
     var opp = self.currentTarget;
     var bindings = {};
-    if (chosenState.parentCase && chosenState.parentCase.variableBindings) {
-        bindings = chosenState.parentCase.variableBindings;
+    if (currentState.parentCase && currentState.parentCase.variableBindings) {
+        bindings = currentState.parentCase.variableBindings;
     }
 
     /** 
@@ -838,11 +838,11 @@ function calculateDialogueStylingAttributes (player) {
             if (value) attrs["data-marker-" + marker.substring(4)] = value;
         });
 
-    if (player.chosenState && player.chosenState.image) {
+    if (player.currentState && player.currentState.image) {
         /* Remove custom: prefix and stage prefixes, if present
          * Then remove file extensions, if present
          */
-        attrs["data-pose"] = player.chosenState.image.replace(/^(?:(?:custom|set)\:\s*)?(?:\#\-)?/i, "").replace(/\.(?:jpe?g|png|gif)$/i, "");
+        attrs["data-pose"] = player.currentState.image.replace(/^(?:(?:custom|set)\:\s*)?(?:\#\-)?/i, "").replace(/\.(?:jpe?g|png|gif)$/i, "");
     }
 
     return attrs;
@@ -995,13 +995,13 @@ OpponentDisplay.prototype.onResize = function () {
 }
 
 OpponentDisplay.prototype.updateText = function (player) {
-    if (!player.chosenState.dialogue) {
+    if (!player.currentState.dialogue) {
         this.dialogue.empty();
         return;
     }
 
     var stylingAttrs = calculateDialogueStylingAttributes(player);
-    var specs = parseStyleSpecifiers(player.chosenState.dialogue);
+    var specs = parseStyleSpecifiers(player.currentState.dialogue);
     var displayElems = specs.map(function (comp) {
         /* {'text': 'foo', 'classes': 'cls1 cls2 cls3'} --> <span class="cls1 cls2 cls3">foo</span> */
         
@@ -1066,7 +1066,7 @@ OpponentDisplay.prototype.update = function(player) {
         return;
     }
     
-    if (!player.chosenState) {
+    if (!player.currentState) {
         /* hide their dialogue bubble */
         this.hideBubble();
         return;
@@ -1074,27 +1074,27 @@ OpponentDisplay.prototype.update = function(player) {
     
     this.updateBubbleAttributes(player);
 
-    var chosenState = player.chosenState;
-    var arrowDirection = chosenState.direction;
-    var arrowLocation = chosenState.location;
-    var dialogue_layering = chosenState.dialogue_layering || player.dialogue_layering;
-    let z_index = chosenState.z_index;
-    var resolvedImage = player.resolvePoseName(player.chosenState.image);
+    var currentState = player.currentState;
+    var arrowDirection = currentState.direction;
+    var arrowLocation = currentState.location;
+    var dialogue_layering = currentState.dialogue_layering || player.dialogue_layering;
+    let z_index = currentState.z_index;
+    var resolvedImage = player.resolvePoseName(player.currentState.image);
 
     if (resolvedImage instanceof PoseSet) {
         /* Only select a new image if this state is being displayed for the first time.
          * This ensures that mere refreshes of the display without any changes in dialogue
          * (e.g. on the select screen) don't cause pose changes.
          */
-        if (!chosenState.displayed) {
+        if (!currentState.displayed) {
             resolvedImage.clearState();
         }
 
         let entry = resolvedImage.selectEntry(player);
         if (entry) {
-            arrowDirection = chosenState.direction || entry.direction;
-            arrowLocation = chosenState.location || entry.location;
-            dialogue_layering =  chosenState.dialogue_layering || entry.dialogue_layering || player.dialogue_layering;
+            arrowDirection = currentState.direction || entry.direction;
+            arrowLocation = currentState.location || entry.location;
+            dialogue_layering =  currentState.dialogue_layering || entry.dialogue_layering || player.dialogue_layering;
             z_index ??= entry.z_index;
             resolvedImage = player.resolvePoseName(entry.image);
         }
@@ -1116,7 +1116,7 @@ OpponentDisplay.prototype.update = function(player) {
     /* get z-index-line if available. in future, refactor for custom poses/pose sets having this */
 
     /* check silence */
-    if (!chosenState.dialogue) {
+    if (!currentState.dialogue) {
         this.hideBubble();
     } else {
         this.bubble.show();
@@ -1126,11 +1126,11 @@ OpponentDisplay.prototype.update = function(player) {
         /* Configure z-indices */
         this.bubble.removeClass('over under').addClass(dialogue_layering);
         this.dialogue.removeClass('small smaller');
-        if (chosenState.fontSize != "normal") this.dialogue.addClass(chosenState.fontSize || player.fontSize);
+        if (currentState.fontSize != "normal") this.dialogue.addClass(currentState.fontSize || player.fontSize);
     }
     this.imageArea.css('z-index', z_index);
 
-    chosenState.displayed = true;
+    currentState.displayed = true;
 }
 
 OpponentDisplay.prototype.loop = function (timestamp) {

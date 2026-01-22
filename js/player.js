@@ -1064,11 +1064,11 @@ Opponent.prototype.getByStage = function (arr, stage) {
  * @returns {number}
  */
 Opponent.prototype.getRepeatCount = function () {
-    if (!this.chosenState || !this.chosenState.rawDialogue) {
+    if (!this.currentState || !this.currentState.rawDialogue) {
         return 0;
     }
 
-    return this.repeatLog[this.chosenState.hash] || 0;
+    return this.repeatLog[this.currentState.hash] || 0;
 }
 
 /**
@@ -2164,12 +2164,12 @@ function createDebugSectionRow(header, value) {
 }
 
 Player.prototype.populateDebugCaseInfo = function () {
-    if (!this.chosenState || !this.chosenState.parentCase) {
+    if (!this.currentState || !this.currentState.parentCase) {
         $("#debug-case-info-container").hide();
         return;
     }
 
-    var currentCase = this.chosenState.parentCase;
+    var currentCase = this.currentState.parentCase;
     var caseTypeDisplay = [
         $("<span>", {"class": "debug-case-type", "text": chosenCase.trigger}),
         ", priority ",
@@ -2214,7 +2214,7 @@ Player.prototype.populateDebugCaseInfo = function () {
         );
     }
 
-    var setsMarkers = this.chosenState.markers.map(
+    var setsMarkers = this.currentState.markers.map(
         (marker) => {
             let formatted = marker.name;
             if (marker.perTarget) formatted += "*";
@@ -2237,8 +2237,8 @@ Player.prototype.populateDebugCaseInfo = function () {
         )).appendTo(listing);
     }
 
-    var formattedPose = this.chosenState.image ? (
-        this.chosenState.image.replace(/\.(?:jpe?g|png|gif)$/i, "").replace("#", this.stage)
+    var formattedPose = this.currentState.image ? (
+        this.currentState.image.replace(/\.(?:jpe?g|png|gif)$/i, "").replace("#", this.stage)
     ) : "<none>";
 
     createDebugSectionRow("Pose", $(

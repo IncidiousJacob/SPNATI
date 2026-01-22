@@ -2847,11 +2847,13 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     if (!this.chosenState) return;
     if (this.stateCommitted) return;
 
-    /* Use rawDialogue so that variables don't affect repeat count.  */
-    this.repeatLog[this.chosenState.hash] = this.getRepeatCount() + 1;
-    this.chosenState.expandDialogue(this, this.currentTarget);
+    this.currentState = this.chosenState;
 
-    this.applyState(this.chosenState, this.currentTarget);
+    /* Use rawDialogue so that variables don't affect repeat count.  */
+    this.repeatLog[this.currentState.hash] = this.getRepeatCount() + 1;
+    this.currentState.expandDialogue(this, this.currentTarget);
+
+    this.applyState(this.currentState, this.currentTarget);
     /* Now that we have committed a new state, we can sync poseStage
      * without fear that a screen refresh will try to draw a pose
      * using a stage that doesn't match the stage that was current
