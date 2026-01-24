@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="yae_miko_necklace" status="online" img="opponents/yae_miko/collectible_yaemikonecklace.png" thumbnail="opponents/yae_miko/collectible_yaemikonecklace.png">
+    <collectible id="yae_miko_necklace" status="online" thumbnail="opponents/yae_miko/collectible_yaemikonecklace.png">
         <title>Guuji's Necklace</title>
         <subtitle>Crafted by the most skilled jewelers in Inazuma.</subtitle>
         <text>Yae Miko's elaborate necklace.</text>
         <unlock>Complete a game against Yae Miko.</unlock>
+        <picture>opponents/yae_miko/collectible_yaemikonecklace.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/yae_miko/collectible_yaemikonecklace.png" name="Guuji's Necklace" generic="jewelry" position="neck" type="extra" />
     </collectible>
-    <collectible id="sea_ganoderma" status="online" img="opponents/yae_miko/collectible_sea_ganoderma.png" thumbnail="opponents/yae_miko/collectible_sea_ganoderma.png">
+    <collectible id="sea_ganoderma" status="online" thumbnail="opponents/yae_miko/collectible_sea_ganoderma.png">
         <title>Sea Ganoderma</title>
         <subtitle>Local Specialty</subtitle>
         <text>A plant species found in some parts of Inazuma.</text>
         <unlock>Play Yae Miko and Yuri together and listen to their full conversation.</unlock>
+        <picture>opponents/yae_miko/collectible_sea_ganoderma.png</picture>
     </collectible>
 </collectibles>
