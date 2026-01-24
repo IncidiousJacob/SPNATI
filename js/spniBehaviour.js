@@ -2801,6 +2801,7 @@ Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
         this.evaluateHiddenCases(evaluatedTrigger, opp, true);
     }
     updateGameVisual(this.slot);
+    this.keepPose = true;
 }
 
 /************************************************************
