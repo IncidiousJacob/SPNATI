@@ -216,14 +216,17 @@ function updateGameVisuals () {
 /************************************************************
  * Updates all of the main visuals on the main game screen.
  ************************************************************/
-function updateAllGameVisuals () {
+function updateAllGameVisuals (force) {
     /* update all opponents */
+    const saveKeepPose = players.map(p => p.savePose);
     for (var i = 0; i < players.length; i++) {
         // This incorrectly sets the player clothing area display to block, but that's corrected by displayHumanPlayerClothing
         $gamePlayerAreas[i].toggle(!!players[i] && !(players[i].out && !players[i].hand)
                                    && !(gameOver && players.every(p => p.hand == null)));
+        if (force) players[i].keepPose = false;
     }
     updateGameVisuals();
+    if (force) players.forEach((p, i) => { p.keepPose = saveKeepPose[i]; });
     updateHumanPlayerMasturbationVisual();
     displayHumanPlayerClothing();
     displayAllHands(gamePhase[3]);
