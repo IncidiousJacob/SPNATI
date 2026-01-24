@@ -1030,14 +1030,6 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.label = p.label;
         loadPlayer.hand = p.hand;
         loadPlayer.clothing.forEach((c, i) => { c.removed = p.clothingRemovalStatus ? p.clothingRemovalStatus[i] : true });
-        /* Because the rollback point will have been created after the
-         * first stage change, if in the STRIP phase, we need to redo any
-         * stage skips before updating the visuals. */
-        let skipToStage = loadPlayer.findNextRealStage();
-        if (skipToStage) {
-            loadPlayer.stage = skipToStage;
-            loadPlayer.stageChangeUpdate();
-        }
     }.bind(this));
 }
 
