@@ -239,6 +239,11 @@
         <note id="1603">November 8 is the day Wiz's birthday is currently set to (which is the day she opened her shop). If Wiz ever gets a canon birthday, this date will change and I will update these notes.</note>
         <note id="364">outside of banter sequence</note>
         <note id="1694">Some of these lines probably make no sense at all if the glasses are on top of someone's head and not on their face. But too bad! There's no way to tell where on the head they were.</note>
+        <note id="1809">These are temporary unless/until you set up birthday lines for Megumin. At that point, I will replace these with responses to those.</note>
+        <note id="1811">These are temporary unless/until you set up birthday lines for Yunyun. At that point, I will likely replace these with responses to those.</note>
+        <note id="1812">These *would be* temporary unless/until you set up birthday lines for Yunyun. But, given what day her birthday is on, I plan to leave these ones regardless.</note>
+        <note id="1810">These are temporary unless/until you set up birthday lines for Kazuma. At that point, I will replace these with responses to those.</note>
+        <note id="1808">These are temporary unless/until you set up birthday lines for Darkness. At that point, I will replace these with responses to those.</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="0" />
@@ -2021,10 +2026,17 @@
         <label id="1802" label="" color="1" folder="Priscilla" sort="0" />
         <label id="1803" label="" color="1" folder="Priscilla" sort="0" />
         <label id="1804" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="1805" label="" folder="Hex Maniac" sort="0" />
+        <label id="1806" label="" folder="Hex Maniac" sort="0" />
+        <label id="1807" label="" folder="Lady Aqua" sort="0" />
+        <label id="1808" label="" folder="Darkness" sort="0" />
+        <label id="1809" label="" folder="Megumin" sort="0" />
+        <label id="1810" label="" folder="Kazuma" sort="0" />
+        <label id="1811" label="" folder="Yunyun" sort="0" />
+        <label id="1812" label="" folder="Yunyun" sort="0" />
     </labels>
-    <nextId>1804</nextId>
+    <nextId>1812</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="about_death">For all "about_" markers, Wiz talks a little about undead and liches and what they're all about.</marker>
         <marker scope="Public" name="about_eating">"   "   "</marker>
         <marker scope="Public" name="about_exorcism" />
@@ -2052,6 +2064,7 @@
         <marker scope="Public" name="cagliostro_facade" />
         <marker scope="Public" name="caulifla_transform1" />
         <marker scope="Public" name="caulifla_transform2" />
+        <marker scope="Public" name="darkness_birthday" />
         <marker scope="Public" name="darkness_rejectedStrip" />
         <marker scope="Public" name="darkness_wiz_a01" />
         <marker scope="Public" name="darkness_wiz_a02" />
@@ -2170,8 +2183,6 @@
         <marker scope="Public" name="hex_maniac_exorcism_40" />
         <marker scope="Public" name="hex_maniac_exorcism_41" />
         <marker scope="Public" name="hex_maniac_exorcism_42" />
-        <marker scope="Public" name="hex_maniac_finish_60" />
-        <marker scope="Public" name="hex_maniac_finish_61" />
         <marker scope="Public" name="hex_maniac_ghosts" />
         <marker scope="Public" name="hex_maniac_haunter_20" />
         <marker scope="Public" name="hex_maniac_haunter_21" />
@@ -2343,12 +2354,14 @@
         <marker scope="Public" name="jura_wiz_a22" />
         <marker scope="Public" name="jura_wiz_a41" />
         <marker scope="Public" name="jura_wiz_a42" />
+        <marker scope="Public" name="kazuma_birthday" />
         <marker scope="Public" name="kora_blade_power1b" />
         <marker scope="Public" name="kora_blade_power2a" />
         <marker scope="Public" name="kora_blade_power2b" />
         <marker scope="Public" name="kyoko_kirigiri_ahoge" />
         <marker scope="Public" name="kyoko_kirigiri_fantasy" />
         <marker scope="Public" name="kyoko_kirigiri_undead" />
+        <marker scope="Public" name="lady_aqua_birthday" />
         <marker scope="Public" name="lady_aqua_blessing" />
         <marker scope="Public" name="lady_aqua_cheating" />
         <marker scope="Public" name="lady_aqua_goodselfcare" />
@@ -2385,6 +2398,7 @@
         <marker scope="Public" name="lyralei_picture" />
         <marker scope="Public" name="lyralei_vegetables" />
         <marker scope="Public" name="mary_amoral" />
+        <marker scope="Public" name="megumin_birthday" />
         <marker scope="Public" name="megumin_frogs" />
         <marker scope="Public" name="megumin_frogs_kazuma" />
         <marker scope="Public" name="megumin_wiz_a01" />
@@ -3144,6 +3158,9 @@
         <marker scope="Public" name="wiz_fischl_lost_a" />
         <marker scope="Public" name="wiz_fischl_lost_b" />
         <marker scope="Public" name="wiz_fischl_lost_first" />
+        <marker scope="Public" name="wiz_hex_maniac_a61" />
+        <marker scope="Public" name="wiz_hex_maniac_a62" />
+        <marker scope="Public" name="wiz_hex_maniac_a73" />
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jean_a02" />
         <marker scope="Public" name="wiz_jean_a71" />
@@ -3474,6 +3491,8 @@
         <marker scope="Public" name="wiz_yuzuki_a72b" />
         <marker scope="Public" name="wiz_yuzuki_a73" />
         <marker scope="Public" name="you_meanies">"These other characters are being so mean! Are the insults really necessary?"</marker>
+        <marker scope="Public" name="yunyun_birthday_early" />
+        <marker scope="Public" name="yunyun_birthday_real" />
         <marker scope="Public" name="yusei_wiz_a01" />
         <marker scope="Public" name="yuzuki_kuchisake" />
         <marker scope="Public" name="yuzuki_mouth_reveal" />
