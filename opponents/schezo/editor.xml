@@ -290,6 +290,12 @@
         <response id="1082" opponent="wiz" opponentId="431" />
         <response id="1085" opponent="purah" opponentId="109" />
         <response id="1086" opponent="wiz" opponentId="1173" />
+        <response id="1089" opponent="wiz" opponentId="1340" />
+        <response id="1092" opponent="zeke_pandoria" opponentId="1344" />
+        <response id="1093" opponent="zeke_pandoria" opponentId="1345" />
+        <response id="1095" opponent="zeke_pandoria" opponentId="1348" />
+        <response id="1097" opponent="purah" opponentId="141" />
+        <response id="1098" opponent="purah" opponentId="142" />
     </responses>
     <notes>
         <note id="685">Devs of Kagamine Rin, if you're seeing this, Rin has an Arle cosplay module in Project Diva, named "Apprentice Magician".</note>
@@ -309,6 +315,7 @@ Kudos if you knew what he's talking about before you peeped here!</note>
 Dragon Meat comes in three varities, but they're the healing item that restores your HP and MP.</note>
         <note id="1061">Madou Monogatari has a key item that enabled the Compass in-game. You don't start the game with the compass, so expect to get more lost within the first few minutes of the game.</note>
         <note id="1081">im so sorry lmao</note>
+        <note id="1101">Yes, this is leading to that moment in Puzzle Pop about Schezo meowing. Meowmeowmeowmeowmeowmeowmeowmeowmeowmeow</note>
     </notes>
     <labels>
         <label id="4" label="" folder="Targets" sort="3" />
@@ -672,9 +679,9 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="402" label="" folder="Targets" sort="0" />
         <label id="403" label="Crusader" folder="Targets&gt;Darkness" sort="139" />
         <label id="387" label="" folder="Targets" sort="157" />
-        <label id="398" label="" folder="Targets&gt;Zeke" sort="136" />
-        <label id="399" label="" folder="Targets&gt;Zeke" sort="137" />
-        <label id="400" label="" folder="Targets&gt;Zeke" sort="138" />
+        <label id="398" label="Branch A1" folder="Targets&gt;Zeke" sort="136" />
+        <label id="399" label="Branch B1" folder="Targets&gt;Zeke" sort="137" />
+        <label id="400" label="Branch C1" folder="Targets&gt;Zeke" sort="138" />
         <label id="404" label="Yes There's Kazuma" folder="Targets" sort="0" />
         <label id="405" label="" folder="Targets&gt;Darkness" sort="57" />
         <label id="406" label="" folder="Targets&gt;Darkness" sort="58" />
@@ -774,7 +781,7 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="511" label="Dignity-H" folder="Targets&gt;Darkness" sort="19" />
         <label id="512" label="Bandana-H" folder="Targets&gt;Darkness" sort="20" />
         <label id="513" label="" folder="Targets&gt;Darkness" sort="0" />
-        <label id="514" label="" folder="Targets&gt;Zeke" sort="20" />
+        <label id="514" label="Generic Core Crystal Reveal" color="11" folder="Targets&gt;Zeke" sort="20" />
         <label id="515" label="" folder="Targets&gt;Zeke" sort="12" />
         <label id="516" label="" color="1" folder="Targets" sort="81" />
         <label id="517" label="Who's his Princess" color="1" folder="Targets&gt;Velvet" sort="11" />
@@ -804,15 +811,15 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="544" label="Akiza" color="1" folder="Targets&gt;Yusei" sort="3" />
         <label id="545" label="Bikes" folder="Targets&gt;Yusei" sort="5" />
         <label id="546" label="" folder="Targets" sort="44" />
-        <label id="547" label="Schezo Lore" color="1" folder="Targets&gt;Zeke" sort="6" />
-        <label id="548" label="" folder="Targets&gt;Zeke" sort="17" />
-        <label id="549" label="" folder="Targets&gt;Zeke" sort="18" />
-        <label id="550" label="" folder="Targets&gt;Zeke" sort="19" />
+        <label id="547" label="Schezo Lore" folder="Targets&gt;Zeke" sort="6" />
+        <label id="548" label="Branch C1" folder="Targets&gt;Zeke" sort="17" />
+        <label id="549" label="Branch A1" folder="Targets&gt;Zeke" sort="18" />
+        <label id="550" label="Branch B1" folder="Targets&gt;Zeke" sort="19" />
         <label id="552" label="" folder="Multi" sort="4" />
         <label id="551" label="" folder="Targets&gt;Hina" sort="23" />
-        <label id="553" label="" color="1" folder="Targets&gt;Zeke" sort="9" />
-        <label id="554" label="" color="1" folder="Targets&gt;Zeke" sort="10" />
-        <label id="555" label="" color="1" folder="Targets&gt;Zeke" sort="11" />
+        <label id="553" label="Branch C2" folder="Targets&gt;Zeke" sort="9" />
+        <label id="554" label="Branch B2" folder="Targets&gt;Zeke" sort="10" />
+        <label id="555" label="Branch A2" folder="Targets&gt;Zeke" sort="11" />
         <label id="556" label="Dark Matter" folder="Targets&gt;Darkness" sort="41" />
         <label id="557" label="Dark Matter-H" folder="Targets&gt;Darkness" sort="42" />
         <label id="558" label="Punishment" folder="Targets&gt;Darkness" sort="74" />
@@ -1074,8 +1081,8 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="837" label="" folder="Targets" sort="0" />
         <label id="838" label="" folder="Targets" sort="0" />
         <label id="839" label="" folder="Targets" sort="0" />
-        <label id="840" label="" folder="Targets" sort="0" />
-        <label id="841" label="" folder="Targets" sort="0" />
+        <label id="840" label="Branch 1-A" folder="Targets" sort="0" />
+        <label id="841" label="Branch 1-B" folder="Targets" sort="0" />
         <label id="842" label="" folder="Targets" sort="0" />
         <label id="843" label="Stage 2B" folder="Targets&gt;Arle" sort="0" />
         <label id="844" label="Stage 2B" folder="Targets&gt;Arle" sort="0" />
@@ -1136,8 +1143,6 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="896" label="" color="1" folder="Targets" sort="0" />
         <label id="897" label="" color="1" folder="Targets" sort="0" />
         <label id="903" label="" color="6" folder="" sort="0" />
-        <label id="905" label="" color="6" folder="" sort="0" />
-        <label id="904" label="" color="6" folder="" sort="0" />
         <label id="907" label="" folder="Targets&gt;Zeke" sort="0" />
         <label id="908" label="" folder="Targets&gt;Witch" sort="0" />
         <label id="909" label="" folder="Targets" sort="0" />
@@ -1156,8 +1161,8 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="925" label="" folder="Targets&gt;Ringo" sort="0" />
         <label id="926" label="" folder="Targets&gt;Witch" sort="0" />
         <label id="927" label="" folder="Targets" sort="0" />
-        <label id="928" label="" folder="Targets" sort="0" />
-        <label id="930" label="" folder="Targets" sort="0" />
+        <label id="928" label="Branch 1-A" folder="Targets" sort="0" />
+        <label id="930" label="Branch 1-B" folder="Targets" sort="0" />
         <label id="937" label="" folder="Targets&gt;Saria" sort="0" />
         <label id="938" label="" folder="Targets&gt;Saria" sort="0" />
         <label id="935" label="" folder="Targets&gt;Saria" sort="0" />
@@ -1168,10 +1173,10 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="939" label="" folder="Targets&gt;Saria" sort="0" />
         <label id="936" label="" folder="Targets&gt;Saria" sort="0" />
         <label id="940" label="" folder="Targets&gt;Saria" sort="0" />
-        <label id="941" label="" color="1" folder="Targets" sort="0" />
-        <label id="942" label="" color="1" folder="Targets" sort="0" />
-        <label id="943" label="" color="1" folder="Targets" sort="0" />
-        <label id="944" label="" color="1" folder="Targets" sort="0" />
+        <label id="941" label="" folder="Targets" sort="0" />
+        <label id="942" label="Branch 1-A" folder="Targets" sort="0" />
+        <label id="943" label="Branch 1-A + Witch" folder="Targets" sort="0" />
+        <label id="944" label="Branch 1-B" folder="Targets" sort="0" />
         <label id="945" label="" folder="Targets" sort="0" />
         <label id="946" label="" folder="Targets" sort="0" />
         <label id="947" label="" folder="Filtered" sort="0" />
@@ -1295,11 +1300,25 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <label id="1081" label="" folder="Targets&gt;Wiz" sort="0" />
         <label id="997" label="" folder="Targets&gt;Wiz" sort="0" />
         <label id="1084" label="Aura Cam" folder="" sort="0" />
-        <label id="1086" label="" color="1" folder="" sort="0" />
-        <label id="1088" label="" color="1" folder="Targets&gt;Wiz" sort="0" />
+        <label id="1090" label="" folder="Targets&gt;Wiz" sort="0" />
+        <label id="1088" label="" folder="Targets&gt;Wiz" sort="0" />
+        <label id="1089" label="" color="1" folder="" sort="0" />
+        <label id="1091" label="" color="1" folder="Targets&gt;Wiz" sort="0" />
+        <label id="1092" label="Branch C2" color="1" folder="Targets&gt;Zeke" sort="0" />
+        <label id="1093" label="Branch A2" color="1" folder="Targets&gt;Zeke" sort="0" />
+        <label id="1094" label="Branch B2" color="1" folder="Targets&gt;Zeke" sort="0" />
+        <label id="1095" label="" color="1" folder="" sort="0" />
+        <label id="1096" label="" color="1" folder="" sort="0" />
+        <label id="1098" label="" folder="Targets" sort="0" />
+        <label id="1099" label="" folder="Targets" sort="0" />
+        <label id="1100" label="" folder="Targets" sort="0" />
+        <label id="1101" label="Branch 2-B" color="1" folder="Targets" sort="0" />
+        <label id="1102" label="Branch 2-A" color="1" folder="Targets" sort="0" />
+        <label id="1103" label="Branch 2-A + Witch" color="1" folder="Targets" sort="0" />
+        <label id="1104" label="" color="1" folder="Targets" sort="0" />
     </labels>
     <hidePrefixlessImages>true</hidePrefixlessImages>
-    <nextId>1088</nextId>
+    <nextId>1104</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="2009mayberetro" />
@@ -1505,6 +1524,7 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="miko_power2" />
         <marker scope="Public" name="miko_power3" />
         <marker scope="Public" name="miko_power3sus" />
+        <marker scope="Public" name="miko_romance" />
         <marker scope="Public" name="miko_romance1" />
         <marker scope="Public" name="miko_romance1A" />
         <marker scope="Public" name="miko_romance1B" />
@@ -1513,10 +1533,14 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="miko_romance3A" />
         <marker scope="Public" name="miko_romance3A_w" />
         <marker scope="Public" name="miko_romance3B" />
+        <marker scope="Public" name="miko_speaking1" />
         <marker scope="Public" name="miko_sword1" />
         <marker scope="Public" name="Miko_sword1" />
         <marker scope="Public" name="Miko_sword2" />
+        <marker scope="Public" name="Miko_sword3" />
         <marker scope="Public" name="Miko_taoist1" />
+        <marker scope="Public" name="miko_witch1" />
+        <marker scope="Public" name="miko_witch1_w" />
         <marker scope="Public" name="MikoGloves2" />
         <marker scope="Public" name="MikoGloves3" />
         <marker scope="Public" name="momo_schezo_allegiance1" />
@@ -1862,6 +1886,8 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="schezo_otherswords" />
         <marker scope="Public" name="schezo_purah01" />
         <marker scope="Public" name="schezo_purah02" />
+        <marker scope="Public" name="schezo_purah03" />
+        <marker scope="Public" name="schezo_purah11" />
         <marker scope="Public" name="schezo_r01" />
         <marker scope="Public" name="schezo_reset_AI" />
         <marker scope="Public" name="schezo_ringo_icebreaker" />
@@ -1969,12 +1995,14 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="schezo_velvetclothes" />
         <marker scope="Public" name="schezo_witch_mention" />
         <marker scope="Public" name="schezo_wiz_darkmagic1" />
+        <marker scope="Public" name="schezo_wiz_darkmagic2" />
         <marker scope="Public" name="schezo_wiz_lich1" />
         <marker scope="Public" name="schezo_wiz_lich2" />
         <marker scope="Public" name="schezo_wiz_lich3" />
         <marker scope="Public" name="schezo_wiz_lichcontinued1" />
         <marker scope="Public" name="schezo_wiz_lichcontinued2" />
         <marker scope="Public" name="schezo_wiz_lichcontinued3" />
+        <marker scope="Public" name="schezo_wiz_shop1" />
         <marker scope="Public" name="schezo_wiz_sword1" />
         <marker scope="Public" name="schezo_wiz_sword2" />
         <marker scope="Public" name="schezo_wiz_sword3" />
@@ -1998,6 +2026,7 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="schezo_yusei_sword2" />
         <marker scope="Public" name="schezo_yusei_sword3" />
         <marker scope="Public" name="schezo_zeke_corecrystal1" />
+        <marker scope="Public" name="schezo_zeke_corecrystal2" />
         <marker scope="Public" name="schezo_zeke_corecrystalA" />
         <marker scope="Public" name="schezo_zekeandpandy" />
         <marker scope="Public" name="schezo_zekeandpandyA" />
@@ -2059,7 +2088,14 @@ Dragon Meat comes in three varities, but they're the healing item that restores 
         <marker scope="Public" name="yuzuki_nuthandR1" />
         <marker scope="Public" name="zekepandy_backstory1" />
         <marker scope="Public" name="zekepandy_backstory2" />
+        <marker scope="Public" name="zekepandy_backstory2S" />
         <marker scope="Public" name="zekepandy_backstory2sus" />
+        <marker scope="Public" name="zekepandy_backstory3" />
+        <marker scope="Public" name="zekepandy_backstory3S" />
+        <marker scope="Public" name="zekepandy_backstory3S_oops" />
+        <marker scope="Public" name="zekepandy_backstory3Soops" />
+        <marker scope="Public" name="zekepandy_backstory3Ssus" />
+        <marker scope="Public" name="zekepandy_backstory3sus" />
         <marker scope="Public" name="zekepandy_fillin1" />
         <marker scope="Public" name="zekepandy_powers1R" />
         <marker scope="Public" name="zekepandy_powers2R" />
