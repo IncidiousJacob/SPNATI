@@ -494,6 +494,7 @@
         </pose>
         <pose id="Orgasm">
             <sprite id="drip" src="serena/drip.png" x="-10" y="1087" />
+            <sprite id="shadow" src="serena/shadow.png" x="-12" y="1311" alpha="100" />
             <sprite id="kneesO" src="reskins/serena_fennekin/kneesO.png" x="0" y="0" alpha="100" />
             <sprite id="foot(copy)" src="serena/foot.png" x="65" y="1251" scalex="-1.04" />
             <sprite id="leg(copy)" src="serena/leg.png" x="24" y="1063" scalex="-1" scaley="1" pivotx="70%" pivoty="8%" rotation="0" />
@@ -501,7 +502,6 @@
             <sprite id="cutehand" src="serena/hand.png" x="9" y="1014" pivotx="80%" pivoty="12%" rotation="-8" />
             <sprite id="foot" src="serena/foot.png" x="-92" y="1253" rotation="0" />
             <sprite id="leg" src="serena/leg.png" x="-110" y="1074" rotation="0" />
-            <sprite id="shadow" src="serena/shadow.png" x="-12" y="1311" alpha="100" />
             <sprite id="puddle" delay="7.38" src="serena/puddle.png" x="-9" y="1324" scalex="0.5" scaley="0.5" alpha="43" />
             <directive type="animation" id="drip" ease="linear" interpolation="linear">
                 <keyframe time="0" x="-10" y="1087" />
@@ -560,6 +560,20 @@
                 <keyframe time="6.75" rotation="0" />
                 <keyframe time="7" rotation="2" />
                 <keyframe time="7.25" rotation="-2" />
+            </directive>
+            <directive type="animation" id="shadow" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-12" y="1311" alpha="100" />
+                <keyframe time="1.38" x="-12" y="1312" alpha="100" />
+                <keyframe time="4" x="-12" y="1306" alpha="100" />
+            </directive>
+            <directive type="animation" id="shadow" ease="linear" interpolation="none">
+                <keyframe time="0" src="serena/shadow.png" />
+                <keyframe time="1.38" src="serena/shadow.png" />
+                <keyframe time="4" src="serena/shadow.png" />
+            </directive>
+            <directive type="animation" id="shadow" delay="1.38" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="1" />
+                <keyframe time="2.62" scalex="1.4" />
             </directive>
             <directive type="animation" id="kneesO" ease="linear" interpolation="linear">
                 <keyframe time="0" x="0" y="0" alpha="100" />
@@ -800,20 +814,6 @@
                 <keyframe time="1.38" src="serena/leg.png" />
                 <keyframe time="12" src="serena/leg.png" />
             </directive>
-            <directive type="animation" id="shadow" ease="linear" interpolation="linear">
-                <keyframe time="0" x="-12" y="1311" alpha="100" />
-                <keyframe time="1.38" x="-12" y="1312" alpha="100" />
-                <keyframe time="4" x="-12" y="1306" alpha="100" />
-            </directive>
-            <directive type="animation" id="shadow" ease="linear" interpolation="none">
-                <keyframe time="0" src="serena/shadow.png" />
-                <keyframe time="1.38" src="serena/shadow.png" />
-                <keyframe time="4" src="serena/shadow.png" />
-            </directive>
-            <directive type="animation" id="shadow" delay="1.38" ease="linear" interpolation="linear">
-                <keyframe time="0" scalex="1" />
-                <keyframe time="2.62" scalex="1.4" />
-            </directive>
             <directive type="animation" id="puddle" delay="7.38" ease="linear" interpolation="linear">
                 <keyframe time="0" x="-9" y="1324" scalex="0.5" scaley="0.5" alpha="43" />
                 <keyframe time="5.74" x="-9" y="1324" scalex="0.5" scaley="0.5" alpha="43" />
@@ -850,7 +850,7 @@
             <sprite id="O2foot1" src="serena/O2foot1.png" x="313" y="1214" pivotx="16%" pivoty="13%" rotation="-10" />
             <sprite id="O2foot1(copy)" src="serena/O2foot1.png" x="-224" y="1215" scalex="-1" pivotx="16%" pivoty="13%" alpha="100" rotation="8" />
             <sprite id="O2foot2" delay="2.9" src="serena/O2foot2.png" x="246" y="1193" scalex="1.1" scaley="1.1" pivotx="77%" pivoty="86%" rotation="30" />
-            <sprite id="O2foot2(copy)" delay="2.95" src="serena/O2foot2.png" x="-290" y="1187" scalex="-1.1" scaley="1.1" pivotx="76%" pivoty="85%" rotation="0" />
+            <sprite id="O2foot2(copy)" delay="2.9" src="serena/O2foot2.png" x="-290" y="1187" scalex="-1.1" scaley="1.1" pivotx="76%" pivoty="85%" rotation="0" />
             <sprite id="squirt" delay="2.95" src="serena/squirt.png" x="5" y="1207" scalex="1.2" scaley="1.2" alpha="100" />
             <sprite id="puddle" delay="3.38" src="serena/puddle.png" x="7" y="1293" scalex="1.3" scaley="1.2" alpha="10" />
             <directive type="animation" id="O2hair1" ease="linear" interpolation="linear">
@@ -1745,6 +1745,7 @@
                 <keyframe time="0" x="-195" y="988" />
                 <keyframe time="2.88" x="-172" y="984" />
                 <keyframe time="2.95" x="-149" y="980" />
+                <keyframe time="3" x="-138" y="981" />
                 <keyframe time="3.12" x="-172" y="984" />
                 <keyframe time="3.62" x="-172" y="984" />
                 <keyframe time="3.7" x="-170" y="983" />
@@ -1936,44 +1937,46 @@
                 <keyframe time="13.1" src="serena/O2foot2.png" />
                 <keyframe time="13.85" src="serena/O2foot2.png" />
             </directive>
-            <directive type="animation" id="O2foot2(copy)" delay="2.95" ease="linear" interpolation="linear">
+            <directive type="animation" id="O2foot2(copy)" delay="2.9" ease="linear" interpolation="linear">
                 <keyframe time="0" x="-290" y="1187" scalex="-1.1" scaley="1.1" rotation="0" />
-                <keyframe time="0.04999995" x="-271" rotation="7" />
-                <keyframe time="0.2199998" rotation="0" />
-                <keyframe time="0.7199998" rotation="0" />
-                <keyframe time="0.8" rotation="7" />
-                <keyframe time="0.98" rotation="0" />
-                <keyframe time="1.48" rotation="0" />
-                <keyframe time="1.58" rotation="7" />
-                <keyframe time="1.72" rotation="0" />
-                <keyframe time="2.25" rotation="0" />
-                <keyframe time="2.32" rotation="7" />
-                <keyframe time="2.45" rotation="0" />
-                <keyframe time="3.1" rotation="0" />
-                <keyframe time="3.2" rotation="7" />
-                <keyframe time="3.35" rotation="0" />
-                <keyframe time="4.3" rotation="0" />
-                <keyframe time="4.400002" rotation="7" />
-                <keyframe time="4.6" rotation="0" />
-                <keyframe time="5.6" rotation="0" />
-                <keyframe time="5.72" rotation="7" />
-                <keyframe time="5.98" rotation="0" />
-                <keyframe time="7.1" rotation="0" />
-                <keyframe time="7.22" rotation="7" />
-                <keyframe time="7.48" rotation="0" />
-                <keyframe time="8.719999" rotation="0" />
-                <keyframe time="8.85" rotation="7" />
-                <keyframe time="9.1" x="-282" rotation="0" />
-                <keyframe time="9.719999" x="-306" rotation="0" />
-                <keyframe time="10.6" x="-306" rotation="0" />
-                <keyframe time="10.72" x="-283" rotation="10" />
-                <keyframe time="10.98" x="-278" rotation="0" />
-                <keyframe time="11.6" rotation="0" />
-                <keyframe time="11.72" x="-272" rotation="5" />
-                <keyframe time="12.1" rotation="0" />
-                <keyframe time="13.1" rotation="0" />
-                <keyframe time="13.35" rotation="4" />
-                <keyframe time="13.85" rotation="0" />
+                <keyframe time="0.0999999" x="-271" y="1187" rotation="7" />
+                <keyframe time="0.1199999" x="-258" y="1187" />
+                <keyframe time="0.2199998" x="-276" y="1187" />
+                <keyframe time="0.2699997" rotation="0" />
+                <keyframe time="0.7699997" rotation="0" />
+                <keyframe time="0.8499999" rotation="7" />
+                <keyframe time="1.03" rotation="0" />
+                <keyframe time="1.53" rotation="0" />
+                <keyframe time="1.63" rotation="7" />
+                <keyframe time="1.77" rotation="0" />
+                <keyframe time="2.3" rotation="0" />
+                <keyframe time="2.37" rotation="7" />
+                <keyframe time="2.5" rotation="0" />
+                <keyframe time="3.15" rotation="0" />
+                <keyframe time="3.25" rotation="7" />
+                <keyframe time="3.4" rotation="0" />
+                <keyframe time="4.35" rotation="0" />
+                <keyframe time="4.450002" rotation="7" />
+                <keyframe time="4.65" rotation="0" />
+                <keyframe time="5.65" rotation="0" />
+                <keyframe time="5.77" rotation="7" />
+                <keyframe time="6.03" rotation="0" />
+                <keyframe time="7.15" rotation="0" />
+                <keyframe time="7.27" rotation="7" />
+                <keyframe time="7.53" rotation="0" />
+                <keyframe time="8.77" rotation="0" />
+                <keyframe time="8.900002" rotation="7" />
+                <keyframe time="9.150002" x="-282" rotation="0" />
+                <keyframe time="9.77" x="-306" rotation="0" />
+                <keyframe time="10.65" x="-306" rotation="0" />
+                <keyframe time="10.77" x="-283" rotation="10" />
+                <keyframe time="11.03" x="-278" rotation="0" />
+                <keyframe time="11.65" rotation="0" />
+                <keyframe time="11.77" x="-272" rotation="5" />
+                <keyframe time="12.15" rotation="0" />
+                <keyframe time="13.15" rotation="0" />
+                <keyframe time="13.4" rotation="4" />
+                <keyframe time="13.9" rotation="0" />
             </directive>
             <directive type="animation" id="squirt" delay="2.95" ease="linear" interpolation="linear">
                 <keyframe time="0" x="5" y="1207" scalex="1.2" scaley="1.2" alpha="100" />
@@ -2131,6 +2134,19 @@
         <pose id="poutSquirtPuddle">
             <sprite id="pout" src="reskins/serena_pajama/9-pout.png" x="0" y="0" />
             <sprite id="puddle" src="serena/puddle.png" x="0" y="1285" scalex="1.9" />
+        </pose>
+        <pose id="stopani">
+            <sprite id="stop" src="reskins/serena_pajama/6-stop.png" x="0" y="0" />
+            <directive type="animation" id="stop" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="3" x="0" y="0" />
+                <keyframe time="8" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="stop" ease="linear" interpolation="none">
+                <keyframe time="0" src="reskins/serena_pajama/6-stop.png" />
+                <keyframe time="3" src="reskins/serena_pajama/6-nervous.png" />
+                <keyframe time="8" src="reskins/serena_pajama/6-steamy.png" />
+            </directive>
         </pose>
     </poses>
 
