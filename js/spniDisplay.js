@@ -1262,10 +1262,19 @@ function MainSelectScreenDisplay (slot) {
 MainSelectScreenDisplay.prototype = Object.create(OpponentDisplay.prototype);
 MainSelectScreenDisplay.prototype.constructor = MainSelectScreenDisplay;
 
+// Helper function for scaling based on 'on-title' scale
+function getSelectionPicScale(opp) {
+    return (opp && opp.selection_image_adjustment && typeof opp.selection_image_adjustment.scale === 'number')
+        ? opp.selection_image_adjustment.scale
+        : ((opp && typeof opp.scale === 'number') ? opp.scale : 100);
+}
+
+
 MainSelectScreenDisplay.prototype.updateTargetSuggestionDisplay = function (quad, opponent) {
     var img_elem = this.suggestionQuad[quad].children('.opponent-suggestion-image');
     var label_elem = this.suggestionQuad[quad].children('.opponent-suggestion-label');
     var tooltip = null;
+    const selScale = getSelectionPicScale(opponent);
     
     this.targetSuggestions[quad] = opponent;
     if (opponent.status && statusIndicators[opponent.status]) {
@@ -1279,8 +1288,8 @@ MainSelectScreenDisplay.prototype.updateTargetSuggestionDisplay = function (quad
         'alt': opponent.selectLabel,
         'data-original-title': tooltip || null
     }).one('load', function() {
-        img_elem.css("transform", opponent.scale != 100 || img_elem[0].naturalHeight > 1400 ?
-                     "translate(-50%) scale(" + (Math.max(1.0, img_elem[0].naturalHeight / 1400) * opponent.scale) + "%)" : "");
+        img_elem.css("transform", selScale != 100 || img_elem[0].naturalHeight > 1400 ?
+                     "translate(-50%) scale(" + (Math.max(1.0, img_elem[0].naturalHeight / 1400) * selScale) + "%)" : "");
     }).show();
     label_elem.text(opponent.selectLabel);
 }
@@ -1323,7 +1332,8 @@ MainSelectScreenDisplay.prototype.displaySingleSuggestion = function () {
     this.hideBubble();
     this.drawPose(player.selection_image);
     this.simpleImage.one('load', function() {
-        OpponentDisplay.prototype.rescaleSimplePose.call(this, player.scale);
+        //OpponentDisplay.prototype.rescaleSimplePose.call(this, player.scale);
+        OpponentDisplay.prototype.rescaleSimplePose.call(this, getSelectionPicScale(player));
     }.bind(this));
     this.label.html(player.selectLabel.initCap()).addClass('suggestion-label');
     this.imageArea.addClass('prefill-suggestion').css('z-index', player.z_index - 100);
@@ -1888,7 +1898,9 @@ OpponentDetailsDisplay.prototype.handleCostumeChange = function () {
     if (!this.opponent) return;
     var costumeDesc = this.costumeSelector.children(':selected').data('costumeDescriptor');
     this.opponent.selectAlternateCostume(costumeDesc);
-    this.simpleImage.attr('src', this.opponent.selection_image);
+    //this.simpleImage.attr('src', this.opponent.selection_image);
+    this.simpleImage.one('load', this.rescaleSimplePose.bind(this, getSelectionPicScale(this.opponent)));
+    this.simpleImage.attr('src', this.opponent.selection_image).show();
     this.descriptionLabel.html(this.opponent.selectDescription || this.opponent.description || '');
 }
 
@@ -2338,6 +2350,10 @@ OpponentDetailsDisplay.prototype.update = function (opponent) {
 
     this.simpleImage.one('load', this.rescaleSimplePose.bind(this, opponent.scale));
     this.simpleImage.attr('src', opponent.selection_image).show();
+    
+    // if we want to scale the preview image on the right-hand side, we can do this too
+    //const xfrmProps = opponent.selection_image_adjustment || { scale: 100 };
+    //this.imageArea.css("transform", "scale(" + (xfrmProps.scale / 100.0) + ")");
     
     this.selectButton.prop('disabled', false);
     
