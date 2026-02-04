@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1711297162320</lastupdate>
+    <lastupdate>1770214406168</lastupdate>
     <first>Mari</first>
     <last />
     <label>Mari</label>
@@ -13,12 +13,24 @@
     <epilogue gender="male" img="epilogue/assets/thumbnail-m.png" hint="Finish a game with Mari (OMORI) as a male player. (You don't have to win.)">Encore</epilogue>
     <layers>7</layers>
     <alternates>
-        <costume folder="opponents/reskins/mari_thanksgiving/" img="0-demure.png" status="online" label="Mari">Hospitality</costume>
-        <costume folder="opponents/reskins/mari_office/" img="0-casual.png" status="online" label="Mari">Professionality</costume>
-        <costume folder="opponents/reskins/mari_nurse/" img="0-cheer.png" set="valentines" status="online" label="Mari">Vitality</costume>
-        <costume folder="opponents/reskins/mari_spring/" img="0-wink.png" set="easter" status="online" label="Mari">Whimsicality</costume>
-        <costume folder="opponents/reskins/mari_summer/" img="0-peace.png" set="summer" status="online" label="Mari">Memorability</costume>
-        <costume folder="opponents/reskins/mari_casual/" img="0-invite.png" status="online" label="Mari">Informality</costume>
+        <costume folder="opponents/reskins/mari_thanksgiving/" img="0-demure.png" status="online" label="Mari">
+            <costume-name>Hospitality</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mari_office/" img="0-casual.png" status="online" label="Mari">
+            <costume-name>Professionality</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mari_nurse/" img="0-cheer.png" set="valentines" status="online" label="Mari">
+            <costume-name>Vitality</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mari_spring/" img="0-wink.png" set="easter" status="online" label="Mari">
+            <costume-name>Whimsicality</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mari_summer/" img="0-peace.png" set="summer" status="online" label="Mari">
+            <costume-name>Memorability</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mari_casual/" img="0-invite.png" status="online" label="Mari">
+            <costume-name>Informality</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <lines>4027</lines>
