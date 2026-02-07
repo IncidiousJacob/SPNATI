@@ -4,7 +4,7 @@
     <height>5'6"</height>
     <age />
     <pronunciation />
-    <othernotes>What? You need NOTES on me? What don't you get? I'm evil, I've got extendable mechanical arms with numerous gadgets stored inside, and my overbite is my most CHARMING feature and is NOT a blemish.&lt;br&gt;&lt;br&gt;I'm not dumb enough to tell you my weeknesses, so don't bother asking. I'd never admit if you guessed one, either. I'm always thinking several steps ahead, so I might as well tell you I don't have any weeknesses at all.&lt;br&gt;&lt;br&gt;Don't think you can talk behind my back in another language. I speak SEVERAL. Nulla è reale, tutto è lecito.&lt;br&gt;&lt;br&gt;I've been evil all of my life. I'm sure you can imagine a little toddler me, knocking over other kids' block towers and stealing their jiuce boxes. And yes, I AM human. My hair and skin are both natural.&lt;br&gt;&lt;br&gt;Would you believe me if I said I'm a people person? Well it's true, I just love screwing with people more. In fact, I rarely actually kill anyone. It's much more fun to make you beg for death, and then deny you the pleasure.&lt;br&gt;&lt;br&gt;As much as you might want me gone, the world NEEDS people like me. Humans NEED people to direct their hate towards, an enemy in common to rally against. You can't have good without bad.</othernotes>
+    <othernotes>What? You need NOTES on me? What don't you get? I'm evil. Villainous. Malevolent. Malicious. Nefarious. Wicked. Get it?&lt;br&gt;&lt;br&gt;I've got extendable mechanical arms, in case you hadn't noticed. They have numerous gadgets stored inside, and I can electrify any part from my elbow down.&lt;br&gt;&lt;br&gt;My overbite is my most CHARMING feature and is NOT a blemish. I'm just cute in a way you're unwilling to see; I got hit on a lot when I was in college, so this is definitely a YOU problem, not a ME problem.&lt;br&gt;&lt;br&gt;Don't think you can talk behind my back in another language. I speak SEVERAL. Nulla è reale, tutto è lecito.&lt;br&gt;&lt;br&gt;I'm sure you can imagine a little toddler me, knocking over other kids' block towers and stealing their juice boxes, but I haven't actually been evil all of my life. My life was good, until it suddenly wasn't, and it made me realize how cruel the world truly is. Being good or evil doesn't change that, so why not just be evil?&lt;br&gt;&lt;br&gt;And yes, I AM human. My hair and skin are both natural.&lt;br&gt;&lt;br&gt;Would you believe me if I said I'm a people person? Well it's true, I just love screwing with people more. In fact, I rarely actually kill anyone. It's much more fun to make you beg for death, and then deny you the pleasure.&lt;br&gt;&lt;br&gt;&lt;br&gt;If you wanna talk with me, try this:&lt;br&gt;&lt;br&gt;The obvious thing is that you can ask me about life as a villain. How I fight, who I've defeated, how I sleep when everyone wants me dead, what prison was like, how I got out, if I have any other hobbies. Take your pick.&lt;br&gt;&lt;br&gt;I don't do side-kicks or henchmen, so don't bother asking to be my apprentice or something, it's not gonna happen. Be your own villain, not my lackey.&lt;br&gt;&lt;br&gt;I also don't do flattery. Don't complement me expecting me to go easy on you or whatever. If you're gonna say something nice about me, you'd better mean it.&lt;br&gt;&lt;br&gt;You can also ask me about my arms. They're my pride and joy. Sure, they use the nerve link technology my father invented, but everything else is all me, especially my tether technology.&lt;br&gt;&lt;br&gt;I'm an anthropology enthusiast. Let's talk culture - your culture, my culture, whatever. We can talk religion, too, as long as you're not gonna try to convert me.&lt;br&gt;&lt;br&gt;I'll also debate the nature of good and evil, and how both are completely meaningless.&lt;br&gt;&lt;br&gt;I'm not dumb enough to tell you my weeknesses, so don't bother asking. I'm always thinking several steps ahead, so I might as well tell you I don't have any weeknesses at all.</othernotes>
     <noteworthy>
         <case name="About Me" id="10" priority="FYI" min="0" max="0">
             <description>I'm a very infamous villain and daughter to the (neutral) scientist who made robot prosthetics possible. I live and breathe evil.</description>
@@ -19,7 +19,7 @@
             <description>If I explained the story behind my arms, in the next game I'm in, I may point out that I already explained it to the player, or give a completely different story.</description>
         </case>
         <case name="Cheater" id="36" priority="Noteworthy" min="5" max="5">
-            <description>When I have to reveal my chest, I may also reveal that I've been cheating the whole time, and won't stop cheating either.</description>
+            <description>When I have to reveal my breasts, I may also reveal that I've been cheating the whole time, and won't stop cheating either.</description>
         </case>
     </noteworthy>
     <responses>
@@ -133,6 +133,9 @@
         <response id="331" opponent="critical_darling" opponentId="1092" />
         <response id="332" opponent="critical_darling" opponentId="1093" />
         <response id="333" opponent="critical_darling" opponentId="1094" />
+        <response id="338" opponent="galatea" opponentId="69" />
+        <response id="343" opponent="zeke_pandoria" opponentId="937" />
+        <response id="344" opponent="zeke_pandoria" opponentId="938" />
     </responses>
     <notes>
         <note id="61">Is it too mean to change "Mommy/Daddy" to "Loser?" Perhaps. Is it in character? Definitely.</note>
@@ -150,22 +153,23 @@
         <note id="292">Can change/move this line if Nami doesn't want to keep talking sea travel before the poster reveal.</note>
         <note id="301">Will rewrite if "the coward's way out" is too harsh a way to put it.</note>
         <note id="312">Making an assumption here that Sanako's wedding ring has left an indentation on her finger that is still noticable at this moment.</note>
-        <note id="14">Removing this from the playable line pool until I can rephrase it in a less clunky way.</note>
+        <note id="339">To be clear, Natasha is basically saying she'll forgive Galatea for using an ancient language since she already knows them.</note>
+        <note id="374">I'm not letting you make this easy with strong allies. Or maybe you WANT a challenge? Either way, you'll get no pity.</note>
     </notes>
     <labels>
         <label id="7" label="Meanest Thing You've Ever Done?" folder="Prompts" sort="0" />
         <label id="8" label="Try To Make Me Mad" folder="Prompts" sort="3" />
         <label id="10" label="Intro" folder="Noteworthy Things" sort="2" />
-        <label id="11" label="No Non-Con (Other ENF)" folder="Noteworthy Things" sort="2" />
-        <label id="12" label="" folder="Noteworthy Things" sort="3" />
+        <label id="11" label="No Non-Con (Other ENF)" folder="Noteworthy Things" sort="0" />
+        <label id="12" label="Arms - Follow-Up" folder="Noteworthy Things" sort="3" />
         <label id="13" label="Misc. Things" color="4" folder="Noteworthy Things" sort="7" />
-        <label id="14" label="Don't You Hate Conformity?" color="7" folder="" sort="2" />
+        <label id="14" label="Understand Conformity?" folder="Prompts" sort="2" />
         <label id="15" label="Multilingual" folder="Noteworthy Things" sort="9" />
         <label id="16" label="Arms" folder="Noteworthy Things" sort="8" />
-        <label id="17" label="" folder="Noteworthy Things" sort="4" />
+        <label id="362" label="" color="1" folder="" sort="0" />
         <label id="18" label="Misc. Things" color="4" folder="Noteworthy Things" sort="6" />
-        <label id="37" label="Frisk For Cards (Winning Streak)" folder="Noteworthy Things" sort="10" />
-        <label id="49" label="" folder="Noteworthy Things" sort="5" />
+        <label id="37" label="Winning Streak" folder="Noteworthy Things" sort="10" />
+        <label id="49" label="Cheating - Follow-Up" folder="Noteworthy Things" sort="5" />
         <label id="54" label="" color="1" folder="" sort="0" />
         <label id="55" label="" color="2" folder="" sort="0" />
         <label id="56" label="" color="1" folder="" sort="0" />
@@ -173,8 +177,8 @@
         <label id="58" label="" color="1" folder="" sort="0" />
         <label id="59" label="An Entirely Useless Trigger" folder="" sort="0" />
         <label id="60" label="" color="4" folder="" sort="0" />
-        <label id="61" label="&quot;Mommy&quot; / &quot;Daddy&quot; Name Filter" folder="" sort="0" />
-        <label id="62" label="&quot;Master&quot; / &quot;Mistress&quot; Name Filter" folder="" sort="0" />
+        <label id="61" label="&quot;Mommy&quot; / &quot;Daddy&quot; Name Filter" color="7" folder="Player Targets" sort="2" />
+        <label id="62" label="&quot;Master&quot; / &quot;Mistress&quot; Name Filter" color="7" folder="Player Targets" sort="2" />
         <label id="64" label="" color="7" folder="" sort="0" />
         <label id="65" label="" color="7" folder="" sort="0" />
         <label id="66" label="" color="7" folder="" sort="0" />
@@ -185,10 +189,10 @@
         <label id="71" label="" color="4" folder="" sort="0" />
         <label id="72" label="" color="4" folder="" sort="0" />
         <label id="73" label="" color="4" folder="" sort="0" />
-        <label id="5" label="" color="1" folder="" sort="0" />
+        <label id="5" label="Must Strip" color="1" folder="" sort="0" />
         <label id="74" label="British Tag Nickname" folder="" sort="0" />
-        <label id="75" label="" folder="Noteworthy Things" sort="6" />
-        <label id="76" label="Not Scared Of Superman" folder="Noteworthy Things" sort="12" />
+        <label id="75" label="Toying With People - Follow-Up" folder="Noteworthy Things" sort="6" />
+        <label id="76" label="Not Scared Of Superman" color="7" folder="Noteworthy Things" sort="12" />
         <label id="77" label="&quot;Master&quot; / &quot;Mistress&quot; Name Filter" folder="" sort="0" />
         <label id="78" label="&quot;Mommy&quot; / &quot;Daddy&quot; Name Filter" folder="" sort="0" />
         <label id="80" label="" color="7" folder="" sort="0" />
@@ -216,92 +220,27 @@
         <label id="79" label="Cheating B" folder="" sort="0" />
         <label id="108" label="Cheating C" folder="" sort="0" />
         <label id="112" label="" color="4" folder="" sort="0" />
-        <label id="113" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="4" />
-        <label id="114" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="2" />
-        <label id="115" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="3" />
-        <label id="116" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="4" />
-        <label id="117" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="5" />
-        <label id="118" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="0" />
-        <label id="119" label="April Fools Lines" folder="Noteworthy Things" sort="6" />
-        <label id="120" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="6" />
-        <label id="121" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="7" />
-        <label id="122" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="17" />
-        <label id="123" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="19" />
-        <label id="124" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="27" />
-        <label id="125" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="28" />
-        <label id="126" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="9" />
-        <label id="127" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="6" />
-        <label id="128" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="13" />
-        <label id="129" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="14" />
-        <label id="130" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="2" />
-        <label id="131" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="18" />
-        <label id="132" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="7" />
-        <label id="133" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="21" />
-        <label id="134" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="22" />
-        <label id="135" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="15" />
-        <label id="136" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="16" />
-        <label id="137" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="8" />
-        <label id="138" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="10" />
-        <label id="139" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="11" />
-        <label id="140" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="12" />
-        <label id="141" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="4" />
-        <label id="142" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="23" />
-        <label id="143" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="29" />
-        <label id="144" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="30" />
-        <label id="145" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="31" />
-        <label id="146" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="32" />
-        <label id="148" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="34" />
-        <label id="147" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="33" />
-        <label id="149" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="35" />
-        <label id="150" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="36" />
-        <label id="151" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="37" />
-        <label id="152" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="38" />
-        <label id="153" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="39" />
-        <label id="154" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="40" />
-        <label id="156" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="42" />
-        <label id="157" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="43" />
-        <label id="158" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="44" />
-        <label id="159" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="45" />
-        <label id="160" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="46" />
-        <label id="155" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="41" />
-        <label id="161" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="47" />
-        <label id="162" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="48" />
-        <label id="163" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="49" />
-        <label id="164" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="50" />
-        <label id="165" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="51" />
-        <label id="166" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="52" />
-        <label id="167" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="53" />
-        <label id="168" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="54" />
-        <label id="169" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="55" />
-        <label id="170" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="56" />
-        <label id="171" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="57" />
-        <label id="172" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="58" />
-        <label id="173" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="59" />
-        <label id="174" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="0" />
-        <label id="175" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="61" />
-        <label id="176" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="62" />
-        <label id="177" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="63" />
-        <label id="178" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="64" />
-        <label id="179" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="65" />
-        <label id="180" label="" folder="Duplicate Cases" sort="2" />
-        <label id="181" label="" folder="Duplicate Cases" sort="0" />
-        <label id="182" label="" folder="Duplicate Cases" sort="4" />
-        <label id="183" label="" folder="Duplicate Cases" sort="5" />
-        <label id="185" label="" folder="Duplicate Cases" sort="3" />
-        <label id="186" label="" folder="Duplicate Cases" sort="6" />
-        <label id="189" label="" color="1" folder="" sort="0" />
+        <label id="118" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="2" />
+        <label id="119" label="April Fools Lines" color="7" folder="Noteworthy Things" sort="6" />
+        <label id="174" label="" folder="Sponsorship&gt;Nord&gt;Target 10 Characters" sort="4" />
+        <label id="180" label="Extra" folder="" sort="2" />
+        <label id="181" label="Minor" folder="" sort="0" />
+        <label id="182" label="Extra" folder="" sort="4" />
+        <label id="183" label="Minor" folder="" sort="5" />
+        <label id="185" label="Major" folder="" sort="3" />
+        <label id="186" label="Major" folder="" sort="6" />
         <label id="190" label="" color="1" folder="" sort="0" />
         <label id="35" label="" color="1" folder="" sort="0" />
         <label id="38" label="" color="1" folder="" sort="0" />
-        <label id="196" label="No Non-Con (Other Villain)" folder="Noteworthy Things" sort="7" />
+        <label id="196" label="No Non-Con (Other Villain)" folder="Noteworthy Things" sort="0" />
         <label id="203" label="" color="1" folder="" sort="0" />
         <label id="206" label="" color="1" folder="" sort="0" />
         <label id="207" label="" color="1" folder="" sort="0" />
         <label id="208" label="" color="1" folder="" sort="0" />
-        <label id="209" label="" color="4" folder="" sort="0" />
-        <label id="210" label="" color="4" folder="" sort="0" />
-        <label id="211" label="" color="4" folder="" sort="0" />
-        <label id="212" label="" color="4" folder="" sort="0" />
+        <label id="209" label="" color="4" folder="Player Targets" sort="8" />
+        <label id="210" label="" color="4" folder="Player Targets" sort="7" />
+        <label id="211" label="" color="4" folder="Player Targets" sort="9" />
+        <label id="212" label="" color="4" folder="Player Targets" sort="10" />
         <label id="215" label="" folder="Backgrounds" sort="2" />
         <label id="216" label="" folder="Backgrounds" sort="10" />
         <label id="217" label="" folder="Backgrounds" sort="12" />
@@ -314,66 +253,22 @@
         <label id="224" label="" folder="Backgrounds" sort="6" />
         <label id="225" label="" folder="Backgrounds" sort="9" />
         <label id="226" label="" folder="Backgrounds" sort="10" />
-        <label id="227" label="Misc. Things" color="4" folder="Noteworthy Things" sort="15" />
+        <label id="227" label="Misc. Things" color="7" folder="Noteworthy Things" sort="15" />
         <label id="228" label="" folder="Backgrounds" sort="12" />
         <label id="229" label="" folder="Backgrounds" sort="0" />
-        <label id="231" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="2" />
-        <label id="232" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="2" />
-        <label id="233" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="3" />
-        <label id="234" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="4" />
-        <label id="235" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="5" />
-        <label id="236" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="6" />
-        <label id="237" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="7" />
-        <label id="239" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="9" />
-        <label id="238" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="8" />
-        <label id="240" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="10" />
-        <label id="241" label="" folder="Sponsorship&gt;Nord&gt;10 Targets To &quot;Has Companion&quot;" sort="11" />
-        <label id="242" label="" folder="Sponsorship&gt;Nord&gt;10 Futanari Forfeit Lines" sort="0" />
-        <label id="243" label="Chubby 2/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="2" />
-        <label id="244" label="Creepy 1/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="2" />
-        <label id="245" label="Creepy 1/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="3" />
-        <label id="246" label="Dumb 1/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="5" />
-        <label id="247" label="Dumb 1/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="15" />
-        <label id="248" label="Magic 2/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="6" />
-        <label id="249" label="Weapon 2/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="7" />
-        <label id="250" label="Yandere 2/2" folder="Sponsorship&gt;Nord&gt;Filters" sort="8" />
-        <label id="251" label="Bondage Forfeit 3/3" folder="Sponsorship&gt;Nord&gt;Filters" sort="17" />
-        <label id="252" label="Tandem Forfeit 9/9" folder="Sponsorship&gt;Nord&gt;Filters" sort="16" />
-        <label id="253" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="9" />
-        <label id="254" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="10" />
-        <label id="255" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="11" />
-        <label id="256" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="4" />
-        <label id="257" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="12" />
-        <label id="258" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="13" />
-        <label id="259" label="Non-Human Tags 1/5" folder="Sponsorship&gt;Nord&gt;Filters" sort="14" />
-        <label id="260" label="" folder="Sponsorship&gt;Ace&gt;5 Lines Explaining She's Multilingual" sort="0" />
-        <label id="261" label="" folder="Sponsorship&gt;Ace&gt;5 Lines Explaining She's Multilingual" sort="3" />
-        <label id="262" label="" folder="Sponsorship&gt;Ace&gt;5 Lines Explaining She's Multilingual" sort="2" />
-        <label id="263" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="0" />
-        <label id="264" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="2" />
-        <label id="265" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="3" />
-        <label id="266" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="4" />
-        <label id="267" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="5" />
-        <label id="268" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="5" />
-        <label id="269" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="7" />
-        <label id="270" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="8" />
-        <label id="271" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="9" />
-        <label id="272" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="10" />
-        <label id="273" label="Anthropologist" folder="Noteworthy Things" sort="0" />
+        <label id="273" label="Anthropology Enthusiast - Start" folder="Noteworthy Things" sort="19" />
         <label id="274" label="Misc. Things" color="1" folder="Noteworthy Things" sort="0" />
-        <label id="275" label="Culture Stuff" folder="Noteworthy Things" sort="0" />
-        <label id="276" label="" folder="Noteworthy Things" sort="0" />
-        <label id="277" label="" folder="Backgrounds" sort="0" />
-        <label id="278" label="" color="1" folder="" sort="0" />
-        <label id="279" label="" color="1" folder="" sort="0" />
-        <label id="280" label="" color="1" folder="" sort="0" />
-        <label id="281" label="April Fools Lines" folder="" sort="0" />
+        <label id="275" label="Culture Stuff" folder="Noteworthy Things" sort="20" />
+        <label id="276" label="Give Up, Be Evil" folder="Noteworthy Things" sort="21" />
+        <label id="277" label="" folder="Backgrounds" sort="13" />
+        <label id="343" label="" color="2" folder="" sort="0" />
+        <label id="281" label="April Fools Lines" color="7" folder="" sort="0" />
         <label id="318" label="" color="1" folder="" sort="0" />
         <label id="301" label="" color="1" folder="" sort="0" />
         <label id="302" label="Misc. Things" color="1" folder="Noteworthy Things" sort="0" />
         <label id="311" label="" color="1" folder="" sort="0" />
-        <label id="304" label="Genius Things" folder="Noteworthy Things" sort="0" />
-        <label id="306" label="Hotdog Is Not A Sandwich (April Fools Exclusive)" folder="Prompts" sort="0" />
+        <label id="304" label="Genius Things" folder="Noteworthy Things" sort="22" />
+        <label id="306" label="Hotdog Is Not A Sandwich (April Fools Exclusive)" folder="Prompts" sort="3" />
         <label id="310" label="" color="1" folder="" sort="0" />
         <label id="312" label="" color="1" folder="" sort="0" />
         <label id="313" label="" color="1" folder="" sort="0" />
@@ -381,13 +276,13 @@
         <label id="315" label="" color="1" folder="" sort="0" />
         <label id="316" label="" color="1" folder="" sort="0" />
         <label id="317" label="" color="1" folder="" sort="0" />
-        <label id="319" label="" color="4" folder="" sort="0" />
-        <label id="320" label="" color="4" folder="" sort="0" />
-        <label id="321" label="" color="4" folder="" sort="0" />
-        <label id="325" label="" folder="Backgrounds" sort="0" />
-        <label id="326" label="" folder="Noteworthy Things" sort="0" />
-        <label id="327" label="" folder="Noteworthy Things" sort="0" />
-        <label id="328" label="Culture Stuff" folder="Noteworthy Things" sort="0" />
+        <label id="344" label="" color="2" folder="" sort="0" />
+        <label id="114" label="" color="2" folder="" sort="0" />
+        <label id="345" label="" color="1" folder="" sort="0" />
+        <label id="325" label="" folder="Backgrounds" sort="14" />
+        <label id="326" label="" folder="Noteworthy Things" sort="3" />
+        <label id="327" label="" folder="Noteworthy Things" sort="4" />
+        <label id="328" label="Culture Stuff" folder="Noteworthy Things" sort="23" />
         <label id="329" label="" color="1" folder="Prompts" sort="0" />
         <label id="331" label="" color="5" folder="" sort="0" />
         <label id="332" label="" color="5" folder="" sort="0" />
@@ -395,9 +290,133 @@
         <label id="334" label="" color="5" folder="" sort="0" />
         <label id="335" label="" color="5" folder="" sort="0" />
         <label id="336" label="" color="5" folder="" sort="0" />
-        <label id="337" label="" folder="Noteworthy Things" sort="0" />
+        <label id="337" label="Real Arm Story - Follow-Up" folder="Noteworthy Things" sort="0" />
+        <label id="340" label="" folder="Filters" sort="0" />
+        <label id="341" label="" folder="Sponsorship&gt;Ace&gt;2 Lines To 5 Testing Characters" sort="0" />
+        <label id="342" label="" color="1" folder="" sort="0" />
+        <label id="348" label="" folder="Noteworthy Things" sort="0" />
+        <label id="349" label="" folder="Noteworthy Things" sort="2" />
+        <label id="350" label="" folder="Noteworthy Things" sort="3" />
+        <label id="351" label="Pending" color="1" folder="Noteworthy Things" sort="0" />
+        <label id="352" label="" color="4" folder="" sort="0" />
+        <label id="355" label="" color="1" folder="" sort="0" />
+        <label id="357" label="First Move - Extra / Minor" color="4" folder="" sort="0" />
+        <label id="358" label="First Move - Extra / Minor" color="4" folder="" sort="0" />
+        <label id="359" label="First Move - Major / Important" color="4" folder="" sort="0" />
+        <label id="360" label="First Move - Major / Important" color="4" folder="" sort="0" />
+        <label id="366" label="" color="7" folder="" sort="0" />
+        <label id="364" label="" color="1" folder="" sort="0" />
+        <label id="365" label="" color="1" folder="" sort="0" />
+        <label id="367" label="" color="7" folder="" sort="0" />
+        <label id="371" label="Tease" folder="Noteworthy Things" sort="24" />
+        <label id="372" label="Be Evil - Followups" color="5" folder="Noteworthy Things" sort="25" />
+        <label id="373" label="Not Wearing Collectibles" folder="" sort="0" />
+        <label id="374" label="Pity Mode Start" folder="" sort="0" />
+        <label id="375" label="Pitty Mode End" folder="" sort="0" />
+        <label id="376" label="Pity Mode End - Opponent Triggers" folder="" sort="0" />
+        <label id="377" label="Tough Opponents" folder="" sort="0" />
+        <label id="378" label="Tough Opponents" folder="" sort="0" />
+        <label id="379" label="Pity Mode End" folder="" sort="0" />
+        <label id="380" label="Birthday - Birthday Background" folder="Backgrounds" sort="2" />
+        <label id="381" label="Birthday" folder="Noteworthy Things" sort="2" />
+        <label id="382" label="Must Strip - First Move" folder="" sort="0" />
+        <label id="383" label="Must Masturbate" color="4" folder="" sort="0" />
+        <label id="47" label="Must Masturbate" color="4" folder="" sort="0" />
+        <label id="6" label="Must Strip" color="1" folder="" sort="0" />
+        <label id="384" label="Must Strip" folder="" sort="0" />
+        <label id="194" label="Must Masturbate - Second Out" folder="" sort="0" />
+        <label id="385" label="" folder="Backgrounds" sort="0" />
+        <label id="386" label="Genius Things" folder="Noteworthy Things" sort="26" />
+        <label id="387" label="Bra Tease" folder="" sort="0" />
+        <label id="388" label="Panty Tease" folder="" sort="0" />
+        <label id="389" label="Underwear Tease" folder="" sort="0" />
+        <label id="394" label="" color="5" folder="" sort="0" />
+        <label id="392" label="" color="1" folder="" sort="0" />
+        <label id="395" label="" folder="Clothing Specific" sort="20" />
+        <label id="396" label="" folder="Clothing Specific" sort="21" />
+        <label id="397" label="" folder="Clothing Specific" sort="16" />
+        <label id="398" label="" folder="Clothing Specific" sort="15" />
+        <label id="399" label="" folder="Clothing Specific" sort="18" />
+        <label id="400" label="" folder="Clothing Specific" sort="22" />
+        <label id="401" label="" folder="Clothing Specific" sort="17" />
+        <label id="402" label="" folder="Clothing Specific" sort="19" />
+        <label id="403" label="" folder="Clothing Specific" sort="12" />
+        <label id="404" label="" folder="Clothing Specific" sort="9" />
+        <label id="405" label="" folder="Clothing Specific" sort="8" />
+        <label id="406" label="" folder="Clothing Specific" sort="3" />
+        <label id="407" label="" folder="Clothing Specific" sort="2" />
+        <label id="408" label="" folder="Clothing Specific" sort="7" />
+        <label id="409" label="" folder="Clothing Specific" sort="13" />
+        <label id="410" label="" folder="Clothing Specific" sort="5" />
+        <label id="230" label="" folder="Clothing Specific" sort="11" />
+        <label id="411" label="" folder="Clothing Specific" sort="4" />
+        <label id="412" label="" folder="Clothing Specific" sort="6" />
+        <label id="413" label="" folder="Clothing Specific" sort="14" />
+        <label id="414" label="" folder="Clothing Specific" sort="10" />
+        <label id="415" label="" folder="Clothing Specific" sort="0" />
+        <label id="346" label="" folder="Player Targets" sort="2" />
+        <label id="416" label="" folder="Player Targets" sort="15" />
+        <label id="417" label="" folder="Player Targets" sort="3" />
+        <label id="418" label="" folder="Player Targets" sort="5" />
+        <label id="419" label="" folder="Player Targets" sort="4" />
+        <label id="420" label="" folder="Player Targets" sort="6" />
+        <label id="421" label="" folder="Player Targets" sort="14" />
+        <label id="422" label="" folder="Player Targets" sort="12" />
+        <label id="356" label="" folder="Player Targets" sort="13" />
+        <label id="423" label="" folder="Player Targets" sort="11" />
+        <label id="424" label="" folder="Player Targets" sort="8" />
+        <label id="256" label="" folder="Filters" sort="4" />
+        <label id="244" label="" folder="Filters" sort="3" />
+        <label id="425" label="" folder="Filters" sort="7" />
+        <label id="426" label="" folder="Filters" sort="6" />
+        <label id="427" label="" color="1" folder="Player Targets" sort="6" />
+        <label id="428" label="" folder="Player Targets" sort="4" />
+        <label id="429" label="" folder="Player Targets" sort="5" />
+        <label id="430" label="" folder="Player Targets" sort="3" />
+        <label id="253" label="" folder="Filters" sort="13" />
+        <label id="258" label="" folder="Filters" sort="17" />
+        <label id="254" label="" folder="Filters" sort="14" />
+        <label id="255" label="" folder="Filters" sort="15" />
+        <label id="246" label="" folder="Filters" sort="9" />
+        <label id="257" label="" folder="Filters" sort="16" />
+        <label id="431" label="" folder="Filters" sort="8" />
+        <label id="259" label="" folder="Filters" sort="18" />
+        <label id="248" label="" folder="Filters" sort="10" />
+        <label id="432" label="" folder="Filters" sort="20" />
+        <label id="433" label="" folder="Filters" sort="19" />
+        <label id="434" label="" folder="Filters" sort="21" />
+        <label id="435" label="" folder="Filters" sort="5" />
+        <label id="249" label="" folder="Filters" sort="11" />
+        <label id="250" label="" folder="Filters" sort="12" />
+        <label id="436" label="" folder="Filters" sort="23" />
+        <label id="437" label="" folder="Filters" sort="22" />
+        <label id="247" label="" folder="Filters" sort="24" />
+        <label id="438" label="" folder="Player Targets" sort="7" />
+        <label id="361" label="" color="7" folder="" sort="0" />
+        <label id="462" label="" color="1" folder="" sort="0" />
+        <label id="446" label="Must Strip - One Pair" folder="" sort="0" />
+        <label id="447" label="Must Strip - High Card" folder="" sort="0" />
+        <label id="448" label="Must Strip - Two Pairs Or Higher" folder="" sort="0" />
+        <label id="449" label="Must Strip - Self High Card" folder="" sort="0" />
+        <label id="450" label="Must Strip - Throws The Game" folder="" sort="0" />
+        <label id="451" label="Villain Pro Tip Followup" folder="Noteworthy Things" sort="27" />
+        <label id="452" label="Must Masturbate - Throws The Game" color="4" folder="" sort="0" />
+        <label id="453" label="" folder="Clothing Specific" sort="23" />
+        <label id="454" label="" folder="Clothing Specific" sort="24" />
+        <label id="455" label="" folder="Filters" sort="2" />
+        <label id="456" label="Favorite Explosive?" folder="Prompts" sort="5" />
+        <label id="458" label="Multilingual Encouragement" folder="" sort="0" />
+        <label id="459" label="" folder="Noteworthy Things" sort="0" />
+        <label id="464" label="Language Things" folder="Noteworthy Things" sort="28" />
+        <label id="465" label="" folder="Noteworthy Things" sort="29" />
+        <label id="466" label="2 Consecutive Losses" folder="" sort="0" />
+        <label id="467" label="3 Consecutive Losses" folder="" sort="0" />
+        <label id="468" label="4+ Consecutive Losses" folder="" sort="0" />
     </labels>
-    <nextId>337</nextId>
+    <prefixes>
+        <prefix>x</prefix>
+    </prefixes>
+    <nextId>468</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="Adrien_Costume1" />
@@ -430,6 +449,7 @@
         <marker scope="Public" name="Arms" />
         <marker scope="Public" name="ArmStory" />
         <marker scope="Public" name="AstolfoBean1" />
+        <marker scope="Public" name="BackstoryForReal" />
         <marker scope="Public" name="BadEndings" />
         <marker scope="Public" name="BeachSagardwip" />
         <marker scope="Public" name="BeachSunburn" />
@@ -478,6 +498,7 @@
         <marker scope="Public" name="CheatingB" />
         <marker scope="Public" name="CheatingC" />
         <marker scope="Public" name="CheatingIsHard" />
+        <marker scope="Public" name="ChessCheating" />
         <marker scope="Public" name="Chica_BeNice1" />
         <marker scope="Public" name="Chica_BeNice2" />
         <marker scope="Public" name="Chica_BeNice3" />
@@ -534,6 +555,13 @@
         <marker scope="Public" name="Fischl_Origins1" />
         <marker scope="Public" name="FourPeopleOverpowering" />
         <marker scope="Public" name="FriskForCards" />
+        <marker scope="Public" name="Galatea_Artist1" />
+        <marker scope="Public" name="Galatea_Connections1" />
+        <marker scope="Public" name="Galatea_Critics1" />
+        <marker scope="Public" name="Galatea_Gods1" />
+        <marker scope="Public" name="Galatea_Sleep1" />
+        <marker scope="Public" name="Galatea_Stilton1" />
+        <marker scope="Public" name="Galatea_Tension1" />
         <marker scope="Public" name="Galatea1" />
         <marker scope="Public" name="GameStart" />
         <marker scope="Public" name="GiveUpBeEvil" />
@@ -546,6 +574,7 @@
         <marker scope="Public" name="Grunt_Intro" />
         <marker scope="Public" name="GSC1" />
         <marker scope="Public" name="HateConformity" />
+        <marker scope="Public" name="HateSwears" />
         <marker scope="Public" name="HeckThePolice" />
         <marker scope="Public" name="Helperchan_BrokenArm1" />
         <marker scope="Public" name="Helperchan_Cheating1" />
@@ -631,7 +660,7 @@
         <marker scope="Public" name="Mary_DucksTooSoon" />
         <marker scope="Public" name="MasterOfDisguise" />
         <marker scope="Public" name="Megumin_MageyMaggie1" />
-        <marker scope="Public" name="Meia_EatingBabies1" />
+        <marker scope="Public" name="Meia_EatingElders1" />
         <marker scope="Public" name="Meia_Hair1" />
         <marker scope="Public" name="Meia_Misidentified1" />
         <marker scope="Public" name="MG_FireWeak1" />
@@ -641,7 +670,19 @@
         <marker scope="Public" name="MG_Speech3b" />
         <marker scope="Public" name="MG_Weapons1" />
         <marker scope="Public" name="MiddleFinger" />
+        <marker scope="Public" name="Misc_BlindOpponent" />
+        <marker scope="Public" name="Misc_CheatCasinos" />
+        <marker scope="Public" name="Misc_EvilViolence" />
+        <marker scope="Public" name="Misc_GermanTone" />
+        <marker scope="Public" name="Misc_GrandTheftChoppo" />
+        <marker scope="Public" name="Misc_InternetCultureStudy" />
+        <marker scope="Public" name="Misc_MagicalItems" />
+        <marker scope="Public" name="Misc_MeaninglessHonors" />
+        <marker scope="Public" name="Misc_NoSocialNorms" />
+        <marker scope="Public" name="Misc_Pochspeil" />
         <marker scope="Public" name="Misc_RealArmStory" />
+        <marker scope="Public" name="Misc_ScamsBad" />
+        <marker scope="Public" name="Misc_StendhalSyndrome" />
         <marker scope="Public" name="Misty_Swimsuit1" />
         <marker scope="Public" name="Monique1" />
         <marker scope="Public" name="MonsterArt" />
@@ -652,6 +693,10 @@
         <marker scope="Public" name="Muffins1" />
         <marker scope="Public" name="Multilingual" />
         <marker scope="Public" name="MustMasturbate_First" />
+        <marker scope="Public" name="MustMasturbate_First2" />
+        <marker scope="Public" name="MustStrip_Tease" />
+        <marker scope="Public" name="MustStrip6_PlayerCheated" />
+        <marker scope="Public" name="MustStrip6_Positive" />
         <marker scope="Public" name="Nadeshiko_Inventory1" />
         <marker scope="Public" name="Nadeshiko_Locations1" />
         <marker scope="Public" name="Nadeshiko_Partner1" />
@@ -706,7 +751,9 @@
         <marker scope="Public" name="NoScars" />
         <marker scope="Public" name="NotScaredOfSuperman" />
         <marker scope="Public" name="NudeBeaches" />
+        <marker scope="Public" name="NudityShame" />
         <marker scope="Public" name="OfficeSnack" />
+        <marker scope="Public" name="OpponentMast_MultilingualEncouragement" />
         <marker scope="Public" name="OrderOfBozos" />
         <marker scope="Public" name="Orendi_Chaos1" />
         <marker scope="Public" name="Palutena1" />
@@ -721,6 +768,7 @@
         <marker scope="Public" name="PityMode" />
         <marker scope="Public" name="PityModeEnd" />
         <marker scope="Public" name="Player_AdviceNothingMatters" />
+        <marker scope="Public" name="Player_EasyWay" />
         <marker scope="Public" name="Player_EmptyHead" />
         <marker scope="Public" name="Player_Fate" />
         <marker scope="Public" name="Player_HopingToGain" />
@@ -728,10 +776,15 @@
         <marker scope="Public" name="Player_NatashaNotViolent" />
         <marker scope="Public" name="Player_NatashaSecret" />
         <marker scope="Public" name="Player_PhoneScreen" />
+        <marker scope="Public" name="Player_PowerDynamic" />
+        <marker scope="Public" name="Player_ReplaceArms" />
+        <marker scope="Public" name="Player_TurnOns" />
         <marker scope="Public" name="Player_Virginity" />
+        <marker scope="Public" name="Player_Virginity2" />
         <marker scope="Public" name="PlayerNoPityWin" />
         <marker scope="Public" name="PlayTheClassics" />
         <marker scope="Public" name="Prompt_ArmStory" />
+        <marker scope="Public" name="Prompt_FavoriteExplosive" />
         <marker scope="Public" name="Prompt_MakeMeAngry" />
         <marker scope="Public" name="Prompt_MeanestThing" />
         <marker scope="Public" name="PublicIndecency" />
@@ -763,6 +816,7 @@
         <marker scope="Public" name="RMika_Mask1" />
         <marker scope="Public" name="RMika_Mask2" />
         <marker scope="Public" name="RMika_Mask3" />
+        <marker scope="Public" name="RomeRedFlag" />
         <marker scope="Public" name="RootOfAllEvil" />
         <marker scope="Public" name="Rose_Anima1" />
         <marker scope="Public" name="Rose_Arms1" />
@@ -786,6 +840,7 @@
         <marker scope="Public" name="Sanako_SpendTime1" />
         <marker scope="Public" name="SannyTess_Gimmick1" />
         <marker scope="Public" name="SannyTess_Trust1" />
+        <marker scope="Public" name="SannyTess_Trust2" />
         <marker scope="Public" name="SayYesToKinkshaming" />
         <marker scope="Public" name="ScamCockroaches" />
         <marker scope="Public" name="ScaredOfNero" />
@@ -801,6 +856,7 @@
         <marker scope="Public" name="SCM_ToothDis1" />
         <marker scope="Public" name="SelfishEvil" />
         <marker scope="Public" name="SelfishGood" />
+        <marker scope="Public" name="SelfMast_NotFirstTime" />
         <marker scope="Public" name="ShaggyBlanco1" />
         <marker scope="Public" name="ShaggyBlanco2" />
         <marker scope="Public" name="ShaggyBlanco3" />
@@ -818,11 +874,16 @@
         <marker scope="Public" name="StargazingInTheSahara" />
         <marker scope="Public" name="StompingScammers" />
         <marker scope="Public" name="StopTalkingForever" />
+        <marker scope="Public" name="Story_ImmortalBrokenNose" />
         <marker scope="Public" name="Streamingchan1" />
         <marker scope="Public" name="Stripped2_RealArmStory" />
+        <marker scope="Public" name="Stripped3_GenericTease" />
         <marker scope="Public" name="Stripping0_PersonalEncounters" />
         <marker scope="Public" name="Stripping1_RealArmStory" />
         <marker scope="Public" name="Stripping2_Multilingual" />
+        <marker scope="Public" name="Stripping6_Confidence" />
+        <marker scope="Public" name="Stripping6_Nudism" />
+        <marker scope="Public" name="Stripping6_SelfishEvil2" />
         <marker scope="Public" name="StrongLegs" />
         <marker scope="Public" name="SuddenDeath" />
         <marker scope="Public" name="Sweetheart_Forfeit1" />
@@ -868,12 +929,15 @@
         <marker scope="Public" name="ZekePandy_Forfeit1" />
         <marker scope="Public" name="ZekePandy_HowEvil1" />
         <marker scope="Public" name="ZekePandy_HowEvil2" />
+        <marker scope="Public" name="ZekePandy_HowEvil3" />
         <marker scope="Public" name="ZekePandy_Intro" />
         <marker scope="Public" name="ZekePandy_NaturalArms1" />
         <marker scope="Public" name="ZekePandy_NaturalArms2" />
+        <marker scope="Public" name="ZekePandy_NaturalArms3" />
         <marker scope="Public" name="ZekePandy_Prince1" />
         <marker scope="Public" name="ZekePandy_Prince2" />
         <marker scope="Public" name="ZekePandy_Prince3" />
+        <marker scope="Public" name="ZekePandy_Tantal1" />
         <marker scope="Public" name="ZekePandy_Turters1" />
         <marker scope="Public" name="Zenobia1" />
         <marker scope="Public" name="ZLS1" />
