@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1746589092228</lastupdate>
+    <lastupdate>1768546957197</lastupdate>
     <enabled>true</enabled>
     <first>Aella</first>
     <last />
@@ -14,13 +14,21 @@
     <layers>6</layers>
     <default-costume-name>Eager Adventurer</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/festival_aella/" img="0-portrait.png" set="valentines" label="Aella">Festival Dress</costume>
-        <costume folder="opponents/reskins/mama_shotgun_aella/" img="0-portrait.png" set="april_fools" status="unlisted" label="Aella">Mama Shotgun</costume>
-        <costume folder="opponents/reskins/new_year_aella/" img="0-happy.png" set="easter" label="Aella">Off-World New Year</costume>
-        <costume folder="opponents/reskins/aella_swimsuit/" img="0-portrait.png" set="summer" label="Aella" layers="5">Swimsuit Aella</costume>
+        <costume folder="opponents/reskins/festival_aella/" img="0-portrait.png" set="valentines" label="Aella">
+            <costume-name>Festival Dress</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/mama_shotgun_aella/" img="0-portrait.png" set="april_fools" status="unlisted" label="Aella">
+            <costume-name>Mama Shotgun</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/new_year_aella/" img="0-happy.png" set="easter" label="Aella">
+            <costume-name>Off-World New Year</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/aella_swimsuit/" img="0-portrait.png" set="summer" label="Aella" layers="5">
+            <costume-name>Swimsuit Aella</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>3086</lines>
-    <poses>220</poses>
+    <lines>3128</lines>
+    <poses>208</poses>
     <dialogue-layer>over</dialogue-layer>
 </opponent>
