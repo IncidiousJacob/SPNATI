@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1725577340862</lastupdate>
+    <lastupdate>1770178142968</lastupdate>
     <enabled>true</enabled>
     <first>Ibuki</first>
     <last>Akiyama</last>
@@ -15,13 +15,23 @@
     <layers>8</layers>
     <default-costume-name>Critical Darling</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/critical_darling_delinquent/" img="0-portrait.png" status="online" label="Critical Darling">Delinquent Darling</costume>
-        <costume folder="opponents/reskins/critical_darling_beach/" img="0-portrait.png" set="summer" label="Critical Darling">Beach Darling</costume>
-        <costume folder="opponents/reskins/critical_darling_icy/" img="0-portrait.png" set="xmas" status="online" label="Critical Darling">Icy Darling</costume>
-        <costume folder="opponents/reskins/critical_darling_formal/" img="0-portrait.png" label="Critical Darling">Formal Darling</costume>
-        <costume folder="opponents/reskins/critical_darling_cursed/" img="0-portrait.png" set="halloween" label="Critical Darling">Cursed Darling</costume>
+        <costume folder="opponents/reskins/critical_darling_delinquent/" img="0-portrait.png" status="online" label="Critical Darling">
+            <costume-name>Delinquent Darling</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/critical_darling_beach/" img="0-portrait.png" set="summer" label="Critical Darling">
+            <costume-name>Beach Darling</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/critical_darling_icy/" img="0-portrait.png" set="xmas" status="online" label="Critical Darling">
+            <costume-name>Icy Darling</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/critical_darling_formal/" img="0-portrait.png" label="Critical Darling">
+            <costume-name>Formal Darling</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/critical_darling_cursed/" img="0-portrait.png" set="halloween" label="Critical Darling">
+            <costume-name>Cursed Darling</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2675</lines>
-    <poses>205</poses>
+    <lines>2754</lines>
+    <poses>222</poses>
 </opponent>
