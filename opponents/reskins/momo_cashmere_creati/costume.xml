@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>momo_cashmere_creati</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag remove="true">cheats_with_clothes</tag>
+        <tag remove="true">high_heels</tag>
+        <tag remove="true">leotard</tag>
+        <tag from="3" to="5">lingerie</tag>
+        <tag remove="true">no_bra</tag>
+        <tag remove="true">no_underwear</tag>
+        <tag from="0" to="3">pantyhose</tag>
+        <tag remove="true">ponytail</tag>
+        <tag remove="true">scantily-clad</tag>
+        <tag from="0" to="1">sweater</tag>
+        <tag remove="true">thong</tag>
+        <tag>valentines_skin</tag>
+    </tags>
+    <layers>6</layers>
+    <folder>opponents/reskins/momo_cashmere_creati/</folder>
+    <wardrobe>
+        <clothing name="panties" generic="underwear" position="lower" type="important" plural="true" />
+        <clothing name="bra" generic="bra" position="upper" type="important" />
+        <clothing name="sweater" generic="sweater" position="upper" type="major" />
+        <clothing name="tights" generic="leggings" position="lower" type="major" plural="true" />
+        <clothing name="skirt" generic="skirt" position="lower" type="minor" />
+        <clothing name="slippers" generic="shoes" position="feet" type="extra" plural="true" />
+    </wardrobe>
+
+    <poses>
+        <pose id="0-treasureScope">
+            <sprite id="treasureScope" src="reskins/momo_cashmere_creati/resources/0-treasureScope.png" x="0" y="0" />
+            <sprite id="surprised" src="reskins/momo_cashmere_creati/0-surprised.png" x="0" y="0" />
+            <sprite id="Rouge_TreasureScope_Lens" src="momo/resources/Rouge_TreasureScope_Lens.png" x="250" y="290" scalex="1" alpha="0" />
+            <directive type="animation" id="surprised" delay="2.12" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="290" scalex="1" alpha="0" />
+                <keyframe time="2.12" x="0" y="290" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="1-treasureScope">
+            <sprite id="treasureScope" src="reskins/momo_cashmere_creati/resources/1-treasureScope.png" x="0" y="0" />
+            <sprite id="surprised" src="reskins/momo_cashmere_creati/1-surprised.png" x="0" y="0" />
+            <sprite id="Rouge_TreasureScope_Lens" src="momo/resources/Rouge_TreasureScope_Lens.png" x="250" y="290" scalex="1" alpha="0" />
+            <directive type="animation" id="surprised" delay="2.12" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="290" scalex="1" alpha="0" />
+                <keyframe time="2.12" x="0" y="290" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="2-treasureScope">
+            <sprite id="treasureScope" src="reskins/momo_cashmere_creati/resources/2-treasureScope.png" x="0" y="0" />
+            <sprite id="surprised" src="reskins/momo_cashmere_creati/2-surprised.png" x="0" y="0" />
+            <sprite id="Rouge_TreasureScope_Lens" src="momo/resources/Rouge_TreasureScope_Lens.png" x="250" y="290" scalex="1" alpha="0" />
+            <directive type="animation" id="surprised" delay="2.12" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="290" scalex="1" alpha="0" />
+                <keyframe time="2.12" x="0" y="290" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="3-treasureScope">
+            <sprite id="treasureScope" src="reskins/momo_cashmere_creati/resources/3-treasureScope.png" x="0" y="0" />
+            <sprite id="surprised" src="reskins/momo_cashmere_creati/3-surprised.png" x="0" y="0" />
+            <sprite id="Rouge_TreasureScope_Lens" src="momo/resources/Rouge_TreasureScope_Lens.png" x="250" y="290" scalex="1" alpha="0" />
+            <directive type="animation" id="surprised" delay="2.12" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="290" scalex="1" alpha="0" />
+                <keyframe time="2.12" x="0" y="290" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="4-treasureScope">
+            <sprite id="treasureScope" src="reskins/momo_cashmere_creati/resources/4-treasureScope.png" x="0" y="0" />
+            <sprite id="surprised" src="reskins/momo_cashmere_creati/4-surprised.png" x="0" y="0" />
+            <sprite id="Rouge_TreasureScope_Lens" src="momo/resources/Rouge_TreasureScope_Lens.png" x="250" y="290" scalex="1" alpha="0" />
+            <directive type="animation" id="surprised" delay="2.12" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="1" alpha="0" />
+            </directive>
+            <directive type="animation" id="Rouge_TreasureScope_Lens" ease="linear" interpolation="linear">
+                <keyframe time="0" x="250" y="290" scalex="1" alpha="0" />
+                <keyframe time="2.12" x="0" y="290" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="0-creationCannon">
+            <sprite id="determined" z="1" src="momo/0-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-53" y="836" scalex="1" scaley="1.5" rotation="18" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-78" y="1002" scalex="1" scaley="1.5" rotation="-3" />
+        </pose>
+        <pose id="1-creationCannon">
+            <sprite id="determined" z="1" src="momo/1-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-30" y="770" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-78" y="1002" scalex="1" scaley="1.5" rotation="-3" />
+        </pose>
+        <pose id="2-creationCannon">
+            <sprite id="determined" z="1" src="momo/2-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-33" y="790" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-78" y="1018" scalex="1" scaley="1.5" rotation="-3" />
+        </pose>
+        <pose id="3-creationCannon">
+            <sprite id="determined" z="1" src="reskins/momo_cashmere_creati/3-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-43" y="820" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-76" y="1061" scalex="1" scaley="1.75" rotation="-6" />
+        </pose>
+        <pose id="4-creationCannon">
+            <sprite id="determined" z="1" src="reskins/momo_cashmere_creati/4-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-43" y="820" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-76" y="1061" scalex="1" scaley="1.75" rotation="-6" />
+        </pose>
+        <pose id="5-creationCannon">
+            <sprite id="determined" z="1" src="reskins/momo_cashmere_creati/5-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-43" y="820" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-76" y="1061" scalex="1" scaley="1.75" rotation="-6" />
+        </pose>
+        <pose id="6-creationCannon">
+            <sprite id="determined" z="1" src="reskins/momo_cashmere_creati/6-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="-43" y="820" scalex="1" scaley="2" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-76" y="1061" scalex="1" scaley="1.75" rotation="-6" />
+        </pose>
+        <pose id="8-creationCannon">
+            <sprite id="determined" z="1" src="reskins/momo_cashmere_creati/8-determined.png" x="105" y="0" />
+            <sprite id="Momo_Cannon" z="2" src="momo/Momo_Cannon.png" x="-321" y="240" scalex="0.55" scaley="0.55" />
+            <sprite id="Momo_QuirkGlow_Line" src="momo/Momo_QuirkGlow_Line.png" x="6" y="882" scalex="1" scaley="1.5" rotation="20" />
+            <sprite id="Momo_QuirkGlow_Line1" src="momo/Momo_QuirkGlow_Line.png" x="-60" y="1082" scalex="1" scaley="1.5" rotation="14" />
+        </pose>
+        <pose id="5-stripped-">
+            <sprite id="stripped-" src="momo/5-stripped-.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Panties" src="momo/Momo_QuirkGlow_Panties.png" x="-20" y="546" scalex="0.6" scaley="0.6" alpha="100" />
+            <sprite id="Momo_QuirkPanties" src="momo/Momo_QuirkPanties.png" x="-21" y="556" scalex="0.57" scaley="0.57" alpha="0" />
+            <directive type="animation" id="Momo_QuirkGlow_Panties" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-20" y="546" scalex="0.6" scaley="0.6" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_QuirkPanties" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-21" y="556" scalex="0.57" scaley="0.57" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="5-stripped+">
+            <sprite id="stripped+" src="momo/5-stripped+.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Panties" src="momo/Momo_QuirkGlow_Panties.png" x="-20" y="546" scalex="0.6" scaley="0.6" alpha="100" />
+            <sprite id="Momo_QuirkPanties" src="momo/Momo_QuirkPanties.png" x="-21" y="556" scalex="0.57" scaley="0.57" alpha="0" />
+            <directive type="animation" id="Momo_QuirkGlow_Panties" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-20" y="546" scalex="0.6" scaley="0.6" alpha="100" />
+                <keyframe time="2" alpha="100" />
+                <keyframe time="2.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_QuirkPanties" ease="linear" interpolation="linear">
+                <keyframe time="0" x="-21" y="556" scalex="0.57" scaley="0.57" alpha="0" />
+                <keyframe time="0.5" alpha="0" />
+                <keyframe time="1.5" alpha="100" />
+            </directive>
+        </pose>
+        <pose id="5-strippingAlt_meiaStatue">
+            <sprite id="strippingAlt_lower" src="reskins/momo_cashmere_creati/5-strippingAlt_lower.png" x="0" y="0" />
+            <sprite id="strippingAlt_upper" z="3" src="reskins/momo_cashmere_creati/5-strippingAlt_upper.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="2" src="momo/Momo_QuirkGlow_Line.png" x="20" y="680" scalex="0.7" scaley="0.7" rotation="-245" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="2" src="momo/Momo_QuirkGlow_Line.png" x="-20" y="680" scalex="0.7" scaley="0.7" rotation="245" />
+            <sprite id="Momo_StatuetteMeia" src="momo/Momo_StatuetteMeia.png" x="0" y="-130" scalex="0.3" scaley="0.15" />
+            <directive type="animation" id="Momo_QuirkGlow_Line" delay="1.75" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.25" alpha="100" />
+                <keyframe time="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_QuirkGlow_Line(copy)" delay="1.75" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.25" alpha="100" />
+                <keyframe time="0.5" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_StatuetteMeia" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" scalex="0.3" scaley="0.15" />
+                <keyframe time="0.12" scaley="0.15" />
+                <keyframe time="1.75" scaley="0.3" />
+            </directive>
+            <directive type="animation" id="Momo_StatuetteMeia" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" y="-130" />
+                <keyframe time="0.12" y="-130" />
+                <keyframe time="1.75" y="270" />
+                <keyframe time="2" y="460" />
+            </directive>
+        </pose>
+        <pose id="6-loss-clitStim">
+            <sprite id="loss-" z="2" src="reskins/momo_cashmere_creati/6-loss-.png" x="0" y="0" />
+            <sprite id="Momo_Toy_ClitStimulatorSide" src="momo/Momo_Toy_ClitStimulatorSide.png" x="-296" y="189" scalex="-0.5" scaley="0.5" rotation="-165" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-302" y="265" scalex="0.6" scaley="0.5" rotation="-63" />
+        </pose>
+        <pose id="6-loss-clitStim">
+            <sprite id="loss+" z="2" src="reskins/momo_cashmere_creati/6-loss+.png" x="0" y="0" />
+            <sprite id="Momo_Toy_ClitStimulatorSide" src="momo/Momo_Toy_ClitStimulatorSide.png" x="-296" y="189" scalex="-0.5" scaley="0.5" rotation="-165" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-302" y="265" scalex="0.6" scaley="0.5" rotation="-63" />
+        </pose>
+        <pose id="6-stripped_meiaJuraStatues">
+            <sprite id="peppy" z="2" src="reskins/momo_cashmere_creati/6-peppy.png" x="0" y="0" />
+            <sprite id="Momo_StatuetteMeia" src="momo/Momo_StatuetteMeia.png" x="-200" y="470" scalex="0.3" scaley="0.3" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="75" y="850" rotation="18" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="105" y="720" rotation="7" />
+            <sprite id="Momo_StatuetteJura" src="momo/Momo_StatuetteJura.png" x="25" y="-45" scalex="0.3" scaley="0.3" rotation="-8" />
+            <directive type="animation" id="peppy" ease="linear" interpolation="linear">
+                <keyframe time="0" x="0" y="0" />
+                <keyframe time="2" x="0" y="0" />
+            </directive>
+            <directive type="animation" id="Momo_QuirkGlow_Line" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.25" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_QuirkGlow_Line(copy)" delay="2" ease="linear" interpolation="linear">
+                <keyframe time="0" alpha="100" />
+                <keyframe time="0.25" alpha="0" />
+            </directive>
+            <directive type="animation" id="Momo_StatuetteJura" ease="ease-in-cubic" interpolation="linear">
+                <keyframe time="0" x="25" y="-45" />
+                <keyframe time="1.75" x="166" y="318" />
+                <keyframe time="2" x="186" y="445" />
+            </directive>
+            <directive type="animation" id="Momo_StatuetteJura" ease="linear" interpolation="linear">
+                <keyframe time="0" scalex="0.3" scaley="0.3" rotation="-8" />
+                <keyframe time="1.75" rotation="-8" />
+                <keyframe time="2" rotation="0" />
+            </directive>
+        </pose>
+        <pose id="6-stripped_meiaStatue">
+            <sprite id="peppy" src="reskins/momo_cashmere_creati/6-peppy.png" x="0" y="0" />
+            <sprite id="Momo_StatuetteMeia" src="momo/Momo_StatuetteMeia.png" x="-200" y="470" scalex="0.3" scaley="0.3" />
+        </pose>
+        <pose id="0-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/0-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="1-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/1-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="2-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/2-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="3-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/3-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="4-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/4-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="5-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/5-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="6-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/6-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="264" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="185" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="8-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/8-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="814" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="735" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="7-creationMatryoshkaA">
+            <sprite id="creationA" z="2" src="reskins/momo_cashmere_creati/7-creationA.png" x="0" y="0" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-300" y="814" scalex="0.6" scaley="0.6" rotation="-62" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-285" y="735" scalex="0.5" scaley="0.5" rotation="14" />
+        </pose>
+        <pose id="8-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="reskins/momo_cashmere_creati/8-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="917" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-296" y="974" scalex="0.5" scaley="0.5" rotation="-149" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-447" y="1084" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-369" y="1096" scalex="0.5" scaley="0.5" rotation="-213" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-415" y="1124" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-483" y="1152" scalex="0.5" scaley="0.5" rotation="-622" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-318" y="1113" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-424" y="1165" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-330" y="1165" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-275" y="887" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="908" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="7-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="reskins/momo_cashmere_creati/7-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="917" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-296" y="974" scalex="0.5" scaley="0.5" rotation="-149" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-447" y="1084" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-369" y="1096" scalex="0.5" scaley="0.5" rotation="-213" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-415" y="1124" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-483" y="1152" scalex="0.5" scaley="0.5" rotation="-622" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-318" y="1113" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-424" y="1165" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" z="3" src="momo/Momo_Matryoshka.png" x="-330" y="1165" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-275" y="887" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="908" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="3-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="momo/3-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="334" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="358" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="337" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="366" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="0-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="momo/0-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="325" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="345" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="315" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="348" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="1-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="momo/1-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="325" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="345" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="315" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="348" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="2-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="momo/2-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="334" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="358" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="337" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="366" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="4-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="reskins/momo_cashmere_creati/4-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="334" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="358" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="337" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="366" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="5-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="reskins/momo_cashmere_creati/5-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="334" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="358" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="337" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="366" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+        <pose id="6-creationMatryoshkaB">
+            <sprite id="creationB" z="2" src="reskins/momo_cashmere_creati/6-creationB.png" x="0" y="0" />
+            <sprite id="Momo_Matryoshka" src="momo/Momo_Matryoshka.png" x="-204" y="334" scalex="0.5" scaley="0.5" rotation="11" />
+            <sprite id="Momo_Matryoshka1" src="momo/Momo_Matryoshka.png" x="-399" y="358" scalex="0.5" scaley="0.5" rotation="-46" />
+            <sprite id="Momo_Matryoshka1(copy)" src="momo/Momo_Matryoshka.png" x="-305" y="476" scalex="0.5" scaley="0.5" rotation="228" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-236" y="622" scalex="0.5" scaley="0.5" rotation="136" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-401" y="673" scalex="0.5" scaley="0.5" rotation="-19" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-270" y="818" scalex="0.5" scaley="0.5" rotation="-60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-393" y="934" scalex="0.5" scaley="0.5" rotation="60" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-259" y="1034" scalex="0.5" scaley="0.5" rotation="-159" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-392" y="1139" scalex="0.5" scaley="0.5" rotation="-409" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-266" y="1220" scalex="0.5" scaley="0.5" rotation="-473" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-318" y="1179" scalex="0.5" scaley="0.5" rotation="-686" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-400" y="1216" scalex="0.5" scaley="0.5" rotation="-827" />
+            <sprite id="Momo_Matryoshka1(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)(copy)" src="momo/Momo_Matryoshka.png" x="-330" y="1233" scalex="0.5" scaley="0.5" rotation="-972" />
+            <sprite id="Momo_QuirkGlow_Line" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-202" y="337" scalex="0.6" scaley="0.6" rotation="-99" />
+            <sprite id="Momo_QuirkGlow_Line(copy)" z="1" src="momo/Momo_QuirkGlow_Line.png" x="-413" y="366" scalex="0.6" scaley="0.6" rotation="-116" />
+        </pose>
+    </poses>
+
+</costume>
