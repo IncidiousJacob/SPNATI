@@ -2194,7 +2194,7 @@ OpponentDetailsDisplay.prototype.updateTagsView = async function () {
             // Create clickable text anchor for the tag only
             const anchor = $('<a>', {
                 href: '#',
-                text: tagDisplayNames[rawTag] // Get display name from the array
+                text: tagDisplayNames[rawTag] || rawTag// Get display name from the array
             }).data({
                 'search-field': $searchTag,
                 'search-text': rawTag // Send the raw tag to the search bar
