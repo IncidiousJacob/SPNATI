@@ -5,13 +5,57 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Exposition - Tri Rod" id="26" priority="Noteworthy" min="0" max="5">
+            <description>Zelda shows off her Tri Rod and demonstrates that she can use it to create echoes.</description>
+        </case>
+        <case name="Exposition - Echoes Uses" id="27" priority="FYI" min="0" max="5">
+            <description>Zelda explains the importance of expirimenting with echoes - and casually mentions having sex with them.</description>
+        </case>
+        <case name="Exposition - Echoes Sex Reasons" id="28" priority="FYI" min="0" max="5">
+            <description>Zelda lays out her reasoning for why having sex with echoes is a perfectly logical thing for a princess to do and not insane, honest.</description>
+        </case>
+        <case name="Exposition - Echoes Fake" id="29" priority="FYI" min="0" max="5">
+            <description>Zelda and Tri clarify that echoes are not actual monsters, but non-sapient magical constructs faking intelligence - basically just LLMs given physical form.</description>
+        </case>
+        <case name="Exposition - Echoes People" id="30" priority="FYI" min="0" max="5">
+            <description>Zelda reveals that she can learn echoes of people if she beats them in a contest... so if she beats characters in strip poker, she'll learn THEIR echoes.</description>
+        </case>
+        <case name="Trampoline" id="31" priority="Prompt" min="0" max="7">
+            <description>After a large-breasted character bares her chest, Zelda offers to conjure her a trampoline to bounce on.</description>
+        </case>
+        <case name="Exposition - Heirs (M)" id="32" priority="FYI" min="0" max="5">
+            <description>If at least one male opponent is present, Zelda explains that for political reasons, she cannot risk a man impregnating her - but that she'd be willing to lend out an echo of herself.</description>
+        </case>
+        <case name="Exposition - Heirs (F)" id="33" priority="FYI" min="0" max="5">
+            <description>If at least one female opponent is present, Zelda explains that for political reasons, she cannot risk a man impregnating her - but that nothing's stopping her from sleeping with women.</description>
+        </case>
+        <case name="Exposition - Heirs (Hero or Leader)" id="34" priority="Prompt" min="0" max="5">
+            <description>Upon further reflection, Zelda decides that it would probably be okay if she risked getting pregnant by a worthy hero or leader - but wonders if anyone present qualifies.</description>
+        </case>
+        <case name="Pokemon - Monster Duel" id="35" priority="Prompt" min="0" max="7">
+            <description>If the target is a Pokemon character, Zelda offers to duel her echoes against their Pokemon sometime.</description>
+        </case>
+        <case name="Pots" id="36" priority="FYI" min="0" max="7">
+            <description>Various musings involving pots. Markers assigned due to popular request.</description>
+        </case>
+        <case name="Forfeit - Selfcest 1" id="37" priority="MustTarget" min="5" max="5">
+            <description>In preparation for her forfeit, Zelda creates a bed and two echoes of herself. In the Start Masturbating (Self) line that follows, she settles into the forfeit.</description>
+        </case>
+        <case name="Forfeit - Monster 1" id="39" priority="MustTarget" min="5" max="5">
+            <description>In preparation for her forfeit, Zelda creates a monster (differentiated from each other via marker). Some of these lines sound threatening, but in the Start Masturbating (Self) line that follows, she makes it clear that the echo's purpose is not to fight, but to fuck.</description>
+        </case>
+        <case name="Avatar - Cactus Smoothie" id="40" priority="Prompt" min="7" max="7">
+            <description>Zelda offers an Avatar: The Last Airbender character a cactus smoothie.</description>
+        </case>
+    </noteworthy>
     <notes>
         <note id="1">A Keaton, of course, being the kitsune-like creature from the Legend of Zelda games. The Keaton in Majora's Mask resembles a quadrupedal three-tailed fox, while the Yellow and Purple Keatons in the Minish Cap are bipedal, single-tailed fox monsters.</note>
         <note id="11">Zelda picking up on Dolce's time as Marionetta.</note>
     </notes>
     <labels>
         <label id="2" label="" color="6" folder="" sort="0" />
-        <label id="17" label="" color="1" folder="" sort="0" />
+        <label id="23" label="" color="6" folder="" sort="0" />
         <label id="4" label="" color="1" folder="" sort="0" />
         <label id="5" label="" color="1" folder="" sort="0" />
         <label id="6" label="" color="1" folder="" sort="0" />
@@ -24,15 +68,12 @@
         <label id="13" label="" color="1" folder="" sort="0" />
         <label id="14" label="" color="1" folder="" sort="0" />
         <label id="15" label="" color="1" folder="" sort="0" />
-        <label id="16" label="" color="1" folder="" sort="0" />
-        <label id="18" label="" color="1" folder="" sort="0" />
-        <label id="19" label="" color="1" folder="" sort="0" />
-        <label id="20" label="" color="1" folder="" sort="0" />
-        <label id="21" label="" color="1" folder="" sort="0" />
+        <label id="24" label="" color="1" folder="" sort="0" />
+        <label id="25" label="" color="1" folder="" sort="0" />
+        <label id="22" label="" color="1" folder="" sort="0" />
     </labels>
-    <nextId>21</nextId>
+    <nextId>40</nextId>
     <markers>
-        <marker scope="Public" name="" />
         <marker scope="Public" name="arueshalae_badDreamsReply" />
         <marker scope="Public" name="arueshalae_favoriteFeatureReply" />
         <marker scope="Public" name="arueshalae_goodDreamsReply" />
@@ -41,6 +82,7 @@
         <marker scope="Public" name="bigKey1" />
         <marker scope="Public" name="bigKey2" />
         <marker scope="Public" name="bodyTemple" />
+        <marker scope="Public" name="boobs_trampoline" />
         <marker scope="Public" name="dolce_resp0" />
         <marker scope="Public" name="dolce_resp01" />
         <marker scope="Public" name="dolce_resp1" />
@@ -88,10 +130,15 @@
         <marker scope="Public" name="meia_resp0" />
         <marker scope="Public" name="meia0" />
         <marker scope="Public" name="miko_resp0" />
+        <marker scope="Public" name="miko_resp01" />
         <marker scope="Public" name="miko0" />
+        <marker scope="Public" name="miko01" />
         <marker scope="Public" name="miko1" />
+        <marker scope="Public" name="miko12" />
         <marker scope="Public" name="miko2" />
         <marker scope="Public" name="miko23" />
+        <marker scope="Public" name="miko34" />
+        <marker scope="Public" name="miko3s" />
         <marker scope="Public" name="n" />
         <marker scope="Public" name="nami_poster1" />
         <marker scope="Public" name="nami_poster2" />
@@ -109,7 +156,9 @@
         <marker scope="Public" name="pot_rating" />
         <marker scope="Public" name="reimu_resp0" />
         <marker scope="Public" name="reimu_resp01" />
+        <marker scope="Public" name="reimu_resp1s" />
         <marker scope="Public" name="reimu0" />
+        <marker scope="Public" name="reimu01" />
         <marker scope="Public" name="senko_keaton" />
         <marker scope="Public" name="senko_modernAmenitiesReply" />
         <marker scope="Public" name="senko_pamperingReply" />
