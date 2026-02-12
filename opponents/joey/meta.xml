@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1746589098389</lastupdate>
+    <lastupdate>1770872311640</lastupdate>
     <enabled>true</enabled>
     <first>Joetta</first>
     <last>Grimaldi</last>
@@ -14,10 +14,21 @@
     <layers>6</layers>
     <default-costume-name>Party Clothes</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/joey_street_clothes/" img="0-intro.png" label="Joey">Street Clothes</costume>
-        <costume folder="opponents/reskins/joey_toymaking_clothes/" img="0-wink.png" set="xmas" label="Joey">Toymaking Clothes</costume>
-        <costume folder="opponents/reskins/joey_renaissance_clothes/" img="0-excited.png" label="Joey">Renaissance Clothes</costume>
-        <costume folder="opponents/reskins/joey_burlesque_clothes/" status="unlisted">Burlesque Clothes</costume>
+        <costume folder="opponents/reskins/joey_street_clothes/" img="0-intro.png" label="Joey">
+            <costume-name>Street Clothes</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/joey_toymaking_clothes/" img="0-wink.png" set="xmas" label="Joey">
+            <costume-name>Toymaking Clothes</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/joey_renaissance_clothes/" img="0-excited.png" label="Joey">
+            <costume-name>Renaissance Clothes</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/joey_burlesque_clothes/" status="unlisted">
+            <costume-name>Burlesque Clothes</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/joey_emperor_clothes/" set="april_fools" status="online" layers="1">
+            <costume-name>Emperor Clothes</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <lines>2189</lines>
