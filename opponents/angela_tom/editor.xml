@@ -270,6 +270,7 @@
         <note id="419">She's referring to one of her villains, the Crimson Wizard.</note>
         <note id="481">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy.</note>
         <note id="482">She's referring to a Spirit battle in Super Smash Bros. Ultimate, where she was represented by Zelda and Duran was represented by Roy.</note>
+        <note id="486">At time of writing, this line actually won't ever play. The only way it can is if the players are Angela (who gets topless first), Zeke/Pandoria (who get topless second), and three flat-chested women (who all get topless before Angela loses entirely, and don't trigger a different line from Angela). But the human player cannot have the flat_chested tag. Still, leaving in this interaction just in case it becomes possible in the future.</note>
     </notes>
     <labels>
         <label id="137" label="For his alternate outfit" folder="" sort="0" />
@@ -581,8 +582,20 @@
         <label id="480" label="" folder="Banter&gt;Darkness" sort="0" />
         <label id="481" label="" folder="Targeted&gt;Zelda (EoW)" sort="0" />
         <label id="482" label="" folder="Targeted&gt;Zelda (EoW)" sort="0" />
+        <label id="483" label="" folder="Targeted&gt;Zelda (EoW)" sort="0" />
+        <label id="484" label="Flat chest" folder="Boob club" sort="0" />
+        <label id="485" label="Flat chest 2" folder="Boob club" sort="0" />
+        <label id="486" label="Flat chest 3" folder="Boob club" sort="0" />
+        <label id="488" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="489" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="490" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="491" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="492" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="493" label="" folder="Targeted&gt;Firestar" sort="0" />
+        <label id="494" label="" folder="Targeted&gt;Zelda (EoW)" sort="0" />
+        <label id="495" label="" folder="Targeted&gt;Zelda (EoW)" sort="0" />
     </labels>
-    <nextId>482</nextId>
+    <nextId>495</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
@@ -637,6 +650,10 @@
         <marker scope="Public" name="Edelgard_Royalty">Angela acknowledges that Edelgard asks an interesting question about royalty, and indicates that she might have faced a lot of pressure as a child being her kingdom's princess.</marker>
         <marker scope="Public" name="Edelgard_Spies">Edelgard says spies are watching. Angela wonders about their motivations.</marker>
         <marker scope="Public" name="FFBraveExvius">Angela notes that a Final Fantasy character looks familiar, with the word "Exvius" running through her mind. (Will take a value equal to the ID of the character she's targeting.)</marker>
+        <marker scope="Public" name="Firestar_Angelica">Angela comments on Firestar's real name being similar to her own.</marker>
+        <marker scope="Public" name="Firestar_AngelicaThreeAngelas">Angela already knew there were three Angelas at the table. Now she learns that Firestar's real name is Angelica! Wait... are YOU an Angela too?!</marker>
+        <marker scope="Public" name="Firestar_AngelicaTwoAngelas">Angela already knew there were two Angelas at the table. Now there's an Angelica too!</marker>
+        <marker scope="Public" name="FlatChestClub">Can she really be part of the "Boob Club" without any?</marker>
         <marker scope="Public" name="FourOfAKindPrincesses">Do four princesses beat four Jacks?</marker>
         <marker scope="Public" name="GeneralTease">When Angela gives any general tease aimed at a male character (not a unique line or a target for stripping), this will take the value of the character she's targeting. Only applies to the current line.</marker>
         <marker scope="Public" name="GuessWhat">Encourages a male player to look her way before she unexpectedly removes her top. (Will take a value equal to the ID of the character she's targeting.)</marker>
@@ -713,6 +730,8 @@
         <marker scope="Public" name="Tifa_LostBra">Angela tells Tifa it's okay if she puts her bra back on after she accidentally takes it off, then wonders why she doesn't.</marker>
         <marker scope="Public" name="ToplessIsntNaked">Angela remarks that being topless (which she doesn't seem to mind much) isn't the same thing as being naked (which she's a bit more shy about.)</marker>
         <marker scope="Private" name="ToplessWomanNotChihiro">Tracks whether there is a topless woman at the table other than Chihiro (used for some dialogue cases)</marker>
+        <marker scope="Public" name="VonBoyage">Angela mistakes the phrase "bon voyage" for Von Boyage, an inventor.</marker>
+        <marker scope="Public" name="VonJour">Angela mistakes the word "bonjour" for Von Jour, the brother of an inventor.</marker>
         <marker scope="Public" name="Wasp_IsAFaerie">Angela thinks Wasp is a faerie, and asks if she'll get dragged on another adventure.</marker>
         <marker scope="Public" name="Wasp_IsntAFaerie">Angela realizes Wasp is not, in fact, a faerie, and wonders what she really is.</marker>
         <marker scope="Public" name="WhatAShame">Angela is the only non-topless woman at the table, and she's absolutely about to remove something small. What a darned pity...</marker>
@@ -725,5 +744,12 @@
         <marker scope="Public" name="Yuno_Response0b">Angela tells Yuno that she's not doing her "gimmick" today. (In some niche scenarios, she might anyway.)</marker>
         <marker scope="Public" name="Yuno_Response0c">Angela wonders how someone knew about the early breast reveal... that she's right about to do.</marker>
         <marker scope="Public" name="Yuno_Response0d">Angela tells Yuno she's not doing her "gimmick" while in her Magus outfit.</marker>
+        <marker scope="Public" name="ZeldaEOW_BrownPots">Angela mentions that she finds cool stuff in brown pots... when they're not empty.</marker>
+        <marker scope="Public" name="ZeldaEOW_GreenPots">Angela mentions that green pots heal her.</marker>
+        <marker scope="Public" name="ZeldaEOW_PurplePots">Angela mentions that purple pots restore her mana.</marker>
+        <marker scope="Public" name="ZeldaEOW_SmashingPots">Angela finds common ground with Zelda. In violence to pottery.</marker>
+        <marker scope="Public" name="ZeldaEOW_Tundra">Angela tells Zelda that she lives in a frozen tundra.</marker>
+        <marker scope="Public" name="ZeldaEOW_Tundra2">Angela clarifies to Zelda that her hometown is magically kept warm.</marker>
+        <marker scope="Public" name="ZeldaEOW_Wolf">Angela is surprised by the wolf(os) that Zelda summons.</marker>
     </markers>
 </metadata>
