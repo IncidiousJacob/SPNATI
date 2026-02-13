@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="ChiakiUnderwear" status="online" img="opponents/chiaki/7-yawn.png" thumbnail="opponents/chiaki/99-Chiaki_und.png">
+    <collectible id="ChiakiUnderwear" status="online" thumbnail="opponents/chiaki/99-Chiaki_und.png">
         <title>Chiaki's Underwear</title>
         <subtitle>The Last Hitpoint</subtitle>
         <text>A gift from Chiaki you got when you obtained all her Hope Fragments. It seems this isn't the first time she's given these away?</text>
         <unlock>Win a game against Chiaki.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/chiaki/7-yawn.png</picture>
         <wearable>true</wearable>
         <clothing img="opponents/chiaki/99-Chiaki_und.png" name="panties" generic="underwear" position="lower" type="important" plural="true" />
     </collectible>

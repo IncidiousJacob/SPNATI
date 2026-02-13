@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1767582449469</lastupdate>
+    <lastupdate>1771010506036</lastupdate>
     <enabled>true</enabled>
     <first>Chiaki</first>
     <last>Nanami</last>
@@ -17,10 +17,14 @@
     <epilogue gender="male" img="ep/99-dualbackground.png" alsoPlaying="mahiru" hint="Play with Mahiru" description="WARNING: This epilogue is legacy content and uses old artwork. Joint epilogue with Mahiru.">2 Player</epilogue>
     <epilogue gender="female" img="ep/99-dualbackground.png" alsoPlaying="mahiru" hint="Play with Mahiru" description="WARNING: This epilogue is legacy content and uses old artwork. Joint epilogue with Mahiru.">2 Player</epilogue>
     <layers>8</layers>
-    <default-costume-name>Gaming Getup</default-costume-name>
+    <default-costume-name>Gaming Getup Lite</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/chiakimaid/" img="0-calm.png" set="valentines" status="unlisted" label="Chiaki">Maid</costume>
-        <costume folder="opponents/reskins/chiaki_slim/" img="0-happy.png" status="online" label="Chiaki">Gaming Getup Lite</costume>
+        <costume folder="opponents/reskins/chiakimaid/" img="0-calm.png" set="valentines" status="unlisted" label="Chiaki">
+            <costume-name>Maid</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/chiaki_slim/" img="0-happy.png" status="online" label="Chiaki">
+            <costume-name>Gaming Getup Plus</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
     <lines>1729</lines>
