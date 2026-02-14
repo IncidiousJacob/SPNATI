@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1742603584350</lastupdate>
+    <lastupdate>1771098555219</lastupdate>
     <first>Magma</first>
     <last>Grunt</last>
     <label>Magma Grunt</label>
@@ -13,13 +13,21 @@
     <epilogue gender="male" markers="true" img="epilogue_magma_grunt_prev.png" hint="Finish a game against Magma Grunt, as a male player, after you've already unlocked her hoodie" description="MG invites you over for some casual sex.">Saturday Night Booty Call from the Team Magma Grunt</epilogue>
     <layers>8</layers>
     <alternates>
-        <costume folder="opponents/reskins/magma_grunt_shark/" img="0-team_magma.png" set="halloween" label="Magma Grunt">Sharpedo Costume</costume>
-        <costume folder="opponents/reskins/magma_grunt_nostalgia/" img="0-team_magma.png" status="unlisted" label="Magma Grunt">Nostalgic Magma Grunt</costume>
-        <costume folder="opponents/reskins/magma_grunt_casual_date/" img="0-unlock_vday.png" set="valentines" status="online" label="Magma Grunt">Casual Date</costume>
-        <costume folder="opponents/reskins/magma_grunt_team_wiki/" img="0-team_magma.png" set="april_fools" label="Wikipedia Grunt">Team Wikipedia</costume>
+        <costume folder="opponents/reskins/magma_grunt_shark/" img="0-team_magma.png" set="halloween" label="Magma Grunt">
+            <costume-name>Sharpedo Costume</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/magma_grunt_nostalgia/" img="0-team_magma.png" status="unlisted" label="Magma Grunt">
+            <costume-name>Nostalgic Magma Grunt</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/magma_grunt_casual_date/" img="0-unlock_vday.png" set="valentines" status="online" label="Magma Grunt" collectible="magma_grunt_chocolates">
+            <costume-name>Casual Date</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/magma_grunt_team_wiki/" img="0-team_magma.png" set="april_fools" label="Wikipedia Grunt">
+            <costume-name>Team Wikipedia</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>2016</lines>
+    <lines>2028</lines>
     <poses>299</poses>
     <age />
 </opponent>

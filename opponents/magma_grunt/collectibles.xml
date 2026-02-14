@@ -1,29 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="magma_hoodie" img="opponents/magma_grunt/4-after.png" thumbnail="opponents/magma_grunt/MagmaHoodie.png">
+    <collectible id="magma_hoodie" thumbnail="opponents/magma_grunt/MagmaHoodie.png">
         <title>Magma Hoodie</title>
         <subtitle>"Wait, how come they get to keep MY hoodie? That's a stupid rule!"</subtitle>
         <text>Joining Team Magma comes with its own uniform! One free hoodie per grunt. Do not lose the hoodie, or you'll have to pay out of pocket.&lt;br&gt;Wear this hoodie to see her butt poses more frequently during a game, including a unique bonus pose.</text>
-        <unlock>Win a game against the Team Magma Grunt.</unlock>
+        <unlock>Finish a game where the Team Magma Grunt loses.</unlock>
         <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/magma_grunt/4-after.png</picture>
         <wearable>true</wearable>
-        <clothing name="Team Magma hoodie" generic="jacket" position="upper" type="minor" img="opponents/magma_grunt/MagmaHoodie.png" />
+        <clothing img="opponents/magma_grunt/MagmaHoodie.png" name="Team Magma hoodie" generic="jacket" position="upper" type="minor" />
     </collectible>
-    <collectible id="magma_selfie" img="opponents/magma_grunt/magma_grunt_one_finger_selfie.png" thumbnail="opponents/magma_grunt/magma_grunt_one_finger_selfie.png">
+    <collectible id="magma_selfie" thumbnail="opponents/magma_grunt/magma_grunt_one_finger_selfie.png">
         <title>One-Finger Challenge Selfie</title>
         <subtitle>"Hmm, kinda showin off my nips a bit, I'd better- No, don't send!"</subtitle>
         <text>She accidentally hit send before she could line it up perfectly.&lt;br&gt;If you ever want to reset your progress with her, name yourself 'Trainer'.</text>
         <unlock>Get the Team Magma Grunt to warm up to you over the course of multiple games. (Finish 3 games against her, win or lose.)</unlock>
         <hide-details>true</hide-details>
         <counter>3</counter>
+        <picture>opponents/magma_grunt/magma_grunt_one_finger_selfie.png</picture>
     </collectible>
-    <collectible id="magma_grunt_chocolates" img="opponents/magma_grunt/0-unlock_vday.png" thumbnail="opponents/magma_grunt/1-unlock_vday.png">
+    <collectible id="magma_grunt_chocolates" thumbnail="opponents/magma_grunt/1-unlock_vday.png">
         <title>Maggie's Sweet Hearts</title>
         <text>A piece of cloyingly sweet chocolate. When consumed, it restores 20 HP to an injured Pokémon.</text>
         <unlock>Finish a game with the Team Magma Grunt in her "Casual Date" outfit (available during the Valentine's Day event).</unlock>
         <hidden>true</hidden>
-        <hide-details>true</hide-details>
         <counter>1</counter>
+        <picture>opponents/magma_grunt/0-unlock_vday.png</picture>
+        <costume>true</costume>
+        <costume-folder>opponents/reskins/magma_grunt_casual_date/</costume-folder>
+        <hidden-exceptions event="valentines" costume-set="valentines" />
     </collectible>
 </collectibles>

@@ -171,6 +171,12 @@
         <response id="910" opponent="aqua_konosuba" opponentId="1173" />
         <response id="911" opponent="mari_setogaya" opponentId="421" />
         <response id="912" opponent="mari_setogaya" opponentId="422" />
+        <response id="1034" opponent="yuzuki" opponentId="96" />
+        <response id="1035" opponent="yuzuki" opponentId="95" />
+        <response id="1037" opponent="edelgard" opponentId="47" />
+        <response id="1038" opponent="edelgard" opponentId="23" />
+        <response id="1039" opponent="edelgard" opponentId="486" />
+        <response id="1040" opponent="edelgard" opponentId="596" />
     </responses>
     <notes>
         <note id="18">If the player isn't gay, magma grunt slowly starts flirting with them when they strip</note>
@@ -728,7 +734,7 @@
         <label id="592" label="Sharpedo" folder="Event" sort="0" />
         <label id="593" label="Sharpedo (Not October)" folder="Event" sort="2" />
         <label id="594" label="" folder="Shark Costume" sort="0" />
-        <label id="595" label="Sharpedo Outfit" color="0" folder="Costume" sort="17" />
+        <label id="595" label="Sharpedo Outfit" folder="Costume" sort="17" />
         <label id="596" label="Sharpedo Outfit" color="0" folder="Costume" sort="18" />
         <label id="597" label="Sharpedo Outfit" folder="Costume" sort="0" />
         <label id="598" label="Sharpedo Outfit" folder="Costume" sort="2" />
@@ -748,7 +754,7 @@
         <label id="612" label="Sharpedo Outfit" folder="Costume" sort="14" />
         <label id="613" label="Sharpedo Outfit" folder="Costume" sort="15" />
         <label id="614" label="Sharpedo Outfit" folder="Costume" sort="16" />
-        <label id="615" label="Sharpedo Outfit" color="0" folder="Costume" sort="27" />
+        <label id="615" label="Sharpedo Outfit" folder="Costume" sort="27" />
         <label id="616" label="" folder="Opp - Nami" sort="0" />
         <label id="617" label="1st game w hoodie" folder="Wearing Hoodie" sort="3" />
         <label id="618" label="" folder="Logic" sort="0" />
@@ -1146,6 +1152,13 @@
         <label id="1027" label="" folder="Targets&gt;Momo" sort="0" />
         <label id="1028" label="Loud (Real)" color="6" folder="Targets&gt;Momo" sort="0" />
         <label id="1029" label="Dramatic (Real)" folder="Targets&gt;Momo" sort="0" />
+        <label id="1030" label="" folder="Responses" sort="0" />
+        <label id="1031" label="" folder="Responses" sort="0" />
+        <label id="1032" label="" folder="Targets&gt;Momo" sort="0" />
+        <label id="1033" label="" folder="Aqua Grunt" sort="0" />
+        <label id="1034" label="" folder="Targets" sort="0" />
+        <label id="1035" label="" folder="Targets" sort="0" />
+        <label id="1036" label="Beach" folder="Background" sort="0" />
     </labels>
     <prefixes>
         <prefix>Epilogue_chat</prefix>
@@ -1155,7 +1168,7 @@
         <prefix>Epilogue</prefix>
         <prefix>Burger</prefix>
     </prefixes>
-    <nextId>1029</nextId>
+    <nextId>1040</nextId>
     <markers>
         <marker scope="Public" name="8_hand_good_prideful">Magma Grunt said something particularly prideful when she was in stage 8, and might be setting herself up for failure.</marker>
         <marker scope="Public" name="8_hand_good_prideful_failure">Magma Grunt had a good hand and was very boastful, but still lost.</marker>
@@ -1207,9 +1220,15 @@
         <marker scope="Public" name="complete_loser_naked">Magma Grunt is the first one to be naked... and nobody else has stripped ANYTHING at all.</marker>
         <marker scope="Public" name="consecutive_losses_distraction" />
         <marker scope="Public" name="consecutive_losses_f_bomb" />
+        <marker scope="Public" name="Crestology101" />
         <marker scope="Public" name="darkness_start_ff" />
         <marker scope="Public" name="dawn_gone_resp" />
+        <marker scope="Public" name="dolce_epidermis" />
         <marker scope="Public" name="dwight_nervoushabits_resp" />
+        <marker scope="Public" name="edelgard_betterAngle" />
+        <marker scope="Public" name="edelgard_scarsA" />
+        <marker scope="Public" name="edelgard_scarsB" />
+        <marker scope="Public" name="edelgard_teacherBlackmail" />
         <marker scope="Public" name="EpilogueCompleted">The player has completed the epilogue at least once, either from in-game or from the gallery.</marker>
         <marker scope="Public" name="erufuda_wcdonalds">Has mentioned WcDonalds, a fast food chain, in the context of Erufuda</marker>
         <marker scope="Public" name="finish_dramatic">Magma Grunt deliberately plays up her orgasm and announces it loudly</marker>
