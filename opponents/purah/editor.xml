@@ -4,7 +4,27 @@
     <height>5'8"</height>
     <age>130</age>
     <pronunciation>purr-uh</pronunciation>
-    <othernotes>At A Glance&lt;br&gt;-Purah appears to be a woman in her early 20s, and carries herself with confidence.&lt;br&gt;-Purah can tease and is generally confident in her appearance, and keeps an open mind about other people&lt;br&gt;-She's fascinated by technology and fashion, as she tends to "Adjust" her cultural garb to accommodate&lt;br&gt;-Purah is from the Wild era of Zelda, which is perhaps the farthest forward point, and other Hylian histories are somewhat mythological for her.&lt;br&gt;&lt;br&gt;Notes:&lt;br&gt;-Purah is &gt;100 years old, as she's de-aged and re-aged herself multiple times, effectively discovering the fountain of youth&lt;br&gt;-Key researcher on numerous parts of Hylian modern technology&lt;br&gt;-Is a member of the Sheikah tribe, which are basically ninjas, yet have super advanced technology&lt;br&gt;-Sworn duty to the royal family of Hyrule&lt;br&gt;&lt;br&gt;Good Topics:&lt;br&gt;-Technology&lt;br&gt;-Religion/spirituality&lt;br&gt;-Fashion&lt;br&gt;-What's "in" these days for the character&lt;br&gt;-Systems of governance&lt;br&gt;-Sex&lt;br&gt;&lt;br&gt;Sponsorship Notes: [24Jan]&lt;br&gt;-Phonebox: Get her to 1k lines, add 200 generics/filters. [750 &amp; 105/200]&lt;br&gt;-Spook: Added 20 lines to masturbating opponents after Purah's done; Add markers to question lines, update targeted lines with names; &lt;br&gt;-Hex feedback: Tone down horny curve egregiousness, make less 1D</othernotes>
+    <othernotes>At A Glance&lt;br&gt;-Purah appears to be a woman in her early 20s, and carries herself with confidence.&lt;br&gt;-Purah can tease and is generally confident in her appearance, and keeps an open mind about other people&lt;br&gt;-She's fascinated by technology and fashion, as she tends to "Adjust" her cultural garb to accommodate&lt;br&gt;-Purah is from the Wild era of Zelda, which is perhaps the farthest forward point, and other Hylian histories are somewhat mythological for her.&lt;br&gt;&lt;br&gt;Notes:&lt;br&gt;-Purah is &gt;100 years old, as she's de-aged and re-aged herself multiple times, effectively discovering the fountain of youth&lt;br&gt;-Key researcher on numerous parts of Hylian modern technology&lt;br&gt;-Is a member of the Sheikah tribe, which are basically ninjas, yet have super advanced technology&lt;br&gt;-Sworn duty to the royal family of Hyrule&lt;br&gt;&lt;br&gt;Good Topics:&lt;br&gt;-Technology&lt;br&gt;-Religion/spirituality&lt;br&gt;-Fashion&lt;br&gt;-What's "in" these days for the character&lt;br&gt;-Systems of governance&lt;br&gt;-Sex</othernotes>
+    <noteworthy>
+        <case name="FighterQ" id="214" priority="Prompt" min="0" max="7">
+            <description>Purah asks the table about why they get into melee.</description>
+        </case>
+        <case name="PetiteQ" id="213" priority="Prompt" min="0" max="7">
+            <description>Purah asks about the advantages and disadvantages of being short.</description>
+        </case>
+        <case name="MagicQ" id="215" priority="Prompt" min="0" max="7">
+            <description>Purah asks the characters about their magic.</description>
+        </case>
+        <case name="LongHairQ" id="217" priority="Prompt" min="0" max="7">
+            <description>Purah asks how/why characters keep their hair long.</description>
+        </case>
+        <case name="ConfidentQ" id="216" priority="Prompt" min="0" max="7">
+            <description>Purah asks how characters keep their confidence.</description>
+        </case>
+        <case name="HeroQ" id="218" priority="Prompt" min="0" max="7">
+            <description>Purah asks how characters define themselves as heroes.</description>
+        </case>
+    </noteworthy>
     <responses>
         <response id="100" opponent="dolce" opponentId="69" />
         <response id="102" opponent="reagan" opponentId="52" />
@@ -20,6 +40,16 @@
         <response id="133" opponent="jura" opponentId="2837" />
         <response id="134" opponent="meia" opponentId="2943" />
         <response id="143" opponent="reagan" opponentId="59" />
+        <response id="178" opponent="leviathan" opponentId="329" />
+        <response id="179" opponent="leviathan" opponentId="326" />
+        <response id="180" opponent="yae" opponentId="259" />
+        <response id="181" opponent="yae" opponentId="263" />
+        <response id="187" opponent="raine_sage" opponentId="31" />
+        <response id="188" opponent="raine_sage" opponentId="33" />
+        <response id="189" opponent="raine_sage" opponentId="34" />
+        <response id="191" opponent="roll_caskett" opponentId="233" />
+        <response id="192" opponent="roll_caskett" opponentId="234" />
+        <response id="205" opponent="selphy" opponentId="29" />
     </responses>
     <notes>
         <note id="47">Purah is flirting, but also taunting Yunyun about her appearance.</note>
@@ -31,6 +61,9 @@
 </note>
         <note id="21">I think their conversation probably goes down the myriad of complexities in Raine's life and also both of them being smart-type older women</note>
         <note id="100">I think you meant the second Must Strip line as a stripping case.</note>
+        <note id="175">Physical, in this case, but going to turn it to a social joke</note>
+        <note id="183">I don't think anyone outside of maybe yourself has addressed the Mermaid stuff</note>
+        <note id="194">You used purah_resp0_2 as the marker for her 1-stripping btw</note>
     </notes>
     <labels>
         <label id="1" label="Touchstones" folder="" sort="0" />
@@ -204,18 +237,72 @@
         <label id="171" label="" folder="Filters" sort="0" />
         <label id="172" label="" folder="Filters" sort="0" />
         <label id="173" label="" folder="Filters" sort="0" />
+        <label id="130" label="" folder="Technobabble" sort="0" />
+        <label id="174" label="" folder="Technobabble" sort="0" />
+        <label id="175" label="" folder="Technobabble" sort="0" />
+        <label id="176" label="" folder="Technobabble" sort="0" />
+        <label id="177" label="" folder="Technobabble" sort="0" />
+        <label id="178" label="" folder="Technobabble" sort="0" />
+        <label id="180" label="" folder="My Ninja" sort="0" />
+        <label id="181" label="" folder="My Ninja" sort="0" />
+        <label id="182" label="" folder="My Ninja" sort="0" />
+        <label id="183" label="" folder="My Ninja" sort="0" />
+        <label id="184" label="" folder="Testing Cohort" sort="0" />
+        <label id="185" label="" folder="Testing Cohort" sort="0" />
+        <label id="186" label="" folder="Testing Cohort" sort="0" />
+        <label id="187" label="" folder="Testing Cohort" sort="0" />
+        <label id="188" label="" folder="Testing Cohort" sort="0" />
+        <label id="189" label="" folder="Testing Cohort" sort="0" />
+        <label id="190" label="" folder="Testing Cohort" sort="0" />
+        <label id="191" label="" folder="Technobabble" sort="0" />
+        <label id="192" label="" folder="Technobabble" sort="0" />
+        <label id="193" label="" folder="Technobabble" sort="0" />
+        <label id="194" label="" folder="Technobabble" sort="0" />
+        <label id="195" label="" folder="Technobabble" sort="0" />
+        <label id="196" label="" folder="Zelda-Likes" sort="0" />
+        <label id="197" label="" folder="Zelda-Likes" sort="0" />
+        <label id="198" label="" folder="Zelda-Likes" sort="0" />
+        <label id="199" label="" folder="Testing Cohort" sort="0" />
+        <label id="200" label="" folder="Testing Cohort" sort="0" />
+        <label id="201" label="" folder="Testing Cohort" sort="0" />
+        <label id="202" label="" folder="Zelda-Likes" sort="0" />
+        <label id="203" label="" folder="Testing Cohort" sort="0" />
+        <label id="204" label="" folder="Testing Cohort" sort="0" />
+        <label id="205" label="" folder="Testing Cohort" sort="0" />
+        <label id="206" label="" folder="Filters" sort="0" />
+        <label id="207" label="" folder="Filters" sort="0" />
+        <label id="208" label="" folder="Filters" sort="0" />
+        <label id="209" label="" folder="Filters" sort="0" />
+        <label id="210" label="" folder="Filters" sort="0" />
+        <label id="179" label="" folder="Technobabble" sort="0" />
+        <label id="211" label="Lore (Self)" folder="Lore" sort="0" />
+        <label id="212" label="Questions" folder="" sort="0" />
+        <label id="213" label="Petites" folder="Q+A / Relatability" sort="0" />
+        <label id="214" label="Fighters" folder="Q+A / Relatability" sort="0" />
+        <label id="215" label="Magic" folder="Q+A / Relatability" sort="0" />
+        <label id="216" label="Confident" folder="Q+A / Relatability" sort="0" />
+        <label id="217" label="LongHair" folder="Q+A / Relatability" sort="0" />
+        <label id="218" label="Confident" folder="Q+A / Relatability" sort="0" />
+        <label id="219" label="Lore (Self)" folder="Lore" sort="0" />
+        <label id="220" label="Lore (Self)" folder="Lore" sort="0" />
+        <label id="221" label="Lore (Self)" folder="Lore" sort="0" />
     </labels>
-    <nextId>173</nextId>
+    <nextId>221</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="cadence_purah01" />
         <marker scope="Public" name="dolce_purah01" />
         <marker scope="Public" name="dolce_purah02" />
         <marker scope="Public" name="edelgard_purah01" />
+        <marker scope="Public" name="edelgard_purah02" />
         <marker scope="Public" name="jura_purah01" />
         <marker scope="Public" name="lev_purah01" />
+        <marker scope="Public" name="lev_purah02" />
+        <marker scope="Public" name="lev_purah11" />
         <marker scope="Public" name="meia_purah01" />
+        <marker scope="Public" name="miko_purah01" />
         <marker scope="Public" name="purah_cadence01" />
+        <marker scope="Public" name="purah_confident_Q" />
         <marker scope="Public" name="purah_dolce01" />
         <marker scope="Public" name="purah_dolce02" />
         <marker scope="Public" name="purah_dolce02R" />
@@ -227,42 +314,65 @@
         <marker scope="Public" name="purah_dolce31" />
         <marker scope="Public" name="purah_edelgard01" />
         <marker scope="Public" name="purah_edelgard02" />
+        <marker scope="Public" name="purah_edelgard03" />
+        <marker scope="Public" name="purah_edelgard11" />
+        <marker scope="Public" name="purah_fighters_Q" />
         <marker scope="Public" name="purah_fischl01" />
+        <marker scope="Public" name="purah_hero_Q" />
         <marker scope="Public" name="purah_hex01" />
         <marker scope="Public" name="purah_jenetta01" />
         <marker scope="Public" name="purah_jim01" />
         <marker scope="Public" name="purah_jura01" />
         <marker scope="Public" name="purah_leviathan01" />
         <marker scope="Public" name="purah_leviathan02" />
+        <marker scope="Public" name="purah_leviathan03" />
         <marker scope="Public" name="purah_leviathan11" />
+        <marker scope="Public" name="purah_leviathan12" />
+        <marker scope="Public" name="purah_leviathan21" />
+        <marker scope="Public" name="purah_leviathan31" />
+        <marker scope="Public" name="purah_longhair_Q" />
+        <marker scope="Public" name="purah_magic_Q" />
         <marker scope="Public" name="purah_megu01" />
         <marker scope="Public" name="purah_meia01" />
         <marker scope="Public" name="purah_miko01" />
+        <marker scope="Public" name="purah_miko02" />
         <marker scope="Public" name="purah_momo01" />
         <marker scope="Public" name="purah_monika01" />
+        <marker scope="Public" name="purah_petite_Q" />
         <marker scope="Public" name="purah_priscilla01" />
         <marker scope="Public" name="purah_raine01" />
         <marker scope="Public" name="purah_raine02" />
+        <marker scope="Public" name="purah_raine03" />
+        <marker scope="Public" name="purah_raine11" />
+        <marker scope="Public" name="purah_raine21" />
         <marker scope="Public" name="purah_reagan01" />
         <marker scope="Public" name="purah_reagan02" />
         <marker scope="Public" name="purah_reagan03" />
         <marker scope="Public" name="purah_reagan11" />
         <marker scope="Public" name="purah_reagan21" />
         <marker scope="Public" name="purah_remiu01" />
+        <marker scope="Public" name="purah_remiu02" />
         <marker scope="Public" name="purah_remiu11" />
+        <marker scope="Public" name="purah_remiu12" />
         <marker scope="Public" name="purah_resp01" />
         <marker scope="Public" name="purah_ringo01" />
         <marker scope="Public" name="purah_roll01" />
         <marker scope="Public" name="purah_roll02" />
+        <marker scope="Public" name="purah_roll03" />
         <marker scope="Public" name="purah_roll11" />
         <marker scope="Public" name="purah_roll12" />
+        <marker scope="Public" name="purah_roll13" />
+        <marker scope="Public" name="purah_roll21" />
         <marker scope="Public" name="purah_rouge01" />
         <marker scope="Public" name="purah_schezo01" />
         <marker scope="Public" name="purah_schezo02" />
         <marker scope="Public" name="purah_schezo03" />
         <marker scope="Public" name="purah_schezo11" />
+        <marker scope="Public" name="purah_schezo12" />
         <marker scope="Public" name="purah_selphy01" />
         <marker scope="Public" name="purah_selphy02" />
+        <marker scope="Public" name="purah_selphy03" />
+        <marker scope="Public" name="purah_selphy11" />
         <marker scope="Public" name="purah_serena01" />
         <marker scope="Public" name="purah_sheena01" />
         <marker scope="Public" name="purah_simon01" />
@@ -276,6 +386,8 @@
         <marker scope="Public" name="purah_yae02" />
         <marker scope="Public" name="purah_yae03" />
         <marker scope="Public" name="purah_yae11" />
+        <marker scope="Public" name="purah_yae12" />
+        <marker scope="Public" name="purah_yae21" />
         <marker scope="Public" name="purah_yaemiko01" />
         <marker scope="Public" name="purah_yunyun01" />
         <marker scope="Public" name="purah_yuzuki01" />
@@ -283,6 +395,9 @@
         <marker scope="Public" name="raine_purah01a" />
         <marker scope="Public" name="raine_purah01b" />
         <marker scope="Public" name="raine_purah01c" />
+        <marker scope="Public" name="raine_purah02a" />
+        <marker scope="Public" name="raine_purah02b" />
+        <marker scope="Public" name="raine_purah02c" />
         <marker scope="Public" name="reagan_purah01" />
         <marker scope="Public" name="reagan_purah02" />
         <marker scope="Public" name="reagan_purah03" />
@@ -290,7 +405,42 @@
         <marker scope="Public" name="reagan_purah31" />
         <marker scope="Public" name="reagan_purah33" />
         <marker scope="Public" name="reimu_purah01" />
+        <marker scope="Public" name="reimu_purah02" />
         <marker scope="Public" name="roll_purah01" />
+        <marker scope="Public" name="roll_purah02" />
         <marker scope="Public" name="roll_purah11" />
+        <marker scope="Public" name="roll_purah12" />
+        <marker scope="Public" name="selphy_purah01" />
+        <marker scope="Public" name="yae_purah02" />
+        <marker scope="Public" name="yae_purah11" />
+        <marker scope="Public" name="zeke_pandoria_blade_10" />
+        <marker scope="Public" name="zeke_pandoria_blade_11" />
+        <marker scope="Public" name="zeke_pandoria_blade_12" />
+        <marker scope="Public" name="zeke_pandoria_core_20" />
+        <marker scope="Public" name="zeke_pandoria_core_21" />
+        <marker scope="Public" name="zeke_pandoria_core_22" />
+        <marker scope="Public" name="zeke_pandoria_googlesDoSomething_resp_10" />
+        <marker scope="Public" name="zeke_pandoria_googlesDoSomething_resp_11" />
+        <marker scope="Public" name="zeke_pandoria_googlesDoSomething_resp_12" />
+        <marker scope="Public" name="zeke_pandoria_hyruleLore_resp_20" />
+        <marker scope="Public" name="zeke_pandoria_hyruleLore_resp_21" />
+        <marker scope="Public" name="zeke_pandoria_hyruleLore_resp_22" />
+        <marker scope="Public" name="zeke_pandoria_inventor_resp_30" />
+        <marker scope="Public" name="zeke_pandoria_inventor_resp_31" />
+        <marker scope="Public" name="zeke_pandoria_oopsIDroppedMyMonsterCondom_30" />
+        <marker scope="Public" name="zeke_pandoria_oopsIDroppedMyMonsterCondom_31" />
+        <marker scope="Public" name="zeke_pandoria_oopsIDroppedMyMonsterCondom_32" />
+        <marker scope="Public" name="zeke_pandoria_pair_50" />
+        <marker scope="Public" name="zeke_pandoria_pair_51" />
+        <marker scope="Public" name="zeke_pandoria_pair_52" />
+        <marker scope="Public" name="zeke_pandoria_purahIntro_resp_00" />
+        <marker scope="Public" name="zeke_pandoria_purahIntro_resp_01" />
+        <marker scope="Public" name="zeke_pandoria_purahIntro_resp_02" />
+        <marker scope="Public" name="zeke_pandoria_thatIUseForMyMagnumDong_40" />
+        <marker scope="Public" name="zeke_pandoria_thatIUseForMyMagnumDong_41" />
+        <marker scope="Public" name="zeke_pandoria_thatIUseForMyMagnumDong_42" />
+        <marker scope="Public" name="zeke_pandoria_vibe_00" />
+        <marker scope="Public" name="zeke_pandoria_vibe_01" />
+        <marker scope="Public" name="zeke_pandoria_vibe_02" />
     </markers>
 </metadata>
