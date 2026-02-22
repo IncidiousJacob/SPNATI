@@ -196,11 +196,11 @@
         <label id="357" label="Butt pose with Monika and Yuri" color="6" folder="" sort="0" />
         <label id="358" label="Butt pose with Monika and Pyrrha" color="6" folder="" sort="0" />
         <label id="401" label="" color="4" folder="" sort="0" />
-        <label id="364" label="Butt pose with Jean" color="6" folder="" sort="0" />
-        <label id="365" label="Butt pose with Monika and Jean" color="6" folder="" sort="0" />
-        <label id="366" label="Butt pose with Monika, Yuri, Jean" color="6" folder="" sort="0" />
-        <label id="367" label="Butt pose with Jean and Yuri" color="6" folder="" sort="0" />
-        <label id="368" label="Butt pose with Jean and Pyrrha" color="6" folder="" sort="0" />
+        <label id="364" label="Butt pose with Jean" color="6" folder="Multibutt" sort="0" />
+        <label id="365" label="Butt pose with Monika and Jean" color="6" folder="Multibutt" sort="0" />
+        <label id="366" label="Butt pose with Monika, Yuri, Jean" color="6" folder="Multibutt" sort="0" />
+        <label id="367" label="Butt pose with Jean and Yuri" color="6" folder="Multibutt" sort="0" />
+        <label id="368" label="Butt pose with Jean and Pyrrha" color="6" folder="Multibutt" sort="0" />
         <label id="369" label="Butt pose with Pyrrha and Yuri" color="6" folder="" sort="0" />
         <label id="370" label="Butt pose with Monika, Yuri, Pyrrha" color="6" folder="" sort="0" />
         <label id="400" label="" color="4" folder="" sort="0" />
@@ -221,7 +221,6 @@
         <label id="422" label="" color="4" folder="" sort="0" />
         <label id="424" label="" color="4" folder="" sort="0" />
         <label id="423" label="" color="4" folder="" sort="0" />
-        <label id="419" label="" color="4" folder="" sort="0" />
         <label id="414" label="" color="4" folder="" sort="0" />
         <label id="428" label="" color="4" folder="" sort="0" />
         <label id="416" label="" color="4" folder="" sort="0" />
@@ -230,14 +229,26 @@
         <label id="431" label="" color="4" folder="" sort="0" />
         <label id="438" label="" color="4" folder="" sort="0" />
         <label id="436" label="" color="4" folder="" sort="0" />
-        <label id="437" label="" color="4" folder="" sort="0" />
-        <label id="434" label="" color="4" folder="" sort="0" />
+        <label id="441" label="" color="4" folder="" sort="0" />
+        <label id="440" label="" color="4" folder="" sort="0" />
+        <label id="442" label="Butt pose with Furina" color="6" folder="Multibutt" sort="0" />
+        <label id="443" label="Butt pose with Jean and Furina" color="6" folder="Multibutt" sort="0" />
+        <label id="444" label="Butt pose with Fischl" color="6" folder="Multibutt" sort="0" />
+        <label id="445" label="" folder="Multibutt" sort="0" />
+        <label id="446" label="" folder="Multibutt" sort="0" />
+        <label id="447" label="" folder="Multibutt" sort="0" />
+        <label id="448" label="" folder="Multibutt" sort="0" />
+        <label id="449" label="" folder="Multibutt" sort="0" />
+        <label id="450" label="" folder="Multibutt" sort="0" />
+        <label id="451" label="Butt pose with Monika and Furina" color="6" folder="Multibutt" sort="0" />
+        <label id="452" label="Butt pose with Ganyu" color="6" folder="Multibutt" sort="0" />
     </labels>
     <prefixes>
         <prefix>collectible_</prefix>
     </prefixes>
-    <nextId>439</nextId>
+    <nextId>452</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="9s_manufactured" />
         <marker scope="Public" name="adrien_catOutfit" />
         <marker scope="Public" name="adrien_catOutfit2" />
@@ -292,6 +303,10 @@
         <marker scope="Public" name="carmine_resp_cosplayEars3" />
         <marker scope="Public" name="carmine_resp_delusion" />
         <marker scope="Public" name="carmine_thrillingTale" />
+        <marker scope="Public" name="fischl_faceAway" />
+        <marker scope="Public" name="furina_faceAway" />
+        <marker scope="Public" name="furina_jean_faceAway" />
+        <marker scope="Public" name="ganyu_faceAway" />
         <marker scope="Public" name="glamrock_chica_resp_Inazuma1" />
         <marker scope="Public" name="glamrock_chica_resp_Inazuma2" />
         <marker scope="Public" name="glamrock_chica_visibleJoints1" />
@@ -448,8 +463,10 @@
         <marker scope="Public" name="mitama_readingPrefs" />
         <marker scope="Public" name="mitama_readingPrefs2" />
         <marker scope="Public" name="mitama_readingPrefs3" />
+        <marker scope="Public" name="mitama_recentLover" />
         <marker scope="Public" name="mitama_resp_expectations" />
         <marker scope="Public" name="mitama_resp_expectations2" />
+        <marker scope="Public" name="mitama_resp_expectations3" />
         <marker scope="Public" name="mitama_resp_inazuma" />
         <marker scope="Public" name="mitama_resp_inazuma2" />
         <marker scope="Public" name="mitama_resp_inazuma3" />
@@ -460,6 +477,7 @@
         <marker scope="Public" name="mitama_resp_writingjob2" />
         <marker scope="Public" name="mitama_resp_writingjob3" />
         <marker scope="Public" name="monika_faceAway" />
+        <marker scope="Public" name="monika_furina_faceAway" />
         <marker scope="Public" name="monika_jean_faceAway" />
         <marker scope="Public" name="monika_otherworldly" />
         <marker scope="Public" name="monika_otherworldly2" />
@@ -470,6 +488,7 @@
         <marker scope="Public" name="monika_yuri_pyrrha_faceAway" />
         <marker scope="Public" name="moon_notice" />
         <marker scope="Public" name="multibutt" />
+        <marker scope="Public" name="multibutt_count" />
         <marker scope="Public" name="nagisa_leyLineDisorder" />
         <marker scope="Public" name="natsuki_impersonator" />
         <marker scope="Public" name="natsuki_insecurities" />
@@ -629,6 +648,45 @@
         <marker scope="Public" name="sucrose_thoma2" />
         <marker scope="Public" name="toph_heroLegends" />
         <marker scope="Public" name="toph_visions" />
+        <marker scope="Public" name="wiz_archon_resp_30" />
+        <marker scope="Public" name="wiz_archon_resp_31" />
+        <marker scope="Public" name="wiz_archon_resp_32" />
+        <marker scope="Public" name="wiz_beauty_resp_40" />
+        <marker scope="Public" name="wiz_beauty_resp_41" />
+        <marker scope="Public" name="wiz_beauty_resp_42" />
+        <marker scope="Public" name="wiz_business_00" />
+        <marker scope="Public" name="wiz_business_01" />
+        <marker scope="Public" name="wiz_business_02" />
+        <marker scope="Public" name="wiz_desire_resp_50" />
+        <marker scope="Public" name="wiz_desire_resp_51" />
+        <marker scope="Public" name="wiz_desire_resp_52" />
+        <marker scope="Public" name="wiz_franchisee_10" />
+        <marker scope="Public" name="wiz_franchisee_11" />
+        <marker scope="Public" name="wiz_franchisee_12" />
+        <marker scope="Public" name="wiz_gender_pref_50" />
+        <marker scope="Public" name="wiz_gender_pref_51" />
+        <marker scope="Public" name="wiz_gender_pref_52" />
+        <marker scope="Public" name="wiz_give_or_receive_60" />
+        <marker scope="Public" name="wiz_give_or_receive_61" />
+        <marker scope="Public" name="wiz_give_or_receive_62" />
+        <marker scope="Public" name="wiz_important_resp_20" />
+        <marker scope="Public" name="wiz_important_resp_21" />
+        <marker scope="Public" name="wiz_important_resp_22" />
+        <marker scope="Public" name="wiz_infamy_20" />
+        <marker scope="Public" name="wiz_infamy_21" />
+        <marker scope="Public" name="wiz_infamy_22" />
+        <marker scope="Public" name="wiz_long_life_30" />
+        <marker scope="Public" name="wiz_long_life_31" />
+        <marker scope="Public" name="wiz_long_life_32" />
+        <marker scope="Public" name="wiz_publishing_resp_00" />
+        <marker scope="Public" name="wiz_publishing_resp_01" />
+        <marker scope="Public" name="wiz_publishing_resp_02" />
+        <marker scope="Public" name="wiz_rough_gentle_40" />
+        <marker scope="Public" name="wiz_rough_gentle_41" />
+        <marker scope="Public" name="wiz_rough_gentle_42" />
+        <marker scope="Public" name="wiz_writing_resp_10" />
+        <marker scope="Public" name="wiz_writing_resp_11" />
+        <marker scope="Public" name="wiz_writing_resp_12" />
         <marker scope="Public" name="yae_companions" />
         <marker scope="Public" name="yae_miko_adventurer1" />
         <marker scope="Public" name="yae_miko_adventurer2" />
