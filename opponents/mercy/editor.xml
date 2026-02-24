@@ -2,7 +2,7 @@
 <metadata>
     <owner>mercy</owner>
     <height>5'7"</height>
-    <age>37</age>
+    <age>39</age>
     <pronunciation>MUR/see, AN/ge/la ZIG/ler</pronunciation>
     <othernotes />
     <noteworthy>
@@ -188,6 +188,11 @@
         <note id="252">Presentation - like Witch, but in other direction. Mercy suggests theme(s) for Lys</note>
         <note id="253">Mercy wants to be remembered as Dr Ziegler, the nanobiotics researcher, over Mercy, the hero. How does Lysithea want to be remembered?</note>
         <note id="254">Dealing with difficult and unusual allies - ones with romantic tension, possibly? - and/or compare Overwatch characters to 3H characters</note>
+        <note id="260">NB No siblings - first time being an Auntie? Maybe best for Mercy to be the one to bring this up, if at all</note>
+        <note id="261">I'm assuming that the basics about the existence of Red Promise and its existence as a secret Lucheng Mars colony is relatively widely-known within the new Overwatch (though not the detailed specifics) - can change these lines if Juno would keep that secret enough for Mercy to not know</note>
+        <note id="263">Mercy is just lightly teasing, doesn't expect her to still seriously think that. Referencing a voice line interaction - see Mercy or Juno's quote pages on the Overwatch wiki</note>
+        <note id="266">Pretending not to catch Juno's drift</note>
+        <note id="268">All the testing would have been non-invasive and with Juno's consent - Mercy's just really excited about treading new ground in medical science. She brings this up most times she sees Juno</note>
     </notes>
     <labels>
         <label id="45" label="" folder="Player Names" sort="2" />
@@ -298,10 +303,6 @@
         <label id="203" label="Overwatch 2 Release" folder="Seasonal" sort="0" />
         <label id="204" label="" color="1" folder="" sort="0" />
         <label id="205" label="" color="1" folder="" sort="0" />
-        <label id="206" label="" color="1" folder="" sort="0" />
-        <label id="207" label="" color="1" folder="" sort="0" />
-        <label id="208" label="" color="1" folder="" sort="0" />
-        <label id="209" label="" color="1" folder="" sort="0" />
         <label id="210" label="" color="1" folder="" sort="0" />
         <label id="214" label="" color="1" folder="" sort="0" />
         <label id="215" label="" color="1" folder="" sort="0" />
@@ -344,13 +345,23 @@
         <label id="257" label="" color="1" folder="Presets" sort="0" />
         <label id="258" label="" folder="Presets" sort="0" />
         <label id="259" label="" color="1" folder="Presets" sort="0" />
+        <label id="263" label="" color="1" folder="" sort="0" />
+        <label id="264" label="" color="1" folder="" sort="0" />
+        <label id="260" label="" color="1" folder="" sort="0" />
+        <label id="265" label="" color="1" folder="" sort="0" />
+        <label id="261" label="" color="1" folder="" sort="0" />
+        <label id="262" label="" color="1" folder="" sort="0" />
+        <label id="266" label="" color="1" folder="" sort="0" />
+        <label id="267" label="" color="1" folder="" sort="0" />
+        <label id="268" label="" color="1" folder="" sort="0" />
+        <label id="269" label="" color="1" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue-</prefix>
         <prefix>Collectible</prefix>
         <prefix>Mercy</prefix>
     </prefixes>
-    <nextId>259</nextId>
+    <nextId>269</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviObviousRole" />
@@ -705,6 +716,15 @@
         <marker scope="Public" name="JimWhatWeUse" />
         <marker scope="Public" name="JimWhoWeFight" />
         <marker scope="Public" name="JimWhyWeapons" />
+        <marker scope="Public" name="JunoAuntie" />
+        <marker scope="Public" name="JunoDecompression" />
+        <marker scope="Public" name="JunoEquipment" />
+        <marker scope="Public" name="JunoMarsMedicine" />
+        <marker scope="Public" name="JunoMarsMedicineA" />
+        <marker scope="Public" name="JunoMarsMedicineB" />
+        <marker scope="Public" name="JunoMarsRumors" />
+        <marker scope="Public" name="JunoMartianMoanHunter" />
+        <marker scope="Public" name="JunoMedicalExams" />
         <marker scope="Public" name="kazuma_girl_methods" />
         <marker scope="Public" name="kazuma_luck_potion" />
         <marker scope="Public" name="kazuma_luck_potion_effects" />
@@ -763,6 +783,7 @@
         <marker scope="Public" name="MarinetteBalance3" />
         <marker scope="Public" name="MarinetteOpenRelationship" />
         <marker scope="Public" name="MarinetteOpenRelationship2" />
+        <marker scope="Public" name="MarinetteOpenRelationship3" />
         <marker scope="Public" name="MarinetteOverwatchMagic" />
         <marker scope="Public" name="MarinetteOverwatchMagic2" />
         <marker scope="Public" name="MarinetteOverwatchMagic3" />
@@ -771,6 +792,7 @@
         <marker scope="Public" name="MarinetteReputation3" />
         <marker scope="Public" name="MarinetteSpirits" />
         <marker scope="Public" name="MarinetteSpirits2" />
+        <marker scope="Public" name="MarinetteSpirits3" />
         <marker scope="Public" name="MarinetteTransform" />
         <marker scope="Public" name="MarinetteTransform2" />
         <marker scope="Public" name="MarinetteTransform3" />
@@ -778,6 +800,7 @@
         <marker scope="Public" name="MarinetteWhereCatNoir2" />
         <marker scope="Public" name="MarinetteWhereCatNoir3" />
         <marker scope="Public" name="MarinetteWorkplaceDating" />
+        <marker scope="Public" name="MarinetteWorkplaceDating2" />
         <marker scope="Public" name="MaskIdentity" />
         <marker scope="Public" name="MayAppoinment" />
         <marker scope="Public" name="MayComfortablePresentation" />
@@ -902,6 +925,7 @@
         <marker scope="Public" name="MercyNamiOtherDocResponse" />
         <marker scope="Public" name="MercyNamiWingsResponse" />
         <marker scope="Public" name="MercyNormalFinish" />
+        <marker scope="Public" name="MercyNotAngela" />
         <marker scope="Public" name="MercyParisBadMemories" />
         <marker scope="Public" name="MercyParisBetterMemories" />
         <marker scope="Public" name="MercyParisDefenders" />
