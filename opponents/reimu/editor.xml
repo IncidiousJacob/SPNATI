@@ -301,6 +301,23 @@
         <response id="671" opponent="hex_maniac" opponentId="67" />
         <response id="672" opponent="zelda_eow" opponentId="17" />
         <response id="673" opponent="yshtola" opponentId="169" />
+        <response id="677" opponent="zelda_eow" opponentId="22" />
+        <response id="678" opponent="carmine" opponentId="345" />
+        <response id="679" opponent="nephenee" opponentId="240" />
+        <response id="680" opponent="selphy" opponentId="35" />
+        <response id="681" opponent="yshtola" opponentId="386" />
+        <response id="682" opponent="mitama" opponentId="3507" />
+        <response id="683" opponent="priscilla" opponentId="463" />
+        <response id="684" opponent="reagan" opponentId="79" />
+        <response id="685" opponent="darkness" opponentId="1877" />
+        <response id="686" opponent="darkness" opponentId="1878" />
+        <response id="687" opponent="darkness" opponentId="1879" />
+        <response id="688" opponent="darkness" opponentId="1876" />
+        <response id="689" opponent="jean" opponentId="611" />
+        <response id="690" opponent="purah" opponentId="197" />
+        <response id="691" opponent="purah" opponentId="198" />
+        <response id="692" opponent="mina" opponentId="5" />
+        <response id="693" opponent="mina" opponentId="180" />
     </responses>
     <notes>
         <note id="99">Note: This is a blatent lie</note>
@@ -747,7 +764,7 @@
         <label id="675" label="" color="1" folder="" sort="0" />
         <label id="676" label="" color="1" folder="" sort="0" />
     </labels>
-    <nextId>676</nextId>
+    <nextId>693</nextId>
     <markers>
         <marker scope="Public" name="AimeeArmband1" />
         <marker scope="Public" name="AimeeCowboyOutfit1" />
@@ -824,6 +841,8 @@
         <marker scope="Public" name="CagliostroShirt1_resp" />
         <marker scope="Public" name="CagliostroSpouse_resp" />
         <marker scope="Public" name="CarmineFannyPack1" />
+        <marker scope="Public" name="CarmineFannyPack2" />
+        <marker scope="Public" name="CarmineShoes1_resp" />
         <marker scope="Public" name="CriticalDarlingDevilDuel_resp" />
         <marker scope="Public" name="CriticalDarlingGloves1" />
         <marker scope="Public" name="CriticalDarlingGloves2" />
@@ -849,6 +868,7 @@
         <marker scope="Public" name="DarknessBreastplate1" />
         <marker scope="Public" name="DarknessShirt1_resp" />
         <marker scope="Public" name="DarknessShirt2_resp" />
+        <marker scope="Public" name="DarknessShirt3_resp" />
         <marker scope="Public" name="DarknessShoes1A_resp" />
         <marker scope="Public" name="DarknessShoes1B_resp" />
         <marker scope="Public" name="DarknessShoes2A_resp" />
@@ -856,14 +876,18 @@
         <marker scope="Public" name="DarknessShoes3A_resp" />
         <marker scope="Public" name="DarknessShoes3B_resp" />
         <marker scope="Public" name="DarknessSkirt1A_resp" />
+        <marker scope="Public" name="DarknessSkirt2B_resp" />
         <marker scope="Public" name="DarknessSleeves1A_resp" />
         <marker scope="Public" name="DarknessSleeves1B_resp" />
+        <marker scope="Public" name="DarknessSleeves2A_resp" />
+        <marker scope="Public" name="DarknessSleeves2B_resp" />
         <marker scope="Public" name="DarknessSocks1_resp" />
         <marker scope="Public" name="DarknessSocks2_resp" />
         <marker scope="Public" name="DarknessSocks3_resp" />
         <marker scope="Public" name="DolceGloves1" />
         <marker scope="Public" name="DolceShoes1_resp" />
         <marker scope="Public" name="EdelgardCape1" />
+        <marker scope="Public" name="EdelgardCape2" />
         <marker scope="Public" name="EdelgardGoodBooks_resp" />
         <marker scope="Public" name="EdelgardGovernance_resp" />
         <marker scope="Public" name="EdelgardHeresies_resp" />
@@ -1034,6 +1058,7 @@
         <marker scope="Public" name="IgnatzShoes2" />
         <marker scope="Public" name="JasonShoes1_resp" />
         <marker scope="Public" name="JasonShoes2_resp" />
+        <marker scope="Public" name="JeanBoots1" />
         <marker scope="Public" name="JeanCapelet1" />
         <marker scope="Public" name="JeanCapelet2" />
         <marker scope="Public" name="JeanCapelet3" />
@@ -1045,6 +1070,7 @@
         <marker scope="Public" name="JeanShoes3_resp" />
         <marker scope="Public" name="JeanSocks1_resp" />
         <marker scope="Public" name="JeanSocks2_resp" />
+        <marker scope="Public" name="JeanSocks3_resp" />
         <marker scope="Public" name="JimBandolier1" />
         <marker scope="Public" name="JimGloves1" />
         <marker scope="Public" name="JimGloves2" />
@@ -1373,6 +1399,10 @@
         <marker scope="Public" name="MikuSpouseQualities_resp" />
         <marker scope="Public" name="MikuTie1" />
         <marker scope="Public" name="MikuTie2" />
+        <marker scope="Public" name="MinaBag1" />
+        <marker scope="Public" name="MinaDrinkBlood_resp" />
+        <marker scope="Public" name="MinaGameStart" />
+        <marker scope="Public" name="MinaShoes1_resp" />
         <marker scope="Public" name="MitamaArmor1" />
         <marker scope="Public" name="MitamaArmor2" />
         <marker scope="Public" name="MitamaArmor3" />
@@ -1405,6 +1435,7 @@
         <marker scope="Public" name="MitamaShirt3a_resp" />
         <marker scope="Public" name="MitamaShirt3b_resp" />
         <marker scope="Public" name="MitamaShoes1_resp" />
+        <marker scope="Public" name="MitamaShoes1Alt_resp" />
         <marker scope="Public" name="MitamaShoes2_resp" />
         <marker scope="Public" name="MitamaShoes3_resp" />
         <marker scope="Public" name="MitamaSkirt1_resp" />
@@ -1629,6 +1660,8 @@
         <marker scope="Public" name="NamiSocks3_resp" />
         <marker scope="Public" name="NamiSpouse_resp" />
         <marker scope="Public" name="NepheneeBreastplate1" />
+        <marker scope="Public" name="NepheneeBreastplate2" />
+        <marker scope="Public" name="NepheneeShoes1_resp" />
         <marker scope="Public" name="NoelleArmor1" />
         <marker scope="Public" name="NoelleArmor2" />
         <marker scope="Public" name="NoelleShoes1_resp" />
@@ -1652,14 +1685,21 @@
         <marker scope="Public" name="PlayerFantasy">Reimu is the last one out and the Player is victorious. She begins to fantasize.</marker>
         <marker scope="Public" name="PlayerFantasyEnd" />
         <marker scope="Public" name="PlumWineFestival" />
+        <marker scope="Public" name="PriscillaShoes1" />
+        <marker scope="Public" name="PriscillaShoes1_resp" />
         <marker scope="Private" name="pube_peek" />
         <marker scope="Public" name="PurahGloves1" />
         <marker scope="Public" name="PurahGloves2" />
+        <marker scope="Public" name="PurahGloves3" />
         <marker scope="Public" name="PurahShoes1_resp" />
+        <marker scope="Public" name="PurahShoes2_resp" />
         <marker scope="Public" name="PurahSocks1_resp" />
+        <marker scope="Public" name="PurahSocks2_resp" />
         <marker scope="Public" name="ReaganBookQuestion_resp" />
         <marker scope="Public" name="ReaganJustifyQuestion_resp" />
         <marker scope="Public" name="ReaganShoes1" />
+        <marker scope="Public" name="ReaganShoes1_resp" />
+        <marker scope="Public" name="ReaganShoes2" />
         <marker scope="Public" name="Reimu_GetRichQuick">Prompt Marker, Reimu wants to know how to take your money.</marker>
         <marker scope="Public" name="Reimu_SpouseQualities" />
         <marker scope="Public" name="ReimuBirthday" />
@@ -1728,8 +1768,11 @@
         <marker scope="Public" name="SayoriBlazer1" />
         <marker scope="Public" name="SayoriBlazer2" />
         <marker scope="Public" name="SayoriPanties3" />
+        <marker scope="Public" name="SelphyShoes1_resp" />
         <marker scope="Public" name="SelphyShoes1A" />
         <marker scope="Public" name="SelphyShoes1B" />
+        <marker scope="Public" name="SelphyShoes2A" />
+        <marker scope="Public" name="SelphyShoes2B" />
         <marker scope="Public" name="ShamikoNickname_resp" />
         <marker scope="Public" name="ShamikoShoes1" />
         <marker scope="Public" name="ShamikoShoes2" />
@@ -1796,7 +1839,11 @@
         <marker scope="Public" name="WizCloak3" />
         <marker scope="Public" name="WizShoes1" />
         <marker scope="Public" name="WizShoes1_resp" />
+        <marker scope="Public" name="WizShoes2" />
         <marker scope="Public" name="WizShoes2_resp" />
+        <marker scope="Public" name="WizShoes3_resp" />
+        <marker scope="Public" name="WizSocks1_resp" />
+        <marker scope="Public" name="WizSocks2_resp" />
         <marker scope="Public" name="YaeMikoEarrings1" />
         <marker scope="Public" name="YaeMikoEarrings2" />
         <marker scope="Public" name="YaeMikoEarrings3" />
@@ -1815,6 +1862,8 @@
         <marker scope="Public" name="YoukaiExplanation">You may think Reimu's a bad guy for wanting to exterminate youkai, but that's all a facade. She secretly cares for the youkai of Gensokyo.</marker>
         <marker scope="Public" name="YshtolaMage_resp" />
         <marker scope="Public" name="YshtolaNecklace1" />
+        <marker scope="Public" name="YshtolaNecklace2" />
+        <marker scope="Public" name="YshtolaShoes1_resp" />
         <marker scope="Public" name="YumekoBlazer1" />
         <marker scope="Public" name="YumekoBlazer2" />
         <marker scope="Public" name="YumekoBlazer3" />
@@ -1866,7 +1915,9 @@
         <marker scope="Public" name="ZeldaEoWCloak1" />
         <marker scope="Public" name="ZeldaEoWCloak2" />
         <marker scope="Public" name="ZeldaEoWCloak3" />
+        <marker scope="Public" name="ZeldaEoWRobe1" />
         <marker scope="Public" name="ZeldaEoWShoes1_resp" />
+        <marker scope="Public" name="ZeldaEoWShoes2_resp" />
         <marker scope="Public" name="ZoeFollowedByProblems_resp" />
         <marker scope="Public" name="ZoeRosaShipping_resp" />
         <marker scope="Public" name="ZoeShoes1" />
