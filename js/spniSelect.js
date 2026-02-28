@@ -945,6 +945,7 @@ function updateIndividualSelectSort() {
         : sortingMode == "newest" || sortingMode == "oldest" ? function(opp) { return opp.release === undefined ? -1 : opp.release == Infinity ? 1 : 0; }
     /* Separate characters according to event settings (if any are active) */
         : sortingMode == "featured"        ? function (opp) { return opp.event_partition; }
+        : sortingMode == "daysUntilBirthday" ? function (opp) { return opp.daysUntilBirthday !== undefined; }
         : null;
 
     var favoritedOpponents = loadedOpponents.filter(function (opp) {

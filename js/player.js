@@ -187,19 +187,32 @@ Player.prototype.resetState = function () {
     }
 }
 
-Object.defineProperty(Player.prototype, 'hasBirthdayToday', {
+Object.defineProperty(Player.prototype, 'daysUntilBirthday', {
     get: function() {
         if ('birthday' in this) {
-            const now = new Date();
-            return (this.birthday.month == now.getMonth() + 1
-                    && (this.birthday.day == now.getDate()
-                        /* Special case for Feb 29 - if it's the 28th,
-                         * check if 24h from now is March, i.e. it's
-                         * not a leap year */
-                        || (this.birthday.day == 29 && now.getDate() == 28
-                            && new Date(now.getTime() + 86_400_000).getMonth() == 2)));
+            /* We do calculations in UTC so that we can calculate the final number
+               of days by simple division and not have to bother with DST */
+            const now = new Date(),
+                  today = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+            const b = [ new Date(Date.UTC(now.getFullYear(), this.birthday.month - 1, this.birthday.day)),
+                        new Date(Date.UTC(now.getFullYear() + 1, this.birthday.month - 1, this.birthday.day)) ];
+            if (this.birthday.month == 2 && this.birthday.day == 29) {
+                /* If either this or next year is a leap year and we're born on 29 February,
+                   the corresponding date object will refer to March 1. Setting the date
+                   (day in the month) to 0 will move us back to 28 February */
+                for (let d of b) { if (d.getUTCMonth() == 2) d.setUTCDate(0); };
+            }
+            return (b.find(d => d >= today) - today) / 86_400_000;
+        } else {
+            return undefined;
         }
-        return false;
+    },
+    enumerable: true
+});
+
+Object.defineProperty(Player.prototype, 'hasBirthdayToday', {
+    get: function() {
+        return this.daysUntilBirthday === 0;
     },
     enumerable: true
 });
