@@ -177,6 +177,16 @@ Player.prototype.resetState = function () {
         this.clothing = clothingArr;
         this.initClothingStatus();
 
+        const nicknames = {};
+        this.xml.children('nicknames').children('nickname').each(function() {
+            if ($(this).attr('for') in nicknames) {
+                nicknames[$(this).attr('for')].push($(this).text());
+            } else {
+                nicknames[$(this).attr('for')] = [ $(this).text() ];
+            }
+        });
+        this.nicknames = nicknames;
+
         this.loadStylesheet();
 
         /* Skip over any initial skip layers. */
@@ -1592,16 +1602,6 @@ Opponent.prototype.loadBehaviour = function (slot, individual, selectInfo) {
                 });
                 $case.remove();
             });
-
-            var nicknames = {};
-            $xml.children('nicknames').children('nickname').each(function() {
-                if ($(this).attr('for') in nicknames) {
-                    nicknames[$(this).attr('for')].push($(this).text());
-                } else {
-                    nicknames[$(this).attr('for')] = [ $(this).text() ];
-                }
-            });
-            this.nicknames = nicknames;
 
             return this.loadXMLTriggers();
         }.bind(this)).then(function () {
