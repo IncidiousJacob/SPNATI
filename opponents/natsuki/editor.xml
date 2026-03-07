@@ -310,6 +310,7 @@
         <response id="709" opponent="karin" opponentId="233" />
         <response id="710" opponent="karin" opponentId="234" />
         <response id="711" opponent="glamrock_chica" opponentId="283" />
+        <response id="752" opponent="reagan" opponentId="74" />
     </responses>
     <notes>
         <note id="20">This case and other cases for ddlc:2/sakura/saki are not active and at weight 0</note>
@@ -321,6 +322,8 @@
         <note id="648">This case is conditional on Natsuki's marker from the previous conversation block. As those lines are likely to play, this case is usually the one that will play over the one without the marker check. However, if that doesn't play - for example if Nagisa is masturbating at the time - the fallback is the other case in this stage.</note>
         <note id="650">See note on parallel case for more info.</note>
         <note id="678">Gwen no longer swings around on her web when masturbating</note>
+        <note id="752">Technically Natsuki's been 18 for like, 8 years now</note>
+        <note id="753">Natsuki's going to ask for clothes</note>
     </notes>
     <labels>
         <label id="37" label="" color="6" folder="N/Player Shipping" sort="16" />
@@ -721,7 +724,7 @@
         <prefix>Thinking</prefix>
         <prefix>collectible_</prefix>
     </prefixes>
-    <nextId>751</nextId>
+    <nextId>754</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="1bs" />
@@ -1442,6 +1445,10 @@
         <marker scope="Public" name="natsuki_estelle_mast_chair_too" />
         <marker scope="Public" name="natsuki_fantasy" />
         <marker scope="Public" name="natsuki_flee" />
+        <marker scope="Public" name="natsuki_furina01" />
+        <marker scope="Public" name="natsuki_furina11" />
+        <marker scope="Public" name="natsuki_furina21" />
+        <marker scope="Public" name="natsuki_furina31" />
         <marker scope="Public" name="natsuki_futaba_streaming-chan_natsuki2" />
         <marker scope="Public" name="natsuki_futaba_streaming-chan_natsuki3" />
         <marker scope="Public" name="natsuki_futaba_streaming-chan_stream2" />
@@ -2108,7 +2115,9 @@
         <marker scope="Public" name="natsuki_raynor_mast_2" />
         <marker scope="Public" name="natsuki_raynor_mast_3" />
         <marker scope="Public" name="natsuki_reagan01" />
+        <marker scope="Public" name="natsuki_reagan02" />
         <marker scope="Public" name="natsuki_reagan11" />
+        <marker scope="Public" name="natsuki_reagan12" />
         <marker scope="Public" name="natsuki_real_woman_strip" />
         <marker scope="Public" name="natsuki_revy_aimee_33" />
         <marker scope="Public" name="natsuki_rin_02" />
@@ -2353,6 +2362,11 @@
         <marker scope="Public" name="natsuki_whats_all_this" />
         <marker scope="Public" name="natsuki_why_are_we_doing_this" />
         <marker scope="Public" name="natsuki_why_playing_poker" />
+        <marker scope="Public" name="natsuki_wiz_gameover" />
+        <marker scope="Public" name="natsuki_wizFFAfter" />
+        <marker scope="Public" name="natsuki_wizFFfinished" />
+        <marker scope="Public" name="natsuki_wizFFmust" />
+        <marker scope="Public" name="natsuki_wizFFStart" />
         <marker scope="Public" name="natsuki_yuelia_boobenvy" />
         <marker scope="Public" name="natsuki_yuelia_boobenvy2" />
         <marker scope="Public" name="natsuki_yuri_amy_masturbated_to" />
@@ -2525,6 +2539,7 @@
         <marker scope="Public" name="pretty2" />
         <marker scope="Public" name="ranma" />
         <marker scope="Public" name="rarity_accessories" />
+        <marker scope="Public" name="reagan_natsuki01" />
         <marker scope="Public" name="real_peen" />
         <marker scope="Public" name="real_peen2" />
         <marker scope="Public" name="revolution" />
@@ -2829,6 +2844,62 @@
         <marker scope="Public" name="who_is_amy2" />
         <marker scope="Public" name="who_is_amy3" />
         <marker scope="Public" name="wiggle" />
+        <marker scope="Public" name="wiz_attention_30" />
+        <marker scope="Public" name="wiz_attention_31" />
+        <marker scope="Public" name="wiz_attention_32" />
+        <marker scope="Public" name="wiz_books_resp_30" />
+        <marker scope="Public" name="wiz_books_resp_31" />
+        <marker scope="Public" name="wiz_books_resp_32" />
+        <marker scope="Public" name="wiz_club_resp_10" />
+        <marker scope="Public" name="wiz_club_resp_11" />
+        <marker scope="Public" name="wiz_club_resp_12" />
+        <marker scope="Public" name="wiz_cooking_resp_50" />
+        <marker scope="Public" name="wiz_cooking_resp_51" />
+        <marker scope="Public" name="wiz_cooking_resp_52" />
+        <marker scope="Public" name="wiz_curves_50" />
+        <marker scope="Public" name="wiz_curves_51" />
+        <marker scope="Public" name="wiz_curves_52" />
+        <marker scope="Public" name="wiz_goth_00" />
+        <marker scope="Public" name="wiz_goth_01" />
+        <marker scope="Public" name="wiz_goth_02" />
+        <marker scope="Public" name="wiz_goth2_10" />
+        <marker scope="Public" name="wiz_goth2_11" />
+        <marker scope="Public" name="wiz_goth2_12" />
+        <marker scope="Public" name="wiz_intro_00" />
+        <marker scope="Public" name="wiz_intro_01" />
+        <marker scope="Public" name="wiz_intro_02" />
+        <marker scope="Public" name="wiz_magic_10" />
+        <marker scope="Public" name="wiz_magic_11" />
+        <marker scope="Public" name="wiz_magic_12" />
+        <marker scope="Public" name="wiz_manga_resp_40" />
+        <marker scope="Public" name="wiz_manga_resp_41" />
+        <marker scope="Public" name="wiz_manga_resp_42" />
+        <marker scope="Public" name="wiz_natsuki_finished" />
+        <marker scope="Public" name="wiz_natsuki_post1" />
+        <marker scope="Public" name="wiz_natsuki81" />
+        <marker scope="Public" name="wiz_natsuki82" />
+        <marker scope="Public" name="wiz_pink_resp_00" />
+        <marker scope="Public" name="wiz_pink_resp_01" />
+        <marker scope="Public" name="wiz_pink_resp_02" />
+        <marker scope="Public" name="wiz_poems_resp_20" />
+        <marker scope="Public" name="wiz_poems_resp_21" />
+        <marker scope="Public" name="wiz_poems_resp_22" />
+        <marker scope="Public" name="wiz_pretty_resp_60" />
+        <marker scope="Public" name="wiz_pretty_resp_61" />
+        <marker scope="Public" name="wiz_pretty_resp_62" />
+        <marker scope="Public" name="wiz_sacrifice_40" />
+        <marker scope="Public" name="wiz_sacrifice_41" />
+        <marker scope="Public" name="wiz_sacrifice_42" />
+        <marker scope="Public" name="wiz_socks_60" />
+        <marker scope="Public" name="wiz_socks_61" />
+        <marker scope="Public" name="wiz_socks_62" />
+        <marker scope="Public" name="wiz_special_resp_70" />
+        <marker scope="Public" name="wiz_special_resp_71" />
+        <marker scope="Public" name="wiz_special_resp_72" />
+        <marker scope="Public" name="wiz_store_20" />
+        <marker scope="Public" name="wiz_store_21" />
+        <marker scope="Public" name="wiz_store_22" />
+        <marker scope="Public" name="wiz_winner" />
         <marker scope="Public" name="wrestling_club" />
         <marker scope="Public" name="wrestling_club2" />
         <marker scope="Public" name="yagate_kimi_ni_naru" />
