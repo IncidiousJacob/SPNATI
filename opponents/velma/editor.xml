@@ -9,12 +9,24 @@
         <case name="Lost Glasses" id="1" priority="MustTarget" min="5" max="5">
             <description>When Velma takes her sweater off, she loses her glasses and is blind throughout her next stage. She only finds her glasses at the start of her forfeit. Until then, she will crawl on the ground and won't swap out any cards.</description>
         </case>
+        <case name="No Panties" id="4" priority="MustTarget" min="4" max="4">
+            <description>When Velma only has her panties and sweater left on, she will choose to remove her panties first. Then throughout her next stage she will attempt to stay covered up with just her sweater on often unsuccessfully.</description>
+        </case>
+        <case name="Blind Victory" id="5" priority="Noteworthy" min="5" max="5">
+            <description>Velma has won the game while looking for her glasses. Impressive luck!</description>
+        </case>
+        <case name="Found Glasses" id="6" priority="MustTarget" min="5" max="5">
+            <description>Velma has finally found her glasses, but she lost a round while looking for them and now has to do the forfeit.</description>
+        </case>
+        <case name="Found Glasses (First Loser)" id="7" priority="MustTarget" min="5" max="5">
+            <description>Velma has finally found her glasses, but she lost a round during her search. Which results in her being the first loser of the game. Now she has to do the forfeit.</description>
+        </case>
     </noteworthy>
     <responses>
         <response id="2" opponent="ms.fortune" opponentId="24" />
         <response id="3" opponent="mileena" opponentId="1" />
     </responses>
-    <nextId>3</nextId>
+    <nextId>7</nextId>
     <markers>
         <marker scope="Public" name="player_bukkake" />
     </markers>
