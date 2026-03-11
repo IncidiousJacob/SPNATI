@@ -148,6 +148,9 @@ var sortingOptionsMap = {
     newest: sortOpponentsByMultipleFields(["-release", "listingIndex"]),
     featured: sortOpponentsByMultipleFields(["-effectiveScore"]),
     communityRank: sortOpponentsByMultipleFields(["-rosterScore"]),
+    incomplete: function (opp1, opp2) {
+        return opp2.getLockedItemCount() - opp1.getLockedItemCount();
+    },    
 };
 var groupCreditsShown = false;
 
@@ -943,6 +946,8 @@ function updateIndividualSelectSort() {
         : sortingMode == "target"       ? function(opp) { return opp.inboundLinesFromSelected(individualSelectTesting ? "testing" : undefined) === 0; }
     /* Separate characters with a release number from characters without one */
         : sortingMode == "newest" || sortingMode == "oldest" ? function(opp) { return opp.release === undefined ? -1 : opp.release == Infinity ? 1 : 0; }
+    /* Separate characters with locked items from those that are fully complete */
+        : sortingMode == "incomplete"   ? function(opp) { return opp.getLockedItemCount() === 0; }    
     /* Separate characters according to event settings (if any are active) */
         : sortingMode == "featured"        ? function (opp) { return opp.event_partition; }
         : sortingMode == "daysUntilBirthday" ? function (opp) { return opp.daysUntilBirthday !== undefined; }
@@ -2040,7 +2045,23 @@ function setSortingMode(mode) {
 
     sortingMode = mode;
     // change the dropdown text to the selected option
-    $("#sort-dropdown-selection").html($sortingOptionsItems.filter(function() { return $(this).data('value') == mode; }).html()); 
+    $("#sort-dropdown-selection").html($sortingOptionsItems.filter(function() { return $(this).data('value') == mode; }).html());
+    if (mode === "incomplete") {
+        /* Prefetch collectibles for all characters so locked counts are accurate,
+         * then re-sort once everything is loaded. */
+        var collectiblePromises = loadedOpponents
+            .filter(function (opp) { return opp.has_collectibles && opp.collectibles === null; })
+            .map(function (opp) { return opp.fetchCollectibles().catch(function () {}); });
+
+        if (collectiblePromises.length > 0) {
+            Promise.all(collectiblePromises).then(function () {
+                if (sortingMode === "incomplete") {
+                    updateIndividualSelectSort();
+                }
+            });
+        }
+    }
+    
     updateIndividualSelectSort();
 }
 
