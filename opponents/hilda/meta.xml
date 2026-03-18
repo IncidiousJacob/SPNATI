@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1716128326462</lastupdate>
-    <enabled>false</enabled>
+    <lastupdate>1773751050517</lastupdate>
     <first>Hilda</first>
     <last>Valentine Goneril</last>
     <label>Hilda</label>
@@ -10,17 +9,31 @@
     <from>Fire Emblem: Three Houses</from>
     <writer>ClockworkVoyeur</writer>
     <artist>Halo (model &amp; posing), ClockworkVoyeur (posing &amp; costumes)</artist>
-    <birthday month="3" day="2" />
+    <birthday month="2" day="3" />
     <description>A loyal member of the Golden Deer house, Hilda is a formidable warrior, wielding the axe Freikugel against her enemies - at least, when she's not slacking off and downplaying her own abilities to get others to do her work for her.</description>
     <layers>8</layers>
-    <default-costume-name>Garreg Mach Uniform</default-costume-name>
+    <default-costume-name>Academy Uniform</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/hilda_war_outfit/" img="0-conversational.png" status="online" label="Hilda">War Outfit</costume>
-        <costume folder="opponents/reskins/hilda_holiday_layabout/" img="0-conversational.png" set="xmas" status="unlisted" label="Hilda" layers="7">Holiday Layabout</costume>
-        <costume folder="opponents/reskins/hilda_sundrenched_nobility/" img="0-conversational.png" set="summer" status="online" label="Hilda" layers="6">Sun-Drenched Nobility</costume>
-        <costume folder="opponents/reskins/hilda_halloween_hegemon/" img="0-conversational.png" set="halloween" status="unlisted" label="Hilda" layers="6">Corrupted Crest</costume>
+        <costume folder="opponents/reskins/hilda_war_outfit/" img="0-conversational.png" status="online" label="Hilda">
+            <costume-name>War Outfit</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/hilda_holiday_layabout/" img="0-conversational.png" status="offline" label="Hilda" layers="7">
+            <costume-name>Holiday Layabout</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/hilda_sundrenched_nobility/" img="0-conversational.png" set="summer" status="online" label="Hilda" layers="6">
+            <costume-name>Sun-Drenched Nobility</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/hilda_halloween_hegemon/" img="0-conversational.png" set="halloween" status="unlisted" label="Hilda" layers="6">
+            <costume-name>Corrupted Crest</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/hilda_holiday_layabout_fix/" status="offline" label="Hilda">
+            <costume-name>hilda_holiday_layabout_fix</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/hilda_winter/" status="offline" label="Hilda">
+            <costume-name>Hilda Winter Fix</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>3450</lines>
-    <poses>238</poses>
+    <lines>3614</lines>
+    <poses>263</poses>
 </opponent>
