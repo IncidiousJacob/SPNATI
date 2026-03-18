@@ -32,6 +32,7 @@ namespace SPNATI_Character_Editor.Activities
 
 			cboGender.SelectedIndexChanged += cboGender_SelectedIndexChanged;
 			cmdExpandFutanariSize.Click += cmdExpandFutanariSize_Click;
+			cboDefaultPic.SelectedIndexChanged += cboDefaultPic_SelectedIndexChanged;
 		}
 
 		public override string Caption
@@ -236,6 +237,8 @@ namespace SPNATI_Character_Editor.Activities
 				cboDefaultPic.SelectedItem = pose;
 			}
 
+			cboDefaultPic_SelectedIndexChanged(null, EventArgs.Empty);
+
 			var othernotes = _costume.CostumeOtherNotes;
 			txtCostumeOtherNotes.Text = (othernotes ?? "").Replace("<br>", Environment.NewLine);
 
@@ -368,7 +371,8 @@ namespace SPNATI_Character_Editor.Activities
 					|| gender != _costume.Link.Gender || label != _costume.Link.Label 
 					|| _costume.Link.LayersNonSkip == 0 && layers != _costume.Layers
 					|| layers != _costume.Link.LayersNonSkip
-					|| description != _costume.Description )
+					|| description != _costume.Description
+					|| _costume.Link.PreviewImage != (cboDefaultPic.SelectedItem as PoseMapping)?.Key?.Replace("#-", _fullyClothedStage + "-"))
 				{
 					_linkDataChanged = true;
 				}
@@ -377,6 +381,7 @@ namespace SPNATI_Character_Editor.Activities
 					_linkDataChanged = false;
 					_costume.Link.IsDirty = false;
 					_costume.Link.CostumeName = txtName.Text;
+					_costume.Link.PreviewImage = (cboDefaultPic.SelectedItem as PoseMapping)?.Key?.Replace("#-", _fullyClothedStage + "-");
 					_costume.Link.Status = status;
 					_costume.Link.Set = set;
 					_costume.Link.Label = label;
