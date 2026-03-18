@@ -1835,6 +1835,7 @@ namespace SPNATI_Character_Editor
 			{
 				int stage = Stages.Min(s => s);
 				string layer = GetLayerType(speaker, stage);
+
 				if (layer == "major" || layer == "minor" || layer == "accessory")
 				{
 					if (speaker.Metadata.CrossGender)
@@ -1843,7 +1844,7 @@ namespace SPNATI_Character_Editor
 					}
 					return $"{gender}_removing_{layer}";
 				}
-				else
+				else if (layer == "chest" || layer == "crotch")
 				{
 					if (speaker.Metadata.CrossGender)
 					{
@@ -1851,15 +1852,21 @@ namespace SPNATI_Character_Editor
 					}
 					if (futanari && layer == "crotch")
 					{
-						return $"futanari_crotch_will_be_visible";
+						return "futanari_crotch_will_be_visible";
 					}
 					return $"{gender}_{layer}_will_be_visible";
+				}
+				else
+				{
+					// advanced clothing / unknown layer fallback
+					return "opponent_stripping";
 				}
 			}
 			else if (Tag == "stripped")
 			{
 				int stage = Stages.Min(s => s);
 				string layer = GetLayerType(speaker, stage - 1);
+
 				if (layer == "major" || layer == "minor" || layer == "accessory")
 				{
 					if (speaker.Metadata.CrossGender)
@@ -1868,7 +1875,7 @@ namespace SPNATI_Character_Editor
 					}
 					return $"{gender}_removed_{layer}";
 				}
-				else
+				else if (layer == "chest" || layer == "crotch")
 				{
 					if (speaker.Metadata.CrossGender)
 					{
@@ -1889,6 +1896,11 @@ namespace SPNATI_Character_Editor
 						return $"male_{speakerSize}_crotch_is_visible";
 					}
 					return $"{gender}_{layer}_is_visible";
+				}
+				else
+				{
+					// advanced clothing / unknown layer fallback
+					return "opponent_stripped";
 				}
 			}
 			else if (Tag == "must_masturbate_first" || Tag == "must_masturbate")
