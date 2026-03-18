@@ -244,7 +244,7 @@
         <note id="1812">These *would be* temporary unless/until you set up birthday lines for Yunyun. But, given what day her birthday is on, I plan to leave these ones regardless.</note>
         <note id="1810">These are temporary unless/until you set up birthday lines for Kazuma. At that point, I will replace these with responses to those.</note>
         <note id="1808">These are temporary unless/until you set up birthday lines for Darkness. At that point, I will replace these with responses to those.</note>
-        <note id="1842">Two very different lines, so two different markers.</note>
+        <note id="1851">For now, these lines all have 0 priority so that they don't always play. I may change it to some sort of timer with a cooldown later so that they play more regularly, but not every line.</note>
     </notes>
     <labels>
         <label id="30" label="" folder="Undead" sort="0" />
@@ -1203,7 +1203,7 @@
         <label id="972" label="" folder="Darkness" sort="13" />
         <label id="973" label="" folder="Fischl" sort="48" />
         <label id="974" label="" folder="Fischl" sort="49" />
-        <label id="975" label="" color="1" folder="Darkness" sort="43" />
+        <label id="975" label="" folder="Darkness" sort="43" />
         <label id="976" label="" folder="Darkness" sort="44" />
         <label id="977" label="" folder="Darkness" sort="22" />
         <label id="978" label="" folder="Darkness" sort="23" />
@@ -2037,7 +2037,7 @@
         <label id="1812" label="" folder="Birthdays!" sort="0" />
         <label id="1813" label="" color="1" folder="Schezo" sort="0" />
         <label id="1814" label="" color="1" folder="Schezo" sort="0" />
-        <label id="1815" label="" color="1" folder="Schezo" sort="0" />
+        <label id="1815" label="" folder="Schezo" sort="0" />
         <label id="1816" label="(butt switch/under)" folder="z Player" sort="0" />
         <label id="1817" label="butt pose" folder="" sort="0" />
         <label id="1818" label="(butt dominant)" folder="z Player" sort="0" />
@@ -2055,18 +2055,125 @@
         <label id="1830" label="double reveal (f)" folder="" sort="0" />
         <label id="1831" label="double reveal (m)" folder="" sort="0" />
         <label id="1832" label="double reveal (f)" folder="" sort="0" />
-        <label id="1833" label="" color="1" folder="Priscilla" sort="0" />
-        <label id="1834" label="" color="1" folder="Priscilla" sort="0" />
-        <label id="1835" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="1833" label="" folder="Priscilla" sort="0" />
+        <label id="1834" label="" folder="Priscilla" sort="0" />
+        <label id="1835" label="" folder="Priscilla" sort="0" />
         <label id="1836" label="" folder="Darkness" sort="0" />
-        <label id="1837" label="" color="1" folder="Darkness" sort="0" />
-        <label id="1838" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1837" label="" folder="Darkness" sort="0" />
+        <label id="1838" label="" folder="Darkness" sort="0" />
         <label id="1839" label="" folder="Darkness" sort="0" />
         <label id="1840" label="" folder="Darkness" sort="0" />
         <label id="1841" label="" folder="Darkness" sort="0" />
-        <label id="1842" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1842" label="" folder="Darkness" sort="0" />
+        <label id="1843" label="" color="1" folder="Schezo" sort="0" />
+        <label id="1844" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="1845" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="1846" label="" color="1" folder="Priscilla" sort="0" />
+        <label id="1847" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1848" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1849" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1850" label="" color="1" folder="Darkness" sort="0" />
+        <label id="1851" label="" color="1" folder="Darkness&gt;Fetishes" sort="0" />
+        <label id="1852" label="" folder="Natsuki" sort="0" />
+        <label id="1853" label="" folder="Natsuki" sort="0" />
+        <label id="1854" label="" folder="Natsuki" sort="0" />
+        <label id="1855" label="" folder="Natsuki" sort="0" />
+        <label id="1856" label="" folder="Natsuki" sort="0" />
+        <label id="1857" label="" folder="Natsuki" sort="0" />
+        <label id="1858" label="" folder="Hu Tao" sort="0" />
+        <label id="1859" label="" folder="Hu Tao" sort="0" />
+        <label id="1860" label="" folder="Hu Tao" sort="0" />
+        <label id="1861" label="" folder="Hu Tao" sort="0" />
+        <label id="1862" label="" folder="Hu Tao" sort="0" />
+        <label id="1863" label="" folder="Hu Tao" sort="0" />
+        <label id="1864" label="" folder="Hu Tao" sort="0" />
+        <label id="1865" label="" folder="Hu Tao" sort="0" />
+        <label id="1866" label="" folder="Hu Tao" sort="0" />
+        <label id="1867" label="" folder="Hu Tao" sort="0" />
+        <label id="1868" label="" folder="Hu Tao" sort="0" />
+        <label id="1869" label="" folder="Hu Tao" sort="0" />
+        <label id="1870" label="" folder="Hu Tao" sort="0" />
+        <label id="1871" label="" folder="Hu Tao" sort="0" />
+        <label id="1872" label="" folder="Hu Tao" sort="0" />
+        <label id="1873" label="" folder="Hu Tao" sort="0" />
+        <label id="1874" label="" folder="Hu Tao" sort="0" />
+        <label id="1875" label="" folder="Hu Tao" sort="0" />
+        <label id="1876" label="" folder="Hu Tao" sort="0" />
+        <label id="1877" label="" folder="Hu Tao" sort="0" />
+        <label id="1878" label="" folder="Hu Tao" sort="0" />
+        <label id="1879" label="" folder="Hu Tao" sort="0" />
+        <label id="1880" label="" folder="Hu Tao" sort="0" />
+        <label id="1881" label="" folder="Hu Tao" sort="0" />
+        <label id="1882" label="" folder="Hu Tao" sort="0" />
+        <label id="1883" label="" folder="Hu Tao" sort="0" />
+        <label id="1884" label="" folder="Hu Tao" sort="0" />
+        <label id="1885" label="" folder="Hu Tao" sort="0" />
+        <label id="1886" label="" folder="Hu Tao" sort="0" />
+        <label id="1887" label="" folder="Hu Tao" sort="0" />
+        <label id="1888" label="" folder="Hu Tao" sort="0" />
+        <label id="1889" label="" folder="Hu Tao" sort="0" />
+        <label id="1890" label="" folder="Hu Tao" sort="0" />
+        <label id="1891" label="" folder="Hu Tao" sort="0" />
+        <label id="1892" label="" folder="Hu Tao" sort="0" />
+        <label id="1893" label="" folder="Hu Tao" sort="0" />
+        <label id="1894" label="" folder="Hu Tao" sort="0" />
+        <label id="1895" label="" folder="Hu Tao" sort="0" />
+        <label id="1896" label="" folder="Hu Tao" sort="0" />
+        <label id="1897" label="" folder="Hu Tao" sort="0" />
+        <label id="1898" label="" folder="Hu Tao" sort="0" />
+        <label id="1899" label="" folder="Hu Tao" sort="0" />
+        <label id="1900" label="" folder="Hu Tao" sort="0" />
+        <label id="1901" label="" folder="Hu Tao" sort="0" />
+        <label id="1902" label="" folder="Hu Tao" sort="0" />
+        <label id="1903" label="" folder="Hu Tao" sort="0" />
+        <label id="1904" label="" folder="Hu Tao" sort="0" />
+        <label id="1905" label="" folder="Hu Tao" sort="0" />
+        <label id="1906" label="" folder="Hu Tao" sort="0" />
+        <label id="1907" label="" folder="Hu Tao" sort="0" />
+        <label id="1908" label="" folder="Leon" sort="0" />
+        <label id="1909" label="" folder="Leon" sort="0" />
+        <label id="1910" label="" folder="Leon" sort="0" />
+        <label id="1911" label="" folder="Leon" sort="0" />
+        <label id="1912" label="" folder="Leon" sort="0" />
+        <label id="1913" label="" folder="Leon" sort="0" />
+        <label id="1914" label="" folder="Leon" sort="0" />
+        <label id="1915" label="" folder="Leon" sort="0" />
+        <label id="1916" label="" folder="Leon" sort="0" />
+        <label id="1917" label="" folder="Leon" sort="0" />
+        <label id="1918" label="" folder="Leon" sort="0" />
+        <label id="1919" label="" folder="Leon" sort="0" />
+        <label id="1920" label="" folder="Leon" sort="0" />
+        <label id="1921" label="" folder="Leon" sort="0" />
+        <label id="1922" label="" folder="Leon" sort="0" />
+        <label id="1923" label="" folder="Leon" sort="0" />
+        <label id="1924" label="" folder="Leon" sort="0" />
+        <label id="1925" label="" folder="Leon" sort="0" />
+        <label id="1926" label="" folder="Leon" sort="0" />
+        <label id="1927" label="" folder="Leon" sort="0" />
+        <label id="1928" label="" folder="Leon" sort="0" />
+        <label id="1929" label="" folder="Leon" sort="0" />
+        <label id="1930" label="" folder="Leon" sort="0" />
+        <label id="1931" label="" folder="Leon" sort="0" />
+        <label id="1932" label="" folder="Leon" sort="0" />
+        <label id="1933" label="" folder="Leon" sort="0" />
+        <label id="1934" label="" folder="Leon" sort="0" />
+        <label id="1935" label="" folder="Leon" sort="0" />
+        <label id="1936" label="" folder="Leon" sort="0" />
+        <label id="1937" label="" folder="Leon" sort="0" />
+        <label id="1938" label="" folder="Leon" sort="0" />
+        <label id="1939" label="" folder="Leon" sort="0" />
+        <label id="1940" label="" folder="Leon" sort="0" />
+        <label id="1941" label="" folder="Leon" sort="0" />
+        <label id="1942" label="" folder="Leon" sort="0" />
+        <label id="1943" label="" folder="Leon" sort="0" />
+        <label id="1944" label="" folder="Leon" sort="0" />
+        <label id="1945" label="" folder="Leon" sort="0" />
+        <label id="1946" label="" folder="Leon" sort="0" />
+        <label id="1947" label="" folder="Leon" sort="0" />
+        <label id="1948" label="" folder="Leon" sort="0" />
+        <label id="1949" label="" folder="Leon" sort="0" />
     </labels>
-    <nextId>1842</nextId>
+    <nextId>1949</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="about_death">For all "about_" markers, Wiz talks a little about undead and liches and what they're all about.</marker>
@@ -2136,6 +2243,8 @@
         <marker scope="Public" name="darkness_wiz_a53b" />
         <marker scope="Public" name="darkness_wiz_a61a" />
         <marker scope="Public" name="darkness_wiz_a61b" />
+        <marker scope="Public" name="darkness_wiz_a62a" />
+        <marker scope="Public" name="darkness_wiz_a62b" />
         <marker scope="Public" name="darkness_wiz_dangerouschest" />
         <marker scope="Public" name="darkness_wiz_goodcolor" />
         <marker scope="Public" name="darkness_wiz_matureundies" />
@@ -2249,6 +2358,51 @@
         <marker scope="Public" name="hex_maniac_The_Undead_resp_31" />
         <marker scope="Public" name="hex_maniac_The_Undead_resp_32" />
         <marker scope="Public" name="hex_maniac_winner" />
+        <marker scope="Public" name="hu_tao_death_30" />
+        <marker scope="Public" name="hu_tao_death_31" />
+        <marker scope="Public" name="hu_tao_death_32" />
+        <marker scope="Public" name="hu_tao_demtiddies_resp_50" />
+        <marker scope="Public" name="hu_tao_demtiddies_resp_51" />
+        <marker scope="Public" name="hu_tao_demtiddies_resp_52" />
+        <marker scope="Public" name="hu_tao_director_00" />
+        <marker scope="Public" name="hu_tao_director_01" />
+        <marker scope="Public" name="hu_tao_director_02" />
+        <marker scope="Public" name="hu_tao_fire_20" />
+        <marker scope="Public" name="hu_tao_fire_21" />
+        <marker scope="Public" name="hu_tao_fire_22" />
+        <marker scope="Public" name="hu_tao_ghosts_10" />
+        <marker scope="Public" name="hu_tao_ghosts_11" />
+        <marker scope="Public" name="hu_tao_ghosts_12" />
+        <marker scope="Public" name="hu_tao_keep_resp_20" />
+        <marker scope="Public" name="hu_tao_keep_resp_21" />
+        <marker scope="Public" name="hu_tao_keep_resp_22" />
+        <marker scope="Public" name="hu_tao_lingerie_resp_40" />
+        <marker scope="Public" name="hu_tao_lingerie_resp_41" />
+        <marker scope="Public" name="hu_tao_lingerie_resp_42" />
+        <marker scope="Public" name="hu_tao_presence_50" />
+        <marker scope="Public" name="hu_tao_presence_51" />
+        <marker scope="Public" name="hu_tao_presence_52" />
+        <marker scope="Public" name="hu_tao_qiqi_resp_30" />
+        <marker scope="Public" name="hu_tao_qiqi_resp_31" />
+        <marker scope="Public" name="hu_tao_qiqi_resp_32" />
+        <marker scope="Public" name="hu_tao_reason_40" />
+        <marker scope="Public" name="hu_tao_reason_41" />
+        <marker scope="Public" name="hu_tao_reason_42" />
+        <marker scope="Public" name="hu_tao_stockings_resp_60" />
+        <marker scope="Public" name="hu_tao_stockings_resp_61" />
+        <marker scope="Public" name="hu_tao_stockings_resp_62" />
+        <marker scope="Public" name="hu_tao_undeath_resp_10" />
+        <marker scope="Public" name="hu_tao_undeath_resp_11" />
+        <marker scope="Public" name="hu_tao_undeath_resp_12" />
+        <marker scope="Public" name="hu_tao_undeath_resp_13" />
+        <marker scope="Public" name="hu_tao_winner" />
+        <marker scope="Public" name="hu_tao_wiz_a71" />
+        <marker scope="Public" name="hu_tao_wiz_a72" />
+        <marker scope="Public" name="hu_tao_wiz_a83" />
+        <marker scope="Public" name="hu_tao_wizard_resp_00" />
+        <marker scope="Public" name="hu_tao_wizard_resp_01" />
+        <marker scope="Public" name="hu_tao_wizard_resp_02" />
+        <marker scope="Public" name="hutao_post1" />
         <marker scope="Public" name="i_run_a_store">Wiz runs her own store! She could've mentioned it already, but just in case she's saying it now!</marker>
         <marker scope="Public" name="isekai_quartet_nurse">A cheeky reference to Wiz's minor role in Isekai Quartet as the school nurse.</marker>
         <marker scope="Public" name="jean_ambitions_40" />
@@ -2432,6 +2586,48 @@
         <marker scope="Public" name="lady_aqua_wiz_a72a" />
         <marker scope="Public" name="lady_aqua_wiz_a72b" />
         <marker scope="Public" name="lady_aqua_wiz_start" />
+        <marker scope="Public" name="leon_adventurer_20" />
+        <marker scope="Public" name="leon_adventurer_21" />
+        <marker scope="Public" name="leon_adventurer_22" />
+        <marker scope="Public" name="leon_appeal_resp_60" />
+        <marker scope="Public" name="leon_appeal_resp_61" />
+        <marker scope="Public" name="leon_appeal_resp_62" />
+        <marker scope="Public" name="leon_cult_resp_00" />
+        <marker scope="Public" name="leon_cult_resp_01" />
+        <marker scope="Public" name="leon_cult_resp_02" />
+        <marker scope="Public" name="leon_face_resp_10" />
+        <marker scope="Public" name="leon_face_resp_11" />
+        <marker scope="Public" name="leon_face_resp_12" />
+        <marker scope="Public" name="leon_fit_50" />
+        <marker scope="Public" name="leon_fit_51" />
+        <marker scope="Public" name="leon_fit_52" />
+        <marker scope="Public" name="leon_flirt_resp_40" />
+        <marker scope="Public" name="leon_flirt_resp_41" />
+        <marker scope="Public" name="leon_flirt_resp_42" />
+        <marker scope="Public" name="leon_lingerie_resp_30" />
+        <marker scope="Public" name="leon_lingerie_resp_31" />
+        <marker scope="Public" name="leon_lingerie_resp_32" />
+        <marker scope="Public" name="leon_monsters_10" />
+        <marker scope="Public" name="leon_monsters_11" />
+        <marker scope="Public" name="leon_monsters_12" />
+        <marker scope="Public" name="leon_occupation_00" />
+        <marker scope="Public" name="leon_occupation_01" />
+        <marker scope="Public" name="leon_occupation_02" />
+        <marker scope="Public" name="leon_recreation_30" />
+        <marker scope="Public" name="leon_recreation_31" />
+        <marker scope="Public" name="leon_recreation_32" />
+        <marker scope="Public" name="leon_single_40" />
+        <marker scope="Public" name="leon_single_41" />
+        <marker scope="Public" name="leon_single_42" />
+        <marker scope="Public" name="leon_stripping_60" />
+        <marker scope="Public" name="leon_stripping_61" />
+        <marker scope="Public" name="leon_stripping_62" />
+        <marker scope="Public" name="leon_undead_resp_20" />
+        <marker scope="Public" name="leon_undead_resp_21" />
+        <marker scope="Public" name="leon_undead_resp_22" />
+        <marker scope="Public" name="leon_undead_resp_50" />
+        <marker scope="Public" name="leon_undead_resp_51" />
+        <marker scope="Public" name="leon_undead_resp_52" />
         <marker scope="Public" name="leonie_teacher" />
         <marker scope="Public" name="lyralei_butt1_response" />
         <marker scope="Public" name="lyralei_butt2_response" />
@@ -2685,6 +2881,12 @@
         <marker scope="Public" name="natsuki_curves_resp_50" />
         <marker scope="Public" name="natsuki_curves_resp_51" />
         <marker scope="Public" name="natsuki_curves_resp_52" />
+        <marker scope="Public" name="natsuki_goth_resp_00" />
+        <marker scope="Public" name="natsuki_goth_resp_01" />
+        <marker scope="Public" name="natsuki_goth_resp_02" />
+        <marker scope="Public" name="natsuki_goth2_resp_10" />
+        <marker scope="Public" name="natsuki_goth2_resp_11" />
+        <marker scope="Public" name="natsuki_goth2_resp_12" />
         <marker scope="Public" name="natsuki_intro_resp_00" />
         <marker scope="Public" name="natsuki_intro_resp_01" />
         <marker scope="Public" name="natsuki_intro_resp_02" />
@@ -2817,6 +3019,7 @@
         <marker scope="Public" name="priscilla_wiz_a42" />
         <marker scope="Public" name="priscilla_wiz_a43" />
         <marker scope="Public" name="priscilla_wiz_a51" />
+        <marker scope="Public" name="priscilla_wiz_a52" />
         <marker scope="Public" name="ringo_name" />
         <marker scope="Public" name="Rosie_adventures_30" />
         <marker scope="Public" name="Rosie_adventures_31" />
@@ -2961,6 +3164,7 @@
         <marker scope="Public" name="schezo_wiz_a12" />
         <marker scope="Public" name="schezo_wiz_a13" />
         <marker scope="Public" name="schezo_wiz_a21" />
+        <marker scope="Public" name="schezo_wiz_a22" />
         <marker scope="Public" name="selection_darkness" />
         <marker scope="Public" name="selection_kazuko" />
         <marker scope="Public" name="selection_kazuko_lady_aqua" />
@@ -3107,6 +3311,7 @@
         <marker scope="Public" name="store_tea" />
         <marker scope="Public" name="store_time" />
         <marker scope="Public" name="store_variety">"   "   "</marker>
+        <marker scope="Public" name="tao_winner" />
         <marker scope="Public" name="target_also_finishing">In spite of the pleasure she's experiencing, Wiz notices another character that is also nearly at their peak (i.e. also in heavy state).</marker>
         <marker scope="Public" name="undead_acceptance">Wiz asks if undead are treated poorly where they're from, too.</marker>
         <marker scope="Public" name="undead_better">Wiz wonders if an undead's unlife is better than their life was.</marker>
@@ -3169,6 +3374,7 @@
         <marker scope="Public" name="vine_staff_armlocksup" />
         <marker scope="Public" name="vine_staff_curse_a" />
         <marker scope="Public" name="vine_staff_curse_b" />
+        <marker scope="Public" name="winner_wiz_hu_tao" />
         <marker scope="Public" name="winner_wiz_juno" />
         <marker scope="Public" name="with_someone">Wiz is surprised someone would deliberately attend this game with someone else.</marker>
         <marker scope="Public" name="with_them_here">Wiz is more surprised that they're willing to do the forfeit with them here.</marker>
@@ -3192,10 +3398,18 @@
         <marker scope="Public" name="wiz_darkness_a31a" />
         <marker scope="Public" name="wiz_darkness_a31b" />
         <marker scope="Public" name="wiz_darkness_a32" />
+        <marker scope="Public" name="wiz_darkness_a33" />
         <marker scope="Public" name="wiz_darkness_a41" />
         <marker scope="Public" name="wiz_darkness_a42" />
         <marker scope="Public" name="wiz_darkness_a43" />
         <marker scope="Public" name="wiz_darkness_a51" />
+        <marker scope="Public" name="wiz_darkness_a52" />
+        <marker scope="Public" name="wiz_darkness_denial_edging1" />
+        <marker scope="Public" name="wiz_darkness_humiliation1" />
+        <marker scope="Public" name="wiz_darkness_impact1" />
+        <marker scope="Public" name="wiz_darkness_neglect1" />
+        <marker scope="Public" name="wiz_darkness_roleplay1" />
+        <marker scope="Public" name="wiz_darkness_servitude1" />
         <marker scope="Public" name="wiz_finished" />
         <marker scope="Public" name="wiz_fischl_a61" />
         <marker scope="Public" name="wiz_fischl_a62" />
@@ -3206,6 +3420,10 @@
         <marker scope="Public" name="wiz_hex_maniac_a61" />
         <marker scope="Public" name="wiz_hex_maniac_a62" />
         <marker scope="Public" name="wiz_hex_maniac_a73" />
+        <marker scope="Public" name="wiz_hu_tao_a61" />
+        <marker scope="Public" name="wiz_hu_tao_a62" />
+        <marker scope="Public" name="wiz_hu_tao_a73" />
+        <marker scope="Public" name="wiz_hu_tao_lost" />
         <marker scope="Public" name="wiz_jean_a01" />
         <marker scope="Public" name="wiz_jean_a02" />
         <marker scope="Public" name="wiz_jean_a71" />
@@ -3329,6 +3547,7 @@
         <marker scope="Public" name="wiz_mikan_a63a" />
         <marker scope="Public" name="wiz_mikan_a63b" />
         <marker scope="Public" name="wiz_mikan_lost" />
+        <marker scope="Public" name="wiz_miko_a01" />
         <marker scope="Public" name="wiz_momo_a01" />
         <marker scope="Public" name="wiz_momo_a02" />
         <marker scope="Public" name="wiz_momo_a03" />
@@ -3412,8 +3631,10 @@
         <marker scope="Public" name="wiz_priscilla_a23" />
         <marker scope="Public" name="wiz_priscilla_a31" />
         <marker scope="Public" name="wiz_priscilla_a32" />
+        <marker scope="Public" name="wiz_priscilla_a33" />
         <marker scope="Public" name="wiz_priscilla_a41" />
         <marker scope="Public" name="wiz_priscilla_a42" />
+        <marker scope="Public" name="wiz_priscilla_a43" />
         <marker scope="Public" name="wiz_resp_jean_a71" />
         <marker scope="Public" name="wiz_rosie_a71" />
         <marker scope="Public" name="wiz_rosie_a72" />
