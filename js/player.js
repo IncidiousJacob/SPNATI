@@ -1480,7 +1480,7 @@ Opponent.prototype.getLockedItemCount = function () {
     
     if (this.collectibles !== null) {
         this.collectibles.forEach(function (c) {
-            if ((!c.status || includedOpponentStatuses[c.status]) && !c.isUnlocked()) {
+            if ((!c.status || includedOpponentStatuses[c.status]) && !c.isUnlocked() && !c.isHidden()) {
                 count++;
             }
         });
