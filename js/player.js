@@ -1479,11 +1479,15 @@ Opponent.prototype.getLockedItemCount = function () {
     }
     
     if (this.collectibles !== null) {
+        var dbg = {statusFiltered:0, unlocked:0, hidden:0, counted:0};
         this.collectibles.forEach(function (c) {
-            if ((!c.status || includedOpponentStatuses[c.status]) && !c.isUnlocked() && !c.isHidden()) {
-                count++;
-            }
+            if (c.status && !includedOpponentStatuses[c.status]) { dbg.statusFiltered++; return; }
+            if (c.isUnlocked()) { dbg.unlocked++; return; }
+            if (c.isHidden()) { dbg.hidden++; return; }
+            dbg.counted++;
+            count++;
         });
+        // console.log('[incomplete] ' + this.id + ': counted=' + dbg.counted + ' unlocked=' + dbg.unlocked + ' hidden=' + dbg.hidden + ' statusFiltered=' + dbg.statusFiltered);
     }
     
     return count;
