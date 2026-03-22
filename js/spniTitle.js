@@ -346,6 +346,14 @@ function createClothingSeparator () {
     return separator;
 }
 
+const clothingPositionOrderMap = new Map([
+    'head', 'neck', 'arms', 'hands', 'held', UPPER_ARTICLE, FULL_ARTICLE,
+    'waist', LOWER_ARTICLE, 'legs', 'feet', OTHER_ARTICLE
+].map((e, i) => [e, i]));
+const clothingTypeOrderMap = new Map([
+    IMPORTANT_ARTICLE, MAJOR_ARTICLE, MINOR_ARTICLE, EXTRA_ARTICLE
+].map((e, i) => [e, i]));
+
 /************************************************************
  * Updates the gender dependent controls on the title screen.
  ************************************************************/
@@ -385,6 +393,16 @@ function updateTitleScreen () {
     defaultSelectors.sort(
         (a, b) => (b.clothing.matchesPlayerGender() - a.clothing.matchesPlayerGender())
     );
+    availableSelectors.sort(
+        (a, b) => {
+            let d = clothingPositionOrderMap.get(a.clothing.position)
+                - clothingPositionOrderMap.get(b.clothing.position);
+            if (d != 0) return d;
+            d = clothingTypeOrderMap.get(a.clothing.type)
+                - clothingTypeOrderMap.get(b.clothing.type);
+            if (d != 0) return d;
+            return a.clothing.generic.localeCompare(b.clothing.generic);
+        });
 
     $("#title-clothing-container").empty();
 

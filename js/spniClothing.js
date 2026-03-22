@@ -62,8 +62,8 @@ function Clothing (name, generic, type, position, plural, fromStage, fromDeal, r
     }
     this.name = name;
     this.generic = generic || name;
-    this.type = type;
-    this.position = position;
+    this.type = type || EXTRA_CLOTHING;
+    this.position = position || OTHER_CLOTHING;
     this.plural = (plural === undefined ? false : plural);
     this.fromStage = fromStage;
     this.fromDeal = fromDeal;
