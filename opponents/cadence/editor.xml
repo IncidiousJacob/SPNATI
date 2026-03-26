@@ -275,6 +275,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <note id="141">Seeing scars or hearing traumatic backstories will trigger the "Now She's Sad" chain of events, where Cadence spends the following round getting worked up and doing her best to get over it.</note>
         <note id="776">The power-crazed villain is Protobot 3000, the pirate captain is Captain Rockhopper, and the guy who's back from the dead with a vengeance is Tusk.</note>
         <note id="813">https://clubpenguin.fandom.com/wiki/Fairy_Fables_(book)#Gallery</note>
+        <note id="857">Playing against Cadence in the "Club" stage sets her difficulty to "best", as the Night Club is Cadence's natural element. These lines warn the player that Cadence might be especially hard on this stage.</note>
     </notes>
     <labels>
         <label id="3" label="(Self: Full House, Threes &amp; Twos)" folder="" sort="0" />
@@ -653,7 +654,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="462" label="" folder="Males/Futas" sort="4" />
         <label id="463" label="6" folder="Females" sort="0" />
         <label id="464" label="Markings" folder="Responses&gt;Nagatoro" sort="0" />
-        <label id="465" label="6" folder="Females" sort="2" />
+        <label id="465" label="Bra" folder="Females" sort="2" />
         <label id="466" label="" folder="Gonna Be Epic" sort="0" />
         <label id="467" label="" folder="Gonna Be Epic" sort="2" />
         <label id="468" label="" folder="Gonna Be Epic" sort="3" />
@@ -1050,9 +1051,13 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <label id="854" label="" folder="!!Sponsorship&gt;Sponsor 4 (Spooktacle/nyehtonyeh)" sort="20" />
         <label id="855" label="" folder="!!Sponsorship&gt;Sponsor 4 (Spooktacle/nyehtonyeh)" sort="12" />
         <label id="856" label="" folder="!!Sponsorship&gt;Sponsor 4 (Spooktacle/nyehtonyeh)" sort="22" />
+        <label id="857" label="Cadence Boss Mode" folder="" sort="0" />
+        <label id="858" label="6" folder="Females" sort="0" />
+        <label id="859" label="" folder="Males/Futas" sort="0" />
     </labels>
-    <nextId>856</nextId>
+    <nextId>859</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="4gsOnTheJeep">Lines with this marker indicate Cadence is using a butt pose, which may be interesting to your character.</marker>
         <marker scope="Public" name="anchorsaweigh1" />
         <marker scope="Public" name="anchorsaweigh2" />
@@ -1078,6 +1083,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToMonika0A" />
         <marker scope="Public" name="Banter_CadenceToMonika0B" />
         <marker scope="Public" name="Banter_CadenceToMonika0C" />
+        <marker scope="Public" name="Banter_CadenceToMonika1A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0A" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0B" />
         <marker scope="Public" name="Banter_CadenceToNadeshiko0C" />
@@ -1091,7 +1097,9 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_CadenceToNami0A" />
         <marker scope="Public" name="Banter_CadenceToNamiPirate0A" />
         <marker scope="Public" name="Banter_CadenceToPurah0A" />
+        <marker scope="Public" name="Banter_CadenceToPurah0B" />
         <marker scope="Public" name="Banter_CadenceToReagan0A" />
+        <marker scope="Public" name="Banter_CadenceToReagan0B" />
         <marker scope="Public" name="Banter_CadenceToRoxy0A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya0A" />
         <marker scope="Public" name="Banter_CadenceToSetogaya0B" />
@@ -1156,6 +1164,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_MikoToCadence1C" />
         <marker scope="Public" name="Banter_MikoToCadence2A" />
         <marker scope="Public" name="Banter_MikoToCadence2B" />
+        <marker scope="Public" name="Banter_MinaToCadence0A" />
         <marker scope="Public" name="Banter_MonikaToCadence0A" />
         <marker scope="Public" name="Banter_MonikaToCadence0B" />
         <marker scope="Public" name="Banter_MonikaToCadence1A" />
@@ -1166,6 +1175,8 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_NadeshikoToCadence1A" />
         <marker scope="Public" name="Banter_NadeshikoToCadence1B" />
         <marker scope="Public" name="Banter_NadeshikoToCadence1C" />
+        <marker scope="Public" name="Banter_PurahToCadence0A" />
+        <marker scope="Public" name="Banter_PurahToCadenceClub0A" />
         <marker scope="Public" name="Banter_RoxyToCadence0A" />
         <marker scope="Public" name="Banter_RoxyToCadence0B" />
         <marker scope="Public" name="Banter_SariaToCadence0A" />
@@ -1197,6 +1208,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Banter_SunsetToCadence2A" />
         <marker scope="Public" name="Banter_SunsetToCadence2AClub" />
         <marker scope="Public" name="Banter_VanessaToCadence0A" />
+        <marker scope="Public" name="Banter_VineStaffToCadence0A" />
         <marker scope="Public" name="Banter_VinylToCadence0A" />
         <marker scope="Public" name="Banter_VinylToCadence0B" />
         <marker scope="Public" name="Banter_VinylToCadence0C" />
@@ -1417,6 +1429,7 @@ These lines are for when Cadence opts to draw one card and still comes away with
         <marker scope="Public" name="Responses_RainbowSports" />
         <marker scope="Public" name="Responses_ReaganBook" />
         <marker scope="Public" name="Responses_ReaganJustify" />
+        <marker scope="Public" name="Responses_ReaganToCadence0A" />
         <marker scope="Public" name="Responses_RevyMusic">When Revy asks the table about their music tastes, Cadence will remark that she likes all genres of music. And she means ALL genres.</marker>
         <marker scope="Public" name="Responses_RosieMusic" />
         <marker scope="Public" name="Responses_SanakoGame" />
