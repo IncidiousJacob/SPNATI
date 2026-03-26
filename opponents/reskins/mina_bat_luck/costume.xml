@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<costume>
+    <id>mina_bat_luck</id>
+    <tags>
+        <tag>alternative_skin</tag>
+        <tag from="0" to="5">bunnysuit</tag>
+        <tag from="0" to="4">choker</tag>
+        <tag from="0" to="8">fake_animal_ears</tag>
+        <tag from="0" to="5">leotard</tag>
+        <tag from="0" to="6">pantyhose</tag>
+        <tag from="7" to="7">thong</tag>
+    </tags>
+    <layers>8</layers>
+    <folder>opponents/reskins/mina_bat_luck/</folder>
+    <folder stage="9">opponents/mina/</folder>
+    <wardrobe>
+        <clothing name="thong" generic="underwear" position="lower" type="important" />
+        <clothing name="hosiery" generic="" position="upper" type="major" />
+        <clothing name="bodysuit" generic="bodysuit" position="upper" type="important" />
+        <clothing name="collar" generic="collar" position="neck" type="extra" />
+        <clothing name="cuffs" generic="" position="hands" type="extra" plural="true" />
+        <clothing name="thigh-highs" generic="leggings" position="lower" type="minor" plural="true" />
+        <clothing name="heels" generic="shoes" position="feet" type="extra" />
+        <clothing name="purse" generic="bag" position="other" type="extra" />
+    </wardrobe>
+
+
+</costume>
