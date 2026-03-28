@@ -191,7 +191,9 @@
         <note id="331">She knows someone who does drain people, though - Moira</note>
         <note id="279">Mercy interrupts this fun game of strip poker to remind everyone that healthcare is a human right and corporations are not your friends</note>
         <note id="307">Feel free to have Juno already know or have picked up hints - Mercy's approaching it like this because she doesn't think Juno knows, but you're free to respond however</note>
-        <note id="334">Mercy's all too familiar with rich people not doing anything worthwhile, so this framing is deliberate, to guilt trip her if they don't donate</note>
+        <note id="347">Don't have to respond to this variation if you don't want, but it has a second marker if you do</note>
+        <note id="340">Moved the types of vampire question to give it space, and added variations based on if the line about types played, in case Mina's got multiple conversation partners in the game</note>
+        <note id="333">Types question moved to improve conversation flow</note>
     </notes>
     <labels>
         <label id="45" label="" folder="Player Names" sort="2" />
@@ -412,19 +414,32 @@
         <label id="326" label="" color="1" folder="Juno" sort="0" />
         <label id="327" label="" color="1" folder="Juno" sort="0" />
         <label id="328" label="" color="1" folder="" sort="0" />
-        <label id="329" label="" color="1" folder="Mina" sort="0" />
-        <label id="330" label="" color="1" folder="Mina" sort="0" />
-        <label id="331" label="" color="1" folder="Mina" sort="0" />
-        <label id="332" label="" color="1" folder="Mina" sort="0" />
-        <label id="333" label="" color="1" folder="Mina" sort="0" />
-        <label id="334" label="" color="1" folder="Mina" sort="0" />
+        <label id="329" label="" folder="Mina" sort="0" />
+        <label id="330" label="" folder="Mina" sort="0" />
+        <label id="331" label="" folder="Mina" sort="0" />
+        <label id="332" label="" folder="Mina" sort="0" />
+        <label id="333" label="" folder="Mina" sort="0" />
+        <label id="334" label="" folder="Mina" sort="0" />
+        <label id="335" label="" color="1" folder="Mina" sort="0" />
+        <label id="336" label="" color="1" folder="Mina" sort="0" />
+        <label id="337" label="" color="1" folder="Mina" sort="0" />
+        <label id="338" label="" color="1" folder="Mina" sort="0" />
+        <label id="339" label="" color="1" folder="Mina" sort="0" />
+        <label id="340" label="" color="1" folder="Mina" sort="0" />
+        <label id="341" label="" color="1" folder="Mina" sort="0" />
+        <label id="342" label="" folder="Mina" sort="0" />
+        <label id="343" label="" color="1" folder="Mina" sort="0" />
+        <label id="344" label="" color="1" folder="Mina" sort="0" />
+        <label id="345" label="" color="1" folder="Mina" sort="0" />
+        <label id="346" label="" folder="Mina" sort="0" />
+        <label id="347" label="" color="1" folder="Mina" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue-</prefix>
         <prefix>Collectible</prefix>
         <prefix>Mercy</prefix>
     </prefixes>
-    <nextId>334</nextId>
+    <nextId>347</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviObviousRole" />
@@ -1100,14 +1115,26 @@
         <marker scope="Public" name="MettaUnderstand" />
         <marker scope="Public" name="MiaNakedResponse" />
         <marker scope="Public" name="MinaAbomination" />
+        <marker scope="Public" name="MinaAbomination2" />
+        <marker scope="Public" name="MinaAbomination2A" />
+        <marker scope="Public" name="MinaAbomination2B" />
+        <marker scope="Public" name="MinaBats" />
         <marker scope="Public" name="MinaCharity" />
+        <marker scope="Public" name="MinaCharity2" />
+        <marker scope="Public" name="MinaCharity3" />
         <marker scope="Public" name="MinaMulticultural" />
         <marker scope="Public" name="MinaMulticultural2" />
+        <marker scope="Public" name="MinaMulticultural3" />
         <marker scope="Public" name="MinaScientificVampire" />
+        <marker scope="Public" name="MinaScientificVampire2" />
         <marker scope="Public" name="MinaTacky" />
         <marker scope="Public" name="MinaTacky2" />
+        <marker scope="Public" name="MinaTacky2BatLuck" />
+        <marker scope="Public" name="MinaTacky3" />
+        <marker scope="Public" name="MinaVampireVariation" />
         <marker scope="Public" name="MinaVampirism" />
         <marker scope="Public" name="MinaVampirism2" />
+        <marker scope="Public" name="MinaVampirism3" />
         <marker scope="Public" name="MiraculousBoundariesA" />
         <marker scope="Public" name="MiraculousBoundariesA2" />
         <marker scope="Public" name="MiraculousBoundariesB" />
