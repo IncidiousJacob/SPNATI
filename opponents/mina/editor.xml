@@ -20,6 +20,12 @@
         <response id="268" opponent="priscilla" opponentId="740" />
         <response id="273" opponent="mercy" opponentId="286" />
         <response id="274" opponent="mercy" opponentId="287" />
+        <response id="319" opponent="priscilla" opponentId="770" />
+        <response id="320" opponent="priscilla" opponentId="772" />
+        <response id="321" opponent="priscilla" opponentId="775" />
+        <response id="338" opponent="mercy" opponentId="332" />
+        <response id="339" opponent="mercy" opponentId="333" />
+        <response id="340" opponent="mercy" opponentId="334" />
     </responses>
     <notes>
         <note id="195">I think Mina can probably tell that Edelgard's a noble and that her hair/blood's a bit off on the go. Also Mina's just a bitch, so you know.</note>
@@ -36,6 +42,9 @@
         <note id="279">Mina's definitely making fun of Arueshalae</note>
         <note id="280">Mina's definitely making fun of Arueshalae</note>
         <note id="278">IE Yumeko's gambling nature has just flooded her body with adrenaline and the like</note>
+        <note id="323">She thinks this is a shot at capitalism; this is not the opinion of the author, genuinely</note>
+        <note id="339">Going to skip the types of vampire for right now</note>
+        <note id="345">It's cum.</note>
     </notes>
     <labels>
         <label id="1" label="Poses" folder="" sort="0" />
@@ -345,8 +354,31 @@
         <label id="311" label="Weak FF" folder="Bat Luck" sort="0" />
         <label id="312" label="Strong FF/Default" folder="Bat Luck" sort="0" />
         <label id="313" label="" folder="Start Commentary" sort="0" />
+        <label id="314" label="Ha Coutoure" folder="Events" sort="0" />
+        <label id="315" label="" folder="Targets" sort="0" />
+        <label id="316" label="" folder="Targets" sort="0" />
+        <label id="317" label="" folder="Targets" sort="0" />
+        <label id="318" label="" folder="Targets" sort="0" />
+        <label id="322" label="" folder="Targets" sort="0" />
+        <label id="325" label="" folder="Targets" sort="0" />
+        <label id="326" label="" folder="Targets" sort="0" />
+        <label id="327" label="" folder="Targets" sort="0" />
+        <label id="328" label="" folder="Targets" sort="0" />
+        <label id="329" label="" folder="Targets" sort="0" />
+        <label id="330" label="" folder="Targets" sort="0" />
+        <label id="331" label="" folder="Targets" sort="0" />
+        <label id="332" label="" folder="Targets" sort="0" />
+        <label id="333" label="" folder="Targets" sort="0" />
+        <label id="334" label="" folder="Targets" sort="0" />
+        <label id="335" label="" folder="Targets" sort="0" />
+        <label id="336" label="" folder="Targets" sort="0" />
+        <label id="337" label="" folder="Targets" sort="0" />
+        <label id="342" label="" color="6" folder="Targets - v2" sort="0" />
+        <label id="343" label="" color="6" folder="Targets - v2" sort="0" />
+        <label id="344" label="" color="6" folder="Targets - v2" sort="0" />
+        <label id="345" label="" color="6" folder="Targets - v2" sort="0" />
     </labels>
-    <nextId>313</nextId>
+    <nextId>345</nextId>
     <markers>
         <marker scope="Public" name="allthesmallthings" />
         <marker scope="Public" name="drink_bloodMina" />
@@ -355,7 +387,11 @@
         <marker scope="Public" name="MCR_ref" />
         <marker scope="Public" name="meia_mina01" />
         <marker scope="Public" name="mercy_mina01" />
+        <marker scope="Public" name="mercy_mina02" />
         <marker scope="Public" name="mercy_mina11" />
+        <marker scope="Public" name="mercy_mina12" />
+        <marker scope="Public" name="mercy_mina31" />
+        <marker scope="Public" name="mercy_mina32" />
         <marker scope="Public" name="mina_42lose" />
         <marker scope="Public" name="mina_42win" />
         <marker scope="Public" name="mina_aoi01" />
@@ -364,6 +400,9 @@
         <marker scope="Public" name="mina_arueshalae12" />
         <marker scope="Public" name="mina_bats" />
         <marker scope="Public" name="mina_cadence01" />
+        <marker scope="Public" name="mina_cadence02" />
+        <marker scope="Public" name="mina_cadence03" />
+        <marker scope="Public" name="mina_cadence11" />
         <marker scope="Public" name="mina_cadenza" />
         <marker scope="Public" name="mina_carmine01" />
         <marker scope="Public" name="mina_carmine02" />
@@ -381,8 +420,16 @@
         <marker scope="Public" name="mina_fischl01" />
         <marker scope="Public" name="mina_fischl11" />
         <marker scope="Public" name="mina_furina01" />
+        <marker scope="Public" name="mina_furina02" />
         <marker scope="Public" name="mina_furina11" />
+        <marker scope="Public" name="mina_furina12" />
         <marker scope="Public" name="mina_furina21" />
+        <marker scope="Public" name="mina_furina22" />
+        <marker scope="Public" name="mina_furina31" />
+        <marker scope="Public" name="mina_furina41" />
+        <marker scope="Public" name="mina_furina42" />
+        <marker scope="Public" name="mina_furina43" />
+        <marker scope="Public" name="mina_furina51" />
         <marker scope="Public" name="mina_ggg" />
         <marker scope="Public" name="mina_hex01" />
         <marker scope="Public" name="mina_hex11" />
@@ -414,8 +461,11 @@
         <marker scope="Public" name="mina_meia21" />
         <marker scope="Public" name="mina_mercy01" />
         <marker scope="Public" name="mina_mercy02" />
+        <marker scope="Public" name="mina_mercy03" />
         <marker scope="Public" name="mina_mercy11" />
+        <marker scope="Public" name="mina_mercy12" />
         <marker scope="Public" name="mina_mercy21" />
+        <marker scope="Public" name="mina_mercy22" />
         <marker scope="Public" name="mina_mid_losing" />
         <marker scope="Public" name="mina_mid_winning" />
         <marker scope="Public" name="mina_midwest" />
@@ -437,13 +487,20 @@
         <marker scope="Public" name="mina_pocket" />
         <marker scope="Public" name="mina_priscilla01" />
         <marker scope="Public" name="mina_priscilla02" />
+        <marker scope="Public" name="mina_priscilla03" />
         <marker scope="Public" name="mina_priscilla11" />
         <marker scope="Public" name="mina_priscilla12" />
+        <marker scope="Public" name="mina_priscilla13" />
+        <marker scope="Public" name="mina_priscilla21" />
+        <marker scope="Public" name="mina_priscilla31" />
         <marker scope="Public" name="mina_radio" />
         <marker scope="Public" name="mina_raine01" />
         <marker scope="Public" name="mina_raine02" />
         <marker scope="Public" name="mina_reagan01" />
+        <marker scope="Public" name="mina_reagan01a" />
+        <marker scope="Public" name="mina_reagan01b" />
         <marker scope="Public" name="mina_reagan02" />
+        <marker scope="Public" name="mina_reagan03" />
         <marker scope="Public" name="mina_reimu01" />
         <marker scope="Public" name="mina_reimu02" />
         <marker scope="Public" name="mina_reimu11" />
@@ -457,6 +514,7 @@
         <marker scope="Public" name="mina_schezo1d1" />
         <marker scope="Public" name="mina_selphy01" />
         <marker scope="Public" name="mina_serena01" />
+        <marker scope="Public" name="mina_serena02" />
         <marker scope="Public" name="mina_sheena01" />
         <marker scope="Public" name="mina_sheena11" />
         <marker scope="Public" name="mina_sheena12" />
@@ -482,6 +540,9 @@
         <marker scope="Public" name="mina44" />
         <marker scope="Public" name="priscilla_mina11" />
         <marker scope="Public" name="priscilla_mina12" />
+        <marker scope="Public" name="priscilla_mina13" />
+        <marker scope="Public" name="priscilla_mina21" />
+        <marker scope="Public" name="priscilla_mina41" />
         <marker scope="Public" name="reimu_mina01" />
         <marker scope="Public" name="reimu_start" />
         <marker scope="Public" name="zeke_pandoria_bigpersonality_20" />
