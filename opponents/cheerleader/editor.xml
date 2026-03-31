@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+    <owner>cheerleader</owner>
+    <height />
+    <age />
+    <pronunciation />
+    <othernotes />
+    <notes>
+        <note id="1">"Mitsake" was also not a mistake.</note>
+        <note id="6">Covers the case for the human player, who doesn't produce a "stripping" line.</note>
+        <note id="7">At time of writing, I don't think there are ANY "Gregs" that are well-endowed, but just in case...</note>
+        <note id="19">The condition is so she doesn't show up at the Game Over scene.</note>
+    </notes>
+    <labels>
+        <label id="2" label="Bunyan ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="3" label="Pit ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="4" label="Fairy ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="5" label="Lourde ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="8" label="Lourde ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="9" label="Bunyan ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="10" label="Fairy ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="11" label="Pit ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="12" label="Monika ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="13" label="Monika ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="14" label="" folder="Ending triggers" sort="0" />
+        <label id="15" label="Shantae ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="16" label="Shantae ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="17" label="Brock ending trigger (first time)" folder="Ending triggers" sort="0" />
+        <label id="18" label="Brock ending trigger (not first time)" folder="Ending triggers" sort="0" />
+        <label id="19" label="" folder="Whats Her Face" sort="0" />
+        <label id="20" label="" folder="Whats Her Face" sort="0" />
+        <label id="21" label="" folder="Whats Her Face&gt;Ash" sort="0" />
+        <label id="22" label="" folder="Whats Her Face&gt;Ash" sort="0" />
+        <label id="23" label="" folder="Whats Her Face&gt;Ash" sort="0" />
+        <label id="24" label="" folder="Whats Her Face" sort="0" />
+        <label id="25" label="" folder="Whats Her Face&gt;Pit" sort="0" />
+        <label id="26" label="" folder="Whats Her Face&gt;Lourde" sort="0" />
+        <label id="27" label="" folder="Whats Her Face&gt;Pit" sort="0" />
+        <label id="28" label="" folder="Whats Her Face" sort="0" />
+        <label id="29" label="" folder="Whats Her Face&gt;Lourde" sort="0" />
+        <label id="30" label="" folder="Whats Her Face&gt;Pit" sort="0" />
+        <label id="31" label="" folder="Whats Her Face&gt;Lourde" sort="0" />
+        <label id="32" label="" folder="Whats Her Face&gt;Lourde" sort="0" />
+        <label id="33" label="" folder="Whats Her Face&gt;Lourde" sort="0" />
+        <label id="34" label="" folder="Whats Her Face&gt;Shantae" sort="0" />
+        <label id="35" label="" folder="Whats Her Face&gt;Shantae" sort="0" />
+        <label id="36" label="" folder="Whats Her Face&gt;Shantae" sort="0" />
+        <label id="37" label="" folder="Whats Her Face" sort="0" />
+        <label id="38" label="" folder="Whats Her Face" sort="0" />
+        <label id="39" label="" folder="Whats Her Face&gt;Monika" sort="0" />
+        <label id="40" label="" folder="Whats Her Face&gt;Monika" sort="0" />
+        <label id="41" label="" folder="Whats Her Face&gt;Monika" sort="0" />
+        <label id="42" label="" folder="Whats Her Face" sort="0" />
+        <label id="43" label="" folder="Whats Her Face" sort="0" />
+    </labels>
+    <nextId>43</nextId>
+    <markers>
+        <marker scope="Private" name="alttext">Gets set randomly each line. When it equals 10, her dress shows different text than usual.</marker>
+        <marker scope="Public" name="BrockEnding">Guarantees the Brock ending will happen. (Requires Brock to be an opponent, and he must have been hit by his fired rocket.)</marker>
+        <marker scope="Public" name="BunyanEnding">Guarantees the Paul Bunyan ending will happen. (Only outside during the day.)</marker>
+        <marker scope="Private" name="dresstext">Determines which text her dress will show.</marker>
+        <marker scope="Private" name="EndingDetermined">Marks that some ending has been chosen - so others shouldn't trigger.</marker>
+        <marker scope="Public" name="EverSeenBrockEnding">Tracks if the Brock ending was ever seen.</marker>
+        <marker scope="Public" name="EverSeenBunyanEnding">Tracks if the Paul Bunyan ending was ever seen</marker>
+        <marker scope="Public" name="EverSeenFairyEnding">Tracks if the fairy ending was ever seen</marker>
+        <marker scope="Public" name="EverSeenLourdeEnding">Tracks if the Heavy Lourde ending was ever seen</marker>
+        <marker scope="Public" name="EverSeenMonikaEnding">Tracks if the Monika ending was ever seen</marker>
+        <marker scope="Public" name="EverSeenPitEnding">Tracks if the pit ending was ever seen</marker>
+        <marker scope="Public" name="EverSeenShantaeEnding">Tracks if the Shantae ending was ever seen</marker>
+        <marker scope="Public" name="FairyEnding">Guarantees the fairy ending will happen. (There are no restrictions on this ending.)</marker>
+        <marker scope="Public" name="forfeitpose">Used for pose maker</marker>
+        <marker scope="Private" name="itsover">Used for pose maker</marker>
+        <marker scope="Public" name="LourdeEnding">Guarantees the Heavy Lourde ending will happen (Only indoors.)</marker>
+        <marker scope="Public" name="MonikaEnding">Guarantees that the Monika ending will happen (requires Monika to be an opponent)</marker>
+        <marker scope="Private" name="pit">Marks whether to show the pit behind her.</marker>
+        <marker scope="Public" name="PitEnding">Guarantees the pit ending will happen. (Requires the line where her shoes talk to her in phase 1 to play.)</marker>
+        <marker scope="Public" name="PitEndingSetup">Cheerleader's shoes talking is the setup to the pit ending being possible.</marker>
+        <marker scope="Private" name="pose">Used for pose maker</marker>
+        <marker scope="Public" name="RealizedItsStripPoker">She may not be the most observant, but even she notices when people's clothing starts coming off.</marker>
+        <marker scope="Public" name="ShantaeEnding">Guarantees that the Shantae ending will happen (requires Cheerleader to react to Shantae turning into a monkey)</marker>
+        <marker scope="Public" name="ShantaeEndingSetup">Cheerleader seeing Shantae turning into a monkey and reacting is the setup to the Shantae ending being possible.</marker>
+        <marker scope="Public" name="ShesDeadJim">Cheerleader's life? IT'S OVER!! At least until the next issue.</marker>
+        <marker scope="Public" name="Shimakaze_BurntOrDead">Cheerleader observes Shimakaze's explosion.</marker>
+        <marker scope="Public" name="SoAndSoExperiment">Cheerleader suggests that she and So-and-So might have "experimented". Hey, she's in college!</marker>
+        <marker scope="Public" name="SoAndSoStory">Cheerleader tells what happened to So-and-So.</marker>
+        <marker scope="Public" name="SoAndSoStoryFinished">Cheeleader's story about So-and-So? IT'S OVER!!</marker>
+        <marker scope="Public" name="StorySetup">Setus up Cheerleader telling the stories of her friends.</marker>
+        <marker scope="Private" name="strip_bra">Used for pose maker</marker>
+        <marker scope="Private" name="strip_dress">Used for pose maker</marker>
+        <marker scope="Private" name="strip_panties">Used for pose maker</marker>
+        <marker scope="Public" name="TheUglyOneStory">Cheerleader tells what happened to The Ugly One.</marker>
+        <marker scope="Public" name="TheUglyOneStoryFinished">The story about The Ugly One is also IT'S OVER!!</marker>
+        <marker scope="Private" name="TicksSinceDeath">Counts how much time has passed since Cheerleader's demise.</marker>
+        <marker scope="Public" name="WhatsHerFace">A cameo by Whats Her Face!</marker>
+        <marker scope="Public" name="WhatsHerFaceLeaves">Bye, Whats Her Face!</marker>
+        <marker scope="Public" name="WhatsHerFaceStory">Cheerleader glosses over what happened to Whats Her Face.</marker>
+        <marker scope="Public" name="WhatsHerFaceStoryFinished">Cheerleader's stories are ALL OVER!!!</marker>
+    </markers>
+</metadata>

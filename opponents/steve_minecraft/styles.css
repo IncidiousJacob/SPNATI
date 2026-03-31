@@ -1,0 +1,18 @@
+.dialogue-bubble[data-character="steve_minecraft"]::before {
+  display: none;
+}
+
+.dialogue-bubble[data-character="steve_minecraft"] {
+  Background: rgba(0,0,0,0.2);
+  min-height: 6%;
+  max-height: 7.5%;
+  font-size:larger;
+  border-width: 0;
+  corner-shape: square;
+  text-align:left;
+  color: #ffffff;
+}
+
+.dialogue .TL[data-character="steve_minecraft"]{
+  color: #ffff00;
+}

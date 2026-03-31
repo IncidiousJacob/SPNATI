@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'AhnbergHand';
+  src: url('AHNBH___.ttf');
+}
+
+.dialogue-bubble[data-character="cheerleader"] {
+  font-family: 'AhnbergHand';
+  background-image: url('textbkgnd.png');
+  font-size: 125%;
+  dialogue-layer: 'over';
+}
+
+.dialogue .Kisakae[data-character="cheerleader"] {
+  font-family: 'Open Sans';
+  background-image: url('blank.png');
+  font-size: 100%;
+  dialogue-layer: 'over';
+}

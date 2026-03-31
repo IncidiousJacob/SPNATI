@@ -32,6 +32,7 @@ var SPECIAL_CASE_NAMES = {
     "sandy_cheeks": "Sandy",
     "sannytess": "Sanny & Tess",
     "scm": "Suction Cup Man",
+    "steve_minecraft": "Minecraft Steve",
     "tea_gardner": "Téa",
     "toru_hagakure": "Toru",
     "uravity": "Ochako",
