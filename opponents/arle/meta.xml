@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1752433961286</lastupdate>
+    <lastupdate>1775015887881</lastupdate>
     <first>Arle</first>
     <last>Nadja</last>
     <label>Arle Nadja</label>
@@ -14,12 +14,20 @@
     <layers>6</layers>
     <default-costume-name>Modern Arle</default-costume-name>
     <alternates>
-        <costume folder="opponents/reskins/arle_classic_style/" img="0-yeah.png" status="online" label="Arle">Classic Arle</costume>
-        <costume folder="opponents/reskins/arle_puyo_puyo_da/" img="0-casting.png" set="april_fools" status="unlisted" label="Arle">Puyo Puyo DA</costume>
-        <costume folder="opponents/reskins/arle_doppelganger/" set="halloween" status="unlisted" label="Pierrot">Doppelganger Arle</costume>
-        <costume folder="opponents/reskins/arle_seabreeze/" img="0-yeah.png" set="summer" label="Arle">Seabreeze Arle</costume>
+        <costume folder="opponents/reskins/arle_classic_style/" img="0-yeah.png" status="online" label="Arle">
+            <costume-name>Classic Arle</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/arle_puyo_puyo_da/" img="0-casting.png" set="april_fools" status="offline" label="Arle">
+            <costume-name>Puyo Puyo DA</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/arle_doppelganger/" set="halloween" status="unlisted" label="Pierrot">
+            <costume-name>Doppelganger Arle</costume-name>
+        </costume>
+        <costume folder="opponents/reskins/arle_seabreeze/" img="0-yeah.png" set="summer" label="Arle">
+            <costume-name>Seabreeze Arle</costume-name>
+        </costume>
     </alternates>
     <has_collectibles>true</has_collectibles>
-    <lines>1507</lines>
-    <poses>329</poses>
+    <lines>1539</lines>
+    <poses>304</poses>
 </opponent>
