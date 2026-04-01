@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <opponent>
-    <lastupdate>1712279459767</lastupdate>
-    <enabled>false</enabled>
+    <lastupdate>1774904463133</lastupdate>
     <first>Helper-chan</first>
     <last />
     <label>Helper-chan</label>
@@ -13,6 +12,11 @@
     <description>A friendly girl who's eager to help the people of the Inventory. She's always working behind-the-scenes to help Strip Poker matches go smoothly.</description>
     <layers>7</layers>
     <default-costume-name>Helpy Helperton</default-costume-name>
-    <lines>398</lines>
+    <alternates>
+        <costume folder="opponents/reskins/helper-chan_eager_to_please/" status="online">
+            <costume-name>Eager To Please</costume-name>
+        </costume>
+    </alternates>
+    <lines>440</lines>
     <poses>191</poses>
 </opponent>
