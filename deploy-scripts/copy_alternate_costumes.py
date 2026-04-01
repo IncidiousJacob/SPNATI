@@ -28,7 +28,7 @@ def main():
                 
                 # find any costumes in the specified event set
                 for costume in alts.iter('costume'):
-                    if event_set == 'all' or costume.get('set', None) == event_set:
+                    if (event_set == 'all' or costume.get('set', None) == event_set) and costume.get('status', None) != 'unlisted':
                         costumes.append((opp.text, costume.get('folder')))
                         delete_stages[opp.text] = list(range(n_stages))
                         opp_stage_counts[opp.text] = n_stages
@@ -71,7 +71,7 @@ def main():
             dst = osp.join(base_dir, costume_folder)
             print("Copying: {} --> {}".format(src, dst))
             
-            sh.copytree(src, dst)
+            sh.copytree(src, dst, copy_function=os.link)
         except FileNotFoundError:
             print("Could not copy: {}".format(src))
         except FileExistsError:
