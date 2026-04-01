@@ -71,7 +71,7 @@ def main():
             dst = osp.join(base_dir, costume_folder)
             print("Copying: {} --> {}".format(src, dst))
             
-            sh.copytree(src, dst)
+            sh.copytree(src, dst, copy_function=os.link)
         except FileNotFoundError:
             print("Could not copy: {}".format(src))
         except FileExistsError:
