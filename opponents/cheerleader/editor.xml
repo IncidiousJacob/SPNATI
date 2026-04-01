@@ -5,11 +5,56 @@
     <age />
     <pronunciation />
     <othernotes />
+    <noteworthy>
+        <case name="Whats Her Face" id="44" priority="Noteworthy" min="6" max="6">
+            <description>Whats Her Face makes a cameo appearance!</description>
+        </case>
+        <case name="KISADETH'D!!" id="45" priority="MustTarget" min="6" max="6">
+            <description>The Arrow'd Guy Fairy kills Cheerleader after briefly turning her into a Kisakae model.</description>
+        </case>
+        <case name="Squished ant" id="46" priority="MustTarget" min="6" max="6">
+            <description>The ant formerly known as Cheerleader gets squished under a giant foot.</description>
+        </case>
+        <case name="So and So's fate" id="47" priority="Noteworthy" min="0" max="4">
+            <description>Cheerleader describes the horrible fate that befell her friend So and So.</description>
+        </case>
+        <case name="The Ugly One's fate" id="48" priority="Noteworthy" min="0" max="4">
+            <description>Cheerleader describes the horrible fate that befell her friend The Ugly One.</description>
+        </case>
+        <case name="Whats Her Face's... fate??" id="50" priority="Noteworthy" min="0" max="4">
+            <description>Cheerleader says she didn't invite her "friend" Whats Her Face. Huh, maybe Whats Her Face was actually the lucky one...</description>
+        </case>
+        <case name="Whats Her Face the Loser" id="49" priority="FYI" min="0" max="4">
+            <description>Cheerleader refers to her "friend" Whats Her Face as a loser. With friends like these...</description>
+        </case>
+        <case name="Spontaneous combustion" id="51" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader has suddenly caught fire. Voices from above suggest that it was a giant with a magnifying glass.</description>
+        </case>
+        <case name="KISAKAE'D!!" id="52" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader has been transformed into a Kisakae model.</description>
+        </case>
+        <case name="Missile-fire" id="53" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader got hit by a stray rocket accidentally fired by Brock.</description>
+        </case>
+        <case name="We must protect the queen! I have six legs!" id="54" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader somehow transformed herself into an ant.</description>
+        </case>
+        <case name="Weighty matters" id="55" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader has been crushed under a giant weight (a "heavy lourde"). Homsar pops up to drop some "wisdom".</description>
+        </case>
+        <case name="Cheeleader go down da hoooooooole..." id="56" priority="MustTarget" min="6" max="6">
+            <description>The bottomless pit that took Cheerleader's shoes is back for Cheerleader herself.</description>
+        </case>
+        <case name="Cheerwhonow?" id="57" priority="MustTarget" min="6" max="6">
+            <description>Cheerleader got accidentally glitched out of existence. The game doesn't even register her name any longer. (The intention is not that Monika did this on purpose.)</description>
+        </case>
+    </noteworthy>
     <notes>
         <note id="1">"Mitsake" was also not a mistake.</note>
         <note id="6">Covers the case for the human player, who doesn't produce a "stripping" line.</note>
         <note id="7">At time of writing, I don't think there are ANY "Gregs" that are well-endowed, but just in case...</note>
         <note id="19">The condition is so she doesn't show up at the Game Over scene.</note>
+        <note id="44">For attaching a Situation</note>
     </notes>
     <labels>
         <label id="2" label="Bunyan ending trigger (not first time)" folder="Ending triggers" sort="0" />
@@ -52,8 +97,9 @@
         <label id="41" label="" folder="Whats Her Face&gt;Monika" sort="0" />
         <label id="42" label="" folder="Whats Her Face" sort="0" />
         <label id="43" label="" folder="Whats Her Face" sort="0" />
+        <label id="44" label="" folder="Whats Her Face" sort="0" />
     </labels>
-    <nextId>43</nextId>
+    <nextId>57</nextId>
     <markers>
         <marker scope="Private" name="alttext">Gets set randomly each line. When it equals 10, her dress shows different text than usual.</marker>
         <marker scope="Public" name="BrockEnding">Guarantees the Brock ending will happen. (Requires Brock to be an opponent, and he must have been hit by his fired rocket.)</marker>
@@ -95,5 +141,6 @@
         <marker scope="Public" name="WhatsHerFaceLeaves">Bye, Whats Her Face!</marker>
         <marker scope="Public" name="WhatsHerFaceStory">Cheerleader glosses over what happened to Whats Her Face.</marker>
         <marker scope="Public" name="WhatsHerFaceStoryFinished">Cheerleader's stories are ALL OVER!!!</marker>
+        <marker scope="Private" name="WhatsHerFaceTrigger">Internal trigger for Whats Her Face's appearance.</marker>
     </markers>
 </metadata>
