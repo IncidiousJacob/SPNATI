@@ -1,2 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="wiz_skirt" status="online" thumbnail="opponents/wiz/collectible_skirt.png">
+        <title>Wiz's Skirt</title>
+        <subtitle>A long, pale violet skirt that complements Wiz's usual coat well.</subtitle>
+        <text>"Did you really want to see me like this? Ufufu! I suppose it's fine. Just this once, okay?"</text>
+        <unlock>Win a game against Wiz.</unlock>
+        <hide-details>true</hide-details>
+        <counter>1</counter>
+        <picture>opponents/wiz/collectible_skirt_reward.png</picture>
+        <wearable>true</wearable>
+        <clothing img="opponents/wiz/collectible_skirt.png" name="skirt" generic="skirt" position="lower" type="major" />
+    </collectible>
+    <collectible id="dissolve_potion" status="online" thumbnail="opponents/wiz/collectible_dissove_clothing_potion.png">
+        <title>Liquid That Only Dissolves Clothes</title>
+        <subtitle>"P-please don't try to pour the potion on anyone here…"</subtitle>
+        <text>After the game, Wiz calls out to you. It seems she wants you for something. She jogs up to you with a bottle in her hand, some sort of blue liquid sloshing around inside.&lt;br&gt;&lt;br&gt;
+"I have something you might like! See, this potion—Aaaah!"
+&lt;br&gt;&lt;br&gt;The cork dislodges itself from the bottle and falls to the floor. Some of liquid spills all over Wiz before she can stop it.&lt;br&gt;&lt;br&gt;"Oh, no. And this was an expensive potion, too. What a waste… Well, you can still take the rest of it, I suppose. Sorry!"</text>
+        <unlock>Listen to Wiz talk about many different products. (Hint: Try playing her with a variety of different characters.)</unlock>
+        <hide-details>true</hide-details>
+        <counter>10</counter>
+        <picture>opponents/wiz/collectible_dissove_clothing_potion_reward.png</picture>
+    </collectible>
+</collectibles>
