@@ -2222,6 +2222,31 @@
             <sprite id="glee" src="reskins/serena_fennekin/0-glee.png" x="0" y="0" />
             <sprite id="cebeglow" src="serena/cebeglow.png" x="91" y="-416" scalex="-0.1" scaley="-0.1" rotation="-193" />
         </pose>
+        <pose id="MonikaEarlyDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_fennekin/5-coverfeet.png" x="0" y="0" />
+            <sprite id="LBclothes" src="serena/LBclothes.png" x="26" y="500" />
+        </pose>
+        <pose id="MonikaLateDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_fennekin/7-coverfeet.png" x="0" y="0" />
+            <sprite id="LBclothes" src="serena/LBclothes.png" x="26" y="500" />
+        </pose>
+        <pose id="MonikaMidDressRemove">
+            <sprite id="coverfeet" src="reskins/serena_fennekin/6-coverfeet.png" x="0" y="0" />
+            <sprite id="LBclothes" src="serena/LBclothes.png" x="26" y="500" />
+        </pose>
+        <pose id="lovebugdcards">
+            <sprite id="MonikaLBdress" src="serena/lovebugDress.png" x="0" y="0" scalex="-1" />
+            <sprite id="card" src="serena/card.png" x="-55" y="313" rotation="13" />
+            <sprite id="card(copy)" src="serena/card.png" x="-53" y="317" rotation="21" />
+            <sprite id="card(copy)(copy)" src="serena/card.png" x="-51" y="319" rotation="29" />
+            <sprite id="card(copy)(copy)(copy)" src="serena/card.png" x="-48" y="320" rotation="35" />
+        </pose>
+        <pose id="lovebugdress">
+            <sprite id="MonikaLBdress" src="serena/lovebugDress.png" x="0" y="0" />
+        </pose>
+        <pose id="lovebugdress2">
+            <sprite id="MonikaLBdress2" src="serena/lovebugDress2.png" x="0" y="0" />
+        </pose>
     </poses>
 
 </costume>
