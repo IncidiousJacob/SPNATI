@@ -1,2 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="sunset_coupon" status="online" thumbnail="opponents/sunset_shimmer/resources/Coupon_Preview.png">
+        <title>Sunset Sushi Menu</title>
+        <subtitle>Wait, this isn't a coupon!</subtitle>
+        <text>"Tuns out I didn't have a coupon with me... But I do have this!
+It's a mock up of the menu at the Sushi place I work in. It's my own design, drawing and everything.
+
+Turns out that once I tried new things like drawing, writing and image editing, I was actually kind of okay at them...? Sometimes, you just have to try."
+
+</text>
+        <unlock>Finish a game where Sunset loses.</unlock>
+        <picture>opponents/sunset_shimmer/resources/Coupon_Full.png</picture>
+    </collectible>
+    <collectible id="sunset_easter_photo" status="online" thumbnail="opponents/sunset_shimmer/resources/Photo_Preview.png">
+        <title>Sunset's Special Easter Surprise</title>
+        <subtitle>An Easter surprise. Just for you.</subtitle>
+        <text>"I didn't have much time to dress-up for the occasion... But here. I thought you'd like this.
+
+Don't show it to anyone."
+
+File Type: .HEIC
+Size: 128 KB (131.072 bytes)
+Taken at: The Inventory
+https://spnati.net/docs/
+Source: MooGood Pictures
+https://www.deviantart.com/moogood</text>
+        <unlock>Finish a game where Sunset loses during April.</unlock>
+        <hidden>true</hidden>
+        <picture>opponents/sunset_shimmer/resources/Photo_Full.png</picture>
+        <hidden-exceptions event="easter" />
+    </collectible>
+</collectibles>
