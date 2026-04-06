@@ -1,0 +1,137 @@
+<guide>
+
+    Follow this guide to add a new prayer line to play when playing a
+    particular character with Giygas in the SPNatI April Fool’s event.
+
+    Do all of the below in Giygas's behaviour.xml file
+    (spnati/opponents/giygas/behaviour.xml).
+
+<!--
+==STEP 1==
+    Use this template to create the prayer line case.
+    It’s a complicated set of conditions, so you’ll have an easier time
+    just copy-and-pasting into behaviour.xml than you would using the
+    CE for this.
+-->
+
+            <case stage="1-4" priority="750">
+                    <!-- 750 is the default priority, but it can be changed if you want the
+                         prayer to only play after more "common" ones so it can act as a
+                         punchline. Here is the full list:
+                         - 760: Kumatora only (potentially another major Earthbound character if one's added)
+                         - 751: Friendname is somehow very close to or already actively watching Giygas (i.e. Frisk & Friends, Streaming-chan)
+                         - 750: Common cases
+                         - 749: Uncommon/punchline cases, such as Friendname being antagonistic or unlikely character (e.g. Trigon praying for Raven)
+                         - 748: Very uncommon/extra-punchline cases (e.g. Friendname praying for everyone else's safety from Charname)
+                         - 747: Prayer fails outright (i.e. Saki Yoshida, Wendy)
+                         - 746: Sans only -->
+                <condition count="0" filter="charname's_source_tag" character="friendname" />
+                    <!-- Checks to make sure Friendname isn't actually in the game.
+                         If Friendname is multiple people or has multiple likely filenames
+                         if they were to be added, include all of them.
+                         Friendname is the character referenced in the actual text of this line. -->
+                <condition role="opp" character="charname" />
+                    <!-- Charname is the character who triggers this line, and whom Friendname prays for.
+                         Replace all instances of "charname" with the character's name,
+                         including in marker names. -->
+                <condition role="self" saidMarker="PG_ready" notSaidMarker="PG_cut" />
+                <condition role="self" notSaidMarker="P_charname" />
+                    <!-- These three marker conditions control when the line plays. -->
+                <state img="custom:#-prayer" marker="P_charname" direction="none" set-intelligence="throw">
+                    <text>{eb}•(This is what the narrator says when Friendname suddenly felt strange,&lt;br&gt;•and began praying for Charname and their friends.&lt;br&gt;){!reset}</text>
+                    <!-- {eb} is the Earthbound text window style.
+                         The • character is Unicode character 2022.
+                         The first • goes before the ( parenthesis, but nothing comes after the
+                         ) parenthesis except {!reset}.-->
+                    <markers>
+                        <marker name="PG_cut" op="=" value="1" />
+                        <marker name="PG_scenes" op="+" value="1" />
+                        <!-- Can add <marker name="P_charname_variantB" value="1"> if this is a special
+                             variant of the prayer scene (e.g. someone actually put Friendname in spnati
+                             and you have to work around that). -->
+                    </markers>
+                </state>
+            </case>
+
+<!--            
+    Paste this entire case underneath the codeline where it says
+    '<trigger id="global">' in giygas/behaviour.xml.
+    (Its position in the document doesn't matter as long as it's AFTER
+    '<trigger id="global">' and BEFORE the next '</trigger>'.
+    The CE will also sort the lines automatically every time it's used.)
+-->
+
+<!--
+==STEP 2==
+    Use this template to create the line that counts for the hook collectible.
+-->
+
+            <case stage="1-4" id="1230" hidden="1" priority="-1">
+                <condition role="self" saidMarker="P_charname" notSaidMarker="PP_charname" />
+                <!-- You still need to replace all instances of "charname"
+                     with Charname's actual name. -->
+                <test expr="~self.collectible.giygas_hook~" value="false" />
+                <state marker="PP_charname">
+                    <text>Prayer recorded</text>
+                    <markers>
+                        <marker name="PG_pcount" op="+" value="1" />
+                    </markers>
+                </state>
+            </case>
+
+<!--            
+    Paste this entire case underneath the case from Step 1 in behaviour.xml.
+    (Just like the Step 1 case, its position in the document only needs
+    to be between '<trigger id="global">' and the next '</trigger>'.)
+-->
+
+<!--
+==STEP 3==
+    Paste this codeline under '<persistent-markers>' in behaviour.xml.
+-->
+        <marker>PP_charname</marker>
+        <!-- You still need to replace "charname" with Charname's actual name. -->
+
+<!--
+    Congratulations! If you've just done all of the above,
+    you've added a new prayer scene to Giygas!
+-->
+<!--
+==CHARACTERS NEEDING PRAYER SCENES==
+    The following characters (as charname) do not have prayer scenes
+    and are on the Main or Testing rosters.
+    Scenes for Main Roster characters should be prioritised first.
+
+ =MAIN ROSTER=
+ * vinyl ....... Bomb Rush Cyberfunk
+ * hex_maniac .. Pokémon
+ * simon ....... Tengen Toppa Gurenn Lagann
+ * purah ....... Legend of Zelda: Tears of the Kingdom
+    (Suggested friendname: Robbie)
+ * Any character(s) added in April Fools 2026
+
+ =TESTING ROSTER=
+ * adora ....... She-Ra and the Princesses of Power
+ * ameri ....... Welcome to Demon School Iruma
+ * angela_tom .. Trials of Mana
+ * edelgard .... Fire Emblem: Three Houses
+ * firestar .... New Warriors (Marvel)
+ * korra ....... Legend of Korra
+ * mina ........ Deadlock
+ * raine_sage .. Tales of Symphonia
+ * reagan ...... Inside Job
+ * selphy ...... Rune Factory Frontier
+ * zelda_eow ... Legend of Zelda: Echoes of Wisdom
+
+
+ =ADDITIONALLY…=
+ The following three characters have a prayer scene that
+ will not play if a character who exists in the game is also present
+ due to them being friendname, and could use an alternate prayer
+ scene that uses a different friendname:
+ * schezo ............................. uses witch_puyopuyo (Incomplete)
+ * bernadetta ......................... uses edelgard (Testing)
+ * twilight RESKIN: twilight_sci-twi .. uses sunset_shimmer (Incomplete)
+-->
+
+</guide>
