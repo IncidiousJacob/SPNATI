@@ -1,18 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <collectibles>
-    <collectible id="botan" status="online" img="opponents/kyou/botan.png" thumbnail="opponents/kyou/botan.png">
+    <collectible id="botan" status="online" thumbnail="opponents/kyou/botan.png">
         <title>Botan</title>
         <subtitle>The Baby Boar</subtitle>
         <text>A plushie of a baby boar known as Botan... Wait, did this thing just move?</text>
         <unlock>Win a game while Kyou is playing.</unlock>
         <hide-details>true</hide-details>
+        <picture>opponents/kyou/botan.png</picture>
     </collectible>
-    <collectible id="kyou_bento" status="online" img="opponents/kyou/bento.png" thumbnail="opponents/kyou/bento.png">
+    <collectible id="kyou_bento" status="online" thumbnail="opponents/kyou/bento.png">
         <title>Bento</title>
         <subtitle>Kyou's Bento Lunchbox</subtitle>
         <text>A bento lunchbox made by Kyou for you to enjoy. Smells declicious!</text>
         <unlock>Forfeit while playing with Kyou in 3 different games.</unlock>
         <hide-details>true</hide-details>
         <counter>3</counter>
+        <picture>opponents/kyou/bento.png</picture>
+    </collectible>
+    <collectible id="kyou_thigh-highs" thumbnail="opponents/kyou/collectible_thigh-highs.png">
+        <title>Kyou's Thigh-highs</title>
+        <subtitle>Over the Knee, Under Her Supervision</subtitle>
+        <text>Now Kyou's signature look can be your own! Be sure to pull these up all the way and pair them with a miniskirt for the ideal &lt;i&gt;zettai ryouiki&lt;/i&gt; effect! They go great with a gym uniform too.</text>
+        <unlock>Play and win a game against Kyou and only one other character. The second character needs to be one of the following: Cynthia, Mari (OMORI), Nagisa, or Noire.</unlock>
+        <hide-details>true</hide-details>
+        <picture>opponents/kyou/10-laughing.png</picture>
+        <wearable>true</wearable>
+        <clothing img="opponents/kyou/collectible_thigh-highs.png" name="socks" generic="socks" position="feet" type="minor" plural="true" />
     </collectible>
 </collectibles>
