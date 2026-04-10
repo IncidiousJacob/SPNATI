@@ -4287,6 +4287,11 @@ ul.dropdown-menu>li {
     display: inline;
 }
 
+p.feedback-message {
+  max-height: 8rem;
+  overflow-y: auto;
+}
+
 #player-game-clothing-area-minimal {
     display: none;
     justify-content: center;
