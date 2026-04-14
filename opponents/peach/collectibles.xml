@@ -1,2 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<collectibles />
+<collectibles>
+    <collectible id="peach_panties" thumbnail="opponents/peach/collectible_peach_panties.png">
+        <title>Peach's Panties</title>
+        <subtitle>Fit for a Princess</subtitle>
+        <text>Princess Peach's royal panties are made of cloudsilk, spun from the cutest soft fluff of Fluff-Puff Peaks. They're light, airy, and taste just like fairy floss. The frills and bow add an extra measure of adorableness to hide underneath her pink princess dress.</text>
+        <unlock>Win a game against Peach.</unlock>
+        <hidden>true</hidden>
+        <hide-details>true</hide-details>
+        <picture>opponents/peach/6-happy.png</picture>
+        <wearable>true</wearable>
+        <clothing img="opponents/peach/collectible_peach_panties.png" name="panties" generic="underwear" position="lower" type="important" plural="true" />
+    </collectible>
+</collectibles>
