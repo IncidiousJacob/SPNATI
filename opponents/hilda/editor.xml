@@ -210,6 +210,10 @@
         <response id="0" opponent="edelgard" opponentId="213" />
         <response id="0" opponent="edelgard" opponentId="753" />
         <response id="0" opponent="edelgard" opponentId="679" />
+        <response id="0" opponent="cadence" opponentId="168" />
+        <response id="0" opponent="cadence" opponentId="157" />
+        <response id="0" opponent="cadence" opponentId="46" />
+        <response id="0" opponent="cadence" opponentId="156" />
     </responses>
     <notes>
         <note id="119">Yes, Hilda's second line here is very deliberately ironic.</note>
@@ -258,6 +262,7 @@ Hilda is dessert?</note>
         <note id="1193">Let me know if you want markers on any of the lines here - didn't bother since they're reactions not interactions, but can always add them</note>
         <note id="854">First time in a long time looking at my early targets again. These are a mess! Happy to modernise them if you care to, but also fine to not bother and just build around them</note>
         <note id="1202">Future-proofing for a theoretical war alt</note>
+        <note id="1363">Meant to be encouraging whispering</note>
     </notes>
     <labels>
         <label id="23" label="High Card" folder="RoundOneReveal" sort="10" />
@@ -524,7 +529,7 @@ Hilda is dessert?</note>
         <label id="499" label="" color="1" folder="" sort="0" />
         <label id="495" label="" folder="Miraculous Dual Forfeit" sort="0" />
         <label id="441" label="" folder="Meia" sort="46" />
-        <label id="442" label="" color="1" folder="Meia" sort="36" />
+        <label id="442" label="" folder="Meia" sort="36" />
         <label id="445" label="" folder="Namedrops" sort="8" />
         <label id="446" label="" folder="Sun-Drenched Nobility" sort="0" />
         <label id="447" label="" folder="Sun-Drenched Nobility" sort="4" />
@@ -1121,7 +1126,7 @@ Hilda is dessert?</note>
         <label id="1033" label="" color="1" folder="" sort="0" />
         <label id="1034" label="Lys Sub Balthus" color="1" folder="" sort="0" />
         <label id="1035" label="Lys Dom Balthus" color="1" folder="" sort="0" />
-        <label id="1076" label="" color="1" folder="" sort="0" />
+        <label id="1358" label="" color="1" folder="" sort="0" />
         <label id="1042" label="" color="1" folder="" sort="0" />
         <label id="1049" label="" color="1" folder="" sort="0" />
         <label id="1050" label="" color="1" folder="" sort="0" />
@@ -1139,9 +1144,8 @@ Hilda is dessert?</note>
         <label id="1070" label="" color="1" folder="" sort="0" />
         <label id="1071" label="" color="1" folder="" sort="0" />
         <label id="1072" label="" color="1" folder="" sort="0" />
-        <label id="1073" label="" color="1" folder="" sort="0" />
-        <label id="1074" label="" color="1" folder="" sort="0" />
-        <label id="1075" label="" color="1" folder="" sort="0" />
+        <label id="1357" label="" color="1" folder="" sort="0" />
+        <label id="1356" label="" color="1" folder="" sort="0" />
         <label id="1078" label="" color="1" folder="" sort="0" />
         <label id="1077" label="" color="1" folder="" sort="0" />
         <label id="1079" label="" color="1" folder="" sort="0" />
@@ -1419,8 +1423,14 @@ Hilda is dessert?</note>
         <label id="1352" label="" folder="Mina" sort="0" />
         <label id="1353" label="" folder="Mina" sort="0" />
         <label id="1354" label="" folder="Mina" sort="0" />
+        <label id="1355" label="" color="1" folder="" sort="0" />
+        <label id="1359" label="" color="1" folder="" sort="0" />
+        <label id="1360" label="" folder="Juno" sort="0" />
+        <label id="1361" label="" folder="Leonie" sort="0" />
+        <label id="1362" label="" color="1" folder="" sort="0" />
+        <label id="1364" label="" color="1" folder="" sort="0" />
     </labels>
-    <nextId>1354</nextId>
+    <nextId>1364</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="3HBeachTrip" />
@@ -1538,6 +1548,10 @@ Hilda is dessert?</note>
         <marker scope="Public" name="BoobEnvyReveal" />
         <marker scope="Public" name="BrockImpact" />
         <marker scope="Public" name="Butt" />
+        <marker scope="Public" name="CadenceChristmasCharity" />
+        <marker scope="Public" name="CadenceHalloweenFavorite" />
+        <marker scope="Public" name="CadencePenguinStories" />
+        <marker scope="Public" name="CadenceRetro" />
         <marker scope="Public" name="CagAlchemy" />
         <marker scope="Public" name="CagAlchemy2" />
         <marker scope="Public" name="CagBodyChangePromptResp" />
@@ -2322,6 +2336,14 @@ Hilda is dessert?</note>
         <marker scope="Public" name="LysitheaUnderwear" />
         <marker scope="Public" name="LysitheaUnderwear2" />
         <marker scope="Public" name="LysitheaUnderwear3" />
+        <marker scope="Public" name="MarianneAnimalsPrompt" />
+        <marker scope="Public" name="MarianneDeselected" />
+        <marker scope="Public" name="MarianneDeselectedAgain" />
+        <marker scope="Public" name="MarianneDeselectedX3" />
+        <marker scope="Public" name="MarianneSelected" />
+        <marker scope="Public" name="MarianneSelectedAgain" />
+        <marker scope="Public" name="MarianneSelectedX3" />
+        <marker scope="Public" name="MarianneSmilePrompt" />
         <marker scope="Public" name="MariFreeTime" />
         <marker scope="Public" name="MariFreeTimeA" />
         <marker scope="Public" name="MariFreeTimeB" />
@@ -2526,6 +2548,9 @@ Hilda is dessert?</note>
         <marker scope="Public" name="MitamaStyle2BeachNonBeach" />
         <marker scope="Public" name="MitamaStyle2Default" />
         <marker scope="Public" name="MitamaStyle2Halloween" />
+        <marker scope="Public" name="MitamaStyle3BeachBeach" />
+        <marker scope="Public" name="MitamaStyle3Default" />
+        <marker scope="Public" name="MitamaStyle3Halloween" />
         <marker scope="Public" name="ModelHowTo" />
         <marker scope="Public" name="MonikaGettingFavours" />
         <marker scope="Public" name="MonikaGettingFavours2" />
