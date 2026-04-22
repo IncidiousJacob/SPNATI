@@ -123,7 +123,8 @@
     <tag display="Vampire" description="Character is a vampire">vampire</tag>
   </group>
   <group label="Non-Human Features" multiselect="true">
-    <tag display="Animal Ears" description="Character has visible animal ears">animal_ears</tag>
+    <tag display="Animal Ears" description="Character has visible animal ears, and is not an anthro character">animal_ears</tag>
+    <tag display="Animal Penis" description="Character has an animal penis">animal_epenis</tag>
     <tag display="Extra Arms" description="Character has more than two arms">extra_arms</tag>
     <tag display="Horned" description="Character has visible horns or antlers">horned</tag>
     <tag display="Pointy Ears" description="Character has pointy ears">pointy_ears</tag>
@@ -137,6 +138,7 @@
     <tag display="Moustache" description="Has a moustache, but no beard">moustache</tag>
     <tag display="Pierced Nipples" description="Nipples are pierced">pierced_nipples</tag>
     <tag display="Prosthetic Arm" description="One or both of the character's arms are mechanical prosthetics">prosthetic_arm</tag>
+    <tag display="Prosthetic Leg" description="One or both of the character's legs are mechanical prosthetics">prosthetic_leg</tag>
     <tag display="Scarred" description="Visible scar(s)">scarred</tag>
     <tag display="Tanned" description="Character is normally fair or pale-skinned, but currently has a tan.">tanned</tag>
     <tag display="Tanlines" description="Tan lines are visible">tan_lines</tag>
@@ -311,7 +313,7 @@
     <tag display="Athlete" description="Is an athlete, whether professionally or as a hobby">athlete</tag>
     <tag display="Bookworm" description="Character reads a lot as a hobby">bookworm</tag>
     <tag display="Bounty Hunter" description="Works as a bounty hunter">bounty_hunter</tag>
-    <tag display="Celebrity" description="Famous enough that other characters could plausibily already know about them">celebrity</tag>
+    <tag display="Celebrity" description="Famous enough to be a household name in their own world">celebrity</tag>
     <tag display="Chef" description="The character cooks or bakes, professionally or as a hobby">chef</tag>
     <tag display="Cleric" description="The character is a member of religious clergy, perhaps with RPG healer cleric aspects">cleric</tag>
     <tag display="Clown" description="A clown as an occupation">clown</tag>
@@ -346,6 +348,7 @@
     <tag display="Princess" paired="royalty" description="A princess">princess</tag>
     <tag display="Royalty" description="A member of a royal family">royalty</tag>
     <tag display="Scientist" description="Any variety of scientist">scientist</tag>
+    <tag display="Servant" description="Any variety of servant, such as a maid or butler">servant</tag>
     <tag display="Sex Worker" description="The character engages in prostitution, or pornographic acting/streaming as a means of income">sex_worker</tag>
     <tag display="Singer" description="Sings either professionally or as a hobby">singer</tag>
     <tag display="Superhero" description="A superhero, likely possessing superpowers">superhero</tag>
@@ -541,6 +544,7 @@
     <tag display="Dead by Daylight" paired="horror" description="From the Dead by Daylight video game">dead_by_daylight</tag>
     <tag display="Dead or Alive" paired="video_game" description="From the Dead or Alive game franchise">dead_or_alive</tag>
     <tag display="Deadlock" paired="video_game,valve,fantasy" description="From the game Deadlock">deadlock</tag>
+    <tag display="Deltarune" paired="video_game,fantasy" description="From the game Deltarune">deltarune</tag>
     <tag display="Disney" description="From a Disney property, but not Marvel or Star Wars">disney</tag>
     <tag display="Doki Doki Literature Club" paired="visual_novel" description="From the VN Doki Doki Literature Club">ddlc</tag>
     <tag display="Dota" paired="fantasy,valve,video_game" description="From the Dota game series">dota</tag>
@@ -752,6 +756,7 @@
     <tag display="Yu-Gi-Oh!" paired="anime" description="From the anime Yi-Gi-Oh!">yugioh</tag>
     <tag display="Yuru Camp" paired="anime,manga" description="From the manga Yuru Camp, and/or its anime adaptation">yuru_camp</tag>
     <tag display="Yuru Yuri" paired="anime,manga" description="From the manga Yuru Yuri, and/or its anime adaptation">yuru_yuri</tag>
+    <tag display="Zenless Zone Zero" paired="video_game,post-apocalyptic,sci-fi,gacha_game" description="From Zenless Zone Zero">zenless_zone_zero</tag>
     <tag display="Zero Escape" paired="video_game" description="From the Zero Escape game series">zero_escape</tag>
     <tag display="Zero Wing" paired="video_game,future,space,sci-fi" description="From the game Zero Wing">zero_wing</tag>
     <tag display="Zombie Land Saga" paired="anime" description="From the anime Zombie Land Saga">zombieland_saga</tag>
