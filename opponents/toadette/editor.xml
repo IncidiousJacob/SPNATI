@@ -7,7 +7,13 @@
     <othernotes />
     <noteworthy>
         <case name="Aura Cam Shot" id="4108" priority="Noteworthy" min="0" max="0">
-            <description>Toadette gets photographed by the Aura Camera</description>
+            <description>Toadette gets photographed by the Aura Camera.</description>
+        </case>
+        <case name="Mushroom Spawn" id="4118" priority="MustTarget" min="7" max="7">
+            <description>Instead of fetching a chair, Toadette spawns a mushroom to perform her forfeit on.</description>
+        </case>
+        <case name="Mushroom Spawn, fist loser" id="4119" priority="MustTarget" min="7" max="7">
+            <description>Same as Mushroom Spawn, but here Toadette is the first one to lose</description>
         </case>
     </noteworthy>
     <responses>
@@ -34,8 +40,30 @@
         <response id="4115" opponent="joey" opponentId="28" />
         <response id="4116" opponent="florina" opponentId="6" />
         <response id="4117" opponent="nami" opponentId="13" />
+        <response id="4120" opponent="zelda_eow" opponentId="33" />
+        <response id="4121" opponent="caitlin" opponentId="63" />
+        <response id="4122" opponent="fluttershy" opponentId="20" />
+        <response id="4123" opponent="queenie" opponentId="35" />
+        <response id="4124" opponent="velma" opponentId="6" />
+        <response id="4125" opponent="felicia_fe" opponentId="6" />
+        <response id="4126" opponent="ignatz" opponentId="164" />
+        <response id="4127" opponent="aqua_kh" opponentId="67" />
+        <response id="4128" opponent="firestar" opponentId="4" />
     </responses>
-    <nextId>4117</nextId>
+    <labels>
+        <label id="4129" label="" folder="Personal Greetings" sort="0" />
+        <label id="4130" label="" folder="Personal Greetings" sort="0" />
+        <label id="4131" label="" folder="Personal Greetings" sort="0" />
+        <label id="4132" label="" folder="Personal Greetings" sort="0" />
+        <label id="4133" label="" folder="Personal Greetings" sort="0" />
+        <label id="4134" label="" folder="Tag Greetings" sort="0" />
+        <label id="4135" label="" folder="Tag Greetings" sort="0" />
+        <label id="4136" label="" folder="Tag Selection" sort="0" />
+        <label id="4137" label="" folder="Tag Selection" sort="0" />
+        <label id="4138" label="" folder="Tag Selection" sort="0" />
+        <label id="4139" label="" folder="Tag Selection" sort="0" />
+    </labels>
+    <nextId>4139</nextId>
     <markers>
         <marker scope="Public" name="aura_camera" />
         <marker scope="Public" name="aura_camera_followup" />
