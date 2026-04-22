@@ -697,16 +697,6 @@ function parseSceneContent(player, scene, $scene) {
             w = "20%"; //default to text boxes having a width of 20%
         }
 
-        //dialogue bubble arrow
-        if (a) {
-            a = a.trim().toLowerCase();
-            if (a.length >= 1) {
-                a = "arrow-" + a; //class name for the different arrows. Only use if the writer specified something.
-            }
-        } else {
-            a = "";
-        }
-
         //automatically centre the text box, if the writer wants that.
         if (x && x.toLowerCase() == "centered") {
             x = getCenteredPosition(w);
@@ -796,17 +786,6 @@ function readProperties(sourceObj, scene) {
             w = "20%"; //default to text boxes having a width of 20%
         }
         targetObj.width = w;
-
-        //dialogue bubble arrow
-        var a = targetObj.arrow; if (a) {
-            a = a.trim().toLowerCase();
-            if (a.length >= 1) {
-                a = "arrow-" + a; //class name for the different arrows. Only use if the writer specified something.
-            }
-        } else {
-            a = "";
-        }
-        targetObj.arrow = a;
 
         //automatically centre the text box, if the writer wants that.
         var x = targetObj.x;
@@ -1988,7 +1967,9 @@ SceneView.prototype.applyTextDirective = function (directive, box) {
     });
     box.empty().append($('<span>', { 'class': 'dialogue' }).append(displayElems));
 
-    box.removeClass('arrow-down arrow-left arrow-right arrow-up').addClass(directive.arrow);
+    box.removeClass('arrow whisper thought narration no-bubble down left right up')
+        .addClass(directive.style || "arrow");
+    if (directive.arrow != "" && directive.arrow != "none") box.addClass(directive.arrow);
     box.attr('style', directive.css);
 
     box.attr({
@@ -2019,8 +2000,8 @@ SceneView.prototype.applyTextDirective = function (directive, box) {
     box.css('top', directive.y);
     box.css('width', directive.width);
 
-    var arrowHeight = (directive.arrow === "arrow-up" || directive.arrow === "arrow-down" ? 15 : 0);
-    var arrowWidth = (directive.arrow === "arrow-left" || directive.arrow === "arrow-right" ? 15 : 0);
+    var arrowHeight = (directive.arrow === "up" || directive.arrow === "down" ? 15 : 0);
+    var arrowWidth = (directive.arrow === "left" || directive.arrow === "right" ? 15 : 0);
     switch (directive.alignmenty) {
     case "center":
         var height = box.height() + arrowHeight;

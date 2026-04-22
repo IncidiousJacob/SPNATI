@@ -128,6 +128,7 @@ function PoseSetEntry(image, attrs, tests) {
     this.image = image;
     this.tests = tests;
     this.stages = attrs["stage"];
+    this.style = attrs["style"];
     this.location = attrs["location"];
     this.direction = attrs["direction"];
     this.dialogue_layering = attrs["dialogue-layer"];
@@ -1065,6 +1066,7 @@ OpponentDisplay.prototype.update = function(player) {
     this.updateBubbleAttributes(player);
 
     var chosenState = player.chosenState;
+    var bubbleStyle = chosenState.style;
     var arrowDirection = chosenState.direction;
     var arrowLocation = chosenState.location;
     var dialogue_layering = chosenState.dialogue_layering || player.dialogue_layering;
@@ -1082,6 +1084,7 @@ OpponentDisplay.prototype.update = function(player) {
 
         let entry = resolvedImage.selectEntry(player);
         if (entry) {
+            bubbleStyle = chosenState.style || entry.style;
             arrowDirection = chosenState.direction || entry.direction;
             arrowLocation = chosenState.location || entry.location;
             dialogue_layering =  chosenState.dialogue_layering || entry.dialogue_layering || player.dialogue_layering;
@@ -1110,8 +1113,9 @@ OpponentDisplay.prototype.update = function(player) {
         this.hideBubble();
     } else {
         this.bubble.show();
-        this.bubble.removeClass('arrow-down arrow-left arrow-right arrow-up');
-        if (arrowDirection != 'none') this.bubble.addClass('arrow-'+arrowDirection);
+        this.bubble.removeClass('arrow whisper thought narration down left right up');
+        this.bubble.addClass(bubbleStyle);
+        if (arrowDirection != 'none') this.bubble.addClass(arrowDirection);
         this.bubble.css('--arrow-location', arrowLocation || '');
         /* Configure z-indices */
         this.bubble.removeClass('over under').addClass(dialogue_layering);
