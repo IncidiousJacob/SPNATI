@@ -192,11 +192,13 @@ const MAGNET_TAGS = [
 
     "genshin_impact",
 
+    "konosuba",
+
     "danganronpa",
     "ddlc",
     "my_little_pony",
-    "konosuba",
 
+    "legend_of_zelda",
     "persona",
     "rwby_franchise",
     "street_fighter",
@@ -206,10 +208,10 @@ const MAGNET_TAGS = [
     "clannad",
     "dragon_ball",
     "katawa_shoujo",
-    "legend_of_zelda",
     "little_witch_academia",
     "monster_prom",
     "one_piece",
+    "puyo_puyo",
     "tales_of",
     "touhou_project",
     "xenoblade_chronicles",
@@ -217,6 +219,7 @@ const MAGNET_TAGS = [
     "battleborn",
     "zombieland_saga",
     "golden_sun",
+    "ttgl",
     "huniepop",
     "jjba",
     "kid_icarus",
@@ -231,7 +234,7 @@ const MAGNET_TAGS = [
     "omori",
     "overwatch_franchise",
     "panty_and_stocking",
-    "puyo_puyo",
+    "re_zero",
     "sonic_franchise",
     "teen_titans_franchise",
     "va-11_hall-a",
