@@ -238,6 +238,15 @@
         <response id="416" opponent="sucrose" opponentId="133" />
         <response id="418" opponent="nico_robin" opponentId="306" />
         <response id="419" opponent="critical_darling" opponentId="1" />
+        <response id="516" opponent="purah" opponentId="214" />
+        <response id="517" opponent="purah" opponentId="215" />
+        <response id="518" opponent="purah" opponentId="217" />
+        <response id="519" opponent="circus_babe" opponentId="165" />
+        <response id="522" opponent="tasque_manager" opponentId="21" />
+        <response id="524" opponent="adora" opponentId="71" />
+        <response id="525" opponent="reagan" opponentId="2" />
+        <response id="526" opponent="mina" opponentId="5" />
+        <response id="527" opponent="hu_tao" opponentId="82" />
     </responses>
     <notes>
         <note id="84">She's talking about Caitlin. Angela is voiced by Sarah Miller-Crews in English, who also voices Caitlin uses in Pokemon Masters.</note>
@@ -613,10 +622,18 @@
         <label id="513" label="" folder="Banter" sort="0" />
         <label id="514" label="" folder="Banter&gt;Tasque Manager" sort="0" />
         <label id="515" label="" folder="Targeted&gt;Tasque Manager" sort="0" />
+        <label id="518" label="" folder="Targeted&gt;Purah" sort="0" />
+        <label id="517" label="" folder="Targeted&gt;Purah" sort="0" />
+        <label id="516" label="" folder="Targeted&gt;Purah" sort="0" />
+        <label id="523" label="" folder="Targeted&gt;Hex Maniac" sort="0" />
+        <label id="525" label="" folder="Targeted&gt;Reagan" sort="0" />
+        <label id="526" label="" folder="Targeted&gt;Mina" sort="0" />
     </labels>
-    <nextId>515</nextId>
+    <nextId>527</nextId>
     <markers>
         <marker scope="Public" name="AboutToShowBoobs">Angela is just about to reveal her top prior to stage 6. Is unset after she does so; use "AngelaEarlyBoobs" to test for that.</marker>
+        <marker scope="Public" name="Adora_ClassChange1">Angela mistakes Adora's transformation for a class change...</marker>
+        <marker scope="Public" name="Adora_ClassChange2">...and then wonders why it made her bigger instead of just changing her outfit.</marker>
         <marker scope="Public" name="Adrien_ClassChange">Angela mistakes Adrien's transformation for a class change.</marker>
         <marker scope="Public" name="AllMenAreGay">Angela has realized that all men at the table are gay.</marker>
         <marker scope="Public" name="Amalia_BoobClubRevoked">Angela can't come up with anything to do about Amalia covering herself with plants, so she revokes Amalia's membership into the "Boob Club".</marker>
@@ -652,6 +669,9 @@
         <marker scope="Public" name="Cheerleader_WhatsHerFace3">Angela is confused. Does Whats Her Face not care about Cheerleader's death?</marker>
         <marker scope="Public" name="Cheerleader_WhatsHerFace3b">Angela is still weirded out that she somehow knows Whats Her Face's name.</marker>
         <marker scope="Public" name="Cheerleader_WhatsHerFaceSomeoneElse">Angela encourages someone else to break the bad news to Whats Her Face - Angela's busy losing a card game.</marker>
+        <marker scope="Public" name="CircusBabe_GhostsA">Angela tells Circus Babe that she clearly believes souls exist, because she's met ghosts.</marker>
+        <marker scope="Public" name="CircusBabe_GhostsB">Angela sarcastically says she doesn't believe in souls while a ghost is present.</marker>
+        <marker scope="Public" name="CircusBabe_GhostsC">Angela points out that there are two ghosts present when Circus Babe questions the existence of souls.</marker>
         <marker scope="Private" name="cl_Boots">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Briefs">Used for Pose Maker</marker>
         <marker scope="Private" name="cl_Bustier">Used for Pose Maker</marker>
@@ -723,6 +743,7 @@
         <marker scope="Public" name="MentionedKevin">At some point in conversation, Angela has mentioned her friend, a half-beastman martial artist named Kevin.</marker>
         <marker scope="Public" name="MentionedRiesz">At some point in conversation, Angela has mentioned her friend, an amazon princess named Riesz. (Pronounced like "Reece".)</marker>
         <marker scope="Public" name="Mercy_AngelicNicknames">Angela asks Angela/Mercy if they should use nicknames.</marker>
+        <marker scope="Public" name="Mina_NoBloodForYou">Angela tries to threaten Mina when she suggests drinking blood. Lumina... doesn't quite get that he's supposed to act threatening.</marker>
         <marker scope="Public" name="MsFortune_RolledHeads">Ms. Fortune's head has come off.</marker>
         <marker scope="Public" name="NicoRobin_AboutFaDiel">Angela tells Nico Robin a few things about Fa'Diel.</marker>
         <marker scope="Public" name="NoPetRabite">Following from PetRabite, Angela considers that Rabites probably wouldn't make good pets.</marker>
@@ -731,7 +752,11 @@
         <marker scope="Public" name="PetMonsterThoughts">Angela asks a Pokemon character about their "pet monsters".</marker>
         <marker scope="Public" name="PetRabite">Following from PetMonsterThoughts, Angela considers having a pet Rabite.</marker>
         <marker scope="Private" name="PingWasMulan">Angela has discovered that "Ping" was, in fact, a woman.</marker>
+        <marker scope="Public" name="Purah_Channeling">Angela tries to explain her magical abilities to Purah, but admits that it's easier when she doesn't think about it too hard.</marker>
+        <marker scope="Public" name="Purah_ConserveMP">Why would Angela do melee combat? Well, she doesn't exactly have infinite MP...</marker>
+        <marker scope="Public" name="Purah_Hair">Angela has long hair. She thinks it makes her look good. Who is Purah to argue?</marker>
         <marker scope="Public" name="Pyrrha_RocketSave">Pyrrha has saved Brock from his wild rocket.</marker>
+        <marker scope="Public" name="Reagan_EvilPeople">Angela reveals that she has a very low opinion of people who do evil "for the greater good"... obliviously insulting Reagan in the process.</marker>
         <marker scope="Public" name="RenamedPlayerWeirdo">Angela decided she didn't like the name the player gave. What a Weirdo!</marker>
         <marker scope="Public" name="Rosie_AdventuresResponse">Angela tells Rosie that her red leotard is her favorite outfit (alternate costumes will get different lines)</marker>
         <marker scope="Public" name="Rosie_Quests_Response">Rosie has asked Angela about the quests she's gone on. Her response involves a lot of giant monsters.</marker>
@@ -758,7 +783,8 @@
         <marker scope="Public" name="SummonedShade">At some point in conversation, Angela has summoned the Elemental of Darkness, Shade. He's a little creepy, but he's good, I promise!</marker>
         <marker scope="Public" name="SummonedSylphid">At some point in conversation, Angela has summoned the Elemental of Wind, Sylphid. Prepare to get blown away!</marker>
         <marker scope="Public" name="SummonedUndine">At some point in conversation, Angela has summoned the Elemental of Water, Undine. Try not to cry.</marker>
-        <marker scope="Public" name="TasqueManager_QueenWho" />
+        <marker scope="Public" name="TasqueManager_QueenWho">Angela asks Tasque Manager about her queen.</marker>
+        <marker scope="Public" name="TasqueManager_Topless">Angela sees Tasque Manager's body split and makes a comment about her being "topless".</marker>
         <marker scope="Public" name="Tharja_ShrinkReaction">Counts how many times Tharja has reduced the breast size of another woman. This causes Angela not to do some of her more teasy behaviors.</marker>
         <marker scope="Public" name="ThwackThreat">Angela threatens to "thwack" anyone who asks why she's not using her staff to forfeit.</marker>
         <marker scope="Public" name="Tifa_LostBra">Angela tells Tifa it's okay if she puts her bra back on after she accidentally takes it off, then wonders why she doesn't.</marker>
