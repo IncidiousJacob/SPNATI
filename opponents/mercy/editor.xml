@@ -48,6 +48,9 @@
         <case name="Companion Invitation" id="180" priority="Prompt" min="0" max="6">
             <description>If there are fewer than four AI players, Mercy asks why a companion character wasn't invited to play on their own.</description>
         </case>
+        <case name="Angela, Not Mercy" id="393" priority="FYI" min="0" max="0">
+            <description>Mercy notes that while she might be best known for her public persona, she'd rather people use her name. Her label is set to "Angela", so need to set a nickname unless you want to actively disrespect her wish here.</description>
+        </case>
     </noteworthy>
     <reviewed>true</reviewed>
     <responses>
@@ -244,6 +247,7 @@
         <note id="386">Rough draft line, both so you know where I'm going with this and so I don't have to try to remember</note>
         <note id="388">Mercy's experiencing the beginnings of this, thanks to her work with nanobiotics slowing her aging</note>
         <note id="392">I'm assuming that the omnic terminology is going to come up and be explained in the stage 0 targets, so I'm using it freely here</note>
+        <note id="393">Feel free to react to her saying this, but since her label is Angela, unless you want to actively go against what she asks and call her Mercy anyway, you don't need to set a nickname or anything</note>
     </notes>
     <labels>
         <label id="45" label="" folder="Player Names" sort="2" />
@@ -520,15 +524,18 @@
         <label id="390" label="" color="1" folder="" sort="0" />
         <label id="391" label="" color="1" folder="" sort="0" />
         <label id="392" label="" color="1" folder="" sort="0" />
+        <label id="394" label="" color="1" folder="" sort="0" />
+        <label id="395" label="" color="1" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue-</prefix>
         <prefix>Collectible</prefix>
         <prefix>Mercy</prefix>
     </prefixes>
-    <nextId>392</nextId>
+    <nextId>397</nextId>
     <markers>
         <marker scope="Public" name="" />
+        <marker scope="Public" name="3" />
         <marker scope="Public" name="AaraviObviousRole" />
         <marker scope="Public" name="AaraviObviousRole2" />
         <marker scope="Public" name="AaraviObviousRole3" />
@@ -830,7 +837,49 @@
         <marker scope="Public" name="FourDocs" />
         <marker scope="Public" name="FromOneToTen" />
         <marker scope="Public" name="FuckbuddiesPrompt" />
+        <marker scope="Public" name="furina_adoringPublic_40" />
+        <marker scope="Public" name="furina_adoringPublic_41" />
+        <marker scope="Public" name="furina_adoringPublic_42" />
         <marker scope="Public" name="furina_culturalExchange_00" />
+        <marker scope="Public" name="furina_culturalExchange_01" />
+        <marker scope="Public" name="furina_culturalExchange_02" />
+        <marker scope="Public" name="furina_education_resp_10" />
+        <marker scope="Public" name="furina_education_resp_11" />
+        <marker scope="Public" name="furina_education_resp_12" />
+        <marker scope="Public" name="furina_elementalVisions_10" />
+        <marker scope="Public" name="furina_elementalVisions_11" />
+        <marker scope="Public" name="furina_elementalVisions_12" />
+        <marker scope="Public" name="furina_exposure_60" />
+        <marker scope="Public" name="furina_exposure_61" />
+        <marker scope="Public" name="furina_exposure_62" />
+        <marker scope="Public" name="furina_fame_resp_30" />
+        <marker scope="Public" name="furina_fame_resp_31" />
+        <marker scope="Public" name="furina_fame_resp_32" />
+        <marker scope="Public" name="furina_films_20" />
+        <marker scope="Public" name="furina_films_21" />
+        <marker scope="Public" name="furina_films_22" />
+        <marker scope="Public" name="furina_films_23" />
+        <marker scope="Public" name="furina_looksDirectlyAtCamera_30" />
+        <marker scope="Public" name="furina_looksDirectlyAtCamera_31" />
+        <marker scope="Public" name="furina_looksDirectlyAtCamera_32" />
+        <marker scope="Public" name="furina_pacifism_resp_20" />
+        <marker scope="Public" name="furina_pacifism_resp_21" />
+        <marker scope="Public" name="furina_pacifism_resp_22" />
+        <marker scope="Public" name="furina_physician_resp_00" />
+        <marker scope="Public" name="furina_physician_resp_01" />
+        <marker scope="Public" name="furina_physician_resp_02" />
+        <marker scope="Public" name="furina_privilege_70" />
+        <marker scope="Public" name="furina_privilege_71" />
+        <marker scope="Public" name="furina_privilege_72" />
+        <marker scope="Public" name="furina_publicPersona_50" />
+        <marker scope="Public" name="furina_publicPersona_51" />
+        <marker scope="Public" name="furina_publicPersona_52" />
+        <marker scope="Public" name="furina_sex_ed_resp_40" />
+        <marker scope="Public" name="furina_sex_ed_resp_41" />
+        <marker scope="Public" name="furina_sex_ed_resp_42" />
+        <marker scope="Public" name="furina_sexual_prefs_resp_50" />
+        <marker scope="Public" name="furina_sexual_prefs_resp_51" />
+        <marker scope="Public" name="furina_sexual_prefs_resp_52" />
         <marker scope="Public" name="FutaBiology" />
         <marker scope="Public" name="FutaBiologyCloning" />
         <marker scope="Public" name="FutaBiologyCommunities" />
@@ -985,6 +1034,7 @@
         <marker scope="Public" name="JunoTeamExercisesA" />
         <marker scope="Public" name="JunoTeamExercisesB" />
         <marker scope="Public" name="JunoTeamExercisesB2" />
+        <marker scope="Public" name="JunoYuseiDual" />
         <marker scope="Public" name="JuraBabies" />
         <marker scope="Public" name="JuraBirthday" />
         <marker scope="Public" name="JuraChristmasPersonal" />
@@ -1101,6 +1151,7 @@
         <marker scope="Public" name="MeiaSpaceIssues" />
         <marker scope="Public" name="MeiaSwitzerland" />
         <marker scope="Public" name="MeiaTechnologyComparison" />
+        <marker scope="Public" name="mercy_juno41" />
         <marker scope="Public" name="MercyAdrienLaugh" />
         <marker scope="Public" name="MercyAprilFoolCharacter" />
         <marker scope="Public" name="MercyArmorFighterA" />
@@ -1420,7 +1471,51 @@
         <marker scope="Public" name="SenkoTechniques2" />
         <marker scope="Public" name="SheIsGonnaBeMercy" />
         <marker scope="Public" name="ShortCurvy" />
+        <marker scope="Public" name="simon_gazingUponWonders_60" />
+        <marker scope="Public" name="simon_gazingUponWonders_61" />
+        <marker scope="Public" name="simon_gazingUponWonders_62" />
+        <marker scope="Public" name="simon_heroShaped_30" />
+        <marker scope="Public" name="simon_heroShaped_31" />
+        <marker scope="Public" name="simon_heroShaped_32" />
+        <marker scope="Public" name="simon_meetBoota_00" />
+        <marker scope="Public" name="simon_meetBoota_01" />
+        <marker scope="Public" name="simon_meetBoota_02" />
+        <marker scope="Public" name="simon_meetBoota_03" />
+        <marker scope="Public" name="simon_mercyPretty_resp_40" />
+        <marker scope="Public" name="simon_mercyPretty_resp_41" />
+        <marker scope="Public" name="simon_mercyPretty_resp_42" />
+        <marker scope="Public" name="simon_mercyPrettyBoota_resp_40" />
+        <marker scope="Public" name="simon_mercyPrettyBoota_resp_41" />
+        <marker scope="Public" name="simon_mercyPrettyBoota_resp_42" />
+        <marker scope="Public" name="simon_mercyPrettyBoota_resp_43" />
+        <marker scope="Public" name="simon_names_resp_10" />
+        <marker scope="Public" name="simon_names_resp_11" />
+        <marker scope="Public" name="simon_names_resp_12" />
+        <marker scope="Public" name="simon_overwatchL4G_resp_30" />
+        <marker scope="Public" name="simon_overwatchL4G_resp_31" />
+        <marker scope="Public" name="simon_overwatchL4G_resp_32" />
+        <marker scope="Public" name="simon_sentSpiralling_20" />
+        <marker scope="Public" name="simon_sentSpiralling_21" />
         <marker scope="Public" name="simon_sentSpiralling_22" />
+        <marker scope="Public" name="simon_sharing_50" />
+        <marker scope="Public" name="simon_sharing_51" />
+        <marker scope="Public" name="simon_sharing_52" />
+        <marker scope="Public" name="simon_shonenScars_10" />
+        <marker scope="Public" name="simon_shonenScars_11" />
+        <marker scope="Public" name="simon_shonenScars_12" />
+        <marker scope="Public" name="simon_shonenScars_13" />
+        <marker scope="Public" name="simon_spiralStrength_40" />
+        <marker scope="Public" name="simon_spiralStrength_41" />
+        <marker scope="Public" name="simon_spiralStrength_42" />
+        <marker scope="Public" name="simon_teamMedic_resp_00" />
+        <marker scope="Public" name="simon_teamMedic_resp_01" />
+        <marker scope="Public" name="simon_teamMedic_resp_02" />
+        <marker scope="Public" name="simon_variety_resp_50" />
+        <marker scope="Public" name="simon_variety_resp_51" />
+        <marker scope="Public" name="simon_variety_resp_52" />
+        <marker scope="Public" name="simon_wings_resp_20" />
+        <marker scope="Public" name="simon_wings_resp_21" />
+        <marker scope="Public" name="simon_wings_resp_22" />
         <marker scope="Public" name="SimonSpiralPowerDemonstration" />
         <marker scope="Public" name="SnTAnomalies" />
         <marker scope="Public" name="SnTBuildup" />
