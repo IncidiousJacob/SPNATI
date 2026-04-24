@@ -237,6 +237,9 @@
         <response id="1465" opponent="wasp" opponentId="108" />
         <response id="1466" opponent="wasp" opponentId="139" />
         <response id="1467" opponent="wasp" opponentId="110" />
+        <response id="1473" opponent="mari_setogaya" opponentId="17" />
+        <response id="0" opponent="sakura" opponentId="4" />
+        <response id="1474" opponent="selphy" opponentId="2" />
     </responses>
     <labels>
         <label id="114" label="Ramen Markers Reset" folder="" sort="0" />
@@ -1509,12 +1512,18 @@
         <label id="1462" label="" folder="Stripping (Serena)" sort="0" />
         <label id="1463" label="" folder="Stripped (Serena)" sort="0" />
         <label id="1464" label="" folder="Stripping (Shamiko)" sort="0" />
+        <label id="1468" label="" folder="Must Strip (Sandy Cheeks)" sort="0" />
+        <label id="1469" label="" folder="Must Strip (Kita)" sort="0" />
+        <label id="1470" label="" folder="Nadeshiko (Must Strip)" sort="0" />
+        <label id="1471" label="" folder="Nadeshiko (Stripping)" sort="0" />
+        <label id="1472" label="" folder="Nadeshiko (Stripped)" sort="0" />
     </labels>
     <posePreviewMarkers>
         <posePreviewMarker>Camping_Table==b</posePreviewMarker>
     </posePreviewMarkers>
-    <nextId>1467</nextId>
+    <nextId>1474</nextId>
     <markers>
+        <marker scope="Public" name="" />
         <marker scope="Public" name="9S_Nade_1-1" />
         <marker scope="Public" name="Accomodat" />
         <marker scope="Public" name="Accomodating_Player" />
@@ -1616,6 +1625,7 @@
         <marker scope="Public" name="CampingTips_Pets" />
         <marker scope="Public" name="CampingTips_Relaxing" />
         <marker scope="Public" name="CampingTips_SleepingBags" />
+        <marker scope="Public" name="CampingTips_SpoiledFood" />
         <marker scope="Public" name="CampingTips_Start" />
         <marker scope="Public" name="CampingTips_SummerVsWinterCamping" />
         <marker scope="Public" name="CampingTips_Tents" />
@@ -1850,6 +1860,50 @@
         <marker scope="Public" name="maleMasturbation910" />
         <marker scope="Public" name="MamaShiko_Explanation" />
         <marker scope="Public" name="MamaShiko_MustStrip" />
+        <marker scope="Public" name="marianne_campingActivities_resp_30" />
+        <marker scope="Public" name="marianne_campingActivities_resp_31" />
+        <marker scope="Public" name="marianne_campingActivities_resp_32" />
+        <marker scope="Public" name="marianne_campingWithFriends_resp_40" />
+        <marker scope="Public" name="marianne_campingWithFriends_resp_41" />
+        <marker scope="Public" name="marianne_campingWithFriends_resp_42" />
+        <marker scope="Public" name="marianne_flirtingSuccess_resp_70" />
+        <marker scope="Public" name="marianne_flirtingSuccess_resp_71" />
+        <marker scope="Public" name="marianne_flirtingSuccess_resp_72" />
+        <marker scope="Public" name="marianne_friendlyFlirting_40" />
+        <marker scope="Public" name="marianne_friendlyFlirting_41" />
+        <marker scope="Public" name="marianne_friendlyFlirting_42" />
+        <marker scope="Public" name="marianne_gettingComfortable_resp_00" />
+        <marker scope="Public" name="marianne_gettingComfortable_resp_01" />
+        <marker scope="Public" name="marianne_gettingComfortable_resp_02" />
+        <marker scope="Public" name="marianne_girlfailureFlirting_resp_60" />
+        <marker scope="Public" name="marianne_girlfailureFlirting_resp_61" />
+        <marker scope="Public" name="marianne_girlfailureFlirting_resp_62" />
+        <marker scope="Public" name="marianne_inferiorityComplex_20" />
+        <marker scope="Public" name="marianne_inferiorityComplex_21" />
+        <marker scope="Public" name="marianne_inferiorityComplex_22" />
+        <marker scope="Public" name="marianne_lonelyLady_10" />
+        <marker scope="Public" name="marianne_lonelyLady_11" />
+        <marker scope="Public" name="marianne_lonelyLady_12" />
+        <marker scope="Public" name="marianne_luckyDate_50" />
+        <marker scope="Public" name="marianne_luckyDate_51" />
+        <marker scope="Public" name="marianne_luckyDate_52" />
+        <marker scope="Public" name="marianne_natureRocks_resp_20" />
+        <marker scope="Public" name="marianne_natureRocks_resp_21" />
+        <marker scope="Public" name="marianne_natureRocks_resp_22" />
+        <marker scope="Public" name="marianne_noRegrets_60" />
+        <marker scope="Public" name="marianne_noRegrets_61" />
+        <marker scope="Public" name="marianne_noRegrets_62" />
+        <marker scope="Public" name="marianne_openingUp_00" />
+        <marker scope="Public" name="marianne_openingUp_01" />
+        <marker scope="Public" name="marianne_openingUp_02" />
+        <marker scope="Public" name="marianne_romanticCamping_resp_50" />
+        <marker scope="Public" name="marianne_romanticCamping_resp_51" />
+        <marker scope="Public" name="marianne_romanticCamping_resp_52" />
+        <marker scope="Public" name="marianne_skilledGirl_30" />
+        <marker scope="Public" name="marianne_skilledGirl_31" />
+        <marker scope="Public" name="marianne_skilledGirl_32" />
+        <marker scope="Public" name="marianne_whatsCamping_resp_10" />
+        <marker scope="Public" name="marianne_whatsCamping_resp_11" />
         <marker scope="Public" name="mediumFemale">Used for any line tied to a female opponent with medium-sized breasts</marker>
         <marker scope="Public" name="mediumMale">Used for any line tied to a male opponent with a medium-sized penis</marker>
         <marker scope="Public" name="Mei_Nakatsugawa" />
@@ -1984,6 +2038,8 @@
         <marker scope="Public" name="Nade_Jenna_1-2" />
         <marker scope="Public" name="Nade_Jenna_2-1" />
         <marker scope="Public" name="Nade_Jenna_2-2" />
+        <marker scope="Public" name="Nade_Kita_Hitori1" />
+        <marker scope="Public" name="Nade_Kita_Hitori2" />
         <marker scope="Public" name="Nade_Kyouko_AllGoodMeal" />
         <marker scope="Public" name="Nade_Kyouko_BitetoEat" />
         <marker scope="Public" name="Nade_Kyouko_Camping1" />
