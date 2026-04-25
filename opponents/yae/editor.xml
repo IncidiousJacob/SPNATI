@@ -179,6 +179,11 @@
         <response id="267" opponent="saria" opponentId="790" />
         <response id="268" opponent="saria" opponentId="791" />
         <response id="269" opponent="saria" opponentId="792" />
+        <response id="273" opponent="purah" opponentId="182" />
+        <response id="274" opponent="purah" opponentId="183" />
+        <response id="276" opponent="mina" opponentId="214" />
+        <response id="277" opponent="mina" opponentId="215" />
+        <response id="281" opponent="saria" opponentId="1557" />
     </responses>
     <notes>
         <note id="129">Give an honest answer if you feel like it, but at this early stage it would still be funny if the question is clearly too much and Yae has to backpedal. Either way!</note>
@@ -234,17 +239,20 @@
         <label id="219" label="After Pose 4" folder="Leon FF" sort="15" />
         <label id="220" label="After Pose 3" folder="Leon FF" sort="16" />
         <label id="221" label="After Special 1" folder="Leon FF" sort="17" />
-        <label id="269" label="" color="15" folder="" sort="0" />
-        <label id="268" label="" color="15" folder="" sort="0" />
-        <label id="267" label="" color="15" folder="" sort="0" />
+        <label id="281" label="" color="15" folder="" sort="0" />
+        <label id="279" label="" color="15" folder="" sort="0" />
+        <label id="273" label="" color="15" folder="" sort="0" />
+        <label id="274" label="" color="15" folder="" sort="0" />
+        <label id="271" label="" color="15" folder="" sort="0" />
+        <label id="272" label="" color="15" folder="" sort="0" />
+        <label id="284" label="" color="15" folder="" sort="0" />
+        <label id="283" label="" color="15" folder="" sort="0" />
         <label id="270" label="" color="15" folder="" sort="0" />
-        <label id="259" label="" color="15" folder="" sort="0" />
-        <label id="261" label="" color="15" folder="" sort="0" />
-        <label id="262" label="" color="15" folder="" sort="0" />
         <label id="263" label="" color="15" folder="" sort="0" />
-        <label id="264" label="" color="15" folder="" sort="0" />
-        <label id="265" label="" color="15" folder="" sort="0" />
-        <label id="266" label="" color="15" folder="" sort="0" />
+        <label id="276" label="" color="15" folder="" sort="0" />
+        <label id="277" label="" color="15" folder="" sort="0" />
+        <label id="278" label="" color="15" folder="" sort="0" />
+        <label id="282" label="" color="15" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>ex</prefix>
@@ -255,7 +263,7 @@
         <prefix>arms</prefix>
         <prefix>Esheena</prefix>
     </prefixes>
-    <nextId>270</nextId>
+    <nextId>284</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="aoii_resp0_1" />
@@ -778,6 +786,7 @@
         <marker scope="Public" name="miko_resp1_2" />
         <marker scope="Public" name="miko_resp1_3" />
         <marker scope="Public" name="miko_resp2_1" />
+        <marker scope="Public" name="miko_resp2_2" />
         <marker scope="Public" name="Miko_s0_1" />
         <marker scope="Public" name="Miko_s0_2" />
         <marker scope="Public" name="Miko_s0_3" />
@@ -786,9 +795,14 @@
         <marker scope="Public" name="Miko_s1_3" />
         <marker scope="Public" name="Miko_s2_1" />
         <marker scope="Public" name="Miko_s2_2" />
+        <marker scope="Public" name="Miko_s2_3" />
+        <marker scope="Public" name="Miko_s3_1" />
         <marker scope="Public" name="Miku_s0_1" />
         <marker scope="Public" name="Miku_s1_1" />
         <marker scope="Public" name="Miku_s4_1" />
+        <marker scope="Public" name="mina_resp0_1" />
+        <marker scope="Public" name="mina_resp0_2" />
+        <marker scope="Public" name="Mina_s0_1" />
         <marker scope="Public" name="moskii_resp_bloodA" />
         <marker scope="Public" name="moskii_resp_bloodlust" />
         <marker scope="Public" name="Moskii_s0_1" />
@@ -850,9 +864,14 @@
         <marker scope="Public" name="purah_resp0_2" />
         <marker scope="Public" name="purah_resp0_3" />
         <marker scope="Public" name="purah_resp1_1" />
+        <marker scope="Public" name="purah_resp1_2" />
         <marker scope="Public" name="Purah_s0_1" />
         <marker scope="Public" name="Purah_s0_2" />
+        <marker scope="Public" name="Purah_s0_3" />
         <marker scope="Public" name="Purah_s1_1" />
+        <marker scope="Public" name="Purah_s1_2" />
+        <marker scope="Public" name="Purah_s2_1" />
+        <marker scope="Public" name="purah_yae01" />
         <marker scope="Public" name="queenie_resp0_1" />
         <marker scope="Public" name="queenie_resp0_2" />
         <marker scope="Public" name="queenie_resp1_1" />
@@ -910,10 +929,13 @@
         <marker scope="Public" name="saria_resp2_1" />
         <marker scope="Public" name="saria_resp2_2" />
         <marker scope="Public" name="saria_resp2_3" />
+        <marker scope="Public" name="saria_resp3_1" />
         <marker scope="Public" name="Saria_s0_1" />
         <marker scope="Public" name="Saria_s0_2" />
         <marker scope="Public" name="Saria_s0_3" />
         <marker scope="Public" name="Saria_s1_1" />
+        <marker scope="Public" name="Saria_s1_2" />
+        <marker scope="Public" name="Saria_s2_1" />
         <marker scope="Public" name="senko_resp0_1" />
         <marker scope="Public" name="senko_resp0_2" />
         <marker scope="Public" name="senko_resp0_3" />
@@ -959,7 +981,11 @@
         <marker scope="Public" name="Senko_s7_1" />
         <marker scope="Public" name="Senko_s7_2" />
         <marker scope="Public" name="Sheena_Bunny" />
+        <marker scope="Public" name="Sheena_CallOff" />
         <marker scope="Public" name="Sheena_Evening" />
+        <marker scope="Public" name="Sheena_FailuretoLaunch" />
+        <marker scope="Public" name="Sheena_FailureWin" />
+        <marker scope="Public" name="Sheena_MutualEnd" />
         <marker scope="Public" name="Sheena_Proposition" />
         <marker scope="Public" name="Sheena_Regular" />
         <marker scope="Public" name="sheena_resp0_1" />
