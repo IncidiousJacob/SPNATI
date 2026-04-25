@@ -4,7 +4,7 @@
     <height />
     <age>29</age>
     <pronunciation>Task Manager</pronunciation>
-    <othernotes>If you give her a nick name, please don't use "Tasque" Instead, you could use things like "Tas", "TM", "Tasquey", "Ms. Manager" Etc. This is because Tasques are her cats.&lt;br&gt;&lt;br&gt;&lt;br&gt;Targeting guide - &lt;br&gt;Job : TM is in charge of managing verious programs, providing diagnostic information on the city, and most of all pest control in the mansion. Or rather she used to before Cyber City was sealed, now like most darkners in castle town she's unemployed and thus has time to do her hobbies such as singing, which she can do on stage thanks to swatch.&lt;br&gt;Cats : TM has a ton of "Tasques" which are non anthropomorphic file cats that represent programs as seen through task manager.&lt;br&gt;Queen: Queen is her ex employer, a darkner that manifested from the library laptop. Queen is a zany wine aunt constantly drunk off of battery acid and the entire cyber world moving to her whims.&lt;br&gt;Swatch &amp; the swatchlings: Swatch is Queen's head butler, a darkner manifested from MS paint or some other art program. The swatchlings are individual colors. The swatchlings scare easy and a single maus can pause an entire room's work until someone comes and deals with it.&lt;br&gt;Clowns: TM has Coulrophobia. Especially with one certain clown (such that even someone saying similar things to him or having him in their possesion gets her antsy).</othernotes>
+    <othernotes>If you give her a nick name, please don't use "Tasque" Instead, you could use things like "Tas", "TM", "Tasquey", "Ms. Manager" Etc. This is because Tasques are her cats.&lt;br&gt;&lt;br&gt;&lt;br&gt;Targeting guide - &lt;br&gt;Job : TM is in charge of managing verious programs, providing diagnostic information on the city, and most of all pest control in the mansion. Or rather she used to before Cyber City was sealed, now like most darkners in castle town she's unemployed and thus has time to do her hobbies such as singing, which she can do on stage thanks to swatch.&lt;br&gt;Cats : TM has a ton of "Tasques" which are non anthropomorphic file cats that represent programs as seen through task manager.&lt;br&gt;Queen: Queen is her ex employer, a darkner that manifested from the library laptop. Queen is a zany wine aunt constantly drunk off of battery acid and the entire cyber world moving to her whims.&lt;br&gt;Swatch &amp; the swatchlings: Swatch is Queen's head butler, a darkner manifested from MS paint or some other art program. The swatchlings are individual colors. The swatchlings scare easy and a single maus can pause an entire room's work until someone comes and deals with it.&lt;br&gt;Clowns: TM has Coulrophobia. Especially with one certain clown (such that even someone saying similar things to him or having him in their possesion gets her antsy).&lt;br&gt;&lt;br&gt;If you would like proper banter, please dm Spook about having a proper banter sheet.</othernotes>
     <noteworthy>
         <case name="Torso off" id="21" priority="Noteworthy" min="2" max="2">
             <description>Tasque manager seperates. This happens during stage 2 stripping when giving a treat to the player after stripping stage 5 and during stage 2 of masturbation</description>
@@ -14,6 +14,9 @@
         </case>
         <case name="Autocunnilingus" id="86" priority="Noteworthy" min="6" max="6">
             <description>Using her splitting body, Tasque Manager takes advantage of it to eat herself out. This happens during her heavy stage.</description>
+        </case>
+        <case name="Coulrophobia" id="114" priority="Noteworthy" min="0" max="0">
+            <description>Tasque Manager has a fear of clowns, and oh no there is a clown at the table. She is trying to hold herself back from attacking the clown the entire game and is uncomfortable with it's presense. (She also gains the agressive and weapon tag from this)</description>
         </case>
     </noteworthy>
     <reviewed>true</reviewed>
@@ -104,6 +107,7 @@
         <response id="0" opponent="monique" opponentId="13" />
         <response id="0" opponent="monique" opponentId="7" />
         <response id="0" opponent="monique" opponentId="12" />
+        <response id="192" opponent="adora" opponentId="597" />
     </responses>
     <notes>
         <note id="63">Tasque manager is going to figure out that schezo is NOT infact a pervert, and then flirt with him.</note>
@@ -289,15 +293,22 @@
         <label id="188" label="" folder="Targets&gt;FE&gt;Felicia" sort="20" />
         <label id="189" label="" folder="Targets&gt;FE&gt;Felicia" sort="19" />
         <label id="190" label="" folder="Targets&gt;FE&gt;Felicia" sort="18" />
+        <label id="192" label="" folder="Targets&gt;Shera&gt;Adora" sort="0" />
+        <label id="193" label="" folder="Targets&gt;Shera&gt;Adora" sort="0" />
+        <label id="194" label="" folder="Targets&gt;TO&gt;Angela" sort="0" />
+        <label id="195" label="" folder="Targets&gt;FE&gt;Marianne" sort="0" />
     </labels>
     <onlyCustomPoses>true</onlyCustomPoses>
-    <nextId>191</nextId>
+    <nextId>195</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="Addisons_5" />
+        <marker scope="Public" name="Adora_GreetingResp1" />
+        <marker scope="Public" name="Adora_GreetingResp2" />
         <marker scope="Public" name="Aoba_weather_response" />
         <marker scope="Public" name="Aura" />
         <marker scope="Public" name="Autocunnilingus" />
+        <marker scope="Public" name="Autocunnilingus_start" />
         <marker scope="Public" name="Berdly_Ace" />
         <marker scope="Public" name="BigDBitchBreaker" />
         <marker scope="Public" name="BigDBonThatWay" />
@@ -434,6 +445,7 @@
         <marker scope="Public" name="Swatchlings_6" />
         <marker scope="Public" name="SweetCapnCake_3" />
         <marker scope="Public" name="Tasque_Manager_Introduction" />
+        <marker scope="Public" name="TasqueManager_QueenWho_10_Resp" />
         <marker scope="Public" name="Tenna_10" />
         <marker scope="Public" name="TopOrBottomSmallD" />
         <marker scope="Public" name="TorsoOff" />
