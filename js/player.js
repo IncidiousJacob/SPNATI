@@ -1461,6 +1461,38 @@ Opponent.prototype.getEpilogueStatus = function(mainSelect) {
     };
 }
 
+/**
+ * Returns the total number of locked (not yet unlocked) epilogues and collectibles
+ * for this opponent. Used for "Incomplete" sort order.
+ *
+ * Collectibles are only counted if they have been loaded (fetchCollectibles called).
+ */
+Opponent.prototype.getLockedItemCount = function () {
+    var count = 0;
+    
+    if (this.endings) {
+        this.endings.each(function (idx, elem) {
+            if (!save.hasEnding(this.id, $(elem).text())) {
+                count++;
+            }
+        }.bind(this));
+    }
+    
+    if (this.collectibles !== null) {
+        var dbg = {statusFiltered:0, unlocked:0, hidden:0, counted:0};
+        this.collectibles.forEach(function (c) {
+            if (c.status && !includedOpponentStatuses[c.status]) { dbg.statusFiltered++; return; }
+            if (c.isUnlocked()) { dbg.unlocked++; return; }
+            if (c.isHidden()) { dbg.hidden++; return; }
+            dbg.counted++;
+            count++;
+        });
+        // console.log('[incomplete] ' + this.id + ': counted=' + dbg.counted + ' unlocked=' + dbg.unlocked + ' hidden=' + dbg.hidden + ' statusFiltered=' + dbg.statusFiltered);
+    }
+    
+    return count;
+};
+    
 /* Called prior to removing a character from the table. */
 Opponent.prototype.unloadOpponent = function () {
     Sentry.addBreadcrumb({
