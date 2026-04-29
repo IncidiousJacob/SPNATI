@@ -4,7 +4,7 @@
     <height>5'7"</height>
     <age>39</age>
     <pronunciation>MUR/see, AN/ge/la ZIG/ler</pronunciation>
-    <othernotes />
+    <othernotes>Angela Ziegler, aka “Mercy” is a Swiss doctor, of both the MD and PhD varieties. She joined Overwatch as their head of medical research to ensure her advances would be genuinely helping people, and has mixed feelings about taking part in combat.&lt;br&gt;&lt;br&gt;Characterisation&lt;br&gt;**Identity**: Much as she appreciates the good she can do as Mercy, Angela also resents the mantle to some degree. She much prefers being “Angela” to being “Mercy”. She never wanted to take the spotlight; it’s a responsibility she takes seriously, but she doesn’t enjoy it. &lt;br&gt;**Genius Scientist**: Angela was a prodigy even as a child; she joined Overwatch in her early 20s, but by that time she’d already earned an MD, a PhD, and had become the head of surgery at a prominent Swiss hospital. She pioneered the healing “nanobiotics” technology that her staff uses, and she designed the combat suit and gear she uses as Mercy (though she relied on others to actually manufacture it). Additionally, as a result of some light but frequent self-experimentation with nanobiotics, her aging seems to have slowed or halted; she’s chronologically 39, but looks younger.&lt;br&gt;**Pacifism**: An orphan of the robot near-apocalypse known as the Omnic Crisis, Angela knows all too well the consequences of collateral damage. Though she’s come to see participating in combat as her duty, she was initially reluctant to join Overwatch even in a non-combatant role because of their military bent. She continues to hold a strong distaste for combat, but sees it as a necessary evil to take down the threats of Talon and Null Sector.&lt;br&gt;**Experienced**: Angela knows what she’s doing sexually, and has experimented with all sorts of kinks with a number of casual partners, many of them other members of Overwatch. She’s too absorbed with her work to make time to invest in romantic relationships.&lt;br&gt;&lt;br&gt;Targeting&lt;br&gt;**Pre-existing Conditions**: Ever the scientist, Angela is fascinated by unusual body features, especially non-human ones. She’s also happy to enthuse with other scientists over their research.&lt;br&gt;**Doing Good, Caring for Others**: Angela is always happy to hear how people have positively impacted those around them through non-violent means, and encourages those who haven’t to do so.&lt;br&gt;**Bedside Manner**: Angela is a natural caregiver, and is very happy to reassure those going through hardships&lt;br&gt;**Celebrity**: Angela has been a public figure for some time now, and seen both the positive and negative sides such fame can bring.</othernotes>
     <noteworthy>
         <case name="Loosen Up" id="8" priority="FYI" min="3" max="4">
             <description>Mercy realizes she's been taking the game too seriously and attempts to loosen up.</description>
@@ -248,6 +248,8 @@
         <note id="388">Mercy's experiencing the beginnings of this, thanks to her work with nanobiotics slowing her aging</note>
         <note id="392">I'm assuming that the omnic terminology is going to come up and be explained in the stage 0 targets, so I'm using it freely here</note>
         <note id="393">Feel free to react to her saying this, but since her label is Angela, unless you want to actively go against what she asks and call her Mercy anyway, you don't need to set a nickname or anything</note>
+        <note id="410">The alternative here being an effectively closed-loop super-high-efficiency recycling system. No idea if this is even covered a little in Vandread, totally fine if Meia doesn't know</note>
+        <note id="421">Variant to acknowledge Switzerland having come up before</note>
     </notes>
     <labels>
         <label id="45" label="" folder="Player Names" sort="2" />
@@ -509,13 +511,13 @@
         <label id="368" label="" color="1" folder="" sort="0" />
         <label id="369" label="" color="1" folder="" sort="0" />
         <label id="370" label="" color="1" folder="" sort="0" />
-        <label id="372" label="" color="1" folder="" sort="0" />
-        <label id="373" label="" color="1" folder="" sort="0" />
-        <label id="374" label="" color="1" folder="" sort="0" />
-        <label id="375" label="" color="1" folder="" sort="0" />
-        <label id="376" label="" color="1" folder="" sort="0" />
-        <label id="377" label="" color="1" folder="" sort="0" />
-        <label id="383" label="" color="1" folder="" sort="0" />
+        <label id="420" label="" color="1" folder="" sort="0" />
+        <label id="422" label="" color="1" folder="" sort="0" />
+        <label id="411" label="" color="1" folder="" sort="0" />
+        <label id="418" label="" color="1" folder="" sort="0" />
+        <label id="413" label="" color="1" folder="" sort="0" />
+        <label id="419" label="" color="1" folder="" sort="0" />
+        <label id="414" label="" color="1" folder="" sort="0" />
         <label id="384" label="" color="1" folder="" sort="0" />
         <label id="385" label="" color="1" folder="" sort="0" />
         <label id="387" label="" color="1" folder="" sort="0" />
@@ -532,19 +534,19 @@
         <label id="401" label="" folder="Mina" sort="0" />
         <label id="402" label="" color="1" folder="Mina" sort="0" />
         <label id="403" label="" color="1" folder="Mina" sort="0" />
-        <label id="404" label="" color="1" folder="" sort="0" />
-        <label id="405" label="" color="1" folder="" sort="0" />
-        <label id="406" label="" color="1" folder="" sort="0" />
-        <label id="407" label="" color="1" folder="" sort="0" />
-        <label id="408" label="" color="1" folder="" sort="0" />
-        <label id="409" label="" color="1" folder="" sort="0" />
+        <label id="424" label="" color="1" folder="" sort="0" />
+        <label id="415" label="" color="1" folder="" sort="0" />
+        <label id="417" label="" color="1" folder="" sort="0" />
+        <label id="423" label="" color="1" folder="" sort="0" />
+        <label id="410" label="" color="1" folder="" sort="0" />
+        <label id="416" label="" color="1" folder="" sort="0" />
     </labels>
     <prefixes>
         <prefix>epilogue-</prefix>
         <prefix>Collectible</prefix>
         <prefix>Mercy</prefix>
     </prefixes>
-    <nextId>409</nextId>
+    <nextId>424</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="AaraviObviousRole" />
@@ -1052,11 +1054,16 @@
         <marker scope="Public" name="JuraChristmasWorldwide" />
         <marker scope="Public" name="JuraGameStartOpenSlot" />
         <marker scope="Public" name="JuraMejarianFertility" />
+        <marker scope="Public" name="JuraMejarianFertility2" />
         <marker scope="Public" name="JuraName" />
+        <marker scope="Public" name="JuraName2" />
         <marker scope="Public" name="JuraReadyForTrouble" />
+        <marker scope="Public" name="JuraReadyForTrouble2" />
+        <marker scope="Public" name="JuraRobots" />
         <marker scope="Public" name="JuraSantaStories" />
         <marker scope="Public" name="JuraSeduction" />
         <marker scope="Public" name="JuraWhereFrom" />
+        <marker scope="Public" name="JuraWhereFrom2" />
         <marker scope="Public" name="kazuma_girl_methods" />
         <marker scope="Public" name="kazuma_luck_potion" />
         <marker scope="Public" name="kazuma_luck_potion_effects" />
@@ -1148,21 +1155,28 @@
         <marker scope="Public" name="MayYoungTrainer" />
         <marker scope="Public" name="MayYoungTrainer2" />
         <marker scope="Public" name="MeiaArtificialIntelligents" />
+        <marker scope="Public" name="MeiaArtificialIntelligents2" />
+        <marker scope="Public" name="MeiaBeautifulWomen" />
         <marker scope="Public" name="MeiaBirthday" />
         <marker scope="Public" name="MeiaDoctor" />
+        <marker scope="Public" name="MeiaDoctor2" />
         <marker scope="Public" name="MeiaLayerUp1" />
         <marker scope="Public" name="MeiaLayerUp2" />
         <marker scope="Public" name="MeiaLayerUp3" />
         <marker scope="Public" name="MeiaMejareMedicine" />
+        <marker scope="Public" name="MeiaMejareMedicine2" />
         <marker scope="Public" name="MeiaMenInfo" />
         <marker scope="Public" name="MeiaOverwatch" />
+        <marker scope="Public" name="MeiaOverwatch2" />
         <marker scope="Public" name="MeiaPyoroIntro" />
         <marker scope="Public" name="MeiaSightseeingEgypt" />
         <marker scope="Public" name="MeiaSightseeingJapan" />
         <marker scope="Public" name="MeiaSightseeingNumbani" />
         <marker scope="Public" name="MeiaSightseeingSwitzerland" />
         <marker scope="Public" name="MeiaSorryToBother" />
+        <marker scope="Public" name="MeiaSorryToBother2" />
         <marker scope="Public" name="MeiaSpaceIssues" />
+        <marker scope="Public" name="MeiaSpaceIssues2" />
         <marker scope="Public" name="MeiaSwitzerland" />
         <marker scope="Public" name="MeiaTechnologyComparison" />
         <marker scope="Public" name="mercy_juno41" />
