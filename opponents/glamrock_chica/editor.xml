@@ -10,7 +10,7 @@
             <description>Glamrock Chica is a 6-foot-tall mechanical chicken. Your character may find this noteworthy in and of itself.</description>
         </case>
         <case name="Pizza?" id="26" priority="Prompt" min="0" max="6">
-            <description>Having a great love for pizza, Chica make ask her fellow opponents what their favorite pizza toppings are.</description>
+            <description>Having a great love for pizza, Chica may ask her fellow opponents what their favorite pizza toppings are.</description>
         </case>
     </noteworthy>
     <responses>
@@ -189,6 +189,28 @@
         <response id="517" opponent="roxanne_wolf" opponentId="18" />
         <response id="518" opponent="roxanne_wolf" opponentId="182" />
         <response id="529" opponent="roxanne_wolf" opponentId="3" />
+        <response id="552" opponent="circus_babe" opponentId="159" />
+        <response id="553" opponent="circus_babe" opponentId="167" />
+        <response id="554" opponent="circus_babe" opponentId="4" />
+        <response id="555" opponent="circus_babe" opponentId="168" />
+        <response id="557" opponent="circus_babe" opponentId="169" />
+        <response id="558" opponent="circus_babe" opponentId="162" />
+        <response id="559" opponent="circus_babe" opponentId="170" />
+        <response id="561" opponent="circus_babe" opponentId="171" />
+        <response id="563" opponent="circus_babe" opponentId="172" />
+        <response id="565" opponent="circus_babe" opponentId="173" />
+        <response id="566" opponent="circus_babe" opponentId="1" />
+        <response id="567" opponent="circus_babe" opponentId="174" />
+        <response id="569" opponent="circus_babe" opponentId="175" />
+        <response id="570" opponent="circus_babe" opponentId="176" />
+        <response id="571" opponent="circus_babe" opponentId="177" />
+        <response id="572" opponent="circus_babe" opponentId="178" />
+        <response id="573" opponent="circus_babe" opponentId="179" />
+        <response id="578" opponent="circus_babe" opponentId="180" />
+        <response id="579" opponent="circus_babe" opponentId="186" />
+        <response id="582" opponent="circus_babe" opponentId="187" />
+        <response id="583" opponent="circus_babe" opponentId="190" />
+        <response id="590" opponent="circus_babe" opponentId="84" />
     </responses>
     <notes>
         <note id="38">This is not counting Withered Chica (since canonically it's the same as OG Chica), Phantom Chica, or Nightmare Chica (since they're hallucinations).</note>
@@ -449,11 +471,56 @@
         <label id="549" label="Target Compatible - Generic" color="4" folder="" sort="0" />
         <label id="550" label="Target Compatible - Self Exposed" color="4" folder="" sort="0" />
         <label id="551" label="Target Compatible - Generic" color="4" folder="" sort="0" />
+        <label id="552" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="553" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="554" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="555" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="556" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="557" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="558" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="559" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="560" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="561" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="562" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="563" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="564" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="565" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="566" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="567" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="568" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="569" label="" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="570" label="First Animatronic Exposed" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="571" label="First Animatronic Exposed" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="572" label="First Animatronic Naked" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="573" label="First Animatronic Naked" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="574" label="Self Second Animatronic Exposed" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="575" label="Self Second Animatronic Exposed" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="576" label="Self First Animatronic Exposed" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="577" label="Self First Animatronic Exposed" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="578" label="Second Animatronic Exposed" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="579" label="Second Animatronic Exposed" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="580" label="Self First Animatronic Naked" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="581" label="Self First Animatronic Naked" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="582" label="Second Animatronic Naked" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="583" label="Second Animatronic Naked" folder="Circus Babe &gt; CB Stripping" sort="0" />
+        <label id="584" label="Self Second Animatronic Naked" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="585" label="Self Second Animatronic Naked" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="586" label="" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="587" label="" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="588" label="" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="589" label="" folder="Circus Babe &gt; Self Stripping" sort="0" />
+        <label id="590" label="" folder="Circus Babe " sort="0" />
+        <label id="591" label="" folder="Circus Babe " sort="0" />
+        <label id="592" label="" folder="Circus Babe " sort="0" />
+        <label id="593" label="" folder="Circus Babe " sort="0" />
+        <label id="594" label="" folder="Circus Babe " sort="0" />
+        <label id="595" label="" folder="Circus Babe " sort="0" />
+        <label id="596" label="" folder="Circus Babe " sort="0" />
     </labels>
     <prefixes>
         <prefix>x</prefix>
     </prefixes>
-    <nextId>551</nextId>
+    <nextId>596</nextId>
     <markers>
         <marker scope="Public" name="" />
         <marker scope="Public" name="9S_Nipples1" />
@@ -502,6 +569,44 @@
         <marker scope="Public" name="Butt" />
         <marker scope="Public" name="Cadence_DessertPizza1" />
         <marker scope="Public" name="Cadence_Island1" />
+        <marker scope="Public" name="CB_BigRobots2" />
+        <marker scope="Public" name="CB_Bonnie1" />
+        <marker scope="Public" name="CB_CostumeChange2" />
+        <marker scope="Public" name="CB_Costumes1" />
+        <marker scope="Public" name="CB_Costumes2" />
+        <marker scope="Public" name="CB_Debut1" />
+        <marker scope="Public" name="CB_Debut2" />
+        <marker scope="Public" name="CB_FirstExposed1" />
+        <marker scope="Public" name="CB_FirstExposed2" />
+        <marker scope="Public" name="CB_FirstNaked1" />
+        <marker scope="Public" name="CB_FirstNaked2" />
+        <marker scope="Public" name="CB_Job1" />
+        <marker scope="Public" name="CB_Job2" />
+        <marker scope="Public" name="CB_Name1" />
+        <marker scope="Public" name="CB_Name2" />
+        <marker scope="Public" name="CB_OldModel1" />
+        <marker scope="Public" name="CB_OldModel2" />
+        <marker scope="Public" name="CB_PizzaWorld1" />
+        <marker scope="Public" name="CB_PizzaWorld2" />
+        <marker scope="Public" name="CB_SecondExposed1" />
+        <marker scope="Public" name="CB_SecondExposed2" />
+        <marker scope="Public" name="CB_SecondNaked1" />
+        <marker scope="Public" name="CB_SecondNaked1B" />
+        <marker scope="Public" name="CB_SecondNaked2" />
+        <marker scope="Public" name="CB_SelfFirstExposed1" />
+        <marker scope="Public" name="CB_SelfFirstExposed2" />
+        <marker scope="Public" name="CB_SelfFirstNaked1" />
+        <marker scope="Public" name="CB_SelfFirstNaked2" />
+        <marker scope="Public" name="CB_SelfSecondExposed1" />
+        <marker scope="Public" name="CB_SelfSecondExposed2" />
+        <marker scope="Public" name="CB_SelfSecondNaked1" />
+        <marker scope="Public" name="CB_SelfSecondNaked2" />
+        <marker scope="Public" name="CB_Soul1" />
+        <marker scope="Public" name="CB_Soul2" />
+        <marker scope="Public" name="CB_TakeApart2" />
+        <marker scope="Public" name="CB_TechnicalTalk2" />
+        <marker scope="Public" name="CB_Unfinished1" />
+        <marker scope="Public" name="CB_Unfinished2" />
         <marker scope="Public" name="CD_HireBand1" />
         <marker scope="Public" name="Chara_BraCut1" />
         <marker scope="Public" name="Chara_KeepLocket1" />
@@ -511,19 +616,25 @@
         <marker scope="Public" name="Chara_PantsCut1" />
         <marker scope="Public" name="Chara_PantsCut2" />
         <marker scope="Public" name="Chica_Bandmates1" />
+        <marker scope="Public" name="Chica_BigRobot1" />
         <marker scope="Public" name="Chica_Candy1" />
         <marker scope="Public" name="Chica_Candy2" />
+        <marker scope="Public" name="Chica_CostumeChange1" />
         <marker scope="Public" name="Chica_Costumes1" />
+        <marker scope="Public" name="Chica_FirstExposed1" />
+        <marker scope="Public" name="Chica_FirstNaked1" />
         <marker scope="Public" name="Chica_FLBodysuit1" />
         <marker scope="Public" name="Chica_NakedSecond1" />
         <marker scope="Public" name="Chica_OneOnOneTime1" />
         <marker scope="Public" name="Chica_SecondExposed1" />
+        <marker scope="Public" name="Chica_SecondNaked1" />
         <marker scope="Public" name="Chica_SelfFirstExposed" />
         <marker scope="Public" name="Chica_SelfFirstExposed1" />
         <marker scope="Public" name="Chica_SelfNakedFirst1" />
         <marker scope="Public" name="Chica_SelfNakedFirst2" />
         <marker scope="Public" name="Chica_Singing1" />
         <marker scope="Public" name="Chica_SingingOn1" />
+        <marker scope="Public" name="Chica_TakeApart1" />
         <marker scope="Public" name="Chica_TechnicalTalk1" />
         <marker scope="Public" name="Chihiro_Return1" />
         <marker scope="Public" name="Chihiro_Return2" />
@@ -674,6 +785,7 @@
         <marker scope="Public" name="Misc_ChicnStu2" />
         <marker scope="Public" name="Misc_ColdBackground" />
         <marker scope="Public" name="Misc_CookieDough" />
+        <marker scope="Public" name="Misc_CostumeFree" />
         <marker scope="Public" name="Misc_DDTrigger" />
         <marker scope="Public" name="Misc_DesignDecisions" />
         <marker scope="Public" name="Misc_DoingGood" />
@@ -805,6 +917,7 @@
         <marker scope="Public" name="Roxy_CautionBots" />
         <marker scope="Public" name="Roxy_ClosedRaceway1" />
         <marker scope="Public" name="Roxy_ClosedRaceway2" />
+        <marker scope="Public" name="Roxy_CostumeChange2" />
         <marker scope="Public" name="Roxy_Costumes2" />
         <marker scope="Public" name="Roxy_Crush1" />
         <marker scope="Public" name="Roxy_Crush2a" />
