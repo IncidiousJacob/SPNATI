@@ -2052,9 +2052,40 @@ OpponentDetailsDisplay.prototype.updateCollectiblesView = function () {
         } else {
             return this.createCollectibleCard(collectible);
         }
-    }.bind(this));
+    }.bind(this)).filter(Boolean);
+    
+    // If every collectible is hidden/secret, the game still shows available 0/0, so this handles that
+    const collectibles = this.opponent.collectibles;
+
+    if (cards.length === 0 && collectibles.length > 0) {
+        const { allHiddenOrSecret, allInvisibleByFilter } = collectibles.reduce((acc, c) => { // reduce to a single output value
+            const lockedHidden = c.hidden && !c.isUnlocked();
+
+            acc.allHiddenOrSecret &&= (c.status === 'hidden') || lockedHidden;
+            acc.allInvisibleByFilter &&= ((c.status && !includedOpponentStatuses[c.status]) || lockedHidden);
+
+            return acc;
+        }, { allHiddenOrSecret: true, allInvisibleByFilter: true });
+
+        if (allHiddenOrSecret && allInvisibleByFilter) {
+            cards = [ this.createHiddenCollectiblesInfoCard() ];
+        }
+    }
+
     this.collectiblesContainer.empty().append(cards);
 }
+
+OpponentDetailsDisplay.prototype.createHiddenCollectiblesInfoCard = function () {
+    var container = createElementWithClass('div', 'bordered opponent-subview-card opponent-collectible-info');
+
+    var titleElem = container.appendChild(createElementWithClass('div', 'opponent-subview-title'));
+    var subtitleElem = container.appendChild(createElementWithClass('div', 'opponent-subview-subtitle'));
+
+    $(titleElem).text('All Collectibles Hidden');
+    $(subtitleElem).text('This character has collectibles, but all of them are hidden or secret.');
+
+    return container;
+};
 
 let tagDisplayNames = {};
 let tagDescriptions = {};
