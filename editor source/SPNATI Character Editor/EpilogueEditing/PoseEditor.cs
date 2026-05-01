@@ -207,6 +207,7 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 			}
 			timeline.SetData(_pose);
 
+			ISkin character = _character;
 			//restore collapsed and hidden states for sprites that have the same ID as previous pose
 			if (_pose != null)
 			{
@@ -223,10 +224,14 @@ namespace SPNATI_Character_Editor.EpilogueEditor
 							sprite.Widget.IsCollapsed = true;
 						}
 					}
+					if (sprite.Character != null)
+					{
+						character = sprite.Character;
+					}
 				}
 
 			}
-			table.Context = new LivePoseContext(_pose, _character, CharacterContext.Pose);
+			table.Context = new LivePoseContext(_pose, character, CharacterContext.Pose);
 			SetTableData(_pose, null);
 			canvas.SetData(_character, _pose);
 			timeline.CurrentTime = 0;

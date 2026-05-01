@@ -103,6 +103,7 @@ namespace SPNATI_Character_Editor
 				sprite.Z = item.Z;
 				sprite.ParentId = item.ParentId;
 				sprite.Marker = item.Marker;
+				sprite.Character = item.ReferenceCharacter?.FolderName;
 				Sprites.Add(sprite);
 
 				if (item.Start > 0)
