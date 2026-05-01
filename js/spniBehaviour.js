@@ -2718,6 +2718,7 @@ Opponent.prototype.updateChosenState = function (state) {
 
     this.chosenState = state;
     this.stateCommitted = false;
+    this.keepPose = false;
     this.chosenState.selectImage(this.stage);
 }
 
@@ -2773,6 +2774,8 @@ Opponent.prototype.updateBehaviour = function(triggers, opp) {
         this.updateChosenState(state);
         this.lastUpdateTriggers = triggers;
         return triggers;
+    } else {
+        this.keepPose = true;
     }
     return null;
 }
@@ -2797,6 +2800,8 @@ Opponent.prototype.singleBehaviourUpdate = function (triggers, opp) {
         saveSingleTranscriptEntry(this.slot);
         this.evaluateHiddenCases(evaluatedTrigger, opp, true);
     }
+    updateGameVisual(this.slot);
+    this.keepPose = true;
 }
 
 /************************************************************
@@ -2843,17 +2848,23 @@ Opponent.prototype.commitBehaviourUpdate = function () {
     if (!this.chosenState) return;
     if (this.stateCommitted) return;
 
+    this.currentState = this.chosenState;
+
     /* Use rawDialogue so that variables don't affect repeat count.  */
-    this.repeatLog[this.chosenState.hash] = this.getRepeatCount() + 1;
+    this.repeatLog[this.currentState.hash] = this.getRepeatCount() + 1;
+    this.currentState.expandDialogue(this, this.currentTarget);
 
-    this.chosenState.expandDialogue(this, this.currentTarget);
-
-    this.applyState(this.chosenState, this.currentTarget);
+    this.applyState(this.currentState, this.currentTarget);
+    /* Now that we have committed a new state, we can sync poseStage
+     * without fear that a screen refresh will try to draw a pose
+     * using a stage that doesn't match the stage that was current
+     * when the previos state was chosen.  Don't update poseStage if
+     * it's greater than stage, as is the case when skipping
+     * stages. stripAIPlayer will take care of that after the
+     * transcript entry has been recorded. */
+    if (this.poseStage < this.stage) this.poseStage = this.stage;
     
     this.stateCommitted = true;
-    if (this.countLayers() == 0 || this.clothing.at(-1 - this.stage).type != "skip") {
-        updateGameVisual(this.slot);
-    }
 }
 
 /************************************************************
@@ -2938,6 +2949,7 @@ function updateAllBehaviours (target, target_tags, other_tags) {
             players[i].evaluateHiddenCases(postProcessingTriggers[i], null, true);
         }
     }
+    if (target_tags !== PLAYER_STRIPPED) updateGameVisuals(); // TODO: This special-casing could be better
 }
 
 /************************************************************

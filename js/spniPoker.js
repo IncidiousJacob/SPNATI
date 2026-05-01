@@ -15,17 +15,17 @@ const DIAMONDS = 2;
 const CLUBS    = 3;
 
 /* hand strengths */
-var NONE            = 0;
-var HIGH_CARD       = 1;
-var PAIR            = 2;
-var TWO_PAIR        = 3;
-var THREE_OF_A_KIND = 4;
-var STRAIGHT        = 5;
-var FLUSH           = 6;
-var FULL_HOUSE      = 7;
-var FOUR_OF_A_KIND  = 8;
-var STRAIGHT_FLUSH  = 9;
-var ROYAL_FLUSH     = 10;
+const NONE            = 0;
+const HIGH_CARD       = 1;
+const PAIR            = 2;
+const TWO_PAIR        = 3;
+const THREE_OF_A_KIND = 4;
+const STRAIGHT        = 5;
+const FLUSH           = 6;
+const FULL_HOUSE      = 7;
+const FOUR_OF_A_KIND  = 8;
+const STRAIGHT_FLUSH  = 9;
+const ROYAL_FLUSH     = 10;
 
 /**********************************************************************
  *****                      Poker UI Elements                     *****
@@ -46,24 +46,24 @@ $cardCells = [[$("#player-0-card-1"), $("#player-0-card-2"), $("#player-0-card-3
  **********************************************************************/
 
 /* pseudo constants */
-var ANIM_DELAY = 80;
-var ANIM_TIME = 500;
-var CARDS_PER_HAND = 5;
+let ANIM_DELAY = 80;
+let ANIM_TIME = 500;
+const CARDS_PER_HAND = 5;
  
 /* image constants */
-var CARD_CONFIG_FILE = "cards.xml";
-var BLANK_CARD_IMAGE = IMG + "blank.png";
-var UNKNOWN_CARD_IMAGE = IMG + "cards/default/unknown.svg";
-var SUIT_PREFIXES = ["spade", "heart", "diamo", "clubs"];
-var ACTIVE_CARD_IMAGES = new ActiveCardImages();
-var CARD_IMAGE_SETS = {};
-var DEFAULT_CARD_DECK = 'default';
+const CARD_CONFIG_FILE = "cards.xml";
+const BLANK_CARD_IMAGE = IMG + "blank.png";
+const UNKNOWN_CARD_IMAGE = IMG + "cards/default/unknown.svg";
+const SUIT_PREFIXES = Object.freeze(["spade", "heart", "diamo", "clubs"]);
+const ACTIVE_CARD_IMAGES = new ActiveCardImages();
+const CARD_IMAGE_SETS = {};
+let DEFAULT_CARD_DECK = 'default';
 
 /* card decks */
-var activeDeck;    /* deck for current round */
+let activeDeck;    /* deck for current round */
 
 /* deal lock */
-var dealLock = 0;
+let dealLock = 0;
 
 /************************************************************
  * Card class
@@ -615,16 +615,16 @@ ActiveCardImages.prototype.displayCard = function (player, slot, visible) {
 
     if (card) {
         detectCheat();
-        var img = this.getCardImage(visible, card);
+        var img = this.getCardImage(visible || player == HUMAN_PLAYER, card);
         var altText = card.altText();
 
-        if (!visible) altText = '?';
+        if (!visible && player != HUMAN_PLAYER) altText = '?';
         $cardCells[player][slot].attr({
             src: img,
             alt: altText
         });
 
-        fillCard(player, slot);
+        if (visible === false && players[player].hand.tradeIns[slot]) dullCard(player, slot); else fillCard(player, slot);
         $cardCells[player][slot].css('visibility', '');
     } else {
         clearCard(player, slot);
@@ -695,9 +695,9 @@ function clearCard (player, i) {
  ************************************************************/
 function displayHand (player, reveal) {
     for (var i = 0; i < CARDS_PER_HAND; i++) {
-        ACTIVE_CARD_IMAGES.displayCard(player, i, reveal || player == HUMAN_PLAYER);
+        ACTIVE_CARD_IMAGES.displayCard(player, i, reveal);
     }
-    $gamePlayerAreas[player].toggleClass('revealed-cards', reveal);
+    $gamePlayerAreas[player].toggleClass('revealed-cards', reveal === true);
     if (reveal) {
         $gamePlayerAreas[player].toggleClass('loser', !recentTied && recentLoser == player);
         $gamePlayerAreas[player].toggleClass('tied', !!recentTied && recentTied.includes(player));
@@ -800,7 +800,7 @@ function exchangeCards (player) {
     });
 
     /* Refresh display. */
-    displayHand(player, false);
+    displayHand(player, null);
 
     /* draw new cards */
     var n = 0;
@@ -849,7 +849,7 @@ function animateDealtCard (player, card, n) {
 
     $clonedCard.delay(n * ANIM_DELAY).animate({top: top, left: left}, animTime, function() {
         $clonedCard.remove();
-        ACTIVE_CARD_IMAGES.displayCard(player, card, player == HUMAN_PLAYER);
+        ACTIVE_CARD_IMAGES.displayCard(player, card, null);
         dealLock--;
         if (dealLock <= 0) {
             $gameScreen.removeClass('prompt-exchange');

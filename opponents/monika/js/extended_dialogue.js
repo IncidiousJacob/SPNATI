@@ -64,7 +64,7 @@
     var backgroundEffects = Array(4);
 
     exports.extendedDialoguePhase = extendedDialoguePhase;
-    root.eGamePhase.EXTENDED_DIALOGUE = extendedDialoguePhase;
+    eGamePhase.EXTENDED_DIALOGUE = extendedDialoguePhase;
 
     function handleRollbackGlitchEffects(slot) {
         var pl = monika.utils.get_monika_player();

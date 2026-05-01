@@ -137,15 +137,15 @@ function startMasturbation (player) {
        character's current stage then doesn't match the dialogue on
        the screen, complicating rollback and bug reports, but we can't
        easily change this. */
-    players[player].stage += 1;
+    players[player].stage++;
     players[player].timeInStage = -1;
     players[player].stageChangeUpdate();
-    
+
     if (player == HUMAN_PLAYER) {
         updateHumanPlayerMasturbationVisual();
         displayHumanPlayerClothing();
     }
-    
+
     /* allow progression */
     endRound();
 }
@@ -164,7 +164,7 @@ function justFinishedPlayer () {
  ************************************************************/
 function tickForfeitTimers () {
     console.log("Ticking forfeit timers...");
-    
+
     const finishedPlayer = justFinishedPlayer();
     if (finishedPlayer >= 0) {
         finishMasturbation(finishedPlayer);
@@ -206,6 +206,7 @@ function tickForfeitTimers () {
                 players.forEach(function (p) {
                     if (p.chosenState) {
                         p.chosenState.dialogue = '';
+                        p.keepPose = true;
                         if (p != finishTarget) updateGameVisual(p.slot);
                     }
                 });
