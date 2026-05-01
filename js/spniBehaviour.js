@@ -1363,6 +1363,32 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         }
     case 'tag':
         return player.hasTag(split_fn[1]) ? 'true' : 'false';
+    case 'futuretag': {
+        const tagId = split_fn[1];
+        
+        if (!tagId) return 'futuretag';
+
+        const interval = new Interval(args || "1");
+        
+        if (Number.isNaN(interval.min) || Number.isNaN(interval.max)) return 'false';
+        
+        const nowStage = Number(player.stage) || 0; // Current stage of that player
+        
+        let min = (interval.min === null && interval.max === null) ? 1 : (interval.min ?? interval.max);
+        let max = (interval.max ?? interval.min);
+
+        if (min > max) [min, max] = [max, min];
+        
+        // Clamp these so it won't look backwards
+        min = Math.max(0, min);
+        max = Math.max(0, max);
+        
+        for (let i = min; i <= max; i++) {
+            if (hasTagAtStage(player, tagId, nowStage + i)) return 'true';
+        }
+        
+        return 'false';
+    }
     case 'costume':
         if (!player.alt_costume) return 'default';
         return player.alt_costume.id;
@@ -1512,6 +1538,25 @@ function expandPlayerVariable(split_fn, args, player, self, target, bindings) {
         return expandNicknames(self, player);
     }
 }
+
+function hasTagAtStage(player, tagId, stage) {
+    // Check stage-ranged tags if we can see them
+    if (Array.isArray(player.originalTags)) {
+        return player.originalTags.some(t => {
+            if (!t || t.tag !== tagId) return false;
+
+            // Missing from/to means it is active for all stages
+            const from = (t.from === undefined || t.from === null || t.from === '') ? -Infinity : Number(t.from);
+            const to   = (t.to   === undefined || t.to   === null || t.to   === '') ?  Infinity : Number(t.to);
+
+            return stage >= from && stage <= to;
+        });
+    }
+
+    // No stage-aware info available, fall back to current-stage tag list
+    return typeof player.hasTag === 'function' ? player.hasTag(tagId) : false;
+}
+
 
 function expandCustomDeckVariable(split_fn, tolerance, args) {
     args = (args || "").split("|");
@@ -1919,31 +1964,100 @@ function poseNameMatches(nameA, nameB) {
     return normalizeImageName(nameA) === normalizeImageName(nameB);
 }
 
-/************************************************************
- * Given a string containing a number or two numbers 
- * separated by a dash, returns an array with the same number 
- * twice, or the first and second number as the case may be
- ************************************************************/
-function Interval (str) {
-    if (str === undefined) {
-        this.min = this.max = null; return;
-    }
-    var m = str.match(/^\s*(-?\d+)?\s*-\s*(-?\d+)?\s*$/);
-    if (m) {
-        this.min = m[1] ? parseInt(m[1]) : null;
-        this.max = m[2] ? parseInt(m[2]) : null;
-    } else if (str.match(/^\s*(\d+)\s*$/)) {
-        var val = parseInt(str);
-        this.min = this.max = val;
+/**
+ * Represents an inclusive interval between two integers.
+ * 
+ * When called as `new Interval(string)`, parses an interval as two integers separated by a dash.
+ * (Note that bare negative numbers will be parsed as intervals without a minimum: `new Interval("-3")` is the same as `new Interval(null, 3)`!)
+ * 
+ * When called with one argument as `new Interval(number)`, creates an interval with both min and max set to the number.
+ * 
+ * When called with two arguments `new Interval(min, max)`, creates an interval with the specified min and max.
+ * 
+ * In the latter two cases, `Infinity` will be treated the same as `null`.
+ * 
+ * Examples:
+ * ```
+ * var any = new Interval() // or new Interval(null, null). Represents (-Inf, Inf).
+ * var only_five = new Interval(5); // or new Interval(5, 5). Represents [5, 5].
+ * var at_most_five = new Interval(null, 5); // Represents (-Inf, 5].
+ * var at_least_five = new Interval(5, null); // Represents [5, Inf).
+ * ```
+ * 
+ * @param {number | string | null} [start] 
+ * @param {number | null} [end]
+ */
+function Interval (start, end) {
+    this.min = this.max = NaN;
+
+    if (end === undefined) {
+        if (typeof start === "string") {
+            let m = start.match(/^\s*(-?\d+)?\s*-\s*(-?\d+)?\s*$/);
+            if (m) {
+                this.min = m[1] ? parseInt(m[1]) : null;
+                this.max = m[2] ? parseInt(m[2]) : null;
+            } else if (start.match(/^\s*(\d+)\s*$/)) {
+                this.min = this.max = parseInt(start, 10);
+            }
+        } else if (typeof start === "number") {
+            this.min = this.max = (Number.isFinite(start) ? start : null);
+        } else {
+            this.min = this.max = null;
+        }
     } else {
         this.min = this.max = NaN;
+        this.min = (typeof start === "number" && Number.isFinite(start)) ? start : null;
+        this.max = (typeof end === "number" && Number.isFinite(end)) ? end : null;
     }
 }
 
-Interval.prototype.contains = function (number) {
-    return (this.min === null || this.min <= number)
-        && (this.max === null || number <= this.max);
+/**
+ * The lower bound of this Interval.
+ * If this.min is null, this returns -Infinity.
+ * @returns {number}
+ */
+Interval.prototype.start = function() {
+    return this.min ?? -Infinity;
 };
+
+/**
+ * The upper bound of this Interval.
+ * If this.max is null, this returns Infinity.
+ * @returns {number}
+ */
+Interval.prototype.end = function() {
+    return this.max ?? Infinity;
+};
+
+/**
+ * Test whether this Interval contains the given number.
+ * @param {number} number 
+ * @returns {boolean}
+ */
+Interval.prototype.contains = function (number) {
+    return (this.start() <= number) && (number <= this.end());
+};
+
+/**
+ * Test whether this Interval intersects another.
+ * @param {Interval} other 
+ * @returns {boolean}
+ */
+Interval.prototype.intersects = function (other) {
+    return other && (other.start() <= this.end()) && (this.start() <= other.end());
+}
+
+/**
+ * Returns a new Interval with both ends shifted by the given offset.
+ * @param {number} offset 
+ * @returns {Interval}
+ */
+Interval.prototype.shift = function (offset) {
+    return new Interval(
+        (this.min !== null) ? this.min + offset : null,
+        (this.max !== null) ? this.max + offset : null,
+    );
+}
 
 Interval.prototype.isValid = function() {
     return !isNaN(this.min) && !isNaN(this.max);
