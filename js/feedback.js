@@ -102,7 +102,7 @@ function compileBaseErrorReport(userDesc, bugType) {
                 playerData = {
                     'id': players[i].id,
                     'slot': i,
-                    'stage': players[i].stage,
+                    'stage': players[i].poseStage,
                     'timeInStage': players[i].timeInStage,
                     'markers': players[i].markers,
                     'oneShotCases': players[i].oneShotCases,
@@ -112,7 +112,7 @@ function compileBaseErrorReport(userDesc, bugType) {
                 if (players[i].chosenState) {
                     playerData.currentLine    = players[i].chosenState.rawDialogue;
                     if (players[i].chosenState.image) {
-                        playerData.currentImage   = players[i].folder + players[i].chosenState.image.replace('#', players[i].stage);
+                        playerData.currentImage   = players[i].folder + players[i].chosenState.image.replace('#', players[i].poseStage);
                     }
                     if (players[i].chosenState.parentCase && players[i].chosenState.parentCase.variableBindings) {
                         playerData.variableBindings = {};
@@ -500,7 +500,7 @@ function collectBaseUsageInfo(type, includeGameState) {
         for (let i = 0; i < 5; i++) {
             if (players[i]) {
                 let oppInfo = {
-                    'stage': players[i].stage,
+                    'stage': players[i].poseStage,
                     'seenDialogue': 0,
                     'outOrder': players[i].outOrder,
                     'costume': players[i].selected_costume,
