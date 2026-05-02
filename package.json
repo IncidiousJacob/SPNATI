@@ -1,36 +1,45 @@
-{
-  "name": "spnati-ap",
-  "version": "0.1.0",
-  "description": "SPNATI Archipelago desktop build",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder --win portable"
-  },
-  "devDependencies": {
-    "electron": "^30.0.0",
-    "electron-builder": "^24.13.3"
-  },
-  "build": {
-    "appId": "com.incidiousjacob.spnatiap",
-    "productName": "SPNATI Archipelago",
-    "files": [
-      "index.html",
-      "main.js",
-      "package.json",
-      "js/**/*",
-      "css/**/*",
-      "img/**/*",
-      "opponents/**/*",
-      "data/**/*",
-      "resources/**/*",
-      "cards/**/*",
-      "backgrounds/**/*",
-      "sounds/**/*",
-      "style/**/*"
-    ],
-    "win": {
-      "target": "portable"
+"build": {
+  "appId": "com.incidiousjacob.spnatiap",
+  "productName": "SPNATI Archipelago",
+  "files": [
+    "index.html",
+    "main.js",
+    "package.json",
+    "js/**/*",
+    "css/**/*",
+    "style/**/*"
+  ],
+  "extraResources": [
+    {
+      "from": "opponents",
+      "to": "game_data/opponents"
+    },
+    {
+      "from": "backgrounds",
+      "to": "game_data/backgrounds"
+    },
+    {
+      "from": "img",
+      "to": "game_data/img"
+    },
+    {
+      "from": "data",
+      "to": "game_data/data"
+    },
+    {
+      "from": "sounds",
+      "to": "game_data/sounds"
+    },
+    {
+      "from": "cards",
+      "to": "game_data/cards"
+    },
+    {
+      "from": "resources",
+      "to": "game_data/resources"
     }
+  ],
+  "win": {
+    "target": "portable"
   }
 }
