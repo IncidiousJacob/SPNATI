@@ -10,31 +10,32 @@
 /************************************************************
  * An enumeration for gender.
  **/
-var eGender = {
+const eGender = Object.freeze({
     MALE   : "male",
-    FEMALE : "female"
-};
+    FEMALE : "female",
+    FUTA   : "futanari"
+});
 
 /************************************************************
  * An enumeration for player size.
  **/
-var eSize = {
+const eSize = Object.freeze({
     SMALL  : "small",
     MEDIUM : "medium",
     LARGE  : "large"
-};
+});
 
 /************************************************************
  * An enumeration for player intelligence.
  **/
-var eIntelligence = {
+const eIntelligence = Object.freeze({
     NOSWAP  : "no-swap",
     THROW   : "throw",
     BAD     : "bad",
     AVERAGE : "average",
     GOOD    : "good",
     BEST    : "best"
-};
+});
 
 /**********************************************************************
  *****                Player Object Specification                 *****
@@ -261,7 +262,7 @@ Player.prototype.expandTagsList = function(input_tags) {
     }
 
     /* Automatically add futanari tag if necessary. */
-    if (this.gender === "female" && this.penis) {
+    if (this.gender === eGender.FEMALE && this.penis) {
         tmp.push("futanari");
     }
 
@@ -606,13 +607,14 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
     /* For label, gender, and layers, track the original, default value from
      * meta.xml (.meta*), the value for the currently selected costume to be
      * shown on the selection card (.select*), and the current in-game value.
-     * The in-game value for the default costume and the select screen value
-     * for an alternate costume both default to the meta value, and the in-game
-     * value for an alternate costume defaults to the select screen value for
-     * the costume. */
+     * The The select screen value for an alternate costume defaults to the
+     * meta value, and the in-game value for an alternate costume defaults to
+     * the select screen value for the costume, but the in-game value for the
+     * default costume is expected to always be set in behaviour.xml. */
     this.label = this.selectLabel = this.metaLabel = $metaXml.children('label').text();
     this.gender = this.selectGender = this.metaGender = $metaXml.children('gender').text();
     this.layers = this.selectLayers = this.metaLayers = parseInt($metaXml.children('layers').text(), 10);
+    if (this.gender == eGender.FUTA) this.gender = eGender.FEMALE;
 
     var picElem = $metaXml.children('pic');
 
@@ -712,10 +714,10 @@ function Opponent (id, metaFiles, status, rosterScore, addedDate, releaseNumber,
         if (MAGNET_TAGS.indexOf(tag) >= 0) this.magnetismTag = tag;
     });
 	
-	/* Needed because Futanari as a concept is not available (outside of the tags.xml) without loading behaviour.xml */
-	this.isFuta = false;
-	this.isFuta = this.searchTags.includes('futanari');
-
+    /* Needed until futanari gender is supported by the CE */
+    if (this.searchTags.includes('futanari')) {
+        this.metaGender = this.selectGender = eGender.FUTA;
+    }
     this.cases = new Map();
 
     /* Attempt to preload this opponent's picture for selection. */
@@ -1206,17 +1208,16 @@ Opponent.prototype.loadAlternateCostume = function () {
             folder: this.selected_costume,
             folders: $xml.children('folder'),
             wardrobe: $xml.children('wardrobe'),
-            gender: gender,
+            gender: gender == eGender.FUTA ? eGender.FEMALE : gender,
             layers: parseInt($xml.children('layers').text(), 10) || this.selectLayers,
             /* For each of (breasts, penis), If no size is set in costume.xml, either using the new elements
                or the legacy size, copy from the default costume, lastly falling back to the "other" size. */
             penis: $xml.children('penis').text()
-                || (gender === eGender.MALE && (legacySize || this.default_costume.penis
+                || (gender != eGender.FEMALE && (legacySize || this.default_costume.penis
                                                 || this.default_costume.breasts))
-                || (this.isFuta && this.default_costume.penis)
                 || null,
             breasts: $xml.children('breasts').text()
-                || (gender === eGender.FEMALE && (legacySize || this.default_costume.breasts
+                || (gender != eGender.MALE && (legacySize || this.default_costume.breasts
                                                   || this.default_costume.penis)) || null,
         };
 
