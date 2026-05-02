@@ -1,0 +1,36 @@
+{
+  "name": "spnati-ap",
+  "version": "0.1.0",
+  "description": "SPNATI Archipelago desktop build",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.incidiousjacob.spnatiap",
+    "productName": "SPNATI Archipelago",
+    "files": [
+      "index.html",
+      "main.js",
+      "package.json",
+      "js/**/*",
+      "css/**/*",
+      "img/**/*",
+      "opponents/**/*",
+      "data/**/*",
+      "resources/**/*",
+      "cards/**/*",
+      "backgrounds/**/*",
+      "sounds/**/*",
+      "style/**/*"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  }
+}
