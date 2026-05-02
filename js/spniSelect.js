@@ -136,6 +136,9 @@ var individualSelectSeparatorIndices = [];
 /** Are the default fill suggestions using Testing opponents? */
 var suggestedTestingOpponents = undefined;
 
+/* Are we in "first selection" mode? */
+var firstSelectMode = true;
+
 /* page variables */
 var individualPage = 0;
 var groupPage = 0;
@@ -980,6 +983,10 @@ function updateIndividualSelectSort() {
         }
         $(opp.selectionCard.mainElem).appendTo($indivSelectionCardContainer);
     });
+
+    /* Move first select nav down to the bottom. */
+    $(".indiv-first-select-nav").appendTo($indivSelectionCardContainer);
+
     if (individualSelectSeparatorIndices.length > 0) {
         updateIndividualSelectVisibility();
     }
@@ -1078,15 +1085,19 @@ function showIndividualSelectionScreen() {
     updateIndividualSelectVisibility(true);
 
     /* Make sure the user doesn't have target-count sorting set if
-     * the amount of loaded opponents drops to 0. */
+     * the amount of loaded opponents drops to 0.
+     */
     var $talkedToOption = $('.sort-dropdown-options>li:has(a[data-value=target])');
     if (players.countTrue() <= 1) {
         $talkedToOption.hide();
         if (sortingMode === "target") {
             setSortingMode("featured");
         }
+
+        $(".indiv-first-select-nav").show();
     } else {
         $talkedToOption.show();
+        $(".indiv-first-select-nav").hide();
     }
 
     updateIndividualBadges();
@@ -1124,7 +1135,6 @@ function toggleIndividualSelectView() {
  * The player clicked on the Preset Tables button.
  ************************************************************/
 function showPresetTables () {
-    $groupSwitchTestingButton.html("Testing Tables");
     updateSelectableGroups();
     updateGroupSelectScreen();
 
@@ -1132,6 +1142,16 @@ function showPresetTables () {
 
     /* switch screens */
     screenTransition($selectScreen, $groupSelectScreen);
+}
+
+function indivSelectToPresetTables () {
+    updateSelectableGroups();
+    updateGroupSelectScreen();
+
+    Sentry.setTag("screen", "select-group");
+
+    /* switch screens */
+    screenTransition($individualSelectScreen, $groupSelectScreen);
 }
 
 /************************************************************
@@ -1568,6 +1588,8 @@ function selectGroup () {
 
     Sentry.setTag("screen", "select-main");
 
+    firstSelectMode = false;
+
     /* switch screens */
     screenTransition($groupSelectScreen, $selectScreen);
 }
@@ -1639,9 +1661,15 @@ $groupSelectScreen.data('keyhandler', groupSelectScreen_keyUp);
  * select screen.
  ************************************************************/
 function backFromIndividualSelect () {
-    /* switch screens */
-    Sentry.setTag("screen", "select-main");
-    screenTransition($individualSelectScreen, $selectScreen);
+    if (players.countTrue() > 1 || !firstSelectMode) {
+        /* switch to main select screen */
+        Sentry.setTag("screen", "select-main");
+        screenTransition($individualSelectScreen, $selectScreen);
+    } else {
+        /* Go back to title screen */
+        Sentry.setTag("screen", "title");
+        screenTransition($individualSelectScreen, $titleScreen);
+    }
 }
 
 /************************************************************
@@ -1649,12 +1677,17 @@ function backFromIndividualSelect () {
  * select screen.
  ************************************************************/
 function backFromGroupSelect () {
-    /* switch screens */
-    Sentry.setTag("screen", "select-main");
-
     if (useGroupBackgrounds) optionsBackground.activateBackground();
 
-    screenTransition($groupSelectScreen, $selectScreen);
+    if (players.countTrue() > 1 || !firstSelectMode) {
+        /* switch to main select screen */
+        Sentry.setTag("screen", "select-main");
+        screenTransition($groupSelectScreen, $selectScreen);
+    } else {
+        /* Go back to individual selection */
+        Sentry.setTag("screen", "select-individual");
+        screenTransition($groupSelectScreen, $individualSelectScreen);
+    }
 }
 
 /************************************************************
