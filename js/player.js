@@ -114,13 +114,20 @@ Player.prototype.getClothing = function(stageDelta, removedClothing) {
 Player.prototype.resetState = function () {
     this.out = this.finished = false;
     this.outOrder = undefined;
-    this.biggestLead = 0;
     this.forfeit = [];
     this.forfeitLocked = false;
     this.finishingTarget = this;
-    this.stage = this.consecutiveLosses = 0;
-    this.timeInStage = 0;
-    this.ticksInStage = 0;
+    /* poseStage is used to ensure correct rendering when the stage
+     * property doesn't match the pose on screen at the point of
+     * recording a transcript entry, namely 1) when a character starts
+     * masturbating, where the stage is incremented after the
+     * start_masturbating phase is done because there is no more phase
+     * before the next round (or game end loop) and 2) when skipping
+     * layers. Normally, poseStage is set to stage when the next
+     * dialogue update happens. */
+    this.stage = this.poseStage = 0;
+    this.consecutiveLosses = this.biggestLead = 0;
+    this.timeInStage = this.ticksInStage = 0;
     this.markers = {};
     this.saidDialogue = {};
     this.hand = null;
@@ -553,7 +560,7 @@ Player.prototype.resolvePoseName = function (image, stage) {
     }
 
     if (stage === null || stage === undefined) {
-        stage = this.stage;
+        stage = this.poseStage;
     }
 
     image = image.replace("#", stage);
@@ -1057,11 +1064,11 @@ Opponent.prototype.getByStage = function (arr, stage) {
  * @returns {number}
  */
 Opponent.prototype.getRepeatCount = function () {
-    if (!this.chosenState || !this.chosenState.rawDialogue) {
+    if (!this.currentState || !this.currentState.rawDialogue) {
         return 0;
     }
 
-    return this.repeatLog[this.chosenState.hash] || 0;
+    return this.repeatLog[this.currentState.hash] || 0;
 }
 
 /**
@@ -2157,12 +2164,12 @@ function createDebugSectionRow(header, value) {
 }
 
 Player.prototype.populateDebugCaseInfo = function () {
-    if (!this.chosenState || !this.chosenState.parentCase) {
+    if (!this.currentState || !this.currentState.parentCase) {
         $("#debug-case-info-container").hide();
         return;
     }
 
-    var chosenCase = this.chosenState.parentCase;
+    var currentCase = this.currentState.parentCase;
     var caseTypeDisplay = [
         $("<span>", {"class": "debug-case-type", "text": chosenCase.trigger}),
         ", priority ",
@@ -2207,7 +2214,7 @@ Player.prototype.populateDebugCaseInfo = function () {
         );
     }
 
-    var setsMarkers = this.chosenState.markers.map(
+    var setsMarkers = this.currentState.markers.map(
         (marker) => {
             let formatted = marker.name;
             if (marker.perTarget) formatted += "*";
@@ -2230,8 +2237,8 @@ Player.prototype.populateDebugCaseInfo = function () {
         )).appendTo(listing);
     }
 
-    var formattedPose = this.chosenState.image ? (
-        this.chosenState.image.replace(/\.(?:jpe?g|png|gif)$/i, "").replace("#", this.stage)
+    var formattedPose = this.currentState.image ? (
+        this.currentState.image.replace(/\.(?:jpe?g|png|gif)$/i, "").replace("#", this.stage)
     ) : "<none>";
 
     createDebugSectionRow("Pose", $(

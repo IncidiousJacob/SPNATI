@@ -80,14 +80,13 @@ gameDisplays = [
  **********************************************************************/
 
 /* pseudo constants */
-var GAME_DELAY = 800;
-var CARD_SUGGEST = false;
-var PLAYER_FINISHING_EFFECT = true;
-var EXPLAIN_ALL_HANDS = true;
-var AUTO_FADE = true;
-var MINIMAL_UI = true;
-var DEBUG = false;
-var SHORT_GAME_MODE = false;
+let GAME_DELAY = 800;
+let CARD_SUGGEST = false;
+let PLAYER_FINISHING_EFFECT = true;
+let EXPLAIN_ALL_HANDS = true;
+let AUTO_FADE = true;
+let MINIMAL_UI = true;
+let SHORT_GAME_MODE = false;
 const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
 
 /* game state
@@ -97,11 +96,11 @@ const AUTO_ADVANCE_DELAYS = [undefined, 10000, 7000, 4000];
  * Third element (optional): whether to automatically hide/show the table (if AUTO_FADE is set)
  * Fourth element: whether the cards are revealed (used in rollback).
  */
-var eGamePhase = {
+const eGamePhase = {
     GAME_START: [ undefined, undefined, undefined, false ], // Dummy phase
     DEAL:      [ "Deal", startDealPhase, true, false ],
     AITURN:    [ "Next", continueDealPhase, true, false ],
-    EXCHANGE:  [ undefined, completeExchangePhase, true, false ],
+    EXCHANGE:  [ undefined, completeExchangePhase, true, null ],
     REVEAL:    [ "Reveal", completeRevealPhase, true, true ],
     PRESTRIP:  [ "Continue", completeContinuePhase, false, true ],
     STRIP:     [ "Strip", completeStripPhase, false, true ],
@@ -170,7 +169,7 @@ function loadGameScreen () {
      * Also go ahead and commit any marker updates from selected lines.
      */
     players.forEach(function (p) {
-        if(p.chosenState) {
+        if (p.chosenState) {
             p.commitBehaviourUpdate();
         }
     }.bind(this));
@@ -208,17 +207,26 @@ function updateGameVisual (player) {
     }
 }
 
+function updateGameVisuals () {
+    for (var i = 1; i < players.length; i++) {
+        updateGameVisual(i);
+    }
+}
+
 /************************************************************
  * Updates all of the main visuals on the main game screen.
  ************************************************************/
-function updateAllGameVisuals () {
+function updateAllGameVisuals (force) {
     /* update all opponents */
+    const saveKeepPose = players.map(p => p.savePose);
     for (var i = 0; i < players.length; i++) {
         // This incorrectly sets the player clothing area display to block, but that's corrected by displayHumanPlayerClothing
         $gamePlayerAreas[i].toggle(!!players[i] && !(players[i].out && !players[i].hand)
                                    && !(gameOver && players.every(p => p.hand == null)));
-        if (i > 0) updateGameVisual(i);
+        if (force) players[i].keepPose = false;
     }
+    updateGameVisuals();
+    if (force) players.forEach((p, i) => { p.keepPose = saveKeepPose[i]; });
     updateHumanPlayerMasturbationVisual();
     displayHumanPlayerClothing();
     displayAllHands(gamePhase[3]);
@@ -333,11 +341,11 @@ function advanceTurn () {
         }
 
         /* check to see if they are still in the game */
-        if (players[currentTurn].out && currentTurn > 0) {
+        if (currentTurn > 0 && players[currentTurn].out) {
             /* update their speech and skip their turn */
             players[currentTurn].singleBehaviourUpdate(players[currentTurn].forfeit[1] == CAN_SPEAK ?
                                                  addTriggers(players[currentTurn].forfeit[0], ANY_HAND) :
-                                                 players[currentTurn].forfeit[0]);
+                                                       players[currentTurn].forfeit[0]);
 
             timeoutID = window.setTimeout(advanceTurn, GAME_DELAY);
             return;
@@ -348,8 +356,8 @@ function advanceTurn () {
     if (currentTurn == 0) {
         /* Reprocess reactions. */
         updateAllVolatileBehaviours();
-        
         commitAllBehaviourUpdates();
+        updateGameVisuals();
 
         /* human player's turn */
         if (humanPlayer.out) {
@@ -441,10 +449,13 @@ function checkDealLock () {
  ************************************************************/
 function continueDealPhase () {
     /* hide the dialogue bubbles */
-    for (var i = 1; i < players.length; i++) {
-        $gameDialogues[i-1].html("");
-        $gameBubbles[i-1].hide();
-    }
+    players.forEach(function (p) {
+        if (p.currentState) {
+            p.currentState.dialogue = '';
+            p.keepPose = true;
+            updateGameVisual(p.slot);
+        }
+    });
 
     $mainButtonText.html("Wait...");
     
@@ -544,8 +555,9 @@ function completeRevealPhase () {
     if (recentTied !== null) {
         /* inform the player */
         players.forEach(function (p) {
-            if (p.chosenState) {
-                p.chosenState.dialogue = '';
+            if (p.currentState) {
+                p.currentState.dialogue = '';
+                p.keepPose = true;
                 updateGameVisual(p.slot);
             }
         });
@@ -926,13 +938,12 @@ function showRestartModal () {
  * from a rolled-back state.
  ************************************************************/
 function RollbackPoint (logPlayers) {
-    this.playerData = [];
-    
-    players.forEach(function (p) {
-        var data = {};
+    this.playerData = players.map(function (p) {
+        const data = {};
         
         data.slot = p.slot;
         data.stage = p.stage;
+        data.poseStage = p.poseStage;
         data.folder = p.folder;
         data.poses = p.poses;
         data.poseSets = p.poseSets;
@@ -944,7 +955,8 @@ function RollbackPoint (logPlayers) {
             data.markers[marker] = p.markers[marker];
         }
         
-        if (p.chosenState) data.chosenState = new State(p.chosenState);
+        if (p.currentState) data.currentState = new State(p.currentState);
+        data.keepPose = p.keepPose;
 
         if (p.hand) data.hand = p.hand.clone(); else data.hand = p.hand;
 
@@ -958,8 +970,8 @@ function RollbackPoint (logPlayers) {
             data.clothingRemovalStatus = p.clothing.map(c => c.removed);
         }
 
-        this.playerData.push(data);
-    }.bind(this));
+        return data;;
+    });
     
     /* Record data for bug reporting purposes. */
     this.currentRound = currentRound;
@@ -979,7 +991,7 @@ function RollbackPoint (logPlayers) {
             
             this.logEntries.push([
                 players[p].label,
-                players[p].chosenState ? players[p].chosenState.dialogue : ''
+                players[p].currentState ? players[p].currentState.dialogue : ''
             ]);
         }.bind(this));
     }
@@ -1002,13 +1014,15 @@ RollbackPoint.prototype.load = function () {
         var loadPlayer = players[p.slot];
         
         loadPlayer.stage = p.stage;
+        loadPlayer.poseStage = p.poseStage;
         loadPlayer.folder = p.folder;
         loadPlayer.poses = p.poses;
         loadPlayer.poseSets = p.poseSets;
         loadPlayer.timeInStage = p.timeInStage;
         loadPlayer.ticksInStage = p.ticksInStage;
         loadPlayer.markers = p.markers;
-        loadPlayer.chosenState = p.chosenState;
+        loadPlayer.currentState = p.currentState;
+        loadPlayer.keepPose = p.keepPose;
         loadPlayer.timer = p.timer;
         loadPlayer.forfeit = p.forfeit;
         loadPlayer.out = p.out;
@@ -1016,14 +1030,6 @@ RollbackPoint.prototype.load = function () {
         loadPlayer.label = p.label;
         loadPlayer.hand = p.hand;
         loadPlayer.clothing.forEach((c, i) => { c.removed = p.clothingRemovalStatus ? p.clothingRemovalStatus[i] : true });
-        /* Because the rollback point will have been created after the
-         * first stage change, if in the STRIP phase, we need to redo any
-         * stage skips before updating the visuals. */
-        let skipToStage = loadPlayer.findNextRealStage();
-        if (skipToStage) {
-            loadPlayer.stage = skipToStage;
-            loadPlayer.stageChangeUpdate();
-        }
     }.bind(this));
 }
 
@@ -1078,19 +1084,23 @@ function exitRollback() {
      * returning to a FORFEIT phase, a character that's just started
      * masturbating will have been in the stage after the
      * start_masturbating case when the return rollback point was
-     * created. */
-    transcriptHistory.findLast(e => e instanceof RollbackPoint).load();
-    updateAllGameVisuals();
+     * created.
+     (Should no longer be needed)
+    transcriptHistory.findLast(e => e instanceof RollbackPoint).load(); */
     returnRollbackPoint.load();
     returnRollbackPoint = null;
     currentRollbackIndex = undefined;
     $('.transcript-step-button').hide();
+    updateAllGameVisuals();
     allowProgression();
     $cardButtons.attr('disabled', nextGamePhase != eGamePhase.EXCHANGE);
     if (nextGamePhase == eGamePhase.EXCHANGE) {
         humanPlayer.hand.tradeIns.forEach(function(v, i) {
             $cardCells[HUMAN_PLAYER][i].toggleClass('tradein', v);
         });
+    }
+    if (AUTO_FADE && nextGamePhase[2] !== undefined) {
+        forceTableVisibility(nextGamePhase[2] && players.some(p => p.hand));
     }
 }
 
