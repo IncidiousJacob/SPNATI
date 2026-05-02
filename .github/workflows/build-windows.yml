@@ -12,20 +12,35 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      # Checkout repo WITH Git LFS
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
+      # Set up Node.js
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # Ensure Git LFS is active
+      - name: Install Git LFS
+        run: git lfs install
+
+      # Pull LFS assets (images, etc.)
+      - name: Pull LFS files
+        run: git lfs pull
+
+      # Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Build the EXE
       - name: Build EXE
         run: npm run dist
 
+      # Upload the EXE as an artifact
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
